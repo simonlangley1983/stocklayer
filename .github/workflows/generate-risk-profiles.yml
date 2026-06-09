@@ -1,0 +1,34 @@
+name: Generate StockLayer risk profiles
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-risk-profiles:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate risk profiles
+        run: python automation/generate_risk_profiles.py
+
+      - name: Commit generated risk profiles
+        run: |
+          git config user.name "stocklayer-bot"
+          git config user.email "stocklayer-bot@users.noreply.github.com"
+          git add risk
+          git commit -m "Generate StockLayer risk profiles" || echo "No changes to commit"
+          git push
