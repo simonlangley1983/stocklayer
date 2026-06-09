@@ -1,0 +1,34 @@
+name: Generate StockLayer AI summaries
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-ai-summaries:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate AI summaries
+        run: python automation/generate_ai_summaries.py
+
+      - name: Commit generated AI summaries
+        run: |
+          git config user.name "stocklayer-bot"
+          git config user.email "stocklayer-bot@users.noreply.github.com"
+          git add ai
+          git commit -m "Generate StockLayer AI summaries" || echo "No changes to commit"
+          git push
