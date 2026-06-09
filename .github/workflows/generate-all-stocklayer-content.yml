@@ -7,7 +7,7 @@ permissions:
   contents: write
 
 jobs:
-  generate-all:
+  generate-all-stocklayer-content:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,7 +22,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Update StockLayer data
+      - name: Update StockLayer market data
         run: python automation/update_stocklayer.py
 
       - name: Generate AI summaries
