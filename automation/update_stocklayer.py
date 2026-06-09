@@ -3,10 +3,10 @@ StockLayer automated data updater.
 
 This script is designed to run from GitHub Actions.
 
-What it does first:
+What it does:
 - Reads companies.json
 - Uses each company's ticker
-- Updates companies/{slug}.json with current price, P/E ratio and dividend yield where available
+- Updates companies/{slug}.json with current price, market cap, P/E ratio and dividend yield where available
 - Updates history/{slug}-history.json with available daily price history
 - Writes everything back to JSON so the static site can render it
 
@@ -94,6 +94,27 @@ def format_market_cap(value: Any) -> Optional[str]:
     return str(round(number, 2))
 
 
+def normalise_dividend_yield(value: Any) -> Optional[float]:
+    number = safe_float(value)
+
+    if number is None:
+        return None
+
+    # yfinance can return dividend yield as:
+    # - 0.0036 meaning 0.36%
+    # - 0.36 meaning 0.36%
+    # - 1.35 meaning 1.35%
+    #
+    # The website expects percentage form, e.g. 1.35 not 0.0135.
+    if number < 0:
+        return None
+
+    if number <= 0.2:
+        return round(number * 100, 2)
+
+    return round(number, 2)
+
+
 def normalise_ticker(ticker: str) -> str:
     return ticker.strip().upper()
 
@@ -146,8 +167,10 @@ def update_company_json(index_entry: Dict[str, Any]) -> None:
     ticker = normalise_ticker(ticker)
     company_path = get_company_file(slug)
 
-    company = read_json(company_path, {})
-    company = {**index_entry, **company}
+    existing_company = read_json(company_path, {})
+
+    # Preserve curated company-file fields by layering existing company data over the index entry.
+    company = {**index_entry, **existing_company}
 
     print(f"Updating company data: {ticker} ({slug})")
 
@@ -156,7 +179,7 @@ def update_company_json(index_entry: Dict[str, Any]) -> None:
     current_price = round_or_none(market_data.get("currentPrice"))
     market_cap = format_market_cap(market_data.get("marketCapRaw"))
     pe_ratio = round_or_none(market_data.get("peRatio"))
-    dividend_yield_raw = safe_float(market_data.get("dividendYield"))
+    dividend_yield = normalise_dividend_yield(market_data.get("dividendYield"))
 
     if current_price is not None:
         company["currentPrice"] = current_price
@@ -167,9 +190,8 @@ def update_company_json(index_entry: Dict[str, Any]) -> None:
     if pe_ratio is not None:
         company["peRatio"] = pe_ratio
 
-    if dividend_yield_raw is not None:
-        # yfinance usually returns dividend yield as a decimal, e.g. 0.0186
-        company["dividendYield"] = round(dividend_yield_raw * 100, 2)
+    if dividend_yield is not None:
+        company["dividendYield"] = dividend_yield
 
     company["ticker"] = ticker
     company["slug"] = slug
@@ -224,9 +246,11 @@ def update_history_json(index_entry: Dict[str, Any]) -> None:
             }
         )
 
+    currency = index_entry.get("currency", "USD")
+
     data = {
         "ticker": ticker,
-        "currency": "USD",
+        "currency": currency,
         "lastUpdated": datetime.now(timezone.utc).isoformat(),
         "prices": prices,
     }
@@ -280,13 +304,27 @@ def main() -> None:
     COMPANIES_DIR.mkdir(exist_ok=True)
     HISTORY_DIR.mkdir(exist_ok=True)
 
+    failures = []
+
     for entry in companies:
-        update_company_json(entry)
-        update_history_json(entry)
+        slug = entry.get("slug")
+        ticker = entry.get("ticker")
+
+        try:
+            update_company_json(entry)
+            update_history_json(entry)
+        except Exception as exc:
+            failures.append({"slug": slug, "ticker": ticker, "error": str(exc)})
+            print(f"ERROR: Failed to update {ticker} ({slug}): {exc}")
 
     update_companies_index(companies)
 
-    print("StockLayer update complete.")
+    if failures:
+        print("StockLayer update completed with failures:")
+        for failure in failures:
+            print(f"- {failure['ticker']} ({failure['slug']}): {failure['error']}")
+    else:
+        print("StockLayer update complete.")
 
 
 if __name__ == "__main__":
