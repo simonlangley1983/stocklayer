@@ -1,0 +1,38 @@
+name: Cache company logos
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  cache-logos:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Refresh cached logos
+        env:
+          LOGO_DEV_TOKEN: ${{ secrets.LOGO_DEV_TOKEN }}
+        run: >-
+          python scripts/cache_logos.py
+          --companies companies.json
+          --out-dir logos
+          --manifest logos/manifest.json
+          --max-age-days 30
+
+      - name: Commit logo updates
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update cached company logos"
+          file_pattern: companies.json logos/*
