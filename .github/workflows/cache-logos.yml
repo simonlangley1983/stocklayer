@@ -24,15 +24,20 @@ jobs:
       - name: Refresh cached logos
         env:
           LOGO_DEV_TOKEN: ${{ secrets.LOGO_DEV_TOKEN }}
-        run: >-
-          python scripts/cache_logos.py
-          --companies companies.json
-          --out-dir logos
-          --manifest logos/manifest.json
-          --max-age-days 30
+        run: |
+          python scripts/cache_logos.py \
+            --companies companies.json \
+            --out-dir logos \
+            --manifest logos/manifest.json \
+            --max-age-days 30
+          python scripts/cache_logos.py \
+            --companies uk-companies.json \
+            --out-dir logos \
+            --manifest logos/uk-manifest.json \
+            --max-age-days 30
 
       - name: Commit logo updates
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update cached company logos"
-          file_pattern: companies.json logos/*
+          file_pattern: companies.json uk-companies.json logos/*
