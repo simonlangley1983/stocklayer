@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import io
 import json
 import os
 import re
@@ -13,6 +14,8 @@ import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
+
+from PIL import Image, UnidentifiedImageError
 
 
 DEFAULT_SIZE = 256
@@ -51,7 +54,13 @@ def fetch_image(url: str, timeout: int) -> bytes:
         raise ValueError("empty response")
     if "image" not in content_type.lower():
         raise ValueError(f"unexpected content type: {content_type or 'unknown'}")
-    return data
+    try:
+        with Image.open(io.BytesIO(data)) as image:
+            png = io.BytesIO()
+            image.convert("RGBA").save(png, format="PNG")
+            return png.getvalue()
+    except UnidentifiedImageError as error:
+        raise ValueError("response is not a supported image") from error
 
 
 def provider_urls(domain: str, token: str, size: int) -> list[tuple[str, str]]:
@@ -61,7 +70,9 @@ def provider_urls(domain: str, token: str, size: int) -> list[tuple[str, str]]:
             {"token": token, "size": size, "format": "png"}
         )
         providers.append(("logo.dev", f"https://img.logo.dev/{domain}?{query}"))
-    google_query = urllib.parse.urlencode({"domain": domain, "sz": size})
+    google_query = urllib.parse.urlencode(
+        {"domain_url": f"https://{domain}", "sz": size}
+    )
     providers.append(
         ("google-favicon", f"https://www.google.com/s2/favicons?{google_query}")
     )
