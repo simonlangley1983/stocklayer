@@ -19,6 +19,7 @@ from PIL import Image, UnidentifiedImageError
 
 
 DEFAULT_SIZE = 256
+PNG_SIGNATURE = b"\x89PNG\r\n\x1a\n"
 USER_AGENT = "StockLayer logo cache (+https://stocklayer.co.uk)"
 
 
@@ -40,6 +41,9 @@ def company_slug(company: dict) -> str:
 def is_stale(path: Path, max_age_days: int) -> bool:
     if not path.exists() or max_age_days <= 0:
         return True
+    with path.open("rb") as handle:
+        if handle.read(len(PNG_SIGNATURE)) != PNG_SIGNATURE:
+            return True
     age_seconds = time.time() - path.stat().st_mtime
     return age_seconds > max_age_days * 24 * 60 * 60
 
