@@ -1,6 +1,9 @@
 name: Monitor annual reports
 
 on:
+  push:
+    branches:
+      - agent/annual-report-monitoring
   schedule:
     - cron: "20 6 * * 1-5"
   workflow_dispatch:
