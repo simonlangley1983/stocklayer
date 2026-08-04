@@ -1,0 +1,31 @@
+name: Snapshot growth confidence
+
+on:
+  schedule:
+    - cron: "45 17 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  snapshot-growth-confidence:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Snapshot StockLayer growth confidence
+        run: python scripts/generate_growth_confidence_history.py
+
+      - name: Commit growth confidence history
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update growth confidence history"
+          file_pattern: "history/growth-confidence/*.json"

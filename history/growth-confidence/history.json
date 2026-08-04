@@ -1,0 +1,3528 @@
+{
+  "generatedAt": "2026-08-04T11:56:04.477000+00:00",
+  "methodology": {
+    "name": "StockLayer growth confidence validation snapshot",
+    "scoreRange": "0-100",
+    "weights": {
+      "momentum": 0.35,
+      "annualReportHealth": 0.3,
+      "marketPosition": 0.2,
+      "riskBalance": 0.15
+    },
+    "forwardReturnWindows": [
+      "30d",
+      "90d",
+      "180d",
+      "365d"
+    ],
+    "note": "Daily score snapshots are compared with later share-price observations once enough time has elapsed."
+  },
+  "companies": {
+    "astrazeneca": {
+      "slug": "astrazeneca",
+      "companyName": "AstraZeneca",
+      "ticker": "AZN.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "astrazeneca",
+          "companyName": "AstraZeneca",
+          "ticker": "AZN.L",
+          "ftseRank": 1,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": "199.00B",
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 65,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 65,
+            "annualReportHealth": 50,
+            "marketPosition": 51,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "shell": {
+      "slug": "shell",
+      "companyName": "Shell",
+      "ticker": "SHEL.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "shell",
+          "companyName": "Shell",
+          "ticker": "SHEL.L",
+          "ftseRank": 2,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": "171.00B",
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 64,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 61,
+            "annualReportHealth": 50,
+            "marketPosition": 56,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "hsbc": {
+      "slug": "hsbc",
+      "companyName": "HSBC",
+      "ticker": "HSBA.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "hsbc",
+          "companyName": "HSBC",
+          "ticker": "HSBA.L",
+          "ftseRank": 3,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": "154.00B",
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 73,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 68,
+            "annualReportHealth": 50,
+            "marketPosition": 68,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "unilever": {
+      "slug": "unilever",
+      "companyName": "Unilever",
+      "ticker": "ULVR.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "unilever",
+          "companyName": "Unilever",
+          "ticker": "ULVR.L",
+          "ftseRank": 4,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": "111.00B",
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 70,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 66,
+            "annualReportHealth": 50,
+            "marketPosition": 64,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "relx": {
+      "slug": "relx",
+      "companyName": "RELX",
+      "ticker": "REL.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "relx",
+          "companyName": "RELX",
+          "ticker": "REL.L",
+          "ftseRank": 5,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": "73.00B",
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 64,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 64,
+            "annualReportHealth": 50,
+            "marketPosition": 51,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "british-american-tobacco": {
+      "slug": "british-american-tobacco",
+      "companyName": "British American Tobacco",
+      "ticker": "BATS.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "british-american-tobacco",
+          "companyName": "British American Tobacco",
+          "ticker": "BATS.L",
+          "ftseRank": 6,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": "70.00B",
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 64,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and market position; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 59,
+            "annualReportHealth": 50,
+            "marketPosition": 60,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "bp": {
+      "slug": "bp",
+      "companyName": "BP",
+      "ticker": "BP.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "bp",
+          "companyName": "BP",
+          "ticker": "BP.L",
+          "ftseRank": 7,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": "66.00B",
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 59,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and market position; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 52,
+            "annualReportHealth": 50,
+            "marketPosition": 60,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "gsk": {
+      "slug": "gsk",
+      "companyName": "GSK",
+      "ticker": "GSK.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "gsk",
+          "companyName": "GSK",
+          "ticker": "GSK.L",
+          "ftseRank": 8,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": "65.00B",
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 68,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and market position; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 62,
+            "annualReportHealth": 50,
+            "marketPosition": 65,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "rolls-royce": {
+      "slug": "rolls-royce",
+      "companyName": "Rolls-Royce",
+      "ticker": "RR.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "rolls-royce",
+          "companyName": "Rolls-Royce",
+          "ticker": "RR.L",
+          "ftseRank": 9,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": "60.00B",
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 56,
+          "growthConfidenceLabel": "Caution",
+          "growthConfidenceSummary": "Caution: lifted by risk balance; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 52,
+            "annualReportHealth": 50,
+            "marketPosition": 51,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "lseg": {
+      "slug": "lseg",
+      "companyName": "London Stock Exchange Group",
+      "ticker": "LSEG.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "lseg",
+          "companyName": "London Stock Exchange Group",
+          "ticker": "LSEG.L",
+          "ftseRank": 10,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": "59.00B",
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 59,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 54,
+            "annualReportHealth": 50,
+            "marketPosition": 57,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "diageo": {
+      "slug": "diageo",
+      "companyName": "Diageo",
+      "ticker": "DGE.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "diageo",
+          "companyName": "Diageo",
+          "ticker": "DGE.L",
+          "ftseRank": 11,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": "43.00B",
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 61,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 60,
+            "annualReportHealth": 50,
+            "marketPosition": 49,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "rio-tinto": {
+      "slug": "rio-tinto",
+      "companyName": "Rio Tinto",
+      "ticker": "RIO.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "rio-tinto",
+          "companyName": "Rio Tinto",
+          "ticker": "RIO.L",
+          "ftseRank": 12,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": "41.00B",
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 57,
+          "growthConfidenceLabel": "Caution",
+          "growthConfidenceSummary": "Caution: lifted by risk balance; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 51,
+            "annualReportHealth": 50,
+            "marketPosition": 57,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "national-grid": {
+      "slug": "national-grid",
+      "companyName": "National Grid",
+      "ticker": "NG.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "national-grid",
+          "companyName": "National Grid",
+          "ticker": "NG.L",
+          "ftseRank": 13,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": "40.00B",
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 59,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 57,
+            "annualReportHealth": 50,
+            "marketPosition": 49,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "barclays": {
+      "slug": "barclays",
+      "companyName": "Barclays",
+      "ticker": "BARC.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "barclays",
+          "companyName": "Barclays",
+          "ticker": "BARC.L",
+          "ftseRank": 14,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": "39.00B",
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 58,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and market position; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 50,
+            "annualReportHealth": 50,
+            "marketPosition": 61,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "compass": {
+      "slug": "compass",
+      "companyName": "Compass Group",
+      "ticker": "CPG.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "compass",
+          "companyName": "Compass Group",
+          "ticker": "CPG.L",
+          "ftseRank": 15,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": "38.00B",
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 60,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and market position; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 55,
+            "annualReportHealth": 50,
+            "marketPosition": 58,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "bae-systems": {
+      "slug": "bae-systems",
+      "companyName": "BAE Systems",
+      "ticker": "BA.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "bae-systems",
+          "companyName": "BAE Systems",
+          "ticker": "BA.L",
+          "ftseRank": 16,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": "37.00B",
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 73,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by momentum and risk balance; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 74,
+            "annualReportHealth": 50,
+            "marketPosition": 59,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "lloyds": {
+      "slug": "lloyds",
+      "companyName": "Lloyds Banking Group",
+      "ticker": "LLOY.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "lloyds",
+          "companyName": "Lloyds Banking Group",
+          "ticker": "LLOY.L",
+          "ftseRank": 17,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": "36.00B",
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 67,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 68,
+            "annualReportHealth": 50,
+            "marketPosition": 51,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "3i": {
+      "slug": "3i",
+      "companyName": "3i Group",
+      "ticker": "III.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "3i",
+          "companyName": "3i Group",
+          "ticker": "III.L",
+          "ftseRank": 18,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": "35.00B",
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 61,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 60,
+            "annualReportHealth": 50,
+            "marketPosition": 50,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "experian": {
+      "slug": "experian",
+      "companyName": "Experian",
+      "ticker": "EXPN.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "experian",
+          "companyName": "Experian",
+          "ticker": "EXPN.L",
+          "ftseRank": 19,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": "34.00B",
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 59,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 57,
+            "annualReportHealth": 50,
+            "marketPosition": 50,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "glencore": {
+      "slug": "glencore",
+      "companyName": "Glencore",
+      "ticker": "GLEN.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "glencore",
+          "companyName": "Glencore",
+          "ticker": "GLEN.L",
+          "ftseRank": 20,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": "33.00B",
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 57,
+          "growthConfidenceLabel": "Caution",
+          "growthConfidenceSummary": "Caution: lifted by risk balance and market position; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 49,
+            "annualReportHealth": 50,
+            "marketPosition": 59,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "admiral": {
+      "slug": "admiral",
+      "companyName": "Admiral Group PLC",
+      "ticker": "ADM.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "admiral",
+          "companyName": "Admiral Group PLC",
+          "ticker": "ADM.L",
+          "ftseRank": 21,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 60,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 58,
+            "annualReportHealth": 50,
+            "marketPosition": 52,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "airtel-africa": {
+      "slug": "airtel-africa",
+      "companyName": "Airtel Africa PLC",
+      "ticker": "AAF.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "airtel-africa",
+          "companyName": "Airtel Africa PLC",
+          "ticker": "AAF.L",
+          "ftseRank": 22,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 64,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 65,
+            "annualReportHealth": 50,
+            "marketPosition": 50,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "alliance-witan": {
+      "slug": "alliance-witan",
+      "companyName": "Alliance Witan PLC",
+      "ticker": "ALW.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "alliance-witan",
+          "companyName": "Alliance Witan PLC",
+          "ticker": "ALW.L",
+          "ftseRank": 23,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 67,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 66,
+            "annualReportHealth": 50,
+            "marketPosition": 57,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "anglo-american": {
+      "slug": "anglo-american",
+      "companyName": "Anglo American PLC",
+      "ticker": "AAL.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "anglo-american",
+          "companyName": "Anglo American PLC",
+          "ticker": "AAL.L",
+          "ftseRank": 24,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 67,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and market position; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 59,
+            "annualReportHealth": 50,
+            "marketPosition": 68,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "antofagasta": {
+      "slug": "antofagasta",
+      "companyName": "Antofagasta PLC",
+      "ticker": "ANTO.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "antofagasta",
+          "companyName": "Antofagasta PLC",
+          "ticker": "ANTO.L",
+          "ftseRank": 25,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 66,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and market position; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 60,
+            "annualReportHealth": 50,
+            "marketPosition": 65,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "ashtead": {
+      "slug": "ashtead",
+      "companyName": "Ashtead Group PLC",
+      "ticker": "AHT.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "ashtead",
+          "companyName": "Ashtead Group PLC",
+          "ticker": "AHT.L",
+          "ftseRank": 26,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 60,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 58,
+            "annualReportHealth": 50,
+            "marketPosition": 52,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "associated-british-foods": {
+      "slug": "associated-british-foods",
+      "companyName": "Associated British Foods PLC",
+      "ticker": "ABF.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "associated-british-foods",
+          "companyName": "Associated British Foods PLC",
+          "ticker": "ABF.L",
+          "ftseRank": 27,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 52,
+          "growthConfidenceLabel": "Caution",
+          "growthConfidenceSummary": "Caution: lifted by risk balance; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 48,
+            "annualReportHealth": 50,
+            "marketPosition": 48,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "auto-trader": {
+      "slug": "auto-trader",
+      "companyName": "Auto Trader Group PLC",
+      "ticker": "AUTO.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "auto-trader",
+          "companyName": "Auto Trader Group PLC",
+          "ticker": "AUTO.L",
+          "ftseRank": 28,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 70,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by momentum and risk balance; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 71,
+            "annualReportHealth": 50,
+            "marketPosition": 54,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "aviva": {
+      "slug": "aviva",
+      "companyName": "Aviva PLC",
+      "ticker": "AV.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "aviva",
+          "companyName": "Aviva PLC",
+          "ticker": "AV.L",
+          "ftseRank": 29,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 63,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 60,
+            "annualReportHealth": 50,
+            "marketPosition": 55,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "barratt-redrow": {
+      "slug": "barratt-redrow",
+      "companyName": "Barratt Redrow PLC",
+      "ticker": "BTRW.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "barratt-redrow",
+          "companyName": "Barratt Redrow PLC",
+          "ticker": "BTRW.L",
+          "ftseRank": 30,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 62,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 60,
+            "annualReportHealth": 50,
+            "marketPosition": 52,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "beazley": {
+      "slug": "beazley",
+      "companyName": "Beazley PLC",
+      "ticker": "BEZ.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "beazley",
+          "companyName": "Beazley PLC",
+          "ticker": "BEZ.L",
+          "ftseRank": 31,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 67,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by momentum and risk balance; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 70,
+            "annualReportHealth": 50,
+            "marketPosition": 48,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "berkeley": {
+      "slug": "berkeley",
+      "companyName": "Berkeley Group Holdings PLC",
+      "ticker": "BKG.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "berkeley",
+          "companyName": "Berkeley Group Holdings PLC",
+          "ticker": "BKG.L",
+          "ftseRank": 32,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 60,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and market position; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 52,
+            "annualReportHealth": 50,
+            "marketPosition": 63,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "british-land": {
+      "slug": "british-land",
+      "companyName": "British Land Co PLC",
+      "ticker": "BLND.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "british-land",
+          "companyName": "British Land Co PLC",
+          "ticker": "BLND.L",
+          "ftseRank": 33,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 66,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 65,
+            "annualReportHealth": 50,
+            "marketPosition": 55,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "bt": {
+      "slug": "bt",
+      "companyName": "BT Group PLC",
+      "ticker": "BT-A.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "bt",
+          "companyName": "BT Group PLC",
+          "ticker": "BT-A.L",
+          "ftseRank": 34,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 63,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and market position; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 55,
+            "annualReportHealth": 50,
+            "marketPosition": 64,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "bunzl": {
+      "slug": "bunzl",
+      "companyName": "Bunzl PLC",
+      "ticker": "BNZL.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "bunzl",
+          "companyName": "Bunzl PLC",
+          "ticker": "BNZL.L",
+          "ftseRank": 35,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 57,
+          "growthConfidenceLabel": "Caution",
+          "growthConfidenceSummary": "Caution: lifted by risk balance; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 52,
+            "annualReportHealth": 50,
+            "marketPosition": 53,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "centrica": {
+      "slug": "centrica",
+      "companyName": "Centrica PLC",
+      "ticker": "CNA.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "centrica",
+          "companyName": "Centrica PLC",
+          "ticker": "CNA.L",
+          "ftseRank": 36,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 52,
+          "growthConfidenceLabel": "Caution",
+          "growthConfidenceSummary": "Caution: lifted by risk balance; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 45,
+            "annualReportHealth": 50,
+            "marketPosition": 53,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "coca-cola-hbc": {
+      "slug": "coca-cola-hbc",
+      "companyName": "Coca-Cola HBC AG",
+      "ticker": "CCH.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "coca-cola-hbc",
+          "companyName": "Coca-Cola HBC AG",
+          "ticker": "CCH.L",
+          "ftseRank": 37,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 69,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by momentum and risk balance; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 72,
+            "annualReportHealth": 50,
+            "marketPosition": 50,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "convatec": {
+      "slug": "convatec",
+      "companyName": "Convatec Group PLC",
+      "ticker": "CTEC.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "convatec",
+          "companyName": "Convatec Group PLC",
+          "ticker": "CTEC.L",
+          "ftseRank": 38,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 60,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and market position; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 52,
+            "annualReportHealth": 50,
+            "marketPosition": 63,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "croda-international": {
+      "slug": "croda-international",
+      "companyName": "Croda International PLC",
+      "ticker": "CRDA.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "croda-international",
+          "companyName": "Croda International PLC",
+          "ticker": "CRDA.L",
+          "ftseRank": 39,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 70,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by momentum and risk balance; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 70,
+            "annualReportHealth": 50,
+            "marketPosition": 56,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "dcc": {
+      "slug": "dcc",
+      "companyName": "DCC PLC",
+      "ticker": "DCC.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "dcc",
+          "companyName": "DCC PLC",
+          "ticker": "DCC.L",
+          "ftseRank": 40,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 62,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and market position; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 56,
+            "annualReportHealth": 50,
+            "marketPosition": 60,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "diploma": {
+      "slug": "diploma",
+      "companyName": "Diploma PLC",
+      "ticker": "DPLM.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "diploma",
+          "companyName": "Diploma PLC",
+          "ticker": "DPLM.L",
+          "ftseRank": 41,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 70,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 66,
+            "annualReportHealth": 50,
+            "marketPosition": 64,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "easyjet": {
+      "slug": "easyjet",
+      "companyName": "EasyJet PLC",
+      "ticker": "EZJ.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "easyjet",
+          "companyName": "EasyJet PLC",
+          "ticker": "EZJ.L",
+          "ftseRank": 42,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 60,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 55,
+            "annualReportHealth": 50,
+            "marketPosition": 57,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "endeavour-mining": {
+      "slug": "endeavour-mining",
+      "companyName": "Endeavour Mining PLC",
+      "ticker": "EDV.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "endeavour-mining",
+          "companyName": "Endeavour Mining PLC",
+          "ticker": "EDV.L",
+          "ftseRank": 43,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 63,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 61,
+            "annualReportHealth": 50,
+            "marketPosition": 54,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "entain": {
+      "slug": "entain",
+      "companyName": "Entain PLC",
+      "ticker": "ENT.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "entain",
+          "companyName": "Entain PLC",
+          "ticker": "ENT.L",
+          "ftseRank": 44,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 56,
+          "growthConfidenceLabel": "Caution",
+          "growthConfidenceSummary": "Caution: lifted by risk balance; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 53,
+            "annualReportHealth": 50,
+            "marketPosition": 49,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "fandc-investment-trust": {
+      "slug": "fandc-investment-trust",
+      "companyName": "F&C Investment Trust PLC",
+      "ticker": "FCIT.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "fandc-investment-trust",
+          "companyName": "F&C Investment Trust PLC",
+          "ticker": "FCIT.L",
+          "ftseRank": 45,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 63,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 59,
+            "annualReportHealth": 50,
+            "marketPosition": 59,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "fresnillo": {
+      "slug": "fresnillo",
+      "companyName": "Fresnillo PLC",
+      "ticker": "FRES.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "fresnillo",
+          "companyName": "Fresnillo PLC",
+          "ticker": "FRES.L",
+          "ftseRank": 46,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 60,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 57,
+            "annualReportHealth": 50,
+            "marketPosition": 54,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "games-workshop": {
+      "slug": "games-workshop",
+      "companyName": "Games Workshop Group PLC",
+      "ticker": "GAW.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "games-workshop",
+          "companyName": "Games Workshop Group PLC",
+          "ticker": "GAW.L",
+          "ftseRank": 47,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 67,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 64,
+            "annualReportHealth": 50,
+            "marketPosition": 59,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "haleon": {
+      "slug": "haleon",
+      "companyName": "Haleon PLC",
+      "ticker": "HLN.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "haleon",
+          "companyName": "Haleon PLC",
+          "ticker": "HLN.L",
+          "ftseRank": 48,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 58,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and market position; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 48,
+            "annualReportHealth": 50,
+            "marketPosition": 63,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "halma": {
+      "slug": "halma",
+      "companyName": "Halma PLC",
+      "ticker": "HLMA.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "halma",
+          "companyName": "Halma PLC",
+          "ticker": "HLMA.L",
+          "ftseRank": 49,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 62,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 58,
+            "annualReportHealth": 50,
+            "marketPosition": 57,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "hargreaves-lansdown": {
+      "slug": "hargreaves-lansdown",
+      "companyName": "Hargreaves Lansdown PLC",
+      "ticker": "HL.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "hargreaves-lansdown",
+          "companyName": "Hargreaves Lansdown PLC",
+          "ticker": "HL.L",
+          "ftseRank": 50,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 59,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and market position; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 47,
+            "annualReportHealth": 50,
+            "marketPosition": 69,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "hikma-pharmaceuticals": {
+      "slug": "hikma-pharmaceuticals",
+      "companyName": "Hikma Pharmaceuticals PLC",
+      "ticker": "HIK.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "hikma-pharmaceuticals",
+          "companyName": "Hikma Pharmaceuticals PLC",
+          "ticker": "HIK.L",
+          "ftseRank": 51,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 58,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 56,
+            "annualReportHealth": 50,
+            "marketPosition": 49,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "hiscox": {
+      "slug": "hiscox",
+      "companyName": "Hiscox Ltd",
+      "ticker": "HSX.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "hiscox",
+          "companyName": "Hiscox Ltd",
+          "ticker": "HSX.L",
+          "ftseRank": 52,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 67,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and market position; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 62,
+            "annualReportHealth": 50,
+            "marketPosition": 64,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "howden-joinery": {
+      "slug": "howden-joinery",
+      "companyName": "Howden Joinery Group PLC",
+      "ticker": "HWDN.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "howden-joinery",
+          "companyName": "Howden Joinery Group PLC",
+          "ticker": "HWDN.L",
+          "ftseRank": 53,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 63,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 61,
+            "annualReportHealth": 50,
+            "marketPosition": 54,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "imi": {
+      "slug": "imi",
+      "companyName": "IMI PLC",
+      "ticker": "IMI.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "imi",
+          "companyName": "IMI PLC",
+          "ticker": "IMI.L",
+          "ftseRank": 54,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 63,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 59,
+            "annualReportHealth": 50,
+            "marketPosition": 59,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "imperial-brands": {
+      "slug": "imperial-brands",
+      "companyName": "Imperial Brands PLC",
+      "ticker": "IMB.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "imperial-brands",
+          "companyName": "Imperial Brands PLC",
+          "ticker": "IMB.L",
+          "ftseRank": 55,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 60,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and market position; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 54,
+            "annualReportHealth": 50,
+            "marketPosition": 60,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "informa": {
+      "slug": "informa",
+      "companyName": "Informa PLC",
+      "ticker": "INF.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "informa",
+          "companyName": "Informa PLC",
+          "ticker": "INF.L",
+          "ftseRank": 56,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 67,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by momentum and risk balance; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 70,
+            "annualReportHealth": 50,
+            "marketPosition": 48,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "intercontinental-hotels": {
+      "slug": "intercontinental-hotels",
+      "companyName": "InterContinental Hotels Group PLC",
+      "ticker": "IHG.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "intercontinental-hotels",
+          "companyName": "InterContinental Hotels Group PLC",
+          "ticker": "IHG.L",
+          "ftseRank": 57,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 71,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by momentum and risk balance; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 71,
+            "annualReportHealth": 50,
+            "marketPosition": 57,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "intermediate-capital": {
+      "slug": "intermediate-capital",
+      "companyName": "Intermediate Capital Group PLC",
+      "ticker": "ICG.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "intermediate-capital",
+          "companyName": "Intermediate Capital Group PLC",
+          "ticker": "ICG.L",
+          "ftseRank": 58,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 65,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 63,
+            "annualReportHealth": 50,
+            "marketPosition": 56,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "intertek": {
+      "slug": "intertek",
+      "companyName": "Intertek Group PLC",
+      "ticker": "ITRK.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "intertek",
+          "companyName": "Intertek Group PLC",
+          "ticker": "ITRK.L",
+          "ftseRank": 59,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 67,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 64,
+            "annualReportHealth": 50,
+            "marketPosition": 60,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "international-consolidated-airlines": {
+      "slug": "international-consolidated-airlines",
+      "companyName": "International Consolidated Airlines Group SA",
+      "ticker": "IAG.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "international-consolidated-airlines",
+          "companyName": "International Consolidated Airlines Group SA",
+          "ticker": "IAG.L",
+          "ftseRank": 60,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 59,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and market position; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 53,
+            "annualReportHealth": 50,
+            "marketPosition": 58,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "jd-sports-fashion": {
+      "slug": "jd-sports-fashion",
+      "companyName": "JD Sports Fashion PLC",
+      "ticker": "JD.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "jd-sports-fashion",
+          "companyName": "JD Sports Fashion PLC",
+          "ticker": "JD.L",
+          "ftseRank": 61,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 57,
+          "growthConfidenceLabel": "Caution",
+          "growthConfidenceSummary": "Caution: lifted by risk balance; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 52,
+            "annualReportHealth": 50,
+            "marketPosition": 55,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "kingfisher": {
+      "slug": "kingfisher",
+      "companyName": "Kingfisher PLC",
+      "ticker": "KGF.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "kingfisher",
+          "companyName": "Kingfisher PLC",
+          "ticker": "KGF.L",
+          "ftseRank": 62,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 58,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and market position; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 52,
+            "annualReportHealth": 50,
+            "marketPosition": 58,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "land-securities": {
+      "slug": "land-securities",
+      "companyName": "Land Securities Group PLC",
+      "ticker": "LAND.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "land-securities",
+          "companyName": "Land Securities Group PLC",
+          "ticker": "LAND.L",
+          "ftseRank": 63,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 67,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 66,
+            "annualReportHealth": 50,
+            "marketPosition": 56,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "legal-and-general": {
+      "slug": "legal-and-general",
+      "companyName": "Legal & General Group PLC",
+      "ticker": "LGEN.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "legal-and-general",
+          "companyName": "Legal & General Group PLC",
+          "ticker": "LGEN.L",
+          "ftseRank": 64,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 65,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and market position; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 56,
+            "annualReportHealth": 50,
+            "marketPosition": 68,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "londonmetric-property": {
+      "slug": "londonmetric-property",
+      "companyName": "LondonMetric Property PLC",
+      "ticker": "LMP.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "londonmetric-property",
+          "companyName": "LondonMetric Property PLC",
+          "ticker": "LMP.L",
+          "ftseRank": 65,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 64,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and market position; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 56,
+            "annualReportHealth": 50,
+            "marketPosition": 66,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "mandg": {
+      "slug": "mandg",
+      "companyName": "M&G PLC",
+      "ticker": "MNG.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "mandg",
+          "companyName": "M&G PLC",
+          "ticker": "MNG.L",
+          "ftseRank": 66,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 65,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and market position; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 60,
+            "annualReportHealth": 50,
+            "marketPosition": 61,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "marks-and-spencer": {
+      "slug": "marks-and-spencer",
+      "companyName": "Marks & Spencer Group PLC",
+      "ticker": "MKS.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "marks-and-spencer",
+          "companyName": "Marks & Spencer Group PLC",
+          "ticker": "MKS.L",
+          "ftseRank": 67,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 62,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and market position; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 52,
+            "annualReportHealth": 50,
+            "marketPosition": 67,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "melrose-industries": {
+      "slug": "melrose-industries",
+      "companyName": "Melrose Industries PLC",
+      "ticker": "MRO.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "melrose-industries",
+          "companyName": "Melrose Industries PLC",
+          "ticker": "MRO.L",
+          "ftseRank": 68,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 57,
+          "growthConfidenceLabel": "Caution",
+          "growthConfidenceSummary": "Caution: lifted by risk balance and market position; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 50,
+            "annualReportHealth": 50,
+            "marketPosition": 58,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "mondi": {
+      "slug": "mondi",
+      "companyName": "Mondi PLC",
+      "ticker": "MNDI.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "mondi",
+          "companyName": "Mondi PLC",
+          "ticker": "MNDI.L",
+          "ftseRank": 69,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 63,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 60,
+            "annualReportHealth": 50,
+            "marketPosition": 55,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "natwest": {
+      "slug": "natwest",
+      "companyName": "NatWest Group PLC",
+      "ticker": "NWG.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "natwest",
+          "companyName": "NatWest Group PLC",
+          "ticker": "NWG.L",
+          "ftseRank": 70,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 58,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 55,
+            "annualReportHealth": 50,
+            "marketPosition": 52,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "next": {
+      "slug": "next",
+      "companyName": "Next PLC",
+      "ticker": "NXT.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "next",
+          "companyName": "Next PLC",
+          "ticker": "NXT.L",
+          "ftseRank": 71,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 67,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 67,
+            "annualReportHealth": 50,
+            "marketPosition": 55,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "pearson": {
+      "slug": "pearson",
+      "companyName": "Pearson PLC",
+      "ticker": "PSON.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "pearson",
+          "companyName": "Pearson PLC",
+          "ticker": "PSON.L",
+          "ftseRank": 72,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 55,
+          "growthConfidenceLabel": "Caution",
+          "growthConfidenceSummary": "Caution: lifted by risk balance and market position; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 46,
+            "annualReportHealth": 50,
+            "marketPosition": 60,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "pershing-square": {
+      "slug": "pershing-square",
+      "companyName": "Pershing Square Holdings Ltd",
+      "ticker": "PSH.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "pershing-square",
+          "companyName": "Pershing Square Holdings Ltd",
+          "ticker": "PSH.L",
+          "ftseRank": 73,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 59,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 56,
+            "annualReportHealth": 50,
+            "marketPosition": 52,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "persimmon": {
+      "slug": "persimmon",
+      "companyName": "Persimmon PLC",
+      "ticker": "PSN.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "persimmon",
+          "companyName": "Persimmon PLC",
+          "ticker": "PSN.L",
+          "ftseRank": 74,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 69,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and market position; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 64,
+            "annualReportHealth": 50,
+            "marketPosition": 66,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "phoenix": {
+      "slug": "phoenix",
+      "companyName": "Phoenix Group Holdings PLC",
+      "ticker": "PHNX.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "phoenix",
+          "companyName": "Phoenix Group Holdings PLC",
+          "ticker": "PHNX.L",
+          "ftseRank": 75,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 58,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and market position; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 48,
+            "annualReportHealth": 50,
+            "marketPosition": 63,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "prudential": {
+      "slug": "prudential",
+      "companyName": "Prudential PLC",
+      "ticker": "PRU.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "prudential",
+          "companyName": "Prudential PLC",
+          "ticker": "PRU.L",
+          "ftseRank": 76,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 62,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 61,
+            "annualReportHealth": 50,
+            "marketPosition": 50,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "reckitt-benckiser": {
+      "slug": "reckitt-benckiser",
+      "companyName": "Reckitt Benckiser Group PLC",
+      "ticker": "RKT.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "reckitt-benckiser",
+          "companyName": "Reckitt Benckiser Group PLC",
+          "ticker": "RKT.L",
+          "ftseRank": 77,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 66,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and market position; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 60,
+            "annualReportHealth": 50,
+            "marketPosition": 63,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "rentokil-initial": {
+      "slug": "rentokil-initial",
+      "companyName": "Rentokil Initial PLC",
+      "ticker": "RTO.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "rentokil-initial",
+          "companyName": "Rentokil Initial PLC",
+          "ticker": "RTO.L",
+          "ftseRank": 78,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 69,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 66,
+            "annualReportHealth": 50,
+            "marketPosition": 61,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "rightmove": {
+      "slug": "rightmove",
+      "companyName": "Rightmove PLC",
+      "ticker": "RMV.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "rightmove",
+          "companyName": "Rightmove PLC",
+          "ticker": "RMV.L",
+          "ftseRank": 79,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 66,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 61,
+            "annualReportHealth": 50,
+            "marketPosition": 61,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "sage": {
+      "slug": "sage",
+      "companyName": "Sage Group PLC",
+      "ticker": "SGE.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "sage",
+          "companyName": "Sage Group PLC",
+          "ticker": "SGE.L",
+          "ftseRank": 80,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 73,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 68,
+            "annualReportHealth": 50,
+            "marketPosition": 68,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "j-sainsbury": {
+      "slug": "j-sainsbury",
+      "companyName": "J Sainsbury PLC",
+      "ticker": "SBRY.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "j-sainsbury",
+          "companyName": "J Sainsbury PLC",
+          "ticker": "SBRY.L",
+          "ftseRank": 81,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 60,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and market position; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 49,
+            "annualReportHealth": 50,
+            "marketPosition": 69,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "schroders": {
+      "slug": "schroders",
+      "companyName": "Schroders PLC",
+      "ticker": "SDR.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "schroders",
+          "companyName": "Schroders PLC",
+          "ticker": "SDR.L",
+          "ftseRank": 82,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 59,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 56,
+            "annualReportHealth": 50,
+            "marketPosition": 53,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "scottish-mortgage-investment-trust": {
+      "slug": "scottish-mortgage-investment-trust",
+      "companyName": "Scottish Mortgage Investment Trust PLC",
+      "ticker": "SMT.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "scottish-mortgage-investment-trust",
+          "companyName": "Scottish Mortgage Investment Trust PLC",
+          "ticker": "SMT.L",
+          "ftseRank": 83,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 64,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 62,
+            "annualReportHealth": 50,
+            "marketPosition": 55,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "segro": {
+      "slug": "segro",
+      "companyName": "Segro PLC",
+      "ticker": "SGRO.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "segro",
+          "companyName": "Segro PLC",
+          "ticker": "SGRO.L",
+          "ftseRank": 84,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 70,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 66,
+            "annualReportHealth": 50,
+            "marketPosition": 64,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "severn-trent": {
+      "slug": "severn-trent",
+      "companyName": "Severn Trent PLC",
+      "ticker": "SVT.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "severn-trent",
+          "companyName": "Severn Trent PLC",
+          "ticker": "SVT.L",
+          "ftseRank": 85,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 57,
+          "growthConfidenceLabel": "Caution",
+          "growthConfidenceSummary": "Caution: lifted by risk balance; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 51,
+            "annualReportHealth": 50,
+            "marketPosition": 55,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "smith-and-nephew": {
+      "slug": "smith-and-nephew",
+      "companyName": "Smith & Nephew PLC",
+      "ticker": "SN.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "smith-and-nephew",
+          "companyName": "Smith & Nephew PLC",
+          "ticker": "SN.L",
+          "ftseRank": 86,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 72,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by momentum and risk balance; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 73,
+            "annualReportHealth": 50,
+            "marketPosition": 57,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "ds-smith": {
+      "slug": "ds-smith",
+      "companyName": "DS Smith PLC",
+      "ticker": "SMDS.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "ds-smith",
+          "companyName": "DS Smith PLC",
+          "ticker": "SMDS.L",
+          "ftseRank": 87,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 64,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and market position; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 56,
+            "annualReportHealth": 50,
+            "marketPosition": 65,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "smiths": {
+      "slug": "smiths",
+      "companyName": "Smiths Group PLC",
+      "ticker": "SMIN.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "smiths",
+          "companyName": "Smiths Group PLC",
+          "ticker": "SMIN.L",
+          "ftseRank": 88,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 68,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 69,
+            "annualReportHealth": 50,
+            "marketPosition": 52,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "spirax": {
+      "slug": "spirax",
+      "companyName": "Spirax Group PLC",
+      "ticker": "SPX.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "spirax",
+          "companyName": "Spirax Group PLC",
+          "ticker": "SPX.L",
+          "ftseRank": 89,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 67,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 68,
+            "annualReportHealth": 50,
+            "marketPosition": 51,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "sse": {
+      "slug": "sse",
+      "companyName": "SSE PLC",
+      "ticker": "SSE.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "sse",
+          "companyName": "SSE PLC",
+          "ticker": "SSE.L",
+          "ftseRank": 90,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 65,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 66,
+            "annualReportHealth": 50,
+            "marketPosition": 49,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "st-jamess-place": {
+      "slug": "st-jamess-place",
+      "companyName": "St James's Place PLC",
+      "ticker": "STJ.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "st-jamess-place",
+          "companyName": "St James's Place PLC",
+          "ticker": "STJ.L",
+          "ftseRank": 91,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 59,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 55,
+            "annualReportHealth": 50,
+            "marketPosition": 55,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "standard-chartered": {
+      "slug": "standard-chartered",
+      "companyName": "Standard Chartered PLC",
+      "ticker": "STAN.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "standard-chartered",
+          "companyName": "Standard Chartered PLC",
+          "ticker": "STAN.L",
+          "ftseRank": 92,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 67,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 63,
+            "annualReportHealth": 50,
+            "marketPosition": 62,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "taylor-wimpey": {
+      "slug": "taylor-wimpey",
+      "companyName": "Taylor Wimpey PLC",
+      "ticker": "TW.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "taylor-wimpey",
+          "companyName": "Taylor Wimpey PLC",
+          "ticker": "TW.L",
+          "ftseRank": 93,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 68,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 63,
+            "annualReportHealth": 50,
+            "marketPosition": 63,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "tesco": {
+      "slug": "tesco",
+      "companyName": "Tesco PLC",
+      "ticker": "TSCO.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "tesco",
+          "companyName": "Tesco PLC",
+          "ticker": "TSCO.L",
+          "ftseRank": 94,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 68,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 64,
+            "annualReportHealth": 50,
+            "marketPosition": 62,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "unite": {
+      "slug": "unite",
+      "companyName": "Unite Group PLC",
+      "ticker": "UTG.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "unite",
+          "companyName": "Unite Group PLC",
+          "ticker": "UTG.L",
+          "ftseRank": 95,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 60,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and market position; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 48,
+            "annualReportHealth": 50,
+            "marketPosition": 69,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "united-utilities": {
+      "slug": "united-utilities",
+      "companyName": "United Utilities Group PLC",
+      "ticker": "UU.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "united-utilities",
+          "companyName": "United Utilities Group PLC",
+          "ticker": "UU.L",
+          "ftseRank": 96,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 54,
+          "growthConfidenceLabel": "Caution",
+          "growthConfidenceSummary": "Caution: lifted by risk balance and market position; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 46,
+            "annualReportHealth": 50,
+            "marketPosition": 58,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "vodafone": {
+      "slug": "vodafone",
+      "companyName": "Vodafone Group PLC",
+      "ticker": "VOD.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "vodafone",
+          "companyName": "Vodafone Group PLC",
+          "ticker": "VOD.L",
+          "ftseRank": 97,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 59,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and market position; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 51,
+            "annualReportHealth": 50,
+            "marketPosition": 62,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "weir": {
+      "slug": "weir",
+      "companyName": "Weir Group PLC",
+      "ticker": "WEIR.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "weir",
+          "companyName": "Weir Group PLC",
+          "ticker": "WEIR.L",
+          "ftseRank": 98,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 69,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and market position; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 62,
+            "annualReportHealth": 50,
+            "marketPosition": 69,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "whitbread": {
+      "slug": "whitbread",
+      "companyName": "Whitbread PLC",
+      "ticker": "WTB.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "whitbread",
+          "companyName": "Whitbread PLC",
+          "ticker": "WTB.L",
+          "ftseRank": 99,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 66,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 65,
+            "annualReportHealth": 50,
+            "marketPosition": 56,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    },
+    "wpp": {
+      "slug": "wpp",
+      "companyName": "WPP PLC",
+      "ticker": "WPP.L",
+      "observations": [
+        {
+          "date": "2026-08-04",
+          "slug": "wpp",
+          "companyName": "WPP PLC",
+          "ticker": "WPP.L",
+          "ftseRank": 100,
+          "sharePrice": null,
+          "sharePriceDate": null,
+          "marketCap": null,
+          "marketCapValue": null,
+          "globalMarketCapRank": null,
+          "growthConfidence": 60,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by risk balance and market position; annual reports are neutral pending analysis.",
+          "components": {
+            "momentum": 53,
+            "annualReportHealth": 50,
+            "marketPosition": 61,
+            "riskBalance": 70,
+            "annualReportIntelLoaded": false,
+            "annualReportRecency": {
+              "latestYear": 2025,
+              "age": 1,
+              "confidence": 0.82,
+              "label": "2025 report"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "validationWindows": [
+    "30d",
+    "90d",
+    "180d",
+    "365d"
+  ]
+}
