@@ -1,0 +1,31 @@
+name: Monitor annual reports
+
+on:
+  schedule:
+    - cron: "20 6 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  monitor-annual-reports:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Monitor annual report source pages
+        run: python scripts/monitor_annual_reports.py
+
+      - name: Commit annual report monitoring updates
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update annual report monitoring"
+          file_pattern: "annual-reports/*.json"
