@@ -1,6 +1,9 @@
 name: Monitor annual reports
 
 on:
+  push:
+    branches:
+      - agent/annual-report-monitoring
   schedule:
     - cron: "20 6 * * 1-5"
   workflow_dispatch:
@@ -25,7 +28,14 @@ jobs:
         run: python scripts/monitor_annual_reports.py
 
       - name: Commit annual report monitoring updates
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "Update annual report monitoring"
-          file_pattern: "annual-reports/*.json"
+        run: |
+          if git diff --quiet -- annual-reports/*.json; then
+            echo "No annual report monitoring changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add annual-reports/*.json
+          git commit -m "Update annual report monitoring"
+          git pull --rebase origin "$GITHUB_REF_NAME"
+          git push origin "HEAD:$GITHUB_REF_NAME"
