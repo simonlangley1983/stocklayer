@@ -2437,6 +2437,75 @@
         }
       ],
       "changeFromPreviousScoredDay": -12.3
+    },
+    {
+      "date": "2026-08-16",
+      "dailyScore": 41.5,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 46.7,
+      "confidence": 30.8,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 2,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 1,
+      "dispersion": 0.5658,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "cf78bb1d7a2d9689",
+          "storyClusterId": "story-001",
+          "title": "The Manufacturers Life Insurance Company Reduces Stock Position in Fermi Inc . $FRMI",
+          "url": "https://www.tickerreport.com/banking-finance/13545363/the-manufacturers-life-insurance-company-reduces-stock-position-in-fermi-inc-frmi.html",
+          "source": "tickerreport.com",
+          "publishedAt": "2026-08-16T09:45:00Z",
+          "polarity": -0.9055,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "fbcb990a409daf04",
+          "storyClusterId": "story-002",
+          "title": "M & G plc ( LON : MNG ) Receives GBX 677 . 86 Average PT from Brokerages",
+          "url": "https://www.themarketsdaily.com/2026/08/16/mg-plc-lonmng-receives-gbx-677-86-average-pt-from-brokerages.html",
+          "source": "themarketsdaily.com",
+          "publishedAt": "2026-08-16T10:00:00Z",
+          "polarity": 0.2261,
+          "sentiment": "Positive",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "cf78bb1d7a2d9689",
+            "fbcb990a409daf04"
+          ]
+        },
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 30.8",
+          "evidenceArticleIds": [
+            "cf78bb1d7a2d9689",
+            "fbcb990a409daf04"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 5.9
     }
   ]
 }

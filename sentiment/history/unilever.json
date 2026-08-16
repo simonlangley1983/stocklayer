@@ -2403,6 +2403,128 @@
         }
       ],
       "changeFromPreviousScoredDay": 23.3
+    },
+    {
+      "date": "2026-08-16",
+      "dailyScore": 32.8,
+      "dailyLabel": "Negative",
+      "rollingScore": 50.2,
+      "confidence": 60.0,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 9,
+      "eligibleArticleCount": 9,
+      "storyCount": 9,
+      "effectiveStoryCount": 9.0,
+      "sourceCount": 9,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 3,
+      "negativeStoryCount": 5,
+      "dispersion": 0.5745,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "835438807a9bf36d",
+          "storyClusterId": "story-007",
+          "title": "Market recap : Top 5 firms lose Rs 1 lakh crore in market value ; TCS , Reliance suffer biggest hit",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/market-recap-top-5-firms-lose-rs-1-lakh-crore-in-market-value-tcs-reliance-suffer-biggest-hit/articleshow/133273691.cms",
+          "source": "timesofindia.indiatimes.com",
+          "publishedAt": "2026-08-16T12:00:00Z",
+          "polarity": -0.9626,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "b2df5685950c8e3b",
+          "storyClusterId": "story-004",
+          "title": "5 of top 10 valued firms lose Rs 1 lakh crore in market value last week",
+          "url": "https://www.prokerala.com/news/articles/a1800984.html",
+          "source": "prokerala.com",
+          "publishedAt": "2026-08-16T10:15:00Z",
+          "polarity": -0.957,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "2df3a0a048d9d3a2",
+          "storyClusterId": "story-006",
+          "title": "TCS , Reliance Lead Rs 1 Lakh Crore Market Cap Drop for Top Indian Firms",
+          "url": "https://www.rediff.com/business/report/tcs-reliance-lead-rs-1-lakh-crore-market-cap-drop-for-top-indian-firms/20260816.htm",
+          "source": "rediff.com",
+          "publishedAt": "2026-08-16T10:30:00Z",
+          "polarity": -0.9545,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "fdfa4a127697ccf5",
+          "storyClusterId": "story-001",
+          "title": "Mcap : 5 of top - 10 most valued firms lose ₹1 lakh cr ; TCS drops most",
+          "url": "https://www.thehindubusinessline.com/markets/mcap-5-of-top-10-most-valued-firms-lose-1-lakh-cr-tcs-drops-most/article71352121.ece",
+          "source": "thehindubusinessline.com",
+          "publishedAt": "2026-08-16T07:15:00Z",
+          "polarity": -0.9079,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "c00f61c2ddca641d",
+          "storyClusterId": "story-008",
+          "title": "IIM Bangalore incubator tops $7 billion in startup value as it turns to AI",
+          "url": "https://www.business-standard.com/companies/start-ups/iim-bangalore-incubator-tops-7-billion-in-startup-value-as-it-turns-to-ai-126081600587_1.html",
+          "source": "business-standard.com",
+          "publishedAt": "2026-08-16T15:00:00Z",
+          "polarity": 0.7589,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "sentiment_drop",
+          "direction": "negative",
+          "severity": "high",
+          "status": "calculated",
+          "detail": "Daily score decreased by 35.6 points",
+          "evidenceArticleIds": [
+            "835438807a9bf36d",
+            "b2df5685950c8e3b",
+            "2df3a0a048d9d3a2",
+            "fdfa4a127697ccf5",
+            "c00f61c2ddca641d"
+          ]
+        },
+        {
+          "type": "bad_press",
+          "direction": "negative",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Daily press score is 32.8",
+          "evidenceArticleIds": [
+            "835438807a9bf36d",
+            "b2df5685950c8e3b",
+            "2df3a0a048d9d3a2",
+            "fdfa4a127697ccf5",
+            "c00f61c2ddca641d"
+          ]
+        },
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "835438807a9bf36d",
+            "b2df5685950c8e3b",
+            "2df3a0a048d9d3a2",
+            "fdfa4a127697ccf5",
+            "c00f61c2ddca641d"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -35.6
     }
   ]
 }
