@@ -5,15 +5,21 @@ import unittest
 from argparse import Namespace
 from datetime import date, timedelta
 from pathlib import Path
+from unittest.mock import call, patch
 from zoneinfo import ZoneInfo
+
+import requests
 
 from automation.news_sentiment import (
     KeywordTestScorer,
+    GdeltProvider,
     canonical_url,
     cluster_articles,
+    day_bounds,
     event_flags,
     fetch_window_adaptive,
     load_event_rules,
+    missing_day_windows,
     narrative_flags,
     partition_candidates_by_day,
     processing_days,
@@ -220,6 +226,55 @@ class NewsSentimentTests(unittest.TestCase):
         days = processing_days(Namespace(date=None, backfill_days=30))
         self.assertEqual(len(days), 30)
         self.assertEqual(days[-1] - days[0], timedelta(days=29))
+
+    def test_resume_groups_only_missing_consecutive_days(self) -> None:
+        days = [date(2026, 8, 10) + timedelta(days=offset) for offset in range(6)]
+        observations = [
+            {"date": "2026-08-10"},
+            {"date": "2026-08-12"},
+            {"date": "2026-08-15"},
+        ]
+        missing, windows = missing_day_windows(days, observations, max_window_days=2)
+        self.assertEqual(
+            missing,
+            [date(2026, 8, 11), date(2026, 8, 13), date(2026, 8, 14)],
+        )
+        self.assertEqual(
+            windows,
+            [
+                (date(2026, 8, 11), date(2026, 8, 12)),
+                (date(2026, 8, 13), date(2026, 8, 15)),
+            ],
+        )
+
+    @patch("automation.news_sentiment.time.sleep")
+    def test_gdelt_rate_limit_is_retried(self, sleep) -> None:
+        limited = requests.Response()
+        limited.status_code = 429
+        limited.headers["Retry-After"] = "20"
+        limited.url = "https://provider.test/limited"
+        success = requests.Response()
+        success.status_code = 200
+        success._content = b'{"articles": []}'
+        success.url = "https://provider.test/success"
+
+        class FakeSession:
+            def __init__(self) -> None:
+                self.responses = [limited, success]
+
+            def get(self, *args, **kwargs):
+                return self.responses.pop(0)
+
+        provider = GdeltProvider(request_delay=0, rate_limit_retries=2)
+        provider.session = FakeSession()
+        result = provider.fetch(
+            self.company,
+            day_bounds(date(2026, 8, 15))[0],
+            day_bounds(date(2026, 8, 16))[0],
+        )
+        self.assertEqual(result, [])
+        self.assertEqual(provider.request_count, 2)
+        self.assertIn(call(20.0), sleep.call_args_list)
 
     def test_event_flag_is_possible_with_one_source(self) -> None:
         article = {

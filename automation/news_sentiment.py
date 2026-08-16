@@ -195,10 +195,17 @@ def make_session() -> requests.Session:
 class GdeltProvider:
     name = "gdelt-doc-v2"
 
-    def __init__(self, max_records: int = 50, request_delay: float = 5.25) -> None:
+    def __init__(
+        self,
+        max_records: int = 50,
+        request_delay: float = 5.25,
+        rate_limit_retries: int = 4,
+    ) -> None:
         self.max_records = max_records
         self.request_delay = request_delay
+        self.rate_limit_retries = rate_limit_retries
         self.session = make_session()
+        self.request_count = 0
 
     @staticmethod
     def query_for(company: dict[str, Any]) -> str:
@@ -222,18 +229,39 @@ class GdeltProvider:
             "startdatetime": start_utc.strftime("%Y%m%d%H%M%S"),
             "enddatetime": end_utc.strftime("%Y%m%d%H%M%S"),
         }
-        try:
-            response = self.session.get(GDELT_ENDPOINT, params=params, timeout=40)
-            response.raise_for_status()
+        response = None
+        for attempt in range(self.rate_limit_retries + 1):
             try:
-                payload = response.json()
-            except requests.exceptions.JSONDecodeError as exc:
-                excerpt = re.sub(r"\s+", " ", response.text).strip()[:240]
-                raise RuntimeError(
-                    f"GDELT returned non-JSON content (HTTP {response.status_code}): {excerpt}"
-                ) from exc
-        finally:
-            time.sleep(self.request_delay)
+                self.request_count += 1
+                response = self.session.get(GDELT_ENDPOINT, params=params, timeout=40)
+                if response.status_code == 429 and attempt < self.rate_limit_retries:
+                    retry_after = response.headers.get("Retry-After")
+                    try:
+                        server_delay = float(retry_after) if retry_after else 0.0
+                    except ValueError:
+                        server_delay = 0.0
+                    cooldown = max(server_delay, min(120.0, 15.0 * (2**attempt)))
+                    print(
+                        f"GDELT rate limited request; retrying in {cooldown:.0f}s "
+                        f"({attempt + 1}/{self.rate_limit_retries})",
+                        file=sys.stderr,
+                        flush=True,
+                    )
+                    time.sleep(cooldown)
+                    continue
+                response.raise_for_status()
+                try:
+                    payload = response.json()
+                except requests.exceptions.JSONDecodeError as exc:
+                    excerpt = re.sub(r"\s+", " ", response.text).strip()[:240]
+                    raise RuntimeError(
+                        f"GDELT returned non-JSON content (HTTP {response.status_code}): {excerpt}"
+                    ) from exc
+                break
+            finally:
+                time.sleep(self.request_delay)
+        else:  # pragma: no cover - the final attempt raises before this branch
+            raise RuntimeError("GDELT request retry loop ended without a response")
         items = payload.get("articles", []) if isinstance(payload, dict) else []
         return [item for item in items if isinstance(item, dict)]
 
@@ -817,6 +845,27 @@ def processing_days(args: argparse.Namespace) -> list[date]:
     return [start_day + timedelta(days=offset) for offset in range(count)]
 
 
+def missing_day_windows(
+    days: list[date], observations: list[dict[str, Any]], max_window_days: int
+) -> tuple[list[date], list[tuple[date, date]]]:
+    """Return missing requested days and contiguous half-open fetch windows."""
+    existing = {item.get("date") for item in observations}
+    missing = [day for day in days if day.isoformat() not in existing]
+    windows: list[tuple[date, date]] = []
+    if not missing:
+        return missing, windows
+    start = missing[0]
+    previous = start
+    for current in missing[1:]:
+        window_full = (current - start).days >= max_window_days
+        if current != previous + timedelta(days=1) or window_full:
+            windows.append((start, previous + timedelta(days=1)))
+            start = current
+        previous = current
+    windows.append((start, previous + timedelta(days=1)))
+    return missing, windows
+
+
 def run(args: argparse.Namespace) -> int:
     methodology = read_json(METHODOLOGY_PATH, None)
     universe = read_json(args.universe, None)
@@ -875,27 +924,26 @@ def run(args: argparse.Namespace) -> int:
         print(f"[{index}/{len(companies)}] {company['companyName']} ({slug})", flush=True)
         history_payload = load_company_history(company, methodology["methodologyVersion"])
         observations = history_payload.get("observations", [])
-        candidates_by_day: dict[date, list[dict[str, Any]]] = {day: [] for day in days}
-        truncated_days: set[date] = set()
-        failed_days: dict[date, str] = {}
-        request_count = 0
         window_days = (
             int(methodology["collection"].get("backfillWindowDays", 5))
             if is_backfill
             else 1
         )
-        for offset in range(0, len(days), window_days):
-            window_start = days[offset]
-            window_end = min(days[-1] + timedelta(days=1), window_start + timedelta(days=window_days))
+        missing_days, fetch_windows = missing_day_windows(days, observations, window_days)
+        candidates_by_day: dict[date, list[dict[str, Any]]] = {
+            day: [] for day in missing_days
+        }
+        truncated_days: set[date] = set()
+        failed_days: dict[date, str] = {}
+        requests_before = provider.request_count
+        for window_start, window_end in fetch_windows:
             try:
-                partitioned, truncated, requests_used = fetch_window_adaptive(
+                partitioned, truncated, _ = fetch_window_adaptive(
                     provider, company, window_start, window_end, max_records
                 )
                 merge_partitions(candidates_by_day, partitioned)
                 truncated_days |= truncated
-                request_count += requests_used
             except Exception as exc:  # continue with other windows and companies
-                request_count += 1
                 message = str(exc)[:500]
                 print(
                     f"ERROR {slug} {window_start}..{window_end - timedelta(days=1)}: {message}",
@@ -907,10 +955,7 @@ def run(args: argparse.Namespace) -> int:
                     failed_days[current] = message
                     current += timedelta(days=1)
 
-        latest_observation = None
-        company_completed = 0
-        coverage_days = 0
-        for processing_day in days:
+        for processing_day in missing_days:
             if processing_day in failed_days:
                 continue
             prior_observations = [
@@ -931,11 +976,28 @@ def run(args: argparse.Namespace) -> int:
                 observation,
                 int(methodology["scoring"]["historyRetentionDays"]),
             )
-            latest_observation = observation
-            company_completed += 1
-            completed += 1
-            if observation["coverageStatus"] == "ok":
-                coverage_days += 1
+        requested_date_strings = {item.isoformat() for item in days}
+        requested_observations = [
+            item for item in observations if item.get("date") in requested_date_strings
+        ]
+        completed_dates = {item.get("date") for item in requested_observations}
+        company_completed = len(completed_dates)
+        completed += company_completed
+        coverage_days = sum(
+            1 for item in requested_observations if item.get("coverageStatus") == "ok"
+        )
+        latest_observation = max(
+            requested_observations, key=lambda item: item.get("date", ""), default=None
+        )
+        missing_after_run = [
+            item for item in days if item.isoformat() not in completed_dates
+        ]
+        observed_truncated_days = {
+            date.fromisoformat(item["date"])
+            for item in requested_observations
+            if float(item.get("collectionCompleteness", 1.0)) < 1.0
+        }
+        truncated_days |= observed_truncated_days
 
         history_payload["methodologyVersion"] = methodology["methodologyVersion"]
         history_payload["observations"] = observations
@@ -946,13 +1008,13 @@ def run(args: argparse.Namespace) -> int:
         statuses.append(
             {
                 "slug": slug,
-                "status": "ok" if not failed_days and not truncated_days else "degraded",
+                "status": "ok" if not missing_after_run and not truncated_days else "degraded",
                 "requestedDayCount": len(days),
                 "completedDayCount": company_completed,
                 "coverageDayCount": coverage_days,
-                "failedDates": [item.isoformat() for item in sorted(failed_days)],
+                "failedDates": [item.isoformat() for item in missing_after_run],
                 "truncatedDates": [item.isoformat() for item in sorted(truncated_days)],
-                "requestCount": request_count,
+                "requestCount": provider.request_count - requests_before,
                 "error": next(iter(failed_days.values()), None),
             }
         )
