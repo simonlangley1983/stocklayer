@@ -889,21 +889,24 @@ def run(args: argparse.Namespace) -> int:
         if is_backfill
         else methodology["collection"]["maxCandidatesPerCompany"]
     )
-    provider = GdeltProvider(
-        max_records=max_records,
-        request_delay=(
-            args.request_delay
-            if args.request_delay is not None
-            else float(methodology["collection"].get("minimumSecondsBetweenRequests", 5.25))
-        ),
-    )
-    scorer: SentimentScorer = (
-        KeywordTestScorer()
-        if args.test_scorer
-        else FinBertScorer(
-            methodology["model"]["id"], methodology["model"].get("revision", "main")
+    provider = None
+    scorer: SentimentScorer | None = None
+    if not args.rebuild_only:
+        provider = GdeltProvider(
+            max_records=max_records,
+            request_delay=(
+                args.request_delay
+                if args.request_delay is not None
+                else float(methodology["collection"].get("minimumSecondsBetweenRequests", 5.25))
+            ),
         )
-    )
+        scorer = (
+            KeywordTestScorer()
+            if args.test_scorer
+            else FinBertScorer(
+                methodology["model"]["id"], methodology["model"].get("revision", "main")
+            )
+        )
     rules = load_event_rules()
     latest = read_json(
         LATEST_PATH,
@@ -935,47 +938,49 @@ def run(args: argparse.Namespace) -> int:
         }
         truncated_days: set[date] = set()
         failed_days: dict[date, str] = {}
-        requests_before = provider.request_count
-        for window_start, window_end in fetch_windows:
-            try:
-                partitioned, truncated, _ = fetch_window_adaptive(
-                    provider, company, window_start, window_end, max_records
-                )
-                merge_partitions(candidates_by_day, partitioned)
-                truncated_days |= truncated
-            except Exception as exc:  # continue with other windows and companies
-                message = str(exc)[:500]
-                print(
-                    f"ERROR {slug} {window_start}..{window_end - timedelta(days=1)}: {message}",
-                    file=sys.stderr,
-                    flush=True,
-                )
-                current = window_start
-                while current < window_end:
-                    failed_days[current] = message
-                    current += timedelta(days=1)
+        requests_before = provider.request_count if provider is not None else 0
+        if not args.rebuild_only:
+            assert provider is not None and scorer is not None
+            for window_start, window_end in fetch_windows:
+                try:
+                    partitioned, truncated, _ = fetch_window_adaptive(
+                        provider, company, window_start, window_end, max_records
+                    )
+                    merge_partitions(candidates_by_day, partitioned)
+                    truncated_days |= truncated
+                except Exception as exc:  # continue with other windows and companies
+                    message = str(exc)[:500]
+                    print(
+                        f"ERROR {slug} {window_start}..{window_end - timedelta(days=1)}: {message}",
+                        file=sys.stderr,
+                        flush=True,
+                    )
+                    current = window_start
+                    while current < window_end:
+                        failed_days[current] = message
+                        current += timedelta(days=1)
 
-        for processing_day in missing_days:
-            if processing_day in failed_days:
-                continue
-            prior_observations = [
-                item for item in observations if item.get("date", "") < processing_day.isoformat()
-            ]
-            observation = score_company_day(
-                company,
-                processing_day,
-                candidates_by_day.get(processing_day, []),
-                scorer,
-                methodology,
-                rules,
-                prior_observations,
-                collection_completeness=0.75 if processing_day in truncated_days else 1.0,
-            )
-            observations = replace_observation(
-                observations,
-                observation,
-                int(methodology["scoring"]["historyRetentionDays"]),
-            )
+            for processing_day in missing_days:
+                if processing_day in failed_days:
+                    continue
+                prior_observations = [
+                    item for item in observations if item.get("date", "") < processing_day.isoformat()
+                ]
+                observation = score_company_day(
+                    company,
+                    processing_day,
+                    candidates_by_day.get(processing_day, []),
+                    scorer,
+                    methodology,
+                    rules,
+                    prior_observations,
+                    collection_completeness=0.75 if processing_day in truncated_days else 1.0,
+                )
+                observations = replace_observation(
+                    observations,
+                    observation,
+                    int(methodology["scoring"]["historyRetentionDays"]),
+                )
         requested_date_strings = {item.isoformat() for item in days}
         requested_observations = [
             item for item in observations if item.get("date") in requested_date_strings
@@ -1014,7 +1019,9 @@ def run(args: argparse.Namespace) -> int:
                 "coverageDayCount": coverage_days,
                 "failedDates": [item.isoformat() for item in missing_after_run],
                 "truncatedDates": [item.isoformat() for item in sorted(truncated_days)],
-                "requestCount": provider.request_count - requests_before,
+                "requestCount": (
+                    provider.request_count - requests_before if provider is not None else 0
+                ),
                 "error": next(iter(failed_days.values()), None),
             }
         )
@@ -1030,8 +1037,10 @@ def run(args: argparse.Namespace) -> int:
         "generatedAt": generated_at,
         "date": days[-1].isoformat() if len(days) == 1 else None,
         "dateRange": {"start": days[0].isoformat(), "end": days[-1].isoformat()},
-        "provider": provider.name,
-        "model": scorer.model_id,
+        "provider": (
+            provider.name if provider is not None else methodology["collection"]["provider"]
+        ),
+        "model": scorer.model_id if scorer is not None else methodology["model"]["id"],
         "selectedCompanyCount": len(companies),
         "requestedDayCount": len(days),
         "requestedObservationCount": total_targets,
@@ -1058,6 +1067,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--minimum-completeness", type=float, default=0.9)
     parser.add_argument("--request-delay", type=float)
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument(
+        "--rebuild-only",
+        action="store_true",
+        help="Rebuild latest and run status from stored history without provider requests",
+    )
     parser.add_argument("--test-scorer", action="store_true", help=argparse.SUPPRESS)
     return parser.parse_args()
 
