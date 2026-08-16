@@ -1,0 +1,39 @@
+{
+  "methodologyVersion": "1.0.0",
+  "timezone": "Europe/London",
+  "language": "English",
+  "model": {
+    "provider": "huggingface-transformers",
+    "id": "ProsusAI/finbert",
+    "revision": "4556d13015211d73dccd3fdd39d39232506f3e43",
+    "input": "headline_and_provider_description",
+    "polarityFormula": "positive_probability - negative_probability"
+  },
+  "collection": {
+    "provider": "gdelt-doc-v2",
+    "maxCandidatesPerCompany": 50,
+    "maxStoredStoriesPerDay": 5,
+    "excludeFirstPartyFromScore": true,
+    "minimumSecondsBetweenRequests": 5.25
+  },
+  "scoring": {
+    "neutralScore": 50,
+    "neutralPriorStoryWeight": 2.0,
+    "rollingHalfLifeDays": 7,
+    "historyRetentionDays": 400,
+    "headlineSimilarityThreshold": 0.82,
+    "publisherWeightCap": 0.35
+  },
+  "flagThresholds": {
+    "minimumConfidence": 45,
+    "minimumStoryCount": 3,
+    "minimumSourceCount": 2,
+    "sentimentJumpPoints": 12,
+    "sentimentDropPoints": -12,
+    "goodPressScore": 65,
+    "badPressScore": 35,
+    "coverageSpikeMultiple": 3.0,
+    "coverageSpikeMinimumStories": 5,
+    "highDisagreementDispersion": 0.55
+  }
+}
