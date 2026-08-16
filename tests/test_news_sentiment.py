@@ -248,6 +248,11 @@ class NewsSentimentTests(unittest.TestCase):
         self.assertEqual(len(days), 30)
         self.assertEqual(days[-1] - days[0], timedelta(days=29))
 
+    def test_backfill_can_be_pinned_to_an_inclusive_end_date(self) -> None:
+        days = processing_days(Namespace(date="2026-08-16", backfill_days=30))
+        self.assertEqual(days[0], date(2026, 7, 18))
+        self.assertEqual(days[-1], date(2026, 8, 16))
+
     def test_resume_groups_only_missing_consecutive_days(self) -> None:
         days = [date(2026, 8, 10) + timedelta(days=offset) for offset in range(6)]
         observations = [

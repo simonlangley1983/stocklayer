@@ -847,8 +847,8 @@ def fetch_window_adaptive(
 
 
 def processing_days(args: argparse.Namespace) -> list[date]:
-    if args.date and args.backfill_days:
-        raise ValueError("Use --date or --backfill-days, not both")
+    # When combined with --backfill-days, --date is the inclusive end date.
+    # This pins long-running distributed backfills across a midnight rollover.
     end_day = date.fromisoformat(args.date) if args.date else datetime.now(LONDON).date() - timedelta(days=1)
     count = int(args.backfill_days or 1)
     if count < 1 or count > 90:

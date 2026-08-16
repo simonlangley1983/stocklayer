@@ -14,7 +14,7 @@ on:
   workflow_dispatch:
     inputs:
       date:
-        description: "London date to process (YYYY-MM-DD); blank means previous day"
+        description: "London date, or inclusive backfill end date (YYYY-MM-DD); blank means previous day"
         required: false
         type: string
       slugs:
@@ -143,6 +143,7 @@ jobs:
         env:
           BATCH_SIZE: ${{ inputs.batch_size }}
           BACKFILL_DAYS: ${{ inputs.backfill_days }}
+          END_DATE: ${{ inputs.date }}
         run: |
           python - <<'PY' >> "$GITHUB_OUTPUT"
           import json
@@ -157,7 +158,11 @@ jobs:
 
           universe = json.loads(Path("sentiment/company-universe.json").read_text(encoding="utf-8"))
           day_count = int(os.environ["BACKFILL_DAYS"])
-          end_day = datetime.now(ZoneInfo("Europe/London")).date() - timedelta(days=1)
+          end_day = (
+              datetime.fromisoformat(os.environ["END_DATE"]).date()
+              if os.environ.get("END_DATE")
+              else datetime.now(ZoneInfo("Europe/London")).date() - timedelta(days=1)
+          )
           requested_dates = {
               (end_day - timedelta(days=offset)).isoformat()
               for offset in range(day_count)
@@ -222,9 +227,12 @@ jobs:
         env:
           INPUT_SLUGS: ${{ matrix.slugs }}
           INPUT_BACKFILL_DAYS: ${{ inputs.backfill_days }}
+          INPUT_DATE: ${{ inputs.date }}
         run: |
           set +e
-          python automation/news_sentiment.py --backfill-days "$INPUT_BACKFILL_DAYS" --slugs "$INPUT_SLUGS"
+          args=(--backfill-days "$INPUT_BACKFILL_DAYS" --slugs "$INPUT_SLUGS")
+          if [[ -n "$INPUT_DATE" ]]; then args+=(--date "$INPUT_DATE"); fi
+          python automation/news_sentiment.py "${args[@]}"
           status=$?
           echo "exit_code=$status" >> "$GITHUB_OUTPUT"
           exit 0
@@ -282,9 +290,12 @@ jobs:
         shell: bash
         env:
           INPUT_BACKFILL_DAYS: ${{ inputs.backfill_days }}
+          INPUT_DATE: ${{ inputs.date }}
         run: |
           set +e
-          python automation/news_sentiment.py --backfill-days "$INPUT_BACKFILL_DAYS" --rebuild-only
+          args=(--backfill-days "$INPUT_BACKFILL_DAYS" --rebuild-only)
+          if [[ -n "$INPUT_DATE" ]]; then args+=(--date "$INPUT_DATE"); fi
+          python automation/news_sentiment.py "${args[@]}"
           status=$?
           echo "exit_code=$status" >> "$GITHUB_OUTPUT"
           exit 0
