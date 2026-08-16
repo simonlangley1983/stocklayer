@@ -167,7 +167,7 @@ jobs:
       contents: write
     strategy:
       fail-fast: false
-      max-parallel: 5
+      max-parallel: 20
       matrix: ${{ fromJSON(needs.prepare-backfill-batches.outputs.matrix) }}
 
     steps:
