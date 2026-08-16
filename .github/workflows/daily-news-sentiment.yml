@@ -25,6 +25,10 @@ on:
         description: "Optional completed-day backfill ending yesterday (1-90)"
         required: false
         type: number
+      batch_size:
+        description: "Optional companies per durable backfill batch (use with backfill_days)"
+        required: false
+        type: number
 
 concurrency:
   group: daily-news-sentiment
@@ -60,7 +64,7 @@ jobs:
           python -m unittest discover -s tests -v
 
   score:
-    if: github.event_name != 'pull_request'
+    if: github.event_name != 'pull_request' && (github.event_name != 'workflow_dispatch' || inputs.batch_size == 0)
     runs-on: ubuntu-latest
     timeout-minutes: 240
     permissions:
@@ -120,3 +124,100 @@ jobs:
         run: |
           echo "Sentiment run completed below the required coverage threshold. See sentiment/run-status.json."
           exit "${{ steps.sentiment.outputs.exit_code }}"
+
+  prepare-backfill-batches:
+    if: github.event_name == 'workflow_dispatch' && inputs.batch_size > 0
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    outputs:
+      matrix: ${{ steps.matrix.outputs.matrix }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build company batch matrix
+        id: matrix
+        shell: bash
+        env:
+          BATCH_SIZE: ${{ inputs.batch_size }}
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import json
+          import os
+          from pathlib import Path
+
+          batch_size = int(os.environ["BATCH_SIZE"])
+          if not 1 <= batch_size <= 20:
+              raise SystemExit("batch_size must be between 1 and 20")
+
+          universe = json.loads(Path("sentiment/company-universe.json").read_text(encoding="utf-8"))
+          slugs = [company["slug"] for company in universe["companies"]]
+          batches = [slugs[index:index + batch_size] for index in range(0, len(slugs), batch_size)]
+          matrix = {"include": [{"number": index + 1, "slugs": ",".join(batch)} for index, batch in enumerate(batches)]}
+          print("matrix=" + json.dumps(matrix, separators=(",", ":")))
+          PY
+
+  score-backfill-batch:
+    needs: prepare-backfill-batches
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    permissions:
+      contents: write
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix: ${{ fromJSON(needs.prepare-backfill-batches.outputs.matrix) }}
+
+    steps:
+      - name: Checkout latest branch state
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-sentiment.txt
+
+      - name: Cache FinBERT model
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: finbert-${{ runner.os }}-${{ hashFiles('requirements-sentiment.txt', 'sentiment/methodology.json') }}
+
+      - name: Install sentiment dependencies
+        run: |
+          pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install -r requirements-sentiment.txt
+
+      - name: Generate sentiment batch ${{ matrix.number }}
+        id: sentiment
+        shell: bash
+        env:
+          INPUT_SLUGS: ${{ matrix.slugs }}
+          INPUT_BACKFILL_DAYS: ${{ inputs.backfill_days }}
+        run: |
+          set +e
+          python automation/news_sentiment.py --backfill-days "$INPUT_BACKFILL_DAYS" --slugs "$INPUT_SLUGS"
+          status=$?
+          echo "exit_code=$status" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Commit sentiment batch ${{ matrix.number }}
+        shell: bash
+        run: |
+          git config user.name "stocklayer-sentiment-bot"
+          git config user.email "stocklayer-sentiment-bot@users.noreply.github.com"
+          git add sentiment/latest.json sentiment/run-status.json
+          if [[ -d sentiment/history ]]; then git add sentiment/history; fi
+          git commit -m "Update daily news sentiment batch ${{ matrix.number }}" || echo "No sentiment changes to commit"
+          git push
+
+      - name: Report incomplete batch
+        if: steps.sentiment.outputs.exit_code != '0'
+        run: echo "Batch ${{ matrix.number }} committed its available observations below the target threshold; a later resume will skip them."
