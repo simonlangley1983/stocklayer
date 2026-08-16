@@ -1,29 +1,31 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-08-16T22:36:58.857168Z",
+  "generatedAt": "2026-08-16T23:05:03.268436Z",
   "date": null,
   "dateRange": {
-    "start": "2026-07-17",
-    "end": "2026-08-15"
+    "start": "2026-07-18",
+    "end": "2026-08-16"
   },
   "provider": "gdelt-doc-v2",
   "model": "ProsusAI/finbert",
   "selectedCompanyCount": 100,
   "requestedDayCount": 30,
   "requestedObservationCount": 3000,
-  "completedObservationCount": 2915,
-  "completeness": 0.9717,
+  "completedObservationCount": 2841,
+  "completeness": 0.947,
   "minimumCompleteness": 0.9,
   "status": "ok",
   "companies": [
     {
       "slug": "astrazeneca",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 30,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 29,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
@@ -35,7 +37,6 @@
       "completedDayCount": 10,
       "coverageDayCount": 2,
       "failedDates": [
-        "2026-07-17",
         "2026-07-18",
         "2026-07-19",
         "2026-07-20",
@@ -54,7 +55,8 @@
         "2026-08-07",
         "2026-08-08",
         "2026-08-09",
-        "2026-08-10"
+        "2026-08-10",
+        "2026-08-16"
       ],
       "truncatedDates": [
         "2026-07-22",
@@ -72,14 +74,15 @@
       "slug": "hsbc",
       "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 25,
-      "coverageDayCount": 25,
+      "completedDayCount": 24,
+      "coverageDayCount": 24,
       "failedDates": [
         "2026-08-01",
         "2026-08-02",
         "2026-08-03",
         "2026-08-04",
-        "2026-08-05"
+        "2026-08-05",
+        "2026-08-16"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -89,14 +92,15 @@
       "slug": "unilever",
       "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 25,
-      "coverageDayCount": 25,
+      "completedDayCount": 24,
+      "coverageDayCount": 24,
       "failedDates": [
         "2026-07-27",
         "2026-07-28",
         "2026-07-29",
         "2026-07-30",
-        "2026-07-31"
+        "2026-07-31",
+        "2026-08-16"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -104,11 +108,13 @@
     },
     {
       "slug": "relx",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 17,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 16,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
@@ -117,14 +123,10 @@
       "slug": "british-american-tobacco",
       "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 25,
-      "coverageDayCount": 16,
+      "completedDayCount": 29,
+      "coverageDayCount": 20,
       "failedDates": [
-        "2026-08-11",
-        "2026-08-12",
-        "2026-08-13",
-        "2026-08-14",
-        "2026-08-15"
+        "2026-08-16"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -132,55 +134,65 @@
     },
     {
       "slug": "bp",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 9,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "gsk",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 29,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 28,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "rolls-royce",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 30,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 29,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "lseg",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 21,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 20,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "diageo",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 30,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 29,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
@@ -189,14 +201,10 @@
       "slug": "rio-tinto",
       "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 25,
-      "coverageDayCount": 22,
+      "completedDayCount": 29,
+      "coverageDayCount": 26,
       "failedDates": [
-        "2026-08-11",
-        "2026-08-12",
-        "2026-08-13",
-        "2026-08-14",
-        "2026-08-15"
+        "2026-08-16"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -204,11 +212,13 @@
     },
     {
       "slug": "national-grid",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 30,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 29,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
@@ -217,8 +227,8 @@
       "slug": "barclays",
       "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 10,
-      "coverageDayCount": 10,
+      "completedDayCount": 14,
+      "coverageDayCount": 14,
       "failedDates": [
         "2026-07-22",
         "2026-07-23",
@@ -235,11 +245,7 @@
         "2026-08-03",
         "2026-08-04",
         "2026-08-05",
-        "2026-08-06",
-        "2026-08-07",
-        "2026-08-08",
-        "2026-08-09",
-        "2026-08-10"
+        "2026-08-16"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -247,187 +253,221 @@
     },
     {
       "slug": "compass",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 3,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "bae-systems",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 28,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 27,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "lloyds",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 29,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 28,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "3i",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 13,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "experian",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 28,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 27,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "glencore",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 28,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 27,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "admiral",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 0,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "airtel-africa",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 20,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 19,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "alliance-witan",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 8,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "anglo-american",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 30,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 29,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "antofagasta",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 21,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 20,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "ashtead",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 5,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "associated-british-foods",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 11,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "auto-trader",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 7,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 6,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "aviva",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 30,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 29,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "barratt-redrow",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 18,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "beazley",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 26,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 25,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
@@ -436,19 +476,15 @@
       "slug": "berkeley",
       "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 20,
-      "coverageDayCount": 20,
+      "completedDayCount": 24,
+      "coverageDayCount": 24,
       "failedDates": [
         "2026-08-01",
         "2026-08-02",
         "2026-08-03",
         "2026-08-04",
         "2026-08-05",
-        "2026-08-06",
-        "2026-08-07",
-        "2026-08-08",
-        "2026-08-09",
-        "2026-08-10"
+        "2026-08-16"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -456,517 +492,611 @@
     },
     {
       "slug": "british-land",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 0,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "bt",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 0,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "bunzl",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 5,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "centrica",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 19,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 18,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "coca-cola-hbc",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 12,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "convatec",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 9,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "croda-international",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 10,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "dcc",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 20,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 19,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "diploma",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 0,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "easyjet",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 30,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 29,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "endeavour-mining",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 15,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "entain",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 18,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 17,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "fandc-investment-trust",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 14,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 13,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "fresnillo",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 18,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "games-workshop",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 19,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 18,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "haleon",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 19,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "halma",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 10,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 9,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "hargreaves-lansdown",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 25,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 24,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "hikma-pharmaceuticals",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 10,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 9,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "hiscox",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 18,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 17,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "howden-joinery",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 8,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "imi",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 0,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "imperial-brands",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 13,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 12,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "informa",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 24,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 23,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "intercontinental-hotels",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 22,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 21,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "intermediate-capital",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 6,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "intertek",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 22,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 21,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "international-consolidated-airlines",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 9,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 8,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "jd-sports-fashion",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 7,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "kingfisher",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 30,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 29,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "land-securities",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 11,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "legal-and-general",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 30,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 29,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "londonmetric-property",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 17,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 16,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "mandg",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 30,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 29,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "marks-and-spencer",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 30,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 29,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "melrose-industries",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 10,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "mondi",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 15,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 14,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "natwest",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 30,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 29,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "next",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 1,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "pearson",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 30,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 29,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "pershing-square",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 8,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "persimmon",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 29,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 28,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "phoenix",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 0,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "prudential",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 30,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 29,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "reckitt-benckiser",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 13,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 12,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "rentokil-initial",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 14,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "rightmove",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 30,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 29,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
@@ -975,14 +1105,10 @@
       "slug": "sage",
       "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 25,
+      "completedDayCount": 29,
       "coverageDayCount": 0,
       "failedDates": [
-        "2026-08-06",
-        "2026-08-07",
-        "2026-08-08",
-        "2026-08-09",
-        "2026-08-10"
+        "2026-08-16"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -990,154 +1116,182 @@
     },
     {
       "slug": "j-sainsbury",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 4,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "schroders",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 28,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 27,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "scottish-mortgage-investment-trust",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 13,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 12,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "segro",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 24,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 23,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "severn-trent",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 27,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 26,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "smith-and-nephew",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 17,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "ds-smith",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 3,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "smiths",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 30,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 29,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "spirax",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 9,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "sse",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 0,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "st-jamess-place",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 0,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "standard-chartered",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 29,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 28,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "taylor-wimpey",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 23,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "tesco",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 30,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 29,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
@@ -1146,14 +1300,15 @@
       "slug": "unite",
       "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 25,
+      "completedDayCount": 24,
       "coverageDayCount": 0,
       "failedDates": [
         "2026-08-06",
         "2026-08-07",
         "2026-08-08",
         "2026-08-09",
-        "2026-08-10"
+        "2026-08-10",
+        "2026-08-16"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1161,22 +1316,26 @@
     },
     {
       "slug": "united-utilities",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 28,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 27,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "vodafone",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 30,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 29,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
@@ -1185,14 +1344,15 @@
       "slug": "weir",
       "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 25,
+      "completedDayCount": 24,
       "coverageDayCount": 3,
       "failedDates": [
         "2026-07-22",
         "2026-07-23",
         "2026-07-24",
         "2026-07-25",
-        "2026-07-26"
+        "2026-07-26",
+        "2026-08-16"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1200,22 +1360,26 @@
     },
     {
       "slug": "whitbread",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
-      "coverageDayCount": 29,
-      "failedDates": [],
+      "completedDayCount": 29,
+      "coverageDayCount": 28,
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "wpp",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 30,
-      "completedDayCount": 30,
+      "completedDayCount": 29,
       "coverageDayCount": 2,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-16"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
