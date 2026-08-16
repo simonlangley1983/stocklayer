@@ -214,8 +214,20 @@ class GdeltProvider:
             specific = [item for item in aliases if len(TOKEN_RE.findall(item.casefold())) >= 2]
             aliases = specific or aliases
         aliases = aliases[:4]
-        quoted = " OR ".join(f'"{item}"' for item in aliases if item)
-        return f"({quoted}) sourcelang:english"
+        # GDELT rejects parentheses around a lone term and quoted phrases shorter
+        # than five characters. Prefer descriptive aliases and retain a short
+        # ticker-style alias only when it is the company's sole usable identity.
+        descriptive = [item for item in aliases if len(normalise_text(item)) >= 5]
+        aliases = descriptive or aliases[:1]
+        terms = [
+            f'"{item}"' if len(normalise_text(item)) >= 5 else normalise_text(item)
+            for item in aliases
+            if normalise_text(item)
+        ]
+        if not terms:
+            raise ValueError(f"No usable news-search aliases for {company.get('slug', 'company')}")
+        expression = terms[0] if len(terms) == 1 else f"({' OR '.join(terms)})"
+        return f"{expression} sourcelang:english"
 
     def fetch(
         self, company: dict[str, Any], start_utc: datetime, end_utc: datetime

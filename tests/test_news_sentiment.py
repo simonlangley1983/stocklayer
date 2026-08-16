@@ -60,6 +60,27 @@ class NewsSentimentTests(unittest.TestCase):
             "https://example.com/path?a=1",
         )
 
+    def test_gdelt_query_does_not_parenthesise_a_single_alias(self) -> None:
+        company = {**self.company, "aliases": ["AstraZeneca"]}
+        self.assertEqual(
+            GdeltProvider.query_for(company),
+            '"AstraZeneca" sourcelang:english',
+        )
+
+    def test_gdelt_query_drops_short_alias_when_descriptive_alias_exists(self) -> None:
+        company = {
+            **self.company,
+            "aliases": ["London Stock Exchange Group", "LSEG"],
+        }
+        self.assertEqual(
+            GdeltProvider.query_for(company),
+            '"London Stock Exchange Group" sourcelang:english',
+        )
+
+    def test_gdelt_query_keeps_unquoted_short_alias_as_last_resort(self) -> None:
+        company = {**self.company, "aliases": ["GSK"]}
+        self.assertEqual(GdeltProvider.query_for(company), "gsk sourcelang:english")
+
     def test_near_identical_headlines_form_one_story(self) -> None:
         articles = [
             {"title": "Example Group reports record annual profit growth", "publishedAt": "1"},

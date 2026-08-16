@@ -142,18 +142,39 @@ jobs:
         shell: bash
         env:
           BATCH_SIZE: ${{ inputs.batch_size }}
+          BACKFILL_DAYS: ${{ inputs.backfill_days }}
         run: |
           python - <<'PY' >> "$GITHUB_OUTPUT"
           import json
           import os
+          from datetime import datetime, timedelta
           from pathlib import Path
+          from zoneinfo import ZoneInfo
 
           batch_size = int(os.environ["BATCH_SIZE"])
           if not 1 <= batch_size <= 20:
               raise SystemExit("batch_size must be between 1 and 20")
 
           universe = json.loads(Path("sentiment/company-universe.json").read_text(encoding="utf-8"))
-          slugs = [company["slug"] for company in universe["companies"]]
+          day_count = int(os.environ["BACKFILL_DAYS"])
+          end_day = datetime.now(ZoneInfo("Europe/London")).date() - timedelta(days=1)
+          requested_dates = {
+              (end_day - timedelta(days=offset)).isoformat()
+              for offset in range(day_count)
+          }
+          slugs = []
+          for company in universe["companies"]:
+              slug = company["slug"]
+              history_path = Path("sentiment/history") / f"{slug}.json"
+              observations = []
+              if history_path.exists():
+                  history = json.loads(history_path.read_text(encoding="utf-8"))
+                  observations = history.get("observations", [])
+              completed_dates = {item.get("date") for item in observations}
+              if not requested_dates.issubset(completed_dates):
+                  slugs.append(slug)
+          if not slugs:
+              raise SystemExit("The requested backfill range is already complete")
           batches = [slugs[index:index + batch_size] for index in range(0, len(slugs), batch_size)]
           matrix = {"include": [{"number": index + 1, "slugs": ",".join(batch)} for index, batch in enumerate(batches)]}
           print("matrix=" + json.dumps(matrix, separators=(",", ":")))
