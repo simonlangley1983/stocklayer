@@ -12,6 +12,8 @@
   "collection": {
     "provider": "gdelt-doc-v2",
     "maxCandidatesPerCompany": 50,
+    "backfillMaxCandidatesPerWindow": 250,
+    "backfillWindowDays": 5,
     "maxStoredStoriesPerDay": 5,
     "excludeFirstPartyFromScore": true,
     "minimumSecondsBetweenRequests": 5.25

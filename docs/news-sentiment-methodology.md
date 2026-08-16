@@ -170,6 +170,8 @@ Before site integration:
 
 Any material change to provider, model, entity rules, score formula or thresholds creates a new methodology version. Historical values must either remain on their original version or be explicitly backfilled; silent rewriting is prohibited.
 
+Backfills fetch five-day windows with up to 250 candidates. A window that reaches that ceiling is recursively split until the result is below the ceiling or a single London day remains. A still-truncated single day is retained with reduced confidence and a `collection_degraded` flag rather than being presented as complete.
+
 ## 12. Known limitations
 
 - Headline/description sentiment is not full-article sentiment.

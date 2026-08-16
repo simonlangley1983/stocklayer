@@ -21,6 +21,10 @@ on:
         description: "Optional comma-separated company slugs"
         required: false
         type: string
+      backfill_days:
+        description: "Optional completed-day backfill ending yesterday (1-90)"
+        required: false
+        type: number
 
 concurrency:
   group: daily-news-sentiment
@@ -58,7 +62,7 @@ jobs:
   score:
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 240
     permissions:
       contents: write
 
@@ -90,11 +94,13 @@ jobs:
         env:
           INPUT_DATE: ${{ inputs.date }}
           INPUT_SLUGS: ${{ inputs.slugs }}
+          INPUT_BACKFILL_DAYS: ${{ inputs.backfill_days }}
         run: |
           set +e
           args=()
           if [[ -n "$INPUT_DATE" ]]; then args+=(--date "$INPUT_DATE"); fi
           if [[ -n "$INPUT_SLUGS" ]]; then args+=(--slugs "$INPUT_SLUGS"); fi
+          if [[ -n "$INPUT_BACKFILL_DAYS" ]]; then args+=(--backfill-days "$INPUT_BACKFILL_DAYS"); fi
           python automation/news_sentiment.py "${args[@]}"
           status=$?
           echo "exit_code=$status" >> "$GITHUB_OUTPUT"

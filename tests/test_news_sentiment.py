@@ -2,16 +2,21 @@ from __future__ import annotations
 
 import json
 import unittest
-from datetime import date
+from argparse import Namespace
+from datetime import date, timedelta
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 from automation.news_sentiment import (
     KeywordTestScorer,
     canonical_url,
     cluster_articles,
     event_flags,
+    fetch_window_adaptive,
     load_event_rules,
     narrative_flags,
+    partition_candidates_by_day,
+    processing_days,
     read_json,
     score_company_day,
 )
@@ -146,6 +151,75 @@ class NewsSentimentTests(unittest.TestCase):
         types = {item["type"] for item in flags}
         self.assertIn("sentiment_jump", types)
         self.assertIn("good_press", types)
+
+    def test_truncated_collection_reduces_confidence_and_adds_flag(self) -> None:
+        complete = score_company_day(
+            self.company,
+            date(2026, 8, 15),
+            [self.candidate("Example Group beats expectations with record growth")],
+            KeywordTestScorer(),
+            self.methodology,
+            load_event_rules(),
+            [],
+        )
+        truncated = score_company_day(
+            self.company,
+            date(2026, 8, 15),
+            [self.candidate("Example Group beats expectations with record growth")],
+            KeywordTestScorer(),
+            self.methodology,
+            load_event_rules(),
+            [],
+            collection_completeness=0.75,
+        )
+        self.assertLess(truncated["confidence"], complete["confidence"])
+        self.assertIn("collection_degraded", {item["type"] for item in truncated["flags"]})
+
+    def test_candidates_are_partitioned_by_london_day(self) -> None:
+        candidates = [
+            {"seendate": "20260814T233000Z", "title": "Late", "url": "https://a.test/1"},
+            {"seendate": "20260815T233000Z", "title": "Later", "url": "https://a.test/2"},
+        ]
+        partitioned = partition_candidates_by_day(
+            candidates, date(2026, 8, 15), date(2026, 8, 17)
+        )
+        self.assertEqual(len(partitioned[date(2026, 8, 15)]), 1)
+        self.assertEqual(len(partitioned[date(2026, 8, 16)]), 1)
+
+    def test_adaptive_fetch_splits_capped_windows(self) -> None:
+        class FakeProvider:
+            def __init__(self) -> None:
+                self.calls = 0
+
+            def fetch(self, company, start_utc, end_utc):
+                self.calls += 1
+                start_day = start_utc.astimezone(ZoneInfo("Europe/London")).date()
+                end_day = end_utc.astimezone(ZoneInfo("Europe/London")).date()
+                span = (end_day - start_day).days
+                if span > 1:
+                    return [
+                        {"seendate": f"{start_day:%Y%m%d}T120000Z"},
+                        {"seendate": f"{start_day:%Y%m%d}T130000Z"},
+                    ]
+                return [{"seendate": f"{start_day:%Y%m%d}T120000Z"}]
+
+        provider = FakeProvider()
+        partitioned, truncated, request_count = fetch_window_adaptive(
+            provider,
+            self.company,
+            date(2026, 8, 12),
+            date(2026, 8, 16),
+            max_records=2,
+        )
+        self.assertEqual(request_count, 7)
+        self.assertEqual(provider.calls, 7)
+        self.assertFalse(truncated)
+        self.assertTrue(all(len(partitioned[item]) == 1 for item in partitioned))
+
+    def test_backfill_day_range_is_chronological(self) -> None:
+        days = processing_days(Namespace(date=None, backfill_days=30))
+        self.assertEqual(len(days), 30)
+        self.assertEqual(days[-1] - days[0], timedelta(days=29))
 
     def test_event_flag_is_possible_with_one_source(self) -> None:
         article = {

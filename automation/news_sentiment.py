@@ -611,6 +611,7 @@ def score_company_day(
     methodology: dict[str, Any],
     rules: list[dict[str, Any]],
     history: list[dict[str, Any]],
+    collection_completeness: float = 1.0,
 ) -> dict[str, Any]:
     start_utc, end_utc = day_bounds(day)
     articles, rejected = prepare_articles(candidates, company, start_utc, end_utc)
@@ -648,7 +649,8 @@ def score_company_day(
         * coverage_factor
         * (0.55 + 0.45 * diversity_factor)
         * mean_relevance
-        * (0.75 + 0.25 * decisive_share),
+        * (0.75 + 0.25 * decisive_share)
+        * collection_completeness,
         1,
     )
     polarities = [float(story["polarity"]) for story in stories]
@@ -670,6 +672,7 @@ def score_company_day(
         "confidence": confidence,
         "confidenceBand": confidence_band(confidence),
         "coverageStatus": "ok" if stories else "no_coverage",
+        "collectionCompleteness": round(collection_completeness, 2),
         "candidateCount": len(candidates),
         "eligibleArticleCount": len(score_articles),
         "storyCount": len(stories),
@@ -687,6 +690,17 @@ def score_company_day(
     observation["flags"].extend(
         narrative_flags(observation, history, methodology["flagThresholds"])
     )
+    if collection_completeness < 1.0:
+        observation["flags"].append(
+            {
+                "type": "collection_degraded",
+                "direction": "neutral",
+                "severity": "medium",
+                "status": "calculated",
+                "detail": "The provider result ceiling was reached for this day",
+                "evidenceArticleIds": [item["id"] for item in top_stories],
+            }
+        )
     return observation
 
 
@@ -734,6 +748,75 @@ def load_company_history(company: dict[str, Any], methodology_version: str) -> d
     )
 
 
+def partition_candidates_by_day(
+    candidates: list[dict[str, Any]], start_day: date, end_day: date
+) -> dict[date, list[dict[str, Any]]]:
+    partitioned = {
+        start_day + timedelta(days=offset): []
+        for offset in range((end_day - start_day).days)
+    }
+    for candidate in candidates:
+        published = parse_provider_datetime(
+            str(candidate.get("seendate") or candidate.get("publishedAt") or "")
+        )
+        if published is None:
+            continue
+        london_day = published.astimezone(LONDON).date()
+        if london_day in partitioned:
+            partitioned[london_day].append(candidate)
+    return partitioned
+
+
+def merge_partitions(
+    target: dict[date, list[dict[str, Any]]],
+    source: dict[date, list[dict[str, Any]]],
+) -> None:
+    for day, candidates in source.items():
+        target.setdefault(day, []).extend(candidates)
+
+
+def fetch_window_adaptive(
+    provider: GdeltProvider,
+    company: dict[str, Any],
+    start_day: date,
+    end_day: date,
+    max_records: int,
+) -> tuple[dict[date, list[dict[str, Any]]], set[date], int]:
+    """Fetch [start_day, end_day), splitting result-capped windows recursively."""
+    start_utc = day_bounds(start_day)[0]
+    end_utc = day_bounds(end_day)[0]
+    candidates = provider.fetch(company, start_utc, end_utc)
+    request_count = 1
+    span_days = (end_day - start_day).days
+    if len(candidates) >= max_records and span_days > 1:
+        midpoint = start_day + timedelta(days=max(1, span_days // 2))
+        left, left_truncated, left_requests = fetch_window_adaptive(
+            provider, company, start_day, midpoint, max_records
+        )
+        right, right_truncated, right_requests = fetch_window_adaptive(
+            provider, company, midpoint, end_day, max_records
+        )
+        merge_partitions(left, right)
+        return (
+            left,
+            left_truncated | right_truncated,
+            request_count + left_requests + right_requests,
+        )
+    truncated = {start_day} if len(candidates) >= max_records and span_days == 1 else set()
+    return partition_candidates_by_day(candidates, start_day, end_day), truncated, request_count
+
+
+def processing_days(args: argparse.Namespace) -> list[date]:
+    if args.date and args.backfill_days:
+        raise ValueError("Use --date or --backfill-days, not both")
+    end_day = date.fromisoformat(args.date) if args.date else datetime.now(LONDON).date() - timedelta(days=1)
+    count = int(args.backfill_days or 1)
+    if count < 1 or count > 90:
+        raise ValueError("--backfill-days must be between 1 and 90")
+    start_day = end_day - timedelta(days=count - 1)
+    return [start_day + timedelta(days=offset) for offset in range(count)]
+
+
 def run(args: argparse.Namespace) -> int:
     methodology = read_json(METHODOLOGY_PATH, None)
     universe = read_json(args.universe, None)
@@ -750,14 +833,15 @@ def run(args: argparse.Namespace) -> int:
     if not companies:
         raise ValueError("No companies selected")
 
-    processing_day = (
-        date.fromisoformat(args.date)
-        if args.date
-        else datetime.now(LONDON).date() - timedelta(days=1)
+    days = processing_days(args)
+    is_backfill = len(days) > 1
+    max_records = int(
+        methodology["collection"].get("backfillMaxCandidatesPerWindow", 250)
+        if is_backfill
+        else methodology["collection"]["maxCandidatesPerCompany"]
     )
-    start_utc, end_utc = day_bounds(processing_day)
     provider = GdeltProvider(
-        max_records=int(methodology["collection"]["maxCandidatesPerCompany"]),
+        max_records=max_records,
         request_delay=(
             args.request_delay
             if args.request_delay is not None
@@ -784,60 +868,112 @@ def run(args: argparse.Namespace) -> int:
     )
     statuses = []
     completed = 0
+    total_targets = len(companies) * len(days)
 
     for index, company in enumerate(companies, start=1):
         slug = company["slug"]
         print(f"[{index}/{len(companies)}] {company['companyName']} ({slug})", flush=True)
         history_payload = load_company_history(company, methodology["methodologyVersion"])
         observations = history_payload.get("observations", [])
-        try:
-            candidates = provider.fetch(company, start_utc, end_utc)
+        candidates_by_day: dict[date, list[dict[str, Any]]] = {day: [] for day in days}
+        truncated_days: set[date] = set()
+        failed_days: dict[date, str] = {}
+        request_count = 0
+        window_days = (
+            int(methodology["collection"].get("backfillWindowDays", 5))
+            if is_backfill
+            else 1
+        )
+        for offset in range(0, len(days), window_days):
+            window_start = days[offset]
+            window_end = min(days[-1] + timedelta(days=1), window_start + timedelta(days=window_days))
+            try:
+                partitioned, truncated, requests_used = fetch_window_adaptive(
+                    provider, company, window_start, window_end, max_records
+                )
+                merge_partitions(candidates_by_day, partitioned)
+                truncated_days |= truncated
+                request_count += requests_used
+            except Exception as exc:  # continue with other windows and companies
+                request_count += 1
+                message = str(exc)[:500]
+                print(
+                    f"ERROR {slug} {window_start}..{window_end - timedelta(days=1)}: {message}",
+                    file=sys.stderr,
+                    flush=True,
+                )
+                current = window_start
+                while current < window_end:
+                    failed_days[current] = message
+                    current += timedelta(days=1)
+
+        latest_observation = None
+        company_completed = 0
+        coverage_days = 0
+        for processing_day in days:
+            if processing_day in failed_days:
+                continue
+            prior_observations = [
+                item for item in observations if item.get("date", "") < processing_day.isoformat()
+            ]
             observation = score_company_day(
                 company,
                 processing_day,
-                candidates,
+                candidates_by_day.get(processing_day, []),
                 scorer,
                 methodology,
                 rules,
-                observations,
+                prior_observations,
+                collection_completeness=0.75 if processing_day in truncated_days else 1.0,
             )
             observations = replace_observation(
                 observations,
                 observation,
                 int(methodology["scoring"]["historyRetentionDays"]),
             )
-            history_payload["methodologyVersion"] = methodology["methodologyVersion"]
-            history_payload["observations"] = observations
-            latest["companies"][slug] = summary_from_observation(company, observation)
+            latest_observation = observation
+            company_completed += 1
+            completed += 1
+            if observation["coverageStatus"] == "ok":
+                coverage_days += 1
+
+        history_payload["methodologyVersion"] = methodology["methodologyVersion"]
+        history_payload["observations"] = observations
+        if latest_observation is not None:
+            latest["companies"][slug] = summary_from_observation(company, latest_observation)
             if not args.dry_run:
                 write_json_atomic(HISTORY_DIR / f"{slug}.json", history_payload)
-            statuses.append(
-                {
-                    "slug": slug,
-                    "status": observation["coverageStatus"],
-                    "candidateCount": observation["candidateCount"],
-                    "storyCount": observation["storyCount"],
-                }
-            )
-            completed += 1
-        except Exception as exc:  # keep monitoring the remaining company universe
-            print(f"ERROR {slug}: {exc}", file=sys.stderr, flush=True)
-            statuses.append({"slug": slug, "status": "provider_error", "error": str(exc)[:500]})
+        statuses.append(
+            {
+                "slug": slug,
+                "status": "ok" if not failed_days and not truncated_days else "degraded",
+                "requestedDayCount": len(days),
+                "completedDayCount": company_completed,
+                "coverageDayCount": coverage_days,
+                "failedDates": [item.isoformat() for item in sorted(failed_days)],
+                "truncatedDates": [item.isoformat() for item in sorted(truncated_days)],
+                "requestCount": request_count,
+                "error": next(iter(failed_days.values()), None),
+            }
+        )
 
     generated_at = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
-    completeness = completed / len(companies)
+    completeness = completed / total_targets
     latest["methodologyVersion"] = methodology["methodologyVersion"]
     latest["generatedAt"] = generated_at
-    latest["asOfDate"] = processing_day.isoformat()
+    latest["asOfDate"] = days[-1].isoformat()
     run_status = {
         "schemaVersion": 1,
         "methodologyVersion": methodology["methodologyVersion"],
         "generatedAt": generated_at,
-        "date": processing_day.isoformat(),
+        "date": days[-1].isoformat() if len(days) == 1 else None,
+        "dateRange": {"start": days[0].isoformat(), "end": days[-1].isoformat()},
         "provider": provider.name,
         "model": scorer.model_id,
         "selectedCompanyCount": len(companies),
-        "completedCompanyCount": completed,
+        "requestedDayCount": len(days),
+        "requestedObservationCount": total_targets,
+        "completedObservationCount": completed,
         "completeness": round(completeness, 4),
         "minimumCompleteness": args.minimum_completeness,
         "status": "ok" if completeness >= args.minimum_completeness else "degraded",
@@ -854,6 +990,7 @@ def run(args: argparse.Namespace) -> int:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--date", help="London calendar date (YYYY-MM-DD); default is previous day")
+    parser.add_argument("--backfill-days", type=int, help="Backfill N completed London days ending yesterday")
     parser.add_argument("--slugs", help="Optional comma-separated company slugs")
     parser.add_argument("--universe", type=Path, default=UNIVERSE_PATH)
     parser.add_argument("--minimum-completeness", type=float, default=0.9)
