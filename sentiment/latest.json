@@ -1,48 +1,34 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-08-16T23:49:56.834306Z",
+  "generatedAt": "2026-08-17T00:40:27.267809Z",
   "asOfDate": "2026-08-16",
   "companies": {
     "bp": {
       "companyName": "BP",
       "ticker": "BP.L",
       "slug": "bp",
-      "date": "2026-08-15",
-      "dailyScore": 60.1,
-      "dailyLabel": "Positive",
-      "rollingScore": 52.0,
-      "confidence": 18.0,
+      "date": "2026-08-16",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 51.8,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": 4.0,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 18.0",
-          "evidenceArticleIds": [
-            "221c93bffad0faaa"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "221c93bffad0faaa",
-          "storyClusterId": "story-001",
-          "title": "BP leads return of international energy companies to Venezuela",
-          "url": "https://www.proactiveinvestors.co.uk/companies/news/1097056/bp-leads-return-of-international-energy-companies-to-venezuela-1097056.html",
-          "source": "proactiveinvestors.co.uk",
-          "publishedAt": "2026-08-15T16:00:00Z",
-          "polarity": 0.6072,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "national-grid": {
       "companyName": "National Grid",
@@ -234,10 +220,10 @@
       "companyName": "3i Group",
       "ticker": "III.L",
       "slug": "3i",
-      "date": "2026-08-15",
+      "date": "2026-08-16",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 51.1,
+      "rollingScore": 51.0,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -416,82 +402,50 @@
       "companyName": "Aviva PLC",
       "ticker": "AV.L",
       "slug": "aviva",
-      "date": "2026-08-15",
-      "dailyScore": 47.2,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 48.9,
-      "confidence": 60.5,
-      "confidenceBand": "medium",
+      "date": "2026-08-16",
+      "dailyScore": 41.1,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 48.0,
+      "confidence": 23.0,
+      "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 6,
-      "sourceCount": 6,
-      "changeFromPreviousScoredDay": -7.4,
+      "storyCount": 2,
+      "sourceCount": 2,
+      "changeFromPreviousScoredDay": -6.1,
       "flags": [
         {
-          "type": "earnings_beat",
-          "direction": "positive",
-          "severity": "medium",
-          "status": "possible",
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 23.0",
           "evidenceArticleIds": [
-            "564eacf55cfe2f77"
-          ],
-          "sourceCount": 1
+            "aebcaaed6f47cd1f",
+            "6debf80b0b5b824e"
+          ]
         }
       ],
       "topStories": [
         {
-          "id": "4aa30597a73b8411",
-          "storyClusterId": "story-004",
-          "title": "Aviva boss urges Healey to stop Budget  kite - flying",
-          "url": "https://www.dailymail.com/money/markets/article-16054511/Aviva-boss-urges-Healey-stop-Budget-kite-flying-rule-tax-raid-pensions.html",
-          "source": "dailymail.com",
-          "publishedAt": "2026-08-15T07:45:00Z",
-          "polarity": -0.6329,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "deb5f535685c7fa5",
-          "storyClusterId": "story-006",
-          "title": "Seven PMs In Ten Years And FTSE Short Sellers Have Never Been Busier | Live Wire",
-          "url": "https://www.livecharts.co.uk/livewire/2026/08/seven-pms-in-ten-years-and-ftse-short-sellers-have-never-been-busier",
-          "source": "livecharts.co.uk",
-          "publishedAt": "2026-08-15T11:15:00Z",
-          "polarity": -0.6152,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "da80e71200d371e7",
+          "id": "aebcaaed6f47cd1f",
           "storyClusterId": "story-001",
-          "title": "Europe : Shares snap 4 - week rally as higher oil prices temper strong earnings",
-          "url": "https://www.businesstimes.com.sg/companies-markets/europe-shares-snap-4-week-rally-higher-oil-prices-temper-strong-earnings",
-          "source": "businesstimes.com.sg",
-          "publishedAt": "2026-08-15T04:30:00Z",
-          "polarity": 0.4363,
-          "sentiment": "Positive",
+          "title": "Drivers over 70 face £482 charge to stay on roads",
+          "url": "https://www.birminghammail.co.uk/news/midlands-news/drivers-over-70-face-482-34450382",
+          "source": "birminghammail.co.uk",
+          "publishedAt": "2026-08-16T16:45:00Z",
+          "polarity": -0.6314,
+          "sentiment": "Very negative",
           "publisherCount": 1
         },
         {
-          "id": "564eacf55cfe2f77",
-          "storyClusterId": "story-003",
-          "title": "Insurer Aviva update on Direct Line integration as profits jump",
-          "url": "https://www.heraldscotland.com/news/26465837.insurer-aviva-update-direct-line-integration-profits-jump",
-          "source": "heraldscotland.com",
-          "publishedAt": "2026-08-15T06:15:00Z",
-          "polarity": 0.419,
-          "sentiment": "Positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "03acc4f2108fe6a4",
+          "id": "6debf80b0b5b824e",
           "storyClusterId": "story-002",
-          "title": "Gilad Shalit Abduction Fast Facts",
-          "url": "https://kesq.com/news/national-world/cnn-world/2026/08/14/gilad-shalit-abduction-fast-facts-5",
-          "source": "kesq.com",
-          "publishedAt": "2026-08-15T04:30:00Z",
-          "polarity": -0.3149,
-          "sentiment": "Negative",
+          "title": "Out in the Open : Antisemites Not Even Trying to Hide It Anymore",
+          "url": "https://hotair.com/david-strom/2026/08/16/out-in-the-open-antisemites-not-even-trying-to-hide-it-anymore-n3818048",
+          "source": "hotair.com",
+          "publishedAt": "2026-08-16T22:30:00Z",
+          "polarity": -0.0801,
+          "sentiment": "Neutral / mixed",
           "publisherCount": 1
         }
       ]
@@ -566,7 +520,7 @@
       "companyName": "British Land Co PLC",
       "ticker": "BLND.L",
       "slug": "british-land",
-      "date": "2026-08-15",
+      "date": "2026-08-16",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,
@@ -618,10 +572,10 @@
       "companyName": "Bunzl PLC",
       "ticker": "BNZL.L",
       "slug": "bunzl",
-      "date": "2026-08-15",
+      "date": "2026-08-16",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 51.3,
+      "rollingScore": 51.2,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -696,10 +650,50 @@
       "companyName": "Endeavour Mining PLC",
       "ticker": "EDV.L",
       "slug": "endeavour-mining",
-      "date": "2026-08-15",
+      "date": "2026-08-16",
+      "dailyScore": 54.2,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 47.1,
+      "confidence": 16.5,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 28.0,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 16.5",
+          "evidenceArticleIds": [
+            "d0d6a668b1295102"
+          ]
+        }
+      ],
+      "topStories": [
+        {
+          "id": "d0d6a668b1295102",
+          "storyClusterId": "story-001",
+          "title": "Endeavour Mining ( OTCMKTS : EDVMF ) Share Price Passes Above 50 Day Moving Average – Time to Sell ?",
+          "url": "https://www.themarketsdaily.com/2026/08/16/endeavour-mining-otcmktsedvmf-share-price-passes-above-50-day-moving-average-time-to-sell.html",
+          "source": "themarketsdaily.com",
+          "publishedAt": "2026-08-16T13:00:00Z",
+          "polarity": 0.2545,
+          "sentiment": "Positive",
+          "publisherCount": 1
+        }
+      ]
+    },
+    "entain": {
+      "companyName": "Entain PLC",
+      "ticker": "ENT.L",
+      "slug": "entain",
+      "date": "2026-08-16",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 45.7,
+      "rollingScore": 47.8,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -717,46 +711,6 @@
         }
       ],
       "topStories": []
-    },
-    "entain": {
-      "companyName": "Entain PLC",
-      "ticker": "ENT.L",
-      "slug": "entain",
-      "date": "2026-08-15",
-      "dailyScore": 50.4,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 47.6,
-      "confidence": 9.9,
-      "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": 21.0,
-      "flags": [
-        {
-          "type": "low_confidence",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Confidence is 9.9",
-          "evidenceArticleIds": [
-            "7ef21b9152c7e8e0"
-          ]
-        }
-      ],
-      "topStories": [
-        {
-          "id": "7ef21b9152c7e8e0",
-          "storyClusterId": "story-001",
-          "title": "Horseracing in Britain could need private equity treatment",
-          "url": "https://www.dailymail.com/money/markets/article-16054503/Horseracing-Britain-need-private-equity-treatment-says-ALEX-BRUMMER.html",
-          "source": "dailymail.com",
-          "publishedAt": "2026-08-15T07:45:00Z",
-          "polarity": 0.0268,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ]
     },
     "fandc-investment-trust": {
       "companyName": "F&C Investment Trust PLC",
@@ -934,7 +888,7 @@
       "companyName": "Howden Joinery Group PLC",
       "ticker": "HWDN.L",
       "slug": "howden-joinery",
-      "date": "2026-08-15",
+      "date": "2026-08-16",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,
@@ -986,37 +940,49 @@
       "companyName": "Informa PLC",
       "ticker": "INF.L",
       "slug": "informa",
-      "date": "2026-08-15",
-      "dailyScore": 49.6,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.7,
-      "confidence": 10.0,
+      "date": "2026-08-16",
+      "dailyScore": 39.1,
+      "dailyLabel": "Negative",
+      "rollingScore": 49.1,
+      "confidence": 30.2,
       "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 1,
+      "storyCount": 2,
       "sourceCount": 1,
-      "changeFromPreviousScoredDay": -1.8,
+      "changeFromPreviousScoredDay": -10.5,
       "flags": [
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 10.0",
+          "detail": "Confidence is 30.2",
           "evidenceArticleIds": [
-            "4d3be89463a1ef98"
+            "e89f532702913f38",
+            "4f3ef631df5485b2"
           ]
         }
       ],
       "topStories": [
         {
-          "id": "4d3be89463a1ef98",
+          "id": "e89f532702913f38",
+          "storyClusterId": "story-002",
+          "title": "Informa plc ( OTCMKTS : IFJPY ) Short Interest Down 51 . 8 % in July",
+          "url": "https://www.tickerreport.com/banking-finance/13546204/informa-plc-otcmktsifjpy-short-interest-down-51-8-in-july.html",
+          "source": "tickerreport.com",
+          "publishedAt": "2026-08-16T22:30:00Z",
+          "polarity": -0.9649,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "4f3ef631df5485b2",
           "storyClusterId": "story-001",
-          "title": "TSNN Roundup of New Hires & Promotions for August",
-          "url": "https://www.tsnn.com/people-career-development/trade-show-moves-tsnn-s-roundup-of-new-hires-promotions-for-august",
-          "source": "tsnn.com",
-          "publishedAt": "2026-08-15T00:00:00Z",
-          "polarity": -0.0261,
+          "title": "Informa ( OTCMKTS : IFPJF ) vs . Townsquare Media ( NYSE : TSQ ) Critical Analysis",
+          "url": "https://www.tickerreport.com/banking-finance/13546105/informa-otcmktsifpjf-vs-townsquare-media-nysetsq-critical-analysis.html",
+          "source": "tickerreport.com",
+          "publishedAt": "2026-08-16T17:00:00Z",
+          "polarity": 0.0929,
           "sentiment": "Neutral / mixed",
           "publisherCount": 1
         }
@@ -1052,10 +1018,10 @@
       "companyName": "Intertek Group PLC",
       "ticker": "ITRK.L",
       "slug": "intertek",
-      "date": "2026-08-15",
+      "date": "2026-08-16",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 50.8,
+      "rollingScore": 50.7,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -1671,92 +1637,71 @@
       "companyName": "Prudential PLC",
       "ticker": "PRU.L",
       "slug": "prudential",
-      "date": "2026-08-15",
-      "dailyScore": 48.6,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 52.0,
-      "confidence": 59.5,
+      "date": "2026-08-16",
+      "dailyScore": 57.8,
+      "dailyLabel": "Slightly positive",
+      "rollingScore": 52.7,
+      "confidence": 45.7,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 13,
-      "sourceCount": 10,
-      "changeFromPreviousScoredDay": -9.5,
-      "flags": [
-        {
-          "type": "earnings_beat",
-          "direction": "positive",
-          "severity": "medium",
-          "status": "possible",
-          "evidenceArticleIds": [
-            "4b08e488853314f5"
-          ],
-          "sourceCount": 1
-        },
-        {
-          "type": "divestment",
-          "direction": "neutral",
-          "severity": "medium",
-          "status": "possible",
-          "evidenceArticleIds": [
-            "9f4bf1de9b1f22b3"
-          ],
-          "sourceCount": 1
-        }
-      ],
+      "storyCount": 6,
+      "sourceCount": 5,
+      "changeFromPreviousScoredDay": 9.2,
+      "flags": [],
       "topStories": [
         {
-          "id": "c9bdd3cbe27a5e68",
-          "storyClusterId": "story-011",
-          "title": "Bank Continues to Build Scale and Strengthen Its Core Franchise in 1H 2026",
-          "url": "http://colombogazette.com/2026/08/15/bank-continues-to-build-scale-and-strengthen-its-core-franchise-in-1h-2026",
-          "source": "colombogazette.com",
-          "publishedAt": "2026-08-15T12:45:00Z",
-          "polarity": 0.9382,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "4b08e488853314f5",
+          "id": "3df7516a600de3ba",
           "storyClusterId": "story-005",
-          "title": "Prudential Sugar Corporation consolidated net profit rises 7 . 86 % in the June 2026 quarter",
-          "url": "https://www.business-standard.com/markets/capital-market-news/prudential-sugar-corporation-consolidated-net-profit-rises-7-86-in-the-june-2026-quarter-126081500281_1.html",
-          "source": "business-standard.com",
-          "publishedAt": "2026-08-15T06:45:00Z",
-          "polarity": 0.9067,
+          "title": "India @ 80 , America @ 250 : Indian diaspora sets Guinness flag record in New York",
+          "url": "https://www.rediff.com/news/report/india80-america250-indian-diaspora-sets-guinness-flag-record-in-new-york/20260816.htm",
+          "source": "rediff.com",
+          "publishedAt": "2026-08-16T14:00:00Z",
+          "polarity": 0.5324,
           "sentiment": "Very positive",
           "publisherCount": 1
         },
         {
-          "id": "d8b83b6622b1bc6a",
-          "storyClusterId": "story-007",
-          "title": "Life insurance claim denied over non - disclosure ? Why family won ₹1 crore after insurer failed to prove concealment",
-          "url": "https://www.livemint.com/money/personal-finance/life-insurance-claim-denied-over-non-disclosure-why-family-won-1-crore-after-insurer-failed-to-prove-concealment-11786780208017.html",
-          "source": "livemint.com",
-          "publishedAt": "2026-08-15T08:30:00Z",
-          "polarity": -0.887,
-          "sentiment": "Very negative",
+          "id": "fbcb990a409daf04",
+          "storyClusterId": "story-004",
+          "title": "M & G plc ( LON : MNG ) Receives GBX 677 . 86 Average PT from Brokerages",
+          "url": "https://www.themarketsdaily.com/2026/08/16/mg-plc-lonmng-receives-gbx-677-86-average-pt-from-brokerages.html",
+          "source": "themarketsdaily.com",
+          "publishedAt": "2026-08-16T10:00:00Z",
+          "polarity": 0.2261,
+          "sentiment": "Positive",
           "publisherCount": 1
         },
         {
-          "id": "ba68e9d7ed949231",
+          "id": "c76f59e7b75228b6",
+          "storyClusterId": "story-001",
+          "title": "Indian I - Day celebrations in New York tri - state area culminate in Guinness World Record",
+          "url": "https://www.tribuneindia.com/news/india/indian-i-day-celebrations-in-new-york-tri-state-area-culminate-in-guinness-world-record",
+          "source": "tribuneindia.com",
+          "publishedAt": "2026-08-16T05:30:00Z",
+          "polarity": 0.2164,
+          "sentiment": "Positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "f9a44a68386f84f1",
+          "storyClusterId": "story-003",
+          "title": "CORDA Investment Management LLC . Makes New $33 . 21 Million Investment in Nutrien Ltd . $NTR",
+          "url": "https://www.themarketsdaily.com/2026/08/16/corda-investment-management-llc-makes-new-33-21-million-investment-in-nutrien-ltd-ntr.html",
+          "source": "themarketsdaily.com",
+          "publishedAt": "2026-08-16T09:00:00Z",
+          "polarity": 0.2016,
+          "sentiment": "Positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "a1273a6022861cfe",
           "storyClusterId": "story-002",
-          "title": "Life insurer denied Rs 1 crore death claim over earlier policy postponement on medical grounds ; here why family wins in state commission",
-          "url": "https://economictimes.indiatimes.com/wealth/insure/life-insurer-denied-rs-1-crore-death-claim-over-earlier-policy-postponement-on-medical-grounds-heres-why-family-wins-in-state-commission/articleshow/133233445.cms",
-          "source": "economictimes.indiatimes.com",
-          "publishedAt": "2026-08-15T03:30:00Z",
-          "polarity": -0.6737,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "c9f6c2c282f88ecd",
-          "storyClusterId": "story-013",
-          "title": "Europe Governments Tried to Stop Cross - Border Bank Mergers . They Are Losing .",
-          "url": "https://it.ibtimes.com/europes-governments-tried-stop-cross-border-bank-mergers-they-are-losing-100938",
-          "source": "it.ibtimes.com",
-          "publishedAt": "2026-08-15T16:00:00Z",
-          "polarity": -0.4722,
-          "sentiment": "Negative",
+          "title": "India Day Parade : Zohran Mamdani attends as first Indian American mayor of New York",
+          "url": "https://timesofindia.indiatimes.com/world/us/india-day-parade-zohran-mamdani-attends-as-first-indian-american-mayor-of-new-york/articleshow/133271648.cms",
+          "source": "timesofindia.indiatimes.com",
+          "publishedAt": "2026-08-16T08:15:00Z",
+          "polarity": 0.0794,
+          "sentiment": "Neutral / mixed",
           "publisherCount": 1
         }
       ]
@@ -1864,7 +1809,7 @@
       "companyName": "J Sainsbury PLC",
       "ticker": "SBRY.L",
       "slug": "j-sainsbury",
-      "date": "2026-08-15",
+      "date": "2026-08-16",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,
@@ -2030,10 +1975,10 @@
       "companyName": "Smith & Nephew PLC",
       "ticker": "SN.L",
       "slug": "smith-and-nephew",
-      "date": "2026-08-15",
+      "date": "2026-08-16",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 48.6,
+      "rollingScore": 48.7,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -2221,59 +2166,86 @@
       "companyName": "Standard Chartered PLC",
       "ticker": "STAN.L",
       "slug": "standard-chartered",
-      "date": "2026-08-15",
-      "dailyScore": 69.1,
-      "dailyLabel": "Positive",
-      "rollingScore": 55.5,
-      "confidence": 43.5,
+      "date": "2026-08-16",
+      "dailyScore": 53.2,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 54.7,
+      "confidence": 50.0,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
       "storyCount": 4,
-      "sourceCount": 4,
-      "changeFromPreviousScoredDay": 15.6,
-      "flags": [],
+      "sourceCount": 6,
+      "changeFromPreviousScoredDay": -15.9,
+      "flags": [
+        {
+          "type": "sentiment_drop",
+          "direction": "negative",
+          "severity": "high",
+          "status": "calculated",
+          "detail": "Daily score decreased by 15.9 points",
+          "evidenceArticleIds": [
+            "7b6169eb5e418d05",
+            "a589c76e0c4a9dfb",
+            "549d41e47f66670b",
+            "37ff1df8c904dd0a"
+          ]
+        },
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "7b6169eb5e418d05",
+            "a589c76e0c4a9dfb",
+            "549d41e47f66670b",
+            "37ff1df8c904dd0a"
+          ]
+        }
+      ],
       "topStories": [
         {
-          "id": "c9bdd3cbe27a5e68",
+          "id": "7b6169eb5e418d05",
           "storyClusterId": "story-003",
-          "title": "Bank Continues to Build Scale and Strengthen Its Core Franchise in 1H 2026",
-          "url": "http://colombogazette.com/2026/08/15/bank-continues-to-build-scale-and-strengthen-its-core-franchise-in-1h-2026",
-          "source": "colombogazette.com",
-          "publishedAt": "2026-08-15T12:45:00Z",
-          "polarity": 0.9382,
-          "sentiment": "Very positive",
+          "title": "XRP ETF Buying Has Dropped 96 % Since Launch : Can Inflows Reach Standard Chartered $8 Billion Forecast ?",
+          "url": "https://finance.yahoo.com/markets/crypto/articles/xrp-etf-buying-dropped-96-180201578.html",
+          "source": "finance.yahoo.com",
+          "publishedAt": "2026-08-16T18:45:00Z",
+          "polarity": -0.9567,
+          "sentiment": "Very negative",
           "publisherCount": 1
         },
         {
-          "id": "cd540e976f757cad",
-          "storyClusterId": "story-004",
-          "title": "Tokenized Stocks Reach 1 . 3M Holders as Volume Surges",
-          "url": "https://cointelegraph.com/news/tokenized-stock-holders-double-to-13m-as-activity-grows",
-          "source": "cointelegraph.com",
-          "publishedAt": "2026-08-15T20:15:00Z",
-          "polarity": 0.8932,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "46f600fc1617f78c",
-          "storyClusterId": "story-001",
-          "title": "LankaWeb – Dubai+1Sri Lanka Indian Ocean Opportunity in a Time of Gulf War",
-          "url": "https://www.lankaweb.com/news/items/2026/08/14/dubai1sri-lankas-indian-ocean-opportunity-in-a-time-of-gulf-war",
-          "source": "lankaweb.com",
-          "publishedAt": "2026-08-15T01:45:00Z",
-          "polarity": 0.4693,
-          "sentiment": "Positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "ca28516cbb3636f9",
+          "id": "a589c76e0c4a9dfb",
           "storyClusterId": "story-002",
-          "title": "Jatin Mehta : the quiet fugitive behind a billion - dollar vanishing act",
-          "url": "https://www.livemint.com/opinion/jatin-mehta-winsome-diamonds-banking-fraud-diamond-industry-11786610415749.html",
-          "source": "livemint.com",
-          "publishedAt": "2026-08-15T03:30:00Z",
-          "polarity": -0.0128,
+          "title": "Economic Watch : Global expats , entrepreneurs tap Hong Kong for solid career prospects",
+          "url": "http://www.singaporestar.com/news/279245543/economic-watch-global-expats-entrepreneurs-tap-hong-kong-for-solid-career-prospects",
+          "source": "singaporestar.com",
+          "publishedAt": "2026-08-16T17:45:00Z",
+          "polarity": 0.8074,
+          "sentiment": "Very positive",
+          "publisherCount": 3
+        },
+        {
+          "id": "549d41e47f66670b",
+          "storyClusterId": "story-004",
+          "title": "China seeks to position digital yuan for cross - border trade settlements",
+          "url": "https://www.asiaasset.com/analysis/china-seeks-to-position-digital-yuan-for-cross-border-trade-settlements",
+          "source": "asiaasset.com",
+          "publishedAt": "2026-08-16T19:30:00Z",
+          "polarity": 0.5388,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "37ff1df8c904dd0a",
+          "storyClusterId": "story-001",
+          "title": "Securitize Q2 Earnings Call Highlights",
+          "url": "https://www.themarketsdaily.com/2026/08/16/securitize-q2-earnings-call-highlights.html",
+          "source": "themarketsdaily.com",
+          "publishedAt": "2026-08-16T05:30:00Z",
+          "polarity": -0.0045,
           "sentiment": "Neutral / mixed",
           "publisherCount": 1
         }
@@ -2420,59 +2392,37 @@
       "companyName": "Whitbread PLC",
       "ticker": "WTB.L",
       "slug": "whitbread",
-      "date": "2026-08-15",
-      "dailyScore": 47.4,
+      "date": "2026-08-16",
+      "dailyScore": 50.1,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 39.6,
-      "confidence": 40.9,
-      "confidenceBand": "medium",
+      "rollingScore": 41.7,
+      "confidence": 16.2,
+      "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 4,
-      "sourceCount": 4,
-      "changeFromPreviousScoredDay": 13.8,
-      "flags": [],
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 2.7,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 16.2",
+          "evidenceArticleIds": [
+            "0f656bfe096d0179"
+          ]
+        }
+      ],
       "topStories": [
         {
-          "id": "2284bfbe2a8c989f",
-          "storyClusterId": "story-003",
-          "title": "UK scaffolding firm goes into administration after 62 years",
-          "url": "https://www.warringtonguardian.co.uk/news/26467262.uk-scaffolding-firm-goes-administration-62-years",
-          "source": "warringtonguardian.co.uk",
-          "publishedAt": "2026-08-15T16:00:00Z",
-          "polarity": -0.8415,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "403de0fb927b1dd2",
-          "storyClusterId": "story-002",
-          "title": "Ipswich councillor welcomes Oyster Reach rescue plan",
-          "url": "https://www.ipswichstar.co.uk/news/26466538.ipswich-councillor-welcomes-oyster-reach-rescue-plan",
-          "source": "ipswichstar.co.uk",
-          "publishedAt": "2026-08-15T12:45:00Z",
-          "polarity": 0.5639,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "58e981411f30ecfb",
+          "id": "0f656bfe096d0179",
           "storyClusterId": "story-001",
-          "title": "Full list of Halifax , TGJones , Lloyds Bank , NatWest and more branches closing",
-          "url": "https://www.express.co.uk/life-style/life/2238517/halifax-tgjones-lloyds-bank-natwest-closures",
-          "source": "express.co.uk",
-          "publishedAt": "2026-08-15T03:30:00Z",
-          "polarity": -0.0234,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        },
-        {
-          "id": "5adc84fe79e29957",
-          "storyClusterId": "story-004",
-          "title": "Bayesian superyacht sinking : How a Kiwi skipper and his crew fought to save who they could",
-          "url": "https://www.nzherald.co.nz/nz/the-horror-of-the-bayesian-how-a-kiwi-skipper-and-his-crew-fought-to-save-who-they-could/premium/U4OKVJRDWJGY7GALFUEMBI72VM",
-          "source": "nzherald.co.nz",
-          "publishedAt": "2026-08-15T17:30:00Z",
-          "polarity": -0.0132,
+          "title": "Ashbridge Inn handed lifeline after Whitbread sale deal",
+          "url": "https://www.southwalesargus.co.uk/news/26466932.ashbridge-inn-handed-lifeline-whitbread-sale-deal",
+          "source": "southwalesargus.co.uk",
+          "publishedAt": "2026-08-16T13:00:00Z",
+          "polarity": 0.0036,
           "sentiment": "Neutral / mixed",
           "publisherCount": 1
         }
@@ -2482,86 +2432,86 @@
       "companyName": "Rolls-Royce",
       "ticker": "RR.L",
       "slug": "rolls-royce",
-      "date": "2026-08-15",
-      "dailyScore": 65.0,
-      "dailyLabel": "Positive",
-      "rollingScore": 53.4,
-      "confidence": 68.4,
+      "date": "2026-08-16",
+      "dailyScore": 44.6,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 51.8,
+      "confidence": 49.3,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 15,
-      "sourceCount": 13,
-      "changeFromPreviousScoredDay": 4.5,
+      "storyCount": 7,
+      "sourceCount": 7,
+      "changeFromPreviousScoredDay": -20.4,
       "flags": [
         {
-          "type": "good_press",
-          "direction": "positive",
-          "severity": "medium",
+          "type": "sentiment_drop",
+          "direction": "negative",
+          "severity": "high",
           "status": "calculated",
-          "detail": "Daily press score is 65.0",
+          "detail": "Daily score decreased by 20.4 points",
           "evidenceArticleIds": [
-            "f79e880490299564",
-            "3121b81d08483fef",
-            "ce808862445664a7",
-            "222105869565f7d2",
-            "6ab142b01003c6f9"
+            "6995e11c4f0062e4",
+            "84633e7f39fcc3d5",
+            "e322de2c1fec682e",
+            "6c14010104e5368a",
+            "85322e5b3f2296fa"
           ]
         }
       ],
       "topStories": [
         {
-          "id": "f79e880490299564",
+          "id": "6995e11c4f0062e4",
+          "storyClusterId": "story-004",
+          "title": "Beatle biopic stars Barry Keoghan , Paul Mescal , Joseph Quinn and Harris Dickinson recreate Abbey Road album cover after the council tried to block filming at the iconic location",
+          "url": "https://www.dailymail.com/tvshowbiz/article-16056529/Beatles-biopic-stars-Barry-Keoghan-Paul-Mescal-Joseph-Quinn-Harris-Dickinson-recreate-Abbey-Road-album-cover-council-tried-block-filming-iconic-location.html",
+          "source": "dailymail.com",
+          "publishedAt": "2026-08-16T15:45:00Z",
+          "polarity": -0.8143,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "84633e7f39fcc3d5",
           "storyClusterId": "story-005",
-          "title": "TCS and Rolls - Royce achieve breakthrough in hydrogen - powered aviation",
-          "url": "https://idrw.org/tcs-and-rolls-royce-achieve-breakthrough-in-hydrogen-powered-aviation",
-          "source": "idrw.org",
-          "publishedAt": "2026-08-15T03:30:00Z",
-          "polarity": 0.8098,
-          "sentiment": "Very positive",
+          "title": "Vanessa Feltz shocked as she blocked out of her road by Beatles biopic filming",
+          "url": "https://www.aol.co.uk/articles/vanessa-feltz-shocked-shes-blocked-153841000.html",
+          "source": "aol.co.uk",
+          "publishedAt": "2026-08-16T16:15:00Z",
+          "polarity": -0.595,
+          "sentiment": "Very negative",
           "publisherCount": 1
         },
         {
-          "id": "3121b81d08483fef",
-          "storyClusterId": "story-011",
-          "title": "Analysts Hail Reliance – Rolls - Royce Strategic Alliance as Spark for India Indigenous Engine Ambitions",
-          "url": "https://idrw.org/analysts-hail-reliance-rolls-royce-strategic-alliance-as-spark-for-indias-indigenous-engine-ambitions",
-          "source": "idrw.org",
-          "publishedAt": "2026-08-15T17:00:00Z",
-          "polarity": 0.7865,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "ce808862445664a7",
-          "storyClusterId": "story-003",
-          "title": "RIL to Partner Rolls - Royce for Fighter Engine",
-          "url": "https://economictimes.indiatimes.com/epaper/delhicapital/2026/aug/15/satet-front/ril-to-partner-rolls-royce-for-fighter-engine/articleshow/133251690.cms",
-          "source": "economictimes.indiatimes.com",
-          "publishedAt": "2026-08-15T06:15:00Z",
-          "polarity": 0.6675,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "222105869565f7d2",
-          "storyClusterId": "story-010",
-          "title": "Reliance Industries , Rolls - Royce plan joint venture for Indian fighter jet engines",
-          "url": "https://www.thehindubusinessline.com/companies/reliance-rolls-royce-team-up-for-indias-advanced-fighter-jet-engine-programme/article71349970.ece",
-          "source": "thehindubusinessline.com",
-          "publishedAt": "2026-08-15T16:00:00Z",
-          "polarity": 0.5269,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "6ab142b01003c6f9",
+          "id": "e322de2c1fec682e",
           "storyClusterId": "story-007",
-          "title": "Knutsford town centre rich history and true community spirit",
-          "url": "https://www.warringtonguardian.co.uk/news/26461161.knutsford-town-centres-rich-history-true-community-spirit",
-          "source": "warringtonguardian.co.uk",
-          "publishedAt": "2026-08-15T08:00:00Z",
-          "polarity": 0.4616,
-          "sentiment": "Positive",
+          "title": "Beatles biopics stars seen faithfully recreating iconic moment weve all been waiting for",
+          "url": "https://metro.co.uk/2026/08/16/beatles-biopics-stars-seen-faithfully-recreating-iconic-moment-waiting-29391508",
+          "source": "metro.co.uk",
+          "publishedAt": "2026-08-16T20:00:00Z",
+          "polarity": 0.1431,
+          "sentiment": "Slightly positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "6c14010104e5368a",
+          "storyClusterId": "story-002",
+          "title": "Getting Su 57 is as good as killing AMCA : Ex IAF chief warns against buying foreign fifth gen jets",
+          "url": "https://www.businesstoday.in/india/story/getting-su-57-is-as-good-as-killing-amca-ex-iaf-chief-warns-against-buying-foreign-fifth-gen-jets-549451-2026-08-16",
+          "source": "businesstoday.in",
+          "publishedAt": "2026-08-16T08:30:00Z",
+          "polarity": 0.142,
+          "sentiment": "Slightly positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "85322e5b3f2296fa",
+          "storyClusterId": "story-001",
+          "title": "How the World Cup - winning Charlton brothers returned home to Ashington in triumph",
+          "url": "https://www.chroniclelive.co.uk/news/history/how-world-cup-winning-charlton-34443627",
+          "source": "chroniclelive.co.uk",
+          "publishedAt": "2026-08-16T00:30:00Z",
+          "polarity": 0.0872,
+          "sentiment": "Neutral / mixed",
           "publisherCount": 1
         }
       ]
@@ -2721,7 +2671,7 @@
       "companyName": "Associated British Foods PLC",
       "ticker": "ABF.L",
       "slug": "associated-british-foods",
-      "date": "2026-08-15",
+      "date": "2026-08-16",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.2,
@@ -2773,41 +2723,27 @@
       "companyName": "Croda International PLC",
       "ticker": "CRDA.L",
       "slug": "croda-international",
-      "date": "2026-08-15",
-      "dailyScore": 64.6,
-      "dailyLabel": "Positive",
-      "rollingScore": 51.9,
-      "confidence": 19.4,
+      "date": "2026-08-16",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 51.7,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": 16.4,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 19.4",
-          "evidenceArticleIds": [
-            "e8602fad3e097fbd"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "e8602fad3e097fbd",
-          "storyClusterId": "story-001",
-          "title": "Croda International ( OTCMKTS : COIHY ) Sees Strong Trading Volume – Still a Buy ?",
-          "url": "https://www.themarketsdaily.com/2026/08/15/croda-international-otcmktscoihy-sees-strong-trading-volume-still-a-buy.html",
-          "source": "themarketsdaily.com",
-          "publishedAt": "2026-08-15T13:45:00Z",
-          "polarity": 0.879,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "easyjet": {
       "companyName": "EasyJet PLC",
@@ -2912,7 +2848,7 @@
       "companyName": "Halma PLC",
       "ticker": "HLMA.L",
       "slug": "halma",
-      "date": "2026-08-15",
+      "date": "2026-08-16",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,
@@ -2990,41 +2926,27 @@
       "companyName": "InterContinental Hotels Group PLC",
       "ticker": "IHG.L",
       "slug": "intercontinental-hotels",
-      "date": "2026-08-15",
-      "dailyScore": 49.1,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 51.7,
-      "confidence": 10.6,
+      "date": "2026-08-16",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 51.5,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": -5.4,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 10.6",
-          "evidenceArticleIds": [
-            "2d293e122de1be8b"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "2d293e122de1be8b",
-          "storyClusterId": "story-001",
-          "title": "8 / 15 / 26 On the record",
-          "url": "https://lufkindailynews.com/news/record/on_the_record/8-15-26-on-the-record/article_0d5d7b05-67fe-512c-8090-acf11e925c54.html",
-          "source": "lufkindailynews.com",
-          "publishedAt": "2026-08-14T23:15:00Z",
-          "polarity": -0.0524,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "jd-sports-fashion": {
       "companyName": "JD Sports Fashion PLC",
@@ -3120,10 +3042,10 @@
       "companyName": "Land Securities Group PLC",
       "ticker": "LAND.L",
       "slug": "land-securities",
-      "date": "2026-08-15",
+      "date": "2026-08-16",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 51.8,
+      "rollingScore": 51.6,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -3146,10 +3068,10 @@
       "companyName": "Mondi PLC",
       "ticker": "MNDI.L",
       "slug": "mondi",
-      "date": "2026-08-15",
+      "date": "2026-08-16",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 54.0,
+      "rollingScore": 53.6,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -3172,10 +3094,10 @@
       "companyName": "Reckitt Benckiser Group PLC",
       "ticker": "RKT.L",
       "slug": "reckitt-benckiser",
-      "date": "2026-08-15",
+      "date": "2026-08-16",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 52.2,
+      "rollingScore": 52.0,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -3198,7 +3120,7 @@
       "companyName": "SSE PLC",
       "ticker": "SSE.L",
       "slug": "sse",
-      "date": "2026-08-15",
+      "date": "2026-08-16",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,
@@ -3892,61 +3814,48 @@
       "companyName": "Diageo",
       "ticker": "DGE.L",
       "slug": "diageo",
-      "date": "2026-08-15",
-      "dailyScore": 50.1,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 48.1,
-      "confidence": 33.9,
-      "confidenceBand": "low",
+      "date": "2026-08-16",
+      "dailyScore": 40.3,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 47.1,
+      "confidence": 41.4,
+      "confidenceBand": "medium",
       "coverageStatus": "ok",
       "storyCount": 3,
       "sourceCount": 3,
-      "changeFromPreviousScoredDay": 9.6,
-      "flags": [
-        {
-          "type": "low_confidence",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Confidence is 33.9",
-          "evidenceArticleIds": [
-            "742d2ba0ccbc2c5d",
-            "f04c0007429d8cb6",
-            "b1f616fdc2c82ec6"
-          ]
-        }
-      ],
+      "changeFromPreviousScoredDay": -9.8,
+      "flags": [],
       "topStories": [
         {
-          "id": "742d2ba0ccbc2c5d",
+          "id": "189e4baea99fc940",
           "storyClusterId": "story-003",
-          "title": "Shinny Gobiyeza on steering naamsa through a changing automotive industry",
-          "url": "https://gq.co.za/wealth/2-07-28-shinny-gobiyeza-on-steering-naamsa-through-a-changing-automotive-industry",
-          "source": "gq.co.za",
-          "publishedAt": "2026-08-15T14:30:00Z",
-          "polarity": 0.3608,
-          "sentiment": "Positive",
+          "title": "UK hotel group collapses into administration : Recap",
+          "url": "https://www.heraldscotland.com/news/26464608.uk-hotel-group-collapses-administration-recap",
+          "source": "heraldscotland.com",
+          "publishedAt": "2026-08-16T18:00:00Z",
+          "polarity": -0.7335,
+          "sentiment": "Very negative",
           "publisherCount": 1
         },
         {
-          "id": "f04c0007429d8cb6",
-          "storyClusterId": "story-001",
-          "title": "Kaia Gerber may be as beautiful as her mother . But she just outed an ugly secret at the heart of America most photogenic family that insiders are now scrambling to explain away",
-          "url": "https://www.dailymail.com/tvshowbiz/article-16050817/Kaia-Gerber-Cindy-Crawford-Randy-Gerber-Presley-Gerber.html",
-          "source": "dailymail.com",
-          "publishedAt": "2026-08-15T01:30:00Z",
-          "polarity": -0.3487,
+          "id": "6366bb12c41e5c46",
+          "storyClusterId": "story-002",
+          "title": "Rachel Danis parents : Patrick Clancy wife family in focus amid Lindsay Clancy trial for killing children",
+          "url": "https://www.hindustantimes.com/world-news/us-news/rachel-danis-parents-patrick-clancy-wife-family-in-focus-amid-lindsay-clancy-trial-for-killing-children-sue-roy-danis-101786857234636.html",
+          "source": "hindustantimes.com",
+          "publishedAt": "2026-08-16T07:15:00Z",
+          "polarity": -0.2858,
           "sentiment": "Negative",
           "publisherCount": 1
         },
         {
-          "id": "b1f616fdc2c82ec6",
-          "storyClusterId": "story-002",
-          "title": "Vintage Bottle of Guinness Found in Shipwreck",
-          "url": "https://www.themarysue.com/divers-eager-to-taste-the-162-year-old-bottle-of-guinness-they-found-in-a-shipwreck-an-unforgettable-once-in-a-lifetime-experience",
-          "source": "themarysue.com",
-          "publishedAt": "2026-08-15T01:30:00Z",
-          "polarity": -0.0017,
+          "id": "92d0b0d1598d3a6e",
+          "storyClusterId": "story-001",
+          "title": "Diageo ( DEO ) Vs Constellation ( STZ ): Hedge Funds Appear To Mirror Jim Cramer Sentiment",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/diageo-deo-vs-constellation-stz-213214804.html",
+          "source": "finance.yahoo.com",
+          "publishedAt": "2026-08-15T23:00:00Z",
+          "polarity": 0.0502,
           "sentiment": "Neutral / mixed",
           "publisherCount": 1
         }
@@ -4066,50 +3975,38 @@
       "companyName": "Experian",
       "ticker": "EXPN.L",
       "slug": "experian",
-      "date": "2026-08-15",
-      "dailyScore": 39.0,
-      "dailyLabel": "Negative",
-      "rollingScore": 47.4,
-      "confidence": 23.5,
+      "date": "2026-08-16",
+      "dailyScore": 40.0,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 46.8,
+      "confidence": 11.9,
       "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 2,
-      "sourceCount": 2,
-      "changeFromPreviousScoredDay": 1.4,
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 1.0,
       "flags": [
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 23.5",
+          "detail": "Confidence is 11.9",
           "evidenceArticleIds": [
-            "61c4e517a8a64caf",
-            "0ead5ea134990e8b"
+            "9d31c1d002584ad7"
           ]
         }
       ],
       "topStories": [
         {
-          "id": "61c4e517a8a64caf",
-          "storyClusterId": "story-002",
-          "title": "ICE withdraws $125M sole - source Thomson Reuters surveillance data deal",
-          "url": "https://www.biometricupdate.com/202608/ice-withdraws-125m-sole-source-thomson-reuters-surveillance-data-deal",
-          "source": "biometricupdate.com",
-          "publishedAt": "2026-08-15T18:30:00Z",
-          "polarity": -0.9,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "0ead5ea134990e8b",
+          "id": "9d31c1d002584ad7",
           "storyClusterId": "story-001",
-          "title": "Hard pull vs . soft pull : What you need to know before you apply for credit",
-          "url": "https://www.atlantanewsfirst.com/2026/08/14/hard-pull-vs-soft-pull-what-you-need-know-before-you-apply-credit",
-          "source": "atlantanewsfirst.com",
-          "publishedAt": "2026-08-15T02:00:00Z",
-          "polarity": 0.0185,
-          "sentiment": "Neutral / mixed",
+          "title": "Moneywise staff confesses worst money mistakes from ignoring subscriptions to sacrificing first home  must - haves",
+          "url": "https://finance.yahoo.com/markets/articles/moneywise-staff-confesses-worst-money-150000883.html",
+          "source": "finance.yahoo.com",
+          "publishedAt": "2026-08-16T15:30:00Z",
+          "polarity": -0.602,
+          "sentiment": "Very negative",
           "publisherCount": 1
         }
       ]
@@ -4118,38 +4015,38 @@
       "companyName": "Glencore",
       "ticker": "GLEN.L",
       "slug": "glencore",
-      "date": "2026-08-15",
-      "dailyScore": 59.5,
-      "dailyLabel": "Slightly positive",
-      "rollingScore": 51.3,
-      "confidence": 11.6,
+      "date": "2026-08-16",
+      "dailyScore": 54.0,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 51.5,
+      "confidence": 10.6,
       "confidenceBand": "low",
       "coverageStatus": "ok",
       "storyCount": 1,
       "sourceCount": 1,
-      "changeFromPreviousScoredDay": 15.6,
+      "changeFromPreviousScoredDay": -5.5,
       "flags": [
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 11.6",
+          "detail": "Confidence is 10.6",
           "evidenceArticleIds": [
-            "e0d17e2829fab12a"
+            "5514436c8c324924"
           ]
         }
       ],
       "topStories": [
         {
-          "id": "e0d17e2829fab12a",
+          "id": "5514436c8c324924",
           "storyClusterId": "story-001",
-          "title": "Southern Palladium urges faster mining rights process",
-          "url": "https://www.businessday.co.za/business-times/2026-08-15-southern-palladium-urges-faster-mining-rights-process",
-          "source": "businessday.co.za",
-          "publishedAt": "2026-08-15T04:15:00Z",
-          "polarity": 0.5702,
-          "sentiment": "Very positive",
+          "title": "Petrol , Diesel Supplies Increase as New Cargoes Arrive at Nigerian Terminals - Latest News In Nigeria , Nigeria News Today , Your Online Nigerian Newspaper",
+          "url": "https://www.nigerianeye.com/2026/08/petrol-diesel-supplies-increase-as-new.html",
+          "source": "nigerianeye.com",
+          "publishedAt": "2026-08-16T14:00:00Z",
+          "polarity": 0.24,
+          "sentiment": "Positive",
           "publisherCount": 1
         }
       ]
@@ -4184,7 +4081,7 @@
       "companyName": "Diploma PLC",
       "ticker": "DPLM.L",
       "slug": "diploma",
-      "date": "2026-08-15",
+      "date": "2026-08-16",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,

@@ -1861,6 +1861,64 @@
         }
       ],
       "changeFromPreviousScoredDay": -1.8
+    },
+    {
+      "date": "2026-08-16",
+      "dailyScore": 39.1,
+      "dailyLabel": "Negative",
+      "rollingScore": 49.1,
+      "confidence": 30.2,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 2,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 1,
+      "dispersion": 0.5289,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "e89f532702913f38",
+          "storyClusterId": "story-002",
+          "title": "Informa plc ( OTCMKTS : IFJPY ) Short Interest Down 51 . 8 % in July",
+          "url": "https://www.tickerreport.com/banking-finance/13546204/informa-plc-otcmktsifjpy-short-interest-down-51-8-in-july.html",
+          "source": "tickerreport.com",
+          "publishedAt": "2026-08-16T22:30:00Z",
+          "polarity": -0.9649,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "4f3ef631df5485b2",
+          "storyClusterId": "story-001",
+          "title": "Informa ( OTCMKTS : IFPJF ) vs . Townsquare Media ( NYSE : TSQ ) Critical Analysis",
+          "url": "https://www.tickerreport.com/banking-finance/13546105/informa-otcmktsifpjf-vs-townsquare-media-nysetsq-critical-analysis.html",
+          "source": "tickerreport.com",
+          "publishedAt": "2026-08-16T17:00:00Z",
+          "polarity": 0.0929,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 30.2",
+          "evidenceArticleIds": [
+            "e89f532702913f38",
+            "4f3ef631df5485b2"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -10.5
     }
   ]
 }
