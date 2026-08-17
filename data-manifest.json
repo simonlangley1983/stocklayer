@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-17T01:13:09.220858Z",
+  "joinKey": "slug",
+  "universes": {
+    "uk-100": {
+      "name": "StockLayer UK 100",
+      "companyCount": 100,
+      "companies": "universes/uk-100/companies.json"
+    }
+  },
+  "newsSentiment": {
+    "methodologyVersion": "1.0.0",
+    "asOfDate": "2026-08-16",
+    "homepageSummary": "sentiment/site-summary.json",
+    "homepageSummarySchema": "sentiment/site-summary-schema-v1.json",
+    "latestWithStories": "sentiment/latest.json",
+    "historyTemplate": "sentiment/history/{slug}.json",
+    "runStatus": "sentiment/run-status.json",
+    "methodology": "sentiment/methodology.json",
+    "observationSchema": "sentiment/schema-v1.json",
+    "scoreRange": [
+      0,
+      100
+    ],
+    "noCoverageScore": null
+  }
+}

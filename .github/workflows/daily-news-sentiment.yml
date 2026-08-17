@@ -8,8 +8,11 @@ on:
       - ".github/workflows/daily-news-sentiment.yml"
       - "automation/news_sentiment.py"
       - "automation/build_sentiment_universe.py"
+      - "automation/build_sentiment_site_data.py"
       - "requirements-sentiment.txt"
+      - "data-manifest.json"
       - "sentiment/**"
+      - "universes/**"
       - "tests/test_news_sentiment.py"
   workflow_dispatch:
     inputs:
@@ -60,7 +63,8 @@ jobs:
       - name: Validate sentiment pipeline
         run: |
           python -c "import torch, transformers; print(torch.__version__, transformers.__version__)"
-          python -m py_compile automation/news_sentiment.py automation/build_sentiment_universe.py
+          python -m py_compile automation/news_sentiment.py automation/build_sentiment_universe.py automation/build_sentiment_site_data.py
+          python automation/build_sentiment_site_data.py
           python -m unittest discover -s tests -v
 
   score:
@@ -112,9 +116,10 @@ jobs:
 
       - name: Commit sentiment observations
         run: |
+          python automation/build_sentiment_site_data.py
           git config user.name "stocklayer-sentiment-bot"
           git config user.email "stocklayer-sentiment-bot@users.noreply.github.com"
-          git add sentiment/latest.json sentiment/run-status.json
+          git add data-manifest.json sentiment/latest.json sentiment/run-status.json sentiment/site-summary.json
           if [[ -d sentiment/history ]]; then git add sentiment/history; fi
           git commit -m "Update daily news sentiment" || echo "No sentiment changes to commit"
           git push
@@ -303,9 +308,10 @@ jobs:
       - name: Commit merged sentiment observations
         shell: bash
         run: |
+          python automation/build_sentiment_site_data.py
           git config user.name "stocklayer-sentiment-bot"
           git config user.email "stocklayer-sentiment-bot@users.noreply.github.com"
-          git add sentiment/latest.json sentiment/run-status.json sentiment/history
+          git add data-manifest.json sentiment/latest.json sentiment/run-status.json sentiment/site-summary.json sentiment/history
           git commit -m "Merge daily news sentiment backfill batches" || echo "No sentiment changes to commit"
           git push
 

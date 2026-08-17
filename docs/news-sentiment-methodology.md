@@ -149,13 +149,23 @@ Phrase matching is defined in `sentiment/event-rules.json`. Event flags require 
 
 ## 10. Stored data and retention
 
-- `sentiment/latest.json`: compact current summary for every company.
+- `universes/uk-100/companies.json`: canonical 100-company site registry. It deliberately remains separate from the pre-existing global company index.
+- `sentiment/site-summary.json`: lightweight homepage feed, keyed by company slug and excluding story evidence.
+- `sentiment/site-summary-schema-v1.json`: versioned JSON Schema for the homepage feed.
+- `sentiment/latest.json`: current summary plus representative story evidence for every company.
 - `sentiment/history/{slug}.json`: up to 400 daily observations per company.
 - `sentiment/run-status.json`: run-level monitoring, provider failures and per-company status.
+- `data-manifest.json`: stable discovery document for the registry, homepage feed, company history, methodology and monitoring paths.
 - Each daily observation retains up to five representative story links, never article bodies.
 - URLs, titles and publisher domains are evidence metadata and may be removed on request or when invalid.
 
 Writes are atomic. A provider failure must not erase the prior latest score. Re-running the same date replaces that date rather than appending a duplicate.
+
+### Site integration contract
+
+The canonical join key is `slug`; company names and tickers must not be used as relational keys. The homepage should fetch `universes/uk-100/companies.json` and `sentiment/site-summary.json` concurrently, then attach `summary.companies[company.slug]` to each company record. A company page should lazy-load `sentiment/history/{slug}.json` and use `sentiment/latest.json` for current supporting stories.
+
+The daily workflow rebuilds the homepage feed and manifest after every scoring or backfill run. Publication fails if the registry and sentiment feeds do not contain exactly the same slug set. A null daily score means no eligible coverage and must never be rendered as neutral 50. Daily score is the primary current signal; the seven-day-half-life rolling score is supporting context. Annual-report analysis and Growth Confidence remain separate measures.
 
 ## 11. Validation and governance
 

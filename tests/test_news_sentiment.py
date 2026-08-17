@@ -10,6 +10,11 @@ from zoneinfo import ZoneInfo
 
 import requests
 
+from automation.build_sentiment_site_data import (
+    build_manifest,
+    build_registry,
+    build_site_summary,
+)
 from automation.news_sentiment import (
     KeywordTestScorer,
     GdeltProvider,
@@ -330,6 +335,66 @@ class NewsSentimentTests(unittest.TestCase):
         self.assertNotIn('"HSBC"', GdeltProvider.query_for(companies["hsbc"]))
         self.assertNotIn('"Barclays"', GdeltProvider.query_for(companies["barclays"]))
         self.assertNotIn('"Berkeley"', GdeltProvider.query_for(companies["berkeley"]))
+
+    def test_site_registry_and_sentiment_cover_the_same_100_slugs(self) -> None:
+        registry = json.loads(
+            (ROOT / "universes" / "uk-100" / "companies.json").read_text(encoding="utf-8")
+        )
+        latest = json.loads((ROOT / "sentiment" / "latest.json").read_text(encoding="utf-8"))
+        summary = build_site_summary(registry, latest)
+        self.assertEqual(registry["companyCount"], 100)
+        self.assertEqual(summary["companyCount"], 100)
+        self.assertEqual(set(summary["companies"]), set(latest["companies"]))
+
+    def test_homepage_summary_is_compact_and_preserves_no_coverage(self) -> None:
+        registry = build_registry(
+            [{"companyName": "Example", "ticker": "EXM.L", "slug": "example"}]
+        )
+        latest = {
+            "methodologyVersion": "1.0.0",
+            "generatedAt": "2026-08-17T00:00:00Z",
+            "asOfDate": "2026-08-16",
+            "companies": {
+                "example": {
+                    "companyName": "Example",
+                    "ticker": "EXM.L",
+                    "slug": "example",
+                    "date": "2026-08-16",
+                    "dailyScore": None,
+                    "dailyLabel": "No coverage",
+                    "rollingScore": 50.0,
+                    "confidence": 0.0,
+                    "confidenceBand": "low",
+                    "coverageStatus": "no_coverage",
+                    "storyCount": 0,
+                    "sourceCount": 0,
+                    "changeFromPreviousScoredDay": None,
+                    "flags": [{
+                        "type": "no_coverage",
+                        "direction": "neutral",
+                        "severity": "low",
+                        "status": "calculated",
+                        "detail": "No eligible coverage",
+                        "evidenceArticleIds": [],
+                    }],
+                    "topStories": [{"title": "Not copied to the homepage feed"}],
+                }
+            },
+        }
+        summary = build_site_summary(registry, latest)
+        company = summary["companies"]["example"]
+        self.assertIsNone(company["dailyScore"])
+        self.assertNotIn("topStories", company)
+        self.assertNotIn("evidenceArticleIds", company["flags"][0])
+        manifest = build_manifest(registry, summary)
+        self.assertIsNone(manifest["newsSentiment"]["noCoverageScore"])
+
+    def test_site_summary_rejects_a_partial_company_join(self) -> None:
+        registry = build_registry(
+            [{"companyName": "Example", "ticker": "EXM.L", "slug": "example"}]
+        )
+        with self.assertRaisesRegex(ValueError, "slug mismatch"):
+            build_site_summary(registry, {"companies": {}})
 
 
 if __name__ == "__main__":
