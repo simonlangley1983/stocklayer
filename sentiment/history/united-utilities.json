@@ -1921,6 +1921,64 @@
         }
       ],
       "changeFromPreviousScoredDay": -8.3
+    },
+    {
+      "date": "2026-08-16",
+      "dailyScore": 40.5,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 42.9,
+      "confidence": 24.4,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 2,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 1,
+      "dispersion": 0.2884,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "1dfd959d16c1b956",
+          "storyClusterId": "story-002",
+          "title": "Burst water main in Withington creates  bubbling mountain spring",
+          "url": "https://www.manchestereveningnews.co.uk/news/greater-manchester-news/burst-water-main-withington-creates-34468144",
+          "source": "manchestereveningnews.co.uk",
+          "publishedAt": "2026-08-16T19:45:00Z",
+          "polarity": -0.6695,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "0cb5f7b8cff9e03f",
+          "storyClusterId": "story-001",
+          "title": "Concerns as car parking charges set to be implemented at Rivington",
+          "url": "https://www.lancashiretelegraph.co.uk/news/26468289.concerns-car-parking-charges-set-implemented-rivington",
+          "source": "lancashiretelegraph.co.uk",
+          "publishedAt": "2026-08-16T09:45:00Z",
+          "polarity": -0.0926,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 24.4",
+          "evidenceArticleIds": [
+            "1dfd959d16c1b956",
+            "0cb5f7b8cff9e03f"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 7.3
     }
   ]
 }
