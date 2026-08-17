@@ -10,6 +10,10 @@ from typing import Any
 
 
 ALIAS_OVERRIDES = {
+    "shell": ["Shell plc"],
+    "hsbc": ["HSBC Holdings", "HSBC Bank"],
+    "barclays": ["Barclays PLC", "Barclays Bank"],
+    "berkeley": ["Berkeley Group"],
     "british-american-tobacco": ["British American Tobacco", "BAT"],
     "bp": ["BP plc", "British Petroleum"],
     "rolls-royce": ["Rolls-Royce Holdings", "Rolls Royce"],
@@ -43,11 +47,14 @@ AMBIGUOUS_ALIASES = {
     "compass",
     "dcc",
     "diploma",
+    "hsbc",
     "imi",
     "next",
     "phoenix",
     "sage",
     "shell",
+    "barclays",
+    "berkeley",
     "sse",
     "unite",
 }

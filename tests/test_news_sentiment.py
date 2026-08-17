@@ -321,6 +321,16 @@ class NewsSentimentTests(unittest.TestCase):
         self.assertEqual(len(slugs), 100)
         self.assertEqual(len(set(slugs)), 100)
 
+    def test_ambiguous_financial_and_company_names_use_specific_queries(self) -> None:
+        universe = json.loads(
+            (ROOT / "sentiment" / "company-universe.json").read_text(encoding="utf-8")
+        )
+        companies = {item["slug"]: item for item in universe["companies"]}
+        self.assertEqual(GdeltProvider.query_for(companies["shell"]), '"Shell plc" sourcelang:english')
+        self.assertNotIn('"HSBC"', GdeltProvider.query_for(companies["hsbc"]))
+        self.assertNotIn('"Barclays"', GdeltProvider.query_for(companies["barclays"]))
+        self.assertNotIn('"Berkeley"', GdeltProvider.query_for(companies["berkeley"]))
+
 
 if __name__ == "__main__":
     unittest.main()
