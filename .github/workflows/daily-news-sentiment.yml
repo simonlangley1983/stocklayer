@@ -198,7 +198,8 @@ jobs:
       contents: write
     strategy:
       fail-fast: false
-      max-parallel: 20
+      # GDELT throttles concurrent DOC API collectors; serialize batches for reliability.
+      max-parallel: 1
       matrix: ${{ fromJSON(needs.prepare-backfill-batches.outputs.matrix) }}
 
     steps:
@@ -327,4 +328,9 @@ jobs:
               f"Backfill completeness: {status['completedObservationCount']}/"
               f"{status['requestedObservationCount']} ({status['completeness']:.2%})"
           )
+          if status["completeness"] < status["minimumCompleteness"]:
+              raise SystemExit(
+                  "Backfill completeness is below the required threshold: "
+                  f"{status['completeness']:.2%} < {status['minimumCompleteness']:.2%}"
+              )
           PY
