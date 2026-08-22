@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stocklayer.example/schemas/news-sentiment-v1.json",
+  "title": "StockLayer daily news sentiment observation",
+  "type": "object",
+  "required": [
+    "date",
+    "dailyScore",
+    "dailyLabel",
+    "rollingScore",
+    "confidence",
+    "coverageStatus",
+    "storyCount",
+    "sourceCount",
+    "flags",
+    "topStories"
+  ],
+  "properties": {
+    "date": {"type": "string", "format": "date"},
+    "dailyScore": {"type": ["number", "null"], "minimum": 0, "maximum": 100},
+    "dailyLabel": {"type": "string"},
+    "rollingScore": {"type": "number", "minimum": 0, "maximum": 100},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 100},
+    "confidenceBand": {"enum": ["low", "medium", "high"]},
+    "coverageStatus": {"enum": ["ok", "no_coverage", "provider_error"]},
+    "collectionCompleteness": {"type": "number", "minimum": 0, "maximum": 1},
+    "candidateCount": {"type": "integer", "minimum": 0},
+    "eligibleArticleCount": {"type": "integer", "minimum": 0},
+    "storyCount": {"type": "integer", "minimum": 0},
+    "effectiveStoryCount": {"type": "number", "minimum": 0},
+    "sourceCount": {"type": "integer", "minimum": 0},
+    "positiveStoryCount": {"type": "integer", "minimum": 0},
+    "neutralStoryCount": {"type": "integer", "minimum": 0},
+    "negativeStoryCount": {"type": "integer", "minimum": 0},
+    "dispersion": {"type": "number", "minimum": 0},
+    "changeFromPreviousScoredDay": {"type": ["number", "null"]},
+    "flags": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "direction", "severity", "status"],
+        "properties": {
+          "type": {"type": "string"},
+          "direction": {"enum": ["positive", "negative", "neutral", "mixed"]},
+          "severity": {"enum": ["low", "medium", "high", "critical"]},
+          "status": {"enum": ["possible", "confirmed", "calculated"]},
+          "evidenceArticleIds": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "topStories": {
+      "type": "array",
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "url", "source", "publishedAt", "polarity"],
+        "properties": {
+          "id": {"type": "string"},
+          "title": {"type": "string"},
+          "url": {"type": "string", "format": "uri"},
+          "source": {"type": "string"},
+          "publishedAt": {"type": "string", "format": "date-time"},
+          "polarity": {"type": "number", "minimum": -1, "maximum": 1}
+        }
+      }
+    }
+  }
+}

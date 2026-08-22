@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "rules": [
+    {"type": "annual_results", "direction": "neutral", "severity": "high", "patterns": ["\\bannual results?\\b", "\\bfull[- ]year results?\\b", "\\bpreliminary results?\\b", "\\bfy ?20\\d{2} results?\\b"]},
+    {"type": "interim_results", "direction": "neutral", "severity": "medium", "patterns": ["\\binterim results?\\b", "\\bhalf[- ]year results?\\b", "\\bh1 results?\\b", "\\bfirst[- ]half results?\\b"]},
+    {"type": "trading_update", "direction": "neutral", "severity": "medium", "patterns": ["\\btrading update\\b", "\\bquarterly update\\b", "\\bq[1-4] (?:results|update)\\b"]},
+    {"type": "earnings_beat", "direction": "positive", "severity": "medium", "patterns": ["\\bbeats? (?:expectations|estimates|forecasts)\\b", "\\bbetter than expected\\b", "\\bprofits? (?:jump|surge|soar|rise)s?\\b"]},
+    {"type": "earnings_miss", "direction": "negative", "severity": "medium", "patterns": ["\\bmiss(?:es|ed)? (?:expectations|estimates|forecasts)\\b", "\\bworse than expected\\b", "\\bprofits? (?:fall|drop|slump|plunge)s?\\b"]},
+    {"type": "profit_warning", "direction": "negative", "severity": "critical", "patterns": ["\\bprofit warning\\b", "\\bwarns? on profits?\\b", "\\bprofits? warning\\b"]},
+    {"type": "guidance_raised", "direction": "positive", "severity": "high", "patterns": ["\\braises? (?:its )?(?:guidance|outlook|forecast)\\b", "\\bupgrades? (?:its )?(?:guidance|outlook|forecast)\\b", "\\boutlook raised\\b"]},
+    {"type": "guidance_cut", "direction": "negative", "severity": "high", "patterns": ["\\bcuts? (?:its )?(?:guidance|outlook|forecast)\\b", "\\blowers? (?:its )?(?:guidance|outlook|forecast)\\b", "\\boutlook cut\\b"]},
+    {"type": "dividend_change", "direction": "neutral", "severity": "medium", "patterns": ["\\bdividend (?:raised|increased|cut|reduced|suspended|restored)\\b", "\\b(?:raises|cuts|suspends|restores) (?:its )?dividend\\b"]},
+    {"type": "share_buyback", "direction": "positive", "severity": "medium", "patterns": ["\\bshare buyback\\b", "\\bstock buyback\\b", "\\brepurchase programme\\b"]},
+    {"type": "capital_raise", "direction": "negative", "severity": "high", "patterns": ["\\brights issue\\b", "\\bcapital rais(?:e|ing)\\b", "\\bshare placing\\b", "\\bequity raise\\b"]},
+    {"type": "merger_acquisition", "direction": "neutral", "severity": "high", "patterns": ["\\bto acquire\\b", "\\bagrees? to buy\\b", "\\btakeover (?:bid|offer|talks)\\b", "\\bmerger (?:deal|talks|agreement)\\b"]},
+    {"type": "divestment", "direction": "neutral", "severity": "medium", "patterns": ["\\bto sell (?:its |a )?(?:unit|business|stake|division)\\b", "\\bdivest(?:s|ment|iture)?\\b", "\\basset sale\\b"]},
+    {"type": "leadership_change", "direction": "neutral", "severity": "high", "patterns": ["\\b(?:ceo|chief executive|cfo|chairman|chairwoman|chair) (?:resigns|steps down|appointed|named|ousted|dies)\\b", "\\bappoints? (?:new )?(?:ceo|chief executive|cfo|chair)\\b"]},
+    {"type": "workforce_reduction", "direction": "negative", "severity": "high", "patterns": ["\\bjob cuts?\\b", "\\bcuts? \\d[\\d,]* jobs?\\b", "\\blayoffs?\\b", "\\bredundan(?:cy|cies)\\b"]},
+    {"type": "industrial_action", "direction": "negative", "severity": "medium", "patterns": ["\\bstrike action\\b", "\\bworkers? strike\\b", "\\bwalkout\\b"]},
+    {"type": "regulatory_investigation", "direction": "negative", "severity": "high", "patterns": ["\\bregulator(?:y|s)? (?:probe|investigation|investigates)\\b", "\\bunder investigation\\b", "\\bcompetition probe\\b", "\\bantitrust probe\\b"]},
+    {"type": "fine_or_lawsuit", "direction": "negative", "severity": "high", "patterns": ["\\bfined? (?:£|\\$|€)?[\\d]", "\\blawsuit\\b", "\\bsued?\\b", "\\blegal action\\b", "\\bsettles? claims?\\b"]},
+    {"type": "cybersecurity_incident", "direction": "negative", "severity": "critical", "patterns": ["\\bcyber(?:security)? (?:attack|incident|breach)\\b", "\\bransomware\\b", "\\bdata breach\\b", "\\bhacked\\b"]},
+    {"type": "operational_incident", "direction": "negative", "severity": "high", "patterns": ["\\bmajor outage\\b", "\\boperations? suspended\\b", "\\bfactory (?:fire|explosion|shutdown)\\b", "\\bfatal accident\\b"]},
+    {"type": "product_recall", "direction": "negative", "severity": "high", "patterns": ["\\bproduct recall\\b", "\\brecalls? [\\d,]+\\b", "\\bsafety recall\\b"]},
+    {"type": "analyst_upgrade", "direction": "positive", "severity": "low", "patterns": ["\\bupgraded? to (?:buy|outperform|overweight)\\b", "\\bprice target raised\\b", "\\banalyst upgrade\\b"]},
+    {"type": "analyst_downgrade", "direction": "negative", "severity": "low", "patterns": ["\\bdowngraded? to (?:sell|underperform|underweight)\\b", "\\bprice target cut\\b", "\\banalyst downgrade\\b"]}
+  ]
+}

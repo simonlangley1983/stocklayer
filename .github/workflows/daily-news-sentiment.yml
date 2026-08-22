@@ -1,0 +1,330 @@
+name: Daily news sentiment
+
+on:
+  schedule:
+    - cron: "30 5 * * *"
+  pull_request:
+    paths:
+      - ".github/workflows/daily-news-sentiment.yml"
+      - "automation/news_sentiment.py"
+      - "automation/build_sentiment_universe.py"
+      - "automation/build_sentiment_site_data.py"
+      - "requirements-sentiment.txt"
+      - "data-manifest.json"
+      - "sentiment/**"
+      - "universes/**"
+      - "tests/test_news_sentiment.py"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "London date, or inclusive backfill end date (YYYY-MM-DD); blank means previous day"
+        required: false
+        type: string
+      slugs:
+        description: "Optional comma-separated company slugs"
+        required: false
+        type: string
+      backfill_days:
+        description: "Optional completed-day backfill ending yesterday (1-90)"
+        required: false
+        type: number
+      batch_size:
+        description: "Optional companies per durable backfill batch (use with backfill_days)"
+        required: false
+        type: number
+
+concurrency:
+  group: daily-news-sentiment
+  cancel-in-progress: false
+
+jobs:
+  test:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-sentiment.txt
+
+      - name: Install sentiment dependencies
+        run: |
+          pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install -r requirements-sentiment.txt
+
+      - name: Validate sentiment pipeline
+        run: |
+          python -c "import torch, transformers; print(torch.__version__, transformers.__version__)"
+          python -m py_compile automation/news_sentiment.py automation/build_sentiment_universe.py automation/build_sentiment_site_data.py
+          python automation/build_sentiment_site_data.py
+          python -m unittest discover -s tests -v
+
+  score:
+    if: github.event_name != 'pull_request' && (github.event_name != 'workflow_dispatch' || inputs.batch_size == 0)
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-sentiment.txt
+
+      - name: Cache FinBERT model
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: finbert-${{ runner.os }}-${{ hashFiles('requirements-sentiment.txt', 'sentiment/methodology.json') }}
+
+      - name: Install sentiment dependencies
+        run: |
+          pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install -r requirements-sentiment.txt
+
+      - name: Generate daily sentiment
+        id: sentiment
+        shell: bash
+        env:
+          INPUT_DATE: ${{ inputs.date }}
+          INPUT_SLUGS: ${{ inputs.slugs }}
+          INPUT_BACKFILL_DAYS: ${{ inputs.backfill_days }}
+        run: |
+          set +e
+          args=()
+          if [[ -n "$INPUT_DATE" ]]; then args+=(--date "$INPUT_DATE"); fi
+          if [[ -n "$INPUT_SLUGS" ]]; then args+=(--slugs "$INPUT_SLUGS"); fi
+          if [[ -n "$INPUT_BACKFILL_DAYS" ]]; then args+=(--backfill-days "$INPUT_BACKFILL_DAYS"); fi
+          python automation/news_sentiment.py "${args[@]}"
+          status=$?
+          echo "exit_code=$status" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Commit sentiment observations
+        run: |
+          python automation/build_sentiment_site_data.py
+          git config user.name "stocklayer-sentiment-bot"
+          git config user.email "stocklayer-sentiment-bot@users.noreply.github.com"
+          git add data-manifest.json sentiment/latest.json sentiment/run-status.json sentiment/site-summary.json
+          if [[ -d sentiment/history ]]; then git add sentiment/history; fi
+          git commit -m "Update daily news sentiment" || echo "No sentiment changes to commit"
+          git push
+
+      - name: Enforce monitoring threshold
+        if: steps.sentiment.outputs.exit_code != '0'
+        run: |
+          echo "Sentiment run completed below the required coverage threshold. See sentiment/run-status.json."
+          exit "${{ steps.sentiment.outputs.exit_code }}"
+
+  prepare-backfill-batches:
+    if: github.event_name == 'workflow_dispatch' && inputs.batch_size > 0
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    outputs:
+      matrix: ${{ steps.matrix.outputs.matrix }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build company batch matrix
+        id: matrix
+        shell: bash
+        env:
+          BATCH_SIZE: ${{ inputs.batch_size }}
+          BACKFILL_DAYS: ${{ inputs.backfill_days }}
+          END_DATE: ${{ inputs.date }}
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import json
+          import os
+          from datetime import datetime, timedelta
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+
+          batch_size = int(os.environ["BATCH_SIZE"])
+          if not 1 <= batch_size <= 20:
+              raise SystemExit("batch_size must be between 1 and 20")
+
+          universe = json.loads(Path("sentiment/company-universe.json").read_text(encoding="utf-8"))
+          day_count = int(os.environ["BACKFILL_DAYS"])
+          end_day = (
+              datetime.fromisoformat(os.environ["END_DATE"]).date()
+              if os.environ.get("END_DATE")
+              else datetime.now(ZoneInfo("Europe/London")).date() - timedelta(days=1)
+          )
+          requested_dates = {
+              (end_day - timedelta(days=offset)).isoformat()
+              for offset in range(day_count)
+          }
+          slugs = []
+          for company in universe["companies"]:
+              slug = company["slug"]
+              history_path = Path("sentiment/history") / f"{slug}.json"
+              observations = []
+              if history_path.exists():
+                  history = json.loads(history_path.read_text(encoding="utf-8"))
+                  observations = history.get("observations", [])
+              completed_dates = {item.get("date") for item in observations}
+              if not requested_dates.issubset(completed_dates):
+                  slugs.append(slug)
+          if not slugs:
+              raise SystemExit("The requested backfill range is already complete")
+          batches = [slugs[index:index + batch_size] for index in range(0, len(slugs), batch_size)]
+          matrix = {"include": [{"number": index + 1, "slugs": ",".join(batch)} for index, batch in enumerate(batches)]}
+          print("matrix=" + json.dumps(matrix, separators=(",", ":")))
+          PY
+
+  score-backfill-batch:
+    needs: prepare-backfill-batches
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    permissions:
+      contents: write
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix: ${{ fromJSON(needs.prepare-backfill-batches.outputs.matrix) }}
+
+    steps:
+      - name: Checkout latest branch state
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-sentiment.txt
+
+      - name: Cache FinBERT model
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: finbert-${{ runner.os }}-${{ hashFiles('requirements-sentiment.txt', 'sentiment/methodology.json') }}
+
+      - name: Install sentiment dependencies
+        run: |
+          pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install -r requirements-sentiment.txt
+
+      - name: Generate sentiment batch ${{ matrix.number }}
+        id: sentiment
+        shell: bash
+        env:
+          INPUT_SLUGS: ${{ matrix.slugs }}
+          INPUT_BACKFILL_DAYS: ${{ inputs.backfill_days }}
+          INPUT_DATE: ${{ inputs.date }}
+        run: |
+          set +e
+          args=(--backfill-days "$INPUT_BACKFILL_DAYS" --slugs "$INPUT_SLUGS")
+          if [[ -n "$INPUT_DATE" ]]; then args+=(--date "$INPUT_DATE"); fi
+          python automation/news_sentiment.py "${args[@]}"
+          status=$?
+          echo "exit_code=$status" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Stage sentiment batch ${{ matrix.number }}
+        shell: bash
+        env:
+          INPUT_SLUGS: ${{ matrix.slugs }}
+        run: |
+          mkdir -p backfill-artifact/sentiment/history
+          IFS=',' read -ra slugs <<< "$INPUT_SLUGS"
+          for slug in "${slugs[@]}"; do
+            if [[ -f "sentiment/history/$slug.json" ]]; then
+              cp "sentiment/history/$slug.json" backfill-artifact/sentiment/history/
+            fi
+          done
+
+      - name: Upload sentiment batch ${{ matrix.number }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: sentiment-batch-${{ matrix.number }}
+          path: backfill-artifact
+          if-no-files-found: warn
+          retention-days: 2
+
+      - name: Report incomplete batch
+        if: steps.sentiment.outputs.exit_code != '0'
+        run: echo "Batch ${{ matrix.number }} uploaded its available observations below the target threshold; a later resume will skip them."
+
+  merge-backfill-batches:
+    if: always() && needs.prepare-backfill-batches.result == 'success'
+    needs:
+      - prepare-backfill-batches
+      - score-backfill-batch
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout latest branch state
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - name: Download completed sentiment batches
+        uses: actions/download-artifact@v4
+        with:
+          pattern: sentiment-batch-*
+          path: .
+          merge-multiple: true
+
+      - name: Rebuild aggregate sentiment files
+        id: aggregate
+        shell: bash
+        env:
+          INPUT_BACKFILL_DAYS: ${{ inputs.backfill_days }}
+          INPUT_DATE: ${{ inputs.date }}
+        run: |
+          set +e
+          args=(--backfill-days "$INPUT_BACKFILL_DAYS" --rebuild-only)
+          if [[ -n "$INPUT_DATE" ]]; then args+=(--date "$INPUT_DATE"); fi
+          python automation/news_sentiment.py "${args[@]}"
+          status=$?
+          echo "exit_code=$status" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Commit merged sentiment observations
+        shell: bash
+        run: |
+          python automation/build_sentiment_site_data.py
+          git config user.name "stocklayer-sentiment-bot"
+          git config user.email "stocklayer-sentiment-bot@users.noreply.github.com"
+          git add data-manifest.json sentiment/latest.json sentiment/run-status.json sentiment/site-summary.json sentiment/history
+          git commit -m "Merge daily news sentiment backfill batches" || echo "No sentiment changes to commit"
+          git push
+
+      - name: Report aggregate completeness
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          status = json.loads(Path("sentiment/run-status.json").read_text(encoding="utf-8"))
+          print(
+              f"Backfill completeness: {status['completedObservationCount']}/"
+              f"{status['requestedObservationCount']} ({status['completeness']:.2%})"
+          )
+          PY
