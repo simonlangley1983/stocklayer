@@ -109,7 +109,7 @@ jobs:
           if [[ -n "$INPUT_DATE" ]]; then args+=(--date "$INPUT_DATE"); fi
           if [[ -n "$INPUT_SLUGS" ]]; then args+=(--slugs "$INPUT_SLUGS"); fi
           if [[ -n "$INPUT_BACKFILL_DAYS" ]]; then args+=(--backfill-days "$INPUT_BACKFILL_DAYS"); fi
-          python automation/news_sentiment.py "${args[@]}"
+          python automation/news_sentiment.py --request-delay 15 "${args[@]}"
           status=$?
           echo "exit_code=$status" >> "$GITHUB_OUTPUT"
           exit 0
@@ -238,7 +238,7 @@ jobs:
           set +e
           args=(--backfill-days "$INPUT_BACKFILL_DAYS" --slugs "$INPUT_SLUGS")
           if [[ -n "$INPUT_DATE" ]]; then args+=(--date "$INPUT_DATE"); fi
-          python automation/news_sentiment.py "${args[@]}"
+          python automation/news_sentiment.py --request-delay 15 "${args[@]}"
           status=$?
           echo "exit_code=$status" >> "$GITHUB_OUTPUT"
           exit 0
@@ -301,7 +301,7 @@ jobs:
           set +e
           args=(--backfill-days "$INPUT_BACKFILL_DAYS" --rebuild-only)
           if [[ -n "$INPUT_DATE" ]]; then args+=(--date "$INPUT_DATE"); fi
-          python automation/news_sentiment.py "${args[@]}"
+          python automation/news_sentiment.py --request-delay 15 "${args[@]}"
           status=$?
           echo "exit_code=$status" >> "$GITHUB_OUTPUT"
           exit 0
