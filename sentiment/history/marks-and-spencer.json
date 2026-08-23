@@ -2934,6 +2934,110 @@
       ],
       "flags": [],
       "changeFromPreviousScoredDay": 3.8
+    },
+    {
+      "date": "2026-08-22",
+      "dailyScore": 40.1,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 50.1,
+      "confidence": 50.7,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 9,
+      "eligibleArticleCount": 9,
+      "storyCount": 8,
+      "effectiveStoryCount": 7.692,
+      "sourceCount": 7,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 4,
+      "negativeStoryCount": 4,
+      "dispersion": 0.3768,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "0ae648cf9ea553d8",
+          "storyClusterId": "story-007",
+          "title": "M & S £30 beauty bag reduced to £12 with Estee Lauder  magic in a jar  eye cream",
+          "url": "https://www.aol.co.uk/articles/m-30-beauty-bag-reduced-122930000.html",
+          "source": "aol.co.uk",
+          "publishedAt": "2026-08-22T13:00:00Z",
+          "polarity": -0.9161,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "76a6355c80666afb",
+          "storyClusterId": "story-006",
+          "title": "Asda , M & S and Home Bargains issue urgent product recall cautions  stop using",
+          "url": "https://www.aol.co.uk/articles/asda-m-home-bargains-issue-101450000.html",
+          "source": "aol.co.uk",
+          "publishedAt": "2026-08-22T11:00:00Z",
+          "polarity": -0.6534,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "cfa916b35128ffc7",
+          "storyClusterId": "story-001",
+          "title": "Letter :  Hindering Bournemouth future by clinging to the past",
+          "url": "https://www.bournemouthecho.co.uk/news/26482492.letter-hindering-bournemouths-future-clinging-past",
+          "source": "bournemouthecho.co.uk",
+          "publishedAt": "2026-08-22T05:15:00Z",
+          "polarity": -0.5789,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "0615e5865e475f09",
+          "storyClusterId": "story-003",
+          "title": "The jute is gone , but Adamjee is busier than ever",
+          "url": "https://www.thedailystar.net/business/news/the-jute-gone-adamjee-busier-ever-4253531",
+          "source": "thedailystar.net",
+          "publishedAt": "2026-08-22T06:15:00Z",
+          "polarity": -0.1986,
+          "sentiment": "Slightly negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "006c40ba363a0a6b",
+          "storyClusterId": "story-008",
+          "title": "7 autumn jackets perfect for the new season from M & S , Nobody Child and more",
+          "url": "https://www.aol.co.uk/articles/7-autumn-jackets-perfect-season-140500000.html",
+          "source": "aol.co.uk",
+          "publishedAt": "2026-08-22T15:00:00Z",
+          "polarity": 0.1261,
+          "sentiment": "Slightly positive",
+          "publisherCount": 2
+        }
+      ],
+      "flags": [
+        {
+          "type": "product_recall",
+          "direction": "negative",
+          "severity": "high",
+          "status": "possible",
+          "evidenceArticleIds": [
+            "76a6355c80666afb"
+          ],
+          "sourceCount": 1
+        },
+        {
+          "type": "sentiment_drop",
+          "direction": "negative",
+          "severity": "high",
+          "status": "calculated",
+          "detail": "Daily score decreased by 19.6 points",
+          "evidenceArticleIds": [
+            "0ae648cf9ea553d8",
+            "76a6355c80666afb",
+            "cfa916b35128ffc7",
+            "0615e5865e475f09",
+            "006c40ba363a0a6b"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -19.6
     }
   ]
 }

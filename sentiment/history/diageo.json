@@ -3012,6 +3012,101 @@
       ],
       "flags": [],
       "changeFromPreviousScoredDay": 0.6
+    },
+    {
+      "date": "2026-08-22",
+      "dailyScore": 19.6,
+      "dailyLabel": "Very negative",
+      "rollingScore": 42.2,
+      "confidence": 47.1,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 4,
+      "eligibleArticleCount": 4,
+      "storyCount": 4,
+      "effectiveStoryCount": 4.0,
+      "sourceCount": 4,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 4,
+      "dispersion": 0.0202,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "98d718bb4bb63870",
+          "storyClusterId": "story-003",
+          "title": "FSSAI issues 150 notices to food brands in recent months over misleading ads , false claims , labelling non - compliance",
+          "url": "https://timesofindia.indiatimes.com/city/delhi/fssai-issues-over-150-notices-to-food-brands-over-misleading-ads-false-claims-labelling-non-compliance/articleshow/133426861.cms",
+          "source": "timesofindia.indiatimes.com",
+          "publishedAt": "2026-08-22T17:15:00Z",
+          "polarity": -0.9377,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "8b6b33ace26be70e",
+          "storyClusterId": "story-002",
+          "title": "FSSAI issued 150 notices to food companies in recent months over misleading advertisements",
+          "url": "https://www.moneycontrol.com/news/business/fssai-issued-150-notices-to-food-companies-in-recent-months-over-misleading-advertisements-14013032.html",
+          "source": "moneycontrol.com",
+          "publishedAt": "2026-08-22T16:15:00Z",
+          "polarity": -0.9149,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "6fbb4846215bce9c",
+          "storyClusterId": "story-004",
+          "title": "FSSAI issues notices to Nestle , Pepsi over misleading ads",
+          "url": "https://www.siasat.com/fssai-issues-notices-to-nestle-pepsi-over-misleading-ads-3529064",
+          "source": "siasat.com",
+          "publishedAt": "2026-08-22T17:15:00Z",
+          "polarity": -0.9141,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "c1924c1d6a5ed145",
+          "storyClusterId": "story-001",
+          "title": "FSSAI crackdown : 150 notices issued to food companies , over 20 notices to five - star hotels",
+          "url": "https://www.thehindubusinessline.com/companies/fssai-crackdown-150-notices-issued-to-food-companies-over-20-notices-to-five-star-hotels/article71378018.ece",
+          "source": "thehindubusinessline.com",
+          "publishedAt": "2026-08-22T15:30:00Z",
+          "polarity": -0.881,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "sentiment_drop",
+          "direction": "negative",
+          "severity": "high",
+          "status": "calculated",
+          "detail": "Daily score decreased by 23.5 points",
+          "evidenceArticleIds": [
+            "98d718bb4bb63870",
+            "8b6b33ace26be70e",
+            "6fbb4846215bce9c",
+            "c1924c1d6a5ed145"
+          ]
+        },
+        {
+          "type": "bad_press",
+          "direction": "negative",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Daily press score is 19.6",
+          "evidenceArticleIds": [
+            "98d718bb4bb63870",
+            "8b6b33ace26be70e",
+            "6fbb4846215bce9c",
+            "c1924c1d6a5ed145"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -23.5
     }
   ]
 }
