@@ -1766,6 +1766,64 @@
         }
       ],
       "changeFromPreviousScoredDay": null
+    },
+    {
+      "date": "2026-08-26",
+      "dailyScore": 48.6,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.9,
+      "confidence": 17.2,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 2,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 2,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0663,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "23324cec5e001b18",
+          "storyClusterId": "story-001",
+          "title": "Half - year Financial Report | Company Announcement",
+          "url": "https://www.investegate.co.uk/announcement/rns/maven-income-growth-4-vct--mav4/half-year-financial-report/9741930",
+          "source": "investegate.co.uk",
+          "publishedAt": "2026-08-26T15:30:00Z",
+          "polarity": -0.1217,
+          "sentiment": "Slightly negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "a1967f15d6d68059",
+          "storyClusterId": "story-002",
+          "title": "Transaction in Own Shares | Company Announcement",
+          "url": "https://www.investegate.co.uk/announcement/rns/alliance-witan--alw/transaction-in-own-shares/9741993",
+          "source": "investegate.co.uk",
+          "publishedAt": "2026-08-26T16:45:00Z",
+          "polarity": 0.0109,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 17.2",
+          "evidenceArticleIds": [
+            "23324cec5e001b18",
+            "a1967f15d6d68059"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -1.6
     }
   ]
 }

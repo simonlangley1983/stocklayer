@@ -2484,6 +2484,128 @@
         }
       ],
       "changeFromPreviousScoredDay": null
+    },
+    {
+      "date": "2026-08-26",
+      "dailyScore": 60.1,
+      "dailyLabel": "Positive",
+      "rollingScore": 50.6,
+      "confidence": 53.8,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 5,
+      "eligibleArticleCount": 5,
+      "storyCount": 5,
+      "effectiveStoryCount": 5.0,
+      "sourceCount": 5,
+      "positiveStoryCount": 3,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 1,
+      "dispersion": 0.609,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "3820ca18bd5714d7",
+          "storyClusterId": "story-001",
+          "title": "Short Interest in Centrica PLC ( OTCMKTS : CPYYY ) Grows By 1 , 531 . 3 %",
+          "url": "https://www.tickerreport.com/banking-finance/13558537/short-interest-in-centrica-plc-otcmktscpyyy-grows-by-1531-3.html",
+          "source": "tickerreport.com",
+          "publishedAt": "2026-08-26T02:00:00Z",
+          "polarity": 0.9218,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "0e3b39d79a0ea3e1",
+          "storyClusterId": "story-003",
+          "title": "Datacentres have forced Ireland government to do something that has been unthinkable for over fifty years",
+          "url": "https://timesofindia.indiatimes.com/technology/tech-news/datacentres-have-forced-ireland-government-to-do-something-that-has-been-unthinkable-for-over-fifty-years/articleshow/133538373.cms",
+          "source": "timesofindia.indiatimes.com",
+          "publishedAt": "2026-08-26T11:30:00Z",
+          "polarity": -0.815,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "7826133c486ee66f",
+          "storyClusterId": "story-005",
+          "title": "FTSE 100 Live : Blue chips nudge higher as Wall Street heads in the opposite direction",
+          "url": "https://www.proactiveinvestors.co.uk/companies/news/1097607/ftse-100-live-blue-chips-nudge-higher-as-wall-street-heads-in-the-opposite-direction-1097607.html",
+          "source": "proactiveinvestors.co.uk",
+          "publishedAt": "2026-08-26T17:30:00Z",
+          "polarity": 0.6536,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "27d15be2f80c3254",
+          "storyClusterId": "story-004",
+          "title": "Temasek Trust C3H backs united kingdom - based Certain Energy $13 . 6m round",
+          "url": "https://www.dealstreetasia.com/stories/c3h-certain-energy-493356",
+          "source": "dealstreetasia.com",
+          "publishedAt": "2026-08-26T16:00:00Z",
+          "polarity": 0.5491,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "34e42c5dd54d04d9",
+          "storyClusterId": "story-002",
+          "title": "RFC Power rebrands as Certain Energy after closing £10 million of Series A funding",
+          "url": "https://www.renewableenergymagazine.com/storage/rfc-power-rebrands-as-certain-energy-after-20260826",
+          "source": "renewableenergymagazine.com",
+          "publishedAt": "2026-08-26T11:15:00Z",
+          "polarity": 0.1032,
+          "sentiment": "Slightly positive",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "sentiment_jump",
+          "direction": "positive",
+          "severity": "high",
+          "status": "calculated",
+          "detail": "Daily score increased by 21.8 points",
+          "evidenceArticleIds": [
+            "3820ca18bd5714d7",
+            "0e3b39d79a0ea3e1",
+            "7826133c486ee66f",
+            "27d15be2f80c3254",
+            "34e42c5dd54d04d9"
+          ]
+        },
+        {
+          "type": "coverage_spike",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "5 stories versus trailing median 1",
+          "evidenceArticleIds": [
+            "3820ca18bd5714d7",
+            "0e3b39d79a0ea3e1",
+            "7826133c486ee66f",
+            "27d15be2f80c3254",
+            "34e42c5dd54d04d9"
+          ]
+        },
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "3820ca18bd5714d7",
+            "0e3b39d79a0ea3e1",
+            "7826133c486ee66f",
+            "27d15be2f80c3254",
+            "34e42c5dd54d04d9"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 21.8
     }
   ]
 }

@@ -4217,6 +4217,124 @@
       ],
       "flags": [],
       "changeFromPreviousScoredDay": 2.0
+    },
+    {
+      "date": "2026-08-26",
+      "dailyScore": 26.2,
+      "dailyLabel": "Negative",
+      "rollingScore": 44.0,
+      "confidence": 66.1,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 13,
+      "eligibleArticleCount": 13,
+      "storyCount": 10,
+      "effectiveStoryCount": 10.0,
+      "sourceCount": 10,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 8,
+      "dispersion": 0.4412,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "53d6f523f8c55fb3",
+          "storyClusterId": "story-005",
+          "title": "Indian benchmark indices open mixed as Brent slips to USD 86 amid hopes of Hormuz progress",
+          "url": "http://www.malaysiasun.com/news/279265714/indian-benchmark-indices-open-mixed-as-brent-slips-to-usd-86-amid-hopes-of-hormuz-progress",
+          "source": "malaysiasun.com",
+          "publishedAt": "2026-08-26T07:00:00Z",
+          "polarity": -0.9509,
+          "sentiment": "Very negative",
+          "publisherCount": 4
+        },
+        {
+          "id": "5df4a61dc07fa1ff",
+          "storyClusterId": "story-001",
+          "title": "Weak monsoon , West Asia risks cloud July - Sept FMCG demand",
+          "url": "https://economictimes.indiatimes.com/industry/cons-products/fmcg/weak-monsoon-west-asia-risks-cloud-july-sept-fmcg-demand-marico-kantar/articleshow/133523807.cms",
+          "source": "economictimes.indiatimes.com",
+          "publishedAt": "2026-08-26T00:30:00Z",
+          "polarity": -0.9487,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "3021b409b4c766a2",
+          "storyClusterId": "story-006",
+          "title": "Diageo Cameronbridge staff threaten strike amid layoffs",
+          "url": "https://www.foodmanufacture.co.uk/Article/2026/08/26/diageo-cameronbridge-staff-threaten-strike-amid-layoffs",
+          "source": "foodmanufacture.co.uk",
+          "publishedAt": "2026-08-26T11:30:00Z",
+          "polarity": -0.941,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "3cb85aee87b34907",
+          "storyClusterId": "story-010",
+          "title": "FTSE 100 edges lower as healthcare , energy stocks weigh ; Iran - Oman talks in focus",
+          "url": "https://www.aol.com/articles/ftse-100-flat-ahead-us-105507000.html",
+          "source": "aol.com",
+          "publishedAt": "2026-08-26T16:45:00Z",
+          "polarity": -0.9376,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "22b35fdb1904b076",
+          "storyClusterId": "story-007",
+          "title": "Mondelēz International facility in Ukraine damaged by Russian drone strikes , Minister says",
+          "url": "https://www.foodbev.com/news/mondel%C4%93z-international-facility-in-ukraine-damaged-by-russian-drone-strikes-minister-says",
+          "source": "foodbev.com",
+          "publishedAt": "2026-08-26T12:45:00Z",
+          "polarity": -0.9285,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "workforce_reduction",
+          "direction": "negative",
+          "severity": "high",
+          "status": "possible",
+          "evidenceArticleIds": [
+            "3021b409b4c766a2"
+          ],
+          "sourceCount": 1
+        },
+        {
+          "type": "sentiment_drop",
+          "direction": "negative",
+          "severity": "high",
+          "status": "calculated",
+          "detail": "Daily score decreased by 20.4 points",
+          "evidenceArticleIds": [
+            "53d6f523f8c55fb3",
+            "5df4a61dc07fa1ff",
+            "3021b409b4c766a2",
+            "3cb85aee87b34907",
+            "22b35fdb1904b076"
+          ]
+        },
+        {
+          "type": "bad_press",
+          "direction": "negative",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Daily press score is 26.2",
+          "evidenceArticleIds": [
+            "53d6f523f8c55fb3",
+            "5df4a61dc07fa1ff",
+            "3021b409b4c766a2",
+            "3cb85aee87b34907",
+            "22b35fdb1904b076"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -20.4
     }
   ]
 }

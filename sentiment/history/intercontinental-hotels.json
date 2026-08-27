@@ -2075,6 +2075,124 @@
         }
       ],
       "changeFromPreviousScoredDay": null
+    },
+    {
+      "date": "2026-08-26",
+      "dailyScore": 38.8,
+      "dailyLabel": "Negative",
+      "rollingScore": 47.9,
+      "confidence": 56.4,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 7,
+      "eligibleArticleCount": 7,
+      "storyCount": 7,
+      "effectiveStoryCount": 7.0,
+      "sourceCount": 6,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 3,
+      "negativeStoryCount": 3,
+      "dispersion": 0.5619,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "3c51ac25583280a9",
+          "storyClusterId": "story-006",
+          "title": "Looming Nvidia Earnings May Keep Traders On The Sidelines",
+          "url": "https://www.rttnews.com/story.aspx?Id=3684803",
+          "source": "rttnews.com",
+          "publishedAt": "2026-08-26T15:15:00Z",
+          "polarity": -0.9262,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "ea96a732be3f5553",
+          "storyClusterId": "story-004",
+          "title": "Workers walkout aims to disrupt Pride party at Kimpton Clocktower hotel",
+          "url": "https://www.thebusinessdesk.com/northwest/news/2178007-workers-walkout-during-pride-aims-to-disrupt-the-party-at-kimpton-hotel",
+          "source": "thebusinessdesk.com",
+          "publishedAt": "2026-08-26T10:00:00Z",
+          "polarity": -0.881,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "89bd76d955ba5be6",
+          "storyClusterId": "story-005",
+          "title": "FTSE 100 Down Marginally ; Miners Climb Higher",
+          "url": "https://www.finanznachrichten.de/nachrichten-2026-08/69411832-ftse-100-down-marginally-miners-climb-higher-020.htm",
+          "source": "finanznachrichten.de",
+          "publishedAt": "2026-08-26T11:30:00Z",
+          "polarity": -0.8538,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "7826133c486ee66f",
+          "storyClusterId": "story-007",
+          "title": "FTSE 100 Live : Blue chips nudge higher as Wall Street heads in the opposite direction",
+          "url": "https://www.proactiveinvestors.co.uk/companies/news/1097607/ftse-100-live-blue-chips-nudge-higher-as-wall-street-heads-in-the-opposite-direction-1097607.html",
+          "source": "proactiveinvestors.co.uk",
+          "publishedAt": "2026-08-26T17:30:00Z",
+          "polarity": 0.6536,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "ae36458f652b7ecc",
+          "storyClusterId": "story-003",
+          "title": "dpa - AFX Overview : Analyst recommendations on U . K . stocks",
+          "url": "https://www.finanznachrichten.de/nachrichten-2026-08/69410392-dpa-afx-overview-analyst-recommendations-on-u-k-stocks-020.htm",
+          "source": "finanznachrichten.de",
+          "publishedAt": "2026-08-26T09:45:00Z",
+          "polarity": -0.0258,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "industrial_action",
+          "direction": "negative",
+          "severity": "medium",
+          "status": "possible",
+          "evidenceArticleIds": [
+            "ea96a732be3f5553"
+          ],
+          "sourceCount": 1
+        },
+        {
+          "type": "coverage_spike",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "7 stories versus trailing median 2",
+          "evidenceArticleIds": [
+            "3c51ac25583280a9",
+            "ea96a732be3f5553",
+            "89bd76d955ba5be6",
+            "7826133c486ee66f",
+            "ae36458f652b7ecc"
+          ]
+        },
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "3c51ac25583280a9",
+            "ea96a732be3f5553",
+            "89bd76d955ba5be6",
+            "7826133c486ee66f",
+            "ae36458f652b7ecc"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -10.8
     }
   ]
 }

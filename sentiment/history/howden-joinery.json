@@ -1775,6 +1775,64 @@
         }
       ],
       "changeFromPreviousScoredDay": null
+    },
+    {
+      "date": "2026-08-26",
+      "dailyScore": 27.2,
+      "dailyLabel": "Negative",
+      "rollingScore": 46.4,
+      "confidence": 26.5,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 2,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 2,
+      "dispersion": 0.0154,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "3c51ac25583280a9",
+          "storyClusterId": "story-001",
+          "title": "Looming Nvidia Earnings May Keep Traders On The Sidelines",
+          "url": "https://www.rttnews.com/story.aspx?Id=3684803",
+          "source": "rttnews.com",
+          "publishedAt": "2026-08-26T15:15:00Z",
+          "polarity": -0.9262,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "838b2f7ec8d02720",
+          "storyClusterId": "story-002",
+          "title": "FTSE 100 drifts lower as eyes turn to Nvidia",
+          "url": "https://www.lbc.co.uk/article/14d74368f0fd467bbbc3353dd5c3a50a-5HjdgYG_2",
+          "source": "lbc.co.uk",
+          "publishedAt": "2026-08-26T17:15:00Z",
+          "polarity": -0.8954,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 26.5",
+          "evidenceArticleIds": [
+            "3c51ac25583280a9",
+            "838b2f7ec8d02720"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -7.0
     }
   ]
 }

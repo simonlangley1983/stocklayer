@@ -3770,6 +3770,66 @@
         }
       ],
       "changeFromPreviousScoredDay": null
+    },
+    {
+      "date": "2026-08-26",
+      "dailyScore": 39.1,
+      "dailyLabel": "Negative",
+      "rollingScore": 49.5,
+      "confidence": 29.9,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 12,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 1,
+      "dispersion": 0.4743,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 10
+      },
+      "topStories": [
+        {
+          "id": "61ef3798a95e3a5b",
+          "storyClusterId": "story-002",
+          "title": "Hsbc Holdings PLC Lowers Position in Expeditors International of Washington , Inc . $EXPD",
+          "url": "https://www.themarketsdaily.com/2026/08/26/hsbc-holdings-plc-lowers-position-in-expeditors-international-of-washington-inc-expd.html",
+          "source": "themarketsdaily.com",
+          "publishedAt": "2026-08-26T13:15:00Z",
+          "polarity": -0.9086,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "a4cc448345d7ea0d",
+          "storyClusterId": "story-001",
+          "title": "Hsbc Holdings PLC Acquires Shares of 846 , 534 The Sherwin - Williams Company $SHW",
+          "url": "https://www.themarketsdaily.com/2026/08/26/hsbc-holdings-plc-acquires-shares-of-846534-the-sherwin-williams-company-shw.html",
+          "source": "themarketsdaily.com",
+          "publishedAt": "2026-08-26T13:15:00Z",
+          "polarity": 0.04,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 29.9",
+          "evidenceArticleIds": [
+            "61ef3798a95e3a5b",
+            "a4cc448345d7ea0d"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -18.4
     }
   ]
 }

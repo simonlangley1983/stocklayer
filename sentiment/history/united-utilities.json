@@ -3025,6 +3025,101 @@
         }
       ],
       "changeFromPreviousScoredDay": 13.6
+    },
+    {
+      "date": "2026-08-26",
+      "dailyScore": 26.5,
+      "dailyLabel": "Negative",
+      "rollingScore": 44.3,
+      "confidence": 45.4,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 4,
+      "eligibleArticleCount": 4,
+      "storyCount": 4,
+      "effectiveStoryCount": 4.0,
+      "sourceCount": 4,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 4,
+      "dispersion": 0.1907,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "194a149966a5e46d",
+          "storyClusterId": "story-004",
+          "title": "Residents fear parking  nightmare  after beauty spot reopens",
+          "url": "https://www.yahoo.com/news/articles/residents-fear-parking-nightmare-beauty-093344608.html",
+          "source": "yahoo.com",
+          "publishedAt": "2026-08-26T22:15:00Z",
+          "polarity": -0.9257,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "589f5f31ea7da339",
+          "storyClusterId": "story-001",
+          "title": "Residents fed - up by year - long leak on St Helens Road",
+          "url": "https://www.theboltonnews.co.uk/news/26493097.residents-fed-up-year-long-leak-st-helens-road",
+          "source": "theboltonnews.co.uk",
+          "publishedAt": "2026-08-26T04:30:00Z",
+          "polarity": -0.8083,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "fb84868739027588",
+          "storyClusterId": "story-003",
+          "title": "I have lived near Dovestone for 35 years and it was never like this ... it hard to describe how bad it is . It a nightmare",
+          "url": "https://www.manchestereveningnews.co.uk/news/greater-manchester-news/dovestone-reservoir-parking-fines-nightmare-34517004",
+          "source": "manchestereveningnews.co.uk",
+          "publishedAt": "2026-08-26T07:00:00Z",
+          "polarity": -0.6753,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "c1c5d5ba1c62d29b",
+          "storyClusterId": "story-002",
+          "title": "Loveclough - objections to plans for 50 new homes in the area",
+          "url": "https://www.lancashiretelegraph.co.uk/news/26493794.loveclough-objections-plans-50-new-homes-area",
+          "source": "lancashiretelegraph.co.uk",
+          "publishedAt": "2026-08-26T05:00:00Z",
+          "polarity": -0.413,
+          "sentiment": "Negative",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "sentiment_drop",
+          "direction": "negative",
+          "severity": "high",
+          "status": "calculated",
+          "detail": "Daily score decreased by 29.9 points",
+          "evidenceArticleIds": [
+            "194a149966a5e46d",
+            "589f5f31ea7da339",
+            "fb84868739027588",
+            "c1c5d5ba1c62d29b"
+          ]
+        },
+        {
+          "type": "bad_press",
+          "direction": "negative",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Daily press score is 26.5",
+          "evidenceArticleIds": [
+            "194a149966a5e46d",
+            "589f5f31ea7da339",
+            "fb84868739027588",
+            "c1c5d5ba1c62d29b"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -29.9
     }
   ]
 }

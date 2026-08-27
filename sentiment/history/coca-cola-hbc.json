@@ -1668,6 +1668,128 @@
         }
       ],
       "changeFromPreviousScoredDay": null
+    },
+    {
+      "date": "2026-08-26",
+      "dailyScore": 27.5,
+      "dailyLabel": "Negative",
+      "rollingScore": 46.9,
+      "confidence": 48.9,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 5,
+      "eligibleArticleCount": 5,
+      "storyCount": 5,
+      "effectiveStoryCount": 5.0,
+      "sourceCount": 5,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 5,
+      "dispersion": 0.3255,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "3c51ac25583280a9",
+          "storyClusterId": "story-005",
+          "title": "Looming Nvidia Earnings May Keep Traders On The Sidelines",
+          "url": "https://www.rttnews.com/story.aspx?Id=3684803",
+          "source": "rttnews.com",
+          "publishedAt": "2026-08-26T15:15:00Z",
+          "polarity": -0.9262,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "e41e2af24178bc90",
+          "storyClusterId": "story-004",
+          "title": "Consumer Firms Lock Horns With India Regulator Over Warning On Packets",
+          "url": "https://www.deccanchronicle.com/nation/consumer-firms-lock-horns-with-india-regulator-over-red-flags-on-packets-1982206",
+          "source": "deccanchronicle.com",
+          "publishedAt": "2026-08-26T15:00:00Z",
+          "polarity": -0.8997,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "89bd76d955ba5be6",
+          "storyClusterId": "story-003",
+          "title": "FTSE 100 Down Marginally ; Miners Climb Higher",
+          "url": "https://www.finanznachrichten.de/nachrichten-2026-08/69411832-ftse-100-down-marginally-miners-climb-higher-020.htm",
+          "source": "finanznachrichten.de",
+          "publishedAt": "2026-08-26T11:30:00Z",
+          "polarity": -0.8538,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "2b71a7b83df993b9",
+          "storyClusterId": "story-002",
+          "title": "India wanted red flags on chip packets and soda . Big Food fought back .",
+          "url": "https://www.thehindu.com/sci-tech/health/india-wanted-red-flags-on-chip-packets-and-soda-big-food-fought-back/article71391973.ece",
+          "source": "thehindu.com",
+          "publishedAt": "2026-08-26T08:45:00Z",
+          "polarity": -0.3093,
+          "sentiment": "Negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "46ff27b7b8f05b39",
+          "storyClusterId": "story-001",
+          "title": "Why is India resisting tougher food warning labels ?",
+          "url": "https://insideretail.asia/2026/08/26/why-is-india-resisting-tougher-food-warning-labels",
+          "source": "insideretail.asia",
+          "publishedAt": "2026-08-26T03:00:00Z",
+          "polarity": -0.1648,
+          "sentiment": "Slightly negative",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "sentiment_drop",
+          "direction": "negative",
+          "severity": "high",
+          "status": "calculated",
+          "detail": "Daily score decreased by 34.0 points",
+          "evidenceArticleIds": [
+            "3c51ac25583280a9",
+            "e41e2af24178bc90",
+            "89bd76d955ba5be6",
+            "2b71a7b83df993b9",
+            "46ff27b7b8f05b39"
+          ]
+        },
+        {
+          "type": "bad_press",
+          "direction": "negative",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Daily press score is 27.5",
+          "evidenceArticleIds": [
+            "3c51ac25583280a9",
+            "e41e2af24178bc90",
+            "89bd76d955ba5be6",
+            "2b71a7b83df993b9",
+            "46ff27b7b8f05b39"
+          ]
+        },
+        {
+          "type": "coverage_spike",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "5 stories versus trailing median 1",
+          "evidenceArticleIds": [
+            "3c51ac25583280a9",
+            "e41e2af24178bc90",
+            "89bd76d955ba5be6",
+            "2b71a7b83df993b9",
+            "46ff27b7b8f05b39"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -34.0
     }
   ]
 }
