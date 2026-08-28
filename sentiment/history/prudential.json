@@ -4271,6 +4271,124 @@
       ],
       "flags": [],
       "changeFromPreviousScoredDay": -0.6
+    },
+    {
+      "date": "2026-08-27",
+      "dailyScore": 42.4,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 50.4,
+      "confidence": 64.3,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 40,
+      "eligibleArticleCount": 40,
+      "storyCount": 40,
+      "effectiveStoryCount": 40.0,
+      "sourceCount": 26,
+      "positiveStoryCount": 11,
+      "neutralStoryCount": 12,
+      "negativeStoryCount": 17,
+      "dispersion": 0.5934,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "a5b25d3743130fa8",
+          "storyClusterId": "story-012",
+          "title": "Capri Global shares slip 3 % after NSE , BSE impose Rs 74 , 000 penalty for compliance lapses",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/capri-global-shares-slip-3-after-nse-bse-impose-rs-74000-penalty-for-compliance-lapses/articleshow/133556856.cms",
+          "source": "economictimes.indiatimes.com",
+          "publishedAt": "2026-08-27T05:45:00Z",
+          "polarity": -0.9612,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "940a0a4a7174f59e",
+          "storyClusterId": "story-009",
+          "title": "ICICI Prudential AMC slips 5 % after huge block deal ; promoter likely seller",
+          "url": "https://www.business-standard.com/markets/news/icici-prudential-amc-slips-5-after-huge-block-deal-promoter-likely-seller-126082700183_1.html",
+          "source": "business-standard.com",
+          "publishedAt": "2026-08-27T05:00:00Z",
+          "polarity": -0.9533,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "fbfaaf2c583e876e",
+          "storyClusterId": "story-010",
+          "title": "Price Action | Lupin shares slip as Citi downgrades to sell ; ICICI Pru AMC slips 3 % on block deal",
+          "url": "https://www.moneycontrol.com/news/business/markets/price-action-lupin-shares-slip-as-citi-downgrades-to-sell-icici-pru-amc-slips-3-on-block-deal-14016249.html",
+          "source": "moneycontrol.com",
+          "publishedAt": "2026-08-27T05:30:00Z",
+          "polarity": -0.9532,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "3d16945158abff89",
+          "storyClusterId": "story-017",
+          "title": "FTSE 100 Live : Ex - dividend stocks drag London lower as Computacenter jumps",
+          "url": "https://www.proactiveinvestors.co.uk/companies/news/1097689/ftse-100-live-ex-dividend-stocks-drag-london-lower-as-computacenter-jumps-1097689.html",
+          "source": "proactiveinvestors.co.uk",
+          "publishedAt": "2026-08-27T08:00:00Z",
+          "polarity": -0.9527,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "968edb17e263bcc9",
+          "storyClusterId": "story-013",
+          "title": "Sensex falls 400 pts from day high , Nifty near 24 , 150 : Fall in FMCG , auto shares among key factors behind market decline",
+          "url": "https://www.moneycontrol.com/news/business/markets/sensex-falls-400-pts-from-day-s-high-nifty-near-24-150-fall-in-fmcg-auto-shares-among-key-factors-behind-market-decline-14016597.html",
+          "source": "moneycontrol.com",
+          "publishedAt": "2026-08-27T06:00:00Z",
+          "polarity": -0.9494,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "share_buyback",
+          "direction": "positive",
+          "severity": "medium",
+          "status": "possible",
+          "evidenceArticleIds": [
+            "51437614f8e0b801"
+          ],
+          "sourceCount": 1
+        },
+        {
+          "type": "sentiment_drop",
+          "direction": "negative",
+          "severity": "high",
+          "status": "calculated",
+          "detail": "Daily score decreased by 12.0 points",
+          "evidenceArticleIds": [
+            "a5b25d3743130fa8",
+            "940a0a4a7174f59e",
+            "fbfaaf2c583e876e",
+            "3d16945158abff89",
+            "968edb17e263bcc9"
+          ]
+        },
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "a5b25d3743130fa8",
+            "940a0a4a7174f59e",
+            "fbfaaf2c583e876e",
+            "3d16945158abff89",
+            "968edb17e263bcc9"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -12.0
     }
   ]
 }

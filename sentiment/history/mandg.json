@@ -2996,6 +2996,76 @@
         }
       ],
       "changeFromPreviousScoredDay": null
+    },
+    {
+      "date": "2026-08-27",
+      "dailyScore": 46.8,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 48.6,
+      "confidence": 22.7,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 3,
+      "eligibleArticleCount": 3,
+      "storyCount": 3,
+      "effectiveStoryCount": 3.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 2,
+      "dispersion": 0.079,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "5f0c29d0bd01ec50",
+          "storyClusterId": "story-001",
+          "title": "Dividend Declaration | Company Announcement",
+          "url": "https://www.investegate.co.uk/announcement/rns/prudential--pru/dividend-declaration/9742189",
+          "source": "investegate.co.uk",
+          "publishedAt": "2026-08-27T09:00:00Z",
+          "polarity": -0.1666,
+          "sentiment": "Slightly negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "7342bea8a263afa1",
+          "storyClusterId": "story-002",
+          "title": "Overseas Regulatory Announcement | Company Announcement",
+          "url": "https://www.investegate.co.uk/announcement/rns/prudential--pru/overseas-regulatory-announcement/9743400",
+          "source": "investegate.co.uk",
+          "publishedAt": "2026-08-27T11:15:00Z",
+          "polarity": -0.1591,
+          "sentiment": "Slightly negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "8d14f43c87783dcb",
+          "storyClusterId": "story-003",
+          "title": "Sale of stake in ICICI Prudential Asset Management | Company Announcement",
+          "url": "https://www.investegate.co.uk/announcement/rns/prudential--pru/sale-of-stake-in-icici-prudential-asset-management/9743405",
+          "source": "investegate.co.uk",
+          "publishedAt": "2026-08-27T11:15:00Z",
+          "polarity": 0.0045,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 22.7",
+          "evidenceArticleIds": [
+            "5f0c29d0bd01ec50",
+            "7342bea8a263afa1",
+            "8d14f43c87783dcb"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -4.1
     }
   ]
 }
