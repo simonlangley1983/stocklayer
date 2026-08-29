@@ -4241,6 +4241,98 @@
       ],
       "flags": [],
       "changeFromPreviousScoredDay": -1.4
+    },
+    {
+      "date": "2026-08-28",
+      "dailyScore": 41.7,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 45.0,
+      "confidence": 38.6,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 9,
+      "eligibleArticleCount": 9,
+      "storyCount": 4,
+      "effectiveStoryCount": 4.0,
+      "sourceCount": 9,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 2,
+      "negativeStoryCount": 2,
+      "dispersion": 0.3959,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "ce6dad2c25f89b50",
+          "storyClusterId": "story-002",
+          "title": "Scotch whisky giant Chivas cuts guidance amid US woe",
+          "url": "https://www.heraldscotland.com/news/26502015.scotch-whisky-giant-chivas-cuts-guidance-amid-us-woe",
+          "source": "heraldscotland.com",
+          "publishedAt": "2026-08-28T05:15:00Z",
+          "polarity": -0.9163,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "ab3a646de61af785",
+          "storyClusterId": "story-004",
+          "title": "Nike names Walmart vet as commercial chief , months after cutting role",
+          "url": "https://www.retaildive.com/news/nike-chief-commercial-officer-jane-ewing-dtc-wholesale-growth/829079",
+          "source": "retaildive.com",
+          "publishedAt": "2026-08-28T19:30:00Z",
+          "polarity": -0.1572,
+          "sentiment": "Slightly negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "36f093d835df53b0",
+          "storyClusterId": "story-001",
+          "title": "Tales Of The Cocktail Foundation Brings Tales On Tour To DC",
+          "url": "https://wiznation.com/4166662/tales-of-the-cocktail-foundation-tales-on-tour-dc",
+          "source": "wiznation.com",
+          "publishedAt": "2026-08-28T16:15:00Z",
+          "polarity": 0.1033,
+          "sentiment": "Slightly positive",
+          "publisherCount": 6
+        },
+        {
+          "id": "6710d6656928da53",
+          "storyClusterId": "story-003",
+          "title": "Top Trending Stories on BizBash : August 2026",
+          "url": "https://www.bizbash.com/event-production-planning/top-trending-stories-on-bizbash-august-2026",
+          "source": "bizbash.com",
+          "publishedAt": "2026-08-28T16:00:00Z",
+          "polarity": -0.0274,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "guidance_cut",
+          "direction": "negative",
+          "severity": "high",
+          "status": "possible",
+          "evidenceArticleIds": [
+            "ce6dad2c25f89b50"
+          ],
+          "sourceCount": 1
+        },
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 38.6",
+          "evidenceArticleIds": [
+            "ce6dad2c25f89b50",
+            "ab3a646de61af785",
+            "36f093d835df53b0",
+            "6710d6656928da53"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -2.1
     }
   ]
 }

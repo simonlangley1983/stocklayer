@@ -4647,6 +4647,114 @@
         }
       ],
       "changeFromPreviousScoredDay": 15.3
+    },
+    {
+      "date": "2026-08-28",
+      "dailyScore": 52.7,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 55.3,
+      "confidence": 46.2,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 5,
+      "eligibleArticleCount": 5,
+      "storyCount": 5,
+      "effectiveStoryCount": 5.0,
+      "sourceCount": 5,
+      "positiveStoryCount": 3,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 1,
+      "dispersion": 0.5514,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "3d2e5259ef4cf93d",
+          "storyClusterId": "story-002",
+          "title": "Stocks Slip Ahead of Nvidia Earnings as Bond Yields Rise",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/stocks-slip-ahead-nvidia-earnings-151335301.html",
+          "source": "finance.yahoo.com",
+          "publishedAt": "2026-08-27T23:00:00Z",
+          "polarity": -0.9304,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "da79ab2fbe0999b8",
+          "storyClusterId": "story-003",
+          "title": "Weekly Buzz : GILD , ROIV Win FDA Nod ; BHVN , LLY Strike Deal ; SYRE Misses Monotherapy Goal",
+          "url": "https://www.rttnews.com/3686489/weekly-buzz-gild-roiv-win-fda-nod-bhvn-lly-strike-deal-syre-misses-monotherapy-goal.aspx",
+          "source": "rttnews.com",
+          "publishedAt": "2026-08-28T15:45:00Z",
+          "polarity": 0.6734,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "0bb12a20f3d1a39f",
+          "storyClusterId": "story-005",
+          "title": "RSV vaccine offered to Cork and Kerry babies as HSE programme enters final winter",
+          "url": "https://www.irishexaminer.com/news/munster/arid-41903701.html",
+          "source": "irishexaminer.com",
+          "publishedAt": "2026-08-28T19:30:00Z",
+          "polarity": 0.4395,
+          "sentiment": "Positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "9c247da011bf2b8b",
+          "storyClusterId": "story-004",
+          "title": "Weekly Buzz : Gilead Sciences , Roivant Sciences Win FDA Nod ; Biohaven , Eli Lilly Strike Deal ; Spyre Therapeutics Misses Monotherapy Goal",
+          "url": "https://www.finanznachrichten.de/nachrichten-2026-08/69439682-weekly-buzz-gilead-sciences-roivant-sciences-win-fda-nod-biohaven-eli-lilly-strike-deal-spyre-therapeutics-misses-monotherapy-goal-020.htm",
+          "source": "finanznachrichten.de",
+          "publishedAt": "2026-08-28T15:45:00Z",
+          "polarity": 0.1896,
+          "sentiment": "Slightly positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "217019e50026f8b1",
+          "storyClusterId": "story-001",
+          "title": "Euro Roundup : MHRA updates guidance on submitting safety reports for united kingdom products",
+          "url": "https://www.raps.org/resource/euro-roundup-mhra-updates-guidance-on-submitting-safety-reports-for-uk-products.html",
+          "source": "raps.org",
+          "publishedAt": "2026-08-27T23:00:00Z",
+          "polarity": 0.0026,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "sentiment_drop",
+          "direction": "negative",
+          "severity": "high",
+          "status": "calculated",
+          "detail": "Daily score decreased by 18.8 points",
+          "evidenceArticleIds": [
+            "3d2e5259ef4cf93d",
+            "da79ab2fbe0999b8",
+            "0bb12a20f3d1a39f",
+            "9c247da011bf2b8b",
+            "217019e50026f8b1"
+          ]
+        },
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "3d2e5259ef4cf93d",
+            "da79ab2fbe0999b8",
+            "0bb12a20f3d1a39f",
+            "9c247da011bf2b8b",
+            "217019e50026f8b1"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -18.8
     }
   ]
 }

@@ -2664,6 +2664,75 @@
         }
       ],
       "changeFromPreviousScoredDay": -13.8
+    },
+    {
+      "date": "2026-08-28",
+      "dailyScore": 47.1,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.6,
+      "confidence": 25.1,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 2,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 1,
+      "dispersion": 0.705,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "e16a9c612acb50e3",
+          "storyClusterId": "story-002",
+          "title": "Britain Facing Energy Security Crisis This Winter : Gas Reserves Low",
+          "url": "https://www.breitbart.com/europe/2026/08/28/britain-facing-energy-security-crisis-this-winter-with-gas-reserves-at-rock-bottom-warns-industry-leader",
+          "source": "breitbart.com",
+          "publishedAt": "2026-08-28T18:30:00Z",
+          "polarity": -0.8214,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "a975045a1004db09",
+          "storyClusterId": "story-001",
+          "title": "UK : British Gas to help more Brits generate their own power as plug - in solar arrives",
+          "url": "https://www.energy-pedia.com/news/united-kingdom/british-gas-to-help-more-brits-generate-their-own-power-as-plug-in-solar-arrives-205125",
+          "source": "energy-pedia.com",
+          "publishedAt": "2026-08-28T11:30:00Z",
+          "polarity": 0.5886,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "e16a9c612acb50e3",
+            "a975045a1004db09"
+          ]
+        },
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 25.1",
+          "evidenceArticleIds": [
+            "e16a9c612acb50e3",
+            "a975045a1004db09"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 0.8
     }
   ]
 }
