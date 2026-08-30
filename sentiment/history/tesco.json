@@ -4454,6 +4454,114 @@
         }
       ],
       "changeFromPreviousScoredDay": 18.1
+    },
+    {
+      "date": "2026-08-29",
+      "dailyScore": 39.2,
+      "dailyLabel": "Negative",
+      "rollingScore": 45.4,
+      "confidence": 68.2,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 35,
+      "eligibleArticleCount": 35,
+      "storyCount": 25,
+      "effectiveStoryCount": 25.0,
+      "sourceCount": 25,
+      "positiveStoryCount": 5,
+      "neutralStoryCount": 8,
+      "negativeStoryCount": 12,
+      "dispersion": 0.5533,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "b32bf88266855615",
+          "storyClusterId": "story-021",
+          "title": "Iceland and Tesco issue urgent food recalls over major contamination",
+          "url": "https://www.dailystar.co.uk/news/latest-news/iceland-tesco-issue-urgent-food-37606580",
+          "source": "dailystar.co.uk",
+          "publishedAt": "2026-08-29T12:45:00Z",
+          "polarity": -0.9501,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "2598578d5b95475e",
+          "storyClusterId": "story-002",
+          "title": "Tesco , Iceland , Amazon and more issue urgent product recalls this week",
+          "url": "https://www.getsurrey.co.uk/whats-on/whats-on-news/latest-food-product-recall-notices-34533681",
+          "source": "getsurrey.co.uk",
+          "publishedAt": "2026-08-29T04:30:00Z",
+          "polarity": -0.9469,
+          "sentiment": "Very negative",
+          "publisherCount": 2
+        },
+        {
+          "id": "f2dadc4a57a3aa2e",
+          "storyClusterId": "story-017",
+          "title": "Maryhill Road due for two weeks of temporary traffic lights",
+          "url": "https://www.glasgowtimes.co.uk/news/26506283.maryhill-road-due-two-weeks-temporary-traffic-lights",
+          "source": "glasgowtimes.co.uk",
+          "publishedAt": "2026-08-29T09:30:00Z",
+          "polarity": -0.9263,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "236e98209afb485d",
+          "storyClusterId": "story-011",
+          "title": "Tesco salad plus popular supermarket wraps urgently recalled over potential deadly bacteria risk",
+          "url": "https://www.manchestereveningnews.co.uk/news/uk-news/product-recalls-aug28-2026-34531863",
+          "source": "manchestereveningnews.co.uk",
+          "publishedAt": "2026-08-29T06:45:00Z",
+          "polarity": -0.9129,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "f57cfd0962a2fccc",
+          "storyClusterId": "story-018",
+          "title": "Offensive stickers placed on cars of two residents",
+          "url": "https://www.northwalespioneer.co.uk/news/26503978.denbighshire-man-left-offensive-stickers-cars",
+          "source": "northwalespioneer.co.uk",
+          "publishedAt": "2026-08-29T12:00:00Z",
+          "polarity": -0.9016,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "sentiment_drop",
+          "direction": "negative",
+          "severity": "high",
+          "status": "calculated",
+          "detail": "Daily score decreased by 12.7 points",
+          "evidenceArticleIds": [
+            "b32bf88266855615",
+            "2598578d5b95475e",
+            "f2dadc4a57a3aa2e",
+            "236e98209afb485d",
+            "f57cfd0962a2fccc"
+          ]
+        },
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "b32bf88266855615",
+            "2598578d5b95475e",
+            "f2dadc4a57a3aa2e",
+            "236e98209afb485d",
+            "f57cfd0962a2fccc"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -12.7
     }
   ]
 }

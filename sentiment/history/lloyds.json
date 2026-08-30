@@ -3638,6 +3638,64 @@
       ],
       "flags": [],
       "changeFromPreviousScoredDay": -5.4
+    },
+    {
+      "date": "2026-08-29",
+      "dailyScore": 46.9,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 47.9,
+      "confidence": 21.4,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 2,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 1,
+      "dispersion": 0.1507,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "c489fb8c84da46c7",
+          "storyClusterId": "story-002",
+          "title": "Full list of 14 Halifax banks confirmed to close in September",
+          "url": "https://www.express.co.uk/finance/personalfinance/2242827/full-list-halifax-banks-closing-september",
+          "source": "express.co.uk",
+          "publishedAt": "2026-08-29T18:15:00Z",
+          "polarity": -0.2755,
+          "sentiment": "Negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "01385b08f3b45c94",
+          "storyClusterId": "story-001",
+          "title": "The insult that led to the creation of Osun State , By Temitope Lakisokun",
+          "url": "https://www.premiumtimesng.com/opinion/906163-the-insult-that-led-to-the-creation-of-osun-state-by-temitope-lakisokun.html",
+          "source": "premiumtimesng.com",
+          "publishedAt": "2026-08-29T16:30:00Z",
+          "polarity": 0.0258,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 21.4",
+          "evidenceArticleIds": [
+            "c489fb8c84da46c7",
+            "01385b08f3b45c94"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 3.7
     }
   ]
 }

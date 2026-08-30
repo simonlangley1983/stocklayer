@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-08-29T14:19:01.310111Z",
-  "date": "2026-08-28",
+  "generatedAt": "2026-08-30T13:26:19.490914Z",
+  "date": "2026-08-29",
   "dateRange": {
-    "start": "2026-08-28",
-    "end": "2026-08-28"
+    "start": "2026-08-29",
+    "end": "2026-08-29"
   },
   "provider": "gdelt-doc-v2",
   "model": "ProsusAI/finbert",
   "selectedCompanyCount": 100,
   "requestedDayCount": 1,
   "requestedObservationCount": 100,
-  "completedObservationCount": 95,
-  "completeness": 0.95,
+  "completedObservationCount": 93,
+  "completeness": 0.93,
   "minimumCompleteness": 0.9,
   "status": "ok",
   "companies": [
@@ -33,7 +33,7 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 1,
+      "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
       "requestCount": 1,
@@ -66,7 +66,7 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 0,
+      "coverageDayCount": 1,
       "failedDates": [],
       "truncatedDates": [],
       "requestCount": 1,
@@ -121,7 +121,7 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 1,
+      "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
       "requestCount": 1,
@@ -135,7 +135,7 @@
       "coverageDayCount": 1,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 1,
+      "requestCount": 2,
       "error": null
     },
     {
@@ -162,16 +162,14 @@
     },
     {
       "slug": "barclays",
-      "status": "degraded",
+      "status": "ok",
       "requestedDayCount": 1,
-      "completedDayCount": 0,
+      "completedDayCount": 1,
       "coverageDayCount": 0,
-      "failedDates": [
-        "2026-08-28"
-      ],
+      "failedDates": [],
       "truncatedDates": [],
       "requestCount": 1,
-      "error": "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%28%22Barclays+PLC%22+OR+%22Barclays+Bank%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260827230000&enddatetime=20260828230000 (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=40)\"))"
+      "error": null
     },
     {
       "slug": "compass",
@@ -203,7 +201,7 @@
       "coverageDayCount": 1,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 1,
+      "requestCount": 2,
       "error": null
     },
     {
@@ -211,7 +209,7 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 1,
+      "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
       "requestCount": 1,
@@ -266,7 +264,7 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 1,
+      "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
       "requestCount": 1,
@@ -310,7 +308,7 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 1,
+      "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
       "requestCount": 1,
@@ -321,7 +319,7 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 1,
+      "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
       "requestCount": 1,
@@ -354,7 +352,7 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 1,
+      "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
       "requestCount": 1,
@@ -373,19 +371,6 @@
     },
     {
       "slug": "british-land",
-      "status": "degraded",
-      "requestedDayCount": 1,
-      "completedDayCount": 0,
-      "coverageDayCount": 0,
-      "failedDates": [
-        "2026-08-28"
-      ],
-      "truncatedDates": [],
-      "requestCount": 1,
-      "error": "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%28%22British+Land+Co+PLC%22+OR+%22British+Land+Co%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260827230000&enddatetime=20260828230000 (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=40)\"))"
-    },
-    {
-      "slug": "bt",
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
@@ -394,6 +379,19 @@
       "truncatedDates": [],
       "requestCount": 1,
       "error": null
+    },
+    {
+      "slug": "bt",
+      "status": "degraded",
+      "requestedDayCount": 1,
+      "completedDayCount": 0,
+      "coverageDayCount": 0,
+      "failedDates": [
+        "2026-08-29"
+      ],
+      "truncatedDates": [],
+      "requestCount": 1,
+      "error": "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%28%22BT+Group+PLC%22+OR+%22British+Telecom%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260828230000&enddatetime=20260829230000 (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=40)\"))"
     },
     {
       "slug": "bunzl",
@@ -411,10 +409,10 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 1,
+      "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 2,
+      "requestCount": 1,
       "error": null
     },
     {
@@ -422,7 +420,7 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 1,
+      "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
       "requestCount": 1,
@@ -447,7 +445,7 @@
       "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 2,
+      "requestCount": 1,
       "error": null
     },
     {
@@ -455,7 +453,7 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 1,
+      "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
       "requestCount": 1,
@@ -507,19 +505,6 @@
     },
     {
       "slug": "fandc-investment-trust",
-      "status": "degraded",
-      "requestedDayCount": 1,
-      "completedDayCount": 0,
-      "coverageDayCount": 0,
-      "failedDates": [
-        "2026-08-28"
-      ],
-      "truncatedDates": [],
-      "requestCount": 1,
-      "error": "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%28%22F%26C+Investment+Trust+PLC%22+OR+%22F%26C+Investment+Trust%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260827230000&enddatetime=20260828230000 (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.gdeltproject.org', port=443) at 0x7f305c6ac410>, 'Connection to api.gdeltproject.org timed out. (connect timeout=40)'))"
-    },
-    {
-      "slug": "fresnillo",
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
@@ -530,14 +515,25 @@
       "error": null
     },
     {
-      "slug": "games-workshop",
+      "slug": "fresnillo",
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
       "coverageDayCount": 1,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 2,
+      "requestCount": 3,
+      "error": null
+    },
+    {
+      "slug": "games-workshop",
+      "status": "ok",
+      "requestedDayCount": 1,
+      "completedDayCount": 1,
+      "coverageDayCount": 0,
+      "failedDates": [],
+      "truncatedDates": [],
+      "requestCount": 1,
       "error": null
     },
     {
@@ -548,7 +544,7 @@
       "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 2,
+      "requestCount": 1,
       "error": null
     },
     {
@@ -559,7 +555,7 @@
       "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 1,
+      "requestCount": 2,
       "error": null
     },
     {
@@ -578,10 +574,10 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 1,
+      "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 2,
+      "requestCount": 1,
       "error": null
     },
     {
@@ -710,22 +706,24 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 1,
+      "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 1,
+      "requestCount": 2,
       "error": null
     },
     {
       "slug": "legal-and-general",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 1,
-      "completedDayCount": 1,
-      "coverageDayCount": 1,
-      "failedDates": [],
+      "completedDayCount": 0,
+      "coverageDayCount": 0,
+      "failedDates": [
+        "2026-08-29"
+      ],
       "truncatedDates": [],
-      "requestCount": 1,
-      "error": null
+      "requestCount": 2,
+      "error": "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%28%22Legal+%26+General+Group+PLC%22+OR+%22Legal+%26+General%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260828230000&enddatetime=20260829230000 (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.gdeltproject.org', port=443) at 0x7f7cd6fdedb0>, 'Connection to api.gdeltproject.org timed out. (connect timeout=40)'))"
     },
     {
       "slug": "londonmetric-property",
@@ -762,24 +760,26 @@
     },
     {
       "slug": "melrose-industries",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 1,
-      "completedDayCount": 1,
+      "completedDayCount": 0,
       "coverageDayCount": 0,
-      "failedDates": [],
+      "failedDates": [
+        "2026-08-29"
+      ],
       "truncatedDates": [],
       "requestCount": 1,
-      "error": null
+      "error": "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%28%22Melrose+Industries+PLC%22+OR+%22Melrose+Industries%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260828230000&enddatetime=20260829230000 (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.gdeltproject.org', port=443) at 0x7f7cd81610a0>, 'Connection to api.gdeltproject.org timed out. (connect timeout=40)'))"
     },
     {
       "slug": "mondi",
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 1,
+      "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 1,
+      "requestCount": 2,
       "error": null
     },
     {
@@ -812,7 +812,7 @@
       "coverageDayCount": 1,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 1,
+      "requestCount": 2,
       "error": null
     },
     {
@@ -828,16 +828,14 @@
     },
     {
       "slug": "persimmon",
-      "status": "degraded",
+      "status": "ok",
       "requestedDayCount": 1,
-      "completedDayCount": 0,
-      "coverageDayCount": 0,
-      "failedDates": [
-        "2026-08-28"
-      ],
+      "completedDayCount": 1,
+      "coverageDayCount": 1,
+      "failedDates": [],
       "truncatedDates": [],
       "requestCount": 1,
-      "error": "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%28%22Persimmon+PLC%22+OR+%22Persimmon%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260827230000&enddatetime=20260828230000 (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.gdeltproject.org', port=443) at 0x7f305c685880>, 'Connection to api.gdeltproject.org timed out. (connect timeout=40)'))"
+      "error": null
     },
     {
       "slug": "phoenix",
@@ -858,22 +856,11 @@
       "coverageDayCount": 1,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 1,
+      "requestCount": 2,
       "error": null
     },
     {
       "slug": "reckitt-benckiser",
-      "status": "ok",
-      "requestedDayCount": 1,
-      "completedDayCount": 1,
-      "coverageDayCount": 1,
-      "failedDates": [],
-      "truncatedDates": [],
-      "requestCount": 1,
-      "error": null
-    },
-    {
-      "slug": "rentokil-initial",
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
@@ -882,6 +869,19 @@
       "truncatedDates": [],
       "requestCount": 1,
       "error": null
+    },
+    {
+      "slug": "rentokil-initial",
+      "status": "degraded",
+      "requestedDayCount": 1,
+      "completedDayCount": 0,
+      "coverageDayCount": 0,
+      "failedDates": [
+        "2026-08-29"
+      ],
+      "truncatedDates": [],
+      "requestCount": 1,
+      "error": "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%28%22Rentokil+Initial+PLC%22+OR+%22Rentokil+Initial%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260828230000&enddatetime=20260829230000 (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=40)\"))"
     },
     {
       "slug": "rightmove",
@@ -896,30 +896,19 @@
     },
     {
       "slug": "sage",
-      "status": "ok",
-      "requestedDayCount": 1,
-      "completedDayCount": 1,
-      "coverageDayCount": 0,
-      "failedDates": [],
-      "truncatedDates": [],
-      "requestCount": 1,
-      "error": null
-    },
-    {
-      "slug": "j-sainsbury",
       "status": "degraded",
       "requestedDayCount": 1,
       "completedDayCount": 0,
       "coverageDayCount": 0,
       "failedDates": [
-        "2026-08-28"
+        "2026-08-29"
       ],
       "truncatedDates": [],
       "requestCount": 1,
-      "error": "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%28%22J+Sainsbury+PLC%22+OR+%22J+Sainsbury%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260827230000&enddatetime=20260828230000 (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=40)\"))"
+      "error": "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Sage+Group+PLC%22+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260828230000&enddatetime=20260829230000 (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=40)\"))"
     },
     {
-      "slug": "schroders",
+      "slug": "j-sainsbury",
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
@@ -930,7 +919,7 @@
       "error": null
     },
     {
-      "slug": "scottish-mortgage-investment-trust",
+      "slug": "schroders",
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
@@ -939,6 +928,19 @@
       "truncatedDates": [],
       "requestCount": 1,
       "error": null
+    },
+    {
+      "slug": "scottish-mortgage-investment-trust",
+      "status": "degraded",
+      "requestedDayCount": 1,
+      "completedDayCount": 0,
+      "coverageDayCount": 0,
+      "failedDates": [
+        "2026-08-29"
+      ],
+      "truncatedDates": [],
+      "requestCount": 1,
+      "error": "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%28%22Scottish+Mortgage+Investment+Trust+PLC%22+OR+%22Scottish+Mortgage+Investment+Trust%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260828230000&enddatetime=20260829230000 (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.gdeltproject.org', port=443) at 0x7f7cd81a6930>, 'Connection to api.gdeltproject.org timed out. (connect"
     },
     {
       "slug": "segro",
@@ -986,14 +988,16 @@
     },
     {
       "slug": "smiths",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 1,
-      "completedDayCount": 1,
-      "coverageDayCount": 1,
-      "failedDates": [],
+      "completedDayCount": 0,
+      "coverageDayCount": 0,
+      "failedDates": [
+        "2026-08-29"
+      ],
       "truncatedDates": [],
-      "requestCount": 1,
-      "error": null
+      "requestCount": 2,
+      "error": "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%28%22Smiths+Group+PLC%22+OR+%22Smiths%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260828230000&enddatetime=20260829230000 (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.gdeltproject.org', port=443) at 0x7f7cd8163a40>, 'Connection to api.gdeltproject.org timed out. (connect timeout=40)'))"
     },
     {
       "slug": "spirax",
@@ -1044,7 +1048,7 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 1,
+      "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
       "requestCount": 1,
@@ -1052,14 +1056,12 @@
     },
     {
       "slug": "tesco",
-      "status": "degraded",
+      "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
       "coverageDayCount": 1,
       "failedDates": [],
-      "truncatedDates": [
-        "2026-08-28"
-      ],
+      "truncatedDates": [],
       "requestCount": 1,
       "error": null
     },
