@@ -133,13 +133,40 @@ FULL_REPORT_OVERRIDES: dict[tuple[str, int], str] = {
         "VOD.L",
         2025,
     ): "https://www.vodafone.com/~/media/Files/V/vodafone/corp/documents/performance/financial-results/2025/form-20-f-2025.pdf",
+    ("SHEL.L", 2025): "https://www.shell.com/investors/results-and-reporting/annual-report-archive/_jcr_content/root/main/section_812377294/tabs/tab_copy_copy/text.multi.stream/1774544186011/5727c329a58b5eb7a54442c0a03f562a5aef1159/shell-annual-report-2025-interactive.pdf",
+    ("ULVR.L", 2025): "https://www.unilever.com/files/unilever-annual-report-and-accounts-2025.pdf",
+    ("ADM.L", 2025): "https://www.admiralgroup.co.uk/static-files/b4032ccb-738f-454d-92a1-ec2e95677423",
+    ("ABF.L", 2025): "https://www.abf.co.uk/content/dam/abf/corporate/Documents/investors/annual-and-interim-reports/2025/abf-annual-report-2025.pdf.downloadasset.pdf",
+    ("BA.L", 2025): "https://data.fca.org.uk/artefacts/NSM/DirectUpload/NI-000141487/reports/8SVCSVKSGDWMW2QHOH83-2025-12-31-T01_ixbrl.html",
+    ("CCH.L", 2025): "https://www.coca-colahellenic.com/content/dam/cch/us/documents/oar2025/Coca-Cola-HBC-Integrated-Annual-Report-2025.pdf.downloadasset.pdf",
+    ("CPG.L", 2025): "https://www.compass-group.com/content/dam/compass-group/corporate/oar-2025/oar-page/annual-report-2025.pdf",
+    ("CTEC.L", 2025): "https://www.convatecgroup.com/siteassets/investors/213800ls272l4fidoh92-2025-12-31.html",
+    ("HLN.L", 2025): "https://www.haleon.com/content/dam/haleon/corporate/documents/investors/oar-2025/Annual-Report-and-Form-20-F-2025.pdf.downloadasset.pdf",
+    ("HL.L", 2025): "https://www.hl.co.uk/__data/assets/pdf_file/0006/20662503/2025-Report-and-Financial-Statements.pdf",
+    ("HSX.L", 2025): "https://www.hiscoxgroup.com/sites/group/files/2026-03/Hiscox_report_and_accounts_2025.pdf",
+    ("IMI.L", 2025): "https://www.imiplc.com/media/1i2ddtki/imi_ar_2025.pdf",
+    ("IMB.L", 2025): "https://www.imperialbrandsplc.com/content/dam/imperialbrands/corporate/documents/investor-hub/reports/oar-2025/imperial-brands-2025-annual-report.pdf",
+    ("ITRK.L", 2025): "https://www.intertek.com/siteassets/investors/2026/ara/intertek-annual-report--accounts-2025-combined.pdf",
+    ("MRO.L", 2025): "https://www.melroseplc.net/media/qc0eu5o1/melrose-annual-report25.pdf",
+    ("MNDI.L", 2025): "https://www.mondigroup.com/globalassets/mondigroup.com/investors/results-reports-and-presentations/2025/integrated-report/mondi-group-integrated-report-and-financial-statements-jaws-accessibility-2025.pdf",
+    ("PSH.L", 2025): "https://assets.pershingsquareholdings.com/wp-content/uploads/2026/02/18175039/Pershing-Square-Holdings-Ltd.-2025-Annual-Report.pdf",
+    ("PRU.L", 2025): "https://www.prudentialplc.com/content/dam/prudential-plc/investor/results-and-reports/lastest-annual-report/prudential-plc-ar-2025.pdf.coredownload.inline.pdf",
+    ("RMV.L", 2025): "https://plc.rightmove.co.uk/content/uploads/2026/03/RIG004-V2-2025-ARA-WEB-READY-260323.pdf",
+    ("SGE.L", 2025): "https://www.sage.com/investors/-/media/files/investors/documents/pdf/annual%20report/sage-annual-report-2025.pdf",
+    ("SMT.L", 2026): "https://www.scottishmortgage.com/api/document-download?bg-url=%2Fen%2Fuk%2Findividual-investors%2Fliterature-library%2Ffunds%2Finvestment-trusts%2Fscottish-mortgage%2Fannual-reports%2Fscottish-mortgage-annual-report-including-the-notice-of-agm-march-2026%2F",
+    ("SVT.L", 2026): "https://www.severntrent.com/content/dam/stw-plc/fy-results-26/full-annual-report-and-accounts-2026.pdf",
+    ("SN.L", 2025): "https://smith-nephew.stylelabs.cloud/api/public/content/9bf6ddda064f489c852f0ecab120f281?v=273de580&download=true",
+    ("STJ.L", 2025): "https://www.sjp.co.uk/sites/sjp-corp/files/SJP/shareholders/reports-presentations-webcasts/2026/SJP_AR_2025.pdf",
 }
+
 REFERER_OVERRIDES = {
     "static.aviva.io": "https://www.aviva.com/investors/annual-report/",
     "www.abf.co.uk": "https://www.abf.co.uk/investors/results-reports-presentations/annual-reports",
     "www.coca-colahellenic.com": "https://www.coca-colahellenic.com/en/investor-relations/2025-integrated-annual-report",
     "www.compass-group.com": "https://www.compass-group.com/en/investors/annual-reports.html",
     "www.convatecgroup.com": "https://www.convatecgroup.com/investors/reports-results-and-presentations/",
+    "smith-nephew.stylelabs.cloud": "https://www.smith-nephew.com/en/who-we-are/investors/annual-report-2025",
+    "www.sage.com": "https://www.sage.com/investors/financial-information/annual-report/",
 }
 
 
@@ -221,6 +248,24 @@ def request_bytes(url: str, timeout: int) -> tuple[bytes, str, str]:
         return body, response.headers.get("Content-Type", ""), response.geturl()
 
 
+def request_bytes_browser_compatible(url: str, timeout: int) -> tuple[bytes, str, str]:
+    """Retry issuer CDNs that require a current browser TLS fingerprint."""
+    from curl_cffi import requests as curl_requests
+
+    response = curl_requests.get(
+        url,
+        headers={"Accept": "application/pdf,text/html,application/xhtml+xml;q=0.9,*/*;q=0.5"},
+        impersonate="chrome",
+        timeout=timeout,
+        allow_redirects=True,
+    )
+    response.raise_for_status()
+    body = bytes(response.content)
+    if len(body) > MAX_DOWNLOAD_BYTES:
+        raise ValueError(f"download exceeds {MAX_DOWNLOAD_BYTES // (1024 * 1024)} MB limit")
+    return body, response.headers.get("Content-Type", ""), str(response.url)
+
+
 def read_index(location: str, timeout: int) -> dict[str, Any]:
     if location.startswith(("http://", "https://")):
         body, _, _ = request_bytes(location, timeout)
@@ -283,6 +328,10 @@ def candidate_score(report: dict[str, Any]) -> int:
 def is_known_non_report_candidate(report: dict[str, Any]) -> bool:
     haystack = f"{report.get('title') or ''} {report.get('url') or ''}".lower()
     normalised = re.sub(r"[_-]+", " ", haystack)
+    if any(marker in normalised for marker in (
+        "annual report", "report and financial statements", "integrated report",
+    )) and not any(marker in normalised for marker in ("mockup", "test images")):
+        return False
     return any(marker in haystack or re.sub(r"[_-]+", " ", marker) in normalised for marker in (
         "test-images", "annual-report-mockup", "mockup-annual-report",
         "payments-to-government", "de-beers-inc-estma", "ihg_data_report",
@@ -378,7 +427,10 @@ def extract_group(company: dict[str, Any], year: int, reports: list[dict[str, An
             continue
         visited.add(requested_url)
         try:
-            body, content_type, final_url = request_bytes(requested_url, timeout)
+            try:
+                body, content_type, final_url = request_bytes(requested_url, timeout)
+            except Exception:
+                body, content_type, final_url = request_bytes_browser_compatible(requested_url, timeout)
             is_pdf = body.startswith(b"%PDF-") or "application/pdf" in content_type.lower()
             if is_pdf:
                 text, pages = extract_pdf(body)
@@ -390,7 +442,18 @@ def extract_group(company: dict[str, Any], year: int, reports: list[dict[str, An
                     )
                 return build_record(company, year, candidate, final_url, "pdf", pages, body, text, attempts)
 
-            html_text, _ = extract_html(body, content_type)
+            if "text/plain" in content_type.lower():
+                html_text = normalise_text(body.decode("utf-8", errors="replace"))
+            else:
+                html_text, _ = extract_html(body, content_type)
+            word_count = len(re.findall(r"\b\w+\b", html_text))
+            is_digital_report = urllib.parse.urlparse(requested_url).path.lower().endswith((".html", ".xhtml"))
+            if word_count >= 20_000 and is_digital_report:
+                source_url = str(candidate.get("sourceUrl") or final_url)
+                return build_record(
+                    company, year, candidate, source_url,
+                    "html", None, body, html_text, attempts,
+                )
             discovered = pdf_link_candidates(final_url, body.decode("utf-8", errors="replace"))
             queue.extend(item for item in discovered[:8] if item["url"] not in visited)
             queue.sort(key=candidate_score, reverse=True)

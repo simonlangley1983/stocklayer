@@ -23,7 +23,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install annual report text extraction dependency
-        run: python -m pip install "pypdf>=6,<7" "cryptography>=45,<46"
+        run: python -m pip install "pypdf>=6,<7" "cryptography>=45,<46" "curl-cffi>=0.13,<0.14"
 
       - name: Monitor annual report source pages
         run: >-
