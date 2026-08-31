@@ -21,8 +21,8 @@ from typing import Any
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_COMPANIES_FILE = ROOT / "uk-companies.json"
-LOCAL_COMPANIES_FALLBACK = ROOT / "ftse100.json"
+DEFAULT_COMPANIES_FILE = ROOT / "universes" / "uk-100" / "companies.json"
+LOCAL_COMPANIES_FALLBACKS = (ROOT / "uk-companies.json", ROOT / "ftse100.json")
 DEFAULT_SOURCES_FILE = ROOT / "annual-reports" / "sources.json"
 DEFAULT_INDEX_FILE = ROOT / "annual-reports" / "reports-index.json"
 DEFAULT_SEED_INDEX_URL = (
@@ -208,9 +208,10 @@ def display_path(path: Path) -> str:
 
 def load_companies(path: Path) -> tuple[list[dict[str, Any]], Path]:
     source = path
-    if not source.exists() and path == DEFAULT_COMPANIES_FILE and LOCAL_COMPANIES_FALLBACK.exists():
-        source = LOCAL_COMPANIES_FALLBACK
-    companies = read_json(source, [])
+    if not source.exists() and path == DEFAULT_COMPANIES_FILE:
+        source = next((candidate for candidate in LOCAL_COMPANIES_FALLBACKS if candidate.exists()), source)
+    payload = read_json(source, [])
+    companies = payload.get("companies", []) if isinstance(payload, dict) else payload
     if not isinstance(companies, list) or not companies:
         raise SystemExit(f"No companies found in {source}")
     return companies, source
