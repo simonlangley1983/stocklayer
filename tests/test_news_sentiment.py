@@ -307,6 +307,42 @@ class NewsSentimentTests(unittest.TestCase):
         self.assertEqual(provider.request_count, 2)
         self.assertIn(call(20.0), sleep.call_args_list)
 
+    @patch("automation.news_sentiment.time.sleep")
+    def test_gdelt_uses_http_when_https_is_unreachable(self, sleep) -> None:
+        success = requests.Response()
+        success.status_code = 200
+        success._content = b'{"articles": []}'
+        success.url = "http://api.gdeltproject.org/api/v2/doc/doc"
+
+        class FakeSession:
+            def __init__(self) -> None:
+                self.urls = []
+
+            def get(self, url, *args, **kwargs):
+                self.urls.append(url)
+                if url.startswith("https://"):
+                    raise requests.ConnectTimeout("HTTPS unavailable")
+                return success
+
+        provider = GdeltProvider(request_delay=0)
+        provider.session = FakeSession()
+        self.assertEqual(
+            provider.fetch(
+                self.company,
+                day_bounds(date(2026, 8, 15))[0],
+                day_bounds(date(2026, 8, 16))[0],
+            ),
+            [],
+        )
+        self.assertEqual(provider.request_count, 2)
+        self.assertEqual(
+            provider.session.urls,
+            [
+                "https://api.gdeltproject.org/api/v2/doc/doc",
+                "http://api.gdeltproject.org/api/v2/doc/doc",
+            ],
+        )
+
     def test_event_flag_is_possible_with_one_source(self) -> None:
         article = {
             "id": "a1",

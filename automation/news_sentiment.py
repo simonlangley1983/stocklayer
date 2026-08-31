@@ -34,6 +34,7 @@ RUN_STATUS_PATH = SENTIMENT_DIR / "run-status.json"
 HISTORY_DIR = SENTIMENT_DIR / "history"
 LONDON = ZoneInfo("Europe/London")
 GDELT_ENDPOINT = "https://api.gdeltproject.org/api/v2/doc/doc"
+GDELT_FALLBACK_ENDPOINT = "http://api.gdeltproject.org/api/v2/doc/doc"
 TRACKING_PARAMETERS = {
     "fbclid",
     "gclid",
@@ -190,7 +191,9 @@ def make_session() -> requests.Session:
         status_forcelist=(500, 502, 503, 504),
         allowed_methods=("GET",),
     )
-    session.mount("https://", HTTPAdapter(max_retries=retries))
+    adapter = HTTPAdapter(max_retries=retries)
+    session.mount("https://", adapter)
+    session.mount("http://", adapter)
     session.headers.update({"User-Agent": "StockLayerNewsSentiment/1.0"})
     return session
 
@@ -247,12 +250,24 @@ class GdeltProvider:
         response = None
         for attempt in range(self.rate_limit_retries + 1):
             try:
-                self.request_count += 1
-                response = self.session.get(
-                    GDELT_ENDPOINT,
-                    params=params,
-                    timeout=(10, 25),
-                )
+                for endpoint in (GDELT_ENDPOINT, GDELT_FALLBACK_ENDPOINT):
+                    try:
+                        self.request_count += 1
+                        response = self.session.get(
+                            endpoint,
+                            params=params,
+                            timeout=(10, 25),
+                        )
+                        break
+                    except (requests.ConnectionError, requests.Timeout):
+                        if endpoint == GDELT_FALLBACK_ENDPOINT:
+                            raise
+                        print(
+                            "GDELT HTTPS request failed; trying its HTTP endpoint",
+                            file=sys.stderr,
+                            flush=True,
+                        )
+                assert response is not None
                 if response.status_code == 429 and attempt < self.rate_limit_retries:
                     retry_after = response.headers.get("Retry-After")
                     try:
