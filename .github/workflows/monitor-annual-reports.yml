@@ -23,7 +23,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install annual report text extraction dependency
-        run: python -m pip install "pypdf>=6,<7"
+        run: python -m pip install "pypdf>=6,<7" "cryptography>=45,<46"
 
       - name: Monitor annual report source pages
         run: >-
@@ -34,7 +34,18 @@ jobs:
           --workers 12
 
       - name: Extract genuine annual report keyword counts
-        run: python scripts/extract_annual_report_keywords.py --latest-only --workers 4
+        shell: bash
+        run: |
+          cp annual-reports/extracted-keywords.json "$RUNNER_TEMP/previous-extractions.json"
+          python scripts/extract_annual_report_keywords.py \
+            --latest-only \
+            --workers 4 \
+            --output "$RUNNER_TEMP/current-extractions.json"
+          python scripts/extract_annual_report_keywords.py \
+            --latest-only \
+            --merge-input "$RUNNER_TEMP/previous-extractions.json" \
+            --merge-input "$RUNNER_TEMP/current-extractions.json" \
+            --output annual-reports/extracted-keywords.json
 
       - name: Commit annual report monitoring updates
         uses: stefanzweifel/git-auto-commit-action@v5

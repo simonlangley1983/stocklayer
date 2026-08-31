@@ -478,11 +478,16 @@ def main() -> int:
             reports_by_company_year.values(),
             key=lambda item: (item.get("ticker") or "", -(item.get("report_year") or 0)),
         )
+        if args.latest_only:
+            latest_by_ticker: dict[str, dict[str, Any]] = {}
+            for report in reports:
+                latest_by_ticker.setdefault(str(report.get("ticker") or ""), report)
+            reports = list(latest_by_ticker.values())
         extracted = sum(item.get("report_data_status") == "extracted" for item in reports)
         merged_payload = {
             "generated_at": datetime.now(timezone.utc).isoformat(),
             "source_index": "annual-reports/reports-index.json" if str(args.index) == str(LOCAL_INDEX) else str(args.index),
-            "source_index_generated_at": payloads[0].get("source_index_generated_at") if payloads else None,
+            "source_index_generated_at": payloads[-1].get("source_index_generated_at") if payloads else None,
             "methodology": payloads[0].get("methodology") if payloads else {},
             "group_count": len(reports),
             "extracted_count": extracted,
