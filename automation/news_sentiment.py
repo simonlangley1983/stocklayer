@@ -185,7 +185,7 @@ def make_session() -> requests.Session:
         # Keep an individual company request bounded. A complete pipeline pass
         # retries only the missing companies, which is both faster and gentler
         # on GDELT than spending minutes retrying one request in-place.
-        total=1,
+        total=0,
         backoff_factor=1.0,
         status_forcelist=(500, 502, 503, 504),
         allowed_methods=("GET",),
@@ -202,7 +202,7 @@ class GdeltProvider:
         self,
         max_records: int = 50,
         request_delay: float = 5.25,
-        rate_limit_retries: int = 2,
+        rate_limit_retries: int = 0,
     ) -> None:
         self.max_records = max_records
         self.request_delay = request_delay
