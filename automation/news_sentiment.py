@@ -182,7 +182,10 @@ def day_bounds(day: date) -> tuple[datetime, datetime]:
 def make_session() -> requests.Session:
     session = requests.Session()
     retries = Retry(
-        total=3,
+        # Keep an individual company request bounded. A complete pipeline pass
+        # retries only the missing companies, which is both faster and gentler
+        # on GDELT than spending minutes retrying one request in-place.
+        total=1,
         backoff_factor=1.0,
         status_forcelist=(500, 502, 503, 504),
         allowed_methods=("GET",),
@@ -199,7 +202,7 @@ class GdeltProvider:
         self,
         max_records: int = 50,
         request_delay: float = 5.25,
-        rate_limit_retries: int = 4,
+        rate_limit_retries: int = 2,
     ) -> None:
         self.max_records = max_records
         self.request_delay = request_delay
@@ -245,7 +248,11 @@ class GdeltProvider:
         for attempt in range(self.rate_limit_retries + 1):
             try:
                 self.request_count += 1
-                response = self.session.get(GDELT_ENDPOINT, params=params, timeout=40)
+                response = self.session.get(
+                    GDELT_ENDPOINT,
+                    params=params,
+                    timeout=(10, 25),
+                )
                 if response.status_code == 429 and attempt < self.rate_limit_retries:
                     retry_after = response.headers.get("Retry-After")
                     try:

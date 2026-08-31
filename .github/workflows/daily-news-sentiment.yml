@@ -109,8 +109,16 @@ jobs:
           if [[ -n "$INPUT_DATE" ]]; then args+=(--date "$INPUT_DATE"); fi
           if [[ -n "$INPUT_SLUGS" ]]; then args+=(--slugs "$INPUT_SLUGS"); fi
           if [[ -n "$INPUT_BACKFILL_DAYS" ]]; then args+=(--backfill-days "$INPUT_BACKFILL_DAYS"); fi
-          python automation/news_sentiment.py --request-delay 15 "${args[@]}"
-          status=$?
+          status=2
+          for attempt in 1 2 3; do
+            echo "Sentiment collection pass $attempt of 3"
+            python automation/news_sentiment.py --request-delay 15 "${args[@]}"
+            status=$?
+            if [[ "$status" -eq 0 ]]; then break; fi
+            if [[ "$status" -ne 2 || "$attempt" -eq 3 ]]; then break; fi
+            echo "Coverage is below target; retrying only missing observations after cooldown."
+            sleep 60
+          done
           echo "exit_code=$status" >> "$GITHUB_OUTPUT"
           exit 0
 
