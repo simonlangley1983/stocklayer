@@ -3696,6 +3696,64 @@
         }
       ],
       "changeFromPreviousScoredDay": 3.7
+    },
+    {
+      "date": "2026-08-30",
+      "dailyScore": 40.6,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 47.1,
+      "confidence": 23.0,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 2,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 1,
+      "dispersion": 0.3505,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "3e367eccb041d1fc",
+          "storyClusterId": "story-002",
+          "title": "Halifax closing 13 branches in September - full list",
+          "url": "https://www.express.co.uk/finance/personalfinance/2242338/halifax-bank-branch-closures-september-2026",
+          "source": "express.co.uk",
+          "publishedAt": "2026-08-30T12:15:00Z",
+          "polarity": -0.7261,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "baa2917e747f2358",
+          "storyClusterId": "story-001",
+          "title": "New payment set up ? Get in touch ! The bank scam where your  bank  is the scammer | Scams",
+          "url": "https://www.theguardian.com/money/2026/aug/30/new-payment-set-up-get-in-touch-the-bank-scam-where-your-bank-is-the-scammer",
+          "source": "theguardian.com",
+          "publishedAt": "2026-08-30T08:15:00Z",
+          "polarity": -0.025,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 23.0",
+          "evidenceArticleIds": [
+            "3e367eccb041d1fc",
+            "baa2917e747f2358"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -6.3
     }
   ]
 }

@@ -2765,6 +2765,64 @@
         }
       ],
       "changeFromPreviousScoredDay": null
+    },
+    {
+      "date": "2026-08-30",
+      "dailyScore": 39.4,
+      "dailyLabel": "Negative",
+      "rollingScore": 48.3,
+      "confidence": 26.9,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 3,
+      "eligibleArticleCount": 3,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 3,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 1,
+      "dispersion": 0.522,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "262d7ea700526d75",
+          "storyClusterId": "story-001",
+          "title": "British Gas Boss Warns united kingdom Faces Winter Fuel Shortage Due to Reliance on Imports",
+          "url": "https://wattsupwiththat.com/2026/08/29/british-gas-boss-warns-uk-faces-winter-fuel-shortage-due-to-reliance-on-imports",
+          "source": "wattsupwiththat.com",
+          "publishedAt": "2026-08-30T10:00:00Z",
+          "polarity": -0.9464,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "2051d8a6901bc268",
+          "storyClusterId": "story-002",
+          "title": "This Newly Public Nuclear IPO Is Already Using AI to Speed Up Reactor Design . Is It a Buy ?",
+          "url": "https://finance.yahoo.com/technology/ai/articles/newly-public-nuclear-ipo-already-202500169.html",
+          "source": "finance.yahoo.com",
+          "publishedAt": "2026-08-30T21:15:00Z",
+          "polarity": 0.0975,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 2
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 26.9",
+          "evidenceArticleIds": [
+            "262d7ea700526d75",
+            "2051d8a6901bc268"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -7.7
     }
   ]
 }
