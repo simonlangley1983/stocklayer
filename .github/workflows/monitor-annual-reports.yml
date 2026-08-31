@@ -26,10 +26,15 @@ jobs:
         run: python -m pip install "pypdf>=6,<7"
 
       - name: Monitor annual report source pages
-        run: python scripts/monitor_annual_reports.py
+        run: >-
+          python scripts/monitor_annual_reports.py
+          --max-sources-per-company 4
+          --max-child-pages-per-company 1
+          --timeout 8
+          --workers 12
 
       - name: Extract genuine annual report keyword counts
-        run: python scripts/extract_annual_report_keywords.py --latest-only --workers 3
+        run: python scripts/extract_annual_report_keywords.py --latest-only --workers 4
 
       - name: Commit annual report monitoring updates
         uses: stefanzweifel/git-auto-commit-action@v5
