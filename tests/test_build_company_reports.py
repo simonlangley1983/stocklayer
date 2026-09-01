@@ -60,6 +60,29 @@ class BuildCompanyReportsTests(unittest.TestCase):
         self.assertIsNone(section["latestScore"])
         self.assertEqual(section["scoredDayCount"], 0)
 
+    def test_press_events_exclude_description_only_company_mentions(self) -> None:
+        company = {
+            "companyName": "Barclays",
+            "ticker": "BARC.L",
+            "aliases": ["Barclays", "Barclays PLC", "Barclays Bank"],
+            "requireHeadlineAlias": True,
+            "contextTerms": [],
+        }
+        payload = {
+            "observations": [{
+                "date": "2026-08-30",
+                "dailyScore": 50,
+                "topStories": [
+                    {"title": "Unrelated shares fall after earnings", "polarity": -0.7},
+                    {"title": "Barclays PLC announces a strategic update", "polarity": 0.4},
+                ],
+            }]
+        }
+        section = build_press_section(payload, company)
+        self.assertEqual([item["title"] for item in section["stories"]], [
+            "Barclays PLC announces a strategic update"
+        ])
+
     def test_company_report_combines_all_four_source_sections(self) -> None:
         company = {
             "companyName": "Example PLC",

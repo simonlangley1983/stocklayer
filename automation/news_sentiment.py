@@ -347,12 +347,15 @@ def prepare_articles(
         description = str(candidate.get("description") or "").strip()
         text = f"{title}. {description}".strip()
         has_alias = alias_in_text(aliases, text)
-        specific_alias = alias_in_text(
+        specific_headline_alias = alias_in_text(
             [alias for alias in aliases if len(TOKEN_RE.findall(alias.casefold())) >= 2],
-            text,
+            title,
         )
-        context_match = alias_in_text(company.get("contextTerms", []), text)
-        if company.get("requireHeadlineAlias") and not (specific_alias or (has_alias and context_match)):
+        headline_alias = alias_in_text(aliases, title)
+        context_match = alias_in_text(company.get("contextTerms", []), title)
+        if company.get("requireHeadlineAlias") and not (
+            specific_headline_alias or (headline_alias and context_match)
+        ):
             rejected["ambiguous_company_without_alias"] += 1
             continue
 

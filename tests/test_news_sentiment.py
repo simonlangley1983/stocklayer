@@ -166,6 +166,32 @@ class NewsSentimentTests(unittest.TestCase):
             1,
         )
 
+    def test_required_headline_alias_is_not_satisfied_by_description(self) -> None:
+        company = {
+            **self.company,
+            "companyName": "Barclays",
+            "slug": "barclays",
+            "aliases": ["Barclays", "Barclays PLC", "Barclays Bank"],
+            "requireHeadlineAlias": True,
+            "contextTerms": [],
+        }
+        candidate = self.candidate("Unrelated company reports weaker earnings")
+        candidate["description"] = "The shares were mentioned by Barclays analysts."
+        observation = score_company_day(
+            company,
+            date(2026, 8, 15),
+            [candidate],
+            KeywordTestScorer(),
+            self.methodology,
+            load_event_rules(),
+            [],
+        )
+        self.assertIsNone(observation["dailyScore"])
+        self.assertEqual(
+            observation["rejectedCandidateCounts"].get("ambiguous_company_without_alias"),
+            1,
+        )
+
     def test_narrative_threshold_flags(self) -> None:
         observation = {
             "dailyScore": 70.0,

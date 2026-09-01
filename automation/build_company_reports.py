@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import re
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -13,6 +14,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 UNIVERSE_PATH = ROOT / "universes" / "uk-100" / "companies.json"
 SENTIMENT_HISTORY_DIR = ROOT / "sentiment" / "history"
+SENTIMENT_UNIVERSE_PATH = ROOT / "sentiment" / "company-universe.json"
 ANNUAL_HISTORY_PATH = ROOT / "annual-reports" / "extracted-keywords-history.json"
 ANNUAL_LATEST_PATH = ROOT / "annual-reports" / "extracted-keywords.json"
 OUTPUT_DIR = ROOT / "company-reports"
@@ -140,7 +142,47 @@ def build_annual_section(reports: list[dict[str, Any]]) -> dict[str, Any]:
     }
 
 
-def press_events(observations: list[dict[str, Any]], limit: int = 10) -> list[dict[str, Any]]:
+def headline_aliases(company: dict[str, Any] | None) -> list[str]:
+    if not company:
+        return []
+    aliases = [str(item) for item in company.get("aliases", []) if item]
+    name = str(company.get("companyName") or "").strip()
+    if name:
+        aliases.extend([name, re.sub(r"\s+(?:plc|group|holdings|limited|ltd|ag|sa)$", "", name, flags=re.I)])
+    ticker = str(company.get("ticker") or "").split(".")[0]
+    if ticker:
+        aliases.append(ticker)
+    return sorted({item.strip() for item in aliases if item.strip()}, key=len, reverse=True)
+
+
+def headline_mentions_company(title: str, company: dict[str, Any] | None) -> bool:
+    aliases = headline_aliases(company)
+    if not aliases:
+        return True
+    normalised_title = f" {re.sub(r'[^a-z0-9]+', ' ', title.casefold()).strip()} "
+    matches = [
+        alias
+        for alias in aliases
+        if f" {re.sub(r'[^a-z0-9]+', ' ', alias.casefold()).strip()} " in normalised_title
+    ]
+    if not matches:
+        return False
+    if company and company.get("requireHeadlineAlias"):
+        specific = [alias for alias in matches if len(alias.split()) >= 2]
+        contexts = [str(item) for item in company.get("contextTerms", []) if item]
+        context_match = any(
+            f" {re.sub(r'[^a-z0-9]+', ' ', item.casefold()).strip()} " in normalised_title
+            for item in contexts
+        )
+        return bool(specific or context_match)
+    return True
+
+
+def press_events(
+    observations: list[dict[str, Any]],
+    company: dict[str, Any] | None = None,
+    limit: int = 10,
+) -> list[dict[str, Any]]:
     candidates: dict[str, dict[str, Any]] = {}
     for observation in observations:
         event_flags = [
@@ -151,7 +193,7 @@ def press_events(observations: list[dict[str, Any]], limit: int = 10) -> list[di
         flag = event_flags[0] if event_flags else None
         for story in observation.get("topStories", [])[:2]:
             title = str(story.get("title") or "").strip()
-            if not title:
+            if not title or not headline_mentions_company(title, company):
                 continue
             key = title.casefold()
             significance = abs(float(story.get("polarity") or 0))
@@ -177,7 +219,10 @@ def press_events(observations: list[dict[str, Any]], limit: int = 10) -> list[di
     return sorted(ranked, key=lambda item: item["date"])
 
 
-def build_press_section(payload: dict[str, Any] | None) -> dict[str, Any]:
+def build_press_section(
+    payload: dict[str, Any] | None,
+    company: dict[str, Any] | None = None,
+) -> dict[str, Any]:
     observations = list((payload or {}).get("observations", []))
     series = [
         {
@@ -201,7 +246,7 @@ def build_press_section(payload: dict[str, Any] | None) -> dict[str, Any]:
         "latestScore": latest["dailyScore"] if latest else None,
         "latestScoreDate": latest["date"] if latest else None,
         "series": series,
-        "stories": press_events(observations),
+        "stories": press_events(observations, company),
     }
 
 
@@ -221,7 +266,7 @@ def build_company_report(
     generated_at: str,
 ) -> dict[str, Any]:
     annual = build_annual_section(annual_reports)
-    press = build_press_section(sentiment)
+    press = build_press_section(sentiment, company)
     annual_events = [
         {
             "date": f"{item['year']}-12-31",
@@ -271,7 +316,14 @@ def load_annual_reports() -> dict[str, list[dict[str, Any]]]:
 
 def main() -> int:
     universe = read_json(UNIVERSE_PATH, {}) or {}
-    companies = universe.get("companies", [])
+    sentiment_universe = read_json(SENTIMENT_UNIVERSE_PATH, {}) or {}
+    sentiment_companies = {
+        item.get("slug"): item for item in sentiment_universe.get("companies", [])
+    }
+    companies = [
+        {**company, **sentiment_companies.get(company.get("slug"), {})}
+        for company in universe.get("companies", [])
+    ]
     annual_by_slug = load_annual_reports()
     generated_at = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
