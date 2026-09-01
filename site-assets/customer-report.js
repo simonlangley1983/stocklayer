@@ -131,6 +131,16 @@
     return `<div class="report-signal-comparison">${components.map(item => `<div class="report-signal-row"><div><strong>${escapeHtml(item.label)}</strong><small>${escapeHtml(item.detail || '')}</small></div><div class="report-signal-bar"><i style="width:${Math.max(0, Math.min(100, Number(item.score)))}%"></i><b class="report-neutral-marker"></b></div><strong class="${scoreClass(item.score)}">${Number(item.score).toFixed(1)}<span>/100</span></strong></div>`).join('')}</div>${scoreScale('signal')}`;
   }
 
+  function companyMarketValue(item, company) {
+    if (typeof window.parseComparableMarketCap === 'function' && typeof window.formatOneDecimalCompactMoney === 'function') {
+      const liveValue = window.parseComparableMarketCap(company || {});
+      if (Number.isFinite(liveValue) && liveValue > 0) {
+        return window.formatOneDecimalCompactMoney(liveValue, company?.currency || 'GBP');
+      }
+    }
+    return company?.marketCap || item.marketCap || 'Unavailable';
+  }
+
   function sectionOne(report, company) {
     const item = report.company;
     const richerIntro = company?.usp
@@ -138,7 +148,7 @@
       || company?.uniqueSellingPoint
       || (typeof window.getCompanyUsp === 'function' ? window.getCompanyUsp(company) : '')
       || item.introduction;
-    return `<section class="company-report-section company-report-overview" aria-labelledby="report-section-company"><header><h3 id="report-section-company">Company overview</h3></header><div class="company-report-profile"><div><p class="company-report-intro">${escapeHtml(richerIntro || item.introduction)}</p><dl><div><dt>Company type</dt><dd>${escapeHtml(item.sector || 'Unavailable')}</dd></div><div><dt>Listing</dt><dd>${escapeHtml(item.ticker || 'Unavailable')}</dd></div><div><dt>UK 100 rank</dt><dd>${item.ftseRank ? `#${item.ftseRank}` : 'Unavailable'}</dd></div><div><dt>Market value</dt><dd>${escapeHtml(item.marketCap || 'Unavailable')}</dd></div></dl></div></div></section>`;
+    return `<section class="company-report-section company-report-overview" aria-labelledby="report-section-company"><header><h3 id="report-section-company">Company overview</h3></header><div class="company-report-profile"><div><p class="company-report-intro">${escapeHtml(richerIntro || item.introduction)}</p><dl><div><dt>Company type</dt><dd>${escapeHtml(item.sector || 'Unavailable')}</dd></div><div><dt>Listing</dt><dd>${escapeHtml(item.ticker || 'Unavailable')}</dd></div><div><dt>UK 100 rank</dt><dd>${item.ftseRank ? `#${item.ftseRank}` : 'Unavailable'}</dd></div><div><dt>Market value</dt><dd>${escapeHtml(companyMarketValue(item, company))}</dd></div></dl></div></div></section>`;
   }
 
   function sectionTwo(report) {
