@@ -11,7 +11,7 @@ permissions:
 jobs:
   monitor-annual-reports:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 60
 
     steps:
       - name: Check out repository
@@ -51,7 +51,25 @@ jobs:
         run: python automation/build_company_reports.py
 
       - name: Commit annual report monitoring updates
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "Update annual report monitoring"
-          file_pattern: "annual-reports/*.json company-reports/*.json"
+        shell: bash
+        run: |
+          git config user.name "stocklayer-annual-report-bot"
+          git config user.email "stocklayer-annual-report-bot@users.noreply.github.com"
+
+          git add annual-reports/*.json
+          git commit -m "Update annual report monitoring" || echo "No annual report changes to commit"
+
+          # Daily sentiment may update main during the slower PDF extraction.
+          # Rebase onto that data, rebuild the combined feeds, and retry a raced push.
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            python automation/build_company_reports.py
+            git add company-reports/*.json
+            git commit -m "Rebuild customer company reports" || echo "No company report changes to commit"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Push raced another data workflow; retrying ($attempt/3)."
+            sleep 5
+          done
+          exit 1
