@@ -442,6 +442,46 @@
   font-weight: 700;
 }
 
+#company-grid.line-view .confidence-card-section {
+  min-width: 0;
+}
+
+#company-grid.line-view .growth-potential-metric {
+  width: 100%;
+  min-width: 0;
+  grid-template-columns: minmax(0, 1fr) !important;
+  grid-template-rows: auto auto auto !important;
+  gap: 6px !important;
+  align-content: center;
+}
+
+#company-grid.line-view .growth-potential-metric .confidence-segments {
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  width: 100%;
+  min-width: 0;
+}
+
+#company-grid.line-view .growth-potential-metric .growth-potential-value {
+  position: static !important;
+  grid-column: 1 !important;
+  grid-row: 2 !important;
+  margin: 0 !important;
+}
+
+#company-grid.line-view .growth-potential-metric .growth-confidence-source {
+  position: static !important;
+  grid-column: 1 !important;
+  grid-row: 3 !important;
+  align-self: auto !important;
+  max-width: 100%;
+  margin: 0 !important;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .company-report-keywords {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
