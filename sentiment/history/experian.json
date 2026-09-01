@@ -3705,6 +3705,85 @@
         }
       ],
       "changeFromPreviousScoredDay": 2.0
+    },
+    {
+      "date": "2026-08-30",
+      "dailyScore": 45.6,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 48.4,
+      "confidence": 29.2,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 6,
+      "eligibleArticleCount": 6,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 6,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 1,
+      "dispersion": 0.5834,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "f44ffd616cce38ef",
+          "storyClusterId": "story-002",
+          "title": "Healthcare data breach exposes 3 . 75M patient records | Fox Wilmington WSFX - TV",
+          "url": "https://foxwilmington.com/healthcare-data-breach-exposes-3-75m-patient-records",
+          "source": "foxwilmington.com",
+          "publishedAt": "2026-08-30T17:45:00Z",
+          "polarity": -0.7594,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "0a3fefffef493627",
+          "storyClusterId": "story-001",
+          "title": "Brazil black market for weight - loss drugs is booming . Smugglers are cashing in",
+          "url": "https://abc17news.com/news/national-world/cnn-world/2026/08/30/brazils-black-market-for-weight-loss-drugs-is-booming-smugglers-are-cashing-in",
+          "source": "abc17news.com",
+          "publishedAt": "2026-08-30T15:15:00Z",
+          "polarity": 0.4073,
+          "sentiment": "Positive",
+          "publisherCount": 5
+        }
+      ],
+      "flags": [
+        {
+          "type": "cybersecurity_incident",
+          "direction": "negative",
+          "severity": "critical",
+          "status": "possible",
+          "evidenceArticleIds": [
+            "f44ffd616cce38ef"
+          ],
+          "sourceCount": 1
+        },
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "f44ffd616cce38ef",
+            "0a3fefffef493627"
+          ]
+        },
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 29.2",
+          "evidenceArticleIds": [
+            "f44ffd616cce38ef",
+            "0a3fefffef493627"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -2.1
     }
   ]
 }
