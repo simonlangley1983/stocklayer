@@ -1,118 +1,119 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-09-01T07:32:35.572147Z",
-  "asOfDate": "2026-08-30",
+  "generatedAt": "2026-09-01T11:23:31.455269Z",
+  "asOfDate": "2026-08-31",
   "companies": {
     "bp": {
       "companyName": "BP",
       "ticker": "BP.L",
       "slug": "bp",
-      "date": "2026-08-30",
-      "dailyScore": 49.0,
-      "dailyLabel": "Neutral / mixed",
+      "date": "2026-08-31",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
       "rollingScore": 50.3,
-      "confidence": 15.5,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": -11.1,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 15.5",
-          "evidenceArticleIds": [
-            "9ff720f755a786f0"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "9ff720f755a786f0",
-          "storyClusterId": "story-001",
-          "title": "BP PLC 9 Percent Preferred Shares ( LON : BP . B ) Stock Price Cross Below 50 Day Moving Average – Time to Sell ?",
-          "url": "https://www.tickerreport.com/banking-finance/13566482/bp-plc-9-percent-preferred-shares-lonbp-b-stock-price-cross-below-50-day-moving-average-time-to-sell.html",
-          "source": "tickerreport.com",
-          "publishedAt": "2026-08-30T13:00:00Z",
-          "polarity": -0.059,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "national-grid": {
       "companyName": "National Grid",
       "ticker": "NG.L",
       "slug": "national-grid",
-      "date": "2026-08-30",
-      "dailyScore": 43.2,
+      "date": "2026-08-31",
+      "dailyScore": 44.9,
       "dailyLabel": "Slightly negative",
-      "rollingScore": 49.2,
-      "confidence": 55.1,
+      "rollingScore": 48.6,
+      "confidence": 55.9,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 11,
-      "sourceCount": 11,
-      "changeFromPreviousScoredDay": 0.4,
-      "flags": [],
+      "storyCount": 23,
+      "sourceCount": 33,
+      "changeFromPreviousScoredDay": 1.7,
+      "flags": [
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "7faaabcde1d1bfce",
+            "89ef9484aa598de9",
+            "cbf9c96eb9b1c0f0",
+            "e049bfc030afc00e",
+            "ed653d0b49513254"
+          ]
+        }
+      ],
       "topStories": [
         {
-          "id": "59db10664b77d483",
-          "storyClusterId": "story-001",
-          "title": "Tegbe Threatens Sanctions As FG Losses N120bn Yearly To Ikorodu – Sagamu Corridor Energy Theft",
-          "url": "https://leadership.ng/tegbe-threatens-sanctions-as-fg-losses-n120bn-yearly-to-ikorodu-sagamu-corridor-energy-theft",
-          "source": "leadership.ng",
-          "publishedAt": "2026-08-30T04:45:00Z",
-          "polarity": -0.9516,
+          "id": "7faaabcde1d1bfce",
+          "storyClusterId": "story-010",
+          "title": "Transmission Faults Cut Power Allocations to Lagos , Abuja",
+          "url": "https://punchng.com/transmission-faults-cut-power-allocations-to-lagos-abuja-others",
+          "source": "punchng.com",
+          "publishedAt": "2026-08-31T08:00:00Z",
+          "polarity": -0.9561,
           "sentiment": "Very negative",
           "publisherCount": 1
         },
         {
-          "id": "b8021e515d12fc73",
-          "storyClusterId": "story-005",
-          "title": "Nepal seeks to advance electricity import arrangement due to floods",
-          "url": "https://timesofindia.indiatimes.com/india/nepal-seeks-to-advance-electricity-import-arrangement-due-to-floods/articleshow/133626782.cms",
-          "source": "timesofindia.indiatimes.com",
-          "publishedAt": "2026-08-30T10:00:00Z",
-          "polarity": 0.8391,
+          "id": "89ef9484aa598de9",
+          "storyClusterId": "story-023",
+          "title": "Transmission Faults Reduce Power Supply To Lagos , Abuja , Northern States",
+          "url": "https://naija247news.com/transmission-faults-reduce-power-supply-to-lagos-abuja-northern-states",
+          "source": "naija247news.com",
+          "publishedAt": "2026-08-31T22:00:00Z",
+          "polarity": -0.9525,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "cbf9c96eb9b1c0f0",
+          "storyClusterId": "story-022",
+          "title": "Just the beginning : Oneida officials raid 2 Utica businesses over kratom sales – Oneida Dispatch",
+          "url": "https://www.oneidadispatch.com/2026/08/31/just-the-beginning-oneida-officials-raid-2-utica-businesses-over-kratom-sales",
+          "source": "oneidadispatch.com",
+          "publishedAt": "2026-08-31T19:30:00Z",
+          "polarity": -0.9206,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "e049bfc030afc00e",
+          "storyClusterId": "story-020",
+          "title": "Sky - high power bills push Pinoys to go solar",
+          "url": "https://www.philstar.com/business/2026/09/01/2553115/sky-high-power-bills-push-pinoys-go-solar",
+          "source": "philstar.com",
+          "publishedAt": "2026-08-31T18:15:00Z",
+          "polarity": -0.8971,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "ed653d0b49513254",
+          "storyClusterId": "story-015",
+          "title": "Rwanda : Nyabarongo II Reaches 75 Percent Completion , Set to Become Rwanda Largest Hydropower Plant",
+          "url": "https://allafrica.com/stories/202608310286.html",
+          "source": "allafrica.com",
+          "publishedAt": "2026-08-31T11:45:00Z",
+          "polarity": 0.8966,
           "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "ef71bfff7c4c5fbb",
-          "storyClusterId": "story-008",
-          "title": "Nepal - Tibet Flood Toll Rises to 750 as Rain Stops Rescue for Trapped Workers",
-          "url": "https://www.ibtimes.com/nepal-tibet-flood-toll-rises-750-rain-stops-rescue-trapped-workers-3806945",
-          "source": "ibtimes.com",
-          "publishedAt": "2026-08-30T12:30:00Z",
-          "polarity": -0.8028,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "7046f95be8431950",
-          "storyClusterId": "story-004",
-          "title": "Malawi referral hospitals in gradual collapse – Nation Online",
-          "url": "https://mwnation.com/malawis-referral-hospitals-in-gradual-collapse",
-          "source": "mwnation.com",
-          "publishedAt": "2026-08-30T07:45:00Z",
-          "polarity": -0.666,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "8f7a3531eca939d8",
-          "storyClusterId": "story-009",
-          "title": "Tesco Extra in Worthing remains closed after evacuation",
-          "url": "https://www.theargus.co.uk/news/26507639.tesco-extra-worthing-remains-closed-evacuation",
-          "source": "theargus.co.uk",
-          "publishedAt": "2026-08-30T13:00:00Z",
-          "polarity": -0.3197,
-          "sentiment": "Negative",
           "publisherCount": 1
         }
       ]
@@ -121,7 +122,7 @@
       "companyName": "Compass Group",
       "ticker": "CPG.L",
       "slug": "compass",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,
@@ -147,59 +148,59 @@
       "companyName": "BAE Systems",
       "ticker": "BA.L",
       "slug": "bae-systems",
-      "date": "2026-08-30",
-      "dailyScore": 52.2,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 52.6,
-      "confidence": 42.5,
+      "date": "2026-08-31",
+      "dailyScore": 57.0,
+      "dailyLabel": "Slightly positive",
+      "rollingScore": 53.1,
+      "confidence": 49.1,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
       "storyCount": 4,
       "sourceCount": 4,
-      "changeFromPreviousScoredDay": 4.7,
+      "changeFromPreviousScoredDay": 4.8,
       "flags": [],
       "topStories": [
         {
-          "id": "d7232e395e98d0ff",
+          "id": "84f815f10ff23f39",
           "storyClusterId": "story-004",
-          "title": "Aerospace and Defense Giants Set to Land in Morocco for MAS 2026 – The North Africa Post",
-          "url": "https://northafricapost.com/99902-aerospace-and-defense-giants-set-to-land-in-morocco-for-mas-2026.html",
-          "source": "northafricapost.com",
-          "publishedAt": "2026-08-30T18:45:00Z",
-          "polarity": 0.1707,
-          "sentiment": "Slightly positive",
+          "title": "5 Turkish firms rank in global top 100 defense list",
+          "url": "https://aa.com.tr/en/turkiye/5-turkish-firms-rank-in-global-top-100-defense-list/4043086",
+          "source": "aa.com.tr",
+          "publishedAt": "2026-08-31T22:00:00Z",
+          "polarity": 0.6881,
+          "sentiment": "Very positive",
           "publisherCount": 1
         },
         {
-          "id": "d4c872501de808f7",
+          "id": "fa0425562ff62d73",
           "storyClusterId": "story-003",
-          "title": "NASA Roman Space Telescope launches with BAE Systems - built scientific instruments",
-          "url": "http://www.prnewswire.com/news-releases/nasas-roman-space-telescope-launches-with-bae-systems-built-scientific-instruments-302864401.html",
-          "source": "prnewswire.com",
-          "publishedAt": "2026-08-30T18:30:00Z",
-          "polarity": 0.074,
+          "title": "15 Years After Flood , Site Work Starts at Former BAE Systems Site",
+          "url": "https://wnbf.com/site-work-bae-systems",
+          "source": "wnbf.com",
+          "publishedAt": "2026-08-31T20:45:00Z",
+          "polarity": 0.0753,
           "sentiment": "Neutral / mixed",
           "publisherCount": 1
         },
         {
-          "id": "f121f7d6a1266f9f",
-          "storyClusterId": "story-002",
-          "title": "DC lobbyists pour unusually large sums into Stefany Shaheen Congressional bid",
-          "url": "https://www.unionleader.com/nh/news/politics/voters/dc-lobbyists-pour-unusually-large-sums-into-stefany-shaheens-congressional-bid/article_14e831c6-09a3-4d74-a501-71f19be6454e.html",
-          "source": "unionleader.com",
-          "publishedAt": "2026-08-30T18:15:00Z",
-          "polarity": 0.0495,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        },
-        {
-          "id": "1a543cb22c59bb96",
+          "id": "345664929e6e7daa",
           "storyClusterId": "story-001",
-          "title": "Devoted mum among this week Bristol funeral notices",
-          "url": "https://www.bristolpost.co.uk/incoming/devoted-mum-among-weeks-bristol-11131944",
-          "source": "bristolpost.co.uk",
-          "publishedAt": "2026-08-30T12:15:00Z",
-          "polarity": -0.0341,
+          "title": "NASA Roman Space Telescope Launches with BAE Systems - built Scientific Instruments - Cable / Satellite / Broadband - SilverSky | BAE Systems plc",
+          "url": "https://www.newswiretoday.com/news/186757/NASAs-Roman-Space-Telescope-Launches-with-BAE-Systems-built-Scientific-Instruments",
+          "source": "newswiretoday.com",
+          "publishedAt": "2026-08-31T19:15:00Z",
+          "polarity": 0.0488,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "fd9ffc729ce4a97e",
+          "storyClusterId": "story-002",
+          "title": "NDIA Appoints 16 Members to Board ; Arnold Punaro to Continue Chairmanship",
+          "url": "https://www.govconwire.com/articles/ndia-appoints-16-members-to-board",
+          "source": "govconwire.com",
+          "publishedAt": "2026-08-31T20:00:00Z",
+          "polarity": 0.0267,
           "sentiment": "Neutral / mixed",
           "publisherCount": 1
         }
@@ -209,10 +210,10 @@
       "companyName": "3i Group",
       "ticker": "III.L",
       "slug": "3i",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 50.7,
+      "rollingScore": 50.6,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -235,7 +236,7 @@
       "companyName": "Admiral Group PLC",
       "ticker": "ADM.L",
       "slug": "admiral",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,
@@ -261,7 +262,7 @@
       "companyName": "Airtel Africa PLC",
       "ticker": "AAF.L",
       "slug": "airtel-africa",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 49.9,
@@ -287,36 +288,62 @@
       "companyName": "Anglo American PLC",
       "ticker": "AAL.L",
       "slug": "anglo-american",
-      "date": "2026-08-30",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
+      "date": "2026-08-31",
+      "dailyScore": 51.7,
+      "dailyLabel": "Neutral / mixed",
       "rollingScore": 51.2,
-      "confidence": 0.0,
+      "confidence": 21.0,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 2,
+      "sourceCount": 2,
+      "changeFromPreviousScoredDay": 1.1,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 21.0",
+          "evidenceArticleIds": [
+            "897aa432ba911c30",
+            "dce4b3792009328a"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "897aa432ba911c30",
+          "storyClusterId": "story-002",
+          "title": "Glencore looms over Anglo - Teck $1 . 4B copper prize : FT",
+          "url": "https://www.northernminer.com/news/glencore-risks-anglo-tecks-1-4b-copper-prize-ft/1003894460",
+          "source": "northernminer.com",
+          "publishedAt": "2026-08-31T20:00:00Z",
+          "polarity": 0.1317,
+          "sentiment": "Slightly positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "dce4b3792009328a",
+          "storyClusterId": "story-001",
+          "title": "How the Right Could Actually End Birthright Citizenship",
+          "url": "https://www.theatlantic.com/magazine/2026/10/birthright-citizenship-trump-barbara-supreme-court/688342",
+          "source": "theatlantic.com",
+          "publishedAt": "2026-08-31T12:45:00Z",
+          "polarity": 0.0034,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
     },
     "auto-trader": {
       "companyName": "Auto Trader Group PLC",
       "ticker": "AUTO.L",
       "slug": "auto-trader",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 50.6,
+      "rollingScore": 50.5,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -339,50 +366,61 @@
       "companyName": "Aviva PLC",
       "ticker": "AV.L",
       "slug": "aviva",
-      "date": "2026-08-30",
-      "dailyScore": 51.0,
+      "date": "2026-08-31",
+      "dailyScore": 51.7,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 48.4,
-      "confidence": 20.7,
+      "rollingScore": 49.0,
+      "confidence": 26.1,
       "confidenceBand": "low",
       "coverageStatus": "ok",
       "storyCount": 2,
       "sourceCount": 2,
-      "changeFromPreviousScoredDay": 8.8,
+      "changeFromPreviousScoredDay": 0.7,
       "flags": [
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "b37ad86d47d2efba",
+            "13fa26edb0475552"
+          ]
+        },
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 20.7",
+          "detail": "Confidence is 26.1",
           "evidenceArticleIds": [
-            "510db1393c15c8f9",
-            "ccf03929b6b6c363"
+            "b37ad86d47d2efba",
+            "13fa26edb0475552"
           ]
         }
       ],
       "topStories": [
         {
-          "id": "510db1393c15c8f9",
+          "id": "b37ad86d47d2efba",
           "storyClusterId": "story-001",
-          "title": "527 tonnes of steel and  beast mode  pints : a behind - the - scenes look at Leinster new Laya Arena",
-          "url": "https://www.the42.ie/rds-laya-arena-redevelopment-7144969-Aug2026",
-          "source": "the42.ie",
-          "publishedAt": "2026-08-30T08:00:00Z",
-          "polarity": 0.0531,
-          "sentiment": "Neutral / mixed",
+          "title": "MiMedx Group ( NASDAQ : MDXG ) Stock Rating Upgraded by Wall Street Zen",
+          "url": "https://www.themarketsdaily.com/2026/08/31/mimedx-group-nasdaqmdxg-stock-rating-upgraded-by-wall-street-zen.html",
+          "source": "themarketsdaily.com",
+          "publishedAt": "2026-08-31T06:15:00Z",
+          "polarity": 0.9146,
+          "sentiment": "Very positive",
           "publisherCount": 1
         },
         {
-          "id": "ccf03929b6b6c363",
+          "id": "13fa26edb0475552",
           "storyClusterId": "story-002",
-          "title": "Alzheimer Memory Walk event planned for County Roscommon Town - News",
-          "url": "https://www.roscommonherald.ie/news/alzheimers-memory-walk-event-planned-for-county-roscommon-town_arid-109789.html",
-          "source": "roscommonherald.ie",
-          "publishedAt": "2026-08-30T12:15:00Z",
-          "polarity": 0.0265,
-          "sentiment": "Neutral / mixed",
+          "title": "Farrell credentials could be scuppered by another Farrell",
+          "url": "https://www.theirishworld.com/farrells-credentials-could-be-scuppered-by-another-farrell-his-son",
+          "source": "theirishworld.com",
+          "publishedAt": "2026-08-31T10:15:00Z",
+          "polarity": -0.777,
+          "sentiment": "Very negative",
           "publisherCount": 1
         }
       ]
@@ -391,59 +429,111 @@
       "companyName": "Barratt Redrow PLC",
       "ticker": "BTRW.L",
       "slug": "barratt-redrow",
-      "date": "2026-08-30",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 49.6,
-      "confidence": 0.0,
+      "date": "2026-08-31",
+      "dailyScore": 65.3,
+      "dailyLabel": "Positive",
+      "rollingScore": 51.5,
+      "confidence": 12.7,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 10.9,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 12.7",
+          "evidenceArticleIds": [
+            "07c4fd8938a774a7"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "07c4fd8938a774a7",
+          "storyClusterId": "story-001",
+          "title": "Barclays makes  really encouraging  announcement for Gen Z customers",
+          "url": "https://www.birminghammail.co.uk/news/cost-of-living/barclays-makes-really-encouraging-announcement-34515028",
+          "source": "birminghammail.co.uk",
+          "publishedAt": "2026-08-31T20:00:00Z",
+          "polarity": 0.9177,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        }
+      ]
     },
     "beazley": {
       "companyName": "Beazley PLC",
       "ticker": "BEZ.L",
       "slug": "beazley",
-      "date": "2026-08-30",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 49.5,
-      "confidence": 0.0,
+      "date": "2026-08-31",
+      "dailyScore": 50.7,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.7,
+      "confidence": 31.9,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 3,
+      "sourceCount": 3,
+      "changeFromPreviousScoredDay": 0.0,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 31.9",
+          "evidenceArticleIds": [
+            "078327e5a9c9b245",
+            "2ba28f13458d6efc",
+            "796d14a4bf1a920f"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "078327e5a9c9b245",
+          "storyClusterId": "story-002",
+          "title": "Law Debenture : the star of the united kingdom income sector",
+          "url": "https://moneyweek.com/investments/investment-trusts/law-debenture-star-of-uk-income-sector",
+          "source": "moneyweek.com",
+          "publishedAt": "2026-08-31T08:30:00Z",
+          "polarity": 0.0578,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "2ba28f13458d6efc",
+          "storyClusterId": "story-001",
+          "title": "As AI Agents Go Rogue , Cyber Insurers Are Adapting Their Policies",
+          "url": "https://www.insurancejournal.com/news/national/2026/08/31/883343.htm",
+          "source": "insurancejournal.com",
+          "publishedAt": "2026-08-31T07:30:00Z",
+          "polarity": 0.0124,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "796d14a4bf1a920f",
+          "storyClusterId": "story-003",
+          "title": "Tampa : The Turning Point | TV Tonight",
+          "url": "https://tvtonight.com.au/2026/09/tampa-the-turning-point-2.html",
+          "source": "tvtonight.com.au",
+          "publishedAt": "2026-08-31T22:00:00Z",
+          "polarity": 0.0007,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
     },
     "british-land": {
       "companyName": "British Land Co PLC",
       "ticker": "BLND.L",
       "slug": "british-land",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,
@@ -469,7 +559,7 @@
       "companyName": "BT Group PLC",
       "ticker": "BT-A.L",
       "slug": "bt",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,
@@ -495,36 +585,50 @@
       "companyName": "Bunzl PLC",
       "ticker": "BNZL.L",
       "slug": "bunzl",
-      "date": "2026-08-30",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.5,
-      "confidence": 0.0,
+      "date": "2026-08-31",
+      "dailyScore": 53.5,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.8,
+      "confidence": 19.6,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -1.0,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 19.6",
+          "evidenceArticleIds": [
+            "145ed355300aa25f"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "145ed355300aa25f",
+          "storyClusterId": "story-001",
+          "title": "We Continue to Support Bunzl Moat ; Shares Undervalued",
+          "url": "https://www.morningstar.com/company-reports/1493330-we-continue-to-support-bunzls-moat-shares-undervalued",
+          "source": "morningstar.com",
+          "publishedAt": "2026-08-31T19:30:00Z",
+          "polarity": 0.2089,
+          "sentiment": "Positive",
+          "publisherCount": 1
+        }
+      ]
     },
     "coca-cola-hbc": {
       "companyName": "Coca-Cola HBC AG",
       "ticker": "CCH.L",
       "slug": "coca-cola-hbc",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 48.2,
+      "rollingScore": 48.4,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -547,10 +651,10 @@
       "companyName": "Convatec Group PLC",
       "ticker": "CTEC.L",
       "slug": "convatec",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 49.3,
+      "rollingScore": 49.4,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -573,63 +677,77 @@
       "companyName": "Endeavour Mining PLC",
       "ticker": "EDV.L",
       "slug": "endeavour-mining",
-      "date": "2026-08-30",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.5,
-      "confidence": 0.0,
-      "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
-      "flags": [
-        {
-          "type": "no_coverage",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
-        }
-      ],
-      "topStories": []
-    },
-    "entain": {
-      "companyName": "Entain PLC",
-      "ticker": "ENT.L",
-      "slug": "entain",
-      "date": "2026-08-30",
-      "dailyScore": 51.5,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 48.1,
-      "confidence": 15.5,
+      "date": "2026-08-31",
+      "dailyScore": 40.9,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 49.3,
+      "confidence": 12.7,
       "confidenceBand": "low",
       "coverageStatus": "ok",
       "storyCount": 1,
       "sourceCount": 1,
-      "changeFromPreviousScoredDay": 22.7,
+      "changeFromPreviousScoredDay": -21.7,
       "flags": [
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 15.5",
+          "detail": "Confidence is 12.7",
           "evidenceArticleIds": [
-            "a1455cc698df70f8"
+            "db66fd60448c4e3e"
           ]
         }
       ],
       "topStories": [
         {
-          "id": "a1455cc698df70f8",
+          "id": "db66fd60448c4e3e",
           "storyClusterId": "story-001",
-          "title": "Financial Comparison : Accel Entertainment ( NYSE : ACEL ) vs . Entain ( OTCMKTS : GMVHF )",
-          "url": "https://www.themarketsdaily.com/2026/08/29/financial-comparison-accel-entertainment-nyseacel-vs-entain-otcmktsgmvhf.html",
-          "source": "themarketsdaily.com",
-          "publishedAt": "2026-08-29T23:30:00Z",
-          "polarity": 0.0906,
+          "title": "The Renewables Infrastructure Group ( LSE : TRIG ) Heads Into Bank Holiday With Bond Yields Moving In Its Favor",
+          "url": "https://www.foreignpolicyjournal.com/2026/08/31/the-renewables-infrastructure-group-lse-trig-heads-into-bank-holiday-with-bond-yields-moving-in-its-favor",
+          "source": "foreignpolicyjournal.com",
+          "publishedAt": "2026-08-31T22:00:00Z",
+          "polarity": -0.5477,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        }
+      ]
+    },
+    "entain": {
+      "companyName": "Entain PLC",
+      "ticker": "ENT.L",
+      "slug": "entain",
+      "date": "2026-08-31",
+      "dailyScore": 50.3,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 48.5,
+      "confidence": 9.9,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -1.2,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 9.9",
+          "evidenceArticleIds": [
+            "32cfcfbf633e2b14"
+          ]
+        }
+      ],
+      "topStories": [
+        {
+          "id": "32cfcfbf633e2b14",
+          "storyClusterId": "story-001",
+          "title": "Same Race , Different Rulebook : What Canada Split Gaming Map Means for Formula 1 Fans",
+          "url": "https://www.grandprix247.com/grand-prix-f1-weekend-news/same-race-different-rulebook-what-canadas-split-gaming-map-means-for-formula-1-fans",
+          "source": "grandprix247.com",
+          "publishedAt": "2026-08-31T12:45:00Z",
+          "polarity": 0.0206,
           "sentiment": "Neutral / mixed",
           "publisherCount": 1
         }
@@ -639,7 +757,7 @@
       "companyName": "F&C Investment Trust PLC",
       "ticker": "FCIT.L",
       "slug": "fandc-investment-trust",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.5,
@@ -665,62 +783,90 @@
       "companyName": "Fresnillo PLC",
       "ticker": "FRES.L",
       "slug": "fresnillo",
-      "date": "2026-08-30",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 49.5,
-      "confidence": 0.0,
+      "date": "2026-08-31",
+      "dailyScore": 40.9,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 48.5,
+      "confidence": 12.7,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -9.3,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 12.7",
+          "evidenceArticleIds": [
+            "db66fd60448c4e3e"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "db66fd60448c4e3e",
+          "storyClusterId": "story-001",
+          "title": "The Renewables Infrastructure Group ( LSE : TRIG ) Heads Into Bank Holiday With Bond Yields Moving In Its Favor",
+          "url": "https://www.foreignpolicyjournal.com/2026/08/31/the-renewables-infrastructure-group-lse-trig-heads-into-bank-holiday-with-bond-yields-moving-in-its-favor",
+          "source": "foreignpolicyjournal.com",
+          "publishedAt": "2026-08-31T22:00:00Z",
+          "polarity": -0.5477,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        }
+      ]
     },
     "games-workshop": {
       "companyName": "Games Workshop Group PLC",
       "ticker": "GAW.L",
       "slug": "games-workshop",
-      "date": "2026-08-30",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 46.8,
-      "confidence": 0.0,
+      "date": "2026-08-31",
+      "dailyScore": 50.1,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 47.5,
+      "confidence": 15.2,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 0.2,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.2",
+          "evidenceArticleIds": [
+            "ebcc290e46ec6c1e"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "ebcc290e46ec6c1e",
+          "storyClusterId": "story-001",
+          "title": "Analyzing Games Workshop Group ( GMWKF ) and Its Competitors",
+          "url": "https://www.themarketsdaily.com/2026/08/31/analyzing-games-workshop-group-gmwkf-and-its-competitors.html",
+          "source": "themarketsdaily.com",
+          "publishedAt": "2026-08-31T04:45:00Z",
+          "polarity": 0.0058,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
     },
     "hargreaves-lansdown": {
       "companyName": "Hargreaves Lansdown PLC",
       "ticker": "HL.L",
       "slug": "hargreaves-lansdown",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 50.7,
+      "rollingScore": 50.6,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -743,10 +889,10 @@
       "companyName": "Hiscox Ltd",
       "ticker": "HSX.L",
       "slug": "hiscox",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 47.6,
+      "rollingScore": 47.8,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -769,10 +915,10 @@
       "companyName": "Howden Joinery Group PLC",
       "ticker": "HWDN.L",
       "slug": "howden-joinery",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 47.6,
+      "rollingScore": 47.8,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -795,10 +941,10 @@
       "companyName": "Imperial Brands PLC",
       "ticker": "IMB.L",
       "slug": "imperial-brands",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 47.8,
+      "rollingScore": 48.0,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -821,36 +967,50 @@
       "companyName": "Informa PLC",
       "ticker": "INF.L",
       "slug": "informa",
-      "date": "2026-08-30",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 51.3,
-      "confidence": 0.0,
+      "date": "2026-08-31",
+      "dailyScore": 64.2,
+      "dailyLabel": "Positive",
+      "rollingScore": 52.7,
+      "confidence": 12.5,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 7.0,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 12.5",
+          "evidenceArticleIds": [
+            "bc2be74f8e3ac70a"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "bc2be74f8e3ac70a",
+          "storyClusterId": "story-001",
+          "title": "LEAP 2026 : Saudi Arabia Leads AI Era with Over $15 Bn in Technology Launches , Investments",
+          "url": "https://english.aawsat.com/business/5313165-leap-2026-saudi-arabia-leads-ai-era-over-15-bn-technology-launches-investments",
+          "source": "english.aawsat.com",
+          "publishedAt": "2026-08-31T20:45:00Z",
+          "polarity": 0.8549,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        }
+      ]
     },
     "intermediate-capital": {
       "companyName": "Intermediate Capital Group PLC",
       "ticker": "ICG.L",
       "slug": "intermediate-capital",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 51.8,
+      "rollingScore": 51.6,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -873,47 +1033,33 @@
       "companyName": "Intertek Group PLC",
       "ticker": "ITRK.L",
       "slug": "intertek",
-      "date": "2026-08-30",
-      "dailyScore": 50.2,
-      "dailyLabel": "Neutral / mixed",
+      "date": "2026-08-31",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
       "rollingScore": 49.6,
-      "confidence": 15.2,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": 14.8,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 15.2",
-          "evidenceArticleIds": [
-            "3f2f1cac784a6e6a"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "3f2f1cac784a6e6a",
-          "storyClusterId": "story-001",
-          "title": "Contrasting Intertek Group ( IKTSF ) & Its Competitors",
-          "url": "https://www.themarketsdaily.com/2026/08/30/contrasting-intertek-group-iktsf-its-competitors.html",
-          "source": "themarketsdaily.com",
-          "publishedAt": "2026-08-30T11:45:00Z",
-          "polarity": 0.0129,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "international-consolidated-airlines": {
       "companyName": "International Consolidated Airlines Group SA",
       "ticker": "IAG.L",
       "slug": "international-consolidated-airlines",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,
@@ -939,86 +1085,100 @@
       "companyName": "Legal & General Group PLC",
       "ticker": "LGEN.L",
       "slug": "legal-and-general",
-      "date": "2026-08-30",
-      "dailyScore": 42.5,
-      "dailyLabel": "Slightly negative",
-      "rollingScore": 48.1,
-      "confidence": 39.2,
-      "confidenceBand": "low",
+      "date": "2026-08-31",
+      "dailyScore": 56.5,
+      "dailyLabel": "Slightly positive",
+      "rollingScore": 49.6,
+      "confidence": 52.5,
+      "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 13,
-      "sourceCount": 3,
-      "changeFromPreviousScoredDay": 1.8,
+      "storyCount": 10,
+      "sourceCount": 4,
+      "changeFromPreviousScoredDay": 14.0,
       "flags": [
         {
-          "type": "low_confidence",
-          "direction": "neutral",
-          "severity": "low",
+          "type": "sentiment_jump",
+          "direction": "positive",
+          "severity": "high",
           "status": "calculated",
-          "detail": "Confidence is 39.2",
+          "detail": "Daily score increased by 14.0 points",
           "evidenceArticleIds": [
-            "c00bfc6098d4e135",
-            "44e9a443dd0f1445",
-            "f94730beb0365621",
-            "220473c40a840757",
-            "c9831addae2d437a"
+            "2e77357282a25e90",
+            "ebaa5d7f1451e1e8",
+            "d2f3e4923d8fbeae",
+            "5e65964a1b1de8da",
+            "4c917b3caef55669"
+          ]
+        },
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "2e77357282a25e90",
+            "ebaa5d7f1451e1e8",
+            "d2f3e4923d8fbeae",
+            "5e65964a1b1de8da",
+            "4c917b3caef55669"
           ]
         }
       ],
       "topStories": [
         {
-          "id": "c00bfc6098d4e135",
-          "storyClusterId": "story-001",
-          "title": "Teradyne ( NASDAQ : TER ) Downgraded to Hold Rating by Wall Street Zen",
-          "url": "https://www.dailypolitical.com/2026/08/29/teradyne-nasdaqter-downgraded-to-hold-rating-by-wall-street-zen.html",
+          "id": "2e77357282a25e90",
+          "storyClusterId": "story-010",
+          "title": "Affirm ( NASDAQ : AFRM ) Trading Down 4 . 7 % – Here Why",
+          "url": "https://www.dailypolitical.com/2026/08/31/affirm-nasdaqafrm-trading-down-4-7-heres-why.html",
           "source": "dailypolitical.com",
-          "publishedAt": "2026-08-30T07:45:00Z",
-          "polarity": -0.9405,
+          "publishedAt": "2026-08-31T17:00:00Z",
+          "polarity": -0.9638,
           "sentiment": "Very negative",
           "publisherCount": 1
         },
         {
-          "id": "44e9a443dd0f1445",
-          "storyClusterId": "story-006",
-          "title": "Private Management Group Inc . Boosts Stock Position in UGI Corporation $UGI",
-          "url": "https://www.themarketsdaily.com/2026/08/30/private-management-group-inc-boosts-stock-position-in-ugi-corporation-ugi.html",
-          "source": "themarketsdaily.com",
-          "publishedAt": "2026-08-30T11:00:00Z",
-          "polarity": 0.9114,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "f94730beb0365621",
-          "storyClusterId": "story-008",
-          "title": "Wellington Management Group LLP Cuts Holdings in NetApp , Inc . $NTAP",
-          "url": "https://www.themarketsdaily.com/2026/08/30/wellington-management-group-llp-cuts-holdings-in-netapp-inc-ntap.html",
-          "source": "themarketsdaily.com",
-          "publishedAt": "2026-08-30T11:00:00Z",
-          "polarity": -0.9058,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "220473c40a840757",
-          "storyClusterId": "story-004",
-          "title": "Jefferies Financial Group Inc . Makes New Investment in Bank Of Montreal $BMO",
-          "url": "https://www.themarketsdaily.com/2026/08/30/jefferies-financial-group-inc-makes-new-investment-in-bank-of-montreal-bmo.html",
-          "source": "themarketsdaily.com",
-          "publishedAt": "2026-08-30T10:15:00Z",
-          "polarity": 0.6056,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "c9831addae2d437a",
+          "id": "ebaa5d7f1451e1e8",
           "storyClusterId": "story-007",
-          "title": "UBS AM a distinct business unit of UBS ASSET MANAGEMENT AMERICAS LLC Increases Stake in General Motors Company $GM",
-          "url": "https://www.tickerreport.com/banking-finance/13566238/ubs-am-a-distinct-business-unit-of-ubs-asset-management-americas-llc-increases-stake-in-general-motors-company-gm.html",
-          "source": "tickerreport.com",
-          "publishedAt": "2026-08-30T11:00:00Z",
-          "polarity": 0.0636,
-          "sentiment": "Neutral / mixed",
+          "title": "Susquehanna International Group LLP Increases Position in Cable One , Inc . $CABO",
+          "url": "https://www.dailypolitical.com/2026/08/31/susquehanna-international-group-llp-increases-position-in-cable-one-inc-cabo.html",
+          "source": "dailypolitical.com",
+          "publishedAt": "2026-08-31T10:30:00Z",
+          "polarity": 0.9057,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "d2f3e4923d8fbeae",
+          "storyClusterId": "story-003",
+          "title": "Chemung Financial ( NASDAQ : CHMG ) Rating Increased to Buy at Wall Street Zen",
+          "url": "https://www.themarketsdaily.com/2026/08/31/chemung-financial-nasdaqchmg-rating-increased-to-buy-at-wall-street-zen.html",
+          "source": "themarketsdaily.com",
+          "publishedAt": "2026-08-31T07:15:00Z",
+          "polarity": 0.9149,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "5e65964a1b1de8da",
+          "storyClusterId": "story-008",
+          "title": "Shattuck Labs , Inc . ( NASDAQ : STTK ) Receives Consensus Recommendation of  Buy  from Brokerages",
+          "url": "https://www.themarketsdaily.com/2026/08/31/shattuck-labs-inc-nasdaqsttk-receives-consensus-recommendation-of-buy-from-brokerages.html",
+          "source": "themarketsdaily.com",
+          "publishedAt": "2026-08-31T12:30:00Z",
+          "polarity": 0.8825,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "4c917b3caef55669",
+          "storyClusterId": "story-001",
+          "title": "Digital Turbine ( NASDAQ : APPS ) Stock Rating Upgraded by Wall Street Zen",
+          "url": "https://www.themarketsdaily.com/2026/08/31/digital-turbine-nasdaqapps-stock-rating-upgraded-by-wall-street-zen.html",
+          "source": "themarketsdaily.com",
+          "publishedAt": "2026-08-31T06:15:00Z",
+          "polarity": 0.8517,
+          "sentiment": "Very positive",
           "publisherCount": 1
         }
       ]
@@ -1027,7 +1187,7 @@
       "companyName": "LondonMetric Property PLC",
       "ticker": "LMP.L",
       "slug": "londonmetric-property",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 49.9,
@@ -1053,10 +1213,10 @@
       "companyName": "M&G PLC",
       "ticker": "MNG.L",
       "slug": "mandg",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 48.9,
+      "rollingScore": 49.0,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -1152,10 +1312,10 @@
       "companyName": "Melrose Industries PLC",
       "ticker": "MRO.L",
       "slug": "melrose-industries",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 49.2,
+      "rollingScore": 49.3,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -1204,7 +1364,7 @@
       "companyName": "Next PLC",
       "ticker": "NXT.L",
       "slug": "next",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.5,
@@ -1230,71 +1390,71 @@
       "companyName": "Pearson PLC",
       "ticker": "PSON.L",
       "slug": "pearson",
-      "date": "2026-08-30",
-      "dailyScore": 48.1,
+      "date": "2026-08-31",
+      "dailyScore": 48.8,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 46.7,
-      "confidence": 55.3,
+      "rollingScore": 47.3,
+      "confidence": 55.5,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 22,
-      "sourceCount": 28,
-      "changeFromPreviousScoredDay": 8.0,
+      "storyCount": 17,
+      "sourceCount": 19,
+      "changeFromPreviousScoredDay": 0.7,
       "flags": [],
       "topStories": [
         {
-          "id": "1fcb5b50db4b7f0b",
-          "storyClusterId": "story-020",
-          "title": "Latest Alex Lange let - down further proves Royals must change bullpen strategy this offseason",
-          "url": "https://kingsofkauffman.com/latest-alex-lange-let-down-further-proves-royals-must-change-bullpen-strategy-this-offseason",
-          "source": "kingsofkauffman.com",
-          "publishedAt": "2026-08-30T15:15:00Z",
-          "polarity": -0.9386,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "6bc6da6e39f61a83",
-          "storyClusterId": "story-010",
-          "title": "Rojas drives in four as Royals rally past Guardians 8 - 3",
-          "url": "https://www.fultonsun.com/news/2026/aug/30/rojas-drives-in-four-as-royals-rally-past-guardians-8-3",
-          "source": "fultonsun.com",
-          "publishedAt": "2026-08-30T10:30:00Z",
-          "polarity": 0.8279,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "edfbeb2f3d2904e8",
-          "storyClusterId": "story-013",
-          "title": "This right - wing stronghold in Brazil is getting pummeled by Trump tariffs",
-          "url": "https://www.hindustantimes.com/business/this-right-wing-stronghold-in-brazil-is-getting-pummeled-by-trump-s-tariffs-101788064141667.html",
-          "source": "hindustantimes.com",
-          "publishedAt": "2026-08-30T12:00:00Z",
-          "polarity": -0.7978,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "cd72d44f81d478fe",
-          "storyClusterId": "story-022",
-          "title": "The Big FIx : Mississippi to embark on  most significant infrastructure investments in recent years",
-          "url": "https://www.thetrucker.com/trucking-news/the-nation/the-big-fix-mississippi-to-embark-on-most-significant-infrastructure-investments-in-recent-years",
-          "source": "thetrucker.com",
-          "publishedAt": "2026-08-30T18:15:00Z",
-          "polarity": 0.7852,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "674c7017d84e440b",
+          "id": "b196d1208f0fa00e",
           "storyClusterId": "story-015",
-          "title": "Vaughan Islington Avenue to see road closures this week",
-          "url": "https://www.yorkregion.com/news/vaughans-islington-avenue-to-see-road-closures-this-week/article_160cf36c-668a-5917-97d3-b32f47c3cee2.html",
-          "source": "yorkregion.com",
-          "publishedAt": "2026-08-30T12:30:00Z",
-          "polarity": -0.7745,
+          "title": "Feds Arrest 95 Illegal Alien Truck Drivers in Arizona",
+          "url": "https://pjmedia.com/catherinesalgado/2026/08/31/feds-arrest-95-illegal-alien-truck-drivers-in-arizona-n4956736",
+          "source": "pjmedia.com",
+          "publishedAt": "2026-08-31T22:00:00Z",
+          "polarity": -0.924,
           "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "8838e38f04959663",
+          "storyClusterId": "story-008",
+          "title": "Indian - origin 7 - year - old stuns with GCSE Maths result nearly 9 years early after finding primary school  too boring ; now preparing for A - levels |",
+          "url": "https://timesofindia.indiatimes.com/life-style/parenting/indian-origin-7-year-old-stuns-with-gcse-maths-result-nearly-9-years-early-after-finding-primary-school-too-boring-now-preparing-for-a-levels/articleshow/133650273.cms",
+          "source": "timesofindia.indiatimes.com",
+          "publishedAt": "2026-08-31T11:45:00Z",
+          "polarity": -0.7107,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "5c64031ac1552522",
+          "storyClusterId": "story-014",
+          "title": "The private school market serving international secondary students in Ontario has grown",
+          "url": "https://theconversation.com/the-private-school-market-serving-international-secondary-students-in-ontario-has-grown-288590",
+          "source": "theconversation.com",
+          "publishedAt": "2026-08-31T20:45:00Z",
+          "polarity": 0.4024,
+          "sentiment": "Positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "6b8d146aa07ea657",
+          "storyClusterId": "story-016",
+          "title": "Robert De Niro The Matrix Meets Lucy Thriller Is Quickly Climbing Streaming Charts",
+          "url": "https://screenrant.com/robert-de-niro-limitless-matrix-meets-lucy-lionsgate-plus-streaming-success-august-2026",
+          "source": "screenrant.com",
+          "publishedAt": "2026-08-31T22:00:00Z",
+          "polarity": 0.2304,
+          "sentiment": "Positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "3a46696ad278c7bd",
+          "storyClusterId": "story-003",
+          "title": "Anthony Frith on Mockbuster :  I had my cake and ate it too – I was greedy and it paid off",
+          "url": "https://www.artshub.com.au/news/interviews/anthony-frith-on-mockbuster-i-had-my-cake-and-ate-it-too-i-was-greedy-and-it-paid-off-2872396",
+          "source": "artshub.com.au",
+          "publishedAt": "2026-08-31T04:45:00Z",
+          "polarity": 0.2121,
+          "sentiment": "Positive",
           "publisherCount": 1
         }
       ]
@@ -1303,10 +1463,10 @@
       "companyName": "Pershing Square Holdings Ltd",
       "ticker": "PSH.L",
       "slug": "pershing-square",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 50.8,
+      "rollingScore": 50.7,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -1329,7 +1489,7 @@
       "companyName": "Persimmon PLC",
       "ticker": "PSN.L",
       "slug": "persimmon",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,
@@ -1355,7 +1515,7 @@
       "companyName": "Phoenix Group Holdings PLC",
       "ticker": "PHNX.L",
       "slug": "phoenix",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,
@@ -1381,71 +1541,86 @@
       "companyName": "Prudential PLC",
       "ticker": "PRU.L",
       "slug": "prudential",
-      "date": "2026-08-30",
-      "dailyScore": 50.7,
+      "date": "2026-08-31",
+      "dailyScore": 50.1,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.9,
-      "confidence": 50.0,
+      "rollingScore": 50.7,
+      "confidence": 57.5,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 5,
-      "sourceCount": 5,
-      "changeFromPreviousScoredDay": 2.2,
-      "flags": [],
+      "storyCount": 22,
+      "sourceCount": 21,
+      "changeFromPreviousScoredDay": -0.6,
+      "flags": [
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "931ab434df5c31cc",
+            "e3ba9d86d025ea76",
+            "bd497e9b81691d16",
+            "778ea3be06715bef",
+            "fa5cf941a5589687"
+          ]
+        }
+      ],
       "topStories": [
         {
-          "id": "9f472068a43b6c86",
-          "storyClusterId": "story-003",
-          "title": "Mid , smallcaps outperform benchmarks ; hit fresh all - time highs",
-          "url": "https://www.moneycontrol.com/news/business/stocks/mid-smallcaps-outperform-benchmarks-hit-fresh-all-time-highs-14018272.html",
-          "source": "moneycontrol.com",
-          "publishedAt": "2026-08-30T07:45:00Z",
-          "polarity": 0.8812,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "b76e1a6968c2d686",
-          "storyClusterId": "story-004",
-          "title": "HDFC Bank CEO Succession Crisis : Why Sashidhar Jagdishan Walked Away and What It Means for India Largest Private Lender",
-          "url": "https://openthemagazine.com/business/from-chosen-successor-to-unfinished-succession-how-hdfc-bank-lost-control-of-its-ceo-script",
-          "source": "openthemagazine.com",
-          "publishedAt": "2026-08-30T08:15:00Z",
-          "polarity": -0.5286,
+          "id": "931ab434df5c31cc",
+          "storyClusterId": "story-021",
+          "title": "Australian property values : House and unit values falling in almost every suburb in the country , Cotality data shows",
+          "url": "https://www.theage.com.au/politics/federal/40-000-wiped-off-the-value-of-the-average-house-over-winter-20260831-p60szo.html",
+          "source": "theage.com.au",
+          "publishedAt": "2026-08-31T14:45:00Z",
+          "polarity": -0.966,
           "sentiment": "Very negative",
           "publisherCount": 1
         },
         {
-          "id": "3323822cf6aeb23c",
-          "storyClusterId": "story-001",
-          "title": "The Million Dollar Round Table : Is insurance most famous accolade now an overused honour ?",
-          "url": "https://www.asiaone.com/money/million-dollar-round-table-insurances-most-famous-accolade-now-overused-honour",
-          "source": "asiaone.com",
-          "publishedAt": "2026-08-30T04:15:00Z",
-          "polarity": -0.3044,
-          "sentiment": "Negative",
+          "id": "e3ba9d86d025ea76",
+          "storyClusterId": "story-015",
+          "title": "Gold , silver ETFs off day low , still down 4 % amid hawkish Fed stance",
+          "url": "https://www.business-standard.com/markets/news/gold-silver-etfs-off-day-s-low-still-down-4-amid-hawkish-fed-stance-126083100622_1.html",
+          "source": "business-standard.com",
+          "publishedAt": "2026-08-31T10:15:00Z",
+          "polarity": -0.9485,
+          "sentiment": "Very negative",
           "publisherCount": 1
         },
         {
-          "id": "88e9626dc027ebe2",
-          "storyClusterId": "story-002",
-          "title": "Youre at war when you get attacked : Mark Carney shows combative nature in face - off with Trump | Mark Carney",
-          "url": "https://www.theguardian.com/world/ng-interactive/2026/aug/30/youre-at-war-when-you-get-attacked-mark-carney-shows-combative-nature-in-face-off-with-trump",
+          "id": "bd497e9b81691d16",
+          "storyClusterId": "story-009",
+          "title": "Advanced AI threatens global financial stability , says Bank of England boss",
+          "url": "https://www.theguardian.com/business/2026/aug/31/advanced-frontier-ai-financial-stability-andrew-bailey-g20",
           "source": "theguardian.com",
-          "publishedAt": "2026-08-30T05:45:00Z",
-          "polarity": 0.0276,
-          "sentiment": "Neutral / mixed",
+          "publishedAt": "2026-08-31T07:15:00Z",
+          "polarity": -0.9253,
+          "sentiment": "Very negative",
           "publisherCount": 1
         },
         {
-          "id": "c3f6fd34b7c161ab",
-          "storyClusterId": "story-005",
-          "title": "Kingsview Wealth Management LLC Takes Position in Prudential Financial , Inc . $PRU",
-          "url": "https://www.tickerreport.com/banking-finance/13566424/kingsview-wealth-management-llc-takes-position-in-prudential-financial-inc-pru.html",
-          "source": "tickerreport.com",
-          "publishedAt": "2026-08-30T12:15:00Z",
-          "polarity": 0.0167,
-          "sentiment": "Neutral / mixed",
+          "id": "778ea3be06715bef",
+          "storyClusterId": "story-006",
+          "title": "Lenskart shares to rally 40 %? Nomura initiates coverage with Buy , says its growth journey has just started",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/lenskart-shares-to-rally-40-nomura-initiates-coverage-with-buy-says-its-growth-journey-has-just-started/articleshow/133641032.cms",
+          "source": "economictimes.indiatimes.com",
+          "publishedAt": "2026-08-31T04:45:00Z",
+          "polarity": 0.8827,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "fa5cf941a5589687",
+          "storyClusterId": "story-011",
+          "title": "Gold , silver prices fall : ETFs tumble up to 4 . 06 % as rate hike bets rise on oil , yields",
+          "url": "https://www.businesstoday.in/personal-finance/story/gold-silver-prices-fall-etfs-tumble-up-to-4-06-as-rate-hike-bets-rise-on-oil-yields-552212-2026-08-31",
+          "source": "businesstoday.in",
+          "publishedAt": "2026-08-31T07:30:00Z",
+          "polarity": -0.8668,
+          "sentiment": "Very negative",
           "publisherCount": 1
         }
       ]
@@ -1454,10 +1629,123 @@
       "companyName": "Rentokil Initial PLC",
       "ticker": "RTO.L",
       "slug": "rentokil-initial",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
+      "dailyScore": 62.6,
+      "dailyLabel": "Positive",
+      "rollingScore": 50.8,
+      "confidence": 18.7,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 18.9,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 18.7",
+          "evidenceArticleIds": [
+            "c2b42bfae60daadd"
+          ]
+        }
+      ],
+      "topStories": [
+        {
+          "id": "c2b42bfae60daadd",
+          "storyClusterId": "story-001",
+          "title": "Rentokil Initial PLC ( NYSE : RTO ) Given Consensus Rating of  Moderate Buy  by Brokerages",
+          "url": "https://www.dailypolitical.com/2026/08/31/rentokil-initial-plc-nyserto-given-consensus-rating-of-moderate-buy-by-brokerages.html",
+          "source": "dailypolitical.com",
+          "publishedAt": "2026-08-31T12:45:00Z",
+          "polarity": 0.7582,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        }
+      ]
+    },
+    "rightmove": {
+      "companyName": "Rightmove PLC",
+      "ticker": "RMV.L",
+      "slug": "rightmove",
+      "date": "2026-08-31",
+      "dailyScore": 55.3,
+      "dailyLabel": "Slightly positive",
+      "rollingScore": 50.5,
+      "confidence": 42.9,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "storyCount": 5,
+      "sourceCount": 5,
+      "changeFromPreviousScoredDay": 0.7,
+      "flags": [],
+      "topStories": [
+        {
+          "id": "9524338f85243b9a",
+          "storyClusterId": "story-005",
+          "title": "Britain  most miserable town  set to become  happening  united kingdom hotspot - following a £3 . 5billion overhaul",
+          "url": "https://www.dailymail.com/travel/article-16087823/Slough-travel-destination-England-UK-staycation.html",
+          "source": "dailymail.com",
+          "publishedAt": "2026-08-31T07:45:00Z",
+          "polarity": 0.6115,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "c345dd64eb357143",
+          "storyClusterId": "story-003",
+          "title": "The Cambridgeshire border town perfectly situated between London and Cambridge",
+          "url": "https://www.cambridge-news.co.uk/news/local-news/cambridgeshire-border-town-perfectly-situated-34498259",
+          "source": "cambridge-news.co.uk",
+          "publishedAt": "2026-08-31T07:15:00Z",
+          "polarity": 0.167,
+          "sentiment": "Slightly positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "aad2ab0207b75718",
+          "storyClusterId": "story-004",
+          "title": "Birmingham commuters told best to place to live to make money on their home",
+          "url": "https://www.birminghammail.co.uk/news/midlands-news/birmingham-commuters-told-best-place-34506401",
+          "source": "birminghammail.co.uk",
+          "publishedAt": "2026-08-31T07:45:00Z",
+          "polarity": -0.0381,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "0ba848dd4e6cb5d8",
+          "storyClusterId": "story-001",
+          "title": "Slough detached 1920s  character  home on sale for £675 , 000",
+          "url": "https://www.sloughobserver.co.uk/news/26489857.slough-detached-1920s-character-home-sale-675-000",
+          "source": "sloughobserver.co.uk",
+          "publishedAt": "2026-08-31T05:30:00Z",
+          "polarity": 0.0121,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "1a1f68f4bfd1fc73",
+          "storyClusterId": "story-002",
+          "title": "Bracknell detached house with three reception rooms for sale",
+          "url": "https://www.bracknellnews.co.uk/news/26489024.bracknell-detached-house-three-reception-rooms-sale",
+          "source": "bracknellnews.co.uk",
+          "publishedAt": "2026-08-31T06:00:00Z",
+          "polarity": -0.0084,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
+    },
+    "j-sainsbury": {
+      "companyName": "J Sainsbury PLC",
+      "ticker": "SBRY.L",
+      "slug": "j-sainsbury",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 49.1,
+      "rollingScore": 49.6,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -1476,169 +1764,53 @@
       ],
       "topStories": []
     },
-    "rightmove": {
-      "companyName": "Rightmove PLC",
-      "ticker": "RMV.L",
-      "slug": "rightmove",
-      "date": "2026-08-30",
-      "dailyScore": 54.6,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.6,
-      "confidence": 50.4,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "storyCount": 7,
-      "sourceCount": 6,
-      "changeFromPreviousScoredDay": 3.9,
-      "flags": [
-        {
-          "type": "high_disagreement",
-          "direction": "mixed",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "Positive and negative coverage is unusually dispersed",
-          "evidenceArticleIds": [
-            "103e77c1c4201edd",
-            "124811497a219d47",
-            "469d6aa5dbaa0d3d",
-            "4ef4e8e3c50dba4a",
-            "08fde37a6598b6ff"
-          ]
-        }
-      ],
-      "topStories": [
-        {
-          "id": "103e77c1c4201edd",
-          "storyClusterId": "story-005",
-          "title": "House prices fall in Warwickshire commuter hotspot as buyers eye more affordable areas",
-          "url": "https://www.coventrytelegraph.net/news/local-news/house-prices-fall-warwickshire-commuter-34522308",
-          "source": "coventrytelegraph.net",
-          "publishedAt": "2026-08-30T10:15:00Z",
-          "polarity": -0.9522,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "124811497a219d47",
-          "storyClusterId": "story-004",
-          "title": "The Greater Manchester commuter belt locations with the fastest growing price tags",
-          "url": "https://www.manchestereveningnews.co.uk/news/greater-manchester-news/greater-manchester-commuter-belt-locations-34515494",
-          "source": "manchestereveningnews.co.uk",
-          "publishedAt": "2026-08-30T08:00:00Z",
-          "polarity": 0.8599,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "469d6aa5dbaa0d3d",
-          "storyClusterId": "story-003",
-          "title": "Midlands city named one of happiest places in united kingdom",
-          "url": "https://www.birminghammail.co.uk/news/midlands-news/midlands-city-named-one-happiest-34512301",
-          "source": "birminghammail.co.uk",
-          "publishedAt": "2026-08-30T08:00:00Z",
-          "polarity": 0.7591,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "4ef4e8e3c50dba4a",
-          "storyClusterId": "story-006",
-          "title": "Barman who won a spectacular £3 . 5million Omaze clifftop Cornish mansion puts it up for sale after one summer to open his own pub",
-          "url": "https://www.dailymail.com/news/article-16085367/Barman-won-spectacular-3-5million-Omaze-clifftop-Cornish-mansion-puts-sale-one-summer-open-pub.html",
-          "source": "dailymail.com",
-          "publishedAt": "2026-08-30T11:00:00Z",
-          "polarity": 0.1096,
-          "sentiment": "Slightly positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "08fde37a6598b6ff",
-          "storyClusterId": "story-007",
-          "title": "Ex - BBC star who bought a derelict water tower for £138k and turned it into a spectacular Grand Designs style home is selling it for £3m",
-          "url": "https://www.dailymail.com/news/article-16085363/Ex-BBC-star-bought-derelict-water-tower-138k-turned-spectacular-Grand-Designs-style-home-selling-3m.html",
-          "source": "dailymail.com",
-          "publishedAt": "2026-08-30T14:15:00Z",
-          "polarity": 0.0192,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ]
-    },
-    "j-sainsbury": {
-      "companyName": "J Sainsbury PLC",
-      "ticker": "SBRY.L",
-      "slug": "j-sainsbury",
-      "date": "2026-08-30",
-      "dailyScore": 50.3,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.6,
-      "confidence": 15.1,
-      "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": 0.0,
-      "flags": [
-        {
-          "type": "low_confidence",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Confidence is 15.1",
-          "evidenceArticleIds": [
-            "f8c2cac2968d0f7b"
-          ]
-        }
-      ],
-      "topStories": [
-        {
-          "id": "f8c2cac2968d0f7b",
-          "storyClusterId": "story-001",
-          "title": "Analyzing J . Sainsbury ( OTCMKTS : JSAIY ) and BJ Wholesale Club ( NYSE : BJ )",
-          "url": "https://www.themarketsdaily.com/2026/08/30/analyzing-j-sainsbury-otcmktsjsaiy-and-bjs-wholesale-club-nysebj.html",
-          "source": "themarketsdaily.com",
-          "publishedAt": "2026-08-30T15:15:00Z",
-          "polarity": 0.0171,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ]
-    },
     "schroders": {
       "companyName": "Schroders PLC",
       "ticker": "SDR.L",
       "slug": "schroders",
-      "date": "2026-08-30",
-      "dailyScore": 48.5,
+      "date": "2026-08-31",
+      "dailyScore": 52.5,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.4,
-      "confidence": 10.1,
+      "rollingScore": 49.8,
+      "confidence": 21.2,
       "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": -2.3,
+      "storyCount": 2,
+      "sourceCount": 2,
+      "changeFromPreviousScoredDay": 4.0,
       "flags": [
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 10.1",
+          "detail": "Confidence is 21.2",
           "evidenceArticleIds": [
-            "c3d061d45fc8ec86"
+            "d3de0abb7537c0b7",
+            "078327e5a9c9b245"
           ]
         }
       ],
       "topStories": [
         {
-          "id": "c3d061d45fc8ec86",
+          "id": "d3de0abb7537c0b7",
           "storyClusterId": "story-001",
-          "title": "Editor Take : The Week That Was August 24 - 29",
-          "url": "https://www.dealstreetasia.com/stories/editors-take-the-week-that-was-august-24-29-493565",
-          "source": "dealstreetasia.com",
-          "publishedAt": "2026-08-30T04:45:00Z",
-          "polarity": -0.0907,
+          "title": "Big tech is getting bigger , but its valuations are shrinking",
+          "url": "https://www.irishtimes.com/your-money/2026/08/31/big-tech-is-getting-bigger-but-its-valuations-are-shrinking",
+          "source": "irishtimes.com",
+          "publishedAt": "2026-08-31T07:30:00Z",
+          "polarity": 0.1401,
+          "sentiment": "Slightly positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "078327e5a9c9b245",
+          "storyClusterId": "story-002",
+          "title": "Law Debenture : the star of the united kingdom income sector",
+          "url": "https://moneyweek.com/investments/investment-trusts/law-debenture-star-of-uk-income-sector",
+          "source": "moneyweek.com",
+          "publishedAt": "2026-08-31T08:30:00Z",
+          "polarity": 0.0578,
           "sentiment": "Neutral / mixed",
           "publisherCount": 1
         }
@@ -1648,10 +1820,10 @@
       "companyName": "Scottish Mortgage Investment Trust PLC",
       "ticker": "SMT.L",
       "slug": "scottish-mortgage-investment-trust",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 49.4,
+      "rollingScore": 49.5,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -1674,75 +1846,90 @@
       "companyName": "Segro PLC",
       "ticker": "SGRO.L",
       "slug": "segro",
-      "date": "2026-08-30",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.1,
-      "confidence": 0.0,
+      "date": "2026-08-31",
+      "dailyScore": 40.9,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 49.0,
+      "confidence": 12.7,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -4.2,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 12.7",
+          "evidenceArticleIds": [
+            "db66fd60448c4e3e"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "db66fd60448c4e3e",
+          "storyClusterId": "story-001",
+          "title": "The Renewables Infrastructure Group ( LSE : TRIG ) Heads Into Bank Holiday With Bond Yields Moving In Its Favor",
+          "url": "https://www.foreignpolicyjournal.com/2026/08/31/the-renewables-infrastructure-group-lse-trig-heads-into-bank-holiday-with-bond-yields-moving-in-its-favor",
+          "source": "foreignpolicyjournal.com",
+          "publishedAt": "2026-08-31T22:00:00Z",
+          "polarity": -0.5477,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        }
+      ]
     },
     "severn-trent": {
       "companyName": "Severn Trent PLC",
       "ticker": "SVT.L",
       "slug": "severn-trent",
-      "date": "2026-08-30",
-      "dailyScore": 24.5,
-      "dailyLabel": "Very negative",
-      "rollingScore": 43.8,
-      "confidence": 40.0,
-      "confidenceBand": "medium",
+      "date": "2026-08-31",
+      "dailyScore": 45.9,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 44.6,
+      "confidence": 27.6,
+      "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 3,
+      "storyCount": 2,
       "sourceCount": 2,
-      "changeFromPreviousScoredDay": -23.8,
-      "flags": [],
+      "changeFromPreviousScoredDay": 21.4,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 27.6",
+          "evidenceArticleIds": [
+            "0108d7b633e3ba3b",
+            "3972e7e111adcfa7"
+          ]
+        }
+      ],
       "topStories": [
         {
-          "id": "7ed7cd0c24e16048",
-          "storyClusterId": "story-003",
-          "title": "South West Water has worst environmental record in England , analysis shows",
-          "url": "https://www.theguardian.com/environment/2026/aug/30/south-west-water-worst-environmental-record-england",
-          "source": "theguardian.com",
-          "publishedAt": "2026-08-30T07:00:00Z",
-          "polarity": -0.9444,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "22d0a8e2b84daca7",
-          "storyClusterId": "story-001",
-          "title": "All the new and current road closures set to hit Ludlow",
-          "url": "https://www.ludlowadvertiser.co.uk/news/26503567.new-current-road-closures-set-hit-ludlow",
-          "source": "ludlowadvertiser.co.uk",
-          "publishedAt": "2026-08-30T04:45:00Z",
-          "polarity": -0.8993,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "f4532406dc3b6dc6",
+          "id": "0108d7b633e3ba3b",
           "storyClusterId": "story-002",
-          "title": "Ludlow road to shut next month for Severn Trent Water works",
-          "url": "https://www.ludlowadvertiser.co.uk/news/26493499.ludlow-road-shut-next-month-severn-trent-water-works",
-          "source": "ludlowadvertiser.co.uk",
-          "publishedAt": "2026-08-30T04:45:00Z",
-          "polarity": -0.706,
-          "sentiment": "Very negative",
+          "title": "The road closures in Coventry you need to know about this week as schools go back",
+          "url": "https://www.coventrytelegraph.net/news/coventry-news/road-closures-coventry-you-need-34529300",
+          "source": "coventrytelegraph.net",
+          "publishedAt": "2026-08-31T09:45:00Z",
+          "polarity": -0.3518,
+          "sentiment": "Negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "3972e7e111adcfa7",
+          "storyClusterId": "story-001",
+          "title": "Severn Trent ( STRNY ) vs . The Competition Financial Comparison",
+          "url": "https://www.tickerreport.com/banking-finance/13566747/severn-trent-strny-vs-the-competition-financial-comparison.html",
+          "source": "tickerreport.com",
+          "publishedAt": "2026-08-31T05:00:00Z",
+          "polarity": 0.0249,
+          "sentiment": "Neutral / mixed",
           "publisherCount": 1
         }
       ]
@@ -1751,10 +1938,10 @@
       "companyName": "Smith & Nephew PLC",
       "ticker": "SN.L",
       "slug": "smith-and-nephew",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 51.0,
+      "rollingScore": 50.9,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -1777,10 +1964,10 @@
       "companyName": "DS Smith PLC",
       "ticker": "SMDS.L",
       "slug": "ds-smith",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 51.2,
+      "rollingScore": 51.1,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -1803,70 +1990,73 @@
       "companyName": "Smiths Group PLC",
       "ticker": "SMIN.L",
       "slug": "smiths",
-      "date": "2026-08-30",
-      "dailyScore": 46.1,
+      "date": "2026-08-31",
+      "dailyScore": 46.6,
       "dailyLabel": "Neutral / mixed",
       "rollingScore": 47.9,
-      "confidence": 46.6,
-      "confidenceBand": "medium",
+      "confidence": 35.7,
+      "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 7,
-      "sourceCount": 10,
-      "changeFromPreviousScoredDay": -8.3,
-      "flags": [],
+      "storyCount": 4,
+      "sourceCount": 4,
+      "changeFromPreviousScoredDay": 0.5,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 35.7",
+          "evidenceArticleIds": [
+            "86fcca219c43a055",
+            "877bcc89aba51205",
+            "56a91ca99143cf89",
+            "46186d24d8a5f10f"
+          ]
+        }
+      ],
       "topStories": [
         {
-          "id": "c69aea2772779b80",
-          "storyClusterId": "story-002",
-          "title": "Grangeville woman dies on  Meanders",
-          "url": "https://www.lmtribune.com/northwest/grangeville-woman-dies-on-meanders-ef5b4da8",
-          "source": "lmtribune.com",
-          "publishedAt": "2026-08-30T08:00:00Z",
-          "polarity": -0.6845,
+          "id": "86fcca219c43a055",
+          "storyClusterId": "story-001",
+          "title": "Blissfully unaware : Wollongong community revolts against high - rise boom",
+          "url": "https://www.southcoastregister.com.au/story/9340164/blissfully-unaware-wollongong-community-revolts-against-high-rise-boom",
+          "source": "southcoastregister.com.au",
+          "publishedAt": "2026-08-30T23:30:00Z",
+          "polarity": -0.8381,
           "sentiment": "Very negative",
-          "publisherCount": 1
+          "publisherCount": 2
         },
         {
-          "id": "07fc34d4f5b35326",
-          "storyClusterId": "story-005",
-          "title": "Ontario News This Week : See what made the headlines",
-          "url": "https://www.cambridgetimes.ca/news/ontario-weekly-news-roundup-lake-ontario/article_20c9495e-2ea9-5d08-8b1e-c2273a11b8c1.html",
-          "source": "cambridgetimes.ca",
-          "publishedAt": "2026-08-30T14:00:00Z",
-          "polarity": -0.0587,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 5
-        },
-        {
-          "id": "3bcf63859531145c",
+          "id": "877bcc89aba51205",
           "storyClusterId": "story-003",
-          "title": "Tests Loom for Popular united kingdom PM Burnham as Parliament Returns",
-          "url": "https://english.aawsat.com/world/5312564-tests-loom-popular-uk-pm-burnham-parliament-returns",
-          "source": "english.aawsat.com",
-          "publishedAt": "2026-08-30T08:15:00Z",
-          "polarity": 0.0165,
+          "title": "Lynn Meadows Discovery Center unveils quilt imagining South Mississippi future",
+          "url": "https://www.wlox.com/2026/08/31/lynn-meadows-discovery-center-unveils-quilt-imagining-south-mississippis-future",
+          "source": "wlox.com",
+          "publishedAt": "2026-08-31T05:45:00Z",
+          "polarity": 0.1125,
+          "sentiment": "Slightly positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "56a91ca99143cf89",
+          "storyClusterId": "story-004",
+          "title": "Andy Burnham about to face fight of his life - knives are coming out | Personal Finance | Finance",
+          "url": "https://www.express.co.uk/finance/personalfinance/2244001/andy-burnham-faces-fight-life-knives-coming-out",
+          "source": "express.co.uk",
+          "publishedAt": "2026-08-31T17:00:00Z",
+          "polarity": -0.0449,
           "sentiment": "Neutral / mixed",
           "publisherCount": 1
         },
         {
-          "id": "7d8615b3f820e9b5",
-          "storyClusterId": "story-007",
-          "title": "Morrissey : Viva Hate",
-          "url": "https://pitchfork.com/reviews/albums/16439-viva-hate",
-          "source": "pitchfork.com",
-          "publishedAt": "2026-08-30T19:45:00Z",
-          "polarity": 0.0155,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        },
-        {
-          "id": "cb33a27e782adbc0",
-          "storyClusterId": "story-006",
-          "title": "Morrissey : Bona Drag [ 20th Anniversary Edition ]",
-          "url": "https://pitchfork.com/reviews/albums/14737-bona-drag-20th-anniversary-edition",
-          "source": "pitchfork.com",
-          "publishedAt": "2026-08-30T19:45:00Z",
-          "polarity": 0.0072,
+          "id": "46186d24d8a5f10f",
+          "storyClusterId": "story-002",
+          "title": "Remembering pioneering reformer , mother and composer Nellie Smith | South Coast Register",
+          "url": "https://www.southcoastregister.com.au/story/9340414/remembering-pioneering-reformer-mother-and-composer-nellie-smith",
+          "source": "southcoastregister.com.au",
+          "publishedAt": "2026-08-31T04:15:00Z",
+          "polarity": 0.0656,
           "sentiment": "Neutral / mixed",
           "publisherCount": 1
         }
@@ -1876,10 +2066,10 @@
       "companyName": "Spirax Group PLC",
       "ticker": "SPX.L",
       "slug": "spirax",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 48.2,
+      "rollingScore": 48.4,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -1902,7 +2092,7 @@
       "companyName": "St James's Place PLC",
       "ticker": "STJ.L",
       "slug": "st-jamess-place",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,
@@ -1928,10 +2118,83 @@
       "companyName": "Standard Chartered PLC",
       "ticker": "STAN.L",
       "slug": "standard-chartered",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
+      "dailyScore": 53.8,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 51.8,
+      "confidence": 57.3,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "storyCount": 6,
+      "sourceCount": 6,
+      "changeFromPreviousScoredDay": 3.2,
+      "flags": [],
+      "topStories": [
+        {
+          "id": "a8d2e7b428b5c2a5",
+          "storyClusterId": "story-006",
+          "title": "Wall St slips as higher oil prices , hawkish Fed bets weigh",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-down-middle-105748765.html",
+          "source": "finance.yahoo.com",
+          "publishedAt": "2026-08-31T14:45:00Z",
+          "polarity": -0.9248,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "ed5593b0aa57020c",
+          "storyClusterId": "story-005",
+          "title": "Nigerian banks lifted by sovereign upgrades as five gatekeepers reprice country risk",
+          "url": "https://tribuneonlineng.com/nigerian-banks-lifted-by-sovereign-upgrades-as-five-gatekeepers-reprice-country-risk",
+          "source": "tribuneonlineng.com",
+          "publishedAt": "2026-08-31T12:00:00Z",
+          "polarity": 0.8264,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "2ba077535f2e315c",
+          "storyClusterId": "story-001",
+          "title": "Purposeful Leadership and Empathy Everywhere in strategic partnership to advance human - centred leadership",
+          "url": "https://www.ft.lk/hr/Purposeful-Leadership-and-Empathy-Everywhere-in-strategic-partnership-to-advance-human-centred-leadership/47-796560",
+          "source": "ft.lk",
+          "publishedAt": "2026-08-30T23:30:00Z",
+          "polarity": 0.5297,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "817bac1c1c3e3840",
+          "storyClusterId": "story-002",
+          "title": "Singapore CIX , Carbonplace plan merger as carbon markets seek trust and scale | News | Eco - Business",
+          "url": "https://www.eco-business.com/news/singapores-cix-carbonplace-plan-merger-as-carbon-markets-seek-trust-and-scale",
+          "source": "eco-business.com",
+          "publishedAt": "2026-08-31T07:30:00Z",
+          "polarity": 0.1199,
+          "sentiment": "Slightly positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "c3747b183062ccbc",
+          "storyClusterId": "story-004",
+          "title": "Standard Chartered calls for global integrated agency pitch",
+          "url": "https://www.marketing-interactive.com/standard-chartered-calls-for-global-integrated-pitch",
+          "source": "marketing-interactive.com",
+          "publishedAt": "2026-08-31T08:30:00Z",
+          "polarity": 0.0761,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
+    },
+    "united-utilities": {
+      "companyName": "United Utilities Group PLC",
+      "ticker": "UU.L",
+      "slug": "united-utilities",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 51.5,
+      "rollingScore": 48.7,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -1950,60 +2213,20 @@
       ],
       "topStories": []
     },
-    "united-utilities": {
-      "companyName": "United Utilities Group PLC",
-      "ticker": "UU.L",
-      "slug": "united-utilities",
-      "date": "2026-08-30",
-      "dailyScore": 59.7,
-      "dailyLabel": "Slightly positive",
-      "rollingScore": 48.6,
-      "confidence": 18.2,
-      "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": 5.6,
-      "flags": [
-        {
-          "type": "low_confidence",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Confidence is 18.2",
-          "evidenceArticleIds": [
-            "d90eb2318e83451d"
-          ]
-        }
-      ],
-      "topStories": [
-        {
-          "id": "d90eb2318e83451d",
-          "storyClusterId": "story-001",
-          "title": "United Utilities vow to fix Chelford water leak after days | Chester and District Standard",
-          "url": "https://www.chesterstandard.co.uk/news/26506484.united-utilities-vow-fix-chelford-water-leak-10-days",
-          "source": "chesterstandard.co.uk",
-          "publishedAt": "2026-08-30T08:00:00Z",
-          "polarity": 0.5831,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        }
-      ]
-    },
     "vodafone": {
       "companyName": "Vodafone Group PLC",
       "ticker": "VOD.L",
       "slug": "vodafone",
-      "date": "2026-08-30",
-      "dailyScore": 47.1,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 52.9,
-      "confidence": 55.0,
+      "date": "2026-08-31",
+      "dailyScore": 58.6,
+      "dailyLabel": "Slightly positive",
+      "rollingScore": 53.5,
+      "confidence": 50.2,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 7,
-      "sourceCount": 7,
-      "changeFromPreviousScoredDay": -10.3,
+      "storyCount": 6,
+      "sourceCount": 5,
+      "changeFromPreviousScoredDay": 11.5,
       "flags": [
         {
           "type": "high_disagreement",
@@ -2012,68 +2235,68 @@
           "status": "calculated",
           "detail": "Positive and negative coverage is unusually dispersed",
           "evidenceArticleIds": [
-            "6d018f5bb638cddd",
-            "2307b693098b14ae",
-            "a00fdbfa7bb95925",
-            "81143d4c0136edd3",
-            "33fe41bc28c7d1bc"
+            "f4cf379922375f8c",
+            "966671ef10cf82b4",
+            "b353bf0ae4499ee3",
+            "50f47d8b37001d76",
+            "f350e3292018c65b"
           ]
         }
       ],
       "topStories": [
         {
-          "id": "6d018f5bb638cddd",
-          "storyClusterId": "story-001",
-          "title": "Thousands hit by Vodafone broadband outage across Cavan and Monaghan",
-          "url": "https://www.anglocelt.ie/2026/08/29/thousands-hit-by-vodafone-broadband-outage-across-cavan-and-monaghan",
-          "source": "anglocelt.ie",
-          "publishedAt": "2026-08-29T23:30:00Z",
-          "polarity": -0.9163,
+          "id": "f4cf379922375f8c",
+          "storyClusterId": "story-004",
+          "title": "India jobs under AI pressure : Nearly 3 million roles could be hit as technology spreads from IT to banking , telecom and healthcare",
+          "url": "https://www.indiatimes.com/trending/india-jobs-under-ai-pressure-nearly-3-million-roles-could-be-hit-as-technology-spreads-from-it-to-banking-telecom-and-healthcare/articleshow/133625446.html",
+          "source": "indiatimes.com",
+          "publishedAt": "2026-08-31T05:30:00Z",
+          "polarity": -0.9537,
           "sentiment": "Very negative",
           "publisherCount": 1
         },
         {
-          "id": "2307b693098b14ae",
-          "storyClusterId": "story-002",
-          "title": "2017 H1 M & A leagues : Vodea boosts 5 firms but SAM , AZB would have topped anyway , chased by Trilegal , CAM , NDA • Khaitan , Luthra down lower",
-          "url": "https://www.legallyindia.com/home/2017-h1-m-a-leagues-vodea-boosts-5-firms-but-sam-azb-would-have-topped-anyway-chased-by-trilegal-cam-nda-khaitan-luthra-down-lower-20170707-8643",
-          "source": "legallyindia.com",
-          "publishedAt": "2026-08-30T06:00:00Z",
-          "polarity": 0.9061,
+          "id": "966671ef10cf82b4",
+          "storyClusterId": "story-006",
+          "title": "Indian increase in EMF limits will benefit 5G rollout",
+          "url": "https://www.developingtelecoms.com/telecom-business/telecom-regulation/20756-indian-increase-in-emf-limits-will-benefit-5g-rollout.html",
+          "source": "developingtelecoms.com",
+          "publishedAt": "2026-08-31T20:45:00Z",
+          "polarity": 0.9156,
           "sentiment": "Very positive",
           "publisherCount": 1
         },
         {
-          "id": "a00fdbfa7bb95925",
-          "storyClusterId": "story-006",
-          "title": "Mobile signal blackout in Arlesford sparks resident anger",
-          "url": "https://www.hampshirechronicle.co.uk/news/26493386.mobile-signal-blackout-arlesford-sparks-resident-anger",
-          "source": "hampshirechronicle.co.uk",
-          "publishedAt": "2026-08-30T16:30:00Z",
-          "polarity": -0.8376,
-          "sentiment": "Very negative",
+          "id": "b353bf0ae4499ee3",
+          "storyClusterId": "story-005",
+          "title": "India evaluates plan to replace legacy telecom gear from China Huawei , ZTE ; assesses cost impact",
+          "url": "https://www.moneycontrol.com/news/telecom/india-evaluates-plan-to-replace-legacy-telecom-gear-from-china-s-huawei-zte-assesses-cost-impact-14018736.html",
+          "source": "moneycontrol.com",
+          "publishedAt": "2026-08-31T06:15:00Z",
+          "polarity": 0.5954,
+          "sentiment": "Very positive",
           "publisherCount": 1
         },
         {
-          "id": "81143d4c0136edd3",
-          "storyClusterId": "story-004",
-          "title": "Zegona Communications ( LON : ZEG ) Shares Pass Above 50 Day Moving Average – Here What Happened",
-          "url": "https://www.dailypolitical.com/2026/08/30/zegona-communications-lonzeg-shares-pass-above-50-day-moving-average-heres-what-happened.html",
-          "source": "dailypolitical.com",
-          "publishedAt": "2026-08-30T13:00:00Z",
-          "polarity": 0.2288,
+          "id": "50f47d8b37001d76",
+          "storyClusterId": "story-002",
+          "title": "Bati aiming to beat Australia and New Zealand",
+          "url": "https://www.fijivillage.com/news/bati-aiming-to-beat-australia-and-new-zealand-coach-c99b2b",
+          "source": "fijivillage.com",
+          "publishedAt": "2026-08-31T01:45:00Z",
+          "polarity": 0.3467,
           "sentiment": "Positive",
           "publisherCount": 1
         },
         {
-          "id": "33fe41bc28c7d1bc",
-          "storyClusterId": "story-005",
-          "title": "Africa Is Already Building Its Future , By Wale Osofisan",
-          "url": "https://promptnewsonline.com/africa-is-already-building-its-future-by-wale-osofisan",
-          "source": "promptnewsonline.com",
-          "publishedAt": "2026-08-30T14:00:00Z",
-          "polarity": 0.1439,
-          "sentiment": "Slightly positive",
+          "id": "f350e3292018c65b",
+          "storyClusterId": "story-003",
+          "title": "20 stocks , 100 % returns : How retail investors tapped a multibagger wave in deeper Indian market",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/20-stocks-100-returns-how-retail-investors-tapped-a-multibagger-wave-in-deeper-indian-market/articleshow/133641555.cms",
+          "source": "economictimes.indiatimes.com",
+          "publishedAt": "2026-08-31T05:30:00Z",
+          "polarity": 0.2688,
+          "sentiment": "Positive",
           "publisherCount": 1
         }
       ]
@@ -2082,64 +2305,123 @@
       "companyName": "Whitbread PLC",
       "ticker": "WTB.L",
       "slug": "whitbread",
-      "date": "2026-08-30",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 42.4,
-      "confidence": 0.0,
-      "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
-      "flags": [
-        {
-          "type": "no_coverage",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
-        }
-      ],
-      "topStories": []
-    },
-    "rolls-royce": {
-      "companyName": "Rolls-Royce",
-      "ticker": "RR.L",
-      "slug": "rolls-royce",
-      "date": "2026-08-30",
-      "dailyScore": 47.0,
+      "date": "2026-08-31",
+      "dailyScore": 46.5,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 52.0,
-      "confidence": 10.5,
+      "rollingScore": 43.5,
+      "confidence": 21.5,
       "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": -9.5,
+      "storyCount": 2,
+      "sourceCount": 2,
+      "changeFromPreviousScoredDay": 21.3,
       "flags": [
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 10.5",
+          "detail": "Confidence is 21.5",
           "evidenceArticleIds": [
-            "c023f8be54fc99f3"
+            "7b6a2d3fc80c0ddf",
+            "bcd6236d8cedcfb2"
           ]
         }
       ],
       "topStories": [
         {
-          "id": "c023f8be54fc99f3",
+          "id": "7b6a2d3fc80c0ddf",
           "storyClusterId": "story-001",
-          "title": "The Dark Horse Of Used Luxury Sedans That Everyone Overlooks",
-          "url": "https://www.topspeed.com/used-luxury-sedan-everyone-overlooks",
-          "source": "topspeed.com",
-          "publishedAt": "2026-08-30T21:00:00Z",
-          "polarity": -0.1819,
+          "title": "Cumbrian Beefeater and Brewers Fayre restaurants to close within weeks",
+          "url": "https://www.in-cumbria.com/news/26506526.cumbrian-beefeater-brewers-fayre-restaurants-close-within-weeks",
+          "source": "in-cumbria.com",
+          "publishedAt": "2026-08-30T23:30:00Z",
+          "polarity": -0.1794,
           "sentiment": "Slightly negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "bcd6236d8cedcfb2",
+          "storyClusterId": "story-002",
+          "title": "Wild Weather at SeaLink Magnetic Island Race Week",
+          "url": "https://www.mysailing.com.au/wild-weather-shows-no-mercy-at-magnetic-island-race-week",
+          "source": "mysailing.com.au",
+          "publishedAt": "2026-08-31T19:30:00Z",
+          "polarity": -0.099,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
+    },
+    "rolls-royce": {
+      "companyName": "Rolls-Royce",
+      "ticker": "RR.L",
+      "slug": "rolls-royce",
+      "date": "2026-08-31",
+      "dailyScore": 49.9,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 51.5,
+      "confidence": 45.2,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "storyCount": 5,
+      "sourceCount": 5,
+      "changeFromPreviousScoredDay": 2.9,
+      "flags": [],
+      "topStories": [
+        {
+          "id": "e1a2994147d923d6",
+          "storyClusterId": "story-002",
+          "title": "German auto industry moves into arms production just as under the Nazis",
+          "url": "https://www.wsws.org/en/articles/2026/08/31/amdx-a31.html",
+          "source": "wsws.org",
+          "publishedAt": "2026-08-31T08:45:00Z",
+          "polarity": 0.5575,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "db66fd60448c4e3e",
+          "storyClusterId": "story-005",
+          "title": "The Renewables Infrastructure Group ( LSE : TRIG ) Heads Into Bank Holiday With Bond Yields Moving In Its Favor",
+          "url": "https://www.foreignpolicyjournal.com/2026/08/31/the-renewables-infrastructure-group-lse-trig-heads-into-bank-holiday-with-bond-yields-moving-in-its-favor",
+          "source": "foreignpolicyjournal.com",
+          "publishedAt": "2026-08-31T22:00:00Z",
+          "polarity": -0.5477,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "3f47164745907137",
+          "storyClusterId": "story-004",
+          "title": "Luxon scathing Air NZ rebuke not  cool , Rob Fyfe says",
+          "url": "https://www.nzherald.co.nz/business/companies/airlines/luxons-scathing-air-nz-rebuke-not-cool-rob-fyfe-says/premium/BBA3CVMRCBBV5AOA3E5LAFQXJI",
+          "source": "nzherald.co.nz",
+          "publishedAt": "2026-08-31T22:00:00Z",
+          "polarity": -0.231,
+          "sentiment": "Negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "be9bf45279ef5759",
+          "storyClusterId": "story-003",
+          "title": "Jake Motorcars Offers Online Pre - Approval for Financing Your Next Luxury Buy in San Diego , CA",
+          "url": "https://www.prnewswire.com/news-releases/jakes-motorcars-offers-online-pre-approval-for-financing-your-next-luxury-buy-in-san-diego-ca-302864743.html",
+          "source": "prnewswire.com",
+          "publishedAt": "2026-08-31T10:30:00Z",
+          "polarity": 0.153,
+          "sentiment": "Slightly positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "078327e5a9c9b245",
+          "storyClusterId": "story-001",
+          "title": "Law Debenture : the star of the united kingdom income sector",
+          "url": "https://moneyweek.com/investments/investment-trusts/law-debenture-star-of-uk-income-sector",
+          "source": "moneyweek.com",
+          "publishedAt": "2026-08-31T08:30:00Z",
+          "polarity": 0.0578,
+          "sentiment": "Neutral / mixed",
           "publisherCount": 1
         }
       ]
@@ -2148,49 +2430,49 @@
       "companyName": "Lloyds Banking Group",
       "ticker": "LLOY.L",
       "slug": "lloyds",
-      "date": "2026-08-30",
-      "dailyScore": 40.6,
+      "date": "2026-08-31",
+      "dailyScore": 44.6,
       "dailyLabel": "Slightly negative",
-      "rollingScore": 47.1,
-      "confidence": 23.0,
+      "rollingScore": 47.0,
+      "confidence": 22.0,
       "confidenceBand": "low",
       "coverageStatus": "ok",
       "storyCount": 2,
       "sourceCount": 2,
-      "changeFromPreviousScoredDay": -6.3,
+      "changeFromPreviousScoredDay": 4.0,
       "flags": [
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 23.0",
+          "detail": "Confidence is 22.0",
           "evidenceArticleIds": [
-            "3e367eccb041d1fc",
-            "baa2917e747f2358"
+            "7e98fa21e36d851c",
+            "bd88bafade06c50e"
           ]
         }
       ],
       "topStories": [
         {
-          "id": "3e367eccb041d1fc",
+          "id": "7e98fa21e36d851c",
           "storyClusterId": "story-002",
-          "title": "Halifax closing 13 branches in September - full list",
-          "url": "https://www.express.co.uk/finance/personalfinance/2242338/halifax-bank-branch-closures-september-2026",
-          "source": "express.co.uk",
-          "publishedAt": "2026-08-30T12:15:00Z",
-          "polarity": -0.7261,
-          "sentiment": "Very negative",
+          "title": "Accountant stole £307 , 000 from her former employer | Bradford Telegraph and Argus",
+          "url": "https://www.thetelegraphandargus.co.uk/news/26505168.accountant-stole-307-000-former-employer",
+          "source": "thetelegraphandargus.co.uk",
+          "publishedAt": "2026-08-31T14:45:00Z",
+          "polarity": -0.4409,
+          "sentiment": "Negative",
           "publisherCount": 1
         },
         {
-          "id": "baa2917e747f2358",
+          "id": "bd88bafade06c50e",
           "storyClusterId": "story-001",
-          "title": "New payment set up ? Get in touch ! The bank scam where your  bank  is the scammer | Scams",
-          "url": "https://www.theguardian.com/money/2026/aug/30/new-payment-set-up-get-in-touch-the-bank-scam-where-your-bank-is-the-scammer",
-          "source": "theguardian.com",
-          "publishedAt": "2026-08-30T08:15:00Z",
-          "polarity": -0.025,
+          "title": "Pop - ups , mobile vans and SMELLS – how NatWest plans to update its bank branch network",
+          "url": "https://www.aol.co.uk/articles/pop-ups-mobile-vans-smells-120000000.html",
+          "source": "aol.co.uk",
+          "publishedAt": "2026-08-31T12:30:00Z",
+          "polarity": 0.0116,
           "sentiment": "Neutral / mixed",
           "publisherCount": 1
         }
@@ -2200,7 +2482,7 @@
       "companyName": "Alliance Witan PLC",
       "ticker": "ALW.L",
       "slug": "alliance-witan",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 49.9,
@@ -2226,10 +2508,10 @@
       "companyName": "Antofagasta PLC",
       "ticker": "ANTO.L",
       "slug": "antofagasta",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 51.4,
+      "rollingScore": 51.3,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -2252,7 +2534,7 @@
       "companyName": "Ashtead Group PLC",
       "ticker": "AHT.L",
       "slug": "ashtead",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 49.5,
@@ -2278,10 +2560,10 @@
       "companyName": "Associated British Foods PLC",
       "ticker": "ABF.L",
       "slug": "associated-british-foods",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 50.8,
+      "rollingScore": 50.7,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -2304,62 +2586,36 @@
       "companyName": "Centrica PLC",
       "ticker": "CNA.L",
       "slug": "centrica",
-      "date": "2026-08-30",
-      "dailyScore": 39.4,
-      "dailyLabel": "Negative",
-      "rollingScore": 48.3,
-      "confidence": 26.9,
+      "date": "2026-08-31",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 48.5,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 2,
-      "sourceCount": 3,
-      "changeFromPreviousScoredDay": -7.7,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 26.9",
-          "evidenceArticleIds": [
-            "262d7ea700526d75",
-            "2051d8a6901bc268"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "262d7ea700526d75",
-          "storyClusterId": "story-001",
-          "title": "British Gas Boss Warns united kingdom Faces Winter Fuel Shortage Due to Reliance on Imports",
-          "url": "https://wattsupwiththat.com/2026/08/29/british-gas-boss-warns-uk-faces-winter-fuel-shortage-due-to-reliance-on-imports",
-          "source": "wattsupwiththat.com",
-          "publishedAt": "2026-08-30T10:00:00Z",
-          "polarity": -0.9464,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "2051d8a6901bc268",
-          "storyClusterId": "story-002",
-          "title": "This Newly Public Nuclear IPO Is Already Using AI to Speed Up Reactor Design . Is It a Buy ?",
-          "url": "https://finance.yahoo.com/technology/ai/articles/newly-public-nuclear-ipo-already-202500169.html",
-          "source": "finance.yahoo.com",
-          "publishedAt": "2026-08-30T21:15:00Z",
-          "polarity": 0.0975,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 2
-        }
-      ]
+      "topStories": []
     },
     "croda-international": {
       "companyName": "Croda International PLC",
       "ticker": "CRDA.L",
       "slug": "croda-international",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 47.5,
+      "rollingScore": 47.7,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -2382,75 +2638,39 @@
       "companyName": "EasyJet PLC",
       "ticker": "EZJ.L",
       "slug": "easyjet",
-      "date": "2026-08-30",
-      "dailyScore": 32.2,
-      "dailyLabel": "Negative",
-      "rollingScore": 41.7,
-      "confidence": 49.6,
-      "confidenceBand": "medium",
+      "date": "2026-08-31",
+      "dailyScore": 54.2,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 43.9,
+      "confidence": 14.4,
+      "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 4,
-      "sourceCount": 5,
-      "changeFromPreviousScoredDay": -10.8,
+      "storyCount": 1,
+      "sourceCount": 2,
+      "changeFromPreviousScoredDay": 22.0,
       "flags": [
         {
-          "type": "bad_press",
-          "direction": "negative",
-          "severity": "medium",
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
           "status": "calculated",
-          "detail": "Daily press score is 32.2",
+          "detail": "Confidence is 14.4",
           "evidenceArticleIds": [
-            "d3abb73fb0b5b8c5",
-            "ce73697c104fbc77",
-            "b8c8babf782804d8",
-            "231cf27e0f17cece"
+            "28328624f001dbab"
           ]
         }
       ],
       "topStories": [
         {
-          "id": "d3abb73fb0b5b8c5",
-          "storyClusterId": "story-003",
-          "title": "Ryanair and easyJet passengers warned about boarding passes",
-          "url": "https://www.swindonadvertiser.co.uk/news/26506563.full-list-18-airports-dont-accept-boarding-passes",
-          "source": "swindonadvertiser.co.uk",
-          "publishedAt": "2026-08-30T08:00:00Z",
-          "polarity": -0.928,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "ce73697c104fbc77",
-          "storyClusterId": "story-002",
-          "title": "Manchester Airport flights delayed by more than an hour today",
-          "url": "https://www.messengernewspapers.co.uk/news/26507249.manchester-airport-flights-delayed-hour-today",
-          "source": "messengernewspapers.co.uk",
-          "publishedAt": "2026-08-30T11:00:00Z",
-          "polarity": -0.8754,
-          "sentiment": "Very negative",
-          "publisherCount": 2
-        },
-        {
-          "id": "b8c8babf782804d8",
-          "storyClusterId": "story-004",
-          "title": "Im a beauty editor : collagen masks are a huge waste of time",
-          "url": "https://www.womanandhome.com/beauty/skincare/waste-of-money-masks",
-          "source": "womanandhome.com",
-          "publishedAt": "2026-08-30T14:45:00Z",
-          "polarity": -0.3828,
-          "sentiment": "Negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "231cf27e0f17cece",
+          "id": "28328624f001dbab",
           "storyClusterId": "story-001",
-          "title": "Im a travel expert and these are my favourite places for some last - blast summer sun",
-          "url": "https://www.hellomagazine.com/travel/915352/travel-expert-best-late-summer-sun-winter-sun",
-          "source": "hellomagazine.com",
-          "publishedAt": "2026-08-30T06:00:00Z",
-          "polarity": 0.049,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
+          "title": "Turkish deep - sea search vessel joins efforts to retrieve 20 still missing after Cyprus ferry disaster",
+          "url": "https://www.theguardian.com/world/2026/aug/31/turkish-deep-sea-search-vessel-tcg-isin-retrieve-20-missing-cyprus-ferry",
+          "source": "theguardian.com",
+          "publishedAt": "2026-08-31T19:30:00Z",
+          "polarity": 0.2512,
+          "sentiment": "Positive",
+          "publisherCount": 2
         }
       ]
     },
@@ -2458,36 +2678,50 @@
       "companyName": "Haleon PLC",
       "ticker": "HLN.L",
       "slug": "haleon",
-      "date": "2026-08-30",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 49.5,
-      "confidence": 0.0,
+      "date": "2026-08-31",
+      "dailyScore": 50.9,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.7,
+      "confidence": 10.0,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 10.8,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 10.0",
+          "evidenceArticleIds": [
+            "f9eaf9b4f6024df1"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "f9eaf9b4f6024df1",
+          "storyClusterId": "story-001",
+          "title": "Doing Business in China : Opportunities & Constraints",
+          "url": "https://english.ckgsb.edu.cn/knowledge/article/doing-business-in-china-foreign-companies",
+          "source": "english.ckgsb.edu.cn",
+          "publishedAt": "2026-08-31T06:15:00Z",
+          "polarity": 0.0552,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
     },
     "halma": {
       "companyName": "Halma PLC",
       "ticker": "HLMA.L",
       "slug": "halma",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 48.0,
+      "rollingScore": 48.2,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -2510,7 +2744,7 @@
       "companyName": "Hikma Pharmaceuticals PLC",
       "ticker": "HIK.L",
       "slug": "hikma-pharmaceuticals",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.4,
@@ -2536,7 +2770,7 @@
       "companyName": "IMI PLC",
       "ticker": "IMI.L",
       "slug": "imi",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,
@@ -2562,36 +2796,50 @@
       "companyName": "InterContinental Hotels Group PLC",
       "ticker": "IHG.L",
       "slug": "intercontinental-hotels",
-      "date": "2026-08-30",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
+      "date": "2026-08-31",
+      "dailyScore": 49.6,
+      "dailyLabel": "Neutral / mixed",
       "rollingScore": 49.7,
-      "confidence": 0.0,
+      "confidence": 9.9,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -2.1,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 9.9",
+          "evidenceArticleIds": [
+            "a2aaefc8f6275945"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "a2aaefc8f6275945",
+          "storyClusterId": "story-001",
+          "title": "InterContinental Hayman Great Barrier Reef Resort announces five senior appointments",
+          "url": "https://travelweekly.com.au/intercontinental-hayman-great-barrier-reef-resort-announces-five-senior-appointments",
+          "source": "travelweekly.com.au",
+          "publishedAt": "2026-08-31T04:15:00Z",
+          "polarity": -0.0239,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
     },
     "jd-sports-fashion": {
       "companyName": "JD Sports Fashion PLC",
       "ticker": "JD.L",
       "slug": "jd-sports-fashion",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 46.7,
+      "rollingScore": 47.0,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -2614,49 +2862,49 @@
       "companyName": "Kingfisher PLC",
       "ticker": "KGF.L",
       "slug": "kingfisher",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": 50.5,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.0,
-      "confidence": 26.4,
+      "rollingScore": 50.1,
+      "confidence": 20.7,
       "confidenceBand": "low",
       "coverageStatus": "ok",
       "storyCount": 2,
       "sourceCount": 2,
-      "changeFromPreviousScoredDay": 0.4,
+      "changeFromPreviousScoredDay": 0.0,
       "flags": [
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 26.4",
+          "detail": "Confidence is 20.7",
           "evidenceArticleIds": [
-            "5baedda7207a1cb9",
-            "4b666d696236c850"
+            "1486bb3850724126",
+            "82912481708b20ce"
           ]
         }
       ],
       "topStories": [
         {
-          "id": "5baedda7207a1cb9",
-          "storyClusterId": "story-001",
-          "title": "New Romantasy pop - punk parody musical seeking Actor for workshop in November",
-          "url": "https://playbill.com/job/new-romantasy-pop-punk-parody-musical-seeking-actor-for-workshop-in-november/02d65bec-0406-4978-b213-d2938edbbf5a",
-          "source": "playbill.com",
-          "publishedAt": "2026-08-30T14:45:00Z",
-          "polarity": 0.0504,
+          "id": "1486bb3850724126",
+          "storyClusterId": "story-002",
+          "title": "World launders enough money to buy every person on earth laptop : CJI Surya Kant",
+          "url": "https://www.hindustantimes.com/india-news/world-launders-enough-money-to-buy-every-person-on-earth-laptop-cji-surya-kant-101788149187609.html",
+          "source": "hindustantimes.com",
+          "publishedAt": "2026-08-31T06:45:00Z",
+          "polarity": 0.0565,
           "sentiment": "Neutral / mixed",
           "publisherCount": 1
         },
         {
-          "id": "4b666d696236c850",
-          "storyClusterId": "story-002",
-          "title": "Kingfisher PLC ( OTCMKTS : KGFHY ) Short Interest Update",
-          "url": "https://www.themarketsdaily.com/2026/08/30/kingfisher-plc-otcmktskgfhy-short-interest-update.html",
-          "source": "themarketsdaily.com",
-          "publishedAt": "2026-08-30T15:45:00Z",
-          "polarity": -0.0109,
+          "id": "82912481708b20ce",
+          "storyClusterId": "story-001",
+          "title": "Top 5 Dramas On Viki In August 2026",
+          "url": "https://www.soompi.com/article/1865543wpp/top-5-dramas-on-viki-in-august-2026",
+          "source": "soompi.com",
+          "publishedAt": "2026-08-31T05:45:00Z",
+          "polarity": -0.0127,
           "sentiment": "Neutral / mixed",
           "publisherCount": 1
         }
@@ -2666,7 +2914,7 @@
       "companyName": "Land Securities Group PLC",
       "ticker": "LAND.L",
       "slug": "land-securities",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.2,
@@ -2692,47 +2940,33 @@
       "companyName": "Mondi PLC",
       "ticker": "MNDI.L",
       "slug": "mondi",
-      "date": "2026-08-30",
-      "dailyScore": 55.7,
-      "dailyLabel": "Slightly positive",
-      "rollingScore": 51.4,
-      "confidence": 16.7,
+      "date": "2026-08-31",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 51.3,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": 5.5,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 16.7",
-          "evidenceArticleIds": [
-            "39aec6074308f8a8"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "39aec6074308f8a8",
-          "storyClusterId": "story-001",
-          "title": "Mondi unveils laser - marked flexible e - commerce packaging concept",
-          "url": "https://www.premiumbeautynews.com/en/mondi-unveils-laser-marked,28096",
-          "source": "premiumbeautynews.com",
-          "publishedAt": "2026-08-30T21:00:00Z",
-          "polarity": 0.3449,
-          "sentiment": "Positive",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "reckitt-benckiser": {
       "companyName": "Reckitt Benckiser Group PLC",
       "ticker": "RKT.L",
       "slug": "reckitt-benckiser",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.2,
@@ -2758,7 +2992,7 @@
       "companyName": "SSE PLC",
       "ticker": "SSE.L",
       "slug": "sse",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,
@@ -2784,50 +3018,50 @@
       "companyName": "Taylor Wimpey PLC",
       "ticker": "TW.L",
       "slug": "taylor-wimpey",
-      "date": "2026-08-30",
-      "dailyScore": 59.0,
+      "date": "2026-08-31",
+      "dailyScore": 59.6,
       "dailyLabel": "Slightly positive",
-      "rollingScore": 50.3,
-      "confidence": 22.8,
+      "rollingScore": 51.5,
+      "confidence": 31.5,
       "confidenceBand": "low",
       "coverageStatus": "ok",
       "storyCount": 2,
       "sourceCount": 2,
-      "changeFromPreviousScoredDay": 24.8,
+      "changeFromPreviousScoredDay": 0.6,
       "flags": [
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 22.8",
+          "detail": "Confidence is 31.5",
           "evidenceArticleIds": [
-            "b99a6a17eca6259d",
-            "ef1635eb890dba77"
+            "009fd0a2036dd820",
+            "e61648b46da6fc72"
           ]
         }
       ],
       "topStories": [
         {
-          "id": "b99a6a17eca6259d",
+          "id": "009fd0a2036dd820",
           "storyClusterId": "story-001",
-          "title": "The Roebuck Inn near A49 Brimfield reopens with new tenants",
-          "url": "https://www.ludlowadvertiser.co.uk/news/26489036.roebuck-inn-near-a49-brimfield-reopens-new-tenants",
-          "source": "ludlowadvertiser.co.uk",
-          "publishedAt": "2026-08-30T04:45:00Z",
-          "polarity": 0.6685,
+          "title": "Evesham Bowling Club gets £500 boost from Taylor Wimpey",
+          "url": "https://www.eveshamjournal.co.uk/news/26502151.evesham-bowling-club-gets-500-boost-taylor-wimpey",
+          "source": "eveshamjournal.co.uk",
+          "publishedAt": "2026-08-31T08:45:00Z",
+          "polarity": 0.9011,
           "sentiment": "Very positive",
           "publisherCount": 1
         },
         {
-          "id": "ef1635eb890dba77",
+          "id": "e61648b46da6fc72",
           "storyClusterId": "story-002",
-          "title": "Test Valley decision on 1 , 600 - home Finkley Road development",
-          "url": "https://www.andoveradvertiser.co.uk/news/26504481.test-valley-decision-1-600-home-finkley-road-development",
-          "source": "andoveradvertiser.co.uk",
-          "publishedAt": "2026-08-30T06:45:00Z",
-          "polarity": 0.0504,
-          "sentiment": "Neutral / mixed",
+          "title": "Eight months of roadworks near Wadham School in Crewkerne | Somerset County Gazette",
+          "url": "https://www.somersetcountygazette.co.uk/news/26506183.eight-months-roadworks-near-wadham-school-crewkerne",
+          "source": "somersetcountygazette.co.uk",
+          "publishedAt": "2026-08-31T11:45:00Z",
+          "polarity": -0.1363,
+          "sentiment": "Slightly negative",
           "publisherCount": 1
         }
       ]
@@ -2836,71 +3070,71 @@
       "companyName": "Tesco PLC",
       "ticker": "TSCO.L",
       "slug": "tesco",
-      "date": "2026-08-30",
-      "dailyScore": 42.6,
-      "dailyLabel": "Slightly negative",
-      "rollingScore": 45.3,
-      "confidence": 60.5,
+      "date": "2026-08-31",
+      "dailyScore": 51.2,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 46.6,
+      "confidence": 58.3,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 29,
-      "sourceCount": 30,
-      "changeFromPreviousScoredDay": 3.4,
+      "storyCount": 11,
+      "sourceCount": 11,
+      "changeFromPreviousScoredDay": 8.6,
       "flags": [],
       "topStories": [
         {
-          "id": "f0fa9d791eec6b6c",
-          "storyClusterId": "story-017",
-          "title": "Major chain shop closes all united kingdom stores after 40 years in huge high street blow",
-          "url": "https://www.dailystar.co.uk/news/latest-news/major-chain-shop-closes-uk-37608183",
-          "source": "dailystar.co.uk",
-          "publishedAt": "2026-08-30T13:00:00Z",
-          "polarity": -0.9306,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "260463fe5a6e748b",
-          "storyClusterId": "story-014",
-          "title": "Road works to cause delays across the BCP area this week",
-          "url": "https://www.bournemouthecho.co.uk/news/26504771.road-works-cause-delays-across-bcp-area-week",
-          "source": "bournemouthecho.co.uk",
-          "publishedAt": "2026-08-30T08:15:00Z",
-          "polarity": -0.9258,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "53655390d2315692",
+          "id": "7f1759496fae92a3",
           "storyClusterId": "story-001",
-          "title": "UK corner shop chain to close all stores as it plunges into liquidation",
-          "url": "https://www.mirror.co.uk/news/uk-news/uk-corner-shop-liquidation-premier-37607686",
-          "source": "mirror.co.uk",
-          "publishedAt": "2026-08-30T01:00:00Z",
-          "polarity": -0.9164,
+          "title": "Director Daniel Lundh signs to Havent You Done Well for commercial representation – Campaign Brief",
+          "url": "https://campaignbrief.com/director-daniel-lundh-signs-to-havent-you-done-well-for-commercial-representation",
+          "source": "campaignbrief.com",
+          "publishedAt": "2026-08-31T05:00:00Z",
+          "polarity": 0.8026,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "e3a4f89f3a4b460e",
+          "storyClusterId": "story-011",
+          "title": "Reaction after man sustains head injury in attack near Tesco",
+          "url": "https://www.gazette-news.co.uk/news/26508655.reaction-man-sustains-head-injury-attack-near-tesco",
+          "source": "gazette-news.co.uk",
+          "publishedAt": "2026-08-31T20:00:00Z",
+          "polarity": -0.7978,
           "sentiment": "Very negative",
           "publisherCount": 1
         },
         {
-          "id": "e9b564bb7eb73db9",
-          "storyClusterId": "story-013",
-          "title": "Three supermarkets slash price of kitchen staple as cheapest store changes again",
-          "url": "https://www.manchestereveningnews.co.uk/whats-on/shopping/three-supermarkets-slash-price-kitchen-34525539",
-          "source": "manchestereveningnews.co.uk",
-          "publishedAt": "2026-08-30T08:00:00Z",
-          "polarity": -0.8752,
+          "id": "e3127b254c89f066",
+          "storyClusterId": "story-006",
+          "title": "Thief steals nine bottles of vodka and 10 steaks in Musselburgh",
+          "url": "https://www.eastlothiancourier.com/news/26491605.thief-steals-nine-bottles-vodka-10-steaks-musselburgh",
+          "source": "eastlothiancourier.com",
+          "publishedAt": "2026-08-31T07:15:00Z",
+          "polarity": -0.7231,
           "sentiment": "Very negative",
           "publisherCount": 1
         },
         {
-          "id": "a00fdbfa7bb95925",
-          "storyClusterId": "story-024",
-          "title": "Mobile signal blackout in Arlesford sparks resident anger",
-          "url": "https://www.hampshirechronicle.co.uk/news/26493386.mobile-signal-blackout-arlesford-sparks-resident-anger",
-          "source": "hampshirechronicle.co.uk",
-          "publishedAt": "2026-08-30T16:30:00Z",
-          "polarity": -0.8376,
-          "sentiment": "Very negative",
+          "id": "f5caa8150de7e573",
+          "storyClusterId": "story-010",
+          "title": "Charming Cheshire pub getting six - figure refurbishment",
+          "url": "https://www.liverpoolecho.co.uk/whats-on/whats-on-news/charming-cheshire-pub-getting-six-34533713",
+          "source": "liverpoolecho.co.uk",
+          "publishedAt": "2026-08-31T10:15:00Z",
+          "polarity": 0.2918,
+          "sentiment": "Positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "2aeceac281dd849a",
+          "storyClusterId": "story-007",
+          "title": "Tesco makes huge change to Clubcard points for EV drivers",
+          "url": "https://www.express.co.uk/finance/personalfinance/2243176/tesco-makes-huge-change-clubcard",
+          "source": "express.co.uk",
+          "publishedAt": "2026-08-31T07:45:00Z",
+          "polarity": 0.2157,
+          "sentiment": "Positive",
           "publisherCount": 1
         }
       ]
@@ -2909,7 +3143,7 @@
       "companyName": "Unite Group PLC",
       "ticker": "UTG.L",
       "slug": "unite",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,
@@ -2935,329 +3169,10 @@
       "companyName": "Berkeley Group Holdings PLC",
       "ticker": "BKG.L",
       "slug": "berkeley",
-      "date": "2026-08-30",
-      "dailyScore": 57.6,
-      "dailyLabel": "Slightly positive",
-      "rollingScore": 50.5,
-      "confidence": 17.4,
-      "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": 9.1,
-      "flags": [
-        {
-          "type": "low_confidence",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Confidence is 17.4",
-          "evidenceArticleIds": [
-            "f6efb6a9f100bcac"
-          ]
-        }
-      ],
-      "topStories": [
-        {
-          "id": "f6efb6a9f100bcac",
-          "storyClusterId": "story-001",
-          "title": "The Berkeley Group ( BKGFF ) versus Its Rivals Head to Head Review",
-          "url": "https://www.themarketsdaily.com/2026/08/30/the-berkeley-group-bkgff-versus-its-rivals-head-to-head-review.html",
-          "source": "themarketsdaily.com",
-          "publishedAt": "2026-08-30T14:45:00Z",
-          "polarity": 0.458,
-          "sentiment": "Positive",
-          "publisherCount": 1
-        }
-      ]
-    },
-    "astrazeneca": {
-      "companyName": "AstraZeneca",
-      "ticker": "AZN.L",
-      "slug": "astrazeneca",
-      "date": "2026-08-30",
-      "dailyScore": 56.9,
-      "dailyLabel": "Slightly positive",
-      "rollingScore": 54.1,
-      "confidence": 33.6,
-      "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 3,
-      "sourceCount": 3,
-      "changeFromPreviousScoredDay": 8.8,
-      "flags": [
-        {
-          "type": "low_confidence",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Confidence is 33.6",
-          "evidenceArticleIds": [
-            "57445cab143a3cc9",
-            "def38f7a028ccd2b",
-            "3f39f115ce29836e"
-          ]
-        }
-      ],
-      "topStories": [
-        {
-          "id": "57445cab143a3cc9",
-          "storyClusterId": "story-001",
-          "title": "FDA approves Lisraya as first oral drug for dermatomyositis",
-          "url": "https://www.healio.com/news/dermatology/20260828/fda-approves-lisraya-as-first-oral-drug-for-dermatomyositis",
-          "source": "healio.com",
-          "publishedAt": "2026-08-30T01:15:00Z",
-          "polarity": 0.6901,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "def38f7a028ccd2b",
-          "storyClusterId": "story-002",
-          "title": "Van ECK Associates Corp Sells 4 , 827 Shares of Amgen Inc . $AMGN",
-          "url": "https://www.themarketsdaily.com/2026/08/30/van-eck-associates-corp-sells-4827-shares-of-amgen-inc-amgn.html",
-          "source": "themarketsdaily.com",
-          "publishedAt": "2026-08-30T10:15:00Z",
-          "polarity": 0.0084,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        },
-        {
-          "id": "3f39f115ce29836e",
-          "storyClusterId": "story-003",
-          "title": "Biotech and Pharma Industry News | BioPharma Dive",
-          "url": "https://www.biopharmadive.com/?page=2&_sp=0f827bf8-0790-4d44-8c34-55904f3cdc42",
-          "source": "biopharmadive.com",
-          "publishedAt": "2026-08-30T12:15:00Z",
-          "polarity": -0.0052,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ]
-    },
-    "shell": {
-      "companyName": "Shell",
-      "ticker": "SHEL.L",
-      "slug": "shell",
-      "date": "2026-08-30",
-      "dailyScore": 49.9,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.7,
-      "confidence": 15.2,
-      "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": 0.8,
-      "flags": [
-        {
-          "type": "low_confidence",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Confidence is 15.2",
-          "evidenceArticleIds": [
-            "38e65b462f7eb857"
-          ]
-        }
-      ],
-      "topStories": [
-        {
-          "id": "38e65b462f7eb857",
-          "storyClusterId": "story-001",
-          "title": "THE SHELL NIGERIA FILES : 30 AUGUST 2026 – Royal Dutch Shell Plc . com",
-          "url": "https://royaldutchshellplc.com/2026/08/30/the-shell-nigeria-files-30-august-2026",
-          "source": "royaldutchshellplc.com",
-          "publishedAt": "2026-08-30T18:45:00Z",
-          "polarity": -0.0077,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ]
-    },
-    "hsbc": {
-      "companyName": "HSBC",
-      "ticker": "HSBA.L",
-      "slug": "hsbc",
-      "date": "2026-08-30",
-      "dailyScore": 53.1,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.6,
-      "confidence": 44.5,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "storyCount": 5,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": -2.1,
-      "flags": [],
-      "topStories": [
-        {
-          "id": "04cdad0b614a64bd",
-          "storyClusterId": "story-005",
-          "title": "Hsbc Holdings PLC Acquires New Stake in Sally Beauty Holdings , Inc . $SBH",
-          "url": "https://www.themarketsdaily.com/2026/08/30/hsbc-holdings-plc-acquires-new-stake-in-sally-beauty-holdings-inc-sbh.html",
-          "source": "themarketsdaily.com",
-          "publishedAt": "2026-08-30T10:30:00Z",
-          "polarity": 0.2152,
-          "sentiment": "Positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "8be73fadda4b8638",
-          "storyClusterId": "story-001",
-          "title": "Hsbc Holdings PLC Buys Shares of 173 , 034 American Assets Trust , Inc . $AAT",
-          "url": "https://www.themarketsdaily.com/2026/08/30/hsbc-holdings-plc-buys-shares-of-173034-american-assets-trust-inc-aat.html",
-          "source": "themarketsdaily.com",
-          "publishedAt": "2026-08-30T09:30:00Z",
-          "polarity": 0.1219,
-          "sentiment": "Slightly positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "5e1564df22b99949",
-          "storyClusterId": "story-004",
-          "title": "Hsbc Holdings PLC Buys Shares of 43 , 615 HealthEquity , Inc . $HQY",
-          "url": "https://www.themarketsdaily.com/2026/08/30/hsbc-holdings-plc-buys-shares-of-43615-healthequity-inc-hqy.html",
-          "source": "themarketsdaily.com",
-          "publishedAt": "2026-08-30T10:00:00Z",
-          "polarity": 0.0639,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        },
-        {
-          "id": "5badf7ef87e5f3ec",
-          "storyClusterId": "story-003",
-          "title": "45 , 660 Shares in Travel + Leisure Co . $TNL Purchased by Hsbc Holdings PLC",
-          "url": "https://www.themarketsdaily.com/2026/08/30/45660-shares-in-travel-leisure-co-tnl-purchased-by-hsbc-holdings-plc.html",
-          "source": "themarketsdaily.com",
-          "publishedAt": "2026-08-30T10:00:00Z",
-          "polarity": 0.0246,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        },
-        {
-          "id": "c6927a9acc6c2dd9",
-          "storyClusterId": "story-002",
-          "title": "113 , 831 Shares in Openlane $OPLN Acquired by Hsbc Holdings PLC",
-          "url": "https://www.themarketsdaily.com/2026/08/30/113831-shares-in-openlane-opln-acquired-by-hsbc-holdings-plc.html",
-          "source": "themarketsdaily.com",
-          "publishedAt": "2026-08-30T10:00:00Z",
-          "polarity": 0.0041,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ]
-    },
-    "unilever": {
-      "companyName": "Unilever",
-      "ticker": "ULVR.L",
-      "slug": "unilever",
-      "date": "2026-08-30",
-      "dailyScore": 34.0,
-      "dailyLabel": "Negative",
-      "rollingScore": 45.3,
-      "confidence": 57.9,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "storyCount": 8,
-      "sourceCount": 8,
-      "changeFromPreviousScoredDay": -9.5,
-      "flags": [
-        {
-          "type": "bad_press",
-          "direction": "negative",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "Daily press score is 34.0",
-          "evidenceArticleIds": [
-            "677d14cd8b4e28d6",
-            "5694e5c209de37bd",
-            "d24f122ee2b7f12f",
-            "10e07173bda084d3",
-            "422b37ba4f709817"
-          ]
-        },
-        {
-          "type": "high_disagreement",
-          "direction": "mixed",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "Positive and negative coverage is unusually dispersed",
-          "evidenceArticleIds": [
-            "677d14cd8b4e28d6",
-            "5694e5c209de37bd",
-            "d24f122ee2b7f12f",
-            "10e07173bda084d3",
-            "422b37ba4f709817"
-          ]
-        }
-      ],
-      "topStories": [
-        {
-          "id": "677d14cd8b4e28d6",
-          "storyClusterId": "story-006",
-          "title": "Top 7 Firms Lose ₹1 . 13 Lakh Crore In Mcap , Airtel & Reliance Take Biggest Hit",
-          "url": "https://www.freepressjournal.in/business/top-7-firms-lose-113-lakh-crore-in-mcap-airtel-reliance-take-biggest-hit",
-          "source": "freepressjournal.in",
-          "publishedAt": "2026-08-30T08:15:00Z",
-          "polarity": -0.9516,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "5694e5c209de37bd",
-          "storyClusterId": "story-003",
-          "title": "Market cap : 7 of top - 10 most - valued firms lose ₹1 . 13 lakh cr ; Airtel , Reliance hit hardest",
-          "url": "https://www.thehindubusinessline.com/markets/market-cap-7-of-top-10-most-valued-firms-lose-113-lakh-cr-airtel-reliance-hit-hardest/article71407066.ece",
-          "source": "thehindubusinessline.com",
-          "publishedAt": "2026-08-30T07:45:00Z",
-          "polarity": -0.9365,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "d24f122ee2b7f12f",
-          "storyClusterId": "story-007",
-          "title": "Mcap of 7 of top - 10 most - valued firms falls by ₹1 . 13 lakh crore ; Bharti Airtel , RIL biggest laggards",
-          "url": "https://www.livemint.com/market/stock-market-news/mcap-of-7-of-top-10-most-valued-firms-falls-by-1-13-lakh-crore-bharti-airtel-ril-biggest-laggards-11788075534827.html",
-          "source": "livemint.com",
-          "publishedAt": "2026-08-30T10:15:00Z",
-          "polarity": -0.9312,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "10e07173bda084d3",
-          "storyClusterId": "story-002",
-          "title": "Mcap of 7 of top 10 most valued firms erodes ₹1 . 13 trn , Airtel worst hit",
-          "url": "https://www.business-standard.com/markets/news/mcap-of-7-of-top-10-most-valued-firms-erodes-1-13-trn-airtel-worst-hit-126083000140_1.html",
-          "source": "business-standard.com",
-          "publishedAt": "2026-08-30T07:15:00Z",
-          "polarity": -0.7239,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "422b37ba4f709817",
-          "storyClusterId": "story-001",
-          "title": "Beauty in the motherland 2026 set to advance Africa",
-          "url": "https://thesun.ng/beauty-in-the-motherland-2026-set-to-advance-africas-beauty-industry",
-          "source": "thesun.ng",
-          "publishedAt": "2026-08-30T00:00:00Z",
-          "polarity": 0.6858,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        }
-      ]
-    },
-    "relx": {
-      "companyName": "RELX",
-      "ticker": "REL.L",
-      "slug": "relx",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 48.2,
+      "rollingScore": 50.5,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -3276,60 +3191,225 @@
       ],
       "topStories": []
     },
-    "british-american-tobacco": {
-      "companyName": "British American Tobacco",
-      "ticker": "BATS.L",
-      "slug": "british-american-tobacco",
-      "date": "2026-08-30",
-      "dailyScore": 52.3,
+    "astrazeneca": {
+      "companyName": "AstraZeneca",
+      "ticker": "AZN.L",
+      "slug": "astrazeneca",
+      "date": "2026-08-31",
+      "dailyScore": 50.7,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.2,
-      "confidence": 15.7,
-      "confidenceBand": "low",
+      "rollingScore": 53.3,
+      "confidence": 42.8,
+      "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": -7.3,
+      "storyCount": 3,
+      "sourceCount": 3,
+      "changeFromPreviousScoredDay": -6.2,
+      "flags": [],
+      "topStories": [
+        {
+          "id": "45e5c1478f86857f",
+          "storyClusterId": "story-003",
+          "title": "Contrasting AstraZeneca ( AZNCF ) & Its Competitors",
+          "url": "https://www.tickerreport.com/banking-finance/13567683/contrasting-astrazeneca-azncf-its-competitors.html",
+          "source": "tickerreport.com",
+          "publishedAt": "2026-08-31T14:15:00Z",
+          "polarity": 0.0358,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "1f269921300e6bfe",
+          "storyClusterId": "story-002",
+          "title": "Reviewing AstraZeneca ( AZNCF ) & The Competition",
+          "url": "https://www.themarketsdaily.com/2026/08/31/reviewing-astrazeneca-azncf-the-competition.html",
+          "source": "themarketsdaily.com",
+          "publishedAt": "2026-08-31T12:30:00Z",
+          "polarity": 0.0354,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "1c1938249d952da0",
+          "storyClusterId": "story-001",
+          "title": "Biotech and Pharma Industry News | BioPharma Dive",
+          "url": "https://www.biopharmadive.com/?page=2&_sp=9b02668e-4412-4f09-afb2-4ee9c64ff1dd",
+          "source": "biopharmadive.com",
+          "publishedAt": "2026-08-31T11:45:00Z",
+          "polarity": -0.0052,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
+    },
+    "shell": {
+      "companyName": "Shell",
+      "ticker": "SHEL.L",
+      "slug": "shell",
+      "date": "2026-08-31",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 49.7,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 15.7",
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
+        }
+      ],
+      "topStories": []
+    },
+    "hsbc": {
+      "companyName": "HSBC",
+      "ticker": "HSBA.L",
+      "slug": "hsbc",
+      "date": "2026-08-31",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 50.5,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
+      "flags": [
+        {
+          "type": "no_coverage",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
+        }
+      ],
+      "topStories": []
+    },
+    "unilever": {
+      "companyName": "Unilever",
+      "ticker": "ULVR.L",
+      "slug": "unilever",
+      "date": "2026-08-31",
+      "dailyScore": 51.3,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 46.6,
+      "confidence": 57.3,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "storyCount": 8,
+      "sourceCount": 8,
+      "changeFromPreviousScoredDay": 17.3,
+      "flags": [
+        {
+          "type": "sentiment_jump",
+          "direction": "positive",
+          "severity": "high",
+          "status": "calculated",
+          "detail": "Daily score increased by 17.3 points",
           "evidenceArticleIds": [
-            "cc3c15a208681d32"
+            "3e0203e9b8e4fe44",
+            "020d836341b6d795",
+            "594bed5dd23f7987",
+            "2ba077535f2e315c",
+            "507ebb91db7d0291"
+          ]
+        },
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "3e0203e9b8e4fe44",
+            "020d836341b6d795",
+            "594bed5dd23f7987",
+            "2ba077535f2e315c",
+            "507ebb91db7d0291"
           ]
         }
       ],
       "topStories": [
         {
-          "id": "cc3c15a208681d32",
+          "id": "3e0203e9b8e4fe44",
+          "storyClusterId": "story-007",
+          "title": "Stock markets decline amid renewed tensions in West Asia , higher crude oil prices",
+          "url": "https://www.orissapost.com/stock-markets-decline-amid-renewed-tensions-in-west-asia-higher-crude-oil-prices",
+          "source": "orissapost.com",
+          "publishedAt": "2026-08-31T11:45:00Z",
+          "polarity": -0.9511,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "020d836341b6d795",
+          "storyClusterId": "story-006",
+          "title": "FMCG stocks HUL , ITC , Dabur , Emami , Godrej Consumer hit 52 - week lows",
+          "url": "https://www.business-standard.com/markets/news/fmcg-stocks-hul-itc-dabur-emami-godrej-consumer-hit-52-week-lows-126083100611_1.html",
+          "source": "business-standard.com",
+          "publishedAt": "2026-08-31T10:15:00Z",
+          "polarity": -0.9469,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "594bed5dd23f7987",
+          "storyClusterId": "story-002",
+          "title": "Unilever seeks higher valuation multiple through beauty and personal care focus",
+          "url": "https://cyprus-mail.com/2026/08/31/unilever-seeks-higher-valuation-multiple-through-beauty-and-personal-care-focus",
+          "source": "cyprus-mail.com",
+          "publishedAt": "2026-08-31T04:45:00Z",
+          "polarity": 0.5939,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "2ba077535f2e315c",
           "storyClusterId": "story-001",
-          "title": "British American Tobacco Dividend Income : Can BATS Fund a £6 , 622 Annual Payout ?",
-          "url": "https://www.financial-news.co.uk/british-american-tobacco-dividend-income-can-bats-fund-a-6622-annual-payout",
-          "source": "financial-news.co.uk",
-          "publishedAt": "2026-08-30T15:45:00Z",
-          "polarity": 0.1372,
-          "sentiment": "Slightly positive",
+          "title": "Purposeful Leadership and Empathy Everywhere in strategic partnership to advance human - centred leadership",
+          "url": "https://www.ft.lk/hr/Purposeful-Leadership-and-Empathy-Everywhere-in-strategic-partnership-to-advance-human-centred-leadership/47-796560",
+          "source": "ft.lk",
+          "publishedAt": "2026-08-30T23:30:00Z",
+          "polarity": 0.5297,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "507ebb91db7d0291",
+          "storyClusterId": "story-008",
+          "title": "4 Battle - Tested Consumer Staples Stocks That Keep Raising Their Dividends",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/4-battle-tested-consumer-staples-164718819.html",
+          "source": "finance.yahoo.com",
+          "publishedAt": "2026-08-31T17:45:00Z",
+          "polarity": 0.4745,
+          "sentiment": "Positive",
           "publisherCount": 1
         }
       ]
     },
-    "gsk": {
-      "companyName": "GSK",
-      "ticker": "GSK.L",
-      "slug": "gsk",
-      "date": "2026-08-30",
+    "relx": {
+      "companyName": "RELX",
+      "ticker": "REL.L",
+      "slug": "relx",
+      "date": "2026-08-31",
       "dailyScore": 51.0,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 51.9,
+      "rollingScore": 48.7,
       "confidence": 10.0,
       "confidenceBand": "low",
       "coverageStatus": "ok",
       "storyCount": 1,
       "sourceCount": 1,
-      "changeFromPreviousScoredDay": 12.6,
+      "changeFromPreviousScoredDay": 4.7,
       "flags": [
         {
           "type": "low_confidence",
@@ -3338,20 +3418,159 @@
           "status": "calculated",
           "detail": "Confidence is 10.0",
           "evidenceArticleIds": [
-            "12f65d7ef418a06a"
+            "078327e5a9c9b245"
           ]
         }
       ],
       "topStories": [
         {
-          "id": "12f65d7ef418a06a",
+          "id": "078327e5a9c9b245",
           "storyClusterId": "story-001",
-          "title": "What Do Moderna ( MRNA ) FDA Vaccine Approvals Mean For Its Respiratory Push ?",
-          "url": "https://finance.yahoo.com/healthcare/articles/moderna-mrna-fda-vaccine-approvals-030933789.html",
-          "source": "finance.yahoo.com",
-          "publishedAt": "2026-08-30T04:15:00Z",
+          "title": "Law Debenture : the star of the united kingdom income sector",
+          "url": "https://moneyweek.com/investments/investment-trusts/law-debenture-star-of-uk-income-sector",
+          "source": "moneyweek.com",
+          "publishedAt": "2026-08-31T08:30:00Z",
           "polarity": 0.0578,
           "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
+    },
+    "british-american-tobacco": {
+      "companyName": "British American Tobacco",
+      "ticker": "BATS.L",
+      "slug": "british-american-tobacco",
+      "date": "2026-08-31",
+      "dailyScore": 45.1,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.5,
+      "confidence": 24.6,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "storyCount": 2,
+      "sourceCount": 2,
+      "changeFromPreviousScoredDay": -7.2,
+      "flags": [
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "da1a1e19fa638f89",
+            "f9905f4f1c6f5901"
+          ]
+        },
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 24.6",
+          "evidenceArticleIds": [
+            "da1a1e19fa638f89",
+            "f9905f4f1c6f5901"
+          ]
+        }
+      ],
+      "topStories": [
+        {
+          "id": "da1a1e19fa638f89",
+          "storyClusterId": "story-002",
+          "title": "Consultants head for a showdown with their own clients as AI upends industry",
+          "url": "https://www.irishtimes.com/business/2026/08/31/consultants-head-for-a-showdown-with-their-own-clients",
+          "source": "irishtimes.com",
+          "publishedAt": "2026-08-31T12:00:00Z",
+          "polarity": -0.8285,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "f9905f4f1c6f5901",
+          "storyClusterId": "story-001",
+          "title": "ASA 2026 convenes global coalition to accelerate Africa food power play",
+          "url": "https://www.premiumtimesng.com/promoted/906449-asa-2026-convenes-global-coalition-to-accelerate-africas-food-power-play.html",
+          "source": "premiumtimesng.com",
+          "publishedAt": "2026-08-31T12:00:00Z",
+          "polarity": 0.434,
+          "sentiment": "Positive",
+          "publisherCount": 1
+        }
+      ]
+    },
+    "gsk": {
+      "companyName": "GSK",
+      "ticker": "GSK.L",
+      "slug": "gsk",
+      "date": "2026-08-31",
+      "dailyScore": 60.9,
+      "dailyLabel": "Positive",
+      "rollingScore": 53.1,
+      "confidence": 44.6,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "storyCount": 4,
+      "sourceCount": 4,
+      "changeFromPreviousScoredDay": 9.9,
+      "flags": [
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "885b039b506b02d1",
+            "40a550b0d5908da1",
+            "d1ccba9b3974fcd3",
+            "5057a6989bee6920"
+          ]
+        }
+      ],
+      "topStories": [
+        {
+          "id": "885b039b506b02d1",
+          "storyClusterId": "story-002",
+          "title": "Pumecitinib Spray May Ease Seasonal Allergy Symptoms",
+          "url": "https://www.medscape.com/viewarticle/pumecitinib-nasal-spray-may-improve-symptoms-moderate-severe-2026a1000un7",
+          "source": "medscape.com",
+          "publishedAt": "2026-08-31T08:45:00Z",
+          "polarity": 0.8345,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "40a550b0d5908da1",
+          "storyClusterId": "story-004",
+          "title": "Mahajan Imaging Labs partners with Neuberg Diagnostics to expand pathology services",
+          "url": "https://news.webindia123.com/news/Articles/India/20260831/4493037.html",
+          "source": "news.webindia123.com",
+          "publishedAt": "2026-08-31T19:15:00Z",
+          "polarity": 0.7935,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "d1ccba9b3974fcd3",
+          "storyClusterId": "story-001",
+          "title": "Careers expert Jimmy McLoughlin says  we risk a lost generation  as he warns of crisis | united kingdom | News",
+          "url": "https://www.express.co.uk/news/uk/2243129/jimmy-mcloughlin-jobs-of-the-future-podcast",
+          "source": "express.co.uk",
+          "publishedAt": "2026-08-31T07:45:00Z",
+          "polarity": -0.7047,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "5057a6989bee6920",
+          "storyClusterId": "story-003",
+          "title": "Jemperli accepted for priority review by US FDA",
+          "url": "https://pharmatimes.com/news/jemperli-accepted-for-priority-review-by-us-fda",
+          "source": "pharmatimes.com",
+          "publishedAt": "2026-08-31T12:15:00Z",
+          "polarity": 0.384,
+          "sentiment": "Positive",
           "publisherCount": 1
         }
       ]
@@ -3360,10 +3579,10 @@
       "companyName": "London Stock Exchange Group",
       "ticker": "LSEG.L",
       "slug": "lseg",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 51.3,
+      "rollingScore": 51.2,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -3386,49 +3605,70 @@
       "companyName": "Diageo",
       "ticker": "DGE.L",
       "slug": "diageo",
-      "date": "2026-08-30",
-      "dailyScore": 56.7,
-      "dailyLabel": "Slightly positive",
-      "rollingScore": 46.3,
-      "confidence": 34.3,
-      "confidenceBand": "low",
+      "date": "2026-08-31",
+      "dailyScore": 54.7,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 47.9,
+      "confidence": 47.3,
+      "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 2,
-      "sourceCount": 2,
-      "changeFromPreviousScoredDay": 22.7,
-      "flags": [
-        {
-          "type": "low_confidence",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Confidence is 34.3",
-          "evidenceArticleIds": [
-            "b80fd6ec75397a04",
-            "46de8de2df36c675"
-          ]
-        }
-      ],
+      "storyCount": 5,
+      "sourceCount": 5,
+      "changeFromPreviousScoredDay": -2.0,
+      "flags": [],
       "topStories": [
         {
-          "id": "b80fd6ec75397a04",
-          "storyClusterId": "story-001",
-          "title": "County Cork breeders wins Best Junior Cow and Best Ebi At 2026 Diageo Baileys Irish Champion Dairy Cow",
-          "url": "https://avondhupress.ie/county-cork-breeders-wins-best-junior-cow-and-best-ebi-at-2026-diageo-baileys-irish-champion-dairy-cow",
-          "source": "avondhupress.ie",
-          "publishedAt": "2026-08-30T10:00:00Z",
-          "polarity": 0.5131,
+          "id": "dede6af6efcb401d",
+          "storyClusterId": "story-003",
+          "title": "Haddington - Victoria Inn aiming for national awards success",
+          "url": "https://www.eastlothiancourier.com/news/26483971.haddington---victoria-inn-aiming-national-awards-success",
+          "source": "eastlothiancourier.com",
+          "publishedAt": "2026-08-31T12:15:00Z",
+          "polarity": 0.7436,
           "sentiment": "Very positive",
           "publisherCount": 1
         },
         {
-          "id": "46de8de2df36c675",
+          "id": "ab6d9063b6a943a7",
+          "storyClusterId": "story-004",
+          "title": "Two boring industries are telling the same story : companies prepared for more demand , and the demand never showed up .",
+          "url": "https://www.investmentwatchblog.com/two-boring-industries-are-telling-the-same-story-companies-prepared-for-more-demand-and-the-demand-never-showed-up",
+          "source": "investmentwatchblog.com",
+          "publishedAt": "2026-08-31T14:15:00Z",
+          "polarity": -0.1209,
+          "sentiment": "Slightly negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "628e9614d2cf34be",
           "storyClusterId": "story-002",
-          "title": "Analyzing Diageo ( DGEAF ) & Its Rivals",
-          "url": "https://www.themarketsdaily.com/2026/08/30/analyzing-diageo-dgeaf-its-rivals.html",
+          "title": "Critical Analysis : Diageo ( DGEAF ) & The Competition",
+          "url": "https://www.themarketsdaily.com/2026/08/31/critical-analysis-diageo-dgeaf-the-competition.html",
           "source": "themarketsdaily.com",
-          "publishedAt": "2026-08-30T12:30:00Z",
-          "polarity": 0.0246,
+          "publishedAt": "2026-08-31T12:15:00Z",
+          "polarity": 0.0295,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "6543dd04097d7c35",
+          "storyClusterId": "story-001",
+          "title": "Guinness Cork Jazz Festival 2026 Programme to Launch Early September | TheCork . ie ( News & Entertainment )",
+          "url": "https://www.thecork.ie/2026/08/31/guinness-cork-jazz-festival-2026-programme-to-launch-early-september",
+          "source": "thecork.ie",
+          "publishedAt": "2026-08-31T11:45:00Z",
+          "polarity": 0.0106,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "995611bcc82e836c",
+          "storyClusterId": "story-005",
+          "title": "Shanken News Daily : Exclusive news and research on the wine , spirits and beer business",
+          "url": "https://www.shankennewsdaily.com/2026/08/31/40767/exclusive-u-s-spirits-market-projected-to-eke-out-1-volume-growth-this-year",
+          "source": "shankennewsdaily.com",
+          "publishedAt": "2026-08-31T20:00:00Z",
+          "polarity": 0.0003,
           "sentiment": "Neutral / mixed",
           "publisherCount": 1
         }
@@ -3438,87 +3678,72 @@
       "companyName": "Rio Tinto",
       "ticker": "RIO.L",
       "slug": "rio-tinto",
-      "date": "2026-08-30",
-      "dailyScore": 40.7,
-      "dailyLabel": "Slightly negative",
-      "rollingScore": 52.8,
-      "confidence": 53.8,
+      "date": "2026-08-31",
+      "dailyScore": 49.8,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 52.1,
+      "confidence": 54.6,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 13,
-      "sourceCount": 5,
-      "changeFromPreviousScoredDay": -24.0,
-      "flags": [
-        {
-          "type": "sentiment_drop",
-          "direction": "negative",
-          "severity": "high",
-          "status": "calculated",
-          "detail": "Daily score decreased by 24.0 points",
-          "evidenceArticleIds": [
-            "be206e8e492aeb60",
-            "2441848e35924873",
-            "1e07386fdc534621",
-            "cfd8b13dac23525d",
-            "04a3019ad36d2273"
-          ]
-        }
-      ],
+      "storyCount": 12,
+      "sourceCount": 10,
+      "changeFromPreviousScoredDay": 9.1,
+      "flags": [],
       "topStories": [
         {
-          "id": "be206e8e492aeb60",
-          "storyClusterId": "story-013",
-          "title": "Mark Hamill strikes back at Trump at Toronto Fan Expo",
-          "url": "https://calgarysun.com/entertainment/movies/mark-hamill-strikes-back-at-trump-at-torontos-fan-expo",
-          "source": "calgarysun.com",
-          "publishedAt": "2026-08-30T18:00:00Z",
-          "polarity": -0.7034,
+          "id": "7cd188e059300e2f",
+          "storyClusterId": "story-006",
+          "title": "Commonwealth Bank Shares Rise Nearly 2 Percent as Banks Lead ASX Higher on Rate Hike Expectations",
+          "url": "https://www.ibtimes.com.au/commonwealth-bank-leads-gains-amid-market-volatility-1874781",
+          "source": "ibtimes.com.au",
+          "publishedAt": "2026-08-31T07:45:00Z",
+          "polarity": 0.8925,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "0ce6a06e3f1047cb",
+          "storyClusterId": "story-012",
+          "title": "Some of Australia biggest companies are planning for an unbearable climate future",
+          "url": "https://theconversation.com/some-of-australias-biggest-companies-are-planning-for-an-unbearable-climate-future-290234",
+          "source": "theconversation.com",
+          "publishedAt": "2026-08-31T20:45:00Z",
+          "polarity": -0.823,
           "sentiment": "Very negative",
           "publisherCount": 1
         },
         {
-          "id": "2441848e35924873",
+          "id": "5cdc006c8f8e4696",
           "storyClusterId": "story-010",
-          "title": "Vale iron ore : Iron Ore Friday : Vale Sinks as China Holds",
-          "url": "https://www.riotimesonline.com/iron-ore-markets-latam-saturday-august-29-2026",
-          "source": "riotimesonline.com",
-          "publishedAt": "2026-08-30T07:45:00Z",
-          "polarity": -0.6178,
+          "title": "Iron - ore production set for further growth to 2030 – BMI",
+          "url": "https://www.miningweekly.com/article/iron-ore-production-set-for-further-growth-to-2030-bmi-2026-08-31",
+          "source": "miningweekly.com",
+          "publishedAt": "2026-08-31T12:15:00Z",
+          "polarity": 0.7957,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "04aed295945af56b",
+          "storyClusterId": "story-003",
+          "title": "Australian Market Trims Early Losses In Mid - market",
+          "url": "https://www.rttnews.com/story.aspx?Id=3686720",
+          "source": "rttnews.com",
+          "publishedAt": "2026-08-31T05:45:00Z",
+          "polarity": -0.5827,
           "sentiment": "Very negative",
           "publisherCount": 1
         },
         {
-          "id": "1e07386fdc534621",
-          "storyClusterId": "story-008",
-          "title": "Southwestern Ontario farm sector braces for tariff hit :  We cannot absorb 25 %",
-          "url": "https://torontosun.com/news/local-news/we-cannot-absorb-25-southwestern-ontario-farm-sector-braces-for-tariff-hit/wcm/52dbb99e-abd9-48c4-ac29-a9eca30796cc",
-          "source": "torontosun.com",
-          "publishedAt": "2026-08-30T04:45:00Z",
-          "polarity": -0.914,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "cfd8b13dac23525d",
+          "id": "8093d7c928fb8cda",
           "storyClusterId": "story-009",
-          "title": "Rio Tinto ( NYSE : RIO ) Cut to  Hold  at Erste Group Bank",
-          "url": "https://www.tickerreport.com/banking-finance/13565601/rio-tinto-nyserio-cut-to-hold-at-erste-group-bank.html",
-          "source": "tickerreport.com",
-          "publishedAt": "2026-08-30T06:00:00Z",
-          "polarity": -0.1873,
-          "sentiment": "Slightly negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "04a3019ad36d2273",
-          "storyClusterId": "story-004",
-          "title": "Our economy ? Now for the bad news",
-          "url": "https://torontosun.com/opinion/columnists/canada-economy-bad-news",
-          "source": "torontosun.com",
-          "publishedAt": "2026-08-30T00:00:00Z",
-          "polarity": -0.3488,
+          "title": "STOSSEL : Ditching net zero hasnt gone as promised",
+          "url": "https://calgarysun.com/opinion/columnists/stossel-ditching-net-zero-hasnt-gone-as-promised/wcm/9b487c47-7007-4075-b566-192206559618",
+          "source": "calgarysun.com",
+          "publishedAt": "2026-08-31T07:45:00Z",
+          "polarity": -0.3062,
           "sentiment": "Negative",
-          "publisherCount": 2
+          "publisherCount": 1
         }
       ]
     },
@@ -3526,38 +3751,38 @@
       "companyName": "Barclays",
       "ticker": "BARC.L",
       "slug": "barclays",
-      "date": "2026-08-30",
-      "dailyScore": 50.1,
+      "date": "2026-08-31",
+      "dailyScore": 45.4,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.5,
-      "confidence": 15.1,
+      "rollingScore": 49.8,
+      "confidence": 16.5,
       "confidenceBand": "low",
       "coverageStatus": "ok",
       "storyCount": 1,
       "sourceCount": 1,
-      "changeFromPreviousScoredDay": -1.3,
+      "changeFromPreviousScoredDay": -4.7,
       "flags": [
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 15.1",
+          "detail": "Confidence is 16.5",
           "evidenceArticleIds": [
-            "6e35a071dd8bd0fc"
+            "0f6e31c9d5e71f41"
           ]
         }
       ],
       "topStories": [
         {
-          "id": "6e35a071dd8bd0fc",
+          "id": "0f6e31c9d5e71f41",
           "storyClusterId": "story-001",
-          "title": "Bronstein , Gewirtz & Grossman , LLC Encourages Barclays PLC ( BCS ) Stockholders ...",
-          "url": "https://www.pr-inside.com/bronstein-gewirtz-grossman-llc-encourages-barclays-plc-bcs-stockholders-r5217588.htm",
+          "title": "Bronstein , Gewirtz & Grossman , LLC Is Investigating Barclays PLC ( BCS ) ...",
+          "url": "https://www.pr-inside.com/bronstein-gewirtz-grossman-llc-is-investigating-barclays-plc-bcs-r5217934.htm",
           "source": "pr-inside.com",
-          "publishedAt": "2026-08-30T17:45:00Z",
-          "polarity": 0.0086,
-          "sentiment": "Neutral / mixed",
+          "publishedAt": "2026-08-31T17:30:00Z",
+          "polarity": -0.2759,
+          "sentiment": "Negative",
           "publisherCount": 1
         }
       ]
@@ -3566,72 +3791,75 @@
       "companyName": "Experian",
       "ticker": "EXPN.L",
       "slug": "experian",
-      "date": "2026-08-30",
-      "dailyScore": 45.6,
+      "date": "2026-08-31",
+      "dailyScore": 54.6,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 48.4,
-      "confidence": 29.2,
+      "rollingScore": 49.4,
+      "confidence": 39.4,
       "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 2,
-      "sourceCount": 6,
-      "changeFromPreviousScoredDay": -2.1,
+      "storyCount": 4,
+      "sourceCount": 4,
+      "changeFromPreviousScoredDay": 9.0,
       "flags": [
-        {
-          "type": "cybersecurity_incident",
-          "direction": "negative",
-          "severity": "critical",
-          "status": "possible",
-          "evidenceArticleIds": [
-            "f44ffd616cce38ef"
-          ],
-          "sourceCount": 1
-        },
-        {
-          "type": "high_disagreement",
-          "direction": "mixed",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "Positive and negative coverage is unusually dispersed",
-          "evidenceArticleIds": [
-            "f44ffd616cce38ef",
-            "0a3fefffef493627"
-          ]
-        },
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 29.2",
+          "detail": "Confidence is 39.4",
           "evidenceArticleIds": [
-            "f44ffd616cce38ef",
-            "0a3fefffef493627"
+            "59a7dc3b8f704e9d",
+            "a976e6e224af1205",
+            "c927ecfc6de25274",
+            "e1e521b583af5dba"
           ]
         }
       ],
       "topStories": [
         {
-          "id": "f44ffd616cce38ef",
-          "storyClusterId": "story-002",
-          "title": "Healthcare data breach exposes 3 . 75M patient records | Fox Wilmington WSFX - TV",
-          "url": "https://foxwilmington.com/healthcare-data-breach-exposes-3-75m-patient-records",
-          "source": "foxwilmington.com",
-          "publishedAt": "2026-08-30T17:45:00Z",
-          "polarity": -0.7594,
-          "sentiment": "Very negative",
+          "id": "59a7dc3b8f704e9d",
+          "storyClusterId": "story-001",
+          "title": "Brazil black market for weight - loss drugs is booming . Smugglers are cashing in",
+          "url": "https://us.cnn.com/brazil-weight-loss-drugs-smuggling-latam-intl",
+          "source": "us.cnn.com",
+          "publishedAt": "2026-08-31T01:45:00Z",
+          "polarity": 0.4489,
+          "sentiment": "Positive",
           "publisherCount": 1
         },
         {
-          "id": "0a3fefffef493627",
-          "storyClusterId": "story-001",
-          "title": "Brazil black market for weight - loss drugs is booming . Smugglers are cashing in",
-          "url": "https://abc17news.com/news/national-world/cnn-world/2026/08/30/brazils-black-market-for-weight-loss-drugs-is-booming-smugglers-are-cashing-in",
-          "source": "abc17news.com",
-          "publishedAt": "2026-08-30T15:15:00Z",
-          "polarity": 0.4073,
-          "sentiment": "Positive",
-          "publisherCount": 5
+          "id": "a976e6e224af1205",
+          "storyClusterId": "story-003",
+          "title": "How to boost your credit score in 30 days ? ( 2027 guide )",
+          "url": "https://www.enenews.com/finance/how-to-boost-your-credit-score-in-30-days",
+          "source": "enenews.com",
+          "publishedAt": "2026-08-31T12:00:00Z",
+          "polarity": 0.1465,
+          "sentiment": "Slightly positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "c927ecfc6de25274",
+          "storyClusterId": "story-004",
+          "title": "How to get a car loan with bad credit",
+          "url": "https://finance.yahoo.com/news/car-loan-bad-credit-203049189.html",
+          "source": "finance.yahoo.com",
+          "publishedAt": "2026-08-31T20:45:00Z",
+          "polarity": -0.0517,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "e1e521b583af5dba",
+          "storyClusterId": "story-002",
+          "title": "Commerce Media Next Challenge Is Interoperability",
+          "url": "https://www.adweek.com/sponsored/commerce-medias-next-challenge-is-interoperability",
+          "source": "adweek.com",
+          "publishedAt": "2026-08-31T06:00:00Z",
+          "polarity": 0.0118,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
         }
       ]
     },
@@ -3665,7 +3893,7 @@
       "companyName": "DCC PLC",
       "ticker": "DCC.L",
       "slug": "dcc",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 49.7,
@@ -3691,7 +3919,7 @@
       "companyName": "Diploma PLC",
       "ticker": "DPLM.L",
       "slug": "diploma",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,
@@ -3717,7 +3945,7 @@
       "companyName": "Sage Group PLC",
       "ticker": "SGE.L",
       "slug": "sage",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,
@@ -3743,7 +3971,7 @@
       "companyName": "Weir Group PLC",
       "ticker": "WEIR.L",
       "slug": "weir",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.2,
@@ -3769,7 +3997,7 @@
       "companyName": "WPP PLC",
       "ticker": "WPP.L",
       "slug": "wpp",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 49.8,

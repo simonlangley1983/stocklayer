@@ -2778,6 +2778,75 @@
         }
       ],
       "changeFromPreviousScoredDay": -7.3
+    },
+    {
+      "date": "2026-08-31",
+      "dailyScore": 45.1,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.5,
+      "confidence": 24.6,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 2,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 1,
+      "dispersion": 0.6312,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "da1a1e19fa638f89",
+          "storyClusterId": "story-002",
+          "title": "Consultants head for a showdown with their own clients as AI upends industry",
+          "url": "https://www.irishtimes.com/business/2026/08/31/consultants-head-for-a-showdown-with-their-own-clients",
+          "source": "irishtimes.com",
+          "publishedAt": "2026-08-31T12:00:00Z",
+          "polarity": -0.8285,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "f9905f4f1c6f5901",
+          "storyClusterId": "story-001",
+          "title": "ASA 2026 convenes global coalition to accelerate Africa food power play",
+          "url": "https://www.premiumtimesng.com/promoted/906449-asa-2026-convenes-global-coalition-to-accelerate-africas-food-power-play.html",
+          "source": "premiumtimesng.com",
+          "publishedAt": "2026-08-31T12:00:00Z",
+          "polarity": 0.434,
+          "sentiment": "Positive",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "da1a1e19fa638f89",
+            "f9905f4f1c6f5901"
+          ]
+        },
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 24.6",
+          "evidenceArticleIds": [
+            "da1a1e19fa638f89",
+            "f9905f4f1c6f5901"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -7.2
     }
   ]
 }

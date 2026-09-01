@@ -3535,6 +3535,64 @@
       ],
       "flags": [],
       "changeFromPreviousScoredDay": -23.8
+    },
+    {
+      "date": "2026-08-31",
+      "dailyScore": 45.9,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 44.6,
+      "confidence": 27.6,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 2,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 1,
+      "dispersion": 0.1883,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "0108d7b633e3ba3b",
+          "storyClusterId": "story-002",
+          "title": "The road closures in Coventry you need to know about this week as schools go back",
+          "url": "https://www.coventrytelegraph.net/news/coventry-news/road-closures-coventry-you-need-34529300",
+          "source": "coventrytelegraph.net",
+          "publishedAt": "2026-08-31T09:45:00Z",
+          "polarity": -0.3518,
+          "sentiment": "Negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "3972e7e111adcfa7",
+          "storyClusterId": "story-001",
+          "title": "Severn Trent ( STRNY ) vs . The Competition Financial Comparison",
+          "url": "https://www.tickerreport.com/banking-finance/13566747/severn-trent-strny-vs-the-competition-financial-comparison.html",
+          "source": "tickerreport.com",
+          "publishedAt": "2026-08-31T05:00:00Z",
+          "polarity": 0.0249,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 27.6",
+          "evidenceArticleIds": [
+            "0108d7b633e3ba3b",
+            "3972e7e111adcfa7"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 21.4
     }
   ]
 }

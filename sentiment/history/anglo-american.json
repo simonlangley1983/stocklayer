@@ -3899,6 +3899,64 @@
         }
       ],
       "changeFromPreviousScoredDay": null
+    },
+    {
+      "date": "2026-08-31",
+      "dailyScore": 51.7,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 51.2,
+      "confidence": 21.0,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 2,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 2,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0642,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "897aa432ba911c30",
+          "storyClusterId": "story-002",
+          "title": "Glencore looms over Anglo - Teck $1 . 4B copper prize : FT",
+          "url": "https://www.northernminer.com/news/glencore-risks-anglo-tecks-1-4b-copper-prize-ft/1003894460",
+          "source": "northernminer.com",
+          "publishedAt": "2026-08-31T20:00:00Z",
+          "polarity": 0.1317,
+          "sentiment": "Slightly positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "dce4b3792009328a",
+          "storyClusterId": "story-001",
+          "title": "How the Right Could Actually End Birthright Citizenship",
+          "url": "https://www.theatlantic.com/magazine/2026/10/birthright-citizenship-trump-barbara-supreme-court/688342",
+          "source": "theatlantic.com",
+          "publishedAt": "2026-08-31T12:45:00Z",
+          "polarity": 0.0034,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 21.0",
+          "evidenceArticleIds": [
+            "897aa432ba911c30",
+            "dce4b3792009328a"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 1.1
     }
   ]
 }

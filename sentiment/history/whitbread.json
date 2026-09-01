@@ -4124,6 +4124,64 @@
         }
       ],
       "changeFromPreviousScoredDay": null
+    },
+    {
+      "date": "2026-08-31",
+      "dailyScore": 46.5,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 43.5,
+      "confidence": 21.5,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 2,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 1,
+      "dispersion": 0.0402,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "7b6a2d3fc80c0ddf",
+          "storyClusterId": "story-001",
+          "title": "Cumbrian Beefeater and Brewers Fayre restaurants to close within weeks",
+          "url": "https://www.in-cumbria.com/news/26506526.cumbrian-beefeater-brewers-fayre-restaurants-close-within-weeks",
+          "source": "in-cumbria.com",
+          "publishedAt": "2026-08-30T23:30:00Z",
+          "polarity": -0.1794,
+          "sentiment": "Slightly negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "bcd6236d8cedcfb2",
+          "storyClusterId": "story-002",
+          "title": "Wild Weather at SeaLink Magnetic Island Race Week",
+          "url": "https://www.mysailing.com.au/wild-weather-shows-no-mercy-at-magnetic-island-race-week",
+          "source": "mysailing.com.au",
+          "publishedAt": "2026-08-31T19:30:00Z",
+          "polarity": -0.099,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 21.5",
+          "evidenceArticleIds": [
+            "7b6a2d3fc80c0ddf",
+            "bcd6236d8cedcfb2"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 21.3
     }
   ]
 }
