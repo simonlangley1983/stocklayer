@@ -5,6 +5,7 @@ import unittest
 from automation.build_company_reports import (
     build_annual_section,
     build_company_report,
+    build_overall_confidence,
     build_press_section,
 )
 
@@ -122,7 +123,22 @@ class BuildCompanyReportsTests(unittest.TestCase):
         self.assertIn("introduction", report["company"])
         self.assertEqual(report["pressCoverage"]["latestScore"], 61.2)
         self.assertEqual(report["annualReportAnalysis"]["reportCount"], 1)
+        self.assertEqual(report["overallConfidence"]["components"][0]["key"], "press")
         self.assertTrue(any(item["type"] == "press_story" for item in report["events"]))
+
+    def test_overall_confidence_uses_displayed_signals_and_reports_scale(self) -> None:
+        press = {
+            "series": [{"dailyScore": 70} for _ in range(20)],
+        }
+        annual = {
+            "latestPositivity": 65,
+            "latestPositivityMethod": "lexical annual-report tone",
+            "reports": [],
+        }
+        confidence = build_overall_confidence(press, annual)
+        self.assertGreater(confidence["score"], 60)
+        self.assertEqual(confidence["evidenceCoverage"], 100)
+        self.assertEqual({item["key"] for item in confidence["components"]}, {"press", "annual_tone"})
 
 
 if __name__ == "__main__":

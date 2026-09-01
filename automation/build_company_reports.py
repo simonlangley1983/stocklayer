@@ -250,6 +250,110 @@ def build_press_section(
     }
 
 
+def confidence_label(score: float | None) -> str:
+    if score is None:
+        return "Unavailable"
+    if score >= 70:
+        return "Strong"
+    if score >= 58:
+        return "Positive"
+    if score >= 42:
+        return "Mixed"
+    return "Low"
+
+
+def build_overall_confidence(press: dict[str, Any], annual: dict[str, Any]) -> dict[str, Any]:
+    components: list[dict[str, Any]] = []
+    scored_press = [
+        float(item["dailyScore"])
+        for item in press.get("series", [])[-30:]
+        if item.get("dailyScore") is not None
+    ]
+    if scored_press:
+        press_score = round(sum(scored_press) / len(scored_press), 1)
+        press_reliability = min(1.0, len(scored_press) / 20)
+        components.append({
+            "key": "press",
+            "label": "Press sentiment",
+            "score": press_score,
+            "weight": 0.40,
+            "reliability": round(press_reliability, 3),
+            "detail": f"Average of {len(scored_press)} scored days in the latest 30-day window.",
+        })
+
+    annual_score = annual.get("latestPositivity")
+    annual_method = annual.get("latestPositivityMethod") or "annual-report signal"
+    has_lexical_tone = annual_method == "lexical annual-report tone"
+    if annual_score is not None and has_lexical_tone:
+        components.append({
+            "key": "annual_tone",
+            "label": "Annual-report tone",
+            "score": round(float(annual_score), 1),
+            "weight": 0.35,
+            "reliability": 1.0,
+            "detail": annual_method.capitalize() + ".",
+        })
+
+    reports = annual.get("reports", [])
+    if len(reports) >= 2:
+        previous = {item["key"]: item for item in reports[-2].get("keywords", [])}
+        latest = {item["key"]: item for item in reports[-1].get("keywords", [])}
+        growth_keys = {key.removesuffix("_mentions") for key in GROWTH_KEYWORDS}
+        growth_delta = sum(
+            float(latest.get(key, {}).get("per10kWords") or 0)
+            - float(previous.get(key, {}).get("per10kWords") or 0)
+            for key in growth_keys
+        )
+        pressure_keys = {
+            key.removesuffix("_mentions")
+            for key in KEYWORDS
+            if key not in GROWTH_KEYWORDS and key != "china_mentions"
+        }
+        pressure_delta = sum(
+            float(latest.get(key, {}).get("per10kWords") or 0)
+            - float(previous.get(key, {}).get("per10kWords") or 0)
+            for key in pressure_keys
+        )
+        theme_score = round(clamp(50 + (growth_delta - pressure_delta * 0.5) * 6), 1)
+        components.append({
+            "key": "themes",
+            "label": "Emerging themes",
+            "score": theme_score,
+            "weight": 0.25 if has_lexical_tone else 0.60,
+            "reliability": round(min(1.0, (len(reports) - 1) / 3), 3),
+            "detail": "Change in growth-theme density compared with pressure and risk themes.",
+        })
+
+    available_weight = sum(item["weight"] for item in components)
+    if not available_weight:
+        return {
+            "score": None,
+            "label": "Unavailable",
+            "evidenceCoverage": 0,
+            "components": [],
+            "methodology": "No measured press or annual-report signals are available yet.",
+        }
+
+    raw_score = sum(item["score"] * item["weight"] for item in components) / available_weight
+    reliability = sum(
+        item["reliability"] * item["weight"] for item in components
+    ) / available_weight
+    score = round(clamp(50 + (raw_score - 50) * (0.55 + 0.45 * reliability)), 1)
+    return {
+        "score": score,
+        "label": confidence_label(score),
+        "evidenceCoverage": round(reliability * 100),
+        "components": components,
+        "methodology": (
+            "Overall confidence combines press sentiment (40%), annual-report tone (35%) "
+            "and emerging themes (25%). Missing signals are excluded and lower-quality "
+            "evidence pulls the result towards neutral rather than creating a positive score. "
+            "Where lexical tone is unavailable, annual-report direction is represented once "
+            "through emerging themes to prevent double counting."
+        ),
+    }
+
+
 def company_intro(company: dict[str, Any]) -> str:
     name = company.get("companyName") or company.get("ticker") or "This company"
     sector = company.get("sector") or "listed"
@@ -267,6 +371,7 @@ def build_company_report(
 ) -> dict[str, Any]:
     annual = build_annual_section(annual_reports)
     press = build_press_section(sentiment, company)
+    overall_confidence = build_overall_confidence(press, annual)
     annual_events = [
         {
             "date": f"{item['year']}-12-31",
@@ -295,6 +400,7 @@ def build_company_report(
         },
         "pressCoverage": press,
         "annualReportAnalysis": annual,
+        "overallConfidence": overall_confidence,
         "events": events,
     }
 
@@ -347,6 +453,9 @@ def main() -> int:
                 "annualReportCount": report["annualReportAnalysis"]["reportCount"],
                 "sentimentObservationCount": report["pressCoverage"]["observationCount"],
                 "eventCount": len(report["events"]),
+                "growthConfidence": report["overallConfidence"]["score"],
+                "growthConfidenceLabel": report["overallConfidence"]["label"],
+                "evidenceCoverage": report["overallConfidence"]["evidenceCoverage"],
             }
         )
     manifest = {

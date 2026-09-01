@@ -10,7 +10,9 @@
   const escapeHtml = value => String(value ?? '')
     .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;').replace(/'/g, '&#039;');
-  const finite = value => Number.isFinite(Number(value)) ? Number(value) : null;
+  const finite = value => value === null || value === undefined || value === ''
+    ? null
+    : (Number.isFinite(Number(value)) ? Number(value) : null);
   const fmtDate = value => value
     ? new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
       .format(new Date(`${String(value).slice(0, 10)}T12:00:00Z`))
@@ -29,11 +31,33 @@
     return cache.get(slug);
   }
 
+  const summaries = new Map();
+  async function preloadSummaries() {
+    try {
+      const response = await fetch(`${DATA_BASE}company-reports/manifest.json?v=${Date.now()}`, { cache: 'no-store' });
+      if (!response.ok) return;
+      const manifest = await response.json();
+      (manifest.companies || []).forEach(item => summaries.set(item.slug, item));
+      window.dispatchEvent(new CustomEvent('stocklayer:company-reports-ready'));
+    } catch (_) {
+      // Individual analysis reports remain available if the compact manifest is temporarily unavailable.
+    }
+  }
+
+  const getSummary = slug => summaries.get(slug) || null;
+
+  function scoreScale(kind = 'signal') {
+    const labels = kind === 'confidence'
+      ? ['0 Low', '50 Mixed', '100 Strong']
+      : ['0 Negative', '50 Neutral', '100 Positive'];
+    return `<div class="report-score-scale" aria-label="${escapeHtml(labels.join(', '))}">${labels.map(label => `<span>${label}</span>`).join('')}</div>`;
+  }
+
   function lineChart(points, options = {}) {
     const values = points.filter(point => point.value != null && point.date);
     if (values.length < 2) return '<p class="report-empty">Not enough scored observations to draw this chart yet.</p>';
     const width = 900, height = 290;
-    const pad = { left: 48, right: 20, top: 24, bottom: 38 };
+    const pad = { left: options.scoreScale ? 86 : 48, right: 20, top: 24, bottom: 38 };
     const minDate = Math.min(...values.map(point => Date.parse(`${point.date}T12:00:00Z`)));
     const maxDate = Math.max(...values.map(point => Date.parse(`${point.date}T12:00:00Z`)));
     const lower = options.lower ?? Math.max(0, Math.floor(Math.min(...values.map(point => point.value)) / 10) * 10 - 5);
@@ -59,11 +83,15 @@
       return time >= minDate && time <= maxDate;
     }).map((event, index) => {
       const eventX = x(event.date);
-      return `<g class="report-event-marker"><line x1="${eventX}" y1="${pad.top}" x2="${eventX}" y2="${pad.top + plotHeight}"/><circle cx="${eventX}" cy="${pad.top + 10 + (index % 3) * 16}" r="5"><title>${escapeHtml(event.title)}</title></circle></g>`;
+      const markerY = pad.top + 14 + (index % 2) * 22;
+      return `<g class="report-event-marker"><line x1="${eventX}" y1="${pad.top}" x2="${eventX}" y2="${pad.top + plotHeight}"/><circle cx="${eventX}" cy="${markerY}" r="10"><title>Event ${index + 1}: ${escapeHtml(event.title)}</title></circle><text x="${eventX}" y="${markerY + 4}" text-anchor="middle">${index + 1}</text></g>`;
     }).join('');
     const ticks = [upper, (upper + lower) / 2, lower].map(value => {
       const tickY = y(value);
-      return `<line class="report-gridline" x1="${pad.left}" y1="${tickY}" x2="${width - pad.right}" y2="${tickY}"/><text x="6" y="${tickY + 4}">${Math.round(value)}</text>`;
+      const label = options.scoreScale
+        ? (value === 100 ? '100 Positive' : value === 50 ? '50 Neutral' : '0 Negative')
+        : Math.round(value);
+      return `<line class="report-gridline" x1="${pad.left}" y1="${tickY}" x2="${width - pad.right}" y2="${tickY}"/><text x="4" y="${tickY + 4}">${label}</text>`;
     }).join('');
     const start = values[0].date, end = values.at(-1).date;
     return `<svg class="company-report-chart" viewBox="0 0 ${width} ${height}" role="img" aria-label="${escapeHtml(options.label || 'Score over time')}">${ticks}${eventMarkers}${paths}<text x="${pad.left}" y="${height - 8}">${escapeHtml(fmtDate(start))}</text><text x="${width - pad.right}" y="${height - 8}" text-anchor="end">${escapeHtml(fmtDate(end))}</text></svg>`;
@@ -76,20 +104,29 @@
       .sort((a, b) => Math.abs(b.change) - Math.abs(a.change)).slice(0, 4);
     const points = reports.flatMap(report => keywords.map(keyword => ({ year: report.year, key: keyword.key, label: keyword.label, value: report.keywords.find(item => item.key === keyword.key)?.per10kWords || 0 })));
     const max = Math.max(1, ...points.map(point => point.value));
-    const width = 900, height = 300, left = 48, right = 20, top = 25, bottom = 42;
+    const width = 900, height = 300, left = 70, right = 20, top = 25, bottom = 42;
     const x = index => left + index * ((width - left - right) / Math.max(1, reports.length - 1));
     const y = value => top + (1 - value / max) * (height - top - bottom);
     const paths = keywords.map((keyword, colourIndex) => {
       const series = reports.map((report, index) => ({ index, value: report.keywords.find(item => item.key === keyword.key)?.per10kWords || 0 }));
-      return `<path style="--series-colour:${colours[colourIndex]}" class="report-keyword-line" d="${series.map((point, index) => `${index ? 'L' : 'M'}${x(point.index).toFixed(1)},${y(point.value).toFixed(1)}`).join(' ')}"/>${series.map(point => `<circle fill="${colours[colourIndex]}" cx="${x(point.index)}" cy="${y(point.value)}" r="4"/>`).join('')}`;
+      return `<path style="--series-colour:${colours[colourIndex]}" class="report-keyword-line" d="${series.map((point, index) => `${index ? 'L' : 'M'}${x(point.index).toFixed(1)},${y(point.value).toFixed(1)}`).join(' ')}"/>${series.map(point => `<circle class="report-keyword-point" style="--series-colour:${colours[colourIndex]}" cx="${x(point.index)}" cy="${y(point.value)}" r="4"/>`).join('')}`;
     }).join('');
-    return `<svg class="company-report-chart" viewBox="0 0 ${width} ${height}" role="img" aria-label="Annual report keyword rates over time"><line class="report-gridline" x1="${left}" y1="${height - bottom}" x2="${width - right}" y2="${height - bottom}"/>${paths}${reports.map((report, index) => `<text x="${x(index)}" y="${height - 12}" text-anchor="middle">${report.year}</text>`).join('')}<text x="6" y="${top + 4}">${max.toFixed(1)}</text><text x="6" y="${height - bottom + 4}">0</text></svg><div class="report-legend">${keywords.map((keyword, index) => `<span><i style="--series-colour:${colours[index]}"></i>${escapeHtml(keyword.label)}</span>`).join('')}</div>`;
+    return `<svg class="company-report-chart" viewBox="0 0 ${width} ${height}" role="img" aria-label="Annual report keyword rates over time"><line class="report-gridline" x1="${left}" y1="${height - bottom}" x2="${width - right}" y2="${height - bottom}"/>${paths}${reports.map((report, index) => `<text x="${x(index)}" y="${height - 12}" text-anchor="middle">${report.year}</text>`).join('')}<text x="4" y="${top + 4}">${max.toFixed(1)}</text><text x="4" y="${height - bottom + 4}">0</text><text class="report-axis-title" x="4" y="${top + 22}">mentions / 10k words</text></svg><div class="report-legend">${keywords.map((keyword, index) => `<span><i style="--series-colour:${colours[index]}"></i>${escapeHtml(keyword.label)}</span>`).join('')}</div><p class="report-chart-note">Coloured points are measurements from each report year.</p>`;
   }
 
-  function eventList(events, limit = 8) {
-    const recent = [...events].filter(event => event.type !== 'annual_report').sort((a, b) => b.date.localeCompare(a.date)).slice(0, limit);
-    if (!recent.length) return '<p class="report-empty">No evidenced press events are available yet.</p>';
-    return `<ol class="company-report-events">${recent.map(event => `<li><time>${escapeHtml(fmtDate(event.date))}</time><div><strong>${escapeHtml(event.title)}</strong>${event.detail ? `<p>${escapeHtml(event.detail)}</p>` : ''}${event.url ? `<a href="${escapeHtml(event.url)}" target="_blank" rel="noopener noreferrer">Read source</a>` : ''}</div></li>`).join('')}</ol>`;
+  function timelineEvents(events, limit = 6) {
+    return [...events].filter(event => event.type !== 'annual_report').sort((a, b) => a.date.localeCompare(b.date)).slice(-limit);
+  }
+
+  function eventList(events) {
+    if (!events.length) return '<p class="report-empty">No evidenced press events are available yet.</p>';
+    return `<ol class="company-report-events">${events.map((event, index) => `<li><span class="report-event-number">${index + 1}</span><time>${escapeHtml(fmtDate(event.date))}</time><div><strong>${escapeHtml(event.title)}</strong>${event.detail ? `<p>${escapeHtml(event.detail)}</p>` : ''}</div>${event.url ? `<a class="report-source-link" href="${escapeHtml(event.url)}" target="_blank" rel="noopener noreferrer">Source ↗</a>` : ''}</li>`).join('')}</ol>`;
+  }
+
+  function signalComparison(confidence) {
+    const components = confidence?.components || [];
+    if (!components.length) return '<p class="report-empty">Measured signals are not available yet.</p>';
+    return `<div class="report-signal-comparison">${components.map(item => `<div class="report-signal-row"><div><strong>${escapeHtml(item.label)}</strong><small>${escapeHtml(item.detail || '')}</small></div><div class="report-signal-bar"><i style="width:${Math.max(0, Math.min(100, Number(item.score)))}%"></i><b class="report-neutral-marker"></b></div><strong class="${scoreClass(item.score)}">${Number(item.score).toFixed(1)}<span>/100</span></strong></div>`).join('')}</div>${scoreScale('signal')}`;
   }
 
   function sectionOne(report, company) {
@@ -99,38 +136,37 @@
       || company?.uniqueSellingPoint
       || (typeof window.getCompanyUsp === 'function' ? window.getCompanyUsp(company) : '')
       || item.introduction;
-    return `<section class="company-report-section" aria-labelledby="report-section-company"><header><span>Section 1</span><h3 id="report-section-company">About the company</h3></header><div class="company-report-profile"><div><p class="company-report-intro">${escapeHtml(richerIntro || item.introduction)}</p><dl><div><dt>Company type</dt><dd>${escapeHtml(item.sector || 'Unavailable')}</dd></div><div><dt>Listing</dt><dd>${escapeHtml(item.ticker || 'Unavailable')}</dd></div><div><dt>UK 100 rank</dt><dd>${item.ftseRank ? `#${item.ftseRank}` : 'Unavailable'}</dd></div><div><dt>Market value</dt><dd>${escapeHtml(item.marketCap || 'Unavailable')}</dd></div></dl></div></div></section>`;
+    return `<section class="company-report-section company-report-overview" aria-labelledby="report-section-company"><header><h3 id="report-section-company">Company overview</h3></header><div class="company-report-profile"><div><p class="company-report-intro">${escapeHtml(richerIntro || item.introduction)}</p><dl><div><dt>Company type</dt><dd>${escapeHtml(item.sector || 'Unavailable')}</dd></div><div><dt>Listing</dt><dd>${escapeHtml(item.ticker || 'Unavailable')}</dd></div><div><dt>UK 100 rank</dt><dd>${item.ftseRank ? `#${item.ftseRank}` : 'Unavailable'}</dd></div><div><dt>Market value</dt><dd>${escapeHtml(item.marketCap || 'Unavailable')}</dd></div></dl></div></div></section>`;
   }
 
   function sectionTwo(report) {
-    const press = report.pressCoverage;
-    const series = press.series.map(item => ({ date: item.date, value: finite(item.dailyScore) }));
-    return `<section class="company-report-section" aria-labelledby="report-section-press"><header><span>Section 2</span><h3 id="report-section-press">Press coverage and daily sentiment</h3></header><div class="company-report-stat-grid"><div><span>Latest scored day</span><strong class="${scoreClass(press.latestScore)}">${press.latestScore == null ? 'No coverage' : Number(press.latestScore).toFixed(1)}</strong><small>${escapeHtml(fmtDate(press.latestScoreDate))}</small></div><div><span>Direction</span><strong>${escapeHtml(scoreLabel(press.latestScore))}</strong></div><div><span>Scored days</span><strong>${press.scoredDayCount}/${press.observationCount}</strong></div></div><div class="company-report-chart-card"><div><h4>Daily press sentiment</h4><p>0 is most negative, 50 neutral and 100 most positive. Missing coverage is shown as a gap.</p></div>${lineChart(series, { lower: 0, upper: 100, label: 'Daily press sentiment score', events: press.stories })}</div><div class="company-report-subsection"><h4>Key press coverage</h4>${eventList(press.stories, 6)}</div></section>`;
+    const confidence = report.overallConfidence || {};
+    return `<section class="company-report-section report-confidence-summary" aria-labelledby="report-section-confidence"><header><h3 id="report-section-confidence">Overall confidence</h3><p>One comparable score built from the signals shown below.</p></header><div class="report-confidence-hero"><div class="report-confidence-score ${scoreClass(confidence.score)}"><strong>${confidence.score == null ? '—' : Number(confidence.score).toFixed(1)}</strong><span>/100</span><small>${escapeHtml(confidence.label || 'Unavailable')}</small></div><div><div class="report-overall-bar"><i style="width:${Math.max(0, Math.min(100, Number(confidence.score) || 0))}%"></i><b></b></div>${scoreScale('confidence')}<p>${escapeHtml(confidence.methodology || '')}</p><small>Evidence coverage: ${Number(confidence.evidenceCoverage || 0)}%. This measures how much reliable source data supports the score, not whether the outlook is positive.</small></div></div><h4>What drives the score</h4>${signalComparison(confidence)}</section>`;
   }
 
   function sectionThree(report) {
+    const press = report.pressCoverage;
     const annual = report.annualReportAnalysis;
-    const latest = annual.reports.at(-1);
-    const emerging = annual.emergingKeywords.filter(item => item.changePer10kWords > 0);
-    return `<section class="company-report-section" aria-labelledby="report-section-annual"><header><span>Section 3</span><h3 id="report-section-annual">Annual-report changes</h3></header><div class="company-report-stat-grid"><div><span>Reports extracted</span><strong>${annual.reportCount}</strong></div><div><span>Latest report</span><strong>${latest?.year || 'Unavailable'}</strong></div><div><span>Overall positivity</span><strong class="${scoreClass(annual.latestPositivity)}">${annual.latestPositivity == null ? 'Needs two reports' : `${Number(annual.latestPositivity).toFixed(1)}/100`}</strong><small>${escapeHtml(annual.latestPositivityMethod || '')}</small></div></div><div class="company-report-chart-card"><div><h4>Emerging annual-report themes</h4><p>Mentions are normalized per 10,000 report words so differently sized reports remain comparable.</p></div>${multiLineAnnualChart(annual.reports)}</div><div class="company-report-subsection"><h4>Largest emerging keywords</h4>${emerging.length ? `<div class="company-report-keywords">${emerging.slice(0, 5).map(item => `<div><span>${escapeHtml(item.label)}</span><strong>+${Number(item.changePer10kWords).toFixed(2)}</strong><small>mentions per 10k words</small></div>`).join('')}</div>` : '<p class="report-empty">No positive keyword increases can be calculated yet.</p>'}</div><p class="company-report-method">${escapeHtml(annual.methodology)}</p></section>`;
+    const pressSeries = press.series.map(item => ({ date: item.date, value: finite(item.dailyScore) }));
+    const annualSeries = annual.reports.map(item => ({ date: `${item.year}-12-31`, value: finite(item.positivityScore) }));
+    const events = timelineEvents(report.events, 6);
+    return `<section class="company-report-section" aria-labelledby="report-section-trends"><header><h3 id="report-section-trends">Signals over time</h3><p>Both charts use the same 0–100 scale, so direction is directly comparable. The time periods remain separate because press is daily and reports are annual.</p></header><div class="company-report-chart-grid"><div class="company-report-chart-card"><div><h4>Press sentiment</h4><p>Numbered markers match the evidenced events immediately below. Gaps mean no eligible coverage.</p></div>${lineChart(pressSeries, { lower: 0, upper: 100, scoreScale: true, label: 'Daily press sentiment with numbered events', events })}</div><div class="company-report-chart-card"><div><h4>Annual-report tone</h4><p>${escapeHtml(annual.latestPositivityMethod || 'Awaiting sufficient reports')}.</p></div>${lineChart(annualSeries, { lower: 0, upper: 100, scoreScale: true, label: 'Annual report positivity over time' })}</div></div><div class="company-report-subsection"><h4>Events behind the press signal</h4>${eventList(events)}</div></section>`;
   }
 
   function sectionFour(report) {
-    const pressSeries = report.pressCoverage.series.map(item => ({ date: item.date, value: finite(item.dailyScore) }));
-    const annualSeries = report.annualReportAnalysis.reports.map(item => ({ date: `${item.year}-12-31`, value: finite(item.positivityScore) }));
-    const pressEvents = report.events.filter(item => item.type !== 'annual_report');
-    const annualEvents = report.events.filter(item => item.type === 'annual_report');
-    return `<section class="company-report-section" aria-labelledby="report-section-events"><header><span>Section 4</span><h3 id="report-section-events">Signals plotted against key events</h3></header><p class="company-report-lead">The two time horizons are kept separate to avoid stretching recent daily press data across several annual-report years.</p><div class="company-report-chart-card"><div><h4>Recent press sentiment and events</h4></div>${lineChart(pressSeries, { lower: 0, upper: 100, label: 'Press sentiment with key-event markers', events: pressEvents })}</div><div class="company-report-chart-card"><div><h4>Annual-report positivity and report years</h4></div>${lineChart(annualSeries, { lower: 0, upper: 100, label: 'Annual report positivity with report-year markers', events: annualEvents })}</div><div class="company-report-subsection"><h4>Event evidence</h4>${eventList(pressEvents, 10)}</div></section>`;
+    const annual = report.annualReportAnalysis;
+    const emerging = annual.emergingKeywords.filter(item => item.changePer10kWords > 0);
+    return `<section class="company-report-section" aria-labelledby="report-section-themes"><header><h3 id="report-section-themes">Annual-report themes</h3><p>Keyword rates are normalized per 10,000 report words, making reports of different lengths comparable.</p></header><div class="company-report-chart-card">${multiLineAnnualChart(annual.reports)}</div><div class="company-report-subsection"><h4>Largest increases in the latest report</h4>${emerging.length ? `<div class="company-report-keywords">${emerging.slice(0, 5).map(item => `<div><span>${escapeHtml(item.label)}</span><strong>+${Number(item.changePer10kWords).toFixed(2)}</strong><small>mentions / 10k words</small></div>`).join('')}</div>` : '<p class="report-empty">A second report is needed to calculate emerging themes.</p>'}</div><p class="company-report-method">${escapeHtml(annual.methodology)}</p></section>`;
   }
 
   function render(report, company) {
-    return `<div class="company-report"><nav class="company-report-nav" aria-label="Report sections"><a href="#report-section-company">Company</a><a href="#report-section-press">Press</a><a href="#report-section-annual">Annual reports</a><a href="#report-section-events">Events</a></nav>${sectionOne(report, company)}${sectionTwo(report)}${sectionThree(report)}${sectionFour(report)}<p class="company-report-disclaimer">StockLayer indicators are descriptive research signals, not financial advice. Source links and methodology notes are provided so the evidence can be checked.</p></div>`;
+    return `<div class="company-report"><nav class="company-report-nav" aria-label="Report sections"><a href="#report-section-company">Overview</a><a href="#report-section-confidence">Confidence</a><a href="#report-section-trends">Trends & events</a><a href="#report-section-themes">Themes</a></nav>${sectionOne(report, company)}${sectionTwo(report)}${sectionThree(report)}${sectionFour(report)}<p class="company-report-disclaimer">StockLayer indicators are descriptive research signals, not financial advice. Source links and methodology notes are provided so the evidence can be checked.</p></div>`;
   }
 
   async function open({ company, modal, title, subtitle, content }) {
     const name = company.companyName || company.ticker || 'Company';
     title.textContent = `${name} intelligence report`;
-    subtitle.textContent = 'Company profile, press sentiment, annual reports and key events.';
+    subtitle.textContent = 'One confidence score, its measured signals and the evidence behind them.';
     content.setAttribute('aria-busy', 'true');
     content.innerHTML = '<div class="company-report-loading" role="status"><span></span><strong>Loading evidenced company report…</strong></div>';
     modal.hidden = false;
@@ -146,6 +182,6 @@
     }
   }
 
-  window.StockLayerCompanyReport = { open, render, lineChart, multiLineAnnualChart };
+  window.StockLayerCompanyReport = { open, render, lineChart, multiLineAnnualChart, getSummary };
+  preloadSummaries();
 })();
-

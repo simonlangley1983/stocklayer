@@ -59,6 +59,10 @@ jobs:
           git add annual-reports/*.json
           git commit -m "Update annual report monitoring" || echo "No annual report changes to commit"
 
+          # These feeds were built before any concurrent data update was incorporated.
+          # Discard only the generated copies; they are rebuilt after the rebase below.
+          git restore company-reports
+
           # Daily sentiment may update main during the slower PDF extraction.
           # Rebase onto that data, rebuild the combined feeds, and retry a raced push.
           for attempt in 1 2 3; do

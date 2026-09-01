@@ -19,3 +19,5 @@ if (window.StockLayerCompanyReport) {
 ```
 
 The renderer reads the versioned `company-reports/{slug}.json` feeds from this repository and does not generate placeholder analysis in the browser.
+
+Apply the homepage bridge described in `homepage-confidence-integration.md` so each company card uses the same composite score shown in its analysis report.
