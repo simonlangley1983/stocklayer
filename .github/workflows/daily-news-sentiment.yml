@@ -9,9 +9,11 @@ on:
       - "automation/news_sentiment.py"
       - "automation/build_sentiment_universe.py"
       - "automation/build_sentiment_site_data.py"
+      - "automation/build_company_reports.py"
       - "requirements-sentiment.txt"
       - "data-manifest.json"
       - "sentiment/**"
+      - "company-reports/**"
       - "universes/**"
       - "tests/test_news_sentiment.py"
   workflow_dispatch:
@@ -65,6 +67,7 @@ jobs:
           python -c "import torch, transformers; print(torch.__version__, transformers.__version__)"
           python -m py_compile automation/news_sentiment.py automation/build_sentiment_universe.py automation/build_sentiment_site_data.py
           python automation/build_sentiment_site_data.py
+          python automation/build_company_reports.py
           python -m unittest discover -s tests -v
 
   score:
@@ -125,9 +128,11 @@ jobs:
       - name: Commit sentiment observations
         run: |
           python automation/build_sentiment_site_data.py
+          python automation/build_company_reports.py
           git config user.name "stocklayer-sentiment-bot"
           git config user.email "stocklayer-sentiment-bot@users.noreply.github.com"
           git add data-manifest.json sentiment/latest.json sentiment/run-status.json sentiment/site-summary.json
+          git add company-reports
           if [[ -d sentiment/history ]]; then git add sentiment/history; fi
           git commit -m "Update daily news sentiment" || echo "No sentiment changes to commit"
           git push
@@ -318,9 +323,11 @@ jobs:
         shell: bash
         run: |
           python automation/build_sentiment_site_data.py
+          python automation/build_company_reports.py
           git config user.name "stocklayer-sentiment-bot"
           git config user.email "stocklayer-sentiment-bot@users.noreply.github.com"
           git add data-manifest.json sentiment/latest.json sentiment/run-status.json sentiment/site-summary.json sentiment/history
+          git add company-reports
           git commit -m "Merge daily news sentiment backfill batches" || echo "No sentiment changes to commit"
           git push
 

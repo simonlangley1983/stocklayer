@@ -54,6 +54,23 @@ KEYWORD_PATTERNS: dict[str, re.Pattern[str]] = {
     "data_center_mentions": re.compile(r"\bdata[\s-]+cent(?:er|re)s?\b", re.IGNORECASE),
 }
 
+# A compact, disclosed financial-language lexicon. This is deliberately
+# reported as lexical tone rather than model sentiment: it is reproducible,
+# auditable and cheap enough to calculate while the full report text is
+# already in memory.
+POSITIVE_TONE_PATTERN = re.compile(
+    r"\b(?:strong|stronger|strength|growth|grow|grew|opportunit(?:y|ies)|"
+    r"resilien(?:t|ce)|improv(?:e|ed|ement|ements|ing)|progress|innovati(?:on|ve)|"
+    r"success(?:ful|fully)?|confiden(?:t|ce)|leading|record)\b",
+    re.IGNORECASE,
+)
+NEGATIVE_TONE_PATTERN = re.compile(
+    r"\b(?:risk|risks|uncertain(?:ty|ties)|challeng(?:e|ed|es|ing)|declin(?:e|ed|es|ing)|"
+    r"pressure|pressures|impairment|impairments|loss|losses|adverse|weakness|weak|"
+    r"volatil(?:e|ity)|disruption|disruptions|headwind|headwinds)\b",
+    re.IGNORECASE,
+)
+
 # Official full-report links that the monitor's first crawl missed because the
 # issuer page renders its download controls client-side.
 FULL_REPORT_OVERRIDES: dict[tuple[str, int], str] = {
@@ -413,6 +430,19 @@ def keyword_counts(text: str) -> dict[str, int]:
     return {name: len(pattern.findall(text)) for name, pattern in KEYWORD_PATTERNS.items()}
 
 
+def lexical_tone(text: str) -> dict[str, int | float | str | None]:
+    positive = len(POSITIVE_TONE_PATTERN.findall(text))
+    negative = len(NEGATIVE_TONE_PATTERN.findall(text))
+    total = positive + negative
+    score = round(max(0.0, min(100.0, 50 + 50 * (positive - negative) / total)), 1) if total else None
+    return {
+        "positive_tone_mentions": positive,
+        "negative_tone_mentions": negative,
+        "tone_positivity_score": score,
+        "tone_method": "disclosed financial-language lexical balance over extracted full-report text",
+    }
+
+
 def extract_group(company: dict[str, Any], year: int, reports: list[dict[str, Any]], timeout: int) -> dict[str, Any]:
     attempts: list[dict[str, str]] = []
     queue = sorted(reports, key=candidate_score, reverse=True)
@@ -499,6 +529,7 @@ def build_record(
         "extracted_word_count": len(re.findall(r"\b\w+\b", text)),
         "keyword_count_method": "case-insensitive keyword-family regex over extracted full-report text",
         **keyword_counts(text),
+        **lexical_tone(text),
         "attempts": attempts,
     }
 
@@ -635,6 +666,9 @@ def main() -> int:
             "selection": "prefer a full PDF whose title/URL identifies an annual report; follow report-page PDF links when needed",
             "text_extraction": "pypdf for PDFs; visible HTML text only when no report PDF is exposed",
             "keyword_patterns": {name: pattern.pattern for name, pattern in KEYWORD_PATTERNS.items()},
+            "tone_method": "disclosed financial-language lexical balance over extracted full-report text",
+            "positive_tone_pattern": POSITIVE_TONE_PATTERN.pattern,
+            "negative_tone_pattern": NEGATIVE_TONE_PATTERN.pattern,
         },
         "group_count": len(results),
         "extracted_count": extracted,

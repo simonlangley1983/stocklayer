@@ -47,8 +47,11 @@ jobs:
             --merge-input "$RUNNER_TEMP/current-extractions.json" \
             --output annual-reports/extracted-keywords.json
 
+      - name: Build customer company reports
+        run: python automation/build_company_reports.py
+
       - name: Commit annual report monitoring updates
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update annual report monitoring"
-          file_pattern: "annual-reports/*.json"
+          file_pattern: "annual-reports/*.json company-reports/*.json"
