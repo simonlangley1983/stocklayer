@@ -493,6 +493,56 @@
   font-size: 20px;
 }
 
+.report-theme-changes {
+  margin-top: 10px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.report-theme-change {
+  display: grid;
+  grid-template-columns: minmax(130px, .7fr) minmax(180px, 1.6fr) minmax(165px, .8fr);
+  gap: 16px;
+  align-items: center;
+  padding: 11px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.report-theme-change > strong {
+  font-size: 13px;
+}
+
+.report-theme-bar {
+  height: 8px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e2e8f0;
+}
+
+.report-theme-bar i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: #0f766e;
+}
+
+.report-theme-change > span {
+  color: #64748b;
+  font-size: 11px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.report-theme-change b {
+  color: #0f766e;
+  font-size: 15px;
+}
+
+.report-theme-note {
+  margin: 10px 0 0 !important;
+  color: #64748b;
+  font-size: 11px;
+}
+
 .company-report-method,
 .company-report-disclaimer {
   margin: 18px 0 0;
@@ -544,6 +594,8 @@
   .company-report-events time { grid-column: 2; }
   .company-report-events li > div { grid-column: 2 / -1; }
   .report-source-link { grid-column: 2; justify-self: start; }
+  .report-theme-change { grid-template-columns: minmax(100px, .8fr) 1.4fr; gap: 10px; }
+  .report-theme-change > span { grid-column: 1 / -1; text-align: left; }
 }
 
 @media (max-width: 470px) {

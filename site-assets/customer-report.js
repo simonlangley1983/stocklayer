@@ -156,7 +156,14 @@
   function sectionFour(report) {
     const annual = report.annualReportAnalysis;
     const emerging = annual.emergingKeywords.filter(item => item.changePer10kWords > 0);
-    return `<section class="company-report-section" aria-labelledby="report-section-themes"><header><h3 id="report-section-themes">Annual-report themes</h3><p>Keyword rates are normalized per 10,000 report words, making reports of different lengths comparable.</p></header><div class="company-report-chart-card">${multiLineAnnualChart(annual.reports)}</div><div class="company-report-subsection"><h4>Largest increases in the latest report</h4>${emerging.length ? `<div class="company-report-keywords">${emerging.slice(0, 5).map(item => `<div><span>${escapeHtml(item.label)}</span><strong>+${Number(item.changePer10kWords).toFixed(2)}</strong><small>mentions / 10k words</small></div>`).join('')}</div>` : '<p class="report-empty">A second report is needed to calculate emerging themes.</p>'}</div><p class="company-report-method">${escapeHtml(annual.methodology)}</p></section>`;
+    const increases = emerging.slice(0, 5);
+    const largestChange = Math.max(0.01, ...increases.map(item => Number(item.changePer10kWords)));
+    const changeRows = increases.map(item => {
+      const change = Number(item.changePer10kWords);
+      const width = Math.max(4, change / largestChange * 100);
+      return `<div class="report-theme-change"><strong>${escapeHtml(item.label)}</strong><div class="report-theme-bar" aria-hidden="true"><i style="width:${width.toFixed(1)}%"></i></div><span><b>+${change.toFixed(2)}</b> per 10,000 words</span></div>`;
+    }).join('');
+    return `<section class="company-report-section" aria-labelledby="report-section-themes"><header><h3 id="report-section-themes">Annual-report themes</h3><p>Keyword rates are normalized per 10,000 report words, making reports of different lengths comparable.</p></header><div class="company-report-chart-card">${multiLineAnnualChart(annual.reports)}</div><div class="company-report-subsection"><h4>Largest increases in the latest report</h4>${increases.length ? `<div class="report-theme-changes">${changeRows}</div>` : '<p class="report-empty">A second report is needed to calculate emerging themes.</p>'}</div><p class="report-theme-note">Change versus the previous report, measured as additional mentions per 10,000 extracted words.</p></section>`;
   }
 
   function render(report, company) {
