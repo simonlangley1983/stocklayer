@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-01T14:43:35.974581Z",
+  "generatedAt": "2026-09-01T15:15:55.992306Z",
   "company": {
     "companyName": "Beazley PLC",
     "ticker": "BEZ.L",
@@ -706,18 +706,18 @@
             "per10kWords": 0.373
           }
         ],
-        "positivityScore": null,
-        "positivityMethod": "year-on-year thematic direction proxy"
+        "positivityScore": 28.6,
+        "positivityMethod": "lexical annual-report tone"
       }
     ],
     "emergingKeywords": [],
-    "latestPositivity": null,
-    "latestPositivityMethod": "year-on-year thematic direction proxy",
+    "latestPositivity": 28.6,
+    "latestPositivityMethod": "lexical annual-report tone",
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 49.8,
-    "label": "Mixed",
+    "score": 39.9,
+    "label": "Low",
     "evidenceCoverage": 100,
     "components": [
       {
@@ -727,6 +727,14 @@
         "weight": 0.4,
         "reliability": 1.0,
         "detail": "Average of 23 scored days in the latest 30-day window."
+      },
+      {
+        "key": "annual_tone",
+        "label": "Annual-report tone",
+        "score": 28.6,
+        "weight": 0.35,
+        "reliability": 1.0,
+        "detail": "Lexical annual-report tone."
       }
     ],
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."

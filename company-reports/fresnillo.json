@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-01T14:43:35.974581Z",
+  "generatedAt": "2026-09-01T15:15:55.992306Z",
   "company": {
     "companyName": "Fresnillo PLC",
     "ticker": "FRES.L",
@@ -832,8 +832,8 @@
             "per10kWords": 0.0
           }
         ],
-        "positivityScore": 49.1,
-        "positivityMethod": "year-on-year thematic direction proxy"
+        "positivityScore": 30.3,
+        "positivityMethod": "lexical annual-report tone"
       }
     ],
     "emergingKeywords": [
@@ -878,14 +878,14 @@
         "changePer10kWords": 0.0
       }
     ],
-    "latestPositivity": 49.1,
-    "latestPositivityMethod": "year-on-year thematic direction proxy",
+    "latestPositivity": 30.3,
+    "latestPositivityMethod": "lexical annual-report tone",
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 49.1,
+    "score": 42.8,
     "label": "Mixed",
-    "evidenceCoverage": 80,
+    "evidenceCoverage": 92,
     "components": [
       {
         "key": "press",
@@ -896,10 +896,18 @@
         "detail": "Average of 21 scored days in the latest 30-day window."
       },
       {
+        "key": "annual_tone",
+        "label": "Annual-report tone",
+        "score": 30.3,
+        "weight": 0.35,
+        "reliability": 1.0,
+        "detail": "Lexical annual-report tone."
+      },
+      {
         "key": "themes",
         "label": "Emerging themes",
         "score": 49.1,
-        "weight": 0.6,
+        "weight": 0.25,
         "reliability": 0.667,
         "detail": "Change in growth-theme density compared with pressure and risk themes."
       }

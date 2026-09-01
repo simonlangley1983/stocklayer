@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-01T14:43:35.974581Z",
+  "generatedAt": "2026-09-01T15:15:55.992306Z",
   "company": {
     "companyName": "Glencore",
     "ticker": "GLEN.L",
@@ -1101,8 +1101,8 @@
             "per10kWords": 0.289
           }
         ],
-        "positivityScore": 54.1,
-        "positivityMethod": "year-on-year thematic direction proxy"
+        "positivityScore": 23.0,
+        "positivityMethod": "lexical annual-report tone"
       }
     ],
     "emergingKeywords": [
@@ -1147,13 +1147,13 @@
         "changePer10kWords": 0.097
       }
     ],
-    "latestPositivity": 54.1,
-    "latestPositivityMethod": "year-on-year thematic direction proxy",
+    "latestPositivity": 23.0,
+    "latestPositivityMethod": "lexical annual-report tone",
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 52.5,
-    "label": "Mixed",
+    "score": 41.6,
+    "label": "Low",
     "evidenceCoverage": 100,
     "components": [
       {
@@ -1165,10 +1165,18 @@
         "detail": "Average of 28 scored days in the latest 30-day window."
       },
       {
+        "key": "annual_tone",
+        "label": "Annual-report tone",
+        "score": 23.0,
+        "weight": 0.35,
+        "reliability": 1.0,
+        "detail": "Lexical annual-report tone."
+      },
+      {
         "key": "themes",
         "label": "Emerging themes",
         "score": 54.1,
-        "weight": 0.6,
+        "weight": 0.25,
         "reliability": 1.0,
         "detail": "Change in growth-theme density compared with pressure and risk themes."
       }

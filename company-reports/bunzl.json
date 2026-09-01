@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-01T14:43:35.974581Z",
+  "generatedAt": "2026-09-01T15:15:55.992306Z",
   "company": {
     "companyName": "Bunzl PLC",
     "ticker": "BNZL.L",
@@ -704,8 +704,8 @@
             "per10kWords": 0.0
           }
         ],
-        "positivityScore": 48.6,
-        "positivityMethod": "year-on-year thematic direction proxy"
+        "positivityScore": 46.5,
+        "positivityMethod": "lexical annual-report tone"
       }
     ],
     "emergingKeywords": [
@@ -750,14 +750,14 @@
         "changePer10kWords": 0.145
       }
     ],
-    "latestPositivity": 48.6,
-    "latestPositivityMethod": "year-on-year thematic direction proxy",
+    "latestPositivity": 46.5,
+    "latestPositivityMethod": "lexical annual-report tone",
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 50.7,
+    "score": 50.2,
     "label": "Mixed",
-    "evidenceCoverage": 32,
+    "evidenceCoverage": 55,
     "components": [
       {
         "key": "press",
@@ -768,10 +768,18 @@
         "detail": "Average of 6 scored days in the latest 30-day window."
       },
       {
+        "key": "annual_tone",
+        "label": "Annual-report tone",
+        "score": 46.5,
+        "weight": 0.35,
+        "reliability": 1.0,
+        "detail": "Lexical annual-report tone."
+      },
+      {
         "key": "themes",
         "label": "Emerging themes",
         "score": 48.6,
-        "weight": 0.6,
+        "weight": 0.25,
         "reliability": 0.333,
         "detail": "Change in growth-theme density compared with pressure and risk themes."
       }
