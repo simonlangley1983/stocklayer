@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-08-31T23:56:36.575544Z",
+  "generatedAt": "2026-09-01T00:05:44.891533Z",
   "date": "2026-08-30",
   "dateRange": {
     "start": "2026-08-30",
@@ -12,10 +12,10 @@
   "selectedCompanyCount": 100,
   "requestedDayCount": 1,
   "requestedObservationCount": 100,
-  "completedObservationCount": 87,
-  "completeness": 0.87,
+  "completedObservationCount": 93,
+  "completeness": 0.93,
   "minimumCompleteness": 0.9,
-  "status": "degraded",
+  "status": "ok",
   "companies": [
     {
       "slug": "astrazeneca",
@@ -118,16 +118,14 @@
     },
     {
       "slug": "lseg",
-      "status": "degraded",
+      "status": "ok",
       "requestedDayCount": 1,
-      "completedDayCount": 0,
+      "completedDayCount": 1,
       "coverageDayCount": 0,
-      "failedDates": [
-        "2026-08-30"
-      ],
+      "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 1,
-      "error": "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22London+Stock+Exchange+Group%22+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260829230000&enddatetime=20260830230000 (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.gdeltproject.org', port=443) at 0x7efd9bd2bdd0>, 'Connection to api.gdeltproject.org timed out. (connect timeout=10)'))"
+      "requestCount": 2,
+      "error": null
     },
     {
       "slug": "diageo",
@@ -164,16 +162,14 @@
     },
     {
       "slug": "barclays",
-      "status": "degraded",
+      "status": "ok",
       "requestedDayCount": 1,
-      "completedDayCount": 0,
-      "coverageDayCount": 0,
-      "failedDates": [
-        "2026-08-30"
-      ],
+      "completedDayCount": 1,
+      "coverageDayCount": 1,
+      "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 1,
-      "error": "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%28%22Barclays+PLC%22+OR+%22Barclays+Bank%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260829230000&enddatetime=20260830230000 (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=10)\"))"
+      "requestCount": 2,
+      "error": null
     },
     {
       "slug": "compass",
@@ -229,8 +225,8 @@
         "2026-08-30"
       ],
       "truncatedDates": [],
-      "requestCount": 1,
-      "error": "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Experian%22+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260829230000&enddatetime=20260830230000 (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=10)\"))"
+      "requestCount": 2,
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%22Experian%22+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260829230000&enddatetime=20260830230000"
     },
     {
       "slug": "glencore",
@@ -245,16 +241,14 @@
     },
     {
       "slug": "admiral",
-      "status": "degraded",
+      "status": "ok",
       "requestedDayCount": 1,
-      "completedDayCount": 0,
+      "completedDayCount": 1,
       "coverageDayCount": 0,
-      "failedDates": [
-        "2026-08-30"
-      ],
+      "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 1,
-      "error": "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%28%22Admiral+Group+PLC%22+OR+%22Admiral+Group+insurance%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260829230000&enddatetime=20260830230000 (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.gdeltproject.org', port=443) at 0x7efd9cea1040>, 'Connection to api.gdeltproject.org timed out. (connect timeout=10)'))"
+      "requestCount": 2,
+      "error": null
     },
     {
       "slug": "airtel-africa",
@@ -343,8 +337,8 @@
         "2026-08-30"
       ],
       "truncatedDates": [],
-      "requestCount": 1,
-      "error": "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%28%22Aviva+PLC%22+OR+%22Aviva%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260829230000&enddatetime=20260830230000 (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.gdeltproject.org', port=443) at 0x7efd9bd2aa80>, 'Connection to api.gdeltproject.org timed out. (connect timeout=10)'))"
+      "requestCount": 2,
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Aviva+PLC%22+OR+%22Aviva%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260829230000&enddatetime=20260830230000"
     },
     {
       "slug": "barratt-redrow",
@@ -477,21 +471,19 @@
         "2026-08-30"
       ],
       "truncatedDates": [],
-      "requestCount": 1,
-      "error": "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Diploma+PLC%22+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260829230000&enddatetime=20260830230000 (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=10)\"))"
+      "requestCount": 2,
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%22Diploma+PLC%22+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260829230000&enddatetime=20260830230000"
     },
     {
       "slug": "easyjet",
-      "status": "degraded",
+      "status": "ok",
       "requestedDayCount": 1,
-      "completedDayCount": 0,
-      "coverageDayCount": 0,
-      "failedDates": [
-        "2026-08-30"
-      ],
+      "completedDayCount": 1,
+      "coverageDayCount": 1,
+      "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 1,
-      "error": "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%28%22EasyJet+PLC%22+OR+%22EasyJet%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260829230000&enddatetime=20260830230000 (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.gdeltproject.org', port=443) at 0x7efd9bd3e510>, 'Connection to api.gdeltproject.org timed out. (connect timeout=10)'))"
+      "requestCount": 2,
+      "error": null
     },
     {
       "slug": "endeavour-mining",
@@ -528,16 +520,14 @@
     },
     {
       "slug": "fresnillo",
-      "status": "degraded",
+      "status": "ok",
       "requestedDayCount": 1,
-      "completedDayCount": 0,
+      "completedDayCount": 1,
       "coverageDayCount": 0,
-      "failedDates": [
-        "2026-08-30"
-      ],
+      "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 1,
-      "error": "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%28%22Fresnillo+PLC%22+OR+%22Fresnillo%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260829230000&enddatetime=20260830230000 (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=10)\"))"
+      "requestCount": 2,
+      "error": null
     },
     {
       "slug": "games-workshop",
@@ -604,8 +594,8 @@
         "2026-08-30"
       ],
       "truncatedDates": [],
-      "requestCount": 1,
-      "error": "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%28%22Hiscox+Ltd%22+OR+%22Hiscox%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260829230000&enddatetime=20260830230000 (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.gdeltproject.org', port=443) at 0x7efd9bd0d640>, 'Connection to api.gdeltproject.org timed out. (connect timeout=10)'))"
+      "requestCount": 2,
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Hiscox+Ltd%22+OR+%22Hiscox%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260829230000&enddatetime=20260830230000"
     },
     {
       "slug": "howden-joinery",
@@ -628,8 +618,8 @@
         "2026-08-30"
       ],
       "truncatedDates": [],
-      "requestCount": 1,
-      "error": "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%28%22IMI+PLC%22+OR+%22IMI+plc+engineering%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260829230000&enddatetime=20260830230000 (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.gdeltproject.org', port=443) at 0x7efd9bd51b50>, 'Connection to api.gdeltproject.org timed out. (connect timeout=10)'))"
+      "requestCount": 2,
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22IMI+PLC%22+OR+%22IMI+plc+engineering%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260829230000&enddatetime=20260830230000"
     },
     {
       "slug": "imperial-brands",
@@ -718,8 +708,8 @@
         "2026-08-30"
       ],
       "truncatedDates": [],
-      "requestCount": 1,
-      "error": "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%28%22Kingfisher+PLC%22+OR+%22Kingfisher%22+OR+%22Kingfisher+plc+retailer%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260829230000&enddatetime=20260830230000 (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=10)\"))"
+      "requestCount": 2,
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Kingfisher+PLC%22+OR+%22Kingfisher%22+OR+%22Kingfisher+plc+retailer%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260829230000&enddatetime=20260830230000"
     },
     {
       "slug": "land-securities",
@@ -778,16 +768,14 @@
     },
     {
       "slug": "melrose-industries",
-      "status": "degraded",
+      "status": "ok",
       "requestedDayCount": 1,
-      "completedDayCount": 0,
+      "completedDayCount": 1,
       "coverageDayCount": 0,
-      "failedDates": [
-        "2026-08-30"
-      ],
+      "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 1,
-      "error": "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%28%22Melrose+Industries+PLC%22+OR+%22Melrose+Industries%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260829230000&enddatetime=20260830230000 (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.gdeltproject.org', port=443) at 0x7efd9bd3d5e0>, 'Connection to api.gdeltproject.org timed out. (connect timeout=10)'))"
+      "requestCount": 2,
+      "error": null
     },
     {
       "slug": "mondi",
@@ -1096,8 +1084,8 @@
         "2026-08-30"
       ],
       "truncatedDates": [],
-      "requestCount": 1,
-      "error": "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%28%22United+Utilities+Group+PLC%22+OR+%22United+Utilities%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260829230000&enddatetime=20260830230000 (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=10)\"))"
+      "requestCount": 2,
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22United+Utilities+Group+PLC%22+OR+%22United+Utilities%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260829230000&enddatetime=20260830230000"
     },
     {
       "slug": "vodafone",
