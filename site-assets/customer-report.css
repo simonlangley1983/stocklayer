@@ -5,6 +5,8 @@
 .company-report {
   display: grid;
   gap: 22px;
+  width: 100%;
+  min-width: 0;
   color: #0f172a;
 }
 
@@ -16,6 +18,8 @@
   gap: 8px;
   padding: 10px;
   overflow-x: auto;
+  max-width: 100%;
+  box-sizing: border-box;
   border: 1px solid #dbe3ee;
   border-radius: 12px;
   background: rgba(255, 255, 255, .96);
@@ -41,7 +45,10 @@
 
 .company-report-section {
   scroll-margin-top: 72px;
+  width: 100%;
+  min-width: 0;
   padding: 24px;
+  box-sizing: border-box;
   border: 1px solid #dbe3ee;
   border-radius: 16px;
   background: #fff;
@@ -143,8 +150,11 @@
 
 .company-report-chart-card {
   margin-top: 14px;
+  width: 100%;
+  min-width: 0;
   padding: 16px;
   overflow: hidden;
+  box-sizing: border-box;
   border: 1px solid #e2e8f0;
   border-radius: 14px;
   background: #fbfdff;
@@ -152,6 +162,7 @@
 
 .company-report-chart-grid {
   display: grid;
+  min-width: 0;
   gap: 14px;
 }
 
@@ -171,6 +182,7 @@
 
 .company-report-chart-card {
   overflow-x: auto;
+  overscroll-behavior-inline: contain;
 }
 
 .report-chart-line {
@@ -583,6 +595,8 @@
 @keyframes company-report-spin { to { transform: rotate(360deg); } }
 
 @media (max-width: 700px) {
+  .picks-modal-body,
+  .methodology-dashboard { min-width: 0; overflow-x: hidden; }
   .company-report-section { padding: 18px; }
   .company-report-profile dl,
   .company-report-stat-grid { grid-template-columns: 1fr 1fr; }
