@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-01T15:15:55.992306Z",
+  "generatedAt": "2026-09-02T10:51:41.605696Z",
   "company": {
     "companyName": "AstraZeneca",
     "ticker": "AZN.L",
@@ -13,11 +13,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-05",
-    "periodEnd": "2026-08-31",
-    "observationCount": 55,
-    "scoredDayCount": 55,
-    "latestScore": 50.7,
-    "latestScoreDate": "2026-08-31",
+    "periodEnd": "2026-09-01",
+    "observationCount": 56,
+    "scoredDayCount": 56,
+    "latestScore": 61.6,
+    "latestScoreDate": "2026-09-01",
     "series": [
       {
         "date": "2026-07-05",
@@ -513,19 +513,18 @@
         "sourceCount": 3,
         "confidence": 42.8,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-01",
+        "dailyScore": 61.6,
+        "rollingScore": 54.5,
+        "storyCount": 10,
+        "sourceCount": 11,
+        "confidence": 66.1,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
-      {
-        "date": "2026-07-14",
-        "type": "coverage_spike",
-        "title": "AstraZeneca agrees on $1 . 5bn deal with Dizal Pharmaceutical",
-        "source": "pmlive.com",
-        "url": "https://pmlive.com/astrazeneca-agrees-on-1-5bn-deal-with-dizal-pharmaceutical",
-        "direction": "neutral",
-        "detail": "26 stories versus trailing median 8",
-        "significance": 1.561
-      },
       {
         "date": "2026-08-02",
         "type": "high_disagreement",
@@ -567,16 +566,6 @@
         "significance": 1.611
       },
       {
-        "date": "2026-08-11",
-        "type": "sentiment_drop",
-        "title": "Can AstraZeneca ( AZN ) Reach Its $80 Billion Revenue Goal Despite Clinical Setbacks ?",
-        "source": "insidermonkey.com",
-        "url": "https://www.insidermonkey.com/blog/can-astrazeneca-azn-reach-its-80-billion-revenue-goal-despite-clinical-setbacks-1805413",
-        "direction": "negative",
-        "detail": "Daily score decreased by 15.0 points",
-        "significance": 1.563
-      },
-      {
         "date": "2026-08-17",
         "type": "high_disagreement",
         "title": "AstraZeneca hit by lung cancer drug setback : Pharma giant halts trials of experimental Volrustomig treatment",
@@ -615,6 +604,26 @@
         "direction": "positive",
         "detail": "Daily score increased by 15.3 points",
         "significance": 1.572
+      },
+      {
+        "date": "2026-09-01",
+        "type": "high_disagreement",
+        "title": "AstraZeneca Reports Positive Results Of SANOVO Phase III Trial In China",
+        "source": "rttnews.com",
+        "url": "https://www.rttnews.com/3687324/astrazeneca-reports-positive-results-of-sanovo-phase-iii-trial-in-china.aspx",
+        "direction": "mixed",
+        "detail": "Positive and negative coverage is unusually dispersed",
+        "significance": 1.574
+      },
+      {
+        "date": "2026-09-01",
+        "type": "high_disagreement",
+        "title": "Baystreet . ca - AstraZeneca Flat on License Pact",
+        "source": "baystreet.ca",
+        "url": "http://baystreet.ca/stockstowatch/23967/AstraZeneca-Flat-on-License-Pact",
+        "direction": "mixed",
+        "detail": "Positive and negative coverage is unusually dispersed",
+        "significance": 1.567
       }
     ]
   },
@@ -1180,14 +1189,14 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 53.9,
+    "score": 54.0,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 54.3,
+        "score": 54.6,
         "weight": 0.4,
         "reliability": 1.0,
         "detail": "Average of 30 scored days in the latest 30-day window."
@@ -1276,16 +1285,6 @@
       "approximateDate": true
     },
     {
-      "date": "2026-07-14",
-      "type": "coverage_spike",
-      "title": "AstraZeneca agrees on $1 . 5bn deal with Dizal Pharmaceutical",
-      "source": "pmlive.com",
-      "url": "https://pmlive.com/astrazeneca-agrees-on-1-5bn-deal-with-dizal-pharmaceutical",
-      "direction": "neutral",
-      "detail": "26 stories versus trailing median 8",
-      "significance": 1.561
-    },
-    {
       "date": "2026-08-02",
       "type": "high_disagreement",
       "title": "Henshaw Capital LLC Cuts Holdings in Astrazeneca Plc $AZN",
@@ -1326,16 +1325,6 @@
       "significance": 1.611
     },
     {
-      "date": "2026-08-11",
-      "type": "sentiment_drop",
-      "title": "Can AstraZeneca ( AZN ) Reach Its $80 Billion Revenue Goal Despite Clinical Setbacks ?",
-      "source": "insidermonkey.com",
-      "url": "https://www.insidermonkey.com/blog/can-astrazeneca-azn-reach-its-80-billion-revenue-goal-despite-clinical-setbacks-1805413",
-      "direction": "negative",
-      "detail": "Daily score decreased by 15.0 points",
-      "significance": 1.563
-    },
-    {
       "date": "2026-08-17",
       "type": "high_disagreement",
       "title": "AstraZeneca hit by lung cancer drug setback : Pharma giant halts trials of experimental Volrustomig treatment",
@@ -1374,6 +1363,26 @@
       "direction": "positive",
       "detail": "Daily score increased by 15.3 points",
       "significance": 1.572
+    },
+    {
+      "date": "2026-09-01",
+      "type": "high_disagreement",
+      "title": "AstraZeneca Reports Positive Results Of SANOVO Phase III Trial In China",
+      "source": "rttnews.com",
+      "url": "https://www.rttnews.com/3687324/astrazeneca-reports-positive-results-of-sanovo-phase-iii-trial-in-china.aspx",
+      "direction": "mixed",
+      "detail": "Positive and negative coverage is unusually dispersed",
+      "significance": 1.574
+    },
+    {
+      "date": "2026-09-01",
+      "type": "high_disagreement",
+      "title": "Baystreet . ca - AstraZeneca Flat on License Pact",
+      "source": "baystreet.ca",
+      "url": "http://baystreet.ca/stockstowatch/23967/AstraZeneca-Flat-on-License-Pact",
+      "direction": "mixed",
+      "detail": "Positive and negative coverage is unusually dispersed",
+      "significance": 1.567
     }
   ]
 }

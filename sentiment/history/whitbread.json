@@ -4182,6 +4182,142 @@
         }
       ],
       "changeFromPreviousScoredDay": 21.3
+    },
+    {
+      "date": "2026-09-01",
+      "dailyScore": 28.3,
+      "dailyLabel": "Negative",
+      "rollingScore": 41.7,
+      "confidence": 46.0,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 50,
+      "eligibleArticleCount": 50,
+      "storyCount": 27,
+      "effectiveStoryCount": 27.0,
+      "sourceCount": 33,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 5,
+      "negativeStoryCount": 21,
+      "dispersion": 0.3878,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "ffdfbda42b46eb23",
+          "storyClusterId": "story-012",
+          "title": "Leading Labels launches closing down sales at all 15 stores",
+          "url": "https://www.heraldscotland.com/news/national/uk-today/26510504.leading-labels-launches-closing-sales-15-stores",
+          "source": "heraldscotland.com",
+          "publishedAt": "2026-09-01T12:30:00Z",
+          "polarity": -0.9611,
+          "sentiment": "Very negative",
+          "publisherCount": 4
+        },
+        {
+          "id": "a06da2d44aa9901c",
+          "storyClusterId": "story-027",
+          "title": "UK steakhouse chain to close all 20 restaurants this week",
+          "url": "https://www.mirror.co.uk/news/uk-news/uk-steakhouse-chain-close-20-37616577",
+          "source": "mirror.co.uk",
+          "publishedAt": "2026-09-01T19:30:00Z",
+          "polarity": -0.874,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "ba41417c407e42d4",
+          "storyClusterId": "story-009",
+          "title": "UK restaurant chain shutting all 195 sites after 52 years",
+          "url": "https://www.southwalesargus.co.uk/news/26510887.uk-restaurant-chain-shutting-195-sites-52-years",
+          "source": "southwalesargus.co.uk",
+          "publishedAt": "2026-09-01T14:15:00Z",
+          "polarity": -0.8627,
+          "sentiment": "Very negative",
+          "publisherCount": 5
+        },
+        {
+          "id": "265f18608ae835f4",
+          "storyClusterId": "story-002",
+          "title": "UK restaurant chain shutting all 195 sites after 52 years | The Westmorland Gazette",
+          "url": "https://www.thewestmorlandgazette.co.uk/news/26510299.uk-restaurant-chain-shutting-195-sites-52-years",
+          "source": "thewestmorlandgazette.co.uk",
+          "publishedAt": "2026-09-01T10:15:00Z",
+          "polarity": -0.8541,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "1c00f6ae1f8bc6f4",
+          "storyClusterId": "story-005",
+          "title": "Bar + Block to close all 20 united kingdom restaurants on Thursday | Clacton and Frinton Gazette",
+          "url": "https://www.clactonandfrintongazette.co.uk/news/national/uk-today/26509960.bar-block-close-20-uk-restaurants-thursday",
+          "source": "clactonandfrintongazette.co.uk",
+          "publishedAt": "2026-09-01T11:15:00Z",
+          "polarity": -0.8427,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "sentiment_drop",
+          "direction": "negative",
+          "severity": "high",
+          "status": "calculated",
+          "detail": "Daily score decreased by 18.2 points",
+          "evidenceArticleIds": [
+            "ffdfbda42b46eb23",
+            "a06da2d44aa9901c",
+            "ba41417c407e42d4",
+            "265f18608ae835f4",
+            "1c00f6ae1f8bc6f4"
+          ]
+        },
+        {
+          "type": "bad_press",
+          "direction": "negative",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Daily press score is 28.3",
+          "evidenceArticleIds": [
+            "ffdfbda42b46eb23",
+            "a06da2d44aa9901c",
+            "ba41417c407e42d4",
+            "265f18608ae835f4",
+            "1c00f6ae1f8bc6f4"
+          ]
+        },
+        {
+          "type": "coverage_spike",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "27 stories versus trailing median 4",
+          "evidenceArticleIds": [
+            "ffdfbda42b46eb23",
+            "a06da2d44aa9901c",
+            "ba41417c407e42d4",
+            "265f18608ae835f4",
+            "1c00f6ae1f8bc6f4"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "ffdfbda42b46eb23",
+            "a06da2d44aa9901c",
+            "ba41417c407e42d4",
+            "265f18608ae835f4",
+            "1c00f6ae1f8bc6f4"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -18.2
     }
   ]
 }

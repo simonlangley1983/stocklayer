@@ -1626,6 +1626,75 @@
         }
       ],
       "changeFromPreviousScoredDay": null
+    },
+    {
+      "date": "2026-09-01",
+      "dailyScore": 40.6,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 48.3,
+      "confidence": 22.0,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 2,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 1,
+      "dispersion": 0.5678,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "b6fef284d2f82a94",
+          "storyClusterId": "story-001",
+          "title": "FTSE 100 Live : London sell - off deepens after mortgage approvals slump",
+          "url": "https://www.proactiveinvestors.co.uk/companies/news/1097877/ftse-100-live-london-sell-off-deepens-after-mortgage-approvals-slump-1097877.html",
+          "source": "proactiveinvestors.co.uk",
+          "publishedAt": "2026-09-01T10:15:00Z",
+          "polarity": -0.9439,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "1af789c241d7aa86",
+          "storyClusterId": "story-002",
+          "title": "FTSE 100 Live : FTSE 100 recovers some ground after falling more than 1 %",
+          "url": "https://www.proactiveinvestors.co.uk/companies/news/1097877/ftse-100-live-ftse-100-recovers-some-ground-after-falling-more-than-1-1097877.html",
+          "source": "proactiveinvestors.co.uk",
+          "publishedAt": "2026-09-01T14:00:00Z",
+          "polarity": 0.1916,
+          "sentiment": "Slightly positive",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "b6fef284d2f82a94",
+            "1af789c241d7aa86"
+          ]
+        },
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 22.0",
+          "evidenceArticleIds": [
+            "b6fef284d2f82a94",
+            "1af789c241d7aa86"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 6.3
     }
   ]
 }

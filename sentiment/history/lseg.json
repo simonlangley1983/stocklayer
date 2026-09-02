@@ -3024,6 +3024,64 @@
         }
       ],
       "changeFromPreviousScoredDay": null
+    },
+    {
+      "date": "2026-09-01",
+      "dailyScore": 58.5,
+      "dailyLabel": "Slightly positive",
+      "rollingScore": 52.0,
+      "confidence": 22.6,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 2,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 0,
+      "dispersion": 0.2659,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "4c12fffd6b604558",
+          "storyClusterId": "story-001",
+          "title": "Elliott Built a Stake in Air Liquide and Pressed the Industrial - Gases Group on Margins :",
+          "url": "https://hedgeco.net/news/09/2026/elliott-built-a-stake-in-air-liquide-and-pressed-the-industrial-gases-group-on-margins.html",
+          "source": "hedgeco.net",
+          "publishedAt": "2026-09-01T11:30:00Z",
+          "polarity": 0.6055,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "19c433c3aa97fc20",
+          "storyClusterId": "story-002",
+          "title": "S & P Global weighs multibillion - dollar spinout of Capital IQ Pro : Report",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/sp-global-weighs-multibillion-dollar-spinout-of-capital-iq-pro/articleshow/133690470.cms",
+          "source": "economictimes.indiatimes.com",
+          "publishedAt": "2026-09-01T21:00:00Z",
+          "polarity": 0.0736,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 22.6",
+          "evidenceArticleIds": [
+            "4c12fffd6b604558",
+            "19c433c3aa97fc20"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 3.1
     }
   ]
 }

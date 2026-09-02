@@ -3422,6 +3422,76 @@
         }
       ],
       "changeFromPreviousScoredDay": -4.2
+    },
+    {
+      "date": "2026-09-01",
+      "dailyScore": 46.0,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 48.6,
+      "confidence": 42.4,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 3,
+      "eligibleArticleCount": 3,
+      "storyCount": 3,
+      "effectiveStoryCount": 3.0,
+      "sourceCount": 3,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 1,
+      "dispersion": 0.5598,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "22225355b9249dd1",
+          "storyClusterId": "story-003",
+          "title": "Road closures to affect route between St Albans and M1",
+          "url": "https://www.hertsad.co.uk/news/26512007.road-closures-affect-route-st-albans-m1",
+          "source": "hertsad.co.uk",
+          "publishedAt": "2026-09-01T16:45:00Z",
+          "polarity": -0.873,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "fbe005537079c756",
+          "storyClusterId": "story-002",
+          "title": "Hertfordshire A414 to close near M1 and Park Street Roundabout",
+          "url": "https://www.watfordobserver.co.uk/news/26510725.hertfordshire-a414-close-near-m1-park-street-roundabout",
+          "source": "watfordobserver.co.uk",
+          "publishedAt": "2026-09-01T14:00:00Z",
+          "polarity": 0.4804,
+          "sentiment": "Positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "42800a561c2b423d",
+          "storyClusterId": "story-001",
+          "title": "SEGRO PLC : Publication of Scheme Document",
+          "url": "https://www.finanznachrichten.de/nachrichten-2026-09/69458692-segro-plc-publication-of-scheme-document-650.htm",
+          "source": "finanznachrichten.de",
+          "publishedAt": "2026-09-01T07:00:00Z",
+          "polarity": -0.0058,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "22225355b9249dd1",
+            "fbe005537079c756",
+            "42800a561c2b423d"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 5.1
     }
   ]
 }

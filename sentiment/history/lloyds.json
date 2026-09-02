@@ -3812,6 +3812,64 @@
         }
       ],
       "changeFromPreviousScoredDay": 4.0
+    },
+    {
+      "date": "2026-09-01",
+      "dailyScore": 49.7,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 47.6,
+      "confidence": 27.1,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 2,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 1,
+      "dispersion": 0.1392,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "cfe6e15a7dd817cd",
+          "storyClusterId": "story-001",
+          "title": "Lloyds Bank issues warning to customers aged 18 to 24 who use AI for personal finance",
+          "url": "https://www.birminghammail.co.uk/news/cost-of-living/lloyds-bank-issues-warning-customers-34515000",
+          "source": "birminghammail.co.uk",
+          "publishedAt": "2026-08-31T23:30:00Z",
+          "polarity": -0.1504,
+          "sentiment": "Slightly negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "78a92a44f48e958c",
+          "storyClusterId": "story-002",
+          "title": "Six steps to successful stoozing : How to make £750 in two years with a 0 % credit card",
+          "url": "https://www.dailymail.com/money/cardsloans/article-16096533/stoozing-credit-card-everyday-spending-make-money.html",
+          "source": "dailymail.com",
+          "publishedAt": "2026-09-01T22:15:00Z",
+          "polarity": 0.1279,
+          "sentiment": "Slightly positive",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 27.1",
+          "evidenceArticleIds": [
+            "cfe6e15a7dd817cd",
+            "78a92a44f48e958c"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 5.1
     }
   ]
 }

@@ -1952,6 +1952,98 @@
         }
       ],
       "changeFromPreviousScoredDay": -1.0
+    },
+    {
+      "date": "2026-09-01",
+      "dailyScore": 36.9,
+      "dailyLabel": "Negative",
+      "rollingScore": 48.7,
+      "confidence": 39.9,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 4,
+      "eligibleArticleCount": 4,
+      "storyCount": 4,
+      "effectiveStoryCount": 4.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 2,
+      "dispersion": 0.5266,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "b6fef284d2f82a94",
+          "storyClusterId": "story-002",
+          "title": "FTSE 100 Live : London sell - off deepens after mortgage approvals slump",
+          "url": "https://www.proactiveinvestors.co.uk/companies/news/1097877/ftse-100-live-london-sell-off-deepens-after-mortgage-approvals-slump-1097877.html",
+          "source": "proactiveinvestors.co.uk",
+          "publishedAt": "2026-09-01T10:15:00Z",
+          "polarity": -0.9439,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "3d9c83adf0ae3358",
+          "storyClusterId": "story-003",
+          "title": "Bunzl wins broker approval but valuation concerns remain",
+          "url": "https://www.proactiveinvestors.co.uk/companies/news/1097901/bunzl-wins-broker-approval-but-valuation-concerns-remain-1097901.html",
+          "source": "proactiveinvestors.co.uk",
+          "publishedAt": "2026-09-01T14:00:00Z",
+          "polarity": -0.89,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "1af789c241d7aa86",
+          "storyClusterId": "story-004",
+          "title": "FTSE 100 Live : FTSE 100 recovers some ground after falling more than 1 %",
+          "url": "https://www.proactiveinvestors.co.uk/companies/news/1097877/ftse-100-live-ftse-100-recovers-some-ground-after-falling-more-than-1-1097877.html",
+          "source": "proactiveinvestors.co.uk",
+          "publishedAt": "2026-09-01T14:00:00Z",
+          "polarity": 0.1916,
+          "sentiment": "Slightly positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "e4931a8847d22f43",
+          "storyClusterId": "story-001",
+          "title": "Bunzl launches £500 million share buyback programme",
+          "url": "https://www.proactiveinvestors.co.uk/companies/news/1097885/bunzl-launches-500-million-share-buyback-programme-1097885.html",
+          "source": "proactiveinvestors.co.uk",
+          "publishedAt": "2026-09-01T10:15:00Z",
+          "polarity": 0.0726,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "share_buyback",
+          "direction": "positive",
+          "severity": "medium",
+          "status": "possible",
+          "evidenceArticleIds": [
+            "e4931a8847d22f43"
+          ],
+          "sourceCount": 1
+        },
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 39.9",
+          "evidenceArticleIds": [
+            "b6fef284d2f82a94",
+            "3d9c83adf0ae3358",
+            "1af789c241d7aa86",
+            "e4931a8847d22f43"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -16.6
     }
   ]
 }

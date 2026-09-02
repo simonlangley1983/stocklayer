@@ -2687,6 +2687,75 @@
         }
       ],
       "changeFromPreviousScoredDay": null
+    },
+    {
+      "date": "2026-09-01",
+      "dailyScore": 40.8,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 48.7,
+      "confidence": 30.7,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 2,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 1,
+      "dispersion": 0.5653,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "4e3dedb88e428e98",
+          "storyClusterId": "story-002",
+          "title": "Stocks fall as borrowing costs hit 28 - year high",
+          "url": "https://www.aol.co.uk/articles/stocks-fall-borrowing-costs-hit-162855000.html",
+          "source": "aol.co.uk",
+          "publishedAt": "2026-09-01T17:00:00Z",
+          "polarity": -0.9314,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "4e52ea5efd7f0a22",
+          "storyClusterId": "story-001",
+          "title": "Airtel Africa : Nigeria is over biggest market - The Nation Newspaper",
+          "url": "https://thenationonlineng.net/airtel-africas-nigeria-is-over-biggest-market",
+          "source": "thenationonlineng.net",
+          "publishedAt": "2026-09-01T04:45:00Z",
+          "polarity": 0.1993,
+          "sentiment": "Slightly positive",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "4e3dedb88e428e98",
+            "4e52ea5efd7f0a22"
+          ]
+        },
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 30.7",
+          "evidenceArticleIds": [
+            "4e3dedb88e428e98",
+            "4e52ea5efd7f0a22"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -9.3
     }
   ]
 }
