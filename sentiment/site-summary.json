@@ -3,8 +3,8 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-09-02T10:51:41.034546Z",
-  "asOfDate": "2026-09-01",
+  "generatedAt": "2026-09-03T10:59:21.309847Z",
+  "asOfDate": "2026-09-02",
   "companyCount": 100,
   "companies": {
     "astrazeneca": {
@@ -35,23 +35,23 @@
       "companyName": "Shell",
       "ticker": "SHEL.L",
       "slug": "shell",
-      "date": "2026-09-01",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 49.7,
-      "confidence": 0.0,
+      "date": "2026-09-02",
+      "dailyScore": 54.6,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.3,
+      "confidence": 16.4,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 4.7,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "Confidence is 16.4"
         }
       ]
     },
@@ -59,10 +59,10 @@
       "companyName": "HSBC",
       "ticker": "HSBA.L",
       "slug": "hsbc",
-      "date": "2026-08-31",
+      "date": "2026-09-02",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 50.5,
+      "rollingScore": 50.4,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -83,26 +83,34 @@
       "companyName": "Unilever",
       "ticker": "ULVR.L",
       "slug": "unilever",
-      "date": "2026-09-01",
-      "dailyScore": 59.7,
-      "dailyLabel": "Slightly positive",
-      "rollingScore": 48.9,
-      "confidence": 51.6,
+      "date": "2026-09-02",
+      "dailyScore": 42.6,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 48.0,
+      "confidence": 56.8,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 14,
-      "sourceCount": 34,
-      "changeFromPreviousScoredDay": 8.4,
-      "flags": []
+      "storyCount": 13,
+      "sourceCount": 17,
+      "changeFromPreviousScoredDay": -17.1,
+      "flags": [
+        {
+          "type": "sentiment_drop",
+          "direction": "negative",
+          "severity": "high",
+          "status": "calculated",
+          "detail": "Daily score decreased by 17.1 points"
+        }
+      ]
     },
     "relx": {
       "companyName": "RELX",
       "ticker": "REL.L",
       "slug": "relx",
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 48.8,
+      "rollingScore": 48.9,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -123,23 +131,23 @@
       "companyName": "British American Tobacco",
       "ticker": "BATS.L",
       "slug": "british-american-tobacco",
-      "date": "2026-09-01",
-      "dailyScore": 61.1,
-      "dailyLabel": "Positive",
-      "rollingScore": 50.9,
-      "confidence": 11.9,
+      "date": "2026-09-02",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 50.8,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": 16.0,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 11.9"
+          "detail": "Collection succeeded but found no eligible coverage"
         }
       ]
     },
@@ -147,23 +155,23 @@
       "companyName": "BP",
       "ticker": "BP.L",
       "slug": "bp",
-      "date": "2026-09-01",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.3,
-      "confidence": 0.0,
+      "date": "2026-09-02",
+      "dailyScore": 46.1,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.8,
+      "confidence": 16.5,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -2.9,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "Confidence is 16.5"
         }
       ]
     },
@@ -171,23 +179,23 @@
       "companyName": "GSK",
       "ticker": "GSK.L",
       "slug": "gsk",
-      "date": "2026-08-31",
-      "dailyScore": 60.9,
+      "date": "2026-09-02",
+      "dailyScore": 60.2,
       "dailyLabel": "Positive",
-      "rollingScore": 53.1,
-      "confidence": 44.6,
-      "confidenceBand": "medium",
+      "rollingScore": 53.7,
+      "confidence": 39.9,
+      "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 4,
+      "storyCount": 3,
       "sourceCount": 4,
-      "changeFromPreviousScoredDay": 9.9,
+      "changeFromPreviousScoredDay": -0.7,
       "flags": [
         {
-          "type": "high_disagreement",
-          "direction": "mixed",
-          "severity": "medium",
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
           "status": "calculated",
-          "detail": "Positive and negative coverage is unusually dispersed"
+          "detail": "Confidence is 39.9"
         }
       ]
     },
@@ -195,46 +203,46 @@
       "companyName": "Rolls-Royce",
       "ticker": "RR.L",
       "slug": "rolls-royce",
-      "date": "2026-09-01",
-      "dailyScore": 51.5,
+      "date": "2026-09-02",
+      "dailyScore": 52.1,
       "dailyLabel": "Neutral / mixed",
       "rollingScore": 51.4,
-      "confidence": 61.0,
+      "confidence": 54.2,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 11,
-      "sourceCount": 11,
-      "changeFromPreviousScoredDay": 1.6,
-      "flags": [
-        {
-          "type": "interim_results",
-          "direction": "neutral",
-          "severity": "medium",
-          "status": "possible"
-        }
-      ]
+      "storyCount": 12,
+      "sourceCount": 13,
+      "changeFromPreviousScoredDay": 0.6,
+      "flags": []
     },
     "lseg": {
       "companyName": "London Stock Exchange Group",
       "ticker": "LSEG.L",
       "slug": "lseg",
-      "date": "2026-09-01",
-      "dailyScore": 58.5,
+      "date": "2026-09-02",
+      "dailyScore": 55.7,
       "dailyLabel": "Slightly positive",
-      "rollingScore": 52.0,
-      "confidence": 22.6,
+      "rollingScore": 52.4,
+      "confidence": 39.0,
       "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 2,
-      "sourceCount": 2,
-      "changeFromPreviousScoredDay": 3.1,
+      "storyCount": 3,
+      "sourceCount": 3,
+      "changeFromPreviousScoredDay": -2.8,
       "flags": [
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed"
+        },
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 22.6"
+          "detail": "Confidence is 39.0"
         }
       ]
     },
@@ -242,23 +250,23 @@
       "companyName": "Diageo",
       "ticker": "DGE.L",
       "slug": "diageo",
-      "date": "2026-09-01",
-      "dailyScore": 48.7,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 48.2,
-      "confidence": 38.6,
+      "date": "2026-09-02",
+      "dailyScore": 36.1,
+      "dailyLabel": "Negative",
+      "rollingScore": 46.6,
+      "confidence": 36.5,
       "confidenceBand": "low",
       "coverageStatus": "ok",
       "storyCount": 3,
       "sourceCount": 3,
-      "changeFromPreviousScoredDay": -6.0,
+      "changeFromPreviousScoredDay": -12.6,
       "flags": [
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 38.6"
+          "detail": "Confidence is 36.5"
         }
       ]
     },
@@ -266,69 +274,63 @@
       "companyName": "Rio Tinto",
       "ticker": "RIO.L",
       "slug": "rio-tinto",
-      "date": "2026-09-01",
-      "dailyScore": 50.5,
+      "date": "2026-09-02",
+      "dailyScore": 54.1,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 51.7,
-      "confidence": 52.9,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "storyCount": 11,
-      "sourceCount": 13,
-      "changeFromPreviousScoredDay": 0.7,
-      "flags": []
-    },
-    "national-grid": {
-      "companyName": "National Grid",
-      "ticker": "NG.L",
-      "slug": "national-grid",
-      "date": "2026-09-01",
-      "dailyScore": 52.1,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.3,
-      "confidence": 56.6,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "storyCount": 20,
-      "sourceCount": 40,
-      "changeFromPreviousScoredDay": 7.2,
-      "flags": [
-        {
-          "type": "earnings_beat",
-          "direction": "positive",
-          "severity": "medium",
-          "status": "possible"
-        },
-        {
-          "type": "high_disagreement",
-          "direction": "mixed",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "Positive and negative coverage is unusually dispersed"
-        }
-      ]
-    },
-    "barclays": {
-      "companyName": "Barclays",
-      "ticker": "BARC.L",
-      "slug": "barclays",
-      "date": "2026-09-01",
-      "dailyScore": 51.8,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.1,
-      "confidence": 15.6,
+      "rollingScore": 51.9,
+      "confidence": 37.9,
       "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": 6.4,
+      "storyCount": 4,
+      "sourceCount": 4,
+      "changeFromPreviousScoredDay": 3.6,
       "flags": [
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 15.6"
+          "detail": "Confidence is 37.9"
+        }
+      ]
+    },
+    "national-grid": {
+      "companyName": "National Grid",
+      "ticker": "NG.L",
+      "slug": "national-grid",
+      "date": "2026-09-02",
+      "dailyScore": 54.9,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.2,
+      "confidence": 54.1,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "storyCount": 17,
+      "sourceCount": 18,
+      "changeFromPreviousScoredDay": 2.8,
+      "flags": []
+    },
+    "barclays": {
+      "companyName": "Barclays",
+      "ticker": "BARC.L",
+      "slug": "barclays",
+      "date": "2026-09-02",
+      "dailyScore": 50.2,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.1,
+      "confidence": 15.1,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -1.6,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 15.1"
         }
       ]
     },
@@ -336,23 +338,23 @@
       "companyName": "Compass Group",
       "ticker": "CPG.L",
       "slug": "compass",
-      "date": "2026-09-01",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.0,
-      "confidence": 0.0,
+      "date": "2026-09-02",
+      "dailyScore": 50.5,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.1,
+      "confidence": 15.2,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 0.4,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "Confidence is 15.2"
         }
       ]
     },
@@ -360,17 +362,25 @@
       "companyName": "BAE Systems",
       "ticker": "BA.L",
       "slug": "bae-systems",
-      "date": "2026-09-01",
-      "dailyScore": 53.2,
+      "date": "2026-09-02",
+      "dailyScore": 52.9,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 52.9,
-      "confidence": 46.6,
-      "confidenceBand": "medium",
+      "rollingScore": 52.7,
+      "confidence": 26.8,
+      "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 5,
-      "sourceCount": 5,
-      "changeFromPreviousScoredDay": -3.8,
-      "flags": []
+      "storyCount": 2,
+      "sourceCount": 2,
+      "changeFromPreviousScoredDay": -0.3,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 26.8"
+        }
+      ]
     },
     "lloyds": {
       "companyName": "Lloyds Banking Group",
@@ -400,23 +410,23 @@
       "companyName": "3i Group",
       "ticker": "III.L",
       "slug": "3i",
-      "date": "2026-09-01",
-      "dailyScore": 50.5,
-      "dailyLabel": "Neutral / mixed",
+      "date": "2026-09-02",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
       "rollingScore": 50.5,
-      "confidence": 10.0,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": 0.4,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 10.0"
+          "detail": "Collection succeeded but found no eligible coverage"
         }
       ]
     },
@@ -424,46 +434,47 @@
       "companyName": "Experian",
       "ticker": "EXPN.L",
       "slug": "experian",
-      "date": "2026-09-01",
-      "dailyScore": 44.8,
+      "date": "2026-09-02",
+      "dailyScore": 42.5,
       "dailyLabel": "Slightly negative",
-      "rollingScore": 48.8,
-      "confidence": 41.7,
+      "rollingScore": 47.9,
+      "confidence": 46.0,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
       "storyCount": 5,
-      "sourceCount": 14,
-      "changeFromPreviousScoredDay": -9.8,
-      "flags": [
-        {
-          "type": "cybersecurity_incident",
-          "direction": "negative",
-          "severity": "critical",
-          "status": "confirmed"
-        }
-      ]
+      "sourceCount": 5,
+      "changeFromPreviousScoredDay": -2.3,
+      "flags": []
     },
     "glencore": {
       "companyName": "Glencore",
       "ticker": "GLEN.L",
       "slug": "glencore",
-      "date": "2026-09-01",
-      "dailyScore": 45.8,
+      "date": "2026-09-02",
+      "dailyScore": 54.8,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.7,
-      "confidence": 47.0,
+      "rollingScore": 50.5,
+      "confidence": 45.9,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 6,
-      "sourceCount": 6,
-      "changeFromPreviousScoredDay": -3.3,
-      "flags": []
+      "storyCount": 4,
+      "sourceCount": 8,
+      "changeFromPreviousScoredDay": 9.0,
+      "flags": [
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed"
+        }
+      ]
     },
     "admiral": {
       "companyName": "Admiral Group PLC",
       "ticker": "ADM.L",
       "slug": "admiral",
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,
@@ -518,7 +529,7 @@
       "companyName": "Alliance Witan PLC",
       "ticker": "ALW.L",
       "slug": "alliance-witan",
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 49.9,
@@ -542,47 +553,39 @@
       "companyName": "Anglo American PLC",
       "ticker": "AAL.L",
       "slug": "anglo-american",
-      "date": "2026-08-31",
-      "dailyScore": 51.7,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 51.2,
-      "confidence": 21.0,
-      "confidenceBand": "low",
+      "date": "2026-09-02",
+      "dailyScore": 40.6,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 49.3,
+      "confidence": 52.2,
+      "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 2,
-      "sourceCount": 2,
-      "changeFromPreviousScoredDay": 1.1,
-      "flags": [
-        {
-          "type": "low_confidence",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Confidence is 21.0"
-        }
-      ]
+      "storyCount": 9,
+      "sourceCount": 9,
+      "changeFromPreviousScoredDay": -11.1,
+      "flags": []
     },
     "antofagasta": {
       "companyName": "Antofagasta PLC",
       "ticker": "ANTO.L",
       "slug": "antofagasta",
-      "date": "2026-09-01",
-      "dailyScore": 33.2,
-      "dailyLabel": "Negative",
-      "rollingScore": 48.7,
-      "confidence": 34.7,
+      "date": "2026-09-02",
+      "dailyScore": 50.3,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.0,
+      "confidence": 9.9,
       "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 3,
-      "sourceCount": 2,
-      "changeFromPreviousScoredDay": -31.0,
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 17.1,
       "flags": [
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 34.7"
+          "detail": "Confidence is 9.9"
         }
       ]
     },
@@ -590,30 +593,23 @@
       "companyName": "Ashtead Group PLC",
       "ticker": "AHT.L",
       "slug": "ashtead",
-      "date": "2026-09-01",
-      "dailyScore": 40.6,
-      "dailyLabel": "Slightly negative",
-      "rollingScore": 48.4,
-      "confidence": 22.0,
+      "date": "2026-09-02",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 48.6,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 2,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": -9.2,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "high_disagreement",
-          "direction": "mixed",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "Positive and negative coverage is unusually dispersed"
-        },
-        {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 22.0"
+          "detail": "Collection succeeded but found no eligible coverage"
         }
       ]
     },
@@ -621,23 +617,23 @@
       "companyName": "Associated British Foods PLC",
       "ticker": "ABF.L",
       "slug": "associated-british-foods",
-      "date": "2026-09-01",
-      "dailyScore": 34.5,
-      "dailyLabel": "Negative",
-      "rollingScore": 48.8,
-      "confidence": 12.8,
+      "date": "2026-09-02",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 48.9,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": -21.4,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 12.8"
+          "detail": "Collection succeeded but found no eligible coverage"
         }
       ]
     },
@@ -645,23 +641,23 @@
       "companyName": "Auto Trader Group PLC",
       "ticker": "AUTO.L",
       "slug": "auto-trader",
-      "date": "2026-09-01",
-      "dailyScore": 42.4,
-      "dailyLabel": "Slightly negative",
-      "rollingScore": 49.3,
-      "confidence": 32.2,
+      "date": "2026-09-02",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 49.4,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 3,
-      "sourceCount": 2,
-      "changeFromPreviousScoredDay": -14.0,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 32.2"
+          "detail": "Collection succeeded but found no eligible coverage"
         }
       ]
     },
@@ -669,26 +665,26 @@
       "companyName": "Aviva PLC",
       "ticker": "AV.L",
       "slug": "aviva",
-      "date": "2026-09-01",
-      "dailyScore": 60.8,
-      "dailyLabel": "Positive",
-      "rollingScore": 50.8,
-      "confidence": 41.0,
+      "date": "2026-09-02",
+      "dailyScore": 53.3,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 51.1,
+      "confidence": 47.4,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 3,
-      "sourceCount": 3,
-      "changeFromPreviousScoredDay": 9.1,
+      "storyCount": 6,
+      "sourceCount": 6,
+      "changeFromPreviousScoredDay": -7.5,
       "flags": []
     },
     "barratt-redrow": {
       "companyName": "Barratt Redrow PLC",
       "ticker": "BTRW.L",
       "slug": "barratt-redrow",
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 51.4,
+      "rollingScore": 51.3,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -709,7 +705,7 @@
       "companyName": "Beazley PLC",
       "ticker": "BEZ.L",
       "slug": "beazley",
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 49.7,
@@ -733,7 +729,7 @@
       "companyName": "Berkeley Group Holdings PLC",
       "ticker": "BKG.L",
       "slug": "berkeley",
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.5,
@@ -757,7 +753,7 @@
       "companyName": "British Land Co PLC",
       "ticker": "BLND.L",
       "slug": "british-land",
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,
@@ -781,7 +777,7 @@
       "companyName": "BT Group PLC",
       "ticker": "BT-A.L",
       "slug": "bt",
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,
@@ -805,29 +801,23 @@
       "companyName": "Bunzl PLC",
       "ticker": "BNZL.L",
       "slug": "bunzl",
-      "date": "2026-09-01",
-      "dailyScore": 36.9,
-      "dailyLabel": "Negative",
-      "rollingScore": 48.7,
-      "confidence": 39.9,
+      "date": "2026-09-02",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 48.8,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 4,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": -16.6,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "share_buyback",
-          "direction": "positive",
-          "severity": "medium",
-          "status": "possible"
-        },
-        {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 39.9"
+          "detail": "Collection succeeded but found no eligible coverage"
         }
       ]
     },
@@ -835,23 +825,23 @@
       "companyName": "Centrica PLC",
       "ticker": "CNA.L",
       "slug": "centrica",
-      "date": "2026-09-01",
-      "dailyScore": 43.6,
-      "dailyLabel": "Slightly negative",
-      "rollingScore": 48.0,
-      "confidence": 32.2,
+      "date": "2026-09-02",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 48.2,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 3,
-      "sourceCount": 2,
-      "changeFromPreviousScoredDay": 4.2,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 32.2"
+          "detail": "Collection succeeded but found no eligible coverage"
         }
       ]
     },
@@ -859,10 +849,10 @@
       "companyName": "Coca-Cola HBC AG",
       "ticker": "CCH.L",
       "slug": "coca-cola-hbc",
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 48.6,
+      "rollingScore": 48.7,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -883,30 +873,23 @@
       "companyName": "Convatec Group PLC",
       "ticker": "CTEC.L",
       "slug": "convatec",
-      "date": "2026-09-01",
-      "dailyScore": 40.6,
-      "dailyLabel": "Slightly negative",
-      "rollingScore": 48.3,
-      "confidence": 22.0,
+      "date": "2026-09-02",
+      "dailyScore": 36.7,
+      "dailyLabel": "Negative",
+      "rollingScore": 47.1,
+      "confidence": 12.8,
       "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 2,
+      "storyCount": 1,
       "sourceCount": 1,
-      "changeFromPreviousScoredDay": 4.8,
+      "changeFromPreviousScoredDay": -3.9,
       "flags": [
-        {
-          "type": "high_disagreement",
-          "direction": "mixed",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "Positive and negative coverage is unusually dispersed"
-        },
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 22.0"
+          "detail": "Confidence is 12.8"
         }
       ]
     },
@@ -914,10 +897,10 @@
       "companyName": "Croda International PLC",
       "ticker": "CRDA.L",
       "slug": "croda-international",
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 47.9,
+      "rollingScore": 48.1,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -938,23 +921,23 @@
       "companyName": "DCC PLC",
       "ticker": "DCC.L",
       "slug": "dcc",
-      "date": "2026-09-01",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
+      "date": "2026-09-02",
+      "dailyScore": 49.9,
+      "dailyLabel": "Neutral / mixed",
       "rollingScore": 49.7,
-      "confidence": 0.0,
+      "confidence": 26.2,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 2,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 0.4,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "Confidence is 26.2"
         }
       ]
     },
@@ -962,7 +945,7 @@
       "companyName": "Diploma PLC",
       "ticker": "DPLM.L",
       "slug": "diploma",
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,
@@ -986,54 +969,39 @@
       "companyName": "EasyJet PLC",
       "ticker": "EZJ.L",
       "slug": "easyjet",
-      "date": "2026-09-01",
-      "dailyScore": 37.4,
+      "date": "2026-09-02",
+      "dailyScore": 31.8,
       "dailyLabel": "Negative",
-      "rollingScore": 43.3,
-      "confidence": 55.5,
+      "rollingScore": 42.1,
+      "confidence": 44.2,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 6,
-      "sourceCount": 6,
-      "changeFromPreviousScoredDay": -16.8,
-      "flags": [
-        {
-          "type": "sentiment_drop",
-          "direction": "negative",
-          "severity": "high",
-          "status": "calculated",
-          "detail": "Daily score decreased by 16.8 points"
-        }
-      ]
+      "storyCount": 3,
+      "sourceCount": 3,
+      "changeFromPreviousScoredDay": -5.6,
+      "flags": []
     },
     "endeavour-mining": {
       "companyName": "Endeavour Mining PLC",
       "ticker": "EDV.L",
       "slug": "endeavour-mining",
-      "date": "2026-09-01",
-      "dailyScore": 28.0,
+      "date": "2026-09-02",
+      "dailyScore": 36.7,
       "dailyLabel": "Negative",
-      "rollingScore": 46.2,
-      "confidence": 45.8,
-      "confidenceBand": "medium",
+      "rollingScore": 45.4,
+      "confidence": 12.8,
+      "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 4,
-      "sourceCount": 2,
-      "changeFromPreviousScoredDay": -12.9,
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 8.7,
       "flags": [
         {
-          "type": "sentiment_drop",
-          "direction": "negative",
-          "severity": "high",
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
           "status": "calculated",
-          "detail": "Daily score decreased by 12.9 points"
-        },
-        {
-          "type": "bad_press",
-          "direction": "negative",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "Daily press score is 28.0"
+          "detail": "Confidence is 12.8"
         }
       ]
     },
@@ -1041,30 +1009,23 @@
       "companyName": "Entain PLC",
       "ticker": "ENT.L",
       "slug": "entain",
-      "date": "2026-09-01",
-      "dailyScore": 40.6,
-      "dailyLabel": "Slightly negative",
-      "rollingScore": 47.6,
-      "confidence": 22.0,
+      "date": "2026-09-02",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 47.8,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 2,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": -9.7,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "high_disagreement",
-          "direction": "mixed",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "Positive and negative coverage is unusually dispersed"
-        },
-        {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 22.0"
+          "detail": "Collection succeeded but found no eligible coverage"
         }
       ]
     },
@@ -1072,7 +1033,7 @@
       "companyName": "F&C Investment Trust PLC",
       "ticker": "FCIT.L",
       "slug": "fandc-investment-trust",
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.5,
@@ -1096,23 +1057,23 @@
       "companyName": "Fresnillo PLC",
       "ticker": "FRES.L",
       "slug": "fresnillo",
-      "date": "2026-08-31",
-      "dailyScore": 40.9,
-      "dailyLabel": "Slightly negative",
-      "rollingScore": 48.5,
-      "confidence": 12.7,
+      "date": "2026-09-02",
+      "dailyScore": 39.7,
+      "dailyLabel": "Negative",
+      "rollingScore": 47.6,
+      "confidence": 23.7,
       "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": -9.3,
+      "storyCount": 2,
+      "sourceCount": 2,
+      "changeFromPreviousScoredDay": -1.2,
       "flags": [
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 12.7"
+          "detail": "Confidence is 23.7"
         }
       ]
     },
@@ -1120,23 +1081,23 @@
       "companyName": "Games Workshop Group PLC",
       "ticker": "GAW.L",
       "slug": "games-workshop",
-      "date": "2026-09-01",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 47.7,
-      "confidence": 0.0,
+      "date": "2026-09-02",
+      "dailyScore": 52.0,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 48.4,
+      "confidence": 21.0,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 2,
+      "sourceCount": 2,
+      "changeFromPreviousScoredDay": 1.9,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "Confidence is 21.0"
         }
       ]
     },
@@ -1144,23 +1105,23 @@
       "companyName": "Haleon PLC",
       "ticker": "HLN.L",
       "slug": "haleon",
-      "date": "2026-09-01",
-      "dailyScore": 67.9,
-      "dailyLabel": "Positive",
-      "rollingScore": 52.3,
-      "confidence": 36.2,
-      "confidenceBand": "low",
+      "date": "2026-09-02",
+      "dailyScore": 55.4,
+      "dailyLabel": "Slightly positive",
+      "rollingScore": 52.6,
+      "confidence": 44.6,
+      "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 3,
-      "sourceCount": 4,
-      "changeFromPreviousScoredDay": 17.0,
+      "storyCount": 6,
+      "sourceCount": 6,
+      "changeFromPreviousScoredDay": -12.5,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "coverage_spike",
           "direction": "neutral",
-          "severity": "low",
+          "severity": "medium",
           "status": "calculated",
-          "detail": "Confidence is 36.2"
+          "detail": "6 stories versus trailing median 1"
         }
       ]
     },
@@ -1168,10 +1129,10 @@
       "companyName": "Halma PLC",
       "ticker": "HLMA.L",
       "slug": "halma",
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 48.4,
+      "rollingScore": 48.6,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -1192,23 +1153,23 @@
       "companyName": "Hargreaves Lansdown PLC",
       "ticker": "HL.L",
       "slug": "hargreaves-lansdown",
-      "date": "2026-09-01",
-      "dailyScore": 48.7,
-      "dailyLabel": "Neutral / mixed",
+      "date": "2026-09-02",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
       "rollingScore": 50.3,
-      "confidence": 10.1,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": 4.7,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 10.1"
+          "detail": "Collection succeeded but found no eligible coverage"
         }
       ]
     },
@@ -1216,10 +1177,10 @@
       "companyName": "Hikma Pharmaceuticals PLC",
       "ticker": "HIK.L",
       "slug": "hikma-pharmaceuticals",
-      "date": "2026-08-31",
+      "date": "2026-09-02",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 50.4,
+      "rollingScore": 50.3,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -1240,23 +1201,23 @@
       "companyName": "Hiscox Ltd",
       "ticker": "HSX.L",
       "slug": "hiscox",
-      "date": "2026-09-01",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 48.0,
-      "confidence": 0.0,
+      "date": "2026-09-02",
+      "dailyScore": 48.6,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 48.2,
+      "confidence": 32.1,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 3,
+      "sourceCount": 3,
+      "changeFromPreviousScoredDay": 14.0,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "Confidence is 32.1"
         }
       ]
     },
@@ -1264,10 +1225,10 @@
       "companyName": "Howden Joinery Group PLC",
       "ticker": "HWDN.L",
       "slug": "howden-joinery",
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 48.0,
+      "rollingScore": 48.2,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -1288,7 +1249,7 @@
       "companyName": "IMI PLC",
       "ticker": "IMI.L",
       "slug": "imi",
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,
@@ -1312,10 +1273,10 @@
       "companyName": "Imperial Brands PLC",
       "ticker": "IMB.L",
       "slug": "imperial-brands",
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 48.2,
+      "rollingScore": 48.4,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -1336,23 +1297,23 @@
       "companyName": "Informa PLC",
       "ticker": "INF.L",
       "slug": "informa",
-      "date": "2026-09-01",
-      "dailyScore": 48.7,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 52.0,
-      "confidence": 10.1,
+      "date": "2026-09-02",
+      "dailyScore": 56.0,
+      "dailyLabel": "Slightly positive",
+      "rollingScore": 52.3,
+      "confidence": 10.9,
       "confidenceBand": "low",
       "coverageStatus": "ok",
       "storyCount": 1,
       "sourceCount": 1,
-      "changeFromPreviousScoredDay": -15.5,
+      "changeFromPreviousScoredDay": 7.3,
       "flags": [
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 10.1"
+          "detail": "Confidence is 10.9"
         }
       ]
     },
@@ -1360,39 +1321,39 @@
       "companyName": "InterContinental Hotels Group PLC",
       "ticker": "IHG.L",
       "slug": "intercontinental-hotels",
-      "date": "2026-09-01",
-      "dailyScore": 47.0,
+      "date": "2026-09-02",
+      "dailyScore": 50.8,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.3,
-      "confidence": 41.8,
+      "rollingScore": 49.6,
+      "confidence": 46.3,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
       "storyCount": 4,
-      "sourceCount": 3,
-      "changeFromPreviousScoredDay": -2.6,
+      "sourceCount": 5,
+      "changeFromPreviousScoredDay": 3.8,
       "flags": []
     },
     "intermediate-capital": {
       "companyName": "Intermediate Capital Group PLC",
       "ticker": "ICG.L",
       "slug": "intermediate-capital",
-      "date": "2026-09-01",
-      "dailyScore": 50.8,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 51.4,
-      "confidence": 10.1,
+      "date": "2026-09-02",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 51.3,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": -14.5,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 10.1"
+          "detail": "Collection succeeded but found no eligible coverage"
         }
       ]
     },
@@ -1400,152 +1361,16 @@
       "companyName": "Intertek Group PLC",
       "ticker": "ITRK.L",
       "slug": "intertek",
-      "date": "2026-09-01",
-      "dailyScore": 64.1,
-      "dailyLabel": "Positive",
-      "rollingScore": 51.3,
-      "confidence": 12.5,
-      "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": 13.9,
-      "flags": [
-        {
-          "type": "low_confidence",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Confidence is 12.5"
-        }
-      ]
-    },
-    "international-consolidated-airlines": {
-      "companyName": "International Consolidated Airlines Group SA",
-      "ticker": "IAG.L",
-      "slug": "international-consolidated-airlines",
-      "date": "2026-08-31",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.0,
-      "confidence": 0.0,
-      "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
-      "flags": [
-        {
-          "type": "no_coverage",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
-        }
-      ]
-    },
-    "jd-sports-fashion": {
-      "companyName": "JD Sports Fashion PLC",
-      "ticker": "JD.L",
-      "slug": "jd-sports-fashion",
-      "date": "2026-09-01",
-      "dailyScore": 47.2,
+      "date": "2026-09-02",
+      "dailyScore": 50.4,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 47.3,
-      "confidence": 36.9,
-      "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 4,
-      "sourceCount": 3,
-      "changeFromPreviousScoredDay": 24.0,
-      "flags": [
-        {
-          "type": "low_confidence",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Confidence is 36.9"
-        }
-      ]
-    },
-    "kingfisher": {
-      "companyName": "Kingfisher PLC",
-      "ticker": "KGF.L",
-      "slug": "kingfisher",
-      "date": "2026-09-01",
-      "dailyScore": 60.1,
-      "dailyLabel": "Positive",
-      "rollingScore": 51.7,
-      "confidence": 55.3,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "storyCount": 6,
-      "sourceCount": 5,
-      "changeFromPreviousScoredDay": 9.6,
-      "flags": [
-        {
-          "type": "high_disagreement",
-          "direction": "mixed",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "Positive and negative coverage is unusually dispersed"
-        }
-      ]
-    },
-    "land-securities": {
-      "companyName": "Land Securities Group PLC",
-      "ticker": "LAND.L",
-      "slug": "land-securities",
-      "date": "2026-09-01",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.2,
-      "confidence": 0.0,
-      "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
-      "flags": [
-        {
-          "type": "no_coverage",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
-        }
-      ]
-    },
-    "legal-and-general": {
-      "companyName": "Legal & General Group PLC",
-      "ticker": "LGEN.L",
-      "slug": "legal-and-general",
-      "date": "2026-09-01",
-      "dailyScore": 55.1,
-      "dailyLabel": "Slightly positive",
-      "rollingScore": 50.5,
-      "confidence": 45.2,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "storyCount": 6,
-      "sourceCount": 2,
-      "changeFromPreviousScoredDay": -1.4,
-      "flags": []
-    },
-    "londonmetric-property": {
-      "companyName": "LondonMetric Property PLC",
-      "ticker": "LMP.L",
-      "slug": "londonmetric-property",
-      "date": "2026-09-01",
-      "dailyScore": 49.8,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.9,
+      "rollingScore": 51.1,
       "confidence": 15.1,
       "confidenceBand": "low",
       "coverageStatus": "ok",
       "storyCount": 1,
       "sourceCount": 1,
-      "changeFromPreviousScoredDay": 2.6,
+      "changeFromPreviousScoredDay": -13.7,
       "flags": [
         {
           "type": "low_confidence",
@@ -1556,91 +1381,44 @@
         }
       ]
     },
-    "mandg": {
-      "companyName": "M&G PLC",
-      "ticker": "MNG.L",
-      "slug": "mandg",
-      "date": "2026-09-01",
-      "dailyScore": 50.1,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.2,
-      "confidence": 9.8,
+    "international-consolidated-airlines": {
+      "companyName": "International Consolidated Airlines Group SA",
+      "ticker": "IAG.L",
+      "slug": "international-consolidated-airlines",
+      "date": "2026-09-02",
+      "dailyScore": 65.0,
+      "dailyLabel": "Positive",
+      "rollingScore": 51.7,
+      "confidence": 12.7,
       "confidenceBand": "low",
       "coverageStatus": "ok",
       "storyCount": 1,
       "sourceCount": 1,
-      "changeFromPreviousScoredDay": 3.3,
+      "changeFromPreviousScoredDay": 11.2,
       "flags": [
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 9.8"
+          "detail": "Confidence is 12.7"
         }
       ]
     },
-    "marks-and-spencer": {
-      "companyName": "Marks & Spencer Group PLC",
-      "ticker": "MKS.L",
-      "slug": "marks-and-spencer",
-      "date": "2026-09-01",
-      "dailyScore": 50.1,
+    "jd-sports-fashion": {
+      "companyName": "JD Sports Fashion PLC",
+      "ticker": "JD.L",
+      "slug": "jd-sports-fashion",
+      "date": "2026-09-02",
+      "dailyScore": 49.7,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.7,
-      "confidence": 53.8,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "storyCount": 18,
-      "sourceCount": 21,
-      "changeFromPreviousScoredDay": -0.5,
-      "flags": []
-    },
-    "melrose-industries": {
-      "companyName": "Melrose Industries PLC",
-      "ticker": "MRO.L",
-      "slug": "melrose-industries",
-      "date": "2026-09-01",
-      "dailyScore": 40.6,
-      "dailyLabel": "Slightly negative",
-      "rollingScore": 48.3,
-      "confidence": 22.0,
-      "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 2,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": 6.3,
-      "flags": [
-        {
-          "type": "high_disagreement",
-          "direction": "mixed",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "Positive and negative coverage is unusually dispersed"
-        },
-        {
-          "type": "low_confidence",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Confidence is 22.0"
-        }
-      ]
-    },
-    "mondi": {
-      "companyName": "Mondi PLC",
-      "ticker": "MNDI.L",
-      "slug": "mondi",
-      "date": "2026-09-01",
-      "dailyScore": 50.6,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 51.1,
+      "rollingScore": 47.8,
       "confidence": 9.9,
       "confidenceBand": "low",
       "coverageStatus": "ok",
       "storyCount": 1,
       "sourceCount": 1,
-      "changeFromPreviousScoredDay": -5.1,
+      "changeFromPreviousScoredDay": 2.5,
       "flags": [
         {
           "type": "low_confidence",
@@ -1651,27 +1429,210 @@
         }
       ]
     },
+    "kingfisher": {
+      "companyName": "Kingfisher PLC",
+      "ticker": "KGF.L",
+      "slug": "kingfisher",
+      "date": "2026-09-02",
+      "dailyScore": 51.1,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 51.5,
+      "confidence": 55.5,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "storyCount": 9,
+      "sourceCount": 8,
+      "changeFromPreviousScoredDay": -9.0,
+      "flags": []
+    },
+    "land-securities": {
+      "companyName": "Land Securities Group PLC",
+      "ticker": "LAND.L",
+      "slug": "land-securities",
+      "date": "2026-09-02",
+      "dailyScore": 49.9,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.2,
+      "confidence": 10.1,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -2.5,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 10.1"
+        }
+      ]
+    },
+    "legal-and-general": {
+      "companyName": "Legal & General Group PLC",
+      "ticker": "LGEN.L",
+      "slug": "legal-and-general",
+      "date": "2026-09-02",
+      "dailyScore": 49.4,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.3,
+      "confidence": 47.4,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "storyCount": 8,
+      "sourceCount": 4,
+      "changeFromPreviousScoredDay": -5.7,
+      "flags": []
+    },
+    "londonmetric-property": {
+      "companyName": "LondonMetric Property PLC",
+      "ticker": "LMP.L",
+      "slug": "londonmetric-property",
+      "date": "2026-09-02",
+      "dailyScore": 49.6,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.9,
+      "confidence": 9.9,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -0.2,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 9.9"
+        }
+      ]
+    },
+    "mandg": {
+      "companyName": "M&G PLC",
+      "ticker": "MNG.L",
+      "slug": "mandg",
+      "date": "2026-09-02",
+      "dailyScore": 48.3,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.2,
+      "confidence": 10.2,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -1.8,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 10.2"
+        }
+      ]
+    },
+    "marks-and-spencer": {
+      "companyName": "Marks & Spencer Group PLC",
+      "ticker": "MKS.L",
+      "slug": "marks-and-spencer",
+      "date": "2026-09-02",
+      "dailyScore": 50.8,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.9,
+      "confidence": 46.1,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "storyCount": 6,
+      "sourceCount": 8,
+      "changeFromPreviousScoredDay": 0.7,
+      "flags": []
+    },
+    "melrose-industries": {
+      "companyName": "Melrose Industries PLC",
+      "ticker": "MRO.L",
+      "slug": "melrose-industries",
+      "date": "2026-09-02",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 48.5,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
+      "flags": [
+        {
+          "type": "no_coverage",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Collection succeeded but found no eligible coverage"
+        }
+      ]
+    },
+    "mondi": {
+      "companyName": "Mondi PLC",
+      "ticker": "MNDI.L",
+      "slug": "mondi",
+      "date": "2026-09-02",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 51.0,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
+      "flags": [
+        {
+          "type": "no_coverage",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Collection succeeded but found no eligible coverage"
+        }
+      ]
+    },
     "natwest": {
       "companyName": "NatWest Group PLC",
       "ticker": "NWG.L",
       "slug": "natwest",
-      "date": "2026-09-01",
-      "dailyScore": 50.2,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 48.1,
-      "confidence": 54.1,
+      "date": "2026-09-02",
+      "dailyScore": 36.1,
+      "dailyLabel": "Negative",
+      "rollingScore": 46.4,
+      "confidence": 51.8,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 9,
-      "sourceCount": 7,
-      "changeFromPreviousScoredDay": 6.9,
-      "flags": []
+      "storyCount": 5,
+      "sourceCount": 31,
+      "changeFromPreviousScoredDay": -14.1,
+      "flags": [
+        {
+          "type": "sentiment_drop",
+          "direction": "negative",
+          "severity": "high",
+          "status": "calculated",
+          "detail": "Daily score decreased by 14.1 points"
+        },
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed"
+        }
+      ]
     },
     "next": {
       "companyName": "Next PLC",
       "ticker": "NXT.L",
       "slug": "next",
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.5,
@@ -1695,26 +1656,40 @@
       "companyName": "Pearson PLC",
       "ticker": "PSON.L",
       "slug": "pearson",
-      "date": "2026-09-01",
-      "dailyScore": 49.7,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 47.9,
-      "confidence": 54.1,
+      "date": "2026-09-02",
+      "dailyScore": 43.8,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 47.5,
+      "confidence": 44.9,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 22,
-      "sourceCount": 26,
-      "changeFromPreviousScoredDay": 0.9,
-      "flags": []
+      "storyCount": 31,
+      "sourceCount": 50,
+      "changeFromPreviousScoredDay": -5.9,
+      "flags": [
+        {
+          "type": "fine_or_lawsuit",
+          "direction": "negative",
+          "severity": "high",
+          "status": "possible"
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day"
+        }
+      ]
     },
     "pershing-square": {
       "companyName": "Pershing Square Holdings Ltd",
       "ticker": "PSH.L",
       "slug": "pershing-square",
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 50.6,
+      "rollingScore": 50.5,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -1735,23 +1710,23 @@
       "companyName": "Persimmon PLC",
       "ticker": "PSN.L",
       "slug": "persimmon",
-      "date": "2026-09-01",
-      "dailyScore": 44.3,
-      "dailyLabel": "Slightly negative",
-      "rollingScore": 49.2,
-      "confidence": 32.5,
+      "date": "2026-09-02",
+      "dailyScore": 59.7,
+      "dailyLabel": "Slightly positive",
+      "rollingScore": 50.7,
+      "confidence": 34.6,
       "confidenceBand": "low",
       "coverageStatus": "ok",
       "storyCount": 3,
-      "sourceCount": 2,
-      "changeFromPreviousScoredDay": -16.2,
+      "sourceCount": 3,
+      "changeFromPreviousScoredDay": 15.4,
       "flags": [
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 32.5"
+          "detail": "Confidence is 34.6"
         }
       ]
     },
@@ -1759,7 +1734,7 @@
       "companyName": "Phoenix Group Holdings PLC",
       "ticker": "PHNX.L",
       "slug": "phoenix",
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,
@@ -1783,39 +1758,39 @@
       "companyName": "Prudential PLC",
       "ticker": "PRU.L",
       "slug": "prudential",
-      "date": "2026-09-01",
-      "dailyScore": 51.0,
+      "date": "2026-09-02",
+      "dailyScore": 49.4,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.7,
-      "confidence": 49.7,
+      "rollingScore": 50.4,
+      "confidence": 56.8,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 10,
-      "sourceCount": 12,
-      "changeFromPreviousScoredDay": 0.9,
+      "storyCount": 22,
+      "sourceCount": 15,
+      "changeFromPreviousScoredDay": -1.6,
       "flags": []
     },
     "reckitt-benckiser": {
       "companyName": "Reckitt Benckiser Group PLC",
       "ticker": "RKT.L",
       "slug": "reckitt-benckiser",
-      "date": "2026-09-01",
-      "dailyScore": 43.5,
-      "dailyLabel": "Slightly negative",
-      "rollingScore": 49.2,
-      "confidence": 45.8,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "storyCount": 4,
-      "sourceCount": 2,
-      "changeFromPreviousScoredDay": -6.0,
+      "date": "2026-09-02",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 49.3,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "high_disagreement",
-          "direction": "mixed",
-          "severity": "medium",
+          "type": "no_coverage",
+          "direction": "neutral",
+          "severity": "low",
           "status": "calculated",
-          "detail": "Positive and negative coverage is unusually dispersed"
+          "detail": "Collection succeeded but found no eligible coverage"
         }
       ]
     },
@@ -1823,23 +1798,23 @@
       "companyName": "Rentokil Initial PLC",
       "ticker": "RTO.L",
       "slug": "rentokil-initial",
-      "date": "2026-09-01",
-      "dailyScore": 34.5,
-      "dailyLabel": "Negative",
-      "rollingScore": 48.8,
-      "confidence": 12.8,
+      "date": "2026-09-02",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 48.9,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": -28.1,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 12.8"
+          "detail": "Collection succeeded but found no eligible coverage"
         }
       ]
     },
@@ -1847,17 +1822,25 @@
       "companyName": "Rightmove PLC",
       "ticker": "RMV.L",
       "slug": "rightmove",
-      "date": "2026-09-01",
-      "dailyScore": 49.0,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.2,
-      "confidence": 56.6,
-      "confidenceBand": "medium",
+      "date": "2026-09-02",
+      "dailyScore": 29.2,
+      "dailyLabel": "Negative",
+      "rollingScore": 47.4,
+      "confidence": 30.5,
+      "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 6,
-      "sourceCount": 6,
-      "changeFromPreviousScoredDay": -6.3,
-      "flags": []
+      "storyCount": 2,
+      "sourceCount": 3,
+      "changeFromPreviousScoredDay": -19.8,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 30.5"
+        }
+      ]
     },
     "sage": {
       "companyName": "Sage Group PLC",
@@ -1887,16 +1870,40 @@
       "companyName": "J Sainsbury PLC",
       "ticker": "SBRY.L",
       "slug": "j-sainsbury",
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "dailyScore": 49.9,
       "dailyLabel": "Neutral / mixed",
       "rollingScore": 49.7,
+      "confidence": 20.7,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "storyCount": 2,
+      "sourceCount": 2,
+      "changeFromPreviousScoredDay": 0.0,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 20.7"
+        }
+      ]
+    },
+    "schroders": {
+      "companyName": "Schroders PLC",
+      "ticker": "SDR.L",
+      "slug": "schroders",
+      "date": "2026-09-02",
+      "dailyScore": 49.6,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.8,
       "confidence": 9.9,
       "confidenceBand": "low",
       "coverageStatus": "ok",
       "storyCount": 1,
       "sourceCount": 1,
-      "changeFromPreviousScoredDay": -0.4,
+      "changeFromPreviousScoredDay": -2.9,
       "flags": [
         {
           "type": "low_confidence",
@@ -1907,14 +1914,14 @@
         }
       ]
     },
-    "schroders": {
-      "companyName": "Schroders PLC",
-      "ticker": "SDR.L",
-      "slug": "schroders",
-      "date": "2026-09-01",
+    "scottish-mortgage-investment-trust": {
+      "companyName": "Scottish Mortgage Investment Trust PLC",
+      "ticker": "SMT.L",
+      "slug": "scottish-mortgage-investment-trust",
+      "date": "2026-09-02",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 49.8,
+      "rollingScore": 49.6,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -1928,30 +1935,6 @@
           "severity": "low",
           "status": "calculated",
           "detail": "Collection succeeded but found no eligible coverage"
-        }
-      ]
-    },
-    "scottish-mortgage-investment-trust": {
-      "companyName": "Scottish Mortgage Investment Trust PLC",
-      "ticker": "SMT.L",
-      "slug": "scottish-mortgage-investment-trust",
-      "date": "2026-09-01",
-      "dailyScore": 50.1,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.6,
-      "confidence": 9.8,
-      "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": -0.1,
-      "flags": [
-        {
-          "type": "low_confidence",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Confidence is 9.8"
         }
       ]
     },
@@ -1959,58 +1942,10 @@
       "companyName": "Segro PLC",
       "ticker": "SGRO.L",
       "slug": "segro",
-      "date": "2026-09-01",
-      "dailyScore": 46.0,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 48.6,
-      "confidence": 42.4,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "storyCount": 3,
-      "sourceCount": 3,
-      "changeFromPreviousScoredDay": 5.1,
-      "flags": [
-        {
-          "type": "high_disagreement",
-          "direction": "mixed",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "Positive and negative coverage is unusually dispersed"
-        }
-      ]
-    },
-    "severn-trent": {
-      "companyName": "Severn Trent PLC",
-      "ticker": "SVT.L",
-      "slug": "severn-trent",
-      "date": "2026-09-01",
-      "dailyScore": 36.1,
-      "dailyLabel": "Negative",
-      "rollingScore": 44.0,
-      "confidence": 19.2,
-      "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": -9.8,
-      "flags": [
-        {
-          "type": "low_confidence",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Confidence is 19.2"
-        }
-      ]
-    },
-    "smith-and-nephew": {
-      "companyName": "Smith & Nephew PLC",
-      "ticker": "SN.L",
-      "slug": "smith-and-nephew",
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 50.8,
+      "rollingScore": 48.7,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -2027,14 +1962,62 @@
         }
       ]
     },
+    "severn-trent": {
+      "companyName": "Severn Trent PLC",
+      "ticker": "SVT.L",
+      "slug": "severn-trent",
+      "date": "2026-09-02",
+      "dailyScore": 40.5,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 44.1,
+      "confidence": 11.6,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 4.4,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 11.6"
+        }
+      ]
+    },
+    "smith-and-nephew": {
+      "companyName": "Smith & Nephew PLC",
+      "ticker": "SN.L",
+      "slug": "smith-and-nephew",
+      "date": "2026-09-02",
+      "dailyScore": 49.5,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.6,
+      "confidence": 9.9,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -7.0,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 9.9"
+        }
+      ]
+    },
     "ds-smith": {
       "companyName": "DS Smith PLC",
       "ticker": "SMDS.L",
       "slug": "ds-smith",
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 51.0,
+      "rollingScore": 50.9,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -2055,17 +2038,25 @@
       "companyName": "Smiths Group PLC",
       "ticker": "SMIN.L",
       "slug": "smiths",
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "dailyScore": 53.6,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.0,
-      "confidence": 53.0,
-      "confidenceBand": "medium",
+      "rollingScore": 49.7,
+      "confidence": 38.1,
+      "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 9,
-      "sourceCount": 9,
-      "changeFromPreviousScoredDay": 7.0,
-      "flags": []
+      "storyCount": 4,
+      "sourceCount": 4,
+      "changeFromPreviousScoredDay": 0.0,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 38.1"
+        }
+      ]
     },
     "spirax": {
       "companyName": "Spirax Group PLC",
@@ -2095,7 +2086,7 @@
       "companyName": "SSE PLC",
       "ticker": "SSE.L",
       "slug": "sse",
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,
@@ -2119,7 +2110,7 @@
       "companyName": "St James's Place PLC",
       "ticker": "STJ.L",
       "slug": "st-jamess-place",
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,
@@ -2143,39 +2134,47 @@
       "companyName": "Standard Chartered PLC",
       "ticker": "STAN.L",
       "slug": "standard-chartered",
-      "date": "2026-09-01",
-      "dailyScore": 57.1,
-      "dailyLabel": "Slightly positive",
-      "rollingScore": 52.5,
-      "confidence": 52.4,
+      "date": "2026-09-02",
+      "dailyScore": 47.6,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 51.5,
+      "confidence": 57.1,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 10,
-      "sourceCount": 13,
-      "changeFromPreviousScoredDay": 3.3,
-      "flags": []
+      "storyCount": 9,
+      "sourceCount": 8,
+      "changeFromPreviousScoredDay": -9.5,
+      "flags": [
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed"
+        }
+      ]
     },
     "taylor-wimpey": {
       "companyName": "Taylor Wimpey PLC",
       "ticker": "TW.L",
       "slug": "taylor-wimpey",
-      "date": "2026-09-01",
-      "dailyScore": 51.0,
+      "date": "2026-09-02",
+      "dailyScore": 51.9,
       "dailyLabel": "Neutral / mixed",
       "rollingScore": 51.3,
-      "confidence": 20.9,
+      "confidence": 26.6,
       "confidenceBand": "low",
       "coverageStatus": "ok",
       "storyCount": 2,
       "sourceCount": 2,
-      "changeFromPreviousScoredDay": -8.6,
+      "changeFromPreviousScoredDay": 0.9,
       "flags": [
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 20.9"
+          "detail": "Confidence is 26.6"
         }
       ]
     },
@@ -2183,23 +2182,29 @@
       "companyName": "Tesco PLC",
       "ticker": "TSCO.L",
       "slug": "tesco",
-      "date": "2026-09-01",
-      "dailyScore": 36.3,
-      "dailyLabel": "Negative",
-      "rollingScore": 45.1,
-      "confidence": 66.7,
+      "date": "2026-09-02",
+      "dailyScore": 51.5,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 46.6,
+      "confidence": 66.9,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 28,
-      "sourceCount": 40,
-      "changeFromPreviousScoredDay": -14.9,
+      "storyCount": 8,
+      "sourceCount": 17,
+      "changeFromPreviousScoredDay": 15.2,
       "flags": [
         {
-          "type": "sentiment_drop",
+          "type": "industrial_action",
           "direction": "negative",
+          "severity": "medium",
+          "status": "confirmed"
+        },
+        {
+          "type": "sentiment_jump",
+          "direction": "positive",
           "severity": "high",
           "status": "calculated",
-          "detail": "Daily score decreased by 14.9 points"
+          "detail": "Daily score increased by 15.2 points"
         }
       ]
     },
@@ -2207,7 +2212,7 @@
       "companyName": "Unite Group PLC",
       "ticker": "UTG.L",
       "slug": "unite",
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,
@@ -2231,23 +2236,23 @@
       "companyName": "United Utilities Group PLC",
       "ticker": "UU.L",
       "slug": "united-utilities",
-      "date": "2026-09-01",
-      "dailyScore": 59.3,
-      "dailyLabel": "Slightly positive",
-      "rollingScore": 50.2,
-      "confidence": 22.8,
+      "date": "2026-09-02",
+      "dailyScore": 53.3,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.5,
+      "confidence": 10.4,
       "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 2,
-      "sourceCount": 2,
-      "changeFromPreviousScoredDay": -0.4,
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -6.0,
       "flags": [
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 22.8"
+          "detail": "Confidence is 10.4"
         }
       ]
     },
@@ -2255,23 +2260,23 @@
       "companyName": "Vodafone Group PLC",
       "ticker": "VOD.L",
       "slug": "vodafone",
-      "date": "2026-09-01",
-      "dailyScore": 54.5,
+      "date": "2026-09-02",
+      "dailyScore": 46.9,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 53.4,
-      "confidence": 62.0,
+      "rollingScore": 52.1,
+      "confidence": 53.8,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 12,
-      "sourceCount": 9,
-      "changeFromPreviousScoredDay": -4.1,
+      "storyCount": 8,
+      "sourceCount": 7,
+      "changeFromPreviousScoredDay": -7.6,
       "flags": []
     },
     "weir": {
       "companyName": "Weir Group PLC",
       "ticker": "WEIR.L",
       "slug": "weir",
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.2,
@@ -2295,44 +2300,23 @@
       "companyName": "Whitbread PLC",
       "ticker": "WTB.L",
       "slug": "whitbread",
-      "date": "2026-09-01",
-      "dailyScore": 28.3,
-      "dailyLabel": "Negative",
-      "rollingScore": 41.7,
-      "confidence": 46.0,
+      "date": "2026-09-02",
+      "dailyScore": 45.8,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 43.0,
+      "confidence": 57.1,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 27,
-      "sourceCount": 33,
-      "changeFromPreviousScoredDay": -18.2,
+      "storyCount": 7,
+      "sourceCount": 11,
+      "changeFromPreviousScoredDay": 17.5,
       "flags": [
         {
-          "type": "sentiment_drop",
-          "direction": "negative",
+          "type": "sentiment_jump",
+          "direction": "positive",
           "severity": "high",
           "status": "calculated",
-          "detail": "Daily score decreased by 18.2 points"
-        },
-        {
-          "type": "bad_press",
-          "direction": "negative",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "Daily press score is 28.3"
-        },
-        {
-          "type": "coverage_spike",
-          "direction": "neutral",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "27 stories versus trailing median 4"
-        },
-        {
-          "type": "collection_degraded",
-          "direction": "neutral",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "The provider result ceiling was reached for this day"
+          "detail": "Daily score increased by 17.5 points"
         }
       ]
     },
@@ -2340,7 +2324,7 @@
       "companyName": "WPP PLC",
       "ticker": "WPP.L",
       "slug": "wpp",
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 49.8,

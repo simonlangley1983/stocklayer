@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-02T11:54:03.576922Z",
+  "generatedAt": "2026-09-03T10:59:21.768162Z",
   "company": {
     "companyName": "Compass Group",
     "ticker": "CPG.L",
@@ -13,11 +13,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-01",
-    "observationCount": 61,
-    "scoredDayCount": 4,
-    "latestScore": 50.1,
-    "latestScoreDate": "2026-08-08",
+    "periodEnd": "2026-09-02",
+    "observationCount": 62,
+    "scoredDayCount": 5,
+    "latestScore": 50.5,
+    "latestScoreDate": "2026-09-02",
     "series": [
       {
         "date": "2026-06-30",
@@ -567,6 +567,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-02",
+        "dailyScore": 50.5,
+        "rollingScore": 50.1,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -619,6 +628,16 @@
         "direction": "Neutral / mixed",
         "detail": null,
         "significance": 0.159
+      },
+      {
+        "date": "2026-09-02",
+        "type": "press_story",
+        "title": "Analyzing Compass Group ( OTCMKTS : CMPGY ) & ATA ( NASDAQ : AACG )",
+        "source": "tickerreport.com",
+        "url": "https://www.tickerreport.com/banking-finance/13569829/analyzing-compass-group-otcmktscmpgy-ata-nasdaqaacg.html",
+        "direction": "Neutral / mixed",
+        "detail": null,
+        "significance": 0.182
       }
     ]
   },
@@ -707,15 +726,15 @@
   "overallConfidence": {
     "score": 46.7,
     "label": "Mixed",
-    "evidenceCoverage": 49,
+    "evidenceCoverage": 52,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 50.1,
+        "score": 50.3,
         "weight": 0.4,
-        "reliability": 0.05,
-        "detail": "Average of 1 scored days in the latest 30-day window."
+        "reliability": 0.1,
+        "detail": "Average of 2 scored days in the latest 30-day window."
       },
       {
         "key": "annual_tone",
@@ -787,6 +806,16 @@
       "direction": "Neutral / mixed",
       "detail": null,
       "significance": 0.159
+    },
+    {
+      "date": "2026-09-02",
+      "type": "press_story",
+      "title": "Analyzing Compass Group ( OTCMKTS : CMPGY ) & ATA ( NASDAQ : AACG )",
+      "source": "tickerreport.com",
+      "url": "https://www.tickerreport.com/banking-finance/13569829/analyzing-compass-group-otcmktscmpgy-ata-nasdaqaacg.html",
+      "direction": "Neutral / mixed",
+      "detail": null,
+      "significance": 0.182
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-02T11:54:03.576922Z",
+  "generatedAt": "2026-09-03T10:59:21.768162Z",
   "company": {
     "companyName": "International Consolidated Airlines Group SA",
     "ticker": "IAG.L",
@@ -13,11 +13,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-08-31",
-    "observationCount": 43,
-    "scoredDayCount": 11,
-    "latestScore": 53.8,
-    "latestScoreDate": "2026-08-27",
+    "periodEnd": "2026-09-02",
+    "observationCount": 44,
+    "scoredDayCount": 12,
+    "latestScore": 65.0,
+    "latestScoreDate": "2026-09-02",
     "series": [
       {
         "date": "2026-06-30",
@@ -405,6 +405,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-02",
+        "dailyScore": 65.0,
+        "rollingScore": 51.7,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 12.7,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -497,6 +506,16 @@
         "direction": "Positive",
         "detail": null,
         "significance": 0.376
+      },
+      {
+        "date": "2026-09-02",
+        "type": "press_story",
+        "title": "IAG sees growing investor focus as Citi flags bullish airline data",
+        "source": "proactiveinvestors.co.uk",
+        "url": "https://www.proactiveinvestors.co.uk/companies/news/1097990/iag-sees-growing-investor-focus-as-citi-flags-bullish-airline-data-1097990.html",
+        "direction": "Very positive",
+        "detail": null,
+        "significance": 1.049
       }
     ]
   },
@@ -583,17 +602,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 46.8,
+    "score": 47.7,
     "label": "Mixed",
-    "evidenceCoverage": 71,
+    "evidenceCoverage": 73,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 45.5,
+        "score": 47.5,
         "weight": 0.4,
-        "reliability": 0.45,
-        "detail": "Average of 9 scored days in the latest 30-day window."
+        "reliability": 0.5,
+        "detail": "Average of 10 scored days in the latest 30-day window."
       },
       {
         "key": "annual_tone",
@@ -705,6 +724,16 @@
       "direction": "Positive",
       "detail": null,
       "significance": 0.376
+    },
+    {
+      "date": "2026-09-02",
+      "type": "press_story",
+      "title": "IAG sees growing investor focus as Citi flags bullish airline data",
+      "source": "proactiveinvestors.co.uk",
+      "url": "https://www.proactiveinvestors.co.uk/companies/news/1097990/iag-sees-growing-investor-focus-as-citi-flags-bullish-airline-data-1097990.html",
+      "direction": "Very positive",
+      "detail": null,
+      "significance": 1.049
     }
   ]
 }

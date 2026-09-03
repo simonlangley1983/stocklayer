@@ -1,24 +1,37 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-09-02T10:51:41.034546Z",
-  "date": "2026-09-01",
+  "generatedAt": "2026-09-03T10:59:21.309847Z",
+  "date": "2026-09-02",
   "dateRange": {
-    "start": "2026-09-01",
-    "end": "2026-09-01"
+    "start": "2026-09-02",
+    "end": "2026-09-02"
   },
   "provider": "gdelt-doc-v2",
   "model": "ProsusAI/finbert",
   "selectedCompanyCount": 100,
   "requestedDayCount": 1,
   "requestedObservationCount": 100,
-  "completedObservationCount": 94,
-  "completeness": 0.94,
+  "completedObservationCount": 95,
+  "completeness": 0.95,
   "minimumCompleteness": 0.9,
   "status": "ok",
   "companies": [
     {
       "slug": "astrazeneca",
+      "status": "degraded",
+      "requestedDayCount": 1,
+      "completedDayCount": 0,
+      "coverageDayCount": 0,
+      "failedDates": [
+        "2026-09-02"
+      ],
+      "truncatedDates": [],
+      "requestCount": 2,
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%22AstraZeneca%22+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260901230000&enddatetime=20260902230000"
+    },
+    {
+      "slug": "shell",
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
@@ -29,7 +42,7 @@
       "error": null
     },
     {
-      "slug": "shell",
+      "slug": "hsbc",
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
@@ -38,19 +51,6 @@
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
-    },
-    {
-      "slug": "hsbc",
-      "status": "degraded",
-      "requestedDayCount": 1,
-      "completedDayCount": 0,
-      "coverageDayCount": 0,
-      "failedDates": [
-        "2026-09-01"
-      ],
-      "truncatedDates": [],
-      "requestCount": 2,
-      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22HSBC+Holdings%22+OR+%22HSBC+Bank%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260831230000&enddatetime=20260901230000"
     },
     {
       "slug": "unilever",
@@ -79,7 +79,7 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 1,
+      "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
       "requestCount": 0,
@@ -90,7 +90,7 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 0,
+      "coverageDayCount": 1,
       "failedDates": [],
       "truncatedDates": [],
       "requestCount": 0,
@@ -98,16 +98,14 @@
     },
     {
       "slug": "gsk",
-      "status": "degraded",
+      "status": "ok",
       "requestedDayCount": 1,
-      "completedDayCount": 0,
-      "coverageDayCount": 0,
-      "failedDates": [
-        "2026-09-01"
-      ],
+      "completedDayCount": 1,
+      "coverageDayCount": 1,
+      "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 2,
-      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=gsk+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260831230000&enddatetime=20260901230000"
+      "requestCount": 0,
+      "error": null
     },
     {
       "slug": "rolls-royce",
@@ -180,7 +178,7 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 0,
+      "coverageDayCount": 1,
       "failedDates": [],
       "truncatedDates": [],
       "requestCount": 0,
@@ -199,21 +197,23 @@
     },
     {
       "slug": "lloyds",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 1,
-      "completedDayCount": 1,
-      "coverageDayCount": 1,
-      "failedDates": [],
+      "completedDayCount": 0,
+      "coverageDayCount": 0,
+      "failedDates": [
+        "2026-09-02"
+      ],
       "truncatedDates": [],
-      "requestCount": 0,
-      "error": null
+      "requestCount": 2,
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Lloyds+Banking+Group%22+OR+%22Lloyds+Bank%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260901230000&enddatetime=20260902230000"
     },
     {
       "slug": "3i",
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 1,
+      "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
       "requestCount": 0,
@@ -249,19 +249,21 @@
       "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 2,
+      "requestCount": 0,
       "error": null
     },
     {
       "slug": "airtel-africa",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 1,
-      "completedDayCount": 1,
-      "coverageDayCount": 1,
-      "failedDates": [],
+      "completedDayCount": 0,
+      "coverageDayCount": 0,
+      "failedDates": [
+        "2026-09-02"
+      ],
       "truncatedDates": [],
-      "requestCount": 0,
-      "error": null
+      "requestCount": 2,
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Airtel+Africa+PLC%22+OR+%22Airtel+Africa%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260901230000&enddatetime=20260902230000"
     },
     {
       "slug": "alliance-witan",
@@ -276,16 +278,14 @@
     },
     {
       "slug": "anglo-american",
-      "status": "degraded",
+      "status": "ok",
       "requestedDayCount": 1,
-      "completedDayCount": 0,
-      "coverageDayCount": 0,
-      "failedDates": [
-        "2026-09-01"
-      ],
+      "completedDayCount": 1,
+      "coverageDayCount": 1,
+      "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 2,
-      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Anglo+American+PLC%22+OR+%22Anglo+American%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260831230000&enddatetime=20260901230000"
+      "requestCount": 0,
+      "error": null
     },
     {
       "slug": "antofagasta",
@@ -303,10 +303,10 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 1,
+      "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 0,
+      "requestCount": 2,
       "error": null
     },
     {
@@ -314,7 +314,7 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 1,
+      "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
       "requestCount": 0,
@@ -325,10 +325,10 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 1,
+      "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 0,
+      "requestCount": 2,
       "error": null
     },
     {
@@ -339,7 +339,7 @@
       "coverageDayCount": 1,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 2,
+      "requestCount": 0,
       "error": null
     },
     {
@@ -372,7 +372,7 @@
       "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 0,
+      "requestCount": 2,
       "error": null
     },
     {
@@ -383,7 +383,7 @@
       "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 2,
+      "requestCount": 0,
       "error": null
     },
     {
@@ -402,7 +402,7 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 1,
+      "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
       "requestCount": 0,
@@ -413,7 +413,7 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 1,
+      "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
       "requestCount": 0,
@@ -457,7 +457,7 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 0,
+      "coverageDayCount": 1,
       "failedDates": [],
       "truncatedDates": [],
       "requestCount": 0,
@@ -501,7 +501,7 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 1,
+      "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
       "requestCount": 0,
@@ -520,23 +520,21 @@
     },
     {
       "slug": "fresnillo",
-      "status": "degraded",
+      "status": "ok",
       "requestedDayCount": 1,
-      "completedDayCount": 0,
-      "coverageDayCount": 0,
-      "failedDates": [
-        "2026-09-01"
-      ],
+      "completedDayCount": 1,
+      "coverageDayCount": 1,
+      "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 2,
-      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Fresnillo+PLC%22+OR+%22Fresnillo%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260831230000&enddatetime=20260901230000"
+      "requestCount": 0,
+      "error": null
     },
     {
       "slug": "games-workshop",
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 0,
+      "coverageDayCount": 1,
       "failedDates": [],
       "truncatedDates": [],
       "requestCount": 0,
@@ -569,31 +567,29 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 1,
+      "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 2,
+      "requestCount": 0,
       "error": null
     },
     {
       "slug": "hikma-pharmaceuticals",
-      "status": "degraded",
+      "status": "ok",
       "requestedDayCount": 1,
-      "completedDayCount": 0,
+      "completedDayCount": 1,
       "coverageDayCount": 0,
-      "failedDates": [
-        "2026-09-01"
-      ],
+      "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 2,
-      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Hikma+Pharmaceuticals+PLC%22+OR+%22Hikma+Pharmaceuticals%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260831230000&enddatetime=20260901230000"
+      "requestCount": 0,
+      "error": null
     },
     {
       "slug": "hiscox",
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 0,
+      "coverageDayCount": 1,
       "failedDates": [],
       "truncatedDates": [],
       "requestCount": 0,
@@ -659,10 +655,10 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 1,
+      "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 2,
+      "requestCount": 0,
       "error": null
     },
     {
@@ -678,16 +674,14 @@
     },
     {
       "slug": "international-consolidated-airlines",
-      "status": "degraded",
+      "status": "ok",
       "requestedDayCount": 1,
-      "completedDayCount": 0,
-      "coverageDayCount": 0,
-      "failedDates": [
-        "2026-09-01"
-      ],
+      "completedDayCount": 1,
+      "coverageDayCount": 1,
+      "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 2,
-      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22International+Consolidated+Airlines+Group+SA%22+OR+%22International+Consolidated+Airlines+Group%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260831230000&enddatetime=20260901230000"
+      "requestCount": 0,
+      "error": null
     },
     {
       "slug": "jd-sports-fashion",
@@ -716,7 +710,7 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 0,
+      "coverageDayCount": 1,
       "failedDates": [],
       "truncatedDates": [],
       "requestCount": 0,
@@ -752,7 +746,7 @@
       "coverageDayCount": 1,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 2,
+      "requestCount": 0,
       "error": null
     },
     {
@@ -771,7 +765,7 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 1,
+      "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
       "requestCount": 0,
@@ -782,7 +776,7 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 1,
+      "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
       "requestCount": 0,
@@ -812,12 +806,14 @@
     },
     {
       "slug": "pearson",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 1,
       "completedDayCount": 1,
       "coverageDayCount": 1,
       "failedDates": [],
-      "truncatedDates": [],
+      "truncatedDates": [
+        "2026-09-02"
+      ],
       "requestCount": 0,
       "error": null
     },
@@ -862,7 +858,7 @@
       "coverageDayCount": 1,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 0,
+      "requestCount": 2,
       "error": null
     },
     {
@@ -870,7 +866,7 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 1,
+      "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
       "requestCount": 0,
@@ -881,7 +877,7 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 1,
+      "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
       "requestCount": 0,
@@ -900,14 +896,16 @@
     },
     {
       "slug": "sage",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 1,
-      "completedDayCount": 1,
+      "completedDayCount": 0,
       "coverageDayCount": 0,
-      "failedDates": [],
+      "failedDates": [
+        "2026-09-02"
+      ],
       "truncatedDates": [],
-      "requestCount": 0,
-      "error": null
+      "requestCount": 2,
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%22Sage+Group+PLC%22+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260901230000&enddatetime=20260902230000"
     },
     {
       "slug": "j-sainsbury",
@@ -925,10 +923,10 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 0,
+      "coverageDayCount": 1,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 2,
+      "requestCount": 0,
       "error": null
     },
     {
@@ -936,10 +934,10 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 1,
+      "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 2,
+      "requestCount": 0,
       "error": null
     },
     {
@@ -947,7 +945,7 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 1,
+      "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
       "requestCount": 0,
@@ -969,10 +967,10 @@
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 0,
+      "coverageDayCount": 1,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 2,
+      "requestCount": 0,
       "error": null
     },
     {
@@ -983,7 +981,7 @@
       "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 2,
+      "requestCount": 0,
       "error": null
     },
     {
@@ -999,14 +997,16 @@
     },
     {
       "slug": "spirax",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 1,
-      "completedDayCount": 1,
+      "completedDayCount": 0,
       "coverageDayCount": 0,
-      "failedDates": [],
+      "failedDates": [
+        "2026-09-02"
+      ],
       "truncatedDates": [],
       "requestCount": 2,
-      "error": null
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Spirax+Group+PLC%22+OR+%22Spirax%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260901230000&enddatetime=20260902230000"
     },
     {
       "slug": "sse",
@@ -1016,7 +1016,7 @@
       "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 0,
+      "requestCount": 2,
       "error": null
     },
     {
@@ -1038,7 +1038,7 @@
       "coverageDayCount": 1,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 2,
+      "requestCount": 0,
       "error": null
     },
     {
@@ -1060,7 +1060,7 @@
       "coverageDayCount": 1,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 2,
+      "requestCount": 0,
       "error": null
     },
     {
@@ -1093,7 +1093,7 @@
       "coverageDayCount": 1,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 2,
+      "requestCount": 0,
       "error": null
     },
     {
@@ -1104,19 +1104,17 @@
       "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 0,
+      "requestCount": 2,
       "error": null
     },
     {
       "slug": "whitbread",
-      "status": "degraded",
+      "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
       "coverageDayCount": 1,
       "failedDates": [],
-      "truncatedDates": [
-        "2026-09-01"
-      ],
+      "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
@@ -1128,7 +1126,7 @@
       "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 0,
+      "requestCount": 2,
       "error": null
     }
   ]

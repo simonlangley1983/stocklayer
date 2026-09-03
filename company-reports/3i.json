@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-02T11:54:03.576922Z",
+  "generatedAt": "2026-09-03T10:59:21.768162Z",
   "company": {
     "companyName": "3i Group",
     "ticker": "III.L",
@@ -13,8 +13,8 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-01",
-    "observationCount": 55,
+    "periodEnd": "2026-09-02",
+    "observationCount": 56,
     "scoredDayCount": 19,
     "latestScore": 50.5,
     "latestScoreDate": "2026-09-01",
@@ -513,6 +513,15 @@
         "sourceCount": 1,
         "confidence": 10.0,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-02",
+        "dailyScore": null,
+        "rollingScore": 50.5,
+        "storyCount": 0,
+        "sourceCount": 0,
+        "confidence": 0.0,
+        "coverageStatus": "no_coverage"
       }
     ],
     "stories": [
@@ -641,17 +650,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 45.1,
+    "score": 45.9,
     "label": "Mixed",
-    "evidenceCoverage": 73,
+    "evidenceCoverage": 71,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.1,
+        "score": 52.7,
         "weight": 0.4,
-        "reliability": 0.5,
-        "detail": "Average of 10 scored days in the latest 30-day window."
+        "reliability": 0.45,
+        "detail": "Average of 9 scored days in the latest 30-day window."
       },
       {
         "key": "annual_tone",

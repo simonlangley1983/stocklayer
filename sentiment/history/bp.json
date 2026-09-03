@@ -2170,6 +2170,54 @@
         }
       ],
       "changeFromPreviousScoredDay": null
+    },
+    {
+      "date": "2026-09-02",
+      "dailyScore": 46.1,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.8,
+      "confidence": 16.5,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 3,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 1,
+      "dispersion": 0.0,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 2
+      },
+      "topStories": [
+        {
+          "id": "25e9950c5ef700fc",
+          "storyClusterId": "story-001",
+          "title": "BP Plc appoints Ian Tyler chairman after unexpected ouster of predecessor",
+          "url": "https://www.business-standard.com/companies/news/bp-plc-appoints-ian-tyler-chairman-after-unexpected-ouster-of-predecessor-126090200573_1.html",
+          "source": "business-standard.com",
+          "publishedAt": "2026-09-02T08:45:00Z",
+          "polarity": -0.2353,
+          "sentiment": "Negative",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 16.5",
+          "evidenceArticleIds": [
+            "25e9950c5ef700fc"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -2.9
     }
   ]
 }

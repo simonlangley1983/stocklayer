@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-02T11:54:03.576922Z",
+  "generatedAt": "2026-09-03T10:59:21.768162Z",
   "company": {
     "companyName": "Shell",
     "ticker": "SHEL.L",
@@ -13,11 +13,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-01",
-    "observationCount": 56,
-    "scoredDayCount": 22,
-    "latestScore": 49.9,
-    "latestScoreDate": "2026-08-30",
+    "periodEnd": "2026-09-02",
+    "observationCount": 57,
+    "scoredDayCount": 23,
+    "latestScore": 54.6,
+    "latestScoreDate": "2026-09-02",
     "series": [
       {
         "date": "2026-06-30",
@@ -522,19 +522,18 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-02",
+        "dailyScore": 54.6,
+        "rollingScore": 50.3,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 16.4,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
-      {
-        "date": "2026-07-08",
-        "type": "press_story",
-        "title": "Controversies surrounding Royal Dutch Shell – Royal Dutch Shell Plc . com",
-        "source": "royaldutchshellplc.com",
-        "url": "https://royaldutchshellplc.com/2010/09/27/controversies-surrounding-royal-dutch-shell-2",
-        "direction": "Neutral / mixed",
-        "detail": null,
-        "significance": 0.233
-      },
       {
         "date": "2026-07-09",
         "type": "coverage_spike",
@@ -624,6 +623,16 @@
         "direction": "Neutral / mixed",
         "detail": null,
         "significance": 0.235
+      },
+      {
+        "date": "2026-09-02",
+        "type": "press_story",
+        "title": "Shell Buys Into BP Conifer Prospect : Deepwater Rivals Team Up as Oil and Gas Growth Takes Priority – Royal Dutch Shell Plc . com",
+        "source": "royaldutchshellplc.com",
+        "url": "https://royaldutchshellplc.com/2026/09/02/shell-buys-into-bps-conifer-prospect-deepwater-rivals-team-up-as-oil-and-gas-growth-takes-priority",
+        "direction": "Positive",
+        "detail": null,
+        "significance": 0.427
       }
     ]
   },
@@ -710,14 +719,14 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 43.5,
+    "score": 43.7,
     "label": "Mixed",
     "evidenceCoverage": 87,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 48.9,
+        "score": 49.2,
         "weight": 0.4,
         "reliability": 0.75,
         "detail": "Average of 15 scored days in the latest 30-day window."
@@ -742,16 +751,6 @@
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
-    },
-    {
-      "date": "2026-07-08",
-      "type": "press_story",
-      "title": "Controversies surrounding Royal Dutch Shell – Royal Dutch Shell Plc . com",
-      "source": "royaldutchshellplc.com",
-      "url": "https://royaldutchshellplc.com/2010/09/27/controversies-surrounding-royal-dutch-shell-2",
-      "direction": "Neutral / mixed",
-      "detail": null,
-      "significance": 0.233
     },
     {
       "date": "2026-07-09",
@@ -842,6 +841,16 @@
       "direction": "Neutral / mixed",
       "detail": null,
       "significance": 0.235
+    },
+    {
+      "date": "2026-09-02",
+      "type": "press_story",
+      "title": "Shell Buys Into BP Conifer Prospect : Deepwater Rivals Team Up as Oil and Gas Growth Takes Priority – Royal Dutch Shell Plc . com",
+      "source": "royaldutchshellplc.com",
+      "url": "https://royaldutchshellplc.com/2026/09/02/shell-buys-into-bps-conifer-prospect-deepwater-rivals-team-up-as-oil-and-gas-growth-takes-priority",
+      "direction": "Positive",
+      "detail": null,
+      "significance": 0.427
     }
   ]
 }

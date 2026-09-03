@@ -3082,6 +3082,88 @@
         }
       ],
       "changeFromPreviousScoredDay": 3.1
+    },
+    {
+      "date": "2026-09-02",
+      "dailyScore": 55.7,
+      "dailyLabel": "Slightly positive",
+      "rollingScore": 52.4,
+      "confidence": 39.0,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 3,
+      "eligibleArticleCount": 3,
+      "storyCount": 3,
+      "effectiveStoryCount": 3.0,
+      "sourceCount": 3,
+      "positiveStoryCount": 2,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 1,
+      "dispersion": 0.7221,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "840c6060aa218187",
+          "storyClusterId": "story-001",
+          "title": "NSE IPO soon ? NIACL , IFCI shares jump up to 11 % on buzz over issue launch",
+          "url": "https://www.moneycontrol.com/news/business/markets/nse-ipo-soon-niacl-ifci-shares-jump-up-to-8-on-buzz-over-issue-launch-14020592.html",
+          "source": "moneycontrol.com",
+          "publishedAt": "2026-09-02T07:30:00Z",
+          "polarity": 0.9017,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "12bf032878782310",
+          "storyClusterId": "story-003",
+          "title": "FTSE 100 falls as higher oil prices add to investor worries",
+          "url": "https://www.lbc.co.uk/article/b14d8e01328d4f1bac783d61509f28e7-5HjdgsG_2",
+          "source": "lbc.co.uk",
+          "publishedAt": "2026-09-02T16:45:00Z",
+          "polarity": -0.7997,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "40ff3094ae884935",
+          "storyClusterId": "story-002",
+          "title": "Frasers Plans Increased Stake in Hugo Boss After Failed Takeover , ETRetail",
+          "url": "https://retail.economictimes.indiatimes.com/news/apparel-fashion/update-2-uks-frasers-plans-to-boost-stake-in-hugo-boss-to-more-than-50/133703724",
+          "source": "retail.economictimes.indiatimes.com",
+          "publishedAt": "2026-09-02T11:45:00Z",
+          "polarity": 0.4694,
+          "sentiment": "Positive",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "840c6060aa218187",
+            "12bf032878782310",
+            "40ff3094ae884935"
+          ]
+        },
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 39.0",
+          "evidenceArticleIds": [
+            "840c6060aa218187",
+            "12bf032878782310",
+            "40ff3094ae884935"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -2.8
     }
   ]
 }

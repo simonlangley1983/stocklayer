@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-02T11:54:03.576922Z",
+  "generatedAt": "2026-09-03T10:59:21.768162Z",
   "company": {
     "companyName": "Segro PLC",
     "ticker": "SGRO.L",
@@ -13,8 +13,8 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-01",
-    "observationCount": 60,
+    "periodEnd": "2026-09-02",
+    "observationCount": 61,
     "scoredDayCount": 39,
     "latestScore": 46.0,
     "latestScoreDate": "2026-09-01",
@@ -558,6 +558,15 @@
         "sourceCount": 3,
         "confidence": 42.4,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-02",
+        "dailyScore": null,
+        "rollingScore": 48.7,
+        "storyCount": 0,
+        "sourceCount": 0,
+        "confidence": 0.0,
+        "coverageStatus": "no_coverage"
       }
     ],
     "stories": [
@@ -746,17 +755,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 49.2,
+    "score": 49.1,
     "label": "Mixed",
-    "evidenceCoverage": 95,
+    "evidenceCoverage": 92,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 52.6,
+        "score": 52.3,
         "weight": 0.4,
-        "reliability": 0.9,
-        "detail": "Average of 18 scored days in the latest 30-day window."
+        "reliability": 0.85,
+        "detail": "Average of 17 scored days in the latest 30-day window."
       },
       {
         "key": "annual_tone",
