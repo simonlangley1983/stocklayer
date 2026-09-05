@@ -4924,6 +4924,128 @@
         }
       ],
       "changeFromPreviousScoredDay": 15.2
+    },
+    {
+      "date": "2026-09-04",
+      "dailyScore": 21.2,
+      "dailyLabel": "Very negative",
+      "rollingScore": 43.2,
+      "confidence": 48.4,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 46,
+      "eligibleArticleCount": 46,
+      "storyCount": 42,
+      "effectiveStoryCount": 42.0,
+      "sourceCount": 45,
+      "positiveStoryCount": 2,
+      "neutralStoryCount": 5,
+      "negativeStoryCount": 35,
+      "dispersion": 0.3302,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "e20d1e26a2c4c731",
+          "storyClusterId": "story-002",
+          "title": "Recall warning issued to Tesco shoppers over  health risk",
+          "url": "https://www.sloughobserver.co.uk/news/26521322.recall-warning-issued-tesco-shoppers-health-risk",
+          "source": "sloughobserver.co.uk",
+          "publishedAt": "2026-09-04T13:00:00Z",
+          "polarity": -0.93,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "ad819fd89b958a86",
+          "storyClusterId": "story-033",
+          "title": "Woolworths , Coles : Profit margins challenge price gouging claims | The Irrigator",
+          "url": "https://www.irrigator.com.au/story/9342351/woolworths-coles-profit-margins-challenge-price-gouging-claims",
+          "source": "irrigator.com.au",
+          "publishedAt": "2026-09-04T21:30:00Z",
+          "polarity": -0.9079,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "13446e0216717e4f",
+          "storyClusterId": "story-028",
+          "title": "Woolworths , Coles : Profit margins challenge price gouging claims | The Border Mail",
+          "url": "https://www.bordermail.com.au/story/9342351/woolworths-coles-profit-margins-challenge-price-gouging-claims",
+          "source": "bordermail.com.au",
+          "publishedAt": "2026-09-04T21:00:00Z",
+          "polarity": -0.8927,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "9b110c8d46d0bcd2",
+          "storyClusterId": "story-030",
+          "title": "Woolworths , Coles : Profit margins challenge price gouging claims | The Rural",
+          "url": "https://www.therural.com.au/story/9342351/woolworths-coles-profit-margins-challenge-price-gouging-claims",
+          "source": "therural.com.au",
+          "publishedAt": "2026-09-04T21:15:00Z",
+          "polarity": -0.8838,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "53e9291f230d1ae7",
+          "storyClusterId": "story-013",
+          "title": "Woolworths , Coles : Profit margins challenge price gouging claims | Magnet",
+          "url": "https://www.edenmagnet.com.au/story/9342351/woolworths-coles-profit-margins-challenge-price-gouging-claims",
+          "source": "edenmagnet.com.au",
+          "publishedAt": "2026-09-04T20:00:00Z",
+          "polarity": -0.8805,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "sentiment_drop",
+          "direction": "negative",
+          "severity": "high",
+          "status": "calculated",
+          "detail": "Daily score decreased by 30.3 points",
+          "evidenceArticleIds": [
+            "e20d1e26a2c4c731",
+            "ad819fd89b958a86",
+            "13446e0216717e4f",
+            "9b110c8d46d0bcd2",
+            "53e9291f230d1ae7"
+          ]
+        },
+        {
+          "type": "bad_press",
+          "direction": "negative",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Daily press score is 21.2",
+          "evidenceArticleIds": [
+            "e20d1e26a2c4c731",
+            "ad819fd89b958a86",
+            "13446e0216717e4f",
+            "9b110c8d46d0bcd2",
+            "53e9291f230d1ae7"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "e20d1e26a2c4c731",
+            "ad819fd89b958a86",
+            "13446e0216717e4f",
+            "9b110c8d46d0bcd2",
+            "53e9291f230d1ae7"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -30.3
     }
   ]
 }

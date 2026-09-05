@@ -3738,6 +3738,101 @@
         }
       ],
       "changeFromPreviousScoredDay": -0.1
+    },
+    {
+      "date": "2026-09-04",
+      "dailyScore": 50.2,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.9,
+      "confidence": 36.3,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 4,
+      "eligibleArticleCount": 4,
+      "storyCount": 4,
+      "effectiveStoryCount": 3.077,
+      "sourceCount": 3,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 2,
+      "negativeStoryCount": 1,
+      "dispersion": 0.593,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "bd4a4ce7bb4c3308",
+          "storyClusterId": "story-001",
+          "title": "Vanguard Nears BlackRock for Top Spot in U . S . ETF Assets",
+          "url": "https://www.tradersmagazine.com/featured_articles/vanguard-nears-blackrock-for-top-spot-in-u-s-etf-assets",
+          "source": "tradersmagazine.com",
+          "publishedAt": "2026-09-04T09:15:00Z",
+          "polarity": 0.8642,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "27ca7d9b390ac1d3",
+          "storyClusterId": "story-004",
+          "title": "London IPO Market Outlook Darkens as Firms Eye 2027 Window",
+          "url": "https://www.financial-news.co.uk/london-ipo-market-outlook-darkens-as-firms-eye-2027-window",
+          "source": "financial-news.co.uk",
+          "publishedAt": "2026-09-04T13:00:00Z",
+          "polarity": -0.811,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "781492912a03b806",
+          "storyClusterId": "story-003",
+          "title": "Form 8 ( DD ) - Picton Property Income Ltd | Company Announcement",
+          "url": "https://www.investegate.co.uk/announcement/rns/schroders--sdr/form-8-dd-picton-property-income-ltd/9756496",
+          "source": "investegate.co.uk",
+          "publishedAt": "2026-09-04T10:00:00Z",
+          "polarity": -0.0335,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "529d2d12b487171d",
+          "storyClusterId": "story-002",
+          "title": "Disclosure Table | Company Announcement",
+          "url": "https://www.investegate.co.uk/announcement/rns/genel-energy--genl/disclosure-table/9756401",
+          "source": "investegate.co.uk",
+          "publishedAt": "2026-09-04T10:00:00Z",
+          "polarity": -0.0279,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "bd4a4ce7bb4c3308",
+            "27ca7d9b390ac1d3",
+            "781492912a03b806",
+            "529d2d12b487171d"
+          ]
+        },
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 36.3",
+          "evidenceArticleIds": [
+            "bd4a4ce7bb4c3308",
+            "27ca7d9b390ac1d3",
+            "781492912a03b806",
+            "529d2d12b487171d"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 0.7
     }
   ]
 }
