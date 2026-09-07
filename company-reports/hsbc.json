@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-06T11:27:20.625758Z",
+  "generatedAt": "2026-09-07T12:23:00.404568Z",
   "company": {
     "companyName": "HSBC",
     "ticker": "HSBA.L",
@@ -13,8 +13,8 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-02",
-    "observationCount": 59,
+    "periodEnd": "2026-09-06",
+    "observationCount": 60,
     "scoredDayCount": 39,
     "latestScore": 53.1,
     "latestScoreDate": "2026-08-30",
@@ -545,6 +545,15 @@
         "date": "2026-09-02",
         "dailyScore": null,
         "rollingScore": 50.4,
+        "storyCount": 0,
+        "sourceCount": 0,
+        "confidence": 0.0,
+        "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-06",
+        "dailyScore": null,
+        "rollingScore": 50.3,
         "storyCount": 0,
         "sourceCount": 0,
         "confidence": 0.0,
@@ -1145,15 +1154,15 @@
   "overallConfidence": {
     "score": 41.4,
     "label": "Low",
-    "evidenceCoverage": 100,
+    "evidenceCoverage": 98,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.8,
+        "score": 51.7,
         "weight": 0.4,
-        "reliability": 1.0,
-        "detail": "Average of 20 scored days in the latest 30-day window."
+        "reliability": 0.95,
+        "detail": "Average of 19 scored days in the latest 30-day window."
       },
       {
         "key": "annual_tone",

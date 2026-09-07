@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-09-06T11:27:20.115118Z",
-  "date": "2026-09-05",
+  "generatedAt": "2026-09-07T12:22:59.859731Z",
+  "date": "2026-09-06",
   "dateRange": {
-    "start": "2026-09-05",
-    "end": "2026-09-05"
+    "start": "2026-09-06",
+    "end": "2026-09-06"
   },
   "provider": "gdelt-doc-v2",
   "model": "ProsusAI/finbert",
   "selectedCompanyCount": 100,
   "requestedDayCount": 1,
   "requestedObservationCount": 100,
-  "completedObservationCount": 49,
-  "completeness": 0.49,
+  "completedObservationCount": 53,
+  "completeness": 0.53,
   "minimumCompleteness": 0.9,
   "status": "degraded",
   "companies": [
@@ -24,18 +24,18 @@
       "completedDayCount": 0,
       "coverageDayCount": 0,
       "failedDates": [
-        "2026-09-05"
+        "2026-09-06"
       ],
       "truncatedDates": [],
       "requestCount": 1,
-      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22AstraZeneca%22+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22AstraZeneca%22+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "shell",
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 1,
+      "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
       "requestCount": 0,
@@ -43,16 +43,14 @@
     },
     {
       "slug": "hsbc",
-      "status": "degraded",
+      "status": "ok",
       "requestedDayCount": 1,
-      "completedDayCount": 0,
+      "completedDayCount": 1,
       "coverageDayCount": 0,
-      "failedDates": [
-        "2026-09-05"
-      ],
+      "failedDates": [],
       "truncatedDates": [],
       "requestCount": 1,
-      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22HSBC+Holdings%22+OR+%22HSBC+Bank%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "error": null
     },
     {
       "slug": "unilever",
@@ -61,11 +59,11 @@
       "completedDayCount": 0,
       "coverageDayCount": 0,
       "failedDates": [
-        "2026-09-05"
+        "2026-09-06"
       ],
       "truncatedDates": [],
       "requestCount": 1,
-      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Unilever%22+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Unilever%22+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "relx",
@@ -85,22 +83,24 @@
       "completedDayCount": 0,
       "coverageDayCount": 0,
       "failedDates": [
-        "2026-09-05"
+        "2026-09-06"
       ],
       "truncatedDates": [],
       "requestCount": 1,
-      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22British+American+Tobacco%22+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22British+American+Tobacco%22+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "bp",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 1,
-      "completedDayCount": 1,
+      "completedDayCount": 0,
       "coverageDayCount": 0,
-      "failedDates": [],
+      "failedDates": [
+        "2026-09-06"
+      ],
       "truncatedDates": [],
-      "requestCount": 2,
-      "error": null
+      "requestCount": 1,
+      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22BP+plc%22+OR+%22British+Petroleum%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "gsk",
@@ -121,30 +121,34 @@
       "coverageDayCount": 1,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 0,
+      "requestCount": 1,
       "error": null
     },
     {
       "slug": "lseg",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 1,
-      "completedDayCount": 1,
+      "completedDayCount": 0,
       "coverageDayCount": 0,
-      "failedDates": [],
+      "failedDates": [
+        "2026-09-06"
+      ],
       "truncatedDates": [],
-      "requestCount": 0,
-      "error": null
+      "requestCount": 2,
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%22London+Stock+Exchange+Group%22+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "diageo",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 1,
-      "completedDayCount": 1,
-      "coverageDayCount": 1,
-      "failedDates": [],
+      "completedDayCount": 0,
+      "coverageDayCount": 0,
+      "failedDates": [
+        "2026-09-06"
+      ],
       "truncatedDates": [],
       "requestCount": 2,
-      "error": null
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%22Diageo%22+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "rio-tinto",
@@ -159,82 +163,6 @@
     },
     {
       "slug": "national-grid",
-      "status": "degraded",
-      "requestedDayCount": 1,
-      "completedDayCount": 0,
-      "coverageDayCount": 0,
-      "failedDates": [
-        "2026-09-05"
-      ],
-      "truncatedDates": [],
-      "requestCount": 2,
-      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22National+Grid%22+OR+%22National+Grid+plc%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
-    },
-    {
-      "slug": "barclays",
-      "status": "ok",
-      "requestedDayCount": 1,
-      "completedDayCount": 1,
-      "coverageDayCount": 0,
-      "failedDates": [],
-      "truncatedDates": [],
-      "requestCount": 0,
-      "error": null
-    },
-    {
-      "slug": "compass",
-      "status": "degraded",
-      "requestedDayCount": 1,
-      "completedDayCount": 0,
-      "coverageDayCount": 0,
-      "failedDates": [
-        "2026-09-05"
-      ],
-      "truncatedDates": [],
-      "requestCount": 2,
-      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Compass+Group%22+OR+%22Compass+Group+plc%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
-    },
-    {
-      "slug": "bae-systems",
-      "status": "degraded",
-      "requestedDayCount": 1,
-      "completedDayCount": 0,
-      "coverageDayCount": 0,
-      "failedDates": [
-        "2026-09-05"
-      ],
-      "truncatedDates": [],
-      "requestCount": 2,
-      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22BAE+Systems%22+OR+%22BAE+Systems+plc%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
-    },
-    {
-      "slug": "lloyds",
-      "status": "degraded",
-      "requestedDayCount": 1,
-      "completedDayCount": 0,
-      "coverageDayCount": 0,
-      "failedDates": [
-        "2026-09-05"
-      ],
-      "truncatedDates": [],
-      "requestCount": 2,
-      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Lloyds+Banking+Group%22+OR+%22Lloyds+Bank%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
-    },
-    {
-      "slug": "3i",
-      "status": "degraded",
-      "requestedDayCount": 1,
-      "completedDayCount": 0,
-      "coverageDayCount": 0,
-      "failedDates": [
-        "2026-09-05"
-      ],
-      "truncatedDates": [],
-      "requestCount": 2,
-      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%223i+Group%22+OR+%223i+Group+plc%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
-    },
-    {
-      "slug": "experian",
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
@@ -245,65 +173,139 @@
       "error": null
     },
     {
+      "slug": "barclays",
+      "status": "degraded",
+      "requestedDayCount": 1,
+      "completedDayCount": 0,
+      "coverageDayCount": 0,
+      "failedDates": [
+        "2026-09-06"
+      ],
+      "truncatedDates": [],
+      "requestCount": 2,
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Barclays+PLC%22+OR+%22Barclays+Bank%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
+    },
+    {
+      "slug": "compass",
+      "status": "degraded",
+      "requestedDayCount": 1,
+      "completedDayCount": 0,
+      "coverageDayCount": 0,
+      "failedDates": [
+        "2026-09-06"
+      ],
+      "truncatedDates": [],
+      "requestCount": 2,
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Compass+Group%22+OR+%22Compass+Group+plc%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
+    },
+    {
+      "slug": "bae-systems",
+      "status": "ok",
+      "requestedDayCount": 1,
+      "completedDayCount": 1,
+      "coverageDayCount": 1,
+      "failedDates": [],
+      "truncatedDates": [],
+      "requestCount": 0,
+      "error": null
+    },
+    {
+      "slug": "lloyds",
+      "status": "ok",
+      "requestedDayCount": 1,
+      "completedDayCount": 1,
+      "coverageDayCount": 1,
+      "failedDates": [],
+      "truncatedDates": [],
+      "requestCount": 0,
+      "error": null
+    },
+    {
+      "slug": "3i",
+      "status": "degraded",
+      "requestedDayCount": 1,
+      "completedDayCount": 0,
+      "coverageDayCount": 0,
+      "failedDates": [
+        "2026-09-06"
+      ],
+      "truncatedDates": [],
+      "requestCount": 2,
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%223i+Group%22+OR+%223i+Group+plc%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
+    },
+    {
+      "slug": "experian",
+      "status": "degraded",
+      "requestedDayCount": 1,
+      "completedDayCount": 0,
+      "coverageDayCount": 0,
+      "failedDates": [
+        "2026-09-06"
+      ],
+      "truncatedDates": [],
+      "requestCount": 2,
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%22Experian%22+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
+    },
+    {
       "slug": "glencore",
       "status": "degraded",
       "requestedDayCount": 1,
       "completedDayCount": 0,
       "coverageDayCount": 0,
       "failedDates": [
-        "2026-09-05"
-      ],
-      "truncatedDates": [],
-      "requestCount": 1,
-      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Glencore%22+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
-    },
-    {
-      "slug": "admiral",
-      "status": "ok",
-      "requestedDayCount": 1,
-      "completedDayCount": 1,
-      "coverageDayCount": 0,
-      "failedDates": [],
-      "truncatedDates": [],
-      "requestCount": 0,
-      "error": null
-    },
-    {
-      "slug": "airtel-africa",
-      "status": "ok",
-      "requestedDayCount": 1,
-      "completedDayCount": 1,
-      "coverageDayCount": 0,
-      "failedDates": [],
-      "truncatedDates": [],
-      "requestCount": 0,
-      "error": null
-    },
-    {
-      "slug": "alliance-witan",
-      "status": "degraded",
-      "requestedDayCount": 1,
-      "completedDayCount": 0,
-      "coverageDayCount": 0,
-      "failedDates": [
-        "2026-09-05"
+        "2026-09-06"
       ],
       "truncatedDates": [],
       "requestCount": 2,
-      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Alliance+Witan+PLC%22+OR+%22Alliance+Witan%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%22Glencore%22+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
-      "slug": "anglo-american",
+      "slug": "admiral",
       "status": "degraded",
       "requestedDayCount": 1,
       "completedDayCount": 0,
       "coverageDayCount": 0,
       "failedDates": [
-        "2026-09-05"
+        "2026-09-06"
       ],
       "truncatedDates": [],
-      "requestCount": 1,
-      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Anglo+American+PLC%22+OR+%22Anglo+American%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "requestCount": 2,
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Admiral+Group+PLC%22+OR+%22Admiral+Group+insurance%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
+    },
+    {
+      "slug": "airtel-africa",
+      "status": "degraded",
+      "requestedDayCount": 1,
+      "completedDayCount": 0,
+      "coverageDayCount": 0,
+      "failedDates": [
+        "2026-09-06"
+      ],
+      "truncatedDates": [],
+      "requestCount": 2,
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Airtel+Africa+PLC%22+OR+%22Airtel+Africa%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
+    },
+    {
+      "slug": "alliance-witan",
+      "status": "ok",
+      "requestedDayCount": 1,
+      "completedDayCount": 1,
+      "coverageDayCount": 0,
+      "failedDates": [],
+      "truncatedDates": [],
+      "requestCount": 0,
+      "error": null
+    },
+    {
+      "slug": "anglo-american",
+      "status": "ok",
+      "requestedDayCount": 1,
+      "completedDayCount": 1,
+      "coverageDayCount": 1,
+      "failedDates": [],
+      "truncatedDates": [],
+      "requestCount": 0,
+      "error": null
     },
     {
       "slug": "antofagasta",
@@ -312,11 +314,11 @@
       "completedDayCount": 0,
       "coverageDayCount": 0,
       "failedDates": [
-        "2026-09-05"
+        "2026-09-06"
       ],
       "truncatedDates": [],
       "requestCount": 2,
-      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Antofagasta+PLC%22+OR+%22Antofagasta%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Antofagasta+PLC%22+OR+%22Antofagasta%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "ashtead",
@@ -331,14 +333,16 @@
     },
     {
       "slug": "associated-british-foods",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 1,
-      "completedDayCount": 1,
+      "completedDayCount": 0,
       "coverageDayCount": 0,
-      "failedDates": [],
+      "failedDates": [
+        "2026-09-06"
+      ],
       "truncatedDates": [],
-      "requestCount": 0,
-      "error": null
+      "requestCount": 2,
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Associated+British+Foods+PLC%22+OR+%22Associated+British+Foods%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "auto-trader",
@@ -353,40 +357,38 @@
     },
     {
       "slug": "aviva",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 1,
-      "completedDayCount": 1,
-      "coverageDayCount": 1,
-      "failedDates": [],
+      "completedDayCount": 0,
+      "coverageDayCount": 0,
+      "failedDates": [
+        "2026-09-06"
+      ],
       "truncatedDates": [],
       "requestCount": 2,
-      "error": null
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Aviva+PLC%22+OR+%22Aviva%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "barratt-redrow",
-      "status": "degraded",
+      "status": "ok",
       "requestedDayCount": 1,
-      "completedDayCount": 0,
+      "completedDayCount": 1,
       "coverageDayCount": 0,
-      "failedDates": [
-        "2026-09-05"
-      ],
+      "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 1,
-      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Barratt+Redrow+PLC%22+OR+%22Barratt+Redrow%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "requestCount": 0,
+      "error": null
     },
     {
       "slug": "beazley",
-      "status": "degraded",
+      "status": "ok",
       "requestedDayCount": 1,
-      "completedDayCount": 0,
+      "completedDayCount": 1,
       "coverageDayCount": 0,
-      "failedDates": [
-        "2026-09-05"
-      ],
+      "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 1,
-      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Beazley+PLC%22+OR+%22Beazley%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "requestCount": 0,
+      "error": null
     },
     {
       "slug": "berkeley",
@@ -406,14 +408,27 @@
       "completedDayCount": 0,
       "coverageDayCount": 0,
       "failedDates": [
-        "2026-09-05"
+        "2026-09-06"
       ],
       "truncatedDates": [],
-      "requestCount": 1,
-      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22British+Land+Co+PLC%22+OR+%22British+Land+Co%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "requestCount": 2,
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22British+Land+Co+PLC%22+OR+%22British+Land+Co%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "bt",
+      "status": "degraded",
+      "requestedDayCount": 1,
+      "completedDayCount": 0,
+      "coverageDayCount": 0,
+      "failedDates": [
+        "2026-09-06"
+      ],
+      "truncatedDates": [],
+      "requestCount": 2,
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22BT+Group+PLC%22+OR+%22British+Telecom%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
+    },
+    {
+      "slug": "bunzl",
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
@@ -424,30 +439,17 @@
       "error": null
     },
     {
-      "slug": "bunzl",
-      "status": "degraded",
-      "requestedDayCount": 1,
-      "completedDayCount": 0,
-      "coverageDayCount": 0,
-      "failedDates": [
-        "2026-09-05"
-      ],
-      "truncatedDates": [],
-      "requestCount": 1,
-      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Bunzl+PLC%22+OR+%22Bunzl%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
-    },
-    {
       "slug": "centrica",
       "status": "degraded",
       "requestedDayCount": 1,
       "completedDayCount": 0,
       "coverageDayCount": 0,
       "failedDates": [
-        "2026-09-05"
+        "2026-09-06"
       ],
       "truncatedDates": [],
-      "requestCount": 1,
-      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Centrica+PLC%22+OR+%22Centrica%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "requestCount": 2,
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Centrica+PLC%22+OR+%22Centrica%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "coca-cola-hbc",
@@ -457,30 +459,34 @@
       "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 0,
+      "requestCount": 2,
       "error": null
     },
     {
       "slug": "convatec",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 1,
-      "completedDayCount": 1,
+      "completedDayCount": 0,
       "coverageDayCount": 0,
-      "failedDates": [],
+      "failedDates": [
+        "2026-09-06"
+      ],
       "truncatedDates": [],
-      "requestCount": 0,
-      "error": null
+      "requestCount": 1,
+      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Convatec+Group+PLC%22+OR+%22Convatec%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "croda-international",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 1,
-      "completedDayCount": 1,
+      "completedDayCount": 0,
       "coverageDayCount": 0,
-      "failedDates": [],
+      "failedDates": [
+        "2026-09-06"
+      ],
       "truncatedDates": [],
-      "requestCount": 0,
-      "error": null
+      "requestCount": 2,
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Croda+International+PLC%22+OR+%22Croda+International%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "dcc",
@@ -489,22 +495,24 @@
       "completedDayCount": 0,
       "coverageDayCount": 0,
       "failedDates": [
-        "2026-09-05"
+        "2026-09-06"
       ],
       "truncatedDates": [],
       "requestCount": 1,
-      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22DCC+PLC%22+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22DCC+PLC%22+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "diploma",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 1,
-      "completedDayCount": 1,
+      "completedDayCount": 0,
       "coverageDayCount": 0,
-      "failedDates": [],
+      "failedDates": [
+        "2026-09-06"
+      ],
       "truncatedDates": [],
       "requestCount": 1,
-      "error": null
+      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Diploma+PLC%22+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "easyjet",
@@ -513,11 +521,11 @@
       "completedDayCount": 0,
       "coverageDayCount": 0,
       "failedDates": [
-        "2026-09-05"
+        "2026-09-06"
       ],
       "truncatedDates": [],
-      "requestCount": 2,
-      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22EasyJet+PLC%22+OR+%22EasyJet%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "requestCount": 1,
+      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22EasyJet+PLC%22+OR+%22EasyJet%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "endeavour-mining",
@@ -526,42 +534,42 @@
       "completedDayCount": 0,
       "coverageDayCount": 0,
       "failedDates": [
-        "2026-09-05"
+        "2026-09-06"
       ],
       "truncatedDates": [],
       "requestCount": 2,
-      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Endeavour+Mining+PLC%22+OR+%22Endeavour+Mining%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Endeavour+Mining+PLC%22+OR+%22Endeavour+Mining%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "entain",
+      "status": "ok",
+      "requestedDayCount": 1,
+      "completedDayCount": 1,
+      "coverageDayCount": 1,
+      "failedDates": [],
+      "truncatedDates": [],
+      "requestCount": 1,
+      "error": null
+    },
+    {
+      "slug": "fandc-investment-trust",
       "status": "degraded",
       "requestedDayCount": 1,
       "completedDayCount": 0,
       "coverageDayCount": 0,
       "failedDates": [
-        "2026-09-05"
+        "2026-09-06"
       ],
       "truncatedDates": [],
-      "requestCount": 1,
-      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Entain+PLC%22+OR+%22Entain%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
-    },
-    {
-      "slug": "fandc-investment-trust",
-      "status": "ok",
-      "requestedDayCount": 1,
-      "completedDayCount": 1,
-      "coverageDayCount": 0,
-      "failedDates": [],
-      "truncatedDates": [],
-      "requestCount": 0,
-      "error": null
+      "requestCount": 2,
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22F%26C+Investment+Trust+PLC%22+OR+%22F%26C+Investment+Trust%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "fresnillo",
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 1,
+      "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
       "requestCount": 2,
@@ -574,11 +582,11 @@
       "completedDayCount": 0,
       "coverageDayCount": 0,
       "failedDates": [
-        "2026-09-05"
+        "2026-09-06"
       ],
       "truncatedDates": [],
-      "requestCount": 1,
-      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Games+Workshop+Group+PLC%22+OR+%22Games+Workshop%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "requestCount": 2,
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Games+Workshop+Group+PLC%22+OR+%22Games+Workshop%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "haleon",
@@ -587,24 +595,22 @@
       "completedDayCount": 0,
       "coverageDayCount": 0,
       "failedDates": [
-        "2026-09-05"
+        "2026-09-06"
       ],
       "truncatedDates": [],
-      "requestCount": 2,
-      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Haleon+PLC%22+OR+%22Haleon%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "requestCount": 1,
+      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Haleon+PLC%22+OR+%22Haleon%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "halma",
-      "status": "degraded",
+      "status": "ok",
       "requestedDayCount": 1,
-      "completedDayCount": 0,
+      "completedDayCount": 1,
       "coverageDayCount": 0,
-      "failedDates": [
-        "2026-09-05"
-      ],
+      "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 2,
-      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Halma+PLC%22+OR+%22Halma%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "requestCount": 1,
+      "error": null
     },
     {
       "slug": "hargreaves-lansdown",
@@ -613,22 +619,24 @@
       "completedDayCount": 0,
       "coverageDayCount": 0,
       "failedDates": [
-        "2026-09-05"
+        "2026-09-06"
       ],
       "truncatedDates": [],
-      "requestCount": 2,
-      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Hargreaves+Lansdown+PLC%22+OR+%22Hargreaves+Lansdown%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "requestCount": 1,
+      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Hargreaves+Lansdown+PLC%22+OR+%22Hargreaves+Lansdown%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "hikma-pharmaceuticals",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 1,
-      "completedDayCount": 1,
+      "completedDayCount": 0,
       "coverageDayCount": 0,
-      "failedDates": [],
+      "failedDates": [
+        "2026-09-06"
+      ],
       "truncatedDates": [],
-      "requestCount": 0,
-      "error": null
+      "requestCount": 1,
+      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Hikma+Pharmaceuticals+PLC%22+OR+%22Hikma+Pharmaceuticals%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "hiscox",
@@ -637,11 +645,11 @@
       "completedDayCount": 0,
       "coverageDayCount": 0,
       "failedDates": [
-        "2026-09-05"
+        "2026-09-06"
       ],
       "truncatedDates": [],
-      "requestCount": 2,
-      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Hiscox+Ltd%22+OR+%22Hiscox%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "requestCount": 1,
+      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Hiscox+Ltd%22+OR+%22Hiscox%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "howden-joinery",
@@ -651,7 +659,7 @@
       "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 1,
+      "requestCount": 2,
       "error": null
     },
     {
@@ -661,11 +669,11 @@
       "completedDayCount": 0,
       "coverageDayCount": 0,
       "failedDates": [
-        "2026-09-05"
+        "2026-09-06"
       ],
       "truncatedDates": [],
       "requestCount": 1,
-      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22IMI+PLC%22+OR+%22IMI+plc+engineering%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22IMI+PLC%22+OR+%22IMI+plc+engineering%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "imperial-brands",
@@ -674,11 +682,11 @@
       "completedDayCount": 0,
       "coverageDayCount": 0,
       "failedDates": [
-        "2026-09-05"
+        "2026-09-06"
       ],
       "truncatedDates": [],
-      "requestCount": 1,
-      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Imperial+Brands+PLC%22+OR+%22Imperial+Brands%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "requestCount": 2,
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Imperial+Brands+PLC%22+OR+%22Imperial+Brands%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "informa",
@@ -693,42 +701,36 @@
     },
     {
       "slug": "intercontinental-hotels",
-      "status": "degraded",
+      "status": "ok",
       "requestedDayCount": 1,
-      "completedDayCount": 0,
+      "completedDayCount": 1,
       "coverageDayCount": 0,
-      "failedDates": [
-        "2026-09-05"
-      ],
+      "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 1,
-      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22InterContinental+Hotels+Group+PLC%22+OR+%22InterContinental+Hotels%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "requestCount": 0,
+      "error": null
     },
     {
       "slug": "intermediate-capital",
-      "status": "degraded",
+      "status": "ok",
       "requestedDayCount": 1,
-      "completedDayCount": 0,
+      "completedDayCount": 1,
       "coverageDayCount": 0,
-      "failedDates": [
-        "2026-09-05"
-      ],
+      "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 1,
-      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Intermediate+Capital+Group+PLC%22+OR+%22Intermediate+Capital%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "requestCount": 0,
+      "error": null
     },
     {
       "slug": "intertek",
-      "status": "degraded",
+      "status": "ok",
       "requestedDayCount": 1,
-      "completedDayCount": 0,
+      "completedDayCount": 1,
       "coverageDayCount": 0,
-      "failedDates": [
-        "2026-09-05"
-      ],
+      "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 2,
-      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Intertek+Group+PLC%22+OR+%22Intertek%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "requestCount": 0,
+      "error": null
     },
     {
       "slug": "international-consolidated-airlines",
@@ -737,24 +739,22 @@
       "completedDayCount": 0,
       "coverageDayCount": 0,
       "failedDates": [
-        "2026-09-05"
+        "2026-09-06"
       ],
       "truncatedDates": [],
       "requestCount": 2,
-      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22International+Consolidated+Airlines+Group+SA%22+OR+%22International+Consolidated+Airlines+Group%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22International+Consolidated+Airlines+Group+SA%22+OR+%22International+Consolidated+Airlines+Group%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "jd-sports-fashion",
-      "status": "degraded",
+      "status": "ok",
       "requestedDayCount": 1,
-      "completedDayCount": 0,
+      "completedDayCount": 1,
       "coverageDayCount": 0,
-      "failedDates": [
-        "2026-09-05"
-      ],
+      "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 2,
-      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22JD+Sports+Fashion+PLC%22+OR+%22JD+Sports+Fashion%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "requestCount": 0,
+      "error": null
     },
     {
       "slug": "kingfisher",
@@ -769,16 +769,14 @@
     },
     {
       "slug": "land-securities",
-      "status": "degraded",
+      "status": "ok",
       "requestedDayCount": 1,
-      "completedDayCount": 0,
+      "completedDayCount": 1,
       "coverageDayCount": 0,
-      "failedDates": [
-        "2026-09-05"
-      ],
+      "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 2,
-      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Land+Securities+Group+PLC%22+OR+%22Land+Securities%22+OR+%22Landsec%22+OR+%22Land+Securities+Group%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "requestCount": 0,
+      "error": null
     },
     {
       "slug": "legal-and-general",
@@ -793,14 +791,16 @@
     },
     {
       "slug": "londonmetric-property",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 1,
-      "completedDayCount": 1,
+      "completedDayCount": 0,
       "coverageDayCount": 0,
-      "failedDates": [],
+      "failedDates": [
+        "2026-09-06"
+      ],
       "truncatedDates": [],
-      "requestCount": 0,
-      "error": null
+      "requestCount": 2,
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22LondonMetric+Property+PLC%22+OR+%22LondonMetric+Property%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "mandg",
@@ -826,16 +826,14 @@
     },
     {
       "slug": "melrose-industries",
-      "status": "degraded",
+      "status": "ok",
       "requestedDayCount": 1,
-      "completedDayCount": 0,
+      "completedDayCount": 1,
       "coverageDayCount": 0,
-      "failedDates": [
-        "2026-09-05"
-      ],
+      "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 1,
-      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Melrose+Industries+PLC%22+OR+%22Melrose+Industries%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "requestCount": 0,
+      "error": null
     },
     {
       "slug": "mondi",
@@ -844,22 +842,24 @@
       "completedDayCount": 0,
       "coverageDayCount": 0,
       "failedDates": [
-        "2026-09-05"
+        "2026-09-06"
       ],
       "truncatedDates": [],
       "requestCount": 2,
-      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Mondi+PLC%22+OR+%22Mondi%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Mondi+PLC%22+OR+%22Mondi%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "natwest",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 1,
-      "completedDayCount": 1,
-      "coverageDayCount": 1,
-      "failedDates": [],
+      "completedDayCount": 0,
+      "coverageDayCount": 0,
+      "failedDates": [
+        "2026-09-06"
+      ],
       "truncatedDates": [],
-      "requestCount": 0,
-      "error": null
+      "requestCount": 2,
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22NatWest+Group+PLC%22+OR+%22NatWest%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "next",
@@ -868,22 +868,24 @@
       "completedDayCount": 0,
       "coverageDayCount": 0,
       "failedDates": [
-        "2026-09-05"
+        "2026-09-06"
       ],
       "truncatedDates": [],
-      "requestCount": 1,
-      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Next+PLC%22+OR+%22Next+plc+retailer%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "requestCount": 2,
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Next+PLC%22+OR+%22Next+plc+retailer%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "pearson",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 1,
-      "completedDayCount": 1,
-      "coverageDayCount": 1,
-      "failedDates": [],
+      "completedDayCount": 0,
+      "coverageDayCount": 0,
+      "failedDates": [
+        "2026-09-06"
+      ],
       "truncatedDates": [],
-      "requestCount": 0,
-      "error": null
+      "requestCount": 1,
+      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Pearson+PLC%22+OR+%22Pearson%22+OR+%22Pearson+plc+education%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "pershing-square",
@@ -893,11 +895,35 @@
       "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 1,
+      "requestCount": 0,
       "error": null
     },
     {
       "slug": "persimmon",
+      "status": "degraded",
+      "requestedDayCount": 1,
+      "completedDayCount": 0,
+      "coverageDayCount": 0,
+      "failedDates": [
+        "2026-09-06"
+      ],
+      "truncatedDates": [],
+      "requestCount": 2,
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Persimmon+PLC%22+OR+%22Persimmon%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
+    },
+    {
+      "slug": "phoenix",
+      "status": "ok",
+      "requestedDayCount": 1,
+      "completedDayCount": 1,
+      "coverageDayCount": 0,
+      "failedDates": [],
+      "truncatedDates": [],
+      "requestCount": 1,
+      "error": null
+    },
+    {
+      "slug": "prudential",
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
@@ -908,30 +934,6 @@
       "error": null
     },
     {
-      "slug": "phoenix",
-      "status": "ok",
-      "requestedDayCount": 1,
-      "completedDayCount": 1,
-      "coverageDayCount": 0,
-      "failedDates": [],
-      "truncatedDates": [],
-      "requestCount": 0,
-      "error": null
-    },
-    {
-      "slug": "prudential",
-      "status": "degraded",
-      "requestedDayCount": 1,
-      "completedDayCount": 0,
-      "coverageDayCount": 0,
-      "failedDates": [
-        "2026-09-05"
-      ],
-      "truncatedDates": [],
-      "requestCount": 1,
-      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Prudential+PLC%22+OR+%22Prudential%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
-    },
-    {
       "slug": "reckitt-benckiser",
       "status": "ok",
       "requestedDayCount": 1,
@@ -939,7 +941,7 @@
       "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 0,
+      "requestCount": 1,
       "error": null
     },
     {
@@ -955,16 +957,14 @@
     },
     {
       "slug": "rightmove",
-      "status": "degraded",
+      "status": "ok",
       "requestedDayCount": 1,
-      "completedDayCount": 0,
-      "coverageDayCount": 0,
-      "failedDates": [
-        "2026-09-05"
-      ],
+      "completedDayCount": 1,
+      "coverageDayCount": 1,
+      "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 1,
-      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Rightmove+PLC%22+OR+%22Rightmove%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "requestCount": 0,
+      "error": null
     },
     {
       "slug": "sage",
@@ -974,7 +974,7 @@
       "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 1,
+      "requestCount": 0,
       "error": null
     },
     {
@@ -990,92 +990,80 @@
     },
     {
       "slug": "schroders",
-      "status": "degraded",
+      "status": "ok",
       "requestedDayCount": 1,
-      "completedDayCount": 0,
+      "completedDayCount": 1,
       "coverageDayCount": 0,
-      "failedDates": [
-        "2026-09-05"
-      ],
+      "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 2,
-      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Schroders+PLC%22+OR+%22Schroders%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "requestCount": 0,
+      "error": null
     },
     {
       "slug": "scottish-mortgage-investment-trust",
-      "status": "degraded",
+      "status": "ok",
       "requestedDayCount": 1,
-      "completedDayCount": 0,
+      "completedDayCount": 1,
       "coverageDayCount": 0,
-      "failedDates": [
-        "2026-09-05"
-      ],
+      "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 2,
-      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Scottish+Mortgage+Investment+Trust+PLC%22+OR+%22Scottish+Mortgage+Investment+Trust%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "requestCount": 0,
+      "error": null
     },
     {
       "slug": "segro",
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
-      "coverageDayCount": 1,
+      "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 2,
+      "requestCount": 0,
       "error": null
     },
     {
       "slug": "severn-trent",
-      "status": "degraded",
+      "status": "ok",
       "requestedDayCount": 1,
-      "completedDayCount": 0,
-      "coverageDayCount": 0,
-      "failedDates": [
-        "2026-09-05"
-      ],
+      "completedDayCount": 1,
+      "coverageDayCount": 1,
+      "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 1,
-      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Severn+Trent+PLC%22+OR+%22Severn+Trent%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "requestCount": 0,
+      "error": null
     },
     {
       "slug": "smith-and-nephew",
-      "status": "degraded",
+      "status": "ok",
       "requestedDayCount": 1,
-      "completedDayCount": 0,
+      "completedDayCount": 1,
       "coverageDayCount": 0,
-      "failedDates": [
-        "2026-09-05"
-      ],
+      "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 2,
-      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Smith+%26+Nephew+PLC%22+OR+%22Smith+%26+Nephew%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "requestCount": 0,
+      "error": null
     },
     {
       "slug": "ds-smith",
-      "status": "degraded",
+      "status": "ok",
       "requestedDayCount": 1,
-      "completedDayCount": 0,
-      "coverageDayCount": 0,
-      "failedDates": [
-        "2026-09-05"
-      ],
+      "completedDayCount": 1,
+      "coverageDayCount": 1,
+      "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 1,
-      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22DS+Smith+PLC%22+OR+%22DS+Smith%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "requestCount": 0,
+      "error": null
     },
     {
       "slug": "smiths",
-      "status": "degraded",
+      "status": "ok",
       "requestedDayCount": 1,
-      "completedDayCount": 0,
-      "coverageDayCount": 0,
-      "failedDates": [
-        "2026-09-05"
-      ],
+      "completedDayCount": 1,
+      "coverageDayCount": 1,
+      "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 1,
-      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Smiths+Group+PLC%22+OR+%22Smiths%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "requestCount": 0,
+      "error": null
     },
     {
       "slug": "spirax",
@@ -1085,7 +1073,7 @@
       "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 0,
+      "requestCount": 1,
       "error": null
     },
     {
@@ -1096,19 +1084,21 @@
       "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 1,
+      "requestCount": 0,
       "error": null
     },
     {
       "slug": "st-jamess-place",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 1,
-      "completedDayCount": 1,
+      "completedDayCount": 0,
       "coverageDayCount": 0,
-      "failedDates": [],
+      "failedDates": [
+        "2026-09-06"
+      ],
       "truncatedDates": [],
       "requestCount": 1,
-      "error": null
+      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22St+James%27s+Place+PLC%22+OR+%22St+James%27s+Place%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "standard-chartered",
@@ -1118,19 +1108,21 @@
       "coverageDayCount": 1,
       "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 1,
+      "requestCount": 0,
       "error": null
     },
     {
       "slug": "taylor-wimpey",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 1,
-      "completedDayCount": 1,
-      "coverageDayCount": 1,
-      "failedDates": [],
+      "completedDayCount": 0,
+      "coverageDayCount": 0,
+      "failedDates": [
+        "2026-09-06"
+      ],
       "truncatedDates": [],
-      "requestCount": 0,
-      "error": null
+      "requestCount": 2,
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Taylor+Wimpey+PLC%22+OR+%22Taylor+Wimpey%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "tesco",
@@ -1139,11 +1131,11 @@
       "completedDayCount": 0,
       "coverageDayCount": 0,
       "failedDates": [
-        "2026-09-05"
+        "2026-09-06"
       ],
       "truncatedDates": [],
-      "requestCount": 1,
-      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Tesco+PLC%22+OR+%22Tesco%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "requestCount": 2,
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Tesco+PLC%22+OR+%22Tesco%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "unite",
@@ -1152,25 +1144,14 @@
       "completedDayCount": 0,
       "coverageDayCount": 0,
       "failedDates": [
-        "2026-09-05"
+        "2026-09-06"
       ],
       "truncatedDates": [],
       "requestCount": 1,
-      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Unite+Group+PLC%22+OR+%22Unite+Group+student+accommodation%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Unite+Group+PLC%22+OR+%22Unite+Group+student+accommodation%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "united-utilities",
-      "status": "ok",
-      "requestedDayCount": 1,
-      "completedDayCount": 1,
-      "coverageDayCount": 0,
-      "failedDates": [],
-      "truncatedDates": [],
-      "requestCount": 1,
-      "error": null
-    },
-    {
-      "slug": "vodafone",
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
@@ -1181,30 +1162,41 @@
       "error": null
     },
     {
+      "slug": "vodafone",
+      "status": "degraded",
+      "requestedDayCount": 1,
+      "completedDayCount": 0,
+      "coverageDayCount": 0,
+      "failedDates": [
+        "2026-09-06"
+      ],
+      "truncatedDates": [],
+      "requestCount": 2,
+      "error": "429 Client Error: Too Many Requests for url: http://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Vodafone+Group+PLC%22+OR+%22Vodafone%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
+    },
+    {
       "slug": "weir",
       "status": "degraded",
       "requestedDayCount": 1,
       "completedDayCount": 0,
       "coverageDayCount": 0,
       "failedDates": [
-        "2026-09-05"
+        "2026-09-06"
       ],
       "truncatedDates": [],
       "requestCount": 1,
-      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Weir+Group+PLC%22+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Weir+Group+PLC%22+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     },
     {
       "slug": "whitbread",
-      "status": "degraded",
+      "status": "ok",
       "requestedDayCount": 1,
-      "completedDayCount": 0,
-      "coverageDayCount": 0,
-      "failedDates": [
-        "2026-09-05"
-      ],
+      "completedDayCount": 1,
+      "coverageDayCount": 1,
+      "failedDates": [],
       "truncatedDates": [],
-      "requestCount": 1,
-      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Whitbread+PLC%22+OR+%22Whitbread%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "requestCount": 0,
+      "error": null
     },
     {
       "slug": "wpp",
@@ -1213,11 +1205,11 @@
       "completedDayCount": 0,
       "coverageDayCount": 0,
       "failedDates": [
-        "2026-09-05"
+        "2026-09-06"
       ],
       "truncatedDates": [],
       "requestCount": 1,
-      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22WPP+PLC%22+OR+%22WPP+plc+advertising%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260904230000&enddatetime=20260905230000"
+      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22WPP+PLC%22+OR+%22WPP+plc+advertising%22%29+sourcelang%3Aenglish&mode=ArtList&format=json&sort=DateDesc&maxrecords=50&startdatetime=20260905230000&enddatetime=20260906230000"
     }
   ]
 }
