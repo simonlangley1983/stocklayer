@@ -2152,6 +2152,64 @@
         }
       ],
       "changeFromPreviousScoredDay": null
+    },
+    {
+      "date": "2026-09-08",
+      "dailyScore": 38.3,
+      "dailyLabel": "Negative",
+      "rollingScore": 48.9,
+      "confidence": 23.7,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 2,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 1,
+      "dispersion": 0.4122,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "1318cde3ec29011e",
+          "storyClusterId": "story-001",
+          "title": "Major European Markets Close Flat As Oil Rally , Rate Hike Fears Weigh",
+          "url": "https://www.finanzen.ch/nachrichten/aktien/major-european-markets-close-flat-as-oil-rally-rate-hike-fears-weigh-1036529525",
+          "source": "finanzen.ch",
+          "publishedAt": "2026-09-08T18:00:00Z",
+          "polarity": -0.8812,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "81b07e019db22693",
+          "storyClusterId": "story-002",
+          "title": "FTSE 100 Live : FTSE 100 ends the session lower",
+          "url": "https://www.proactiveinvestors.co.uk/companies/news/1098192/ftse-100-live-ftse-100-ends-the-session-lower-1098192.html",
+          "source": "proactiveinvestors.co.uk",
+          "publishedAt": "2026-09-08T18:15:00Z",
+          "polarity": -0.0568,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 23.7",
+          "evidenceArticleIds": [
+            "1318cde3ec29011e",
+            "81b07e019db22693"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -25.6
     }
   ]
 }
