@@ -3463,6 +3463,101 @@
         }
       ],
       "changeFromPreviousScoredDay": -17.8
+    },
+    {
+      "date": "2026-09-09",
+      "dailyScore": 45.5,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 46.9,
+      "confidence": 47.3,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 4,
+      "eligibleArticleCount": 4,
+      "storyCount": 4,
+      "effectiveStoryCount": 4.0,
+      "sourceCount": 4,
+      "positiveStoryCount": 2,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 2,
+      "dispersion": 0.8115,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "6ed1ba6f74f14dd6",
+          "storyClusterId": "story-002",
+          "title": "Cobre Limited ( ASX : CBE ) Third - Party Ore to Boost Copper Output and Cash Flow",
+          "url": "https://www.abnnewswire.net/press/en/143113/Cobre-Limited-%28ASX-CBE%29-Third-Party-Ore-to-Boost-Copper-Output-and-Cash-Flow.html",
+          "source": "abnnewswire.net",
+          "publishedAt": "2026-09-09T03:15:00Z",
+          "polarity": 0.9361,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "045058ac824362e3",
+          "storyClusterId": "story-004",
+          "title": "European Stocks Tumble As Middle East Tensions Lift Oil",
+          "url": "https://www.finanzen.ch/nachrichten/aktien/european-stocks-tumble-as-middle-east-tensions-lift-oil-1036533237",
+          "source": "finanzen.ch",
+          "publishedAt": "2026-09-09T17:45:00Z",
+          "polarity": -0.9266,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "d10eea309031940e",
+          "storyClusterId": "story-003",
+          "title": "Copper Hits Record Highs While Smelters Lose Money on Every Ton",
+          "url": "https://oilprice.com/Metals/Commodities/Copper-Hits-Record-Highs-While-Smelters-Lose-Money-on-Every-Ton.html",
+          "source": "oilprice.com",
+          "publishedAt": "2026-09-09T16:45:00Z",
+          "polarity": -0.9138,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "d215c2d6b6c175a5",
+          "storyClusterId": "story-001",
+          "title": "Marimaca hits thick copper - silver zone at Pampa Medina in Chile",
+          "url": "https://www.mining.com/marimaca-hits-thick-copper-silver-zone-at-pampa-medina-in-chile",
+          "source": "mining.com",
+          "publishedAt": "2026-09-09T00:15:00Z",
+          "polarity": 0.3686,
+          "sentiment": "Positive",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "sentiment_jump",
+          "direction": "positive",
+          "severity": "high",
+          "status": "calculated",
+          "detail": "Daily score increased by 14.2 points",
+          "evidenceArticleIds": [
+            "6ed1ba6f74f14dd6",
+            "045058ac824362e3",
+            "d10eea309031940e",
+            "d215c2d6b6c175a5"
+          ]
+        },
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "6ed1ba6f74f14dd6",
+            "045058ac824362e3",
+            "d10eea309031940e",
+            "d215c2d6b6c175a5"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 14.2
     }
   ]
 }

@@ -4798,6 +4798,88 @@
         }
       ],
       "changeFromPreviousScoredDay": -10.4
+    },
+    {
+      "date": "2026-09-09",
+      "dailyScore": 49.5,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.5,
+      "confidence": 38.0,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 4,
+      "eligibleArticleCount": 4,
+      "storyCount": 3,
+      "effectiveStoryCount": 3.0,
+      "sourceCount": 3,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 1,
+      "dispersion": 0.7213,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "c096ad5dd5cc3647",
+          "storyClusterId": "story-003",
+          "title": "Copper price pauses below record as China imports slump , mine supply heads for first drop since 2017",
+          "url": "https://www.mining.com/copper-price-pauses-below-record-as-chinas-imports-slump-mine-supply-heads-for-first-drop-since-2017",
+          "source": "mining.com",
+          "publishedAt": "2026-09-09T18:15:00Z",
+          "polarity": -0.9091,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "1f6015e7438c8d01",
+          "storyClusterId": "story-001",
+          "title": "Chilean Cobalt Corp . Completes Phase 2 at Neore Rare Earth Project , Advances Proposed Acquisition , and Secures $1 . 5 Million Strategic Investment",
+          "url": "http://www.hawaiitelegraph.com/news/279296163/chilean-cobalt-corp-completes-phase-2-at-neore-rare-earth-project-advances-proposed-acquisition-and-secures-15-million-strategic-investment",
+          "source": "hawaiitelegraph.com",
+          "publishedAt": "2026-09-09T14:00:00Z",
+          "polarity": 0.8573,
+          "sentiment": "Very positive",
+          "publisherCount": 2
+        },
+        {
+          "id": "b8dec1ed792c628e",
+          "storyClusterId": "story-002",
+          "title": "Chile mines a quarter of world copper , but smelts just 4 %",
+          "url": "https://www.mining.com/chile-mines-a-quarter-of-worlds-copper-but-smelts-just-4",
+          "source": "mining.com",
+          "publishedAt": "2026-09-09T18:15:00Z",
+          "polarity": 0.0058,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "c096ad5dd5cc3647",
+            "1f6015e7438c8d01",
+            "b8dec1ed792c628e"
+          ]
+        },
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 38.0",
+          "evidenceArticleIds": [
+            "c096ad5dd5cc3647",
+            "1f6015e7438c8d01",
+            "b8dec1ed792c628e"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 5.1
     }
   ]
 }

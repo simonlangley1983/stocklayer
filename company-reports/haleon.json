@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-09T12:00:12.341435Z",
+  "generatedAt": "2026-09-10T11:49:07.248138Z",
   "company": {
     "companyName": "Haleon PLC",
     "ticker": "HLN.L",
@@ -13,8 +13,8 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-04",
-    "observationCount": 63,
+    "periodEnd": "2026-09-09",
+    "observationCount": 64,
     "scoredDayCount": 37,
     "latestScore": 55.4,
     "latestScoreDate": "2026-09-02",
@@ -585,6 +585,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-09",
+        "dailyScore": null,
+        "rollingScore": 51.3,
+        "storyCount": 0,
+        "sourceCount": 0,
+        "confidence": 0.0,
+        "coverageStatus": "no_coverage"
       }
     ],
     "stories": [
@@ -773,17 +782,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 49.1,
+    "score": 49.2,
     "label": "Mixed",
-    "evidenceCoverage": 100,
+    "evidenceCoverage": 97,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 54.3,
+        "score": 54.4,
         "weight": 0.4,
-        "reliability": 1.0,
-        "detail": "Average of 20 scored days in the latest 30-day window."
+        "reliability": 0.95,
+        "detail": "Average of 19 scored days in the latest 30-day window."
       },
       {
         "key": "annual_tone",
