@@ -274,7 +274,7 @@ class GdeltProvider:
                         server_delay = float(retry_after) if retry_after else 0.0
                     except ValueError:
                         server_delay = 0.0
-                    cooldown = max(server_delay, min(120.0, 15.0 * (2**attempt)))
+                    cooldown = max(server_delay, min(180.0, 30.0 * (2**attempt)))
                     print(
                         f"GDELT rate limited request; retrying in {cooldown:.0f}s "
                         f"({attempt + 1}/{self.rate_limit_retries})",
@@ -930,6 +930,7 @@ def run(args: argparse.Namespace) -> int:
     scorer: SentimentScorer | None = None
     if not args.rebuild_only:
         provider = GdeltProvider(
+            rate_limit_retries=2,
             max_records=max_records,
             request_delay=(
                 args.request_delay

@@ -331,7 +331,7 @@ class NewsSentimentTests(unittest.TestCase):
         )
         self.assertEqual(result, [])
         self.assertEqual(provider.request_count, 2)
-        self.assertIn(call(20.0), sleep.call_args_list)
+        self.assertIn(call(30.0), sleep.call_args_list)
 
     @patch("automation.news_sentiment.time.sleep")
     def test_gdelt_uses_http_when_https_is_unreachable(self, sleep) -> None:
@@ -461,3 +461,4 @@ class NewsSentimentTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
