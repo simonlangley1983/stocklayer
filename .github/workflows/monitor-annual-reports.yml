@@ -53,13 +53,16 @@ jobs:
       - name: Build customer company reports
         run: python automation/build_company_reports.py
 
+      - name: Summarise annual report coverage
+        run: python scripts/check_annual_report_coverage.py
+
       - name: Commit annual report monitoring updates
         shell: bash
         run: |
           git config user.name "stocklayer-annual-report-bot"
           git config user.email "stocklayer-annual-report-bot@users.noreply.github.com"
 
-          git add annual-reports/*.json
+          git add annual-reports/*.json annual-reports/coverage-summary.md
           git commit -m "Update annual report monitoring" || echo "No annual report changes to commit"
 
           # These feeds were built before any concurrent data update was incorporated.
@@ -80,3 +83,6 @@ jobs:
             sleep 5
           done
           exit 1
+
+      - name: Alert on declining or stalled coverage
+        run: python scripts/check_annual_report_coverage.py --enforce
