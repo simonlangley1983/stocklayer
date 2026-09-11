@@ -11,7 +11,7 @@ permissions:
 jobs:
   monitor-annual-reports:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 180
 
     steps:
       - name: Check out repository
@@ -28,24 +28,27 @@ jobs:
       - name: Monitor annual report source pages
         run: >-
           python scripts/monitor_annual_reports.py
-          --max-sources-per-company 4
-          --max-child-pages-per-company 1
+          --max-sources-per-company 10
+          --max-child-pages-per-company 4
           --timeout 8
           --workers 12
 
       - name: Extract genuine annual report keyword counts
         shell: bash
         run: |
-          cp annual-reports/extracted-keywords.json "$RUNNER_TEMP/previous-extractions.json"
           python scripts/extract_annual_report_keywords.py \
-            --latest-only \
+            --index annual-reports/reports-index.json \
+            --exclude-input annual-reports/extracted-keywords.json \
+            --exclude-input annual-reports/extracted-keywords-history.json \
             --workers 4 \
-            --output "$RUNNER_TEMP/current-extractions.json"
+            --max-groups 150 \
+            --output "$RUNNER_TEMP/current-extractions.json" || extraction_status=$?
+          if [[ "${extraction_status:-0}" -gt 1 ]]; then exit "$extraction_status"; fi
           python scripts/extract_annual_report_keywords.py \
-            --latest-only \
-            --merge-input "$RUNNER_TEMP/previous-extractions.json" \
+            --merge-input annual-reports/extracted-keywords-history.json \
+            --merge-input annual-reports/extracted-keywords.json \
             --merge-input "$RUNNER_TEMP/current-extractions.json" \
-            --output annual-reports/extracted-keywords.json
+            --output annual-reports/extracted-keywords-history.json
 
       - name: Build customer company reports
         run: python automation/build_company_reports.py

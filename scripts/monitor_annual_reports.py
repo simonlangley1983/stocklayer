@@ -21,7 +21,7 @@ from typing import Any
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_COMPANIES_FILE = ROOT / "universes" / "uk-100" / "companies.json"
+DEFAULT_COMPANIES_FILE = ROOT / "uk-companies.json"
 LOCAL_COMPANIES_FALLBACKS = (ROOT / "uk-companies.json", ROOT / "ftse100.json")
 DEFAULT_SOURCES_FILE = ROOT / "annual-reports" / "sources.json"
 DEFAULT_INDEX_FILE = ROOT / "annual-reports" / "reports-index.json"

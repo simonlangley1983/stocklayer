@@ -12,7 +12,7 @@ from typing import Any
 
 
 ROOT = Path(__file__).resolve().parents[1]
-UNIVERSE_PATH = ROOT / "universes" / "uk-100" / "companies.json"
+UNIVERSE_PATH = ROOT / "uk-companies.json"
 SENTIMENT_HISTORY_DIR = ROOT / "sentiment" / "history"
 SENTIMENT_UNIVERSE_PATH = ROOT / "sentiment" / "company-universe.json"
 ANNUAL_HISTORY_PATH = ROOT / "annual-reports" / "extracted-keywords-history.json"
@@ -413,7 +413,9 @@ def load_annual_reports() -> dict[str, list[dict[str, Any]]]:
             slug = report.get("company_slug")
             year = int(report.get("report_year") or 0)
             if slug and year:
-                merged[(slug, year)] = report
+                key = (slug, year)
+                if key not in merged or report.get("report_data_status") == "extracted":
+                    merged[key] = report
     grouped: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for (slug, _), report in merged.items():
         grouped[slug].append(report)
@@ -428,7 +430,7 @@ def main() -> int:
     }
     companies = [
         {**company, **sentiment_companies.get(company.get("slug"), {})}
-        for company in universe.get("companies", [])
+        for company in (universe if isinstance(universe, list) else universe.get("companies", []))
     ]
     annual_by_slug = load_annual_reports()
     generated_at = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
