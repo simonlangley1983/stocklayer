@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-11T08:28:10.322633Z",
+  "generatedAt": "2026-09-11T10:21:02.193113Z",
   "company": {
     "companyName": "HSBC",
     "ticker": "HSBA.L",
@@ -14,10 +14,10 @@
   "pressCoverage": {
     "periodStart": "2026-06-30",
     "periodEnd": "2026-09-06",
-    "observationCount": 60,
-    "scoredDayCount": 39,
-    "latestScore": 53.1,
-    "latestScoreDate": "2026-08-30",
+    "observationCount": 63,
+    "scoredDayCount": 41,
+    "latestScore": 52.8,
+    "latestScoreDate": "2026-09-05",
     "series": [
       {
         "date": "2026-06-30",
@@ -551,6 +551,33 @@
         "coverageStatus": "no_coverage"
       },
       {
+        "date": "2026-09-03",
+        "dailyScore": 65.4,
+        "rollingScore": 52.2,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 19.7,
+        "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-04",
+        "dailyScore": null,
+        "rollingScore": 52.0,
+        "storyCount": 0,
+        "sourceCount": 0,
+        "confidence": 0.0,
+        "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-05",
+        "dailyScore": 52.8,
+        "rollingScore": 51.9,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.8,
+        "coverageStatus": "ok"
+      },
+      {
         "date": "2026-09-06",
         "dailyScore": null,
         "rollingScore": 50.3,
@@ -642,16 +669,6 @@
         "significance": 0.696
       },
       {
-        "date": "2026-08-04",
-        "type": "interim_results",
-        "title": "HSBC Holdings Interim Results 2026 - Zoom Meeting | Company Announcement",
-        "source": "investegate.co.uk",
-        "url": "https://www.investegate.co.uk/announcement/rns/hsbc-holdings--hsba/hsbc-holdings-interim-results-2026-zoom-meeting/9702473",
-        "direction": "neutral",
-        "detail": null,
-        "significance": 0.685
-      },
-      {
         "date": "2026-08-26",
         "type": "press_story",
         "title": "Hsbc Holdings PLC Lowers Position in Expeditors International of Washington , Inc . $EXPD",
@@ -660,6 +677,16 @@
         "direction": "Very negative",
         "detail": null,
         "significance": 1.059
+      },
+      {
+        "date": "2026-09-03",
+        "type": "press_story",
+        "title": "Morgan Stanley Says Asian Banks Including HSBC Holdings ( NYSE : HSBC ) Set To Gain From AI And Aging Population Trends",
+        "source": "foreignpolicyjournal.com",
+        "url": "https://www.foreignpolicyjournal.com/2026/09/03/morgan-stanley-says-asian-banks-including-hsbc-holdings-nyse-hsbc-set-to-gain-from-ai-and-aging-population-trends",
+        "direction": "Very positive",
+        "detail": null,
+        "significance": 1.077
       }
     ]
   },
@@ -1152,17 +1179,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 41.4,
-    "label": "Low",
-    "evidenceCoverage": 98,
+    "score": 42.2,
+    "label": "Mixed",
+    "evidenceCoverage": 96,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.7,
+        "score": 53.5,
         "weight": 0.4,
-        "reliability": 0.95,
-        "detail": "Average of 19 scored days in the latest 30-day window."
+        "reliability": 0.9,
+        "detail": "Average of 18 scored days in the latest 30-day window."
       },
       {
         "key": "annual_tone",
@@ -1319,16 +1346,6 @@
       "significance": 0.696
     },
     {
-      "date": "2026-08-04",
-      "type": "interim_results",
-      "title": "HSBC Holdings Interim Results 2026 - Zoom Meeting | Company Announcement",
-      "source": "investegate.co.uk",
-      "url": "https://www.investegate.co.uk/announcement/rns/hsbc-holdings--hsba/hsbc-holdings-interim-results-2026-zoom-meeting/9702473",
-      "direction": "neutral",
-      "detail": null,
-      "significance": 0.685
-    },
-    {
       "date": "2026-08-26",
       "type": "press_story",
       "title": "Hsbc Holdings PLC Lowers Position in Expeditors International of Washington , Inc . $EXPD",
@@ -1337,6 +1354,16 @@
       "direction": "Very negative",
       "detail": null,
       "significance": 1.059
+    },
+    {
+      "date": "2026-09-03",
+      "type": "press_story",
+      "title": "Morgan Stanley Says Asian Banks Including HSBC Holdings ( NYSE : HSBC ) Set To Gain From AI And Aging Population Trends",
+      "source": "foreignpolicyjournal.com",
+      "url": "https://www.foreignpolicyjournal.com/2026/09/03/morgan-stanley-says-asian-banks-including-hsbc-holdings-nyse-hsbc-set-to-gain-from-ai-and-aging-population-trends",
+      "direction": "Very positive",
+      "detail": null,
+      "significance": 1.077
     }
   ]
 }

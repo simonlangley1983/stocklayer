@@ -2072,6 +2072,70 @@
       "changeFromPreviousScoredDay": null
     },
     {
+      "date": "2026-09-06",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 50.2,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 0,
+      "eligibleArticleCount": 0,
+      "storyCount": 0,
+      "effectiveStoryCount": 0,
+      "sourceCount": 0,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0,
+      "rejectedCandidateCounts": {},
+      "topStories": [],
+      "flags": [
+        {
+          "type": "no_coverage",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
+        }
+      ],
+      "changeFromPreviousScoredDay": null
+    },
+    {
+      "date": "2026-09-07",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 50.2,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 0,
+      "eligibleArticleCount": 0,
+      "storyCount": 0,
+      "effectiveStoryCount": 0,
+      "sourceCount": 0,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0,
+      "rejectedCandidateCounts": {},
+      "topStories": [],
+      "flags": [
+        {
+          "type": "no_coverage",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
+        }
+      ],
+      "changeFromPreviousScoredDay": null
+    },
+    {
       "date": "2026-09-08",
       "dailyScore": 61.7,
       "dailyLabel": "Positive",
@@ -2116,6 +2180,121 @@
         }
       ],
       "changeFromPreviousScoredDay": 5.0
+    },
+    {
+      "date": "2026-09-09",
+      "dailyScore": 63.8,
+      "dailyLabel": "Positive",
+      "rollingScore": 52.8,
+      "confidence": 12.5,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 1,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "a0f4cd8875cc83e8",
+          "storyClusterId": "story-001",
+          "title": "Non - communicable diseases fast becoming top killer , says report",
+          "url": "https://thenationonlineng.net/non-communicable-diseases-fast-becoming-top-killer-says-report",
+          "source": "thenationonlineng.net",
+          "publishedAt": "2026-09-09T12:00:00Z",
+          "polarity": 0.8259,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 12.5",
+          "evidenceArticleIds": [
+            "a0f4cd8875cc83e8"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 2.1
+    },
+    {
+      "date": "2026-09-10",
+      "dailyScore": 50.6,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 52.3,
+      "confidence": 26.3,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 2,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 1,
+      "dispersion": 0.849,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "6efa168d2d25ea84",
+          "storyClusterId": "story-001",
+          "title": "Hikma advances its epinephrine nasal spray with multi - market regulatory filings",
+          "url": "http://www.prnewswire.com/news-releases/hikma-advances-its-epinephrine-nasal-spray-with-multi-market-regulatory-filings-302875661.html",
+          "source": "prnewswire.com",
+          "publishedAt": "2026-09-10T18:45:00Z",
+          "polarity": 0.8731,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "eea3b101bb534e99",
+          "storyClusterId": "story-002",
+          "title": "28 , 000 Bottles of Blood Pressure Medication Recalled Nationwide : FDA",
+          "url": "https://www.theepochtimes.com/us/28000-bottles-of-blood-pressure-medication-recalled-nationwide-fda-6085867",
+          "source": "theepochtimes.com",
+          "publishedAt": "2026-09-10T22:00:00Z",
+          "polarity": -0.8248,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "6efa168d2d25ea84",
+            "eea3b101bb534e99"
+          ]
+        },
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 26.3",
+          "evidenceArticleIds": [
+            "6efa168d2d25ea84",
+            "eea3b101bb534e99"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -13.2
     }
   ]
 }

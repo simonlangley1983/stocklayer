@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-11T08:28:10.322633Z",
+  "generatedAt": "2026-09-11T10:21:02.193113Z",
   "company": {
     "companyName": "Spirax Group PLC",
     "ticker": "SPX.L",
@@ -14,8 +14,8 @@
   "pressCoverage": {
     "periodStart": "2026-06-30",
     "periodEnd": "2026-09-09",
-    "observationCount": 60,
-    "scoredDayCount": 17,
+    "observationCount": 62,
+    "scoredDayCount": 18,
     "latestScore": 49.5,
     "latestScoreDate": "2026-09-09",
     "series": [
@@ -549,6 +549,24 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-07",
+        "dailyScore": null,
+        "rollingScore": 49.3,
+        "storyCount": 0,
+        "sourceCount": 0,
+        "confidence": 0.0,
+        "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-08",
+        "dailyScore": 38.3,
+        "rollingScore": 48.0,
+        "storyCount": 2,
+        "sourceCount": 2,
+        "confidence": 23.7,
+        "coverageStatus": "ok"
       },
       {
         "date": "2026-09-09",
@@ -1195,17 +1213,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 50.7,
+    "score": 50.4,
     "label": "Mixed",
-    "evidenceCoverage": 80,
+    "evidenceCoverage": 82,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 47.0,
+        "score": 46.2,
         "weight": 0.4,
-        "reliability": 0.5,
-        "detail": "Average of 10 scored days in the latest 30-day window."
+        "reliability": 0.55,
+        "detail": "Average of 11 scored days in the latest 30-day window."
       },
       {
         "key": "annual_tone",

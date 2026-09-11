@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-11T08:28:10.322633Z",
+  "generatedAt": "2026-09-11T10:21:02.193113Z",
   "company": {
     "companyName": "United Utilities Group PLC",
     "ticker": "UU.L",
@@ -13,11 +13,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-06",
-    "observationCount": 57,
-    "scoredDayCount": 49,
-    "latestScore": 35.1,
-    "latestScoreDate": "2026-09-06",
+    "periodEnd": "2026-09-10",
+    "observationCount": 61,
+    "scoredDayCount": 53,
+    "latestScore": 30.6,
+    "latestScoreDate": "2026-09-10",
     "series": [
       {
         "date": "2026-06-30",
@@ -531,19 +531,45 @@
         "sourceCount": 1,
         "confidence": 19.5,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-07",
+        "dailyScore": 51.3,
+        "rollingScore": 48.9,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 12.7,
+        "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-08",
+        "dailyScore": 27.5,
+        "rollingScore": 45.7,
+        "storyCount": 2,
+        "sourceCount": 3,
+        "confidence": 48.0,
+        "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-09",
+        "dailyScore": 34.2,
+        "rollingScore": 44.4,
+        "storyCount": 2,
+        "sourceCount": 3,
+        "confidence": 36.2,
+        "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-10",
+        "dailyScore": 30.6,
+        "rollingScore": 43.1,
+        "storyCount": 2,
+        "sourceCount": 2,
+        "confidence": 25.6,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
-      {
-        "date": "2026-07-25",
-        "type": "press_story",
-        "title": "United Utilities chiefs to take home £435 , 000 more per year",
-        "source": "newsandstar.co.uk",
-        "url": "https://www.newsandstar.co.uk/news/26406048.united-utilities-chiefs-take-home-435-000-per-year",
-        "direction": "Positive",
-        "detail": null,
-        "significance": 0.777
-      },
       {
         "date": "2026-07-31",
         "type": "press_story",
@@ -573,16 +599,6 @@
         "direction": "mixed",
         "detail": "Positive and negative coverage is unusually dispersed",
         "significance": 1.582
-      },
-      {
-        "date": "2026-08-09",
-        "type": "press_story",
-        "title": "United Utilities in Top 100 apprenticeship employers",
-        "source": "nwemail.co.uk",
-        "url": "https://www.nwemail.co.uk/news/26445723.united-utilities-top-100-apprenticeship-employers",
-        "direction": "Slightly positive",
-        "detail": null,
-        "significance": 0.419
       },
       {
         "date": "2026-08-20",
@@ -615,16 +631,6 @@
         "significance": 1.513
       },
       {
-        "date": "2026-08-30",
-        "type": "press_story",
-        "title": "United Utilities vow to fix Chelford water leak after days | Chester and District Standard",
-        "source": "chesterstandard.co.uk",
-        "url": "https://www.chesterstandard.co.uk/news/26506484.united-utilities-vow-fix-chelford-water-leak-10-days",
-        "direction": "Very positive",
-        "detail": null,
-        "significance": 0.733
-      },
-      {
         "date": "2026-09-06",
         "type": "press_story",
         "title": "Politicians hit out at United Utilities over road closure",
@@ -633,6 +639,36 @@
         "direction": "Very negative",
         "detail": null,
         "significance": 1.046
+      },
+      {
+        "date": "2026-09-08",
+        "type": "fine_or_lawsuit",
+        "title": "United Utilities fined £1m after discharging raw sewage into Lancashire coast",
+        "source": "aol.co.uk",
+        "url": "https://www.aol.co.uk/articles/united-utilities-fined-1m-discharging-180411000.html",
+        "direction": "negative",
+        "detail": null,
+        "significance": 1.688
+      },
+      {
+        "date": "2026-09-08",
+        "type": "fine_or_lawsuit",
+        "title": "United Utilities fined nearly £1m after raw sewage polluted coast",
+        "source": "lancashiretelegraph.co.uk",
+        "url": "https://www.lancashiretelegraph.co.uk/news/26533296.united-utilities-fined-nearly-1m-raw-sewage-polluted-coast",
+        "direction": "negative",
+        "detail": null,
+        "significance": 1.559
+      },
+      {
+        "date": "2026-09-09",
+        "type": "press_story",
+        "title": "United Utilities slapped with record £900k fine over sewage spill with  far - reaching consequences",
+        "source": "manchestereveningnews.co.uk",
+        "url": "https://www.manchestereveningnews.co.uk/news/uk-news/united-utilities-slapped-record-900k-34589485",
+        "direction": "Very negative",
+        "detail": null,
+        "significance": 1.067
       }
     ]
   },
@@ -1052,14 +1088,14 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 45.3,
+    "score": 44.7,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 43.3,
+        "score": 41.9,
         "weight": 0.4,
         "reliability": 1.0,
         "detail": "Average of 27 scored days in the latest 30-day window."
@@ -1130,16 +1166,6 @@
       "approximateDate": true
     },
     {
-      "date": "2026-07-25",
-      "type": "press_story",
-      "title": "United Utilities chiefs to take home £435 , 000 more per year",
-      "source": "newsandstar.co.uk",
-      "url": "https://www.newsandstar.co.uk/news/26406048.united-utilities-chiefs-take-home-435-000-per-year",
-      "direction": "Positive",
-      "detail": null,
-      "significance": 0.777
-    },
-    {
       "date": "2026-07-31",
       "type": "press_story",
       "title": "United Utilities wins go ahead for Near Sawrey treatment upgrade",
@@ -1168,16 +1194,6 @@
       "direction": "mixed",
       "detail": "Positive and negative coverage is unusually dispersed",
       "significance": 1.582
-    },
-    {
-      "date": "2026-08-09",
-      "type": "press_story",
-      "title": "United Utilities in Top 100 apprenticeship employers",
-      "source": "nwemail.co.uk",
-      "url": "https://www.nwemail.co.uk/news/26445723.united-utilities-top-100-apprenticeship-employers",
-      "direction": "Slightly positive",
-      "detail": null,
-      "significance": 0.419
     },
     {
       "date": "2026-08-20",
@@ -1210,16 +1226,6 @@
       "significance": 1.513
     },
     {
-      "date": "2026-08-30",
-      "type": "press_story",
-      "title": "United Utilities vow to fix Chelford water leak after days | Chester and District Standard",
-      "source": "chesterstandard.co.uk",
-      "url": "https://www.chesterstandard.co.uk/news/26506484.united-utilities-vow-fix-chelford-water-leak-10-days",
-      "direction": "Very positive",
-      "detail": null,
-      "significance": 0.733
-    },
-    {
       "date": "2026-09-06",
       "type": "press_story",
       "title": "Politicians hit out at United Utilities over road closure",
@@ -1228,6 +1234,36 @@
       "direction": "Very negative",
       "detail": null,
       "significance": 1.046
+    },
+    {
+      "date": "2026-09-08",
+      "type": "fine_or_lawsuit",
+      "title": "United Utilities fined £1m after discharging raw sewage into Lancashire coast",
+      "source": "aol.co.uk",
+      "url": "https://www.aol.co.uk/articles/united-utilities-fined-1m-discharging-180411000.html",
+      "direction": "negative",
+      "detail": null,
+      "significance": 1.688
+    },
+    {
+      "date": "2026-09-08",
+      "type": "fine_or_lawsuit",
+      "title": "United Utilities fined nearly £1m after raw sewage polluted coast",
+      "source": "lancashiretelegraph.co.uk",
+      "url": "https://www.lancashiretelegraph.co.uk/news/26533296.united-utilities-fined-nearly-1m-raw-sewage-polluted-coast",
+      "direction": "negative",
+      "detail": null,
+      "significance": 1.559
+    },
+    {
+      "date": "2026-09-09",
+      "type": "press_story",
+      "title": "United Utilities slapped with record £900k fine over sewage spill with  far - reaching consequences",
+      "source": "manchestereveningnews.co.uk",
+      "url": "https://www.manchestereveningnews.co.uk/news/uk-news/united-utilities-slapped-record-900k-34589485",
+      "direction": "Very negative",
+      "detail": null,
+      "significance": 1.067
     }
   ]
 }

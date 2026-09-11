@@ -2704,6 +2704,75 @@
         }
       ],
       "changeFromPreviousScoredDay": null
+    },
+    {
+      "date": "2026-09-10",
+      "dailyScore": 49.7,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.1,
+      "confidence": 26.5,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 2,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 1,
+      "dispersion": 0.9108,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "4a9efa3a8cfa92f1",
+          "storyClusterId": "story-001",
+          "title": "Six pension mistakes could cost you £10 , 000s , experts warn",
+          "url": "https://moneyweek.com/personal-finance/pensions/pension-mistakes-tax-relief-experts",
+          "source": "moneyweek.com",
+          "publishedAt": "2026-09-10T08:15:00Z",
+          "polarity": -0.9242,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "95df7a58003648d8",
+          "storyClusterId": "story-002",
+          "title": "Primark bows to customer pressure with promise to offer home delivery in Britain",
+          "url": "https://www.dailymail.com/money/markets/article-16119859/Primark-bows-customer-pressure-promise-offer-home-delivery-UK.html",
+          "source": "dailymail.com",
+          "publishedAt": "2026-09-10T08:30:00Z",
+          "polarity": 0.8974,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "4a9efa3a8cfa92f1",
+            "95df7a58003648d8"
+          ]
+        },
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 26.5",
+          "evidenceArticleIds": [
+            "4a9efa3a8cfa92f1",
+            "95df7a58003648d8"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -1.3
     }
   ]
 }

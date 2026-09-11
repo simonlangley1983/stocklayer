@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-11T08:28:10.322633Z",
+  "generatedAt": "2026-09-11T10:21:02.193113Z",
   "company": {
     "companyName": "London Stock Exchange Group",
     "ticker": "LSEG.L",
@@ -14,8 +14,8 @@
   "pressCoverage": {
     "periodStart": "2026-07-05",
     "periodEnd": "2026-09-09",
-    "observationCount": 61,
-    "scoredDayCount": 45,
+    "observationCount": 62,
+    "scoredDayCount": 46,
     "latestScore": 34.3,
     "latestScoreDate": "2026-09-09",
     "series": [
@@ -533,6 +533,15 @@
         "coverageStatus": "ok"
       },
       {
+        "date": "2026-09-03",
+        "dailyScore": 57.7,
+        "rollingScore": 52.9,
+        "storyCount": 3,
+        "sourceCount": 3,
+        "confidence": 34.2,
+        "coverageStatus": "ok"
+      },
+      {
         "date": "2026-09-04",
         "dailyScore": 37.7,
         "rollingScore": 49.8,
@@ -735,14 +744,14 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 47.0,
+    "score": 47.2,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 52.0,
+        "score": 52.4,
         "weight": 0.4,
         "reliability": 1.0,
         "detail": "Average of 22 scored days in the latest 30-day window."
