@@ -48,7 +48,7 @@
           "date": { "type": "string", "format": "date" },
           "dailyScore": { "type": ["number", "null"], "minimum": 0, "maximum": 100 },
           "dailyLabel": { "type": "string" },
-          "rollingScore": { "type": "number", "minimum": 0, "maximum": 100 },
+          "rollingScore": { "type": ["number", "null"], "minimum": 0, "maximum": 100 },
           "confidence": { "type": "number", "minimum": 0, "maximum": 100 },
           "confidenceBand": { "enum": ["low", "medium", "high"] },
           "coverageStatus": { "enum": ["ok", "no_coverage", "provider_error"] },

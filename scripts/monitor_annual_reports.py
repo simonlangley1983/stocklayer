@@ -54,6 +54,13 @@ MAX_SOURCE_PAGE_BYTES = 6 * 1024 * 1024
 # domain redirects to a product site, or when its report centre is not linked
 # from the usual investor-relations paths.  These are all first-party pages.
 OFFICIAL_SOURCE_OVERRIDES: dict[str, list[str]] = {
+    "CCC.L": ["https://investors.computacenter.com/results-presentations/annual-interim-reports?mobile=1"],
+    "INVP.L": ["https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000"],
+    "BRBY.L": ["https://www.burberryplc.com/investors/annual-report-25-26"],
+    "PCT.L": ["https://www.pctannualhighlights.co.uk/Financial-Highlights/", "https://www.pctannualhighlights.co.uk/2025/Financial-Highlights/"],
+    "BBOX.L": ["https://www.tritaxbigbox.co.uk/investors/shareholder-information/", "https://www.tritaxbigbox.co.uk/investors/results-presentations/"],
+    "ABDN.L": ["https://www.aberdeenplc.com/en-gb/investors/financial-library-and-results"],
+    "CCEP.L": ["https://ir.cocacolaep.com/financial-reports-and-results/annual-reports"],
     "III.L": ["https://www.3i.com/investor-relations/reports/2026/"],
     "ADM.L": ["https://www.admiralgroup.co.uk/investor-relations/results-reports-and-presentations"],
     "ALW.L": ["https://www.alliancewitan.com/documents"],
@@ -102,6 +109,11 @@ OFFICIAL_SOURCE_OVERRIDES: dict[str, list[str]] = {
 # have been independently verified. They make blocked or JavaScript-only report
 # centres deterministic without treating third-party mirrors as source data.
 OFFICIAL_REPORT_SEEDS: dict[str, list[dict[str, Any]]] = {
+    "PCT.L": [{"year": 2025, "title": "Polar Capital Technology Trust Annual Report 2025", "url": "https://www.pctannualhighlights.co.uk/static/literature/270997_PCTT_AR_WEB_ctDgfnW.pdf"}],
+    "CCC.L": [{"year": 2025, "title": "Computacenter Annual Report and Accounts 2025", "url": "https://investors.computacenter.com/static-files/cef18bb9-9750-4d16-adbe-39bbeb650da4"}],
+    "BRBY.L": [{"year": 2026, "title": "Burberry Annual Report 2025/26", "url": "https://www.burberryplc.com/content/dam/burberryplc/corporate/oar/oar-2025-2026/annual-report-2025-26.pdf.downloadasset.pdf"}],
+    "BBOX.L": [{"year": 2025, "title": "Tritax Big Box Annual Report 2025", "url": "https://www.tritaxbigbox.co.uk/media/4n0brecg/tritax-big-box-reit-plc-annual-report-2025.pdf"}],
+    "CCEP.L": [{"year": 2025, "title": "Coca-Cola Europacific Partners Annual Report 2025", "url": "https://ir.cocacolaep.com/static-files/3da8b539-de28-4d6a-930e-49d2f660c3f1"}],
     "III.L": [{"year": 2026, "title": "3i Group Annual Report and accounts FY2026", "url": "https://www.3i.com/investor-relations/annual-report-2026/downloads/3i-Group-Annual-Report-and-accounts-FY2026.pdf"}],
     "ALW.L": [{"year": 2025, "title": "Alliance Witan Annual Report 2025", "url": "https://media.umbraco.io/alliance-trust/zhcddtp5/4041-alliance-witan-annual-report_interactive.pdf"}],
     "ABF.L": [{"year": 2025, "title": "Associated British Foods Annual Report 2025", "url": "https://www.abf.co.uk/content/dam/abf/corporate/Documents/investors/annual-and-interim-reports/2025/abf-annual-report-2025.pdf.downloadasset.pdf"}],

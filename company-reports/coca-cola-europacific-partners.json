@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-11T12:39:20.945951Z",
+  "generatedAt": "2026-09-12T07:25:44.969445Z",
   "company": {
     "companyName": "Coca-Cola Europacific Partners PLC",
     "ticker": "CCEP.L",
@@ -22,19 +22,112 @@
     "stories": []
   },
   "annualReportAnalysis": {
-    "reportCount": 0,
-    "reports": [],
+    "reportCount": 1,
+    "reports": [
+      {
+        "year": 2025,
+        "title": "Coca-Cola Europacific Partners Annual Report 2025",
+        "url": "https://ir.cocacolaep.com/static-files/3da8b539-de28-4d6a-930e-49d2f660c3f1",
+        "sourceUrl": "https://ir.cocacolaep.com/financial-reports-and-results/annual-reports",
+        "wordCount": 176453,
+        "pageCount": 182,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 38,
+            "per10kWords": 2.154
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 2,
+            "per10kWords": 0.113
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 41,
+            "per10kWords": 2.324
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 170,
+            "per10kWords": 9.634
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 41,
+            "per10kWords": 2.324
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 77,
+            "per10kWords": 4.364
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 2,
+            "per10kWords": 0.113
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 57,
+            "per10kWords": 3.23
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 41.6,
+        "positivityMethod": "lexical annual-report tone"
+      }
+    ],
     "emergingKeywords": [],
-    "latestPositivity": null,
-    "latestPositivityMethod": null,
+    "latestPositivity": 41.6,
+    "latestPositivityMethod": "lexical annual-report tone",
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": null,
-    "label": "Unavailable",
-    "evidenceCoverage": 0,
-    "components": [],
-    "methodology": "No measured press or annual-report signals are available yet."
+    "score": 41.6,
+    "label": "Low",
+    "evidenceCoverage": 100,
+    "components": [
+      {
+        "key": "annual_tone",
+        "label": "Annual-report tone",
+        "score": 41.6,
+        "weight": 0.35,
+        "reliability": 1.0,
+        "detail": "Lexical annual-report tone."
+      }
+    ],
+    "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
-  "events": []
+  "events": [
+    {
+      "date": "2025-12-31",
+      "type": "annual_report",
+      "title": "Coca-Cola Europacific Partners Annual Report 2025",
+      "url": "https://ir.cocacolaep.com/static-files/3da8b539-de28-4d6a-930e-49d2f660c3f1",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    }
+  ]
 }

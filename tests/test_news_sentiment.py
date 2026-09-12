@@ -10,6 +10,7 @@ from zoneinfo import ZoneInfo
 
 import requests
 
+from automation.build_sentiment_universe import compact_company
 from automation.build_sentiment_site_data import (
     build_manifest,
     build_registry,
@@ -396,7 +397,7 @@ class NewsSentimentTests(unittest.TestCase):
         self.assertEqual(GdeltProvider.query_for(companies["shell"]), '"Shell plc" sourcelang:english')
         self.assertNotIn('"HSBC"', GdeltProvider.query_for(companies["hsbc"]))
         self.assertNotIn('"Barclays"', GdeltProvider.query_for(companies["barclays"]))
-        self.assertNotIn('"Berkeley"', GdeltProvider.query_for(companies["berkeley"]))
+        self.assertNotIn('"Berkeley"', GdeltProvider.query_for(compact_company({"slug": "berkeley", "companyName": "Berkeley Group PLC"})))
 
     def test_site_registry_and_sentiment_cover_the_same_100_slugs(self) -> None:
         registry = json.loads(

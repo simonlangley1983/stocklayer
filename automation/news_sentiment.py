@@ -198,6 +198,10 @@ def make_session() -> requests.Session:
     return session
 
 
+class CollectionPaused(RuntimeError):
+    """Stop fetching without discarding already collected observations."""
+
+
 class GdeltProvider:
     name = "gdelt-doc-v2"
 
@@ -206,12 +210,14 @@ class GdeltProvider:
         max_records: int = 50,
         request_delay: float = 5.25,
         rate_limit_retries: int = 0,
+        deadline: float | None = None,
     ) -> None:
         self.max_records = max_records
         self.request_delay = request_delay
         self.rate_limit_retries = rate_limit_retries
         self.session = make_session()
         self.request_count = 0
+        self.deadline = deadline
 
     @staticmethod
     def query_for(company: dict[str, Any]) -> str:
@@ -249,6 +255,8 @@ class GdeltProvider:
         }
         response = None
         for attempt in range(self.rate_limit_retries + 1):
+            if self.deadline is not None and time.monotonic() >= self.deadline:
+                raise CollectionPaused("Collection time budget reached; remaining dates will resume later")
             try:
                 for endpoint in (GDELT_ENDPOINT, GDELT_FALLBACK_ENDPOINT):
                     try:
@@ -927,10 +935,12 @@ def run(args: argparse.Namespace) -> int:
         else methodology["collection"]["maxCandidatesPerCompany"]
     )
     provider = None
+    deadline = time.monotonic() + args.max_runtime_seconds if getattr(args, "max_runtime_seconds", 0) else None
     scorer: SentimentScorer | None = None
     if not args.rebuild_only:
         provider = GdeltProvider(
             rate_limit_retries=2,
+            deadline=deadline,
             max_records=max_records,
             request_delay=(
                 args.request_delay
@@ -956,9 +966,23 @@ def run(args: argparse.Namespace) -> int:
             "companies": {},
         },
     )
+    # Keep the published feed aligned with current membership even when a new
+    # member has not been collected yet. Do not create a history observation
+    # for unavailable data: it must remain eligible for a later retry.
+    latest["companies"] = {
+        company["slug"]: latest["companies"].get(company["slug"], {
+            "companyName": company["companyName"], "ticker": company["ticker"],
+            "slug": company["slug"], "date": days[-1].isoformat(),
+            "dailyScore": None, "dailyLabel": "Collection pending",
+            "rollingScore": None, "confidence": 0.0, "confidenceBand": "low",
+            "coverageStatus": "provider_error", "storyCount": 0, "sourceCount": 0,
+            "changeFromPreviousScoredDay": None, "flags": [], "topStories": [],
+        }) for company in universe["companies"]
+    }
     statuses = []
     completed = 0
     total_targets = len(companies) * len(days)
+    paused_reason = None
 
     for index, company in enumerate(companies, start=1):
         slug = company["slug"]
@@ -981,12 +1005,16 @@ def run(args: argparse.Namespace) -> int:
             assert provider is not None and scorer is not None
             for window_start, window_end in fetch_windows:
                 try:
+                    if paused_reason:
+                        raise CollectionPaused(paused_reason)
                     partitioned, truncated, _ = fetch_window_adaptive(
                         provider, company, window_start, window_end, max_records
                     )
                     merge_partitions(candidates_by_day, partitioned)
                     truncated_days |= truncated
                 except Exception as exc:  # continue with other windows and companies
+                    if isinstance(exc, CollectionPaused):
+                        paused_reason = str(exc)
                     message = str(exc)[:500]
                     print(
                         f"ERROR {slug} {window_start}..{window_end - timedelta(days=1)}: {message}",
@@ -1030,7 +1058,7 @@ def run(args: argparse.Namespace) -> int:
             1 for item in requested_observations if item.get("coverageStatus") == "ok"
         )
         latest_observation = max(
-            requested_observations, key=lambda item: item.get("date", ""), default=None
+            observations, key=lambda item: item.get("date", ""), default=None
         )
         missing_after_run = [
             item for item in days if item.isoformat() not in completed_dates
@@ -1087,6 +1115,7 @@ def run(args: argparse.Namespace) -> int:
         "minimumCompleteness": args.minimum_completeness,
         "status": "ok" if completeness >= args.minimum_completeness else "degraded",
         "companies": statuses,
+        "pausedReason": paused_reason,
     }
     if args.dry_run:
         print(json.dumps(run_status, indent=2))
@@ -1104,6 +1133,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--universe", type=Path, default=UNIVERSE_PATH)
     parser.add_argument("--minimum-completeness", type=float, default=0.9)
     parser.add_argument("--request-delay", type=float)
+    parser.add_argument("--max-runtime-seconds", type=float, default=0,
+                        help="Stop provider requests after this budget and save partial progress (0 disables)")
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument(
         "--rebuild-only",

@@ -58,6 +58,9 @@ def main():
     if os.environ.get("GITHUB_STEP_SUMMARY"):
         with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as f: f.write(text)
     print(text.split('\n\n')[1])
+    if status['noReports'] or status['oneReport']:
+        print(f"::warning::{status['noReports']} companies have no extracted annual reports; "
+              f"{status['oneReport']} have only one year. See the coverage summary.")
     return 0
 
 if __name__ == '__main__':

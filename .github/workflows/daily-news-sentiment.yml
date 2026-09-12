@@ -16,6 +16,7 @@ on:
       - "company-reports/**"
       - "universes/**"
       - "tests/test_news_sentiment.py"
+      - "tests/test_collection_recovery.py"
   workflow_dispatch:
     inputs:
       date:
@@ -66,7 +67,7 @@ jobs:
         run: |
           python -c "import torch, transformers; print(torch.__version__, transformers.__version__)"
           python -m py_compile automation/news_sentiment.py automation/build_sentiment_universe.py automation/build_sentiment_site_data.py
-          python automation/build_sentiment_site_data.py
+          python automation/build_sentiment_site_data.py --source uk-companies.json
           python automation/build_company_reports.py
           python -m unittest discover -s tests -v
 
@@ -99,6 +100,9 @@ jobs:
           pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu
           pip install -r requirements-sentiment.txt
 
+      - name: Refresh current company universe
+        run: python automation/build_sentiment_universe.py uk-companies.json sentiment/company-universe.json
+
       - name: Generate daily sentiment
         id: sentiment
         shell: bash
@@ -109,34 +113,44 @@ jobs:
         run: |
           set +e
           args=()
-          if [[ "${{ github.event_name }}" == "schedule" ]]; then args+=(--backfill-days 7); fi
+          if [[ "${{ github.event_name }}" == "schedule" ]]; then args+=(--backfill-days 1); fi
           if [[ -n "$INPUT_DATE" ]]; then args+=(--date "$INPUT_DATE"); fi
           if [[ -n "$INPUT_SLUGS" ]]; then args+=(--slugs "$INPUT_SLUGS"); fi
           if [[ -n "$INPUT_BACKFILL_DAYS" ]]; then args+=(--backfill-days "$INPUT_BACKFILL_DAYS"); fi
-          status=2
-          for attempt in 1 2 3; do
-            echo "Sentiment collection pass $attempt of 3"
-            python automation/news_sentiment.py --request-delay 30 "${args[@]}"
-            status=$?
-            if [[ "$status" -eq 0 ]]; then break; fi
-            if [[ "$status" -ne 2 || "$attempt" -eq 3 ]]; then break; fi
-            echo "Coverage is below target; retrying only missing observations after cooldown."
-            sleep 60
-          done
+          # Leave time to commit partial progress before the job timeout.
+          python automation/news_sentiment.py --request-delay 60 --max-runtime-seconds 7200 "${args[@]}"
+          status=$?
           echo "exit_code=$status" >> "$GITHUB_OUTPUT"
           exit 0
 
       - name: Commit sentiment observations
         run: |
-          python automation/build_sentiment_site_data.py
+          python automation/build_sentiment_site_data.py --source uk-companies.json
           python automation/build_company_reports.py
           git config user.name "stocklayer-sentiment-bot"
           git config user.email "stocklayer-sentiment-bot@users.noreply.github.com"
-          git add data-manifest.json sentiment/latest.json sentiment/run-status.json sentiment/site-summary.json
-          git add company-reports
+          git add sentiment/company-universe.json sentiment/latest.json sentiment/run-status.json
+          git restore data-manifest.json company-reports universes/uk-100/companies.json sentiment/site-summary.json
           if [[ -d sentiment/history ]]; then git add sentiment/history; fi
           git commit -m "Update daily news sentiment" || echo "No sentiment changes to commit"
-          git push
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            python automation/build_sentiment_site_data.py --source uk-companies.json
+            python automation/build_company_reports.py
+            git add data-manifest.json sentiment/site-summary.json company-reports universes/uk-100/companies.json
+            git commit -m "Rebuild feeds from current report and sentiment data" || echo "No feed changes"
+            if git push; then exit 0; fi
+            sleep 5
+          done
+          exit 1
+
+      - name: Preserve collected data if publishing fails
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-sentiment-recovery
+          path: sentiment
+          retention-days: 7
 
       - name: Enforce monitoring threshold
         if: steps.sentiment.outputs.exit_code != '0'
@@ -155,6 +169,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Refresh current company universe
+        run: python automation/build_sentiment_universe.py uk-companies.json sentiment/company-universe.json
 
       - name: Build company batch matrix
         id: matrix
@@ -241,6 +258,9 @@ jobs:
           pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu
           pip install -r requirements-sentiment.txt
 
+      - name: Refresh current company universe
+        run: python automation/build_sentiment_universe.py uk-companies.json sentiment/company-universe.json
+
       - name: Generate sentiment batch ${{ matrix.number }}
         id: sentiment
         shell: bash
@@ -252,12 +272,13 @@ jobs:
           set +e
           args=(--backfill-days "$INPUT_BACKFILL_DAYS" --slugs "$INPUT_SLUGS")
           if [[ -n "$INPUT_DATE" ]]; then args+=(--date "$INPUT_DATE"); fi
-          python automation/news_sentiment.py --request-delay 30 "${args[@]}"
+          python automation/news_sentiment.py --request-delay 60 --max-runtime-seconds 7200 "${args[@]}"
           status=$?
           echo "exit_code=$status" >> "$GITHUB_OUTPUT"
           exit 0
 
       - name: Stage sentiment batch ${{ matrix.number }}
+        if: always()
         shell: bash
         env:
           INPUT_SLUGS: ${{ matrix.slugs }}
@@ -271,6 +292,7 @@ jobs:
           done
 
       - name: Upload sentiment batch ${{ matrix.number }}
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: sentiment-batch-${{ matrix.number }}
@@ -305,6 +327,9 @@ jobs:
           path: .
           merge-multiple: true
 
+      - name: Refresh current company universe
+        run: python automation/build_sentiment_universe.py uk-companies.json sentiment/company-universe.json
+
       - name: Rebuild aggregate sentiment files
         id: aggregate
         shell: bash
@@ -315,7 +340,7 @@ jobs:
           set +e
           args=(--backfill-days "$INPUT_BACKFILL_DAYS" --rebuild-only)
           if [[ -n "$INPUT_DATE" ]]; then args+=(--date "$INPUT_DATE"); fi
-          python automation/news_sentiment.py --request-delay 30 "${args[@]}"
+          python automation/news_sentiment.py --request-delay 60 --max-runtime-seconds 7200 "${args[@]}"
           status=$?
           echo "exit_code=$status" >> "$GITHUB_OUTPUT"
           exit 0
@@ -323,14 +348,23 @@ jobs:
       - name: Commit merged sentiment observations
         shell: bash
         run: |
-          python automation/build_sentiment_site_data.py
+          python automation/build_sentiment_site_data.py --source uk-companies.json
           python automation/build_company_reports.py
           git config user.name "stocklayer-sentiment-bot"
           git config user.email "stocklayer-sentiment-bot@users.noreply.github.com"
-          git add data-manifest.json sentiment/latest.json sentiment/run-status.json sentiment/site-summary.json sentiment/history
-          git add company-reports
+          git add sentiment/company-universe.json sentiment/latest.json sentiment/run-status.json sentiment/history
+          git restore data-manifest.json company-reports universes/uk-100/companies.json sentiment/site-summary.json
           git commit -m "Merge daily news sentiment backfill batches" || echo "No sentiment changes to commit"
-          git push
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            python automation/build_sentiment_site_data.py --source uk-companies.json
+            python automation/build_company_reports.py
+            git add data-manifest.json sentiment/site-summary.json company-reports universes/uk-100/companies.json
+            git commit -m "Rebuild feeds from current report and sentiment data" || echo "No feed changes"
+            if git push; then exit 0; fi
+            sleep 5
+          done
+          exit 1
 
       - name: Report aggregate completeness
         shell: bash

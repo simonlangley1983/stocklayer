@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-11T12:34:36.082973+00:00",
+  "generatedAt": "2026-09-11T21:15:50.158616+00:00",
   "source": "uk-companies.json",
   "companyCount": 111,
-  "newReportsDetected": 0,
+  "newReportsDetected": 2,
   "note": "Annual-report monitor records detected report links and source-page health. Keyword extraction can consume this index once report text extraction is enabled.",
   "companies": {
     "3i": {
@@ -237,72 +237,122 @@
       "companyName": "Aberdeen Group PLC",
       "ticker": "ABDN.L",
       "domain": "aberdeenplc.com",
-      "status": "needs_source_review",
-      "latestReportYear": null,
+      "status": "monitoring",
+      "latestReportYear": 2025,
       "sources": [
         {
-          "url": "https://www.aberdeenplc.com/investors/results-reports-and-presentations",
-          "checkedAt": "2026-09-11T12:33:53.740066+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
-        },
-        {
-          "url": "https://www.aberdeenplc.com/investors/reports-and-presentations",
-          "checkedAt": "2026-09-11T12:33:54.587724+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
-        },
-        {
-          "url": "https://www.aberdeenplc.com/investors/annual-reports",
-          "checkedAt": "2026-09-11T12:33:55.797925+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
-        },
-        {
-          "url": "https://www.aberdeenplc.com/investors/annual-report",
-          "checkedAt": "2026-09-11T12:33:56.965027+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
-        },
-        {
-          "url": "https://www.aberdeenplc.com/investors/reports-results",
-          "checkedAt": "2026-09-11T12:33:57.900145+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
-        },
-        {
-          "url": "https://www.aberdeenplc.com/investors/results",
-          "checkedAt": "2026-09-11T12:33:58.725179+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
-        },
-        {
-          "url": "https://www.aberdeenplc.com/investors/results-centre",
-          "checkedAt": "2026-09-11T12:33:59.570209+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
-        },
-        {
-          "url": "https://www.aberdeenplc.com/investors/financial-results",
-          "checkedAt": "2026-09-11T12:34:00.562113+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
-        },
-        {
-          "url": "https://www.aberdeenplc.com/investors",
-          "checkedAt": "2026-09-11T12:34:01.442671+00:00",
+          "url": "https://www.aberdeenplc.com/en-gb/investors/financial-library-and-results",
+          "checkedAt": "2026-09-11T21:14:33.139666+00:00",
           "statusCode": 200,
-          "reportLinksFound": 0
+          "reportLinksFound": 10,
+          "childPages": [
+            {
+              "url": "https://www.aberdeenplc.com/docs?documentid=AA-040325-190118-23",
+              "finalUrl": "https://www.aberdeenplc.com/docs?documentid=AA-040325-190118-23",
+              "statusCode": 200
+            }
+          ]
         },
         {
-          "url": "https://www.aberdeenplc.com/investor-relations/annual-reports",
-          "checkedAt": "2026-09-11T12:34:02.447240+00:00",
+          "url": "https://www.aberdeenplc.com/investors/results-reports-and-presentations",
+          "checkedAt": "2026-09-11T21:14:35.273528+00:00",
           "statusCode": 404,
           "error": "Not Found"
         }
       ],
-      "reports": [],
-      "updatedAt": "2026-09-11T12:34:02.447270+00:00"
+      "reports": [
+        {
+          "id": "e5105d58b436b245",
+          "year": 2025,
+          "title": "Aberdeen group plc Annual report and accounts 2025",
+          "url": "https://www.aberdeeninvestments.com/docs?documentid=AA-110326-205370-24",
+          "sourceUrl": "https://www.aberdeenplc.com/en-gb/investors/financial-library-and-results",
+          "detectedAt": "2026-09-11T21:14:33.177952+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "fcdd6b3d014eb455",
+          "year": 2024,
+          "title": "Annual report and accounts 2024 – Electronic format with inline viewer",
+          "url": "https://www.aberdeenplc.com/resources/annual-report-and-accounts-2024.html",
+          "sourceUrl": "https://www.aberdeenplc.com/en-gb/investors/financial-library-and-results",
+          "detectedAt": "2026-09-11T21:14:33.178512+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "0f89417dd3bb6c91",
+          "year": 2024,
+          "title": "Aberdeen Group plc Annual Report and Accounts 2024",
+          "url": "https://www.aberdeenplc.com/docs?documentid=AA-040325-190118-23",
+          "sourceUrl": "https://www.aberdeenplc.com/en-gb/investors/financial-library-and-results",
+          "detectedAt": "2026-09-11T21:14:33.178376+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "368117f82e130005",
+          "year": 2023,
+          "title": "Annual report and accounts 2023 – Electronic format with inline viewer",
+          "url": "https://www.aberdeenplc.com/resources/annual-report-and-accounts-2023.html",
+          "sourceUrl": "https://www.aberdeenplc.com/en-gb/investors/financial-library-and-results",
+          "detectedAt": "2026-09-11T21:14:33.178866+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "d33bce5481873086",
+          "year": 2023,
+          "title": "Annual report and accounts 2023 (PDF)",
+          "url": "https://www.aberdeenplc.com/docs?documentid=AA-050324-175061-21",
+          "sourceUrl": "https://www.aberdeenplc.com/en-gb/investors/financial-library-and-results",
+          "detectedAt": "2026-09-11T21:14:33.178739+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "78a6971b3f47b648",
+          "year": 2022,
+          "title": "Annual report and accounts 2022 – Electronic format with inline viewer",
+          "url": "https://www.abrdn.com/resources/annual-report-and-accounts-2022.html",
+          "sourceUrl": "https://www.aberdeenplc.com/en-gb/investors/financial-library-and-results",
+          "detectedAt": "2026-09-11T21:14:33.179169+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "063035362312fdc6",
+          "year": 2022,
+          "title": "Annual report and accounts 2022 (PDF)",
+          "url": "https://www.aberdeenplc.com/docs?documentid=AA-080623-163897-18",
+          "sourceUrl": "https://www.aberdeenplc.com/en-gb/investors/financial-library-and-results",
+          "detectedAt": "2026-09-11T21:14:33.178984+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "889824c25737d4f8",
+          "year": 2021,
+          "title": "Annual report and accounts 2021 – Electronic format with inline viewer",
+          "url": "https://www.aberdeenplc.com/resources/annual-report-and-accounts-2021.html",
+          "sourceUrl": "https://www.aberdeenplc.com/en-gb/investors/financial-library-and-results",
+          "detectedAt": "2026-09-11T21:14:33.179698+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "c361ae339bb2b392",
+          "year": 2021,
+          "title": "Annual report and accounts 2021 (PDF)",
+          "url": "https://www.aberdeenplc.com/docs?documentId=GB-230322-168098-11",
+          "sourceUrl": "https://www.aberdeenplc.com/en-gb/investors/financial-library-and-results",
+          "detectedAt": "2026-09-11T21:14:33.179512+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "e007dc7c1d9569cf",
+          "year": 2020,
+          "title": "Annual report and accounts 2020 (PDF)",
+          "url": "https://www.aberdeenplc.com/docs?documentId=GB-190321-145375-5",
+          "sourceUrl": "https://www.aberdeenplc.com/en-gb/investors/financial-library-and-results",
+          "detectedAt": "2026-09-11T21:14:33.179939+00:00",
+          "status": "detected"
+        }
+      ],
+      "updatedAt": "2026-09-11T21:14:35.273599+00:00"
     },
     "admiral": {
       "slug": "admiral",
@@ -11283,72 +11333,34 @@
       "companyName": "Burberry Group PLC",
       "ticker": "BRBY.L",
       "domain": "burberryplc.com",
-      "status": "needs_source_review",
-      "latestReportYear": null,
+      "status": "monitoring",
+      "latestReportYear": 2026,
       "sources": [
         {
+          "url": "https://www.burberryplc.com/investors/annual-report-25-26",
+          "checkedAt": "2026-09-11T21:14:32.430928+00:00",
+          "statusCode": 200,
+          "reportLinksFound": 0
+        },
+        {
           "url": "https://www.burberryplc.com/investors/results-reports-and-presentations",
-          "checkedAt": "2026-09-11T12:33:52.127741+00:00",
-          "statusCode": 200,
-          "reportLinksFound": 0
-        },
-        {
-          "url": "https://www.burberryplc.com/investors/reports-and-presentations",
-          "checkedAt": "2026-09-11T12:33:52.167935+00:00",
-          "statusCode": 200,
-          "reportLinksFound": 0
-        },
-        {
-          "url": "https://www.burberryplc.com/investors/annual-reports",
-          "checkedAt": "2026-09-11T12:33:52.209174+00:00",
-          "statusCode": 200,
-          "reportLinksFound": 0
-        },
-        {
-          "url": "https://www.burberryplc.com/investors/annual-report",
-          "checkedAt": "2026-09-11T12:33:52.251164+00:00",
-          "statusCode": 200,
-          "reportLinksFound": 0
-        },
-        {
-          "url": "https://www.burberryplc.com/investors/reports-results",
-          "checkedAt": "2026-09-11T12:33:52.353110+00:00",
-          "statusCode": 200,
-          "reportLinksFound": 0
-        },
-        {
-          "url": "https://www.burberryplc.com/investors/results",
-          "checkedAt": "2026-09-11T12:33:52.397094+00:00",
-          "statusCode": 200,
-          "reportLinksFound": 0
-        },
-        {
-          "url": "https://www.burberryplc.com/investors/results-centre",
-          "checkedAt": "2026-09-11T12:33:52.434299+00:00",
-          "statusCode": 200,
-          "reportLinksFound": 0
-        },
-        {
-          "url": "https://www.burberryplc.com/investors/financial-results",
-          "checkedAt": "2026-09-11T12:33:52.472932+00:00",
-          "statusCode": 200,
-          "reportLinksFound": 0
-        },
-        {
-          "url": "https://www.burberryplc.com/investors",
-          "checkedAt": "2026-09-11T12:33:52.518986+00:00",
-          "statusCode": 200,
-          "reportLinksFound": 0
-        },
-        {
-          "url": "https://www.burberryplc.com/investor-relations/annual-reports",
-          "checkedAt": "2026-09-11T12:33:52.558832+00:00",
+          "checkedAt": "2026-09-11T21:14:32.513555+00:00",
           "statusCode": 200,
           "reportLinksFound": 0
         }
       ],
-      "reports": [],
-      "updatedAt": "2026-09-11T12:33:52.559600+00:00"
+      "reports": [
+        {
+          "id": "58436dde2e93b38d",
+          "year": 2026,
+          "title": "Burberry Annual Report 2025/26",
+          "url": "https://www.burberryplc.com/content/dam/burberryplc/corporate/oar/oar-2025-2026/annual-report-2025-26.pdf.downloadasset.pdf",
+          "sourceUrl": "https://www.burberryplc.com/investors/annual-report-25-26",
+          "detectedAt": "2026-09-11T21:14:32.048538+00:00",
+          "status": "verified_official_seed"
+        }
+      ],
+      "updatedAt": "2026-09-11T21:14:32.514501+00:00"
     },
     "centrica": {
       "slug": "centrica",
@@ -11479,72 +11491,34 @@
       "companyName": "Coca-Cola Europacific Partners PLC",
       "ticker": "CCEP.L",
       "domain": "cocacolaep.com",
-      "status": "needs_source_review",
-      "latestReportYear": null,
+      "status": "monitoring",
+      "latestReportYear": 2025,
       "sources": [
         {
+          "url": "https://ir.cocacolaep.com/financial-reports-and-results/annual-reports",
+          "checkedAt": "2026-09-11T21:14:43.248540+00:00",
+          "statusCode": null,
+          "error": "The read operation timed out"
+        },
+        {
           "url": "https://www.cocacolaep.com/investors/results-reports-and-presentations",
-          "checkedAt": "2026-09-11T12:33:54.321904+00:00",
-          "statusCode": 403,
-          "error": "Forbidden"
-        },
-        {
-          "url": "https://www.cocacolaep.com/investors/reports-and-presentations",
-          "checkedAt": "2026-09-11T12:33:54.348352+00:00",
-          "statusCode": 403,
-          "error": "Forbidden"
-        },
-        {
-          "url": "https://www.cocacolaep.com/investors/annual-reports",
-          "checkedAt": "2026-09-11T12:33:54.373238+00:00",
-          "statusCode": 403,
-          "error": "Forbidden"
-        },
-        {
-          "url": "https://www.cocacolaep.com/investors/annual-report",
-          "checkedAt": "2026-09-11T12:33:54.401180+00:00",
-          "statusCode": 403,
-          "error": "Forbidden"
-        },
-        {
-          "url": "https://www.cocacolaep.com/investors/reports-results",
-          "checkedAt": "2026-09-11T12:33:54.431312+00:00",
-          "statusCode": 403,
-          "error": "Forbidden"
-        },
-        {
-          "url": "https://www.cocacolaep.com/investors/results",
-          "checkedAt": "2026-09-11T12:33:54.461493+00:00",
-          "statusCode": 403,
-          "error": "Forbidden"
-        },
-        {
-          "url": "https://www.cocacolaep.com/investors/results-centre",
-          "checkedAt": "2026-09-11T12:33:54.486012+00:00",
-          "statusCode": 403,
-          "error": "Forbidden"
-        },
-        {
-          "url": "https://www.cocacolaep.com/investors/financial-results",
-          "checkedAt": "2026-09-11T12:33:54.516134+00:00",
-          "statusCode": 403,
-          "error": "Forbidden"
-        },
-        {
-          "url": "https://www.cocacolaep.com/investors",
-          "checkedAt": "2026-09-11T12:33:54.539852+00:00",
-          "statusCode": 403,
-          "error": "Forbidden"
-        },
-        {
-          "url": "https://www.cocacolaep.com/investor-relations/annual-reports",
-          "checkedAt": "2026-09-11T12:33:54.567046+00:00",
-          "statusCode": 403,
-          "error": "Forbidden"
+          "checkedAt": "2026-09-11T21:14:43.594764+00:00",
+          "statusCode": 404,
+          "error": "Not Found"
         }
       ],
-      "reports": [],
-      "updatedAt": "2026-09-11T12:33:54.567068+00:00"
+      "reports": [
+        {
+          "id": "72c149c05a960eb3",
+          "year": 2025,
+          "title": "Coca-Cola Europacific Partners Annual Report 2025",
+          "url": "https://ir.cocacolaep.com/static-files/3da8b539-de28-4d6a-930e-49d2f660c3f1",
+          "sourceUrl": "https://ir.cocacolaep.com/financial-reports-and-results/annual-reports",
+          "detectedAt": "2026-09-11T21:14:33.180955+00:00",
+          "status": "verified_official_seed"
+        }
+      ],
+      "updatedAt": "2026-09-11T21:14:43.594800+00:00"
     },
     "coca-cola-hbc": {
       "slug": "coca-cola-hbc",
@@ -11724,72 +11698,34 @@
       "companyName": "Computacenter PLC",
       "ticker": "CCC.L",
       "domain": "computacenter.com",
-      "status": "needs_source_review",
-      "latestReportYear": null,
+      "status": "monitoring",
+      "latestReportYear": 2025,
       "sources": [
         {
+          "url": "https://investors.computacenter.com/results-presentations/annual-interim-reports?mobile=1",
+          "checkedAt": "2026-09-11T21:14:42.379207+00:00",
+          "statusCode": null,
+          "error": "The read operation timed out"
+        },
+        {
           "url": "https://www.computacenter.com/investors/results-reports-and-presentations",
-          "checkedAt": "2026-09-11T12:33:51.299291+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
-        },
-        {
-          "url": "https://www.computacenter.com/investors/reports-and-presentations",
-          "checkedAt": "2026-09-11T12:33:51.924003+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
-        },
-        {
-          "url": "https://www.computacenter.com/investors/annual-reports",
-          "checkedAt": "2026-09-11T12:33:52.530808+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
-        },
-        {
-          "url": "https://www.computacenter.com/investors/annual-report",
-          "checkedAt": "2026-09-11T12:33:53.110565+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
-        },
-        {
-          "url": "https://www.computacenter.com/investors/reports-results",
-          "checkedAt": "2026-09-11T12:33:53.641234+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
-        },
-        {
-          "url": "https://www.computacenter.com/investors/results",
-          "checkedAt": "2026-09-11T12:33:54.194937+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
-        },
-        {
-          "url": "https://www.computacenter.com/investors/results-centre",
-          "checkedAt": "2026-09-11T12:33:54.738094+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
-        },
-        {
-          "url": "https://www.computacenter.com/investors/financial-results",
-          "checkedAt": "2026-09-11T12:33:55.329753+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
-        },
-        {
-          "url": "https://www.computacenter.com/investors",
-          "checkedAt": "2026-09-11T12:33:55.874826+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
-        },
-        {
-          "url": "https://www.computacenter.com/investor-relations/annual-reports",
-          "checkedAt": "2026-09-11T12:33:56.447499+00:00",
+          "checkedAt": "2026-09-11T21:14:42.588108+00:00",
           "statusCode": 404,
           "error": "Not Found"
         }
       ],
-      "reports": [],
-      "updatedAt": "2026-09-11T12:33:56.447529+00:00"
+      "reports": [
+        {
+          "id": "6dee7d505df5a6cd",
+          "year": 2025,
+          "title": "Computacenter Annual Report and Accounts 2025",
+          "url": "https://investors.computacenter.com/static-files/cef18bb9-9750-4d16-adbe-39bbeb650da4",
+          "sourceUrl": "https://investors.computacenter.com/results-presentations/annual-interim-reports?mobile=1",
+          "detectedAt": "2026-09-11T21:14:32.047115+00:00",
+          "status": "verified_official_seed"
+        }
+      ],
+      "updatedAt": "2026-09-11T21:14:42.588134+00:00"
     },
     "convatec": {
       "slug": "convatec",
@@ -18757,72 +18693,862 @@
       "companyName": "Investec PLC",
       "ticker": "INVP.L",
       "domain": "investec.com",
-      "status": "needs_source_review",
-      "latestReportYear": null,
+      "status": "monitoring",
+      "latestReportYear": 2025,
       "sources": [
         {
+          "url": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "checkedAt": "2026-09-11T21:14:33.926186+00:00",
+          "statusCode": 200,
+          "reportLinksFound": 228
+        },
+        {
           "url": "https://www.investec.com/investors/results-reports-and-presentations",
-          "checkedAt": "2026-09-11T12:33:51.514099+00:00",
-          "statusCode": 403,
-          "error": "Forbidden"
-        },
-        {
-          "url": "https://www.investec.com/investors/reports-and-presentations",
-          "checkedAt": "2026-09-11T12:33:51.556173+00:00",
-          "statusCode": 403,
-          "error": "Forbidden"
-        },
-        {
-          "url": "https://www.investec.com/investors/annual-reports",
-          "checkedAt": "2026-09-11T12:33:51.603145+00:00",
-          "statusCode": 403,
-          "error": "Forbidden"
-        },
-        {
-          "url": "https://www.investec.com/investors/annual-report",
-          "checkedAt": "2026-09-11T12:33:51.644111+00:00",
-          "statusCode": 403,
-          "error": "Forbidden"
-        },
-        {
-          "url": "https://www.investec.com/investors/reports-results",
-          "checkedAt": "2026-09-11T12:33:51.689050+00:00",
-          "statusCode": 403,
-          "error": "Forbidden"
-        },
-        {
-          "url": "https://www.investec.com/investors/results",
-          "checkedAt": "2026-09-11T12:33:51.740208+00:00",
-          "statusCode": 403,
-          "error": "Forbidden"
-        },
-        {
-          "url": "https://www.investec.com/investors/results-centre",
-          "checkedAt": "2026-09-11T12:33:51.791401+00:00",
-          "statusCode": 403,
-          "error": "Forbidden"
-        },
-        {
-          "url": "https://www.investec.com/investors/financial-results",
-          "checkedAt": "2026-09-11T12:33:51.828621+00:00",
-          "statusCode": 403,
-          "error": "Forbidden"
-        },
-        {
-          "url": "https://www.investec.com/investors",
-          "checkedAt": "2026-09-11T12:33:51.871201+00:00",
-          "statusCode": 403,
-          "error": "Forbidden"
-        },
-        {
-          "url": "https://www.investec.com/investor-relations/annual-reports",
-          "checkedAt": "2026-09-11T12:33:51.915092+00:00",
-          "statusCode": 403,
-          "error": "Forbidden"
+          "checkedAt": "2026-09-11T21:14:34.243529+00:00",
+          "statusCode": 404,
+          "error": "Not Found"
         }
       ],
-      "reports": [],
-      "updatedAt": "2026-09-11T12:33:51.915111+00:00"
+      "reports": [
+        {
+          "id": "d73430ceaf99754d",
+          "year": 2025,
+          "title": "Investec-plc-Annual-Report-March-2025.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2025/Investec-plc-Annual-Report-March-2025.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.026505+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "16d5378dd5cc12f4",
+          "year": 2025,
+          "title": "Investec-Limited-Annual-Report-March-2025.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2025/Investec-Limited-Annual-Report-March-2025.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.026463+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "11cf6f107c6ad64b",
+          "year": 2025,
+          "title": "Investec-Group-integrated-and-strategic-annual-report-March-2025-Printable.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2025/Investec-Group-integrated-and-strategic-annual-report-March-2025-Printable.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.026274+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "2f7b475d6fa5423f",
+          "year": 2025,
+          "title": "Investec-Group-integrated-and-strategic-annual-report-March-2025-Online.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2025/Investec-Group-integrated-and-strategic-annual-report-March-2025-Online.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.026217+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "7594d3a88fefcbb9",
+          "year": 2025,
+          "title": "Investec-Bank-plc-Annual-Report-March-2025.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2025/Investec-Bank-plc-Annual-Report-March-2025.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.026545+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "735479623a4753b1",
+          "year": 2025,
+          "title": "Investec-Bank-Mauritius-Limited-Annual-Report-March-2025.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2025/Investec-Bank-Mauritius-Limited-Annual-Report-March-2025.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.026625+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "56d51753ba5f388b",
+          "year": 2025,
+          "title": "Investec-Bank-Limited-Annual-Report-March-2025.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2025/Investec-Bank-Limited-Annual-Report-March-2025.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.026583+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "afc79b2c9477227a",
+          "year": 2024,
+          "title": "Investec-plc-annual-report-March-2024.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2024/Investec-plc-annual-report-March-2024.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.026890+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "ee6079aa79e4d45e",
+          "year": 2024,
+          "title": "Investec-Limited-annual-report-March-2024.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2024/Investec-Limited-annual-report-March-2024.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.026850+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "a635e78ba569cd1b",
+          "year": 2024,
+          "title": "Investec-Integrated-and-strategic-annual-report-Printable-2024.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2024/Investec-Integrated-and-strategic-annual-report-Printable-2024.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.026717+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "ece44da3c682d0e0",
+          "year": 2024,
+          "title": "Investec-Bank-plc-annual-report-March-2024.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2024/Investec-Bank-plc-annual-report-March-2024.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.026928+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "2b3f0dfc744e7bf8",
+          "year": 2024,
+          "title": "Investec-Bank-Limited-annual-report-March-2024.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2024/Investec-Bank-Limited-annual-report-March-2024.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.026967+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "a9de110d9cafdb56",
+          "year": 2023,
+          "title": "Investec-plc-Annual-Report-Online-March-2023.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2023/Investec-plc-Annual-Report-Online-March-2023.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.027222+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "8421ae190b7715c0",
+          "year": 2023,
+          "title": "Investec-Limited-Annual-Report-Online-March-2023.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2023/Investec-Limited-Annual-Report-Online-March-2023.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.027184+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "c3269abe95d2b851",
+          "year": 2023,
+          "title": "Investec-Integrated-and-strategic-annual-report-Printable-March-2023.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2023/Investec-Integrated-and-strategic-annual-report-Printable-March-2023.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.027059+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "3bf8f22d326b314b",
+          "year": 2023,
+          "title": "Investec-Bank-plc-Annual-Report-Online-March-2023.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2023/Investec-Bank-plc-Annual-Report-Online-March-2023.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.027260+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "3bbce5ee1d8dc94a",
+          "year": 2023,
+          "title": "Investec-Bank-Limited-Annual-Report-Online-March-2023.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2023/Investec-Bank-Limited-Annual-Report-Online-March-2023.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.027297+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "2add0a8b416290fe",
+          "year": 2022,
+          "title": "Investec-PLC-Annual-Report-ONLINE-Mar-2022.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2022/Investec-PLC-Annual-Report-ONLINE-Mar-2022.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.027549+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "3bd2994945e59404",
+          "year": 2022,
+          "title": "Investec-Limited-Annual-Report-ONLINE-March-2022.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2022/Investec-Limited-Annual-Report-ONLINE-March-2022.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.027512+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "3ab1dea0e5d9538d",
+          "year": 2022,
+          "title": "Investec-Integrated-and-strategic-annual-report-Online-March-2022.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2022/Investec-Integrated-and-strategic-annual-report-Online-March-2022.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.027388+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "4296b56de3e60815",
+          "year": 2022,
+          "title": "Investec-Bank-PLC-Annual-Report-ONLINE-Mar-2022.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2022/Investec-Bank-PLC-Annual-Report-ONLINE-Mar-2022.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.027589+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "c4fbbe1e5a080e21",
+          "year": 2022,
+          "title": "Investec-Bank-Limited-Annual-Report-ONLINE-March-2022.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2022/Investec-Bank-Limited-Annual-Report-ONLINE-March-2022.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.027626+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "9e46c01ec6348cdc",
+          "year": 2021,
+          "title": "Investec-PLC-Annual-Report-31-March-2021-Online.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2021/Investec-PLC-Annual-Report-31-March-2021-Online.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.027865+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "1e56f123871cb5f7",
+          "year": 2021,
+          "title": "Investec-Limited-Annual-Report-31-March-2021-Online.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2021/Investec-Limited-Annual-Report-31-March-2021-Online.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.027827+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "71f6aa1c2d7ccb92",
+          "year": 2021,
+          "title": "Investec-Bank-PLC-Annual-Report-31-March-2021-Online.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2021/Investec-Bank-PLC-Annual-Report-31-March-2021-Online.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.027904+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "dbb769aa8642304f",
+          "year": 2021,
+          "title": "Investec-Bank-Limited-Annual-Report-31-March-2021-Online.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2021/Investec-Bank-Limited-Annual-Report-31-March-2021-Online.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.027943+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "9cf1cf21428bd72d",
+          "year": 2021,
+          "title": "DLC-Volume-3-Annual-Report-2021-Online.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2021/DLC-Volume-3-Annual-Report-2021-Online.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.027789+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "8615cd31ce23b3d1",
+          "year": 2021,
+          "title": "DLC-Volume-2-Annual-Report-2021-Online.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2021/DLC-Volume-2-Annual-Report-2021-Online.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.027752+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "03d36bf8ca8ef61d",
+          "year": 2021,
+          "title": "DLC-Volume-1-Annual-Report-2021-Online.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2021/DLC-Volume-1-Annual-Report-2021-Online.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.027714+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "e9aaee591ecccd3c",
+          "year": 2020,
+          "title": "Investec-PLC-Annual-Report-March-2020V.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2020/Investec-PLC-Annual-Report-March-2020V.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.028147+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "b4bff3685ac8b427",
+          "year": 2020,
+          "title": "Investec-Limited-Annual-Report-March-2020.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2020/Investec-Limited-Annual-Report-March-2020.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.028111+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "61baecaf799028fc",
+          "year": 2020,
+          "title": "IBP-Annual-Report-March-2020.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2020/IBP-Annual-Report-March-2020.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.028184+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "d1010531675c91ab",
+          "year": 2020,
+          "title": "IBL-Annual-Report-March-2020.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2020/IBL-Annual-Report-March-2020.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.028221+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "764755b1b69e212e",
+          "year": 2020,
+          "title": "DLC-Volume-3-Interactive-Annual-Report-March-2020F.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2020/DLC-Volume-3-Interactive-Annual-Report-March-2020F.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.028073+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "08462a92f1386bd0",
+          "year": 2020,
+          "title": "DLC-Volume-2-Interactive-Annual-Report-March-2020.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2020/DLC-Volume-2-Interactive-Annual-Report-March-2020.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.028036+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "58484488d5ad3f1c",
+          "year": 2020,
+          "title": "DLC-Volume-1-Interactive-Annual-Report-March-2020-N.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2020/DLC-Volume-1-Interactive-Annual-Report-March-2020-N.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.027998+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "be3aa18a982ac232",
+          "year": 2019,
+          "title": "investec-plc-annual-report-2019.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/silo-entities-and-subsidiary-accounts/2019/investec-plc-annual-report-2019.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.028445+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "53cbc8ccc3f1d91f",
+          "year": 2019,
+          "title": "investec-limited-annual-report-2019.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/silo-entities-and-subsidiary-accounts/2019/investec-limited-annual-report-2019.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.028407+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "4a48fbfd1e8103a5",
+          "year": 2019,
+          "title": "investec-dlc-vol-3-annual-report-2019.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2019/investec-dlc-vol-3-annual-report-2019.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.028369+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "2362b522fde4db80",
+          "year": 2019,
+          "title": "investec-dlc-vol-2-annual-report-2019.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2019/investec-dlc-vol-2-annual-report-2019.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.028331+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "a57f94b4d97c8d69",
+          "year": 2019,
+          "title": "investec-dlc-vol-1-annual-report-2019.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2019/investec-dlc-vol-1-annual-report-2019.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.028295+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "5d83de42a370b22b",
+          "year": 2019,
+          "title": "investec-bank-plc-annual-report-2019.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/silo-entities-and-subsidiary-accounts/2019/investec-bank-plc-annual-report-2019.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.028483+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "5e561a3e23f58c51",
+          "year": 2019,
+          "title": "investec-bank-limited-annual-report-2019.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/silo-entities-and-subsidiary-accounts/2019/investec-bank-limited-annual-report-2019.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.028520+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "1931b6787fb9dd58",
+          "year": 2019,
+          "title": "investec-abridged-dlc-summary-annual-report.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2019/investec-abridged-dlc-summary-annual-report.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.028258+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "1ace0139361e3a7a",
+          "year": null,
+          "title": "annual-report-2015-volume-3.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2015/annual-report-2015-volume-3.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.029251+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "b638b03b950c94c2",
+          "year": null,
+          "title": "annual-report-2015-volume-2.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2015/annual-report-2015-volume-2.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.029215+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "a4abf9c830f9f1cf",
+          "year": null,
+          "title": "annual-report-2015-volume-1.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2015/annual-report-2015-volume-1.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.029178+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "35ecf3da7040c134",
+          "year": null,
+          "title": "PLC-annual-report-March-2016.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/silo-entities-and-subsidiary-accounts/2016/PLC-annual-report-March-2016.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.029070+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "e83c82549561a29d",
+          "year": null,
+          "title": "PLC-annual-report-FA.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/silo-entities-and-subsidiary-accounts/2012/annual-silo/PLC-annual-report-FA.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.030035+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "6a5325d91d6d13fe",
+          "year": null,
+          "title": "PLC-annual-report-24-june.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/silo-entities-and-subsidiary-accounts/2011/annual-silo/PLC-annual-report-24-june.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.030284+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "ca2b00a3cfce45cb",
+          "year": null,
+          "title": "Limited-annual-report-2016.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/silo-entities-and-subsidiary-accounts/2016/Limited-annual-report-2016.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.029034+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "dce8979ce8e97795",
+          "year": null,
+          "title": "Limited-Annual-Report-FA.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/silo-entities-and-subsidiary-accounts/2012/annual-silo/Limited-Annual-Report-FA.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.029996+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "576b60eb8982c2bf",
+          "year": null,
+          "title": "Limited-2011-annual-report.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/silo-entities-and-subsidiary-accounts/2011/annual-silo/Limited-2011-annual-report.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.030247+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "f4572517a890c361",
+          "year": null,
+          "title": "Investec-plc-annual-report.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/silo-entities-and-subsidiary-accounts/2014/annual-silo/Investec-plc-annual-report.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.029541+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "eb9f434502622049",
+          "year": null,
+          "title": "Investec-plc-annual-report-2015.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/silo-entities-and-subsidiary-accounts/2015/annual-silo/Investec-plc-annual-report-2015.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.029327+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "81a23ee62e63a828",
+          "year": null,
+          "title": "Investec-plc-annual-report-2013.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/silo-entities-and-subsidiary-accounts/2013/annual-silo/Investec-plc-annual-report-2013.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.029792+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "e8ae0b51792533a6",
+          "year": null,
+          "title": "Investec-Limited-annual-report.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/silo-entities-and-subsidiary-accounts/2014/annual-silo/Investec-Limited-annual-report.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.029505+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "09a92dfe7499f456",
+          "year": null,
+          "title": "Investec-Limited-annual-report-2015.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/silo-entities-and-subsidiary-accounts/2015/annual-silo/Investec-Limited-annual-report-2015.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.029289+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "78f0836b9c6c168c",
+          "year": null,
+          "title": "Investec-Limited-annual-report-2013.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/silo-entities-and-subsidiary-accounts/2013/annual-silo/Investec-Limited-annual-report-2013.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.029755+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "77f6805f5a5dfa36",
+          "year": null,
+          "title": "Investec-DLC-annual-report-volume-3.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2017/Investec-DLC-annual-report-volume-3.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.028802+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "2c4a5acd450c825e",
+          "year": null,
+          "title": "Investec-DLC-annual-report-volume-2.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2017/Investec-DLC-annual-report-volume-2.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.028764+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "6c7100733f44ec24",
+          "year": null,
+          "title": "Investec-DLC-annual-report-volume-1.PDF",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2017/Investec-DLC-annual-report-volume-1.PDF",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.028727+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "1640ceee87f55ac1",
+          "year": null,
+          "title": "Investec-DLC-Annual-Report.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2014/Investec-DLC-Annual-Report.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.029468+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "4d937064686347b1",
+          "year": null,
+          "title": "Investec-Bank-plc-annual-report.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/silo-entities-and-subsidiary-accounts/2014/annual-silo/Investec-Bank-plc-annual-report.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.029578+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "fbc02b114ea4d41a",
+          "year": null,
+          "title": "Investec-Bank-plc-Annual-Report-2013.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/silo-entities-and-subsidiary-accounts/2013/annual-silo/Investec-Bank-plc-Annual-Report-2013.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.029830+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "a764cc203a8e76a0",
+          "year": null,
+          "title": "Investec-Bank-plc-2015-annual-report.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/silo-entities-and-subsidiary-accounts/2015/annual-silo/Investec-Bank-plc-2015-annual-report.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.029364+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "ba873a77fd8fcd3c",
+          "year": null,
+          "title": "Investec-Bank-PLC-annual-report-March-2016.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/silo-entities-and-subsidiary-accounts/2016/Investec-Bank-PLC-annual-report-March-2016.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.029107+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "42425d884d3db701",
+          "year": null,
+          "title": "Investec-Bank-Limited-Annual-Report-2013.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/silo-entities-and-subsidiary-accounts/2013/annual-silo/Investec-Bank-Limited-Annual-Report-2013.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.029868+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "cf6bc1530b28ecef",
+          "year": null,
+          "title": "Investec-Bank-Limited-2015-annual-report.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/silo-entities-and-subsidiary-accounts/2015/annual-silo/Investec-Bank-Limited-2015-annual-report.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.029403+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "3e78eedce69b1753",
+          "year": null,
+          "title": "Investec-Bank-Australia-Limited-annual-report.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/silo-entities-and-subsidiary-accounts/2014/annual-silo/Investec-Bank-Australia-Limited-annual-report.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.029633+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "c281d978504f2677",
+          "year": null,
+          "title": "Investec-Annual-Report-2010.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2010/Investec-Annual-Report-2010.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.030534+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "04f009fa46fd8b06",
+          "year": null,
+          "title": "Investec-Annual-Report-2009.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2009/Investec-Annual-Report-2009.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.030568+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "0367e0a668be9cae",
+          "year": null,
+          "title": "IBP-annual-report-march-11.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/silo-entities-and-subsidiary-accounts/2011/annual-silo/IBP-annual-report-march-11.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.030319+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "340ab07411367798",
+          "year": null,
+          "title": "IBP-annual-report-FA.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/silo-entities-and-subsidiary-accounts/2012/annual-silo/IBP-annual-report-FA.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.030072+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "f51dd2b51e9825a4",
+          "year": null,
+          "title": "IBL-annual-report-2011.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/silo-entities-and-subsidiary-accounts/2011/annual-silo/IBL-annual-report-2011.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.030360+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "111b52b67528b0cd",
+          "year": null,
+          "title": "IBL-Annual-Report-2012-FA.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/silo-entities-and-subsidiary-accounts/2012/annual-silo/IBL-Annual-Report-2012-FA.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.030109+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "2214caa662dc0b43",
+          "year": null,
+          "title": "DLC-full-annual-report-2011.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2011/DLC-full-annual-report-2011.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.030210+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "e2cc8a1be30cbbd2",
+          "year": null,
+          "title": "DLC-annual-report-2012-FA.PDF",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2012/DLC-annual-report-2012-FA.PDF",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.029951+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "e0113394849b75f7",
+          "year": null,
+          "title": "DLC-Annual-Report-2013.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2013/DLC-Annual-Report-2013.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.029718+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "b837cfccbd91810d",
+          "year": null,
+          "title": "DLC-2011-Abridged-annual-report.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2011/DLC-2011-Abridged-annual-report.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.030173+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "1c21c258773ba89c",
+          "year": null,
+          "title": "Annual-Report-2005.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2005/Annual-Report-2005.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.031506+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "c1631d27eecd3cf5",
+          "year": null,
+          "title": "Annual-Report-2004.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2004/Annual-Report-2004.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.031540+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "ed4e7e3438bcc211",
+          "year": null,
+          "title": "Annual-Report-2003.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2003/Annual-Report-2003.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.031573+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "182a5436438d7b48",
+          "year": null,
+          "title": "Annual-Report-2002.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2002/Annual-Report-2002.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.031606+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "6d04758e89a4cfd4",
+          "year": null,
+          "title": "Annual-Report-2001.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2001/Annual-Report-2001.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.031639+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "bcaff8f4be7aebef",
+          "year": null,
+          "title": "Annual-Report-1999.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/1999/Annual-Report-1999.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.031672+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "e7c74a10566661a7",
+          "year": null,
+          "title": "Abridged-annual-report-2013.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2013/Abridged-annual-report-2013.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.029682+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "74806e2303b2c82e",
+          "year": null,
+          "title": "2016-annual-report-volume-3.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2016/2016-annual-report-volume-3.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.028995+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "25438c4c5476127e",
+          "year": null,
+          "title": "2016-annual-report-volume-2.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2016/2016-annual-report-volume-2.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.028959+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "3d6d10883043245f",
+          "year": null,
+          "title": "2016-annual-report-volume-1.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2016/2016-annual-report-volume-1.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.028922+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "0c00273c38a84aa6",
+          "year": null,
+          "title": "2008-Annual-Report.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2008/2008-Annual-Report.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.030602+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "6b7e5d6459c30b66",
+          "year": null,
+          "title": "2007-Annual-Report.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2007/2007-Annual-Report.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.030635+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "06de36226682060d",
+          "year": null,
+          "title": "2006-Annual-Report.pdf",
+          "url": "https://www.investec.com/content/dam/investor-relations/financial-information/group-financial-results/2006/2006-Annual-Report.pdf",
+          "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us/investor-relations/financial-information/group-financial-results.html/1000",
+          "detectedAt": "2026-09-11T21:14:34.030669+00:00",
+          "status": "detected"
+        }
+      ],
+      "updatedAt": "2026-09-11T21:14:34.243750+00:00"
     },
     "j-sainsbury": {
       "slug": "j-sainsbury",
@@ -23937,72 +24663,43 @@
       "companyName": "Polar Capital Technology Trust PLC",
       "ticker": "PCT.L",
       "domain": "polarcapitaltechnologytrust.com",
-      "status": "needs_source_review",
-      "latestReportYear": null,
+      "status": "monitoring",
+      "latestReportYear": 2026,
       "sources": [
         {
-          "url": "https://www.polarcapitaltechnologytrust.com/investors/results-reports-and-presentations",
-          "checkedAt": "2026-09-11T12:33:51.820086+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
+          "url": "https://www.pctannualhighlights.co.uk/Financial-Highlights/",
+          "checkedAt": "2026-09-11T21:15:49.880062+00:00",
+          "statusCode": 200,
+          "reportLinksFound": 2
         },
         {
-          "url": "https://www.polarcapitaltechnologytrust.com/investors/reports-and-presentations",
-          "checkedAt": "2026-09-11T12:33:52.687182+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
-        },
-        {
-          "url": "https://www.polarcapitaltechnologytrust.com/investors/annual-reports",
-          "checkedAt": "2026-09-11T12:33:53.526527+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
-        },
-        {
-          "url": "https://www.polarcapitaltechnologytrust.com/investors/annual-report",
-          "checkedAt": "2026-09-11T12:33:54.375254+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
-        },
-        {
-          "url": "https://www.polarcapitaltechnologytrust.com/investors/reports-results",
-          "checkedAt": "2026-09-11T12:33:54.857476+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
-        },
-        {
-          "url": "https://www.polarcapitaltechnologytrust.com/investors/results",
-          "checkedAt": "2026-09-11T12:33:55.341039+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
-        },
-        {
-          "url": "https://www.polarcapitaltechnologytrust.com/investors/results-centre",
-          "checkedAt": "2026-09-11T12:33:55.808872+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
-        },
-        {
-          "url": "https://www.polarcapitaltechnologytrust.com/investors/financial-results",
-          "checkedAt": "2026-09-11T12:33:56.637507+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
-        },
-        {
-          "url": "https://www.polarcapitaltechnologytrust.com/investors",
-          "checkedAt": "2026-09-11T12:33:57.465687+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
-        },
-        {
-          "url": "https://www.polarcapitaltechnologytrust.com/investor-relations/annual-reports",
-          "checkedAt": "2026-09-11T12:33:57.948836+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
+          "url": "https://www.pctannualhighlights.co.uk/2025/Financial-Highlights/",
+          "checkedAt": "2026-09-11T21:15:50.149965+00:00",
+          "statusCode": 200,
+          "reportLinksFound": 2
         }
       ],
-      "reports": [],
-      "updatedAt": "2026-09-11T12:33:57.948861+00:00"
+      "reports": [
+        {
+          "id": "7c73d10a0f08c325",
+          "year": 2026,
+          "title": "Full Annual Report and Financial Statements 30 April 2026",
+          "url": "https://www.pctannualhighlights.co.uk/static/literature/PCTT_Annual_Report_2026.pdf",
+          "sourceUrl": "https://www.pctannualhighlights.co.uk/Financial-Highlights/",
+          "detectedAt": "2026-09-11T21:15:49.886209+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "e8f671e6e1cb2886",
+          "year": 2025,
+          "title": "Full Annual Report and Financial Statements 30 April 2025",
+          "url": "https://www.pctannualhighlights.co.uk/static/literature/270997_PCTT_AR_WEB_ctDgfnW.pdf",
+          "sourceUrl": "https://www.pctannualhighlights.co.uk/2025/Financial-Highlights/",
+          "detectedAt": "2026-09-11T21:15:49.411301+00:00",
+          "status": "detected"
+        }
+      ],
+      "updatedAt": "2026-09-11T21:15:50.158334+00:00"
     },
     "prudential": {
       "slug": "prudential",
@@ -27750,72 +28447,178 @@
       "companyName": "Tritax Big Box REIT PLC",
       "ticker": "BBOX.L",
       "domain": "tritaxbigbox.co.uk",
-      "status": "needs_source_review",
-      "latestReportYear": null,
+      "status": "monitoring",
+      "latestReportYear": 2025,
       "sources": [
         {
-          "url": "https://www.tritaxbigbox.co.uk/investors/results-reports-and-presentations",
-          "checkedAt": "2026-09-11T12:33:53.158000+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
-        },
-        {
-          "url": "https://www.tritaxbigbox.co.uk/investors/reports-and-presentations",
-          "checkedAt": "2026-09-11T12:33:53.870607+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
-        },
-        {
-          "url": "https://www.tritaxbigbox.co.uk/investors/annual-reports",
-          "checkedAt": "2026-09-11T12:33:54.161042+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
-        },
-        {
-          "url": "https://www.tritaxbigbox.co.uk/investors/annual-report",
-          "checkedAt": "2026-09-11T12:33:54.490742+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
-        },
-        {
-          "url": "https://www.tritaxbigbox.co.uk/investors/reports-results",
-          "checkedAt": "2026-09-11T12:33:54.827505+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
-        },
-        {
-          "url": "https://www.tritaxbigbox.co.uk/investors/results",
-          "checkedAt": "2026-09-11T12:33:55.064170+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
-        },
-        {
-          "url": "https://www.tritaxbigbox.co.uk/investors/results-centre",
-          "checkedAt": "2026-09-11T12:33:55.739282+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
-        },
-        {
-          "url": "https://www.tritaxbigbox.co.uk/investors/financial-results",
-          "checkedAt": "2026-09-11T12:33:55.969725+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
-        },
-        {
-          "url": "https://www.tritaxbigbox.co.uk/investors",
-          "checkedAt": "2026-09-11T12:33:56.260562+00:00",
+          "url": "https://www.tritaxbigbox.co.uk/investors/shareholder-information/",
+          "checkedAt": "2026-09-11T21:14:32.672122+00:00",
           "statusCode": 200,
-          "reportLinksFound": 0
+          "reportLinksFound": 12
         },
         {
-          "url": "https://www.tritaxbigbox.co.uk/investor-relations/annual-reports",
-          "checkedAt": "2026-09-11T12:33:57.084028+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
+          "url": "https://www.tritaxbigbox.co.uk/investors/results-presentations/",
+          "checkedAt": "2026-09-11T21:14:32.884268+00:00",
+          "statusCode": 200,
+          "reportLinksFound": 24
         }
       ],
-      "reports": [],
-      "updatedAt": "2026-09-11T12:33:57.084052+00:00"
+      "reports": [
+        {
+          "id": "efaed3e9054becb5",
+          "year": 2025,
+          "title": "tritax-big-box-reit-plc-annual-report-2025.pdf",
+          "url": "https://www.tritaxbigbox.co.uk/media/4n0brecg/tritax-big-box-reit-plc-annual-report-2025.pdf",
+          "sourceUrl": "https://www.tritaxbigbox.co.uk/investors/shareholder-information/",
+          "detectedAt": "2026-09-11T21:14:32.514992+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "97d02f3fe61402d5",
+          "year": 2025,
+          "title": "tritax-big-box-reit-plc-annual-report-2025.pdf",
+          "url": "https://dev-tritax-big-box.euwest01.umbraco.io/media/4n0brecg/tritax-big-box-reit-plc-annual-report-2025.pdf",
+          "sourceUrl": "https://www.tritaxbigbox.co.uk/investors/results-presentations/",
+          "detectedAt": "2026-09-11T21:14:32.909668+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "e97f4b338beb2ae3",
+          "year": 2024,
+          "title": "tritax-big-box-reit-plc-annual-report-2024.pdf",
+          "url": "https://dev-tritax-big-box.euwest01.umbraco.io/media/cv0lcio0/tritax-big-box-reit-plc-annual-report-2024.pdf",
+          "sourceUrl": "https://www.tritaxbigbox.co.uk/investors/results-presentations/",
+          "detectedAt": "2026-09-11T21:14:32.701926+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "4e3742d5ce07c1b5",
+          "year": 2023,
+          "title": "tritax-big-box-reit-plc-annual-report-2023.pdf",
+          "url": "https://www.tritaxbigbox.co.uk/media/y23kkxyn/tritax-big-box-reit-plc-annual-report-2023.pdf",
+          "sourceUrl": "https://www.tritaxbigbox.co.uk/investors/shareholder-information/",
+          "detectedAt": "2026-09-11T21:14:32.702053+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "aa2d1c3496d717b7",
+          "year": 2023,
+          "title": "tritax-big-box-reit-plc-annual-report-2023.pdf",
+          "url": "https://www.tritaxbigbox.co.uk/media/wgiijagf/tritax-big-box-reit-plc-annual-report-2023.pdf",
+          "sourceUrl": "https://www.tritaxbigbox.co.uk/investors/results-presentations/",
+          "detectedAt": "2026-09-11T21:14:32.910397+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "3e14abe2ef24243c",
+          "year": 2022,
+          "title": "tritax-big-box-reit-plc-annual-report-2022.pdf",
+          "url": "https://www.tritaxbigbox.co.uk/media/moglw0yl/tritax-big-box-reit-plc-annual-report-2022.pdf",
+          "sourceUrl": "https://www.tritaxbigbox.co.uk/investors/shareholder-information/",
+          "detectedAt": "2026-09-11T21:14:32.702179+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "8324d689192371d1",
+          "year": 2022,
+          "title": "tritax-big-box-reit-plc-annual-report-2022.pdf",
+          "url": "https://www.tritaxbigbox.co.uk/media/v0zhpjbv/tritax-big-box-reit-plc-annual-report-2022.pdf",
+          "sourceUrl": "https://www.tritaxbigbox.co.uk/investors/results-presentations/",
+          "detectedAt": "2026-09-11T21:14:32.910650+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "735c0f47c8e0d951",
+          "year": 2021,
+          "title": "tritax-big-box-reit-plc-annual-report-2021.pdf",
+          "url": "https://www.tritaxbigbox.co.uk/media/mr4js332/tritax-big-box-reit-plc-annual-report-2021.pdf",
+          "sourceUrl": "https://www.tritaxbigbox.co.uk/investors/shareholder-information/",
+          "detectedAt": "2026-09-11T21:14:32.702301+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "31b9866f03dd6907",
+          "year": 2021,
+          "title": "tritax-big-box-reit-plc-annual-report-2021.pdf",
+          "url": "https://www.tritaxbigbox.co.uk/media/kedh4ysd/tritax-big-box-reit-plc-annual-report-2021.pdf",
+          "sourceUrl": "https://www.tritaxbigbox.co.uk/investors/results-presentations/",
+          "detectedAt": "2026-09-11T21:14:32.910989+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "72dcb47cb601040c",
+          "year": 2019,
+          "title": "tritaxbigbox-annual-report-2019.pdf",
+          "url": "https://www.tritaxbigbox.co.uk/media/ar2agvpo/tritaxbigbox-annual-report-2019.pdf",
+          "sourceUrl": "https://www.tritaxbigbox.co.uk/investors/results-presentations/",
+          "detectedAt": "2026-09-11T21:14:32.911306+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "fabcc30fb64c96bf",
+          "year": 2019,
+          "title": "tritax-big-box-annual-report-2019-web.pdf",
+          "url": "https://www.tritaxbigbox.co.uk/media/f0xdo4fb/tritax-big-box-annual-report-2019-web.pdf",
+          "sourceUrl": "https://www.tritaxbigbox.co.uk/investors/shareholder-information/",
+          "detectedAt": "2026-09-11T21:14:32.702563+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "1d97c4cb87ba5f71",
+          "year": null,
+          "title": "tritaxbigbox-annual-report-2018.pdf",
+          "url": "https://www.tritaxbigbox.co.uk/media/mkpkwoh3/tritaxbigbox-annual-report-2018.pdf",
+          "sourceUrl": "https://www.tritaxbigbox.co.uk/investors/results-presentations/",
+          "detectedAt": "2026-09-11T21:14:32.911486+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "3d4db23237c2f7d0",
+          "year": null,
+          "title": "tritaxbigbox-annual-report-2017.pdf",
+          "url": "https://www.tritaxbigbox.co.uk/media/lazi5lor/tritaxbigbox-annual-report-2017.pdf",
+          "sourceUrl": "https://www.tritaxbigbox.co.uk/investors/results-presentations/",
+          "detectedAt": "2026-09-11T21:14:32.911620+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "5107076806a0e313",
+          "year": null,
+          "title": "tritaxbigbox-annual-report-2016.pdf",
+          "url": "https://www.tritaxbigbox.co.uk/media/lduitrpq/tritaxbigbox-annual-report-2016.pdf",
+          "sourceUrl": "https://www.tritaxbigbox.co.uk/investors/results-presentations/",
+          "detectedAt": "2026-09-11T21:14:32.911746+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "57343f98c053c45e",
+          "year": null,
+          "title": "tritaxbigbox-annual-report-2015.pdf",
+          "url": "https://www.tritaxbigbox.co.uk/media/a5ikmo4s/tritaxbigbox-annual-report-2015.pdf",
+          "sourceUrl": "https://www.tritaxbigbox.co.uk/investors/results-presentations/",
+          "detectedAt": "2026-09-11T21:14:32.911882+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "a6d45822401c8b9f",
+          "year": null,
+          "title": "tritaxbigbox-annual-report-2014.pdf",
+          "url": "https://www.tritaxbigbox.co.uk/media/0gqbu1w4/tritaxbigbox-annual-report-2014.pdf",
+          "sourceUrl": "https://www.tritaxbigbox.co.uk/investors/results-presentations/",
+          "detectedAt": "2026-09-11T21:14:32.912002+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "b4a7101dec8e9d4e",
+          "year": null,
+          "title": "tbbr-annual-report-final.pdf",
+          "url": "https://www.tritaxbigbox.co.uk/media/howlb0ea/tbbr-annual-report-final.pdf",
+          "sourceUrl": "https://www.tritaxbigbox.co.uk/investors/results-presentations/",
+          "detectedAt": "2026-09-11T21:14:32.911162+00:00",
+          "status": "detected"
+        }
+      ],
+      "updatedAt": "2026-09-11T21:14:32.928794+00:00"
     },
     "unilever": {
       "slug": "unilever",

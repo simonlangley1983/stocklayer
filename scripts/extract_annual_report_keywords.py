@@ -229,6 +229,9 @@ def normalise_text(value: str) -> str:
 
 def request_bytes(url: str, timeout: int) -> tuple[bytes, str, str]:
     parsed_url = urllib.parse.urlparse(url)
+    # CCEP's full report is ~59 MB; its CDN needs longer than the usual 30s.
+    if parsed_url.hostname == "ir.cocacolaep.com":
+        timeout = max(timeout, 180)
     headers = {
         "User-Agent": USER_AGENT,
         "Accept": "application/pdf,text/html,application/xhtml+xml;q=0.9,*/*;q=0.5",
@@ -267,6 +270,8 @@ def request_bytes(url: str, timeout: int) -> tuple[bytes, str, str]:
 
 def request_bytes_browser_compatible(url: str, timeout: int) -> tuple[bytes, str, str]:
     """Retry issuer CDNs that require a current browser TLS fingerprint."""
+    if urllib.parse.urlparse(url).hostname == "ir.cocacolaep.com":
+        timeout = max(timeout, 180)
     from curl_cffi import requests as curl_requests
 
     response = curl_requests.get(

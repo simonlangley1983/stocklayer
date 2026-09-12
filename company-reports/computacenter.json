@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-11T12:39:20.945951Z",
+  "generatedAt": "2026-09-12T07:25:44.969445Z",
   "company": {
     "companyName": "Computacenter PLC",
     "ticker": "CCC.L",
@@ -22,19 +22,112 @@
     "stories": []
   },
   "annualReportAnalysis": {
-    "reportCount": 0,
-    "reports": [],
+    "reportCount": 1,
+    "reports": [
+      {
+        "year": 2025,
+        "title": "Computacenter Annual Report and Accounts 2025",
+        "url": "https://investors.computacenter.com/static-files/cef18bb9-9750-4d16-adbe-39bbeb650da4",
+        "sourceUrl": "https://investors.computacenter.com/results-presentations/annual-interim-reports?mobile=1",
+        "wordCount": 129768,
+        "pageCount": 228,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 51,
+            "per10kWords": 3.93
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 12,
+            "per10kWords": 0.925
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 10,
+            "per10kWords": 0.771
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 82,
+            "per10kWords": 6.319
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 39,
+            "per10kWords": 3.005
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 31,
+            "per10kWords": 2.389
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 3,
+            "per10kWords": 0.231
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 3,
+            "per10kWords": 0.231
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 26,
+            "per10kWords": 2.004
+          }
+        ],
+        "positivityScore": 41.9,
+        "positivityMethod": "lexical annual-report tone"
+      }
+    ],
     "emergingKeywords": [],
-    "latestPositivity": null,
-    "latestPositivityMethod": null,
+    "latestPositivity": 41.9,
+    "latestPositivityMethod": "lexical annual-report tone",
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": null,
-    "label": "Unavailable",
-    "evidenceCoverage": 0,
-    "components": [],
-    "methodology": "No measured press or annual-report signals are available yet."
+    "score": 41.9,
+    "label": "Low",
+    "evidenceCoverage": 100,
+    "components": [
+      {
+        "key": "annual_tone",
+        "label": "Annual-report tone",
+        "score": 41.9,
+        "weight": 0.35,
+        "reliability": 1.0,
+        "detail": "Lexical annual-report tone."
+      }
+    ],
+    "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
-  "events": []
+  "events": [
+    {
+      "date": "2025-12-31",
+      "type": "annual_report",
+      "title": "Computacenter Annual Report and Accounts 2025",
+      "url": "https://investors.computacenter.com/static-files/cef18bb9-9750-4d16-adbe-39bbeb650da4",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    }
+  ]
 }
