@@ -1,12 +1,12 @@
 # Press collection recovery
 
 The daily news workflow still collects the previous London calendar day. An
-additional run at 17 minutes past each hour resumes missing history across the
+additional run at 17 minutes past every second hour resumes missing history across the
 rolling 90-day chart period. All news jobs share one concurrency group so they
 do not compete for GDELT capacity.
 
 Recovery processes at most 12 company/date windows per run. Each window contains
-at most five consecutive missing days, with 60 seconds between provider requests.
+at most five consecutive missing days, with 90 seconds between provider requests.
 A 30-minute collection budget leaves time for aggregate rebuilding and publishing.
 Company history and recovery state are saved after each window. Provider errors,
 timeouts and truncated responses remain retryable; a successful search with no

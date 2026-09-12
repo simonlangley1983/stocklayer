@@ -3,7 +3,7 @@ name: Daily news sentiment
 on:
   schedule:
     - cron: "30 5 * * *"
-    - cron: "17 * * * *"
+    - cron: "17 */2 * * *"
   pull_request:
     paths:
       - ".github/workflows/daily-news-sentiment.yml"
@@ -119,7 +119,7 @@ jobs:
         shell: bash
         env:
           INPUT_DATE: ${{ inputs.date }}
-          RECOVERY_RUN: ${{ inputs.recovery || github.event.schedule == '17 * * * *' }}
+          RECOVERY_RUN: ${{ inputs.recovery || github.event.schedule == '17 */2 * * *' }}
           RECOVERY_WINDOWS: ${{ inputs.recovery_windows }}
           INPUT_SLUGS: ${{ inputs.slugs }}
           INPUT_BACKFILL_DAYS: ${{ inputs.backfill_days }}

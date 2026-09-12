@@ -97,7 +97,7 @@ def main():
             news.write_json_atomic(STATE_PATH, state)
             command = [sys.executable, str(news.ROOT / "automation/news_sentiment.py"),
                        "--slugs", window["slug"], "--date", window["end"],
-                       "--backfill-days", str(window["days"]), "--request-delay", "60",
+                       "--backfill-days", str(window["days"]), "--request-delay", "90",
                        "--max-runtime-seconds", str(min(300, int(remaining) - 90))]
             try:
                 result = subprocess.run(command, cwd=news.ROOT, timeout=min(600, remaining), check=False)
