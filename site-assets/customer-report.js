@@ -1,9 +1,7 @@
 (() => {
   'use strict';
 
-  const DATA_BASE = /^(?:localhost|127\.0\.0\.1)$/.test(window.location.hostname)
-    ? '.codex-work/sentiment-methodology/'
-    : 'https://raw.githubusercontent.com/simonlangley1983/stocklayer/main/';
+  const DATA_BASE = 'https://raw.githubusercontent.com/simonlangley1983/stocklayer/main/';
   const cache = new Map();
   const colours = ['#2563eb', '#0f766e', '#b45309', '#7c3aed', '#be123c'];
   let activeLoadingTimer = null;
