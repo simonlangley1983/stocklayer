@@ -192,7 +192,7 @@
     content.innerHTML = `
       <div class="intel-ai-loading" role="status" aria-live="polite">
         <div class="company-report-loading-logo" aria-hidden="true">
-          <img src="images/SL-main-wordmark-clean.png?v=20260803-new" alt="">
+          <img src="images/stocklayer-wordmark.png?v=20260910-restored" alt="">
         </div>
         <strong>Building intelligence report</strong>
         <span>Preparing StockLayer's research signals.</span>
