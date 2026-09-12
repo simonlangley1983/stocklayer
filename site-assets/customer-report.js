@@ -111,7 +111,7 @@
       const series = reports.map((report, index) => ({ index, value: report.keywords.find(item => item.key === keyword.key)?.per10kWords || 0 }));
       return `<path style="--series-colour:${colours[colourIndex]}" class="report-keyword-line" d="${series.map((point, index) => `${index ? 'L' : 'M'}${x(point.index).toFixed(1)},${y(point.value).toFixed(1)}`).join(' ')}"/>${series.map(point => `<circle class="report-keyword-point" style="--series-colour:${colours[colourIndex]}" cx="${x(point.index)}" cy="${y(point.value)}" r="4"/>`).join('')}`;
     }).join('');
-    return `<svg class="company-report-chart" viewBox="0 0 ${width} ${height}" role="img" aria-label="Annual report keyword rates over time"><line class="report-gridline" x1="${left}" y1="${height - bottom}" x2="${width - right}" y2="${height - bottom}"/>${paths}${reports.map((report, index) => `<text x="${x(index)}" y="${height - 12}" text-anchor="middle">${report.year}</text>`).join('')}<text x="4" y="${top + 4}">${max.toFixed(1)}</text><text x="4" y="${height - bottom + 4}">0</text><text class="report-axis-title" x="4" y="${top + 22}">mentions / 10k words</text></svg><div class="report-legend">${keywords.map((keyword, index) => `<span><i style="--series-colour:${colours[index]}"></i>${escapeHtml(keyword.label)}</span>`).join('')}</div><p class="report-chart-note">Coloured points are measurements from each report year.</p>`;
+    return `<svg class="company-report-chart" viewBox="0 0 ${width} ${height}" role="img" aria-label="Annual report keyword rates over time"><line class="report-gridline" x1="${left}" y1="${height - bottom}" x2="${width - right}" y2="${height - bottom}"/>${paths}${reports.map((report, index) => `<text x="${x(index)}" y="${height - 12}" text-anchor="middle">${report.year}</text>`).join('')}<text x="4" y="${top + 4}">${max.toFixed(1)}</text><text x="4" y="${height - bottom + 4}">0</text><text class="report-axis-title" x="4" y="${top + 22}">mentions / 10k words</text></svg><div class="report-legend">${keywords.map((keyword, index) => `<span><i style="--series-colour:${colours[index]}"></i>${escapeHtml(keyword.label)}</span>`).join('')}</div>`;
   }
 
   function timelineEvents(events, limit = 6) {
@@ -153,7 +153,7 @@
 
   function sectionTwo(report) {
     const confidence = report.overallConfidence || {};
-    return `<section class="company-report-section report-confidence-summary" aria-labelledby="report-section-confidence"><header><h3 id="report-section-confidence">Overall confidence</h3><p>One comparable score built from the signals shown below.</p></header><div class="report-confidence-hero"><div class="report-confidence-score ${scoreClass(confidence.score)}"><strong>${confidence.score == null ? '—' : Math.round(Number(confidence.score))}</strong><span>/100</span><small>${escapeHtml(confidence.label || 'Unavailable')}</small></div><div><div class="report-overall-bar"><i style="width:${Math.max(0, Math.min(100, Number(confidence.score) || 0))}%"></i><b></b></div>${scoreScale('confidence')}<p>${escapeHtml(confidence.methodology || '')}</p><small>Evidence coverage: ${Number(confidence.evidenceCoverage || 0)}%. This measures how much reliable source data supports the score, not whether the outlook is positive.</small></div></div><h4>What drives the score</h4>${signalComparison(confidence)}</section>`;
+    return `<section class="company-report-section report-confidence-summary" aria-labelledby="report-section-confidence"><header><h3 id="report-section-confidence">Overall confidence</h3></header><div class="report-confidence-hero"><div class="report-confidence-score ${scoreClass(confidence.score)}"><strong>${confidence.score == null ? '—' : Math.round(Number(confidence.score))}</strong><span>/100</span><small>${escapeHtml(confidence.label || 'Unavailable')}</small></div><div><div class="report-overall-bar"><i style="width:${Math.max(0, Math.min(100, Number(confidence.score) || 0))}%"></i><b></b></div>${scoreScale('confidence')}<p>${escapeHtml(confidence.methodology || '')}</p><small>Evidence coverage: ${Number(confidence.evidenceCoverage || 0)}%. This measures how much reliable source data supports the score, not whether the outlook is positive.</small></div></div><h4>What drives the score</h4>${signalComparison(confidence)}</section>`;
   }
 
   function sectionThree(report) {
@@ -162,7 +162,7 @@
     const pressSeries = press.series.map(item => ({ date: item.date, value: finite(item.dailyScore) }));
     const annualSeries = annual.reports.map(item => ({ date: `${item.year}-12-31`, value: finite(item.positivityScore) }));
     const events = timelineEvents(report.events, 6);
-    return `<section class="company-report-section" aria-labelledby="report-section-trends"><header><h3 id="report-section-trends">Signals over time</h3><p>Both charts use the same 0–100 scale, so direction is directly comparable. The time periods remain separate because press is daily and reports are annual.</p></header><div class="company-report-chart-grid"><div class="company-report-chart-card"><div><h4>Press sentiment</h4><p>Numbered markers match the evidenced events immediately below. Gaps mean no eligible coverage.</p></div>${lineChart(pressSeries, { lower: 0, upper: 100, scoreScale: true, label: 'Daily press sentiment with numbered events', events })}</div><div class="company-report-chart-card"><div><h4>Annual-report tone</h4><p>${escapeHtml(annual.latestPositivityMethod || 'Awaiting sufficient reports')}.</p></div>${lineChart(annualSeries, { lower: 0, upper: 100, scoreScale: true, label: 'Annual report positivity over time' })}</div></div><div class="company-report-subsection"><h4>Events behind the press signal</h4>${eventList(events)}</div></section>`;
+    return `<section class="company-report-section" aria-labelledby="report-section-trends"><header><h3 id="report-section-trends">Signals over time</h3></header><div class="company-report-chart-grid"><div class="company-report-chart-card"><div><h4>Press sentiment</h4><p>Numbered markers match the evidenced events immediately below. Gaps mean no eligible coverage.</p></div>${lineChart(pressSeries, { lower: 0, upper: 100, scoreScale: true, label: 'Daily press sentiment with numbered events', events })}</div><div class="company-report-chart-card"><div><h4>Annual-report tone</h4>${annual.latestPositivityMethod?.replace(/\.$/, '').toLowerCase() === 'year-on-year thematic direction proxy' ? '' : `<p>${escapeHtml(annual.latestPositivityMethod || 'Awaiting sufficient reports')}.</p>`}</div>${lineChart(annualSeries, { lower: 0, upper: 100, scoreScale: true, label: 'Annual report positivity over time' })}</div></div><div class="company-report-subsection"><h4>Events behind the press signal</h4>${eventList(events)}</div></section>`;
   }
 
   function sectionFour(report) {
@@ -186,17 +186,18 @@
     const name = company.companyName || company.ticker || 'Company';
     const loadId = ++activeLoadId;
     if (activeLoadingTimer) window.clearInterval(activeLoadingTimer);
-    title.textContent = `${name} intelligence`;
-    subtitle.textContent = 'Building your intelligence report...';
+    title.textContent = `${name} report`;
+    subtitle.hidden = false;
+    subtitle.textContent = 'Building your report...';
     content.setAttribute('aria-busy', 'true');
     content.innerHTML = `
       <div class="intel-ai-loading" role="status" aria-live="polite">
         <div class="company-report-loading-logo" aria-hidden="true">
           <img src="images/stocklayer-wordmark.png?v=20260910-restored" alt="">
         </div>
-        <strong>Building intelligence report</strong>
+        <strong>Building report</strong>
         <span>Preparing StockLayer's research signals.</span>
-        <ul class="intel-loading-steps" aria-label="Intelligence report progress">
+        <ul class="intel-loading-steps" aria-label="Report progress">
           <li class="intel-loading-step is-active">Loading annual reports...</li>
           <li class="intel-loading-step">Loading press sentiment...</li>
           <li class="intel-loading-step">Analysing data...</li>
@@ -222,8 +223,9 @@
         new Promise(resolve => window.setTimeout(resolve, 7000))
       ]);
       if (loadId !== activeLoadId || modal.hidden) return;
-      title.textContent = `${name} intelligence report`;
-      subtitle.textContent = 'One confidence score, its measured signals and the evidence behind them.';
+      title.textContent = `${name} report`;
+      subtitle.textContent = '';
+      subtitle.hidden = true;
       content.innerHTML = render(report, company);
       content.removeAttribute('aria-busy');
     } catch (error) {
