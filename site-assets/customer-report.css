@@ -1,3 +1,24 @@
+.company-report-loading-logo {
+  width: min(260px, 80%);
+  margin: 10px auto 16px;
+}
+
+.company-report-loading-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  animation: company-report-logo-build 1.65s ease-in-out infinite;
+}
+
+@keyframes company-report-logo-build {
+  0%, 100% { transform: translateY(1px) scale(.98); opacity: 1; }
+  50% { transform: translateY(-4px) scale(1.02); opacity: .82; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .company-report-loading-logo img { animation: none; }
+}
+
 .stocklayer-intel-modal {
   width: min(1080px, 100%);
 }
