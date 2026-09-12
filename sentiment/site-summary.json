@@ -3,8 +3,8 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-09-11T21:17:04.289474Z",
-  "asOfDate": "2026-09-10",
+  "generatedAt": "2026-09-12T07:31:32.967593Z",
+  "asOfDate": "2026-09-11",
   "companyCount": 100,
   "companies": {
     "astrazeneca": {
@@ -2125,17 +2125,25 @@
       "companyName": "Computacenter PLC",
       "ticker": "CCC.L",
       "slug": "computacenter",
-      "date": "2026-09-10",
-      "dailyScore": null,
-      "dailyLabel": "Collection pending",
-      "rollingScore": null,
-      "confidence": 0.0,
+      "date": "2026-09-11",
+      "dailyScore": 50.8,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.1,
+      "confidence": 15.3,
       "confidenceBand": "low",
-      "coverageStatus": "provider_error",
-      "storyCount": 0,
-      "sourceCount": 0,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
       "changeFromPreviousScoredDay": null,
-      "flags": []
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 15.3"
+        }
+      ]
     },
     "investec": {
       "companyName": "Investec PLC",

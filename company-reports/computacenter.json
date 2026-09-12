@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-12T07:25:44.969445Z",
+  "generatedAt": "2026-09-12T07:31:34.331298Z",
   "company": {
     "companyName": "Computacenter PLC",
     "ticker": "CCC.L",
@@ -12,14 +12,35 @@
     "introduction": "Computacenter PLC is a London-listed technology company tracked as CCC.L."
   },
   "pressCoverage": {
-    "periodStart": null,
-    "periodEnd": null,
-    "observationCount": 0,
-    "scoredDayCount": 0,
-    "latestScore": null,
-    "latestScoreDate": null,
-    "series": [],
-    "stories": []
+    "periodStart": "2026-09-11",
+    "periodEnd": "2026-09-11",
+    "observationCount": 1,
+    "scoredDayCount": 1,
+    "latestScore": 50.8,
+    "latestScoreDate": "2026-09-11",
+    "series": [
+      {
+        "date": "2026-09-11",
+        "dailyScore": 50.8,
+        "rollingScore": 50.1,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.3,
+        "coverageStatus": "ok"
+      }
+    ],
+    "stories": [
+      {
+        "date": "2026-09-11",
+        "type": "press_story",
+        "title": "Computacenter ( CCC ) Buy Rating Reiterated at Jefferies Financial Group",
+        "source": "dailypolitical.com",
+        "url": "https://www.dailypolitical.com/2026/09/10/computacenters-ccc-buy-rating-reiterated-at-jefferies-financial-group.html",
+        "direction": "Neutral / mixed",
+        "detail": null,
+        "significance": 0.196
+      }
+    ]
   },
   "annualReportAnalysis": {
     "reportCount": 1,
@@ -104,10 +125,18 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 41.9,
-    "label": "Low",
-    "evidenceCoverage": 100,
+    "score": 47.4,
+    "label": "Mixed",
+    "evidenceCoverage": 49,
     "components": [
+      {
+        "key": "press",
+        "label": "Press sentiment",
+        "score": 50.8,
+        "weight": 0.4,
+        "reliability": 0.05,
+        "detail": "Average of 1 scored days in the latest 30-day window."
+      },
       {
         "key": "annual_tone",
         "label": "Annual-report tone",
@@ -128,6 +157,16 @@
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
+    },
+    {
+      "date": "2026-09-11",
+      "type": "press_story",
+      "title": "Computacenter ( CCC ) Buy Rating Reiterated at Jefferies Financial Group",
+      "source": "dailypolitical.com",
+      "url": "https://www.dailypolitical.com/2026/09/10/computacenters-ccc-buy-rating-reiterated-at-jefferies-financial-group.html",
+      "direction": "Neutral / mixed",
+      "detail": null,
+      "significance": 0.196
     }
   ]
 }
