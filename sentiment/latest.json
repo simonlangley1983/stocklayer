@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-09-11T21:17:04.289474Z",
-  "asOfDate": "2026-09-10",
+  "generatedAt": "2026-09-12T07:31:32.967593Z",
+  "asOfDate": "2026-09-11",
   "companies": {
     "astrazeneca": {
       "companyName": "AstraZeneca",
@@ -4209,18 +4209,41 @@
       "companyName": "Computacenter PLC",
       "ticker": "CCC.L",
       "slug": "computacenter",
-      "date": "2026-09-10",
-      "dailyScore": null,
-      "dailyLabel": "Collection pending",
-      "rollingScore": null,
-      "confidence": 0.0,
+      "date": "2026-09-11",
+      "dailyScore": 50.8,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.1,
+      "confidence": 15.3,
       "confidenceBand": "low",
-      "coverageStatus": "provider_error",
-      "storyCount": 0,
-      "sourceCount": 0,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
       "changeFromPreviousScoredDay": null,
-      "flags": [],
-      "topStories": []
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 15.3",
+          "evidenceArticleIds": [
+            "0daf454019a667ce"
+          ]
+        }
+      ],
+      "topStories": [
+        {
+          "id": "0daf454019a667ce",
+          "storyClusterId": "story-001",
+          "title": "Computacenter ( CCC ) Buy Rating Reiterated at Jefferies Financial Group",
+          "url": "https://www.dailypolitical.com/2026/09/10/computacenters-ccc-buy-rating-reiterated-at-jefferies-financial-group.html",
+          "source": "dailypolitical.com",
+          "publishedAt": "2026-09-11T06:00:00Z",
+          "polarity": 0.0458,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
     },
     "investec": {
       "companyName": "Investec PLC",
