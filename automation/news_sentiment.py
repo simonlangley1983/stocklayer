@@ -890,11 +890,15 @@ def processing_days(args: argparse.Namespace) -> list[date]:
     return [start_day + timedelta(days=offset) for offset in range(count)]
 
 
+def observation_complete(item: dict[str, Any]) -> bool:
+    return item.get("coverageStatus") in {"ok", "no_coverage"} and float(item.get("collectionCompleteness", 1.0)) >= 1.0
+
+
 def missing_day_windows(
     days: list[date], observations: list[dict[str, Any]], max_window_days: int
 ) -> tuple[list[date], list[tuple[date, date]]]:
     """Return missing requested days and contiguous half-open fetch windows."""
-    existing = {item.get("date") for item in observations}
+    existing = {item.get("date") for item in observations if observation_complete(item)}
     missing = [day for day in days if day.isoformat() not in existing]
     windows: list[tuple[date, date]] = []
     if not missing:
@@ -1051,7 +1055,7 @@ def run(args: argparse.Namespace) -> int:
         requested_observations = [
             item for item in observations if item.get("date") in requested_date_strings
         ]
-        completed_dates = {item.get("date") for item in requested_observations}
+        completed_dates = {item.get("date") for item in requested_observations if observation_complete(item)}
         company_completed = len(completed_dates)
         completed += company_completed
         coverage_days = sum(

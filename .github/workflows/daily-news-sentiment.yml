@@ -3,10 +3,12 @@ name: Daily news sentiment
 on:
   schedule:
     - cron: "30 5 * * *"
+    - cron: "17 * * * *"
   pull_request:
     paths:
       - ".github/workflows/daily-news-sentiment.yml"
       - "automation/news_sentiment.py"
+      - "automation/news_recovery.py"
       - "automation/build_sentiment_universe.py"
       - "automation/build_sentiment_site_data.py"
       - "automation/build_company_reports.py"
@@ -17,8 +19,17 @@ on:
       - "universes/**"
       - "tests/test_news_sentiment.py"
       - "tests/test_collection_recovery.py"
+      - "tests/test_news_recovery_queue.py"
   workflow_dispatch:
     inputs:
+      recovery:
+        description: "Resume small missing windows across the full 90-day chart period"
+        type: boolean
+        default: false
+      recovery_windows:
+        description: "Maximum recovery windows this run (1-12)"
+        type: number
+        default: 12
       date:
         description: "London date, or inclusive backfill end date (YYYY-MM-DD); blank means previous day"
         required: false
@@ -108,10 +119,18 @@ jobs:
         shell: bash
         env:
           INPUT_DATE: ${{ inputs.date }}
+          RECOVERY_RUN: ${{ inputs.recovery || github.event.schedule == '17 * * * *' }}
+          RECOVERY_WINDOWS: ${{ inputs.recovery_windows }}
           INPUT_SLUGS: ${{ inputs.slugs }}
           INPUT_BACKFILL_DAYS: ${{ inputs.backfill_days }}
         run: |
           set +e
+          if [[ "$RECOVERY_RUN" == "true" ]]; then
+            python automation/news_recovery.py --max-windows "${RECOVERY_WINDOWS:-12}" --max-runtime-seconds 1800
+            status=$?
+            echo "exit_code=$status" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
           args=()
           if [[ "${{ github.event_name }}" == "schedule" ]]; then args+=(--backfill-days 1); fi
           if [[ -n "$INPUT_DATE" ]]; then args+=(--date "$INPUT_DATE"); fi
@@ -123,6 +142,9 @@ jobs:
           echo "exit_code=$status" >> "$GITHUB_OUTPUT"
           exit 0
 
+      - name: Audit full press coverage
+        run: python automation/news_recovery.py --audit-only
+
       - name: Commit sentiment observations
         run: |
           python automation/build_sentiment_site_data.py --source uk-companies.json
@@ -130,6 +152,8 @@ jobs:
           git config user.name "stocklayer-sentiment-bot"
           git config user.email "stocklayer-sentiment-bot@users.noreply.github.com"
           git add sentiment/company-universe.json sentiment/latest.json sentiment/run-status.json
+          git add sentiment/coverage-status.json sentiment/coverage-summary.md
+          if [[ -f sentiment/recovery-state.json ]]; then git add sentiment/recovery-state.json; fi
           git restore data-manifest.json company-reports universes/uk-100/companies.json sentiment/site-summary.json
           if [[ -d sentiment/history ]]; then git add sentiment/history; fi
           git commit -m "Update daily news sentiment" || echo "No sentiment changes to commit"

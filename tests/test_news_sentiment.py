@@ -288,9 +288,9 @@ class NewsSentimentTests(unittest.TestCase):
     def test_resume_groups_only_missing_consecutive_days(self) -> None:
         days = [date(2026, 8, 10) + timedelta(days=offset) for offset in range(6)]
         observations = [
-            {"date": "2026-08-10"},
-            {"date": "2026-08-12"},
-            {"date": "2026-08-15"},
+            {"date": "2026-08-10", "coverageStatus": "no_coverage"},
+            {"date": "2026-08-12", "coverageStatus": "no_coverage"},
+            {"date": "2026-08-15", "coverageStatus": "no_coverage"},
         ]
         missing, windows = missing_day_windows(days, observations, max_window_days=2)
         self.assertEqual(
