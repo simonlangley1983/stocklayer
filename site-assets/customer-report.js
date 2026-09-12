@@ -191,16 +191,16 @@
     content.setAttribute('aria-busy', 'true');
     content.innerHTML = `
       <div class="intel-ai-loading" role="status" aria-live="polite">
-        <div class="intel-ai-loading-icon" aria-hidden="true">
-          <img src="images/stocklayer-icon-new.png?v=20260803-new" alt="">
+        <div class="company-report-loading-logo" aria-hidden="true">
+          <img src="images/SL-main-wordmark-clean.png?v=20260803-new" alt="">
         </div>
         <strong>Building intelligence report</strong>
         <span>Preparing StockLayer's research signals.</span>
         <ul class="intel-loading-steps" aria-label="Intelligence report progress">
           <li class="intel-loading-step is-active">Loading annual reports...</li>
-          <li class="intel-loading-step">Analysing report keywords...</li>
-          <li class="intel-loading-step">Checking market performance...</li>
-          <li class="intel-loading-step">Building growth confidence...</li>
+          <li class="intel-loading-step">Loading press sentiment...</li>
+          <li class="intel-loading-step">Analysing data...</li>
+          <li class="intel-loading-step">Building reports...</li>
         </ul>
       </div>`;
     modal.hidden = false;
