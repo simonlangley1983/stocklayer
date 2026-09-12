@@ -143,7 +143,9 @@
 
   function sectionOne(report, company) {
     const item = report.company;
-    const richerIntro = company?.usp
+    const richerIntro = item.introduction
+      || company?.description
+      || company?.usp
       || company?.companyUsp
       || company?.uniqueSellingPoint
       || (typeof window.getCompanyUsp === 'function' ? window.getCompanyUsp(company) : '')

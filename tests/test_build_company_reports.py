@@ -1,16 +1,38 @@
 from __future__ import annotations
 
 import unittest
+import json
+from pathlib import Path
 
 from automation.build_company_reports import (
     build_annual_section,
     build_company_report,
     build_overall_confidence,
     build_press_section,
+    company_intro,
+    company_profiles,
 )
 
 
 class BuildCompanyReportsTests(unittest.TestCase):
+    def test_every_current_company_has_a_full_sourced_profile(self) -> None:
+        root = Path(__file__).resolve().parents[1]
+        universe = json.loads((root / "universes/uk-100/companies.json").read_text(encoding="utf-8"))["companies"]
+        profiles = company_profiles()
+        for company in universe:
+            with self.subTest(slug=company["slug"]):
+                profile = profiles[company["slug"]]
+                self.assertGreaterEqual(len(profile["description"].split()), 90)
+                self.assertNotIn("\n", profile["description"])
+                self.assertTrue(profile["sources"][0]["url"].startswith("https://"))
+                self.assertEqual(company_intro(company), profile["description"])
+
+    def test_report_rebuild_preserves_editorial_introduction(self) -> None:
+        company = {"slug": "astrazeneca", "companyName": "AstraZeneca", "ticker": "AZN.L"}
+        report = build_company_report(company, None, [], "2026-09-12T00:00:00Z")
+        self.assertEqual(report["company"]["introduction"], company_profiles()["astrazeneca"]["description"])
+        self.assertEqual(report["company"]["introductionSources"], company_profiles()["astrazeneca"]["sources"])
+
     def annual(self, year: int, words: int, **counts):
         return {
             "company_slug": "example",

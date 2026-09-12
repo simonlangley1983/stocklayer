@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import json
 import re
+from functools import lru_cache
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -354,7 +355,15 @@ def build_overall_confidence(press: dict[str, Any], annual: dict[str, Any]) -> d
     }
 
 
+@lru_cache(maxsize=1)
+def company_profiles() -> dict[str, Any]:
+    return (read_json(ROOT / "company-profiles.json", {}) or {}).get("companies", {})
+
+
 def company_intro(company: dict[str, Any]) -> str:
+    profile = company_profiles().get(company.get("slug"), {})
+    if profile.get("description"):
+        return profile["description"]
     name = company.get("companyName") or company.get("ticker") or "This company"
     sector = company.get("sector") or "listed"
     ticker = company.get("ticker") or "its London ticker"
@@ -397,6 +406,8 @@ def build_company_report(
             "ftseRank": company.get("ftseRank"),
             "marketCap": company.get("marketCap"),
             "introduction": company_intro(company),
+            "introductionSources": company_profiles().get(company.get("slug"), {}).get("sources", []),
+            "introductionReviewedAt": company_profiles().get(company.get("slug"), {}).get("reviewedAt"),
         },
         "pressCoverage": press,
         "annualReportAnalysis": annual,
