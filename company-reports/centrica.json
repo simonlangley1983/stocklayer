@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-12T07:45:24.994339Z",
+  "generatedAt": "2026-09-12T11:32:47.975314Z",
   "company": {
     "companyName": "Centrica PLC",
     "ticker": "CNA.L",
@@ -13,11 +13,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-10",
-    "observationCount": 67,
-    "scoredDayCount": 36,
-    "latestScore": 28.6,
-    "latestScoreDate": "2026-09-10",
+    "periodEnd": "2026-09-11",
+    "observationCount": 68,
+    "scoredDayCount": 37,
+    "latestScore": 50.8,
+    "latestScoreDate": "2026-09-11",
     "series": [
       {
         "date": "2026-06-30",
@@ -621,6 +621,15 @@
         "sourceCount": 4,
         "confidence": 44.5,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-11",
+        "dailyScore": 50.8,
+        "rollingScore": 45.6,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -713,6 +722,16 @@
         "direction": "positive",
         "detail": "Daily score increased by 21.8 points",
         "significance": 1.572
+      },
+      {
+        "date": "2026-09-11",
+        "type": "press_story",
+        "title": "Battery storage project news : Redelfi , Axpo , energieUri , Delta Capacity , Centrica",
+        "source": "greentechlead.com",
+        "url": "https://greentechlead.com/energy-news/battery-storage-project-news-redelfi-axpo-energieuri-delta-capacity-centrica-55320",
+        "direction": "Neutral / mixed",
+        "detail": null,
+        "significance": 0.201
       }
     ]
   },
@@ -799,17 +818,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 38.6,
+    "score": 38.7,
     "label": "Low",
-    "evidenceCoverage": 89,
+    "evidenceCoverage": 92,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 44.2,
+        "score": 44.6,
         "weight": 0.4,
-        "reliability": 0.8,
-        "detail": "Average of 16 scored days in the latest 30-day window."
+        "reliability": 0.85,
+        "detail": "Average of 17 scored days in the latest 30-day window."
       },
       {
         "key": "annual_tone",
@@ -921,6 +940,16 @@
       "direction": "positive",
       "detail": "Daily score increased by 21.8 points",
       "significance": 1.572
+    },
+    {
+      "date": "2026-09-11",
+      "type": "press_story",
+      "title": "Battery storage project news : Redelfi , Axpo , energieUri , Delta Capacity , Centrica",
+      "source": "greentechlead.com",
+      "url": "https://greentechlead.com/energy-news/battery-storage-project-news-redelfi-axpo-energieuri-delta-capacity-centrica-55320",
+      "direction": "Neutral / mixed",
+      "detail": null,
+      "significance": 0.201
     }
   ]
 }
