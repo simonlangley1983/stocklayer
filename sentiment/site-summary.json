@@ -3,7 +3,7 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-09-13T16:52:19.726161Z",
+  "generatedAt": "2026-09-13T21:24:35.250944Z",
   "asOfDate": "2026-09-12",
   "companyCount": 100,
   "companies": {
@@ -2207,17 +2207,25 @@
       "companyName": "Investec PLC",
       "ticker": "INVP.L",
       "slug": "investec",
-      "date": "2026-09-10",
-      "dailyScore": null,
-      "dailyLabel": "Collection pending",
-      "rollingScore": null,
-      "confidence": 0.0,
+      "date": "2026-06-19",
+      "dailyScore": 48.3,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.9,
+      "confidence": 31.5,
       "confidenceBand": "low",
-      "coverageStatus": "provider_error",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
-      "flags": []
+      "coverageStatus": "ok",
+      "storyCount": 4,
+      "sourceCount": 2,
+      "changeFromPreviousScoredDay": -2.8,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 31.5"
+        }
+      ]
     },
     "burberry": {
       "companyName": "Burberry Group PLC",
