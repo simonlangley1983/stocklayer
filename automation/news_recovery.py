@@ -55,10 +55,10 @@ def plan_windows(coverage, state, limit=12, window_days=5):
     plan = []
     for row in rows[:limit]:
         missing = set(row["missingDates"])
-        start = date.fromisoformat(row["missingDates"][0])
-        end = start
-        while (end - start).days + 1 < window_days and (end + timedelta(days=1)).isoformat() in missing:
-            end += timedelta(days=1)
+        end = date.fromisoformat(max(missing))
+        start = end
+        while (end - start).days + 1 < window_days and (start - timedelta(days=1)).isoformat() in missing:
+            start -= timedelta(days=1)
         plan.append({"slug": row["slug"], "start": start.isoformat(), "end": end.isoformat(),
                      "days": (end - start).days + 1})
     return plan

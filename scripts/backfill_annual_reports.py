@@ -8,6 +8,8 @@ import hashlib
 import json
 import os
 from pathlib import Path
+import re
+import urllib.parse
 import subprocess
 import sys
 
@@ -36,7 +38,17 @@ def queue_groups(index, companies, existing, state, start_year, end_year, now):
         company = {**indexed, **known[slug]}
         by_year = {}
         for candidate in indexed.get("reports", []):
+            filename = urllib.parse.unquote(Path(urllib.parse.urlparse(candidate.get("url", "")).path).name).lower()
+            normalised = re.sub(r"[_-]+", " ", filename)
+            if any(term in normalised for term in (
+                "modern slavery", "remuneration policy", "172 statement", "estma",
+                "data report", "esg addendum", "payments to government", "tax strategy",
+            )):
+                continue
             year = candidate.get("year")
+            filename_years = set(re.findall(r"(?<!\d)(20\d{2})(?!\d)", filename))
+            if len(filename_years) == 1:
+                year = int(next(iter(filename_years)))
             if isinstance(year, int) and start_year <= year <= end_year and not is_known_non_report_candidate(candidate):
                 by_year.setdefault(year, []).append(candidate)
         for year, candidates in by_year.items():
