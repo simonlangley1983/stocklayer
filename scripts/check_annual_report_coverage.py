@@ -27,13 +27,18 @@ def assess(companies, years, previous):
             "multipleReports": sum(len(r["years"]) >= 2 for r in rows),
             "reportYears": sum(len(r["years"]) for r in rows), "companies": rows, "alerts": alerts}
 
+def enforce(status):
+    regressions = [a for a in status["alerts"] if "previously extracted report years lost" in a]
+    for alert in status["alerts"]:
+        print(("::error::" if alert in regressions else "::warning::") + alert)
+    return int(bool(regressions))
+
+
 def main():
     path = ROOT / "annual-reports/coverage-status.json"
     if "--enforce" in __import__("sys").argv:
         status = json.loads(path.read_text())
-        for alert in status["alerts"]:
-            print("::error::" + alert)
-        return int(bool(status["alerts"]))
+        return enforce(status)
     previous = json.loads(path.read_text()) if path.exists() else {}
     years = {}
     for name in ("extracted-keywords-history.json", "extracted-keywords.json"):

@@ -92,6 +92,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -176,11 +179,11 @@ jobs:
           path: sentiment
           retention-days: 7
 
-      - name: Enforce monitoring threshold
+      - name: Report collection health
         if: steps.sentiment.outputs.exit_code != '0'
-        run: |
-          echo "Sentiment run completed below the required coverage threshold. See sentiment/run-status.json."
-          exit "${{ steps.sentiment.outputs.exit_code }}"
+        env:
+          COLLECTION_EXIT_CODE: ${{ steps.sentiment.outputs.exit_code }}
+        run: python scripts/check_collection_run.py --exit-code "$COLLECTION_EXIT_CODE"
 
   prepare-backfill-batches:
     if: github.event_name == 'workflow_dispatch' && inputs.batch_size > 0
@@ -193,6 +196,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
 
       - name: Refresh current company universe
         run: python automation/build_sentiment_universe.py uk-companies.json sentiment/company-universe.json

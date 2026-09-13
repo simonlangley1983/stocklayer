@@ -1,0 +1,22 @@
+name: Validate collection workflow health
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/check_collection_run.py
+      - scripts/check_annual_report_coverage.py
+      - tests/test_workflow_health.py
+      - .github/workflows/daily-news-sentiment.yml
+      - .github/workflows/monitor-annual-reports.yml
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s tests -p 'test_workflow_health.py' -v
+      - run: python -m unittest discover -s tests -p 'test_annual_coverage.py' -v
