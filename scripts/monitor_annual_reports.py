@@ -34,7 +34,7 @@ USER_AGENT = (
     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0 Safari/537.36 "
     "StockLayer-Annual-Report-Research/1.0"
 )
-REPORT_KEYWORDS = ("annual report", "annual-report", "annualreview", "annual review", "integrated report")
+REPORT_KEYWORDS = ("annual report", "annual-report", "annual_report", "annualreview", "annual review", "integrated report", "integrated-report", "report and accounts", "report-and-accounts")
 EXCLUDED_KEYWORDS = ("half year", "half-year", "interim", "quarter", "q1", "q2", "q3", "q4")
 REPORT_HUB_KEYWORDS = (
     "annual report",
@@ -486,8 +486,10 @@ def monitor_company(company: dict[str, Any], source_record: dict[str, Any], exis
             discovered_reports.extend(reports)
             child_checks: list[dict[str, Any]] = []
             for child_url in parse_report_hub_links(final_url, body):
-                if child_pages_checked >= args.max_child_pages_per_company or child_url in visited_urls:
+                if child_pages_checked >= args.max_child_pages_per_company:
                     break
+                if child_url in visited_urls:
+                    continue
                 visited_urls.add(child_url)
                 child_pages_checked += 1
                 child_status, child_body, child_final_url, child_error = fetch_url(child_url, args.timeout)
