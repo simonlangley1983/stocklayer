@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T05:23:47.703547Z",
+  "generatedAt": "2026-09-13T10:44:11.303545Z",
   "company": {
     "companyName": "Rolls-Royce",
     "ticker": "RR.L",
@@ -680,8 +680,81 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 1,
+    "reportCount": 2,
     "reports": [
+      {
+        "year": 2023,
+        "title": "Download",
+        "url": "https://www.rolls-royce.com/~/media/Files/R/Rolls-Royce/documents/annual-report/2024/2023-annual-report-interactive.pdf",
+        "sourceUrl": null,
+        "wordCount": 148369,
+        "pageCount": 226,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 10,
+            "per10kWords": 0.674
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 8,
+            "per10kWords": 0.539
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 51,
+            "per10kWords": 3.437
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 61,
+            "per10kWords": 4.111
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 61,
+            "per10kWords": 4.111
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 15,
+            "per10kWords": 1.011
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 26,
+            "per10kWords": 1.752
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 7,
+            "per10kWords": 0.472
+          }
+        ],
+        "positivityScore": 43.7,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2025,
         "title": "Download",
@@ -756,15 +829,56 @@
         "positivityMethod": "lexical annual-report tone"
       }
     ],
-    "emergingKeywords": [],
+    "emergingKeywords": [
+      {
+        "key": "data_center",
+        "label": "Data centres",
+        "mentions": 30,
+        "per10kWords": 2.001,
+        "previousPer10kWords": 0.472,
+        "changePer10kWords": 1.529
+      },
+      {
+        "key": "supply_chain",
+        "label": "Supply chain",
+        "mentions": 80,
+        "per10kWords": 5.336,
+        "previousPer10kWords": 4.111,
+        "changePer10kWords": 1.225
+      },
+      {
+        "key": "ai",
+        "label": "AI",
+        "mentions": 23,
+        "per10kWords": 1.534,
+        "previousPer10kWords": 0.674,
+        "changePer10kWords": 0.86
+      },
+      {
+        "key": "cybersecurity",
+        "label": "Cybersecurity",
+        "mentions": 19,
+        "per10kWords": 1.267,
+        "previousPer10kWords": 0.539,
+        "changePer10kWords": 0.728
+      },
+      {
+        "key": "regulation",
+        "label": "Regulation",
+        "mentions": 57,
+        "per10kWords": 3.802,
+        "previousPer10kWords": 3.437,
+        "changePer10kWords": 0.365
+      }
+    ],
     "latestPositivity": 47.6,
     "latestPositivityMethod": "lexical annual-report tone",
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 49.6,
+    "score": 53.1,
     "label": "Mixed",
-    "evidenceCoverage": 100,
+    "evidenceCoverage": 83,
     "components": [
       {
         "key": "press",
@@ -781,11 +895,28 @@
         "weight": 0.35,
         "reliability": 1.0,
         "detail": "Lexical annual-report tone."
+      },
+      {
+        "key": "themes",
+        "label": "Emerging themes",
+        "score": 64.7,
+        "weight": 0.25,
+        "reliability": 0.333,
+        "detail": "Change in growth-theme density compared with pressure and risk themes."
       }
     ],
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2023-12-31",
+      "type": "annual_report",
+      "title": "Download",
+      "url": "https://www.rolls-royce.com/~/media/Files/R/Rolls-Royce/documents/annual-report/2024/2023-annual-report-interactive.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2025-12-31",
       "type": "annual_report",
