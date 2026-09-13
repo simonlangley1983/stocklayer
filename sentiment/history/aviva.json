@@ -4396,6 +4396,128 @@
       ],
       "flags": [],
       "changeFromPreviousScoredDay": 8.9
+    },
+    {
+      "date": "2026-09-12",
+      "dailyScore": 32.2,
+      "dailyLabel": "Negative",
+      "rollingScore": 48.9,
+      "confidence": 53.2,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 6,
+      "eligibleArticleCount": 6,
+      "storyCount": 6,
+      "effectiveStoryCount": 6.0,
+      "sourceCount": 6,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 4,
+      "dispersion": 0.6114,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "239684798629c1d0",
+          "storyClusterId": "story-005",
+          "title": "Buildings are sinking and cracking in one of Europe largest cities",
+          "url": "https://www.yahoo.com/news/science/articles/buildings-sinking-cracking-one-europe-080029659.html",
+          "source": "yahoo.com",
+          "publishedAt": "2026-09-12T18:45:00Z",
+          "polarity": -0.9529,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "3b69553ecdeacfbb",
+          "storyClusterId": "story-002",
+          "title": "We can see into the other room : insurers face surge in subsidence claims | Insurance industry",
+          "url": "https://www.theguardian.com/business/2026/sep/12/subsidence-uk-insurers-double-surge-claims-hot-summers",
+          "source": "theguardian.com",
+          "publishedAt": "2026-09-12T11:15:00Z",
+          "polarity": -0.9168,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "9257c66641c88c30",
+          "storyClusterId": "story-004",
+          "title": "Students issued warning as bicycle thefts sweep universities across England",
+          "url": "https://www.birminghammail.co.uk/news/midlands-news/students-issued-warning-bicycle-thefts-34577080",
+          "source": "birminghammail.co.uk",
+          "publishedAt": "2026-09-12T15:30:00Z",
+          "polarity": -0.8993,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "3ea3d4af74cb6960",
+          "storyClusterId": "story-001",
+          "title": "Jerry Seinfeld Is Headlining a Portugal Comedy Festival , and the Usual Suspects Are Mad About It",
+          "url": "https://townhall.com/news/amy-curtis/2026/09/11/jerry-seinfeld-portugal-comedy-festival-n2682748",
+          "source": "townhall.com",
+          "publishedAt": "2026-09-11T23:15:00Z",
+          "polarity": -0.7197,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "0c8af800230cf6ba",
+          "storyClusterId": "story-003",
+          "title": "UK subsidence claims surge after hottest summer on record",
+          "url": "https://www.aol.co.uk/articles/uk-subsidence-claims-surge-hottest-060030000.html",
+          "source": "aol.co.uk",
+          "publishedAt": "2026-09-12T11:30:00Z",
+          "polarity": 0.7139,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "sentiment_drop",
+          "direction": "negative",
+          "severity": "high",
+          "status": "calculated",
+          "detail": "Daily score decreased by 30.1 points",
+          "evidenceArticleIds": [
+            "239684798629c1d0",
+            "3b69553ecdeacfbb",
+            "9257c66641c88c30",
+            "3ea3d4af74cb6960",
+            "0c8af800230cf6ba"
+          ]
+        },
+        {
+          "type": "bad_press",
+          "direction": "negative",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Daily press score is 32.2",
+          "evidenceArticleIds": [
+            "239684798629c1d0",
+            "3b69553ecdeacfbb",
+            "9257c66641c88c30",
+            "3ea3d4af74cb6960",
+            "0c8af800230cf6ba"
+          ]
+        },
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "239684798629c1d0",
+            "3b69553ecdeacfbb",
+            "9257c66641c88c30",
+            "3ea3d4af74cb6960",
+            "0c8af800230cf6ba"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -30.1
     }
   ]
 }

@@ -2853,6 +2853,75 @@
         }
       ],
       "changeFromPreviousScoredDay": null
+    },
+    {
+      "date": "2026-09-12",
+      "dailyScore": 43.2,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 49.6,
+      "confidence": 25.3,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 2,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 1,
+      "dispersion": 0.6369,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "3259f8084bbceffa",
+          "storyClusterId": "story-002",
+          "title": "FTSE 100 Live : FTSE 100 slides as ECB raises rates and oil surges above $105",
+          "url": "http://www.proactiveinvestors.co.uk/companies/news/1098333/ftse-100-live-ftse-100-slides-as-ecb-raises-rates-and-oil-surges-above-105-1098333.html",
+          "source": "proactiveinvestors.co.uk",
+          "publishedAt": "2026-09-12T12:00:00Z",
+          "polarity": -0.9075,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "7f8c0b2a1c4d5c97",
+          "storyClusterId": "story-001",
+          "title": "Berkeley Group Calls for Property Tax Cuts Amidst Housing Market Caution , ETRealty",
+          "url": "https://realty.economictimes.indiatimes.com/news/international/uks-homebuilder-berkeley-urges-property-tax-cuts-as-buyers-stay-cautious/134104674",
+          "source": "realty.economictimes.indiatimes.com",
+          "publishedAt": "2026-09-12T03:45:00Z",
+          "polarity": 0.3663,
+          "sentiment": "Positive",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "3259f8084bbceffa",
+            "7f8c0b2a1c4d5c97"
+          ]
+        },
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 25.3",
+          "evidenceArticleIds": [
+            "3259f8084bbceffa",
+            "7f8c0b2a1c4d5c97"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -8.8
     }
   ]
 }

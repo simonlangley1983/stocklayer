@@ -2,6 +2,6 @@
 
 Period: 2026-06-15 to 2026-09-12
 
-Completed: 5494/9000 company-days (61.04%). Pending: 3506.
+Completed: 5510/9000 company-days (61.22%). Pending: 3490.
 
-With eligible news: 2998. Successful checks with no eligible news: 2496. Latest day checked: 0/100 companies.
+With eligible news: 3009. Successful checks with no eligible news: 2501. Latest day checked: 16/100 companies.
