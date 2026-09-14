@@ -135,10 +135,10 @@
     },
     "informa:2024": {
       "candidateHash": "c214ff0141df4c5f2dbc1175716ba83c578815b634d84616ea5a15f1bfc4a369",
-      "attemptCount": 1,
-      "lastAttempt": "2026-09-14T06:36:29.122713+00:00",
+      "attemptCount": 2,
+      "lastAttempt": "2026-09-14T14:13:55.788699+00:00",
       "status": "extraction_failed",
-      "retryAfter": "2026-09-14T12:36:29.122713+00:00",
+      "retryAfter": "2026-09-15T02:13:55.788699+00:00",
       "diagnostics": [
         {
           "url": "https://www.informa.com/globalassets/documents/investor-relations/2025/2024-informa-annual-report.pdf",
@@ -180,11 +180,11 @@
       "diagnostics": []
     },
     "british-american-tobacco:2024": {
-      "candidateHash": "486cbf63f23fb8b63decf20d4783f5a205f676e89dcda6ecdc020d5398ba7579",
+      "candidateHash": "4b5d450c4c117cf75540d148df6524934ef4b5f36b1c8901eb353a70512d3eb1",
       "attemptCount": 1,
-      "lastAttempt": "2026-09-13T10:42:51.288029+00:00",
+      "lastAttempt": "2026-09-14T14:13:17.376096+00:00",
       "status": "extraction_failed",
-      "retryAfter": "2026-09-13T16:42:51.288029+00:00",
+      "retryAfter": "2026-09-14T20:13:17.376096+00:00",
       "diagnostics": [
         {
           "url": "https://www.bat.com/content/dam/batcom/global/main-nav/investors-and-reporting/reporting/combined-annual-and-esg-report/previous-annual-reporting/uk-company-reporting/2024/British_American_Tobacco_Healthcare_Trustee_Limited_-_accounts_2024_-_Annual_Report_2024.pdf",
@@ -193,10 +193,6 @@
         {
           "url": "https://www.bat.com/content/dam/batcom/global/main-nav/investors-and-reporting/reporting/combined-annual-and-esg-report/previous-annual-reporting/uk-company-reporting/2024/Weston_Investment_Company_Limited_-_Annual_Report_2024.pdf",
           "error": "ValueError: document is too short to be a full annual report (34 pages, 15989 words)"
-        },
-        {
-          "url": "https://www.bat.com/content/dam/batcom/global/main-nav/investors-and-reporting/reporting/combined-annual-and-esg-report/previous-annual-reporting/uk-company-reporting/2024/Weston_(2009)_Limited_-_Annual_Report_2024.pdf",
-          "error": "ValueError: document is too short to be a full annual report (39 pages, 17739 words)"
         },
         {
           "url": "https://www.bat.com/content/dam/batcom/global/main-nav/investors-and-reporting/reporting/combined-annual-and-esg-report/previous-annual-reporting/uk-company-reporting/2024/Senior_Service_(Overseas)_Limited_-_Annual_Report_2024.pdf",
@@ -217,6 +213,10 @@
         {
           "url": "https://www.bat.com/content/dam/batcom/global/main-nav/investors-and-reporting/reporting/combined-annual-and-esg-report/previous-annual-reporting/uk-company-reporting/2024/Nicoventures_Trading_Limited_-_Annual_Report_2024.pdf",
           "error": "ValueError: document is too short to be a full annual report (35 pages, 0 words)"
+        },
+        {
+          "url": "https://www.bat.com/content/dam/batcom/global/main-nav/investors-and-reporting/reporting/combined-annual-and-esg-report/previous-annual-reporting/uk-company-reporting/2024/Nicoventures_Retail_(UK)_Limited_-_Annual_Report_2024.pdf",
+          "error": "ValueError: document is too short to be a full annual report (19 pages, 0 words)"
         }
       ]
     },
@@ -506,23 +506,19 @@
       "diagnostics": []
     },
     "airtel-africa:2021": {
-      "candidateHash": "d8286f142a37267f4bfa9ce0b14b5397059f1257ddddebaccc90b11ba3cdb426",
+      "candidateHash": "e1d07397b4e1045853a67c3fb492297601c598cf0dbf2fb8c3151b1c87a8f586",
       "attemptCount": 1,
-      "lastAttempt": "2026-09-14T06:38:35.729216+00:00",
-      "status": "extraction_failed",
-      "retryAfter": "2026-09-14T12:38:35.729216+00:00",
-      "diagnostics": [
-        {
-          "error": "ValueError: Requested 2021, document identifies 2022; needs source review"
-        }
-      ]
+      "lastAttempt": "2026-09-14T14:12:55.364314+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-14T20:12:55.364314+00:00",
+      "diagnostics": []
     },
     "lseg:2022": {
       "candidateHash": "3b925645e53a8fec437b27bdb5ec8c3e26fa84786db3964396fcba1986328825",
-      "attemptCount": 1,
-      "lastAttempt": "2026-09-14T06:38:35.939772+00:00",
+      "attemptCount": 2,
+      "lastAttempt": "2026-09-14T14:14:39.677279+00:00",
       "status": "extraction_failed",
-      "retryAfter": "2026-09-14T12:38:35.939772+00:00",
+      "retryAfter": "2026-09-15T02:14:39.677279+00:00",
       "diagnostics": [
         {
           "error": "ValueError: Requested 2022, document identifies 2023; needs source review"
@@ -567,17 +563,12 @@
       "diagnostics": []
     },
     "marks-and-spencer:2021": {
-      "candidateHash": "b46ce2b94f214531a601de4a82ab839bac3fb30c1b1868d01879ed1edaa12046",
+      "candidateHash": "932efcd59b7063110b8f64f62eefffb86e75d1c97c6631be390aaf687a1e14f7",
       "attemptCount": 1,
-      "lastAttempt": "2026-09-14T06:39:12.069678+00:00",
-      "status": "extraction_failed",
-      "retryAfter": "2026-09-14T12:39:12.069678+00:00",
-      "diagnostics": [
-        {
-          "url": "https://corporate.marksandspencer.com/sites/marksandspencer/files/Annual%20reports/plan-a-report-2021.pdf",
-          "error": "ValueError: document is too short to be a full annual report (49 pages, 18204 words)"
-        }
-      ]
+      "lastAttempt": "2026-09-14T14:12:56.268906+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-14T20:12:56.268906+00:00",
+      "diagnostics": []
     },
     "howden-joinery:2021": {
       "candidateHash": "fdb16a2e5f43d4ce6fd97a9f177d6128d865783ac5eedeadb7ec0920f69653b5",
@@ -615,10 +606,10 @@
     },
     "lseg:2021": {
       "candidateHash": "ae98cd0665d19f23c6acce5a50308ee251ed6b878aadd50a0993d7b4c0345a18",
-      "attemptCount": 1,
-      "lastAttempt": "2026-09-14T06:39:25.578808+00:00",
+      "attemptCount": 2,
+      "lastAttempt": "2026-09-14T14:14:14.091936+00:00",
       "status": "extraction_failed",
-      "retryAfter": "2026-09-14T12:39:25.578808+00:00",
+      "retryAfter": "2026-09-15T02:14:14.091936+00:00",
       "diagnostics": [
         {
           "error": "ValueError: Requested 2021, document identifies 2022; needs source review"
@@ -626,11 +617,11 @@
       ]
     },
     "whitbread:2021": {
-      "candidateHash": "e8c3afc527a4cbd4f21beaa6dd29567690e1e936ab4357e5af7521c427e50730",
+      "candidateHash": "2a29e9487e703412884f31031a7b78df1b2698468b49c52e202f4d7214d32aa5",
       "attemptCount": 1,
-      "lastAttempt": "2026-09-14T06:39:32.395890+00:00",
+      "lastAttempt": "2026-09-14T14:13:08.277496+00:00",
       "status": "extraction_failed",
-      "retryAfter": "2026-09-14T12:39:32.395890+00:00",
+      "retryAfter": "2026-09-14T20:13:08.277496+00:00",
       "diagnostics": [
         {
           "error": "ValueError: Requested 2021, document identifies 2019; needs source review"
@@ -652,6 +643,145 @@
       "status": "extracted",
       "retryAfter": "2026-09-14T12:39:41.111772+00:00",
       "diagnostics": []
+    },
+    "bae-systems:2026": {
+      "candidateHash": "4f0898766402bea88b11365e44e4abbc386cbce72c2167731faa9600c26d0d77",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-14T14:12:37.752303+00:00",
+      "status": "extraction_failed",
+      "retryAfter": "2026-09-14T20:12:37.752303+00:00",
+      "diagnostics": [
+        {
+          "url": "https://annualreport.baesystems.com/dam/jcr%3A105fe9f2-cff7-4960-9d99-956aba996540/BAE-Systems-Annual-Report-2025.2026-03-24-10-33-48.pdf",
+          "error": "report page did not expose a usable full report"
+        }
+      ]
+    },
+    "dcc:2021": {
+      "candidateHash": "3b20ebed8e2f9f04cf95b3a606481017020ad1a1d51efddd18ee8f07789c8ef4",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-14T14:12:57.058806+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-14T20:12:57.058806+00:00",
+      "diagnostics": []
+    },
+    "antofagasta:2020": {
+      "candidateHash": "9473ba9a41bc45327e3048c08f9be0a429c99c30063aeeb96d0702bd60498161",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-14T14:13:21.299921+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-14T20:13:21.299921+00:00",
+      "diagnostics": []
+    },
+    "british-american-tobacco:2020": {
+      "candidateHash": "752ab6df0c721f544f2056a709379ce45758100f662767d06220a88505a9de2e",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-14T14:13:25.564480+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-14T20:13:25.564480+00:00",
+      "diagnostics": [
+        {
+          "url": "https://www.bat.com/content/dam/batcom/global/main-nav/investors-and-reporting/reporting/combined-annual-and-esg-report/previous-annual-reporting/BAT_Performance_Summary_2020.pdf",
+          "error": "ValueError: document is too short to be a full annual report (46 pages, 19255 words)"
+        }
+      ]
+    },
+    "croda-international:2020": {
+      "candidateHash": "a2881fc0ea02a09814c7a912f9597a1372f3f10ff1f815d10d8434044bc746aa",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-14T14:13:29.498630+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-14T20:13:29.498630+00:00",
+      "diagnostics": []
+    },
+    "informa:2020": {
+      "candidateHash": "72bb0249c6fb7392701131fec6a838afa24c77831682aa397290c75bd56213f2",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-14T14:13:29.976420+00:00",
+      "status": "extraction_failed",
+      "retryAfter": "2026-09-14T20:13:29.976420+00:00",
+      "diagnostics": [
+        {
+          "url": "https://www.informa.com/globalassets/documents/investor-relations/2021/informa-annual-report--financial-statements-2020.pdf",
+          "error": "HTTPError: HTTP Error 403: "
+        }
+      ]
+    },
+    "bunzl:2020": {
+      "candidateHash": "7601b292c57b6362fa2ffa93860444d5020c74026f2dc7a701ff60ac7fdffc37",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-14T14:13:32.465275+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-14T20:13:32.465275+00:00",
+      "diagnostics": []
+    },
+    "dcc:2020": {
+      "candidateHash": "42c8bfbe6e638f6d54d16c3b814f106a22ca23dbf7de7d6d25bdecac934e7def",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-14T14:13:36.987079+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-14T20:13:36.987079+00:00",
+      "diagnostics": []
+    },
+    "lseg:2020": {
+      "candidateHash": "92a6ef10dffa3fb9c1691f12252883597a48d3a15dfc57ae233c2ae6ebbfebd9",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-14T14:13:43.319039+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-14T20:13:43.319039+00:00",
+      "diagnostics": []
+    },
+    "next:2020": {
+      "candidateHash": "afd48804dc45eadf7df8ca3157b0d1e0aa05fb2b756dd8d5ed341963bdea8cdc",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-14T14:13:45.605310+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-14T20:13:45.605310+00:00",
+      "diagnostics": []
+    },
+    "howden-joinery:2020": {
+      "candidateHash": "7ad5d1c72659ea9691185267451d545fa4680aa9958092390d15c59611c4731c",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-14T14:13:52.010510+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-14T20:13:52.010510+00:00",
+      "diagnostics": []
+    },
+    "metlen-energy-metals:2020": {
+      "candidateHash": "07713e8c78501e1bd88e6c053d398289a4fe8d1fc69f4295f36156055fab0357",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-14T14:13:55.413172+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-14T20:13:55.413172+00:00",
+      "diagnostics": []
+    },
+    "persimmon:2020": {
+      "candidateHash": "b7513a68d28c100ec6b0d8e1d65fbd8d9cf41e29ca2900d3cff9b0ecf4d9c7ef",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-14T14:13:58.577827+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-14T20:13:58.577827+00:00",
+      "diagnostics": []
+    },
+    "rolls-royce:2020": {
+      "candidateHash": "9d07cda0df67e53e8b20247bffdd660b9051794404f792672019131ff87bb1fb",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-14T14:14:06.336410+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-14T20:14:06.336410+00:00",
+      "diagnostics": []
+    },
+    "whitbread:2020": {
+      "candidateHash": "2a99227a220f7fff1434a9b8626798aabbf2e383ff64873b419a2bb7d0925eee",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-14T14:14:08.171237+00:00",
+      "status": "extraction_failed",
+      "retryAfter": "2026-09-14T20:14:08.171237+00:00",
+      "diagnostics": [
+        {
+          "error": "ValueError: Requested 2020, document identifies 2021; needs source review"
+        }
+      ]
     }
   }
 }
