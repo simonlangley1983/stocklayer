@@ -3,7 +3,7 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-09-14T12:56:28.971186Z",
+  "generatedAt": "2026-09-14T13:26:09.265838Z",
   "asOfDate": "2026-09-13",
   "companyCount": 100,
   "companies": {
@@ -99,23 +99,23 @@
       "companyName": "RELX",
       "ticker": "REL.L",
       "slug": "relx",
-      "date": "2026-09-08",
-      "dailyScore": 49.1,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.3,
-      "confidence": 10.0,
+      "date": "2026-09-13",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 53.1,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": -14.2,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 10.0"
+          "detail": "Collection succeeded but found no eligible coverage"
         }
       ]
     },
@@ -1624,24 +1624,17 @@
       "companyName": "Prudential PLC",
       "ticker": "PRU.L",
       "slug": "prudential",
-      "date": "2026-09-10",
-      "dailyScore": 55.6,
+      "date": "2026-09-13",
+      "dailyScore": 55.2,
       "dailyLabel": "Slightly positive",
-      "rollingScore": 52.4,
-      "confidence": 55.6,
+      "rollingScore": 53.5,
+      "confidence": 42.9,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 33,
-      "sourceCount": 30,
-      "changeFromPreviousScoredDay": -2.6,
-      "flags": [
-        {
-          "type": "merger_acquisition",
-          "direction": "neutral",
-          "severity": "high",
-          "status": "possible"
-        }
-      ]
+      "storyCount": 5,
+      "sourceCount": 7,
+      "changeFromPreviousScoredDay": -6.2,
+      "flags": []
     },
     "reckitt-benckiser": {
       "companyName": "Reckitt Benckiser Group PLC",
