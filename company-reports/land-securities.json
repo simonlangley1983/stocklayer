@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-14T05:35:21.486011Z",
+  "generatedAt": "2026-09-14T06:39:43.448869Z",
   "company": {
     "companyName": "Land Securities Group PLC",
     "ticker": "LAND.L",
@@ -702,8 +702,81 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 1,
+    "reportCount": 2,
     "reports": [
+      {
+        "year": 2025,
+        "title": "annual_report_2025_interactive_0_0.pdf",
+        "url": "https://content.landsec.com/media/0ilhb1mo/annual_report_2025_interactive_0_0.pdf",
+        "sourceUrl": "https://www.landsec.com/en/investors/results-reports",
+        "wordCount": 105379,
+        "pageCount": 180,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 9,
+            "per10kWords": 0.854
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 2,
+            "per10kWords": 0.19
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 4,
+            "per10kWords": 0.38
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 39,
+            "per10kWords": 3.701
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 11,
+            "per10kWords": 1.044
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 21,
+            "per10kWords": 1.993
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 3,
+            "per10kWords": 0.285
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 37.1,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2026,
         "title": "landsec-annual-report-2026-interactive.pdf",
@@ -778,15 +851,56 @@
         "positivityMethod": "lexical annual-report tone"
       }
     ],
-    "emergingKeywords": [],
+    "emergingKeywords": [
+      {
+        "key": "restructuring",
+        "label": "Restructuring",
+        "mentions": 10,
+        "per10kWords": 0.996,
+        "previousPer10kWords": 0.285,
+        "changePer10kWords": 0.711
+      },
+      {
+        "key": "ai",
+        "label": "AI",
+        "mentions": 14,
+        "per10kWords": 1.394,
+        "previousPer10kWords": 0.854,
+        "changePer10kWords": 0.54
+      },
+      {
+        "key": "supply_chain",
+        "label": "Supply chain",
+        "mentions": 24,
+        "per10kWords": 2.39,
+        "previousPer10kWords": 1.993,
+        "changePer10kWords": 0.397
+      },
+      {
+        "key": "cybersecurity",
+        "label": "Cybersecurity",
+        "mentions": 6,
+        "per10kWords": 0.597,
+        "previousPer10kWords": 0.38,
+        "changePer10kWords": 0.217
+      },
+      {
+        "key": "margin_pressure",
+        "label": "Margin pressure",
+        "mentions": 1,
+        "per10kWords": 0.1,
+        "previousPer10kWords": 0.0,
+        "changePer10kWords": 0.1
+      }
+    ],
     "latestPositivity": 40.7,
     "latestPositivityMethod": "lexical annual-report tone",
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 46.5,
+    "score": 47.7,
     "label": "Mixed",
-    "evidenceCoverage": 81,
+    "evidenceCoverage": 69,
     "components": [
       {
         "key": "press",
@@ -803,11 +917,28 @@
         "weight": 0.35,
         "reliability": 1.0,
         "detail": "Lexical annual-report tone."
+      },
+      {
+        "key": "themes",
+        "label": "Emerging themes",
+        "score": 50.6,
+        "weight": 0.25,
+        "reliability": 0.333,
+        "detail": "Change in growth-theme density compared with pressure and risk themes."
       }
     ],
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2025-12-31",
+      "type": "annual_report",
+      "title": "annual_report_2025_interactive_0_0.pdf",
+      "url": "https://content.landsec.com/media/0ilhb1mo/annual_report_2025_interactive_0_0.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2026-07-13",
       "type": "press_story",

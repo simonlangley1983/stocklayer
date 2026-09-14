@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-14T05:35:21.486011Z",
+  "generatedAt": "2026-09-14T06:39:43.448869Z",
   "company": {
     "companyName": "Croda International PLC",
     "ticker": "CRDA.L",
@@ -739,8 +739,154 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 3,
+    "reportCount": 5,
     "reports": [
+      {
+        "year": 2021,
+        "title": "croda-2021-annual-report.pdf",
+        "url": "https://www.croda.com/mediaassets/files/corporate/reporting-2021/croda-2021-annual-report.pdf?la=en-GB&hash=96CF03D24B88EB7BCF3B4E7F1BC9837F",
+        "sourceUrl": "https://www.croda.com/en-gb/investors/annual-report/annual-report-archive",
+        "wordCount": 190833,
+        "pageCount": 178,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 11,
+            "per10kWords": 0.576
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 8,
+            "per10kWords": 0.419
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 114,
+            "per10kWords": 5.974
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 42,
+            "per10kWords": 2.201
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 57,
+            "per10kWords": 2.987
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 43,
+            "per10kWords": 2.253
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 7,
+            "per10kWords": 0.367
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 55.5,
+        "positivityMethod": "lexical annual-report tone"
+      },
+      {
+        "year": 2022,
+        "title": "croda-annual-report-2022.pdf",
+        "url": "https://www.croda.com/mediaassets/files/corporate/reporting-2022/croda-annual-report-2022.pdf?la=en-GB&hash=55F5A32E1DBB15A2CE56771B4DD631E8",
+        "sourceUrl": "https://www.croda.com/en-gb/investors/annual-report/annual-report-archive",
+        "wordCount": 145754,
+        "pageCount": 219,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 1,
+            "per10kWords": 0.069
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 1,
+            "per10kWords": 0.069
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 5,
+            "per10kWords": 0.343
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 105,
+            "per10kWords": 7.204
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 34,
+            "per10kWords": 2.333
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 43,
+            "per10kWords": 2.95
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 24,
+            "per10kWords": 1.647
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 2,
+            "per10kWords": 0.137
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 55.3,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2023,
         "title": "Download ( pdf - 15.2 MB)",
@@ -811,7 +957,7 @@
             "per10kWords": 0.0
           }
         ],
-        "positivityScore": null,
+        "positivityScore": 60.9,
         "positivityMethod": "year-on-year thematic direction proxy"
       },
       {
@@ -1008,9 +1154,9 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 48.2,
+    "score": 48.1,
     "label": "Mixed",
-    "evidenceCoverage": 64,
+    "evidenceCoverage": 72,
     "components": [
       {
         "key": "press",
@@ -1033,13 +1179,31 @@
         "label": "Emerging themes",
         "score": 51.7,
         "weight": 0.25,
-        "reliability": 0.667,
+        "reliability": 1.0,
         "detail": "Change in growth-theme density compared with pressure and risk themes."
       }
     ],
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2021-12-31",
+      "type": "annual_report",
+      "title": "croda-2021-annual-report.pdf",
+      "url": "https://www.croda.com/mediaassets/files/corporate/reporting-2021/croda-2021-annual-report.pdf?la=en-GB&hash=96CF03D24B88EB7BCF3B4E7F1BC9837F",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
+    {
+      "date": "2022-12-31",
+      "type": "annual_report",
+      "title": "croda-annual-report-2022.pdf",
+      "url": "https://www.croda.com/mediaassets/files/corporate/reporting-2022/croda-annual-report-2022.pdf?la=en-GB&hash=55F5A32E1DBB15A2CE56771B4DD631E8",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2023-12-31",
       "type": "annual_report",

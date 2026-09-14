@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-14T05:35:21.486011Z",
+  "generatedAt": "2026-09-14T06:39:43.448869Z",
   "company": {
     "companyName": "Howden Joinery Group PLC",
     "ticker": "HWDN.L",
@@ -620,8 +620,154 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 3,
+    "reportCount": 5,
     "reports": [
+      {
+        "year": 2021,
+        "title": "2021annual-report.pdf",
+        "url": "https://www.howdenjoinerygroupplc.com/docs/librariesprovider25/archives/annual-reports/2021annual-report.pdf",
+        "sourceUrl": "https://www.howdenjoinerygroupplc.com/investors/results-reports-and-presentations/annual-reports.asp",
+        "wordCount": 90434,
+        "pageCount": 105,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 2,
+            "per10kWords": 0.221
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 9,
+            "per10kWords": 0.995
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 39,
+            "per10kWords": 4.313
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 29,
+            "per10kWords": 3.207
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 43,
+            "per10kWords": 4.755
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 45.5,
+        "positivityMethod": "lexical annual-report tone"
+      },
+      {
+        "year": 2022,
+        "title": "2022-annual-report.pdf",
+        "url": "https://www.howdenjoinerygroupplc.com/docs/librariesprovider25/archives/annual-reports/2022-annual-report.pdf",
+        "sourceUrl": "https://www.howdenjoinerygroupplc.com/investors/results-reports-and-presentations/annual-reports.asp",
+        "wordCount": 99061,
+        "pageCount": 111,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 12,
+            "per10kWords": 1.211
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 38,
+            "per10kWords": 3.836
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 25,
+            "per10kWords": 2.524
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 59,
+            "per10kWords": 5.956
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 2,
+            "per10kWords": 0.202
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 41.2,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2023,
         "title": "annual-report-2023.pdf",
@@ -889,9 +1035,9 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 44.2,
+    "score": 43.9,
     "label": "Mixed",
-    "evidenceCoverage": 58,
+    "evidenceCoverage": 66,
     "components": [
       {
         "key": "press",
@@ -914,13 +1060,31 @@
         "label": "Emerging themes",
         "score": 50.9,
         "weight": 0.25,
-        "reliability": 0.667,
+        "reliability": 1.0,
         "detail": "Change in growth-theme density compared with pressure and risk themes."
       }
     ],
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2021-12-31",
+      "type": "annual_report",
+      "title": "2021annual-report.pdf",
+      "url": "https://www.howdenjoinerygroupplc.com/docs/librariesprovider25/archives/annual-reports/2021annual-report.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
+    {
+      "date": "2022-12-31",
+      "type": "annual_report",
+      "title": "2022-annual-report.pdf",
+      "url": "https://www.howdenjoinerygroupplc.com/docs/librariesprovider25/archives/annual-reports/2022-annual-report.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2023-12-31",
       "type": "annual_report",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-14T05:35:21.486011Z",
+  "generatedAt": "2026-09-14T06:39:43.448869Z",
   "company": {
     "companyName": "Antofagasta PLC",
     "ticker": "ANTO.L",
@@ -583,8 +583,81 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 4,
+    "reportCount": 5,
     "reports": [
+      {
+        "year": 2021,
+        "title": "antofagasta-annual-report-2021.pdf",
+        "url": "https://www.antofagasta.co.uk/media/4300/antofagasta-annual-report-2021.pdf",
+        "sourceUrl": "https://www.antofagasta.co.uk/investors/annual-report-library/",
+        "wordCount": 152746,
+        "pageCount": 252,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 9,
+            "per10kWords": 0.589
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 74,
+            "per10kWords": 4.845
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 12,
+            "per10kWords": 0.786
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 9,
+            "per10kWords": 0.589
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 14,
+            "per10kWords": 0.917
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 1,
+            "per10kWords": 0.065
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 36.9,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2022,
         "title": "Antofagasta Annual Report 2022",
@@ -957,6 +1030,15 @@
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2021-12-31",
+      "type": "annual_report",
+      "title": "antofagasta-annual-report-2021.pdf",
+      "url": "https://www.antofagasta.co.uk/media/4300/antofagasta-annual-report-2021.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2022-12-31",
       "type": "annual_report",
