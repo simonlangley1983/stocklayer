@@ -3,8 +3,8 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-09-13T22:13:10.554269Z",
-  "asOfDate": "2026-09-12",
+  "generatedAt": "2026-09-14T00:44:18.613788Z",
+  "asOfDate": "2026-09-13",
   "companyCount": 100,
   "companies": {
     "astrazeneca": {
@@ -210,36 +210,23 @@
       "companyName": "London Stock Exchange Group",
       "ticker": "LSEG.L",
       "slug": "lseg",
-      "date": "2026-09-11",
-      "dailyScore": 55.2,
-      "dailyLabel": "Slightly positive",
-      "rollingScore": 49.3,
-      "confidence": 50.1,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "storyCount": 7,
-      "sourceCount": 7,
-      "changeFromPreviousScoredDay": 20.9,
+      "date": "2026-09-13",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 49.5,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "earnings_beat",
-          "direction": "positive",
-          "severity": "medium",
-          "status": "possible"
-        },
-        {
-          "type": "sentiment_jump",
-          "direction": "positive",
-          "severity": "high",
-          "status": "calculated",
-          "detail": "Daily score increased by 20.9 points"
-        },
-        {
-          "type": "coverage_spike",
+          "type": "no_coverage",
           "direction": "neutral",
-          "severity": "medium",
+          "severity": "low",
           "status": "calculated",
-          "detail": "7 stories versus trailing median 2"
+          "detail": "Collection succeeded but found no eligible coverage"
         }
       ]
     },
@@ -395,23 +382,23 @@
       "companyName": "Lloyds Banking Group",
       "ticker": "LLOY.L",
       "slug": "lloyds",
-      "date": "2026-09-06",
-      "dailyScore": 51.5,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 48.9,
-      "confidence": 10.0,
+      "date": "2026-09-13",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 47.4,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": 1.8,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 10.0"
+          "detail": "Collection succeeded but found no eligible coverage"
         }
       ]
     },
