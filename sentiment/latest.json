@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-09-14T19:54:13.625032Z",
-  "asOfDate": "2026-09-13",
+  "generatedAt": "2026-09-14T23:41:07.549936Z",
+  "asOfDate": "2026-09-14",
   "companies": {
     "astrazeneca": {
       "companyName": "AstraZeneca",
@@ -60,10 +60,10 @@
       "companyName": "Shell",
       "ticker": "SHEL.L",
       "slug": "shell",
-      "date": "2026-09-13",
+      "date": "2026-09-14",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 49.2,
+      "rollingScore": 49.3,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -3115,10 +3115,10 @@
       "companyName": "Severn Trent PLC",
       "ticker": "SVT.L",
       "slug": "severn-trent",
-      "date": "2026-09-10",
+      "date": "2026-09-14",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 47.1,
+      "rollingScore": 48.4,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -3245,41 +3245,27 @@
       "companyName": "Spirax Group PLC",
       "ticker": "SPX.L",
       "slug": "spirax",
-      "date": "2026-09-09",
-      "dailyScore": 49.5,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.4,
-      "confidence": 9.9,
+      "date": "2026-09-14",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 49.6,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": 21.8,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 9.9",
-          "evidenceArticleIds": [
-            "2cb618a52d01699a"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "2cb618a52d01699a",
-          "storyClusterId": "story-001",
-          "title": "Director / PDMR Shareholding | Company Announcement",
-          "url": "https://www.investegate.co.uk/announcement/rns/spirax-group-plc--spx/director-pdmr-shareholding/9761851",
-          "source": "investegate.co.uk",
-          "publishedAt": "2026-09-09T06:45:00Z",
-          "polarity": -0.0305,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "sse": {
       "companyName": "SSE PLC",
