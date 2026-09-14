@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-14T19:54:15.279590Z",
+  "generatedAt": "2026-09-14T23:41:09.023598Z",
   "company": {
     "companyName": "Spirax Group PLC",
     "ticker": "SPX.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-09",
-    "observationCount": 62,
-    "scoredDayCount": 18,
-    "latestScore": 49.5,
-    "latestScoreDate": "2026-09-09",
+    "periodEnd": "2026-09-14",
+    "observationCount": 67,
+    "scoredDayCount": 19,
+    "latestScore": 50.4,
+    "latestScoreDate": "2026-09-12",
     "series": [
       {
         "date": "2026-06-30",
@@ -583,6 +583,51 @@
         "sourceCount": 1,
         "confidence": 9.9,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-10",
+        "dailyScore": null,
+        "rollingScore": 49.5,
+        "storyCount": 0,
+        "sourceCount": 0,
+        "confidence": 0.0,
+        "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-11",
+        "dailyScore": null,
+        "rollingScore": 49.5,
+        "storyCount": 0,
+        "sourceCount": 0,
+        "confidence": 0.0,
+        "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-12",
+        "dailyScore": 50.4,
+        "rollingScore": 49.6,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.2,
+        "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-13",
+        "dailyScore": null,
+        "rollingScore": 49.6,
+        "storyCount": 0,
+        "sourceCount": 0,
+        "confidence": 0.0,
+        "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-14",
+        "dailyScore": null,
+        "rollingScore": 49.6,
+        "storyCount": 0,
+        "sourceCount": 0,
+        "confidence": 0.0,
+        "coverageStatus": "no_coverage"
       }
     ],
     "stories": [
@@ -655,6 +700,16 @@
         "direction": "Very positive",
         "detail": null,
         "significance": 0.886
+      },
+      {
+        "date": "2026-09-12",
+        "type": "press_story",
+        "title": "Spirax - Sarco Engineering ( LON : SPX ) Insider Purchases £137 . 94 in Stock",
+        "source": "tickerreport.com",
+        "url": "https://www.tickerreport.com/banking-finance/13582257/spirax-sarco-engineering-lonspx-insider-purchases-137-94-in-stock.html",
+        "direction": "Neutral / mixed",
+        "detail": null,
+        "significance": 0.174
       }
     ]
   },
@@ -1220,17 +1275,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 50.4,
+    "score": 50.6,
     "label": "Mixed",
-    "evidenceCoverage": 82,
+    "evidenceCoverage": 84,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 46.2,
+        "score": 46.6,
         "weight": 0.4,
-        "reliability": 0.55,
-        "detail": "Average of 11 scored days in the latest 30-day window."
+        "reliability": 0.6,
+        "detail": "Average of 12 scored days in the latest 30-day window."
       },
       {
         "key": "annual_tone",
@@ -1384,6 +1439,16 @@
       "direction": "Very positive",
       "detail": null,
       "significance": 0.886
+    },
+    {
+      "date": "2026-09-12",
+      "type": "press_story",
+      "title": "Spirax - Sarco Engineering ( LON : SPX ) Insider Purchases £137 . 94 in Stock",
+      "source": "tickerreport.com",
+      "url": "https://www.tickerreport.com/banking-finance/13582257/spirax-sarco-engineering-lonspx-insider-purchases-137-94-in-stock.html",
+      "direction": "Neutral / mixed",
+      "detail": null,
+      "significance": 0.174
     }
   ]
 }
