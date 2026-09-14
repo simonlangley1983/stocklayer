@@ -13,7 +13,7 @@ import urllib.parse
 import subprocess
 import sys
 
-from extract_annual_report_keywords import extract_group, is_known_non_report_candidate
+from extract_annual_report_keywords import extract_group, is_known_non_report_candidate, infer_document_year
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -39,6 +39,8 @@ def queue_groups(index, companies, existing, state, start_year, end_year, now):
         by_year = {}
         for candidate in indexed.get("reports", []):
             filename = urllib.parse.unquote(Path(urllib.parse.urlparse(candidate.get("url", "")).path).name).lower()
+            if filename.endswith(('.xlsx', '.xls', '.zip', '.csv')):
+                continue
             normalised = re.sub(r"[_-]+", " ", filename)
             if any(term in normalised for term in (
                 "modern slavery", "remuneration policy", "172 statement", "estma",
@@ -49,6 +51,8 @@ def queue_groups(index, companies, existing, state, start_year, end_year, now):
             filename_years = set(re.findall(r"(?<!\d)(20\d{2})(?!\d)", filename))
             if len(filename_years) == 1:
                 year = int(next(iter(filename_years)))
+            if isinstance(year, int):
+                year = infer_document_year("", candidate.get("url"), year)
             if isinstance(year, int) and start_year <= year <= end_year and not is_known_non_report_candidate(candidate):
                 by_year.setdefault(year, []).append(candidate)
         for year, candidates in by_year.items():
