@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-09-14T12:56:28.971186Z",
+  "generatedAt": "2026-09-14T13:26:09.265838Z",
   "asOfDate": "2026-09-13",
   "companies": {
     "astrazeneca": {
@@ -185,41 +185,27 @@
       "companyName": "RELX",
       "ticker": "REL.L",
       "slug": "relx",
-      "date": "2026-09-08",
-      "dailyScore": 49.1,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.3,
-      "confidence": 10.0,
+      "date": "2026-09-13",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 53.1,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": -14.2,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 10.0",
-          "evidenceArticleIds": [
-            "81b07e019db22693"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "81b07e019db22693",
-          "storyClusterId": "story-001",
-          "title": "FTSE 100 Live : FTSE 100 ends the session lower",
-          "url": "https://www.proactiveinvestors.co.uk/companies/news/1098192/ftse-100-live-ftse-100-ends-the-session-lower-1098192.html",
-          "source": "proactiveinvestors.co.uk",
-          "publishedAt": "2026-09-08T18:15:00Z",
-          "polarity": -0.0568,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "british-american-tobacco": {
       "companyName": "British American Tobacco",
@@ -2836,82 +2822,71 @@
       "companyName": "Prudential PLC",
       "ticker": "PRU.L",
       "slug": "prudential",
-      "date": "2026-09-10",
-      "dailyScore": 55.6,
+      "date": "2026-09-13",
+      "dailyScore": 55.2,
       "dailyLabel": "Slightly positive",
-      "rollingScore": 52.4,
-      "confidence": 55.6,
+      "rollingScore": 53.5,
+      "confidence": 42.9,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 33,
-      "sourceCount": 30,
-      "changeFromPreviousScoredDay": -2.6,
-      "flags": [
-        {
-          "type": "merger_acquisition",
-          "direction": "neutral",
-          "severity": "high",
-          "status": "possible",
-          "evidenceArticleIds": [
-            "7fce23971aafc149"
-          ],
-          "sourceCount": 1
-        }
-      ],
+      "storyCount": 5,
+      "sourceCount": 7,
+      "changeFromPreviousScoredDay": -6.2,
+      "flags": [],
       "topStories": [
         {
-          "id": "46098e3007c00d2e",
-          "storyClusterId": "story-007",
-          "title": "Prudential plc retains number two position in global MDRT ranking , with first - time qualifiers up 14 % across Asia and Africa",
-          "url": "https://businessdayghana.com/prudential-plc-retains-number-two-position-in-global-mdrt-ranking-with-first-time-qualifiers-up-14-across-asia-and-africa",
-          "source": "businessdayghana.com",
-          "publishedAt": "2026-09-10T11:15:00Z",
-          "polarity": 0.9357,
-          "sentiment": "Very positive",
-          "publisherCount": 2
-        },
-        {
-          "id": "371914c1a40319da",
-          "storyClusterId": "story-021",
-          "title": "UBS Group Forecasts Strong Price Appreciation for Signet Jewelers ( NYSE : SIG ) Stock",
-          "url": "https://www.tickerreport.com/banking-finance/13579786/ubs-group-forecasts-strong-price-appreciation-for-signet-jewelers-nysesig-stock.html",
-          "source": "tickerreport.com",
-          "publishedAt": "2026-09-10T14:15:00Z",
-          "polarity": 0.9346,
-          "sentiment": "Very positive",
+          "id": "bf94c0730b9544fa",
+          "storyClusterId": "story-002",
+          "title": "BIGBANG Celebrate 20 Years at MetLife Stadium Concert : Best Moments",
+          "url": "https://www.billboard.com/lists/bigbang-xx-cosmos-new-york-metlife-stadium-best-moments",
+          "source": "billboard.com",
+          "publishedAt": "2026-09-13T05:30:00Z",
+          "polarity": 0.3374,
+          "sentiment": "Positive",
           "publisherCount": 1
         },
         {
-          "id": "374a94ec2327c506",
-          "storyClusterId": "story-017",
-          "title": "Taking Stock : Market snaps 3 - day fall ; Nifty above 23 , 400 , Sensex up 138 pts",
-          "url": "https://www.moneycontrol.com/news/business/taking-stock-market-snaps-3-day-fall-nifty-above-23-400-sensex-up-138-pts-14026980.html",
-          "source": "moneycontrol.com",
-          "publishedAt": "2026-09-10T11:00:00Z",
-          "polarity": -0.9318,
-          "sentiment": "Very negative",
+          "id": "ae462d4e8b784192",
+          "storyClusterId": "story-004",
+          "title": "I made a promise to come back ...: Celine Dion returns to live concerts after a six - year hiatus following her stiff - person syndrome diagnosis",
+          "url": "http://www.parisguardian.com/news/279304017/i-made-a-promise-to-come-back-celine-dion-returns-to-live-concerts-after-a-six-year-hiatus-following-her-stiff-person-syndrome-diagnosis",
+          "source": "parisguardian.com",
+          "publishedAt": "2026-09-13T08:00:00Z",
+          "polarity": 0.2027,
+          "sentiment": "Positive",
+          "publisherCount": 3
+        },
+        {
+          "id": "c575c319f32cbadb",
+          "storyClusterId": "story-001",
+          "title": "Stan & Blessing Nze Vow Renewal Was Filled With Love & Style | See Photos",
+          "url": "https://www.bellanaija.com/2026/09/stan-blessing-nze-5th-wedding-anniversary-vow-renewal-photos",
+          "source": "bellanaija.com",
+          "publishedAt": "2026-09-13T01:00:00Z",
+          "polarity": 0.1275,
+          "sentiment": "Slightly positive",
           "publisherCount": 1
         },
         {
-          "id": "b55999bcb55db1f2",
-          "storyClusterId": "story-011",
-          "title": "Vietnam  s life insurance sector eyes growth amid widening protection gap",
-          "url": "https://vir.com.vn/vietnams-life-insurance-sector-eyes-growth-amid-widening-protection-gap-160447.html",
-          "source": "vir.com.vn",
-          "publishedAt": "2026-09-10T06:15:00Z",
-          "polarity": 0.9108,
-          "sentiment": "Very positive",
+          "id": "160379cb6867b6e1",
+          "storyClusterId": "story-005",
+          "title": "Celine Dion makes tearful return to the stage",
+          "url": "http://www.femalefirst.co.uk/celebrity/celine-dion-makes-tearful-return-stage-1450508.html",
+          "source": "femalefirst.co.uk",
+          "publishedAt": "2026-09-13T08:45:00Z",
+          "polarity": 0.035,
+          "sentiment": "Neutral / mixed",
           "publisherCount": 1
         },
         {
-          "id": "b94dad4b72d6f6a6",
-          "storyClusterId": "story-009",
-          "title": "Rentomojo IPO GMP : Issue subscribed over 1 . 5x so far on Day 2 ; grey market hints at 35 % premium",
-          "url": "https://www.moneycontrol.com/news/business/ipo/rentomojo-ipo-gmp-35-percent-check-latest-subscription-status-should-you-apply-for-rentomojo-14026787.html",
-          "source": "moneycontrol.com",
-          "publishedAt": "2026-09-10T06:00:00Z",
-          "polarity": 0.8822,
-          "sentiment": "Very positive",
+          "id": "30295dbabf2c8dcd",
+          "storyClusterId": "story-003",
+          "title": "Ban on flexi - loans : Should RBI be flexible ?",
+          "url": "https://www.business-standard.com/opinion/columns/ban-on-flexi-loans-should-rbi-be-flexible-126091300119_1.html",
+          "source": "business-standard.com",
+          "publishedAt": "2026-09-13T05:30:00Z",
+          "polarity": 0.0257,
+          "sentiment": "Neutral / mixed",
           "publisherCount": 1
         }
       ]
