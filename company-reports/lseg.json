@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-14T13:26:10.812178Z",
+  "generatedAt": "2026-09-14T14:14:43.230846Z",
   "company": {
     "companyName": "London Stock Exchange Group",
     "ticker": "LSEG.L",
@@ -696,8 +696,81 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 3,
+    "reportCount": 4,
     "reports": [
+      {
+        "year": 2020,
+        "title": "lseg-annual-report-2020.pdf",
+        "url": "https://www.lseg.com/content/dam/lseg/en_us/documents/investor-relations/annual-reports/lseg-annual-report-2020.pdf",
+        "sourceUrl": "https://www.lseg.com/en/investor-relations/annual-reports",
+        "wordCount": 134035,
+        "pageCount": 206,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 19,
+            "per10kWords": 1.418
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 19,
+            "per10kWords": 1.418
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 30,
+            "per10kWords": 2.238
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 232,
+            "per10kWords": 17.309
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 28,
+            "per10kWords": 2.089
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 12,
+            "per10kWords": 0.895
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 13,
+            "per10kWords": 0.97
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 5,
+            "per10kWords": 0.373
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 3,
+            "per10kWords": 0.224
+          }
+        ],
+        "positivityScore": 32.3,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2023,
         "title": "View the Annual Report",
@@ -965,9 +1038,9 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 54.2,
+    "score": 54.3,
     "label": "Mixed",
-    "evidenceCoverage": 92,
+    "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
@@ -990,13 +1063,22 @@
         "label": "Emerging themes",
         "score": 76.5,
         "weight": 0.25,
-        "reliability": 0.667,
+        "reliability": 1.0,
         "detail": "Change in growth-theme density compared with pressure and risk themes."
       }
     ],
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2020-12-31",
+      "type": "annual_report",
+      "title": "lseg-annual-report-2020.pdf",
+      "url": "https://www.lseg.com/content/dam/lseg/en_us/documents/investor-relations/annual-reports/lseg-annual-report-2020.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2023-12-31",
       "type": "annual_report",

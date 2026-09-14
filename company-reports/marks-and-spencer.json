@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-14T13:26:10.812178Z",
+  "generatedAt": "2026-09-14T14:14:43.230846Z",
   "company": {
     "companyName": "Marks & Spencer Group PLC",
     "ticker": "MKS.L",
@@ -576,8 +576,81 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 4,
+    "reportCount": 5,
     "reports": [
+      {
+        "year": 2021,
+        "title": "Annual Report:",
+        "url": "https://corporate.marksandspencer.com/sites/marksandspencer/files/2023-01/M%26S_AR21_Full_210601.pdf",
+        "sourceUrl": "https://corporate.marksandspencer.com/investors/our-performance-updates/results-reports-webcasts-presentations",
+        "wordCount": 148008,
+        "pageCount": 216,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 2,
+            "per10kWords": 0.135
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 4,
+            "per10kWords": 0.27
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 1,
+            "per10kWords": 0.068
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 56,
+            "per10kWords": 3.784
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 23,
+            "per10kWords": 1.554
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 69,
+            "per10kWords": 4.662
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 3,
+            "per10kWords": 0.203
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 18,
+            "per10kWords": 1.216
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 38.3,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2023,
         "title": "M-and-S-2023-Annual-Report.pdf",
@@ -950,6 +1023,15 @@
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2021-12-31",
+      "type": "annual_report",
+      "title": "Annual Report:",
+      "url": "https://corporate.marksandspencer.com/sites/marksandspencer/files/2023-01/M%26S_AR21_Full_210601.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2023-12-31",
       "type": "annual_report",

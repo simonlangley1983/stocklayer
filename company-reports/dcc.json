@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-14T13:26:10.812178Z",
+  "generatedAt": "2026-09-14T14:14:43.230846Z",
   "company": {
     "companyName": "DCC PLC",
     "ticker": "DCC.L",
@@ -743,8 +743,154 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 5,
+    "reportCount": 7,
     "reports": [
+      {
+        "year": 2020,
+        "title": "dcc-annual-report-2020.pdf",
+        "url": "https://www.dccenergy.com/~/media/Files/D/Dcc-Corp-v3/documents/investors/annual-and-sustainability-reports/2020/dcc-annual-report-2020.pdf",
+        "sourceUrl": "https://www.dccenergy.com/investors/annual-reports/annual-and-sustainability-reports?page=2",
+        "wordCount": 136781,
+        "pageCount": 246,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 2,
+            "per10kWords": 0.146
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 7,
+            "per10kWords": 0.512
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 57,
+            "per10kWords": 4.167
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 25,
+            "per10kWords": 1.828
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 40,
+            "per10kWords": 2.924
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 2,
+            "per10kWords": 0.146
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 16,
+            "per10kWords": 1.17
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 1,
+            "per10kWords": 0.073
+          }
+        ],
+        "positivityScore": 52.2,
+        "positivityMethod": "lexical annual-report tone"
+      },
+      {
+        "year": 2021,
+        "title": "annual-report-2021.pdf",
+        "url": "https://www.dccenergy.com/~/media/Files/D/Dcc-Corp-v3/documents/investors/annual-and-sustainability-reports/2021/annual-report-2021.pdf",
+        "sourceUrl": "https://www.dccenergy.com/investors/annual-reports/annual-and-sustainability-reports?page=2",
+        "wordCount": 141798,
+        "pageCount": 244,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 10,
+            "per10kWords": 0.705
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 7,
+            "per10kWords": 0.494
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 74,
+            "per10kWords": 5.219
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 31,
+            "per10kWords": 2.186
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 51,
+            "per10kWords": 3.597
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 1,
+            "per10kWords": 0.071
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 18,
+            "per10kWords": 1.269
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 1,
+            "per10kWords": 0.071
+          }
+        ],
+        "positivityScore": 52.6,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2022,
         "title": "dcc-annual-report-2022.pdf",
@@ -815,7 +961,7 @@
             "per10kWords": 0.07
           }
         ],
-        "positivityScore": null,
+        "positivityScore": 47.4,
         "positivityMethod": "year-on-year thematic direction proxy"
       },
       {
@@ -1190,6 +1336,24 @@
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2020-12-31",
+      "type": "annual_report",
+      "title": "dcc-annual-report-2020.pdf",
+      "url": "https://www.dccenergy.com/~/media/Files/D/Dcc-Corp-v3/documents/investors/annual-and-sustainability-reports/2020/dcc-annual-report-2020.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
+    {
+      "date": "2021-12-31",
+      "type": "annual_report",
+      "title": "annual-report-2021.pdf",
+      "url": "https://www.dccenergy.com/~/media/Files/D/Dcc-Corp-v3/documents/investors/annual-and-sustainability-reports/2021/annual-report-2021.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2022-12-31",
       "type": "annual_report",

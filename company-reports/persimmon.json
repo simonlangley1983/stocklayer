@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-14T13:26:10.812178Z",
+  "generatedAt": "2026-09-14T14:14:43.230846Z",
   "company": {
     "companyName": "Persimmon PLC",
     "ticker": "PSN.L",
@@ -664,8 +664,81 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 5,
+    "reportCount": 6,
     "reports": [
+      {
+        "year": 2020,
+        "title": "Annual Report 2020",
+        "url": "https://www.persimmonhomes.com/corporate/media/3khlasej/persimmon_ar2020_web_bmarks-final.pdf",
+        "sourceUrl": "https://www.persimmonhomes.com/corporate/investors/results-reports-and-presentations/2021/",
+        "wordCount": 118953,
+        "pageCount": 190,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 1,
+            "per10kWords": 0.084
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 13,
+            "per10kWords": 1.093
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 80,
+            "per10kWords": 6.725
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 16,
+            "per10kWords": 1.345
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 60,
+            "per10kWords": 5.044
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 4,
+            "per10kWords": 0.336
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 1,
+            "per10kWords": 0.084
+          }
+        ],
+        "positivityScore": 50.9,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2021,
         "title": "persimmon-annual_report_2021.pdf",
@@ -1111,6 +1184,15 @@
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2020-12-31",
+      "type": "annual_report",
+      "title": "Annual Report 2020",
+      "url": "https://www.persimmonhomes.com/corporate/media/3khlasej/persimmon_ar2020_web_bmarks-final.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2021-12-31",
       "type": "annual_report",
