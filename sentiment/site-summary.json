@@ -3,7 +3,7 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-09-14T00:44:18.613788Z",
+  "generatedAt": "2026-09-14T04:20:20.459709Z",
   "asOfDate": "2026-09-13",
   "companyCount": 100,
   "companies": {
@@ -1513,23 +1513,23 @@
       "companyName": "NatWest Group PLC",
       "ticker": "NWG.L",
       "slug": "natwest",
-      "date": "2026-09-10",
-      "dailyScore": 39.7,
-      "dailyLabel": "Negative",
-      "rollingScore": 49.5,
-      "confidence": 58.2,
-      "confidenceBand": "medium",
+      "date": "2026-09-13",
+      "dailyScore": 40.0,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 49.4,
+      "confidence": 30.0,
+      "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 8,
-      "sourceCount": 11,
-      "changeFromPreviousScoredDay": -18.0,
+      "storyCount": 2,
+      "sourceCount": 2,
+      "changeFromPreviousScoredDay": -19.3,
       "flags": [
         {
-          "type": "sentiment_drop",
-          "direction": "negative",
-          "severity": "high",
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
           "status": "calculated",
-          "detail": "Daily score decreased by 18.0 points"
+          "detail": "Confidence is 30.0"
         }
       ]
     },
@@ -2298,17 +2298,25 @@
       "companyName": "Metlen Energy & Metals PLC",
       "ticker": "MTLN.L",
       "slug": "metlen-energy-metals",
-      "date": "2026-09-10",
+      "date": "2026-09-13",
       "dailyScore": null,
-      "dailyLabel": "Collection pending",
-      "rollingScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 50.0,
       "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "provider_error",
+      "coverageStatus": "no_coverage",
       "storyCount": 0,
       "sourceCount": 0,
       "changeFromPreviousScoredDay": null,
-      "flags": []
+      "flags": [
+        {
+          "type": "no_coverage",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Collection succeeded but found no eligible coverage"
+        }
+      ]
     },
     "lion-finance-group": {
       "companyName": "Lion Finance Group PLC",
