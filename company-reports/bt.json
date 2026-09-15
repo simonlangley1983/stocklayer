@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-15T19:55:54.098122Z",
+  "generatedAt": "2026-09-15T20:00:57.199979Z",
   "company": {
     "companyName": "BT Group PLC",
     "ticker": "BT-A.L",
@@ -579,8 +579,81 @@
     "stories": []
   },
   "annualReportAnalysis": {
-    "reportCount": 1,
+    "reportCount": 2,
     "reports": [
+      {
+        "year": 2025,
+        "title": "BT Group plc Annual Report and Accounts 2025",
+        "url": "https://www.bt.com/content/dam/bt-plc/assets/documents/investors/financial-reporting-and-news/annual-reports/2025/2025-bt-group-plc-annual-report-accessible.pdf",
+        "sourceUrl": "https://www.bt.com/content/dam/bt-plc/assets/documents/investors/financial-reporting-and-news/annual-reports/2025/2025-bt-group-plc-annual-report-accessible.pdf",
+        "wordCount": 147099,
+        "pageCount": 238,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 45,
+            "per10kWords": 3.059
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 12,
+            "per10kWords": 0.816
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 14,
+            "per10kWords": 0.952
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 180,
+            "per10kWords": 12.237
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 74,
+            "per10kWords": 5.031
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 33,
+            "per10kWords": 2.243
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 13,
+            "per10kWords": 0.884
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 19,
+            "per10kWords": 1.292
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 5,
+            "per10kWords": 0.34
+          }
+        ],
+        "positivityScore": 32.7,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2026,
         "title": "2026-bt-group-annual-report.pdf",
@@ -655,15 +728,56 @@
         "positivityMethod": "lexical annual-report tone"
       }
     ],
-    "emergingKeywords": [],
+    "emergingKeywords": [
+      {
+        "key": "ai",
+        "label": "AI",
+        "mentions": 81,
+        "per10kWords": 5.828,
+        "previousPer10kWords": 3.059,
+        "changePer10kWords": 2.769
+      },
+      {
+        "key": "cybersecurity",
+        "label": "Cybersecurity",
+        "mentions": 21,
+        "per10kWords": 1.511,
+        "previousPer10kWords": 0.952,
+        "changePer10kWords": 0.559
+      },
+      {
+        "key": "supply_chain",
+        "label": "Supply chain",
+        "mentions": 33,
+        "per10kWords": 2.374,
+        "previousPer10kWords": 2.243,
+        "changePer10kWords": 0.131
+      },
+      {
+        "key": "china",
+        "label": "China",
+        "mentions": 13,
+        "per10kWords": 0.935,
+        "previousPer10kWords": 0.884,
+        "changePer10kWords": 0.051
+      },
+      {
+        "key": "margin_pressure",
+        "label": "Margin pressure",
+        "mentions": 0,
+        "per10kWords": 0.0,
+        "previousPer10kWords": 0.0,
+        "changePer10kWords": 0.0
+      }
+    ],
     "latestPositivity": 31.9,
     "latestPositivityMethod": "lexical annual-report tone",
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 31.9,
-    "label": "Low",
-    "evidenceCoverage": 100,
+    "score": 48.6,
+    "label": "Mixed",
+    "evidenceCoverage": 72,
     "components": [
       {
         "key": "annual_tone",
@@ -672,11 +786,28 @@
         "weight": 0.35,
         "reliability": 1.0,
         "detail": "Lexical annual-report tone."
+      },
+      {
+        "key": "themes",
+        "label": "Emerging themes",
+        "score": 71.5,
+        "weight": 0.25,
+        "reliability": 0.333,
+        "detail": "Change in growth-theme density compared with pressure and risk themes."
       }
     ],
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2025-12-31",
+      "type": "annual_report",
+      "title": "BT Group plc Annual Report and Accounts 2025",
+      "url": "https://www.bt.com/content/dam/bt-plc/assets/documents/investors/financial-reporting-and-news/annual-reports/2025/2025-bt-group-plc-annual-report-accessible.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2026-12-31",
       "type": "annual_report",

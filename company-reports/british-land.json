@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-15T19:55:54.098122Z",
+  "generatedAt": "2026-09-15T20:00:57.199979Z",
   "company": {
     "companyName": "British Land Co PLC",
     "ticker": "BLND.L",
@@ -651,8 +651,81 @@
     "stories": []
   },
   "annualReportAnalysis": {
-    "reportCount": 1,
+    "reportCount": 2,
     "reports": [
+      {
+        "year": 2025,
+        "title": "British Land Annual Report and Accounts 2025",
+        "url": "https://www.britishland.com/media/3hafuvem/47468_bl_ar25_int.pdf",
+        "sourceUrl": "https://www.britishland.com/media/3hafuvem/47468_bl_ar25_int.pdf",
+        "wordCount": 133016,
+        "pageCount": 228,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 14,
+            "per10kWords": 1.053
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 11,
+            "per10kWords": 0.827
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 50,
+            "per10kWords": 3.759
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 12,
+            "per10kWords": 0.902
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 16,
+            "per10kWords": 1.203
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 3,
+            "per10kWords": 0.226
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 35.9,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2026,
         "title": "Download the Annual Report 2026",
@@ -727,15 +800,56 @@
         "positivityMethod": "lexical annual-report tone"
       }
     ],
-    "emergingKeywords": [],
+    "emergingKeywords": [
+      {
+        "key": "ai",
+        "label": "AI",
+        "mentions": 33,
+        "per10kWords": 3.046,
+        "previousPer10kWords": 1.053,
+        "changePer10kWords": 1.993
+      },
+      {
+        "key": "supply_chain",
+        "label": "Supply chain",
+        "mentions": 21,
+        "per10kWords": 1.939,
+        "previousPer10kWords": 1.203,
+        "changePer10kWords": 0.736
+      },
+      {
+        "key": "restructuring",
+        "label": "Restructuring",
+        "mentions": 7,
+        "per10kWords": 0.646,
+        "previousPer10kWords": 0.226,
+        "changePer10kWords": 0.42
+      },
+      {
+        "key": "cybersecurity",
+        "label": "Cybersecurity",
+        "mentions": 10,
+        "per10kWords": 0.923,
+        "previousPer10kWords": 0.827,
+        "changePer10kWords": 0.096
+      },
+      {
+        "key": "regulation",
+        "label": "Regulation",
+        "mentions": 41,
+        "per10kWords": 3.785,
+        "previousPer10kWords": 3.759,
+        "changePer10kWords": 0.026
+      }
+    ],
     "latestPositivity": 40.6,
     "latestPositivityMethod": "lexical annual-report tone",
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 40.6,
-    "label": "Low",
-    "evidenceCoverage": 100,
+    "score": 48.8,
+    "label": "Mixed",
+    "evidenceCoverage": 72,
     "components": [
       {
         "key": "annual_tone",
@@ -744,11 +858,28 @@
         "weight": 0.35,
         "reliability": 1.0,
         "detail": "Lexical annual-report tone."
+      },
+      {
+        "key": "themes",
+        "label": "Emerging themes",
+        "score": 59.8,
+        "weight": 0.25,
+        "reliability": 0.333,
+        "detail": "Change in growth-theme density compared with pressure and risk themes."
       }
     ],
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2025-12-31",
+      "type": "annual_report",
+      "title": "British Land Annual Report and Accounts 2025",
+      "url": "https://www.britishland.com/media/3hafuvem/47468_bl_ar25_int.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2026-12-31",
       "type": "annual_report",
