@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-09-15T19:52:39.710628Z",
+  "generatedAt": "2026-09-15T19:55:52.095873Z",
   "asOfDate": "2026-09-14",
   "companies": {
     "astrazeneca": {
@@ -111,78 +111,266 @@
       "ticker": "SHEL.L",
       "slug": "shell",
       "date": "2026-09-14",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 49.3,
-      "confidence": 0.0,
-      "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "dailyScore": 63.6,
+      "dailyLabel": "Positive",
+      "rollingScore": 51.4,
+      "confidence": 43.5,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "storyCount": 4,
+      "sourceCount": 4,
+      "changeFromPreviousScoredDay": 13.3,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "collection_degraded",
           "direction": "neutral",
-          "severity": "low",
+          "severity": "medium",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "9c4f42ab1b9a0d8d",
+            "6c7401a943a82888",
+            "508c8cb66e9a0e83",
+            "220d559673f0cfe0"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "9c4f42ab1b9a0d8d",
+          "storyClusterId": "story-003",
+          "title": "Shell stock gains as Jefferies sticks to Buy rating and oil rally lifts shares",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNV0xyRjQxOHZuR294MDRlNWc3OWg4cXFNbWYtUUtPT1lVTDJHVHlVOFdHYVFndW4yQVJ0bFRRYllfNURvai1URktTdlVHbWgzbjNIMUJNMkgxY3RfR1pIWlNBeU14enF2U01LYktQNEMxdmxIWDhJZW1FYzdkQ3FVQ0dDb0o3cFdZZml6WmtrdUhkUnhyaFp0X0M1U21rR2t5eTFGOFBYU3FKWEpHeUM3RnJZWTF5TUVmME42dHphQXZPOTlweU5Udllld3B6OTg?oc=5",
+          "source": "ad-hoc-news.de",
+          "publishedAt": "2026-09-14T13:06:46Z",
+          "polarity": 0.7162,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "6c7401a943a82888",
+          "storyClusterId": "story-002",
+          "title": "Gas market expected to grow by two-thirds by 2050, Shell executive says",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOVVNtaW9ZRURmZ2wxUjY4U3ZDQlRrV1IxZktYejU4TEZiSXh3UDBXamw1ZC1ETWVTcVIyYWZWekFpUHFyMXl3VV9HekRfaDFaeWlUdzZpUVBaMnkzMlNseWEwVnFxVnFaVVlJMzRzTTdwR3NULWl5SjAwX2M4WmJOV1YyelQ1cm9yNThVWVJzV09laHl5YTkyalIwbXRoOVBjb3RCSmY2bTlOS1lmQkFYcUx5TEstVEROUlZvVnI5YS0?oc=5",
+          "source": "marketscreener.com",
+          "publishedAt": "2026-09-14T08:13:19Z",
+          "polarity": 0.9044,
+          "sentiment": "Very positive",
+          "publisherCount": 2
+        },
+        {
+          "id": "508c8cb66e9a0e83",
+          "storyClusterId": "story-001",
+          "title": "Shell plc : Buy rating from Jefferies",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNLW9INmV6OHBKUzZ3NFF2SHMwVDJ6VlBXUXpfLXVfeFFhc3VoVC1oVldpTUl2bUJWNzZDcTkzS0doU3BENW1aeVludUJzUjFud0J6Vkdwdk00Uk1ZM1kxcF9QWm5KVEg5RVZKVVhaZ1Zpc0xhYUlBQkw4UFZ6QjA4WFVPNkZneVNxOG9aeUJqM0RIZw?oc=5",
+          "source": "marketscreener.com",
+          "publishedAt": "2026-09-14T07:25:31Z",
+          "polarity": 0.2981,
+          "sentiment": "Positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "220d559673f0cfe0",
+          "storyClusterId": "story-004",
+          "title": "Why Shell Sold its Rhode Island Gas Plant to Constellation",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOV3REeHBpUUw3TUNYclRfVHpxanp3S1BnUWdmT0xkWHhKeG5KdVhaQWk0cGRKMlR1WTl3TGVnZk82RmtNZUxCN2U3ZVZweTR3cXZKYW4xS0prLWxiR2kzRGs5NlJ5OVRaS3Azc0hBMFg1Zm5jWm9oOHJkUXVlWkdqcHhKR1VOQmU3czRzVDZuaEdBREE?oc=5",
+          "source": "energydigital.com",
+          "publishedAt": "2026-09-14T16:44:31Z",
+          "polarity": 0.018,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
     },
     "hsbc": {
       "companyName": "HSBC",
       "ticker": "HSBA.L",
       "slug": "hsbc",
-      "date": "2026-09-12",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.2,
-      "confidence": 0.0,
-      "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "date": "2026-09-14",
+      "dailyScore": 48.2,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.8,
+      "confidence": 58.6,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "storyCount": 11,
+      "sourceCount": 6,
+      "changeFromPreviousScoredDay": -4.6,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "coverage_spike",
           "direction": "neutral",
-          "severity": "low",
+          "severity": "medium",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "11 stories versus trailing median 2",
+          "evidenceArticleIds": [
+            "a610dda0a78b8531",
+            "3c97715458f0cd5f",
+            "906e964e7bf2865e",
+            "b1eb483d5d8537ad",
+            "c2a4775b20f85db2"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "a610dda0a78b8531",
+            "3c97715458f0cd5f",
+            "906e964e7bf2865e",
+            "b1eb483d5d8537ad",
+            "c2a4775b20f85db2"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "a610dda0a78b8531",
+          "storyClusterId": "story-004",
+          "title": "Hsbc Holdings PLC Lowers Holdings in Simpson Manufacturing Company, Inc. $SSD",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQYUlpLUdZYUswUml3czB3LUN1VjhGV0U1RlFwODVoRVNoekNFSzBtV3FZU2VBV2p2cUpsYkJsVjhMVGdGdDAtX2t3RDEyWjJPOXU4cC1pQWRDcHoxdi1rdkVuZkwwTElHOTZNcVU3UTZETFpfYk1Rd183VHlHNGNzbDU0R3ZKNzJacGRMckFpN09na3B1Z0pOTFZ1UnhUWjVCRWRya3RSalB6bkt3alRYWjIzZDJiRTdKMHE5aUpvSmpaZ3Brb3BvR2o0eDRUVVdO?oc=5",
+          "source": "marketbeat.com",
+          "publishedAt": "2026-09-14T08:02:52Z",
+          "polarity": -0.8664,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "3c97715458f0cd5f",
+          "storyClusterId": "story-003",
+          "title": "Hsbc Holdings PLC Lowers Holdings in Kinross Gold Corporation $KGC",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNVU1CVk16TkZfYlZxUjZWaDRoUFUxZ0FiaVU0YnZ5NzdrSlJibnZEYW9rM2tBdE9yUnB2WFFCWWw2dElkcmZCNUVjbnhMeW1qWkNLSk9MU2t6S01Td0tEUjZ4Wm9VWGpPbFFaMkFfajZXMTgxbFBtdzMxUk1vWXhyWGM1bE5PVkNESVFoSFJuNGxQZEc3Q043TzVSQmp2SXM3TFR3bTdVQlNsM0c2UFcwTG12ang4UHhsUzhQZ054U19xcm5L?oc=5",
+          "source": "marketbeat.com",
+          "publishedAt": "2026-09-14T07:41:01Z",
+          "polarity": -0.8601,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "906e964e7bf2865e",
+          "storyClusterId": "story-010",
+          "title": "HSBC Holdings (HSBC) Reshapes European Operations with German Exit",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOU3ZjYXhLWEdDRGdLUElUeFlFbW4yUXJwSE5OczZsOEN1Z1BzRk9KaGd5MFFWTXdfcHNIYlFrbVBMRzBJbnI1QnlMdFE1UzJORThiLXAzSVM5S2ZqSzBRc3QzT0xmblRNVnlqOVVyNnh6WDNqSDRrOGY1RE5TM2N5MXE4eEwwQzBBVnd4SFNB?oc=5",
+          "source": "uk.finance.yahoo.com",
+          "publishedAt": "2026-09-14T14:44:30Z",
+          "polarity": 0.4573,
+          "sentiment": "Positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "b1eb483d5d8537ad",
+          "storyClusterId": "story-006",
+          "title": "Hsbc Holdings PLC Makes New Investment in Canadian Natural Resources Limited $CNQ",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxON2FOcnVCVXduWG40anlLOW1wN2tTbXdGSUJ5ZlZLdmRVRXJPdnh4YkdVYzdGd3ZqWGh2ZXY5WlpMRmhfRnR6ZlVBUXQtRm0wWk9WYU80dTBGUnlfZWZHQ3BENHpmbkNYa2FqU083SFBjTXNCa1ZVUEJVTy1WOU5IdmhvMjUtZWNSS0F0UlVsZ0FYdmZjaTRVc01aTGJFRmEtM01JdWtxNWlGMzB3MG1wZWxkc01KU3g1aGdOSXF4MlRlaDBobEFmV0RLMVV1aHZ2Ty0wN0NwN0c?oc=5",
+          "source": "marketbeat.com",
+          "publishedAt": "2026-09-14T08:41:14Z",
+          "polarity": 0.1909,
+          "sentiment": "Slightly positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "c2a4775b20f85db2",
+          "storyClusterId": "story-009",
+          "title": "HSBC Holdings (HSBA) Announces Exchange Rates for US$0.10 Second Interim Dividend Payable on 25 September 2026",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQUjc0eUNZQW9wQVU5Rjc2cjlkdDFMbXdNZUtHMHVDa09JQkRreUZZNzBJbk03c3RqS3FhVW9reURTOXFLX1d2NDJ5aEVCRFdkd3VjTGJNLTlJUGgtb3ZMWVhveTRWUE9kcnVYamdRQ3hoZFkyWG5mUnZoM3UydURXbzQ3SG5NLThweEVuWENQSVhOR2lrU2lhTXNOMm5QWTFYanJqcXFlTUNkeFEtd25ObWNValIzakhBbXhPanhpVXdSMEcxaGZSN2VBdTQ0RVJDbVBIQ1RQQWNPeFNRbEVtOXlnSDhYa193?oc=5",
+          "source": "kalkinemedia.com",
+          "publishedAt": "2026-09-14T14:10:51Z",
+          "polarity": 0.0746,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
     },
     "unilever": {
       "companyName": "Unilever",
       "ticker": "ULVR.L",
       "slug": "unilever",
       "date": "2026-09-14",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 45.2,
-      "confidence": 0.0,
-      "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "dailyScore": 56.0,
+      "dailyLabel": "Slightly positive",
+      "rollingScore": 47.1,
+      "confidence": 72.1,
+      "confidenceBand": "high",
+      "coverageStatus": "ok",
+      "storyCount": 22,
+      "sourceCount": 19,
+      "changeFromPreviousScoredDay": 15.3,
       "flags": [
         {
-          "type": "no_coverage",
-          "direction": "neutral",
-          "severity": "low",
+          "type": "sentiment_jump",
+          "direction": "positive",
+          "severity": "high",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Daily score increased by 15.3 points",
+          "evidenceArticleIds": [
+            "7dbdd3e28b33fed9",
+            "3543094893f75fd6",
+            "900af4e827f04ee9",
+            "523b1e301a8603b9",
+            "b39b71f75c58a9e4"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "7dbdd3e28b33fed9",
+          "storyClusterId": "story-002",
+          "title": "Unilever stock heads into the open after a modest gain in London",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOWFI1dnZMcklUNlhGUlg4TkIwSVMyQlRmb1p1bDlnLUlkMGg3dVVtXzF2Nmw3aU55MDYyOUhlU0Z1amoycV9IcFFxd2lvLVI0RUpZOURjY0ZWVTJUTTNqWkt2bzlMbTVfdzFSRV80eDAzRHlzbF9KM1hZTXFlTWF1bWIwazA5UjRLTkNQTUNqamg2N1gyLVRlSnpaaXlOY1BOS2dTOXdFUjh3TUxxVldmME9pLW5acGhOd1N6R0hZVWRDdHdWWHc?oc=5",
+          "source": "ad-hoc-news.de",
+          "publishedAt": "2026-09-14T02:48:05Z",
+          "polarity": 0.8831,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "3543094893f75fd6",
+          "storyClusterId": "story-019",
+          "title": "Unilever climbs Monday, outperforms market",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOeGhET2lUcXlnS1cxakVjQnVLYmRWLUxYX3JmdE1XUjg4R0k2c3lTclVDRERXSnZFOTgtV1FPQ3JZMDl2Wkdla01Sa0RlNV9QQ296dnlhMlhhNlVSazE5c0hzc0QzZ0gzYlU4OWFOZnFJS1NSd09BQTF4VmROeWlZeVZ1Y1NGdUNmUTJxa3VnRUJoQzNiZkExRFJBWm5PdEo2YXRsNDEwVlpETW11R0o0Ykg2bENtbUlNXy1R?oc=5",
+          "source": "marketwatch.com",
+          "publishedAt": "2026-09-14T16:06:00Z",
+          "polarity": 0.8702,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "900af4e827f04ee9",
+          "storyClusterId": "story-001",
+          "title": "Weekly Recap: Winning in New India plan and Broker targets Rs1,804–2,480",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPMGhDY1JXQUduMV8xbzRtbjMyV0NLeUU4QTJtUkhZbUdfOGJ5VGZFejctR0ZTejJJcmMzNFdrM0wybTFxaEpSNmFEYlFlUE5HTGVYYWEtRE43QzZURUNuMEo3V1lLNzVucFpYby1LaGJ1cHk1d3VsczIxaXB3TVlLVkVST2lsSG1sTzdJRDlxUnoybDBxakt2TW5qODNwajdXdkdiWXpMZGo5NmF4cndvUXVWTm81Mnowdzd0ZzV5RmlNTHc1UU1KaTc2V241dw?oc=5",
+          "source": "tradingview.com",
+          "publishedAt": "2026-09-14T01:14:00Z",
+          "polarity": 0.8361,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "523b1e301a8603b9",
+          "storyClusterId": "story-017",
+          "title": "Ex-Unilever boss takes swipe at activist investors",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdTNkVUwtTmhwaDBKQnJmTlhlVzRDRzBoSGZYNEJKOUZGMzk3NHBuS0pSMjlXWGx5X1Z6cXFlUWFoYy1lNGRYUllWeVdVc3FEU3pHRmhxcVlJUXI1OGJxRzFVWFZXMlFHcHFGdm8wRVBvUXFDdDZTTUZVZjdsOTVac2hwZVRvUWRFYnZ6TkpyMDZVNjdlRTVKbE9zTzl2Q3JoM0JaSkdUZnRHNU9ORnQzc3lrYlJFZnh5?oc=5",
+          "source": "thetimes.com",
+          "publishedAt": "2026-09-14T15:45:40Z",
+          "polarity": -0.8338,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "b39b71f75c58a9e4",
+          "storyClusterId": "story-012",
+          "title": "Why Did Unilever (LSE:ULVR) Slip Among London's Early Fallers As The Week Opened?",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQUjBVeWM4YW9UaXpmcXlmamlneDhQcDZLX19faUpSZjdvV1N1VlBEeFVXT21zUi0wemY3bWtRSm01SVdYTEpHeFpDV25wUzJIdDVaS1JnZm5lVWJfWlpSZGNUS1RpaU9DZzBvelRHZ2JaV0pkUWRESGlqLTktRkpnTHJWbUh6c1Nhby1EZjU1OGJRTS1CVC1GSjNOQmxhRzdZVFNxTm1zMkNqVGl5aEROeDEweDFfRGEyMkgzbA?oc=5",
+          "source": "kalkinemedia.com",
+          "publishedAt": "2026-09-14T10:18:00Z",
+          "polarity": -0.8011,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        }
+      ]
     },
     "relx": {
       "companyName": "RELX",
@@ -423,26 +611,63 @@
       "ticker": "BARC.L",
       "slug": "barclays",
       "date": "2026-09-14",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.1,
-      "confidence": 0.0,
+      "dailyScore": 38.2,
+      "dailyLabel": "Negative",
+      "rollingScore": 48.6,
+      "confidence": 27.3,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 2,
+      "sourceCount": 2,
+      "changeFromPreviousScoredDay": -14.4,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 27.3",
+          "evidenceArticleIds": [
+            "2c65506114b6e70e",
+            "8ac5981a1440260d"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "2c65506114b6e70e",
+            "8ac5981a1440260d"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "2c65506114b6e70e",
+          "storyClusterId": "story-002",
+          "title": "Barclays PLC (BCS) Shares Fall 3.1% -- What GF Score of 70 Tells Investors",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRFgyUTliLVEtVTlGT1ZQVW5qaVNmWnB6dU1jOG1PR2JQRURBSU02Vi1sOGFtZnhUckpYQjFFRVpjaHR2cWtuQXFNRTNRUFROZmh0X0RoR1U3WU4zMV9iUC1CSlE1c1BMc3g4QXZfMGt3bEVWamhPNGVPQWU4VlF3Z05pU0FKV1NaaVVlZlR6LWVUUzdEbUI2a0ZRR1QxS28tNXZIVTZDbjZ6dw?oc=5",
+          "source": "gurufocus.com",
+          "publishedAt": "2026-09-14T22:03:08Z",
+          "polarity": -0.9572,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "8ac5981a1440260d",
+          "storyClusterId": "story-001",
+          "title": "How Barclays Bank Plc Fr Sp Etn Redeem 18/03/2043 Usd 25 - Ser A (ATMP) Affects Rotational Strategy Timing",
+          "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxORUlsSTk4Vlg5Zld0YzVoNVg3SU5JMzJGMmJmMFQ3MFZVN21nWF9YUFJVdXpWTzJLQzhzN2dwQTRLR0RHS0VpdG5SNWZnenZ1bzZGSzhWSXYtcEQ2M0tsWDBPTVh1YjFzdHdHbVJYR1J6TnRsS0VURzM3VC1LM1hwT0gySk1KY1hMZ3I4QmNzTy1mSWt4dUJ4VHpFeW5Od2phRFFMbDdYV0xwTkUyR0lPR3ppZHRNR3BzVHNLc3p2QjZqVFNBTHRYMmlHS2p6d3RTRjU0clZzS0RZSl9OZGdHUVZkbTZyLVNrQ3prOF9RWWRkWWVYSkdFbVBrSk1wTVZrc3FuNUdLWmROUlgwM1Bj?oc=5",
+          "source": "news.stocktradersdaily.com",
+          "publishedAt": "2026-09-14T07:36:01Z",
+          "polarity": 0.0101,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
     },
     "compass": {
       "companyName": "Compass Group",
@@ -890,7 +1115,7 @@
       "companyName": "BT Group PLC",
       "ticker": "BT-A.L",
       "slug": "bt",
-      "date": "2026-09-09",
+      "date": "2026-09-14",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,

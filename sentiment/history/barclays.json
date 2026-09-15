@@ -4242,35 +4242,74 @@
     },
     {
       "date": "2026-09-14",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.1,
-      "confidence": 0.0,
+      "dailyScore": 38.2,
+      "dailyLabel": "Negative",
+      "rollingScore": 48.6,
+      "confidence": 27.3,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "collectionCompleteness": 1.0,
-      "candidateCount": 0,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 62,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 0,
-      "negativeStoryCount": 0,
-      "dispersion": 0.0,
-      "rejectedCandidateCounts": {},
-      "topStories": [],
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 1,
+      "dispersion": 0.4837,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 60
+      },
+      "topStories": [
+        {
+          "id": "2c65506114b6e70e",
+          "storyClusterId": "story-002",
+          "title": "Barclays PLC (BCS) Shares Fall 3.1% -- What GF Score of 70 Tells Investors",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRFgyUTliLVEtVTlGT1ZQVW5qaVNmWnB6dU1jOG1PR2JQRURBSU02Vi1sOGFtZnhUckpYQjFFRVpjaHR2cWtuQXFNRTNRUFROZmh0X0RoR1U3WU4zMV9iUC1CSlE1c1BMc3g4QXZfMGt3bEVWamhPNGVPQWU4VlF3Z05pU0FKV1NaaVVlZlR6LWVUUzdEbUI2a0ZRR1QxS28tNXZIVTZDbjZ6dw?oc=5",
+          "source": "gurufocus.com",
+          "publishedAt": "2026-09-14T22:03:08Z",
+          "polarity": -0.9572,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "8ac5981a1440260d",
+          "storyClusterId": "story-001",
+          "title": "How Barclays Bank Plc Fr Sp Etn Redeem 18/03/2043 Usd 25 - Ser A (ATMP) Affects Rotational Strategy Timing",
+          "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxORUlsSTk4Vlg5Zld0YzVoNVg3SU5JMzJGMmJmMFQ3MFZVN21nWF9YUFJVdXpWTzJLQzhzN2dwQTRLR0RHS0VpdG5SNWZnenZ1bzZGSzhWSXYtcEQ2M0tsWDBPTVh1YjFzdHdHbVJYR1J6TnRsS0VURzM3VC1LM1hwT0gySk1KY1hMZ3I4QmNzTy1mSWt4dUJ4VHpFeW5Od2phRFFMbDdYV0xwTkUyR0lPR3ppZHRNR3BzVHNLc3p2QjZqVFNBTHRYMmlHS2p6d3RTRjU0clZzS0RZSl9OZGdHUVZkbTZyLVNrQ3prOF9RWWRkWWVYSkdFbVBrSk1wTVZrc3FuNUdLWmROUlgwM1Bj?oc=5",
+          "source": "news.stocktradersdaily.com",
+          "publishedAt": "2026-09-14T07:36:01Z",
+          "polarity": 0.0101,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 27.3",
+          "evidenceArticleIds": [
+            "2c65506114b6e70e",
+            "8ac5981a1440260d"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "2c65506114b6e70e",
+            "8ac5981a1440260d"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": -14.4
     }
   ]
 }

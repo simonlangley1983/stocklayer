@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-09-15T19:52:39.710628Z",
+  "generatedAt": "2026-09-15T19:55:52.095873Z",
   "date": "2026-09-14",
   "dateRange": {
     "start": "2026-09-14",
@@ -9,20 +9,76 @@
   },
   "provider": "google-news-rss",
   "model": "ProsusAI/finbert",
-  "selectedCompanyCount": 1,
+  "selectedCompanyCount": 5,
   "requestedDayCount": 1,
-  "requestedObservationCount": 1,
-  "completedObservationCount": 1,
-  "completeness": 1.0,
+  "requestedObservationCount": 5,
+  "completedObservationCount": 2,
+  "completeness": 0.4,
   "minimumCompleteness": 0.9,
-  "status": "ok",
+  "status": "degraded",
   "companies": [
     {
-      "slug": "astrazeneca",
+      "slug": "shell",
+      "status": "degraded",
+      "requestedDayCount": 1,
+      "completedDayCount": 0,
+      "coverageDayCount": 1,
+      "failedDates": [
+        "2026-09-14"
+      ],
+      "truncatedDates": [
+        "2026-09-14"
+      ],
+      "requestCount": 1,
+      "error": null
+    },
+    {
+      "slug": "hsbc",
+      "status": "degraded",
+      "requestedDayCount": 1,
+      "completedDayCount": 0,
+      "coverageDayCount": 1,
+      "failedDates": [
+        "2026-09-14"
+      ],
+      "truncatedDates": [
+        "2026-09-14"
+      ],
+      "requestCount": 1,
+      "error": null
+    },
+    {
+      "slug": "unilever",
       "status": "ok",
       "requestedDayCount": 1,
       "completedDayCount": 1,
       "coverageDayCount": 1,
+      "failedDates": [],
+      "truncatedDates": [],
+      "requestCount": 1,
+      "error": null
+    },
+    {
+      "slug": "barclays",
+      "status": "degraded",
+      "requestedDayCount": 1,
+      "completedDayCount": 0,
+      "coverageDayCount": 1,
+      "failedDates": [
+        "2026-09-14"
+      ],
+      "truncatedDates": [
+        "2026-09-14"
+      ],
+      "requestCount": 1,
+      "error": null
+    },
+    {
+      "slug": "bt",
+      "status": "ok",
+      "requestedDayCount": 1,
+      "completedDayCount": 1,
+      "coverageDayCount": 0,
       "failedDates": [],
       "truncatedDates": [],
       "requestCount": 1,
