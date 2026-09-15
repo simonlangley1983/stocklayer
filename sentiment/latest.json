@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-09-15T17:42:59.525074Z",
+  "generatedAt": "2026-09-15T19:49:43.927666Z",
   "asOfDate": "2026-09-14",
   "companies": {
     "astrazeneca": {
@@ -9,26 +9,102 @@
       "ticker": "AZN.L",
       "slug": "astrazeneca",
       "date": "2026-09-14",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 51.4,
-      "confidence": 0.0,
-      "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "dailyScore": 54.4,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 51.9,
+      "confidence": 64.4,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "storyCount": 34,
+      "sourceCount": 25,
+      "changeFromPreviousScoredDay": -1.7,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "coverage_spike",
           "direction": "neutral",
-          "severity": "low",
+          "severity": "medium",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "34 stories versus trailing median 9",
+          "evidenceArticleIds": [
+            "bd9ef2fe562b66de",
+            "0652c2a874eee770",
+            "2af41134fd6f56d4",
+            "d7c5044a464e5e6e",
+            "73b00a3eff7161ee"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "bd9ef2fe562b66de",
+            "0652c2a874eee770",
+            "2af41134fd6f56d4",
+            "d7c5044a464e5e6e",
+            "73b00a3eff7161ee"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "bd9ef2fe562b66de",
+          "storyClusterId": "story-023",
+          "title": "Olema Pharmaceuticals Shares Fall 15.1% Following AstraZeneca SERENA-4 Trial Results",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPMWZYdDBwcERmY25oTVZpWkF5VE1qbzF4Y0VRNUFWQlVoVUQ2Tll3dm90LWI4cko1WVU4NjhMUFB6Ty1GUjZvcHpTUzY0LVFpbk5zTlZrWnU3OGcyRmE4Rlptamo4NW0yMjJqM0VLRS1pYVFQMTJYOGs3VnN3ZGF1Nm53OHR0c09uY18yY0liTDlUZW5WM0I2VXZqU0Jmdw?oc=5",
+          "source": "finance.yahoo.com",
+          "publishedAt": "2026-09-14T12:10:47Z",
+          "polarity": -0.9629,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "0652c2a874eee770",
+          "storyClusterId": "story-012",
+          "title": "Astrazeneca's Etcamah trial fails to meet primary endpoint",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQX1dlRzJCeFhwZFVGM09uQldWUlQyMmtPbmxINDNNd3RHaTlBTEFYSE5PSHQycmNFYzViMFhlN2szQmd6U2hHZ1hVQVlVM2xpUFk2N0F2eVE5aTNVTmRxWjAxc0s1aWJ0aWVwX1UzNUk3ck1tTHNjUHViaEt4Zjlkcnk1M0RPZWRvVGEyOWVaa2VFUFFXd2lBQ0dUN3ZGdmhHa2pZT2RJN0ZOM1E1c2tlajNEdlJ2RzdIb243cGtiMXZKQWRQ?oc=5",
+          "source": "sharecast.com",
+          "publishedAt": "2026-09-14T09:15:08Z",
+          "polarity": -0.9244,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "2af41134fd6f56d4",
+          "storyClusterId": "story-002",
+          "title": "AstraZeneca Says Enhertu Demonstrates 14.3 Month Median Progression-Free Survival In Destiny-Lung04 Phase III Trial",
+          "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxPUWF1OV9PcFk2VU5mQ1lNbl9VekJkc3RkVnZMSlVFRk9LNHVRN1JZZnBQWU1ZVGRSaVZHbkVmRUhSTlVCMmNyV2dQYnlVX0dJVkFrcTl0SmJPa0ZjcVlBeE1NY1dnZkFUNVhFTmhDcG1KODZNSUdMck5mYW9jNGd4Q3V6dkRIS29RNUdJcDdYMzVCRUNnbzhCWk1SUHdnY1NxZ0FqbmZXb3Q4ZjVUOERRX2JhZ0JsaUM3Ml9GQ0dnU3hlcDRjcHMyWERncnA5Z0dIS1dnZFlFUndJTWQyd2NPT3ZSaGFCemk3X3kzTldSVVFYNmRQaE8wdTl1MkxNblBmSXpQSmxmb2M4aEREdXhTd0pGTQ?oc=5",
+          "source": "tradingview.com",
+          "publishedAt": "2026-09-14T02:33:00Z",
+          "polarity": 0.9161,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "d7c5044a464e5e6e",
+          "storyClusterId": "story-021",
+          "title": "AstraZeneca’s Tagrisso shows eight-year landmark survival in early-stage EGFR-mutated lung cancer",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOOGdaelRxQmd6NEw2TkhmVlFTSHZWRUpkR0FZbXR1MXdCNmRRckh1MFhpd25iT0RVNVRRR0FqclNtcFdSU3VUZDQydFU1UHpQajRfQXpoR1o3N1BSMlVwZ0lCM29iYkhxb0hrMG84blVzeUU5a3NlWmtnS085SV9IcnNSQkhXaEp3NDNmRWRTTzJ3N0cyVVFQVEUyT3pwemlCcTBpN3c5WGtTYUFPTUd3cVU5NlJsY0hUS3BMbEZxdVVCZ09acENR?oc=5",
+          "source": "pmlive.com",
+          "publishedAt": "2026-09-14T11:53:01Z",
+          "polarity": 0.9137,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "73b00a3eff7161ee",
+          "storyClusterId": "story-020",
+          "title": "AstraZeneca (AZN) says breast cancer trial fell short",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSkFOM1RvT2xsZElDb0Y1SVJFaVpfQkdoUE9ndjVRZmx6aDBnUjNRUTJmOEhjWV9RTXB4SHp2cTAyZGtFdUwycmZ1aEJDY1dVSkpReVgtbzVUZDNRUzdRVXdkc0wzU2ZUZTlQczF3WEM0bUU5cGdHTkNLVkktajJiZWJIOGs5aHV1c3I0VHJjZGE2cHlwdnJBM0lnbUtfWnhkUjlGakJMaWR0QzY3SUFr?oc=5",
+          "source": "stocktitan.net",
+          "publishedAt": "2026-09-14T11:37:27Z",
+          "polarity": -0.903,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        }
+      ]
     },
     "shell": {
       "companyName": "Shell",
