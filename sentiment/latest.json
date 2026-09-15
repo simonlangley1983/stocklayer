@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-09-15T22:20:27.560711Z",
+  "generatedAt": "2026-09-15T22:51:28.695105Z",
   "asOfDate": "2026-09-14",
   "companies": {
     "astrazeneca": {
@@ -3461,17 +3461,26 @@
       "companyName": "Babcock International Group PLC",
       "ticker": "BAB.L",
       "slug": "babcock-international",
-      "date": "2026-09-10",
+      "date": "2026-09-14",
       "dailyScore": null,
-      "dailyLabel": "Collection pending",
-      "rollingScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 50.0,
       "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "provider_error",
+      "coverageStatus": "no_coverage",
       "storyCount": 0,
       "sourceCount": 0,
       "changeFromPreviousScoredDay": null,
-      "flags": [],
+      "flags": [
+        {
+          "type": "no_coverage",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
+        }
+      ],
       "topStories": []
     }
   }
