@@ -2,7 +2,7 @@ name: Daily news sentiment
 
 on:
   schedule:
-    - cron: "30 5 * * *"
+    - cron: "30 5,11,17,23 * * *"
     - cron: "17 */2 * * *"
   pull_request:
     paths:

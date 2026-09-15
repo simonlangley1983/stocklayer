@@ -265,13 +265,20 @@ def confidence_label(score: float | None) -> str:
 
 def build_overall_confidence(press: dict[str, Any], annual: dict[str, Any]) -> dict[str, Any]:
     components: list[dict[str, Any]] = []
-    scored_press = [
-        float(item["dailyScore"])
-        for item in press.get("series", [])[-30:]
-        if item.get("dailyScore") is not None
-    ]
+    # Use calendar days, not stored-row count; old coverage must expire.
+    as_of = datetime.now(timezone.utc).date()
+    scored_press = []
+    for item in press.get("series", []):
+        try:
+            age = (as_of - datetime.fromisoformat(item["date"]).date()).days
+            value = float(item["dailyScore"])
+        except (KeyError, TypeError, ValueError):
+            continue
+        if 0 <= age < 30 and 0 <= value <= 100:
+            scored_press.append((value, 0.5 ** (age / 7)))
     if scored_press:
-        press_score = round(sum(scored_press) / len(scored_press), 1)
+        press_score = round(sum(value * weight for value, weight in scored_press)
+                            / sum(weight for _, weight in scored_press), 1)
         press_reliability = min(1.0, len(scored_press) / 20)
         components.append({
             "key": "press",
@@ -279,7 +286,7 @@ def build_overall_confidence(press: dict[str, Any], annual: dict[str, Any]) -> d
             "score": press_score,
             "weight": 0.40,
             "reliability": round(press_reliability, 3),
-            "detail": f"Average of {len(scored_press)} scored days in the latest 30-day window.",
+            "detail": f"Recency-weighted average of {len(scored_press)} scored days in the latest 30 calendar days; seven-day half-life.",
         })
 
     annual_score = annual.get("latestPositivity")
