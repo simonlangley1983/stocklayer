@@ -996,7 +996,7 @@ def run(args: argparse.Namespace) -> int:
     if not args.rebuild_only:
         provider_class = GoogleNewsProvider if os.environ.get("STOCKLAYER_NEWS_PROVIDER") == "google-news-rss" else GdeltProvider
         if provider_class is GoogleNewsProvider:
-            max_records = min(max_records, 100)
+            max_records = 100
         provider = provider_class(
             rate_limit_retries=2,
             deadline=deadline,
