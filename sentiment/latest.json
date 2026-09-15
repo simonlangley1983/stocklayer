@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-09-15T12:52:00.050204Z",
+  "generatedAt": "2026-09-15T17:11:44.169843Z",
   "asOfDate": "2026-09-14",
   "companies": {
     "astrazeneca": {
@@ -138,47 +138,33 @@
       "companyName": "British American Tobacco",
       "ticker": "BATS.L",
       "slug": "british-american-tobacco",
-      "date": "2026-09-12",
-      "dailyScore": 61.8,
-      "dailyLabel": "Positive",
-      "rollingScore": 51.8,
-      "confidence": 12.6,
+      "date": "2026-09-14",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 51.5,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": 9.9,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 12.6",
-          "evidenceArticleIds": [
-            "644ca89cf9f6c144"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "644ca89cf9f6c144",
-          "storyClusterId": "story-001",
-          "title": "5 Dividend Powerhouses Yielding Above 5 % That Wall Street Still Backs",
-          "url": "https://www.aol.com/articles/5-dividend-powerhouses-yielding-above-160216000.html",
-          "source": "aol.com",
-          "publishedAt": "2026-09-12T17:00:00Z",
-          "polarity": 0.7072,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "bp": {
       "companyName": "BP",
       "ticker": "BP.L",
       "slug": "bp",
-      "date": "2026-09-12",
+      "date": "2026-09-14",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,
@@ -282,89 +268,27 @@
       "companyName": "Diageo",
       "ticker": "DGE.L",
       "slug": "diageo",
-      "date": "2026-09-12",
-      "dailyScore": 34.6,
-      "dailyLabel": "Negative",
-      "rollingScore": 43.1,
-      "confidence": 52.8,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "storyCount": 6,
-      "sourceCount": 6,
-      "changeFromPreviousScoredDay": -9.7,
+      "date": "2026-09-14",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 44.3,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "bad_press",
-          "direction": "negative",
-          "severity": "medium",
+          "type": "no_coverage",
+          "direction": "neutral",
+          "severity": "low",
           "status": "calculated",
-          "detail": "Daily press score is 34.6",
-          "evidenceArticleIds": [
-            "967dabac3ff132b1",
-            "342e193c16bc1ca2",
-            "3c049dd56b91ea58",
-            "70d28d34be4cac28",
-            "6f08ad4be6745bdc"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "967dabac3ff132b1",
-          "storyClusterId": "story-006",
-          "title": "Over 120 pubs have shut in Galway since 2005",
-          "url": "https://www.tuamherald.ie/2026/09/12/over-120-pubs-have-shut-in-galway-since-2005",
-          "source": "tuamherald.ie",
-          "publishedAt": "2026-09-12T14:00:00Z",
-          "polarity": -0.9362,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "342e193c16bc1ca2",
-          "storyClusterId": "story-003",
-          "title": "Nigerian consumer goods firms earn less in dollars",
-          "url": "https://www.riotimesonline.com/nigerian-consumer-goods-firms-earn-less-dollars-2026",
-          "source": "riotimesonline.com",
-          "publishedAt": "2026-09-12T07:00:00Z",
-          "polarity": -0.8495,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "3c049dd56b91ea58",
-          "storyClusterId": "story-005",
-          "title": "A raid on pensioners would destroy growth . Here the proof",
-          "url": "https://www.aol.com/articles/raid-pensioners-destroy-growth-proof-053655000.html",
-          "source": "aol.com",
-          "publishedAt": "2026-09-12T08:30:00Z",
-          "polarity": -0.54,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "70d28d34be4cac28",
-          "storyClusterId": "story-002",
-          "title": "Who are the boys with the black stuff ?",
-          "url": "https://www.manchestereveningnews.co.uk/news/greater-manchester-news/who-boys-black-stuff-34598538",
-          "source": "manchestereveningnews.co.uk",
-          "publishedAt": "2026-09-12T06:45:00Z",
-          "polarity": -0.2469,
-          "sentiment": "Negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "6f08ad4be6745bdc",
-          "storyClusterId": "story-001",
-          "title": "State okays Japanese brewer Sh388b takeover of Diageo EABL stake",
-          "url": "https://www.standardmedia.co.ke/business/business/article/2001557599/state-okays-japanese-brewers-sh388b-takeover-of-diageos-eabl-stake",
-          "source": "standardmedia.co.ke",
-          "publishedAt": "2026-09-12T03:45:00Z",
-          "polarity": 0.0626,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "rio-tinto": {
       "companyName": "Rio Tinto",
@@ -448,7 +372,7 @@
       "companyName": "Compass Group",
       "ticker": "CPG.L",
       "slug": "compass",
-      "date": "2026-09-12",
+      "date": "2026-09-14",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.1,
@@ -474,41 +398,27 @@
       "companyName": "BAE Systems",
       "ticker": "BA.L",
       "slug": "bae-systems",
-      "date": "2026-09-13",
-      "dailyScore": 64.8,
-      "dailyLabel": "Positive",
-      "rollingScore": 53.4,
-      "confidence": 12.7,
+      "date": "2026-09-14",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 53.1,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": 21.1,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 12.7",
-          "evidenceArticleIds": [
-            "e2731647c5ab763a"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "e2731647c5ab763a",
-          "storyClusterId": "story-001",
-          "title": "New Clyde Maritime Alliance launched to boost jobs",
-          "url": "https://www.glasgowtimes.co.uk/news/26541636.new-clyde-maritime-alliance-launched-boost-jobs",
-          "source": "glasgowtimes.co.uk",
-          "publishedAt": "2026-09-13T06:15:00Z",
-          "polarity": 0.8892,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "lloyds": {
       "companyName": "Lloyds Banking Group",
@@ -566,77 +476,27 @@
       "companyName": "Experian",
       "ticker": "EXPN.L",
       "slug": "experian",
-      "date": "2026-09-12",
-      "dailyScore": 45.1,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.1,
-      "confidence": 34.0,
+      "date": "2026-09-14",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 49.3,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 4,
-      "sourceCount": 3,
-      "changeFromPreviousScoredDay": -14.4,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 34.0",
-          "evidenceArticleIds": [
-            "520581739d9f29cd",
-            "f3deeff9ae21c1b7",
-            "6c79827e84cf7d56",
-            "4acacad42baefad6"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "520581739d9f29cd",
-          "storyClusterId": "story-001",
-          "title": "Hidden costs of commuting : The real cost of returning to the office",
-          "url": "http://northcountrynow.com/premium/stacker/stories/hidden-costs-of-commuting-the-real-cost-of-returning-to-the-office,390035",
-          "source": "northcountrynow.com",
-          "publishedAt": "2026-09-12T06:15:00Z",
-          "polarity": -0.2061,
-          "sentiment": "Negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "f3deeff9ae21c1b7",
-          "storyClusterId": "story-003",
-          "title": "3 Costly Credit Score Mistakes Retirees Make When Using AI Tools ( and How To Avoid Them )",
-          "url": "https://www.aol.com/articles/3-costly-credit-score-mistakes-153026000.html",
-          "source": "aol.com",
-          "publishedAt": "2026-09-12T16:00:00Z",
-          "polarity": -0.3732,
-          "sentiment": "Negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "6c79827e84cf7d56",
-          "storyClusterId": "story-004",
-          "title": "Dave Ramsey Tells Couple Supporting 84 - Year - Old Father - in - Law With $33 , 000 of Debt :  It Wont End Until You End It",
-          "url": "https://www.aol.com/articles/dave-ramsey-tells-couple-supporting-223739000.html",
-          "source": "aol.com",
-          "publishedAt": "2026-09-12T16:00:00Z",
-          "polarity": -0.1586,
-          "sentiment": "Slightly negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "4acacad42baefad6",
-          "storyClusterId": "story-002",
-          "title": "Oasis fans consider selling body parts to get hold of tickets for new tour",
-          "url": "https://www.dailystar.co.uk/music/oasis-fans-consider-selling-body-37653787",
-          "source": "dailystar.co.uk",
-          "publishedAt": "2026-09-12T12:45:00Z",
-          "polarity": -0.0029,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "glencore": {
       "companyName": "Glencore",
@@ -668,7 +528,7 @@
       "companyName": "Admiral Group PLC",
       "ticker": "ADM.L",
       "slug": "admiral",
-      "date": "2026-09-13",
+      "date": "2026-09-14",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,
@@ -850,10 +710,10 @@
       "companyName": "Auto Trader Group PLC",
       "ticker": "AUTO.L",
       "slug": "auto-trader",
-      "date": "2026-09-12",
+      "date": "2026-09-14",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 50.5,
+      "rollingScore": 50.4,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -954,7 +814,7 @@
       "companyName": "British Land Co PLC",
       "ticker": "BLND.L",
       "slug": "british-land",
-      "date": "2026-09-13",
+      "date": "2026-09-14",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,
@@ -1032,81 +892,53 @@
       "companyName": "Centrica PLC",
       "ticker": "CNA.L",
       "slug": "centrica",
-      "date": "2026-09-11",
-      "dailyScore": 50.8,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 45.6,
-      "confidence": 15.2,
+      "date": "2026-09-14",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 46.7,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": 22.2,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 15.2",
-          "evidenceArticleIds": [
-            "f61d90b92d40a3a5"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "f61d90b92d40a3a5",
-          "storyClusterId": "story-001",
-          "title": "Battery storage project news : Redelfi , Axpo , energieUri , Delta Capacity , Centrica",
-          "url": "https://greentechlead.com/energy-news/battery-storage-project-news-redelfi-axpo-energieuri-delta-capacity-centrica-55320",
-          "source": "greentechlead.com",
-          "publishedAt": "2026-09-11T10:45:00Z",
-          "polarity": 0.051,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "coca-cola-hbc": {
       "companyName": "Coca-Cola HBC AG",
       "ticker": "CCH.L",
       "slug": "coca-cola-hbc",
-      "date": "2026-09-09",
-      "dailyScore": 34.6,
-      "dailyLabel": "Negative",
-      "rollingScore": 47.3,
-      "confidence": 12.8,
+      "date": "2026-09-14",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 48.4,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": -3.7,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 12.8",
-          "evidenceArticleIds": [
-            "045058ac824362e3"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "045058ac824362e3",
-          "storyClusterId": "story-001",
-          "title": "European Stocks Tumble As Middle East Tensions Lift Oil",
-          "url": "https://www.finanzen.ch/nachrichten/aktien/european-stocks-tumble-as-middle-east-tensions-lift-oil-1036533237",
-          "source": "finanzen.ch",
-          "publishedAt": "2026-09-09T17:45:00Z",
-          "polarity": -0.9266,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "convatec": {
       "companyName": "Convatec Group PLC",
@@ -1204,7 +1036,7 @@
       "companyName": "Diploma PLC",
       "ticker": "DPLM.L",
       "slug": "diploma",
-      "date": "2026-09-09",
+      "date": "2026-09-14",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,
@@ -1270,50 +1102,36 @@
       "companyName": "Entain PLC",
       "ticker": "ENT.L",
       "slug": "entain",
-      "date": "2026-09-06",
-      "dailyScore": 35.1,
-      "dailyLabel": "Negative",
-      "rollingScore": 46.3,
-      "confidence": 12.6,
+      "date": "2026-09-14",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 48.3,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": -5.6,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 12.6",
-          "evidenceArticleIds": [
-            "1ef87dc4a1611979"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "1ef87dc4a1611979",
-          "storyClusterId": "story-001",
-          "title": "Online bookies accused of united kingdom privacy breaches with use of cookie banners",
-          "url": "https://www.theguardian.com/technology/2026/sep/06/online-bookies-privacy-breaches-cookies-tracking",
-          "source": "theguardian.com",
-          "publishedAt": "2026-09-06T08:45:00Z",
-          "polarity": -0.8932,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "fandc-investment-trust": {
       "companyName": "F&C Investment Trust PLC",
       "ticker": "FCIT.L",
       "slug": "fandc-investment-trust",
-      "date": "2026-09-08",
+      "date": "2026-09-14",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 50.4,
+      "rollingScore": 50.2,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -1336,50 +1154,36 @@
       "companyName": "Fresnillo PLC",
       "ticker": "FRES.L",
       "slug": "fresnillo",
-      "date": "2026-09-09",
-      "dailyScore": 34.6,
-      "dailyLabel": "Negative",
-      "rollingScore": 47.4,
-      "confidence": 12.8,
+      "date": "2026-09-14",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 48.4,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": -16.8,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 12.8",
-          "evidenceArticleIds": [
-            "045058ac824362e3"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "045058ac824362e3",
-          "storyClusterId": "story-001",
-          "title": "European Stocks Tumble As Middle East Tensions Lift Oil",
-          "url": "https://www.finanzen.ch/nachrichten/aktien/european-stocks-tumble-as-middle-east-tensions-lift-oil-1036533237",
-          "source": "finanzen.ch",
-          "publishedAt": "2026-09-09T17:45:00Z",
-          "polarity": -0.9266,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "games-workshop": {
       "companyName": "Games Workshop Group PLC",
       "ticker": "GAW.L",
       "slug": "games-workshop",
-      "date": "2026-09-10",
+      "date": "2026-09-14",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 49.3,
+      "rollingScore": 49.5,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -1402,10 +1206,10 @@
       "companyName": "Haleon PLC",
       "ticker": "HLN.L",
       "slug": "haleon",
-      "date": "2026-09-09",
+      "date": "2026-09-14",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 51.3,
+      "rollingScore": 50.8,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -1454,50 +1258,36 @@
       "companyName": "Hiscox Ltd",
       "ticker": "HSX.L",
       "slug": "hiscox",
-      "date": "2026-09-10",
-      "dailyScore": 51.6,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.5,
-      "confidence": 10.1,
+      "date": "2026-09-14",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 49.7,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": 2.3,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 10.1",
-          "evidenceArticleIds": [
-            "4ba37de1a64d3d04"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "4ba37de1a64d3d04",
-          "storyClusterId": "story-001",
-          "title": "Is your agency ready for commercial lines ? A 5 - point readiness check",
-          "url": "https://www.insurancejournal.com/blogs/ezlynx/2026/09/10/883753.htm",
-          "source": "insurancejournal.com",
-          "publishedAt": "2026-09-10T11:15:00Z",
-          "polarity": 0.0949,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "howden-joinery": {
       "companyName": "Howden Joinery Group PLC",
       "ticker": "HWDN.L",
       "slug": "howden-joinery",
-      "date": "2026-09-08",
+      "date": "2026-09-14",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 49.0,
+      "rollingScore": 49.4,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -1520,7 +1310,7 @@
       "companyName": "IMI PLC",
       "ticker": "IMI.L",
       "slug": "imi",
-      "date": "2026-09-10",
+      "date": "2026-09-14",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,
@@ -1546,103 +1336,53 @@
       "companyName": "Imperial Brands PLC",
       "ticker": "IMB.L",
       "slug": "imperial-brands",
-      "date": "2026-09-08",
-      "dailyScore": 51.8,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.4,
-      "confidence": 15.6,
+      "date": "2026-09-14",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 49.7,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": 1.6,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 15.6",
-          "evidenceArticleIds": [
-            "f2495274441c44ee"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "f2495274441c44ee",
-          "storyClusterId": "story-001",
-          "title": "Jefferies Financial Group Reiterates  Buy  Rating for Imperial Brands ( LON : IMB )",
-          "url": "https://www.tickerreport.com/banking-finance/13576893/jefferies-financial-group-reiterates-buy-rating-for-imperial-brands-lonimb.html",
-          "source": "tickerreport.com",
-          "publishedAt": "2026-09-08T13:00:00Z",
-          "polarity": 0.1099,
-          "sentiment": "Slightly positive",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "informa": {
       "companyName": "Informa PLC",
       "ticker": "INF.L",
       "slug": "informa",
-      "date": "2026-09-10",
-      "dailyScore": 46.6,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 52.4,
-      "confidence": 40.5,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "storyCount": 4,
-      "sourceCount": 4,
-      "changeFromPreviousScoredDay": -20.7,
-      "flags": [],
-      "topStories": [
+      "date": "2026-09-14",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 51.6,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
+      "flags": [
         {
-          "id": "0d5c1429a4199fd1",
-          "storyClusterId": "story-002",
-          "title": "Qdoba franchisee defaults on $20 million loan",
-          "url": "https://finance.yahoo.com/small-business/articles/qdoba-franchisee-defaults-20-million-151826300.html",
-          "source": "finance.yahoo.com",
-          "publishedAt": "2026-09-09T23:30:00Z",
-          "polarity": -0.9186,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "05303187d4624886",
-          "storyClusterId": "story-004",
-          "title": "Construction sector in Portugal creates over 5 , 000 companies this year",
-          "url": "https://www.theportugalnews.com/news/2026-09-10/construction-sector-in-portugal-creates-over-5000-companies-this-year/1084380",
-          "source": "theportugalnews.com",
-          "publishedAt": "2026-09-10T16:15:00Z",
-          "polarity": 0.3227,
-          "sentiment": "Positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "58522c8253a32b1e",
-          "storyClusterId": "story-003",
-          "title": "Aqarat  to organise fourth Qatar Real Estate Forum with new identity",
-          "url": "https://www.qatar-tribune.com/article/253185/latest-news/aqarat-to-organise-fourth-qatar-real-estate-forum-with-new-identity",
-          "source": "qatar-tribune.com",
-          "publishedAt": "2026-09-10T14:15:00Z",
-          "polarity": 0.1202,
-          "sentiment": "Slightly positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "2110da65741749bd",
-          "storyClusterId": "story-001",
-          "title": "How Taiwan beauty brands are turning creators into a sales channel",
-          "url": "https://www.warc.com/en/feed/how-taiwans-beauty-brands-are-turning-creators-into-a-sales-channel-f3ede4be2af946c8af48e159c39f1b49",
-          "source": "warc.com",
-          "publishedAt": "2026-09-09T23:30:00Z",
-          "polarity": 0.0628,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
+          "type": "no_coverage",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
-      ]
+      ],
+      "topStories": []
     },
     "intercontinental-hotels": {
       "companyName": "InterContinental Hotels Group PLC",
@@ -1736,41 +1476,27 @@
       "companyName": "Intertek Group PLC",
       "ticker": "ITRK.L",
       "slug": "intertek",
-      "date": "2026-09-10",
-      "dailyScore": 49.5,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.8,
-      "confidence": 9.9,
+      "date": "2026-09-14",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 50.5,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": -1.4,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 9.9",
-          "evidenceArticleIds": [
-            "7d909749414785ca"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "7d909749414785ca",
-          "storyClusterId": "story-001",
-          "title": "Disclosure Table | Company Announcement",
-          "url": "https://www.investegate.co.uk/announcement/rns/londonmetric-property--lmp/disclosure-table/9765626",
-          "source": "investegate.co.uk",
-          "publishedAt": "2026-09-10T10:15:00Z",
-          "polarity": -0.0279,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "international-consolidated-airlines": {
       "companyName": "International Consolidated Airlines Group SA",
@@ -1802,10 +1528,10 @@
       "companyName": "JD Sports Fashion PLC",
       "ticker": "JD.L",
       "slug": "jd-sports-fashion",
-      "date": "2026-09-10",
+      "date": "2026-09-14",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 47.7,
+      "rollingScore": 48.5,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -1828,89 +1554,27 @@
       "companyName": "Kingfisher PLC",
       "ticker": "KGF.L",
       "slug": "kingfisher",
-      "date": "2026-09-09",
-      "dailyScore": 50.3,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.7,
-      "confidence": 55.2,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "storyCount": 16,
-      "sourceCount": 24,
-      "changeFromPreviousScoredDay": -1.4,
+      "date": "2026-09-14",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 50.4,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "coverage_spike",
+          "type": "no_coverage",
           "direction": "neutral",
-          "severity": "medium",
+          "severity": "low",
           "status": "calculated",
-          "detail": "16 stories versus trailing median 5",
-          "evidenceArticleIds": [
-            "02fa32d1d109e7c8",
-            "170907b23525c36c",
-            "e69cea65f24d0d78",
-            "09a9e1c399bba02a",
-            "4e5a24723374fcc1"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "02fa32d1d109e7c8",
-          "storyClusterId": "story-016",
-          "title": "Dragon Con 2026 Drew 75 , 000 Fans and Raised Over $320 , 000 for Hope Atlanta",
-          "url": "https://www.fanbolt.com/181128/dragon-con-2026-drew-75000-fans-and-raised-over-320000-for-hope-atlanta",
-          "source": "fanbolt.com",
-          "publishedAt": "2026-09-09T16:15:00Z",
-          "polarity": 0.6019,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "170907b23525c36c",
-          "storyClusterId": "story-011",
-          "title": "Legally prohibited from leaving united kingdom : Vijay Mallya says Indian govt  grossly unjust  to him",
-          "url": "https://www.businesstoday.in/latest/corporate/story/legally-prohibited-from-leaving-uk-vijay-mallya-says-indian-govt-grossly-unjust-to-him-554132-2026-09-09",
-          "source": "businesstoday.in",
-          "publishedAt": "2026-09-09T05:30:00Z",
-          "polarity": -0.5096,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "e69cea65f24d0d78",
-          "storyClusterId": "story-005",
-          "title": "Legally prohibited from leaving : Vijay Mallya claims he is not a fugitive , cites legal process in united kingdom ; claims injustice by Indian Govt",
-          "url": "http://www.theuknews.com/news/279295280/legally-prohibited-from-leaving-vijay-mallya-claims-he-is-not-a-fugitive-cites-legal-process-in-uk-claims-injustice-by-indian-govt",
-          "source": "theuknews.com",
-          "publishedAt": "2026-09-09T04:30:00Z",
-          "polarity": -0.4494,
-          "sentiment": "Negative",
-          "publisherCount": 6
-        },
-        {
-          "id": "09a9e1c399bba02a",
-          "storyClusterId": "story-002",
-          "title": "Tough new rules proposed to govern minister staff behaviour | Bay Post - Moruya Examiner",
-          "url": "https://www.batemansbaypost.com.au/story/9346469/tough-new-rules-proposed-to-govern-ministers-staff-behaviour",
-          "source": "batemansbaypost.com.au",
-          "publishedAt": "2026-09-09T00:15:00Z",
-          "polarity": -0.397,
-          "sentiment": "Negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "4e5a24723374fcc1",
-          "storyClusterId": "story-010",
-          "title": "Oklahoma public libraries now serve as broadband access hubs",
-          "url": "http://www.oklahomacitysun.com/news/279295232/oklahoma-public-libraries-now-serve-as-broadband-access-hubs",
-          "source": "oklahomacitysun.com",
-          "publishedAt": "2026-09-09T06:15:00Z",
-          "polarity": 0.36,
-          "sentiment": "Positive",
-          "publisherCount": 2
-        }
-      ]
+      "topStories": []
     },
     "land-securities": {
       "companyName": "Land Securities Group PLC",
