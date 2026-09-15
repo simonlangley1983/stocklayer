@@ -3,7 +3,7 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-09-15T17:42:59.525074Z",
+  "generatedAt": "2026-09-15T19:49:43.927666Z",
   "asOfDate": "2026-09-14",
   "companyCount": 100,
   "companies": {
@@ -12,22 +12,29 @@
       "ticker": "AZN.L",
       "slug": "astrazeneca",
       "date": "2026-09-14",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 51.4,
-      "confidence": 0.0,
-      "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "dailyScore": 54.4,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 51.9,
+      "confidence": 64.4,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "storyCount": 34,
+      "sourceCount": 25,
+      "changeFromPreviousScoredDay": -1.7,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "coverage_spike",
           "direction": "neutral",
-          "severity": "low",
+          "severity": "medium",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "34 stories versus trailing median 9"
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day"
         }
       ]
     },
