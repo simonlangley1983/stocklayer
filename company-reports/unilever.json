@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-14T23:41:09.023598Z",
+  "generatedAt": "2026-09-15T05:27:26.833689Z",
   "company": {
     "companyName": "Unilever",
     "ticker": "ULVR.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-10",
-    "periodEnd": "2026-09-12",
-    "observationCount": 56,
-    "scoredDayCount": 56,
-    "latestScore": 35.7,
-    "latestScoreDate": "2026-09-12",
+    "periodEnd": "2026-09-14",
+    "observationCount": 58,
+    "scoredDayCount": 57,
+    "latestScore": 40.7,
+    "latestScoreDate": "2026-09-13",
     "series": [
       {
         "date": "2026-07-10",
@@ -529,6 +529,24 @@
         "sourceCount": 15,
         "confidence": 54.2,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-13",
+        "dailyScore": 40.7,
+        "rollingScore": 44.7,
+        "storyCount": 5,
+        "sourceCount": 5,
+        "confidence": 43.9,
+        "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-14",
+        "dailyScore": null,
+        "rollingScore": 45.2,
+        "storyCount": 0,
+        "sourceCount": 0,
+        "confidence": 0.0,
+        "coverageStatus": "no_coverage"
       }
     ],
     "stories": [
@@ -677,17 +695,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 45.8,
+    "score": 45.2,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 47.9,
+        "score": 46.9,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Average of 30 scored days in the latest 30-day window."
+        "detail": "Average of 29 scored days in the latest 30-day window."
       },
       {
         "key": "annual_tone",

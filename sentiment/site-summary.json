@@ -3,7 +3,7 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-09-14T23:41:07.549936Z",
+  "generatedAt": "2026-09-15T05:27:25.410759Z",
   "asOfDate": "2026-09-14",
   "companyCount": 100,
   "companies": {
@@ -83,17 +83,25 @@
       "companyName": "Unilever",
       "ticker": "ULVR.L",
       "slug": "unilever",
-      "date": "2026-09-12",
-      "dailyScore": 35.7,
-      "dailyLabel": "Negative",
-      "rollingScore": 44.9,
-      "confidence": 54.2,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "storyCount": 8,
-      "sourceCount": 15,
-      "changeFromPreviousScoredDay": -6.8,
-      "flags": []
+      "date": "2026-09-14",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 45.2,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
+      "flags": [
+        {
+          "type": "no_coverage",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Collection succeeded but found no eligible coverage"
+        }
+      ]
     },
     "relx": {
       "companyName": "RELX",
@@ -1988,30 +1996,23 @@
       "companyName": "Tesco PLC",
       "ticker": "TSCO.L",
       "slug": "tesco",
-      "date": "2026-09-09",
-      "dailyScore": 41.4,
-      "dailyLabel": "Slightly negative",
-      "rollingScore": 45.2,
-      "confidence": 48.6,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "storyCount": 30,
-      "sourceCount": 42,
-      "changeFromPreviousScoredDay": 20.2,
+      "date": "2026-09-14",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 46.5,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "sentiment_jump",
-          "direction": "positive",
-          "severity": "high",
-          "status": "calculated",
-          "detail": "Daily score increased by 20.2 points"
-        },
-        {
-          "type": "collection_degraded",
+          "type": "no_coverage",
           "direction": "neutral",
-          "severity": "medium",
+          "severity": "low",
           "status": "calculated",
-          "detail": "The provider result ceiling was reached for this day"
+          "detail": "Collection succeeded but found no eligible coverage"
         }
       ]
     },
@@ -2218,17 +2219,25 @@
       "companyName": "Tritax Big Box REIT PLC",
       "ticker": "BBOX.L",
       "slug": "tritax-big-box",
-      "date": "2026-09-10",
+      "date": "2026-09-14",
       "dailyScore": null,
-      "dailyLabel": "Collection pending",
-      "rollingScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 50.0,
       "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "provider_error",
+      "coverageStatus": "no_coverage",
       "storyCount": 0,
       "sourceCount": 0,
       "changeFromPreviousScoredDay": null,
-      "flags": []
+      "flags": [
+        {
+          "type": "no_coverage",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Collection succeeded but found no eligible coverage"
+        }
+      ]
     },
     "aberdeen-group": {
       "companyName": "Aberdeen Group PLC",
