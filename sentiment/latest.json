@@ -1,60 +1,34 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-09-15T05:27:25.410759Z",
+  "generatedAt": "2026-09-15T12:22:16.875228Z",
   "asOfDate": "2026-09-14",
   "companies": {
     "astrazeneca": {
       "companyName": "AstraZeneca",
       "ticker": "AZN.L",
       "slug": "astrazeneca",
-      "date": "2026-09-13",
-      "dailyScore": 56.1,
-      "dailyLabel": "Slightly positive",
-      "rollingScore": 51.6,
-      "confidence": 28.5,
+      "date": "2026-09-14",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 51.4,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 2,
-      "sourceCount": 2,
-      "changeFromPreviousScoredDay": 11.7,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 28.5",
-          "evidenceArticleIds": [
-            "c4917e0f3bb29125",
-            "8cdf3c2a5823ae77"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "c4917e0f3bb29125",
-          "storyClusterId": "story-002",
-          "title": "Manipal Hospitals scouts for acquisitions in Andhra , Keralam , Delhi - NCR ; bets on AI - led healthcare",
-          "url": "https://economictimes.indiatimes.com/industry/healthcare/biotech/healthcare/manipal-hospitals-scouts-for-acquisitions-in-andhra-keralam-delhi-ncr-bets-on-ai-led-healthcare/articleshow/134179222.cms",
-          "source": "economictimes.indiatimes.com",
-          "publishedAt": "2026-09-13T06:15:00Z",
-          "polarity": 0.4693,
-          "sentiment": "Positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "8cdf3c2a5823ae77",
-          "storyClusterId": "story-001",
-          "title": "Jim Cramer Says He Is Not Going to Put His Money on AstraZeneca ( AZN )",
-          "url": "https://finance.yahoo.com/healthcare/articles/jim-cramer-says-not-going-200239955.html",
-          "source": "finance.yahoo.com",
-          "publishedAt": "2026-09-13T02:15:00Z",
-          "polarity": 0.0169,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "shell": {
       "companyName": "Shell",
@@ -138,10 +112,10 @@
       "companyName": "RELX",
       "ticker": "REL.L",
       "slug": "relx",
-      "date": "2026-09-13",
+      "date": "2026-09-14",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 53.1,
+      "rollingScore": 52.8,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -230,132 +204,59 @@
       "companyName": "GSK",
       "ticker": "GSK.L",
       "slug": "gsk",
-      "date": "2026-09-08",
-      "dailyScore": 39.7,
-      "dailyLabel": "Negative",
-      "rollingScore": 50.6,
-      "confidence": 48.8,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "storyCount": 6,
-      "sourceCount": 7,
-      "changeFromPreviousScoredDay": -10.0,
-      "flags": [],
-      "topStories": [
+      "date": "2026-09-14",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 50.3,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
+      "flags": [
         {
-          "id": "1318cde3ec29011e",
-          "storyClusterId": "story-003",
-          "title": "Major European Markets Close Flat As Oil Rally , Rate Hike Fears Weigh",
-          "url": "https://www.finanzen.ch/nachrichten/aktien/major-european-markets-close-flat-as-oil-rally-rate-hike-fears-weigh-1036529525",
-          "source": "finanzen.ch",
-          "publishedAt": "2026-09-08T18:00:00Z",
-          "polarity": -0.8812,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "3c8c6d3095dd6f28",
-          "storyClusterId": "story-001",
-          "title": "Dallas named worst Texas city for Asthma in new national ranking . report says",
-          "url": "https://www.fox4news.com/news/dallas-ranks-no-18-among-nations-most-challenging-places-live-asthma",
-          "source": "fox4news.com",
-          "publishedAt": "2026-09-08T02:00:00Z",
-          "polarity": -0.4572,
-          "sentiment": "Negative",
-          "publisherCount": 2
-        },
-        {
-          "id": "b2d108ec1329997d",
-          "storyClusterId": "story-002",
-          "title": "Spore still creating jobs amid tighter job market : Ong Ye Kung",
-          "url": "https://www.straitstimes.com/singapore/graduates-can-stay-confident-that-spore-is-still-creating-jobs-amid-tighter-job-market-ong-ye-kung",
-          "source": "straitstimes.com",
-          "publishedAt": "2026-09-08T06:00:00Z",
-          "polarity": -0.333,
-          "sentiment": "Negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "da0eb198ecb57e78",
-          "storyClusterId": "story-005",
-          "title": "One Tower Business Club Becomes First Flexible Workspace",
-          "url": "https://www.3blmedia.com/news/one-tower-business-club-becomes-first-flexible-workspace-operator-turkey-achieve-well",
-          "source": "3blmedia.com",
-          "publishedAt": "2026-09-08T19:00:00Z",
-          "polarity": 0.0866,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        },
-        {
-          "id": "81b07e019db22693",
-          "storyClusterId": "story-004",
-          "title": "FTSE 100 Live : FTSE 100 ends the session lower",
-          "url": "https://www.proactiveinvestors.co.uk/companies/news/1098192/ftse-100-live-ftse-100-ends-the-session-lower-1098192.html",
-          "source": "proactiveinvestors.co.uk",
-          "publishedAt": "2026-09-08T18:15:00Z",
-          "polarity": -0.0568,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
+          "type": "no_coverage",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
-      ]
+      ],
+      "topStories": []
     },
     "rolls-royce": {
       "companyName": "Rolls-Royce",
       "ticker": "RR.L",
       "slug": "rolls-royce",
-      "date": "2026-09-13",
-      "dailyScore": 50.5,
-      "dailyLabel": "Neutral / mixed",
+      "date": "2026-09-14",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
       "rollingScore": 49.7,
-      "confidence": 17.1,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 2,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": -1.1,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 17.1",
-          "evidenceArticleIds": [
-            "90259c75894af350",
-            "22f1bc03f036f1a0"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "90259c75894af350",
-          "storyClusterId": "story-002",
-          "title": "4 agencies to provide medical flights during FDS suspension",
-          "url": "https://www.freemalaysiatoday.com/category/nation/2026/09/13/4-agencies-to-provide-medical-flights-during-fds-suspension",
-          "source": "freemalaysiatoday.com",
-          "publishedAt": "2026-09-13T09:15:00Z",
-          "polarity": 0.0467,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        },
-        {
-          "id": "22f1bc03f036f1a0",
-          "storyClusterId": "story-001",
-          "title": "Remains of 5 Sarawak chopper crash victims handed over to families",
-          "url": "https://www.freemalaysiatoday.com/category/nation/2026/09/13/remains-of-5-sarawak-chopper-crash-victims-handed-over-to-families",
-          "source": "freemalaysiatoday.com",
-          "publishedAt": "2026-09-13T06:15:00Z",
-          "polarity": -0.0107,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "lseg": {
       "companyName": "London Stock Exchange Group",
       "ticker": "LSEG.L",
       "slug": "lseg",
-      "date": "2026-09-13",
+      "date": "2026-09-14",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 49.5,
@@ -469,10 +370,10 @@
       "companyName": "Rio Tinto",
       "ticker": "RIO.L",
       "slug": "rio-tinto",
-      "date": "2026-09-13",
+      "date": "2026-09-14",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 49.3,
+      "rollingScore": 49.4,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -495,72 +396,36 @@
       "companyName": "National Grid",
       "ticker": "NG.L",
       "slug": "national-grid",
-      "date": "2026-09-13",
-      "dailyScore": 53.7,
-      "dailyLabel": "Neutral / mixed",
+      "date": "2026-09-14",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
       "rollingScore": 49.9,
-      "confidence": 41.5,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "storyCount": 4,
-      "sourceCount": 4,
-      "changeFromPreviousScoredDay": 6.1,
-      "flags": [],
-      "topStories": [
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
+      "flags": [
         {
-          "id": "d0d6f6deb62a5dd7",
-          "storyClusterId": "story-001",
-          "title": "Iraq signs 25 - year deal to boost oil , gas production at Ajil field  | Peak Oil News and Message Boards",
-          "url": "https://peakoil.com/production/iraq-signs-25-year-deal-to-boost-oil-gas-production-at-ajil-field",
-          "source": "peakoil.com",
-          "publishedAt": "2026-09-13T03:00:00Z",
-          "polarity": 0.8313,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "374f96e97db19a48",
-          "storyClusterId": "story-003",
-          "title": "Era of stalled PPP projects is over - ICRC DG Ewalefoh",
-          "url": "https://thenationonlineng.net/era-of-stalled-ppp-projects-is-over-icrc-dg-ewalefoh",
-          "source": "thenationonlineng.net",
-          "publishedAt": "2026-09-13T06:15:00Z",
-          "polarity": -0.6378,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "1263557b6484ca7e",
-          "storyClusterId": "story-004",
-          "title": "Mapped : the £150bn megaproject that aims to protect Britain from energy shocks",
-          "url": "https://www.theguardian.com/business/ng-interactive/2026/sep/13/mapped-150bn-megaproject-aims-to-protect-britain-from-energy-shocks",
-          "source": "theguardian.com",
-          "publishedAt": "2026-09-13T07:15:00Z",
-          "polarity": 0.1917,
-          "sentiment": "Slightly positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "6f89def5095732a2",
-          "storyClusterId": "story-002",
-          "title": "Tech explores Argentina Patagonia for mega data centers",
-          "url": "https://cyprus-mail.com/2026/09/13/tech-explores-argentinas-patagonia-for-mega-data-centers",
-          "source": "cyprus-mail.com",
-          "publishedAt": "2026-09-13T06:00:00Z",
-          "polarity": 0.0637,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
+          "type": "no_coverage",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
-      ]
+      ],
+      "topStories": []
     },
     "barclays": {
       "companyName": "Barclays",
       "ticker": "BARC.L",
       "slug": "barclays",
-      "date": "2026-09-11",
+      "date": "2026-09-14",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 50.2,
+      "rollingScore": 50.1,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -649,10 +514,10 @@
       "companyName": "Lloyds Banking Group",
       "ticker": "LLOY.L",
       "slug": "lloyds",
-      "date": "2026-09-13",
+      "date": "2026-09-14",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 47.4,
+      "rollingScore": 47.6,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -675,10 +540,10 @@
       "companyName": "3i Group",
       "ticker": "III.L",
       "slug": "3i",
-      "date": "2026-09-12",
+      "date": "2026-09-14",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 48.8,
+      "rollingScore": 49.0,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -777,7 +642,7 @@
       "companyName": "Glencore",
       "ticker": "GLEN.L",
       "slug": "glencore",
-      "date": "2026-09-13",
+      "date": "2026-09-14",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 49.7,
@@ -829,10 +694,10 @@
       "companyName": "Airtel Africa PLC",
       "ticker": "AAF.L",
       "slug": "airtel-africa",
-      "date": "2026-09-13",
+      "date": "2026-09-14",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 49.1,
+      "rollingScore": 49.2,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -855,7 +720,7 @@
       "companyName": "Alliance Witan PLC",
       "ticker": "ALW.L",
       "slug": "alliance-witan",
-      "date": "2026-09-13",
+      "date": "2026-09-14",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 49.9,
@@ -933,166 +798,53 @@
       "companyName": "Antofagasta PLC",
       "ticker": "ANTO.L",
       "slug": "antofagasta",
-      "date": "2026-09-09",
-      "dailyScore": 45.5,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 46.9,
-      "confidence": 47.3,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "storyCount": 4,
-      "sourceCount": 4,
-      "changeFromPreviousScoredDay": 14.2,
+      "date": "2026-09-14",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 48.1,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "sentiment_jump",
-          "direction": "positive",
-          "severity": "high",
+          "type": "no_coverage",
+          "direction": "neutral",
+          "severity": "low",
           "status": "calculated",
-          "detail": "Daily score increased by 14.2 points",
-          "evidenceArticleIds": [
-            "6ed1ba6f74f14dd6",
-            "045058ac824362e3",
-            "d10eea309031940e",
-            "d215c2d6b6c175a5"
-          ]
-        },
-        {
-          "type": "high_disagreement",
-          "direction": "mixed",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "Positive and negative coverage is unusually dispersed",
-          "evidenceArticleIds": [
-            "6ed1ba6f74f14dd6",
-            "045058ac824362e3",
-            "d10eea309031940e",
-            "d215c2d6b6c175a5"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "6ed1ba6f74f14dd6",
-          "storyClusterId": "story-002",
-          "title": "Cobre Limited ( ASX : CBE ) Third - Party Ore to Boost Copper Output and Cash Flow",
-          "url": "https://www.abnnewswire.net/press/en/143113/Cobre-Limited-%28ASX-CBE%29-Third-Party-Ore-to-Boost-Copper-Output-and-Cash-Flow.html",
-          "source": "abnnewswire.net",
-          "publishedAt": "2026-09-09T03:15:00Z",
-          "polarity": 0.9361,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "045058ac824362e3",
-          "storyClusterId": "story-004",
-          "title": "European Stocks Tumble As Middle East Tensions Lift Oil",
-          "url": "https://www.finanzen.ch/nachrichten/aktien/european-stocks-tumble-as-middle-east-tensions-lift-oil-1036533237",
-          "source": "finanzen.ch",
-          "publishedAt": "2026-09-09T17:45:00Z",
-          "polarity": -0.9266,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "d10eea309031940e",
-          "storyClusterId": "story-003",
-          "title": "Copper Hits Record Highs While Smelters Lose Money on Every Ton",
-          "url": "https://oilprice.com/Metals/Commodities/Copper-Hits-Record-Highs-While-Smelters-Lose-Money-on-Every-Ton.html",
-          "source": "oilprice.com",
-          "publishedAt": "2026-09-09T16:45:00Z",
-          "polarity": -0.9138,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "d215c2d6b6c175a5",
-          "storyClusterId": "story-001",
-          "title": "Marimaca hits thick copper - silver zone at Pampa Medina in Chile",
-          "url": "https://www.mining.com/marimaca-hits-thick-copper-silver-zone-at-pampa-medina-in-chile",
-          "source": "mining.com",
-          "publishedAt": "2026-09-09T00:15:00Z",
-          "polarity": 0.3686,
-          "sentiment": "Positive",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "associated-british-foods": {
       "companyName": "Associated British Foods PLC",
       "ticker": "ABF.L",
       "slug": "associated-british-foods",
-      "date": "2026-09-11",
-      "dailyScore": 54.8,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.3,
-      "confidence": 38.3,
+      "date": "2026-09-14",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 50.2,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 4,
-      "sourceCount": 7,
-      "changeFromPreviousScoredDay": 20.3,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 38.3",
-          "evidenceArticleIds": [
-            "b8260ddd09ccd397",
-            "7638f4698cb1b7e0",
-            "c5fbb68a664e5b58",
-            "a43aaa014f7946c9"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "b8260ddd09ccd397",
-          "storyClusterId": "story-004",
-          "title": "Primark announces plans to launch new home delivery service",
-          "url": "https://www.thisiswiltshire.co.uk/news/26540520.primark-announces-plans-launch-new-home-delivery-service",
-          "source": "thisiswiltshire.co.uk",
-          "publishedAt": "2026-09-11T14:30:00Z",
-          "polarity": 0.2817,
-          "sentiment": "Positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "7638f4698cb1b7e0",
-          "storyClusterId": "story-002",
-          "title": "Primark is planning to launch home delivery for first time",
-          "url": "https://www.chardandilminsternews.co.uk/news/26540278.primark-planning-launch-home-delivery-first-time",
-          "source": "chardandilminsternews.co.uk",
-          "publishedAt": "2026-09-11T09:00:00Z",
-          "polarity": 0.1331,
-          "sentiment": "Slightly positive",
-          "publisherCount": 4
-        },
-        {
-          "id": "c5fbb68a664e5b58",
-          "storyClusterId": "story-001",
-          "title": "As High Street heavyweights feel the heat , the message to Labour is clear ... do no more harm ! ALEX BRUMMER",
-          "url": "https://www.dailymail.com/money/markets/article-16121507/As-High-Street-heavyweights-feel-heat-message-Labour-clear-no-harm-ALEX-BRUMMER.html",
-          "source": "dailymail.com",
-          "publishedAt": "2026-09-11T01:15:00Z",
-          "polarity": 0.1209,
-          "sentiment": "Slightly positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "a43aaa014f7946c9",
-          "storyClusterId": "story-003",
-          "title": "Hot summer hits Twinings sales",
-          "url": "https://www.beveragedaily.com/Article/2026/09/10/hot-summer-hits-twinings-sales",
-          "source": "beveragedaily.com",
-          "publishedAt": "2026-09-11T09:45:00Z",
-          "polarity": 0.0412,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "auto-trader": {
       "companyName": "Auto Trader Group PLC",
@@ -1124,123 +876,33 @@
       "companyName": "Aviva PLC",
       "ticker": "AV.L",
       "slug": "aviva",
-      "date": "2026-09-12",
-      "dailyScore": 32.2,
-      "dailyLabel": "Negative",
-      "rollingScore": 48.9,
-      "confidence": 53.2,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "storyCount": 6,
-      "sourceCount": 6,
-      "changeFromPreviousScoredDay": -30.1,
+      "date": "2026-09-14",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 49.1,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "sentiment_drop",
-          "direction": "negative",
-          "severity": "high",
+          "type": "no_coverage",
+          "direction": "neutral",
+          "severity": "low",
           "status": "calculated",
-          "detail": "Daily score decreased by 30.1 points",
-          "evidenceArticleIds": [
-            "239684798629c1d0",
-            "3b69553ecdeacfbb",
-            "9257c66641c88c30",
-            "3ea3d4af74cb6960",
-            "0c8af800230cf6ba"
-          ]
-        },
-        {
-          "type": "bad_press",
-          "direction": "negative",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "Daily press score is 32.2",
-          "evidenceArticleIds": [
-            "239684798629c1d0",
-            "3b69553ecdeacfbb",
-            "9257c66641c88c30",
-            "3ea3d4af74cb6960",
-            "0c8af800230cf6ba"
-          ]
-        },
-        {
-          "type": "high_disagreement",
-          "direction": "mixed",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "Positive and negative coverage is unusually dispersed",
-          "evidenceArticleIds": [
-            "239684798629c1d0",
-            "3b69553ecdeacfbb",
-            "9257c66641c88c30",
-            "3ea3d4af74cb6960",
-            "0c8af800230cf6ba"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "239684798629c1d0",
-          "storyClusterId": "story-005",
-          "title": "Buildings are sinking and cracking in one of Europe largest cities",
-          "url": "https://www.yahoo.com/news/science/articles/buildings-sinking-cracking-one-europe-080029659.html",
-          "source": "yahoo.com",
-          "publishedAt": "2026-09-12T18:45:00Z",
-          "polarity": -0.9529,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "3b69553ecdeacfbb",
-          "storyClusterId": "story-002",
-          "title": "We can see into the other room : insurers face surge in subsidence claims | Insurance industry",
-          "url": "https://www.theguardian.com/business/2026/sep/12/subsidence-uk-insurers-double-surge-claims-hot-summers",
-          "source": "theguardian.com",
-          "publishedAt": "2026-09-12T11:15:00Z",
-          "polarity": -0.9168,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "9257c66641c88c30",
-          "storyClusterId": "story-004",
-          "title": "Students issued warning as bicycle thefts sweep universities across England",
-          "url": "https://www.birminghammail.co.uk/news/midlands-news/students-issued-warning-bicycle-thefts-34577080",
-          "source": "birminghammail.co.uk",
-          "publishedAt": "2026-09-12T15:30:00Z",
-          "polarity": -0.8993,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "3ea3d4af74cb6960",
-          "storyClusterId": "story-001",
-          "title": "Jerry Seinfeld Is Headlining a Portugal Comedy Festival , and the Usual Suspects Are Mad About It",
-          "url": "https://townhall.com/news/amy-curtis/2026/09/11/jerry-seinfeld-portugal-comedy-festival-n2682748",
-          "source": "townhall.com",
-          "publishedAt": "2026-09-11T23:15:00Z",
-          "polarity": -0.7197,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "0c8af800230cf6ba",
-          "storyClusterId": "story-003",
-          "title": "UK subsidence claims surge after hottest summer on record",
-          "url": "https://www.aol.co.uk/articles/uk-subsidence-claims-surge-hottest-060030000.html",
-          "source": "aol.co.uk",
-          "publishedAt": "2026-09-12T11:30:00Z",
-          "polarity": 0.7139,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "barratt-redrow": {
       "companyName": "Barratt Redrow PLC",
       "ticker": "BTRW.L",
       "slug": "barratt-redrow",
-      "date": "2026-09-13",
+      "date": "2026-09-14",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 49.6,
@@ -1266,10 +928,10 @@
       "companyName": "Beazley PLC",
       "ticker": "BEZ.L",
       "slug": "beazley",
-      "date": "2026-09-11",
+      "date": "2026-09-14",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 48.0,
+      "rollingScore": 48.5,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
