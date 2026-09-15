@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-15T20:00:57.199979Z",
+  "generatedAt": "2026-09-15T22:20:29.627796Z",
   "company": {
     "companyName": "HSBC",
     "ticker": "HSBA.L",
@@ -1204,17 +1204,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 42.5,
-    "label": "Mixed",
-    "evidenceCoverage": 72,
+    "score": 41.8,
+    "label": "Low",
+    "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.9,
+        "score": 52.9,
         "weight": 0.4,
-        "reliability": 0.3,
-        "detail": "Recency-weighted average of 6 scored days in the latest 30 calendar days; seven-day half-life."
+        "reliability": 1.0,
+        "detail": "Recency-weighted average of 42 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1389,6 +1389,108 @@
       "direction": "neutral",
       "detail": "11 stories versus trailing median 2",
       "significance": 1.51
+    }
+  ],
+  "persistentEvents": [
+    {
+      "id": "f2d60d0b4504dee40b9a",
+      "type": "acquisition",
+      "title": "Hsbc Holdings PLC Acquires New Stake in Sally Beauty Holdings , Inc . $SBH",
+      "date": "2026-08-30",
+      "status": "pending_review",
+      "reviewDate": "2027-02-26",
+      "direction": "Positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://www.themarketsdaily.com/2026/08/30/hsbc-holdings-plc-acquires-new-stake-in-sally-beauty-holdings-inc-sbh.html",
+          "publisher": "themarketsdaily.com",
+          "date": "2026-08-30"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
+    {
+      "id": "059ef5e5c7dcca685086",
+      "type": "acquisition",
+      "title": "Hsbc Holdings PLC Acquires Shares of 846 , 534 The Sherwin - Williams Company $SHW",
+      "date": "2026-08-26",
+      "status": "pending_review",
+      "reviewDate": "2027-02-22",
+      "direction": "Neutral / mixed",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://www.themarketsdaily.com/2026/08/26/hsbc-holdings-plc-acquires-shares-of-846534-the-sherwin-williams-company-shw.html",
+          "publisher": "themarketsdaily.com",
+          "date": "2026-08-26"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
+    {
+      "id": "4a3cbbd15d51b58a3fc0",
+      "type": "acquisition",
+      "title": "Hsbc Holdings PLC Acquires Shares of 12 , 324 Somnigroup International Inc . $SGI",
+      "date": "2026-07-14",
+      "status": "pending_review",
+      "reviewDate": "2027-01-10",
+      "direction": "Neutral / mixed",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://www.themarketsdaily.com/2026/07/14/hsbc-holdings-plc-acquires-shares-of-12324-somnigroup-international-inc-sgi.html",
+          "publisher": "themarketsdaily.com",
+          "date": "2026-07-14"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
+    {
+      "id": "9b939126cdf90ca89fee",
+      "type": "acquisition",
+      "title": "Hsbc Holdings PLC Acquires 26 , 129 Shares of Dynatrace , Inc . $DT",
+      "date": "2026-07-09",
+      "status": "pending_review",
+      "reviewDate": "2027-01-05",
+      "direction": "Neutral / mixed",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://www.themarketsdaily.com/2026/07/09/hsbc-holdings-plc-acquires-26129-shares-of-dynatrace-inc-dt.html",
+          "publisher": "themarketsdaily.com",
+          "date": "2026-07-09"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
+    {
+      "id": "13979d77c204477007a7",
+      "type": "acquisition",
+      "title": "Hsbc Holdings PLC Acquires New Stake in Casey General Stores , Inc . $CASY",
+      "date": "2026-06-30",
+      "status": "pending_review",
+      "reviewDate": "2026-12-27",
+      "direction": "Slightly positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://www.tickerreport.com/banking-finance/13490270/hsbc-holdings-plc-acquires-new-stake-in-caseys-general-stores-inc-casy.html",
+          "publisher": "tickerreport.com",
+          "date": "2026-06-30"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
     }
   ]
 }

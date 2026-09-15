@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-15T20:00:57.199979Z",
+  "generatedAt": "2026-09-15T22:20:29.627796Z",
   "company": {
     "companyName": "Coca-Cola HBC AG",
     "ticker": "CCH.L",
@@ -722,15 +722,15 @@
   "overallConfidence": {
     "score": 44.3,
     "label": "Mixed",
-    "evidenceCoverage": 40,
+    "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 42.2,
+        "score": 44.3,
         "weight": 0.4,
-        "reliability": 0.4,
-        "detail": "Recency-weighted average of 8 scored days in the latest 30 calendar days; seven-day half-life."
+        "reliability": 1.0,
+        "detail": "Recency-weighted average of 25 scored days in the latest 90 calendar days; 30-day half-life."
       }
     ],
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
@@ -784,6 +784,28 @@
       "direction": "Neutral / mixed",
       "detail": null,
       "significance": 0.188
+    }
+  ],
+  "persistentEvents": [
+    {
+      "id": "3617b1701ae47c22ec3d",
+      "type": "acquisition",
+      "title": "Coca - Cola HBC Says Egypt Is Shifting From Acquisition Story to Growth Engine",
+      "date": "2026-07-09",
+      "status": "pending_review",
+      "reviewDate": "2027-01-05",
+      "direction": "Positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/coca-cola-hbc-says-egypt-170543459.html",
+          "publisher": "finance.yahoo.com",
+          "date": "2026-07-09"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
     }
   ]
 }

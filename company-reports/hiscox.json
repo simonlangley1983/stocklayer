@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-15T20:00:57.199979Z",
+  "generatedAt": "2026-09-15T22:20:29.627796Z",
   "company": {
     "companyName": "Hiscox Ltd",
     "ticker": "HSX.L",
@@ -762,17 +762,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 43.2,
+    "score": 42.4,
     "label": "Mixed",
-    "evidenceCoverage": 71,
+    "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 47.9,
+        "score": 48.4,
         "weight": 0.4,
-        "reliability": 0.45,
-        "detail": "Recency-weighted average of 9 scored days in the latest 30 calendar days; seven-day half-life."
+        "reliability": 1.0,
+        "detail": "Recency-weighted average of 33 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -895,5 +895,6 @@
       "detail": "Daily score increased by 13.2 points",
       "significance": 0.779
     }
-  ]
+  ],
+  "persistentEvents": []
 }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-15T20:00:57.199979Z",
+  "generatedAt": "2026-09-15T22:20:29.627796Z",
   "company": {
     "companyName": "BAE Systems",
     "ticker": "BA.L",
@@ -780,17 +780,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 49.5,
+    "score": 49.2,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 55.2,
+        "score": 54.6,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 21 scored days in the latest 30 calendar days; seven-day half-life."
+        "detail": "Recency-weighted average of 52 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -912,6 +912,88 @@
       "direction": "mixed",
       "detail": "Positive and negative coverage is unusually dispersed",
       "significance": 1.264
+    }
+  ],
+  "persistentEvents": [
+    {
+      "id": "bfc66399b5e745ae2e9d",
+      "type": "contract",
+      "title": "BAE Systems wins $149 . 8m contract for USS Boxer maintenance and repairs",
+      "date": "2026-08-28",
+      "status": "pending_review",
+      "reviewDate": "2027-02-24",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://www.naval-technology.com/news/bae-systems-uss-boxer",
+          "publisher": "naval-technology.com",
+          "date": "2026-08-28"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
+    {
+      "id": "b6b54d3c2b2cf5af32f5",
+      "type": "contract",
+      "title": "BAE Systems Wins $150M USS Boxer Navy Contract",
+      "date": "2026-08-12",
+      "status": "pending_review",
+      "reviewDate": "2027-02-08",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://www.executivebiz.com/articles/bae-systems-uss-boxer-navy-maintenance-contract",
+          "publisher": "executivebiz.com",
+          "date": "2026-08-12"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
+    {
+      "id": "1c25b2efe5a166fabbf9",
+      "type": "contract",
+      "title": "BAE Systems wins $181m contract to maintain Royal Navy torpedoes",
+      "date": "2026-08-05",
+      "status": "pending_review",
+      "reviewDate": "2027-02-01",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://www.naval-technology.com/news/bae-systems-uk-mod-torpedoes",
+          "publisher": "naval-technology.com",
+          "date": "2026-08-05"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
+    {
+      "id": "63fd68427487c8ed994b",
+      "type": "contract",
+      "title": "BAE Systems wins $535m contract for US Army M109A7 howitzers",
+      "date": "2026-06-17",
+      "status": "pending_review",
+      "reviewDate": "2026-12-14",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://www.army-technology.com/news/bae-systems-m109a7-paladin-2",
+          "publisher": "army-technology.com",
+          "date": "2026-06-17"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
     }
   ]
 }

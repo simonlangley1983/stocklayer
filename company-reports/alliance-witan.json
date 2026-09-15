@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-15T20:00:57.199979Z",
+  "generatedAt": "2026-09-15T22:20:29.627796Z",
   "company": {
     "companyName": "Alliance Witan PLC",
     "ticker": "ALW.L",
@@ -914,17 +914,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 52.7,
+    "score": 53.3,
     "label": "Mixed",
-    "evidenceCoverage": 50,
+    "evidenceCoverage": 72,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 49.9,
+        "score": 50.5,
         "weight": 0.4,
-        "reliability": 0.25,
-        "detail": "Recency-weighted average of 5 scored days in the latest 30 calendar days; seven-day half-life."
+        "reliability": 0.8,
+        "detail": "Recency-weighted average of 16 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "themes",
@@ -985,5 +985,6 @@
       "detail": null,
       "significance": 0.159
     }
-  ]
+  ],
+  "persistentEvents": []
 }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-15T20:00:57.199979Z",
+  "generatedAt": "2026-09-15T22:20:29.627796Z",
   "company": {
     "companyName": "Centrica PLC",
     "ticker": "CNA.L",
@@ -834,17 +834,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 37.9,
+    "score": 39.1,
     "label": "Low",
-    "evidenceCoverage": 79,
+    "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 41.6,
+        "score": 46.2,
         "weight": 0.4,
-        "reliability": 0.6,
-        "detail": "Recency-weighted average of 12 scored days in the latest 30 calendar days; seven-day half-life."
+        "reliability": 1.0,
+        "detail": "Recency-weighted average of 37 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -966,6 +966,28 @@
       "direction": "Neutral / mixed",
       "detail": null,
       "significance": 0.201
+    }
+  ],
+  "persistentEvents": [
+    {
+      "id": "483536d79ba401774db6",
+      "type": "acquisition",
+      "title": "Centrica ( LON : CNA ) Insider Acquires £150 . 92 in Stock",
+      "date": "2026-08-14",
+      "status": "pending_review",
+      "reviewDate": "2027-02-10",
+      "direction": "Neutral / mixed",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://www.dailypolitical.com/2026/08/13/centrica-loncna-insider-acquires-150-92-in-stock.html",
+          "publisher": "dailypolitical.com",
+          "date": "2026-08-14"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
     }
   ]
 }

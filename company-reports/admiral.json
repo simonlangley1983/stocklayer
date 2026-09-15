@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-15T20:00:57.199979Z",
+  "generatedAt": "2026-09-15T22:20:29.627796Z",
   "company": {
     "companyName": "Admiral Group PLC",
     "ticker": "ADM.L",
@@ -672,10 +672,18 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 33.3,
-    "label": "Low",
-    "evidenceCoverage": 100,
+    "score": 50.2,
+    "label": "Mixed",
+    "evidenceCoverage": 49,
     "components": [
+      {
+        "key": "press",
+        "label": "Press sentiment",
+        "score": 65.0,
+        "weight": 0.4,
+        "reliability": 0.05,
+        "detail": "Recency-weighted average of 1 scored days in the latest 90 calendar days; 30-day half-life."
+      },
       {
         "key": "annual_tone",
         "label": "Annual-report tone",
@@ -707,5 +715,6 @@
       "detail": null,
       "significance": 1.05
     }
-  ]
+  ],
+  "persistentEvents": []
 }

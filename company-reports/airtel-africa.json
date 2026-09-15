@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-15T20:00:57.199979Z",
+  "generatedAt": "2026-09-15T22:20:29.627796Z",
   "company": {
     "companyName": "Airtel Africa PLC",
     "ticker": "AAF.L",
@@ -1196,17 +1196,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 50.9,
+    "score": 53.6,
     "label": "Mixed",
-    "evidenceCoverage": 78,
+    "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 46.3,
+        "score": 52.9,
         "weight": 0.4,
-        "reliability": 0.45,
-        "detail": "Recency-weighted average of 9 scored days in the latest 30 calendar days; seven-day half-life."
+        "reliability": 1.0,
+        "detail": "Recency-weighted average of 36 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1390,6 +1390,28 @@
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
+    }
+  ],
+  "persistentEvents": [
+    {
+      "id": "511c76c4bdd764d66d40",
+      "type": "clinical",
+      "title": "Airtel Africa Wins united kingdom Court Approval For Capital Reserve Reduction , Boosting Shareholder Distribution Capacity",
+      "date": "2026-07-24",
+      "status": "pending_review",
+      "reviewDate": "2027-01-20",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://naija247news.com/airtel-africa-wins-uk-court-approval-for-capital-reserve-reduction-boosting-shareholder-distribution-capacity",
+          "publisher": "naija247news.com",
+          "date": "2026-07-24"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-15T20:00:57.199979Z",
+  "generatedAt": "2026-09-15T22:20:29.627796Z",
   "company": {
     "companyName": "Intermediate Capital Group PLC",
     "ticker": "ICG.L",
@@ -1306,17 +1306,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 48.4,
+    "score": 47.7,
     "label": "Mixed",
-    "evidenceCoverage": 66,
+    "evidenceCoverage": 86,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 56.6,
+        "score": 55.3,
         "weight": 0.4,
-        "reliability": 0.15,
-        "detail": "Recency-weighted average of 3 scored days in the latest 30 calendar days; seven-day half-life."
+        "reliability": 0.65,
+        "detail": "Recency-weighted average of 13 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1430,5 +1430,6 @@
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
     }
-  ]
+  ],
+  "persistentEvents": []
 }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-15T20:00:57.199979Z",
+  "generatedAt": "2026-09-15T22:20:29.627796Z",
   "company": {
     "companyName": "Unilever",
     "ticker": "ULVR.L",
@@ -715,17 +715,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 43.6,
+    "score": 46.2,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 43.8,
+        "score": 48.8,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 20 scored days in the latest 30 calendar days; seven-day half-life."
+        "detail": "Recency-weighted average of 58 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -827,6 +827,48 @@
       "direction": "positive",
       "detail": "Daily score increased by 15.3 points",
       "significance": 1.52
+    }
+  ],
+  "persistentEvents": [
+    {
+      "id": "4849bbfe3ae82317a807",
+      "type": "regulatory_legal",
+      "title": "Ben & Jerry board lawsuit narrowed ; Magnum replaces Unilever",
+      "date": "2026-08-27",
+      "status": "pending_review",
+      "reviewDate": "2027-02-23",
+      "direction": "Very negative",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://www.foodnavigator.com/Article/2026/08/27/ben-jerrys-board-lawsuit-narrowed-magnum-replaces-unilever",
+          "publisher": "foodnavigator.com",
+          "date": "2026-08-27"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
+    {
+      "id": "b90ecb430234d89b927e",
+      "type": "acquisition",
+      "title": "Unilever agrees on worker protection deal following McCormick food merger",
+      "date": "2026-08-03",
+      "status": "pending_review",
+      "reviewDate": "2027-01-30",
+      "direction": "Positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://www.foodbev.com/news/unilever-agrees-on-worker-protection-deal-following-mccormick-food-merger",
+          "publisher": "foodbev.com",
+          "date": "2026-08-03"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
     }
   ]
 }

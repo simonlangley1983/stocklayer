@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-15T20:00:57.199979Z",
+  "generatedAt": "2026-09-15T22:20:29.627796Z",
   "company": {
     "companyName": "Glencore",
     "ticker": "GLEN.L",
@@ -1213,17 +1213,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 41.9,
+    "score": 41.4,
     "label": "Low",
-    "evidenceCoverage": 88,
+    "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 49.7,
+        "score": 49.5,
         "weight": 0.4,
-        "reliability": 0.7,
-        "detail": "Recency-weighted average of 14 scored days in the latest 30 calendar days; seven-day half-life."
+        "reliability": 1.0,
+        "detail": "Recency-weighted average of 56 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1398,6 +1398,28 @@
       "direction": "Positive",
       "detail": null,
       "significance": 0.41
+    }
+  ],
+  "persistentEvents": [
+    {
+      "id": "7db67822c6136d51af83",
+      "type": "acquisition",
+      "title": "Rio Tinto acquires Aurukun bauxite project from Glencore , Mitsubishi",
+      "date": "2026-09-08",
+      "status": "pending_review",
+      "reviewDate": "2027-03-07",
+      "direction": "Slightly positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://www.mining.com/rio-tinto-acquires-aurukun-bauxite-project-from-glencore-mitsubishi",
+          "publisher": "mining.com",
+          "date": "2026-09-08"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
     }
   ]
 }

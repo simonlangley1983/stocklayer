@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-15T20:00:57.199979Z",
+  "generatedAt": "2026-09-15T22:20:29.627796Z",
   "company": {
     "companyName": "Associated British Foods PLC",
     "ticker": "ABF.L",
@@ -656,17 +656,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 47.3,
+    "score": 44.7,
     "label": "Mixed",
-    "evidenceCoverage": 57,
+    "evidenceCoverage": 95,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 50.6,
+        "score": 46.7,
         "weight": 0.4,
-        "reliability": 0.2,
-        "detail": "Recency-weighted average of 4 scored days in the latest 30 calendar days; seven-day half-life."
+        "reliability": 0.9,
+        "detail": "Recency-weighted average of 18 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -718,6 +718,28 @@
       "direction": "Positive",
       "detail": null,
       "significance": 0.369
+    }
+  ],
+  "persistentEvents": [
+    {
+      "id": "96bc051310a82b61c716",
+      "type": "acquisition",
+      "title": "ABF completes acquisition of Hovis Group Limited | Company Announcement",
+      "date": "2026-07-08",
+      "status": "pending_review",
+      "reviewDate": "2027-01-04",
+      "direction": "Slightly positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://www.investegate.co.uk/announcement/rns/associated-british-foods--abf/abf-completes-acquisition-of-hovis-group-limited-/9658235",
+          "publisher": "investegate.co.uk",
+          "date": "2026-07-08"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
     }
   ]
 }
