@@ -7,7 +7,8 @@ import json
 import re
 from functools import lru_cache
 from collections import defaultdict
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
+import hashlib
 from pathlib import Path
 from typing import Any
 
@@ -274,8 +275,8 @@ def build_overall_confidence(press: dict[str, Any], annual: dict[str, Any], as_o
             value = float(item["dailyScore"])
         except (KeyError, TypeError, ValueError):
             continue
-        if 0 <= age < 30 and 0 <= value <= 100:
-            scored_press.append((value, 0.5 ** (age / 7)))
+        if 0 <= age < 90 and 0 <= value <= 100:
+            scored_press.append((value, 0.5 ** (age / 30)))
     if scored_press:
         press_score = round(sum(value * weight for value, weight in scored_press)
                             / sum(weight for _, weight in scored_press), 1)
@@ -286,7 +287,7 @@ def build_overall_confidence(press: dict[str, Any], annual: dict[str, Any], as_o
             "score": press_score,
             "weight": 0.40,
             "reliability": round(press_reliability, 3),
-            "detail": f"Recency-weighted average of {len(scored_press)} scored days in the latest 30 calendar days; seven-day half-life.",
+            "detail": f"Recency-weighted average of {len(scored_press)} scored days in the latest 90 calendar days; 30-day half-life.",
         })
 
     annual_score = annual.get("latestPositivity")
@@ -440,6 +441,50 @@ def load_annual_reports() -> dict[str, list[dict[str, Any]]]:
     return grouped
 
 
+
+EVENT_RULES = [
+    ("acquisition", r"\b(acquisition|takeover|merger|acquires)\b", 180),
+    ("contract", r"\b(contract win|wins.*contract|loses.*contract|contract loss)\b", 180),
+    ("regulatory_legal", r"\b(lawsuit|litigation|regulatory action|antitrust|settlement)\b", 180),
+    ("clinical", r"\b(trial.*fail|fails.*trial|approval|approved|trial results)\b", 180),
+    ("financial_distress", r"\b(profit warning|insolvency|bankruptcy|debt restructuring)\b", 90),
+    ("leadership_restructuring", r"\b(restructuring|chief executive|ceo.*appoint|ceo.*resign)\b", 90),
+]
+
+def persistent_events(observations, company, previous, generated_at):
+    """Preserve sourced event candidates; classification is not a verified impact estimate."""
+    today = datetime.fromisoformat(generated_at.replace("Z", "+00:00")).date()
+    events = {e["id"]: dict(e) for e in previous if e.get("id")}
+    for observation in observations:
+        for story in observation.get("topStories", []):
+            title = str(story.get("title") or "").strip()
+            url = story.get("url")
+            if not title or not url or not headline_mentions_company(title, company):
+                continue
+            try:
+                published = datetime.fromisoformat(str(story.get("publishedAt") or observation.get("date")).replace("Z", "+00:00")).date()
+            except (ValueError, TypeError):
+                continue
+            if published > today:
+                continue
+            for kind, pattern, days in EVENT_RULES:
+                if not re.search(pattern, title, re.I):
+                    continue
+                key = hashlib.sha256((str(company.get("slug")) + kind + re.sub(r"\W+", " ", title.casefold())).encode()).hexdigest()[:20]
+                if key not in events:
+                    events[key] = {"id":key, "type":kind, "title":title, "date":str(published),
+                        "status":"pending_review", "reviewDate":str(published + timedelta(days=days)),
+                        "direction":story.get("sentiment") or "Unassessed", "significance":"Unassessed",
+                        "scoreAdjustment":0, "sources":[], "classification":"headline rule; requires verification"}
+                event = events[key]
+                if not any(source.get("url") == url for source in event["sources"]):
+                    event["sources"].append({"url":url, "publisher":story.get("source"), "date":str(published)})
+                break
+    for event in events.values():
+        event["reviewOverdue"] = event.get("status") not in {"resolved", "superseded"} and event.get("reviewDate", "9999") < str(today)
+    return sorted(events.values(), key=lambda e: (e.get("date", ""), e["id"]), reverse=True)
+
+
 def main() -> int:
     universe = read_json(UNIVERSE_PATH, {}) or {}
     sentiment_universe = read_json(SENTIMENT_UNIVERSE_PATH, {}) or {}
@@ -463,6 +508,8 @@ def main() -> int:
             annual_by_slug.get(slug, []),
             generated_at,
         )
+        previous_report = read_json(OUTPUT_DIR / f"{slug}.json", {}) or {}
+        report["persistentEvents"] = persistent_events((sentiment or {}).get("observations", []), company, previous_report.get("persistentEvents", []), generated_at)
         (OUTPUT_DIR / f"{slug}.json").write_text(
             json.dumps(report, indent=2, ensure_ascii=False) + "\n",
             encoding="utf-8",
