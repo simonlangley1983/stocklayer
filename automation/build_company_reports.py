@@ -263,10 +263,10 @@ def confidence_label(score: float | None) -> str:
     return "Low"
 
 
-def build_overall_confidence(press: dict[str, Any], annual: dict[str, Any]) -> dict[str, Any]:
+def build_overall_confidence(press: dict[str, Any], annual: dict[str, Any], as_of: str | None = None) -> dict[str, Any]:
     components: list[dict[str, Any]] = []
     # Use calendar days, not stored-row count; old coverage must expire.
-    as_of = datetime.now(timezone.utc).date()
+    as_of = datetime.fromisoformat(as_of).date() if as_of else datetime.now(timezone.utc).date()
     scored_press = []
     for item in press.get("series", []):
         try:
@@ -387,7 +387,7 @@ def build_company_report(
 ) -> dict[str, Any]:
     annual = build_annual_section(annual_reports)
     press = build_press_section(sentiment, company)
-    overall_confidence = build_overall_confidence(press, annual)
+    overall_confidence = build_overall_confidence(press, annual, generated_at)
     annual_events = [
         {
             "date": f"{item['year']}-12-31",

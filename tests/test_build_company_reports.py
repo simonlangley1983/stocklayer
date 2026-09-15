@@ -150,14 +150,14 @@ class BuildCompanyReportsTests(unittest.TestCase):
 
     def test_overall_confidence_uses_displayed_signals_and_reports_scale(self) -> None:
         press = {
-            "series": [{"dailyScore": 70} for _ in range(20)],
+            "series": [{"date": "2026-09-01", "dailyScore": 70} for _ in range(20)],
         }
         annual = {
             "latestPositivity": 65,
             "latestPositivityMethod": "lexical annual-report tone",
             "reports": [],
         }
-        confidence = build_overall_confidence(press, annual)
+        confidence = build_overall_confidence(press, annual, "2026-09-02")
         self.assertGreater(confidence["score"], 60)
         self.assertEqual(confidence["evidenceCoverage"], 100)
         self.assertEqual({item["key"] for item in confidence["components"]}, {"press", "annual_tone"})
