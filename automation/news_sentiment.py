@@ -304,7 +304,9 @@ class GdeltProvider:
                 time.sleep(self.request_delay)
         else:  # pragma: no cover - the final attempt raises before this branch
             raise RuntimeError("GDELT request retry loop ended without a response")
-        items = payload.get("articles", []) if isinstance(payload, dict) else []
+        if not isinstance(payload, dict) or not isinstance(payload.get("articles"), list):
+            raise RuntimeError("GDELT response lacks an articles list; coverage is unverified")
+        items = payload["articles"]
         return [item for item in items if isinstance(item, dict)]
 
 
@@ -821,6 +823,56 @@ def load_company_history(company: dict[str, Any], methodology_version: str) -> d
     )
 
 
+
+class GoogleNewsProvider:
+    """Public RSS discovery; headlines retain their publisher and dated evidence."""
+    name = "google-news-rss"
+
+    def __init__(self, max_records=100, deadline=None, **kwargs):
+        self.max_records = min(max_records, 100)
+        self.deadline = deadline
+        self.request_count = 0
+        self.session = make_session()
+
+    def fetch(self, company, start_utc, end_utc):
+        from email.utils import parsedate_to_datetime
+        import xml.etree.ElementTree as ET
+        if self.deadline is not None and time.monotonic() >= self.deadline:
+            raise CollectionPaused("Collection time budget reached; remaining dates will resume later")
+        aliases = company.get("aliases") or [company["companyName"]]
+        query = " OR ".join('"' + str(a).replace('"', '') + '"' for a in aliases[:4])
+        # Query a broad UTC boundary, then apply the exact London window below.
+        query += f" after:{(start_utc - timedelta(days=1)).date()} before:{(end_utc + timedelta(days=1)).date()}"
+        self.request_count += 1
+        response = self.session.get("https://news.google.com/rss/search", params={
+            "q": query, "hl": "en-GB", "gl": "GB", "ceid": "GB:en"
+        }, timeout=(10, 25))
+        response.raise_for_status()
+        document = ET.fromstring(response.content)
+        if document.tag != "rss" or document.find("channel") is None:
+            raise RuntimeError("Google News returned an invalid RSS response")
+        items = document.findall("./channel/item")
+        candidates = []
+        for item in items:
+            try:
+                published = parsedate_to_datetime(item.findtext("pubDate") or "")
+                if published.tzinfo is None:
+                    raise ValueError("Missing publication timezone")
+            except (TypeError, ValueError):
+                raise RuntimeError("Google News returned an undated article")
+            publisher = item.find("source")
+            publisher_name = publisher.text if publisher is not None else ""
+            title = item.findtext("title") or ""
+            if publisher_name and title.endswith(" - " + publisher_name):
+                title = title[:-len(" - " + publisher_name)]
+            candidates.append({"title": title, "url": item.findtext("link"),
+                "publishedAt": published.isoformat(), "language": "English",
+                "domain": domain_from_url(publisher.get("url", "")) if publisher is not None else "",
+                "description": ""})
+        # Preserve the provider cap for adaptive-window completeness detection.
+        return candidates[:self.max_records]
+
+
 def partition_candidates_by_day(
     candidates: list[dict[str, Any]], start_day: date, end_day: date
 ) -> dict[date, list[dict[str, Any]]]:
@@ -942,7 +994,10 @@ def run(args: argparse.Namespace) -> int:
     deadline = time.monotonic() + args.max_runtime_seconds if getattr(args, "max_runtime_seconds", 0) else None
     scorer: SentimentScorer | None = None
     if not args.rebuild_only:
-        provider = GdeltProvider(
+        provider_class = GoogleNewsProvider if os.environ.get("STOCKLAYER_NEWS_PROVIDER") == "google-news-rss" else GdeltProvider
+        if provider_class is GoogleNewsProvider:
+            max_records = min(max_records, 100)
+        provider = provider_class(
             rate_limit_retries=2,
             deadline=deadline,
             max_records=max_records,
@@ -998,7 +1053,7 @@ def run(args: argparse.Namespace) -> int:
             if is_backfill
             else 1
         )
-        missing_days, fetch_windows = missing_day_windows(days, observations, window_days)
+        missing_days, fetch_windows = missing_day_windows(days, [o for o in observations if not (os.environ.get("STOCKLAYER_NEWS_PROVIDER") == "google-news-rss" and o.get("coverageStatus") == "no_coverage")], window_days)
         candidates_by_day: dict[date, list[dict[str, Any]]] = {
             day: [] for day in missing_days
         }

@@ -22,6 +22,11 @@ on:
       - "tests/test_news_recovery_queue.py"
   workflow_dispatch:
     inputs:
+      news_provider:
+        description: "News discovery provider (controlled rollout)"
+        type: choice
+        options: [gdelt, google-news-rss]
+        default: gdelt
       recovery:
         description: "Resume small missing windows across the full 90-day chart period"
         type: boolean
@@ -121,6 +126,7 @@ jobs:
         id: sentiment
         shell: bash
         env:
+          STOCKLAYER_NEWS_PROVIDER: ${{ inputs.news_provider }}
           INPUT_DATE: ${{ inputs.date }}
           RECOVERY_RUN: ${{ inputs.recovery || github.event.schedule == '17 */2 * * *' }}
           RECOVERY_WINDOWS: ${{ inputs.recovery_windows }}
@@ -297,6 +303,7 @@ jobs:
         env:
           INPUT_SLUGS: ${{ matrix.slugs }}
           INPUT_BACKFILL_DAYS: ${{ inputs.backfill_days }}
+          STOCKLAYER_NEWS_PROVIDER: ${{ inputs.news_provider }}
           INPUT_DATE: ${{ inputs.date }}
         run: |
           set +e
@@ -365,6 +372,7 @@ jobs:
         shell: bash
         env:
           INPUT_BACKFILL_DAYS: ${{ inputs.backfill_days }}
+          STOCKLAYER_NEWS_PROVIDER: ${{ inputs.news_provider }}
           INPUT_DATE: ${{ inputs.date }}
         run: |
           set +e
