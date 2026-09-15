@@ -336,6 +336,7 @@ def prepare_articles(
     accepted: list[dict[str, Any]] = []
     rejected: Counter[str] = Counter()
     seen_urls: set[str] = set()
+    seen_headlines: set[tuple[str, str]] = set()
     aliases = company.get("aliases", [])
 
     for candidate in candidates:
@@ -357,6 +358,9 @@ def prepare_articles(
         description = str(candidate.get("description") or "").strip()
         text = f"{title}. {description}".strip()
         has_alias = alias_in_text(aliases, text)
+        if not has_alias:
+            rejected["missing_company_alias"] += 1
+            continue
         specific_headline_alias = alias_in_text(
             [alias for alias in aliases if len(TOKEN_RE.findall(alias.casefold())) >= 2],
             title,
@@ -371,6 +375,10 @@ def prepare_articles(
 
         domain = str(candidate.get("domain") or domain_from_url(url)).casefold()
         domain = domain.removeprefix("www.")
+        headline_key = (domain, normalise_text(title))
+        if headline_key in seen_headlines:
+            rejected["duplicate_publisher_headline"] += 1
+            continue
         company_domain = str(company.get("domain") or "").casefold().removeprefix("www.")
         first_party = bool(
             domain
@@ -392,6 +400,7 @@ def prepare_articles(
         )
         accepted[-1]["id"] = article_id(accepted[-1])
         seen_urls.add(url)
+        seen_headlines.add(headline_key)
 
     return accepted, rejected
 
