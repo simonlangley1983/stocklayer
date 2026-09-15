@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-15T19:52:41.679808Z",
+  "generatedAt": "2026-09-15T19:55:54.098122Z",
   "company": {
     "companyName": "Shell",
     "ticker": "SHEL.L",
@@ -22,9 +22,9 @@
     "periodStart": "2026-06-30",
     "periodEnd": "2026-09-14",
     "observationCount": 68,
-    "scoredDayCount": 30,
-    "latestScore": 50.3,
-    "latestScoreDate": "2026-09-12",
+    "scoredDayCount": 31,
+    "latestScore": 63.6,
+    "latestScoreDate": "2026-09-14",
     "series": [
       {
         "date": "2026-06-30",
@@ -631,12 +631,12 @@
       },
       {
         "date": "2026-09-14",
-        "dailyScore": null,
-        "rollingScore": 49.3,
-        "storyCount": 0,
-        "sourceCount": 0,
-        "confidence": 0.0,
-        "coverageStatus": "no_coverage"
+        "dailyScore": 63.6,
+        "rollingScore": 51.4,
+        "storyCount": 4,
+        "sourceCount": 4,
+        "confidence": 43.5,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -659,16 +659,6 @@
         "direction": "neutral",
         "detail": "6 stories versus trailing median 1.5",
         "significance": 0.711
-      },
-      {
-        "date": "2026-07-17",
-        "type": "press_story",
-        "title": "SHELL FORECOURT FALLOUT : Three Decades After the Corporate Conscience Revolt , Dealers Are Running Out of Fuel … and Patience – Royal Dutch Shell Plc . com",
-        "source": "royaldutchshellplc.com",
-        "url": "https://royaldutchshellplc.com/2026/07/17/shells-forecourt-fallout-three-decades-after-the-corporate-conscience-revolt-dealers-are-running-out-of-fuel-and-patience",
-        "direction": "Negative",
-        "detail": null,
-        "significance": 0.533
       },
       {
         "date": "2026-07-30",
@@ -731,14 +721,24 @@
         "significance": 1.422
       },
       {
-        "date": "2026-09-11",
-        "type": "coverage_spike",
-        "title": "Shell Nigeria Case Takes a Dramatic Turn : High Court Allows Allegations of Misleading Evidence to Be Tried – Royal Dutch Shell Plc . com",
-        "source": "royaldutchshellplc.com",
-        "url": "https://royaldutchshellplc.com/2026/09/11/shell-nigeria-case-takes-a-dramatic-turn-high-court-allows-allegations-of-misleading-evidence-to-be-tried",
-        "direction": "neutral",
-        "detail": "5 stories versus trailing median 1",
-        "significance": 0.68
+        "date": "2026-09-14",
+        "type": "press_story",
+        "title": "Gas market expected to grow by two-thirds by 2050, Shell executive says",
+        "source": "marketscreener.com",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOVVNtaW9ZRURmZ2wxUjY4U3ZDQlRrV1IxZktYejU4TEZiSXh3UDBXamw1ZC1ETWVTcVIyYWZWekFpUHFyMXl3VV9HekRfaDFaeWlUdzZpUVBaMnkzMlNseWEwVnFxVnFaVVlJMzRzTTdwR3NULWl5SjAwX2M4WmJOV1YyelQ1cm9yNThVWVJzV09laHl5YTkyalIwbXRoOVBjb3RCSmY2bTlOS1lmQkFYcUx5TEstVEROUlZvVnI5YS0?oc=5",
+        "direction": "Very positive",
+        "detail": null,
+        "significance": 1.204
+      },
+      {
+        "date": "2026-09-14",
+        "type": "press_story",
+        "title": "Shell stock gains as Jefferies sticks to Buy rating and oil rally lifts shares",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNV0xyRjQxOHZuR294MDRlNWc3OWg4cXFNbWYtUUtPT1lVTDJHVHlVOFdHYVFndW4yQVJ0bFRRYllfNURvai1URktTdlVHbWgzbjNIMUJNMkgxY3RfR1pIWlNBeU14enF2U01LYktQNEMxdmxIWDhJZW1FYzdkQ3FVQ0dDb0o3cFdZZml6WmtrdUhkUnhyaFp0X0M1U21rR2t5eTFGOFBYU3FKWEpHeUM3RnJZWTF5TUVmME42dHphQXZPOTlweU5Udllld3B6OTg?oc=5",
+        "direction": "Very positive",
+        "detail": null,
+        "significance": 0.866
       }
     ]
   },
@@ -825,17 +825,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 43.4,
+    "score": 44.5,
     "label": "Mixed",
-    "evidenceCoverage": 92,
+    "evidenceCoverage": 95,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 48.9,
+        "score": 51.2,
         "weight": 0.4,
-        "reliability": 0.85,
-        "detail": "Recency-weighted average of 17 scored days in the latest 30 calendar days; seven-day half-life."
+        "reliability": 0.9,
+        "detail": "Recency-weighted average of 18 scored days in the latest 30 calendar days; seven-day half-life."
       },
       {
         "key": "annual_tone",
@@ -877,16 +877,6 @@
       "direction": "neutral",
       "detail": "6 stories versus trailing median 1.5",
       "significance": 0.711
-    },
-    {
-      "date": "2026-07-17",
-      "type": "press_story",
-      "title": "SHELL FORECOURT FALLOUT : Three Decades After the Corporate Conscience Revolt , Dealers Are Running Out of Fuel … and Patience – Royal Dutch Shell Plc . com",
-      "source": "royaldutchshellplc.com",
-      "url": "https://royaldutchshellplc.com/2026/07/17/shells-forecourt-fallout-three-decades-after-the-corporate-conscience-revolt-dealers-are-running-out-of-fuel-and-patience",
-      "direction": "Negative",
-      "detail": null,
-      "significance": 0.533
     },
     {
       "date": "2026-07-30",
@@ -949,14 +939,24 @@
       "significance": 1.422
     },
     {
-      "date": "2026-09-11",
-      "type": "coverage_spike",
-      "title": "Shell Nigeria Case Takes a Dramatic Turn : High Court Allows Allegations of Misleading Evidence to Be Tried – Royal Dutch Shell Plc . com",
-      "source": "royaldutchshellplc.com",
-      "url": "https://royaldutchshellplc.com/2026/09/11/shell-nigeria-case-takes-a-dramatic-turn-high-court-allows-allegations-of-misleading-evidence-to-be-tried",
-      "direction": "neutral",
-      "detail": "5 stories versus trailing median 1",
-      "significance": 0.68
+      "date": "2026-09-14",
+      "type": "press_story",
+      "title": "Gas market expected to grow by two-thirds by 2050, Shell executive says",
+      "source": "marketscreener.com",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOVVNtaW9ZRURmZ2wxUjY4U3ZDQlRrV1IxZktYejU4TEZiSXh3UDBXamw1ZC1ETWVTcVIyYWZWekFpUHFyMXl3VV9HekRfaDFaeWlUdzZpUVBaMnkzMlNseWEwVnFxVnFaVVlJMzRzTTdwR3NULWl5SjAwX2M4WmJOV1YyelQ1cm9yNThVWVJzV09laHl5YTkyalIwbXRoOVBjb3RCSmY2bTlOS1lmQkFYcUx5TEstVEROUlZvVnI5YS0?oc=5",
+      "direction": "Very positive",
+      "detail": null,
+      "significance": 1.204
+    },
+    {
+      "date": "2026-09-14",
+      "type": "press_story",
+      "title": "Shell stock gains as Jefferies sticks to Buy rating and oil rally lifts shares",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNV0xyRjQxOHZuR294MDRlNWc3OWg4cXFNbWYtUUtPT1lVTDJHVHlVOFdHYVFndW4yQVJ0bFRRYllfNURvai1URktTdlVHbWgzbjNIMUJNMkgxY3RfR1pIWlNBeU14enF2U01LYktQNEMxdmxIWDhJZW1FYzdkQ3FVQ0dDb0o3cFdZZml6WmtrdUhkUnhyaFp0X0M1U21rR2t5eTFGOFBYU3FKWEpHeUM3RnJZWTF5TUVmME42dHphQXZPOTlweU5Udllld3B6OTg?oc=5",
+      "direction": "Very positive",
+      "detail": null,
+      "significance": 0.866
     }
   ]
 }

@@ -3,7 +3,7 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-09-15T19:52:39.710628Z",
+  "generatedAt": "2026-09-15T19:55:52.095873Z",
   "asOfDate": "2026-09-14",
   "companyCount": 100,
   "companies": {
@@ -43,22 +43,22 @@
       "ticker": "SHEL.L",
       "slug": "shell",
       "date": "2026-09-14",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 49.3,
-      "confidence": 0.0,
-      "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "dailyScore": 63.6,
+      "dailyLabel": "Positive",
+      "rollingScore": 51.4,
+      "confidence": 43.5,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "storyCount": 4,
+      "sourceCount": 4,
+      "changeFromPreviousScoredDay": 13.3,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "collection_degraded",
           "direction": "neutral",
-          "severity": "low",
+          "severity": "medium",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "The provider result ceiling was reached for this day"
         }
       ]
     },
@@ -66,23 +66,30 @@
       "companyName": "HSBC",
       "ticker": "HSBA.L",
       "slug": "hsbc",
-      "date": "2026-09-12",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.2,
-      "confidence": 0.0,
-      "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "date": "2026-09-14",
+      "dailyScore": 48.2,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.8,
+      "confidence": 58.6,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "storyCount": 11,
+      "sourceCount": 6,
+      "changeFromPreviousScoredDay": -4.6,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "coverage_spike",
           "direction": "neutral",
-          "severity": "low",
+          "severity": "medium",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "11 stories versus trailing median 2"
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day"
         }
       ]
     },
@@ -91,22 +98,22 @@
       "ticker": "ULVR.L",
       "slug": "unilever",
       "date": "2026-09-14",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 45.2,
-      "confidence": 0.0,
-      "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "dailyScore": 56.0,
+      "dailyLabel": "Slightly positive",
+      "rollingScore": 47.1,
+      "confidence": 72.1,
+      "confidenceBand": "high",
+      "coverageStatus": "ok",
+      "storyCount": 22,
+      "sourceCount": 19,
+      "changeFromPreviousScoredDay": 15.3,
       "flags": [
         {
-          "type": "no_coverage",
-          "direction": "neutral",
-          "severity": "low",
+          "type": "sentiment_jump",
+          "direction": "positive",
+          "severity": "high",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "Daily score increased by 15.3 points"
         }
       ]
     },
@@ -331,22 +338,29 @@
       "ticker": "BARC.L",
       "slug": "barclays",
       "date": "2026-09-14",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.1,
-      "confidence": 0.0,
+      "dailyScore": 38.2,
+      "dailyLabel": "Negative",
+      "rollingScore": 48.6,
+      "confidence": 27.3,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 2,
+      "sourceCount": 2,
+      "changeFromPreviousScoredDay": -14.4,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "Confidence is 27.3"
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day"
         }
       ]
     },
@@ -762,7 +776,7 @@
       "companyName": "BT Group PLC",
       "ticker": "BT-A.L",
       "slug": "bt",
-      "date": "2026-09-09",
+      "date": "2026-09-14",
       "dailyScore": null,
       "dailyLabel": "No coverage",
       "rollingScore": 50.0,

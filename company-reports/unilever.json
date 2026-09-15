@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-15T19:52:41.679808Z",
+  "generatedAt": "2026-09-15T19:55:54.098122Z",
   "company": {
     "companyName": "Unilever",
     "ticker": "ULVR.L",
@@ -22,9 +22,9 @@
     "periodStart": "2026-07-10",
     "periodEnd": "2026-09-14",
     "observationCount": 58,
-    "scoredDayCount": 57,
-    "latestScore": 40.7,
-    "latestScoreDate": "2026-09-13",
+    "scoredDayCount": 58,
+    "latestScore": 56.0,
+    "latestScoreDate": "2026-09-14",
     "series": [
       {
         "date": "2026-07-10",
@@ -541,12 +541,12 @@
       },
       {
         "date": "2026-09-14",
-        "dailyScore": null,
-        "rollingScore": 45.2,
-        "storyCount": 0,
-        "sourceCount": 0,
-        "confidence": 0.0,
-        "coverageStatus": "no_coverage"
+        "dailyScore": 56.0,
+        "rollingScore": 47.1,
+        "storyCount": 22,
+        "sourceCount": 19,
+        "confidence": 72.1,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -609,6 +609,26 @@
         "direction": "Very positive",
         "detail": null,
         "significance": 1.079
+      },
+      {
+        "date": "2026-09-14",
+        "type": "sentiment_jump",
+        "title": "Unilever stock heads into the open after a modest gain in London",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOWFI1dnZMcklUNlhGUlg4TkIwSVMyQlRmb1p1bDlnLUlkMGg3dVVtXzF2Nmw3aU55MDYyOUhlU0Z1amoycV9IcFFxd2lvLVI0RUpZOURjY0ZWVTJUTTNqWkt2bzlMbTVfdzFSRV80eDAzRHlzbF9KM1hZTXFlTWF1bWIwazA5UjRLTkNQTUNqamg2N1gyLVRlSnpaaXlOY1BOS2dTOXdFUjh3TUxxVldmME9pLW5acGhOd1N6R0hZVWRDdHdWWHc?oc=5",
+        "direction": "positive",
+        "detail": "Daily score increased by 15.3 points",
+        "significance": 1.533
+      },
+      {
+        "date": "2026-09-14",
+        "type": "sentiment_jump",
+        "title": "Unilever climbs Monday, outperforms market",
+        "source": "marketwatch.com",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOeGhET2lUcXlnS1cxakVjQnVLYmRWLUxYX3JmdE1XUjg4R0k2c3lTclVDRERXSnZFOTgtV1FPQ3JZMDl2Wkdla01Sa0RlNV9QQ296dnlhMlhhNlVSazE5c0hzc0QzZ0gzYlU4OWFOZnFJS1NSd09BQTF4VmROeWlZeVZ1Y1NGdUNmUTJxa3VnRUJoQzNiZkExRFJBWm5PdEo2YXRsNDEwVlpETW11R0o0Ykg2bENtbUlNXy1R?oc=5",
+        "direction": "positive",
+        "detail": "Daily score increased by 15.3 points",
+        "significance": 1.52
       }
     ]
   },
@@ -695,17 +715,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 42.5,
+    "score": 43.6,
     "label": "Mixed",
-    "evidenceCoverage": 97,
+    "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 41.7,
+        "score": 43.8,
         "weight": 0.4,
-        "reliability": 0.95,
-        "detail": "Recency-weighted average of 19 scored days in the latest 30 calendar days; seven-day half-life."
+        "reliability": 1.0,
+        "detail": "Recency-weighted average of 20 scored days in the latest 30 calendar days; seven-day half-life."
       },
       {
         "key": "annual_tone",
@@ -787,6 +807,26 @@
       "direction": "Very positive",
       "detail": null,
       "significance": 1.079
+    },
+    {
+      "date": "2026-09-14",
+      "type": "sentiment_jump",
+      "title": "Unilever stock heads into the open after a modest gain in London",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOWFI1dnZMcklUNlhGUlg4TkIwSVMyQlRmb1p1bDlnLUlkMGg3dVVtXzF2Nmw3aU55MDYyOUhlU0Z1amoycV9IcFFxd2lvLVI0RUpZOURjY0ZWVTJUTTNqWkt2bzlMbTVfdzFSRV80eDAzRHlzbF9KM1hZTXFlTWF1bWIwazA5UjRLTkNQTUNqamg2N1gyLVRlSnpaaXlOY1BOS2dTOXdFUjh3TUxxVldmME9pLW5acGhOd1N6R0hZVWRDdHdWWHc?oc=5",
+      "direction": "positive",
+      "detail": "Daily score increased by 15.3 points",
+      "significance": 1.533
+    },
+    {
+      "date": "2026-09-14",
+      "type": "sentiment_jump",
+      "title": "Unilever climbs Monday, outperforms market",
+      "source": "marketwatch.com",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOeGhET2lUcXlnS1cxakVjQnVLYmRWLUxYX3JmdE1XUjg4R0k2c3lTclVDRERXSnZFOTgtV1FPQ3JZMDl2Wkdla01Sa0RlNV9QQ296dnlhMlhhNlVSazE5c0hzc0QzZ0gzYlU4OWFOZnFJS1NSd09BQTF4VmROeWlZeVZ1Y1NGdUNmUTJxa3VnRUJoQzNiZkExRFJBWm5PdEo2YXRsNDEwVlpETW11R0o0Ykg2bENtbUlNXy1R?oc=5",
+      "direction": "positive",
+      "detail": "Daily score increased by 15.3 points",
+      "significance": 1.52
     }
   ]
 }
