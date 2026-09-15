@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "20 0,6,12,18 * * *"
   workflow_dispatch:
+    inputs:
+      extraction_only:
+        description: "Extract verified indexed reports without repeating the full crawl"
+        type: boolean
+        default: false
 
 concurrency:
   group: annual-report-collection
@@ -36,6 +41,7 @@ jobs:
         run: python scripts/test_annual_backfill.py
 
       - name: Monitor annual report source pages
+        if: ${{ !inputs.extraction_only }}
         run: >-
           python scripts/monitor_annual_reports.py
           --max-sources-per-company 10
