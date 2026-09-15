@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-15T13:17:07.439716Z",
+  "generatedAt": "2026-09-15T17:11:46.093377Z",
   "company": {
     "companyName": "Centrica PLC",
     "ticker": "CNA.L",
@@ -20,8 +20,8 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-11",
-    "observationCount": 68,
+    "periodEnd": "2026-09-14",
+    "observationCount": 69,
     "scoredDayCount": 37,
     "latestScore": 50.8,
     "latestScoreDate": "2026-09-11",
@@ -637,6 +637,15 @@
         "sourceCount": 1,
         "confidence": 15.2,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-14",
+        "dailyScore": null,
+        "rollingScore": 46.7,
+        "storyCount": 0,
+        "sourceCount": 0,
+        "confidence": 0.0,
+        "coverageStatus": "no_coverage"
       }
     ],
     "stories": [
@@ -825,17 +834,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 38.7,
+    "score": 37.9,
     "label": "Low",
-    "evidenceCoverage": 92,
+    "evidenceCoverage": 79,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 44.6,
+        "score": 41.6,
         "weight": 0.4,
-        "reliability": 0.85,
-        "detail": "Average of 17 scored days in the latest 30-day window."
+        "reliability": 0.6,
+        "detail": "Recency-weighted average of 12 scored days in the latest 30 calendar days; seven-day half-life."
       },
       {
         "key": "annual_tone",

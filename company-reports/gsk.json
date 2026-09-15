@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-15T13:17:07.439716Z",
+  "generatedAt": "2026-09-15T17:11:46.093377Z",
   "company": {
     "companyName": "GSK",
     "ticker": "GSK.L",
@@ -1141,17 +1141,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 51.7,
+    "score": 51.6,
     "label": "Mixed",
-    "evidenceCoverage": 100,
+    "evidenceCoverage": 92,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
         "score": 53.8,
         "weight": 0.4,
-        "reliability": 1.0,
-        "detail": "Average of 28 scored days in the latest 30-day window."
+        "reliability": 0.8,
+        "detail": "Recency-weighted average of 16 scored days in the latest 30 calendar days; seven-day half-life."
       },
       {
         "key": "annual_tone",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-15T13:17:07.439716Z",
+  "generatedAt": "2026-09-15T17:11:46.093377Z",
   "company": {
     "companyName": "Games Workshop Group PLC",
     "ticker": "GAW.L",
@@ -20,8 +20,8 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-15",
-    "periodEnd": "2026-09-10",
-    "observationCount": 64,
+    "periodEnd": "2026-09-14",
+    "observationCount": 65,
     "scoredDayCount": 31,
     "latestScore": 52.0,
     "latestScoreDate": "2026-09-02",
@@ -601,6 +601,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-14",
+        "dailyScore": null,
+        "rollingScore": 49.5,
+        "storyCount": 0,
+        "sourceCount": 0,
+        "confidence": 0.0,
+        "coverageStatus": "no_coverage"
       }
     ],
     "stories": [
@@ -1102,17 +1111,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 42.7,
+    "score": 42.3,
     "label": "Mixed",
-    "evidenceCoverage": 90,
+    "evidenceCoverage": 72,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 48.1,
+        "score": 45.1,
         "weight": 0.4,
-        "reliability": 0.75,
-        "detail": "Average of 15 scored days in the latest 30-day window."
+        "reliability": 0.3,
+        "detail": "Recency-weighted average of 6 scored days in the latest 30 calendar days; seven-day half-life."
       },
       {
         "key": "annual_tone",
