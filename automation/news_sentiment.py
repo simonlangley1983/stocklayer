@@ -851,7 +851,7 @@ class GoogleNewsProvider:
         aliases = company.get("aliases") or [company["companyName"]]
         query = " OR ".join('"' + str(a).replace('"', '') + '"' for a in aliases[:4])
         # Query a broad UTC boundary, then apply the exact London window below.
-        query += f" after:{(start_utc - timedelta(days=1)).date()} before:{(end_utc + timedelta(days=1)).date()}"
+        query += f" after:{start_utc.date()} before:{(end_utc + timedelta(days=1)).date()}"
         self.request_count += 1
         response = self.session.get("https://news.google.com/rss/search", params={
             "q": query, "hl": "en-GB", "gl": "GB", "ceid": "GB:en"
