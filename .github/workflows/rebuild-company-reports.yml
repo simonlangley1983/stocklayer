@@ -1,0 +1,35 @@
+name: Publish company report updates
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: publish-company-reports
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Rebuild and publish from latest committed evidence
+        shell: bash
+        run: |
+          set -e
+          git config user.name stocklayer-report-bot
+          git config user.email stocklayer-report-bot@users.noreply.github.com
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            python automation/build_company_reports.py
+            git add company-reports
+            git diff --cached --quiet || git commit -m "Publish reports from current extracted evidence"
+            if git push origin HEAD:main; then exit 0; fi
+            sleep 5
+          done
+          exit 1
