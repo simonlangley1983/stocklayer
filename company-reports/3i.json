@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-16T06:56:34.708889Z",
+  "generatedAt": "2026-09-16T07:24:16.073121Z",
   "company": {
     "companyName": "3i Group",
     "ticker": "III.L",
@@ -721,8 +721,81 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 1,
+    "reportCount": 2,
     "reports": [
+      {
+        "year": 2025,
+        "title": "3i Group Annual report and accounts 2025",
+        "url": "https://www.3i.com/media/cxwbwcdw/3i-group-annual-report-2025-interactive.pdf",
+        "sourceUrl": "https://www.3i.com/media/cxwbwcdw/3i-group-annual-report-2025-interactive.pdf",
+        "wordCount": 184452,
+        "pageCount": 220,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 12,
+            "per10kWords": 0.651
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 23,
+            "per10kWords": 1.247
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 43,
+            "per10kWords": 2.331
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 180,
+            "per10kWords": 9.759
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 29,
+            "per10kWords": 1.572
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 31,
+            "per10kWords": 1.681
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 31,
+            "per10kWords": 1.681
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 3,
+            "per10kWords": 0.163
+          }
+        ],
+        "positivityScore": 41.1,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2026,
         "title": "3i Group Annual Report and accounts FY2026",
@@ -797,15 +870,56 @@
         "positivityMethod": "lexical annual-report tone"
       }
     ],
-    "emergingKeywords": [],
+    "emergingKeywords": [
+      {
+        "key": "ai",
+        "label": "AI",
+        "mentions": 20,
+        "per10kWords": 1.684,
+        "previousPer10kWords": 0.651,
+        "changePer10kWords": 1.033
+      },
+      {
+        "key": "competition",
+        "label": "Competition",
+        "mentions": 24,
+        "per10kWords": 2.02,
+        "previousPer10kWords": 1.572,
+        "changePer10kWords": 0.448
+      },
+      {
+        "key": "china",
+        "label": "China",
+        "mentions": 2,
+        "per10kWords": 0.168,
+        "previousPer10kWords": 0.0,
+        "changePer10kWords": 0.168
+      },
+      {
+        "key": "data_center",
+        "label": "Data centres",
+        "mentions": 3,
+        "per10kWords": 0.253,
+        "previousPer10kWords": 0.163,
+        "changePer10kWords": 0.09
+      },
+      {
+        "key": "margin_pressure",
+        "label": "Margin pressure",
+        "mentions": 0,
+        "per10kWords": 0.0,
+        "previousPer10kWords": 0.0,
+        "changePer10kWords": 0.0
+      }
+    ],
     "latestPositivity": 36.7,
     "latestPositivityMethod": "lexical annual-report tone",
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 42.3,
+    "score": 44.0,
     "label": "Mixed",
-    "evidenceCoverage": 100,
+    "evidenceCoverage": 83,
     "components": [
       {
         "key": "press",
@@ -822,11 +936,28 @@
         "weight": 0.35,
         "reliability": 1.0,
         "detail": "Lexical annual-report tone."
+      },
+      {
+        "key": "themes",
+        "label": "Emerging themes",
+        "score": 47.3,
+        "weight": 0.25,
+        "reliability": 0.333,
+        "detail": "Change in growth-theme density compared with pressure and risk themes."
       }
     ],
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2025-12-31",
+      "type": "annual_report",
+      "title": "3i Group Annual report and accounts 2025",
+      "url": "https://www.3i.com/media/cxwbwcdw/3i-group-annual-report-2025-interactive.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2026-07-20",
       "type": "press_story",

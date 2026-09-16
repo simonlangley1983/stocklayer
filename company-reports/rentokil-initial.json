@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-16T06:56:34.708889Z",
+  "generatedAt": "2026-09-16T07:24:16.073121Z",
   "company": {
     "companyName": "Rentokil Initial PLC",
     "ticker": "RTO.L",
@@ -713,7 +713,7 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 5,
+    "reportCount": 6,
     "reports": [
       {
         "year": 2019,
@@ -1079,56 +1079,129 @@
         ],
         "positivityScore": 56.2,
         "positivityMethod": "lexical annual-report tone"
+      },
+      {
+        "year": 2025,
+        "title": "Rentokil Initial Annual Report 2025",
+        "url": "https://www.rentokil-initial.com/~/media/Files/R/Rentokil/documents/annual-reports/rentokil-ar25.pdf",
+        "sourceUrl": "https://www.rentokil-initial.com/~/media/Files/R/Rentokil/documents/annual-reports/rentokil-ar25.pdf",
+        "wordCount": 157098,
+        "pageCount": 232,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 61,
+            "per10kWords": 3.883
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 8,
+            "per10kWords": 0.509
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 78,
+            "per10kWords": 4.965
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 35,
+            "per10kWords": 2.228
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 22,
+            "per10kWords": 1.4
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 14,
+            "per10kWords": 0.891
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 10,
+            "per10kWords": 0.637
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 3,
+            "per10kWords": 0.191
+          }
+        ],
+        "positivityScore": 55.2,
+        "positivityMethod": "lexical annual-report tone"
       }
     ],
     "emergingKeywords": [
       {
-        "key": "cybersecurity",
-        "label": "Cybersecurity",
-        "mentions": 17,
-        "per10kWords": 0.994,
-        "previousPer10kWords": 0.479,
-        "changePer10kWords": 0.515
-      },
-      {
         "key": "ai",
         "label": "AI",
-        "mentions": 18,
-        "per10kWords": 1.052,
-        "previousPer10kWords": 0.539,
-        "changePer10kWords": 0.513
+        "mentions": 61,
+        "per10kWords": 3.883,
+        "previousPer10kWords": 1.052,
+        "changePer10kWords": 2.831
       },
       {
         "key": "regulation",
         "label": "Regulation",
-        "mentions": 73,
-        "per10kWords": 4.267,
-        "previousPer10kWords": 3.955,
-        "changePer10kWords": 0.312
+        "mentions": 78,
+        "per10kWords": 4.965,
+        "previousPer10kWords": 4.267,
+        "changePer10kWords": 0.698
       },
       {
-        "key": "competition",
-        "label": "Competition",
-        "mentions": 41,
-        "per10kWords": 2.396,
-        "previousPer10kWords": 2.337,
-        "changePer10kWords": 0.059
+        "key": "china",
+        "label": "China",
+        "mentions": 14,
+        "per10kWords": 0.891,
+        "previousPer10kWords": 0.935,
+        "changePer10kWords": -0.044
+      },
+      {
+        "key": "cloud",
+        "label": "Cloud",
+        "mentions": 0,
+        "per10kWords": 0.0,
+        "previousPer10kWords": 0.058,
+        "changePer10kWords": -0.058
       },
       {
         "key": "margin_pressure",
         "label": "Margin pressure",
-        "mentions": 1,
-        "per10kWords": 0.058,
-        "previousPer10kWords": 0.0,
-        "changePer10kWords": 0.058
+        "mentions": 0,
+        "per10kWords": 0.0,
+        "previousPer10kWords": 0.058,
+        "changePer10kWords": -0.058
       }
     ],
-    "latestPositivity": 56.2,
+    "latestPositivity": 55.2,
     "latestPositivityMethod": "lexical annual-report tone",
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 51.9,
+    "score": 53.3,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
@@ -1143,7 +1216,7 @@
       {
         "key": "annual_tone",
         "label": "Annual-report tone",
-        "score": 56.2,
+        "score": 55.2,
         "weight": 0.35,
         "reliability": 1.0,
         "detail": "Lexical annual-report tone."
@@ -1151,7 +1224,7 @@
       {
         "key": "themes",
         "label": "Emerging themes",
-        "score": 55.5,
+        "score": 62.4,
         "weight": 0.25,
         "reliability": 1.0,
         "detail": "Change in growth-theme density compared with pressure and risk themes."
@@ -1201,6 +1274,15 @@
       "type": "annual_report",
       "title": "rentokil-initial-annual-report-2023.pdf",
       "url": "https://www.rentokil-initial.com/~/media/Files/R/Rentokil/documents/annual-reports/rentokil-initial-annual-report-2023.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
+    {
+      "date": "2025-12-31",
+      "type": "annual_report",
+      "title": "Rentokil Initial Annual Report 2025",
+      "url": "https://www.rentokil-initial.com/~/media/Files/R/Rentokil/documents/annual-reports/rentokil-ar25.pdf",
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
