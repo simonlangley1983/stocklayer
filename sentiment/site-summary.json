@@ -3,7 +3,7 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-09-16T15:29:00.311393Z",
+  "generatedAt": "2026-09-16T17:36:57.353399Z",
   "asOfDate": "2026-09-15",
   "companyCount": 100,
   "companies": {
@@ -73,29 +73,22 @@
       "ticker": "HSBA.L",
       "slug": "hsbc",
       "date": "2026-09-15",
-      "dailyScore": 51.3,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.0,
-      "confidence": 37.0,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 50.2,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 3,
-      "sourceCount": 3,
-      "changeFromPreviousScoredDay": 3.1,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 37.0"
-        },
-        {
-          "type": "collection_degraded",
-          "direction": "neutral",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "The provider result ceiling was reached for this day"
+          "detail": "Collection succeeded but found no eligible coverage"
         }
       ]
     },
