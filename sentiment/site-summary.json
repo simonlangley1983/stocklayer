@@ -3,7 +3,7 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-09-16T18:44:09.281414Z",
+  "generatedAt": "2026-09-16T20:19:01.187411Z",
   "asOfDate": "2026-09-15",
   "companyCount": 100,
   "companies": {
@@ -73,22 +73,22 @@
       "ticker": "HSBA.L",
       "slug": "hsbc",
       "date": "2026-09-15",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.2,
-      "confidence": 0.0,
-      "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "dailyScore": 43.5,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 49.2,
+      "confidence": 46.1,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "storyCount": 4,
+      "sourceCount": 4,
+      "changeFromPreviousScoredDay": -9.3,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "collection_degraded",
           "direction": "neutral",
-          "severity": "low",
+          "severity": "medium",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "The provider result ceiling was reached for this day"
         }
       ]
     },
@@ -158,29 +158,29 @@
       "ticker": "BATS.L",
       "slug": "british-american-tobacco",
       "date": "2026-09-15",
-      "dailyScore": 47.7,
+      "dailyScore": 48.0,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.7,
-      "confidence": 63.7,
+      "rollingScore": 50.8,
+      "confidence": 64.2,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 41,
+      "storyCount": 39,
       "sourceCount": 31,
-      "changeFromPreviousScoredDay": -14.1,
+      "changeFromPreviousScoredDay": -13.8,
       "flags": [
         {
           "type": "sentiment_drop",
           "direction": "negative",
           "severity": "high",
           "status": "calculated",
-          "detail": "Daily score decreased by 14.1 points"
+          "detail": "Daily score decreased by 13.8 points"
         },
         {
           "type": "coverage_spike",
           "direction": "neutral",
           "severity": "medium",
           "status": "calculated",
-          "detail": "41 stories versus trailing median 2"
+          "detail": "39 stories versus trailing median 2"
         },
         {
           "type": "collection_degraded",
@@ -196,23 +196,16 @@
       "ticker": "BP.L",
       "slug": "bp",
       "date": "2026-09-15",
-      "dailyScore": 41.2,
-      "dailyLabel": "Slightly negative",
-      "rollingScore": 48.6,
-      "confidence": 54.6,
+      "dailyScore": 47.6,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.6,
+      "confidence": 50.4,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 5,
+      "storyCount": 4,
       "sourceCount": 4,
-      "changeFromPreviousScoredDay": -4.9,
+      "changeFromPreviousScoredDay": 1.5,
       "flags": [
-        {
-          "type": "coverage_spike",
-          "direction": "neutral",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "5 stories versus trailing median 1"
-        },
         {
           "type": "high_disagreement",
           "direction": "mixed",
@@ -234,15 +227,15 @@
       "ticker": "GSK.L",
       "slug": "gsk",
       "date": "2026-09-15",
-      "dailyScore": 65.2,
+      "dailyScore": 66.2,
       "dailyLabel": "Positive",
-      "rollingScore": 52.9,
-      "confidence": 68.4,
+      "rollingScore": 53.0,
+      "confidence": 68.3,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
       "storyCount": 57,
-      "sourceCount": 39,
-      "changeFromPreviousScoredDay": 25.5,
+      "sourceCount": 40,
+      "changeFromPreviousScoredDay": 26.5,
       "flags": [
         {
           "type": "merger_acquisition",
@@ -267,14 +260,14 @@
           "direction": "positive",
           "severity": "high",
           "status": "calculated",
-          "detail": "Daily score increased by 25.5 points"
+          "detail": "Daily score increased by 26.5 points"
         },
         {
           "type": "good_press",
           "direction": "positive",
           "severity": "medium",
           "status": "calculated",
-          "detail": "Daily press score is 65.2"
+          "detail": "Daily press score is 66.2"
         },
         {
           "type": "coverage_spike",
@@ -1400,7 +1393,7 @@
       "date": "2026-09-15",
       "dailyScore": null,
       "dailyLabel": "No coverage",
-      "rollingScore": 50.3,
+      "rollingScore": 50.5,
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
@@ -2387,14 +2380,14 @@
       "ticker": "IGG.L",
       "slug": "ig-group",
       "date": "2026-09-15",
-      "dailyScore": 41.2,
+      "dailyScore": 40.4,
       "dailyLabel": "Slightly negative",
-      "rollingScore": 48.5,
-      "confidence": 63.6,
+      "rollingScore": 48.4,
+      "confidence": 63.8,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 37,
-      "sourceCount": 36,
+      "storyCount": 35,
+      "sourceCount": 34,
       "changeFromPreviousScoredDay": null,
       "flags": [
         {
@@ -2435,14 +2428,14 @@
       "ticker": "ABDN.L",
       "slug": "aberdeen-group",
       "date": "2026-09-15",
-      "dailyScore": 48.2,
+      "dailyScore": 50.6,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.7,
+      "rollingScore": 50.1,
       "confidence": 64.9,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 51,
-      "sourceCount": 29,
+      "storyCount": 50,
+      "sourceCount": 28,
       "changeFromPreviousScoredDay": null,
       "flags": [
         {

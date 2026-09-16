@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-16T18:44:11.191492Z",
+  "generatedAt": "2026-09-16T20:19:03.430491Z",
   "company": {
     "companyName": "HSBC",
     "ticker": "HSBA.L",
@@ -22,9 +22,9 @@
     "periodStart": "2026-06-30",
     "periodEnd": "2026-09-15",
     "observationCount": 67,
-    "scoredDayCount": 41,
-    "latestScore": 52.8,
-    "latestScoreDate": "2026-09-05",
+    "scoredDayCount": 42,
+    "latestScore": 43.5,
+    "latestScoreDate": "2026-09-15",
     "series": [
       {
         "date": "2026-06-30",
@@ -622,12 +622,12 @@
       },
       {
         "date": "2026-09-15",
-        "dailyScore": null,
-        "rollingScore": 50.2,
-        "storyCount": 0,
-        "sourceCount": 0,
-        "confidence": 0.0,
-        "coverageStatus": "no_coverage"
+        "dailyScore": 43.5,
+        "rollingScore": 49.2,
+        "storyCount": 4,
+        "sourceCount": 4,
+        "confidence": 46.1,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -702,16 +702,6 @@
         "significance": 0.716
       },
       {
-        "date": "2026-08-02",
-        "type": "press_story",
-        "title": "Hsbc Holdings PLC Reduces Stock Holdings in Park National Co . $PRK",
-        "source": "tickerreport.com",
-        "url": "https://www.tickerreport.com/banking-finance/13527020/hsbc-holdings-plc-reduces-stock-holdings-in-park-national-co-prk.html",
-        "direction": "Very negative",
-        "detail": null,
-        "significance": 0.696
-      },
-      {
         "date": "2026-08-26",
         "type": "press_story",
         "title": "Hsbc Holdings PLC Lowers Position in Expeditors International of Washington , Inc . $EXPD",
@@ -730,6 +720,16 @@
         "direction": "Very positive",
         "detail": null,
         "significance": 1.077
+      },
+      {
+        "date": "2026-09-15",
+        "type": "press_story",
+        "title": "HSBC Holdings slips Tuesday, underperforms market",
+        "source": "marketwatch.com",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPUVdpcVBEOHJOMkhsTWdHYnJVLUY4M1NqYWVLVTNjbFI3ajl0VWNkN0RYSDUzMEszN2g4a1AzZzUzUFpmOVRNeUVCVGNMNmlrbE1VdGRoZEx3NzBiUzIzVzVCSGtKMTN2TVVxT3dHQWdYUk5CSlJ6S1dLR1pqRlpfeTJqdkFHa2dwLWx4UmtaamlVTElTb2R0QWJ5UnZJMzVEQ0lzdm5iNFBXaDRKQWdTcDY5QndQYjZoSEhfdmpkS2wtVWJB?oc=5",
+        "direction": "Very negative",
+        "detail": null,
+        "significance": 1.061
       }
     ]
   },
@@ -1222,17 +1222,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 42.0,
-    "label": "Mixed",
+    "score": 41.7,
+    "label": "Low",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 53.2,
+        "score": 52.6,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 41 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 42 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1379,16 +1379,6 @@
       "significance": 0.716
     },
     {
-      "date": "2026-08-02",
-      "type": "press_story",
-      "title": "Hsbc Holdings PLC Reduces Stock Holdings in Park National Co . $PRK",
-      "source": "tickerreport.com",
-      "url": "https://www.tickerreport.com/banking-finance/13527020/hsbc-holdings-plc-reduces-stock-holdings-in-park-national-co-prk.html",
-      "direction": "Very negative",
-      "detail": null,
-      "significance": 0.696
-    },
-    {
       "date": "2026-08-26",
       "type": "press_story",
       "title": "Hsbc Holdings PLC Lowers Position in Expeditors International of Washington , Inc . $EXPD",
@@ -1407,6 +1397,16 @@
       "direction": "Very positive",
       "detail": null,
       "significance": 1.077
+    },
+    {
+      "date": "2026-09-15",
+      "type": "press_story",
+      "title": "HSBC Holdings slips Tuesday, underperforms market",
+      "source": "marketwatch.com",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPUVdpcVBEOHJOMkhsTWdHYnJVLUY4M1NqYWVLVTNjbFI3ajl0VWNkN0RYSDUzMEszN2g4a1AzZzUzUFpmOVRNeUVCVGNMNmlrbE1VdGRoZEx3NzBiUzIzVzVCSGtKMTN2TVVxT3dHQWdYUk5CSlJ6S1dLR1pqRlpfeTJqdkFHa2dwLWx4UmtaamlVTElTb2R0QWJ5UnZJMzVEQ0lzdm5iNFBXaDRKQWdTcDY5QndQYjZoSEhfdmpkS2wtVWJB?oc=5",
+      "direction": "Very negative",
+      "detail": null,
+      "significance": 1.061
     }
   ],
   "persistentEvents": [
