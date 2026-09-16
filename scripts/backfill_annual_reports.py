@@ -66,7 +66,15 @@ def queue_groups(index, companies, existing, state, start_year, end_year, now):
                 continue
             # Never-tried groups go first; failed groups rotate by last attempt.
             groups.append((company, year, candidates, key, fingerprint, prior if not changed else {}))
-    return sorted(groups, key=lambda g: (g[5].get("lastAttempt", ""), -g[1], g[3]))
+    latest = {}
+    for record in existing.values():
+        if record.get("report_data_status") == "extracted":
+            slug = record["company_slug"]
+            latest[slug] = max(latest.get(slug, 0), int(record["report_year"]))
+    # First-report gaps, then upgrades to the latest year, then older history.
+    return sorted(groups, key=lambda g: (
+        0 if not latest.get(g[0]["slug"]) else 1 if g[1] > latest[g[0]["slug"]] else 2,
+        -g[1], g[5].get("lastAttempt", ""), g[3]))
 
 
 def run_group(group, timeout):
