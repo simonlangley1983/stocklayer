@@ -4310,6 +4310,78 @@
         }
       ],
       "changeFromPreviousScoredDay": -14.4
+    },
+    {
+      "date": "2026-09-15",
+      "dailyScore": 50.0,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 48.9,
+      "confidence": 23.8,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 59,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 2,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0037,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 54,
+        "missing_company_alias": 3
+      },
+      "topStories": [
+        {
+          "id": "36a1db1a6ca2d4d6",
+          "storyClusterId": "story-002",
+          "title": "REG - Barclays PLC SEGRO PLC - Form 8.3 SEGRO PLC",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNREc1dmJSUE5xbUhMYUJNSEtpSFhrMDRrN243ZTdvRWVlZUpxem84VnBMd0dFcEdqbUptZ3l0UUZCS25oWXlkZFFNNHVzZWtLSFFBNXh2N1N6OUY3UzVxTkRiczlkRXFzUDhHRWlCWjlUd0V3UEg2NVo4U2NsbGpVYmo2WXN3V0JEOWJNNzhHOXpWMlQ1WWlCcDRKQTFRc0ctcWo5QUNNdTVjMFZkUGR2VEZpTUJVYkppVTRpZTZB?oc=5",
+          "source": "tradingview.com",
+          "publishedAt": "2026-09-15T13:19:41Z",
+          "polarity": 0.0053,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "82ba55abd2e549b1",
+          "storyClusterId": "story-001",
+          "title": "Barclays PLC : JP Morgan reiterates its Buy rating",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQNWFfX2hnSVlXdHFJR3pVeXhrcTV6UzNsLVBIZXdJa0NmOFFaQmdid1VOVi1KejVTV0U4QWVPRURtSUVMS1QyTFBDOHBIQUp4dGtUQ0JhdTFvY1h6bGgzWlhQekdjMHlhbVlIOVVodUVLb2xGbW1WS0xBNEdKcDhIYUQ1dFEwQVpxQkIzQ0lJUUhia1dXbVFOcDdWTmdkRkVfbG5r?oc=5",
+          "source": "marketscreener.com",
+          "publishedAt": "2026-09-15T05:31:34Z",
+          "polarity": -0.002,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 23.8",
+          "evidenceArticleIds": [
+            "36a1db1a6ca2d4d6",
+            "82ba55abd2e549b1"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "36a1db1a6ca2d4d6",
+            "82ba55abd2e549b1"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 11.8
     }
   ]
 }
