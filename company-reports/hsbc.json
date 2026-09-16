@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-16T08:14:58.889919Z",
+  "generatedAt": "2026-09-16T10:08:34.607288Z",
   "company": {
     "companyName": "HSBC",
     "ticker": "HSBA.L",
@@ -23,7 +23,7 @@
     "periodEnd": "2026-09-15",
     "observationCount": 66,
     "scoredDayCount": 43,
-    "latestScore": 49.7,
+    "latestScore": 43.5,
     "latestScoreDate": "2026-09-15",
     "series": [
       {
@@ -613,11 +613,11 @@
       },
       {
         "date": "2026-09-15",
-        "dailyScore": 49.7,
-        "rollingScore": 49.8,
+        "dailyScore": 43.5,
+        "rollingScore": 48.9,
         "storyCount": 4,
-        "sourceCount": 3,
-        "confidence": 39.0,
+        "sourceCount": 4,
+        "confidence": 46.1,
         "coverageStatus": "ok"
       }
     ],
@@ -651,16 +651,6 @@
         "direction": "neutral",
         "detail": "12 stories versus trailing median 1.5",
         "significance": 1.567
-      },
-      {
-        "date": "2026-07-14",
-        "type": "coverage_spike",
-        "title": "Hsbc Holdings PLC Purchases New Position in Ichor Holdings , Ltd . $ICHR",
-        "source": "dailypolitical.com",
-        "url": "https://www.dailypolitical.com/2026/07/14/hsbc-holdings-plc-purchases-new-position-in-ichor-holdings-ltd-ichr.html",
-        "direction": "neutral",
-        "detail": "12 stories versus trailing median 1.5",
-        "significance": 0.996
       },
       {
         "date": "2026-07-19",
@@ -721,6 +711,16 @@
         "direction": "neutral",
         "detail": "11 stories versus trailing median 2",
         "significance": 1.51
+      },
+      {
+        "date": "2026-09-15",
+        "type": "press_story",
+        "title": "HSBC Holdings slips Tuesday, underperforms market",
+        "source": "marketwatch.com",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPUVdpcVBEOHJOMkhsTWdHYnJVLUY4M1NqYWVLVTNjbFI3ajl0VWNkN0RYSDUzMEszN2g4a1AzZzUzUFpmOVRNeUVCVGNMNmlrbE1VdGRoZEx3NzBiUzIzVzVCSGtKMTN2TVVxT3dHQWdYUk5CSlJ6S1dLR1pqRlpfeTJqdkFHa2dwLWx4UmtaamlVTElTb2R0QWJ5UnZJMzVEQ0lzdm5iNFBXaDRKQWdTcDY5QndQYjZoSEhfdmpkS2wtVWJB?oc=5",
+        "direction": "Very negative",
+        "detail": null,
+        "significance": 1.061
       }
     ]
   },
@@ -1213,14 +1213,14 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 41.8,
+    "score": 41.6,
     "label": "Low",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 52.7,
+        "score": 52.4,
         "weight": 0.4,
         "reliability": 1.0,
         "detail": "Recency-weighted average of 43 scored days in the latest 90 calendar days; 30-day half-life."
@@ -1330,16 +1330,6 @@
       "significance": 1.567
     },
     {
-      "date": "2026-07-14",
-      "type": "coverage_spike",
-      "title": "Hsbc Holdings PLC Purchases New Position in Ichor Holdings , Ltd . $ICHR",
-      "source": "dailypolitical.com",
-      "url": "https://www.dailypolitical.com/2026/07/14/hsbc-holdings-plc-purchases-new-position-in-ichor-holdings-ltd-ichr.html",
-      "direction": "neutral",
-      "detail": "12 stories versus trailing median 1.5",
-      "significance": 0.996
-    },
-    {
       "date": "2026-07-19",
       "type": "press_story",
       "title": "Hsbc Holdings PLC Boosts Stock Position in iShares Russell 1000 ETF $IWB",
@@ -1398,6 +1388,16 @@
       "direction": "neutral",
       "detail": "11 stories versus trailing median 2",
       "significance": 1.51
+    },
+    {
+      "date": "2026-09-15",
+      "type": "press_story",
+      "title": "HSBC Holdings slips Tuesday, underperforms market",
+      "source": "marketwatch.com",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPUVdpcVBEOHJOMkhsTWdHYnJVLUY4M1NqYWVLVTNjbFI3ajl0VWNkN0RYSDUzMEszN2g4a1AzZzUzUFpmOVRNeUVCVGNMNmlrbE1VdGRoZEx3NzBiUzIzVzVCSGtKMTN2TVVxT3dHQWdYUk5CSlJ6S1dLR1pqRlpfeTJqdkFHa2dwLWx4UmtaamlVTElTb2R0QWJ5UnZJMzVEQ0lzdm5iNFBXaDRKQWdTcDY5QndQYjZoSEhfdmpkS2wtVWJB?oc=5",
+      "direction": "Very negative",
+      "detail": null,
+      "significance": 1.061
     }
   ],
   "persistentEvents": [
