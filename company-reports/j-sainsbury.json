@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-16T05:33:07.643892Z",
+  "generatedAt": "2026-09-16T06:56:34.708889Z",
   "company": {
     "companyName": "J Sainsbury PLC",
     "ticker": "SBRY.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-10",
-    "observationCount": 61,
-    "scoredDayCount": 10,
-    "latestScore": 49.9,
-    "latestScoreDate": "2026-09-02",
+    "periodEnd": "2026-09-15",
+    "observationCount": 62,
+    "scoredDayCount": 11,
+    "latestScore": 44.4,
+    "latestScoreDate": "2026-09-15",
     "series": [
       {
         "date": "2026-06-30",
@@ -574,6 +574,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-15",
+        "dailyScore": 44.4,
+        "rollingScore": 49.2,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 17.3,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -616,6 +625,16 @@
         "direction": "Neutral / mixed",
         "detail": null,
         "significance": 0.167
+      },
+      {
+        "date": "2026-09-15",
+        "type": "press_story",
+        "title": "Is J. Sainsbury (JSAIY) Stock Undervalued Right Now?",
+        "source": "finance.yahoo.com",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQTEdQYWZqeFhQc3VoV3MzS1dZRzAyc29OZ1Boalg2TUhMZWExaUQzWDBKSVdhWWE0b1ZqREduZElPNE5aemJOTDBsVVlMaE1oWU1NWE5oekRzYWh6V3lBOXAwOU1mZ2JvamlyeVV1Mm5BX21hZkVrbXBaSG5lQk1tLTNiZ3NvM1BBUVRGaTNXSlMyVjk4RjBxRjRhUXZSNEZTVHc?oc=5",
+        "direction": "Negative",
+        "detail": null,
+        "significance": 0.488
       }
     ]
   },
@@ -702,17 +721,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 33.1,
+    "score": 32.5,
     "label": "Low",
-    "evidenceCoverage": 73,
+    "evidenceCoverage": 76,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 48.3,
+        "score": 47.6,
         "weight": 0.4,
-        "reliability": 0.5,
-        "detail": "Recency-weighted average of 10 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.55,
+        "detail": "Recency-weighted average of 11 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -765,6 +784,16 @@
       "direction": "Neutral / mixed",
       "detail": null,
       "significance": 0.167
+    },
+    {
+      "date": "2026-09-15",
+      "type": "press_story",
+      "title": "Is J. Sainsbury (JSAIY) Stock Undervalued Right Now?",
+      "source": "finance.yahoo.com",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQTEdQYWZqeFhQc3VoV3MzS1dZRzAyc29OZ1Boalg2TUhMZWExaUQzWDBKSVdhWWE0b1ZqREduZElPNE5aemJOTDBsVVlMaE1oWU1NWE5oekRzYWh6V3lBOXAwOU1mZ2JvamlyeVV1Mm5BX21hZkVrbXBaSG5lQk1tLTNiZ3NvM1BBUVRGaTNXSlMyVjk4RjBxRjRhUXZSNEZTVHc?oc=5",
+      "direction": "Negative",
+      "detail": null,
+      "significance": 0.488
     },
     {
       "date": "2026-12-31",

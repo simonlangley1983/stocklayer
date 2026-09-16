@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-16T05:33:07.643892Z",
+  "generatedAt": "2026-09-16T06:56:34.708889Z",
   "company": {
     "companyName": "Melrose Industries PLC",
     "ticker": "MRO.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-17",
-    "periodEnd": "2026-09-06",
-    "observationCount": 45,
-    "scoredDayCount": 14,
-    "latestScore": 40.6,
-    "latestScoreDate": "2026-09-01",
+    "periodEnd": "2026-09-15",
+    "observationCount": 46,
+    "scoredDayCount": 15,
+    "latestScore": 46.7,
+    "latestScoreDate": "2026-09-15",
     "series": [
       {
         "date": "2026-07-17",
@@ -430,6 +430,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-15",
+        "dailyScore": 46.7,
+        "rollingScore": 49.2,
+        "storyCount": 2,
+        "sourceCount": 2,
+        "confidence": 33.0,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -482,6 +491,26 @@
         "direction": "Slightly positive",
         "detail": null,
         "significance": 0.332
+      },
+      {
+        "date": "2026-09-15",
+        "type": "press_story",
+        "title": "Why Is Melrose Industries' (LSE:MRO) Dividend Now A Pure Aerospace Story?",
+        "source": "kalkinemedia.com",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPQTNMdWh6dkVhd2ZoNGYxNE1JZHo5UnF4MFFVa2JpM1Z5alR6Tm9qclNHYXBLc0VBYWczQmNnQnBnRzBBQkY0Z2FmRE9BNURZQ05KQmduTjI3a3piS0VqdHgxd1d3Q3pnMUZKQlVXcXE4YTRXOVc2OXJwdF85akVjS2lWQjVGTWhYaTdsN2lGb2k0d2RkS3ZDa05mUGNlempOeG0zVmd1RnBYYWZTMnl3b0J1cEs?oc=5",
+        "direction": "Negative",
+        "detail": null,
+        "significance": 0.384
+      },
+      {
+        "date": "2026-09-15",
+        "type": "press_story",
+        "title": "Melrose Industries Announces Claims Programme And GKN Garden Grove Restart Target",
+        "source": "directorstalkinterviews.com",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxObGl6OEtTOVFKVFhNZFBXVklSd1lsbE10OFQ5dWJSUmMzMGNoMUtPZzVKb25IaDNEdVBOQ2VBdWZEUDRDRllWMFJMcnB0NDFKLS1Yb2pIdE1Ub2ZHbzMxR3FtZzVGQ1RUOGNyeU5Ha3FZLTlkY2pQbjFxbk93NUlsT1V1VlhKeDIxTS0yVjJqRV85VGVDakxId2xFdGstcWo5aWtfX3RlVG9VZFYwMkNOTnJ1ZjExbWYyYXppMEYyRjJBM3hEQWJEb2NjSEU?oc=5",
+        "direction": "Neutral / mixed",
+        "detail": null,
+        "significance": 0.183
       }
     ]
   },
@@ -568,17 +597,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 43.3,
+    "score": 43.2,
     "label": "Mixed",
-    "evidenceCoverage": 84,
+    "evidenceCoverage": 87,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 47.5,
+        "score": 47.4,
         "weight": 0.4,
-        "reliability": 0.7,
-        "detail": "Recency-weighted average of 14 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.75,
+        "detail": "Recency-weighted average of 15 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -650,6 +679,26 @@
       "direction": "Slightly positive",
       "detail": null,
       "significance": 0.332
+    },
+    {
+      "date": "2026-09-15",
+      "type": "press_story",
+      "title": "Why Is Melrose Industries' (LSE:MRO) Dividend Now A Pure Aerospace Story?",
+      "source": "kalkinemedia.com",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPQTNMdWh6dkVhd2ZoNGYxNE1JZHo5UnF4MFFVa2JpM1Z5alR6Tm9qclNHYXBLc0VBYWczQmNnQnBnRzBBQkY0Z2FmRE9BNURZQ05KQmduTjI3a3piS0VqdHgxd1d3Q3pnMUZKQlVXcXE4YTRXOVc2OXJwdF85akVjS2lWQjVGTWhYaTdsN2lGb2k0d2RkS3ZDa05mUGNlempOeG0zVmd1RnBYYWZTMnl3b0J1cEs?oc=5",
+      "direction": "Negative",
+      "detail": null,
+      "significance": 0.384
+    },
+    {
+      "date": "2026-09-15",
+      "type": "press_story",
+      "title": "Melrose Industries Announces Claims Programme And GKN Garden Grove Restart Target",
+      "source": "directorstalkinterviews.com",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxObGl6OEtTOVFKVFhNZFBXVklSd1lsbE10OFQ5dWJSUmMzMGNoMUtPZzVKb25IaDNEdVBOQ2VBdWZEUDRDRllWMFJMcnB0NDFKLS1Yb2pIdE1Ub2ZHbzMxR3FtZzVGQ1RUOGNyeU5Ha3FZLTlkY2pQbjFxbk93NUlsT1V1VlhKeDIxTS0yVjJqRV85VGVDakxId2xFdGstcWo5aWtfX3RlVG9VZFYwMkNOTnJ1ZjExbWYyYXppMEYyRjJBM3hEQWJEb2NjSEU?oc=5",
+      "direction": "Neutral / mixed",
+      "detail": null,
+      "significance": 0.183
     }
   ],
   "persistentEvents": []

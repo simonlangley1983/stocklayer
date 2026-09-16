@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-16T05:33:07.643892Z",
+  "generatedAt": "2026-09-16T06:56:34.708889Z",
   "company": {
     "companyName": "Beazley PLC",
     "ticker": "BEZ.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-14",
-    "periodEnd": "2026-09-14",
-    "observationCount": 74,
-    "scoredDayCount": 55,
-    "latestScore": 49.5,
-    "latestScoreDate": "2026-09-10",
+    "periodEnd": "2026-09-15",
+    "observationCount": 75,
+    "scoredDayCount": 56,
+    "latestScore": 43.6,
+    "latestScoreDate": "2026-09-15",
     "series": [
       {
         "date": "2026-06-14",
@@ -691,6 +691,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-15",
+        "dailyScore": 43.6,
+        "rollingScore": 47.8,
+        "storyCount": 5,
+        "sourceCount": 5,
+        "confidence": 65.6,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -773,6 +782,26 @@
         "direction": "negative",
         "detail": null,
         "significance": 1.595
+      },
+      {
+        "date": "2026-09-15",
+        "type": "press_story",
+        "title": "Beazley says problems at city council are clear",
+        "source": "businessnews.com.au",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPTndubUhoN1JNaUVYNWwzNFBzaHVpMUZ5V3dTUDVtS2MzcEQ4VElNNzhMNTJlck01bUxZNFd3eG5RSHZkcUZEQVZQU0wwTWNiem5Lb0M3SENMSm4zWHRWbDlOZ0JzVFZPYWNVQlBiV3ZhOUdOZ2lqOGUxR0VlSHVTeTVCcUF0UzZCWFh3S2w1QUFtRjJBZlNGNUpR?oc=5",
+        "direction": "Very negative",
+        "detail": null,
+        "significance": 1.102
+      },
+      {
+        "date": "2026-09-15",
+        "type": "press_story",
+        "title": "Zurich’s US$11bn Beazley acquisition to take effect on October 1 after regulatory approval",
+        "source": "insuranceasianews.com",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOdHRVSllER3dYQUZyVVRBdW4yTVg0OWMzVkcwRnk3SG54VkYwaHEzRFFhZDRLMjh3cy11SU4xZzl0ek9jNmRfaHlXRDd6TkhfU3duU3hKOE5iYmhyMHhZUUxtOU9KdWZqV0J5Ym5iX0ktdnBPYVVXZGdBZnFER0JfSTQ2bEwwV0JjNzZQMWZ5RF9Dd1BBT2FEd1l0M3B1UDdnb1VDUWdYQmkzeE44V1oyd3haRW0zRy1MYjRJ?oc=5",
+        "direction": "Neutral / mixed",
+        "detail": null,
+        "significance": 0.176
       }
     ]
   },
@@ -859,17 +888,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 39.6,
+    "score": 39.4,
     "label": "Low",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 49.2,
+        "score": 48.9,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 51 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 52 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -971,9 +1000,69 @@
       "direction": "negative",
       "detail": null,
       "significance": 1.595
+    },
+    {
+      "date": "2026-09-15",
+      "type": "press_story",
+      "title": "Beazley says problems at city council are clear",
+      "source": "businessnews.com.au",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPTndubUhoN1JNaUVYNWwzNFBzaHVpMUZ5V3dTUDVtS2MzcEQ4VElNNzhMNTJlck01bUxZNFd3eG5RSHZkcUZEQVZQU0wwTWNiem5Lb0M3SENMSm4zWHRWbDlOZ0JzVFZPYWNVQlBiV3ZhOUdOZ2lqOGUxR0VlSHVTeTVCcUF0UzZCWFh3S2w1QUFtRjJBZlNGNUpR?oc=5",
+      "direction": "Very negative",
+      "detail": null,
+      "significance": 1.102
+    },
+    {
+      "date": "2026-09-15",
+      "type": "press_story",
+      "title": "Zurich’s US$11bn Beazley acquisition to take effect on October 1 after regulatory approval",
+      "source": "insuranceasianews.com",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOdHRVSllER3dYQUZyVVRBdW4yTVg0OWMzVkcwRnk3SG54VkYwaHEzRFFhZDRLMjh3cy11SU4xZzl0ek9jNmRfaHlXRDd6TkhfU3duU3hKOE5iYmhyMHhZUUxtOU9KdWZqV0J5Ym5iX0ktdnBPYVVXZGdBZnFER0JfSTQ2bEwwV0JjNzZQMWZ5RF9Dd1BBT2FEd1l0M3B1UDdnb1VDUWdYQmkzeE44V1oyd3haRW0zRy1MYjRJ?oc=5",
+      "direction": "Neutral / mixed",
+      "detail": null,
+      "significance": 0.176
     }
   ],
   "persistentEvents": [
+    {
+      "id": "5e8ffdfb318175b08325",
+      "type": "acquisition",
+      "title": "Completion date for Zurich's £8.1bn Beazley takeover revealed",
+      "date": "2026-09-15",
+      "status": "pending_review",
+      "reviewDate": "2027-03-14",
+      "direction": "Neutral / mixed",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNRzRMOERZVlJEVWE5dDVoS2ZCcXQ2TkJkT1dBQTUzMkVFTnJLUG5rQTBnbXhDZzVhcVNpT2FpOG00VDg1Rjc4SDJtTkpCOWE1RkNmZnhxZzhxLWl0SUw1bHhBaTYzU01vZGpVNGhZQWtuOUVTQzhubkwzaEFBRXpUV3VUZmZhanZjTEMwQm80NW5IVlZiUnJLN2dhbTJHamRlQVRGQ0NfWVppdFBpSnlSendR?oc=5",
+          "publisher": "insurancetimes.co.uk",
+          "date": "2026-09-15"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
+    {
+      "id": "55a9254356ae627b516f",
+      "type": "acquisition",
+      "title": "Zurich’s US$11bn Beazley acquisition to take effect on October 1 after regulatory approval",
+      "date": "2026-09-15",
+      "status": "pending_review",
+      "reviewDate": "2027-03-14",
+      "direction": "Neutral / mixed",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOdHRVSllER3dYQUZyVVRBdW4yTVg0OWMzVkcwRnk3SG54VkYwaHEzRFFhZDRLMjh3cy11SU4xZzl0ek9jNmRfaHlXRDd6TkhfU3duU3hKOE5iYmhyMHhZUUxtOU9KdWZqV0J5Ym5iX0ktdnBPYVVXZGdBZnFER0JfSTQ2bEwwV0JjNzZQMWZ5RF9Dd1BBT2FEd1l0M3B1UDdnb1VDUWdYQmkzeE44V1oyd3haRW0zRy1MYjRJ?oc=5",
+          "publisher": "insuranceasianews.com",
+          "date": "2026-09-15"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "7620064f58c11a423d11",
       "type": "acquisition",

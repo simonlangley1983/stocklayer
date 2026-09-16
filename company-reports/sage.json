@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-16T05:33:07.643892Z",
+  "generatedAt": "2026-09-16T06:56:34.708889Z",
   "company": {
     "companyName": "Sage Group PLC",
     "ticker": "SGE.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-10",
-    "observationCount": 54,
-    "scoredDayCount": 0,
-    "latestScore": null,
-    "latestScoreDate": null,
+    "periodEnd": "2026-09-15",
+    "observationCount": 55,
+    "scoredDayCount": 1,
+    "latestScore": 50.8,
+    "latestScoreDate": "2026-09-15",
     "series": [
       {
         "date": "2026-06-30",
@@ -511,9 +511,29 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-15",
+        "dailyScore": 50.8,
+        "rollingScore": 50.1,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.3,
+        "coverageStatus": "ok"
       }
     ],
-    "stories": []
+    "stories": [
+      {
+        "date": "2026-09-15",
+        "type": "press_story",
+        "title": "Why Has Sage Group plc (LSE:SGE) Returned to the UK Market Conversation?",
+        "source": "kalkinemedia.com",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNUnQxbW5NY1JxMVo0Y0JnX1JSSnk0WVh1ZXh3MTBUdU80SDZCeU1oLU5KVlV1UTBPQjYtRmxVMHdDVV9wbE5SNFdHUXR2ZUNvaWd4MjNMM19mUDdOM2paWElTcHowMm8xLW1QSkxIU0JpY2VWLUM2cHBiNVlJUjV6aVluel9JWGRBaG82c01XaGk1eHhpRDJGQ2FWLWNmM3pramFzNzRpYkVPSnpxUHU3cl9n?oc=5",
+        "direction": "Neutral / mixed",
+        "detail": null,
+        "significance": 0.196
+      }
+    ]
   },
   "annualReportAnalysis": {
     "reportCount": 1,
@@ -598,10 +618,18 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 57.4,
+    "score": 53.0,
     "label": "Mixed",
-    "evidenceCoverage": 100,
+    "evidenceCoverage": 49,
     "components": [
+      {
+        "key": "press",
+        "label": "Press sentiment",
+        "score": 50.8,
+        "weight": 0.4,
+        "reliability": 0.05,
+        "detail": "Recency-weighted average of 1 scored days in the latest 90 calendar days; 30-day half-life."
+      },
       {
         "key": "annual_tone",
         "label": "Annual-report tone",
@@ -622,6 +650,16 @@
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
+    },
+    {
+      "date": "2026-09-15",
+      "type": "press_story",
+      "title": "Why Has Sage Group plc (LSE:SGE) Returned to the UK Market Conversation?",
+      "source": "kalkinemedia.com",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNUnQxbW5NY1JxMVo0Y0JnX1JSSnk0WVh1ZXh3MTBUdU80SDZCeU1oLU5KVlV1UTBPQjYtRmxVMHdDVV9wbE5SNFdHUXR2ZUNvaWd4MjNMM19mUDdOM2paWElTcHowMm8xLW1QSkxIU0JpY2VWLUM2cHBiNVlJUjV6aVluel9JWGRBaG82c01XaGk1eHhpRDJGQ2FWLWNmM3pramFzNzRpYkVPSnpxUHU3cl9n?oc=5",
+      "direction": "Neutral / mixed",
+      "detail": null,
+      "significance": 0.196
     }
   ],
   "persistentEvents": []

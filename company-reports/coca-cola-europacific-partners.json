@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-16T05:33:07.643892Z",
+  "generatedAt": "2026-09-16T06:56:34.708889Z",
   "company": {
     "companyName": "Coca-Cola Europacific Partners PLC",
     "ticker": "CCEP.L",
@@ -19,14 +19,45 @@
     "introductionReviewedAt": "2026-09-12"
   },
   "pressCoverage": {
-    "periodStart": null,
-    "periodEnd": null,
-    "observationCount": 0,
-    "scoredDayCount": 0,
-    "latestScore": null,
-    "latestScoreDate": null,
-    "series": [],
-    "stories": []
+    "periodStart": "2026-09-15",
+    "periodEnd": "2026-09-15",
+    "observationCount": 1,
+    "scoredDayCount": 1,
+    "latestScore": 34.8,
+    "latestScoreDate": "2026-09-15",
+    "series": [
+      {
+        "date": "2026-09-15",
+        "dailyScore": 34.8,
+        "rollingScore": 47.3,
+        "storyCount": 5,
+        "sourceCount": 7,
+        "confidence": 72.0,
+        "coverageStatus": "ok"
+      }
+    ],
+    "stories": [
+      {
+        "date": "2026-09-15",
+        "type": "bad_press",
+        "title": "Coca-Cola Europacific Partners director Gaveau resigns By Investing.com",
+        "source": "za.investing.com",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOVndPNmtreFlDWllxZ005dUxlTG4tc2JWdDV6aWhJOHRja2dkMFBqcUR1VVk1Y25UZ25GMHVUNlZEenJUMTVkWWo0eVFwS0xNcEEzTktJS19JSHJrbVF4VUZxOGNlTkEwY1hTNXVTaHkzR1JrTVhacU9NOFhETk9zVzM5MnBEOXFHN0lnMkRCUm9fenFFR1ZJdVpGLUZ6NUt2dlgtOTRJWWhTM2t5cnFVTlF1Vkk?oc=5",
+        "direction": "negative",
+        "detail": "Daily press score is 34.8",
+        "significance": 1.646
+      },
+      {
+        "date": "2026-09-15",
+        "type": "bad_press",
+        "title": "Nathalie Gaveau resigns as independent advisor at Coca-Cola Europacific Partners",
+        "source": "democrata.es",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQZ29IdTZmRnJuS2laNG03c0x2bDhUSW80bjl6TXBYdU00TktnaWltQjByUXF1aWx5VlhYeFA5VGJiWEg0YUNWdDBFZ2p1ZVplWXpoeTBLXzV5akl0NHVibUxIQllNanNQSDZpSWY5dURHbWdqMzItcUc3a0JVSEl2RVhzZ2x0empqLUtqZUJILTZJQlBWTld0blFKMEtsc0dVT0RuT2dPUHRLWmJVSVY0QVhlY0htUWZTaVJNRkN1ckJOcDJjUUplVHdB0gHKAUFVX3lxTFBnb0h1NmZGcm5LaVo0bTdzTHZsOFRJbzRuOXpNcFh1TTROS2dpaW1CMHJRcXVpbHlWWFh4UDlUYmJYSDRhQ1Z0MEVnanVlWmVZemh5MEtfNXlqSXQ0dWJtTEhCWU1qc1BINmlJZjl1REdtZ2ozMi1xRzdrQlVISXZFWHNnbHR6amotS2plQkgtNklCUFZOV3RuUUowS2xzR1VPRG5PZ09QdEtaYlVJVjRBWGVjSG1RZlNpUk1GQ3VyQk5wMmNRSmVUd0E?oc=5",
+        "direction": "negative",
+        "detail": "Daily press score is 34.8",
+        "significance": 1.375
+      }
+    ]
   },
   "annualReportAnalysis": {
     "reportCount": 1,
@@ -111,10 +142,18 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 41.6,
+    "score": 40.7,
     "label": "Low",
-    "evidenceCoverage": 100,
+    "evidenceCoverage": 49,
     "components": [
+      {
+        "key": "press",
+        "label": "Press sentiment",
+        "score": 34.8,
+        "weight": 0.4,
+        "reliability": 0.05,
+        "detail": "Recency-weighted average of 1 scored days in the latest 90 calendar days; 30-day half-life."
+      },
       {
         "key": "annual_tone",
         "label": "Annual-report tone",
@@ -135,6 +174,26 @@
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
+    },
+    {
+      "date": "2026-09-15",
+      "type": "bad_press",
+      "title": "Coca-Cola Europacific Partners director Gaveau resigns By Investing.com",
+      "source": "za.investing.com",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOVndPNmtreFlDWllxZ005dUxlTG4tc2JWdDV6aWhJOHRja2dkMFBqcUR1VVk1Y25UZ25GMHVUNlZEenJUMTVkWWo0eVFwS0xNcEEzTktJS19JSHJrbVF4VUZxOGNlTkEwY1hTNXVTaHkzR1JrTVhacU9NOFhETk9zVzM5MnBEOXFHN0lnMkRCUm9fenFFR1ZJdVpGLUZ6NUt2dlgtOTRJWWhTM2t5cnFVTlF1Vkk?oc=5",
+      "direction": "negative",
+      "detail": "Daily press score is 34.8",
+      "significance": 1.646
+    },
+    {
+      "date": "2026-09-15",
+      "type": "bad_press",
+      "title": "Nathalie Gaveau resigns as independent advisor at Coca-Cola Europacific Partners",
+      "source": "democrata.es",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQZ29IdTZmRnJuS2laNG03c0x2bDhUSW80bjl6TXBYdU00TktnaWltQjByUXF1aWx5VlhYeFA5VGJiWEg0YUNWdDBFZ2p1ZVplWXpoeTBLXzV5akl0NHVibUxIQllNanNQSDZpSWY5dURHbWdqMzItcUc3a0JVSEl2RVhzZ2x0empqLUtqZUJILTZJQlBWTld0blFKMEtsc0dVT0RuT2dPUHRLWmJVSVY0QVhlY0htUWZTaVJNRkN1ckJOcDJjUUplVHdB0gHKAUFVX3lxTFBnb0h1NmZGcm5LaVo0bTdzTHZsOFRJbzRuOXpNcFh1TTROS2dpaW1CMHJRcXVpbHlWWFh4UDlUYmJYSDRhQ1Z0MEVnanVlWmVZemh5MEtfNXlqSXQ0dWJtTEhCWU1qc1BINmlJZjl1REdtZ2ozMi1xRzdrQlVISXZFWHNnbHR6amotS2plQkgtNklCUFZOV3RuUUowS2xzR1VPRG5PZ09QdEtaYlVJVjRBWGVjSG1RZlNpUk1GQ3VyQk5wMmNRSmVUd0E?oc=5",
+      "direction": "negative",
+      "detail": "Daily press score is 34.8",
+      "significance": 1.375
     }
   ],
   "persistentEvents": []

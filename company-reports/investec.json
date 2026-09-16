@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-16T05:33:07.643892Z",
+  "generatedAt": "2026-09-16T06:56:34.708889Z",
   "company": {
     "companyName": "Investec PLC",
     "ticker": "INVP.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-15",
-    "periodEnd": "2026-06-19",
-    "observationCount": 5,
-    "scoredDayCount": 5,
-    "latestScore": 48.3,
-    "latestScoreDate": "2026-06-19",
+    "periodEnd": "2026-09-15",
+    "observationCount": 6,
+    "scoredDayCount": 6,
+    "latestScore": 55.8,
+    "latestScoreDate": "2026-09-15",
     "series": [
       {
         "date": "2026-06-15",
@@ -70,9 +70,39 @@
         "sourceCount": 2,
         "confidence": 31.5,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-15",
+        "dailyScore": 55.8,
+        "rollingScore": 51.1,
+        "storyCount": 7,
+        "sourceCount": 6,
+        "confidence": 75.3,
+        "coverageStatus": "ok"
       }
     ],
-    "stories": []
+    "stories": [
+      {
+        "date": "2026-09-15",
+        "type": "press_story",
+        "title": "Nationwide, Investec Among Bidders as Aldermore First Round Closes",
+        "source": "streamlinefeed.co.ke",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOX1V6M1RjMzdQZ1FfY2phTmhXMmxmaklUVjg5akdMdVVxQjZuS2JKYmlBS3hYSTZqUDkyUlRPNFhLdzFMUDZ2QVJhZXJ6NFZKSHFxWnQwcGpSTHR3bUlQNFNhXzZTQV94SFhudEhSYlJqc3loZk5GbkdQREdPUFl6UWVGajRjYVdId0M5cDZwMC1qNE1nN0xKYlNjb3hZa0NR?oc=5",
+        "direction": "Positive",
+        "detail": null,
+        "significance": 0.449
+      },
+      {
+        "date": "2026-09-15",
+        "type": "press_story",
+        "title": "Exclusive: Nationwide and Investec set to bid for alternative lender Aldermore",
+        "source": "cityam.com",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQcVdVQml1cTNoQmNlQ1ZFOW5Zdk5Qb2J0ZElYZzdCdDFrOG9WNnpoUkZJeWtib1VHVVRzWlJMWE5uY3JFaG9QV1NvOThROU9WU0wta0ZyQUp6LW5wbXZ5aURkWmhuMzllWG1BT1ZUMWtNTTVTdjNzd2F1NjV5YmJITDhhdlB6ZGhCV2NBMWFCTFlzdlh0bVp6UVVoZVdOdjd6REhR?oc=5",
+        "direction": "Positive",
+        "detail": null,
+        "significance": 0.413
+      }
+    ]
   },
   "annualReportAnalysis": {
     "reportCount": 7,
@@ -636,17 +666,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 40.6,
-    "label": "Low",
-    "evidenceCoverage": 62,
+    "score": 42.8,
+    "label": "Mixed",
+    "evidenceCoverage": 64,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 48.3,
+        "score": 54.9,
         "weight": 0.4,
-        "reliability": 0.05,
-        "detail": "Recency-weighted average of 1 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.1,
+        "detail": "Recency-weighted average of 2 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -730,6 +760,26 @@
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
+    },
+    {
+      "date": "2026-09-15",
+      "type": "press_story",
+      "title": "Nationwide, Investec Among Bidders as Aldermore First Round Closes",
+      "source": "streamlinefeed.co.ke",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOX1V6M1RjMzdQZ1FfY2phTmhXMmxmaklUVjg5akdMdVVxQjZuS2JKYmlBS3hYSTZqUDkyUlRPNFhLdzFMUDZ2QVJhZXJ6NFZKSHFxWnQwcGpSTHR3bUlQNFNhXzZTQV94SFhudEhSYlJqc3loZk5GbkdQREdPUFl6UWVGajRjYVdId0M5cDZwMC1qNE1nN0xKYlNjb3hZa0NR?oc=5",
+      "direction": "Positive",
+      "detail": null,
+      "significance": 0.449
+    },
+    {
+      "date": "2026-09-15",
+      "type": "press_story",
+      "title": "Exclusive: Nationwide and Investec set to bid for alternative lender Aldermore",
+      "source": "cityam.com",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQcVdVQml1cTNoQmNlQ1ZFOW5Zdk5Qb2J0ZElYZzdCdDFrOG9WNnpoUkZJeWtib1VHVVRzWlJMWE5uY3JFaG9QV1NvOThROU9WU0wta0ZyQUp6LW5wbXZ5aURkWmhuMzllWG1BT1ZUMWtNTTVTdjNzd2F1NjV5YmJITDhhdlB6ZGhCV2NBMWFCTFlzdlh0bVp6UVVoZVdOdjd6REhR?oc=5",
+      "direction": "Positive",
+      "detail": null,
+      "significance": 0.413
     }
   ],
   "persistentEvents": []

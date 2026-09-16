@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-16T05:33:07.643892Z",
+  "generatedAt": "2026-09-16T06:56:34.708889Z",
   "company": {
     "companyName": "Weir Group PLC",
     "ticker": "WEIR.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-08",
-    "observationCount": 62,
-    "scoredDayCount": 6,
-    "latestScore": 42.4,
-    "latestScoreDate": "2026-09-04",
+    "periodEnd": "2026-09-15",
+    "observationCount": 63,
+    "scoredDayCount": 7,
+    "latestScore": 49.8,
+    "latestScoreDate": "2026-09-15",
     "series": [
       {
         "date": "2026-06-30",
@@ -583,6 +583,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-15",
+        "dailyScore": 49.8,
+        "rollingScore": 49.8,
+        "storyCount": 13,
+        "sourceCount": 10,
+        "confidence": 83.0,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -625,6 +634,26 @@
         "direction": "Negative",
         "detail": null,
         "significance": 0.604
+      },
+      {
+        "date": "2026-09-15",
+        "type": "coverage_spike",
+        "title": "Weir Group (LSE:WEIR) Share Weakness Puts Market Signals in Focus",
+        "source": "kalkinemedia.com",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxObEVyNU5xWDRrd1oxQ01zNDJWRXA2X3NmeDZSUjh3clNyc0FiSjBtQi1FcjRlSFhOSy1HM2FBMXRpMmw3R0d6bUFhZHRkN0VnSDVhTkF6R1R4U2t5OXAyYThmbGtLVno5OFNSN2h4ZFhZOFlKMmhsUnZFcnQzYWEwUHl2Q1dhX3dkdERmckFEMXk0eS1DcElLaURwUW1hRlo2Yk90TTd2TE53TzZi?oc=5",
+        "direction": "neutral",
+        "detail": "13 stories versus trailing median 1",
+        "significance": 1.606
+      },
+      {
+        "date": "2026-09-15",
+        "type": "coverage_spike",
+        "title": "Weir Group stock falls after a 4.48 percent drop",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOV1F5S1YwU0cyU2RlNFpPNjN4WW9QQzdZcHFXdUpMdlVMSnRQUk5mRTdNU0FCUHpoU2Vnc1lzUzdBbG41WXRHVHM4RkFuQlBQQzUwQlRPYWplYjhzVUs2QU5NZnJ3VGdQbHNwcDhQaGMzTUQ1Zk5WLXd1a1N5UDJ3RnJiUm5ycjY0UXVFQldLNHpXZ00xUWRwZ1lvaWZtLUh0X21qWTZNSVNqLXgtZmdSWA?oc=5",
+        "direction": "neutral",
+        "detail": "13 stories versus trailing median 1",
+        "significance": 1.589
       }
     ]
   },
@@ -711,17 +740,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 48.4,
+    "score": 48.6,
     "label": "Mixed",
-    "evidenceCoverage": 63,
+    "evidenceCoverage": 65,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 48.1,
+        "score": 48.6,
         "weight": 0.4,
-        "reliability": 0.3,
-        "detail": "Recency-weighted average of 6 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.35,
+        "detail": "Recency-weighted average of 7 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -783,6 +812,26 @@
       "direction": "Negative",
       "detail": null,
       "significance": 0.604
+    },
+    {
+      "date": "2026-09-15",
+      "type": "coverage_spike",
+      "title": "Weir Group (LSE:WEIR) Share Weakness Puts Market Signals in Focus",
+      "source": "kalkinemedia.com",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxObEVyNU5xWDRrd1oxQ01zNDJWRXA2X3NmeDZSUjh3clNyc0FiSjBtQi1FcjRlSFhOSy1HM2FBMXRpMmw3R0d6bUFhZHRkN0VnSDVhTkF6R1R4U2t5OXAyYThmbGtLVno5OFNSN2h4ZFhZOFlKMmhsUnZFcnQzYWEwUHl2Q1dhX3dkdERmckFEMXk0eS1DcElLaURwUW1hRlo2Yk90TTd2TE53TzZi?oc=5",
+      "direction": "neutral",
+      "detail": "13 stories versus trailing median 1",
+      "significance": 1.606
+    },
+    {
+      "date": "2026-09-15",
+      "type": "coverage_spike",
+      "title": "Weir Group stock falls after a 4.48 percent drop",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOV1F5S1YwU0cyU2RlNFpPNjN4WW9QQzdZcHFXdUpMdlVMSnRQUk5mRTdNU0FCUHpoU2Vnc1lzUzdBbG41WXRHVHM4RkFuQlBQQzUwQlRPYWplYjhzVUs2QU5NZnJ3VGdQbHNwcDhQaGMzTUQ1Zk5WLXd1a1N5UDJ3RnJiUm5ycjY0UXVFQldLNHpXZ00xUWRwZ1lvaWZtLUh0X21qWTZNSVNqLXgtZmdSWA?oc=5",
+      "direction": "neutral",
+      "detail": "13 stories versus trailing median 1",
+      "significance": 1.589
     }
   ],
   "persistentEvents": []

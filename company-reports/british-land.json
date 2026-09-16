@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-16T05:33:07.643892Z",
+  "generatedAt": "2026-09-16T06:56:34.708889Z",
   "company": {
     "companyName": "British Land Co PLC",
     "ticker": "BLND.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-14",
-    "periodEnd": "2026-09-14",
-    "observationCount": 69,
-    "scoredDayCount": 0,
-    "latestScore": null,
-    "latestScoreDate": null,
+    "periodEnd": "2026-09-15",
+    "observationCount": 70,
+    "scoredDayCount": 1,
+    "latestScore": 64.7,
+    "latestScoreDate": "2026-09-15",
     "series": [
       {
         "date": "2026-06-14",
@@ -646,9 +646,29 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-15",
+        "dailyScore": 64.7,
+        "rollingScore": 51.8,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 19.7,
+        "coverageStatus": "ok"
       }
     ],
-    "stories": []
+    "stories": [
+      {
+        "date": "2026-09-15",
+        "type": "press_story",
+        "title": "British Land Co. advances Tuesday, outperforms market",
+        "source": "marketwatch.com",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOWkNqM0M2akluMGdrUUZreWJUaUROeUEyODdLRS02TlFsQ2FvNzBnVWdZNkYwU3BMWXdrMERrVk9TMnNpaHlYTEFRRDVvOFlFWUtORUFTWGlsM3RpM3YzWVlUeTUzVGo4WnZ1ZFQyTGZhaDRoS2RSZFdOaWx6YlpWWkI0ckVBRWJpaVd0eVYtS3RVYzVTMFZadnpaSTBpOUZKZGlOWk9JZkwxN3VubEZvbw?oc=5",
+        "direction": "Very positive",
+        "detail": null,
+        "significance": 1.032
+      }
+    ]
   },
   "annualReportAnalysis": {
     "reportCount": 2,
@@ -847,10 +867,18 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 48.8,
+    "score": 53.8,
     "label": "Mixed",
-    "evidenceCoverage": 72,
+    "evidenceCoverage": 45,
     "components": [
+      {
+        "key": "press",
+        "label": "Press sentiment",
+        "score": 64.7,
+        "weight": 0.4,
+        "reliability": 0.05,
+        "detail": "Recency-weighted average of 1 scored days in the latest 90 calendar days; 30-day half-life."
+      },
       {
         "key": "annual_tone",
         "label": "Annual-report tone",
@@ -879,6 +907,16 @@
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
+    },
+    {
+      "date": "2026-09-15",
+      "type": "press_story",
+      "title": "British Land Co. advances Tuesday, outperforms market",
+      "source": "marketwatch.com",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOWkNqM0M2akluMGdrUUZreWJUaUROeUEyODdLRS02TlFsQ2FvNzBnVWdZNkYwU3BMWXdrMERrVk9TMnNpaHlYTEFRRDVvOFlFWUtORUFTWGlsM3RpM3YzWVlUeTUzVGo4WnZ1ZFQyTGZhaDRoS2RSZFdOaWx6YlpWWkI0ckVBRWJpaVd0eVYtS3RVYzVTMFZadnpaSTBpOUZKZGlOWk9JZkwxN3VubEZvbw?oc=5",
+      "direction": "Very positive",
+      "detail": null,
+      "significance": 1.032
     },
     {
       "date": "2026-12-31",

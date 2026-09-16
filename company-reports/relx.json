@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-16T05:33:07.643892Z",
+  "generatedAt": "2026-09-16T06:56:34.708889Z",
   "company": {
     "companyName": "RELX",
     "ticker": "REL.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-14",
-    "observationCount": 70,
-    "scoredDayCount": 37,
-    "latestScore": 70.5,
-    "latestScoreDate": "2026-09-11",
+    "periodEnd": "2026-09-15",
+    "observationCount": 71,
+    "scoredDayCount": 38,
+    "latestScore": 43.1,
+    "latestScoreDate": "2026-09-15",
     "series": [
       {
         "date": "2026-06-30",
@@ -655,6 +655,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-15",
+        "dailyScore": 43.1,
+        "rollingScore": 50.9,
+        "storyCount": 5,
+        "sourceCount": 5,
+        "confidence": 72.5,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -687,6 +696,26 @@
         "direction": "Positive",
         "detail": null,
         "significance": 0.485
+      },
+      {
+        "date": "2026-09-15",
+        "type": "sentiment_drop",
+        "title": "RELX Stock Drops As Traders Cash In Rally",
+        "source": "tipranks.com",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNYTVBN19qeGRMeURqdnZoWWVGTlNDXzJVYXlVSEo2akFkQ3B4eEUzNE9lUXFzeEJCQTZORWl1MXF3bjFjUXE2aGJqY2lVcG0zc2R0Umt5bXl3dmY5NWtpbUREdXBDSjJKTzlJOFBoeE8wR3F4VkZ3V0ZlbEtnUGtWZmN3MTFscU0?oc=5",
+        "direction": "negative",
+        "detail": "Daily score decreased by 27.4 points",
+        "significance": 1.598
+      },
+      {
+        "date": "2026-09-15",
+        "type": "sentiment_drop",
+        "title": "RELX stock heads into the open after a 5.2% FTSE 100 gain",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQb2RYMUU2V3lmYTFiV200RVNhcmV2YmRZeWM2b29rZ3lqX3l2UERlWmwyeVZRV0VsUDlRX05SUFVHNmZlRWRDSUVwV2tJSkwwTlFtcjBsM3dLeWpSX3NvVk94X1h4U3ZrNWFwbjctS1dLa0pySzNhaHhoOUhDTUdZQnpLZTc5cmxsenJfUHNXUHdkc2Jzbi1waU1OV2twTDR4Z01uZDVDRUhIZTFQNHg3eVdMWFdOZ3A5U1RfYmxxbzlHN1NnOHc?oc=5",
+        "direction": "negative",
+        "detail": "Daily score decreased by 27.4 points",
+        "significance": 1.26
       }
     ]
   },
@@ -1179,17 +1208,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 48.8,
+    "score": 48.6,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.1,
+        "score": 50.7,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 37 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 38 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1294,6 +1323,26 @@
       "direction": "Positive",
       "detail": null,
       "significance": 0.485
+    },
+    {
+      "date": "2026-09-15",
+      "type": "sentiment_drop",
+      "title": "RELX Stock Drops As Traders Cash In Rally",
+      "source": "tipranks.com",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNYTVBN19qeGRMeURqdnZoWWVGTlNDXzJVYXlVSEo2akFkQ3B4eEUzNE9lUXFzeEJCQTZORWl1MXF3bjFjUXE2aGJqY2lVcG0zc2R0Umt5bXl3dmY5NWtpbUREdXBDSjJKTzlJOFBoeE8wR3F4VkZ3V0ZlbEtnUGtWZmN3MTFscU0?oc=5",
+      "direction": "negative",
+      "detail": "Daily score decreased by 27.4 points",
+      "significance": 1.598
+    },
+    {
+      "date": "2026-09-15",
+      "type": "sentiment_drop",
+      "title": "RELX stock heads into the open after a 5.2% FTSE 100 gain",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQb2RYMUU2V3lmYTFiV200RVNhcmV2YmRZeWM2b29rZ3lqX3l2UERlWmwyeVZRV0VsUDlRX05SUFVHNmZlRWRDSUVwV2tJSkwwTlFtcjBsM3dLeWpSX3NvVk94X1h4U3ZrNWFwbjctS1dLa0pySzNhaHhoOUhDTUdZQnpLZTc5cmxsenJfUHNXUHdkc2Jzbi1waU1OV2twTDR4Z01uZDVDRUhIZTFQNHg3eVdMWFdOZ3A5U1RfYmxxbzlHN1NnOHc?oc=5",
+      "direction": "negative",
+      "detail": "Daily score decreased by 27.4 points",
+      "significance": 1.26
     }
   ],
   "persistentEvents": []

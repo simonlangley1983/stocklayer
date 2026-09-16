@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-16T05:33:07.643892Z",
+  "generatedAt": "2026-09-16T06:56:34.708889Z",
   "company": {
     "companyName": "Severn Trent PLC",
     "ticker": "SVT.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-14",
-    "observationCount": 69,
-    "scoredDayCount": 57,
-    "latestScore": 57.0,
-    "latestScoreDate": "2026-09-13",
+    "periodEnd": "2026-09-15",
+    "observationCount": 70,
+    "scoredDayCount": 58,
+    "latestScore": 58.2,
+    "latestScoreDate": "2026-09-15",
     "series": [
       {
         "date": "2026-06-30",
@@ -646,6 +646,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-15",
+        "dailyScore": 58.2,
+        "rollingScore": 49.9,
+        "storyCount": 2,
+        "sourceCount": 2,
+        "confidence": 34.8,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -834,17 +843,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 45.2,
+    "score": 45.5,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 43.3,
+        "score": 43.9,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 57 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 58 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -968,5 +977,26 @@
       "approximateDate": true
     }
   ],
-  "persistentEvents": []
+  "persistentEvents": [
+    {
+      "id": "e8517c10ae5411636d19",
+      "type": "contract",
+      "title": "Barhale finds savings, wins Severn Trent contract",
+      "date": "2026-09-15",
+      "status": "pending_review",
+      "reviewDate": "2027-03-14",
+      "direction": "Positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNalUzcGhveU1ER1pXYnppbXhEaGhyN1hRaUVQRDFnb1k0WmFFZlhjWERHdGZJVG92TExnci10VWQ5MGdtbkxZTmFxeVRpb2FJTVNoaGs5dTRmRXh3MzlJSEEzUGU4QjU5QTBZQkdVVC1WdjlLVDA1bHVic1lPNDA4T0V0ZWhaZ2NHMFh4LV83U0RGSUY2R1hKeVlpMVZEQdIBpgFBVV95cUxNczN0dU94aUhybU00ZDljNGxIWDBQaWdLYnZYMlptM1BFTmVTR1lyRXNmdHBVQmpBOXg2NFNkSlplcUtGeGNWTkxsSDhDdmF1RVU3MndRdTJKWDhaU2ZrY051TzVMQXUwOXhCZDItMUd6NDU3cDF1YlBUV3hRVXNWNHdLaFNfRHZNZF9qYmtPN0JrQUhodVVLVVhqb0RrMldiRVdEOVl3?oc=5",
+          "publisher": "theconstructionindex.co.uk",
+          "date": "2026-09-15"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    }
+  ]
 }
