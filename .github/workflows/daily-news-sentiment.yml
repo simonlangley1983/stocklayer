@@ -126,7 +126,7 @@ jobs:
         id: sentiment
         shell: bash
         env:
-          STOCKLAYER_NEWS_PROVIDER: ${{ inputs.news_provider }}
+          STOCKLAYER_NEWS_PROVIDER: ${{ inputs.news_provider || (github.event.schedule == '30 5,11,17,23 * * *' && 'google-news-rss') || 'gdelt' }}
           INPUT_DATE: ${{ inputs.date }}
           RECOVERY_RUN: ${{ inputs.recovery || github.event.schedule == '17 */2 * * *' }}
           RECOVERY_WINDOWS: ${{ inputs.recovery_windows }}
@@ -303,7 +303,7 @@ jobs:
         env:
           INPUT_SLUGS: ${{ matrix.slugs }}
           INPUT_BACKFILL_DAYS: ${{ inputs.backfill_days }}
-          STOCKLAYER_NEWS_PROVIDER: ${{ inputs.news_provider }}
+          STOCKLAYER_NEWS_PROVIDER: ${{ inputs.news_provider || (github.event.schedule == '30 5,11,17,23 * * *' && 'google-news-rss') || 'gdelt' }}
           INPUT_DATE: ${{ inputs.date }}
         run: |
           set +e
@@ -372,7 +372,7 @@ jobs:
         shell: bash
         env:
           INPUT_BACKFILL_DAYS: ${{ inputs.backfill_days }}
-          STOCKLAYER_NEWS_PROVIDER: ${{ inputs.news_provider }}
+          STOCKLAYER_NEWS_PROVIDER: ${{ inputs.news_provider || (github.event.schedule == '30 5,11,17,23 * * *' && 'google-news-rss') || 'gdelt' }}
           INPUT_DATE: ${{ inputs.date }}
         run: |
           set +e
