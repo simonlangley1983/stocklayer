@@ -4362,35 +4362,88 @@
     },
     {
       "date": "2026-09-15",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.2,
-      "confidence": 0.0,
-      "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "collectionCompleteness": 1.0,
-      "candidateCount": 0,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
-      "positiveStoryCount": 0,
-      "neutralStoryCount": 0,
-      "negativeStoryCount": 0,
-      "dispersion": 0.0,
-      "rejectedCandidateCounts": {},
-      "topStories": [],
-      "flags": [
+      "dailyScore": 43.5,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 49.2,
+      "confidence": 46.1,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 45,
+      "eligibleArticleCount": 4,
+      "storyCount": 4,
+      "effectiveStoryCount": 4.0,
+      "sourceCount": 4,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 2,
+      "negativeStoryCount": 1,
+      "dispersion": 0.4199,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 37,
+        "missing_company_alias": 4
+      },
+      "topStories": [
         {
-          "type": "no_coverage",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "id": "5ad0d23b793f87d5",
+          "storyClusterId": "story-004",
+          "title": "HSBC Holdings slips Tuesday, underperforms market",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPUVdpcVBEOHJOMkhsTWdHYnJVLUY4M1NqYWVLVTNjbFI3ajl0VWNkN0RYSDUzMEszN2g4a1AzZzUzUFpmOVRNeUVCVGNMNmlrbE1VdGRoZEx3NzBiUzIzVzVCSGtKMTN2TVVxT3dHQWdYUk5CSlJ6S1dLR1pqRlpfeTJqdkFHa2dwLWx4UmtaamlVTElTb2R0QWJ5UnZJMzVEQ0lzdm5iNFBXaDRKQWdTcDY5QndQYjZoSEhfdmpkS2wtVWJB?oc=5",
+          "source": "marketwatch.com",
+          "publishedAt": "2026-09-15T16:05:00Z",
+          "polarity": -0.9114,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "3685fa4b36177e70",
+          "storyClusterId": "story-002",
+          "title": "HSBC Bank Middle East Launches WorldTrader Platform in Qatar",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPd01oUi1nNFZKNU1qYnNQYm9mcUhJSXJndjlzVUhHbzQtNjY2UFhsc3NCdHd6T1BMQ3BMR3RuemJfc2I0RFVab19LVVRTSldWQ1RjLXdqZkhwcm1TTjkzTEtkSlpCeFFzSTYxcTV2N3A0NFItSUx0aTRBNk5vZGZhcDM5QzA5bXBwWmRKcmFTTldEYWphbzhNTEpqWVJGcXppQnh3TGVWRHd2VWFLaUpZNUxMelhRR3RJcHRkUGE3Yw?oc=5",
+          "source": "tradingview.com",
+          "publishedAt": "2026-09-15T08:46:07Z",
+          "polarity": 0.1585,
+          "sentiment": "Slightly positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "a4b10a8a9631ab6e",
+          "storyClusterId": "story-003",
+          "title": "What Is Driving Fresh Attention Around HSBC Holdings plc (LSE:HSBA)?",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOczRJSlpaak1rYXo2NWRpVjZBdnpvRFdiOTR5bFJ2bU92WjVzU0FYbDlxaFZFLUpwdEJLT1lMLVROSTFHV2Y5di1fNVhsaTNsaHhZOUN4bThPdl9jTmk4MGlOSXhhQ25EZWk5VmFOS1Z3TjVqZGs0aWhjbzZaQkgyQ21ubjFpUlFTZ2NEc2pqQUN3RHhMWVdzRGZOMGM2S2xoVEQwSjBiNm9jZ09GN2c?oc=5",
+          "source": "kalkinemedia.com",
+          "publishedAt": "2026-09-15T12:54:00Z",
+          "polarity": -0.0468,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "a51abb278e415b77",
+          "storyClusterId": "story-001",
+          "title": "Hsbc Holdings PLC Has $571,000 Stake in QCR Holdings, Inc. $QCRH",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOSm40TkRVRUs1a29HTXYtcmc0M2V0QW4tclpfbmR6OHgtcDVkTFlHRV9peVpjWVFwWW1yQ2tGWXdEQVJpZjJ3cU14a0UyOHBaR3V1MC1IbDdIcmVka1BSenJ1aVJxa0VVMWFrSmFqbG1yZ1dsOG1qZFljaTRqaERSSTNnTUNlMkFYVGctYlRkNUlsSG5OVFdBY1pUZTFBNHNaRHc3TlNwQ3BTb0txUUZCd3llbjA2eWdvaG40UA?oc=5",
+          "source": "marketbeat.com",
+          "publishedAt": "2026-09-15T07:44:30Z",
+          "polarity": 0.017,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "flags": [
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "5ad0d23b793f87d5",
+            "3685fa4b36177e70",
+            "a4b10a8a9631ab6e",
+            "a51abb278e415b77"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -9.3
     }
   ]
 }
