@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-09-16T14:05:11.213522Z",
+  "generatedAt": "2026-09-16T15:29:00.311393Z",
   "asOfDate": "2026-09-15",
   "companies": {
     "astrazeneca": {
@@ -196,16 +196,28 @@
       "ticker": "HSBA.L",
       "slug": "hsbc",
       "date": "2026-09-15",
-      "dailyScore": 43.5,
-      "dailyLabel": "Slightly negative",
-      "rollingScore": 48.9,
-      "confidence": 46.1,
-      "confidenceBand": "medium",
+      "dailyScore": 51.3,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.0,
+      "confidence": 37.0,
+      "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 4,
-      "sourceCount": 4,
-      "changeFromPreviousScoredDay": -4.7,
+      "storyCount": 3,
+      "sourceCount": 3,
+      "changeFromPreviousScoredDay": 3.1,
       "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 37.0",
+          "evidenceArticleIds": [
+            "3685fa4b36177e70",
+            "a4b10a8a9631ab6e",
+            "a51abb278e415b77"
+          ]
+        },
         {
           "type": "collection_degraded",
           "direction": "neutral",
@@ -213,7 +225,6 @@
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
-            "5ad0d23b793f87d5",
             "3685fa4b36177e70",
             "a4b10a8a9631ab6e",
             "a51abb278e415b77"
@@ -221,17 +232,6 @@
         }
       ],
       "topStories": [
-        {
-          "id": "5ad0d23b793f87d5",
-          "storyClusterId": "story-004",
-          "title": "HSBC Holdings slips Tuesday, underperforms market",
-          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPUVdpcVBEOHJOMkhsTWdHYnJVLUY4M1NqYWVLVTNjbFI3ajl0VWNkN0RYSDUzMEszN2g4a1AzZzUzUFpmOVRNeUVCVGNMNmlrbE1VdGRoZEx3NzBiUzIzVzVCSGtKMTN2TVVxT3dHQWdYUk5CSlJ6S1dLR1pqRlpfeTJqdkFHa2dwLWx4UmtaamlVTElTb2R0QWJ5UnZJMzVEQ0lzdm5iNFBXaDRKQWdTcDY5QndQYjZoSEhfdmpkS2wtVWJB?oc=5",
-          "source": "marketwatch.com",
-          "publishedAt": "2026-09-15T16:05:00Z",
-          "polarity": -0.9114,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
         {
           "id": "3685fa4b36177e70",
           "storyClusterId": "story-002",
@@ -472,22 +472,22 @@
       "ticker": "BATS.L",
       "slug": "british-american-tobacco",
       "date": "2026-09-15",
-      "dailyScore": 46.5,
+      "dailyScore": 47.7,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.5,
-      "confidence": 64.6,
+      "rollingScore": 50.7,
+      "confidence": 63.7,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 39,
-      "sourceCount": 34,
-      "changeFromPreviousScoredDay": -15.3,
+      "storyCount": 41,
+      "sourceCount": 31,
+      "changeFromPreviousScoredDay": -14.1,
       "flags": [
         {
           "type": "sentiment_drop",
           "direction": "negative",
           "severity": "high",
           "status": "calculated",
-          "detail": "Daily score decreased by 15.3 points",
+          "detail": "Daily score decreased by 14.1 points",
           "evidenceArticleIds": [
             "d23794d1715b8d3c",
             "267246b0c141169c",
@@ -501,7 +501,7 @@
           "direction": "neutral",
           "severity": "medium",
           "status": "calculated",
-          "detail": "39 stories versus trailing median 2",
+          "detail": "41 stories versus trailing median 2",
           "evidenceArticleIds": [
             "d23794d1715b8d3c",
             "267246b0c141169c",
@@ -528,7 +528,7 @@
       "topStories": [
         {
           "id": "d23794d1715b8d3c",
-          "storyClusterId": "story-021",
+          "storyClusterId": "story-027",
           "title": "Durham enjoy strong opening day with the bat against Worcestershire as Mayank Agarwal scores 177",
           "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOVTJvdzZQdzNCVDdGbFptd2ZDWXEwc1NLaGF2VndiZUdhV1RwOVJGNDJIejhIMU1WR1YtaUQ5RlNmLV9KbER2azFkeXNTWGN5aXhqNXRyS3lnQjFrc0Y2cDZRTVZfMno0QlRUN0lQbTZMZ29RN0lmaDdWZW1OS1gxUFpaUU5fTFM3SHpmbG5KTTlfQm9mc3FVSzZjVkthZjF0TXljcDN2S0F4RjNZcjdWYllnMkF2cGZldmttWk1JM25ib2ROdDg0ZnRPd0FRYXJIZVdtZnlXeDcyX21B?oc=5",
           "source": "durhamcricket.co.uk",
@@ -539,18 +539,18 @@
         },
         {
           "id": "267246b0c141169c",
-          "storyClusterId": "story-015",
+          "storyClusterId": "story-022",
           "title": "Police allege Red Lion man hit housemate with baseball bat",
           "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQN0tmbExBTDdoVUk4TjJSNzdkWVVOVWxkUG1vVkFlNER0eXNpUmNYOGJXd0lMZGVNZFRsckN5d0dBQ214c0RBZ2s4Y3d5UVNnNEQxSXBqc0dsek1KbDZuRkY2UmFoVDg2dVZNZk1RQWNBY1JYTUZoLWpuSHZ4aXVhUkhfcnlRTnloUktZTm1yMDNDc25QWTA3anBrZ2h2cXEwaFZ0RjJEQXBZNzl5d3h1NjlMOUxvRUNQdk10Ug?oc=5",
           "source": "ydr.com",
           "publishedAt": "2026-09-15T14:15:00Z",
           "polarity": -0.8649,
           "sentiment": "Very negative",
-          "publisherCount": 1
+          "publisherCount": 2
         },
         {
           "id": "e22e10131c89399e",
-          "storyClusterId": "story-019",
+          "storyClusterId": "story-026",
           "title": "British American Tobacco stock gains on dividend and buyback support",
           "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQWlZ0MnBQbnh1NXMxcDhQLVRKRTQtRkJTc3hudDR2U0c5ZVpKNUtEODVhSG9hLS0xMGFYU3h0NWhPRXAzdS1LaEVwYU1iazlPUEg2UG5VNVFZdWJqY1ZPa2Vvb3NlY29Dc2JSUmhYMXRXYk5vMG4yREdmTFl4MTVQNTN0bmVRM0hRaTByVGsxTXhkd29rZndiMjFiSDh5RTVRSUtLaG5aY1NRZEhVZDBiZ3FOelp5OHItX0UzRzNjcHNTWGJhdWNPM2ZrNA?oc=5",
           "source": "ad-hoc-news.de",
@@ -561,7 +561,7 @@
         },
         {
           "id": "a5ecc2a2d87d9b80",
-          "storyClusterId": "story-026",
+          "storyClusterId": "story-031",
           "title": "MI lawmaker receives rabies shots after bat encounter as CDC warns of increased exposures",
           "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPdEdhS0RWOXFySzBjX0FRdzgwZ2lRdVJtZ2dLR3BZeUtOdWF5dWdXYUw1QnB3eVB4emExdktVNi1FT1pqYlN0eEotSlo4QWtld2N3aGgyb2QyVndQR3EwZUNzZGRjMlVZWGhZbkgwZ2F4cDlYZ1lmSzNUUmRQazZhNUJZY1BUa2RSei0wLVpxWUNjellsamFTSEtrZW1DZGt0Sjc1S2pkaUhlMl9fR2NCUlQ2WXA5bDl0Q0xVbTdnYnpUUW9Zb2fSAcsBQVVfeXFMTnJtb3BFc0VXbkRFdFZhZFBkRFhyN1E2QlI5OG00RjA0eVBHbFhLdDlyNVAzZkZWQXpxLUhpZENWelFDSzRHS0xwQ28weG9JREFBSlVwcWc5cG1hZDgzT2hyVURaWHhQUlBtX0RDVDNBUnBzOFlUZUdOTXVHcDk1bEh6VkxDcm9fYnIxSnFBTWRJOGE0NGhJLU5YcmxhYV9TdXpzbDk0ODlaTkxEcXpsS1U3R0NKZUZNLXRmTGsyWXRubkZjSno4bWp5UDA?oc=5",
           "source": "wlns.com",
@@ -572,7 +572,7 @@
         },
         {
           "id": "2a13265c75ac0763",
-          "storyClusterId": "story-011",
+          "storyClusterId": "story-018",
           "title": "A Twin-Turbo LS1 Mid-Engine C2 Corvette Built in 2007 Just Sold on BaT, And It Beat GM By 13 Years",
           "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1xc1RJVl9RclF0Vlloa1hsbWI5TFhQQVIxX25RQzhoWHc5d0M4TkdJUkV5NkJhLXlwRHI4Z1V3NDJQbjIxcHU0ODVDWUFQVzZEOTlOS2tBc2tnUUpBRnoyRm9tT1RYNWtBY3BpOVhIWmxYZk1WV1E?oc=5",
           "source": "hotcars.com",
@@ -704,15 +704,15 @@
       "ticker": "GSK.L",
       "slug": "gsk",
       "date": "2026-09-15",
-      "dailyScore": 66.1,
+      "dailyScore": 65.2,
       "dailyLabel": "Positive",
-      "rollingScore": 53.0,
+      "rollingScore": 52.9,
       "confidence": 68.4,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 60,
-      "sourceCount": 43,
-      "changeFromPreviousScoredDay": 26.4,
+      "storyCount": 57,
+      "sourceCount": 39,
+      "changeFromPreviousScoredDay": 25.5,
       "flags": [
         {
           "type": "merger_acquisition",
@@ -726,9 +726,8 @@
             "87de0ba9aa2e6b9b",
             "2ee6bbc92a11eccc",
             "3642d7eace974437",
-            "1d1a401241d78825",
             "9ea77f250717271b",
-            "697a595aca7e344f"
+            "1d1a401241d78825"
           ],
           "sourceCount": 7
         },
@@ -758,13 +757,13 @@
           "direction": "positive",
           "severity": "high",
           "status": "calculated",
-          "detail": "Daily score increased by 26.4 points",
+          "detail": "Daily score increased by 25.5 points",
           "evidenceArticleIds": [
             "1985d6253cfed224",
             "99f05bfeb384f0fb",
             "9c2ec88f62ea8307",
             "5028adcbf3ed6d72",
-            "8b4655e8bce05c5b"
+            "f856392a176f39b5"
           ]
         },
         {
@@ -772,13 +771,13 @@
           "direction": "positive",
           "severity": "medium",
           "status": "calculated",
-          "detail": "Daily press score is 66.1",
+          "detail": "Daily press score is 65.2",
           "evidenceArticleIds": [
             "1985d6253cfed224",
             "99f05bfeb384f0fb",
             "9c2ec88f62ea8307",
             "5028adcbf3ed6d72",
-            "8b4655e8bce05c5b"
+            "f856392a176f39b5"
           ]
         },
         {
@@ -786,13 +785,13 @@
           "direction": "neutral",
           "severity": "medium",
           "status": "calculated",
-          "detail": "60 stories versus trailing median 4",
+          "detail": "57 stories versus trailing median 4",
           "evidenceArticleIds": [
             "1985d6253cfed224",
             "99f05bfeb384f0fb",
             "9c2ec88f62ea8307",
             "5028adcbf3ed6d72",
-            "8b4655e8bce05c5b"
+            "f856392a176f39b5"
           ]
         },
         {
@@ -806,7 +805,7 @@
             "99f05bfeb384f0fb",
             "9c2ec88f62ea8307",
             "5028adcbf3ed6d72",
-            "8b4655e8bce05c5b"
+            "f856392a176f39b5"
           ]
         },
         {
@@ -820,14 +819,14 @@
             "99f05bfeb384f0fb",
             "9c2ec88f62ea8307",
             "5028adcbf3ed6d72",
-            "8b4655e8bce05c5b"
+            "f856392a176f39b5"
           ]
         }
       ],
       "topStories": [
         {
           "id": "1985d6253cfed224",
-          "storyClusterId": "story-032",
+          "storyClusterId": "story-030",
           "title": "GSK lays off 650 staffers amid closure of German vaccine manufacturing site",
           "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNYmIzbTBhS1FaT2hqSV94WUg3VjIyTlI0SEp0X3VUZnkwZUhyM2JERmFUMGFUSVhCRnh2RFJSWEVpdDdNVGhzR2k5eW5QY3ZoN0hRMTZvUHhpSVR5ZnhsTEtRWVBJSVFMbVNRZVJvSVg5VFFYbUx2X2ZRY0RaWTJkZTdVLV9Gc1I1bHJTX2hUNXZTYVhId2d4cHJ4Q3NTeHNfUlAzWElGZVVoWlNJMWc?oc=5",
           "source": "biospace.com",
@@ -838,7 +837,7 @@
         },
         {
           "id": "99f05bfeb384f0fb",
-          "storyClusterId": "story-041",
+          "storyClusterId": "story-039",
           "title": "GSK Cuts 641 Jobs in Vaccine Manufacturing Restructuring",
           "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNR3Z0dC0zTkR1NUtNbVoyR0JodFBObk5oQko2RlZuaUY5enhjU2pwaUFHelRJRjZULU5kSmg1S2NjcTNvbnVOdmVaVmdyWEVmLU9tdnZUeDB1QzNtVTZiVHN3LTVEOU5iYzFLSDRmazMydnYzY1A4bW1nbHdjWngtcXJKUkUtcm9NU3JGSWpLbw?oc=5",
           "source": "finance.yahoo.com",
@@ -849,7 +848,7 @@
         },
         {
           "id": "9c2ec88f62ea8307",
-          "storyClusterId": "story-042",
+          "storyClusterId": "story-040",
           "title": "GSK to wind down German vaccine factory due to lack of demand",
           "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNNHlKcEVjTlhXNWJERnNENUZ1UnN2YlJXYnMzTF9QZ0xqM2xNalFWbWhoUk5ya3hDMUxURHplV1JpaGZvRllyVXVtd1FlLW1UVTBNQXpibVM0RkJwaGpzZlRlejVpZWRKRWtoREszQWN1VTZ4dGhsRG44eGJ6amozVjVyR2R2a1lRSHoxM2FB?oc=5",
           "source": "endpoints.news",
@@ -860,7 +859,7 @@
         },
         {
           "id": "5028adcbf3ed6d72",
-          "storyClusterId": "story-010",
+          "storyClusterId": "story-009",
           "title": "GSK (LSE:GSK) Cancer Therapy Deal Strengthens Oncology Growth Strategy",
           "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNd0dId0JxTTZrVHFYZFQxbkN1d1h4SlE0cVcteTQ1Qk1HQ1JyaWZvcm5CTnRhVE9iZ3ZoeGJnWXhPZFpkWW85YlBoQm5ncF9IUUFSUEpYdUVTN0cwUmJPWmFpb0ctbzJHMS11NEtDV2t5T0cwR3o4SW83S1ZqNEdNMy05ejJsZHJiZGRzd1Vjc0dueGRscUlvMVE3TElMX1dNNElsa3N5Sl9RNk9ybkt3ckpZdw?oc=5",
           "source": "kalkinemedia.com",
@@ -870,13 +869,13 @@
           "publisherCount": 1
         },
         {
-          "id": "8b4655e8bce05c5b",
-          "storyClusterId": "story-045",
-          "title": "GSK boosts growth with oncology pipeline expans...",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNNmdCME9FT2Jud3lGUTVYZVJ5N3cxaVVmc3pQX0YySEdQMWdIZUhXTmUzcHJ2cDRydERkUTB2Q29fWG1VX05NOGtvVlcwbmRiUDF5UVRoYjg4Ni1jMnhFa0haTWI0aXZ3LXA2cHNVOHlkcTJFeHQwM3FKcTlYTnRCOE9iY0J1NlItRWFRNzJpLTVhRVRoaXVjc0p2NHVIQkk?oc=5",
-          "source": "pluang.com",
-          "publishedAt": "2026-09-15T15:09:12Z",
-          "polarity": 0.9397,
+          "id": "f856392a176f39b5",
+          "storyClusterId": "story-049",
+          "title": "GSK: Focused expansion and robust data position the oncology pipeline for significant future growth",
+          "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxPU3YzUXRYcHdFUVdiWUlHRmUtVXQxNEpKN3JHTjJ3c25pUzgzOEdBVFlUajR6VXB4ODJZTnNpejg3N1N3Ukxtd1pTYlhLRHlCYWdkdG9tUFgxLWxsX3BRYVJZWjlvdG0tRGo0eVZUQ0RHQ3FMV0ZrT01oajFIazB1eS1BM2tfX2VCejhOU0d0VEpha3VhZWlaYXhwYjUyc3hZbHA0R3hNS3Etd1FRZHQ4emhpSmV4aERWQk1UMmh5eFJlWExhWnExY2hFWTg1QXpsTEt0dnk2M1Vkd0F3R2dKRWR6aDlGOFBYSWFTeGFCNGdFd1lIMmdpZV9LNlJ2VmUwWFFtaGRPelBYYTlCUUdlblhObw?oc=5",
+          "source": "tradingview.com",
+          "publishedAt": "2026-09-15T18:08:19Z",
+          "polarity": 0.9351,
           "sentiment": "Very positive",
           "publisherCount": 1
         }
@@ -6056,14 +6055,14 @@
       "ticker": "IGG.L",
       "slug": "ig-group",
       "date": "2026-09-15",
-      "dailyScore": 42.2,
+      "dailyScore": 41.2,
       "dailyLabel": "Slightly negative",
-      "rollingScore": 48.7,
-      "confidence": 63.2,
+      "rollingScore": 48.5,
+      "confidence": 63.6,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 39,
-      "sourceCount": 38,
+      "storyCount": 37,
+      "sourceCount": 36,
       "changeFromPreviousScoredDay": null,
       "flags": [
         {
@@ -6074,10 +6073,10 @@
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
             "ac9a29858af643fa",
+            "c434f7e270570b94",
             "0614345a2d526bbb",
             "8058059804bc5467",
-            "46a51174719ff51a",
-            "41a883edcc9af76b"
+            "46a51174719ff51a"
           ]
         }
       ],
@@ -6094,6 +6093,17 @@
           "publisherCount": 1
         },
         {
+          "id": "c434f7e270570b94",
+          "storyClusterId": "story-026",
+          "title": "Iran war exposed US munitions shortfalls and production bottlenecks, Pentagon IG says",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNUEtDTExfV3RVb3FUZ3BhLTNRWXU5cjlzUllWc09YLWFhd0l4RVh0V25ueEdGVEtjXzBqZTc4d01lNU5XeFdEdk9xTm5fTFM5SU5iYS1ybHlRV3lFZTE4Yk93Nks5VVFIRzlyV3NTQzV1ZHlxa29RZ3JaUzVKOEdhcDBwTS0tREM5UDZZQzE1TDlBUTNw?oc=5",
+          "source": "stripes.com",
+          "publishedAt": "2026-09-15T15:22:16Z",
+          "polarity": -0.9421,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
           "id": "0614345a2d526bbb",
           "storyClusterId": "story-035",
           "title": "Iran war has led to munitions shortfall, bottlenecks to restock, Pentagon IG says",
@@ -6106,7 +6116,7 @@
         },
         {
           "id": "8058059804bc5467",
-          "storyClusterId": "story-013",
+          "storyClusterId": "story-012",
           "title": "KKR: Credit AUM surged 50% since 2021, with $80B+ private IG originated YTD amid strong market demand",
           "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPUlZ0SXlJYVBvOEFweThMRG1RcFlNX1NiQVdreFdOX1c2aTM0Y2E5UWUwSDJoNVhvY0d3Tk5EWk42TE9vamRrM3ViQzVJM2o2azJDa1BKdTUwbEtFTVpLdm1mcGNNZ0tuTDBoZ0ZPdnFPVjhROFk1b1ZUcFJKbTltRmVLZFlRX2lzdHRwdGtLVDRwdFl0Wk0tX2ZLSXJnRHFWbGphSFBVc0NTZ0dlVkFONXhYVXRqMHJNbGxsRjFOenVrZGFtU0RsM21VM05sOURkYjdVdUJGa2VUZS16LWItcWFpN1k5ZkNCOGlkaXJybXdnVW41TXdEdF9pTV8zd0swNEViYzJRNW0zTkU?oc=5",
           "source": "tradingview.com",
@@ -6123,17 +6133,6 @@
           "source": "fedweek.com",
           "publishedAt": "2026-09-15T18:05:19Z",
           "polarity": -0.9011,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "41a883edcc9af76b",
-          "storyClusterId": "story-036",
-          "title": "Iran hit hundreds of buildings, dozens of aircraft as war drains U.S. munitions, IG says",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOb0ktX2tFdTZkVEJWdzM5dnNyQnF1dy1oYlY2cHktV2R6ZUJCR2FKb3NyNDFPQlJfZVktbGcxRXgzcWtwMlBqdWZ4NktBcU80YnhRTGk0ZVlSUW1HSFVNbS04WlFmQkVxZ080TmFrSnprVXoweHZRRGZhZ0Nyakk0Yk1CY0swcExHNUJsZVJ3cnBHbFVWbkY4VWJHQTZDcmhWbmJLVE1Rd2gzYks2b0xOSzRHLUlxZw?oc=5",
-          "source": "washingtontimes.com",
-          "publishedAt": "2026-09-15T20:52:00Z",
-          "polarity": -0.813,
           "sentiment": "Very negative",
           "publisherCount": 1
         }
@@ -6184,14 +6183,14 @@
       "ticker": "ABDN.L",
       "slug": "aberdeen-group",
       "date": "2026-09-15",
-      "dailyScore": 47.8,
+      "dailyScore": 48.2,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.6,
-      "confidence": 64.3,
+      "rollingScore": 49.7,
+      "confidence": 64.9,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 57,
-      "sourceCount": 33,
+      "storyCount": 51,
+      "sourceCount": 29,
       "changeFromPreviousScoredDay": null,
       "flags": [
         {
@@ -6205,7 +6204,7 @@
             "ae2814c68fb22acf",
             "d84caffeb9da8ea3",
             "fcfcbdebd7fd101c",
-            "048c43f6f0212c45"
+            "659ab0a9ea70e7b5"
           ]
         }
       ],
@@ -6223,7 +6222,7 @@
         },
         {
           "id": "ae2814c68fb22acf",
-          "storyClusterId": "story-035",
+          "storyClusterId": "story-033",
           "title": "'People are none the wiser': anger over Aberdeen's £160m mega-campus plan",
           "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQMk5TbjgzSDAwbURUM3RHbjFCRWd4cEdRLW0ydU1tTThIbHExcnc5bkR1N0R3MEFkVzgzaEhBTWlYMWdJSFVWQnRuOERLVjhtYmlCaWx0R2lxT0llV1k4bHo2aERxMmlhdjgzWVRRXzRuRWhSbUhQSUE3a1hzeHBpLS0xaEdRNnZEV2tIZUVJWkRiR2dXRUJtLUNBRWJBQQ?oc=5",
           "source": "heraldscotland.com",
@@ -6245,7 +6244,7 @@
         },
         {
           "id": "fcfcbdebd7fd101c",
-          "storyClusterId": "story-023",
+          "storyClusterId": "story-022",
           "title": "European airline with Aberdeen route to popular destination files for bankruptcy",
           "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQUjdGb0JJSkpYUmZyc2FxS241bXIyS1BwbHNEN20tZ0IxMEYxeGRtWkxqRm5tWGpSVXFBeWZiVnZvVTZEaGtoSzlLUGRXRVE1X3hLdUNhb2Zja0x5NmxNbmhDZFZZN2hjLTh5dG91YzZiVy1hc2ZIOXc4QVQzTldYREs4d3ZjNEh6eHZfNEctNFFNX0dmLVo1NG9BSnNOZ9IBowFBVV95cUxQU0hiclBFLVhabDRUWU1MV3N0MlZ5b0N2a0UxM0hpTXROZlg3UU13SU1fcmxDeE1uYzJ3WnE5dnUybHdVSC1JcU9QU254eEZPWUtiYlhVVnA2TVlSM2NSQ0hkdlFjRVd2UXppN0o0T1JUOWxRa0FJYVNvQkIwam01TmVCcjRvemVaUTlROHpBT3dnWXB2aFRCRmJZRGtBbzc3Xzl3?oc=5",
           "source": "aberdeenlive.news",
@@ -6255,14 +6254,14 @@
           "publisherCount": 1
         },
         {
-          "id": "048c43f6f0212c45",
-          "storyClusterId": "story-036",
-          "title": "Aberdeen police investigating break-in after man reportedly falls out of window",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNbkZfb3dGdjl0c1hOQ2FoaXh0NFA2NERtTXpob05sVjZ2MVVEOUpGenEwelZYd3FSWFRKYnJvZmcxdG1jWi1QclJFNjNrV0NVU3M0dm9BZ0g4d0dkT1BRQmZqSVoySFhwMWZ0LVJOQ2Z5Zy1vRUVZazJwTFJSNS16bWRKRG1iRVZ0ZzZXdUF1OWdCcjZ5ekpUSDVLd28wYUlITVotTlV1cnFZTkZUN2RQYW1HOF9BcEZqREE?oc=5",
-          "source": "dakotanewsnow.com",
-          "publishedAt": "2026-09-15T20:04:00Z",
-          "polarity": -0.8935,
-          "sentiment": "Very negative",
+          "id": "659ab0a9ea70e7b5",
+          "storyClusterId": "story-037",
+          "title": "Aberdeen sweep past Motherwell to rise from 10th to eighth",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOeUJoM1hLRWYtTHdGWWhaY09CS1NJYTBWQU9FMFZWZWJ0QXZBdXBNdk5ETjNUZmNRVGtjdnlUSmthaXh0NHgteDd0ZER3bEJfc0xOMXhrMmRxUndxOS12VWFHVVN5TnNDb3Jqc2RkQWlhX09HeUMzZU9LblpqNExGOHhVVF9HUnhyemhnZVg4NHhtcVBoYlFleFU0UDZsZnZF?oc=5",
+          "source": "onefootball.com",
+          "publishedAt": "2026-09-15T20:45:44Z",
+          "polarity": 0.8677,
+          "sentiment": "Very positive",
           "publisherCount": 1
         }
       ]
