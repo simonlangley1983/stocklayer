@@ -2051,6 +2051,65 @@
         }
       ],
       "changeFromPreviousScoredDay": null
+    },
+    {
+      "date": "2026-09-16",
+      "dailyScore": 50.9,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.2,
+      "confidence": 11.5,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 93,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 89,
+        "missing_company_alias": 3
+      },
+      "topStories": [
+        {
+          "id": "e0ef7dc8cfffae70",
+          "storyClusterId": "story-001",
+          "title": "Why healthcare is the next driver of retail growth",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNMjhOOGRNZU95R0FjYjNiYVFGMEprMU9haVhtTldhSU1xa2I5V092eUFwOTJISVgtSzgyQ1V5R0w1X1NOTlhmWHBHdVdLVFVoenluakdtSTV2ck9tcVlFYU94MjJuTm9icmlZZEtSaEZDeVdoWkpaQ3MyTGI3WGhvM0tpVXB3MWQyNVQycg?oc=5",
+          "source": "igd.com",
+          "publishedAt": "2026-09-16T14:39:14Z",
+          "polarity": 0.0548,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 11.5",
+          "evidenceArticleIds": [
+            "e0ef7dc8cfffae70"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "e0ef7dc8cfffae70"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -13.0
     }
   ]
 }
