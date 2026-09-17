@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-17T14:09:15.539204Z",
+  "generatedAt": "2026-09-17T14:12:22.846016Z",
   "company": {
     "companyName": "Shell",
     "ticker": "SHEL.L",
@@ -761,8 +761,81 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 1,
+    "reportCount": 2,
     "reports": [
+      {
+        "year": 2024,
+        "title": "Shell Annual report 2024",
+        "url": "https://www.shell.com/investors/results-and-reporting/annual-report/_jcr_content/root/main/section/promo/links/item0.stream/1752580693041/6c20b8111738b9a590ba145f0d1c4fa0e530dae0/shell-annual-report-2024.pdf",
+        "sourceUrl": "https://www.shell.com/investors/results-and-reporting/annual-report-archive.html",
+        "wordCount": 336541,
+        "pageCount": 481,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 20,
+            "per10kWords": 0.594
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 44,
+            "per10kWords": 1.307
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 389,
+            "per10kWords": 11.559
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 79,
+            "per10kWords": 2.347
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 51,
+            "per10kWords": 1.515
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 49,
+            "per10kWords": 1.456
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 22,
+            "per10kWords": 0.654
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 6,
+            "per10kWords": 0.178
+          }
+        ],
+        "positivityScore": 35.1,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2025,
         "title": "Official full annual report 2025",
@@ -837,15 +910,56 @@
         "positivityMethod": "lexical annual-report tone"
       }
     ],
-    "emergingKeywords": [],
+    "emergingKeywords": [
+      {
+        "key": "competition",
+        "label": "Competition",
+        "mentions": 137,
+        "per10kWords": 3.887,
+        "previousPer10kWords": 2.347,
+        "changePer10kWords": 1.54
+      },
+      {
+        "key": "ai",
+        "label": "AI",
+        "mentions": 34,
+        "per10kWords": 0.965,
+        "previousPer10kWords": 0.594,
+        "changePer10kWords": 0.371
+      },
+      {
+        "key": "china",
+        "label": "China",
+        "mentions": 63,
+        "per10kWords": 1.788,
+        "previousPer10kWords": 1.456,
+        "changePer10kWords": 0.332
+      },
+      {
+        "key": "data_center",
+        "label": "Data centres",
+        "mentions": 13,
+        "per10kWords": 0.369,
+        "previousPer10kWords": 0.178,
+        "changePer10kWords": 0.191
+      },
+      {
+        "key": "supply_chain",
+        "label": "Supply chain",
+        "mentions": 59,
+        "per10kWords": 1.674,
+        "previousPer10kWords": 1.515,
+        "changePer10kWords": 0.159
+      }
+    ],
     "latestPositivity": 36.5,
     "latestPositivityMethod": "lexical annual-report tone",
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 43.3,
+    "score": 45.1,
     "label": "Mixed",
-    "evidenceCoverage": 100,
+    "evidenceCoverage": 83,
     "components": [
       {
         "key": "press",
@@ -862,11 +976,28 @@
         "weight": 0.35,
         "reliability": 1.0,
         "detail": "Lexical annual-report tone."
+      },
+      {
+        "key": "themes",
+        "label": "Emerging themes",
+        "score": 49.0,
+        "weight": 0.25,
+        "reliability": 0.333,
+        "detail": "Change in growth-theme density compared with pressure and risk themes."
       }
     ],
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2024-12-31",
+      "type": "annual_report",
+      "title": "Shell Annual report 2024",
+      "url": "https://www.shell.com/investors/results-and-reporting/annual-report/_jcr_content/root/main/section/promo/links/item0.stream/1752580693041/6c20b8111738b9a590ba145f0d1c4fa0e530dae0/shell-annual-report-2024.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2025-12-31",
       "type": "annual_report",
