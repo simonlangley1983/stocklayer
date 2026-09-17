@@ -2054,49 +2054,34 @@
     },
     {
       "date": "2026-09-16",
-      "dailyScore": 50.9,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.2,
-      "confidence": 11.5,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 50.1,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
+      "coverageStatus": "no_coverage",
       "collectionCompleteness": 0.75,
-      "candidateCount": 93,
-      "eligibleArticleCount": 1,
-      "storyCount": 1,
-      "effectiveStoryCount": 1.0,
-      "sourceCount": 1,
+      "candidateCount": 35,
+      "eligibleArticleCount": 0,
+      "storyCount": 0,
+      "effectiveStoryCount": 0,
+      "sourceCount": 0,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 1,
+      "neutralStoryCount": 0,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 89,
-        "missing_company_alias": 3
+        "ambiguous_company_without_alias": 35
       },
-      "topStories": [
-        {
-          "id": "e0ef7dc8cfffae70",
-          "storyClusterId": "story-001",
-          "title": "Why healthcare is the next driver of retail growth",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNMjhOOGRNZU95R0FjYjNiYVFGMEprMU9haVhtTldhSU1xa2I5V092eUFwOTJISVgtSzgyQ1V5R0w1X1NOTlhmWHBHdVdLVFVoenluakdtSTV2ck9tcVlFYU94MjJuTm9icmlZZEtSaEZDeVdoWkpaQ3MyTGI3WGhvM0tpVXB3MWQyNVQycg?oc=5",
-          "source": "igd.com",
-          "publishedAt": "2026-09-16T14:39:14Z",
-          "polarity": 0.0548,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ],
+      "topStories": [],
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 11.5",
-          "evidenceArticleIds": [
-            "e0ef7dc8cfffae70"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         },
         {
           "type": "collection_degraded",
@@ -2104,12 +2089,10 @@
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "e0ef7dc8cfffae70"
-          ]
+          "evidenceArticleIds": []
         }
       ],
-      "changeFromPreviousScoredDay": -13.0
+      "changeFromPreviousScoredDay": null
     }
   ]
 }
