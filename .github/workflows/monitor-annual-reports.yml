@@ -43,7 +43,9 @@ jobs:
         run: python -m pip install "pypdf>=6,<7" "cryptography>=45,<46" "curl-cffi>=0.13,<0.14"
 
       - name: Test backfill queue and timeout safeguards
-        run: python scripts/test_annual_backfill.py
+        run: |
+          python scripts/test_annual_backfill.py
+          python scripts/test_report_discovery.py
 
       - name: Build annual report register
         run: python scripts/build_report_register.py
@@ -63,6 +65,10 @@ jobs:
 
       - name: Backfill a resumable batch of missing annual reports
         run: python scripts/backfill_annual_reports.py --batch-size 30 --workers 4 --report-timeout 180 ${{ (inputs.historical || github.event.schedule == '40 2 * * 0') && '--start-year 2020' || '--latest-only' }}
+
+      - name: Recover historical reports after latest-year priority work
+        if: ${{ !inputs.historical && github.event.schedule != '40 2 * * 0' }}
+        run: python scripts/backfill_annual_reports.py --batch-size 12 --workers 4 --report-timeout 180 --start-year 2020
 
       - name: Build customer company reports
         run: |

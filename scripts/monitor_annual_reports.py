@@ -169,7 +169,7 @@ class LinkParser(HTMLParser):
         href = dict(attrs).get("href")
         if href:
             self._active_href = href
-            self._active_text = []
+            self._active_text = [dict(attrs).get("title") or "", dict(attrs).get("aria-label") or ""]
 
     def handle_data(self, data: str) -> None:
         if self._active_href:
@@ -353,7 +353,12 @@ def extract_year(value: str, current_year: int) -> int | None:
 
 def is_report_link(text: str, url: str, current_year: int) -> bool:
     haystack = f"{text} {url}".lower()
-    if any(keyword in haystack for keyword in EXCLUDED_KEYWORDS):
+    # Issuers also store full annual reports in quarterly-results directories.
+    # Classify the document title and filename, not its parent folders or query.
+    filename = urllib.parse.unquote(Path(urllib.parse.urlparse(url).path).name)
+    document_label = f"{text} {filename}".lower()
+    if any(re.search(r"(?<![a-z0-9])" + re.escape(keyword) + r"(?![a-z0-9])", document_label)
+           for keyword in EXCLUDED_KEYWORDS):
         return False
     has_report_keyword = any(keyword in haystack for keyword in REPORT_KEYWORDS)
     has_pdf = ".pdf" in urllib.parse.urlparse(url).path.lower()
@@ -391,7 +396,12 @@ def parse_report_links(source_url: str, html: str, current_year: int) -> list[di
         title = link["text"] or urllib.parse.unquote(Path(urllib.parse.urlparse(absolute_url).path).name)
         if not is_report_link(title, absolute_url, current_year):
             continue
-        year = extract_year(f"{title} {absolute_url}", current_year)
+        # A CMS upload timestamp can be newer than the report's financial year.
+        filename = urllib.parse.unquote(Path(urllib.parse.urlparse(absolute_url).path).name)
+        named_year = re.search(r"annual[\s_-]*report[\s_-]*(20\d{2})", title + " " + filename, re.I)
+        year = int(named_year.group(1)) if named_year else extract_year(title, current_year)
+        if year is None:
+            year = extract_year(absolute_url, current_year)
         reports.append({
             "id": link_id(absolute_url, title),
             "year": year,

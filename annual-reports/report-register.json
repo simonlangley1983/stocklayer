@@ -1,16 +1,18 @@
 {
-  "generatedAt": "2026-09-17T12:10:02.781860+00:00",
+  "generatedAt": "2026-09-17T12:49:22.382478+00:00",
   "companyCount": 100,
-  "verifiedCurrentCount": 4,
+  "verifiedCurrentCount": 14,
   "companies": {
     "astrazeneca": {
       "companyName": "AstraZeneca",
-      "archiveUrls": [],
-      "archiveStatus": "needs_source_review",
+      "archiveUrls": [
+        "https://www.astrazeneca.com/investor-relations/annual-reports.html"
+      ],
+      "archiveStatus": "previously_successful",
       "latestLoadedYear": 2025,
-      "latestAvailableYear": null,
-      "latestAvailabilityVerifiedAt": null,
-      "status": "latest_availability_unverified",
+      "latestAvailableYear": 2025,
+      "latestAvailabilityVerifiedAt": "2026-09-17T12:49:21.301149+00:00",
+      "status": "verified_current",
       "documents": [
         {
           "year": 2019,
@@ -56,16 +58,23 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {},
+      "latestAvailabilitySource": "https://www.astrazeneca.com/investor-relations/annual-reports.html",
+      "discoveryReview": {
+        "checkedAt": "2026-09-17T12:49:21.301149+00:00",
+        "outcome": "archive_verified",
+        "detail": "Issuer annual-report listing reviewed; latest available year verified. Working archive saved.",
+        "recoveredYears": []
+      }
     },
     "shell": {
       "companyName": "Shell",
       "archiveUrls": [],
       "archiveStatus": "needs_source_review",
       "latestLoadedYear": 2025,
-      "latestAvailableYear": null,
-      "latestAvailabilityVerifiedAt": null,
-      "status": "latest_availability_unverified",
+      "latestAvailableYear": 2025,
+      "latestAvailabilityVerifiedAt": "2026-09-17T12:49:21.301149+00:00",
+      "status": "verified_current",
       "documents": [
         {
           "year": 2025,
@@ -75,16 +84,26 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {},
+      "latestAvailabilitySource": "https://www.shell.com/investors/results-and-reporting/annual-report-archive.html",
+      "discoveryReview": {
+        "checkedAt": "2026-09-17T12:49:21.301149+00:00",
+        "outcome": "automated_download_unresolved",
+        "detail": "Issuer annual-report listing reviewed; latest available year verified. Browser-readable issuer archive; automated response did not expose usable PDFs.",
+        "recoveredYears": []
+      }
     },
     "hsbc": {
       "companyName": "HSBC",
-      "archiveUrls": [],
-      "archiveStatus": "needs_source_review",
+      "archiveUrls": [
+        "https://www.hsbc.com/investors/results-and-announcements/annual-report",
+        "https://www.hsbc.com/investors/results-and-announcements/all-reporting"
+      ],
+      "archiveStatus": "previously_successful",
       "latestLoadedYear": 2025,
-      "latestAvailableYear": null,
-      "latestAvailabilityVerifiedAt": null,
-      "status": "latest_availability_unverified",
+      "latestAvailableYear": 2025,
+      "latestAvailabilityVerifiedAt": "2026-09-17T12:49:21.301149+00:00",
+      "status": "verified_current",
       "documents": [
         {
           "year": 2020,
@@ -124,26 +143,51 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {},
+      "latestAvailabilitySource": "https://www.hsbc.com/investors/results-and-announcements/annual-report",
+      "discoveryReview": {
+        "checkedAt": "2026-09-17T12:49:21.301149+00:00",
+        "outcome": "archive_verified",
+        "detail": "Issuer annual-report listing reviewed; latest available year verified. Working archive saved.",
+        "recoveredYears": []
+      }
     },
     "unilever": {
       "companyName": "Unilever",
-      "archiveUrls": [],
-      "archiveStatus": "needs_source_review",
+      "archiveUrls": [
+        "https://www.unilever.com/investors/annual-report-and-accounts/",
+        "https://www.unilever.com/investors/annual-report-and-accounts/archive-of-annual-report-and-accounts/"
+      ],
+      "archiveStatus": "previously_successful",
       "latestLoadedYear": 2025,
-      "latestAvailableYear": null,
-      "latestAvailabilityVerifiedAt": null,
-      "status": "latest_availability_unverified",
+      "latestAvailableYear": 2025,
+      "latestAvailabilityVerifiedAt": "2026-09-17T12:49:21.301149+00:00",
+      "status": "verified_current",
       "documents": [
         {
           "year": 2025,
           "url": "https://www.unilever.com/files/unilever-annual-report-and-accounts-2025.pdf",
           "sha256": "dcdc67ff84977e2beeb6b7a8113b6862fae1880838c613eceac42ba4b605d9d7",
           "extractionStatus": "extracted"
+        },
+        {
+          "year": 2024,
+          "url": "https://www.unilever.com/files/unilever-annual-report-and-accounts-2024.pdf",
+          "sha256": "c15d7a38b41d7baef49e78a9db9bbb1deaeec685ec160d1b7478c062eef8d6f2",
+          "extractionStatus": "extracted"
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {},
+      "latestAvailabilitySource": "https://www.unilever.com/investors/annual-report-and-accounts/",
+      "discoveryReview": {
+        "checkedAt": "2026-09-17T12:49:21.301149+00:00",
+        "outcome": "archive_verified",
+        "detail": "Issuer annual-report listing reviewed; latest available year verified. Working archive saved.",
+        "recoveredYears": [
+          2024
+        ]
+      }
     },
     "relx": {
       "companyName": "RELX",
@@ -684,22 +728,68 @@
     },
     "rio-tinto": {
       "companyName": "Rio Tinto",
-      "archiveUrls": [],
-      "archiveStatus": "needs_source_review",
+      "archiveUrls": [
+        "https://www.riotinto.com/invest/reports",
+        "https://www.riotinto.com/invest/invest-archive"
+      ],
+      "archiveStatus": "previously_successful",
       "latestLoadedYear": 2025,
-      "latestAvailableYear": null,
-      "latestAvailabilityVerifiedAt": null,
-      "status": "latest_availability_unverified",
+      "latestAvailableYear": 2025,
+      "latestAvailabilityVerifiedAt": "2026-09-17T12:49:21.301149+00:00",
+      "status": "verified_current",
       "documents": [
         {
           "year": 2025,
           "url": "https://cdn-rio.dataweavers.io/-/media/content/documents/invest/reports/annual-reports/2025-annual-report.pdf?rev=928756ce35df4757be31105d2665bd55",
           "sha256": "ef6f279dc6c3e7fc1c7c38a6759d48629a3a0d02b5a4b915c2c05ff186babcac",
           "extractionStatus": "extracted"
+        },
+        {
+          "year": 2024,
+          "url": "https://cdn-rio.dataweavers.io/-/media/content/documents/invest/reports/annual-reports/2024-annual-report.pdf?rev=f714bd4c3a1c425f83e3906005bb2168",
+          "sha256": "9395d60945f16c7191c252550af39ac0874d765727ef12692bf05ac5ce119115",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2023,
+          "url": "https://cdn-rio.dataweavers.io/-/media/content/documents/invest/reports/annual-reports/rt-annual-report-2023.pdf?rev=bb6b81468b3f4911a6ae42886f6c2d24",
+          "sha256": "18cc273e6686dd26e541abaa6dfb02b3e33cd678188d7f1b5a83f09eeb4cf5e7",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2022,
+          "url": "https://cdn-rio.dataweavers.io/-/media/content/documents/invest/reports/annual-reports/2022/rt-annual-report-2022.pdf?rev=7a10cc8ddcf14ecf9bc5133070c33e85",
+          "sha256": "29979b96f84d508afa1760b26651da12d3bb51cd32713251736fed45d6ec859b",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2021,
+          "url": "https://cdn-rio.dataweavers.io/-/media/content/documents/invest/reports/annual-reports/2021/rt-annual-report-2021.pdf?rev=d54c8b0596a44e159024ac7421a4d38d",
+          "sha256": "930a6c4d27720172d73c02059abc946b728ea07d9ce813f1aab127311cbd5979",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2020,
+          "url": "https://cdn-rio.dataweavers.io/-/media/content/documents/invest/reports/annual-reports/2020/rt-annual-report-2020.pdf?rev=962ff69a16854eda91bd357158b11e42",
+          "sha256": "002e150124cb3958e750b39ab02581c7068385a965cfe67780f63ea8cf89f47f",
+          "extractionStatus": "extracted"
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {},
+      "latestAvailabilitySource": "https://www.riotinto.com/invest/reports",
+      "discoveryReview": {
+        "checkedAt": "2026-09-17T12:49:21.301149+00:00",
+        "outcome": "archive_verified",
+        "detail": "Issuer annual-report listing reviewed; latest available year verified. Working archive saved.",
+        "recoveredYears": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ]
+      }
     },
     "national-grid": {
       "companyName": "National Grid",
@@ -837,31 +927,76 @@
     },
     "compass": {
       "companyName": "Compass Group",
-      "archiveUrls": [],
-      "archiveStatus": "needs_source_review",
+      "archiveUrls": [
+        "https://www.compass-group.com/en/investors/annual-report-archive.html"
+      ],
+      "archiveStatus": "previously_successful",
       "latestLoadedYear": 2025,
-      "latestAvailableYear": null,
-      "latestAvailabilityVerifiedAt": null,
-      "status": "latest_availability_unverified",
+      "latestAvailableYear": 2025,
+      "latestAvailabilityVerifiedAt": "2026-09-17T12:49:21.301149+00:00",
+      "status": "verified_current",
       "documents": [
         {
           "year": 2025,
           "url": "https://www.compass-group.com/content/dam/compass-group/corporate/oar-2025/oar-page/annual-report-2025.pdf",
           "sha256": "3ed83da307bf3da67a5006cecc9f9ec1fc19153600ee6a95bf167b584ed55c93",
           "extractionStatus": "extracted"
+        },
+        {
+          "year": 2020,
+          "url": "https://www.compass-group.com/content/dam/compass-group/corporate/Investors/Annual-reports/CompassGroupPLC_AnnualReport2020_FINAL.pdf.downloadasset.pdf",
+          "sha256": "4ca77cc398d47a807210706f710a5201c1950555f1a34f99f63787ddf43d30df",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2021,
+          "url": "https://www.compass-group.com/content/dam/compass-group/corporate/ar-updates-2021/annual-report-pdf/CompassGroupPLC_AnnualReport2021.pdf.downloadasset.pdf",
+          "sha256": "3553b613159cbaae3fb6fa5be9ff5c296b8a8c98bb02982f45d765e35b0bbe02",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2022,
+          "url": "https://www.compass-group.com/content/dam/compass-group/corporate/oar-2022/2022-annual-report-compass-group.pdf.downloadasset.pdf",
+          "sha256": "3c9ba2a122a683af764f3d6a364e074db64ae45fd5fb7efef973ceeb5b8fa491",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2023,
+          "url": "https://www.compass-group.com/content/dam/compass-group/corporate/oar-2023/annual-report-2023.pdf.downloadasset.pdf",
+          "sha256": "410326908a11995a2cbe33807e830e3316f857d997aca360f73edc3fb010b424",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2024,
+          "url": "https://www.compass-group.com/content/dam/compass-group/corporate/oar-2024/annual-report-2024.pdf.downloadasset.pdf",
+          "sha256": "c369afac65b3faad50d1b4ca947863e6ce3ff6a53db53df09bb6293a4f81ca3a",
+          "extractionStatus": "extracted"
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {},
+      "latestAvailabilitySource": "https://www.compass-group.com/en/investors.html",
+      "discoveryReview": {
+        "checkedAt": "2026-09-17T12:49:21.301149+00:00",
+        "outcome": "archive_verified",
+        "detail": "Issuer annual-report listing reviewed; latest available year verified. Working archive saved.",
+        "recoveredYears": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ]
+      }
     },
     "bae-systems": {
       "companyName": "BAE Systems",
       "archiveUrls": [],
       "archiveStatus": "needs_source_review",
       "latestLoadedYear": 2025,
-      "latestAvailableYear": null,
-      "latestAvailabilityVerifiedAt": null,
-      "status": "latest_availability_unverified",
+      "latestAvailableYear": 2025,
+      "latestAvailabilityVerifiedAt": "2026-09-17T12:49:21.301149+00:00",
+      "status": "verified_current",
       "documents": [
         {
           "year": 2025,
@@ -885,16 +1020,25 @@
             }
           ]
         }
+      },
+      "latestAvailabilitySource": "https://www.baesystems.com/investors/results-reports-events-archive",
+      "discoveryReview": {
+        "checkedAt": "2026-09-17T12:49:21.301149+00:00",
+        "outcome": "automated_download_unresolved",
+        "detail": "Issuer annual-report listing reviewed; latest available year verified. Browser-readable issuer archive; automated response did not expose usable PDFs.",
+        "recoveredYears": []
       }
     },
     "lloyds": {
       "companyName": "Lloyds Banking Group",
-      "archiveUrls": [],
-      "archiveStatus": "needs_source_review",
+      "archiveUrls": [
+        "https://www.lloydsbankinggroup.com/investors/annual-report/annual-report-archive.html"
+      ],
+      "archiveStatus": "previously_successful",
       "latestLoadedYear": 2025,
-      "latestAvailableYear": null,
-      "latestAvailabilityVerifiedAt": null,
-      "status": "latest_availability_unverified",
+      "latestAvailableYear": 2025,
+      "latestAvailabilityVerifiedAt": "2026-09-17T12:49:21.301149+00:00",
+      "status": "verified_current",
       "documents": [
         {
           "year": 2019,
@@ -925,10 +1069,32 @@
           "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/lloyds-banking-group-plc/2025/q4/2025-lbg-annual-report.pdf",
           "sha256": "e638f1800dccf644b29b8a179a413a41ba707a273007cea6571f6b5788813c8d",
           "extractionStatus": "extracted"
+        },
+        {
+          "year": 2024,
+          "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/lloyds-banking-group-plc/2024/q4/2024-lbg-annual-report.pdf",
+          "sha256": "c39a7befff281d349c5ccfe8a29db6cc6adb42ad29e335e72d282e0eaad2b602",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2023,
+          "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/lloyds-banking-group-plc/2023/q4/2023-lbg-annual-report.pdf",
+          "sha256": "eebd0e065b172c1cb3e9f876f198e5602b89c9886f462e446d2cbfd7ef032e2b",
+          "extractionStatus": "extracted"
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {},
+      "latestAvailabilitySource": "https://www.lloydsbankinggroup.com/investors/annual-report/annual-report-archive.html",
+      "discoveryReview": {
+        "checkedAt": "2026-09-17T12:49:21.301149+00:00",
+        "outcome": "archive_verified",
+        "detail": "Issuer annual-report listing reviewed; latest available year verified. Working archive saved.",
+        "recoveredYears": [
+          2023,
+          2024
+        ]
+      }
     },
     "3i": {
       "companyName": "3i Group",
@@ -1038,31 +1204,78 @@
     },
     "admiral": {
       "companyName": "Admiral Group PLC",
-      "archiveUrls": [],
-      "archiveStatus": "needs_source_review",
+      "archiveUrls": [
+        "https://admiralgroup.co.uk/investor-relations/results-reports-and-presentations"
+      ],
+      "archiveStatus": "previously_successful",
       "latestLoadedYear": 2025,
-      "latestAvailableYear": null,
-      "latestAvailabilityVerifiedAt": null,
-      "status": "latest_availability_unverified",
+      "latestAvailableYear": 2025,
+      "latestAvailabilityVerifiedAt": "2026-09-17T12:49:21.301149+00:00",
+      "status": "verified_current",
       "documents": [
         {
           "year": 2025,
           "url": "https://www.admiralgroup.co.uk/static-files/b4032ccb-738f-454d-92a1-ec2e95677423",
           "sha256": "b126f00ecd599726a75478b97237a40dad4de1c6187e67b491c3be74bff7bae4",
           "extractionStatus": "extracted"
+        },
+        {
+          "year": 2022,
+          "url": "https://admiralgroup.co.uk/static-files/702c838e-32ba-4302-9ab8-44ef661e56cd",
+          "sha256": "52e70c67d84730cc3354e2ae38f2b76f976837f4b9804210ee27aeb218f870b2",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2021,
+          "url": "https://admiralgroup.co.uk/static-files/d08da0fd-cb67-4d84-83e8-196d78d1a9aa",
+          "sha256": "daa969ece0a2d599b0918ac8eef217e48a48558170dd01ac5c7dda2fd1585ea3",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2020,
+          "url": "https://admiralgroup.co.uk/static-files/e914da16-f0fd-41e0-9571-6ec9df780e3c",
+          "sha256": "4df34ee0b728fc4e7675e834959afc452b8ba357a86d462cf5b6c43ee935d95d",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2024,
+          "url": "https://admiralgroup.co.uk/static-files/bb441754-520f-4110-9ff1-fc6c286de099",
+          "sha256": "338dc3dd494c59d3c8d4bdb7f802eb35d444cb5d314d9f1d4db43ca1c5047418",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2023,
+          "url": "https://admiralgroup.co.uk/static-files/6d6c4471-0872-4f63-9bf6-52f3cc3cbabd",
+          "sha256": "f93c56b0d317230cba2b408881b862c3376d33d29522c53a3ad2bc0dbe51f705",
+          "extractionStatus": "extracted"
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {},
+      "latestAvailabilitySource": "https://admiralgroup.co.uk/investor-relations/results-reports-and-presentations",
+      "discoveryReview": {
+        "checkedAt": "2026-09-17T12:49:21.301149+00:00",
+        "outcome": "archive_verified",
+        "detail": "Issuer annual-report listing reviewed; latest available year verified. Working archive saved.",
+        "recoveredYears": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ]
+      }
     },
     "airtel-africa": {
       "companyName": "Airtel Africa PLC",
-      "archiveUrls": [],
-      "archiveStatus": "needs_source_review",
+      "archiveUrls": [
+        "https://www.airtel.africa/annual-reports"
+      ],
+      "archiveStatus": "previously_successful",
       "latestLoadedYear": 2026,
-      "latestAvailableYear": null,
-      "latestAvailabilityVerifiedAt": null,
-      "status": "latest_availability_unverified",
+      "latestAvailableYear": 2026,
+      "latestAvailabilityVerifiedAt": "2026-09-17T12:49:21.301149+00:00",
+      "status": "verified_current",
       "documents": [
         {
           "year": 2020,
@@ -1117,6 +1330,13 @@
           "retryAfter": "2026-09-14T20:12:55.364314+00:00",
           "diagnostics": []
         }
+      },
+      "latestAvailabilitySource": "https://www.airtel.africa/annual-reports",
+      "discoveryReview": {
+        "checkedAt": "2026-09-17T12:49:21.301149+00:00",
+        "outcome": "archive_verified",
+        "detail": "Issuer annual-report listing reviewed; latest available year verified. Working archive saved.",
+        "recoveredYears": []
       }
     },
     "alliance-witan": {
