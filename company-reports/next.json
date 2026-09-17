@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-17T09:03:02.497097Z",
+  "generatedAt": "2026-09-17T10:11:41.302714Z",
   "company": {
     "companyName": "Next PLC",
     "ticker": "NXT.L",
@@ -22,9 +22,9 @@
     "periodStart": "2026-06-30",
     "periodEnd": "2026-09-16",
     "observationCount": 63,
-    "scoredDayCount": 3,
-    "latestScore": 50.9,
-    "latestScoreDate": "2026-09-16",
+    "scoredDayCount": 2,
+    "latestScore": 63.9,
+    "latestScoreDate": "2026-08-16",
     "series": [
       {
         "date": "2026-06-30",
@@ -586,12 +586,12 @@
       },
       {
         "date": "2026-09-16",
-        "dailyScore": 50.9,
-        "rollingScore": 50.2,
-        "storyCount": 1,
-        "sourceCount": 1,
-        "confidence": 11.5,
-        "coverageStatus": "ok"
+        "dailyScore": null,
+        "rollingScore": 50.1,
+        "storyCount": 0,
+        "sourceCount": 0,
+        "confidence": 0.0,
+        "coverageStatus": "no_coverage"
       }
     ],
     "stories": [
@@ -614,16 +614,6 @@
         "direction": "Very positive",
         "detail": null,
         "significance": 0.987
-      },
-      {
-        "date": "2026-09-16",
-        "type": "press_story",
-        "title": "Why healthcare is the next driver of retail growth",
-        "source": "igd.com",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNMjhOOGRNZU95R0FjYjNiYVFGMEprMU9haVhtTldhSU1xa2I5V092eUFwOTJISVgtSzgyQ1V5R0w1X1NOTlhmWHBHdVdLVFVoenluakdtSTV2ck9tcVlFYU94MjJuTm9icmlZZEtSaEZDeVdoWkpaQ3MyTGI3WGhvM0tpVXB3MWQyNVQycg?oc=5",
-        "direction": "Neutral / mixed",
-        "detail": null,
-        "significance": 0.205
       }
     ]
   },
@@ -1116,17 +1106,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 52.1,
+    "score": 54.5,
     "label": "Mixed",
-    "evidenceCoverage": 66,
+    "evidenceCoverage": 64,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 57.0,
+        "score": 64.1,
         "weight": 0.4,
-        "reliability": 0.15,
-        "detail": "Recency-weighted average of 3 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.1,
+        "detail": "Recency-weighted average of 2 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1212,16 +1202,6 @@
       "direction": "Very positive",
       "detail": null,
       "significance": 0.987
-    },
-    {
-      "date": "2026-09-16",
-      "type": "press_story",
-      "title": "Why healthcare is the next driver of retail growth",
-      "source": "igd.com",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNMjhOOGRNZU95R0FjYjNiYVFGMEprMU9haVhtTldhSU1xa2I5V092eUFwOTJISVgtSzgyQ1V5R0w1X1NOTlhmWHBHdVdLVFVoenluakdtSTV2ck9tcVlFYU94MjJuTm9icmlZZEtSaEZDeVdoWkpaQ3MyTGI3WGhvM0tpVXB3MWQyNVQycg?oc=5",
-      "direction": "Neutral / mixed",
-      "detail": null,
-      "significance": 0.205
     },
     {
       "date": "2026-12-31",
