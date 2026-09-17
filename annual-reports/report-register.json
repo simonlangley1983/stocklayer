@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T08:16:22.967675+00:00",
+  "generatedAt": "2026-09-17T09:03:00.029706+00:00",
   "companyCount": 100,
   "verifiedCurrentCount": 4,
   "companies": {
@@ -942,15 +942,15 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
-          "year": 2026,
-          "url": "https://www.3i.com/investor-relations/annual-report-2026/downloads/3i-Group-Annual-Report-and-accounts-FY2026.pdf",
-          "sha256": "72820ca114daca16e068e1b346e8b79cb6e74c83f812db7d5aae8e853cb86e72",
-          "extractionStatus": "extracted"
-        },
-        {
           "year": 2025,
           "url": "https://www.3i.com/media/cxwbwcdw/3i-group-annual-report-2025-interactive.pdf",
           "sha256": "a855bc595ed08210a95897d3c42888a60531dc343ae0b7c932b16c77f75a397c",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2026,
+          "url": "https://www.3i.com/investor-relations/annual-report-2026/downloads/3i-Group-Annual-Report-and-accounts-FY2026.pdf",
+          "sha256": "72820ca114daca16e068e1b346e8b79cb6e74c83f812db7d5aae8e853cb86e72",
           "extractionStatus": "extracted"
         }
       ],
@@ -1503,6 +1503,18 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2023,
+          "url": "https://www.bt.com/about/annual-reports/2023summary/assets/files/bt_ar23_annual_report_2023.pdf",
+          "sha256": "3560bc550c254166487addb748a8091b12a94389e7e8e7e47f427fbbba5ad7c8",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2024,
+          "url": "https://www.bt.com/about/annual-reports/2024summary/assets/pdf/bt_annualreport_2024.pdf",
+          "sha256": "3f56e4cd9bceb9b85c57b93da32a07d88b25d9641b0d0a669f05858cbd7d443d",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2025,
           "url": "https://www.bt.com/content/dam/bt-plc/assets/documents/investors/financial-reporting-and-news/annual-reports/2025/2025-bt-group-plc-annual-report-accessible.pdf",
           "sha256": "915825613ee3599f25dfe0f8e24c0052c4e31f1f46c9b6d349867c4e8cfa841c",
@@ -1526,45 +1538,20 @@
           "diagnostics": []
         },
         "bt:2024": {
-          "candidateHash": "ff85385b93b9969df9d0dae01826a49bb6901480783c48ecd64123d21003d271",
+          "candidateHash": "e6a97549f3c8af7656447caa6555c30c5b6167cfecf095c6939ba9b4ce7046ed",
           "attemptCount": 1,
-          "lastAttempt": "2026-09-13T10:43:06.485391+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-13T16:43:06.485391+00:00",
-          "diagnostics": [
-            {
-              "url": "https://www.bt.com/content/dam/bt-plc/assets/documents/investors/financial-reporting-and-news/annual-reports/section-172-statements/2024-ee-group-investments-limited-172-statement.pdf",
-              "error": "ValueError: document is too short to be a full annual report (1 pages, 317 words)"
-            },
-            {
-              "url": "https://www.bt.com/content/dam/bt-plc/assets/documents/investors/financial-reporting-and-news/annual-reports/section-172-statements/2024-bt-plc-172-statement.pdf",
-              "error": "ValueError: document is too short to be a full annual report (2 pages, 729 words)"
-            },
-            {
-              "url": "https://www.bt.com/content/dam/bt-plc/assets/documents/investors/financial-reporting-and-news/annual-reports/section-172-statements/2024-bt holdings-limited-section-172-statement.pdf",
-              "error": "ValueError: document is too short to be a full annual report (1 pages, 231 words)"
-            },
-            {
-              "url": "https://www.bt.com/content/dam/bt-plc/assets/documents/investors/financial-reporting-and-news/annual-reports/section-172-statements/2024-plusnet-plc-section-172-statement.pdf",
-              "error": "ValueError: document is too short to be a full annual report (2 pages, 763 words)"
-            },
-            {
-              "url": "https://www.bt.com/content/dam/bt-plc/assets/documents/investors/financial-reporting-and-news/annual-reports/section-172-statements/2024-mainline-digital-communications-section-172-statement.pdf",
-              "error": "ValueError: document is too short to be a full annual report (2 pages, 723 words)"
-            },
-            {
-              "url": "https://www.bt.com/content/dam/bt-plc/assets/documents/investors/financial-reporting-and-news/annual-reports/section-172-statements/2024-mainline-communications-group-limited-section-172-statement.pdf",
-              "error": "ValueError: document is too short to be a full annual report (1 pages, 233 words)"
-            },
-            {
-              "url": "https://www.bt.com/content/dam/bt-plc/assets/documents/investors/financial-reporting-and-news/annual-reports/section-172-statements/2024-extraclick-limited-section-172-statement.pdf",
-              "error": "ValueError: document is too short to be a full annual report (1 pages, 229 words)"
-            },
-            {
-              "url": "https://www.bt.com/content/dam/bt-plc/assets/documents/investors/financial-reporting-and-news/annual-reports/section-172-statements/2024-ee-limited-section-172-statement.pdf",
-              "error": "ValueError: document is too short to be a full annual report (1 pages, 793 words)"
-            }
-          ]
+          "lastAttempt": "2026-09-17T09:02:56.087362+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-17T15:02:56.087362+00:00",
+          "diagnostics": []
+        },
+        "bt:2023": {
+          "candidateHash": "c2e2571077c7a16a8e4a767ea511708e6c1a72a6e934309da93d7cb067a88d98",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-17T09:02:59.617818+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-17T15:02:59.617818+00:00",
+          "diagnostics": []
         }
       }
     },
