@@ -3,7 +3,7 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-09-17T17:39:52.768435Z",
+  "generatedAt": "2026-09-17T18:48:12.318169Z",
   "asOfDate": "2026-09-16",
   "companyCount": 100,
   "companies": {
@@ -2437,28 +2437,22 @@
       "ticker": "ABDN.L",
       "slug": "aberdeen-group",
       "date": "2026-09-16",
-      "dailyScore": 48.9,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.9,
-      "confidence": 64.7,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "storyCount": 61,
-      "sourceCount": 28,
-      "changeFromPreviousScoredDay": -1.7,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 49.7,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "leadership_change",
+          "type": "no_coverage",
           "direction": "neutral",
-          "severity": "high",
-          "status": "confirmed"
-        },
-        {
-          "type": "collection_degraded",
-          "direction": "neutral",
-          "severity": "medium",
+          "severity": "low",
           "status": "calculated",
-          "detail": "The provider result ceiling was reached for this day"
+          "detail": "Collection succeeded but found no eligible coverage"
         }
       ]
     },
