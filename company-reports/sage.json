@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-17T01:06:18.902617Z",
+  "generatedAt": "2026-09-17T01:35:34.090501Z",
   "company": {
     "companyName": "Sage Group PLC",
     "ticker": "SGE.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-15",
-    "observationCount": 55,
-    "scoredDayCount": 1,
-    "latestScore": 50.8,
-    "latestScoreDate": "2026-09-15",
+    "periodEnd": "2026-09-16",
+    "observationCount": 56,
+    "scoredDayCount": 2,
+    "latestScore": 49.3,
+    "latestScoreDate": "2026-09-16",
     "series": [
       {
         "date": "2026-06-30",
@@ -520,6 +520,15 @@
         "sourceCount": 1,
         "confidence": 15.3,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-16",
+        "dailyScore": 49.3,
+        "rollingScore": 50.0,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.4,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -532,6 +541,16 @@
         "direction": "Neutral / mixed",
         "detail": null,
         "significance": 0.196
+      },
+      {
+        "date": "2026-09-16",
+        "type": "press_story",
+        "title": "Why Is Sage Group Steering The London Software Conversation Before Thursday's Rate Call?",
+        "source": "kalkinemedia.com",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQbFpwV3NBSmRsR3ZWUFhja3NqcWJjVVdZTGhZb3RIRUlqYXo2S0pjZmtXcGJ6SWVZU0x2ZUtwTi0wLVY5eEI4SnJKajQxUmRLcjhWVlVpZW9CNkl3ZnhlRjBUdGM1bEFnSnl6cGxHZXN6VlRxcXprUktTaEwtb1d1ZUZwMUlyM1pkbFg2MURUMVlrMEhJYS1ISjgwcU1rZzZEcm41eGJHODFDSl9RRnB0dm1ta1dQci1sR1FZdVlRSmYzRHNmeHgyQXdvdlE?oc=5",
+        "direction": "Neutral / mixed",
+        "detail": null,
+        "significance": 0.19
       }
     ]
   },
@@ -618,17 +637,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 53.0,
+    "score": 52.7,
     "label": "Mixed",
-    "evidenceCoverage": 49,
+    "evidenceCoverage": 52,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 50.8,
+        "score": 50.0,
         "weight": 0.4,
-        "reliability": 0.05,
-        "detail": "Recency-weighted average of 1 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.1,
+        "detail": "Recency-weighted average of 2 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -660,6 +679,16 @@
       "direction": "Neutral / mixed",
       "detail": null,
       "significance": 0.196
+    },
+    {
+      "date": "2026-09-16",
+      "type": "press_story",
+      "title": "Why Is Sage Group Steering The London Software Conversation Before Thursday's Rate Call?",
+      "source": "kalkinemedia.com",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQbFpwV3NBSmRsR3ZWUFhja3NqcWJjVVdZTGhZb3RIRUlqYXo2S0pjZmtXcGJ6SWVZU0x2ZUtwTi0wLVY5eEI4SnJKajQxUmRLcjhWVlVpZW9CNkl3ZnhlRjBUdGM1bEFnSnl6cGxHZXN6VlRxcXprUktTaEwtb1d1ZUZwMUlyM1pkbFg2MURUMVlrMEhJYS1ISjgwcU1rZzZEcm41eGJHODFDSl9RRnB0dm1ta1dQci1sR1FZdVlRSmYzRHNmeHgyQXdvdlE?oc=5",
+      "direction": "Neutral / mixed",
+      "detail": null,
+      "significance": 0.19
     }
   ],
   "persistentEvents": []

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-17T01:06:18.902617Z",
+  "generatedAt": "2026-09-17T01:35:34.090501Z",
   "company": {
     "companyName": "Burberry Group PLC",
     "ticker": "BRBY.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-09-15",
-    "periodEnd": "2026-09-15",
-    "observationCount": 1,
-    "scoredDayCount": 1,
-    "latestScore": 31.5,
-    "latestScoreDate": "2026-09-15",
+    "periodEnd": "2026-09-16",
+    "observationCount": 2,
+    "scoredDayCount": 2,
+    "latestScore": 52.0,
+    "latestScoreDate": "2026-09-16",
     "series": [
       {
         "date": "2026-09-15",
@@ -33,6 +33,15 @@
         "storyCount": 4,
         "sourceCount": 3,
         "confidence": 62.9,
+        "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-16",
+        "dailyScore": 52.0,
+        "rollingScore": 48.1,
+        "storyCount": 6,
+        "sourceCount": 6,
+        "confidence": 74.2,
         "coverageStatus": "ok"
       }
     ],
@@ -56,6 +65,26 @@
         "direction": "negative",
         "detail": "Daily press score is 31.5",
         "significance": 1.457
+      },
+      {
+        "date": "2026-09-16",
+        "type": "sentiment_jump",
+        "title": "Burberry stock slips on stake cuts and 2025 results",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOYTh6dHRkUjVVa0w0RjE0OEFJVHp1WEZ5aEEzOFFFVzRQNXVqdld3STM1Y3BOSzNDWHo2dTZvMFZDOE5LV00tNXVlei05OElEU3Y1c1hVT3RIUGhET2RRQjZwZ2Z0Z0E1NE1JTS1UVVg4V3dDaEtzSlRhTWFoZzFyYlZkQ2JKUGhNTllxckNJNm5qRUdLbi1YRUsyVXc5dmJYVlNmZ1k2X19lbTZ4SjFOYlQ2MnA?oc=5",
+        "direction": "positive",
+        "detail": "Daily score increased by 20.5 points",
+        "significance": 1.605
+      },
+      {
+        "date": "2026-09-16",
+        "type": "sentiment_jump",
+        "title": "Burberry Group rallies Wednesday, outperforms market",
+        "source": "marketwatch.com",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQZ3V5X2R2WjYxVGVDOUxrSk9JaDNkdTR6RXpEVzZvRW5ZcDJDZllxY3BxTWxjcGoxZXF4N3RIamdTSkhPN09kbG9lSExpNzFUU1JtcGNTN1NfYzdLS3p3WjZoMlp4VkU3UnhQZFpxenhxRXZDLVBQYWdwNUNPanl1ejBWYnh5Rnl1U0ZWQVlCdGlPT25HMGJNMzFid3ZVQWpjZkNNTTcyNGxzZ3hPSFlEdnVRNmNUbFBISndzb0dGTFhGTEw3OHgyZA?oc=5",
+        "direction": "positive",
+        "detail": "Daily score increased by 20.5 points",
+        "significance": 1.516
       }
     ]
   },
@@ -142,17 +171,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 37.3,
+    "score": 41.4,
     "label": "Low",
-    "evidenceCoverage": 49,
+    "evidenceCoverage": 52,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 31.5,
+        "score": 41.9,
         "weight": 0.4,
-        "reliability": 0.05,
-        "detail": "Recency-weighted average of 1 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.1,
+        "detail": "Recency-weighted average of 2 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -185,6 +214,26 @@
       "direction": "negative",
       "detail": "Daily press score is 31.5",
       "significance": 1.457
+    },
+    {
+      "date": "2026-09-16",
+      "type": "sentiment_jump",
+      "title": "Burberry stock slips on stake cuts and 2025 results",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOYTh6dHRkUjVVa0w0RjE0OEFJVHp1WEZ5aEEzOFFFVzRQNXVqdld3STM1Y3BOSzNDWHo2dTZvMFZDOE5LV00tNXVlei05OElEU3Y1c1hVT3RIUGhET2RRQjZwZ2Z0Z0E1NE1JTS1UVVg4V3dDaEtzSlRhTWFoZzFyYlZkQ2JKUGhNTllxckNJNm5qRUdLbi1YRUsyVXc5dmJYVlNmZ1k2X19lbTZ4SjFOYlQ2MnA?oc=5",
+      "direction": "positive",
+      "detail": "Daily score increased by 20.5 points",
+      "significance": 1.605
+    },
+    {
+      "date": "2026-09-16",
+      "type": "sentiment_jump",
+      "title": "Burberry Group rallies Wednesday, outperforms market",
+      "source": "marketwatch.com",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQZ3V5X2R2WjYxVGVDOUxrSk9JaDNkdTR6RXpEVzZvRW5ZcDJDZllxY3BxTWxjcGoxZXF4N3RIamdTSkhPN09kbG9lSExpNzFUU1JtcGNTN1NfYzdLS3p3WjZoMlp4VkU3UnhQZFpxenhxRXZDLVBQYWdwNUNPanl1ejBWYnh5Rnl1U0ZWQVlCdGlPT25HMGJNMzFid3ZVQWpjZkNNTTcyNGxzZ3hPSFlEdnVRNmNUbFBISndzb0dGTFhGTEw3OHgyZA?oc=5",
+      "direction": "positive",
+      "detail": "Daily score increased by 20.5 points",
+      "significance": 1.516
     },
     {
       "date": "2026-12-31",

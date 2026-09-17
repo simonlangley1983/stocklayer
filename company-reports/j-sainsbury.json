@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-17T01:06:18.902617Z",
+  "generatedAt": "2026-09-17T01:35:34.090501Z",
   "company": {
     "companyName": "J Sainsbury PLC",
     "ticker": "SBRY.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-15",
-    "observationCount": 62,
-    "scoredDayCount": 11,
-    "latestScore": 44.4,
-    "latestScoreDate": "2026-09-15",
+    "periodEnd": "2026-09-16",
+    "observationCount": 63,
+    "scoredDayCount": 12,
+    "latestScore": 53.8,
+    "latestScoreDate": "2026-09-16",
     "series": [
       {
         "date": "2026-06-30",
@@ -583,6 +583,15 @@
         "sourceCount": 1,
         "confidence": 17.3,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-16",
+        "dailyScore": 53.8,
+        "rollingScore": 49.8,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 16.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -635,6 +644,16 @@
         "direction": "Negative",
         "detail": null,
         "significance": 0.488
+      },
+      {
+        "date": "2026-09-16",
+        "type": "press_story",
+        "title": "How Is J Sainsbury (LSE:SBRY) Reshaping Its Cost Base As Store Openings Accelerate?",
+        "source": "kalkinemedia.com",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxObUxhNTN3cENQTXRXS19vOGpTQ09WbFdLWmFfMFlGNEdoY3J5Q3dsemxYLWJ6dGRQSHJvNVVETmRaeVJDU1ZRODBOSndHVzV6alN1ZTVCZ1RXZmVieklUUS16b1FYSVh3RElvbXhGRXh6NEwyM1B0UnZJbHhleGdKeDRLWGtwczZDTmRHa2x0ZWtyRklDZ1U3elhlVDNvbUtJYTVaSkhEd05ZcHhxNHdyOUtXYXVvVVR3YWlPY093?oc=5",
+        "direction": "Positive",
+        "detail": null,
+        "significance": 0.377
       }
     ]
   },
@@ -721,17 +740,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 32.5,
+    "score": 32.7,
     "label": "Low",
-    "evidenceCoverage": 76,
+    "evidenceCoverage": 79,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 47.6,
+        "score": 48.5,
         "weight": 0.4,
-        "reliability": 0.55,
-        "detail": "Recency-weighted average of 11 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.6,
+        "detail": "Recency-weighted average of 12 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -794,6 +813,16 @@
       "direction": "Negative",
       "detail": null,
       "significance": 0.488
+    },
+    {
+      "date": "2026-09-16",
+      "type": "press_story",
+      "title": "How Is J Sainsbury (LSE:SBRY) Reshaping Its Cost Base As Store Openings Accelerate?",
+      "source": "kalkinemedia.com",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxObUxhNTN3cENQTXRXS19vOGpTQ09WbFdLWmFfMFlGNEdoY3J5Q3dsemxYLWJ6dGRQSHJvNVVETmRaeVJDU1ZRODBOSndHVzV6alN1ZTVCZ1RXZmVieklUUS16b1FYSVh3RElvbXhGRXh6NEwyM1B0UnZJbHhleGdKeDRLWGtwczZDTmRHa2x0ZWtyRklDZ1U3elhlVDNvbUtJYTVaSkhEd05ZcHhxNHdyOUtXYXVvVVR3YWlPY093?oc=5",
+      "direction": "Positive",
+      "detail": null,
+      "significance": 0.377
     },
     {
       "date": "2026-12-31",

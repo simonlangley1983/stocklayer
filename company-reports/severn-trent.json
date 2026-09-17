@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-17T01:06:18.902617Z",
+  "generatedAt": "2026-09-17T01:35:34.090501Z",
   "company": {
     "companyName": "Severn Trent PLC",
     "ticker": "SVT.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-15",
-    "observationCount": 70,
-    "scoredDayCount": 58,
-    "latestScore": 58.2,
-    "latestScoreDate": "2026-09-15",
+    "periodEnd": "2026-09-16",
+    "observationCount": 71,
+    "scoredDayCount": 59,
+    "latestScore": 51.2,
+    "latestScoreDate": "2026-09-16",
     "series": [
       {
         "date": "2026-06-30",
@@ -655,6 +655,15 @@
         "sourceCount": 2,
         "confidence": 34.8,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-16",
+        "dailyScore": 51.2,
+        "rollingScore": 50.1,
+        "storyCount": 2,
+        "sourceCount": 2,
+        "confidence": 36.9,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -843,17 +852,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 45.5,
+    "score": 45.6,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 43.9,
+        "score": 44.1,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 58 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 59 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",

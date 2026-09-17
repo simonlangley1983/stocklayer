@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-17T01:06:18.902617Z",
+  "generatedAt": "2026-09-17T01:35:34.090501Z",
   "company": {
     "companyName": "IG Group Holdings PLC",
     "ticker": "IGG.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-09-15",
-    "periodEnd": "2026-09-15",
-    "observationCount": 1,
-    "scoredDayCount": 1,
-    "latestScore": 40.4,
-    "latestScoreDate": "2026-09-15",
+    "periodEnd": "2026-09-16",
+    "observationCount": 2,
+    "scoredDayCount": 2,
+    "latestScore": 48.0,
+    "latestScoreDate": "2026-09-16",
     "series": [
       {
         "date": "2026-09-15",
@@ -33,6 +33,15 @@
         "storyCount": 35,
         "sourceCount": 34,
         "confidence": 63.8,
+        "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-16",
+        "dailyScore": 48.0,
+        "rollingScore": 48.5,
+        "storyCount": 30,
+        "sourceCount": 29,
+        "confidence": 62.5,
         "coverageStatus": "ok"
       }
     ],
@@ -56,6 +65,26 @@
         "direction": "Very negative",
         "detail": null,
         "significance": 1.092
+      },
+      {
+        "date": "2026-09-16",
+        "type": "press_story",
+        "title": "Documents reveal tension between IG and mayor's office",
+        "source": "wbaltv.com",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPb1h6VE1xY1VhZWVhMnBYNlA1V1E5Ti1TWWxqV1pRcUVBMUtOMXpDYjFrTlNRRE5lQlRUZktmNnJha2lScTM0ZFVubTdnY2J0SDA3cFlPellqd3I0UEhfT2RKUk5GeFd0NE5FaDgyaGN5VHF5OEM2U1RjeTJIRE5sOFozclFNUzlncmN0OTJ1TXk?oc=5",
+        "direction": "Very negative",
+        "detail": null,
+        "significance": 1.082
+      },
+      {
+        "date": "2026-09-16",
+        "type": "press_story",
+        "title": "IG Group stock falls as London trading turns risk-off",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNSlkzWlNIeUdJREwzd1pQT3p2WHM5bXUtNjBrdDJ1Nzlyc3EtcXdrWnZNUWRGOGhRcGk5ZHNZMHFnckVZeDhfYmtSeDhETXBnMFJTaFdnZXJOWnEybVhpclo1YTljdjFxUkx4ZGdac1BqV0NLRWpIMlJES3JQVEIxOEpMbE1HbnBITlpRV3lJczZyaFdPOS04S0RkOXhxbEFrQWZoSjFVZVhteUxMbXFOT3djeGNTX2s?oc=5",
+        "direction": "Very negative",
+        "detail": null,
+        "significance": 1.081
       }
     ]
   },
@@ -475,17 +504,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 45.1,
+    "score": 46.3,
     "label": "Mixed",
-    "evidenceCoverage": 62,
+    "evidenceCoverage": 64,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 40.4,
+        "score": 44.2,
         "weight": 0.4,
-        "reliability": 0.05,
-        "detail": "Recency-weighted average of 1 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.1,
+        "detail": "Recency-weighted average of 2 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -571,6 +600,26 @@
       "direction": "Very negative",
       "detail": null,
       "significance": 1.092
+    },
+    {
+      "date": "2026-09-16",
+      "type": "press_story",
+      "title": "Documents reveal tension between IG and mayor's office",
+      "source": "wbaltv.com",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPb1h6VE1xY1VhZWVhMnBYNlA1V1E5Ti1TWWxqV1pRcUVBMUtOMXpDYjFrTlNRRE5lQlRUZktmNnJha2lScTM0ZFVubTdnY2J0SDA3cFlPellqd3I0UEhfT2RKUk5GeFd0NE5FaDgyaGN5VHF5OEM2U1RjeTJIRE5sOFozclFNUzlncmN0OTJ1TXk?oc=5",
+      "direction": "Very negative",
+      "detail": null,
+      "significance": 1.082
+    },
+    {
+      "date": "2026-09-16",
+      "type": "press_story",
+      "title": "IG Group stock falls as London trading turns risk-off",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNSlkzWlNIeUdJREwzd1pQT3p2WHM5bXUtNjBrdDJ1Nzlyc3EtcXdrWnZNUWRGOGhRcGk5ZHNZMHFnckVZeDhfYmtSeDhETXBnMFJTaFdnZXJOWnEybVhpclo1YTljdjFxUkx4ZGdac1BqV0NLRWpIMlJES3JQVEIxOEpMbE1HbnBITlpRV3lJczZyaFdPOS04S0RkOXhxbEFrQWZoSjFVZVhteUxMbXFOT3djeGNTX2s?oc=5",
+      "direction": "Very negative",
+      "detail": null,
+      "significance": 1.081
     }
   ],
   "persistentEvents": []

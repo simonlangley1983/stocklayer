@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-17T01:06:18.902617Z",
+  "generatedAt": "2026-09-17T01:35:34.090501Z",
   "company": {
     "companyName": "Beazley PLC",
     "ticker": "BEZ.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-14",
-    "periodEnd": "2026-09-15",
-    "observationCount": 75,
-    "scoredDayCount": 56,
-    "latestScore": 43.6,
-    "latestScoreDate": "2026-09-15",
+    "periodEnd": "2026-09-16",
+    "observationCount": 76,
+    "scoredDayCount": 57,
+    "latestScore": 57.4,
+    "latestScoreDate": "2026-09-16",
     "series": [
       {
         "date": "2026-06-14",
@@ -700,6 +700,15 @@
         "sourceCount": 5,
         "confidence": 65.6,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-16",
+        "dailyScore": 57.4,
+        "rollingScore": 49.5,
+        "storyCount": 4,
+        "sourceCount": 3,
+        "confidence": 55.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -712,16 +721,6 @@
         "direction": "mixed",
         "detail": "Positive and negative coverage is unusually dispersed",
         "significance": 1.586
-      },
-      {
-        "date": "2026-06-30",
-        "type": "press_story",
-        "title": "Dimensional Fund Advisors Ltd . : Form 8 . 3 - BEAZLEY PLC - Ordinary Shares",
-        "source": "manilatimes.net",
-        "url": "https://www.manilatimes.net/2026/06/30/tmt-newswire/globenewswire/dimensional-fund-advisors-ltd-form-83-beazley-plc-ordinary-shares/2375482",
-        "direction": "Neutral / mixed",
-        "detail": null,
-        "significance": 0.159
       },
       {
         "date": "2026-07-07",
@@ -794,14 +793,24 @@
         "significance": 1.102
       },
       {
-        "date": "2026-09-15",
-        "type": "press_story",
-        "title": "Zurich’s US$11bn Beazley acquisition to take effect on October 1 after regulatory approval",
-        "source": "insuranceasianews.com",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOdHRVSllER3dYQUZyVVRBdW4yTVg0OWMzVkcwRnk3SG54VkYwaHEzRFFhZDRLMjh3cy11SU4xZzl0ek9jNmRfaHlXRDd6TkhfU3duU3hKOE5iYmhyMHhZUUxtOU9KdWZqV0J5Ym5iX0ktdnBPYVVXZGdBZnFER0JfSTQ2bEwwV0JjNzZQMWZ5RF9Dd1BBT2FEd1l0M3B1UDdnb1VDUWdYQmkzeE44V1oyd3haRW0zRy1MYjRJ?oc=5",
-        "direction": "Neutral / mixed",
-        "detail": null,
-        "significance": 0.176
+        "date": "2026-09-16",
+        "type": "sentiment_jump",
+        "title": "Beazley stock heads into the open after a modest gain",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNQVpnSGNxQ2JjMk9XVHlzRE4yQVpyMGZzY1hRTnlGLUpGdXBMTHlZdUdjZk0yQ3ctajg5b0lvYnZlbUtGMmhzdHRxcnRuUnBKclVuczB0YkZqNGtIQmNzRmlyOXNSbTNoaGRpSTFDcnpqVHVLS043dlRaYVVSWDE3Ym5wZENqY3MyTmJnWDZHSVFSN0gyWTNtYzBrelBmU2ktbGhfdG1DUXpLaUJ2R2Rta3FoY0dfZ2c?oc=5",
+        "direction": "positive",
+        "detail": "Daily score increased by 13.8 points",
+        "significance": 1.347
+      },
+      {
+        "date": "2026-09-16",
+        "type": "sentiment_jump",
+        "title": "Beazley stock holds firm as latest Form 8.3 filing highlights institutional interest",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPc21yV19nbWxxOEtJSk0wSFMxVnJ4ZTVhQXFIMlJza250Y3FfZGx2bjFYSjBQRHpXT3RESWVZNTZVc0h3c3NOcGhQVEhDanFjTHRnU3JvYzItUWZnRTd5SnR6cWUtaGRjaXJDRGVDajg0U0VmVENDNGZkQlBQZXJKdHNWNXk4STFjTkpSZW1JTlgyNXh0Nk9zLUVUZzFRYmhxTlBWS3B2bUo4NVYybmZ6M3BWc2x2UUN3MUpiM3FtZkU0Zw?oc=5",
+        "direction": "positive",
+        "detail": "Daily score increased by 13.8 points",
+        "significance": 1.198
       }
     ]
   },
@@ -888,17 +897,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 39.4,
+    "score": 39.6,
     "label": "Low",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 48.9,
+        "score": 49.3,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 52 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 53 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -930,16 +939,6 @@
       "direction": "mixed",
       "detail": "Positive and negative coverage is unusually dispersed",
       "significance": 1.586
-    },
-    {
-      "date": "2026-06-30",
-      "type": "press_story",
-      "title": "Dimensional Fund Advisors Ltd . : Form 8 . 3 - BEAZLEY PLC - Ordinary Shares",
-      "source": "manilatimes.net",
-      "url": "https://www.manilatimes.net/2026/06/30/tmt-newswire/globenewswire/dimensional-fund-advisors-ltd-form-83-beazley-plc-ordinary-shares/2375482",
-      "direction": "Neutral / mixed",
-      "detail": null,
-      "significance": 0.159
     },
     {
       "date": "2026-07-07",
@@ -1012,14 +1011,24 @@
       "significance": 1.102
     },
     {
-      "date": "2026-09-15",
-      "type": "press_story",
-      "title": "Zurich’s US$11bn Beazley acquisition to take effect on October 1 after regulatory approval",
-      "source": "insuranceasianews.com",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOdHRVSllER3dYQUZyVVRBdW4yTVg0OWMzVkcwRnk3SG54VkYwaHEzRFFhZDRLMjh3cy11SU4xZzl0ek9jNmRfaHlXRDd6TkhfU3duU3hKOE5iYmhyMHhZUUxtOU9KdWZqV0J5Ym5iX0ktdnBPYVVXZGdBZnFER0JfSTQ2bEwwV0JjNzZQMWZ5RF9Dd1BBT2FEd1l0M3B1UDdnb1VDUWdYQmkzeE44V1oyd3haRW0zRy1MYjRJ?oc=5",
-      "direction": "Neutral / mixed",
-      "detail": null,
-      "significance": 0.176
+      "date": "2026-09-16",
+      "type": "sentiment_jump",
+      "title": "Beazley stock heads into the open after a modest gain",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNQVpnSGNxQ2JjMk9XVHlzRE4yQVpyMGZzY1hRTnlGLUpGdXBMTHlZdUdjZk0yQ3ctajg5b0lvYnZlbUtGMmhzdHRxcnRuUnBKclVuczB0YkZqNGtIQmNzRmlyOXNSbTNoaGRpSTFDcnpqVHVLS043dlRaYVVSWDE3Ym5wZENqY3MyTmJnWDZHSVFSN0gyWTNtYzBrelBmU2ktbGhfdG1DUXpLaUJ2R2Rta3FoY0dfZ2c?oc=5",
+      "direction": "positive",
+      "detail": "Daily score increased by 13.8 points",
+      "significance": 1.347
+    },
+    {
+      "date": "2026-09-16",
+      "type": "sentiment_jump",
+      "title": "Beazley stock holds firm as latest Form 8.3 filing highlights institutional interest",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPc21yV19nbWxxOEtJSk0wSFMxVnJ4ZTVhQXFIMlJza250Y3FfZGx2bjFYSjBQRHpXT3RESWVZNTZVc0h3c3NOcGhQVEhDanFjTHRnU3JvYzItUWZnRTd5SnR6cWUtaGRjaXJDRGVDajg0U0VmVENDNGZkQlBQZXJKdHNWNXk4STFjTkpSZW1JTlgyNXh0Nk9zLUVUZzFRYmhxTlBWS3B2bUo4NVYybmZ6M3BWc2x2UUN3MUpiM3FtZkU0Zw?oc=5",
+      "direction": "positive",
+      "detail": "Daily score increased by 13.8 points",
+      "significance": 1.198
     }
   ],
   "persistentEvents": [

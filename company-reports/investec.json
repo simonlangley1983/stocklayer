@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-17T01:06:18.902617Z",
+  "generatedAt": "2026-09-17T01:35:34.090501Z",
   "company": {
     "companyName": "Investec PLC",
     "ticker": "INVP.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-15",
-    "periodEnd": "2026-09-15",
-    "observationCount": 11,
-    "scoredDayCount": 6,
-    "latestScore": 55.8,
-    "latestScoreDate": "2026-09-15",
+    "periodEnd": "2026-09-16",
+    "observationCount": 12,
+    "scoredDayCount": 7,
+    "latestScore": 56.0,
+    "latestScoreDate": "2026-09-16",
     "series": [
       {
         "date": "2026-06-15",
@@ -124,6 +124,15 @@
         "sourceCount": 6,
         "confidence": 75.3,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-16",
+        "dailyScore": 56.0,
+        "rollingScore": 51.7,
+        "storyCount": 2,
+        "sourceCount": 1,
+        "confidence": 31.5,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -146,6 +155,26 @@
         "direction": "Positive",
         "detail": null,
         "significance": 0.413
+      },
+      {
+        "date": "2026-09-16",
+        "type": "press_story",
+        "title": "Investec stock heads into the open after a 0.6 percent gain",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxONXpnUmYzM25SR3JtQ0gwbF9NVXI3NzB3ZjlpVVFieGJHa2JyQy1LZ2l6NGRVVW9yV25xZnFjZVdrSXVqYjNfSmhzV0x1cTI3SVRpeFhyS19Ncm9NZWpKb1U3emRXZmxUTllrcmNMMHFGYmw5RWowU1YzZFJrRWN6aHNBTldfZldyQWZPTGtQRi1jNmtCbGRGMWZZSFJrWDJiZ0ttd1NMLUNwLWxNOG42YVh5bkFjOGpLMDJjZ2FNdw?oc=5",
+        "direction": "Very positive",
+        "detail": null,
+        "significance": 0.746
+      },
+      {
+        "date": "2026-09-16",
+        "type": "press_story",
+        "title": "Investec stock holds steady as investors weigh latest annual figures",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQVk1VWDZwTWQ3YU85dTkyVVYzT3lvVnJsWjFtam5ZMFJTQjdhcUJ3dWlDRDFIWGhmSnBvSThCbGJic3BVekxSZ083dFF2aEtILVJ1V3B6alByUW8tc1RYbnUyVEtsZ1d6c1VFeURNTHo5alBHNnU3VVhTREpQNGY3Q2ttY1A4ekxBdEsyZVAyR2ZOQ0RfaVBncWltZGhDeXNqY1B2cjBvQ0NPRDdVZjlNRWJ0cjVTMGlNYnd1MVBRUktST1NCYTAtb3paSQ?oc=5",
+        "direction": "Slightly negative",
+        "detail": null,
+        "significance": 0.264
       }
     ]
   },
@@ -713,15 +742,15 @@
   "overallConfidence": {
     "score": 43.1,
     "label": "Mixed",
-    "evidenceCoverage": 62,
+    "evidenceCoverage": 64,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 55.8,
+        "score": 55.9,
         "weight": 0.4,
-        "reliability": 0.05,
-        "detail": "Recency-weighted average of 1 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.1,
+        "detail": "Recency-weighted average of 2 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -825,6 +854,26 @@
       "direction": "Positive",
       "detail": null,
       "significance": 0.413
+    },
+    {
+      "date": "2026-09-16",
+      "type": "press_story",
+      "title": "Investec stock heads into the open after a 0.6 percent gain",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxONXpnUmYzM25SR3JtQ0gwbF9NVXI3NzB3ZjlpVVFieGJHa2JyQy1LZ2l6NGRVVW9yV25xZnFjZVdrSXVqYjNfSmhzV0x1cTI3SVRpeFhyS19Ncm9NZWpKb1U3emRXZmxUTllrcmNMMHFGYmw5RWowU1YzZFJrRWN6aHNBTldfZldyQWZPTGtQRi1jNmtCbGRGMWZZSFJrWDJiZ0ttd1NMLUNwLWxNOG42YVh5bkFjOGpLMDJjZ2FNdw?oc=5",
+      "direction": "Very positive",
+      "detail": null,
+      "significance": 0.746
+    },
+    {
+      "date": "2026-09-16",
+      "type": "press_story",
+      "title": "Investec stock holds steady as investors weigh latest annual figures",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQVk1VWDZwTWQ3YU85dTkyVVYzT3lvVnJsWjFtam5ZMFJTQjdhcUJ3dWlDRDFIWGhmSnBvSThCbGJic3BVekxSZ083dFF2aEtILVJ1V3B6alByUW8tc1RYbnUyVEtsZ1d6c1VFeURNTHo5alBHNnU3VVhTREpQNGY3Q2ttY1A4ekxBdEsyZVAyR2ZOQ0RfaVBncWltZGhDeXNqY1B2cjBvQ0NPRDdVZjlNRWJ0cjVTMGlNYnd1MVBRUktST1NCYTAtb3paSQ?oc=5",
+      "direction": "Slightly negative",
+      "detail": null,
+      "significance": 0.264
     }
   ],
   "persistentEvents": []

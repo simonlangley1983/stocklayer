@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-17T01:06:18.902617Z",
+  "generatedAt": "2026-09-17T01:35:34.090501Z",
   "company": {
     "companyName": "Melrose Industries PLC",
     "ticker": "MRO.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-17",
-    "periodEnd": "2026-09-15",
-    "observationCount": 46,
-    "scoredDayCount": 15,
-    "latestScore": 46.7,
-    "latestScoreDate": "2026-09-15",
+    "periodEnd": "2026-09-16",
+    "observationCount": 47,
+    "scoredDayCount": 16,
+    "latestScore": 36.8,
+    "latestScoreDate": "2026-09-16",
     "series": [
       {
         "date": "2026-07-17",
@@ -439,6 +439,15 @@
         "sourceCount": 2,
         "confidence": 33.0,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-16",
+        "dailyScore": 36.8,
+        "rollingScore": 47.7,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 19.0,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -511,6 +520,16 @@
         "direction": "Neutral / mixed",
         "detail": null,
         "significance": 0.183
+      },
+      {
+        "date": "2026-09-16",
+        "type": "press_story",
+        "title": "Why Are Investors Still Arguing About Melrose Industries (LSE:MRO) Weeks After Its First-Half Print?",
+        "source": "kalkinemedia.com",
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPWHc5dzJ1VjFRTnJPa2tVdU1ZWGx4b01ueWJsTFpxZmJQUEFIUEtSR21Dd2xQanlTMFBqQzZEWUU1bWxEMHBpNHliYktJdDFsQmhLT0p0RGRIVmU2RGpxclRDMTgwaFNNalR5dU9xSVlrM1pUZlNEekhHNVREVzZ1aUpURTd0SzVLckRaZGN3OUVtM2phMGx2azY0OWdPSksyUWFNODFnOGdRcUxlU29yZTBFbmtfMEEwYU9Za3NRZmNDOEkyNkJtY2dyYXdicXNDams4?oc=5",
+        "direction": "Very negative",
+        "detail": null,
+        "significance": 0.943
       }
     ]
   },
@@ -597,17 +616,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 43.2,
+    "score": 42.4,
     "label": "Mixed",
-    "evidenceCoverage": 87,
+    "evidenceCoverage": 89,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 47.4,
+        "score": 46.1,
         "weight": 0.4,
-        "reliability": 0.75,
-        "detail": "Recency-weighted average of 15 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.8,
+        "detail": "Recency-weighted average of 16 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -699,6 +718,16 @@
       "direction": "Neutral / mixed",
       "detail": null,
       "significance": 0.183
+    },
+    {
+      "date": "2026-09-16",
+      "type": "press_story",
+      "title": "Why Are Investors Still Arguing About Melrose Industries (LSE:MRO) Weeks After Its First-Half Print?",
+      "source": "kalkinemedia.com",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPWHc5dzJ1VjFRTnJPa2tVdU1ZWGx4b01ueWJsTFpxZmJQUEFIUEtSR21Dd2xQanlTMFBqQzZEWUU1bWxEMHBpNHliYktJdDFsQmhLT0p0RGRIVmU2RGpxclRDMTgwaFNNalR5dU9xSVlrM1pUZlNEekhHNVREVzZ1aUpURTd0SzVLckRaZGN3OUVtM2phMGx2azY0OWdPSksyUWFNODFnOGdRcUxlU29yZTBFbmtfMEEwYU9Za3NRZmNDOEkyNkJtY2dyYXdicXNDams4?oc=5",
+      "direction": "Very negative",
+      "detail": null,
+      "significance": 0.943
     }
   ],
   "persistentEvents": []

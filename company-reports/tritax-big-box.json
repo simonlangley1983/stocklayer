@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-17T01:06:18.902617Z",
+  "generatedAt": "2026-09-17T01:35:34.090501Z",
   "company": {
     "companyName": "Tritax Big Box REIT PLC",
     "ticker": "BBOX.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-09-10",
-    "periodEnd": "2026-09-15",
-    "observationCount": 6,
-    "scoredDayCount": 1,
-    "latestScore": 50.4,
-    "latestScoreDate": "2026-09-15",
+    "periodEnd": "2026-09-16",
+    "observationCount": 7,
+    "scoredDayCount": 2,
+    "latestScore": 51.0,
+    "latestScoreDate": "2026-09-16",
     "series": [
       {
         "date": "2026-09-10",
@@ -79,6 +79,15 @@
         "sourceCount": 1,
         "confidence": 15.2,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-16",
+        "dailyScore": 51.0,
+        "rollingScore": 50.2,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.3,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -91,6 +100,16 @@
         "direction": "Neutral / mixed",
         "detail": null,
         "significance": 0.176
+      },
+      {
+        "date": "2026-09-16",
+        "type": "press_story",
+        "title": "How Did Tritax Big Box REIT (LSE:BBOX) Convert A Data Centre Pivot Into Blue-Chip Standing?",
+        "source": "kalkinemedia.com",
+        "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQT2VzTXpxMnk5X0JacWR1WUJsbVY4eXlEeHZsVUFQQ2RxTGlEaG1BYm5ZX09NdzNNY1A1ZDhhZHhWX2poLUVubzlfdjF3OF9aaXB1emVhOEZzUmJrUmZvam12cTlMUlF2M0k0cEh2YjZCRU4tR21URDIyYW9yWEFGR2ROb1Qwb3JSczFkRVh0Vjk4SHFuZmk3QTBPWDB6M185SEtGc0NvTExFQVNWQjlhdEtENkVYMzZsWUhjWS12T3pqbUtMNVExNUVqZXJfRnJxM3VmaU5vODFfcmhRYTdINTNwR2pDUUFq?oc=5",
+        "direction": "Neutral / mixed",
+        "detail": null,
+        "significance": 0.212
       }
     ]
   },
@@ -583,17 +602,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 57.3,
+    "score": 57.5,
     "label": "Mixed",
-    "evidenceCoverage": 62,
+    "evidenceCoverage": 64,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 50.4,
+        "score": 50.7,
         "weight": 0.4,
-        "reliability": 0.05,
-        "detail": "Recency-weighted average of 1 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.1,
+        "detail": "Recency-weighted average of 2 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -678,6 +697,16 @@
       "direction": "Neutral / mixed",
       "detail": null,
       "significance": 0.176
+    },
+    {
+      "date": "2026-09-16",
+      "type": "press_story",
+      "title": "How Did Tritax Big Box REIT (LSE:BBOX) Convert A Data Centre Pivot Into Blue-Chip Standing?",
+      "source": "kalkinemedia.com",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQT2VzTXpxMnk5X0JacWR1WUJsbVY4eXlEeHZsVUFQQ2RxTGlEaG1BYm5ZX09NdzNNY1A1ZDhhZHhWX2poLUVubzlfdjF3OF9aaXB1emVhOEZzUmJrUmZvam12cTlMUlF2M0k0cEh2YjZCRU4tR21URDIyYW9yWEFGR2ROb1Qwb3JSczFkRVh0Vjk4SHFuZmk3QTBPWDB6M185SEtGc0NvTExFQVNWQjlhdEtENkVYMzZsWUhjWS12T3pqbUtMNVExNUVqZXJfRnJxM3VmaU5vODFfcmhRYTdINTNwR2pDUUFq?oc=5",
+      "direction": "Neutral / mixed",
+      "detail": null,
+      "significance": 0.212
     }
   ],
   "persistentEvents": []

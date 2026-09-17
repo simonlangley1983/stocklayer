@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-17T01:06:18.902617Z",
+  "generatedAt": "2026-09-17T01:35:34.090501Z",
   "company": {
     "companyName": "GSK",
     "ticker": "GSK.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-15",
-    "periodEnd": "2026-09-15",
-    "observationCount": 59,
-    "scoredDayCount": 56,
-    "latestScore": 66.2,
-    "latestScoreDate": "2026-09-15",
+    "periodEnd": "2026-09-16",
+    "observationCount": 60,
+    "scoredDayCount": 57,
+    "latestScore": 64.2,
+    "latestScoreDate": "2026-09-16",
     "series": [
       {
         "date": "2026-06-15",
@@ -555,6 +555,15 @@
         "storyCount": 57,
         "sourceCount": 40,
         "confidence": 68.3,
+        "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-16",
+        "dailyScore": 64.2,
+        "rollingScore": 54.9,
+        "storyCount": 17,
+        "sourceCount": 17,
+        "confidence": 86.5,
         "coverageStatus": "ok"
       }
     ],
@@ -1150,17 +1159,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 52.2,
+    "score": 52.3,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 55.0,
+        "score": 55.4,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 51 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 52 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1338,6 +1347,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "e933f7041fd930dd042b",
+      "type": "acquisition",
+      "title": "Key facts: GSK plc Sponsored ADR Upgraded; Acquires Chimagen T‑cell Asset",
+      "date": "2026-09-16",
+      "status": "pending_review",
+      "reviewDate": "2027-03-15",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQS1ROYUFqdk5rSGRReld4N0NPY2ttNXYySnF5dDExQnlpd21EVEdSNFdheGF1VVRmRnRkVTREMVV4VVNFOGRyQS00NDJQZ2lQNXplTVIxdEJSN0d4dHFtMVRoNDhIZ1A0Rk1IX0tNd1NBWk5IQlNmd3UzdkRxTWU1MTFRUWI1ai1VUUo3dFNlNTI0ejFNRG9LQklIYU4wcFhqNnlsNjVsUFZ3MkdMc2tocWxpS01XcWFaeElVa0tmMjNXekNIaXZYS3Jva3RJZw?oc=5",
+          "publisher": "tradingview.com",
+          "date": "2026-09-16"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "38ca54343d6a07fbeaf0",
       "type": "leadership_restructuring",

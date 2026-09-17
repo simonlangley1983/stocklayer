@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-17T01:06:18.902617Z",
+  "generatedAt": "2026-09-17T01:35:34.090501Z",
   "company": {
     "companyName": "Metlen Energy & Metals PLC",
     "ticker": "MTLN.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-09-09",
-    "periodEnd": "2026-09-15",
-    "observationCount": 6,
-    "scoredDayCount": 0,
-    "latestScore": null,
-    "latestScoreDate": null,
+    "periodEnd": "2026-09-16",
+    "observationCount": 7,
+    "scoredDayCount": 1,
+    "latestScore": 51.5,
+    "latestScoreDate": "2026-09-16",
     "series": [
       {
         "date": "2026-09-09",
@@ -79,9 +79,39 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-16",
+        "dailyScore": 51.5,
+        "rollingScore": 50.2,
+        "storyCount": 3,
+        "sourceCount": 3,
+        "confidence": 48.6,
+        "coverageStatus": "ok"
       }
     ],
-    "stories": []
+    "stories": [
+      {
+        "date": "2026-09-16",
+        "type": "press_story",
+        "title": "Metlen Energy & Metals grants share awards to executives By Investing.com",
+        "source": "ca.investing.com",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPb1JHTUFqemRtTGZQNkVxaVRXQVZpSGJfZlBJLVFfZVB4V3hBSHlJY3duM0JXY2x4MXJKUkNaR3k4bDFGMFVIVEJqdWV6WjNjRExvRTFWUkFrMk96VFhORkhRLS1tUGpSeHF0a1BKWXFhSkJ6b3pPb3pzU21WeU84X0xJOFhQZVpFR3p3ZGxKc2RScFJTRmpwTkxaUjV3LVFKZHp3T1NPbmxYaVkzeWptMGVMSFp0Sm8?oc=5",
+        "direction": "Neutral / mixed",
+        "detail": null,
+        "significance": 0.22
+      },
+      {
+        "date": "2026-09-16",
+        "type": "press_story",
+        "title": "Metlen Energy & Metals Ties Senior Pay to Long-Term EPS and TSR Targets",
+        "source": "tipranks.com",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNVGlZUXFkU3d1MkI2SkhJdU5XNV9mU3BWdDRnY1FXcURQeXhZNHlyaDl4TWowUXNXazNycGE2ZVRudUpUanZ2cnFoRVhXVjh4NktvTW1yQ0lRMzNwNTRDYm5IN0x6b1Vfd2FsYWd0clA5RWJCTVR2S0RBTENHYmRYc2stcDBJTGVSLU5vSEhvZk1nYUl6V2xsVXctYTMtZnhvcjhnczRqcWk2Q283LWpiLWZPeFZjOWRTUlZKUXpn?oc=5",
+        "direction": "Neutral / mixed",
+        "detail": null,
+        "significance": 0.207
+      }
+    ]
   },
   "annualReportAnalysis": {
     "reportCount": 6,
@@ -572,10 +602,18 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 44.7,
+    "score": 47.9,
     "label": "Mixed",
-    "evidenceCoverage": 100,
+    "evidenceCoverage": 62,
     "components": [
+      {
+        "key": "press",
+        "label": "Press sentiment",
+        "score": 51.5,
+        "weight": 0.4,
+        "reliability": 0.05,
+        "detail": "Recency-weighted average of 1 scored days in the latest 90 calendar days; 30-day half-life."
+      },
       {
         "key": "annual_tone",
         "label": "Annual-report tone",
@@ -649,6 +687,26 @@
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
+    },
+    {
+      "date": "2026-09-16",
+      "type": "press_story",
+      "title": "Metlen Energy & Metals grants share awards to executives By Investing.com",
+      "source": "ca.investing.com",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPb1JHTUFqemRtTGZQNkVxaVRXQVZpSGJfZlBJLVFfZVB4V3hBSHlJY3duM0JXY2x4MXJKUkNaR3k4bDFGMFVIVEJqdWV6WjNjRExvRTFWUkFrMk96VFhORkhRLS1tUGpSeHF0a1BKWXFhSkJ6b3pPb3pzU21WeU84X0xJOFhQZVpFR3p3ZGxKc2RScFJTRmpwTkxaUjV3LVFKZHp3T1NPbmxYaVkzeWptMGVMSFp0Sm8?oc=5",
+      "direction": "Neutral / mixed",
+      "detail": null,
+      "significance": 0.22
+    },
+    {
+      "date": "2026-09-16",
+      "type": "press_story",
+      "title": "Metlen Energy & Metals Ties Senior Pay to Long-Term EPS and TSR Targets",
+      "source": "tipranks.com",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNVGlZUXFkU3d1MkI2SkhJdU5XNV9mU3BWdDRnY1FXcURQeXhZNHlyaDl4TWowUXNXazNycGE2ZVRudUpUanZ2cnFoRVhXVjh4NktvTW1yQ0lRMzNwNTRDYm5IN0x6b1Vfd2FsYWd0clA5RWJCTVR2S0RBTENHYmRYc2stcDBJTGVSLU5vSEhvZk1nYUl6V2xsVXctYTMtZnhvcjhnczRqcWk2Q283LWpiLWZPeFZjOWRTUlZKUXpn?oc=5",
+      "direction": "Neutral / mixed",
+      "detail": null,
+      "significance": 0.207
     }
   ],
   "persistentEvents": []

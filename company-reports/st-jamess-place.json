@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-17T01:06:18.902617Z",
+  "generatedAt": "2026-09-17T01:35:34.090501Z",
   "company": {
     "companyName": "St James's Place PLC",
     "ticker": "STJ.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-10",
-    "periodEnd": "2026-09-15",
-    "observationCount": 60,
-    "scoredDayCount": 1,
-    "latestScore": 47.8,
-    "latestScoreDate": "2026-09-15",
+    "periodEnd": "2026-09-16",
+    "observationCount": 61,
+    "scoredDayCount": 2,
+    "latestScore": 53.5,
+    "latestScoreDate": "2026-09-16",
     "series": [
       {
         "date": "2026-07-10",
@@ -565,6 +565,15 @@
         "sourceCount": 1,
         "confidence": 15.8,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-16",
+        "dailyScore": 53.5,
+        "rollingScore": 50.2,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 16.1,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -577,6 +586,16 @@
         "direction": "Slightly negative",
         "detail": null,
         "significance": 0.28
+      },
+      {
+        "date": "2026-09-16",
+        "type": "press_story",
+        "title": "Can St James's Place (LSE:STJ) Defend Its Advice Model Against Automated Planning Tools?",
+        "source": "kalkinemedia.com",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOQVByMXUwTUt3SkxhUnJRc3FMdU5ZaWhYWjAtRzNjYzBZb1YzZWV1ZFJGLWhMeU1hbVJGS1lyUmZQS1FPTFZDeS1ZLVFtcFVIMHZoX2dKMmhIS2RJTmF6a3F5N0wwMG13eUpvZ2o5Y1JRZkJLWTFBQmgxQ3hyRkZ6VmFHaGR1aVBQc2xucWlyRW1kRV9IT0dVR3hkUjVEelNfNTdrY2xhcEIyRHRrdkFDajhLb2pBVXV3Zk1RS3R0d01XRHJpSHNPdXpndjF0TkdLSzZNNw?oc=5",
+        "direction": "Positive",
+        "detail": null,
+        "significance": 0.361
       }
     ]
   },
@@ -663,17 +682,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 45.6,
+    "score": 46.8,
     "label": "Mixed",
-    "evidenceCoverage": 49,
+    "evidenceCoverage": 52,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 47.8,
+        "score": 50.7,
         "weight": 0.4,
-        "reliability": 0.05,
-        "detail": "Recency-weighted average of 1 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.1,
+        "detail": "Recency-weighted average of 2 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -705,6 +724,16 @@
       "direction": "Slightly negative",
       "detail": null,
       "significance": 0.28
+    },
+    {
+      "date": "2026-09-16",
+      "type": "press_story",
+      "title": "Can St James's Place (LSE:STJ) Defend Its Advice Model Against Automated Planning Tools?",
+      "source": "kalkinemedia.com",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOQVByMXUwTUt3SkxhUnJRc3FMdU5ZaWhYWjAtRzNjYzBZb1YzZWV1ZFJGLWhMeU1hbVJGS1lyUmZQS1FPTFZDeS1ZLVFtcFVIMHZoX2dKMmhIS2RJTmF6a3F5N0wwMG13eUpvZ2o5Y1JRZkJLWTFBQmgxQ3hyRkZ6VmFHaGR1aVBQc2xucWlyRW1kRV9IT0dVR3hkUjVEelNfNTdrY2xhcEIyRHRrdkFDajhLb2pBVXV3Zk1RS3R0d01XRHJpSHNPdXpndjF0TkdLSzZNNw?oc=5",
+      "direction": "Positive",
+      "detail": null,
+      "significance": 0.361
     }
   ],
   "persistentEvents": []
