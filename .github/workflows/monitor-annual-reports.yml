@@ -3,8 +3,13 @@ name: Monitor annual reports
 on:
   schedule:
     - cron: "20 0,6,12,18 * * *"
+    - cron: "40 2 * * 0"
   workflow_dispatch:
     inputs:
+      historical:
+        description: "Run broad discovery and historical recovery"
+        type: boolean
+        default: false
       extraction_only:
         description: "Extract verified indexed reports without repeating the full crawl"
         type: boolean
@@ -40,23 +45,29 @@ jobs:
       - name: Test backfill queue and timeout safeguards
         run: python scripts/test_annual_backfill.py
 
+      - name: Build annual report register
+        run: python scripts/build_report_register.py
+
       - name: Extract already indexed reports before discovery
-        run: python scripts/backfill_annual_reports.py --batch-size 30 --workers 4 --report-timeout 180
+        run: python scripts/backfill_annual_reports.py --batch-size 30 --workers 4 --report-timeout 180 ${{ (inputs.historical || github.event.schedule == '40 2 * * 0') && '--start-year 2020' || '--latest-only' }}
 
       - name: Monitor annual report source pages
         if: ${{ !inputs.extraction_only }}
         run: >-
           python scripts/monitor_annual_reports.py
-          --max-sources-per-company 10
-          --max-child-pages-per-company 20
+          ${{ (inputs.historical || github.event.schedule == '40 2 * * 0') && '--timeout 8' || '--registered-sources-only' }}
+          --max-sources-per-company 3
+          --max-child-pages-per-company 6
           --timeout 8
           --workers 12
 
       - name: Backfill a resumable batch of missing annual reports
-        run: python scripts/backfill_annual_reports.py --batch-size 30 --workers 4 --report-timeout 180
+        run: python scripts/backfill_annual_reports.py --batch-size 30 --workers 4 --report-timeout 180 ${{ (inputs.historical || github.event.schedule == '40 2 * * 0') && '--start-year 2020' || '--latest-only' }}
 
       - name: Build customer company reports
-        run: python automation/build_company_reports.py
+        run: |
+          python scripts/build_report_register.py
+          python automation/build_company_reports.py
 
       - name: Preserve report extraction diagnostics
         if: always()

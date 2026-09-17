@@ -109,6 +109,7 @@ def main():
     parser.add_argument("--start-year", type=int, default=2020)
     parser.add_argument("--end-year", type=int, default=datetime.now(timezone.utc).year)
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--latest-only", action="store_true")
     args = parser.parse_args()
     if min(args.batch_size, args.workers, args.report_timeout) < 1:
         parser.error("batch size, workers and timeout must be positive")
@@ -128,6 +129,16 @@ def main():
     now = datetime.now(timezone.utc)
     pending = queue_groups(read(directory / "reports-index.json"), companies, existing,
                            state["attempts"], args.start_year, args.end_year, now)
+    if args.latest_only:
+        latest = {}
+        for record in existing.values():
+            latest[record['company_slug']] = max(latest.get(record['company_slug'], 0), int(record['report_year']))
+        newest = {}
+        for group in pending:
+            slug = group[0]['slug']
+            if group[1] > latest.get(slug, 0) and (slug not in newest or group[1] > newest[slug][1]):
+                newest[slug] = group
+        pending = list(newest.values())
     batch = pending[:args.batch_size]
     print(f"Eligible pending groups: {len(pending)}; this batch: {len(batch)}", flush=True)
     if args.dry_run:

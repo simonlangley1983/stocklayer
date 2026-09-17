@@ -443,6 +443,9 @@ def merge_reports(existing: list[dict[str, Any]], discovered: list[dict[str, Any
 def monitor_company(company: dict[str, Any], source_record: dict[str, Any], existing_company_index: dict[str, Any], args: argparse.Namespace) -> tuple[dict[str, Any], int]:
     current_year = datetime.now(timezone.utc).year
     source_urls = source_record.get("sourceUrls") or candidate_source_urls(company)
+    if getattr(args, "registered_sources_only", False):
+        register = read_json(ROOT / "annual-reports" / "report-register.json", {})
+        source_urls = register.get("companies", {}).get(company.get("slug"), {}).get("archiveUrls", [])
     existing_reports = existing_company_index.get("reports") or []
     ticker = str(company.get("ticker") or "")
     discovered_reports: list[dict[str, Any]] = [
@@ -542,6 +545,7 @@ def main() -> int:
     parser.add_argument("--ticker", action="append", default=[])
     parser.add_argument("--workers", type=int, default=8)
     parser.add_argument("--init-only", action="store_true", help="Create source/index files without fetching pages.")
+    parser.add_argument("--registered-sources-only", action="store_true")
     args = parser.parse_args()
 
     companies, companies_source = load_companies(args.companies)
