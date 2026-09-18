@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-09-18T16:58:28.607861Z",
+  "generatedAt": "2026-09-18T19:49:19.117308Z",
   "asOfDate": "2026-09-17",
   "companies": {
     "astrazeneca": {
@@ -97,25 +97,27 @@
       "ticker": "SHEL.L",
       "slug": "shell",
       "date": "2026-09-17",
-      "dailyScore": 60.8,
+      "dailyScore": 63.2,
       "dailyLabel": "Positive",
-      "rollingScore": 50.4,
-      "confidence": 26.8,
-      "confidenceBand": "low",
+      "rollingScore": 51.0,
+      "confidence": 48.4,
+      "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 2,
-      "sourceCount": 2,
-      "changeFromPreviousScoredDay": 23.7,
+      "storyCount": 4,
+      "sourceCount": 4,
+      "changeFromPreviousScoredDay": 26.1,
       "flags": [
         {
-          "type": "low_confidence",
-          "direction": "neutral",
-          "severity": "low",
+          "type": "sentiment_jump",
+          "direction": "positive",
+          "severity": "high",
           "status": "calculated",
-          "detail": "Confidence is 26.8",
+          "detail": "Daily score increased by 26.1 points",
           "evidenceArticleIds": [
             "260fa538e15980ab",
-            "f88ff7eacdee440e"
+            "f65c277d936dbd0a",
+            "f88ff7eacdee440e",
+            "c9511d5bc51c03f0"
           ]
         },
         {
@@ -126,14 +128,16 @@
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
             "260fa538e15980ab",
-            "f88ff7eacdee440e"
+            "f65c277d936dbd0a",
+            "f88ff7eacdee440e",
+            "c9511d5bc51c03f0"
           ]
         }
       ],
       "topStories": [
         {
           "id": "260fa538e15980ab",
-          "storyClusterId": "story-002",
+          "storyClusterId": "story-004",
           "title": "Shell’s ARC Deal Seen as Win for Mark Carney’s Pro-Oil Pivot",
           "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOSWZicEhyTEEwWnJacnVYbURXZjhGd0w3Q2VtN0V6NF9ISXlFVTk5LWZjVFpqN3hqa0laYklYbFFHNG9IV0tnVlFZSjN2bnRSa1NvaHlsM0x6M1lKOHdycnVnaS1SeXlxSkwxa1Q5TjdBeVQ2ZGJNaWFOYmhmUUNleFRNcUZWWUVsLTk1UFo3clBLQQ?oc=5",
           "source": "energynow.ca",
@@ -143,13 +147,35 @@
           "publisherCount": 1
         },
         {
+          "id": "f65c277d936dbd0a",
+          "storyClusterId": "story-002",
+          "title": "Shell hopes for more Saudi gas",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9NOWJGZ0N2Rnl5WHRFS1p1UDNUeE1fZG53aDdoLW1wa2sxMUlNX2FKMEtUeXZ2am02VzQ0a2UyVkVYQ1MxUGEyN3BpVXppXy1W?oc=5",
+          "source": "arabnews.com",
+          "publishedAt": "2026-09-17T02:59:33Z",
+          "polarity": 0.755,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
           "id": "f88ff7eacdee440e",
-          "storyClusterId": "story-001",
+          "storyClusterId": "story-003",
           "title": "Shell plc (SHEL) Executes Buyback of 1.8 Million Shares on September 16, 2026, Under Goldman Sachs-Led Program",
           "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNLTQ2eWZRWkFpSzVidjJtSm12bzhzMFl4Q2FDcUV5Rzl4bHR5Skg0cFJLUzd4bnROZjYxM1o0MnY4LXJkOVdzUldRZUZxemw3eDBubGxVNXMza0tneGVGaFl6aEQ5RG5QOF9fRFhoZ0lBYjFmUDg2Vmt4d09JY1ZFM29OMGlXX3FRSHNocUJ1akFqREZ1Nm5wVndoQkFsZTJtNnFlWHJZMEJjUGtpakRjc1hZb2xPN1p1S1gwWHVqQl9OT1RyUHl3NWhHTDBJX0VwdWtUbk80VTMtQlluVTJnUmVwUjlGTU0?oc=5",
           "source": "kalkinemedia.com",
           "publishedAt": "2026-09-17T13:33:09Z",
           "polarity": 0.0622,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "c9511d5bc51c03f0",
+          "storyClusterId": "story-001",
+          "title": "A Look at Shell PLC (SHEL) After 3.3% Decline -- GF Value $82.84 vs Price $95.70",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPazRUZkh2akMxaE9XWVlaZ1A5dWpqTmZfcm4xRlNMSEp3Y1JXU040V2VIcUFWbXYwaDhQckV2MHJaREpGN0ZTVjJPRDFMajFtblc4NkFBRndBbjNmNEdnaW13NnpzcEhXLUpQZmVJak50Z25uZmZvWEFoSVdQSHJyN3kwRTlYTUJDZ1dhTXZ0WWVJUVFoQ1ZWTzQxTG8yVGpHR0UwTVBiYzRuSkRi?oc=5",
+          "source": "gurufocus.com",
+          "publishedAt": "2026-09-17T01:07:16Z",
+          "polarity": -0.0372,
           "sentiment": "Neutral / mixed",
           "publisherCount": 1
         }
@@ -373,22 +399,22 @@
       "ticker": "BATS.L",
       "slug": "british-american-tobacco",
       "date": "2026-09-17",
-      "dailyScore": 51.4,
+      "dailyScore": 52.6,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.7,
-      "confidence": 62.2,
+      "rollingScore": 49.9,
+      "confidence": 61.4,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 47,
+      "storyCount": 49,
       "sourceCount": 35,
-      "changeFromPreviousScoredDay": 9.3,
+      "changeFromPreviousScoredDay": 10.5,
       "flags": [
         {
           "type": "coverage_spike",
           "direction": "neutral",
           "severity": "medium",
           "status": "calculated",
-          "detail": "47 stories versus trailing median 2",
+          "detail": "49 stories versus trailing median 2",
           "evidenceArticleIds": [
             "bb066fd4fd613d07",
             "3b5771aa8dd4c014",
@@ -415,7 +441,7 @@
       "topStories": [
         {
           "id": "bb066fd4fd613d07",
-          "storyClusterId": "story-019",
+          "storyClusterId": "story-020",
           "title": "British American Tobacco (LSE:BATS) Following Cash Flow And Buyback Hopes While Fair Value Stays Higher",
           "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPcnRNNHhITmgySXJxd2RLZl9UdzBrV2wzUjdHZW50eHhJaTQ2WFZIYWxWZ3VsR1NTeXpVTnVFVl9qMDlDNDdobDdaNF9nWDlwMlVLZVNrWkFaRkprTFhHQU5QWVVNYWRaYnN0NjAtczkzZEpNMGY2V3NSY1ZOaWRjc3ZNRFlhMzVNdXNkN0VFYldJVFJ0ZnliVmNDcjhiR1k?oc=5",
           "source": "finance.yahoo.com",
@@ -448,7 +474,7 @@
         },
         {
           "id": "021860dee8b1fc51",
-          "storyClusterId": "story-040",
+          "storyClusterId": "story-041",
           "title": "Home losses from Helene cut Bat Cave fire department's budget by up to 40%",
           "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUDhMckR6b3FwT0N5MUFDNFBRajZHSnRKbVdBdTJXUUo5eUx3MG1EZXU3cTYzYlhSTWxIRWpMdml3NTZLUjZkNE42VzhrNTM0UnJCb0JEZXYzbXpmSWZ5YXRaOWFxdVBfLXlxT25aSDk1Zi1RYmNpYThWRHJXMGRJUmtfaDZyVEdiTWlmeXQ4M3E1a20tMnhsSDNYOHB0QTZLRFEtN0tXMjY?oc=5",
           "source": "wlos.com",
@@ -5987,15 +6013,15 @@
       "ticker": "IGG.L",
       "slug": "ig-group",
       "date": "2026-09-17",
-      "dailyScore": 42.8,
+      "dailyScore": 42.7,
       "dailyLabel": "Slightly negative",
       "rollingScore": 47.6,
-      "confidence": 64.5,
+      "confidence": 64.4,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 39,
-      "sourceCount": 36,
-      "changeFromPreviousScoredDay": -4.8,
+      "storyCount": 40,
+      "sourceCount": 37,
+      "changeFromPreviousScoredDay": -4.9,
       "flags": [
         {
           "type": "collection_degraded",
@@ -6048,7 +6074,7 @@
         },
         {
           "id": "2b2cd9dcfe7b501a",
-          "storyClusterId": "story-026",
+          "storyClusterId": "story-027",
           "title": "IG Kanja faces sentencing over Gen-Z protests defied court order",
           "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOWExlcnJ4OFNJWjRxcFJ1NndsdnJPNDB1QUVhMkZ2Y2MxZ24yV3VGdW05WkozOUV1VXAxMXJOcGx5YmhEQVNrMENuN0hjNXl0cEVwRzVnc18xUTcxQ1VEMXk0ZTJKSnJwdm9LaG9nellibUJ1QVJpcXloTWZQTUJtZ1V4ZUc5dGQzYU16RWN0c3J6d2FQS3p0WUdMUUR1THNQT3c?oc=5",
           "source": "nation.africa",
@@ -6101,15 +6127,15 @@
       "ticker": "ABDN.L",
       "slug": "aberdeen-group",
       "date": "2026-09-17",
-      "dailyScore": 47.6,
+      "dailyScore": 50.4,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.4,
-      "confidence": 62.6,
+      "rollingScore": 49.8,
+      "confidence": 62.7,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
       "storyCount": 27,
-      "sourceCount": 13,
-      "changeFromPreviousScoredDay": -3.5,
+      "sourceCount": 14,
+      "changeFromPreviousScoredDay": -0.7,
       "flags": [
         {
           "type": "workforce_reduction",
@@ -6130,9 +6156,9 @@
           "evidenceArticleIds": [
             "7c1aa7f1f7a8a173",
             "a5751f038a4eef22",
-            "bee8246301cf0994",
+            "a748a4bbc754ef8e",
             "86d0375d78649a42",
-            "85a97d17334de7f8"
+            "7864efb7455b1776"
           ]
         },
         {
@@ -6144,9 +6170,9 @@
           "evidenceArticleIds": [
             "7c1aa7f1f7a8a173",
             "a5751f038a4eef22",
-            "bee8246301cf0994",
+            "a748a4bbc754ef8e",
             "86d0375d78649a42",
-            "85a97d17334de7f8"
+            "7864efb7455b1776"
           ]
         }
       ],
@@ -6164,7 +6190,7 @@
         },
         {
           "id": "a5751f038a4eef22",
-          "storyClusterId": "story-002",
+          "storyClusterId": "story-004",
           "title": "Aberdeen Live to close as Reach cuts 160 jobs",
           "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQX3N5UlBUQW9oWVpVck9UMGJiMXlSaVUzYUdBcFI1SGRNVkNGWmhWRVMwaUJONXVVcWxycDgtUlFlVEthTzNHLXF5VV9LeDJybjg2VlZFdmV1ZVBtZmdJRVpxNnNRek51Szk1VENGMFZFWkNjb2JuOTZabDk2TGtMNGVWT1N1TllC?oc=5",
           "source": "agcc.co.uk",
@@ -6174,11 +6200,11 @@
           "publisherCount": 1
         },
         {
-          "id": "bee8246301cf0994",
+          "id": "a748a4bbc754ef8e",
           "storyClusterId": "story-027",
           "title": "Could closing Aberdeen strip clubs bring new dangers for dancers?",
-          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQRjdKakowY2ZqYUJqcDVuekhPRHZNeGZGNk9CTjVGeDdJeWhRUXlZSDFZR1AzcVZIc25TWlk0U1VoT29SUWpzM25RUUp2SEowdHJHQ093ay1CdU1qY3kzZFFOSFFXZWkwbVZsUVpQTTh5azM1VkowZklIaWJzd0ItM0JJd3c5bmtTcDN2YjUzdVBVS2pKWVZ0ckJ1TXpWRUpoN2dKcl9nR3NoN2NJa19DTWRKX3BJRndEZDgyWDZJbHd6aExGSTNsN2E3TDdaNlVOYUk0aFJGQ0hkSVRQdzEtTFV4QQ?oc=5",
-          "source": "bbc.com",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5YYjF1YmlSZi0zc01aSDVWOHhIRmV5SlNSVDlkSVFhdkppUzhfb2ZRR0lxZUJyM2hnc0tkOVJSUkJvUHh1dElpZGduajV4WkdnbHN5ZXlRSDlYeG02S1E?oc=5",
+          "source": "bbc.co.uk",
           "publishedAt": "2026-09-17T22:01:06Z",
           "polarity": -0.8261,
           "sentiment": "Very negative",
@@ -6186,7 +6212,7 @@
         },
         {
           "id": "86d0375d78649a42",
-          "storyClusterId": "story-021",
+          "storyClusterId": "story-022",
           "title": "Joe Harper: Aberdeen have rediscovered their spark - there can be no let-up against Hibernian",
           "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPRE83dWItRENROVJ5VThQcWdpbHU2eVR0YmlDMXVuODFNTzdfXzZSMk1pUDVQX2YxS0t3cVFGQXNzdC1zWjR3dnQtWUluQ2FrUXBRSlduRDRnem0tZ0N1TXI0Snp3OEpuQlZvS3dIbE1EQktxVGl1d2NaclpwOWpLV2JoQXpJYi1DcmdjaFE3VVZ5U0R3TUtLbFhYOC0zSFUtanZVQUc5UXRkY1dYaDNkeWhtMFh1WWZCUlBOSmsyQ1luLVhBZHhzUEtn?oc=5",
           "source": "pressandjournal.co.uk",
@@ -6196,14 +6222,14 @@
           "publisherCount": 1
         },
         {
-          "id": "85a97d17334de7f8",
-          "storyClusterId": "story-015",
-          "title": "Ayoub Mouloua 'insane' as new Aberdeen hero gets verdict from Pittodrie pal",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNWWRwbUtnVEN2bWlFMi0xNmhZbWZpRnAwODFKOGJjY05leXU1VmZ4MXBrMzhtMlJxTWRsRHhWeXk1akpkcUxHbHNwUFZpWktSX21xM0dPclZoM3ZkazliSW9aR3gwV2dEekZkZ3Zla1dVRk95N3p3NGUyaTNpUFhSOFNEUU9FUUMyc0FGWmdGMmLSAZYBQVVfeXFMT2N6R0FUQ2djbnBvYVE2UUFWdlMwNTdYQWI1bXR4c2tMQVRjQ1VmOGt2cHpYc2ZZVWNuN1Y0Q3p2ZEgzTDRxZFhrN1JZd3A2YWU3YUVDTHJMOVpvcTdoUVlkdk4yT2FOX0JBQUFPcFpDdUhDWkFiQ3VlUmJJYldhMUJ3MlpZNktiR2dLN3ZMM1FfS29PZTVR?oc=5",
-          "source": "aberdeenlive.news",
-          "publishedAt": "2026-09-17T12:17:05Z",
-          "polarity": -0.5189,
-          "sentiment": "Very negative",
+          "id": "7864efb7455b1776",
+          "storyClusterId": "story-001",
+          "title": "Campaign launched to position Aberdeen as Europe’s ‘capital of energy excellence’",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxObU1ZNkpFc3k5dGdybFEyM0Vocl9SYlYyOXZXQnZUXzlVR3FENjhfaHQwSlBWS0FWaE1kMXZNbGJRNWVfb1VkUzhySkFrbzVXVTFPSkFtel9xVXJlRHRpTGV6Nmdqb2w5dTVjalhnRklwOVNFeDQ2MFNhVnFPcnlWeGNMMWN5elFIdGx4VF85MnNRRWx2bERwbEQ5ZGJVOE9VMUhzcFNaZzBDZ0gxcDd3ZnVqOG1XNDRDMGRpbnhfbHpKRldJWW0xVVNhTzJwdVFvZFZ4VGRn?oc=5",
+          "source": "pressandjournal.co.uk",
+          "publishedAt": "2026-09-16T23:01:51Z",
+          "polarity": 0.8593,
+          "sentiment": "Very positive",
           "publisherCount": 1
         }
       ]
