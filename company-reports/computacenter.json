@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-18T15:04:32.770991Z",
+  "generatedAt": "2026-09-18T16:58:30.857734Z",
   "company": {
     "companyName": "Computacenter PLC",
     "ticker": "CCC.L",
@@ -21,8 +21,8 @@
   "pressCoverage": {
     "periodStart": "2026-06-15",
     "periodEnd": "2026-09-17",
-    "observationCount": 12,
-    "scoredDayCount": 6,
+    "observationCount": 17,
+    "scoredDayCount": 8,
     "latestScore": 60.2,
     "latestScoreDate": "2026-09-17",
     "series": [
@@ -66,6 +66,51 @@
         "date": "2026-06-19",
         "dailyScore": null,
         "rollingScore": 49.9,
+        "storyCount": 0,
+        "sourceCount": 0,
+        "confidence": 0.0,
+        "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-06",
+        "dailyScore": null,
+        "rollingScore": 50.0,
+        "storyCount": 0,
+        "sourceCount": 0,
+        "confidence": 0.0,
+        "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-07",
+        "dailyScore": null,
+        "rollingScore": 50.0,
+        "storyCount": 0,
+        "sourceCount": 0,
+        "confidence": 0.0,
+        "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-08",
+        "dailyScore": 62.1,
+        "rollingScore": 51.6,
+        "storyCount": 1,
+        "sourceCount": 5,
+        "confidence": 28.1,
+        "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-09",
+        "dailyScore": 65.4,
+        "rollingScore": 53.2,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 19.7,
+        "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-10",
+        "dailyScore": null,
+        "rollingScore": 52.9,
         "storyCount": 0,
         "sourceCount": 0,
         "confidence": 0.0,
@@ -145,6 +190,26 @@
         "direction": "Very positive",
         "detail": null,
         "significance": 0.806
+      },
+      {
+        "date": "2026-09-08",
+        "type": "press_story",
+        "title": "Computacenter profits nearly double on surging demand for AI infrastructure",
+        "source": "whtimes.co.uk",
+        "url": "https://www.whtimes.co.uk/news/national/26530545.computacenter-profits-nearly-double-surging-demand-ai-infrastructure",
+        "direction": "Very positive",
+        "detail": null,
+        "significance": 1.176
+      },
+      {
+        "date": "2026-09-09",
+        "type": "press_story",
+        "title": "Computacenter Delivers  Record  Performance As H1 Revenue Hits $9 . 3B",
+        "source": "crn.com",
+        "url": "https://www.crn.com/news-network/computacenter-delivers-record-performance-as-h1-revenue-hits-9-3b",
+        "direction": "Very positive",
+        "detail": null,
+        "significance": 1.076
       },
       {
         "date": "2026-09-11",
@@ -301,17 +366,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 51.6,
+    "score": 52.1,
     "label": "Mixed",
-    "evidenceCoverage": 57,
+    "evidenceCoverage": 63,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 60.9,
+        "score": 61.8,
         "weight": 0.4,
-        "reliability": 0.2,
-        "detail": "Recency-weighted average of 4 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.3,
+        "detail": "Recency-weighted average of 6 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -343,6 +408,26 @@
       "direction": "Very positive",
       "detail": null,
       "significance": 0.806
+    },
+    {
+      "date": "2026-09-08",
+      "type": "press_story",
+      "title": "Computacenter profits nearly double on surging demand for AI infrastructure",
+      "source": "whtimes.co.uk",
+      "url": "https://www.whtimes.co.uk/news/national/26530545.computacenter-profits-nearly-double-surging-demand-ai-infrastructure",
+      "direction": "Very positive",
+      "detail": null,
+      "significance": 1.176
+    },
+    {
+      "date": "2026-09-09",
+      "type": "press_story",
+      "title": "Computacenter Delivers  Record  Performance As H1 Revenue Hits $9 . 3B",
+      "source": "crn.com",
+      "url": "https://www.crn.com/news-network/computacenter-delivers-record-performance-as-h1-revenue-hits-9-3b",
+      "direction": "Very positive",
+      "detail": null,
+      "significance": 1.076
     },
     {
       "date": "2026-09-11",
