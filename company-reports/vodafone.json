@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-18T07:10:16.180071Z",
+  "generatedAt": "2026-09-18T07:20:06.207469Z",
   "company": {
     "companyName": "Vodafone Group PLC",
     "ticker": "VOD.L",
@@ -662,7 +662,7 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 6,
+    "reportCount": 7,
     "reports": [
       {
         "year": 2019,
@@ -1101,56 +1101,129 @@
         ],
         "positivityScore": 34.0,
         "positivityMethod": "lexical annual-report tone"
+      },
+      {
+        "year": 2026,
+        "title": "Vodafone Group PLC Annual Report 2026",
+        "url": "https://reports.investors.vodafone.com/view/500231330/",
+        "sourceUrl": "https://www.vodafone.com/investors/performance-and-reports/annual-reporting",
+        "wordCount": 210463,
+        "pageCount": 256,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 96,
+            "per10kWords": 4.561
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 34,
+            "per10kWords": 1.615
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 77,
+            "per10kWords": 3.659
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 174,
+            "per10kWords": 8.267
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 70,
+            "per10kWords": 3.326
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 83,
+            "per10kWords": 3.944
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 8,
+            "per10kWords": 0.38
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 53,
+            "per10kWords": 2.518
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 11,
+            "per10kWords": 0.523
+          }
+        ],
+        "positivityScore": 38.0,
+        "positivityMethod": "lexical annual-report tone"
       }
     ],
     "emergingKeywords": [
       {
-        "key": "competition",
-        "label": "Competition",
-        "mentions": 204,
-        "per10kWords": 7.196,
-        "previousPer10kWords": 2.219,
-        "changePer10kWords": 4.977
+        "key": "supply_chain",
+        "label": "Supply chain",
+        "mentions": 83,
+        "per10kWords": 3.944,
+        "previousPer10kWords": 1.552,
+        "changePer10kWords": 2.392
+      },
+      {
+        "key": "restructuring",
+        "label": "Restructuring",
+        "mentions": 53,
+        "per10kWords": 2.518,
+        "previousPer10kWords": 0.705,
+        "changePer10kWords": 1.813
       },
       {
         "key": "ai",
         "label": "AI",
-        "mentions": 97,
-        "per10kWords": 3.422,
-        "previousPer10kWords": 0.858,
-        "changePer10kWords": 2.564
-      },
-      {
-        "key": "regulation",
-        "label": "Regulation",
-        "mentions": 246,
-        "per10kWords": 8.678,
-        "previousPer10kWords": 6.627,
-        "changePer10kWords": 2.051
+        "mentions": 96,
+        "per10kWords": 4.561,
+        "previousPer10kWords": 3.422,
+        "changePer10kWords": 1.139
       },
       {
         "key": "cybersecurity",
         "label": "Cybersecurity",
-        "mentions": 79,
-        "per10kWords": 2.787,
-        "previousPer10kWords": 2.219,
-        "changePer10kWords": 0.568
+        "mentions": 77,
+        "per10kWords": 3.659,
+        "previousPer10kWords": 2.787,
+        "changePer10kWords": 0.872
       },
       {
-        "key": "data_center",
-        "label": "Data centres",
-        "mentions": 10,
-        "per10kWords": 0.353,
-        "previousPer10kWords": 0.266,
-        "changePer10kWords": 0.087
+        "key": "cloud",
+        "label": "Cloud",
+        "mentions": 34,
+        "per10kWords": 1.615,
+        "previousPer10kWords": 1.235,
+        "changePer10kWords": 0.38
       }
     ],
-    "latestPositivity": 34.0,
+    "latestPositivity": 38.0,
     "latestPositivityMethod": "lexical annual-report tone",
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 46.6,
+    "score": 51.0,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
@@ -1165,7 +1238,7 @@
       {
         "key": "annual_tone",
         "label": "Annual-report tone",
-        "score": 34.0,
+        "score": 38.0,
         "weight": 0.35,
         "reliability": 1.0,
         "detail": "Lexical annual-report tone."
@@ -1173,7 +1246,7 @@
       {
         "key": "themes",
         "label": "Emerging themes",
-        "score": 53.5,
+        "score": 65.6,
         "weight": 0.25,
         "reliability": 1.0,
         "detail": "Change in growth-theme density compared with pressure and risk themes."
@@ -1335,6 +1408,15 @@
       "direction": "positive",
       "detail": "Daily score increased by 17.3 points",
       "significance": 1.588
+    },
+    {
+      "date": "2026-12-31",
+      "type": "annual_report",
+      "title": "Vodafone Group PLC Annual Report 2026",
+      "url": "https://reports.investors.vodafone.com/view/500231330/",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
     }
   ],
   "persistentEvents": [
