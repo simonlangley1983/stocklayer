@@ -308,7 +308,8 @@ def build_sources(companies: list[dict[str, Any]], existing: dict[str, Any]) -> 
         ]
         # Generated URLs begin with curated first-party overrides, so keep them
         # ahead of stale guesses accumulated by earlier monitor runs.
-        record["sourceUrls"] = list(dict.fromkeys([*generated_urls, *existing_urls]))
+        verified = read_json(ROOT / "annual-reports" / "report-register.json", {}).get("companies", {}).get(slug, {}).get("archiveUrls", [])
+        record["sourceUrls"] = list(dict.fromkeys([*verified, *generated_urls, *existing_urls]))
         record.setdefault("notes", "")
     existing["generatedAt"] = datetime.now(timezone.utc).isoformat()
     existing["sourceCount"] = len(companies_by_slug)
@@ -346,7 +347,7 @@ def fetch_url(url: str, timeout: int) -> tuple[int | None, str, str, str | None]
 
 
 def extract_year(value: str, current_year: int) -> int | None:
-    years = [int(match) for match in re.findall(r"\b(20[1-3][0-9])\b", value)]
+    years = [int(match) for match in re.findall(r"(?<![0-9])(20[1-3][0-9])(?![0-9])", value)]
     valid = [year for year in years if current_year - 7 <= year <= current_year + 1]
     return max(valid) if valid else None
 
@@ -360,7 +361,9 @@ def is_report_link(text: str, url: str, current_year: int) -> bool:
     if any(re.search(r"(?<![a-z0-9])" + re.escape(keyword) + r"(?![a-z0-9])", document_label)
            for keyword in EXCLUDED_KEYWORDS):
         return False
-    has_report_keyword = any(keyword in haystack for keyword in REPORT_KEYWORDS)
+    normalised = re.sub(r"[_-]+", " ", haystack)
+    has_report_keyword = (any(keyword in haystack for keyword in REPORT_KEYWORDS)
+                          or bool(re.search(r"annual (?:and (?:sustainability|esg|strategic) )?report", normalised)))
     has_pdf = ".pdf" in urllib.parse.urlparse(url).path.lower()
     return bool(has_report_keyword and (has_pdf or extract_year(haystack, current_year)))
 
@@ -393,6 +396,11 @@ def parse_report_links(source_url: str, html: str, current_year: int) -> list[di
     all_links = [*parser.links, *embedded_document_links(source_url, html)]
     for link in all_links:
         absolute_url = urllib.parse.urljoin(source_url, link["href"])
+        parsed_url = urllib.parse.urlparse(absolute_url)
+        if parsed_url.path.lower().endswith("/pdf-viewer.aspx"):
+            target = urllib.parse.parse_qs(parsed_url.query).get("src", [""])[0]
+            if target and urllib.parse.urlparse(target).path.lower().endswith(".pdf"):
+                absolute_url = urllib.parse.urljoin(absolute_url, target)
         title = link["text"] or urllib.parse.unquote(Path(urllib.parse.urlparse(absolute_url).path).name)
         if not is_report_link(title, absolute_url, current_year):
             continue
@@ -455,7 +463,8 @@ def monitor_company(company: dict[str, Any], source_record: dict[str, Any], exis
     source_urls = source_record.get("sourceUrls") or candidate_source_urls(company)
     if getattr(args, "registered_sources_only", False):
         register = read_json(ROOT / "annual-reports" / "report-register.json", {})
-        source_urls = register.get("companies", {}).get(company.get("slug"), {}).get("archiveUrls", [])
+        source_urls = (register.get("companies", {}).get(company.get("slug"), {}).get("archiveUrls", [])
+                       or OFFICIAL_SOURCE_OVERRIDES.get(str(company.get("ticker") or ""), []))
     existing_reports = existing_company_index.get("reports") or []
     ticker = str(company.get("ticker") or "")
     discovered_reports: list[dict[str, Any]] = [

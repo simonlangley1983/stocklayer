@@ -22,4 +22,12 @@ class ReportDiscoveryTests(unittest.TestCase):
         report=monitor.parse_report_links('https://example.com', '<a href="/annual-report-2023.2025-04-29.pdf">Annual report 2023</a>', 2026)[0]
         self.assertEqual(report['year'],2023)
 
+    def test_combined_bat_report_with_underscore_year(self):
+        rows=monitor.parse_report_links('https://example.com', '<a href="/BAT_Combined_Annual_and_Sustainability_Report_2024_Reduced.pdf">PDF</a>',2026)
+        self.assertEqual(rows[0]['year'],2024)
+
+    def test_pdf_viewer_resolves_to_download(self):
+        rows=monitor.parse_report_links('https://example.com', '<a href="/pdf-viewer.aspx?src=%2Freports%2Fannual-report-2026.pdf">Annual Report 2026</a>',2026)
+        self.assertEqual(rows[0]['url'],'https://example.com/reports/annual-report-2026.pdf')
+
 if __name__=='__main__': unittest.main()
