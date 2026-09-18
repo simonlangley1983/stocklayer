@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-09-18T01:23:12.734220Z",
+  "generatedAt": "2026-09-18T05:18:47.857734Z",
   "asOfDate": "2026-09-17",
   "companies": {
     "astrazeneca": {
@@ -1235,50 +1235,26 @@
       "ticker": "BARC.L",
       "slug": "barclays",
       "date": "2026-09-17",
-      "dailyScore": 50.3,
-      "dailyLabel": "Neutral / mixed",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
       "rollingScore": 50.2,
-      "confidence": 11.4,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": -6.3,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 11.4",
-          "evidenceArticleIds": [
-            "64613deb526e1d1e"
-          ]
-        },
-        {
-          "type": "collection_degraded",
-          "direction": "neutral",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "64613deb526e1d1e"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "64613deb526e1d1e",
-          "storyClusterId": "story-001",
-          "title": "REG - Barclays PLC Spire Healthcare Grp - Form 8.3 SPIRE HEALTHCARE GROUP PLC",
-          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPNzBmeF9mSkI1c1JxMVp0eTBFb0RvUW5FbS12b0xzZjVIajA5Mm9abTVQb21fUkpjQnZkSE96ak5VcmQzSVAzWDlMbGZhSEhhQ2dKVVRJcUppMVRCU3Q4R29hV0FWLU1EYmVDWjgzT2w1bXYweXdHbkt1QnQ4cmJ3a2YtM0dldmk0LWp3RHJ0MDlHMWtlQlFoQllrZ1dxV0NCQ3UtbGlGeEZWV3NVY3B6YXhYQ0dTMlNMT3FZbG5rNUpFTHRxQkxSUTRHcGxPVVBJQ2Y3dDQyZFdtREdRYy1LTjkyYw?oc=5",
-          "source": "tradingview.com",
-          "publishedAt": "2026-09-17T13:33:12Z",
-          "polarity": 0.0196,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "compass": {
       "companyName": "Compass Group",
