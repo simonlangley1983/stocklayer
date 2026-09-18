@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-17T23:22:50.186847Z",
+  "generatedAt": "2026-09-18T01:23:15.159580Z",
   "company": {
     "companyName": "AstraZeneca",
     "ticker": "AZN.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-05",
-    "periodEnd": "2026-09-16",
-    "observationCount": 67,
-    "scoredDayCount": 67,
-    "latestScore": 65.3,
-    "latestScoreDate": "2026-09-16",
+    "periodEnd": "2026-09-17",
+    "observationCount": 68,
+    "scoredDayCount": 68,
+    "latestScore": 73.7,
+    "latestScoreDate": "2026-09-17",
     "series": [
       {
         "date": "2026-07-05",
@@ -627,6 +627,15 @@
         "storyCount": 23,
         "sourceCount": 20,
         "confidence": 91.6,
+        "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-17",
+        "dailyScore": 73.7,
+        "rollingScore": 58.5,
+        "storyCount": 26,
+        "sourceCount": 23,
+        "confidence": 92.5,
         "coverageStatus": "ok"
       }
     ],
@@ -1295,17 +1304,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 54.1,
+    "score": 54.3,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 54.8,
+        "score": 55.4,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 67 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 68 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1492,6 +1501,46 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "990dfcd39ee651fc1f21",
+      "type": "clinical",
+      "title": "AstraZeneca stock gains as Enhertu wins NHS approval and Wuxi investment supports growth",
+      "date": "2026-09-17",
+      "status": "pending_review",
+      "reviewDate": "2027-03-16",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOTmhmLXNlUlNoNXhzX1F4UE5Bd3VWRnZKNkNrTVMxV2Y3djA1Ni12NkxuS0txQzNkaVBBbVVLX0NidEJTYzUyTTdUVHE4aEtMTWttTE1XaFVVcFBJeXdURDZQUmh0N1RMcmpzNDVJMV8zUUw2YUsxYVBSNW1vN2l1VDdqbDYweDlsNjVFazBZSVZIaEJvWS1qYklyVDlFcVRjN0ZDa2tseXA0VU92RENjWVRyN0llbzY5QlpYMjJ4OVpXMmQtQXNPSlVZNW1RRGMt?oc=5",
+          "publisher": "ad-hoc-news.de",
+          "date": "2026-09-17"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
+    {
+      "id": "1801a192ca6ddafce23c",
+      "type": "clinical",
+      "title": "AstraZeneca (AZN) Wins FDA Approval for its Breast Cancer Pill After Regulators Voiced Doubts",
+      "date": "2026-09-17",
+      "status": "pending_review",
+      "reviewDate": "2027-03-16",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOY1dYbHl1amlHTVJjVFdnWGFJVjRVZUczejVIb2NwV294Tnh4RFlwSXVkOU9tOElET2hmbDZ6WVR5cU5pTFlEenRVNjc3dE5GVEFYQkVLOEtKczhCZ05WVHF2MXFNRnZJanR6ME13eVNrU0ZVSGFlR3luZkRMRHBTd1RfOVYyZktmekE?oc=5",
+          "publisher": "sg.finance.yahoo.com",
+          "date": "2026-09-17"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "dd5eb0dbdb139a25ca64",
       "type": "acquisition",

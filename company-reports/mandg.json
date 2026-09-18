@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-17T23:22:50.186847Z",
+  "generatedAt": "2026-09-18T01:23:15.159580Z",
   "company": {
     "companyName": "M&G PLC",
     "ticker": "MNG.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-05",
-    "periodEnd": "2026-09-16",
-    "observationCount": 61,
-    "scoredDayCount": 40,
-    "latestScore": 57.1,
-    "latestScoreDate": "2026-09-16",
+    "periodEnd": "2026-09-17",
+    "observationCount": 62,
+    "scoredDayCount": 41,
+    "latestScore": 60.4,
+    "latestScoreDate": "2026-09-17",
     "series": [
       {
         "date": "2026-07-05",
@@ -574,6 +574,15 @@
         "sourceCount": 9,
         "confidence": 77.9,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-17",
+        "dailyScore": 60.4,
+        "rollingScore": 54.6,
+        "storyCount": 7,
+        "sourceCount": 6,
+        "confidence": 76.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -626,6 +635,26 @@
         "direction": "neutral",
         "detail": "8 stories versus trailing median 1",
         "significance": 1.032
+      },
+      {
+        "date": "2026-09-17",
+        "type": "coverage_spike",
+        "title": "M&G stock heads into the open after a 1.0% gain",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOdEFDNHc0TzZ0OTRUYkc5dzlabHU3QjVUMFlIYkJWVldaUkszbW8yR3l6UHFsZ29MWE5URGdqcTJUbFVhUy16VGNFbnMzT3hhUDYyV01VNDZCMnVwLWlGWDlXV2s1elk4aGt2azROVENldkhJMnpZS0x4cjF3X3B4NXItaUYzQThOZlhaTTVLNURvNTAzcGZGY2JNN3Q5Z1MtTXVQdHBlUW5peWo4eDBDWkROR2UwMFhXWERZWl9n?oc=5",
+        "direction": "neutral",
+        "detail": "7 stories versus trailing median 1",
+        "significance": 1.396
+      },
+      {
+        "date": "2026-09-17",
+        "type": "coverage_spike",
+        "title": "M&G stock gains as BofA reinstates Neutral rating and 345-pence target",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNclJIektxckpHamJPT3oyTE5SRXJBVnp1NTF4blIxQjFfMXJoVEktMXZlWUxwWTVGTjlSLTEybVprMmJrbW5LZlFUU3FOMEdOaWUzV3Jab3hwbExNRDlSV1YtbkpRczgyUXhoeWJYQTQ2QnUyc0xRekw3OVgwZU1DaU82Rkd6eHFDcnAzYmRUeFBkUVNCMUlrMzUyLVNfZzNNZ2JKdkJxR3R0VU1yTHg5ODRDX2lrQ1JNR2c2NURTNXcwWkFyS0x2M0xiYWpJdkpCUG53?oc=5",
+        "direction": "neutral",
+        "detail": "7 stories versus trailing median 1",
+        "significance": 1.076
       }
     ]
   },
@@ -826,17 +855,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 43.9,
+    "score": 44.1,
     "label": "Mixed",
     "evidenceCoverage": 83,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 50.8,
+        "score": 51.4,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 40 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 41 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -925,6 +954,26 @@
       "direction": "neutral",
       "detail": "8 stories versus trailing median 1",
       "significance": 1.032
+    },
+    {
+      "date": "2026-09-17",
+      "type": "coverage_spike",
+      "title": "M&G stock heads into the open after a 1.0% gain",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOdEFDNHc0TzZ0OTRUYkc5dzlabHU3QjVUMFlIYkJWVldaUkszbW8yR3l6UHFsZ29MWE5URGdqcTJUbFVhUy16VGNFbnMzT3hhUDYyV01VNDZCMnVwLWlGWDlXV2s1elk4aGt2azROVENldkhJMnpZS0x4cjF3X3B4NXItaUYzQThOZlhaTTVLNURvNTAzcGZGY2JNN3Q5Z1MtTXVQdHBlUW5peWo4eDBDWkROR2UwMFhXWERZWl9n?oc=5",
+      "direction": "neutral",
+      "detail": "7 stories versus trailing median 1",
+      "significance": 1.396
+    },
+    {
+      "date": "2026-09-17",
+      "type": "coverage_spike",
+      "title": "M&G stock gains as BofA reinstates Neutral rating and 345-pence target",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNclJIektxckpHamJPT3oyTE5SRXJBVnp1NTF4blIxQjFfMXJoVEktMXZlWUxwWTVGTjlSLTEybVprMmJrbW5LZlFUU3FOMEdOaWUzV3Jab3hwbExNRDlSV1YtbkpRczgyUXhoeWJYQTQ2QnUyc0xRekw3OVgwZU1DaU82Rkd6eHFDcnAzYmRUeFBkUVNCMUlrMzUyLVNfZzNNZ2JKdkJxR3R0VU1yTHg5ODRDX2lrQ1JNR2c2NURTNXcwWkFyS0x2M0xiYWpJdkpCUG53?oc=5",
+      "direction": "neutral",
+      "detail": "7 stories versus trailing median 1",
+      "significance": 1.076
     }
   ],
   "persistentEvents": [

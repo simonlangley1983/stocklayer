@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-17T23:22:50.186847Z",
+  "generatedAt": "2026-09-18T01:23:15.159580Z",
   "company": {
     "companyName": "Associated British Foods PLC",
     "ticker": "ABF.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-05",
-    "periodEnd": "2026-09-16",
-    "observationCount": 61,
-    "scoredDayCount": 20,
-    "latestScore": 34.2,
-    "latestScoreDate": "2026-09-16",
+    "periodEnd": "2026-09-17",
+    "observationCount": 62,
+    "scoredDayCount": 21,
+    "latestScore": 40.0,
+    "latestScoreDate": "2026-09-17",
     "series": [
       {
         "date": "2026-07-05",
@@ -574,6 +574,15 @@
         "sourceCount": 4,
         "confidence": 65.0,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-17",
+        "dailyScore": 40.0,
+        "rollingScore": 45.8,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 18.1,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -646,6 +655,16 @@
         "direction": "neutral",
         "detail": null,
         "significance": 1.327
+      },
+      {
+        "date": "2026-09-17",
+        "type": "press_story",
+        "title": "Kepler Cheuvreux Downgrades Associated British Foods to Hold on Delayed Split, Primark Weakness",
+        "source": "asktraders.com",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPMXFOc1VYckNjZklzeDQ4eU1XOTVucVVET0l6QlRVZWl2bTA3NmNhc0tES2RuMDBPcWtPQ1k2UlZLM0lLSkVVUXM2b0c2RUc5dXRmYkcyM3c1Nm0xVXRnVGF3M3B6ZWloNEN0aU5rdU15eXhJWGhDV2xTbV9NWTVfWWtybmVuTGM0dHlTWkpnTGgzYk5lTUxHOEo2RVdlZksyWVJaMVB1QjJhXzE3VS1RclVFYVRTOXdDNnREMzFFYUZJakM3V1pKMVBPQQ?oc=5",
+        "direction": "Very negative",
+        "detail": null,
+        "significance": 0.752
       }
     ]
   },
@@ -732,17 +751,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 43.3,
+    "score": 43.1,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 44.4,
+        "score": 43.9,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 20 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 21 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -834,6 +853,16 @@
       "direction": "neutral",
       "detail": null,
       "significance": 1.327
+    },
+    {
+      "date": "2026-09-17",
+      "type": "press_story",
+      "title": "Kepler Cheuvreux Downgrades Associated British Foods to Hold on Delayed Split, Primark Weakness",
+      "source": "asktraders.com",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPMXFOc1VYckNjZklzeDQ4eU1XOTVucVVET0l6QlRVZWl2bTA3NmNhc0tES2RuMDBPcWtPQ1k2UlZLM0lLSkVVUXM2b0c2RUc5dXRmYkcyM3c1Nm0xVXRnVGF3M3B6ZWloNEN0aU5rdU15eXhJWGhDV2xTbV9NWTVfWWtybmVuTGM0dHlTWkpnTGgzYk5lTUxHOEo2RVdlZksyWVJaMVB1QjJhXzE3VS1RclVFYVRTOXdDNnREMzFFYUZJakM3V1pKMVBPQQ?oc=5",
+      "direction": "Very negative",
+      "detail": null,
+      "significance": 0.752
     }
   ],
   "persistentEvents": [

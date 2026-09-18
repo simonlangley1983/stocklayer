@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-17T23:22:50.186847Z",
+  "generatedAt": "2026-09-18T01:23:15.159580Z",
   "company": {
     "companyName": "Persimmon PLC",
     "ticker": "PSN.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-16",
-    "observationCount": 69,
-    "scoredDayCount": 59,
-    "latestScore": 64.5,
-    "latestScoreDate": "2026-09-16",
+    "periodEnd": "2026-09-17",
+    "observationCount": 70,
+    "scoredDayCount": 60,
+    "latestScore": 51.4,
+    "latestScoreDate": "2026-09-17",
     "series": [
       {
         "date": "2026-06-30",
@@ -646,6 +646,15 @@
         "sourceCount": 4,
         "confidence": 81.5,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-17",
+        "dailyScore": 51.4,
+        "rollingScore": 52.5,
+        "storyCount": 9,
+        "sourceCount": 8,
+        "confidence": 85.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -718,6 +727,26 @@
         "direction": "mixed",
         "detail": "Positive and negative coverage is unusually dispersed",
         "significance": 1.534
+      },
+      {
+        "date": "2026-09-17",
+        "type": "sentiment_drop",
+        "title": "Staay expects persimmon demand to outpace supply",
+        "source": "fruitnet.com",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOcWJ5MEhyMTJubTB4bDBHc3hDQjZRaWs1VUp2TXJkU2F2RG5mTS1wVE5aaklOM3pwRThNNmdkYXdsOHBod2FtQlR2RmV5aDV0NXNrN050M3NhNGxRSHhZT1VLVXZCakU0U09yOFZKRk10TGZtUnk1cWd6M3BIQ0JmWDEzOHRTR3dsRXJBUlV4VncwT25WTkV4S1d4VmptMDA?oc=5",
+        "direction": "negative",
+        "detail": "Daily score decreased by 13.1 points",
+        "significance": 1.579
+      },
+      {
+        "date": "2026-09-17",
+        "type": "sentiment_drop",
+        "title": "Persimmon stock rises above its 200-day average",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOYnJlTEMxbmRueFRjNEFIdmxUaXpoZVhpZjdYTnFKS2tvZVJ3NE12cGJPQWtNLUJoSmZvUkFHdk1OT0RXTnh2eS1IOVdZWFBYMFNFNU9ydmhYWGtBOUNobV9Sb3FFOS1JNzRyOEJtbEJNQklQcFBBTTV2emNqd1ItakxEdUZLYV9XbTNPdTdMbVRQXy1iNWxXMHpHX0NEUWF5UGdjYmdjQUVaUDVJUGNZ?oc=5",
+        "direction": "negative",
+        "detail": "Daily score decreased by 13.1 points",
+        "significance": 1.554
       }
     ]
   },
@@ -1210,17 +1239,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 51.5,
+    "score": 51.6,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 49.3,
+        "score": 49.4,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 59 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 60 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1365,6 +1394,26 @@
       "direction": "mixed",
       "detail": "Positive and negative coverage is unusually dispersed",
       "significance": 1.534
+    },
+    {
+      "date": "2026-09-17",
+      "type": "sentiment_drop",
+      "title": "Staay expects persimmon demand to outpace supply",
+      "source": "fruitnet.com",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOcWJ5MEhyMTJubTB4bDBHc3hDQjZRaWs1VUp2TXJkU2F2RG5mTS1wVE5aaklOM3pwRThNNmdkYXdsOHBod2FtQlR2RmV5aDV0NXNrN050M3NhNGxRSHhZT1VLVXZCakU0U09yOFZKRk10TGZtUnk1cWd6M3BIQ0JmWDEzOHRTR3dsRXJBUlV4VncwT25WTkV4S1d4VmptMDA?oc=5",
+      "direction": "negative",
+      "detail": "Daily score decreased by 13.1 points",
+      "significance": 1.579
+    },
+    {
+      "date": "2026-09-17",
+      "type": "sentiment_drop",
+      "title": "Persimmon stock rises above its 200-day average",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOYnJlTEMxbmRueFRjNEFIdmxUaXpoZVhpZjdYTnFKS2tvZVJ3NE12cGJPQWtNLUJoSmZvUkFHdk1OT0RXTnh2eS1IOVdZWFBYMFNFNU9ydmhYWGtBOUNobV9Sb3FFOS1JNzRyOEJtbEJNQklQcFBBTTV2emNqd1ItakxEdUZLYV9XbTNPdTdMbVRQXy1iNWxXMHpHX0NEUWF5UGdjYmdjQUVaUDVJUGNZ?oc=5",
+      "direction": "negative",
+      "detail": "Daily score decreased by 13.1 points",
+      "significance": 1.554
     }
   ],
   "persistentEvents": []

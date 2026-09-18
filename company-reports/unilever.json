@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-17T23:22:50.186847Z",
+  "generatedAt": "2026-09-18T01:23:15.159580Z",
   "company": {
     "companyName": "Unilever",
     "ticker": "ULVR.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-10",
-    "periodEnd": "2026-09-16",
-    "observationCount": 61,
-    "scoredDayCount": 61,
-    "latestScore": 45.7,
-    "latestScoreDate": "2026-09-16",
+    "periodEnd": "2026-09-17",
+    "observationCount": 62,
+    "scoredDayCount": 62,
+    "latestScore": 43.2,
+    "latestScoreDate": "2026-09-17",
     "series": [
       {
         "date": "2026-07-10",
@@ -574,6 +574,15 @@
         "sourceCount": 29,
         "confidence": 85.9,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-17",
+        "dailyScore": 43.2,
+        "rollingScore": 46.9,
+        "storyCount": 22,
+        "sourceCount": 20,
+        "confidence": 86.4,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -586,16 +595,6 @@
         "direction": "positive",
         "detail": "Daily press score is 66.1",
         "significance": 1.571
-      },
-      {
-        "date": "2026-08-01",
-        "type": "press_story",
-        "title": "Unilever expects no major job losses in Netherlands after food division sale to US firm",
-        "source": "nltimes.nl",
-        "url": "https://nltimes.nl/2026/08/01/unilever-expects-major-job-losses-netherlands-food-division-sale-us-firm",
-        "direction": "Very negative",
-        "detail": null,
-        "significance": 1.103
       },
       {
         "date": "2026-08-04",
@@ -626,16 +625,6 @@
         "direction": "positive",
         "detail": "Daily score increased by 15.3 points",
         "significance": 1.533
-      },
-      {
-        "date": "2026-09-14",
-        "type": "sentiment_jump",
-        "title": "Unilever climbs Monday, outperforms market",
-        "source": "marketwatch.com",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOeGhET2lUcXlnS1cxakVjQnVLYmRWLUxYX3JmdE1XUjg4R0k2c3lTclVDRERXSnZFOTgtV1FPQ3JZMDl2Wkdla01Sa0RlNV9QQ296dnlhMlhhNlVSazE5c0hzc0QzZ0gzYlU4OWFOZnFJS1NSd09BQTF4VmROeWlZeVZ1Y1NGdUNmUTJxa3VnRUJoQzNiZkExRFJBWm5PdEo2YXRsNDEwVlpETW11R0o0Ykg2bENtbUlNXy1R?oc=5",
-        "direction": "positive",
-        "detail": "Daily score increased by 15.3 points",
-        "significance": 1.52
       },
       {
         "date": "2026-09-15",
@@ -676,6 +665,26 @@
         "direction": "neutral",
         "detail": null,
         "significance": 1.555
+      },
+      {
+        "date": "2026-09-17",
+        "type": "regulatory_investigation",
+        "title": "McCormick stock slips after TD Cowen downgrade while Unilever deal scrutiny grows",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQM1Z1SUZSb1NxY0RlNVRvQnFWMXJVOVlwQzNvb3dkQTVuVTdRT3IwdUVQMElwaEwyZjFMbEZnWFZyYVpJVF83UFA2clJOcmtsSHpSMjFCTGFmaDBSdk16a043aWkxOHJQVUJkRU9ycW55VmpfTDk0LWhRR1ppb25NOXVFYjdta0JZOFRYQUoxRzFTWGRLSHh0QTN0dGxLUTF0bWRtYzdULWxCNHBjYXBSOVZPR3NpTlNZaXZFR2NhX0diNTdfRWF0Vw?oc=5",
+        "direction": "negative",
+        "detail": null,
+        "significance": 1.563
+      },
+      {
+        "date": "2026-09-17",
+        "type": "regulatory_investigation",
+        "title": "UK Regulator Probes $65bn Unilever-McCormick Foods Deal",
+        "source": "brandiconimage.com",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPalA0VkppY0hRcjZ5Y2FOZ01HaUxWY3dVVFFJX0I2WThwMGdBQVlna2xObkZidEl6YW1LYmVoeVFzLUNPVnFZMVh2eWhLOGNHZGNwcVVnX0EwWFpWQkh0MTl0RzFMTUdqLUQ5bE1PTXhYdl9uVHlSVGVjWDJHajZnLXFnbw?oc=5",
+        "direction": "negative",
+        "detail": null,
+        "significance": 1.536
       }
     ]
   },
@@ -876,17 +885,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 50.3,
+    "score": 50.2,
     "label": "Mixed",
     "evidenceCoverage": 83,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 49.2,
+        "score": 49.0,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 61 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 62 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -937,16 +946,6 @@
       "significance": 1.571
     },
     {
-      "date": "2026-08-01",
-      "type": "press_story",
-      "title": "Unilever expects no major job losses in Netherlands after food division sale to US firm",
-      "source": "nltimes.nl",
-      "url": "https://nltimes.nl/2026/08/01/unilever-expects-major-job-losses-netherlands-food-division-sale-us-firm",
-      "direction": "Very negative",
-      "detail": null,
-      "significance": 1.103
-    },
-    {
       "date": "2026-08-04",
       "type": "sentiment_drop",
       "title": "Hindustan Unilever Shares Fall 2 . 01 % to Rs 2 , 095",
@@ -975,16 +974,6 @@
       "direction": "positive",
       "detail": "Daily score increased by 15.3 points",
       "significance": 1.533
-    },
-    {
-      "date": "2026-09-14",
-      "type": "sentiment_jump",
-      "title": "Unilever climbs Monday, outperforms market",
-      "source": "marketwatch.com",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOeGhET2lUcXlnS1cxakVjQnVLYmRWLUxYX3JmdE1XUjg4R0k2c3lTclVDRERXSnZFOTgtV1FPQ3JZMDl2Wkdla01Sa0RlNV9QQ296dnlhMlhhNlVSazE5c0hzc0QzZ0gzYlU4OWFOZnFJS1NSd09BQTF4VmROeWlZeVZ1Y1NGdUNmUTJxa3VnRUJoQzNiZkExRFJBWm5PdEo2YXRsNDEwVlpETW11R0o0Ykg2bENtbUlNXy1R?oc=5",
-      "direction": "positive",
-      "detail": "Daily score increased by 15.3 points",
-      "significance": 1.52
     },
     {
       "date": "2026-09-15",
@@ -1025,9 +1014,89 @@
       "direction": "neutral",
       "detail": null,
       "significance": 1.555
+    },
+    {
+      "date": "2026-09-17",
+      "type": "regulatory_investigation",
+      "title": "McCormick stock slips after TD Cowen downgrade while Unilever deal scrutiny grows",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQM1Z1SUZSb1NxY0RlNVRvQnFWMXJVOVlwQzNvb3dkQTVuVTdRT3IwdUVQMElwaEwyZjFMbEZnWFZyYVpJVF83UFA2clJOcmtsSHpSMjFCTGFmaDBSdk16a043aWkxOHJQVUJkRU9ycW55VmpfTDk0LWhRR1ppb25NOXVFYjdta0JZOFRYQUoxRzFTWGRLSHh0QTN0dGxLUTF0bWRtYzdULWxCNHBjYXBSOVZPR3NpTlNZaXZFR2NhX0diNTdfRWF0Vw?oc=5",
+      "direction": "negative",
+      "detail": null,
+      "significance": 1.563
+    },
+    {
+      "date": "2026-09-17",
+      "type": "regulatory_investigation",
+      "title": "UK Regulator Probes $65bn Unilever-McCormick Foods Deal",
+      "source": "brandiconimage.com",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPalA0VkppY0hRcjZ5Y2FOZ01HaUxWY3dVVFFJX0I2WThwMGdBQVlna2xObkZidEl6YW1LYmVoeVFzLUNPVnFZMVh2eWhLOGNHZGNwcVVnX0EwWFpWQkh0MTl0RzFMTUdqLUQ5bE1PTXhYdl9uVHlSVGVjWDJHajZnLXFnbw?oc=5",
+      "direction": "negative",
+      "detail": null,
+      "significance": 1.536
     }
   ],
   "persistentEvents": [
+    {
+      "id": "8409577b730b07c44c1d",
+      "type": "acquisition",
+      "title": "UK regulators scrutinize $65B Unilever-McCormick food merger",
+      "date": "2026-09-17",
+      "status": "pending_review",
+      "reviewDate": "2027-03-16",
+      "direction": "Very negative",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5DUDZaV2JISFlqaks2OXBiazVlRkVjOWR0b3pkR1RQYnpqNWpnY0xiYm5tTFM0aFRMSzQ0bHdBaFlmQnBCZHVaVU5DaTFTc3BmZEhlQi1peGFUNWlWN1g0Z2Y3UUN3UQ?oc=5",
+          "publisher": "njbiz.com",
+          "date": "2026-09-17"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
+    {
+      "id": "594badccff3d3373259c",
+      "type": "acquisition",
+      "title": "McCormick and Unilever’s $45B merger under investigation in UK",
+      "date": "2026-09-17",
+      "status": "pending_review",
+      "reviewDate": "2027-03-16",
+      "direction": "Very negative",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQVTZWWGw0STh0ZW90eE5MYmtWVmstVXJLNFFDQlh5UFMxSTFleHd2dXM4dlZ0b1JPaEdMMEhIemJ6X20tZWFSNFRRZXlKbUd6b2s5ME5pNFFYNjVRam44Q2RTdktyRVUtdUk2X0ZvRndfQjBXaTh1aHVZb3c3QWs1dDNmOUQwMXZyVFhJ?oc=5",
+          "publisher": "fooddive.com",
+          "date": "2026-09-17"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
+    {
+      "id": "0ebeb74e82e8be4e4400",
+      "type": "acquisition",
+      "title": "Unilever accused of “double standards” for workers post McCormick merger",
+      "date": "2026-09-17",
+      "status": "pending_review",
+      "reviewDate": "2027-03-16",
+      "direction": "Very negative",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQakdwQ3pTaWVTSEtFcWdZeEU5UUJRTXJFT01Od1g2U0NwQTJsajdadnRxbW9WcFhYZHl5b1czRndUVWFnZ2pBNTliTC1mYnNTeDJYNVJnRWs0N0NmcVJmMDg0QlQxX3ZETklzY3RHMV9mZkVueFcxU2JYMV9makxHSlVIRFFhSXd5alZDb0UwNTJvYTlZQk5jUHlyempiMXZlUjIzVA?oc=5",
+          "publisher": "just-food.com",
+          "date": "2026-09-17"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "7c17de0a88f1195be8f0",
       "type": "acquisition",

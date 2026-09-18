@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-17T23:22:50.186847Z",
+  "generatedAt": "2026-09-18T01:23:15.159580Z",
   "company": {
     "companyName": "Informa PLC",
     "ticker": "INF.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-15",
-    "periodEnd": "2026-09-16",
-    "observationCount": 70,
-    "scoredDayCount": 54,
-    "latestScore": 64.1,
-    "latestScoreDate": "2026-09-16",
+    "periodEnd": "2026-09-17",
+    "observationCount": 71,
+    "scoredDayCount": 55,
+    "latestScore": 63.4,
+    "latestScoreDate": "2026-09-17",
     "series": [
       {
         "date": "2026-06-15",
@@ -655,6 +655,15 @@
         "sourceCount": 4,
         "confidence": 64.7,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-17",
+        "dailyScore": 63.4,
+        "rollingScore": 56.3,
+        "storyCount": 9,
+        "sourceCount": 10,
+        "confidence": 81.0,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -699,16 +708,6 @@
         "significance": 1.56
       },
       {
-        "date": "2026-08-12",
-        "type": "press_story",
-        "title": "Informa ( LON : INF ) Stock Price Expected to Rise , Citigroup Analyst Says",
-        "source": "themarketsdaily.com",
-        "url": "https://www.themarketsdaily.com/2026/08/12/informa-loninf-stock-price-expected-to-rise-citigroup-analyst-says.html",
-        "direction": "Very positive",
-        "detail": null,
-        "significance": 1.069
-      },
-      {
         "date": "2026-08-16",
         "type": "press_story",
         "title": "Informa plc ( OTCMKTS : IFJPY ) Short Interest Down 51 . 8 % in July",
@@ -749,14 +748,24 @@
         "significance": 1.239
       },
       {
-        "date": "2026-09-16",
-        "type": "press_story",
-        "title": "Informa stock edges higher as investors focus on margin progress",
+        "date": "2026-09-17",
+        "type": "coverage_spike",
+        "title": "Informa stock gains support from Berenberg target hike and solid first-half figures",
         "source": "ad-hoc-news.de",
-        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPaDhRSk8zUWtXQm81WTVRZEhDLWVaUjBqSHFqUUpuNFBDWGQyT3pTSm8wbWhWSUlhUVZ4anU4V09SUGNUYXdCbUhEaW01TTNReDlFOUw4NlZ5T3k1c09TUWdEMzNfNm9lYldxaGFNcGFKUGVpRTd3LW1jX0V2TUlLV1NKSTBBS0FkS0tWSktXZEFCdGNCX0QtdFpkNWx3N3lmb2EyVDB3MGVFUHltU3kwYW1mb28tUF9nV2tHTW9XSWV0cHFRc0E?oc=5",
-        "direction": "Very positive",
-        "detail": null,
-        "significance": 1.051
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPcjFLLU10MjdxOEtTYlVHVjlGU2xMc0RZbHpmakdlUWdSQnFUeThTV3o5aHd1Qnp5djA0M1cySTlnNVg4ZThEMEQ2amtORmdlaUJSR0IxMkNkYTY3UEQ5LWpXVjl5WWNaemhqSF9lY3BjOUYzM1Y1dzBOaEVuVXl1cllFS0hUS0NvRnJTcjFoZUx3ci0xMTNqU2dMeFJNOTVEcFBGUHFTVG9iM1ZjdWpra2JNVk9BOHlwVmtMZEpmM0prTDZ6Rmc?oc=5",
+        "direction": "neutral",
+        "detail": "9 stories versus trailing median 3",
+        "significance": 1.569
+      },
+      {
+        "date": "2026-09-17",
+        "type": "coverage_spike",
+        "title": "HSBC Holdings Surpasses 7% Voting Rights in Informa PLC, Reaching 7.732%",
+        "source": "kalkinemedia.com",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPNGtBU3VIYm9jRkl1MkU1SUlaZC1nb2lvWGhlX2xMeXR2a0sxYWEzSHU3WDVPVHZScjI0azFTYkdBTV9uY05XcTdSdHl5UlowSjhrQzg2SU1pdnRDcmVEd2NON3g1XzNCdEgzaERxZU56LS1vVkhlZHF5T3RJdmxkMUlKTXhBWm4zcjMyM29Hd3NfRy1yRER5M2lOTkEwTEVfY25KNXpyMVZ6dUJVa3FRV3c4YlR6UQ?oc=5",
+        "direction": "neutral",
+        "detail": "9 stories versus trailing median 3",
+        "significance": 1.54
       }
     ]
   },
@@ -1249,17 +1258,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 81.8,
+    "score": 81.9,
     "label": "Strong",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 54.4,
+        "score": 54.8,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 49 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 50 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "themes",
@@ -1368,16 +1377,6 @@
       "significance": 1.56
     },
     {
-      "date": "2026-08-12",
-      "type": "press_story",
-      "title": "Informa ( LON : INF ) Stock Price Expected to Rise , Citigroup Analyst Says",
-      "source": "themarketsdaily.com",
-      "url": "https://www.themarketsdaily.com/2026/08/12/informa-loninf-stock-price-expected-to-rise-citigroup-analyst-says.html",
-      "direction": "Very positive",
-      "detail": null,
-      "significance": 1.069
-    },
-    {
       "date": "2026-08-16",
       "type": "press_story",
       "title": "Informa plc ( OTCMKTS : IFJPY ) Short Interest Down 51 . 8 % in July",
@@ -1418,14 +1417,24 @@
       "significance": 1.239
     },
     {
-      "date": "2026-09-16",
-      "type": "press_story",
-      "title": "Informa stock edges higher as investors focus on margin progress",
+      "date": "2026-09-17",
+      "type": "coverage_spike",
+      "title": "Informa stock gains support from Berenberg target hike and solid first-half figures",
       "source": "ad-hoc-news.de",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPaDhRSk8zUWtXQm81WTVRZEhDLWVaUjBqSHFqUUpuNFBDWGQyT3pTSm8wbWhWSUlhUVZ4anU4V09SUGNUYXdCbUhEaW01TTNReDlFOUw4NlZ5T3k1c09TUWdEMzNfNm9lYldxaGFNcGFKUGVpRTd3LW1jX0V2TUlLV1NKSTBBS0FkS0tWSktXZEFCdGNCX0QtdFpkNWx3N3lmb2EyVDB3MGVFUHltU3kwYW1mb28tUF9nV2tHTW9XSWV0cHFRc0E?oc=5",
-      "direction": "Very positive",
-      "detail": null,
-      "significance": 1.051
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPcjFLLU10MjdxOEtTYlVHVjlGU2xMc0RZbHpmakdlUWdSQnFUeThTV3o5aHd1Qnp5djA0M1cySTlnNVg4ZThEMEQ2amtORmdlaUJSR0IxMkNkYTY3UEQ5LWpXVjl5WWNaemhqSF9lY3BjOUYzM1Y1dzBOaEVuVXl1cllFS0hUS0NvRnJTcjFoZUx3ci0xMTNqU2dMeFJNOTVEcFBGUHFTVG9iM1ZjdWpra2JNVk9BOHlwVmtMZEpmM0prTDZ6Rmc?oc=5",
+      "direction": "neutral",
+      "detail": "9 stories versus trailing median 3",
+      "significance": 1.569
+    },
+    {
+      "date": "2026-09-17",
+      "type": "coverage_spike",
+      "title": "HSBC Holdings Surpasses 7% Voting Rights in Informa PLC, Reaching 7.732%",
+      "source": "kalkinemedia.com",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPNGtBU3VIYm9jRkl1MkU1SUlaZC1nb2lvWGhlX2xMeXR2a0sxYWEzSHU3WDVPVHZScjI0azFTYkdBTV9uY05XcTdSdHl5UlowSjhrQzg2SU1pdnRDcmVEd2NON3g1XzNCdEgzaERxZU56LS1vVkhlZHF5T3RJdmxkMUlKTXhBWm4zcjMyM29Hd3NfRy1yRER5M2lOTkEwTEVfY25KNXpyMVZ6dUJVa3FRV3c4YlR6UQ?oc=5",
+      "direction": "neutral",
+      "detail": "9 stories versus trailing median 3",
+      "significance": 1.54
     }
   ],
   "persistentEvents": [

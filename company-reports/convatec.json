@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-17T23:22:50.186847Z",
+  "generatedAt": "2026-09-18T01:23:15.159580Z",
   "company": {
     "companyName": "Convatec Group PLC",
     "ticker": "CTEC.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-15",
-    "periodEnd": "2026-09-16",
-    "observationCount": 62,
-    "scoredDayCount": 18,
-    "latestScore": 50.6,
-    "latestScoreDate": "2026-09-16",
+    "periodEnd": "2026-09-17",
+    "observationCount": 63,
+    "scoredDayCount": 19,
+    "latestScore": 61.6,
+    "latestScoreDate": "2026-09-17",
     "series": [
       {
         "date": "2026-06-15",
@@ -583,6 +583,15 @@
         "sourceCount": 1,
         "confidence": 15.2,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-17",
+        "dailyScore": 61.6,
+        "rollingScore": 51.7,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 19.5,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -665,6 +674,16 @@
         "direction": "Neutral / mixed",
         "detail": null,
         "significance": 0.183
+      },
+      {
+        "date": "2026-09-17",
+        "type": "press_story",
+        "title": "ConvaTec stock heads into the open after a 1.0% drop",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOc1dETWJzVWs4QTRyUURaLVZSTVNaSnRTRnFOVGVmTmUtWEpUNHZSbmt1WGVseVRvN2JnLVZpSUF6a2VKdy1rVExleWMtR0V4UEVoWHNjVmp3MlhGT1Rfbm56Q1JKQmh5MVo0Qm96MFVNLTJDekZFSW14bGxEODk1R0FNUzItVXJING91eEZnN1I2TTZrYktzZUFNRWlRWVJIRHdyUUVvdlp5Tm44VHFCeE5TLXFialFyZWdDYk9jUQ?oc=5",
+        "direction": "Very positive",
+        "detail": null,
+        "significance": 0.846
       }
     ]
   },
@@ -751,17 +770,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 47.6,
+    "score": 48.3,
     "label": "Mixed",
-    "evidenceCoverage": 92,
+    "evidenceCoverage": 95,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 49.0,
+        "score": 50.4,
         "weight": 0.4,
-        "reliability": 0.85,
-        "detail": "Recency-weighted average of 17 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.9,
+        "detail": "Recency-weighted average of 18 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -863,6 +882,16 @@
       "direction": "Neutral / mixed",
       "detail": null,
       "significance": 0.183
+    },
+    {
+      "date": "2026-09-17",
+      "type": "press_story",
+      "title": "ConvaTec stock heads into the open after a 1.0% drop",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOc1dETWJzVWs4QTRyUURaLVZSTVNaSnRTRnFOVGVmTmUtWEpUNHZSbmt1WGVseVRvN2JnLVZpSUF6a2VKdy1rVExleWMtR0V4UEVoWHNjVmp3MlhGT1Rfbm56Q1JKQmh5MVo0Qm96MFVNLTJDekZFSW14bGxEODk1R0FNUzItVXJING91eEZnN1I2TTZrYktzZUFNRWlRWVJIRHdyUUVvdlp5Tm44VHFCeE5TLXFialFyZWdDYk9jUQ?oc=5",
+      "direction": "Very positive",
+      "detail": null,
+      "significance": 0.846
     }
   ],
   "persistentEvents": []

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-17T23:22:50.186847Z",
+  "generatedAt": "2026-09-18T01:23:15.159580Z",
   "company": {
     "companyName": "Weir Group PLC",
     "ticker": "WEIR.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-16",
-    "observationCount": 64,
-    "scoredDayCount": 8,
-    "latestScore": 47.0,
-    "latestScoreDate": "2026-09-16",
+    "periodEnd": "2026-09-17",
+    "observationCount": 65,
+    "scoredDayCount": 9,
+    "latestScore": 51.2,
+    "latestScoreDate": "2026-09-17",
     "series": [
       {
         "date": "2026-06-30",
@@ -601,6 +601,15 @@
         "sourceCount": 7,
         "confidence": 76.4,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-17",
+        "dailyScore": 51.2,
+        "rollingScore": 49.7,
+        "storyCount": 14,
+        "sourceCount": 11,
+        "confidence": 81.6,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -683,6 +692,26 @@
         "direction": "neutral",
         "detail": "7 stories versus trailing median 1",
         "significance": 1.191
+      },
+      {
+        "date": "2026-09-17",
+        "type": "coverage_spike",
+        "title": "Weir Group stock slips below its 200 day average",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPbWlrb3E3eUZqTC1CcDdYSFpEMjlOQXpidk5lWTdvZERJNVdrZU1RTWxtNTh4UXFrUTh4M09UQUszUXBWeFZxY1BHWFNlTnoyMXVnSngwMDk5NVZsSjB6QTdOamJDd0xyYllEVHJMVk5PTWlGa3djWVdVTTlOTEczX3NIMTlTbE9DMnA1RjE1WjM1NnZMYmdlMEU5QzlFWm1BblJvSHNPemVZMWFYTjZDbQ?oc=5",
+        "direction": "neutral",
+        "detail": "14 stories versus trailing median 4",
+        "significance": 1.601
+      },
+      {
+        "date": "2026-09-17",
+        "type": "coverage_spike",
+        "title": "Duncan Weir backing Matthew Urwin to break through at Glasgow this term",
+        "source": "theoffsideline.com",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQd05RYzgxOGV2SHRLc1lYd0FXMFRLMGJpRHh0bGZjUXBreWp6RUZpYzhKczd4aWVqYjFFVUZ6MWZNczQyaHl5MlI5UlN5TlptWW9sN1dPMWNpZGEwYWE4cHlpbGdQcW9aZkoyT0tyUHk2ZkYteVNraFgxc3UyLWcyZ1FnZjRBVTR1SzVfSzVtV2xiekpqVXZKWUF0dWlUOWttdzR3RGp3?oc=5",
+        "direction": "neutral",
+        "detail": "14 stories versus trailing median 4",
+        "significance": 1.466
       }
     ]
   },
@@ -769,17 +798,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 48.4,
+    "score": 48.7,
     "label": "Mixed",
-    "evidenceCoverage": 68,
+    "evidenceCoverage": 71,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 48.2,
+        "score": 48.8,
         "weight": 0.4,
-        "reliability": 0.4,
-        "detail": "Recency-weighted average of 8 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.45,
+        "detail": "Recency-weighted average of 9 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -881,6 +910,26 @@
       "direction": "neutral",
       "detail": "7 stories versus trailing median 1",
       "significance": 1.191
+    },
+    {
+      "date": "2026-09-17",
+      "type": "coverage_spike",
+      "title": "Weir Group stock slips below its 200 day average",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPbWlrb3E3eUZqTC1CcDdYSFpEMjlOQXpidk5lWTdvZERJNVdrZU1RTWxtNTh4UXFrUTh4M09UQUszUXBWeFZxY1BHWFNlTnoyMXVnSngwMDk5NVZsSjB6QTdOamJDd0xyYllEVHJMVk5PTWlGa3djWVdVTTlOTEczX3NIMTlTbE9DMnA1RjE1WjM1NnZMYmdlMEU5QzlFWm1BblJvSHNPemVZMWFYTjZDbQ?oc=5",
+      "direction": "neutral",
+      "detail": "14 stories versus trailing median 4",
+      "significance": 1.601
+    },
+    {
+      "date": "2026-09-17",
+      "type": "coverage_spike",
+      "title": "Duncan Weir backing Matthew Urwin to break through at Glasgow this term",
+      "source": "theoffsideline.com",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQd05RYzgxOGV2SHRLc1lYd0FXMFRLMGJpRHh0bGZjUXBreWp6RUZpYzhKczd4aWVqYjFFVUZ6MWZNczQyaHl5MlI5UlN5TlptWW9sN1dPMWNpZGEwYWE4cHlpbGdQcW9aZkoyT0tyUHk2ZkYteVNraFgxc3UyLWcyZ1FnZjRBVTR1SzVfSzVtV2xiekpqVXZKWUF0dWlUOWttdzR3RGp3?oc=5",
+      "direction": "neutral",
+      "detail": "14 stories versus trailing median 4",
+      "significance": 1.466
     }
   ],
   "persistentEvents": []
