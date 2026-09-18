@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-18T06:55:20.019701Z",
+  "generatedAt": "2026-09-18T07:10:16.180071Z",
   "company": {
     "companyName": "British American Tobacco",
     "ticker": "BATS.L",
@@ -734,7 +734,7 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 3,
+    "reportCount": 4,
     "reports": [
       {
         "year": 2020,
@@ -883,6 +883,79 @@
         "positivityMethod": "lexical annual-report tone"
       },
       {
+        "year": 2024,
+        "title": "British American Tobacco Annual Report 2024",
+        "url": "https://www.bat.com/ar/2024/documents/BAT_Combined_Annual_and_Sustainability_Report_2024_Reduced_Secured.pdf",
+        "sourceUrl": "https://www.bat.com/ar/2024/downloads.html",
+        "wordCount": 339576,
+        "pageCount": 474,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 35,
+            "per10kWords": 1.031
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 1,
+            "per10kWords": 0.029
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 72,
+            "per10kWords": 2.12
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 558,
+            "per10kWords": 16.432
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 142,
+            "per10kWords": 4.182
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 239,
+            "per10kWords": 7.038
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 23,
+            "per10kWords": 0.677
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 28,
+            "per10kWords": 0.825
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 36.6,
+        "positivityMethod": "lexical annual-report tone"
+      },
+      {
         "year": 2025,
         "title": "Official full annual report 2025",
         "url": "https://www.bat.com/content/dam/batcom/global/main-nav/investors-and-reporting/reporting/combined-annual-and-sustainability-report/BAT_Annual_Report_2025.pdf",
@@ -962,40 +1035,40 @@
         "label": "Supply chain",
         "mentions": 270,
         "per10kWords": 9.469,
-        "previousPer10kWords": 2.472,
-        "changePer10kWords": 6.997
-      },
-      {
-        "key": "cybersecurity",
-        "label": "Cybersecurity",
-        "mentions": 54,
-        "per10kWords": 1.894,
-        "previousPer10kWords": 0.202,
-        "changePer10kWords": 1.692
-      },
-      {
-        "key": "ai",
-        "label": "AI",
-        "mentions": 37,
-        "per10kWords": 1.298,
-        "previousPer10kWords": 0.025,
-        "changePer10kWords": 1.273
-      },
-      {
-        "key": "regulation",
-        "label": "Regulation",
-        "mentions": 390,
-        "per10kWords": 13.677,
-        "previousPer10kWords": 12.585,
-        "changePer10kWords": 1.092
+        "previousPer10kWords": 7.038,
+        "changePer10kWords": 2.431
       },
       {
         "key": "china",
         "label": "China",
         "mentions": 40,
         "per10kWords": 1.403,
-        "previousPer10kWords": 0.429,
-        "changePer10kWords": 0.974
+        "previousPer10kWords": 0.677,
+        "changePer10kWords": 0.726
+      },
+      {
+        "key": "ai",
+        "label": "AI",
+        "mentions": 37,
+        "per10kWords": 1.298,
+        "previousPer10kWords": 1.031,
+        "changePer10kWords": 0.267
+      },
+      {
+        "key": "restructuring",
+        "label": "Restructuring",
+        "mentions": 31,
+        "per10kWords": 1.087,
+        "previousPer10kWords": 0.825,
+        "changePer10kWords": 0.262
+      },
+      {
+        "key": "margin_pressure",
+        "label": "Margin pressure",
+        "mentions": 0,
+        "per10kWords": 0.0,
+        "previousPer10kWords": 0.0,
+        "changePer10kWords": 0.0
       }
     ],
     "latestPositivity": 39.0,
@@ -1003,9 +1076,9 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 44.1,
+    "score": 46.5,
     "label": "Mixed",
-    "evidenceCoverage": 92,
+    "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
@@ -1026,9 +1099,9 @@
       {
         "key": "themes",
         "label": "Emerging themes",
-        "score": 44.4,
+        "score": 54.8,
         "weight": 0.25,
-        "reliability": 0.667,
+        "reliability": 1.0,
         "detail": "Change in growth-theme density compared with pressure and risk themes."
       }
     ],
@@ -1049,6 +1122,15 @@
       "type": "annual_report",
       "title": "BAT_Annual_Report_on_Form_20-F_2021.pdf",
       "url": "https://www.bat.com/content/dam/batcom/global/main-nav/investors-and-reporting/reporting/combined-annual-and-esg-report/previous-annual-reporting/BAT_Annual_Report_on_Form_20-F_2021.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
+    {
+      "date": "2024-12-31",
+      "type": "annual_report",
+      "title": "British American Tobacco Annual Report 2024",
+      "url": "https://www.bat.com/ar/2024/documents/BAT_Combined_Annual_and_Sustainability_Report_2024_Reduced_Secured.pdf",
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
