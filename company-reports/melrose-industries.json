@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-18T08:34:58.444531Z",
+  "generatedAt": "2026-09-18T09:57:41.534389Z",
   "company": {
     "companyName": "Melrose Industries PLC",
     "ticker": "MRO.L",
@@ -22,9 +22,9 @@
     "periodStart": "2026-07-17",
     "periodEnd": "2026-09-17",
     "observationCount": 48,
-    "scoredDayCount": 16,
-    "latestScore": 36.8,
-    "latestScoreDate": "2026-09-16",
+    "scoredDayCount": 17,
+    "latestScore": 49.5,
+    "latestScoreDate": "2026-09-17",
     "series": [
       {
         "date": "2026-07-17",
@@ -451,12 +451,12 @@
       },
       {
         "date": "2026-09-17",
-        "dailyScore": null,
-        "rollingScore": 47.9,
-        "storyCount": 0,
-        "sourceCount": 0,
-        "confidence": 0.0,
-        "coverageStatus": "no_coverage"
+        "dailyScore": 49.5,
+        "rollingScore": 48.1,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.4,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -625,17 +625,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 42.4,
+    "score": 42.5,
     "label": "Mixed",
-    "evidenceCoverage": 89,
+    "evidenceCoverage": 92,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 46.1,
+        "score": 46.5,
         "weight": 0.4,
-        "reliability": 0.8,
-        "detail": "Recency-weighted average of 16 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.85,
+        "detail": "Recency-weighted average of 17 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",

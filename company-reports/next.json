@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-18T08:34:58.444531Z",
+  "generatedAt": "2026-09-18T09:57:41.534389Z",
   "company": {
     "companyName": "Next PLC",
     "ticker": "NXT.L",
@@ -22,9 +22,9 @@
     "periodStart": "2026-06-30",
     "periodEnd": "2026-09-17",
     "observationCount": 64,
-    "scoredDayCount": 2,
-    "latestScore": 63.9,
-    "latestScoreDate": "2026-08-16",
+    "scoredDayCount": 3,
+    "latestScore": 46.5,
+    "latestScoreDate": "2026-09-17",
     "series": [
       {
         "date": "2026-06-30",
@@ -595,12 +595,12 @@
       },
       {
         "date": "2026-09-17",
-        "dailyScore": null,
-        "rollingScore": 50.1,
-        "storyCount": 0,
-        "sourceCount": 0,
-        "confidence": 0.0,
-        "coverageStatus": "no_coverage"
+        "dailyScore": 46.5,
+        "rollingScore": 49.6,
+        "storyCount": 2,
+        "sourceCount": 2,
+        "confidence": 30.5,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -623,6 +623,26 @@
         "direction": "Very positive",
         "detail": null,
         "significance": 0.987
+      },
+      {
+        "date": "2026-09-17",
+        "type": "press_story",
+        "title": "Next boss warns on tax rises as retailer raises profit outlook",
+        "source": "ft.com",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPNXVHdVlTNGpYUGpldUdORjFLc3ZHUDlXYVJocXFYTmhFc1FtYnVnd0YxR3YwSVlTUFdRSkFxZngwdHg1QlJrcEh5YWRCM2ZOUTJIT21taGdLd3Jzc3RzQ0t0a3FtRWExWHoyZ2d3UDRmdV9iZklGSDJPNUxEQ0FWdDAzVG4?oc=5",
+        "direction": "Very negative",
+        "detail": null,
+        "significance": 0.774
+      },
+      {
+        "date": "2026-09-17",
+        "type": "press_story",
+        "title": "Next plc Upgrades Fiscal 2027 Profit Guidance as First-half Sales Exceed Expectations",
+        "source": "uk.finance.yahoo.com",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQOUgyUkpERVJrYlZHdmRySF9QOXF6cTlRelU2VzNqbkFrb3U5dTRNeUhXZVFSNFVOeFFVbURIVmZXUnZwLXQwemxCTzdfTVRPam8yV2F3WXZNVl8yNEZvbk40UC1pQUU0TXBxWWYyWVo0V19GaWZDWGlJWjR1V3psbTJuTWM?oc=5",
+        "direction": "Positive",
+        "detail": null,
+        "significance": 0.496
       }
     ]
   },
@@ -1115,17 +1135,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 54.5,
+    "score": 51.3,
     "label": "Mixed",
-    "evidenceCoverage": 64,
+    "evidenceCoverage": 66,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 64.1,
+        "score": 54.6,
         "weight": 0.4,
-        "reliability": 0.1,
-        "detail": "Recency-weighted average of 2 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.15,
+        "detail": "Recency-weighted average of 3 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1211,6 +1231,26 @@
       "direction": "Very positive",
       "detail": null,
       "significance": 0.987
+    },
+    {
+      "date": "2026-09-17",
+      "type": "press_story",
+      "title": "Next boss warns on tax rises as retailer raises profit outlook",
+      "source": "ft.com",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPNXVHdVlTNGpYUGpldUdORjFLc3ZHUDlXYVJocXFYTmhFc1FtYnVnd0YxR3YwSVlTUFdRSkFxZngwdHg1QlJrcEh5YWRCM2ZOUTJIT21taGdLd3Jzc3RzQ0t0a3FtRWExWHoyZ2d3UDRmdV9iZklGSDJPNUxEQ0FWdDAzVG4?oc=5",
+      "direction": "Very negative",
+      "detail": null,
+      "significance": 0.774
+    },
+    {
+      "date": "2026-09-17",
+      "type": "press_story",
+      "title": "Next plc Upgrades Fiscal 2027 Profit Guidance as First-half Sales Exceed Expectations",
+      "source": "uk.finance.yahoo.com",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQOUgyUkpERVJrYlZHdmRySF9QOXF6cTlRelU2VzNqbkFrb3U5dTRNeUhXZVFSNFVOeFFVbURIVmZXUnZwLXQwemxCTzdfTVRPam8yV2F3WXZNVl8yNEZvbk40UC1pQUU0TXBxWWYyWVo0V19GaWZDWGlJWjR1V3psbTJuTWM?oc=5",
+      "direction": "Positive",
+      "detail": null,
+      "significance": 0.496
     },
     {
       "date": "2026-12-31",

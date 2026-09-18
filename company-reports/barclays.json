@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-18T08:34:58.444531Z",
+  "generatedAt": "2026-09-18T09:57:41.534389Z",
   "company": {
     "companyName": "Barclays",
     "ticker": "BARC.L",
@@ -22,9 +22,9 @@
     "periodStart": "2026-06-30",
     "periodEnd": "2026-09-17",
     "observationCount": 63,
-    "scoredDayCount": 39,
-    "latestScore": 52.6,
-    "latestScoreDate": "2026-09-04",
+    "scoredDayCount": 40,
+    "latestScore": 50.3,
+    "latestScoreDate": "2026-09-17",
     "series": [
       {
         "date": "2026-06-30",
@@ -586,12 +586,12 @@
       },
       {
         "date": "2026-09-17",
-        "dailyScore": null,
+        "dailyScore": 50.3,
         "rollingScore": 50.2,
-        "storyCount": 0,
-        "sourceCount": 0,
-        "confidence": 0.0,
-        "coverageStatus": "no_coverage"
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 11.4,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -676,16 +676,6 @@
         "significance": 0.426
       },
       {
-        "date": "2026-09-02",
-        "type": "press_story",
-        "title": "Former Barclays bank in Colwyn Bay could become offices",
-        "source": "northwalespioneer.co.uk",
-        "url": "https://www.northwalespioneer.co.uk/news/26512359.former-barclays-bank-colwyn-bay-become-offices",
-        "direction": "Neutral / mixed",
-        "detail": null,
-        "significance": 0.159
-      },
-      {
         "date": "2026-09-04",
         "type": "press_story",
         "title": "ROSEN , SKILLED INVESTOR COUNSEL , Encourages Barclays PLC Investors ...",
@@ -694,6 +684,16 @@
         "direction": "Slightly positive",
         "detail": null,
         "significance": 0.305
+      },
+      {
+        "date": "2026-09-17",
+        "type": "press_story",
+        "title": "REG - Barclays PLC Spire Healthcare Grp - Form 8.3 SPIRE HEALTHCARE GROUP PLC",
+        "source": "tradingview.com",
+        "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPNzBmeF9mSkI1c1JxMVp0eTBFb0RvUW5FbS12b0xzZjVIajA5Mm9abTVQb21fUkpjQnZkSE96ak5VcmQzSVAzWDlMbGZhSEhhQ2dKVVRJcUppMVRCU3Q4R29hV0FWLU1EYmVDWjgzT2w1bXYweXdHbkt1QnQ4cmJ3a2YtM0dldmk0LWp3RHJ0MDlHMWtlQlFoQllrZ1dxV0NCQ3UtbGlGeEZWV3NVY3B6YXhYQ0dTMlNMT3FZbG5rNUpFTHRxQkxSUTRHcGxPVVBJQ2Y3dDQyZFdtREdRYy1LTjkyYw?oc=5",
+        "direction": "Neutral / mixed",
+        "detail": null,
+        "significance": 0.17
       }
     ]
   },
@@ -1266,10 +1266,10 @@
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 52.7,
+        "score": 52.6,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 39 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 40 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "themes",
@@ -1427,16 +1427,6 @@
       "significance": 0.426
     },
     {
-      "date": "2026-09-02",
-      "type": "press_story",
-      "title": "Former Barclays bank in Colwyn Bay could become offices",
-      "source": "northwalespioneer.co.uk",
-      "url": "https://www.northwalespioneer.co.uk/news/26512359.former-barclays-bank-colwyn-bay-become-offices",
-      "direction": "Neutral / mixed",
-      "detail": null,
-      "significance": 0.159
-    },
-    {
       "date": "2026-09-04",
       "type": "press_story",
       "title": "ROSEN , SKILLED INVESTOR COUNSEL , Encourages Barclays PLC Investors ...",
@@ -1445,6 +1435,16 @@
       "direction": "Slightly positive",
       "detail": null,
       "significance": 0.305
+    },
+    {
+      "date": "2026-09-17",
+      "type": "press_story",
+      "title": "REG - Barclays PLC Spire Healthcare Grp - Form 8.3 SPIRE HEALTHCARE GROUP PLC",
+      "source": "tradingview.com",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPNzBmeF9mSkI1c1JxMVp0eTBFb0RvUW5FbS12b0xzZjVIajA5Mm9abTVQb21fUkpjQnZkSE96ak5VcmQzSVAzWDlMbGZhSEhhQ2dKVVRJcUppMVRCU3Q4R29hV0FWLU1EYmVDWjgzT2w1bXYweXdHbkt1QnQ4cmJ3a2YtM0dldmk0LWp3RHJ0MDlHMWtlQlFoQllrZ1dxV0NCQ3UtbGlGeEZWV3NVY3B6YXhYQ0dTMlNMT3FZbG5rNUpFTHRxQkxSUTRHcGxPVVBJQ2Y3dDQyZFdtREdRYy1LTjkyYw?oc=5",
+      "direction": "Neutral / mixed",
+      "detail": null,
+      "significance": 0.17
     }
   ],
   "persistentEvents": []
