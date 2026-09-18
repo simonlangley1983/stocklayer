@@ -2096,35 +2096,61 @@
     },
     {
       "date": "2026-09-17",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.1,
-      "confidence": 0.0,
+      "dailyScore": 46.5,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.6,
+      "confidence": 30.5,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 0.75,
-      "candidateCount": 87,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
-      "positiveStoryCount": 0,
+      "candidateCount": 54,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 1,
       "neutralStoryCount": 0,
-      "negativeStoryCount": 0,
-      "dispersion": 0.0,
+      "negativeStoryCount": 1,
+      "dispersion": 0.4848,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 83,
-        "missing_company_alias": 4
+        "ambiguous_company_without_alias": 51,
+        "missing_company_alias": 1
       },
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "9f0ecae450bd0cf9",
+          "storyClusterId": "story-001",
+          "title": "Next boss warns on tax rises as retailer raises profit outlook",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPNXVHdVlTNGpYUGpldUdORjFLc3ZHUDlXYVJocXFYTmhFc1FtYnVnd0YxR3YwSVlTUFdRSkFxZngwdHg1QlJrcEh5YWRCM2ZOUTJIT21taGdLd3Jzc3RzQ0t0a3FtRWExWHoyZ2d3UDRmdV9iZklGSDJPNUxEQ0FWdDAzVG4?oc=5",
+          "source": "ft.com",
+          "publishedAt": "2026-09-17T07:36:27Z",
+          "polarity": -0.6241,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "2010abebcf7c438f",
+          "storyClusterId": "story-002",
+          "title": "Next plc Upgrades Fiscal 2027 Profit Guidance as First-half Sales Exceed Expectations",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQOUgyUkpERVJrYlZHdmRySF9QOXF6cTlRelU2VzNqbkFrb3U5dTRNeUhXZVFSNFVOeFFVbURIVmZXUnZwLXQwemxCTzdfTVRPam8yV2F3WXZNVl8yNEZvbk40UC1pQUU0TXBxWWYyWVo0V19GaWZDWGlJWjR1V3psbTJuTWM?oc=5",
+          "source": "uk.finance.yahoo.com",
+          "publishedAt": "2026-09-17T08:42:58Z",
+          "polarity": 0.3456,
+          "sentiment": "Positive",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 30.5",
+          "evidenceArticleIds": [
+            "9f0ecae450bd0cf9",
+            "2010abebcf7c438f"
+          ]
         },
         {
           "type": "collection_degraded",
@@ -2132,10 +2158,13 @@
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": []
+          "evidenceArticleIds": [
+            "9f0ecae450bd0cf9",
+            "2010abebcf7c438f"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": -17.4
     }
   ]
 }
