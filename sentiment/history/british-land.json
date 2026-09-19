@@ -2339,35 +2339,49 @@
     },
     {
       "date": "2026-09-18",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 51.3,
-      "confidence": 0.0,
+      "dailyScore": 35.8,
+      "dailyLabel": "Negative",
+      "rollingScore": 49.4,
+      "confidence": 19.8,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 0,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 1,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
       "positiveStoryCount": 0,
       "neutralStoryCount": 0,
-      "negativeStoryCount": 0,
+      "negativeStoryCount": 1,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {},
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "fca0d3796da2defd",
+          "storyClusterId": "story-001",
+          "title": "British Land Co. slips Friday, underperforms market",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQc00tREc2a01ESjFCU1hRVmZ6RVV3R1MzZGVrSmo3MW9aVVVtQklVRV9ETHptR21lNWRneC1rTGhxSjkyUlNHZlJmdl9ySS1WWWdZbnhOVUVGcUYtNzNtdjdZeWNZazMyYTBQcXFLTmNYVUhWaWR2UmRWREp0amRvWHNsM0hBeVRzZUpQVkRPVnRJbWN1UnMyakpBLXpGTHp1Mlgxa2FpVDlQUVBMdHRTbVZZRDVEcFBDY2dwSHhZemlIUXlSbHc?oc=5",
+          "source": "marketwatch.com",
+          "publishedAt": "2026-09-18T16:07:00Z",
+          "polarity": -0.8509,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 19.8",
+          "evidenceArticleIds": [
+            "fca0d3796da2defd"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": -14.6
     }
   ]
 }

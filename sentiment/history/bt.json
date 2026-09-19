@@ -2138,38 +2138,64 @@
     },
     {
       "date": "2026-09-18",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 48.6,
-      "confidence": 0.0,
+      "dailyScore": 61.5,
+      "dailyLabel": "Positive",
+      "rollingScore": 50.4,
+      "confidence": 36.0,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
       "candidateCount": 25,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
-      "positiveStoryCount": 0,
-      "neutralStoryCount": 0,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 1,
       "negativeStoryCount": 0,
-      "dispersion": 0.0,
+      "dispersion": 0.3859,
       "rejectedCandidateCounts": {
         "ambiguous_company_without_alias": 16,
-        "missing_company_alias": 9
+        "missing_company_alias": 7
       },
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "29ab1c4bc8d95403",
+          "storyClusterId": "story-002",
+          "title": "BT appointed to deliver major broadband upgrade for Mid Wales business parks",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOSVllRXJwVG1iUl80Y2hxM05oWGdUa011VVR5RUo0dnlJX1NXY3otaHpuZGFkcjNBNUlTOV84d24wY2Uta3pvMG8xTVRIQVZSYXY3XzU4V215Y09IMGhESVJjSjV4QnMzd2VrSTctV0lKXy0tMER2UUNJQk1WZDJKSzJRSXYyU1dibC1rci1Ld0lURndMT3JjUTl6UVY3LXhQYTlyTEdOcGRFTEhy?oc=5",
+          "source": "herald.wales",
+          "publishedAt": "2026-09-18T12:56:22Z",
+          "polarity": 0.8449,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "dd903cc5fe465009",
+          "storyClusterId": "story-001",
+          "title": "Mahindra to buy 5.5% stake of British Telecom in Tech Mahindra",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTzBfWEc2TTZnSkgwRHBWVkNPMFFwdFNBcGhsc2Z5SXVNVHZrdnNnM3d5S3E0Yi1qR1JYcU5CN2JseUtiVjJkYm9TLU90WnZnOV8xc1FSeVFpQlJMREg1T3YzNXFOSkItMTRSSldieVJpMVZILWo0eG9SRUtHcEhXRTlQQTFmaFU1cnFDamZsS0xDc2FFV1hxSk90NEZaS2ZaM3dwSC10R3FLNV9rQWhOcnZjd9IBswFBVV95cUxNTzBfWEc2TTZnSkgwRHBWVkNPMFFwdFNBcGhsc2Z5SXVNVHZrdnNnM3d5S3E0Yi1qR1JYcU5CN2JseUtiVjJkYm9TLU90WnZnOV8xc1FSeVFpQlJMREg1T3YzNXFOSkItMTRSSldieVJpMVZILWo0eG9SRUtHcEhXRTlQQTFmaFU1cnFDamZsS0xDc2FFV1hxSk90NEZaS2ZaM3dwSC10R3FLNV9rQWhOcnZjdw?oc=5",
+          "source": "cardekho.com",
+          "publishedAt": "2026-09-18T04:30:00Z",
+          "polarity": 0.0732,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 36.0",
+          "evidenceArticleIds": [
+            "29ab1c4bc8d95403",
+            "dd903cc5fe465009"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": 12.1
     }
   ]
 }

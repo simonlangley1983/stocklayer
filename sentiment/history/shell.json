@@ -3519,24 +3519,25 @@
     },
     {
       "date": "2026-09-18",
-      "dailyScore": 48.4,
+      "dailyScore": 45.0,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.5,
-      "confidence": 62.6,
+      "rollingScore": 49.9,
+      "confidence": 64.1,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
       "collectionCompleteness": 0.75,
-      "candidateCount": 56,
-      "eligibleArticleCount": 10,
-      "storyCount": 10,
-      "effectiveStoryCount": 10.0,
+      "candidateCount": 58,
+      "eligibleArticleCount": 11,
+      "storyCount": 11,
+      "effectiveStoryCount": 11.0,
       "sourceCount": 6,
       "positiveStoryCount": 3,
       "neutralStoryCount": 4,
-      "negativeStoryCount": 3,
-      "dispersion": 0.5316,
+      "negativeStoryCount": 4,
+      "dispersion": 0.5668,
       "rejectedCandidateCounts": {
         "ambiguous_company_without_alias": 43,
+        "duplicate_publisher_headline": 1,
         "missing_company_alias": 3
       },
       "topStories": [
@@ -3548,6 +3549,17 @@
           "source": "ad-hoc-news.de",
           "publishedAt": "2026-09-18T15:23:24Z",
           "polarity": -0.9481,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "4ddc557ed84f0178",
+          "storyClusterId": "story-011",
+          "title": "Shell CEO Says Blockade May Mean Energy Shortages Last Into 2027",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNUE5peTN1Q0FReVdyZWZzcWNOa3h4c1U3TkluZjliZDRaaEhHV2d3c09QX3hPZjFLUUdzRzRLdjkwR2RyWGdpd2dmTGxGQzlmUk8tOEFYTGNzSGJaMUZreVJtak5sU3BBbjUzekNhUS05ZjNEUTcxUzdFZGNETFNrd1pCTEhFRjZOSkt4ZDR2dzA1Tkd3S05CdkdIbw?oc=5",
+          "source": "energynow.com",
+          "publishedAt": "2026-09-18T22:54:21Z",
+          "polarity": -0.9205,
           "sentiment": "Very negative",
           "publisherCount": 1
         },
@@ -3583,17 +3595,6 @@
           "polarity": 0.547,
           "sentiment": "Very positive",
           "publisherCount": 1
-        },
-        {
-          "id": "f7df63f35444f9d2",
-          "storyClusterId": "story-002",
-          "title": "Absa to fund new Shell service station in Vivo Energy deal",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOYWJ5SGp6WmtLczlrcWh5d1MyVVQtQWF3dUxmQjN3a1JrZ2VNZFZ5SFRCcWRsX3VHY1pnV0p6ZGZ1UGIwRW1YbkpTSWtlV2wwZDBQWG9qMDhXNXJrdWxLWEFERWRKbXpKLUthYkdDNW9tczU4LUdPWnpMYm9ncVVKQ0RpY3FNUDBiV3hrVQ?oc=5",
-          "source": "capitalfm.africa",
-          "publishedAt": "2026-09-18T07:10:09Z",
-          "polarity": 0.3501,
-          "sentiment": "Positive",
-          "publisherCount": 1
         }
       ],
       "flags": [
@@ -3602,13 +3603,13 @@
           "direction": "negative",
           "severity": "high",
           "status": "calculated",
-          "detail": "Daily score decreased by 14.8 points",
+          "detail": "Daily score decreased by 18.2 points",
           "evidenceArticleIds": [
             "973c5b62da7e4eeb",
+            "4ddc557ed84f0178",
             "5b7a9bd51e2b29fa",
             "37c3bf71814c5ba1",
-            "0f94dfedd84aca1d",
-            "f7df63f35444f9d2"
+            "0f94dfedd84aca1d"
           ]
         },
         {
@@ -3616,13 +3617,27 @@
           "direction": "neutral",
           "severity": "medium",
           "status": "calculated",
-          "detail": "10 stories versus trailing median 1.5",
+          "detail": "11 stories versus trailing median 1.5",
           "evidenceArticleIds": [
             "973c5b62da7e4eeb",
+            "4ddc557ed84f0178",
             "5b7a9bd51e2b29fa",
             "37c3bf71814c5ba1",
-            "0f94dfedd84aca1d",
-            "f7df63f35444f9d2"
+            "0f94dfedd84aca1d"
+          ]
+        },
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "973c5b62da7e4eeb",
+            "4ddc557ed84f0178",
+            "5b7a9bd51e2b29fa",
+            "37c3bf71814c5ba1",
+            "0f94dfedd84aca1d"
           ]
         },
         {
@@ -3633,14 +3648,14 @@
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
             "973c5b62da7e4eeb",
+            "4ddc557ed84f0178",
             "5b7a9bd51e2b29fa",
             "37c3bf71814c5ba1",
-            "0f94dfedd84aca1d",
-            "f7df63f35444f9d2"
+            "0f94dfedd84aca1d"
           ]
         }
       ],
-      "changeFromPreviousScoredDay": -14.8
+      "changeFromPreviousScoredDay": -18.2
     }
   ]
 }

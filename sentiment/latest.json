@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-09-19T17:49:12.295637Z",
+  "generatedAt": "2026-09-19T19:26:44.134632Z",
   "asOfDate": "2026-09-18",
   "companies": {
     "astrazeneca": {
@@ -111,28 +111,28 @@
       "ticker": "SHEL.L",
       "slug": "shell",
       "date": "2026-09-18",
-      "dailyScore": 48.4,
+      "dailyScore": 45.0,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.5,
-      "confidence": 62.6,
+      "rollingScore": 49.9,
+      "confidence": 64.1,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 10,
+      "storyCount": 11,
       "sourceCount": 6,
-      "changeFromPreviousScoredDay": -14.8,
+      "changeFromPreviousScoredDay": -18.2,
       "flags": [
         {
           "type": "sentiment_drop",
           "direction": "negative",
           "severity": "high",
           "status": "calculated",
-          "detail": "Daily score decreased by 14.8 points",
+          "detail": "Daily score decreased by 18.2 points",
           "evidenceArticleIds": [
             "973c5b62da7e4eeb",
+            "4ddc557ed84f0178",
             "5b7a9bd51e2b29fa",
             "37c3bf71814c5ba1",
-            "0f94dfedd84aca1d",
-            "f7df63f35444f9d2"
+            "0f94dfedd84aca1d"
           ]
         },
         {
@@ -140,13 +140,27 @@
           "direction": "neutral",
           "severity": "medium",
           "status": "calculated",
-          "detail": "10 stories versus trailing median 1.5",
+          "detail": "11 stories versus trailing median 1.5",
           "evidenceArticleIds": [
             "973c5b62da7e4eeb",
+            "4ddc557ed84f0178",
             "5b7a9bd51e2b29fa",
             "37c3bf71814c5ba1",
-            "0f94dfedd84aca1d",
-            "f7df63f35444f9d2"
+            "0f94dfedd84aca1d"
+          ]
+        },
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "973c5b62da7e4eeb",
+            "4ddc557ed84f0178",
+            "5b7a9bd51e2b29fa",
+            "37c3bf71814c5ba1",
+            "0f94dfedd84aca1d"
           ]
         },
         {
@@ -157,10 +171,10 @@
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
             "973c5b62da7e4eeb",
+            "4ddc557ed84f0178",
             "5b7a9bd51e2b29fa",
             "37c3bf71814c5ba1",
-            "0f94dfedd84aca1d",
-            "f7df63f35444f9d2"
+            "0f94dfedd84aca1d"
           ]
         }
       ],
@@ -173,6 +187,17 @@
           "source": "ad-hoc-news.de",
           "publishedAt": "2026-09-18T15:23:24Z",
           "polarity": -0.9481,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "4ddc557ed84f0178",
+          "storyClusterId": "story-011",
+          "title": "Shell CEO Says Blockade May Mean Energy Shortages Last Into 2027",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNUE5peTN1Q0FReVdyZWZzcWNOa3h4c1U3TkluZjliZDRaaEhHV2d3c09QX3hPZjFLUUdzRzRLdjkwR2RyWGdpd2dmTGxGQzlmUk8tOEFYTGNzSGJaMUZreVJtak5sU3BBbjUzekNhUS05ZjNEUTcxUzdFZGNETFNrd1pCTEhFRjZOSkt4ZDR2dzA1Tkd3S05CdkdIbw?oc=5",
+          "source": "energynow.com",
+          "publishedAt": "2026-09-18T22:54:21Z",
+          "polarity": -0.9205,
           "sentiment": "Very negative",
           "publisherCount": 1
         },
@@ -207,17 +232,6 @@
           "publishedAt": "2026-09-17T23:23:52Z",
           "polarity": 0.547,
           "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "f7df63f35444f9d2",
-          "storyClusterId": "story-002",
-          "title": "Absa to fund new Shell service station in Vivo Energy deal",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOYWJ5SGp6WmtLczlrcWh5d1MyVVQtQWF3dUxmQjN3a1JrZ2VNZFZ5SFRCcWRsX3VHY1pnV0p6ZGZ1UGIwRW1YbkpTSWtlV2wwZDBQWG9qMDhXNXJrdWxLWEFERWRKbXpKLUthYkdDNW9tczU4LUdPWnpMYm9ncVVKQ0RpY3FNUDBiV3hrVQ?oc=5",
-          "source": "capitalfm.africa",
-          "publishedAt": "2026-09-18T07:10:09Z",
-          "polarity": 0.3501,
-          "sentiment": "Positive",
           "publisherCount": 1
         }
       ]
@@ -439,22 +453,22 @@
       "ticker": "BATS.L",
       "slug": "british-american-tobacco",
       "date": "2026-09-18",
-      "dailyScore": 47.8,
+      "dailyScore": 47.4,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.6,
-      "confidence": 63.3,
+      "rollingScore": 49.5,
+      "confidence": 63.0,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 42,
+      "storyCount": 43,
       "sourceCount": 42,
-      "changeFromPreviousScoredDay": -4.8,
+      "changeFromPreviousScoredDay": -5.2,
       "flags": [
         {
           "type": "coverage_spike",
           "direction": "neutral",
           "severity": "medium",
           "status": "calculated",
-          "detail": "42 stories versus trailing median 2",
+          "detail": "43 stories versus trailing median 2",
           "evidenceArticleIds": [
             "3ce20191b80271c8",
             "6d9461178e2021bd",
@@ -481,7 +495,7 @@
       "topStories": [
         {
           "id": "3ce20191b80271c8",
-          "storyClusterId": "story-024",
+          "storyClusterId": "story-023",
           "title": "British American Tobacco set for faster growth as smokeless products gain traction, says Jefferies",
           "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxONmVKUm1kdjd0UXRxTWV4QXJqVlpwbVpIaldWdTVuTjh0aWU2NUdnT1lVcnlxcVNrRFlFRS1pdndtam9VLUx6WExNWnFzTUdOMHVucEFUcXdJQndTVUp6dFI4bGI4S2R1ZW1zZXQ5Y243ZUJCMGxrMmNzRWE4Yjc0VG5MelVsSHVJdEhvWDZrellxSTNjTmlnQ2hMUC1UY0FYWnRkV1hhWVRCalZIbVE?oc=5",
           "source": "pluang.com",
@@ -503,7 +517,7 @@
         },
         {
           "id": "62d11fc3af551491",
-          "storyClusterId": "story-026",
+          "storyClusterId": "story-025",
           "title": "After being decimated by white-nose syndrome, the Indiana bat shows a hopeful increase",
           "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxOU21WTE1rYVZjeUJfa04tRUJoWXJrNXhvT21VVW4wT0xicnlNRHh3czRZYWQtVlFSeEtUQmgyTWVVWkgybDhIcDZGYUdOWlA3Mm83My1RVWtsY040QnpZNVVCTlNOa1ExdXF0WkNJODJmVV93cDR3YUx5TXBPX1NLMV95MXBkWGs1Z2dhbE1hdm5uNUxFdkhkVFUxSjJzcndSd2I1UkZUZXNCTzdOMFBqS1NyeFRnbkdTcndpOHJ2X3o2Y0tfNy1PWm9MdG1XTUZJbEg0aGEzLWlvMUNPeVNBbVpPN2pvMGxQUVRRS19YNU5XQkJZaTktZU4ydGpaVkd4akZDUGdsd0VKa1N4UUc1dlRCMEtvR093WVE?oc=5",
           "source": "thestatehousefile.com",
@@ -514,7 +528,7 @@
         },
         {
           "id": "304da098234e9005",
-          "storyClusterId": "story-004",
+          "storyClusterId": "story-003",
           "title": "19-year-old arrested after allegedly attacking police with steel bat",
           "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOMDAtWHBwNXNBaU5leUpuaklqSWhzSE10VWUteUR1T3owM0pGSy15VzczSmxjYnE5RVhxWUViQ1p3SXJyXzE0d2haOGFTQ04yVXpTMkdrZTlKcDlLNC1sSU5naTZrZXFrQklmWEZrdWRjZTVpOV9BX20wRk55R19Jc1F3eDhDN1o0a3lsTW5yaVRaWnQ3YmJGcTdDR0QzVGtUSVRnZA?oc=5",
           "source": "tribune.net.ph",
@@ -525,7 +539,7 @@
         },
         {
           "id": "d76a499bf7f0380b",
-          "storyClusterId": "story-012",
+          "storyClusterId": "story-010",
           "title": "Coshocton man indicted on felonious assault charge in July bat incident",
           "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQM0FMUE1WbmxMeU5vbzNmaVhrbnZNQkpHMmZoM25wX25aV2FkZ2lXc1YyT0JMNXAxZVRqNnhmeDFoTnB6Nmc3bmltRTlWekVoM0VMWkQwT1g1X2o0Z1RWM3NWbzd5ZzV5YlVRbmJKU3JfUVRlYllVUXl1U1lJdTZQQzhzTk0wTVNGbEMwZTREdlJlekZJVmc?oc=5",
           "source": "yahoo.com",
@@ -541,15 +555,15 @@
       "ticker": "BP.L",
       "slug": "bp",
       "date": "2026-09-18",
-      "dailyScore": 51.3,
+      "dailyScore": 51.2,
       "dailyLabel": "Neutral / mixed",
       "rollingScore": 49.8,
-      "confidence": 63.1,
+      "confidence": 62.6,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 15,
-      "sourceCount": 14,
-      "changeFromPreviousScoredDay": 7.8,
+      "storyCount": 16,
+      "sourceCount": 16,
+      "changeFromPreviousScoredDay": 7.7,
       "flags": [
         {
           "type": "divestment",
@@ -566,13 +580,13 @@
           "direction": "neutral",
           "severity": "medium",
           "status": "calculated",
-          "detail": "15 stories versus trailing median 4",
+          "detail": "16 stories versus trailing median 4",
           "evidenceArticleIds": [
             "e7cf63b16a392beb",
             "95dc89953652051d",
             "768bdcbd8fd2698d",
             "8f12076dd391d0c7",
-            "98136e6bcc36a732"
+            "598ca8720f6a7998"
           ]
         },
         {
@@ -586,7 +600,7 @@
             "95dc89953652051d",
             "768bdcbd8fd2698d",
             "8f12076dd391d0c7",
-            "98136e6bcc36a732"
+            "598ca8720f6a7998"
           ]
         }
       ],
@@ -636,12 +650,12 @@
           "publisherCount": 1
         },
         {
-          "id": "98136e6bcc36a732",
+          "id": "598ca8720f6a7998",
           "storyClusterId": "story-007",
           "title": "Why is BP (LSE:BP) in focus as dividend payment day amid softer oil-sector trading?",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQbUtxNWdqUUJmSDY0WUNKQW9hdzZoWTZPZ3p3a0VsRTIxUEUzV1ZaUkF5bjlQUDRaZVlvR1cwVnk0Mk1CZlBCWG9FMy1xZnJwX1RrNlYzY2RRSkJFbGQwX2NzNTg0NU1raGhfaXlwUW5zeFF6ZGdMWGd1OVk0aFc1SVlpbmlKdDdza2tEQlFiRV9tOFhXelpUYTVoSWVBN25DMlFQTHF3alpLWVc5WlotYUtEQmtTUlhzbDBid3o3c0ZpUQ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNTk96b19wTURHZHF6RFI3UGZjcjNWWFE4b05Ka2Q1TmtyNzFqNGV5NXhQSW43ekRjQmZzVzVXb0gyMjItdWxLS2RkU2R2OGoxUkE3cjRYbXF1YlYxcEttMlJCMUJ6X3AzeWpXUURHSHBOOVBZeVR1d0NhNHViMlg5MEU0X1htYmlPcXc1RzJ5RG5rRG1uM05MSUZkNkxJTjJaS2N4Sjh0ZVVkNElqQkdydU45LVRlMEZHNTl0Mlln?oc=5",
           "source": "kalkinemedia.com",
-          "publishedAt": "2026-09-18T12:36:00Z",
+          "publishedAt": "2026-09-18T11:16:00Z",
           "polarity": -0.5628,
           "sentiment": "Very negative",
           "publisherCount": 1
@@ -2388,52 +2402,92 @@
       "ticker": "BLND.L",
       "slug": "british-land",
       "date": "2026-09-18",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 51.3,
-      "confidence": 0.0,
+      "dailyScore": 35.8,
+      "dailyLabel": "Negative",
+      "rollingScore": 49.4,
+      "confidence": 19.8,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -14.6,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 19.8",
+          "evidenceArticleIds": [
+            "fca0d3796da2defd"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "fca0d3796da2defd",
+          "storyClusterId": "story-001",
+          "title": "British Land Co. slips Friday, underperforms market",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQc00tREc2a01ESjFCU1hRVmZ6RVV3R1MzZGVrSmo3MW9aVVVtQklVRV9ETHptR21lNWRneC1rTGhxSjkyUlNHZlJmdl9ySS1WWWdZbnhOVUVGcUYtNzNtdjdZeWNZazMyYTBQcXFLTmNYVUhWaWR2UmRWREp0amRvWHNsM0hBeVRzZUpQVkRPVnRJbWN1UnMyakpBLXpGTHp1Mlgxa2FpVDlQUVBMdHRTbVZZRDVEcFBDY2dwSHhZemlIUXlSbHc?oc=5",
+          "source": "marketwatch.com",
+          "publishedAt": "2026-09-18T16:07:00Z",
+          "polarity": -0.8509,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        }
+      ]
     },
     "bt": {
       "companyName": "BT Group PLC",
       "ticker": "BT-A.L",
       "slug": "bt",
       "date": "2026-09-18",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 48.6,
-      "confidence": 0.0,
+      "dailyScore": 61.5,
+      "dailyLabel": "Positive",
+      "rollingScore": 50.4,
+      "confidence": 36.0,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 2,
+      "sourceCount": 2,
+      "changeFromPreviousScoredDay": 12.1,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 36.0",
+          "evidenceArticleIds": [
+            "29ab1c4bc8d95403",
+            "dd903cc5fe465009"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "29ab1c4bc8d95403",
+          "storyClusterId": "story-002",
+          "title": "BT appointed to deliver major broadband upgrade for Mid Wales business parks",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOSVllRXJwVG1iUl80Y2hxM05oWGdUa011VVR5RUo0dnlJX1NXY3otaHpuZGFkcjNBNUlTOV84d24wY2Uta3pvMG8xTVRIQVZSYXY3XzU4V215Y09IMGhESVJjSjV4QnMzd2VrSTctV0lKXy0tMER2UUNJQk1WZDJKSzJRSXYyU1dibC1rci1Ld0lURndMT3JjUTl6UVY3LXhQYTlyTEdOcGRFTEhy?oc=5",
+          "source": "herald.wales",
+          "publishedAt": "2026-09-18T12:56:22Z",
+          "polarity": 0.8449,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "dd903cc5fe465009",
+          "storyClusterId": "story-001",
+          "title": "Mahindra to buy 5.5% stake of British Telecom in Tech Mahindra",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTzBfWEc2TTZnSkgwRHBWVkNPMFFwdFNBcGhsc2Z5SXVNVHZrdnNnM3d5S3E0Yi1qR1JYcU5CN2JseUtiVjJkYm9TLU90WnZnOV8xc1FSeVFpQlJMREg1T3YzNXFOSkItMTRSSldieVJpMVZILWo0eG9SRUtHcEhXRTlQQTFmaFU1cnFDamZsS0xDc2FFV1hxSk90NEZaS2ZaM3dwSC10R3FLNV9rQWhOcnZjd9IBswFBVV95cUxNTzBfWEc2TTZnSkgwRHBWVkNPMFFwdFNBcGhsc2Z5SXVNVHZrdnNnM3d5S3E0Yi1qR1JYcU5CN2JseUtiVjJkYm9TLU90WnZnOV8xc1FSeVFpQlJMREg1T3YzNXFOSkItMTRSSldieVJpMVZILWo0eG9SRUtHcEhXRTlQQTFmaFU1cnFDamZsS0xDc2FFV1hxSk90NEZaS2ZaM3dwSC10R3FLNV9rQWhOcnZjdw?oc=5",
+          "source": "cardekho.com",
+          "publishedAt": "2026-09-18T04:30:00Z",
+          "polarity": 0.0732,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
     },
     "bunzl": {
       "companyName": "Bunzl PLC",
@@ -4485,36 +4539,24 @@
       "ticker": "NXT.L",
       "slug": "next",
       "date": "2026-09-18",
-      "dailyScore": 57.8,
-      "dailyLabel": "Slightly positive",
-      "rollingScore": 50.7,
-      "confidence": 30.2,
+      "dailyScore": 64.6,
+      "dailyLabel": "Positive",
+      "rollingScore": 51.4,
+      "confidence": 14.5,
       "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 2,
-      "sourceCount": 2,
-      "changeFromPreviousScoredDay": 11.3,
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 18.1,
       "flags": [
-        {
-          "type": "high_disagreement",
-          "direction": "mixed",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "Positive and negative coverage is unusually dispersed",
-          "evidenceArticleIds": [
-            "c0618cdd79aa7399",
-            "ff1e4a34469b3e7b"
-          ]
-        },
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 30.2",
+          "detail": "Confidence is 14.5",
           "evidenceArticleIds": [
-            "c0618cdd79aa7399",
-            "ff1e4a34469b3e7b"
+            "c0618cdd79aa7399"
           ]
         },
         {
@@ -4524,32 +4566,20 @@
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
-            "c0618cdd79aa7399",
-            "ff1e4a34469b3e7b"
+            "c0618cdd79aa7399"
           ]
         }
       ],
       "topStories": [
         {
           "id": "c0618cdd79aa7399",
-          "storyClusterId": "story-002",
+          "storyClusterId": "story-001",
           "title": "Funding boost for next generation of British fashion talent",
           "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNcGJXWkNzS2l2YWZjUnd3b3dZZEZrTy1URFdGWTYyZUZZQTgtb3JDNDlLejJsS3g5dExsbnNhcFJMcUZQb3pOLWdNd2VnaEhQcnpQcllhMmZTejkwYlNjTjR0MnN1NHpBdjVyWE1sNnRqU18tTm5SUlAwNVVRbmc3N1pOemRvT1A3RzBYZVRicG9SM1MzaWd1YzZn?oc=5",
           "source": "gov.uk",
           "publishedAt": "2026-09-18T15:08:21Z",
           "polarity": 0.8782,
           "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "ff1e4a34469b3e7b",
-          "storyClusterId": "story-001",
-          "title": "Employment & Pensions Blog: Next has successfully defended elements of the landmark equal pay decision in Next Retail Ltd and another v Thandi and others",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOMVJfdzRPSzJWSFhYVTRESm9TNGlYdHhXWmo1Y3FZbWlxdmNMZHgzaTJEMXBtc3AwUEMzSnNGUUE1UDBuUGpES0dhS0g0c2hnZ2NMWGstRWxFV2hMSDFlY0NpLVc4OWxNVEpxNUNrSEk4UjFSOWlxZE1yQV9ZbXVCbHBlQU5Ib3JORUlIVUtYTTlfd3lHWW1GazVRMV95MGc4TVV4NkdGelRoZkJ4WGtrV0xHQUVBT2pTX1RUb1NNUS1hQQ?oc=5",
-          "source": "insights.devonshires.com",
-          "publishedAt": "2026-09-18T09:51:35Z",
-          "polarity": -0.2526,
-          "sentiment": "Negative",
           "publisherCount": 1
         }
       ]
@@ -6373,15 +6403,15 @@
       "ticker": "IGG.L",
       "slug": "ig-group",
       "date": "2026-09-18",
-      "dailyScore": 41.2,
-      "dailyLabel": "Slightly negative",
-      "rollingScore": 46.7,
-      "confidence": 64.7,
+      "dailyScore": 39.4,
+      "dailyLabel": "Negative",
+      "rollingScore": 46.4,
+      "confidence": 64.6,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 27,
-      "sourceCount": 26,
-      "changeFromPreviousScoredDay": -1.5,
+      "storyCount": 25,
+      "sourceCount": 25,
+      "changeFromPreviousScoredDay": -3.3,
       "flags": [
         {
           "type": "collection_degraded",
@@ -6401,7 +6431,7 @@
       "topStories": [
         {
           "id": "4ddc4b103efb06ba",
-          "storyClusterId": "story-026",
+          "storyClusterId": "story-024",
           "title": "After court loss, Mayor Scott's Office doubles down on accusations against Baltimore IG",
           "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPZDRNaENXQ3puNlZHTF8wTlVPc1kzZFJHOGUyUzl3TGxabmRkeDNjVHNJMEJyWUwxOFdHNFZMMjdiUDE1dTc0Nm55YWY5bWVWTjZ6N1NISmlCLWQxcjMtMEF3TmM3NVhqZDJySkJjVzd2bWpyWGMtVkdyNkw0SmZNczAwdXZWbnNxd3N4TWI2MjlFWHNnXzA3LTBrWTl6S3lQcWMxbklpYjMzOG9leXMwT081VUVING04TlhXN0pR?oc=5",
           "source": "foxbaltimore.com",
@@ -6412,7 +6442,7 @@
         },
         {
           "id": "79f72069fee9674d",
-          "storyClusterId": "story-010",
+          "storyClusterId": "story-009",
           "title": "Osun ex-council boss Jooda sues IG, others for N500m over arrest threat",
           "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQRHliUVBhNjJncVRJWUg0WE9lVEVLN1Q3S1B4NUZ4RXJkQUZScnNkZUFqd2pLNUU1MlEtOGs4TEh6My1vNl9HRS1IRHZvLUZUdkY5X1lsQ0xCNGJlWDFRbXhUR2pMQ3dTOEpLVkpBLVp1SlZxdEwzbndwQVc4d3JKTzZOVzdCRENWTTdRcHBLc2pGUUNidy05QTQ3RGc?oc=5",
           "source": "ng.headtopics.com",
@@ -6423,7 +6453,7 @@
         },
         {
           "id": "242b7dab86666e70",
-          "storyClusterId": "story-019",
+          "storyClusterId": "story-017",
           "title": "Freetrade CEO Jenny Zhao Exits 3 Months In: IG Shake-Up",
           "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQR1BXS1F2UzRQQXg1UzRpMWhZMTFOY1E1QWFnMnU0Y1BYS0taU0tGSG1JejlDMFF1QS1pLXRDZlRpOHFtS0hieHZDNS1NSy1DV0tUOVJmRDlabVRyQnYxNlZMYkQ3V2d1dzduNkJfX3ctd1BJWkdEdkNoMGhNdlNoZ0VmVWpBTWJzUk1KcWJ5YmtSaTQ?oc=5",
           "source": "financefeeds.com",
@@ -6434,7 +6464,7 @@
         },
         {
           "id": "f0c16e32a552d9fc",
-          "storyClusterId": "story-009",
+          "storyClusterId": "story-008",
           "title": "IG Kanja Faces Sentencing Over Contempt Finding on Roadblocks",
           "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWEtSOWRUVjFjUHBYM3hueWQ4VlRjU016Z3JxcDJQRDh5QmFxbFROdDNLWHVuVjhVVGZEUEtvSVVkMTZHRlk2bDMzMmRCVG9kMGRobmJOS1VhYl93d0VJZFNNblZ4QWZqWTlab0JhcW11V1NMVmZIQmRvU25KcEM0bDM2MkMtSzFRVXNZbEc0ZkJST1RqNTNqSDNaMA?oc=5",
           "source": "streamlinefeed.co.ke",
@@ -6445,7 +6475,7 @@
         },
         {
           "id": "7ccfddbf6f9a6d30",
-          "storyClusterId": "story-005",
+          "storyClusterId": "story-004",
           "title": "IG Kanja Faces Sentencing Over Nairobi Roadblocks",
           "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPb29BdDF4QV9xRks4cEV1aS1BT1JIN2l3Y3Z3Qi1uVC16TVNPNFpGbmFhRkpLbEhXVkdYVU9hWUF3NDMtbkp3M25Cekh3YkhSVGZCRXFIckZoU1pidDVaVURTVnFkbjZNOEJaLU5VY3RMNC1jUmxUSVJ0am55anVkNDZtU1g?oc=5",
           "source": "businesstoday.co.ke",
@@ -6487,28 +6517,28 @@
       "ticker": "ABDN.L",
       "slug": "aberdeen-group",
       "date": "2026-09-18",
-      "dailyScore": 51.7,
+      "dailyScore": 51.2,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.1,
-      "confidence": 62.6,
+      "rollingScore": 50.0,
+      "confidence": 62.9,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 56,
-      "sourceCount": 31,
-      "changeFromPreviousScoredDay": 1.3,
+      "storyCount": 54,
+      "sourceCount": 26,
+      "changeFromPreviousScoredDay": 0.8,
       "flags": [
         {
           "type": "coverage_spike",
           "direction": "neutral",
           "severity": "medium",
           "status": "calculated",
-          "detail": "56 stories versus trailing median 5",
+          "detail": "54 stories versus trailing median 5",
           "evidenceArticleIds": [
             "6c3f2cc1a6a585d0",
             "cb33262b1bfeb660",
             "682f9a40ed3f97d6",
             "c0667541442403f8",
-            "0c58db21572dd915"
+            "d43c8d5d1fcf8bda"
           ]
         },
         {
@@ -6522,7 +6552,7 @@
             "cb33262b1bfeb660",
             "682f9a40ed3f97d6",
             "c0667541442403f8",
-            "0c58db21572dd915"
+            "d43c8d5d1fcf8bda"
           ]
         }
       ],
@@ -6540,7 +6570,7 @@
         },
         {
           "id": "cb33262b1bfeb660",
-          "storyClusterId": "story-031",
+          "storyClusterId": "story-034",
           "title": "Richard Gordon: Hope has been restored after a memorable week for Aberdeen",
           "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOV0NYaXdXeTh6UDNtdndJajFRRzVYX0FJSFhmRDdObEZERG1tZk1yQzZmLTZoWF8xRzZUMjdPM0pqTlA2U3g5Q2FGX2Z5Vy1MaGNFX1ZlbmFqdGtYenVoa1MtUFloSEZZOUJkQ3lObk0yclpaZ1ktN1dDem8ySlU1QTEtRVZLUS1NRUJ2QVZwM0VNYjBSSE80bHZLQ3hlN1kzdHl0Q2NGQjFLcDdVRTBNWGlsU3BFbjFCc0U1a0lBVTNIb0U?oc=5",
           "source": "pressandjournal.co.uk",
@@ -6551,7 +6581,7 @@
         },
         {
           "id": "682f9a40ed3f97d6",
-          "storyClusterId": "story-042",
+          "storyClusterId": "story-043",
           "title": "Jacobi selected by Aberdeen Portfolio Solutions Limited as a technology vendor to accelerate growth of its managed portfolio service",
           "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPX2pOelFzSk1RVUhla3hfUmx4MVBhOHNrMms5NTA0NHd1YjhIcUluU0xQUmRxenVaUEhTaHQ4b1FrLTBfd3BYWkpmWG5fR19pR2xKdngwSnpJNk5ITnlXdUFvMGF6RHNEaFVnZmNESG5COENUSmR1bzlPempHcjJobmZQRGJveVV0MFBNLWVPbjh0eUJuYlBkSTZlUTNRVmREbjdvc2gzYTAtMTlJaVk2UXFyOGhCcUYtTUdGcXhxU28yOUk2SFBlOGdMS2s5QnVHdTh4WUF5eFBXUE1QWVNQU0g4VVdKeFpSeEMxbnVYT3pkOHRUaGVyRkdiS3NCa0hSbDRNMlFJN29Hc0gxZHB5THIySGdOY1U?oc=5",
           "source": "prnewswire.com",
@@ -6562,7 +6592,7 @@
         },
         {
           "id": "c0667541442403f8",
-          "storyClusterId": "story-025",
+          "storyClusterId": "story-028",
           "title": "£2.5m Aberdeen Airport upgrade to expand shops and dining ahead of summer 2027",
           "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPSjlHWUJGUjlfdmdzeUZPQ2NFVVFsTzR2UEhxVXZ2NkRzaWRjYU1lbHJwUzZLdDBiN1JSaHJIR05WZTBsUDFUSlh2UHBjY3lHRmJtTEJ5RlVoWlhsb3A4aUg4Wkpod1FxdU1fNmp2WGxoTk1acXdoYV94ZEs0M1VreEwxS2czNVc3UU5lYmlQd1QyXzVTZlU4QVVIM0E?oc=5",
           "source": "heraldscotland.com",
@@ -6572,14 +6602,14 @@
           "publisherCount": 1
         },
         {
-          "id": "0c58db21572dd915",
+          "id": "d43c8d5d1fcf8bda",
           "storyClusterId": "story-014",
-          "title": "Hibernian v Aberdeen: top-half push as home strugglers meet improving visitors",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPODVpcnRWTWltdDhLeGV2MlVJRGkxQ1VxSl9pblo5dUlYUThpSDg2d2ludjZhcW1GUm1rRlhldk5DUzJkMEFMUzZKU0NELTZxNmQwbUxrS1htdmV5a2xKbnloVkZzcWNuNGpzSnJDaGJpc29EUWRIdjJEa3ExVU9yZURraVFwYVZyVGRhODNFbjVOZHc3QlB3YWdJTFAxZEU3QUNiclJRZGJXUUg0cFVqdVJXOFVnQzIzdGc?oc=5",
-          "source": "onefootball.com",
-          "publishedAt": "2026-09-18T10:00:00Z",
-          "polarity": 0.8047,
-          "sentiment": "Very positive",
+          "title": "Findlay Marshall loan exit ruled out as Aberdeen boss issues Kristers Tobers return timeline",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQWk1VM0JKNm5kdmtGM3I5dWRDeENQck14YkkyNzhzWjRkS0lvSElkbk95MGtxNEJTbEFPTmtjbnh4TzZ3VDZESGdJa1h4Z2dGM05EeU0tc1NiczNRTDg3M1Q3VllCSFdCcWFnSER3ZGtBM1g2VTdoQVEzV004SS1JeXQySXpZeHhFMi05OHFNZ9IBlAFBVV95cUxPYlBZN25qSUtIV0R4dG9hN2VvOG9yNFd6RWVhWTk4aW1QRE5zd2ZDNm5ZTEctNTNOcnRlRWFyVVFCaXVmWnQ5eHI4Y1pxUnhvaExhTklZWlRkdG1qSW00Y0FWV2VLTFZ1U19vaTBBd0FuVTVuS3o3akxfbWdld1lsaUsxM2F4dXIzTzhCeklIdVNtQkhL?oc=5",
+          "source": "aberdeenlive.news",
+          "publishedAt": "2026-09-18T09:18:43Z",
+          "polarity": -0.8546,
+          "sentiment": "Very negative",
           "publisherCount": 1
         }
       ]
