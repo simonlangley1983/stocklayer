@@ -3,7 +3,7 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-09-19T17:49:12.295637Z",
+  "generatedAt": "2026-09-19T19:26:44.134632Z",
   "asOfDate": "2026-09-18",
   "companyCount": 100,
   "companies": {
@@ -43,29 +43,36 @@
       "ticker": "SHEL.L",
       "slug": "shell",
       "date": "2026-09-18",
-      "dailyScore": 48.4,
+      "dailyScore": 45.0,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.5,
-      "confidence": 62.6,
+      "rollingScore": 49.9,
+      "confidence": 64.1,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 10,
+      "storyCount": 11,
       "sourceCount": 6,
-      "changeFromPreviousScoredDay": -14.8,
+      "changeFromPreviousScoredDay": -18.2,
       "flags": [
         {
           "type": "sentiment_drop",
           "direction": "negative",
           "severity": "high",
           "status": "calculated",
-          "detail": "Daily score decreased by 14.8 points"
+          "detail": "Daily score decreased by 18.2 points"
         },
         {
           "type": "coverage_spike",
           "direction": "neutral",
           "severity": "medium",
           "status": "calculated",
-          "detail": "10 stories versus trailing median 1.5"
+          "detail": "11 stories versus trailing median 1.5"
+        },
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed"
         },
         {
           "type": "collection_degraded",
@@ -159,22 +166,22 @@
       "ticker": "BATS.L",
       "slug": "british-american-tobacco",
       "date": "2026-09-18",
-      "dailyScore": 47.8,
+      "dailyScore": 47.4,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.6,
-      "confidence": 63.3,
+      "rollingScore": 49.5,
+      "confidence": 63.0,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 42,
+      "storyCount": 43,
       "sourceCount": 42,
-      "changeFromPreviousScoredDay": -4.8,
+      "changeFromPreviousScoredDay": -5.2,
       "flags": [
         {
           "type": "coverage_spike",
           "direction": "neutral",
           "severity": "medium",
           "status": "calculated",
-          "detail": "42 stories versus trailing median 2"
+          "detail": "43 stories versus trailing median 2"
         },
         {
           "type": "collection_degraded",
@@ -190,15 +197,15 @@
       "ticker": "BP.L",
       "slug": "bp",
       "date": "2026-09-18",
-      "dailyScore": 51.3,
+      "dailyScore": 51.2,
       "dailyLabel": "Neutral / mixed",
       "rollingScore": 49.8,
-      "confidence": 63.1,
+      "confidence": 62.6,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 15,
-      "sourceCount": 14,
-      "changeFromPreviousScoredDay": 7.8,
+      "storyCount": 16,
+      "sourceCount": 16,
+      "changeFromPreviousScoredDay": 7.7,
       "flags": [
         {
           "type": "divestment",
@@ -211,7 +218,7 @@
           "direction": "neutral",
           "severity": "medium",
           "status": "calculated",
-          "detail": "15 stories versus trailing median 4"
+          "detail": "16 stories versus trailing median 4"
         },
         {
           "type": "collection_degraded",
@@ -816,22 +823,22 @@
       "ticker": "BLND.L",
       "slug": "british-land",
       "date": "2026-09-18",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 51.3,
-      "confidence": 0.0,
+      "dailyScore": 35.8,
+      "dailyLabel": "Negative",
+      "rollingScore": 49.4,
+      "confidence": 19.8,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -14.6,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "Confidence is 19.8"
         }
       ]
     },
@@ -840,22 +847,22 @@
       "ticker": "BT-A.L",
       "slug": "bt",
       "date": "2026-09-18",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 48.6,
-      "confidence": 0.0,
+      "dailyScore": 61.5,
+      "dailyLabel": "Positive",
+      "rollingScore": 50.4,
+      "confidence": 36.0,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 2,
+      "sourceCount": 2,
+      "changeFromPreviousScoredDay": 12.1,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "Confidence is 36.0"
         }
       ]
     },
@@ -1664,29 +1671,22 @@
       "ticker": "NXT.L",
       "slug": "next",
       "date": "2026-09-18",
-      "dailyScore": 57.8,
-      "dailyLabel": "Slightly positive",
-      "rollingScore": 50.7,
-      "confidence": 30.2,
+      "dailyScore": 64.6,
+      "dailyLabel": "Positive",
+      "rollingScore": 51.4,
+      "confidence": 14.5,
       "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 2,
-      "sourceCount": 2,
-      "changeFromPreviousScoredDay": 11.3,
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 18.1,
       "flags": [
-        {
-          "type": "high_disagreement",
-          "direction": "mixed",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "Positive and negative coverage is unusually dispersed"
-        },
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 30.2"
+          "detail": "Confidence is 14.5"
         },
         {
           "type": "collection_degraded",
@@ -2392,15 +2392,15 @@
       "ticker": "IGG.L",
       "slug": "ig-group",
       "date": "2026-09-18",
-      "dailyScore": 41.2,
-      "dailyLabel": "Slightly negative",
-      "rollingScore": 46.7,
-      "confidence": 64.7,
+      "dailyScore": 39.4,
+      "dailyLabel": "Negative",
+      "rollingScore": 46.4,
+      "confidence": 64.6,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 27,
-      "sourceCount": 26,
-      "changeFromPreviousScoredDay": -1.5,
+      "storyCount": 25,
+      "sourceCount": 25,
+      "changeFromPreviousScoredDay": -3.3,
       "flags": [
         {
           "type": "collection_degraded",
@@ -2440,22 +2440,22 @@
       "ticker": "ABDN.L",
       "slug": "aberdeen-group",
       "date": "2026-09-18",
-      "dailyScore": 51.7,
+      "dailyScore": 51.2,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.1,
-      "confidence": 62.6,
+      "rollingScore": 50.0,
+      "confidence": 62.9,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 56,
-      "sourceCount": 31,
-      "changeFromPreviousScoredDay": 1.3,
+      "storyCount": 54,
+      "sourceCount": 26,
+      "changeFromPreviousScoredDay": 0.8,
       "flags": [
         {
           "type": "coverage_spike",
           "direction": "neutral",
           "severity": "medium",
           "status": "calculated",
-          "detail": "56 stories versus trailing median 5"
+          "detail": "54 stories versus trailing median 5"
         },
         {
           "type": "collection_degraded",
