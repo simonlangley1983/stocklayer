@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-19T00:54:14.154358Z",
+  "generatedAt": "2026-09-19T01:21:59.497260Z",
   "company": {
     "companyName": "Coca-Cola Europacific Partners PLC",
     "ticker": "CCEP.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-09-15",
-    "periodEnd": "2026-09-17",
-    "observationCount": 3,
-    "scoredDayCount": 1,
-    "latestScore": 34.8,
-    "latestScoreDate": "2026-09-15",
+    "periodEnd": "2026-09-18",
+    "observationCount": 4,
+    "scoredDayCount": 2,
+    "latestScore": 40.8,
+    "latestScoreDate": "2026-09-18",
     "series": [
       {
         "date": "2026-09-15",
@@ -52,6 +52,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-18",
+        "dailyScore": 40.8,
+        "rollingScore": 47.1,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 17.9,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -74,6 +83,16 @@
         "direction": "negative",
         "detail": "Daily press score is 34.8",
         "significance": 1.375
+      },
+      {
+        "date": "2026-09-18",
+        "type": "press_story",
+        "title": "ING Bank Downgrades Coca-Cola Europacific Partners to Hold",
+        "source": "marketscreener.com",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOdThUODloMWVlTUFJZVc0N09zRHRYQzJiUTd4dDlQMF95aG9uTEVHcHBWMlJfSTlmRjdYN2lSRVNoLVZfUGtnN2p0T1BPZHlPNGUwNGcxbWxOcmxZT2Y3czhJbWt5N0xGWDA4bnI4aldSNnhYRGhLbUJjSmNiS0MzZG5GMV81TEpHME5sdElWM1Q5SUNuMUxrZEdLVlhBU1NNM1B2RTc5ejk4QTVrV212NA?oc=5",
+        "direction": "Very negative",
+        "detail": null,
+        "significance": 0.705
       }
     ]
   },
@@ -160,17 +179,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 40.7,
+    "score": 41.9,
     "label": "Low",
-    "evidenceCoverage": 49,
+    "evidenceCoverage": 52,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 34.8,
+        "score": 37.9,
         "weight": 0.4,
-        "reliability": 0.05,
-        "detail": "Recency-weighted average of 1 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.1,
+        "detail": "Recency-weighted average of 2 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -212,6 +231,16 @@
       "direction": "negative",
       "detail": "Daily press score is 34.8",
       "significance": 1.375
+    },
+    {
+      "date": "2026-09-18",
+      "type": "press_story",
+      "title": "ING Bank Downgrades Coca-Cola Europacific Partners to Hold",
+      "source": "marketscreener.com",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOdThUODloMWVlTUFJZVc0N09zRHRYQzJiUTd4dDlQMF95aG9uTEVHcHBWMlJfSTlmRjdYN2lSRVNoLVZfUGtnN2p0T1BPZHlPNGUwNGcxbWxOcmxZT2Y3czhJbWt5N0xGWDA4bnI4aldSNnhYRGhLbUJjSmNiS0MzZG5GMV81TEpHME5sdElWM1Q5SUNuMUxrZEdLVlhBU1NNM1B2RTc5ejk4QTVrV212NA?oc=5",
+      "direction": "Very negative",
+      "detail": null,
+      "significance": 0.705
     }
   ],
   "persistentEvents": []

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-19T00:54:14.154358Z",
+  "generatedAt": "2026-09-19T01:21:59.497260Z",
   "company": {
     "companyName": "Shell",
     "ticker": "SHEL.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-17",
-    "observationCount": 71,
-    "scoredDayCount": 34,
-    "latestScore": 63.2,
-    "latestScoreDate": "2026-09-17",
+    "periodEnd": "2026-09-18",
+    "observationCount": 72,
+    "scoredDayCount": 35,
+    "latestScore": 41.6,
+    "latestScoreDate": "2026-09-18",
     "series": [
       {
         "date": "2026-06-30",
@@ -664,6 +664,15 @@
         "sourceCount": 4,
         "confidence": 48.4,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-18",
+        "dailyScore": 41.6,
+        "rollingScore": 49.3,
+        "storyCount": 12,
+        "sourceCount": 7,
+        "confidence": 65.5,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -718,16 +727,6 @@
         "significance": 1.204
       },
       {
-        "date": "2026-09-14",
-        "type": "press_story",
-        "title": "Shell stock gains as Jefferies sticks to Buy rating and oil rally lifts shares",
-        "source": "ad-hoc-news.de",
-        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNV0xyRjQxOHZuR294MDRlNWc3OWg4cXFNbWYtUUtPT1lVTDJHVHlVOFdHYVFndW4yQVJ0bFRRYllfNURvai1URktTdlVHbWgzbjNIMUJNMkgxY3RfR1pIWlNBeU14enF2U01LYktQNEMxdmxIWDhJZW1FYzdkQ3FVQ0dDb0o3cFdZZml6WmtrdUhkUnhyaFp0X0M1U21rR2t5eTFGOFBYU3FKWEpHeUM3RnJZWTF5TUVmME42dHphQXZPOTlweU5Udllld3B6OTg?oc=5",
-        "direction": "Very positive",
-        "detail": null,
-        "significance": 0.866
-      },
-      {
         "date": "2026-09-15",
         "type": "share_buyback",
         "title": "Shell CEO Says Blockade May Mean Energy Shortages Last Into 2027",
@@ -766,6 +765,16 @@
         "direction": "positive",
         "detail": "Daily score increased by 26.1 points",
         "significance": 1.405
+      },
+      {
+        "date": "2026-09-18",
+        "type": "sentiment_drop",
+        "title": "Shell plc stock slips as LNG Canada expansion nears a decision",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQeFdoVTFrZC1XWFNIUGNxMW10TlNZYnV1N1dSVXpyYWJzM3h2TzFKa0NmZ19kVmZnY3VySTFBVkJLS2J6R3JNR3ZmSmdCWC1MNTMwSjdhdGVnTk82MDlmNTNLeDQwYkgzYnhxVkxSQmlFRC1Gc1RBX2htMjhuaE1HZUFHdlZ2YzVLV0RUbUJaRmV6NnVGYlRLaDZwLS1Xb3dFQ2RFdmV5QXRZb09qSm5hbng1RHZGVGlaSUdZZUFwTzlObm8?oc=5",
+        "direction": "negative",
+        "detail": "Daily score decreased by 21.6 points",
+        "significance": 1.598
       }
     ]
   },
@@ -966,17 +975,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 45.4,
+    "score": 45.3,
     "label": "Mixed",
     "evidenceCoverage": 83,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 50.0,
+        "score": 49.6,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 34 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 35 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1067,16 +1076,6 @@
       "significance": 1.204
     },
     {
-      "date": "2026-09-14",
-      "type": "press_story",
-      "title": "Shell stock gains as Jefferies sticks to Buy rating and oil rally lifts shares",
-      "source": "ad-hoc-news.de",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNV0xyRjQxOHZuR294MDRlNWc3OWg4cXFNbWYtUUtPT1lVTDJHVHlVOFdHYVFndW4yQVJ0bFRRYllfNURvai1URktTdlVHbWgzbjNIMUJNMkgxY3RfR1pIWlNBeU14enF2U01LYktQNEMxdmxIWDhJZW1FYzdkQ3FVQ0dDb0o3cFdZZml6WmtrdUhkUnhyaFp0X0M1U21rR2t5eTFGOFBYU3FKWEpHeUM3RnJZWTF5TUVmME42dHphQXZPOTlweU5Udllld3B6OTg?oc=5",
-      "direction": "Very positive",
-      "detail": null,
-      "significance": 0.866
-    },
-    {
       "date": "2026-09-15",
       "type": "share_buyback",
       "title": "Shell CEO Says Blockade May Mean Energy Shortages Last Into 2027",
@@ -1115,6 +1114,16 @@
       "direction": "positive",
       "detail": "Daily score increased by 26.1 points",
       "significance": 1.405
+    },
+    {
+      "date": "2026-09-18",
+      "type": "sentiment_drop",
+      "title": "Shell plc stock slips as LNG Canada expansion nears a decision",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQeFdoVTFrZC1XWFNIUGNxMW10TlNZYnV1N1dSVXpyYWJzM3h2TzFKa0NmZ19kVmZnY3VySTFBVkJLS2J6R3JNR3ZmSmdCWC1MNTMwSjdhdGVnTk82MDlmNTNLeDQwYkgzYnhxVkxSQmlFRC1Gc1RBX2htMjhuaE1HZUFHdlZ2YzVLV0RUbUJaRmV6NnVGYlRLaDZwLS1Xb3dFQ2RFdmV5QXRZb09qSm5hbng1RHZGVGlaSUdZZUFwTzlObm8?oc=5",
+      "direction": "negative",
+      "detail": "Daily score decreased by 21.6 points",
+      "significance": 1.598
     }
   ],
   "persistentEvents": []

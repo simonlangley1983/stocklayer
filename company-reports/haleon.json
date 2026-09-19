@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-19T00:54:14.154358Z",
+  "generatedAt": "2026-09-19T01:21:59.497260Z",
   "company": {
     "companyName": "Haleon PLC",
     "ticker": "HLN.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-15",
-    "periodEnd": "2026-09-17",
-    "observationCount": 77,
-    "scoredDayCount": 43,
-    "latestScore": 47.9,
-    "latestScoreDate": "2026-09-17",
+    "periodEnd": "2026-09-18",
+    "observationCount": 78,
+    "scoredDayCount": 44,
+    "latestScore": 53.1,
+    "latestScoreDate": "2026-09-18",
     "series": [
       {
         "date": "2026-06-15",
@@ -718,6 +718,15 @@
         "sourceCount": 2,
         "confidence": 49.3,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-18",
+        "dailyScore": 53.1,
+        "rollingScore": 52.4,
+        "storyCount": 5,
+        "sourceCount": 5,
+        "confidence": 65.0,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -916,7 +925,7 @@
         "score": 54.3,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 40 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 41 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1040,5 +1049,26 @@
       "significance": 1.401
     }
   ],
-  "persistentEvents": []
+  "persistentEvents": [
+    {
+      "id": "0d5ccbbadf2102f863aa",
+      "type": "acquisition",
+      "title": "Alan Stewart Acquires 242 Haleon Shares at A33.378619 Through Dividend Reinvestment",
+      "date": "2026-09-18",
+      "status": "pending_review",
+      "reviewDate": "2027-03-17",
+      "direction": "Neutral / mixed",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNVk5VUXg2SkNicTVnbW55ZUpncERseVRoN0l1clQyckpRMURRWS0xR2VMUTUzcmxvaFJrRWVFNjdmRXR3aGFtcE83b2MxajhfNExlWG5EZW9nRDQ5S1BSSEttVTZyNmFOUHFYMkdaWE83dXhZRUpaR3Q3ejdxelZyd0UxczVtUVNzMW5yS05Pc0ZDb1dLWEFORlRXYk8xNkJTd2hrQlVEdlJ1Y3kwN0J3aG1Idy1Ob3RQczVzZU1zYmtOS25pU1hLX3RWaWJocjJVMW1aLXJRQ05saUNHTjRRdnlOeGJMRnVvdk93RmFyVFZ5UWgzanc?oc=5",
+          "publisher": "kalkinemedia.com",
+          "date": "2026-09-18"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    }
+  ]
 }

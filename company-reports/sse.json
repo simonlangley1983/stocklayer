@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-19T00:54:14.154358Z",
+  "generatedAt": "2026-09-19T01:21:59.497260Z",
   "company": {
     "companyName": "SSE PLC",
     "ticker": "SSE.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-17",
-    "observationCount": 69,
-    "scoredDayCount": 2,
+    "periodEnd": "2026-09-18",
+    "observationCount": 70,
+    "scoredDayCount": 3,
     "latestScore": 50.2,
-    "latestScoreDate": "2026-09-15",
+    "latestScoreDate": "2026-09-18",
     "series": [
       {
         "date": "2026-06-30",
@@ -646,6 +646,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-18",
+        "dailyScore": 50.2,
+        "rollingScore": 50.0,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.3,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -668,6 +677,16 @@
         "direction": "Neutral / mixed",
         "detail": null,
         "significance": 0.16
+      },
+      {
+        "date": "2026-09-18",
+        "type": "press_story",
+        "title": "Why is the latest utility-sector momentum after the Bank of England decision relevant to SSE (LSE:SSE)?",
+        "source": "kalkinemedia.com",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPNldmVTdoSTFhMUN6YkdBbUZ0U0VHNVhJZ1E2SC1kV0M3UkVHLVdla1RxY3BpYjNmUEdDaUN6Si1Oa25saUxCNTFqV29uZjhSbThnRmFIVE9TZXpFNTBYTktCZjRYLV9MdWliZU5YSFVnNGthN3AyTGNHcllYTG4wMHVtSE9STG4zNTJGWXg5UlpBUkhia2NDc0xBSUZfc1pJN0Y0em5LZ0s2UGlJTWVPNWZ2X19sbmhjSDUtWmxKYkpKWEZ0MGZPaEdFcTBRRHVGbzNjMXFxVHQ0RXVU?oc=5",
+        "direction": "Neutral / mixed",
+        "detail": null,
+        "significance": 0.162
       }
     ]
   },
@@ -754,17 +773,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 41.9,
-    "label": "Low",
-    "evidenceCoverage": 52,
+    "score": 42.2,
+    "label": "Mixed",
+    "evidenceCoverage": 55,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 47.6,
+        "score": 48.8,
         "weight": 0.4,
-        "reliability": 0.1,
-        "detail": "Recency-weighted average of 2 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.15,
+        "detail": "Recency-weighted average of 3 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -797,6 +816,16 @@
       "direction": "Neutral / mixed",
       "detail": null,
       "significance": 0.16
+    },
+    {
+      "date": "2026-09-18",
+      "type": "press_story",
+      "title": "Why is the latest utility-sector momentum after the Bank of England decision relevant to SSE (LSE:SSE)?",
+      "source": "kalkinemedia.com",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPNldmVTdoSTFhMUN6YkdBbUZ0U0VHNVhJZ1E2SC1kV0M3UkVHLVdla1RxY3BpYjNmUEdDaUN6Si1Oa25saUxCNTFqV29uZjhSbThnRmFIVE9TZXpFNTBYTktCZjRYLV9MdWliZU5YSFVnNGthN3AyTGNHcllYTG4wMHVtSE9STG4zNTJGWXg5UlpBUkhia2NDc0xBSUZfc1pJN0Y0em5LZ0s2UGlJTWVPNWZ2X19sbmhjSDUtWmxKYkpKWEZ0MGZPaEdFcTBRRHVGbzNjMXFxVHQ0RXVU?oc=5",
+      "direction": "Neutral / mixed",
+      "detail": null,
+      "significance": 0.162
     },
     {
       "date": "2026-12-31",

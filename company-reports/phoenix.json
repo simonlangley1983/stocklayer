@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-19T00:54:14.154358Z",
+  "generatedAt": "2026-09-19T01:21:59.497260Z",
   "company": {
     "companyName": "Standard Life PLC",
     "ticker": "SDLF.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-17",
-    "observationCount": 76,
-    "scoredDayCount": 2,
-    "latestScore": 66.1,
-    "latestScoreDate": "2026-09-16",
+    "periodEnd": "2026-09-18",
+    "observationCount": 77,
+    "scoredDayCount": 3,
+    "latestScore": 41.9,
+    "latestScoreDate": "2026-09-18",
     "series": [
       {
         "date": "2026-06-30",
@@ -709,6 +709,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-18",
+        "dailyScore": 41.9,
+        "rollingScore": 51.2,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 17.6,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -751,6 +760,16 @@
         "direction": "positive",
         "detail": "Daily score increased by 12.6 points",
         "significance": 1.316
+      },
+      {
+        "date": "2026-09-18",
+        "type": "press_story",
+        "title": "SIPP firm Yorsipp poaches director from Standard Life",
+        "source": "financialplanningtoday.co.uk",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNanV4MXZmb2JDWDJYb1M4RHRpZ05leWxzTnhQN1dWSGRPVU9FdnlYb3pORVc1TmxMWjB5eUJSYkU4Q1R1YVpQWFd3NVlJOVNYNWw5clRfOUNYWEZtRVpSd1JpUlJVelczb2JQUlJqOG50WWZpeFIwejY5T0F4V2FmSnlLaVUwNDdxOEVsUnJnTXB5RW94dER5M05ROFV4b0ZE?oc=5",
+        "direction": "Negative",
+        "detail": null,
+        "significance": 0.637
       }
     ]
   },
@@ -1170,17 +1189,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 46.7,
+    "score": 44.5,
     "label": "Mixed",
-    "evidenceCoverage": 64,
+    "evidenceCoverage": 66,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 59.9,
+        "score": 53.6,
         "weight": 0.4,
-        "reliability": 0.1,
-        "detail": "Recency-weighted average of 2 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.15,
+        "detail": "Recency-weighted average of 3 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1286,6 +1305,16 @@
       "direction": "positive",
       "detail": "Daily score increased by 12.6 points",
       "significance": 1.316
+    },
+    {
+      "date": "2026-09-18",
+      "type": "press_story",
+      "title": "SIPP firm Yorsipp poaches director from Standard Life",
+      "source": "financialplanningtoday.co.uk",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNanV4MXZmb2JDWDJYb1M4RHRpZ05leWxzTnhQN1dWSGRPVU9FdnlYb3pORVc1TmxMWjB5eUJSYkU4Q1R1YVpQWFd3NVlJOVNYNWw5clRfOUNYWEZtRVpSd1JpUlJVelczb2JQUlJqOG50WWZpeFIwejY5T0F4V2FmSnlLaVUwNDdxOEVsUnJnTXB5RW94dER5M05ROFV4b0ZE?oc=5",
+      "direction": "Negative",
+      "detail": null,
+      "significance": 0.637
     }
   ],
   "persistentEvents": []
