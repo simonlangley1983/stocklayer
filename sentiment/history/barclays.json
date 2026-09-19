@@ -4428,6 +4428,78 @@
         }
       ],
       "changeFromPreviousScoredDay": -2.3
+    },
+    {
+      "date": "2026-09-18",
+      "dailyScore": 38.2,
+      "dailyLabel": "Negative",
+      "rollingScore": 48.6,
+      "confidence": 27.3,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 83,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 1,
+      "dispersion": 0.4899,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 68,
+        "missing_company_alias": 13
+      },
+      "topStories": [
+        {
+          "id": "54896ff8f7bd1d8f",
+          "storyClusterId": "story-002",
+          "title": "Barclays PLC (BCS) Shares Fall 3.0% -- GF Value Says Still Overv",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPbkhhek1iVXlmS1Zjejk2WlpWS1V6ZDcwdEI4VFV4ZTRKWHFTY1NwOElGWmpucU1QOThaQ3E5MHNsaEdodkNHenl4MHY0eDRUVDNaTjd2Um1yX3hwRXJxb2h6dXdoamdtak1abGdHZnQzcm9ndGc2Q2psWEhBY05JSzczUXFrS2FmcVl5THFuU3NVZVljMFpaa29NZU9wUmJkZWtZ?oc=5",
+          "source": "gurufocus.com",
+          "publishedAt": "2026-09-18T21:54:14Z",
+          "polarity": -0.9603,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "350107cc16a0aea0",
+          "storyClusterId": "story-001",
+          "title": "REG - Barclays PLC Spire Healthcare Grp - Form 8.3 SPIRE HEALTHCARE GROUP PLC",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOMmRfTlVSaDI0dUcyazdnMkdYZDd6R1owSXdhazZaSktEME9Da2puYXFuZUhyREVObzA5a21ITUtGWU11TWs0Qm1yaWdRbjVBc0YtTEFrT19ablJGYXRIUlpWSDlEWUNzU1NGZXJQSEEwczBQSHNKdFNaTHU0SW0wZGI4TUtsUWZUTmRJLXhRdnhRUXgweDVDamdXTmx0Sl96WkhwZEdpUko4MW16ODFUdmxudG1ELVR1QzlyS0ZLNVNBTFZjeExhd20zS0ZneTlqUUZMYk9iMDd6ZUFCT3pjRkk5WQ?oc=5",
+          "source": "tradingview.com",
+          "publishedAt": "2026-09-18T14:21:49Z",
+          "polarity": 0.0196,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 27.3",
+          "evidenceArticleIds": [
+            "54896ff8f7bd1d8f",
+            "350107cc16a0aea0"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "54896ff8f7bd1d8f",
+            "350107cc16a0aea0"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -12.1
     }
   ]
 }
