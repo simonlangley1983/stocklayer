@@ -2894,37 +2894,51 @@
     },
     {
       "date": "2026-09-19",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
+      "dailyScore": 50.5,
+      "dailyLabel": "Neutral / mixed",
       "rollingScore": 50.5,
-      "confidence": 0.0,
+      "confidence": 15.3,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 4,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 6,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 0,
+      "neutralStoryCount": 1,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
-        "missing_company_alias": 4
+        "missing_company_alias": 5
       },
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "4c07ba4d8f692c7b",
+          "storyClusterId": "story-001",
+          "title": "Auto Trader-rival Motors.co.uk starts ad agency talks",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxONE5lLVlZSXUwWFEyUURCNWpZSUpoeUhKbGFQUGRtZ2piaHJISUdjZkVISGVRRUlZcXdPa1FxM3VOUlU2RnlPWW9lZzU5Ymw1Qy1QSXZYd2dYdDY3M05LVjE1OG9mU2N2aGVXNlI2ZkE3bWVjLU9NRk9FZEw4bUJJLTBjY1FFbnB6OGloWkp0OUN4NTBLT2E4NDBOU0hfQVpDN1kzcUZPSGgwazFDZTM0Q1Zwb1lvNTdtLXlv?oc=5",
+          "source": "campaignlive.co.uk",
+          "publishedAt": "2026-09-19T06:48:59Z",
+          "polarity": 0.0281,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.3",
+          "evidenceArticleIds": [
+            "4c07ba4d8f692c7b"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": -1.2
     }
   ]
 }

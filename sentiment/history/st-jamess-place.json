@@ -2098,35 +2098,49 @@
     },
     {
       "date": "2026-09-19",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.8,
-      "confidence": 0.0,
+      "dailyScore": 50.0,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.7,
+      "confidence": 15.1,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 0,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 1,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 0,
+      "neutralStoryCount": 1,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {},
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "22a95d5bf2569a23",
+          "storyClusterId": "story-001",
+          "title": "St. James's Place plc Stock (STJMF) - Quote OTC Markets",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBTbkZ3Z3l1eDNFVF9abzQtVTV6WkZISi1rVDJYMnRfZTJZSTN5eVVqYWJtM2U0TEFkYWZjamVYbTUwV2pLY3FEX2JBQlFDRnMtdTNoNzh6MnlDM21fQS1vakkzc1RHN2w1cDVJbS1FdHNYZnRRQ2dnYnFkdUdHTEU?oc=5",
+          "source": "marketscreener.com",
+          "publishedAt": "2026-09-19T06:46:44Z",
+          "polarity": 0.002,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.1",
+          "evidenceArticleIds": [
+            "22a95d5bf2569a23"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": -1.1
     }
   ]
 }

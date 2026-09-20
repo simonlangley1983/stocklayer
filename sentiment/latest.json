@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-09-20T05:28:27.192492Z",
+  "generatedAt": "2026-09-20T09:55:34.707295Z",
   "asOfDate": "2026-09-19",
   "companies": {
     "astrazeneca": {
@@ -131,15 +131,15 @@
       "ticker": "SHEL.L",
       "slug": "shell",
       "date": "2026-09-19",
-      "dailyScore": 57.2,
+      "dailyScore": 56.8,
       "dailyLabel": "Slightly positive",
-      "rollingScore": 51.0,
-      "confidence": 43.5,
-      "confidenceBand": "medium",
+      "rollingScore": 50.8,
+      "confidence": 32.1,
+      "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 4,
-      "sourceCount": 2,
-      "changeFromPreviousScoredDay": 12.2,
+      "storyCount": 3,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 11.8,
       "flags": [
         {
           "type": "high_disagreement",
@@ -150,8 +150,19 @@
           "evidenceArticleIds": [
             "4ddc557ed84f0178",
             "37c3bf71814c5ba1",
-            "b80989f7d65d9b78",
-            "ba20034f61c6fc7f"
+            "b80989f7d65d9b78"
+          ]
+        },
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 32.1",
+          "evidenceArticleIds": [
+            "4ddc557ed84f0178",
+            "37c3bf71814c5ba1",
+            "b80989f7d65d9b78"
           ]
         },
         {
@@ -163,15 +174,14 @@
           "evidenceArticleIds": [
             "4ddc557ed84f0178",
             "37c3bf71814c5ba1",
-            "b80989f7d65d9b78",
-            "ba20034f61c6fc7f"
+            "b80989f7d65d9b78"
           ]
         }
       ],
       "topStories": [
         {
           "id": "4ddc557ed84f0178",
-          "storyClusterId": "story-003",
+          "storyClusterId": "story-002",
           "title": "Shell CEO Says Blockade May Mean Energy Shortages Last Into 2027",
           "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNUE5peTN1Q0FReVdyZWZzcWNOa3h4c1U3TkluZjliZDRaaEhHV2d3c09QX3hPZjFLUUdzRzRLdjkwR2RyWGdpd2dmTGxGQzlmUk8tOEFYTGNzSGJaMUZreVJtak5sU3BBbjUzekNhUS05ZjNEUTcxUzdFZGNETFNrd1pCTEhFRjZOSkt4ZDR2dzA1Tkd3S05CdkdIbw?oc=5",
           "source": "energynow.com",
@@ -182,7 +192,7 @@
         },
         {
           "id": "37c3bf71814c5ba1",
-          "storyClusterId": "story-004",
+          "storyClusterId": "story-003",
           "title": "Shell’s ARC Deal Seen as Win for Mark Carney’s Pro-Oil Pivot",
           "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOSWR2UUUyM1BNNmdwdDB1T1VicDRyVkhTdEFtRVNtbUpicW9JRU5iZW9OQ3pCR0YxZE14M2dqWUJPM2wycEFWY291UFdXNG9qZkdXSkNGbUJtbnZROExraFlOYlY3TWZkeUtJVjdNWEdEVEM1dGZ2T3JVQjFXMWFLREhQOWhyeW1FR2dXcE44aVlvZDA?oc=5",
           "source": "energynow.com",
@@ -201,17 +211,6 @@
           "polarity": 0.7936,
           "sentiment": "Very positive",
           "publisherCount": 1
-        },
-        {
-          "id": "ba20034f61c6fc7f",
-          "storyClusterId": "story-002",
-          "title": "Vivo Energy takes Shell workforce training to stations across Uganda",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNM1d4dml2RnQ2YnFuSGhLOUhEX0JkYk9nUVhram9hM2xVdHlqRmdYcTlMZ1BLZjhfYlpFdmZoZmpjQ3BVZnY1RFhHS1h5STI4Smhyd2tuQUFCNnd3bXJ3NjBLSU9YTXdMNnZNcjNQcTVIZkVSbjdjd3d0bTVab2N0MVpvb1RsZFRIc3RZSFZrTlEwZFFMSHNiWEdVZ043VWIx?oc=5",
-          "source": "independent.co.ug",
-          "publishedAt": "2026-09-19T06:00:11Z",
-          "polarity": 0.189,
-          "sentiment": "Slightly positive",
-          "publisherCount": 1
         }
       ]
     },
@@ -220,26 +219,40 @@
       "ticker": "HSBA.L",
       "slug": "hsbc",
       "date": "2026-09-19",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
+      "dailyScore": 50.0,
+      "dailyLabel": "Neutral / mixed",
       "rollingScore": 50.1,
-      "confidence": 0.0,
+      "confidence": 15.1,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -0.1,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.1",
+          "evidenceArticleIds": [
+            "09d4fb9b171af1fd"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "09d4fb9b171af1fd",
+          "storyClusterId": "story-001",
+          "title": "HSBC News | HSBC HOLDINGS PLC-SPONS ADR (NYSE:HSBC)",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1aZkxJM0x3Uy1DVVkzckp6Mk8yOXVESXBqb3R6cVg2ODkyaXFZQzRLWHVQdTBkMHNMeTdEZ0w0Q1lPVFl6b0ZELW5ESWZkT2Y4clFQSFJHSVJYVEU?oc=5",
+          "source": "chartmill.com",
+          "publishedAt": "2026-09-19T00:09:39Z",
+          "polarity": 0.0003,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
     },
     "unilever": {
       "companyName": "Unilever",
@@ -359,28 +372,28 @@
       "ticker": "BATS.L",
       "slug": "british-american-tobacco",
       "date": "2026-09-19",
-      "dailyScore": 50.0,
+      "dailyScore": 51.3,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.6,
-      "confidence": 60.5,
+      "rollingScore": 49.8,
+      "confidence": 60.2,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 35,
-      "sourceCount": 26,
-      "changeFromPreviousScoredDay": 2.6,
+      "storyCount": 34,
+      "sourceCount": 25,
+      "changeFromPreviousScoredDay": 3.9,
       "flags": [
         {
           "type": "coverage_spike",
           "direction": "neutral",
           "severity": "medium",
           "status": "calculated",
-          "detail": "35 stories versus trailing median 2",
+          "detail": "34 stories versus trailing median 2",
           "evidenceArticleIds": [
-            "cc7b688f088d1773",
             "6fe70fdeb48cf6d2",
             "92128c9ab0d0603a",
             "db94dd617fd399fd",
-            "6357d858c89457ac"
+            "6357d858c89457ac",
+            "540a17ee35a10401"
           ]
         },
         {
@@ -390,26 +403,15 @@
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
-            "cc7b688f088d1773",
             "6fe70fdeb48cf6d2",
             "92128c9ab0d0603a",
             "db94dd617fd399fd",
-            "6357d858c89457ac"
+            "6357d858c89457ac",
+            "540a17ee35a10401"
           ]
         }
       ],
       "topStories": [
-        {
-          "id": "cc7b688f088d1773",
-          "storyClusterId": "story-020",
-          "title": "Eurobattery Minerals AB (NGM:BAT) CEO Convicted; Insider-Dealing Probe Disclosed",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNRGNQaElBQkVGR2tmUWJFR3Yzb2xVSjdDTG9WWlRFY0hISlh4bG9NNTFSbDFtUmlsRG1QRjJUZ194U3VyWnBZaS1pVXNwLVFZaHFOaVo5TDB2SEZ3MWRTYWJpVndnQ3VGVzhjWGpLeUM1OGRDZDNNV3pEVTB6bnk3SUhPRFFER3ZaSkRPLTlPUm1TYXI0VmpTWEJiR3JTMjQ0eXZZR3VheVp5Ny1lb3hXMGVtTjQ4TjdfYmFWMG9BV2NnSHJaUWNnV0RmbW1YM1BDRU1wUE53?oc=5",
-          "source": "tradingview.com",
-          "publishedAt": "2026-09-19T11:15:03Z",
-          "polarity": -0.882,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
         {
           "id": "6fe70fdeb48cf6d2",
           "storyClusterId": "story-017",
@@ -423,7 +425,7 @@
         },
         {
           "id": "92128c9ab0d0603a",
-          "storyClusterId": "story-033",
+          "storyClusterId": "story-032",
           "title": "A woman picked up a rabid bat in downtown Minneapolis. Health officials are trying to find her",
           "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOSUwwSUREMGVTT0x2VTJzZmJjcUdRVWNpYjBwX3FiUkU1ZUllaGdfTnByeXpDVnMyZDNZNkYzM2RkMUJwMklhSmJfb1BUMVdNZm53NHF5RHFVT1pDNjFqQUExTmdHd2J6N1RLUEI3RTF2Ny1KVFFVdXBIRXVLTHhmUGp3UUN6eTVsZHJtbzhGNldqemFUOUU0Q0hpZ1hXTV94UkRlel84V2dZWktKWUtWdEtGcVFsV1pJYllaMmpoX0owX0NXblR3dVZIa3hvNUJE?oc=5",
           "source": "bringmethenews.com",
@@ -445,12 +447,23 @@
         },
         {
           "id": "6357d858c89457ac",
-          "storyClusterId": "story-021",
+          "storyClusterId": "story-020",
           "title": "The Bat-Family take the spotlight with McFarlane Toys' latest DC Page Punchers action figures",
           "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNWnJJbU5fLUJGUEx1Z0lQOUFnMGR3N0tPNU8xWFhfcE9jRzlkQlNhaDV1OGFFUkhZRjNVRWZfaXRjTHRIR2FmUWNXWTRMY3RPOU11ek1LYkZydXBZTHBFenI5S1lBTXpyMjVaN0YxUlZXdS1XZEMwdXJ5Q3hTOVhheko4T2tWbXlOendwREUyOG1mOUhJQ0tlbGlicWZpY2hkWnFMcDlJVnpmVms4UTRoT204Y3ozTTZHXy0tZlNQZGl2UQ?oc=5",
           "source": "flickeringmyth.com",
           "publishedAt": "2026-09-19T12:53:52Z",
           "polarity": 0.4735,
+          "sentiment": "Positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "540a17ee35a10401",
+          "storyClusterId": "story-031",
+          "title": "Europe's Largest Bat Species, the Greater Noctule, Caught in Czechia for the First Time",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNOTBMQTBxSVR3eWdXQ05xRElBWVU3cVJiMlh6eTB1cjRJUFBhUVZ0YzBFS24zTUdzLUVrS2NMeHZfTjNGaFBfeEVnc2wxWER1NENHOFBDUV9iZUw2ck9nNUFhN0dYRzNrcXVZTndzQmdrUVc0YnhCMkc3U1RVZXB5dzVEWHdrblpPXzNOeE5DREREbEF6eFZySDJfTTNjTV9pUDlaMUN2YkJEVUxTYl9xMzNn?oc=5",
+          "source": "aroundprague.cz",
+          "publishedAt": "2026-09-19T19:20:46Z",
+          "polarity": 0.4441,
           "sentiment": "Positive",
           "publisherCount": 1
         }
@@ -980,6 +993,14 @@
           "severity": "low",
           "status": "calculated",
           "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": []
         }
       ],
@@ -1555,26 +1576,40 @@
       "ticker": "AUTO.L",
       "slug": "auto-trader",
       "date": "2026-09-19",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
+      "dailyScore": 50.5,
+      "dailyLabel": "Neutral / mixed",
       "rollingScore": 50.5,
-      "confidence": 0.0,
+      "confidence": 15.3,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -1.2,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.3",
+          "evidenceArticleIds": [
+            "4c07ba4d8f692c7b"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "4c07ba4d8f692c7b",
+          "storyClusterId": "story-001",
+          "title": "Auto Trader-rival Motors.co.uk starts ad agency talks",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxONE5lLVlZSXUwWFEyUURCNWpZSUpoeUhKbGFQUGRtZ2piaHJISUdjZkVISGVRRUlZcXdPa1FxM3VOUlU2RnlPWW9lZzU5Ymw1Qy1QSXZYd2dYdDY3M05LVjE1OG9mU2N2aGVXNlI2ZkE3bWVjLU9NRk9FZEw4bUJJLTBjY1FFbnB6OGloWkp0OUN4NTBLT2E4NDBOU0hfQVpDN1kzcUZPSGgwazFDZTM0Q1Zwb1lvNTdtLXlv?oc=5",
+          "source": "campaignlive.co.uk",
+          "publishedAt": "2026-09-19T06:48:59Z",
+          "polarity": 0.0281,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
     },
     "aviva": {
       "companyName": "Aviva PLC",
@@ -3818,52 +3853,80 @@
       "ticker": "SSE.L",
       "slug": "sse",
       "date": "2026-09-19",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.0,
-      "confidence": 0.0,
+      "dailyScore": 50.6,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.1,
+      "confidence": 15.2,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 0.4,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.2",
+          "evidenceArticleIds": [
+            "8a4c1b6c937a95ce"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "8a4c1b6c937a95ce",
+          "storyClusterId": "story-001",
+          "title": "ETFs Investing in SSE plc Sponsored ADR Stocks",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5xek11ZjJJOEIza3doVjcwNlhrR1lla3gxTEZPT0tZRTZmWEJzazZKRGhTR1ZTR0RuamlBZE9tX25sZjBpMWtYRzMxN3g2NHRkNHltRER6T0wwekh5LWZr?oc=5",
+          "source": "tradingview.com",
+          "publishedAt": "2026-09-19T10:21:41Z",
+          "polarity": 0.0334,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
     },
     "st-jamess-place": {
       "companyName": "St James's Place PLC",
       "ticker": "STJ.L",
       "slug": "st-jamess-place",
       "date": "2026-09-19",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.8,
-      "confidence": 0.0,
+      "dailyScore": 50.0,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.7,
+      "confidence": 15.1,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -1.1,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.1",
+          "evidenceArticleIds": [
+            "22a95d5bf2569a23"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "22a95d5bf2569a23",
+          "storyClusterId": "story-001",
+          "title": "St. James's Place plc Stock (STJMF) - Quote OTC Markets",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBTbkZ3Z3l1eDNFVF9abzQtVTV6WkZISi1rVDJYMnRfZTJZSTN5eVVqYWJtM2U0TEFkYWZjamVYbTUwV2pLY3FEX2JBQlFDRnMtdTNoNzh6MnlDM21fQS1vakkzc1RHN2w1cDVJbS1FdHNYZnRRQ2dnYnFkdUdHTEU?oc=5",
+          "source": "marketscreener.com",
+          "publishedAt": "2026-09-19T06:46:44Z",
+          "polarity": 0.002,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
     },
     "standard-chartered": {
       "companyName": "Standard Chartered PLC",
@@ -4530,15 +4593,15 @@
       "ticker": "ABDN.L",
       "slug": "aberdeen-group",
       "date": "2026-09-19",
-      "dailyScore": 53.6,
+      "dailyScore": 53.1,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.6,
-      "confidence": 62.7,
+      "rollingScore": 50.5,
+      "confidence": 62.8,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 36,
-      "sourceCount": 29,
-      "changeFromPreviousScoredDay": 2.4,
+      "storyCount": 37,
+      "sourceCount": 28,
+      "changeFromPreviousScoredDay": 1.9,
       "flags": [
         {
           "type": "collection_degraded",
@@ -4550,15 +4613,15 @@
             "c38809267791f80d",
             "5000cc30d314c78a",
             "2b7967fcb0111d2c",
-            "35a2eedf64b85c72",
-            "c735a8e795df5c75"
+            "c735a8e795df5c75",
+            "d758be331aed0506"
           ]
         }
       ],
       "topStories": [
         {
           "id": "c38809267791f80d",
-          "storyClusterId": "story-021",
+          "storyClusterId": "story-020",
           "title": "Hibs 1 Aberdeen 1: Key talking points as in-form striker Kevin Nisbet hits 12th goal of the season",
           "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQUHJVbGo1MnlZZG5rUW45WGdKTnNKRXo0YXJuUlVSQktuSldDZnJLNmNQTDBVTWxFNXRqbHNFRlplajVCM3dVNy1neVJhUXFMNkFQSmpyeUtKSlJ5T1k4UENJN2lDSEc4S0R3MnhSSWJuT1F5V05xSjN2b2JKUWNXUGF2N01vdS1tU0JuN09VMm91SDhXWGlEbGxaa2lmTGFfa3JIZWJ4ZWlpQTYwTzhkYlBzSmdxQVZwRmRZTThn?oc=5",
           "source": "pressandjournal.co.uk",
@@ -4580,7 +4643,7 @@
         },
         {
           "id": "2b7967fcb0111d2c",
-          "storyClusterId": "story-014",
+          "storyClusterId": "story-012",
           "title": "Developer strikes deal with Aberdeen University for 1,700 homes on former institute site outside city",
           "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOQzZ6TV9PNEVnNzd1aEphM0RfU2xyRE1weE1LUndhbFl5TVVweFB3NTNxVzB6NHVnOHN2MFlndlNhaUg1Y2c2OFNiMkV3U1RvZ2p3N2hEMXlHWDlldzRjZkROX2w1OUJJNzBmTDE4Z3BBaDFDbGI3QmRnSTRpUTRsZER5V09UdXY3Yk1XU1E2Z19GekN6aUZUb0laUVJseXZkbjltNWw2SHJwTzM5SmMwc3dwdzNnQlJBQl82RGZqcEFZYlhi?oc=5",
           "source": "news.stv.tv",
@@ -4590,24 +4653,24 @@
           "publisherCount": 1
         },
         {
-          "id": "35a2eedf64b85c72",
-          "storyClusterId": "story-004",
-          "title": "Aberdeen Beach food trucks should be removed if not trading, say coffee truck couple stuck on street nearby",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPY0ZqUVpYMzdTR1poczJldDFueFNfQnZqS2xGT3FxZVFqa3NXUzBKT1NSR3pmOG1NLUNXRnI4eTN1X24xaXQ1NG5ubkJhU2JibnoxX1NVc2tLd3AtSjVLVDhaRklHc1dZVlQtTk42YVJsRDlRWWVLVE02YzVFMTg3ZEhlaUROUWxCQUVGVVl4OExaSFZ1SHRxU1ZBM1FPc1VUZmxCZC1VeUdDOTB6V3FlbzRlVnk4aFk?oc=5",
-          "source": "pressandjournal.co.uk",
-          "publishedAt": "2026-09-19T05:00:54Z",
-          "polarity": -0.7977,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
           "id": "c735a8e795df5c75",
-          "storyClusterId": "story-006",
+          "storyClusterId": "story-003",
           "title": "Deal struck between Bancon Homes and Aberdeen University allows for 1,200 new homes",
           "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNTE9uYTlXLU5tRHk5R0h1aWF6ZlRpVldqcTRiaEo5ZE1KOTFwYWl5ZG05U0NrSWlhVXdEanRCWmtrRGN1UDBtbVR4cGd4NU83Q1NqRG5YZnZjZzhMM1Btd2gxQVI0elZjbWpzYWdDcWFDSTR4RDVqQXcyLW1UMWV5b2hhWmRIUHJBdHhFcHAtVWxmU0hRakNsbA?oc=5",
           "source": "pressandjournal.co.uk",
           "publishedAt": "2026-09-19T06:00:39Z",
           "polarity": 0.7551,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "d758be331aed0506",
+          "storyClusterId": "story-031",
+          "title": "Aberdeen International Airport unveils next phase of £2.5m passenger experience transformation",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQODlfOGh3aGNmUXo1eE9mYWxsUkIzV2Q3ZTQ2ak9kZWZlUDBwd2dfMlZmT1RVZ2o4LThoQUd0LUl4aC1QcE8teWRkX2VjcHhFd0ZzWVhZV1lFSVNSenctRGltMDV1Z3NDd21uZFBFX2RCcWtxRXkyM0F4Sm5ZcThkekozT2FOaTBheE1hcWlHT3RxUlZBZmNXRzNsR1JncXV5VFFxb3RjSVNmMU5UNVZ2dVZjdjdtWU5sU2U1U0lqVmp3VU9BY0kySW5OYlZmc1RWV3pYc3VmWEw?oc=5",
+          "source": "futuretravelexperience.com",
+          "publishedAt": "2026-09-19T17:31:07Z",
+          "polarity": 0.6746,
           "sentiment": "Very positive",
           "publisherCount": 1
         }
@@ -4684,26 +4747,40 @@
       "ticker": "BGEO.L",
       "slug": "lion-finance-group",
       "date": "2026-09-19",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.0,
-      "confidence": 0.0,
+      "dailyScore": 53.4,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.4,
+      "confidence": 16.3,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
       "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 16.3",
+          "evidenceArticleIds": [
+            "0f21ded0dc53c28f"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "0f21ded0dc53c28f",
+          "storyClusterId": "story-001",
+          "title": "Lion Finance Group Sets Sterling Payout for Interim Georgian Lari Dividend",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQemtNMVUwcnB2eEJieTctbi1oY2RGOUFMZ09Mc29MUUJOdXJCT3VLM2RLM1FJR0NRek02VG9rdnlvMDctTmRMREtXZFl6RUExa0c3U3BHTjhoNmRYWkJpS3M4ZUlsdDhIRnNvRjFlQWx0NlpQMnNWZUZic2J3QXowZ0xvNnRMODhqMUpIdWI1VjlzUXpnQ21uNFQ5OWJkZHJ0akVGa01iRHR1QmR5OU9RVXhCNnFTdUxrTEFGcTd0dm05TGpT?oc=5",
+          "source": "tipranks.com",
+          "publishedAt": "2026-09-19T06:03:30Z",
+          "polarity": 0.2032,
+          "sentiment": "Positive",
+          "publisherCount": 1
+        }
+      ]
     },
     "babcock-international": {
       "companyName": "Babcock International Group PLC",

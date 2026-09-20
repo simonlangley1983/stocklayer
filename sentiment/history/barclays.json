@@ -4509,8 +4509,8 @@
       "confidence": 0.0,
       "confidenceBand": "low",
       "coverageStatus": "no_coverage",
-      "collectionCompleteness": 1.0,
-      "candidateCount": 26,
+      "collectionCompleteness": 0.75,
+      "candidateCount": 23,
       "eligibleArticleCount": 0,
       "storyCount": 0,
       "effectiveStoryCount": 0,
@@ -4520,7 +4520,7 @@
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 23,
+        "ambiguous_company_without_alias": 20,
         "missing_company_alias": 3
       },
       "topStories": [],
@@ -4531,6 +4531,14 @@
           "severity": "low",
           "status": "calculated",
           "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": []
         }
       ],
