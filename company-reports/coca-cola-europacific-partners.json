@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-20T00:39:29.258237Z",
+  "generatedAt": "2026-09-20T01:21:40.264694Z",
   "company": {
     "companyName": "Coca-Cola Europacific Partners PLC",
     "ticker": "CCEP.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-09-15",
-    "periodEnd": "2026-09-18",
-    "observationCount": 4,
-    "scoredDayCount": 2,
-    "latestScore": 40.8,
-    "latestScoreDate": "2026-09-18",
+    "periodEnd": "2026-09-19",
+    "observationCount": 5,
+    "scoredDayCount": 3,
+    "latestScore": 65.3,
+    "latestScoreDate": "2026-09-19",
     "series": [
       {
         "date": "2026-09-15",
@@ -61,6 +61,15 @@
         "sourceCount": 1,
         "confidence": 17.9,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-19",
+        "dailyScore": 65.3,
+        "rollingScore": 49.6,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 19.5,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -93,6 +102,16 @@
         "direction": "Very negative",
         "detail": null,
         "significance": 0.705
+      },
+      {
+        "date": "2026-09-19",
+        "type": "press_story",
+        "title": "Can Coca-Cola Europacific Partners (ASX:CCL) Strengthen Its Annual Meeting Profile?",
+        "source": "kalkinemedia.com",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOaDdNS04zRzFyOC1ScVJmMEpQLVR0WmpnUnlRY3hUQ3ZobzY3ZjdBeHJxWWtKSklxSVNJMDBWOGV5bFRJTFlqbVFBSW9RUDJ6YWJFNTRIb25hNzdhSGtpdFc0b1ZTNjdQeUpoWjlRZnZyclF5eFd0YjZfWjc0U3M1QThfYVk1X0Fza3Y2SVNLY25zUnlaSjhTMlMxbjZJa1pLcFQ5VmM3UG9TbzlYc3Q0WmtrRDQweVRhdXloT2NHbXc?oc=5",
+        "direction": "Very positive",
+        "detail": null,
+        "significance": 1.07
       }
     ]
   },
@@ -179,17 +198,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 41.9,
-    "label": "Low",
-    "evidenceCoverage": 52,
+    "score": 45.8,
+    "label": "Mixed",
+    "evidenceCoverage": 55,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 37.9,
+        "score": 47.4,
         "weight": 0.4,
-        "reliability": 0.1,
-        "detail": "Recency-weighted average of 2 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.15,
+        "detail": "Recency-weighted average of 3 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -241,6 +260,16 @@
       "direction": "Very negative",
       "detail": null,
       "significance": 0.705
+    },
+    {
+      "date": "2026-09-19",
+      "type": "press_story",
+      "title": "Can Coca-Cola Europacific Partners (ASX:CCL) Strengthen Its Annual Meeting Profile?",
+      "source": "kalkinemedia.com",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOaDdNS04zRzFyOC1ScVJmMEpQLVR0WmpnUnlRY3hUQ3ZobzY3ZjdBeHJxWWtKSklxSVNJMDBWOGV5bFRJTFlqbVFBSW9RUDJ6YWJFNTRIb25hNzdhSGtpdFc0b1ZTNjdQeUpoWjlRZnZyclF5eFd0YjZfWjc0U3M1QThfYVk1X0Fza3Y2SVNLY25zUnlaSjhTMlMxbjZJa1pLcFQ5VmM3UG9TbzlYc3Q0WmtrRDQweVRhdXloT2NHbXc?oc=5",
+      "direction": "Very positive",
+      "detail": null,
+      "significance": 1.07
     }
   ],
   "persistentEvents": []

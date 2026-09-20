@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-20T00:39:29.258237Z",
+  "generatedAt": "2026-09-20T01:21:40.264694Z",
   "company": {
     "companyName": "Smith & Nephew PLC",
     "ticker": "SN.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-18",
-    "observationCount": 68,
-    "scoredDayCount": 38,
-    "latestScore": 47.2,
-    "latestScoreDate": "2026-09-18",
+    "periodEnd": "2026-09-19",
+    "observationCount": 69,
+    "scoredDayCount": 39,
+    "latestScore": 62.9,
+    "latestScoreDate": "2026-09-19",
     "series": [
       {
         "date": "2026-06-30",
@@ -637,6 +637,15 @@
         "sourceCount": 7,
         "confidence": 79.7,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-19",
+        "dailyScore": 62.9,
+        "rollingScore": 50.3,
+        "storyCount": 2,
+        "sourceCount": 1,
+        "confidence": 31.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -731,14 +740,14 @@
         "significance": 1.596
       },
       {
-        "date": "2026-09-18",
-        "type": "coverage_spike",
-        "title": "Smith & Nephew stock heads into the open after a 1.1% drop",
+        "date": "2026-09-19",
+        "type": "press_story",
+        "title": "Smith & Nephew stock gains on note redemption and steady valuation",
         "source": "ad-hoc-news.de",
-        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOUDM0czVvOWMyWkdjQXFGNDNuajBZekI2RFNST0FINjB1enN4OGZnOER6anRGMDlUVkZoMTBzNWY4a0QtVng2WVpGQk9Fa05QODZMNERVQWYzX28tRjF1bHdjR3ZXZWJfVXVKdWc3TXRKUXk0bWxuTDdZc3VhVTJSbFQzSGJLUVc0ZE1CTHlabE5LQTlFY3RkRW56TjJ1LUhRTXpEVnAtSmxWN1EzX3cwTXczeDRjcUpmV2s3LVBOTnVtRjhpNG5EWTBR?oc=5",
-        "direction": "neutral",
-        "detail": "12 stories versus trailing median 1",
-        "significance": 0.778
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOZG5hTURyQVdDZWhVNGpmR2RnZlJ0LVB3UlNPQ1RKdHJJSDE2MnpQVFBET1JEMlF1STdsTUt2VzV3WEI5RkhRbzVCTlpfV29tMV9qUGhlYmFhQ01TcU1tSHBFNmZxbHh1NG8yTjNpMWJ6ZDhhRDFCNkhXdGdEWVdpOU54SlFqQlR1NnBsaDlFbWVNSEhuUVNZQjlOOE1lRmUzcDRXUlo0cDliQUw2cTVsZml1VldncXNDMnFRME5RWnVJdXljSnBpWkswOA?oc=5",
+        "direction": "Very positive",
+        "detail": null,
+        "significance": 0.95
       }
     ]
   },
@@ -825,17 +834,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 49.4,
+    "score": 49.8,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 49.7,
+        "score": 50.4,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 38 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 39 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -949,14 +958,14 @@
       "significance": 1.596
     },
     {
-      "date": "2026-09-18",
-      "type": "coverage_spike",
-      "title": "Smith & Nephew stock heads into the open after a 1.1% drop",
+      "date": "2026-09-19",
+      "type": "press_story",
+      "title": "Smith & Nephew stock gains on note redemption and steady valuation",
       "source": "ad-hoc-news.de",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOUDM0czVvOWMyWkdjQXFGNDNuajBZekI2RFNST0FINjB1enN4OGZnOER6anRGMDlUVkZoMTBzNWY4a0QtVng2WVpGQk9Fa05QODZMNERVQWYzX28tRjF1bHdjR3ZXZWJfVXVKdWc3TXRKUXk0bWxuTDdZc3VhVTJSbFQzSGJLUVc0ZE1CTHlabE5LQTlFY3RkRW56TjJ1LUhRTXpEVnAtSmxWN1EzX3cwTXczeDRjcUpmV2s3LVBOTnVtRjhpNG5EWTBR?oc=5",
-      "direction": "neutral",
-      "detail": "12 stories versus trailing median 1",
-      "significance": 0.778
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOZG5hTURyQVdDZWhVNGpmR2RnZlJ0LVB3UlNPQ1RKdHJJSDE2MnpQVFBET1JEMlF1STdsTUt2VzV3WEI5RkhRbzVCTlpfV29tMV9qUGhlYmFhQ01TcU1tSHBFNmZxbHh1NG8yTjNpMWJ6ZDhhRDFCNkhXdGdEWVdpOU54SlFqQlR1NnBsaDlFbWVNSEhuUVNZQjlOOE1lRmUzcDRXUlo0cDliQUw2cTVsZml1VldncXNDMnFRME5RWnVJdXljSnBpWkswOA?oc=5",
+      "direction": "Very positive",
+      "detail": null,
+      "significance": 0.95
     }
   ],
   "persistentEvents": []

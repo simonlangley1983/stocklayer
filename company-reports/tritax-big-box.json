@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-20T00:39:29.258237Z",
+  "generatedAt": "2026-09-20T01:21:40.264694Z",
   "company": {
     "companyName": "Tritax Big Box REIT PLC",
     "ticker": "BBOX.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-09-10",
-    "periodEnd": "2026-09-18",
-    "observationCount": 9,
-    "scoredDayCount": 2,
-    "latestScore": 51.0,
-    "latestScoreDate": "2026-09-16",
+    "periodEnd": "2026-09-19",
+    "observationCount": 10,
+    "scoredDayCount": 3,
+    "latestScore": 47.8,
+    "latestScoreDate": "2026-09-19",
     "series": [
       {
         "date": "2026-09-10",
@@ -106,6 +106,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-19",
+        "dailyScore": 47.8,
+        "rollingScore": 49.9,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 17.0,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -128,6 +137,16 @@
         "direction": "Neutral / mixed",
         "detail": null,
         "significance": 0.212
+      },
+      {
+        "date": "2026-09-19",
+        "type": "press_story",
+        "title": "Tritax Big Box REIT (LON:BBOX) Shares Cross Below 200-Day Moving Average - What's Next?",
+        "source": "marketbeat.com",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQdlVMMlBjUXJSemV6aWJzTlg3SFFsSHUtVUg1Vk1Ld01IdFJGWS1vYm1feEtyYkpDcEFzYnVBQ2xtdThiV3FEVVk3eTMtWFpTZ1ZxYlVQSkVlMTU0SGp1c1ZzWmFDZE5jcElDYzZfdFV1eTZDdVFKOG5GSklWblVLQnl4UEM0VDQzYkNicnVZSUpTczQzRHBqNFQ5V2J6bmxMdWVmX0dGNXFEbzlTUlRaUk10WE9GTkpYYW1wM2V0LU9DTHRLRXl3MEtlRl9wczU0MWJ3U1plODk?oc=5",
+        "direction": "Slightly negative",
+        "detail": null,
+        "significance": 0.281
       }
     ]
   },
@@ -620,17 +639,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 57.5,
+    "score": 57.3,
     "label": "Mixed",
-    "evidenceCoverage": 64,
+    "evidenceCoverage": 66,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 50.7,
+        "score": 49.7,
         "weight": 0.4,
-        "reliability": 0.1,
-        "detail": "Recency-weighted average of 2 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.15,
+        "detail": "Recency-weighted average of 3 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -725,6 +744,16 @@
       "direction": "Neutral / mixed",
       "detail": null,
       "significance": 0.212
+    },
+    {
+      "date": "2026-09-19",
+      "type": "press_story",
+      "title": "Tritax Big Box REIT (LON:BBOX) Shares Cross Below 200-Day Moving Average - What's Next?",
+      "source": "marketbeat.com",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQdlVMMlBjUXJSemV6aWJzTlg3SFFsSHUtVUg1Vk1Ld01IdFJGWS1vYm1feEtyYkpDcEFzYnVBQ2xtdThiV3FEVVk3eTMtWFpTZ1ZxYlVQSkVlMTU0SGp1c1ZzWmFDZE5jcElDYzZfdFV1eTZDdVFKOG5GSklWblVLQnl4UEM0VDQzYkNicnVZSUpTczQzRHBqNFQ5V2J6bmxMdWVmX0dGNXFEbzlTUlRaUk10WE9GTkpYYW1wM2V0LU9DTHRLRXl3MEtlRl9wczU0MWJ3U1plODk?oc=5",
+      "direction": "Slightly negative",
+      "detail": null,
+      "significance": 0.281
     }
   ],
   "persistentEvents": []

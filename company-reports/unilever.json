@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-20T00:39:29.258237Z",
+  "generatedAt": "2026-09-20T01:21:40.264694Z",
   "company": {
     "companyName": "Unilever",
     "ticker": "ULVR.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-10",
-    "periodEnd": "2026-09-18",
-    "observationCount": 63,
-    "scoredDayCount": 63,
-    "latestScore": 46.5,
-    "latestScoreDate": "2026-09-18",
+    "periodEnd": "2026-09-19",
+    "observationCount": 64,
+    "scoredDayCount": 64,
+    "latestScore": 52.2,
+    "latestScoreDate": "2026-09-19",
     "series": [
       {
         "date": "2026-07-10",
@@ -592,6 +592,15 @@
         "sourceCount": 18,
         "confidence": 85.4,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-19",
+        "dailyScore": 52.2,
+        "rollingScore": 48.2,
+        "storyCount": 6,
+        "sourceCount": 4,
+        "confidence": 65.9,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -901,10 +910,10 @@
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 48.9,
+        "score": 49.0,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 63 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 64 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1046,6 +1055,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "dcee644e314b5f182b83",
+      "type": "acquisition",
+      "title": "Unilever stock holds steady as UK probes planned foods merger",
+      "date": "2026-09-19",
+      "status": "pending_review",
+      "reviewDate": "2027-03-18",
+      "direction": "Negative",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNT2hETjVUWGxDZTgwR3FIQ2J6d1RFcUExdlNBc1BiTjJkWXE3SmpVTWlIcEJUeFBnNTh4am55c2tGQWpqbVNWWG12OTh4VWRQMG40S2x1d0o5a3prQjFUeFN3ZWo3c3Y3eDRaX1E2VjdVamZGekw5QnVFNVdpMDU1VFRnNlFpRHdRVUI3VGRZdmpydEk4S01iTUZ1N2JZZjZ6U1FoWXlxYzNTa3BsVmlhTUVkS0RpdDFWdzRSTW1ILXRoUQ?oc=5",
+          "publisher": "ad-hoc-news.de",
+          "date": "2026-09-19"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "8409577b730b07c44c1d",
       "type": "acquisition",

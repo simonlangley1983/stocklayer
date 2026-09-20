@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-20T00:39:29.258237Z",
+  "generatedAt": "2026-09-20T01:21:40.264694Z",
   "company": {
     "companyName": "Investec PLC",
     "ticker": "INVP.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-15",
-    "periodEnd": "2026-09-18",
-    "observationCount": 14,
-    "scoredDayCount": 9,
-    "latestScore": 55.0,
-    "latestScoreDate": "2026-09-18",
+    "periodEnd": "2026-09-19",
+    "observationCount": 15,
+    "scoredDayCount": 10,
+    "latestScore": 26.1,
+    "latestScoreDate": "2026-09-19",
     "series": [
       {
         "date": "2026-06-15",
@@ -151,6 +151,15 @@
         "sourceCount": 20,
         "confidence": 93.1,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-19",
+        "dailyScore": 26.1,
+        "rollingScore": 48.0,
+        "storyCount": 2,
+        "sourceCount": 2,
+        "confidence": 41.1,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -233,6 +242,16 @@
         "direction": "neutral",
         "detail": null,
         "significance": 1.596
+      },
+      {
+        "date": "2026-09-19",
+        "type": "press_story",
+        "title": "Investec stock falls as results stay in line with May guidance",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPMXNGQ3BkVkFuVm40RkprU3ZudGpMajNHZUdMSjI0U2lIRXZBU0daekxad1k3bnJiYjZ3N1N5Y1ZpUXlwc19YZEQtTEl3aE5Lc1g5ci1aN1h0NFVkTEVmWlhQbHBLWlFSNWM2UmtLTGJ3OHY2c0xsQkhuVEFoSHcyM1NGVlItM0d4b0NZYnVtT001LWpyN1F1VnVSYl9yQ1pvQy1yM3k0c3hLNURGVkFFbWs0eHlxTThJRUdoaVFVYTF4aHM?oc=5",
+        "direction": "Very negative",
+        "detail": null,
+        "significance": 1.106
       }
     ]
   },
@@ -871,17 +890,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 59.6,
-    "label": "Positive",
-    "evidenceCoverage": 68,
+    "score": 57.7,
+    "label": "Mixed",
+    "evidenceCoverage": 70,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 54.2,
+        "score": 48.3,
         "weight": 0.4,
-        "reliability": 0.2,
-        "detail": "Recency-weighted average of 4 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.25,
+        "detail": "Recency-weighted average of 5 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1045,6 +1064,16 @@
       "direction": "neutral",
       "detail": null,
       "significance": 1.596
+    },
+    {
+      "date": "2026-09-19",
+      "type": "press_story",
+      "title": "Investec stock falls as results stay in line with May guidance",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPMXNGQ3BkVkFuVm40RkprU3ZudGpMajNHZUdMSjI0U2lIRXZBU0daekxad1k3bnJiYjZ3N1N5Y1ZpUXlwc19YZEQtTEl3aE5Lc1g5ci1aN1h0NFVkTEVmWlhQbHBLWlFSNWM2UmtLTGJ3OHY2c0xsQkhuVEFoSHcyM1NGVlItM0d4b0NZYnVtT001LWpyN1F1VnVSYl9yQ1pvQy1yM3k0c3hLNURGVkFFbWs0eHlxTThJRUdoaVFVYTF4aHM?oc=5",
+      "direction": "Very negative",
+      "detail": null,
+      "significance": 1.106
     },
     {
       "date": "2026-12-31",

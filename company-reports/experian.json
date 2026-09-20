@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-20T00:39:29.258237Z",
+  "generatedAt": "2026-09-20T01:21:40.264694Z",
   "company": {
     "companyName": "Experian",
     "ticker": "EXPN.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-05",
-    "periodEnd": "2026-09-18",
-    "observationCount": 64,
-    "scoredDayCount": 61,
-    "latestScore": 39.8,
-    "latestScoreDate": "2026-09-18",
+    "periodEnd": "2026-09-19",
+    "observationCount": 65,
+    "scoredDayCount": 62,
+    "latestScore": 63.9,
+    "latestScoreDate": "2026-09-19",
     "series": [
       {
         "date": "2026-07-05",
@@ -601,6 +601,15 @@
         "sourceCount": 6,
         "confidence": 86.8,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-19",
+        "dailyScore": 63.9,
+        "rollingScore": 51.9,
+        "storyCount": 2,
+        "sourceCount": 2,
+        "confidence": 37.3,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -613,16 +622,6 @@
         "direction": "neutral",
         "detail": "16 stories versus trailing median 5",
         "significance": 1.587
-      },
-      {
-        "date": "2026-08-19",
-        "type": "sentiment_drop",
-        "title": "Experian fraud chief says AI documents  near impossible  to detect",
-        "source": "theadviser.com.au",
-        "url": "https://www.theadviser.com.au/broker/48832-experians-fraud-chief-says-ai-documents-near-impossible-to-detect",
-        "direction": "negative",
-        "detail": "Daily score decreased by 12.6 points",
-        "significance": 1.017
       },
       {
         "date": "2026-09-15",
@@ -703,6 +702,16 @@
         "direction": "negative",
         "detail": "Daily score decreased by 19.4 points",
         "significance": 1.594
+      },
+      {
+        "date": "2026-09-19",
+        "type": "press_story",
+        "title": "Experian stock gains after solid first-quarter growth and upbeat guidance",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcVlyZmpsMHctbnJKZmg3UUhOeWYxZ1p3VTVURk5FOVlCaVNVZWhHdGd1TzgxRGRmRU9WNHRkaHBBQnVqbkUxdlluaXBGS2Z2NFFjMzZJR2xGbTFwSDV5ZE9oa0tIWmNBWEJQUkptLVhuQWd3YVhoajVIT0tvellZMVZXQ2JMWXJSZEc5RVdoc21DNVFuaVF0WnprTjhRVVFiejVLOXFJNG0xVjQ0YnJSTElVdHRrbThiRHhMRTVfUG44SUUxTFZnNGM2UWRaV3ZTQ1E?oc=5",
+        "direction": "Very positive",
+        "detail": null,
+        "significance": 1.052
       }
     ]
   },
@@ -903,17 +912,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 60.8,
+    "score": 61.0,
     "label": "Positive",
     "evidenceCoverage": 83,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 48.5,
+        "score": 49.0,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 61 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 62 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -953,16 +962,6 @@
       "direction": "neutral",
       "detail": "16 stories versus trailing median 5",
       "significance": 1.587
-    },
-    {
-      "date": "2026-08-19",
-      "type": "sentiment_drop",
-      "title": "Experian fraud chief says AI documents  near impossible  to detect",
-      "source": "theadviser.com.au",
-      "url": "https://www.theadviser.com.au/broker/48832-experians-fraud-chief-says-ai-documents-near-impossible-to-detect",
-      "direction": "negative",
-      "detail": "Daily score decreased by 12.6 points",
-      "significance": 1.017
     },
     {
       "date": "2026-09-15",
@@ -1043,6 +1042,16 @@
       "direction": "negative",
       "detail": "Daily score decreased by 19.4 points",
       "significance": 1.594
+    },
+    {
+      "date": "2026-09-19",
+      "type": "press_story",
+      "title": "Experian stock gains after solid first-quarter growth and upbeat guidance",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcVlyZmpsMHctbnJKZmg3UUhOeWYxZ1p3VTVURk5FOVlCaVNVZWhHdGd1TzgxRGRmRU9WNHRkaHBBQnVqbkUxdlluaXBGS2Z2NFFjMzZJR2xGbTFwSDV5ZE9oa0tIWmNBWEJQUkptLVhuQWd3YVhoajVIT0tvellZMVZXQ2JMWXJSZEc5RVdoc21DNVFuaVF0WnprTjhRVVFiejVLOXFJNG0xVjQ0YnJSTElVdHRrbThiRHhMRTVfUG44SUUxTFZnNGM2UWRaV3ZTQ1E?oc=5",
+      "direction": "Very positive",
+      "detail": null,
+      "significance": 1.052
     },
     {
       "date": "2026-12-31",

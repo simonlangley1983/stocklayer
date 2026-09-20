@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-20T00:39:29.258237Z",
+  "generatedAt": "2026-09-20T01:21:40.264694Z",
   "company": {
     "companyName": "Halma PLC",
     "ticker": "HLMA.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-05",
-    "periodEnd": "2026-09-18",
-    "observationCount": 71,
-    "scoredDayCount": 28,
-    "latestScore": 67.7,
-    "latestScoreDate": "2026-09-18",
+    "periodEnd": "2026-09-19",
+    "observationCount": 72,
+    "scoredDayCount": 29,
+    "latestScore": 50.9,
+    "latestScoreDate": "2026-09-19",
     "series": [
       {
         "date": "2026-07-05",
@@ -664,6 +664,15 @@
         "sourceCount": 1,
         "confidence": 32.7,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-19",
+        "dailyScore": 50.9,
+        "rollingScore": 53.5,
+        "storyCount": 4,
+        "sourceCount": 2,
+        "confidence": 49.8,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -676,16 +685,6 @@
         "direction": "Very negative",
         "detail": null,
         "significance": 1.034
-      },
-      {
-        "date": "2026-08-21",
-        "type": "press_story",
-        "title": "Halma ( OTCMKTS : HLMAF ) Shares Gap Down – Should You Sell ?",
-        "source": "tickerreport.com",
-        "url": "https://www.tickerreport.com/banking-finance/13553137/halma-otcmktshlmaf-shares-gap-down-should-you-sell.html",
-        "direction": "Negative",
-        "detail": null,
-        "significance": 0.632
       },
       {
         "date": "2026-08-22",
@@ -766,6 +765,16 @@
         "direction": "Very positive",
         "detail": null,
         "significance": 0.831
+      },
+      {
+        "date": "2026-09-19",
+        "type": "sentiment_drop",
+        "title": "Rovers Medical / Halma — val fill €85M (Mar 2024)",
+        "source": "app.dealroom.co",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNY0hNMVdEeEdPdjJnM3lkaHdoVlA1TDdBaTJZZVQxcmw2VXkxamJlUzdTVnZDX19uLVg3Y3hTQkcwQUk1bi1FTFpOSHZkTDFBbFVYRmthcnUwa1dfYi1WaEFCT0hHTXFPb2Vhb3FFeUVzTTNRUnZ1X2ZFc1FNWFdiT1h3?oc=5",
+        "direction": "negative",
+        "detail": "Daily score decreased by 16.8 points",
+        "significance": 0.734
       }
     ]
   },
@@ -1414,7 +1423,7 @@
         "score": 51.4,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 28 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 29 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1510,16 +1519,6 @@
       "significance": 1.034
     },
     {
-      "date": "2026-08-21",
-      "type": "press_story",
-      "title": "Halma ( OTCMKTS : HLMAF ) Shares Gap Down – Should You Sell ?",
-      "source": "tickerreport.com",
-      "url": "https://www.tickerreport.com/banking-finance/13553137/halma-otcmktshlmaf-shares-gap-down-should-you-sell.html",
-      "direction": "Negative",
-      "detail": null,
-      "significance": 0.632
-    },
-    {
       "date": "2026-08-22",
       "type": "press_story",
       "title": "Halma plc ( LON : HLMA ) Given Consensus Recommendation of  Hold  by Analysts",
@@ -1600,6 +1599,16 @@
       "significance": 0.831
     },
     {
+      "date": "2026-09-19",
+      "type": "sentiment_drop",
+      "title": "Rovers Medical / Halma — val fill €85M (Mar 2024)",
+      "source": "app.dealroom.co",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNY0hNMVdEeEdPdjJnM3lkaHdoVlA1TDdBaTJZZVQxcmw2VXkxamJlUzdTVnZDX19uLVg3Y3hTQkcwQUk1bi1FTFpOSHZkTDFBbFVYRmthcnUwa1dfYi1WaEFCT0hHTXFPb2Vhb3FFeUVzTTNRUnZ1X2ZFc1FNWFdiT1h3?oc=5",
+      "direction": "negative",
+      "detail": "Daily score decreased by 16.8 points",
+      "significance": 0.734
+    },
+    {
       "date": "2026-12-31",
       "type": "annual_report",
       "title": "halma-plc-annual-report-2026.pdf",
@@ -1609,5 +1618,26 @@
       "approximateDate": true
     }
   ],
-  "persistentEvents": []
+  "persistentEvents": [
+    {
+      "id": "1d70ff0cbb2b927d02c8",
+      "type": "acquisition",
+      "title": "Halma acquires Brownline for €150m — valuation fill (Aug 2025)",
+      "date": "2026-09-19",
+      "status": "pending_review",
+      "reviewDate": "2027-03-18",
+      "direction": "Neutral / mixed",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQQks3NEJfX25RaDRyUlBZOGVhNlR1cGxKUjhIUlplTXNjRU12Ty1DTG9JUy0wbzVnazdPbk96dFNBbTAzNnQwM2FjM3cyNFB1amxvRlNJSVBMcXdTcG8zZnp6Uzk1MmdsMzYxYXNBaWowdGhFYU5OYVJvUWZ1RGpKazEyLVRlT2ppemVUSFNvUzQ5VHNWNVE?oc=5",
+          "publisher": "app.dealroom.co",
+          "date": "2026-09-19"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    }
+  ]
 }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-20T00:39:29.258237Z",
+  "generatedAt": "2026-09-20T01:21:40.264694Z",
   "company": {
     "companyName": "Convatec Group PLC",
     "ticker": "CTEC.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-15",
-    "periodEnd": "2026-09-18",
-    "observationCount": 64,
-    "scoredDayCount": 19,
-    "latestScore": 61.6,
-    "latestScoreDate": "2026-09-17",
+    "periodEnd": "2026-09-19",
+    "observationCount": 65,
+    "scoredDayCount": 20,
+    "latestScore": 34.7,
+    "latestScoreDate": "2026-09-19",
     "series": [
       {
         "date": "2026-06-15",
@@ -601,6 +601,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-19",
+        "dailyScore": 34.7,
+        "rollingScore": 49.3,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 19.7,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -693,6 +702,16 @@
         "direction": "Very positive",
         "detail": null,
         "significance": 0.846
+      },
+      {
+        "date": "2026-09-19",
+        "type": "press_story",
+        "title": "ConvaTec stock slips below 50-day line as investors weigh recent growth",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNY255NlFZTGZnU21YczlkZHdrb0d5VW83Q1g2UERvUWVzMXJuV0NRRW5HY05IM2ZnTE1SOFE0ZFhHRnpwVDEwVktMWDdtaVNDeGNOcTYzZDYtUUxjNU43dllqZjZwMzA3Z3cxZGlBQzhUVnJHNXRNZzVrQmEyamt4UHBWSWcxTWRpM2NPb0s3bnNaSWJPTENLYjNGZ1dHelBMdnVJZ0o5ZGo2Q29vVlFFbzV1Vl9vaElmN3lUV21MbTVlU2RTTnp4YWZWcHcxSk0?oc=5",
+        "direction": "Very negative",
+        "detail": null,
+        "significance": 1.068
       }
     ]
   },
@@ -779,17 +798,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 48.3,
+    "score": 47.4,
     "label": "Mixed",
-    "evidenceCoverage": 95,
+    "evidenceCoverage": 97,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 50.4,
+        "score": 48.8,
         "weight": 0.4,
-        "reliability": 0.9,
-        "detail": "Recency-weighted average of 18 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.95,
+        "detail": "Recency-weighted average of 19 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -901,6 +920,16 @@
       "direction": "Very positive",
       "detail": null,
       "significance": 0.846
+    },
+    {
+      "date": "2026-09-19",
+      "type": "press_story",
+      "title": "ConvaTec stock slips below 50-day line as investors weigh recent growth",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNY255NlFZTGZnU21YczlkZHdrb0d5VW83Q1g2UERvUWVzMXJuV0NRRW5HY05IM2ZnTE1SOFE0ZFhHRnpwVDEwVktMWDdtaVNDeGNOcTYzZDYtUUxjNU43dllqZjZwMzA3Z3cxZGlBQzhUVnJHNXRNZzVrQmEyamt4UHBWSWcxTWRpM2NPb0s3bnNaSWJPTENLYjNGZ1dHelBMdnVJZ0o5ZGo2Q29vVlFFbzV1Vl9vaElmN3lUV21MbTVlU2RTTnp4YWZWcHcxSk0?oc=5",
+      "direction": "Very negative",
+      "detail": null,
+      "significance": 1.068
     }
   ],
   "persistentEvents": []
