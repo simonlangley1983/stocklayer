@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-20T08:55:00.460695Z",
+  "generatedAt": "2026-09-20T09:55:36.798538Z",
   "company": {
     "companyName": "SSE PLC",
     "ticker": "SSE.L",
@@ -22,9 +22,9 @@
     "periodStart": "2026-06-30",
     "periodEnd": "2026-09-19",
     "observationCount": 71,
-    "scoredDayCount": 3,
-    "latestScore": 50.2,
-    "latestScoreDate": "2026-09-18",
+    "scoredDayCount": 4,
+    "latestScore": 50.6,
+    "latestScoreDate": "2026-09-19",
     "series": [
       {
         "date": "2026-06-30",
@@ -658,12 +658,12 @@
       },
       {
         "date": "2026-09-19",
-        "dailyScore": null,
-        "rollingScore": 50.0,
-        "storyCount": 0,
-        "sourceCount": 0,
-        "confidence": 0.0,
-        "coverageStatus": "no_coverage"
+        "dailyScore": 50.6,
+        "rollingScore": 50.1,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -696,6 +696,16 @@
         "direction": "Neutral / mixed",
         "detail": null,
         "significance": 0.162
+      },
+      {
+        "date": "2026-09-19",
+        "type": "press_story",
+        "title": "ETFs Investing in SSE plc Sponsored ADR Stocks",
+        "source": "tradingview.com",
+        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5xek11ZjJJOEIza3doVjcwNlhrR1lla3gxTEZPT0tZRTZmWEJzazZKRGhTR1ZTR0RuamlBZE9tX25sZjBpMWtYRzMxN3g2NHRkNHltRER6T0wwekh5LWZr?oc=5",
+        "direction": "Neutral / mixed",
+        "detail": null,
+        "significance": 0.183
       }
     ]
   },
@@ -782,17 +792,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 42.2,
+    "score": 42.4,
     "label": "Mixed",
-    "evidenceCoverage": 55,
+    "evidenceCoverage": 57,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 48.8,
+        "score": 49.4,
         "weight": 0.4,
-        "reliability": 0.15,
-        "detail": "Recency-weighted average of 3 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.2,
+        "detail": "Recency-weighted average of 4 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -835,6 +845,16 @@
       "direction": "Neutral / mixed",
       "detail": null,
       "significance": 0.162
+    },
+    {
+      "date": "2026-09-19",
+      "type": "press_story",
+      "title": "ETFs Investing in SSE plc Sponsored ADR Stocks",
+      "source": "tradingview.com",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5xek11ZjJJOEIza3doVjcwNlhrR1lla3gxTEZPT0tZRTZmWEJzazZKRGhTR1ZTR0RuamlBZE9tX25sZjBpMWtYRzMxN3g2NHRkNHltRER6T0wwekh5LWZr?oc=5",
+      "direction": "Neutral / mixed",
+      "detail": null,
+      "significance": 0.183
     },
     {
       "date": "2026-12-31",

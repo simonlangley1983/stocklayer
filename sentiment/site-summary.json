@@ -3,7 +3,7 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-09-20T05:28:27.192492Z",
+  "generatedAt": "2026-09-20T09:55:34.707295Z",
   "asOfDate": "2026-09-19",
   "companyCount": 100,
   "companies": {
@@ -55,15 +55,15 @@
       "ticker": "SHEL.L",
       "slug": "shell",
       "date": "2026-09-19",
-      "dailyScore": 57.2,
+      "dailyScore": 56.8,
       "dailyLabel": "Slightly positive",
-      "rollingScore": 51.0,
-      "confidence": 43.5,
-      "confidenceBand": "medium",
+      "rollingScore": 50.8,
+      "confidence": 32.1,
+      "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 4,
-      "sourceCount": 2,
-      "changeFromPreviousScoredDay": 12.2,
+      "storyCount": 3,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 11.8,
       "flags": [
         {
           "type": "high_disagreement",
@@ -71,6 +71,13 @@
           "severity": "medium",
           "status": "calculated",
           "detail": "Positive and negative coverage is unusually dispersed"
+        },
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 32.1"
         },
         {
           "type": "collection_degraded",
@@ -86,22 +93,22 @@
       "ticker": "HSBA.L",
       "slug": "hsbc",
       "date": "2026-09-19",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
+      "dailyScore": 50.0,
+      "dailyLabel": "Neutral / mixed",
       "rollingScore": 50.1,
-      "confidence": 0.0,
+      "confidence": 15.1,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -0.1,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "Confidence is 15.1"
         }
       ]
     },
@@ -150,22 +157,22 @@
       "ticker": "BATS.L",
       "slug": "british-american-tobacco",
       "date": "2026-09-19",
-      "dailyScore": 50.0,
+      "dailyScore": 51.3,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.6,
-      "confidence": 60.5,
+      "rollingScore": 49.8,
+      "confidence": 60.2,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 35,
-      "sourceCount": 26,
-      "changeFromPreviousScoredDay": 2.6,
+      "storyCount": 34,
+      "sourceCount": 25,
+      "changeFromPreviousScoredDay": 3.9,
       "flags": [
         {
           "type": "coverage_spike",
           "direction": "neutral",
           "severity": "medium",
           "status": "calculated",
-          "detail": "35 stories versus trailing median 2"
+          "detail": "34 stories versus trailing median 2"
         },
         {
           "type": "collection_degraded",
@@ -356,6 +363,13 @@
           "severity": "low",
           "status": "calculated",
           "detail": "Collection succeeded but found no eligible coverage"
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day"
         }
       ]
     },
@@ -634,22 +648,22 @@
       "ticker": "AUTO.L",
       "slug": "auto-trader",
       "date": "2026-09-19",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
+      "dailyScore": 50.5,
+      "dailyLabel": "Neutral / mixed",
       "rollingScore": 50.5,
-      "confidence": 0.0,
+      "confidence": 15.3,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -1.2,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "Confidence is 15.3"
         }
       ]
     },
@@ -1961,22 +1975,22 @@
       "ticker": "SSE.L",
       "slug": "sse",
       "date": "2026-09-19",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.0,
-      "confidence": 0.0,
+      "dailyScore": 50.6,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.1,
+      "confidence": 15.2,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 0.4,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "Confidence is 15.2"
         }
       ]
     },
@@ -1985,22 +1999,22 @@
       "ticker": "STJ.L",
       "slug": "st-jamess-place",
       "date": "2026-09-19",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.8,
-      "confidence": 0.0,
+      "dailyScore": 50.0,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.7,
+      "confidence": 15.1,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -1.1,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "Confidence is 15.1"
         }
       ]
     },
@@ -2247,15 +2261,15 @@
       "ticker": "ABDN.L",
       "slug": "aberdeen-group",
       "date": "2026-09-19",
-      "dailyScore": 53.6,
+      "dailyScore": 53.1,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.6,
-      "confidence": 62.7,
+      "rollingScore": 50.5,
+      "confidence": 62.8,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 36,
-      "sourceCount": 29,
-      "changeFromPreviousScoredDay": 2.4,
+      "storyCount": 37,
+      "sourceCount": 28,
+      "changeFromPreviousScoredDay": 1.9,
       "flags": [
         {
           "type": "collection_degraded",
@@ -2319,22 +2333,22 @@
       "ticker": "BGEO.L",
       "slug": "lion-finance-group",
       "date": "2026-09-19",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.0,
-      "confidence": 0.0,
+      "dailyScore": 53.4,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.4,
+      "confidence": 16.3,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
       "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "Confidence is 16.3"
         }
       ]
     },

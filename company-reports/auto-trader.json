@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-20T08:55:00.460695Z",
+  "generatedAt": "2026-09-20T09:55:36.798538Z",
   "company": {
     "companyName": "Auto Trader Group PLC",
     "ticker": "AUTO.L",
@@ -22,9 +22,9 @@
     "periodStart": "2026-06-14",
     "periodEnd": "2026-09-19",
     "observationCount": 79,
-    "scoredDayCount": 18,
-    "latestScore": 51.7,
-    "latestScoreDate": "2026-09-18",
+    "scoredDayCount": 19,
+    "latestScore": 50.5,
+    "latestScoreDate": "2026-09-19",
     "series": [
       {
         "date": "2026-06-14",
@@ -730,12 +730,12 @@
       },
       {
         "date": "2026-09-19",
-        "dailyScore": null,
+        "dailyScore": 50.5,
         "rollingScore": 50.5,
-        "storyCount": 0,
-        "sourceCount": 0,
-        "confidence": 0.0,
-        "coverageStatus": "no_coverage"
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.3,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -758,16 +758,6 @@
         "direction": "Neutral / mixed",
         "detail": null,
         "significance": 0.24
-      },
-      {
-        "date": "2026-07-13",
-        "type": "press_story",
-        "title": "Auto Trader Camperstimeline Photos",
-        "source": "unitaid.eu",
-        "url": "https://www.unitaid.eu/auto-trader-camperstimeline-photos-zf9c.html",
-        "direction": "Neutral / mixed",
-        "detail": null,
-        "significance": 0.154
       },
       {
         "date": "2026-07-17",
@@ -838,6 +828,16 @@
         "direction": "Slightly positive",
         "detail": null,
         "significance": 0.255
+      },
+      {
+        "date": "2026-09-19",
+        "type": "press_story",
+        "title": "Auto Trader-rival Motors.co.uk starts ad agency talks",
+        "source": "campaignlive.co.uk",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxONE5lLVlZSXUwWFEyUURCNWpZSUpoeUhKbGFQUGRtZ2piaHJISUdjZkVISGVRRUlZcXdPa1FxM3VOUlU2RnlPWW9lZzU5Ymw1Qy1QSXZYd2dYdDY3M05LVjE1OG9mU2N2aGVXNlI2ZkE3bWVjLU9NRk9FZEw4bUJJLTBjY1FFbnB6OGloWkp0OUN4NTBLT2E4NDBOU0hfQVpDN1kzcUZPSGgwazFDZTM0Q1Zwb1lvNTdtLXlv?oc=5",
+        "direction": "Neutral / mixed",
+        "detail": null,
+        "significance": 0.178
       }
     ]
   },
@@ -1038,17 +1038,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 51.8,
+    "score": 51.7,
     "label": "Mixed",
-    "evidenceCoverage": 75,
+    "evidenceCoverage": 77,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 52.1,
+        "score": 51.9,
         "weight": 0.4,
-        "reliability": 0.8,
-        "detail": "Recency-weighted average of 16 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.85,
+        "detail": "Recency-weighted average of 17 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1098,16 +1098,6 @@
       "direction": "Neutral / mixed",
       "detail": null,
       "significance": 0.24
-    },
-    {
-      "date": "2026-07-13",
-      "type": "press_story",
-      "title": "Auto Trader Camperstimeline Photos",
-      "source": "unitaid.eu",
-      "url": "https://www.unitaid.eu/auto-trader-camperstimeline-photos-zf9c.html",
-      "direction": "Neutral / mixed",
-      "detail": null,
-      "significance": 0.154
     },
     {
       "date": "2026-07-17",
@@ -1178,6 +1168,16 @@
       "direction": "Slightly positive",
       "detail": null,
       "significance": 0.255
+    },
+    {
+      "date": "2026-09-19",
+      "type": "press_story",
+      "title": "Auto Trader-rival Motors.co.uk starts ad agency talks",
+      "source": "campaignlive.co.uk",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxONE5lLVlZSXUwWFEyUURCNWpZSUpoeUhKbGFQUGRtZ2piaHJISUdjZkVISGVRRUlZcXdPa1FxM3VOUlU2RnlPWW9lZzU5Ymw1Qy1QSXZYd2dYdDY3M05LVjE1OG9mU2N2aGVXNlI2ZkE3bWVjLU9NRk9FZEw4bUJJLTBjY1FFbnB6OGloWkp0OUN4NTBLT2E4NDBOU0hfQVpDN1kzcUZPSGgwazFDZTM0Q1Zwb1lvNTdtLXlv?oc=5",
+      "direction": "Neutral / mixed",
+      "detail": null,
+      "significance": 0.178
     },
     {
       "date": "2026-12-31",

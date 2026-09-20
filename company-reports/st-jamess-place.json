@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-20T08:55:00.460695Z",
+  "generatedAt": "2026-09-20T09:55:36.798538Z",
   "company": {
     "companyName": "St James's Place PLC",
     "ticker": "STJ.L",
@@ -22,9 +22,9 @@
     "periodStart": "2026-07-10",
     "periodEnd": "2026-09-19",
     "observationCount": 64,
-    "scoredDayCount": 4,
-    "latestScore": 51.1,
-    "latestScoreDate": "2026-09-18",
+    "scoredDayCount": 5,
+    "latestScore": 50.0,
+    "latestScoreDate": "2026-09-19",
     "series": [
       {
         "date": "2026-07-10",
@@ -595,12 +595,12 @@
       },
       {
         "date": "2026-09-19",
-        "dailyScore": null,
-        "rollingScore": 50.8,
-        "storyCount": 0,
-        "sourceCount": 0,
-        "confidence": 0.0,
-        "coverageStatus": "no_coverage"
+        "dailyScore": 50.0,
+        "rollingScore": 50.7,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.1,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -653,6 +653,16 @@
         "direction": "Neutral / mixed",
         "detail": null,
         "significance": 0.215
+      },
+      {
+        "date": "2026-09-19",
+        "type": "press_story",
+        "title": "St. James's Place plc Stock (STJMF) - Quote OTC Markets",
+        "source": "marketscreener.com",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBTbkZ3Z3l1eDNFVF9abzQtVTV6WkZISi1rVDJYMnRfZTJZSTN5eVVqYWJtM2U0TEFkYWZjamVYbTUwV2pLY3FEX2JBQlFDRnMtdTNoNzh6MnlDM21fQS1vakkzc1RHN2w1cDVJbS1FdHNYZnRRQ2dnYnFkdUdHTEU?oc=5",
+        "direction": "Neutral / mixed",
+        "detail": null,
+        "significance": 0.152
       }
     ]
   },
@@ -739,17 +749,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 47.2,
+    "score": 47.0,
     "label": "Mixed",
-    "evidenceCoverage": 57,
+    "evidenceCoverage": 60,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.9,
+        "score": 51.5,
         "weight": 0.4,
-        "reliability": 0.2,
-        "detail": "Recency-weighted average of 4 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.25,
+        "detail": "Recency-weighted average of 5 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -821,6 +831,16 @@
       "direction": "Neutral / mixed",
       "detail": null,
       "significance": 0.215
+    },
+    {
+      "date": "2026-09-19",
+      "type": "press_story",
+      "title": "St. James's Place plc Stock (STJMF) - Quote OTC Markets",
+      "source": "marketscreener.com",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBTbkZ3Z3l1eDNFVF9abzQtVTV6WkZISi1rVDJYMnRfZTJZSTN5eVVqYWJtM2U0TEFkYWZjamVYbTUwV2pLY3FEX2JBQlFDRnMtdTNoNzh6MnlDM21fQS1vakkzc1RHN2w1cDVJbS1FdHNYZnRRQ2dnYnFkdUdHTEU?oc=5",
+      "direction": "Neutral / mixed",
+      "detail": null,
+      "significance": 0.152
     }
   ],
   "persistentEvents": []
