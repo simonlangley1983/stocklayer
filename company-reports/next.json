@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-21T13:39:30.254611Z",
+  "generatedAt": "2026-09-21T17:09:02.949790Z",
   "company": {
     "companyName": "Next PLC",
     "ticker": "NXT.L",
@@ -22,9 +22,9 @@
     "periodStart": "2026-06-30",
     "periodEnd": "2026-09-20",
     "observationCount": 67,
-    "scoredDayCount": 5,
-    "latestScore": 55.1,
-    "latestScoreDate": "2026-09-19",
+    "scoredDayCount": 6,
+    "latestScore": 47.6,
+    "latestScoreDate": "2026-09-20",
     "series": [
       {
         "date": "2026-06-30",
@@ -622,12 +622,12 @@
       },
       {
         "date": "2026-09-20",
-        "dailyScore": null,
-        "rollingScore": 51.5,
-        "storyCount": 0,
-        "sourceCount": 0,
-        "confidence": 0.0,
-        "coverageStatus": "no_coverage"
+        "dailyScore": 47.6,
+        "rollingScore": 51.1,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 11.9,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -690,6 +690,16 @@
         "direction": "Positive",
         "detail": null,
         "significance": 0.455
+      },
+      {
+        "date": "2026-09-20",
+        "type": "press_story",
+        "title": "After the ban on real fur, should the fashion industry ban wool next?",
+        "source": "independent.co.uk",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPcE9rTDVoZzFTMmp2TTJXUi1KR002X2lfMHc4S2YwRWdwSmlGVjZ4S3NjTXIzdlhfSVAtZkt5bUVmUS11NHkxVy1XTjRpNGh4TEhoQTI4ZmhDeWhuU3BDNk5tREZpSWxUU25tYUw3NUx6R2Z5M0xPVmdqYndOekcxUE5ZbXdxSXBQMkItaWRjU3JrNFNUR1ZWM09KQmdMcXpqSFFpTmpB?oc=5",
+        "direction": "Slightly negative",
+        "detail": null,
+        "significance": 0.292
       }
     ]
   },
@@ -1182,17 +1192,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 52.3,
+    "score": 51.6,
     "label": "Mixed",
-    "evidenceCoverage": 70,
+    "evidenceCoverage": 72,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 57.3,
+        "score": 55.2,
         "weight": 0.4,
-        "reliability": 0.25,
-        "detail": "Recency-weighted average of 5 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.3,
+        "detail": "Recency-weighted average of 6 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1318,6 +1328,16 @@
       "direction": "Positive",
       "detail": null,
       "significance": 0.455
+    },
+    {
+      "date": "2026-09-20",
+      "type": "press_story",
+      "title": "After the ban on real fur, should the fashion industry ban wool next?",
+      "source": "independent.co.uk",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPcE9rTDVoZzFTMmp2TTJXUi1KR002X2lfMHc4S2YwRWdwSmlGVjZ4S3NjTXIzdlhfSVAtZkt5bUVmUS11NHkxVy1XTjRpNGh4TEhoQTI4ZmhDeWhuU3BDNk5tREZpSWxUU25tYUw3NUx6R2Z5M0xPVmdqYndOekcxUE5ZbXdxSXBQMkItaWRjU3JrNFNUR1ZWM09KQmdMcXpqSFFpTmpB?oc=5",
+      "direction": "Slightly negative",
+      "detail": null,
+      "significance": 0.292
     },
     {
       "date": "2026-12-31",
