@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-20T22:59:33.744640Z",
+  "generatedAt": "2026-09-21T01:19:29.788173Z",
   "company": {
     "companyName": "Prudential PLC",
     "ticker": "PRU.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-19",
-    "observationCount": 71,
-    "scoredDayCount": 67,
-    "latestScore": 53.1,
-    "latestScoreDate": "2026-09-19",
+    "periodEnd": "2026-09-20",
+    "observationCount": 72,
+    "scoredDayCount": 68,
+    "latestScore": 67.7,
+    "latestScoreDate": "2026-09-20",
     "series": [
       {
         "date": "2026-06-30",
@@ -664,6 +664,15 @@
         "sourceCount": 12,
         "confidence": 80.3,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-20",
+        "dailyScore": 67.7,
+        "rollingScore": 55.8,
+        "storyCount": 10,
+        "sourceCount": 7,
+        "confidence": 86.8,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -852,17 +861,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 43.0,
+    "score": 43.3,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 53.4,
+        "score": 53.8,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 67 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 68 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -987,6 +996,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "5627417ba94c36537e05",
+      "type": "regulatory_legal",
+      "title": "ICICI Prudential Life Posts Industry-High 99.31% Claim Settlement Ratio for Q1-FY2027 -",
+      "date": "2026-09-20",
+      "status": "pending_review",
+      "reviewDate": "2027-03-19",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQWG55NWRncFpMTFJURmhJdFItWGNsb0dPTHkycHA5c2NCRER4ZjQ0U1dwMTFLdXNjRmNQLUxfUHEtZTJlUmV0UnFsN0ZkUENfR3paQkpJVnJwRzJQd3FkNm1zSjJEUU91TUdHQmI5cW56NnJOcGU4TlpxSE5ibkZ0d2FjWWx6Yk5qMVR2aDhma3UtS29DQ0QtUXZWdkEtVTh5NlREWE15a3daczZ3bFVnblhpak55VzFWc014SUdMTk1JSnl1WEwyNnQwTzY2dw?oc=5",
+          "publisher": "telugutimes.net",
+          "date": "2026-09-20"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "ad8192c8f2334edc0dac",
       "type": "acquisition",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-20T22:59:33.744640Z",
+  "generatedAt": "2026-09-21T01:19:29.788173Z",
   "company": {
     "companyName": "Sage Group PLC",
     "ticker": "SGE.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-19",
-    "observationCount": 63,
-    "scoredDayCount": 2,
-    "latestScore": 49.3,
-    "latestScoreDate": "2026-09-16",
+    "periodEnd": "2026-09-20",
+    "observationCount": 64,
+    "scoredDayCount": 3,
+    "latestScore": 49.2,
+    "latestScoreDate": "2026-09-20",
     "series": [
       {
         "date": "2026-06-30",
@@ -592,6 +592,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-20",
+        "dailyScore": 49.2,
+        "rollingScore": 49.9,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.4,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -614,6 +623,16 @@
         "direction": "Neutral / mixed",
         "detail": null,
         "significance": 0.19
+      },
+      {
+        "date": "2026-09-20",
+        "type": "press_story",
+        "title": "What Matters Now for Sage Group plc (LSE:SGE)?",
+        "source": "kalkinemedia.com",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNTjBUMUtiVl9iZDlHbUNCMWlsYlRfbUpIY2ZpcDdhbXVLYXBGcTV3ZUdRZFg0Y0FCYWdWd2xfcHUwR2h6dEpGdjZwOE5IUGg4Q0NlQTdGNm4welgzZFZ0LXl2SmRQZ2hlMW53eVBBb1kzZGhmZjZGRlVpcVR4bGdGMUo4NXBxMGNrRGM0b0JzOXozZw?oc=5",
+        "direction": "Neutral / mixed",
+        "detail": null,
+        "significance": 0.198
       }
     ]
   },
@@ -700,17 +719,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 52.7,
+    "score": 52.6,
     "label": "Mixed",
-    "evidenceCoverage": 52,
+    "evidenceCoverage": 55,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 50.0,
+        "score": 49.7,
         "weight": 0.4,
-        "reliability": 0.1,
-        "detail": "Recency-weighted average of 2 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.15,
+        "detail": "Recency-weighted average of 3 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -752,6 +771,16 @@
       "direction": "Neutral / mixed",
       "detail": null,
       "significance": 0.19
+    },
+    {
+      "date": "2026-09-20",
+      "type": "press_story",
+      "title": "What Matters Now for Sage Group plc (LSE:SGE)?",
+      "source": "kalkinemedia.com",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNTjBUMUtiVl9iZDlHbUNCMWlsYlRfbUpIY2ZpcDdhbXVLYXBGcTV3ZUdRZFg0Y0FCYWdWd2xfcHUwR2h6dEpGdjZwOE5IUGg4Q0NlQTdGNm4welgzZFZ0LXl2SmRQZ2hlMW53eVBBb1kzZGhmZjZGRlVpcVR4bGdGMUo4NXBxMGNrRGM0b0JzOXozZw?oc=5",
+      "direction": "Neutral / mixed",
+      "detail": null,
+      "significance": 0.198
     }
   ],
   "persistentEvents": []

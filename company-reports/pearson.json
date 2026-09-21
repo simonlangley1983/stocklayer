@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-20T22:59:33.744640Z",
+  "generatedAt": "2026-09-21T01:19:29.788173Z",
   "company": {
     "companyName": "Pearson PLC",
     "ticker": "PSON.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-19",
-    "observationCount": 67,
-    "scoredDayCount": 60,
-    "latestScore": 41.0,
-    "latestScoreDate": "2026-09-19",
+    "periodEnd": "2026-09-20",
+    "observationCount": 68,
+    "scoredDayCount": 61,
+    "latestScore": 50.0,
+    "latestScoreDate": "2026-09-20",
     "series": [
       {
         "date": "2026-06-30",
@@ -628,6 +628,15 @@
         "sourceCount": 14,
         "confidence": 81.7,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-20",
+        "dailyScore": 50.0,
+        "rollingScore": 48.2,
+        "storyCount": 13,
+        "sourceCount": 14,
+        "confidence": 84.7,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -650,16 +659,6 @@
         "direction": "neutral",
         "detail": null,
         "significance": 1.608
-      },
-      {
-        "date": "2026-09-07",
-        "type": "press_story",
-        "title": "Pearson ( NYSE : PSO ) Downgraded to  Hold  Rating by Wall Street Zen",
-        "source": "dailypolitical.com",
-        "url": "https://www.dailypolitical.com/2026/09/06/pearson-nysepso-downgraded-to-hold-rating-by-wall-street-zen.html",
-        "direction": "Very negative",
-        "detail": null,
-        "significance": 1.08
       },
       {
         "date": "2026-09-08",
@@ -730,6 +729,16 @@
         "direction": "negative",
         "detail": "Daily score decreased by 13.9 points",
         "significance": 1.574
+      },
+      {
+        "date": "2026-09-20",
+        "type": "press_story",
+        "title": "Pearson Stock Slumps as Contract Loss Rattles Wall Street",
+        "source": "tipranks.com",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQQmpvWmVxcm9VWUV1VDF0dkk4N3JqVEc4ZlFwSE03eG9VYVFsUG1oLUlmVFY2c25ETWdJM2NaNEpkOFJVMGJIaWxiWTJ2UC1UbVF2TmM4VXU1bzJsb0NhQW15TnpvX0d5eDBHWF93SVp3NkZuSE1aeElsZzVPUkF0a2VkY3lSWHNzazBuYzJoeWdQbGpTV0xjNC1tTUI?oc=5",
+        "direction": "Very negative",
+        "detail": null,
+        "significance": 1.097
       }
     ]
   },
@@ -816,17 +825,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 28.9,
+    "score": 29.0,
     "label": "Low",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 45.4,
+        "score": 45.5,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 60 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 61 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -868,16 +877,6 @@
       "direction": "neutral",
       "detail": null,
       "significance": 1.608
-    },
-    {
-      "date": "2026-09-07",
-      "type": "press_story",
-      "title": "Pearson ( NYSE : PSO ) Downgraded to  Hold  Rating by Wall Street Zen",
-      "source": "dailypolitical.com",
-      "url": "https://www.dailypolitical.com/2026/09/06/pearson-nysepso-downgraded-to-hold-rating-by-wall-street-zen.html",
-      "direction": "Very negative",
-      "detail": null,
-      "significance": 1.08
     },
     {
       "date": "2026-09-08",
@@ -948,9 +947,59 @@
       "direction": "negative",
       "detail": "Daily score decreased by 13.9 points",
       "significance": 1.574
+    },
+    {
+      "date": "2026-09-20",
+      "type": "press_story",
+      "title": "Pearson Stock Slumps as Contract Loss Rattles Wall Street",
+      "source": "tipranks.com",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQQmpvWmVxcm9VWUV1VDF0dkk4N3JqVEc4ZlFwSE03eG9VYVFsUG1oLUlmVFY2c25ETWdJM2NaNEpkOFJVMGJIaWxiWTJ2UC1UbVF2TmM4VXU1bzJsb0NhQW15TnpvX0d5eDBHWF93SVp3NkZuSE1aeElsZzVPUkF0a2VkY3lSWHNzazBuYzJoeWdQbGpTV0xjNC1tTUI?oc=5",
+      "direction": "Very negative",
+      "detail": null,
+      "significance": 1.097
     }
   ],
   "persistentEvents": [
+    {
+      "id": "87ea01456c65842fd2b7",
+      "type": "contract",
+      "title": "Pearson Stock Slumps as Contract Loss Rattles Wall Street",
+      "date": "2026-09-20",
+      "status": "pending_review",
+      "reviewDate": "2027-03-19",
+      "direction": "Very negative",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQQmpvWmVxcm9VWUV1VDF0dkk4N3JqVEc4ZlFwSE03eG9VYVFsUG1oLUlmVFY2c25ETWdJM2NaNEpkOFJVMGJIaWxiWTJ2UC1UbVF2TmM4VXU1bzJsb0NhQW15TnpvX0d5eDBHWF93SVp3NkZuSE1aeElsZzVPUkF0a2VkY3lSWHNzazBuYzJoeWdQbGpTV0xjNC1tTUI?oc=5",
+          "publisher": "tipranks.com",
+          "date": "2026-09-20"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
+    {
+      "id": "2caa171db67d4875457d",
+      "type": "acquisition",
+      "title": "Pearson stock gains on acquisition and strong profit growth",
+      "date": "2026-09-20",
+      "status": "pending_review",
+      "reviewDate": "2027-03-19",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQUHFoRzQzSU9YaGpFWEllMzBISTdGQzFHRVVNRGgxLXVwRUMyNDNPQXlzSUNZMkstWGM4MXk3eHJsNldnUG1JdDBJMi1IQTRhZDdxcXJUNmFqekJYYkhLSFZwa1hNb1FZck1ST0J4SDhGc0xod0hXWHFYTVRMaWt6WXNWYWxZR05JYUV3NDhMLWFSVTd3aFRBTk9TYWwxR1VhTElrZG5zM2ZqdXFSb3QtNXloWmQ0RVlWZTJIa0NnVQ?oc=5",
+          "publisher": "ad-hoc-news.de",
+          "date": "2026-09-20"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "8bf7d3eeb4fb93eff23b",
       "type": "acquisition",

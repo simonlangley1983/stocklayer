@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-20T22:59:33.744640Z",
+  "generatedAt": "2026-09-21T01:19:29.788173Z",
   "company": {
     "companyName": "Marks & Spencer Group PLC",
     "ticker": "MKS.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-19",
-    "observationCount": 60,
-    "scoredDayCount": 56,
-    "latestScore": 54.1,
-    "latestScoreDate": "2026-09-19",
+    "periodEnd": "2026-09-20",
+    "observationCount": 61,
+    "scoredDayCount": 57,
+    "latestScore": 44.2,
+    "latestScoreDate": "2026-09-20",
     "series": [
       {
         "date": "2026-06-30",
@@ -565,19 +565,18 @@
         "sourceCount": 3,
         "confidence": 50.1,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-20",
+        "dailyScore": 44.2,
+        "rollingScore": 52.0,
+        "storyCount": 3,
+        "sourceCount": 3,
+        "confidence": 54.9,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
-      {
-        "date": "2026-08-08",
-        "type": "press_story",
-        "title": "Abingdon man raped woman in toilets of Marks & Spencer",
-        "source": "heraldseries.co.uk",
-        "url": "https://www.heraldseries.co.uk/news/26446724.abingdon-man-raped-woman-toilets-marks-spencer",
-        "direction": "Very negative",
-        "detail": null,
-        "significance": 0.96
-      },
       {
         "date": "2026-08-18",
         "type": "press_story",
@@ -667,6 +666,16 @@
         "direction": "neutral",
         "detail": null,
         "significance": 1.543
+      },
+      {
+        "date": "2026-09-20",
+        "type": "press_story",
+        "title": "Marks & Spencer stock falls as insider sale and FTSE weakness weigh",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQWHUteWtzRzhERUZ5dEtkdlNHLWNzV2dyTXlHSUo2cWRKc25zMW9KSzVic2hSRWZsUXNlZjdxNHMydXh0OVBiWElGc1NqX0VtQUxkekdvdTdpVlNrcEJDbE5XVjJ4YzN5WkhucUhLYlVnM0FJNTI0SXB2NTF2d2YyN2t3ZVo2N3NKb1lWaTQzd01ZMEkyTHZRUmx3Umhyb2Z3a3VreEpjRExwdXRaQ3pLT0FGVmpUd0NoYlFUbEkwa1F2Rno3NmR4MW9qVFU?oc=5",
+        "direction": "Very negative",
+        "detail": null,
+        "significance": 1.101
       }
     ]
   },
@@ -1086,17 +1095,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 45.4,
+    "score": 45.3,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 50.7,
+        "score": 50.5,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 56 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 57 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1153,16 +1162,6 @@
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
-    },
-    {
-      "date": "2026-08-08",
-      "type": "press_story",
-      "title": "Abingdon man raped woman in toilets of Marks & Spencer",
-      "source": "heraldseries.co.uk",
-      "url": "https://www.heraldseries.co.uk/news/26446724.abingdon-man-raped-woman-toilets-marks-spencer",
-      "direction": "Very negative",
-      "detail": null,
-      "significance": 0.96
     },
     {
       "date": "2026-08-18",
@@ -1253,6 +1252,16 @@
       "direction": "neutral",
       "detail": null,
       "significance": 1.543
+    },
+    {
+      "date": "2026-09-20",
+      "type": "press_story",
+      "title": "Marks & Spencer stock falls as insider sale and FTSE weakness weigh",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQWHUteWtzRzhERUZ5dEtkdlNHLWNzV2dyTXlHSUo2cWRKc25zMW9KSzVic2hSRWZsUXNlZjdxNHMydXh0OVBiWElGc1NqX0VtQUxkekdvdTdpVlNrcEJDbE5XVjJ4YzN5WkhucUhLYlVnM0FJNTI0SXB2NTF2d2YyN2t3ZVo2N3NKb1lWaTQzd01ZMEkyTHZRUmx3Umhyb2Z3a3VreEpjRExwdXRaQ3pLT0FGVmpUd0NoYlFUbEkwa1F2Rno3NmR4MW9qVFU?oc=5",
+      "direction": "Very negative",
+      "detail": null,
+      "significance": 1.101
     },
     {
       "date": "2026-12-31",

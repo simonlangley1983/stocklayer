@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-20T22:59:33.744640Z",
+  "generatedAt": "2026-09-21T01:19:29.788173Z",
   "company": {
     "companyName": "Scottish Mortgage Investment Trust PLC",
     "ticker": "SMT.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-19",
-    "observationCount": 76,
-    "scoredDayCount": 25,
-    "latestScore": 50.2,
-    "latestScoreDate": "2026-09-03",
+    "periodEnd": "2026-09-20",
+    "observationCount": 77,
+    "scoredDayCount": 26,
+    "latestScore": 50.6,
+    "latestScoreDate": "2026-09-20",
     "series": [
       {
         "date": "2026-06-30",
@@ -709,9 +709,29 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-20",
+        "dailyScore": 50.6,
+        "rollingScore": 50.0,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.2,
+        "coverageStatus": "ok"
       }
     ],
-    "stories": []
+    "stories": [
+      {
+        "date": "2026-09-20",
+        "type": "press_story",
+        "title": "Price to sales forward of Scottish Mortgage Investment Trust Plc – FWB:1IZ1",
+        "source": "tradingview.com",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNUlFqT0g1V3lyS3pYdWVhS29mTVNiOWpMMVBhWWpheUpUREtlTFNrdmcwWVZ5Wkp1dXV6VUxmdWhGci1Qb21ZU3FxOTRnZHFpVU5nMG5udzRPREM1M0RPRVBzMFgzbk54dzJ6Q0tSVUs2UTJ0TTJPUUpIUExyd2NkTzdnSVVubGcxbmlFLU9nSVBNYTRjU2V1MG5B?oc=5",
+        "direction": "Neutral / mixed",
+        "detail": null,
+        "significance": 0.189
+      }
+    ]
   },
   "annualReportAnalysis": {
     "reportCount": 1,
@@ -796,17 +816,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 42.9,
+    "score": 43.0,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 48.4,
+        "score": 48.6,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 25 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 26 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -820,6 +840,16 @@
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2026-09-20",
+      "type": "press_story",
+      "title": "Price to sales forward of Scottish Mortgage Investment Trust Plc – FWB:1IZ1",
+      "source": "tradingview.com",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNUlFqT0g1V3lyS3pYdWVhS29mTVNiOWpMMVBhWWpheUpUREtlTFNrdmcwWVZ5Wkp1dXV6VUxmdWhGci1Qb21ZU3FxOTRnZHFpVU5nMG5udzRPREM1M0RPRVBzMFgzbk54dzJ6Q0tSVUs2UTJ0TTJPUUpIUExyd2NkTzdnSVVubGcxbmlFLU9nSVBNYTRjU2V1MG5B?oc=5",
+      "direction": "Neutral / mixed",
+      "detail": null,
+      "significance": 0.189
+    },
     {
       "date": "2026-12-31",
       "type": "annual_report",

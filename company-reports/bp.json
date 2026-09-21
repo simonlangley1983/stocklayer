@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-20T22:59:33.744640Z",
+  "generatedAt": "2026-09-21T01:19:29.788173Z",
   "company": {
     "companyName": "BP",
     "ticker": "BP.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-14",
-    "periodEnd": "2026-09-19",
-    "observationCount": 75,
-    "scoredDayCount": 18,
-    "latestScore": 55.7,
-    "latestScoreDate": "2026-09-19",
+    "periodEnd": "2026-09-20",
+    "observationCount": 76,
+    "scoredDayCount": 19,
+    "latestScore": 56.8,
+    "latestScoreDate": "2026-09-20",
     "series": [
       {
         "date": "2026-06-14",
@@ -700,6 +700,15 @@
         "sourceCount": 5,
         "confidence": 75.9,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-20",
+        "dailyScore": 56.8,
+        "rollingScore": 51.8,
+        "storyCount": 4,
+        "sourceCount": 4,
+        "confidence": 63.6,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -888,17 +897,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 41.7,
+    "score": 41.9,
     "label": "Low",
-    "evidenceCoverage": 95,
+    "evidenceCoverage": 97,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.8,
+        "score": 52.3,
         "weight": 0.4,
-        "reliability": 0.9,
-        "detail": "Recency-weighted average of 18 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.95,
+        "detail": "Recency-weighted average of 19 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",

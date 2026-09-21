@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-20T22:59:33.744640Z",
+  "generatedAt": "2026-09-21T01:19:29.788173Z",
   "company": {
     "companyName": "Beazley PLC",
     "ticker": "BEZ.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-14",
-    "periodEnd": "2026-09-19",
-    "observationCount": 81,
-    "scoredDayCount": 60,
-    "latestScore": 60.8,
-    "latestScoreDate": "2026-09-19",
+    "periodEnd": "2026-09-20",
+    "observationCount": 82,
+    "scoredDayCount": 61,
+    "latestScore": 52.5,
+    "latestScoreDate": "2026-09-20",
     "series": [
       {
         "date": "2026-06-14",
@@ -754,6 +754,15 @@
         "sourceCount": 1,
         "confidence": 18.2,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-20",
+        "dailyScore": 52.5,
+        "rollingScore": 52.6,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 18.8,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -942,17 +951,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 40.2,
+    "score": 40.3,
     "label": "Low",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 50.4,
+        "score": 50.5,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 56 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 57 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1077,6 +1086,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "4714fb412533e2e73684",
+      "type": "acquisition",
+      "title": "Beazley stock gains on Zurich Insurance takeover approval",
+      "date": "2026-09-20",
+      "status": "pending_review",
+      "reviewDate": "2027-03-19",
+      "direction": "Slightly positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTkpvRXhHR0lIaDFqNE9wR0wzdnpnc2xDelhqV3hDUGg2Y2VFOWV5Z3RZSVRra1VZYXZiV3hkZUxvQzJnS08zOWJmTG1zWm5LOE8yVWtoRkhiaVpiUmhfRW5hMVB1LW5peWNkaV9uekJVSWNCMFZWMk1PTGVMZGJWdFJlSTNOX2tzUmJGeEluRTA4X0pYT0RMRXBGVGZidlAxZ0hETmlKcGU3MTlXbUlsMkdGdkdXbWdzWExXMA?oc=5",
+          "publisher": "ad-hoc-news.de",
+          "date": "2026-09-20"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "33c7a304e8e98a29ce6e",
       "type": "acquisition",
