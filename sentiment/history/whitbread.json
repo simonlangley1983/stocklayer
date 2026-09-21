@@ -5567,37 +5567,51 @@
     },
     {
       "date": "2026-09-20",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 46.6,
-      "confidence": 0.0,
+      "dailyScore": 52.2,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 47.3,
+      "confidence": 15.8,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 5,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 7,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 0,
+      "neutralStoryCount": 1,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
-        "missing_company_alias": 5
+        "missing_company_alias": 6
       },
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "b1fb19b006f3b045",
+          "storyClusterId": "story-001",
+          "title": "Fatima Whitbread says 14 years in care shaped Antiques Roadshow",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBIRkdKSFEteHd1QTdHMlg2UVJ6MU9MUUhleEx3c3cyNmRuQURLa1pTZHVvSDV4QnF3OWlESW5tX09ESEN1dFZHOQ?oc=5",
+          "source": "el-balad.com",
+          "publishedAt": "2026-09-20T19:56:27Z",
+          "polarity": 0.1328,
+          "sentiment": "Slightly positive",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.8",
+          "evidenceArticleIds": [
+            "b1fb19b006f3b045"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": 1.3
     }
   ]
 }
