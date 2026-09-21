@@ -2283,6 +2283,49 @@
         }
       ],
       "changeFromPreviousScoredDay": -9.5
+    },
+    {
+      "date": "2026-09-20",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 51.5,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 73,
+      "eligibleArticleCount": 0,
+      "storyCount": 0,
+      "effectiveStoryCount": 0,
+      "sourceCount": 0,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 65,
+        "missing_company_alias": 8
+      },
+      "topStories": [],
+      "flags": [
+        {
+          "type": "no_coverage",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": []
+        }
+      ],
+      "changeFromPreviousScoredDay": null
     }
   ]
 }
