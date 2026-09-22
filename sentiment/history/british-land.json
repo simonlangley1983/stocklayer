@@ -2449,35 +2449,49 @@
     },
     {
       "date": "2026-09-21",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 49.5,
-      "confidence": 0.0,
+      "dailyScore": 64.5,
+      "dailyLabel": "Positive",
+      "rollingScore": 51.4,
+      "confidence": 19.7,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 0,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
-      "positiveStoryCount": 0,
+      "candidateCount": 1,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 1,
       "neutralStoryCount": 0,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {},
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "78a903373b4f512c",
+          "storyClusterId": "story-001",
+          "title": "British Land Co. rises Monday, outperforms market",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOSnVXOU1XNlE1Sloxc1dGSVhpekI2YjY0VHJDRWl4LTQ3QzRQcVMwOGRrdGl3ZnZzNXRUWUxucWlEdHp6UjZzMkJFMENIMk9UWmE2cy12VkxBd3lfWHJ3R2g0NmNQTTAtMS1UaHRxRzVIX3ljazNKMFJ5eEdYQmhTY3NfQWtWR3hJd2kwOTRYamV0SUJXbUlTWU1NSEZKTFU2TDVjTkJLM3ozVjdISXZ5RE9rcGlBTVJBMzlvVzFyWEdvN0k?oc=5",
+          "source": "marketwatch.com",
+          "publishedAt": "2026-09-21T16:06:00Z",
+          "polarity": 0.8675,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 19.7",
+          "evidenceArticleIds": [
+            "78a903373b4f512c"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": 28.7
     }
   ]
 }
