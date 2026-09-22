@@ -2667,37 +2667,51 @@
     },
     {
       "date": "2026-09-21",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.5,
-      "confidence": 0.0,
+      "dailyScore": 65.1,
+      "dailyLabel": "Positive",
+      "rollingScore": 52.3,
+      "confidence": 19.6,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 2,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
-      "positiveStoryCount": 0,
+      "candidateCount": 3,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 1,
       "neutralStoryCount": 0,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
         "missing_company_alias": 2
       },
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "afbabb41a5ccff70",
+          "storyClusterId": "story-001",
+          "title": "F&C Investment Trust PLC (FCIT.L) Stock Analysis: Navigating a $6.33 Billion Market Cap with Steady Indicators",
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPdUl1MGlHMkdWSmRwUUIyM3NvcDBxX0JPMEFGRnhkcXMwcHhMcXdyVGhoNVRBS3N5M1V4NlphTlNJcmpCeWJZN0ZmM0s2TEdZWDJnam5Ca1pJbVlVZkU2LUJ2b3RVaWNQUXhkakVOc01hcFBsWmVubFN3ZUpXSmZ0dzEyWFp0UGxVaVFEODRIWjN5Rjkwdl8wcHFfdFcyeVhQanMtRktmMkNnbHBJdFNNREV3LWtfNHpOZjhnbjMzVFpwRF9uUENyc0NlSmlidHNUTGxxQTNsQjR2TlFqU01pbXRCNmI0eVFXZmJaeQ?oc=5",
+          "source": "directorstalkinterviews.com",
+          "publishedAt": "2026-09-21T02:07:16Z",
+          "polarity": 0.9055,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 19.6",
+          "evidenceArticleIds": [
+            "afbabb41a5ccff70"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": 13.5
     }
   ]
 }
