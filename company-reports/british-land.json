@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-22T12:58:27.539390Z",
+  "generatedAt": "2026-09-22T15:35:14.087179Z",
   "company": {
     "companyName": "British Land Co PLC",
     "ticker": "BLND.L",
@@ -22,9 +22,9 @@
     "periodStart": "2026-06-14",
     "periodEnd": "2026-09-21",
     "observationCount": 76,
-    "scoredDayCount": 3,
-    "latestScore": 35.8,
-    "latestScoreDate": "2026-09-18",
+    "scoredDayCount": 4,
+    "latestScore": 64.5,
+    "latestScoreDate": "2026-09-21",
     "series": [
       {
         "date": "2026-06-14",
@@ -703,12 +703,12 @@
       },
       {
         "date": "2026-09-21",
-        "dailyScore": null,
-        "rollingScore": 49.5,
-        "storyCount": 0,
-        "sourceCount": 0,
-        "confidence": 0.0,
-        "coverageStatus": "no_coverage"
+        "dailyScore": 64.5,
+        "rollingScore": 51.4,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 19.7,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -741,6 +741,16 @@
         "direction": "Very negative",
         "detail": null,
         "significance": 1.001
+      },
+      {
+        "date": "2026-09-21",
+        "type": "press_story",
+        "title": "British Land Co. rises Monday, outperforms market",
+        "source": "marketwatch.com",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOSnVXOU1XNlE1Sloxc1dGSVhpekI2YjY0VHJDRWl4LTQ3QzRQcVMwOGRrdGl3ZnZzNXRUWUxucWlEdHp6UjZzMkJFMENIMk9UWmE2cy12VkxBd3lfWHJ3R2g0NmNQTTAtMS1UaHRxRzVIX3ljazNKMFJ5eEdYQmhTY3NfQWtWR3hJd2kwOTRYamV0SUJXbUlTWU1NSEZKTFU2TDVjTkJLM3ozVjdISXZ5RE9rcGlBTVJBMzlvVzFyWEdvN0k?oc=5",
+        "direction": "Very positive",
+        "detail": null,
+        "significance": 1.018
       }
     ]
   },
@@ -941,17 +951,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 49.4,
+    "score": 50.6,
     "label": "Mixed",
-    "evidenceCoverage": 49,
+    "evidenceCoverage": 51,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 50.0,
+        "score": 53.9,
         "weight": 0.4,
-        "reliability": 0.15,
-        "detail": "Recency-weighted average of 3 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.2,
+        "detail": "Recency-weighted average of 4 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1011,6 +1021,16 @@
       "direction": "Very negative",
       "detail": null,
       "significance": 1.001
+    },
+    {
+      "date": "2026-09-21",
+      "type": "press_story",
+      "title": "British Land Co. rises Monday, outperforms market",
+      "source": "marketwatch.com",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOSnVXOU1XNlE1Sloxc1dGSVhpekI2YjY0VHJDRWl4LTQ3QzRQcVMwOGRrdGl3ZnZzNXRUWUxucWlEdHp6UjZzMkJFMENIMk9UWmE2cy12VkxBd3lfWHJ3R2g0NmNQTTAtMS1UaHRxRzVIX3ljazNKMFJ5eEdYQmhTY3NfQWtWR3hJd2kwOTRYamV0SUJXbUlTWU1NSEZKTFU2TDVjTkJLM3ozVjdISXZ5RE9rcGlBTVJBMzlvVzFyWEdvN0k?oc=5",
+      "direction": "Very positive",
+      "detail": null,
+      "significance": 1.018
     },
     {
       "date": "2026-12-31",
