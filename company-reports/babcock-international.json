@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-21T23:50:57.300128Z",
+  "generatedAt": "2026-09-22T01:42:48.463709Z",
   "company": {
     "companyName": "Babcock International Group PLC",
     "ticker": "BAB.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-09-10",
-    "periodEnd": "2026-09-20",
-    "observationCount": 11,
-    "scoredDayCount": 4,
-    "latestScore": 45.1,
-    "latestScoreDate": "2026-09-18",
+    "periodEnd": "2026-09-21",
+    "observationCount": 12,
+    "scoredDayCount": 5,
+    "latestScore": 50.1,
+    "latestScoreDate": "2026-09-21",
     "series": [
       {
         "date": "2026-09-10",
@@ -124,6 +124,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-21",
+        "dailyScore": 50.1,
+        "rollingScore": 50.4,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -196,6 +205,16 @@
         "direction": "Neutral / mixed",
         "detail": null,
         "significance": 0.19
+      },
+      {
+        "date": "2026-09-21",
+        "type": "press_story",
+        "title": "Babcock International (LSE:BAB): What Does Its Latest Agm Update Signal?",
+        "source": "kalkinemedia.com",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOejlpY2Rra29tbm5JelJkNTN0WHBZalJ3OEhIUU5jRjZfaVpPLXFEd3ZFOWJLc1owODdrN3FfZjVsQmN2Ti10ZUsyUkNTVzUyTVYxTWc2RE1iOWRRWGJyUHd0anRxZXlTUC1fb0JYNkRhY0REMGNGY2hxWXhMZXkxWG9raHlSZVFQRnMyRTVZTUV5dlhUaXJzODdSdFBNQ3VCS1FYc2VlUk1naks1X1E?oc=5",
+        "direction": "Neutral / mixed",
+        "detail": null,
+        "significance": 0.158
       }
     ]
   },
@@ -615,17 +634,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 50.1,
+    "score": 50.0,
     "label": "Mixed",
-    "evidenceCoverage": 68,
+    "evidenceCoverage": 70,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.4,
+        "score": 51.1,
         "weight": 0.4,
-        "reliability": 0.2,
-        "detail": "Recency-weighted average of 4 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.25,
+        "detail": "Recency-weighted average of 5 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -752,6 +771,16 @@
       "direction": "Neutral / mixed",
       "detail": null,
       "significance": 0.19
+    },
+    {
+      "date": "2026-09-21",
+      "type": "press_story",
+      "title": "Babcock International (LSE:BAB): What Does Its Latest Agm Update Signal?",
+      "source": "kalkinemedia.com",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOejlpY2Rra29tbm5JelJkNTN0WHBZalJ3OEhIUU5jRjZfaVpPLXFEd3ZFOWJLc1owODdrN3FfZjVsQmN2Ti10ZUsyUkNTVzUyTVYxTWc2RE1iOWRRWGJyUHd0anRxZXlTUC1fb0JYNkRhY0REMGNGY2hxWXhMZXkxWG9raHlSZVFQRnMyRTVZTUV5dlhUaXJzODdSdFBNQ3VCS1FYc2VlUk1naks1X1E?oc=5",
+      "direction": "Neutral / mixed",
+      "detail": null,
+      "significance": 0.158
     },
     {
       "date": "2026-12-31",

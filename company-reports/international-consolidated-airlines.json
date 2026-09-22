@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-21T23:50:57.300128Z",
+  "generatedAt": "2026-09-22T01:42:48.463709Z",
   "company": {
     "companyName": "International Consolidated Airlines Group SA",
     "ticker": "IAG.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-20",
-    "observationCount": 57,
-    "scoredDayCount": 16,
-    "latestScore": 56.2,
-    "latestScoreDate": "2026-09-20",
+    "periodEnd": "2026-09-21",
+    "observationCount": 58,
+    "scoredDayCount": 17,
+    "latestScore": 61.2,
+    "latestScoreDate": "2026-09-21",
     "series": [
       {
         "date": "2026-06-30",
@@ -538,19 +538,18 @@
         "sourceCount": 1,
         "confidence": 18.6,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-21",
+        "dailyScore": 61.2,
+        "rollingScore": 53.9,
+        "storyCount": 2,
+        "sourceCount": 2,
+        "confidence": 36.4,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
-      {
-        "date": "2026-07-17",
-        "type": "press_story",
-        "title": "Comparing International Consolidated Airlines Group ( OTCMKTS : ICAGY ) and Bristow Group ( NYSE : VTOL )",
-        "source": "tickerreport.com",
-        "url": "https://www.tickerreport.com/banking-finance/13506286/comparing-international-consolidated-airlines-group-otcmktsicagy-and-bristow-group-nysevtol.html",
-        "direction": "Positive",
-        "detail": null,
-        "significance": 0.369
-      },
       {
         "date": "2026-07-31",
         "type": "earnings_miss",
@@ -640,6 +639,16 @@
         "direction": "Positive",
         "detail": null,
         "significance": 0.52
+      },
+      {
+        "date": "2026-09-21",
+        "type": "press_story",
+        "title": "International Consolidated Airlines Group advances Monday, outperforms market",
+        "source": "marketwatch.com",
+        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPYVBTM1k5VFlpSnlQTmZjS195TExDV1pMTkZmXzZMenh6TTFieTJ6cE5XdkhCWHZYS3lqSngzODRVclhVbFE3blpKRUF3UEVBSnFQUHdHQUwyM05obXM3WW54TVF1a25TcHZDVEh4ZlU1blBwcEdtalJ1dzBHbF9YZW9SUU1nVVVWNllOUnlDanYxMTF2cWJSY201X2pYeV9oZVg2SUVLVHVxTU9USVN5UGtzLWhaRHFVUGtxQmNlZktfRnVGMDljV2NzZzdkV2lwVkU4SVZmSDVubEZoT3BqLW5yMHMwOGhzMmc?oc=5",
+        "direction": "Very positive",
+        "detail": null,
+        "significance": 1.029
       }
     ]
   },
@@ -726,17 +735,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 50.5,
+    "score": 50.9,
     "label": "Mixed",
-    "evidenceCoverage": 89,
+    "evidenceCoverage": 92,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 53.4,
+        "score": 54.2,
         "weight": 0.4,
-        "reliability": 0.8,
-        "detail": "Recency-weighted average of 16 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.85,
+        "detail": "Recency-weighted average of 17 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -758,16 +767,6 @@
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
-    },
-    {
-      "date": "2026-07-17",
-      "type": "press_story",
-      "title": "Comparing International Consolidated Airlines Group ( OTCMKTS : ICAGY ) and Bristow Group ( NYSE : VTOL )",
-      "source": "tickerreport.com",
-      "url": "https://www.tickerreport.com/banking-finance/13506286/comparing-international-consolidated-airlines-group-otcmktsicagy-and-bristow-group-nysevtol.html",
-      "direction": "Positive",
-      "detail": null,
-      "significance": 0.369
     },
     {
       "date": "2026-07-31",
@@ -858,6 +857,16 @@
       "direction": "Positive",
       "detail": null,
       "significance": 0.52
+    },
+    {
+      "date": "2026-09-21",
+      "type": "press_story",
+      "title": "International Consolidated Airlines Group advances Monday, outperforms market",
+      "source": "marketwatch.com",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPYVBTM1k5VFlpSnlQTmZjS195TExDV1pMTkZmXzZMenh6TTFieTJ6cE5XdkhCWHZYS3lqSngzODRVclhVbFE3blpKRUF3UEVBSnFQUHdHQUwyM05obXM3WW54TVF1a25TcHZDVEh4ZlU1blBwcEdtalJ1dzBHbF9YZW9SUU1nVVVWNllOUnlDanYxMTF2cWJSY201X2pYeV9oZVg2SUVLVHVxTU9USVN5UGtzLWhaRHFVUGtxQmNlZktfRnVGMDljV2NzZzdkV2lwVkU4SVZmSDVubEZoT3BqLW5yMHMwOGhzMmc?oc=5",
+      "direction": "Very positive",
+      "detail": null,
+      "significance": 1.029
     }
   ],
   "persistentEvents": []

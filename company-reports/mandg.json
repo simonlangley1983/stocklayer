@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-21T23:50:57.300128Z",
+  "generatedAt": "2026-09-22T01:42:48.463709Z",
   "company": {
     "companyName": "M&G PLC",
     "ticker": "MNG.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-05",
-    "periodEnd": "2026-09-20",
-    "observationCount": 65,
-    "scoredDayCount": 44,
-    "latestScore": 51.8,
-    "latestScoreDate": "2026-09-20",
+    "periodEnd": "2026-09-21",
+    "observationCount": 66,
+    "scoredDayCount": 45,
+    "latestScore": 57.0,
+    "latestScoreDate": "2026-09-21",
     "series": [
       {
         "date": "2026-07-05",
@@ -610,6 +610,15 @@
         "sourceCount": 1,
         "confidence": 15.7,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-21",
+        "dailyScore": 57.0,
+        "rollingScore": 53.0,
+        "storyCount": 6,
+        "sourceCount": 6,
+        "confidence": 70.8,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -632,16 +641,6 @@
         "direction": "Very positive",
         "detail": null,
         "significance": 1.058
-      },
-      {
-        "date": "2026-09-15",
-        "type": "press_story",
-        "title": "M&G stock heads into the open after a 0.4 percent gain",
-        "source": "ad-hoc-news.de",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOREhSMmxaLUtvaG45N2ZkclEzdGpCTElGMTNzZm5Qa2lrcVhqcFVPWFlzRjY1QV9PazhuM25LbXA3VHFiUDloM0pLR2RPRWZhbEpIUlduSml1UkltQnZTV2EwZlp2SU5lYmZUdTFhTmpMdmJSbFZHNjNWbWJFZjlBZEx6bjZrbk9LVkt3bnF4QkVGdEcwRDcxOXlIOWVYOWQ2elVGSi1nOFU4aUZFLXFEenR4c2oxaEFxdDdFNV9n?oc=5",
-        "direction": "Very positive",
-        "detail": null,
-        "significance": 0.68
       },
       {
         "date": "2026-09-16",
@@ -712,6 +711,16 @@
         "direction": "Very negative",
         "detail": null,
         "significance": 0.9
+      },
+      {
+        "date": "2026-09-21",
+        "type": "coverage_spike",
+        "title": "M&G stock trades steadily as investors focus on income and valuation",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOUldzT0RsSU9HdzhGRm0xTTNGNDI5YUNicFJ4TU41VWhwTkM4anJMcXZJcEtJT1R0aVhGVHYxZFFPV0VwcVZCVHJhWEMybTFHVDNMZktPN3BlMWVPMy1nUWdkQmpudjlJaml1bzNoYWtva0dBaE13dG82NGhFWEVyZU5HSzIybVptN2pneGVCalM5OGJPU1FLei1zVUdWUUlvQktDVjgtVjFuaUtnN3ZJM0h2TGFQakQySUMzdE56Q0NjaUdlcF9VMXl3TjNDTTVl?oc=5",
+        "direction": "neutral",
+        "detail": "6 stories versus trailing median 2",
+        "significance": 1.506
       }
     ]
   },
@@ -912,17 +921,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 44.0,
+    "score": 44.1,
     "label": "Mixed",
     "evidenceCoverage": 83,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.1,
+        "score": 51.4,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 44 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 45 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -981,16 +990,6 @@
       "direction": "Very positive",
       "detail": null,
       "significance": 1.058
-    },
-    {
-      "date": "2026-09-15",
-      "type": "press_story",
-      "title": "M&G stock heads into the open after a 0.4 percent gain",
-      "source": "ad-hoc-news.de",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOREhSMmxaLUtvaG45N2ZkclEzdGpCTElGMTNzZm5Qa2lrcVhqcFVPWFlzRjY1QV9PazhuM25LbXA3VHFiUDloM0pLR2RPRWZhbEpIUlduSml1UkltQnZTV2EwZlp2SU5lYmZUdTFhTmpMdmJSbFZHNjNWbWJFZjlBZEx6bjZrbk9LVkt3bnF4QkVGdEcwRDcxOXlIOWVYOWQ2elVGSi1nOFU4aUZFLXFEenR4c2oxaEFxdDdFNV9n?oc=5",
-      "direction": "Very positive",
-      "detail": null,
-      "significance": 0.68
     },
     {
       "date": "2026-09-16",
@@ -1061,9 +1060,39 @@
       "direction": "Very negative",
       "detail": null,
       "significance": 0.9
+    },
+    {
+      "date": "2026-09-21",
+      "type": "coverage_spike",
+      "title": "M&G stock trades steadily as investors focus on income and valuation",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOUldzT0RsSU9HdzhGRm0xTTNGNDI5YUNicFJ4TU41VWhwTkM4anJMcXZJcEtJT1R0aVhGVHYxZFFPV0VwcVZCVHJhWEMybTFHVDNMZktPN3BlMWVPMy1nUWdkQmpudjlJaml1bzNoYWtva0dBaE13dG82NGhFWEVyZU5HSzIybVptN2pneGVCalM5OGJPU1FLei1zVUdWUUlvQktDVjgtVjFuaUtnN3ZJM0h2TGFQakQySUMzdE56Q0NjaUdlcF9VMXl3TjNDTTVl?oc=5",
+      "direction": "neutral",
+      "detail": "6 stories versus trailing median 2",
+      "significance": 1.506
     }
   ],
   "persistentEvents": [
+    {
+      "id": "603b9efc657d172b94f6",
+      "type": "acquisition",
+      "title": "M&G Reports 0.95% Stake in DCC Energy Plc in Compliance with Irish Takeover Panel Rule 8.3",
+      "date": "2026-09-21",
+      "status": "pending_review",
+      "reviewDate": "2027-03-20",
+      "direction": "Slightly positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOMi1HVXFObHBIYVM4REJ2M0swTmRCdUdTWHNaTG1leWs4WjFvT0dqSjlraHF5VWwtWXVpSDllV0ljc21ORHFkUThMRjQ3UDVnRGVqVHRsR3o0OGtVSnl2OHZ4Y18tUDdQZHFtbjdsTGJZbUNUaGpUS2dGeEZEXzJ5X25RNDVzdi0wWE02QkJ3UDVlcGQ4YnVuSFprMEpFOFBhVFJTQ0FIc09uQ3RiNjN4d0lvY3NTUEdwbXFZZmFzb1ZfTGpqYzhtdzAyekpwQQ?oc=5",
+          "publisher": "kalkinemedia.com",
+          "date": "2026-09-21"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "a394dbdb21b1db091c70",
       "type": "acquisition",

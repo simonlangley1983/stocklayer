@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-21T23:50:57.300128Z",
+  "generatedAt": "2026-09-22T01:42:48.463709Z",
   "company": {
     "companyName": "London Stock Exchange Group",
     "ticker": "LSEG.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-05",
-    "periodEnd": "2026-09-20",
-    "observationCount": 72,
-    "scoredDayCount": 52,
-    "latestScore": 47.6,
-    "latestScoreDate": "2026-09-19",
+    "periodEnd": "2026-09-21",
+    "observationCount": 73,
+    "scoredDayCount": 53,
+    "latestScore": 66.7,
+    "latestScoreDate": "2026-09-21",
     "series": [
       {
         "date": "2026-07-05",
@@ -673,6 +673,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-21",
+        "dailyScore": 66.7,
+        "rollingScore": 53.0,
+        "storyCount": 5,
+        "sourceCount": 5,
+        "confidence": 70.8,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -737,16 +746,6 @@
         "significance": 1.606
       },
       {
-        "date": "2026-09-17",
-        "type": "sentiment_jump",
-        "title": "Partior And LSEG DiSH Test Multi-Bank Settlement For 24/7 Liquidity",
-        "source": "securities.io",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNcDhzWFJ4V1YtVUV5NmNRbmg5cW9DNVlPM2FWVG0xdXhqb19tLVBUT1dRaVdqZUNwRzBSa0N2RVhKQ2lLRzFzbWlobXBJV0lSaXFDSk83Y2d5YXJRSl9oTENjT1hOdG5kSVF6UmtnYmRXZXJkS1p2b2RYMDlHRndPQTkxV3dOQnZ0V21UWUdLTE1WUXI5VXB1UlZR?oc=5",
-        "direction": "positive",
-        "detail": "Daily score increased by 22.3 points",
-        "significance": 1.303
-      },
-      {
         "date": "2026-09-18",
         "type": "sentiment_drop",
         "title": "LSEG: The market is discounting an annuity on the assumption it is perishable",
@@ -775,6 +774,16 @@
         "direction": "mixed",
         "detail": "Positive and negative coverage is unusually dispersed",
         "significance": 1.396
+      },
+      {
+        "date": "2026-09-21",
+        "type": "share_buyback",
+        "title": "Egypt Exchange, LSEG explore expanding Egyptian companies’ access to global capital",
+        "source": "english.ahram.org.eg",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQT0xaQk5GMld3cTRkZmtEMWFXNjV0dGlRRzltcEVJV191UXlsaVNWdHQ3RVlnWnNuNDBOb2hZcF90dDdnbUk0QTVBZUc4Y3ptN0YzdGROWHV6NnJWc3RCVE9iOWNxdWVxdG9lU1RWRHVoNjQxYU91a3JZSml0dEotNTNTVDR3MC1RWXNLVjZTUTVOOWxRcXZ1c2lfNXJkRksxVEhwckZMT252MU9yb1dGSmx4RVF3dDlfSGxYbGRaU2tTSWs3SXZwM0tfSWc5Uzl2Q3c?oc=5",
+        "direction": "positive",
+        "detail": null,
+        "significance": 1.502
       }
     ]
   },
@@ -1121,17 +1130,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 54.3,
+    "score": 54.5,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.7,
+        "score": 52.3,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 52 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 53 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1250,16 +1259,6 @@
       "significance": 1.606
     },
     {
-      "date": "2026-09-17",
-      "type": "sentiment_jump",
-      "title": "Partior And LSEG DiSH Test Multi-Bank Settlement For 24/7 Liquidity",
-      "source": "securities.io",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNcDhzWFJ4V1YtVUV5NmNRbmg5cW9DNVlPM2FWVG0xdXhqb19tLVBUT1dRaVdqZUNwRzBSa0N2RVhKQ2lLRzFzbWlobXBJV0lSaXFDSk83Y2d5YXJRSl9oTENjT1hOdG5kSVF6UmtnYmRXZXJkS1p2b2RYMDlHRndPQTkxV3dOQnZ0V21UWUdLTE1WUXI5VXB1UlZR?oc=5",
-      "direction": "positive",
-      "detail": "Daily score increased by 22.3 points",
-      "significance": 1.303
-    },
-    {
       "date": "2026-09-18",
       "type": "sentiment_drop",
       "title": "LSEG: The market is discounting an annuity on the assumption it is perishable",
@@ -1288,6 +1287,16 @@
       "direction": "mixed",
       "detail": "Positive and negative coverage is unusually dispersed",
       "significance": 1.396
+    },
+    {
+      "date": "2026-09-21",
+      "type": "share_buyback",
+      "title": "Egypt Exchange, LSEG explore expanding Egyptian companies’ access to global capital",
+      "source": "english.ahram.org.eg",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQT0xaQk5GMld3cTRkZmtEMWFXNjV0dGlRRzltcEVJV191UXlsaVNWdHQ3RVlnWnNuNDBOb2hZcF90dDdnbUk0QTVBZUc4Y3ptN0YzdGROWHV6NnJWc3RCVE9iOWNxdWVxdG9lU1RWRHVoNjQxYU91a3JZSml0dEotNTNTVDR3MC1RWXNLVjZTUTVOOWxRcXZ1c2lfNXJkRksxVEhwckZMT252MU9yb1dGSmx4RVF3dDlfSGxYbGRaU2tTSWs3SXZwM0tfSWc5Uzl2Q3c?oc=5",
+      "direction": "positive",
+      "detail": null,
+      "significance": 1.502
     }
   ],
   "persistentEvents": [

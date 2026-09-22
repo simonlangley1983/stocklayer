@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-21T23:50:57.300128Z",
+  "generatedAt": "2026-09-22T01:42:48.463709Z",
   "company": {
     "companyName": "Endeavour Mining PLC",
     "ticker": "EDV.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-20",
-    "observationCount": 63,
-    "scoredDayCount": 33,
-    "latestScore": 42.0,
-    "latestScoreDate": "2026-09-18",
+    "periodEnd": "2026-09-21",
+    "observationCount": 64,
+    "scoredDayCount": 34,
+    "latestScore": 51.8,
+    "latestScoreDate": "2026-09-21",
     "series": [
       {
         "date": "2026-06-30",
@@ -592,19 +592,18 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-21",
+        "dailyScore": 51.8,
+        "rollingScore": 49.0,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.5,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
-      {
-        "date": "2026-07-28",
-        "type": "press_story",
-        "title": "Endeavour Mining ( EDVMF ) Projected to Announce Earnings on Thursday",
-        "source": "dailypolitical.com",
-        "url": "https://www.dailypolitical.com/2026/07/28/endeavour-mining-edvmf-projected-to-announce-earnings-on-thursday.html",
-        "direction": "Neutral / mixed",
-        "detail": null,
-        "significance": 0.248
-      },
       {
         "date": "2026-07-30",
         "type": "press_story",
@@ -694,6 +693,16 @@
         "direction": "Negative",
         "detail": null,
         "significance": 0.629
+      },
+      {
+        "date": "2026-09-21",
+        "type": "press_story",
+        "title": "Endeavour Mining (LSE:EDV): What Does Its Latest Growth Pipeline Signal?",
+        "source": "kalkinemedia.com",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPalJERjJfNVpkM2tySEMwMmxIZHZrV2E3TVJzQnV6N3B1SXoyMFFjemE2MkxsbmFZeF9FeXNXQXpzWDN2c2pobWIwdkQ1WnJ6ZklxZkJfTnpUcFpWT1FFZlFVMUFNUEViNUkzRlllemdRVlYwQ0haY0dGanJOZnJEQ3V0VjZCNDZNT3RGVGstdXhRdGtlVW16X0x4aEJhRDBocnJ2VWhMVlJDTHM?oc=5",
+        "direction": "Slightly positive",
+        "detail": null,
+        "significance": 0.258
       }
     ]
   },
@@ -780,17 +789,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 38.9,
+    "score": 39.1,
     "label": "Low",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 45.9,
+        "score": 46.3,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 33 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 34 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -812,16 +821,6 @@
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
-    },
-    {
-      "date": "2026-07-28",
-      "type": "press_story",
-      "title": "Endeavour Mining ( EDVMF ) Projected to Announce Earnings on Thursday",
-      "source": "dailypolitical.com",
-      "url": "https://www.dailypolitical.com/2026/07/28/endeavour-mining-edvmf-projected-to-announce-earnings-on-thursday.html",
-      "direction": "Neutral / mixed",
-      "detail": null,
-      "significance": 0.248
     },
     {
       "date": "2026-07-30",
@@ -912,6 +911,16 @@
       "direction": "Negative",
       "detail": null,
       "significance": 0.629
+    },
+    {
+      "date": "2026-09-21",
+      "type": "press_story",
+      "title": "Endeavour Mining (LSE:EDV): What Does Its Latest Growth Pipeline Signal?",
+      "source": "kalkinemedia.com",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPalJERjJfNVpkM2tySEMwMmxIZHZrV2E3TVJzQnV6N3B1SXoyMFFjemE2MkxsbmFZeF9FeXNXQXpzWDN2c2pobWIwdkQ1WnJ6ZklxZkJfTnpUcFpWT1FFZlFVMUFNUEViNUkzRlllemdRVlYwQ0haY0dGanJOZnJEQ3V0VjZCNDZNT3RGVGstdXhRdGtlVW16X0x4aEJhRDBocnJ2VWhMVlJDTHM?oc=5",
+      "direction": "Slightly positive",
+      "detail": null,
+      "significance": 0.258
     }
   ],
   "persistentEvents": []

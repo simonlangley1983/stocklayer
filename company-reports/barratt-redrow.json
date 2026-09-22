@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-21T23:50:57.300128Z",
+  "generatedAt": "2026-09-22T01:42:48.463709Z",
   "company": {
     "companyName": "Barratt Redrow PLC",
     "ticker": "BTRW.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-20",
-    "observationCount": 72,
-    "scoredDayCount": 39,
-    "latestScore": 61.9,
-    "latestScoreDate": "2026-09-19",
+    "periodEnd": "2026-09-21",
+    "observationCount": 73,
+    "scoredDayCount": 40,
+    "latestScore": 41.4,
+    "latestScoreDate": "2026-09-21",
     "series": [
       {
         "date": "2026-06-30",
@@ -673,6 +673,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-21",
+        "dailyScore": 41.4,
+        "rollingScore": 50.1,
+        "storyCount": 14,
+        "sourceCount": 12,
+        "confidence": 84.3,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -685,16 +694,6 @@
         "direction": "mixed",
         "detail": "Positive and negative coverage is unusually dispersed",
         "significance": 1.592
-      },
-      {
-        "date": "2026-08-04",
-        "type": "press_story",
-        "title": "Barratt Redrow SIPP income case tested as buyback completes and yield holds above 6 %",
-        "source": "financial-news.co.uk",
-        "url": "https://www.financial-news.co.uk/barratt-redrow-sipp-income-case-tested-as-buyback-completes-and-yield-holds-above-6",
-        "direction": "Very positive",
-        "detail": null,
-        "significance": 1.077
       },
       {
         "date": "2026-09-16",
@@ -767,14 +766,24 @@
         "significance": 1.504
       },
       {
-        "date": "2026-09-19",
-        "type": "sentiment_jump",
-        "title": "Redrow stock gains attention after Barratt Redrow results",
+        "date": "2026-09-21",
+        "type": "share_buyback",
+        "title": "Barratt Redrow stock slips after Peel Hunt cuts rating",
         "source": "ad-hoc-news.de",
-        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNbmNUMHlYWE1qczIxQU1LYkFKM19fN1RJbU1aUXZyM1c2X1prSW1VSmc1NnNpNkZ1VDExa3MxdDB3bURQOUVud1MzSnRxbnRGNld5dEFvejQ0MlIyVjJMclFhTU1VYjRkTWlwcjhoWE1TcEd0UDNGTEUzTXRDQVhBcDYtbDRTeXJ2V0NrcHFkN05iajEwaFh6TnBjWkplRTh4S0E0eG5DWGFjbkkwZVZWaC1nN3lnVElheXNSWA?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPd0xaWUg2MkJHeC1aX1lMLV9adFF3OTFfR252ajl5Z0hFTENZSFZtQnVIRldLeGRIMFZjOTJQXy0wYlFwN3lDMVU2Mk1HQ2UyR2lTYlVxcS1qajhkaEJPRVlpX0lUNmVWTTI0dG40RDVDVmJxaE5FYTFWTkExMVJlRWFaek1BUjl5MVFJWHg1T1hCdjl1UExFay11dEJNb0ZFVE9lZENORGdFLS11ek9QR00xTDBFZldx?oc=5",
         "direction": "positive",
-        "detail": "Daily score increased by 14.7 points",
-        "significance": 1.109
+        "detail": null,
+        "significance": 1.594
+      },
+      {
+        "date": "2026-09-21",
+        "type": "share_buyback",
+        "title": "LONDON BROKER RATINGS: Peel Hunt cuts Barratt Redrow to 'hold'",
+        "source": "lse.co.uk",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPd2w3TjBibzJ0UU04TWVzVy1zazZVbXNIOUNPZENGeDJxeFdjdHI5UXNEUmx0WlItV3pjTndTbkJHRzF0ZXZRRndXcERzVnI3SkU2Z3k5SkZQTmM1eGR4Q2xWX016Y2wwVENvVDJEQW1ydnRlMlA3aXp3MklWM0VKLTEySkNMcm1SNEhLaFZXTFczNnRlSnRuVUczaXEzdzlXemZJdE1VQTV0OXM?oc=5",
+        "direction": "positive",
+        "detail": null,
+        "significance": 1.51
       }
     ]
   },
@@ -861,17 +870,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 47.4,
+    "score": 47.2,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.5,
+        "score": 51.0,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 39 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 40 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -903,16 +912,6 @@
       "direction": "mixed",
       "detail": "Positive and negative coverage is unusually dispersed",
       "significance": 1.592
-    },
-    {
-      "date": "2026-08-04",
-      "type": "press_story",
-      "title": "Barratt Redrow SIPP income case tested as buyback completes and yield holds above 6 %",
-      "source": "financial-news.co.uk",
-      "url": "https://www.financial-news.co.uk/barratt-redrow-sipp-income-case-tested-as-buyback-completes-and-yield-holds-above-6",
-      "direction": "Very positive",
-      "detail": null,
-      "significance": 1.077
     },
     {
       "date": "2026-09-16",
@@ -985,14 +984,24 @@
       "significance": 1.504
     },
     {
-      "date": "2026-09-19",
-      "type": "sentiment_jump",
-      "title": "Redrow stock gains attention after Barratt Redrow results",
+      "date": "2026-09-21",
+      "type": "share_buyback",
+      "title": "Barratt Redrow stock slips after Peel Hunt cuts rating",
       "source": "ad-hoc-news.de",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNbmNUMHlYWE1qczIxQU1LYkFKM19fN1RJbU1aUXZyM1c2X1prSW1VSmc1NnNpNkZ1VDExa3MxdDB3bURQOUVud1MzSnRxbnRGNld5dEFvejQ0MlIyVjJMclFhTU1VYjRkTWlwcjhoWE1TcEd0UDNGTEUzTXRDQVhBcDYtbDRTeXJ2V0NrcHFkN05iajEwaFh6TnBjWkplRTh4S0E0eG5DWGFjbkkwZVZWaC1nN3lnVElheXNSWA?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPd0xaWUg2MkJHeC1aX1lMLV9adFF3OTFfR252ajl5Z0hFTENZSFZtQnVIRldLeGRIMFZjOTJQXy0wYlFwN3lDMVU2Mk1HQ2UyR2lTYlVxcS1qajhkaEJPRVlpX0lUNmVWTTI0dG40RDVDVmJxaE5FYTFWTkExMVJlRWFaek1BUjl5MVFJWHg1T1hCdjl1UExFay11dEJNb0ZFVE9lZENORGdFLS11ek9QR00xTDBFZldx?oc=5",
       "direction": "positive",
-      "detail": "Daily score increased by 14.7 points",
-      "significance": 1.109
+      "detail": null,
+      "significance": 1.594
+    },
+    {
+      "date": "2026-09-21",
+      "type": "share_buyback",
+      "title": "LONDON BROKER RATINGS: Peel Hunt cuts Barratt Redrow to 'hold'",
+      "source": "lse.co.uk",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPd2w3TjBibzJ0UU04TWVzVy1zazZVbXNIOUNPZENGeDJxeFdjdHI5UXNEUmx0WlItV3pjTndTbkJHRzF0ZXZRRndXcERzVnI3SkU2Z3k5SkZQTmM1eGR4Q2xWX016Y2wwVENvVDJEQW1ydnRlMlA3aXp3MklWM0VKLTEySkNMcm1SNEhLaFZXTFczNnRlSnRuVUczaXEzdzlXemZJdE1VQTV0OXM?oc=5",
+      "direction": "positive",
+      "detail": null,
+      "significance": 1.51
     }
   ],
   "persistentEvents": []

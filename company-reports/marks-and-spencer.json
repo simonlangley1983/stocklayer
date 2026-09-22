@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-21T23:50:57.300128Z",
+  "generatedAt": "2026-09-22T01:42:48.463709Z",
   "company": {
     "companyName": "Marks & Spencer Group PLC",
     "ticker": "MKS.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-20",
-    "observationCount": 61,
-    "scoredDayCount": 57,
-    "latestScore": 44.2,
-    "latestScoreDate": "2026-09-20",
+    "periodEnd": "2026-09-21",
+    "observationCount": 62,
+    "scoredDayCount": 58,
+    "latestScore": 57.3,
+    "latestScoreDate": "2026-09-21",
     "series": [
       {
         "date": "2026-06-30",
@@ -574,19 +574,18 @@
         "sourceCount": 3,
         "confidence": 54.9,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-21",
+        "dailyScore": 57.3,
+        "rollingScore": 52.7,
+        "storyCount": 5,
+        "sourceCount": 4,
+        "confidence": 67.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
-      {
-        "date": "2026-08-18",
-        "type": "press_story",
-        "title": "Marks & Spencer launches pet food range in latest bid to win customer weekly shops",
-        "source": "dailymail.com",
-        "url": "https://www.dailymail.com/money/markets/article-16061907/Marks-Spencer-launches-pet-food-range-latest-bid-win-customers-weekly-shops.html",
-        "direction": "Very positive",
-        "detail": null,
-        "significance": 0.978
-      },
       {
         "date": "2026-09-15",
         "type": "sentiment_jump",
@@ -676,6 +675,16 @@
         "direction": "Very negative",
         "detail": null,
         "significance": 1.101
+      },
+      {
+        "date": "2026-09-21",
+        "type": "sentiment_jump",
+        "title": "Marks & Spencer stock holds steady as investors eye recent earnings and guidance",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOeXZUUTVhVEZfSXlrcUxMc1N3UnlpNm0zbDFPbzRyOG9VdWdVZkY5QUdPSkZCUnBFMVlUQjJ0bkpqNEx2WUNENExUSVVVSUl3dS15RGJraDhMVmFIMWZRdFhZc3VsZHRKeENYdEtMVko3bjl4WjlPcG9NZTdLTElUajV5eEk3dkNsSXBfbVNsVzhGUmctWnY2R2o0VG1BdFFSYWtaRS1IWHB1TVN1WU44Z3NRNjNCUl9vbnYta3M0bjBvemRrcXZzMEFCa18?oc=5",
+        "direction": "positive",
+        "detail": "Daily score increased by 13.1 points",
+        "significance": 1.494
       }
     ]
   },
@@ -1095,17 +1104,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 45.3,
+    "score": 45.4,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 50.5,
+        "score": 50.7,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 57 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 58 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1162,16 +1171,6 @@
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
-    },
-    {
-      "date": "2026-08-18",
-      "type": "press_story",
-      "title": "Marks & Spencer launches pet food range in latest bid to win customer weekly shops",
-      "source": "dailymail.com",
-      "url": "https://www.dailymail.com/money/markets/article-16061907/Marks-Spencer-launches-pet-food-range-latest-bid-win-customers-weekly-shops.html",
-      "direction": "Very positive",
-      "detail": null,
-      "significance": 0.978
     },
     {
       "date": "2026-09-15",
@@ -1262,6 +1261,16 @@
       "direction": "Very negative",
       "detail": null,
       "significance": 1.101
+    },
+    {
+      "date": "2026-09-21",
+      "type": "sentiment_jump",
+      "title": "Marks & Spencer stock holds steady as investors eye recent earnings and guidance",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOeXZUUTVhVEZfSXlrcUxMc1N3UnlpNm0zbDFPbzRyOG9VdWdVZkY5QUdPSkZCUnBFMVlUQjJ0bkpqNEx2WUNENExUSVVVSUl3dS15RGJraDhMVmFIMWZRdFhZc3VsZHRKeENYdEtMVko3bjl4WjlPcG9NZTdLTElUajV5eEk3dkNsSXBfbVNsVzhGUmctWnY2R2o0VG1BdFFSYWtaRS1IWHB1TVN1WU44Z3NRNjNCUl9vbnYta3M0bjBvemRrcXZzMEFCa18?oc=5",
+      "direction": "positive",
+      "detail": "Daily score increased by 13.1 points",
+      "significance": 1.494
     },
     {
       "date": "2026-12-31",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-21T23:50:57.300128Z",
+  "generatedAt": "2026-09-22T01:42:48.463709Z",
   "company": {
     "companyName": "St James's Place PLC",
     "ticker": "STJ.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-10",
-    "periodEnd": "2026-09-20",
-    "observationCount": 65,
-    "scoredDayCount": 5,
-    "latestScore": 50.0,
-    "latestScoreDate": "2026-09-19",
+    "periodEnd": "2026-09-21",
+    "observationCount": 66,
+    "scoredDayCount": 6,
+    "latestScore": 37.9,
+    "latestScoreDate": "2026-09-21",
     "series": [
       {
         "date": "2026-07-10",
@@ -610,6 +610,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-21",
+        "dailyScore": 37.9,
+        "rollingScore": 49.0,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 18.9,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -672,6 +681,16 @@
         "direction": "Neutral / mixed",
         "detail": null,
         "significance": 0.152
+      },
+      {
+        "date": "2026-09-21",
+        "type": "press_story",
+        "title": "St. James’s Place Completes £128m Share Buy-Back and Cancels 11.2m Shares",
+        "source": "tipranks.com",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNM2czN1BldHpCOGRGcUl1RnFqNXdPX0RZeGEzZ0VIVWdFN3pnaEVNREd5XzIzSmNBa2JwQ3p2dXZpVnEzRm5NSTlVejV4Qml4Q2RoT19ELVdibnF3U01ZYkY2S0g4ZmdfOTNObGxIeGFSNW1pZzBTSEVfUkxaRkY5dE9tTWtUVXZ3UVBpdEdXa3YwN0JqSjJLS09ncmpsc2Z1UUJ3OXRYVUJqX24zMEtpN25lME9IRGcxcEpyd0dRcw?oc=5",
+        "direction": "Very negative",
+        "detail": null,
+        "significance": 0.876
       }
     ]
   },
@@ -758,17 +777,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 47.0,
+    "score": 45.9,
     "label": "Mixed",
-    "evidenceCoverage": 60,
+    "evidenceCoverage": 63,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.5,
+        "score": 49.1,
         "weight": 0.4,
-        "reliability": 0.25,
-        "detail": "Recency-weighted average of 5 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.3,
+        "detail": "Recency-weighted average of 6 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -850,6 +869,16 @@
       "direction": "Neutral / mixed",
       "detail": null,
       "significance": 0.152
+    },
+    {
+      "date": "2026-09-21",
+      "type": "press_story",
+      "title": "St. James’s Place Completes £128m Share Buy-Back and Cancels 11.2m Shares",
+      "source": "tipranks.com",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNM2czN1BldHpCOGRGcUl1RnFqNXdPX0RZeGEzZ0VIVWdFN3pnaEVNREd5XzIzSmNBa2JwQ3p2dXZpVnEzRm5NSTlVejV4Qml4Q2RoT19ELVdibnF3U01ZYkY2S0g4ZmdfOTNObGxIeGFSNW1pZzBTSEVfUkxaRkY5dE9tTWtUVXZ3UVBpdEdXa3YwN0JqSjJLS09ncmpsc2Z1UUJ3OXRYVUJqX24zMEtpN25lME9IRGcxcEpyd0dRcw?oc=5",
+      "direction": "Very negative",
+      "detail": null,
+      "significance": 0.876
     }
   ],
   "persistentEvents": []
