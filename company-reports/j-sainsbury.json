@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-23T18:55:56.003250Z",
+  "generatedAt": "2026-09-23T20:14:59.713884Z",
   "company": {
     "companyName": "J Sainsbury PLC",
     "ticker": "SBRY.L",
@@ -732,8 +732,81 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 1,
+    "reportCount": 2,
     "reports": [
+      {
+        "year": 2025,
+        "title": "J Sainsbury PLC Annual Report 2025",
+        "url": "https://corporate.sainsburys.co.uk/media/1kydmu4w/sainsbury-annual-report-and-financial-statements-2025-accessible.pdf",
+        "sourceUrl": "https://corporate.sainsburys.co.uk/investors/annual-report-2025/",
+        "wordCount": 154560,
+        "pageCount": 224,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 8,
+            "per10kWords": 0.518
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 4,
+            "per10kWords": 0.259
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 10,
+            "per10kWords": 0.647
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 115,
+            "per10kWords": 7.44
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 41,
+            "per10kWords": 2.653
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 60,
+            "per10kWords": 3.882
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 2,
+            "per10kWords": 0.129
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 49,
+            "per10kWords": 3.17
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 40.3,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2026,
         "title": "sainsburys-bank-annual-report-2026.pdf",
@@ -808,15 +881,56 @@
         "positivityMethod": "lexical annual-report tone"
       }
     ],
-    "emergingKeywords": [],
+    "emergingKeywords": [
+      {
+        "key": "regulation",
+        "label": "Regulation",
+        "mentions": 47,
+        "per10kWords": 13.973,
+        "previousPer10kWords": 7.44,
+        "changePer10kWords": 6.533
+      },
+      {
+        "key": "restructuring",
+        "label": "Restructuring",
+        "mentions": 12,
+        "per10kWords": 3.568,
+        "previousPer10kWords": 3.17,
+        "changePer10kWords": 0.398
+      },
+      {
+        "key": "margin_pressure",
+        "label": "Margin pressure",
+        "mentions": 0,
+        "per10kWords": 0.0,
+        "previousPer10kWords": 0.0,
+        "changePer10kWords": 0.0
+      },
+      {
+        "key": "data_center",
+        "label": "Data centres",
+        "mentions": 0,
+        "per10kWords": 0.0,
+        "previousPer10kWords": 0.0,
+        "changePer10kWords": 0.0
+      },
+      {
+        "key": "china",
+        "label": "China",
+        "mentions": 0,
+        "per10kWords": 0.0,
+        "previousPer10kWords": 0.129,
+        "changePer10kWords": -0.129
+      }
+    ],
     "latestPositivity": 10.7,
     "latestPositivityMethod": "lexical annual-report tone",
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 32.7,
+    "score": 34.0,
     "label": "Low",
-    "evidenceCoverage": 81,
+    "evidenceCoverage": 69,
     "components": [
       {
         "key": "press",
@@ -833,11 +947,28 @@
         "weight": 0.35,
         "reliability": 1.0,
         "detail": "Lexical annual-report tone."
+      },
+      {
+        "key": "themes",
+        "label": "Emerging themes",
+        "score": 32.2,
+        "weight": 0.25,
+        "reliability": 0.333,
+        "detail": "Change in growth-theme density compared with pressure and risk themes."
       }
     ],
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2025-12-31",
+      "type": "annual_report",
+      "title": "J Sainsbury PLC Annual Report 2025",
+      "url": "https://corporate.sainsburys.co.uk/media/1kydmu4w/sainsbury-annual-report-and-financial-statements-2025-accessible.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2026-06-30",
       "type": "high_disagreement",
