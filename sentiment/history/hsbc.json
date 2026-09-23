@@ -4912,25 +4912,25 @@
     },
     {
       "date": "2026-09-22",
-      "dailyScore": 38.9,
-      "dailyLabel": "Negative",
-      "rollingScore": 48.5,
-      "confidence": 27.4,
-      "confidenceBand": "low",
+      "dailyScore": 40.8,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 48.7,
+      "confidence": 40.1,
+      "confidenceBand": "medium",
       "coverageStatus": "ok",
       "collectionCompleteness": 0.75,
-      "candidateCount": 53,
-      "eligibleArticleCount": 2,
-      "storyCount": 2,
-      "effectiveStoryCount": 2.0,
-      "sourceCount": 2,
+      "candidateCount": 57,
+      "eligibleArticleCount": 3,
+      "storyCount": 3,
+      "effectiveStoryCount": 3.0,
+      "sourceCount": 3,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 1,
+      "neutralStoryCount": 2,
       "negativeStoryCount": 1,
-      "dispersion": 0.4667,
+      "dispersion": 0.4285,
       "rejectedCandidateCounts": {
         "ambiguous_company_without_alias": 41,
-        "missing_company_alias": 10
+        "missing_company_alias": 13
       },
       "topStories": [
         {
@@ -4942,6 +4942,17 @@
           "publishedAt": "2026-09-22T16:07:00Z",
           "polarity": -0.9114,
           "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "d83e7fb6ca21c0da",
+          "storyClusterId": "story-003",
+          "title": "HSBC Holdings plc (HSBA.L) Stock Price, News, Quote & History",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9jeWk3amdPQUF6OFd2cXNHTG51US0wNmdrZ1liU1RaeW9qYjVfUVJOWno5UEk1ZUFpVUduY0Y0c205TE05bWk0cEJrWGhtWXZKdzZXbGxYSW9OWVp5ZjNYVFl0QS0?oc=5",
+          "source": "ca.finance.yahoo.com",
+          "publishedAt": "2026-09-22T19:21:42Z",
+          "polarity": -0.029,
+          "sentiment": "Neutral / mixed",
           "publisherCount": 1
         },
         {
@@ -4958,17 +4969,6 @@
       ],
       "flags": [
         {
-          "type": "low_confidence",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Confidence is 27.4",
-          "evidenceArticleIds": [
-            "596cff30729d8107",
-            "45fb3ca93e051a0a"
-          ]
-        },
-        {
           "type": "collection_degraded",
           "direction": "neutral",
           "severity": "medium",
@@ -4976,11 +4976,12 @@
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
             "596cff30729d8107",
+            "d83e7fb6ca21c0da",
             "45fb3ca93e051a0a"
           ]
         }
       ],
-      "changeFromPreviousScoredDay": -11.2
+      "changeFromPreviousScoredDay": -9.3
     }
   ]
 }
