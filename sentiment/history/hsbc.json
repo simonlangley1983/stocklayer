@@ -4912,25 +4912,25 @@
     },
     {
       "date": "2026-09-22",
-      "dailyScore": 41.1,
-      "dailyLabel": "Slightly negative",
-      "rollingScore": 48.7,
-      "confidence": 40.0,
-      "confidenceBand": "medium",
+      "dailyScore": 38.9,
+      "dailyLabel": "Negative",
+      "rollingScore": 48.5,
+      "confidence": 27.4,
+      "confidenceBand": "low",
       "coverageStatus": "ok",
       "collectionCompleteness": 0.75,
-      "candidateCount": 54,
-      "eligibleArticleCount": 3,
-      "storyCount": 3,
-      "effectiveStoryCount": 3.0,
-      "sourceCount": 3,
+      "candidateCount": 53,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 2,
+      "neutralStoryCount": 1,
       "negativeStoryCount": 1,
-      "dispersion": 0.435,
+      "dispersion": 0.4667,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 42,
-        "missing_company_alias": 9
+        "ambiguous_company_without_alias": 41,
+        "missing_company_alias": 10
       },
       "topStories": [
         {
@@ -4954,20 +4954,20 @@
           "polarity": 0.0219,
           "sentiment": "Neutral / mixed",
           "publisherCount": 1
-        },
-        {
-          "id": "09d4fb9b171af1fd",
-          "storyClusterId": "story-003",
-          "title": "HSBC News | HSBC HOLDINGS PLC-SPONS ADR (NYSE:HSBC)",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1aZkxJM0x3Uy1DVVkzckp6Mk8yOXVESXBqb3R6cVg2ODkyaXFZQzRLWHVQdTBkMHNMeTdEZ0w0Q1lPVFl6b0ZELW5ESWZkT2Y4clFQSFJHSVJYVEU?oc=5",
-          "source": "chartmill.com",
-          "publishedAt": "2026-09-22T20:16:36Z",
-          "polarity": 0.0003,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
         }
       ],
       "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 27.4",
+          "evidenceArticleIds": [
+            "596cff30729d8107",
+            "45fb3ca93e051a0a"
+          ]
+        },
         {
           "type": "collection_degraded",
           "direction": "neutral",
@@ -4976,12 +4976,11 @@
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
             "596cff30729d8107",
-            "45fb3ca93e051a0a",
-            "09d4fb9b171af1fd"
+            "45fb3ca93e051a0a"
           ]
         }
       ],
-      "changeFromPreviousScoredDay": -9.0
+      "changeFromPreviousScoredDay": -11.2
     }
   ]
 }

@@ -2372,19 +2372,19 @@
     },
     {
       "date": "2026-09-22",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 51.3,
-      "confidence": 0.0,
+      "dailyScore": 61.1,
+      "dailyLabel": "Positive",
+      "rollingScore": 52.4,
+      "confidence": 13.7,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 0.75,
-      "candidateCount": 54,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
-      "positiveStoryCount": 0,
+      "candidateCount": 55,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 1,
       "neutralStoryCount": 0,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
@@ -2392,15 +2392,29 @@
         "ambiguous_company_without_alias": 53,
         "missing_company_alias": 1
       },
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "556348e0b714d645",
+          "storyClusterId": "story-001",
+          "title": "Member News: Next phase of major £2.5m retail improvements revealed at Aberdeen International Airport",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNYXhzeXlfc1JOM09aMWRES2lnVDhoMEd1aXBJXzFCQlN5TEhMVE9HYl9WVXUwSmxDWlRjOWhObmNIcFhpWmJmVUR5UTJvR01TbEU4Y0VTQzEtXzkzUHRWMktzTU1wWWZ0MV8ySFhucWJ5TWNheDVTb2gxbm5TX3FESFpFbENtTUhiVXlBZ1MtRXpzUVVSSGJ3?oc=5",
+          "source": "scottishtourismalliance.co.uk",
+          "publishedAt": "2026-09-22T10:43:38Z",
+          "polarity": 0.6641,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 13.7",
+          "evidenceArticleIds": [
+            "556348e0b714d645"
+          ]
         },
         {
           "type": "collection_degraded",
@@ -2408,10 +2422,12 @@
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": []
+          "evidenceArticleIds": [
+            "556348e0b714d645"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": 6.0
     }
   ]
 }
