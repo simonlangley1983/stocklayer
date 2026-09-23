@@ -4680,27 +4680,38 @@
     },
     {
       "date": "2026-09-22",
-      "dailyScore": 50.3,
+      "dailyScore": 51.7,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 51.2,
-      "confidence": 11.4,
+      "rollingScore": 51.3,
+      "confidence": 24.0,
       "confidenceBand": "low",
       "coverageStatus": "ok",
       "collectionCompleteness": 0.75,
-      "candidateCount": 63,
-      "eligibleArticleCount": 1,
-      "storyCount": 1,
-      "effectiveStoryCount": 1.0,
-      "sourceCount": 1,
+      "candidateCount": 58,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 1,
+      "neutralStoryCount": 2,
       "negativeStoryCount": 0,
-      "dispersion": 0.0,
+      "dispersion": 0.046,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 57,
+        "ambiguous_company_without_alias": 51,
         "missing_company_alias": 5
       },
       "topStories": [
+        {
+          "id": "26b489d959ab26fc",
+          "storyClusterId": "story-002",
+          "title": "Barclays plc Launches A Booking Centre in the Republic",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUHEzdjBMTC1LLVM4TUVqeU5zM0VlYnpRbUl5V1N1LVNmblpuNGVrajdJTVJlYjF6ZFB2ajY4SEE3a3V6T2xhQzZhU2ZfNnF6Sm15bjlFcThhN3BFSFVVdXlVMWw1T0I4cXRRakJnNkFuWnUxSmk4dkRtTDlvaXRQQWpRM25xbC1hTl9XU0JaUG14YkVUUUVpWWxlXzNuc2VraTRmQlBmRDJTVEU?oc=5",
+          "source": "marketscreener.com",
+          "publishedAt": "2026-09-22T16:21:22Z",
+          "polarity": 0.1122,
+          "sentiment": "Slightly positive",
+          "publisherCount": 1
+        },
         {
           "id": "74811db74a37fb5b",
           "storyClusterId": "story-001",
@@ -4719,8 +4730,9 @@
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 11.4",
+          "detail": "Confidence is 24.0",
           "evidenceArticleIds": [
+            "26b489d959ab26fc",
             "74811db74a37fb5b"
           ]
         },
@@ -4731,11 +4743,12 @@
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
+            "26b489d959ab26fc",
             "74811db74a37fb5b"
           ]
         }
       ],
-      "changeFromPreviousScoredDay": -14.0
+      "changeFromPreviousScoredDay": -12.6
     }
   ]
 }

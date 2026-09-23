@@ -4912,46 +4912,76 @@
     },
     {
       "date": "2026-09-22",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.0,
-      "confidence": 0.0,
-      "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "dailyScore": 41.1,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 48.7,
+      "confidence": 40.0,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
       "collectionCompleteness": 0.75,
-      "candidateCount": 53,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 54,
+      "eligibleArticleCount": 3,
+      "storyCount": 3,
+      "effectiveStoryCount": 3.0,
+      "sourceCount": 3,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 0,
-      "negativeStoryCount": 0,
-      "dispersion": 0.0,
+      "neutralStoryCount": 2,
+      "negativeStoryCount": 1,
+      "dispersion": 0.435,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 47,
-        "missing_company_alias": 6
+        "ambiguous_company_without_alias": 42,
+        "missing_company_alias": 9
       },
-      "topStories": [],
-      "flags": [
+      "topStories": [
         {
-          "type": "no_coverage",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "id": "596cff30729d8107",
+          "storyClusterId": "story-001",
+          "title": "HSBC Holdings slips Tuesday, underperforms market",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQR0FBbVRDN2NHZWlESllqU2VhcmhTa2pjcU9kNU1jUVh0eXVwc0UtMlE5Njg4Mllsajc2T19KTlNtU25XSmNrTVNISkVyY2ZsVHhwU2U4WEhWVUlGdzN5NzBadlFrOUY2bnhySW5ZS19Kc1dtOXhrVUFsMnoxTjh2WWcwV2cwSUxQa2t3NnV0WThvaVg5T3oySS1VNmpSUmEtRlFiY2VFUmlLUU1WTGN4VGNjajVjSlJiVWl4RUtzNWh0ay1M?oc=5",
+          "source": "marketwatch.com",
+          "publishedAt": "2026-09-22T16:07:00Z",
+          "polarity": -0.9114,
+          "sentiment": "Very negative",
+          "publisherCount": 1
         },
+        {
+          "id": "45fb3ca93e051a0a",
+          "storyClusterId": "story-002",
+          "title": "HSBC Holdings Announces Appointment of Fiona Neville as Head of Securities Services Sales, Europe Middle East",
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOOHhJYWJaYlJmSHBpUVhFaTV6NDZSRkNEYlNGN0d5TVU5NGpKYndDMkVVYk9Jblc4NC1VNG95YWdrNnE3TllqUFVMQ0FpZWdTWHlVOFdSTWcwWEtuSEFkc0hxQzhRdWIxS0dIdm5wTmFkZmtOOVJkT2Q3MTFSa3p5OHdPTEk1TmtxdU41RU93MDRxTDduSUREdldtX0Y0a2tVM1p5WnZHOGRXeGE0ejQycXBzWmpTZ1pBUW5FSXNBazExbFBiWEtmSi13d2pjNF9Pd3pTZE01MkpTMHU4X004ZXpOcnZwVFk?oc=5",
+          "source": "marketscreener.com",
+          "publishedAt": "2026-09-22T19:13:00Z",
+          "polarity": 0.0219,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "09d4fb9b171af1fd",
+          "storyClusterId": "story-003",
+          "title": "HSBC News | HSBC HOLDINGS PLC-SPONS ADR (NYSE:HSBC)",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1aZkxJM0x3Uy1DVVkzckp6Mk8yOXVESXBqb3R6cVg2ODkyaXFZQzRLWHVQdTBkMHNMeTdEZ0w0Q1lPVFl6b0ZELW5ESWZkT2Y4clFQSFJHSVJYVEU?oc=5",
+          "source": "chartmill.com",
+          "publishedAt": "2026-09-22T20:16:36Z",
+          "polarity": 0.0003,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
         {
           "type": "collection_degraded",
           "direction": "neutral",
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": []
+          "evidenceArticleIds": [
+            "596cff30729d8107",
+            "45fb3ca93e051a0a",
+            "09d4fb9b171af1fd"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": -9.0
     }
   ]
 }
