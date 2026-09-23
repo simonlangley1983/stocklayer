@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-23T08:18:55.762085Z",
+  "generatedAt": "2026-09-23T10:11:33.286708Z",
   "company": {
     "companyName": "Auto Trader Group PLC",
     "ticker": "AUTO.L",
@@ -22,9 +22,9 @@
     "periodStart": "2026-06-14",
     "periodEnd": "2026-09-22",
     "observationCount": 82,
-    "scoredDayCount": 20,
-    "latestScore": 51.0,
-    "latestScoreDate": "2026-09-21",
+    "scoredDayCount": 21,
+    "latestScore": 50.4,
+    "latestScoreDate": "2026-09-22",
     "series": [
       {
         "date": "2026-06-14",
@@ -757,12 +757,12 @@
       },
       {
         "date": "2026-09-22",
-        "dailyScore": null,
-        "rollingScore": 50.5,
-        "storyCount": 0,
-        "sourceCount": 0,
-        "confidence": 0.0,
-        "coverageStatus": "no_coverage"
+        "dailyScore": 50.4,
+        "rollingScore": 50.4,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1065,17 +1065,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 51.7,
+    "score": 51.6,
     "label": "Mixed",
-    "evidenceCoverage": 79,
+    "evidenceCoverage": 81,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.8,
+        "score": 51.6,
         "weight": 0.4,
-        "reliability": 0.9,
-        "detail": "Recency-weighted average of 18 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.95,
+        "detail": "Recency-weighted average of 19 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
