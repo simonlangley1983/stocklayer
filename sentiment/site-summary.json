@@ -3,7 +3,7 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-09-23T18:55:54.594053Z",
+  "generatedAt": "2026-09-23T20:35:09.934501Z",
   "asOfDate": "2026-09-22",
   "companyCount": 100,
   "companies": {
@@ -42,16 +42,23 @@
       "ticker": "SHEL.L",
       "slug": "shell",
       "date": "2026-09-22",
-      "dailyScore": 54.7,
+      "dailyScore": 51.6,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 52.5,
-      "confidence": 64.3,
+      "rollingScore": 52.0,
+      "confidence": 65.8,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 9,
-      "sourceCount": 8,
-      "changeFromPreviousScoredDay": 1.5,
+      "storyCount": 11,
+      "sourceCount": 9,
+      "changeFromPreviousScoredDay": -1.6,
       "flags": [
+        {
+          "type": "coverage_spike",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "11 stories versus trailing median 3.5"
+        },
         {
           "type": "high_disagreement",
           "direction": "mixed",
@@ -73,23 +80,16 @@
       "ticker": "HSBA.L",
       "slug": "hsbc",
       "date": "2026-09-22",
-      "dailyScore": 38.9,
-      "dailyLabel": "Negative",
-      "rollingScore": 48.5,
-      "confidence": 27.4,
-      "confidenceBand": "low",
+      "dailyScore": 40.8,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 48.7,
+      "confidence": 40.1,
+      "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 2,
-      "sourceCount": 2,
-      "changeFromPreviousScoredDay": -11.2,
+      "storyCount": 3,
+      "sourceCount": 3,
+      "changeFromPreviousScoredDay": -9.3,
       "flags": [
-        {
-          "type": "low_confidence",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Confidence is 27.4"
-        },
         {
           "type": "collection_degraded",
           "direction": "neutral",
@@ -147,11 +147,11 @@
       "dailyScore": 50.9,
       "dailyLabel": "Neutral / mixed",
       "rollingScore": 49.1,
-      "confidence": 61.4,
+      "confidence": 61.7,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 37,
-      "sourceCount": 35,
+      "storyCount": 36,
+      "sourceCount": 31,
       "changeFromPreviousScoredDay": 8.0,
       "flags": [
         {
@@ -159,7 +159,7 @@
           "direction": "neutral",
           "severity": "medium",
           "status": "calculated",
-          "detail": "37 stories versus trailing median 2.5"
+          "detail": "36 stories versus trailing median 2.5"
         },
         {
           "type": "collection_degraded",
@@ -1609,22 +1609,22 @@
       "ticker": "NXT.L",
       "slug": "next",
       "date": "2026-09-22",
-      "dailyScore": 61.1,
-      "dailyLabel": "Positive",
-      "rollingScore": 52.4,
-      "confidence": 13.7,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 51.3,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": 6.0,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 13.7"
+          "detail": "Collection succeeded but found no eligible coverage"
         },
         {
           "type": "collection_degraded",
@@ -2355,11 +2355,11 @@
       "dailyScore": 53.7,
       "dailyLabel": "Neutral / mixed",
       "rollingScore": 51.5,
-      "confidence": 62.9,
+      "confidence": 63.1,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 56,
-      "sourceCount": 29,
+      "storyCount": 55,
+      "sourceCount": 30,
       "changeFromPreviousScoredDay": -2.9,
       "flags": [
         {
