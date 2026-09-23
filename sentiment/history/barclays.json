@@ -4677,6 +4677,65 @@
         }
       ],
       "changeFromPreviousScoredDay": 13.3
+    },
+    {
+      "date": "2026-09-22",
+      "dailyScore": 50.3,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 51.2,
+      "confidence": 11.4,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 63,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 57,
+        "missing_company_alias": 5
+      },
+      "topStories": [
+        {
+          "id": "74811db74a37fb5b",
+          "storyClusterId": "story-001",
+          "title": "Barclays Bank PLC Contingent Interest Point to Point Fully Principally Protected Note ABPQXXX",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1KXzlLRzE2RDNCTkxfMkgyaUU3cjQ1eVJWQ005YllZMjM0THR1akluMWduWFFBeGVrR1IzSm82WkJfOGJ0cmRWamU1OU5mUDZsYWxqSEY0WWRnbFlGRkR2VzNlQU55ZHZkUDVSdHNB?oc=5",
+          "source": "tradingview.com",
+          "publishedAt": "2026-09-22T05:37:04Z",
+          "polarity": 0.0201,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 11.4",
+          "evidenceArticleIds": [
+            "74811db74a37fb5b"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "74811db74a37fb5b"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -14.0
     }
   ]
 }
