@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-23T01:07:22.057771Z",
+  "generatedAt": "2026-09-23T01:37:14.064134Z",
   "company": {
     "companyName": "Compass Group",
     "ticker": "CPG.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-21",
-    "observationCount": 74,
-    "scoredDayCount": 12,
-    "latestScore": 65.2,
-    "latestScoreDate": "2026-09-21",
+    "periodEnd": "2026-09-22",
+    "observationCount": 75,
+    "scoredDayCount": 13,
+    "latestScore": 43.9,
+    "latestScoreDate": "2026-09-22",
     "series": [
       {
         "date": "2026-06-30",
@@ -691,19 +691,18 @@
         "sourceCount": 1,
         "confidence": 19.7,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-22",
+        "dailyScore": 43.9,
+        "rollingScore": 50.8,
+        "storyCount": 4,
+        "sourceCount": 3,
+        "confidence": 57.8,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
-      {
-        "date": "2026-07-10",
-        "type": "press_story",
-        "title": "Compass Group to open 70 million - meal factory in Derby",
-        "source": "foodmanufacture.co.uk",
-        "url": "https://www.foodmanufacture.co.uk/Article/2026/07/10/compass-group-to-open-70-million-meal-factory-in-derby",
-        "direction": "Positive",
-        "detail": null,
-        "significance": 0.42
-      },
       {
         "date": "2026-07-21",
         "type": "press_story",
@@ -713,16 +712,6 @@
         "direction": "Very positive",
         "detail": null,
         "significance": 0.734
-      },
-      {
-        "date": "2026-09-15",
-        "type": "press_story",
-        "title": "Compass Group stock holds after 2025 revenue reached GBP 46.07 billion",
-        "source": "ad-hoc-news.de",
-        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxONmJXbzdra2NHY2VmUGRrTDV6MGNpOXZDSmQ3aFVDeW9RYTQ1WUR0cExpT1pnMlZaYjVGaElLQ05CTUFSNG1QdG41LW9zbWltcExPLWs4bHpBN1pQTUNjRm5HbW5jeXpLYnpZNW1HTkt0ZDN2b2VhbVNRb1ItVnFoTTJESmxNZTJCOEt6eGk3YndoQ0JpQTcwZm1RTWZFbHJ5TmdLckdJNm0xRnN0cWtjVHFIbG5mWU5BX0l4UGNBMEtRWmc2ekp6MTRGV29rZw?oc=5",
-        "direction": "Slightly positive",
-        "detail": null,
-        "significance": 0.325
       },
       {
         "date": "2026-09-16",
@@ -793,6 +782,26 @@
         "direction": "Very positive",
         "detail": null,
         "significance": 1.06
+      },
+      {
+        "date": "2026-09-22",
+        "type": "sentiment_drop",
+        "title": "Compass Group stock slips 3.63 percent below its yearly high",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPQ0JaNmZBSDJLMUlaVEpiQTVreE5yX2FaODNMVkowQ0pMUGVlN09xTXBNUXpQZmZCX3NGUGxHVEk0M1lJX3l6dXhwblgzMlhPRzNVSTRLWUVvbjJzUUp4WjlPSXU4S3h6ZVJhTW8tZWRhc25GR0taeEdRM3prUWhEaEFSaDVBQ0RqUFFMazBSSjZUQW1RY21Cd01PbjBwOTV1SVEzRkJQbmx4RW5RX190NEtYTmNUYlFsTThTaU1WZE0?oc=5",
+        "direction": "negative",
+        "detail": "Daily score decreased by 21.3 points",
+        "significance": 1.612
+      },
+      {
+        "date": "2026-09-22",
+        "type": "sentiment_drop",
+        "title": "Compass Group stock slips 3.63 percent ahead of the open",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPdmY3Vk1zSWRXWHp5N0xPN3ZvYXBySkY0ZGxoU2JHOUNaaDVTTDJJak1JOWMwczZ6aXJuWW4waUlXRWRLNk9NSlFoOVA5TDAxV1hxR3BnakphNThmYmVZOVQ1OFNXankzSkRIVjdZc3RRUHc1TEJZU2FKUEh1cHNPM2lmTHNmU0lqeTJfUnJ3Y0ktNnBoREg1azZfbnNmZ0QzcWtVejBUalQ1SUtsalVSTXd1YXRIc3JjQmIw?oc=5",
+        "direction": "negative",
+        "detail": "Daily score decreased by 21.3 points",
+        "significance": 1.602
       }
     ]
   },
@@ -1285,17 +1294,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 51.8,
+    "score": 51.4,
     "label": "Mixed",
-    "evidenceCoverage": 84,
+    "evidenceCoverage": 86,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 53.7,
+        "score": 52.6,
         "weight": 0.4,
-        "reliability": 0.6,
-        "detail": "Recency-weighted average of 12 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.65,
+        "detail": "Recency-weighted average of 13 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1372,16 +1381,6 @@
       "approximateDate": true
     },
     {
-      "date": "2026-07-10",
-      "type": "press_story",
-      "title": "Compass Group to open 70 million - meal factory in Derby",
-      "source": "foodmanufacture.co.uk",
-      "url": "https://www.foodmanufacture.co.uk/Article/2026/07/10/compass-group-to-open-70-million-meal-factory-in-derby",
-      "direction": "Positive",
-      "detail": null,
-      "significance": 0.42
-    },
-    {
       "date": "2026-07-21",
       "type": "press_story",
       "title": "Compass Group scores with catering jobs at Fifa World Cup stadiums",
@@ -1390,16 +1389,6 @@
       "direction": "Very positive",
       "detail": null,
       "significance": 0.734
-    },
-    {
-      "date": "2026-09-15",
-      "type": "press_story",
-      "title": "Compass Group stock holds after 2025 revenue reached GBP 46.07 billion",
-      "source": "ad-hoc-news.de",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxONmJXbzdra2NHY2VmUGRrTDV6MGNpOXZDSmQ3aFVDeW9RYTQ1WUR0cExpT1pnMlZaYjVGaElLQ05CTUFSNG1QdG41LW9zbWltcExPLWs4bHpBN1pQTUNjRm5HbW5jeXpLYnpZNW1HTkt0ZDN2b2VhbVNRb1ItVnFoTTJESmxNZTJCOEt6eGk3YndoQ0JpQTcwZm1RTWZFbHJ5TmdLckdJNm0xRnN0cWtjVHFIbG5mWU5BX0l4UGNBMEtRWmc2ekp6MTRGV29rZw?oc=5",
-      "direction": "Slightly positive",
-      "detail": null,
-      "significance": 0.325
     },
     {
       "date": "2026-09-16",
@@ -1470,6 +1459,26 @@
       "direction": "Very positive",
       "detail": null,
       "significance": 1.06
+    },
+    {
+      "date": "2026-09-22",
+      "type": "sentiment_drop",
+      "title": "Compass Group stock slips 3.63 percent below its yearly high",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPQ0JaNmZBSDJLMUlaVEpiQTVreE5yX2FaODNMVkowQ0pMUGVlN09xTXBNUXpQZmZCX3NGUGxHVEk0M1lJX3l6dXhwblgzMlhPRzNVSTRLWUVvbjJzUUp4WjlPSXU4S3h6ZVJhTW8tZWRhc25GR0taeEdRM3prUWhEaEFSaDVBQ0RqUFFMazBSSjZUQW1RY21Cd01PbjBwOTV1SVEzRkJQbmx4RW5RX190NEtYTmNUYlFsTThTaU1WZE0?oc=5",
+      "direction": "negative",
+      "detail": "Daily score decreased by 21.3 points",
+      "significance": 1.612
+    },
+    {
+      "date": "2026-09-22",
+      "type": "sentiment_drop",
+      "title": "Compass Group stock slips 3.63 percent ahead of the open",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPdmY3Vk1zSWRXWHp5N0xPN3ZvYXBySkY0ZGxoU2JHOUNaaDVTTDJJak1JOWMwczZ6aXJuWW4waUlXRWRLNk9NSlFoOVA5TDAxV1hxR3BnakphNThmYmVZOVQ1OFNXankzSkRIVjdZc3RRUHc1TEJZU2FKUEh1cHNPM2lmTHNmU0lqeTJfUnJ3Y0ktNnBoREg1azZfbnNmZ0QzcWtVejBUalQ1SUtsalVSTXd1YXRIc3JjQmIw?oc=5",
+      "direction": "negative",
+      "detail": "Daily score decreased by 21.3 points",
+      "significance": 1.602
     }
   ],
   "persistentEvents": []

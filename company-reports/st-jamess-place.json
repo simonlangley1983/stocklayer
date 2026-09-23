@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-23T01:07:22.057771Z",
+  "generatedAt": "2026-09-23T01:37:14.064134Z",
   "company": {
     "companyName": "St James's Place PLC",
     "ticker": "STJ.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-10",
-    "periodEnd": "2026-09-21",
-    "observationCount": 66,
-    "scoredDayCount": 6,
+    "periodEnd": "2026-09-22",
+    "observationCount": 67,
+    "scoredDayCount": 7,
     "latestScore": 37.9,
-    "latestScoreDate": "2026-09-21",
+    "latestScoreDate": "2026-09-22",
     "series": [
       {
         "date": "2026-07-10",
@@ -619,6 +619,15 @@
         "sourceCount": 1,
         "confidence": 18.9,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-22",
+        "dailyScore": 37.9,
+        "rollingScore": 47.7,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 18.9,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -777,17 +786,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 45.9,
+    "score": 45.0,
     "label": "Mixed",
-    "evidenceCoverage": 63,
+    "evidenceCoverage": 65,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 49.1,
+        "score": 47.3,
         "weight": 0.4,
-        "reliability": 0.3,
-        "detail": "Recency-weighted average of 6 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.35,
+        "detail": "Recency-weighted average of 7 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",

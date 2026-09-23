@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-23T01:07:22.057771Z",
+  "generatedAt": "2026-09-23T01:37:14.064134Z",
   "company": {
     "companyName": "Smiths Group PLC",
     "ticker": "SMIN.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-21",
-    "observationCount": 75,
-    "scoredDayCount": 69,
-    "latestScore": 49.5,
-    "latestScoreDate": "2026-09-21",
+    "periodEnd": "2026-09-22",
+    "observationCount": 76,
+    "scoredDayCount": 70,
+    "latestScore": 57.1,
+    "latestScoreDate": "2026-09-22",
     "series": [
       {
         "date": "2026-06-30",
@@ -700,6 +700,15 @@
         "sourceCount": 9,
         "confidence": 80.7,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-22",
+        "dailyScore": 57.1,
+        "rollingScore": 51.0,
+        "storyCount": 55,
+        "sourceCount": 37,
+        "confidence": 89.1,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -742,16 +751,6 @@
         "direction": "negative",
         "detail": "Daily score decreased by 30.5 points",
         "significance": 1.604
-      },
-      {
-        "date": "2026-08-28",
-        "type": "sentiment_jump",
-        "title": "Charlotte Bay , Smiths Get Water Main Upgrade Boost",
-        "source": "miragenews.com",
-        "url": "https://www.miragenews.com/charlotte-bay-smiths-get-water-main-upgrade-1735231",
-        "direction": "positive",
-        "detail": "Daily score increased by 21.8 points",
-        "significance": 1.425
       },
       {
         "date": "2026-09-15",
@@ -802,6 +801,16 @@
         "direction": "positive",
         "detail": null,
         "significance": 1.545
+      },
+      {
+        "date": "2026-09-22",
+        "type": "earnings_beat",
+        "title": "Smiths Group posts strong 2026 earnings, reshapes portfolio to focus on core growth areas",
+        "source": "pluang.com",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNV21fd0hyT2tPRjNib2FrMG53NWpJZFZxd21zZHJOdV93aDAtZmxzbnlhVXlZUjduMmdKQkRpVmZ3VTFjSzFTdENvWjRRb1Q5bkx6a3EydW9sejlzSlhFYlZOdkUtbDF3Ylp2RzVlREVNZXItVTdOckMzNG5pWkVFRk5OZVBrajVnX1N6dGphX1RFbHhKSURkRzVBNnlvejg?oc=5",
+        "direction": "positive",
+        "detail": null,
+        "significance": 1.585
       }
     ]
   },
@@ -888,17 +897,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 44.1,
+    "score": 44.3,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 47.2,
+        "score": 47.5,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 69 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 70 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -962,16 +971,6 @@
       "significance": 1.604
     },
     {
-      "date": "2026-08-28",
-      "type": "sentiment_jump",
-      "title": "Charlotte Bay , Smiths Get Water Main Upgrade Boost",
-      "source": "miragenews.com",
-      "url": "https://www.miragenews.com/charlotte-bay-smiths-get-water-main-upgrade-1735231",
-      "direction": "positive",
-      "detail": "Daily score increased by 21.8 points",
-      "significance": 1.425
-    },
-    {
       "date": "2026-09-15",
       "type": "sentiment_drop",
       "title": "Smiths Station Shooting: Man Hurt, Wife Detained",
@@ -1020,6 +1019,16 @@
       "direction": "positive",
       "detail": null,
       "significance": 1.545
+    },
+    {
+      "date": "2026-09-22",
+      "type": "earnings_beat",
+      "title": "Smiths Group posts strong 2026 earnings, reshapes portfolio to focus on core growth areas",
+      "source": "pluang.com",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNV21fd0hyT2tPRjNib2FrMG53NWpJZFZxd21zZHJOdV93aDAtZmxzbnlhVXlZUjduMmdKQkRpVmZ3VTFjSzFTdENvWjRRb1Q5bkx6a3EydW9sejlzSlhFYlZOdkUtbDF3Ylp2RzVlREVNZXItVTdOckMzNG5pWkVFRk5OZVBrajVnX1N6dGphX1RFbHhKSURkRzVBNnlvejg?oc=5",
+      "direction": "positive",
+      "detail": null,
+      "significance": 1.585
     }
   ],
   "persistentEvents": []

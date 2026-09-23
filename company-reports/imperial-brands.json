@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-23T01:07:22.057771Z",
+  "generatedAt": "2026-09-23T01:37:14.064134Z",
   "company": {
     "companyName": "Imperial Brands PLC",
     "ticker": "IMB.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-15",
-    "periodEnd": "2026-09-21",
-    "observationCount": 80,
-    "scoredDayCount": 31,
-    "latestScore": 53.4,
-    "latestScoreDate": "2026-09-21",
+    "periodEnd": "2026-09-22",
+    "observationCount": 81,
+    "scoredDayCount": 32,
+    "latestScore": 40.1,
+    "latestScoreDate": "2026-09-22",
     "series": [
       {
         "date": "2026-06-15",
@@ -745,6 +745,15 @@
         "sourceCount": 5,
         "confidence": 81.3,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-22",
+        "dailyScore": 40.1,
+        "rollingScore": 51.5,
+        "storyCount": 4,
+        "sourceCount": 3,
+        "confidence": 59.5,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -767,26 +776,6 @@
         "direction": "negative",
         "detail": "Daily score decreased by 28.8 points",
         "significance": 1.609
-      },
-      {
-        "date": "2026-08-11",
-        "type": "workforce_reduction",
-        "title": "Imperial Brands job cuts",
-        "source": "americanbazaaronline.com",
-        "url": "https://americanbazaaronline.com/2026/08/11/imperial-brands-job-cuts-486165",
-        "direction": "negative",
-        "detail": null,
-        "significance": 1.472
-      },
-      {
-        "date": "2026-09-15",
-        "type": "share_buyback",
-        "title": "Imperial Brands stock heads into the open after a 2.5% London gain",
-        "source": "ad-hoc-news.de",
-        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQOTVEbnpSYV9OanppQktncUdSU1llak9EV2ZmVkdjdTJyNzJtZUFkQnVoTUw4TFpvaWJ5UExKRnZfX1lCSUNWWWtnZHVyTnJDZnNBSVVMeUhtcGtBMUF4M05KeUxRMWVORUk4djNnV0pJRGtJQUhtVk5RUzFqbi14MDcyTFUtQ0hQMlpNR2J6ME9kWTlQMkdnUGlJOEU3S2swR0pPMUZFMXl1RGpfSFJpcUUxV2NndjBTdEhzczdXaTVhOEdQS2x1SVBoZjN6NjlVV3c?oc=5",
-        "direction": "positive",
-        "detail": null,
-        "significance": 1.383
       },
       {
         "date": "2026-09-17",
@@ -847,6 +836,26 @@
         "direction": "positive",
         "detail": null,
         "significance": 1.526
+      },
+      {
+        "date": "2026-09-22",
+        "type": "sentiment_drop",
+        "title": "Imperial Brands stock falls 0.60 percent in London",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQQXZhdDZJbnA3b3lEQmxJXzlwakl3bEZiMlZZYy0tNjBsLWlPeDN5TzNST1pBV2YyYUlNd2RfTm1ZckJsem9XUkpzeVhvTXI1V0dHY3hIZkJoMDlhSmI2Vkk4andMOFM3bjEwUmt6TWpRRmdLLTkzZkwwdTlJXzlsZlJ5bDVrdE5VMTllaFpDblgtazBhOGZnV0gwb3BlMDM2UnlEWlk2aXF6Q1YyenJ3d3l6SQ?oc=5",
+        "direction": "negative",
+        "detail": "Daily score decreased by 13.3 points",
+        "significance": 1.586
+      },
+      {
+        "date": "2026-09-22",
+        "type": "sentiment_drop",
+        "title": "Imperial Brands Cancels New Batch of Shares in Ongoing £1.45bn Buyback",
+        "source": "tipranks.com",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNeUtNbEhvNUlRQkY0cDFhRjJjUWUzTzI2QjZWbGVkdnp3Q3V3RWxVdzR2LTYyLTFCTUtveUMxVEwtVVcxdlBTZV84VURFRkh4bHVpMi1CVUVlRUxNVGt1enVYNWpnOVAxOUE2S09KSjhtUTI3UlF6TThUOTJqT3M1SzBvSEQzNEtrc1Q4eW4tOTRlZmFCNG55aFItbUtvQ0MxQi10RHRnWVI2MndjLUQ5TkhzTlJEcWxGc1ZBRFBkMUo?oc=5",
+        "direction": "negative",
+        "detail": "Daily score decreased by 13.3 points",
+        "significance": 1.556
       }
     ]
   },
@@ -933,17 +942,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 45.3,
+    "score": 44.9,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.0,
+        "score": 50.3,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 29 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 30 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -985,26 +994,6 @@
       "direction": "negative",
       "detail": "Daily score decreased by 28.8 points",
       "significance": 1.609
-    },
-    {
-      "date": "2026-08-11",
-      "type": "workforce_reduction",
-      "title": "Imperial Brands job cuts",
-      "source": "americanbazaaronline.com",
-      "url": "https://americanbazaaronline.com/2026/08/11/imperial-brands-job-cuts-486165",
-      "direction": "negative",
-      "detail": null,
-      "significance": 1.472
-    },
-    {
-      "date": "2026-09-15",
-      "type": "share_buyback",
-      "title": "Imperial Brands stock heads into the open after a 2.5% London gain",
-      "source": "ad-hoc-news.de",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQOTVEbnpSYV9OanppQktncUdSU1llak9EV2ZmVkdjdTJyNzJtZUFkQnVoTUw4TFpvaWJ5UExKRnZfX1lCSUNWWWtnZHVyTnJDZnNBSVVMeUhtcGtBMUF4M05KeUxRMWVORUk4djNnV0pJRGtJQUhtVk5RUzFqbi14MDcyTFUtQ0hQMlpNR2J6ME9kWTlQMkdnUGlJOEU3S2swR0pPMUZFMXl1RGpfSFJpcUUxV2NndjBTdEhzczdXaTVhOEdQS2x1SVBoZjN6NjlVV3c?oc=5",
-      "direction": "positive",
-      "detail": null,
-      "significance": 1.383
     },
     {
       "date": "2026-09-17",
@@ -1065,6 +1054,26 @@
       "direction": "positive",
       "detail": null,
       "significance": 1.526
+    },
+    {
+      "date": "2026-09-22",
+      "type": "sentiment_drop",
+      "title": "Imperial Brands stock falls 0.60 percent in London",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQQXZhdDZJbnA3b3lEQmxJXzlwakl3bEZiMlZZYy0tNjBsLWlPeDN5TzNST1pBV2YyYUlNd2RfTm1ZckJsem9XUkpzeVhvTXI1V0dHY3hIZkJoMDlhSmI2Vkk4andMOFM3bjEwUmt6TWpRRmdLLTkzZkwwdTlJXzlsZlJ5bDVrdE5VMTllaFpDblgtazBhOGZnV0gwb3BlMDM2UnlEWlk2aXF6Q1YyenJ3d3l6SQ?oc=5",
+      "direction": "negative",
+      "detail": "Daily score decreased by 13.3 points",
+      "significance": 1.586
+    },
+    {
+      "date": "2026-09-22",
+      "type": "sentiment_drop",
+      "title": "Imperial Brands Cancels New Batch of Shares in Ongoing £1.45bn Buyback",
+      "source": "tipranks.com",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNeUtNbEhvNUlRQkY0cDFhRjJjUWUzTzI2QjZWbGVkdnp3Q3V3RWxVdzR2LTYyLTFCTUtveUMxVEwtVVcxdlBTZV84VURFRkh4bHVpMi1CVUVlRUxNVGt1enVYNWpnOVAxOUE2S09KSjhtUTI3UlF6TThUOTJqT3M1SzBvSEQzNEtrc1Q4eW4tOTRlZmFCNG55aFItbUtvQ0MxQi10RHRnWVI2MndjLUQ5TkhzTlJEcWxGc1ZBRFBkMUo?oc=5",
+      "direction": "negative",
+      "detail": "Daily score decreased by 13.3 points",
+      "significance": 1.556
     }
   ],
   "persistentEvents": [

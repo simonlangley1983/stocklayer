@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-23T01:07:22.057771Z",
+  "generatedAt": "2026-09-23T01:37:14.064134Z",
   "company": {
     "companyName": "Glencore",
     "ticker": "GLEN.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-21",
-    "observationCount": 76,
-    "scoredDayCount": 65,
-    "latestScore": 47.8,
-    "latestScoreDate": "2026-09-21",
+    "periodEnd": "2026-09-22",
+    "observationCount": 77,
+    "scoredDayCount": 66,
+    "latestScore": 54.0,
+    "latestScoreDate": "2026-09-22",
     "series": [
       {
         "date": "2026-06-30",
@@ -709,6 +709,15 @@
         "sourceCount": 10,
         "confidence": 87.9,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-22",
+        "dailyScore": 54.0,
+        "rollingScore": 45.7,
+        "storyCount": 19,
+        "sourceCount": 19,
+        "confidence": 87.3,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1303,17 +1312,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 40.1,
+    "score": 40.2,
     "label": "Low",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 46.2,
+        "score": 46.5,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 65 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 66 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1491,6 +1500,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "7a26c63b8ba41d11ebab",
+      "type": "regulatory_legal",
+      "title": "Glencore (LSE:GLEN) In Focus After Court Clears Path For Major Lawsuit",
+      "date": "2026-09-22",
+      "status": "pending_review",
+      "reviewDate": "2027-03-21",
+      "direction": "Very negative",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPVGdsMHVLY2Vid0VoOHdENF96S1lET3E2dUtBS0RoaWNPSWNlQnl5dENFQTY0N3BUODVxSGFXbXEtYXR3WEZQWnNjc1JRd2pLYkg1WGY3ZGVzVnNTMDByWnRNS1c1MDJNWGxjeUV1X0ZIdWtSOGpBNDNodUhDYkFFclZ5aHZMZnBWRWpWS0dCTncxWTRIZTRyR3JkbUpjYzc1azdBNnlrZGVENlJmamhOdDJvUWN2RmRGZHQydg?oc=5",
+          "publisher": "kalkinemedia.com",
+          "date": "2026-09-22"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "8aa321cc9334345ba7c4",
       "type": "clinical",

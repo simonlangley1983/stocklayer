@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-23T01:07:22.057771Z",
+  "generatedAt": "2026-09-23T01:37:14.064134Z",
   "company": {
     "companyName": "Aberdeen Group PLC",
     "ticker": "ABDN.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-09-12",
-    "periodEnd": "2026-09-21",
-    "observationCount": 10,
-    "scoredDayCount": 7,
-    "latestScore": 56.6,
-    "latestScoreDate": "2026-09-21",
+    "periodEnd": "2026-09-22",
+    "observationCount": 11,
+    "scoredDayCount": 8,
+    "latestScore": 54.0,
+    "latestScoreDate": "2026-09-22",
     "series": [
       {
         "date": "2026-09-12",
@@ -115,6 +115,15 @@
         "sourceCount": 32,
         "confidence": 63.3,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-22",
+        "dailyScore": 54.0,
+        "rollingScore": 51.6,
+        "storyCount": 61,
+        "sourceCount": 34,
+        "confidence": 62.8,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -179,26 +188,6 @@
         "significance": 1.551
       },
       {
-        "date": "2026-09-20",
-        "type": "press_story",
-        "title": "Aberdeen Holdings achieves Carbon Neutral Certification, advancing its sustainability ambition",
-        "source": "island.lk",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNbUUxNWxrOV9YYjY4eE1hY0E2SndTZUVvOVJuR2dCTUpzRWs3S1ZrSlhKQ3JTUWNxN3lyUVpMQmRscXV4YWRweHBDQndpbnlwclFoWXh5aXVYUHVxdEU5Sm1JNW1Xcm9PZmRzMXBpaUNCRGZBNDJLTWM0VF9CQWZwUk9CYXVXblFQMWNHU2VPTnZibl9SS0NqTjYxOVI2TmZlUEtaX1BBMUxkWDhpR1hRUg?oc=5",
-        "direction": "Very positive",
-        "detail": null,
-        "significance": 1.073
-      },
-      {
-        "date": "2026-09-20",
-        "type": "press_story",
-        "title": "Robinson pleased with Aberdeen's progress after three games on the road",
-        "source": "bbc.co.uk",
-        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9jRFBkR2VLQ3hmY3FrWXFFQW5adjFLX2JxRm1WemZ1TkF2emlKSV9zNzdVUk8tQ05KQ3pwS28za0VFNW1EU1hyWE1XQmh0MFpxVFU5djBBd3FORzdsb3pV?oc=5",
-        "direction": "Very positive",
-        "detail": null,
-        "significance": 1.06
-      },
-      {
         "date": "2026-09-21",
         "type": "press_story",
         "title": "Aberdeen flights disrupted as air traffic control issue sparks travel delays in north of UK",
@@ -217,6 +206,26 @@
         "direction": "Very positive",
         "detail": null,
         "significance": 1.082
+      },
+      {
+        "date": "2026-09-22",
+        "type": "press_story",
+        "title": "Concerns raised over Aberdeen asylum seeker accommodation plans",
+        "source": "bbc.co.uk",
+        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5odjFCcGlmQW0yRmlXUzN3dVNUQU1fdzJ0dnlrWUE0QUdOSW5WSlhyVFkzOE55ZTJ6YWI5MW5TY2VSWlYzeFZzelNscHFZbUI4cjJmdUt0NDNwblJxX3c?oc=5",
+        "direction": "Very negative",
+        "detail": null,
+        "significance": 1.087
+      },
+      {
+        "date": "2026-09-22",
+        "type": "press_story",
+        "title": "Aberdeen : Investments accelerates ETF ambitions with key UK and EMEA leadership appointment",
+        "source": "marketscreener.com",
+        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOb1VoT3VWTzVWSnhVeTc1RDFTajZ6OU9LaVE4LTJ0NTJIdURjbktRZW1SN0tYYUMweWpnX2ltSWN0cEt1LVZLbjl4TUlNc2dfUHp5OVgxNS1BMzJuSFF0XzVYbk9kVk1WeWtuS2VybDA1bHM2OG5SSkRhSjl3U1JaeTNXeE90YUlEQXpsWFo1bDc3LWFFemVON0Y1QXZrbENEWVI4RUsyYm1ZbTRoS3hTSkJfZU96LXNTcGpvYWJ2VE4yMEVnTUROSWNGdUdnY09jQlpnT1A2WWRBbzg?oc=5",
+        "direction": "Very positive",
+        "detail": null,
+        "significance": 1.079
       }
     ]
   },
@@ -709,17 +718,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 48.8,
+    "score": 48.9,
     "label": "Mixed",
-    "evidenceCoverage": 74,
+    "evidenceCoverage": 76,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.2,
+        "score": 51.6,
         "weight": 0.4,
-        "reliability": 0.35,
-        "detail": "Recency-weighted average of 7 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.4,
+        "detail": "Recency-weighted average of 8 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -856,26 +865,6 @@
       "significance": 1.551
     },
     {
-      "date": "2026-09-20",
-      "type": "press_story",
-      "title": "Aberdeen Holdings achieves Carbon Neutral Certification, advancing its sustainability ambition",
-      "source": "island.lk",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNbUUxNWxrOV9YYjY4eE1hY0E2SndTZUVvOVJuR2dCTUpzRWs3S1ZrSlhKQ3JTUWNxN3lyUVpMQmRscXV4YWRweHBDQndpbnlwclFoWXh5aXVYUHVxdEU5Sm1JNW1Xcm9PZmRzMXBpaUNCRGZBNDJLTWM0VF9CQWZwUk9CYXVXblFQMWNHU2VPTnZibl9SS0NqTjYxOVI2TmZlUEtaX1BBMUxkWDhpR1hRUg?oc=5",
-      "direction": "Very positive",
-      "detail": null,
-      "significance": 1.073
-    },
-    {
-      "date": "2026-09-20",
-      "type": "press_story",
-      "title": "Robinson pleased with Aberdeen's progress after three games on the road",
-      "source": "bbc.co.uk",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9jRFBkR2VLQ3hmY3FrWXFFQW5adjFLX2JxRm1WemZ1TkF2emlKSV9zNzdVUk8tQ05KQ3pwS28za0VFNW1EU1hyWE1XQmh0MFpxVFU5djBBd3FORzdsb3pV?oc=5",
-      "direction": "Very positive",
-      "detail": null,
-      "significance": 1.06
-    },
-    {
       "date": "2026-09-21",
       "type": "press_story",
       "title": "Aberdeen flights disrupted as air traffic control issue sparks travel delays in north of UK",
@@ -894,6 +883,26 @@
       "direction": "Very positive",
       "detail": null,
       "significance": 1.082
+    },
+    {
+      "date": "2026-09-22",
+      "type": "press_story",
+      "title": "Concerns raised over Aberdeen asylum seeker accommodation plans",
+      "source": "bbc.co.uk",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5odjFCcGlmQW0yRmlXUzN3dVNUQU1fdzJ0dnlrWUE0QUdOSW5WSlhyVFkzOE55ZTJ6YWI5MW5TY2VSWlYzeFZzelNscHFZbUI4cjJmdUt0NDNwblJxX3c?oc=5",
+      "direction": "Very negative",
+      "detail": null,
+      "significance": 1.087
+    },
+    {
+      "date": "2026-09-22",
+      "type": "press_story",
+      "title": "Aberdeen : Investments accelerates ETF ambitions with key UK and EMEA leadership appointment",
+      "source": "marketscreener.com",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOb1VoT3VWTzVWSnhVeTc1RDFTajZ6OU9LaVE4LTJ0NTJIdURjbktRZW1SN0tYYUMweWpnX2ltSWN0cEt1LVZLbjl4TUlNc2dfUHp5OVgxNS1BMzJuSFF0XzVYbk9kVk1WeWtuS2VybDA1bHM2OG5SSkRhSjl3U1JaeTNXeE90YUlEQXpsWFo1bDc3LWFFemVON0Y1QXZrbENEWVI4RUsyYm1ZbTRoS3hTSkJfZU96LXNTcGpvYWJ2VE4yMEVnTUROSWNGdUdnY09jQlpnT1A2WWRBbzg?oc=5",
+      "direction": "Very positive",
+      "detail": null,
+      "significance": 1.079
     }
   ],
   "persistentEvents": [

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-23T01:07:22.057771Z",
+  "generatedAt": "2026-09-23T01:37:14.064134Z",
   "company": {
     "companyName": "SSE PLC",
     "ticker": "SSE.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-21",
-    "observationCount": 73,
-    "scoredDayCount": 6,
-    "latestScore": 50.9,
-    "latestScoreDate": "2026-09-21",
+    "periodEnd": "2026-09-22",
+    "observationCount": 74,
+    "scoredDayCount": 7,
+    "latestScore": 45.6,
+    "latestScoreDate": "2026-09-22",
     "series": [
       {
         "date": "2026-06-30",
@@ -682,6 +682,15 @@
         "sourceCount": 2,
         "confidence": 41.1,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-22",
+        "dailyScore": 45.6,
+        "rollingScore": 49.4,
+        "storyCount": 2,
+        "sourceCount": 2,
+        "confidence": 35.9,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -754,6 +763,16 @@
         "direction": "Neutral / mixed",
         "detail": null,
         "significance": 0.17
+      },
+      {
+        "date": "2026-09-22",
+        "type": "press_story",
+        "title": "SSE (LSE:SSE) Shares in Focus as UK Energy Stocks Hold Firm",
+        "source": "kalkinemedia.com",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQM1hKenZJalE5SHpPeWI4cWczZnVlZEZLQ2Y3YjV6bG4zaDU1UTB6ZzV4d0FOakZZWDVucjc4MW9JWm9oODU1VmVrR28zVnh1TUJybG4tRlVwR0hhbkpBZ1doYW1YZ29TSEdzMHBzemNFc05GS0N5MHFqdFNEN3FpRzNQaHZzd0tjemxrWjMyTjFsTnd6OGhQQ3ZKcGtsX2s?oc=5",
+        "direction": "Negative",
+        "detail": null,
+        "significance": 0.52
       }
     ]
   },
@@ -840,17 +859,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 42.2,
-    "label": "Mixed",
-    "evidenceCoverage": 63,
+    "score": 41.8,
+    "label": "Low",
+    "evidenceCoverage": 65,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 49.4,
+        "score": 48.8,
         "weight": 0.4,
-        "reliability": 0.3,
-        "detail": "Recency-weighted average of 6 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.35,
+        "detail": "Recency-weighted average of 7 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -933,6 +952,16 @@
       "direction": "Neutral / mixed",
       "detail": null,
       "significance": 0.17
+    },
+    {
+      "date": "2026-09-22",
+      "type": "press_story",
+      "title": "SSE (LSE:SSE) Shares in Focus as UK Energy Stocks Hold Firm",
+      "source": "kalkinemedia.com",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQM1hKenZJalE5SHpPeWI4cWczZnVlZEZLQ2Y3YjV6bG4zaDU1UTB6ZzV4d0FOakZZWDVucjc4MW9JWm9oODU1VmVrR28zVnh1TUJybG4tRlVwR0hhbkpBZ1doYW1YZ29TSEdzMHBzemNFc05GS0N5MHFqdFNEN3FpRzNQaHZzd0tjemxrWjMyTjFsTnd6OGhQQ3ZKcGtsX2s?oc=5",
+      "direction": "Negative",
+      "detail": null,
+      "significance": 0.52
     },
     {
       "date": "2026-12-31",
