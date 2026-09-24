@@ -20,7 +20,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Recalculate growth confidence
-        run: python scripts/generate_growth_confidence_history.py --companies ftse100.json
+        run: python scripts/generate_growth_confidence_history.py --companies uk-companies.json
       - name: Commit refreshed scores
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
