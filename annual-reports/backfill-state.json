@@ -541,36 +541,27 @@
       ]
     },
     "next:2021": {
-      "candidateHash": "ff0f3ec80e15c9f5e1ff199781a1e5fc8f7c94e4c74b84c53ae6cc2e5a93fb77",
+      "candidateHash": "5c47d4596534966e3420134e887e44cb499609b3ebeaf09a05cc8493aa5c6de5",
       "attemptCount": 1,
-      "lastAttempt": "2026-09-14T06:39:21.416223+00:00",
-      "status": "extraction_failed",
-      "retryAfter": "2026-09-14T12:39:21.416223+00:00",
-      "diagnostics": [
-        {
-          "url": "https://www.nextplc.co.uk/~/media/Files/N/next-plc-v4/about-next/r-and-p/2021-22/annual-report-and-accounts-xbrl.zip",
-          "error": "report page did not expose a usable full report"
-        }
-      ]
+      "lastAttempt": "2026-09-24T17:40:29.601630+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:40:29.601630+00:00",
+      "diagnostics": []
     },
     "lseg:2021": {
-      "candidateHash": "ae98cd0665d19f23c6acce5a50308ee251ed6b878aadd50a0993d7b4c0345a18",
-      "attemptCount": 6,
-      "lastAttempt": "2026-09-22T12:57:50.534223+00:00",
-      "status": "extraction_failed",
-      "retryAfter": "2026-09-29T12:57:50.534223+00:00",
-      "diagnostics": [
-        {
-          "error": "ValueError: Requested 2021, document identifies 2022; needs source review"
-        }
-      ]
+      "candidateHash": "88d3806f1a5e63b925df0d3f7105dfcca159e9c4d617e7cbd7efa5a0596fd459",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:40:36.627713+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:40:36.627713+00:00",
+      "diagnostics": []
     },
     "whitbread:2021": {
-      "candidateHash": "2a29e9487e703412884f31031a7b78df1b2698468b49c52e202f4d7214d32aa5",
-      "attemptCount": 6,
-      "lastAttempt": "2026-09-23T18:05:46.242863+00:00",
+      "candidateHash": "534e697651e93756b45225252027e6ebe8a49c2f0e8b6ee65e8a3ca2a04721a5",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:41:51.083150+00:00",
       "status": "extraction_failed",
-      "retryAfter": "2026-09-30T18:05:46.242863+00:00",
+      "retryAfter": "2026-09-24T23:41:51.083150+00:00",
       "diagnostics": [
         {
           "error": "ValueError: Requested 2021, document identifies 2019; needs source review"
@@ -644,11 +635,11 @@
       "diagnostics": []
     },
     "informa:2020": {
-      "candidateHash": "72bb0249c6fb7392701131fec6a838afa24c77831682aa397290c75bd56213f2",
-      "attemptCount": 6,
-      "lastAttempt": "2026-09-23T18:05:37.859935+00:00",
-      "status": "extraction_failed",
-      "retryAfter": "2026-09-30T18:05:37.859935+00:00",
+      "candidateHash": "ed386950991f1675da0138bafe9ff28abab63ba584c1087a7f06801a2a76373c",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:43:06.900567+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:43:06.900567+00:00",
       "diagnostics": [
         {
           "url": "https://www.informa.com/globalassets/documents/investor-relations/2021/informa-annual-report--financial-statements-2020.pdf",
@@ -749,12 +740,16 @@
       "diagnostics": []
     },
     "bae-systems:2023": {
-      "candidateHash": "6107e34bd8e14a18c5beaf5f49e6e2837f0d25b284b1d333899f38d246a29ef5",
+      "candidateHash": "1c8fa64742f7e586d8ec01b740bdb49dcb2ce1d6244295cd7846081428efb6a4",
       "attemptCount": 1,
-      "lastAttempt": "2026-09-24T17:04:39.883066+00:00",
+      "lastAttempt": "2026-09-24T17:40:54.666436+00:00",
       "status": "extraction_failed",
-      "retryAfter": "2026-09-24T23:04:39.883066+00:00",
+      "retryAfter": "2026-09-24T23:40:54.666436+00:00",
       "diagnostics": [
+        {
+          "url": "https://www.baesystems.com/investors/dam/jcr%3Ae7ded7b7-2ddd-499d-bbe7-ba6774ce6137/BAESystemsAnnualReport2023.2025-04-29-16-31-08.pdf",
+          "error": "report page did not expose a usable full report"
+        },
         {
           "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000071620/NI-000071620.pdf",
           "error": "ValueError: document is too short to be a full annual report (4 pages, 2805 words)"
@@ -1329,6 +1324,776 @@
       "lastAttempt": "2026-09-24T17:06:26.194754+00:00",
       "status": "extracted",
       "retryAfter": "2026-09-24T23:06:26.194754+00:00",
+      "diagnostics": []
+    },
+    "associated-british-foods:2022": {
+      "candidateHash": "56fb1ae88034aeaa0ade664f2dfa78b1638ad9d4df210ac8759d8ed93dd1288c",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:37:05.622858+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:37:05.622858+00:00",
+      "diagnostics": []
+    },
+    "auto-trader:2022": {
+      "candidateHash": "80eb4e3c71901372e1483d8bf472be275315d4a80e71805ec50864f88d8bfffd",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:37:15.087118+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:37:15.087118+00:00",
+      "diagnostics": []
+    },
+    "babcock-international:2022": {
+      "candidateHash": "06a0f0e1214bce2998f103578845797cdfe515ff7a3efce1581dac7f7272a618",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:37:18.072247+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:37:18.072247+00:00",
+      "diagnostics": []
+    },
+    "segro:2023": {
+      "candidateHash": "550956c50fdd6b7a67b0354022f24e791a0cde04074e0ba5f51cf4a3ceded075",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:37:23.665569+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:37:23.665569+00:00",
+      "diagnostics": []
+    },
+    "smiths:2023": {
+      "candidateHash": "c07d2c22d11e2157a1cf4aae4244418d44a69448d4e8a769e94fe66a6d7d7b53",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:37:24.323842+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:37:24.323842+00:00",
+      "diagnostics": []
+    },
+    "unilever:2023": {
+      "candidateHash": "b7b3e5f8cd3acf39e02f3db60b65f2c9b18be9f69ea3b299d730f133c51c66a7",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:37:26.438963+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:37:26.438963+00:00",
+      "diagnostics": []
+    },
+    "smith-and-nephew:2023": {
+      "candidateHash": "ba081a3788eeba9e39af07fb712ee79126f37e52ea16f111325420b0dfee2d4d",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:37:30.564858+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:37:30.564858+00:00",
+      "diagnostics": []
+    },
+    "fandc-investment-trust:2022": {
+      "candidateHash": "56418d4b7acbd9ba5ffcfbbf634624fbd5c9bef0afe5658eeca90cca81b822e0",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:37:39.756853+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:37:39.756853+00:00",
+      "diagnostics": []
+    },
+    "weir:2023": {
+      "candidateHash": "55fbb6051d90e975767a56919e110eda53d00d349957f97829cd8091fa39bac0",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:37:41.319609+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:37:41.319609+00:00",
+      "diagnostics": []
+    },
+    "centrica:2022": {
+      "candidateHash": "069153478f61ede8b5b4791c4c995f2361ef89605de01747f74c3dfc6221b9d1",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:37:49.926878+00:00",
+      "status": "extraction_failed",
+      "retryAfter": "2026-09-24T23:37:49.926878+00:00",
+      "diagnostics": [
+        {
+          "error": "ValueError: Requested 2022, document identifies 2021; needs source review"
+        }
+      ]
+    },
+    "bt:2022": {
+      "candidateHash": "0c9356bce6f654acaff4ec8bd59fcf0da35b49078cdcfdb8d9ec8890d6c6a948",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:37:51.687735+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:37:51.687735+00:00",
+      "diagnostics": []
+    },
+    "experian:2022": {
+      "candidateHash": "af066e4c8d10a4130e9426a703be6707d7098fdfd4f075d47ec5e9511fb15bd7",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:37:52.793846+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:37:52.793846+00:00",
+      "diagnostics": []
+    },
+    "intercontinental-hotels:2022": {
+      "candidateHash": "4738f05b108fb195b008dfdfcad3f9df797fa87bb8b87ed50fcb4346f7fee6a9",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:37:53.595776+00:00",
+      "status": "extraction_failed",
+      "retryAfter": "2026-09-24T23:37:53.595776+00:00",
+      "diagnostics": [
+        {
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000044285/NI-000044285.pdf",
+          "error": "ValueError: document is too short to be a full annual report (2 pages, 372 words)"
+        }
+      ]
+    },
+    "convatec:2022": {
+      "candidateHash": "46617649efed6dbbbb020da30d505304c85540abafa1095dea6e4ad3a149d2d9",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:37:58.388842+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:37:58.388842+00:00",
+      "diagnostics": []
+    },
+    "fresnillo:2022": {
+      "candidateHash": "dedc236a129f8e673931cce7ae3b7fa86091e3bdc3f882068a50359c63deb2cd",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:38:02.208876+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:38:02.208876+00:00",
+      "diagnostics": []
+    },
+    "kingfisher:2022": {
+      "candidateHash": "440ec54a087677252d9b373c0173e6d4eb1d9223925dd58782f49e3d65580800",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:38:03.391846+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:38:03.391846+00:00",
+      "diagnostics": []
+    },
+    "haleon:2022": {
+      "candidateHash": "95ec06fde2f71fa87a1adef13fd8a7d05c23ab4e96f70f4b1e9f4329a8c1dbb0",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:38:09.420155+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:38:09.420155+00:00",
+      "diagnostics": []
+    },
+    "imperial-brands:2022": {
+      "candidateHash": "91cd74d2da251c458d3dd7d6cd2bb41edaebbcf3b1e11d8263b1adbec899b16b",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:38:10.471204+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:38:10.471204+00:00",
+      "diagnostics": []
+    },
+    "british-american-tobacco:2022": {
+      "candidateHash": "0d4ed543b175db2c4f47482d00184125b2d34cd7c9b1a98a0bac27356978176c",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:38:22.836488+00:00",
+      "status": "extraction_failed",
+      "retryAfter": "2026-09-24T23:38:22.836488+00:00",
+      "diagnostics": [
+        {
+          "error": "ValueError: Requested 2022, document identifies 2021; needs source review"
+        }
+      ]
+    },
+    "endeavour-mining:2022": {
+      "candidateHash": "cd779f10f73abe423b87a897905d08b24b71102e14202964727a24a3db1ee300",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:38:22.966853+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:38:22.966853+00:00",
+      "diagnostics": []
+    },
+    "londonmetric-property:2022": {
+      "candidateHash": "a885a0c69625deb33c55a667868f3e4809b26f93d0d2f6e0e97938310dee9c4b",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:38:27.778844+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:38:27.778844+00:00",
+      "diagnostics": []
+    },
+    "pearson:2022": {
+      "candidateHash": "f019424218b17b64356958845cf5b28695d616958f7fb2919354fa4aad78e500",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:38:29.971240+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:38:29.971240+00:00",
+      "diagnostics": []
+    },
+    "intertek:2022": {
+      "candidateHash": "8b22d663919977c102b0a00a7bf4bc34dee2daf4fade87030c0fa227743d5b58",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:38:30.872652+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:38:30.872652+00:00",
+      "diagnostics": []
+    },
+    "pershing-square:2022": {
+      "candidateHash": "a47b01cc2ae3963cf8e0a9c516515fe71b0076943abcc5239de29e9047609bb7",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:38:32.750849+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:38:32.750849+00:00",
+      "diagnostics": []
+    },
+    "land-securities:2022": {
+      "candidateHash": "188efe13101ee4d9c936ad6e942c4657ec98370aad9cc895c4cab957b91c2775",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:38:32.802846+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:38:32.802846+00:00",
+      "diagnostics": []
+    },
+    "polar-capital-technology-trust:2022": {
+      "candidateHash": "0d6e6c2811e80f440b28c8b4e3167de1dbd8fdee300618a6b07fd326a9e10117",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:38:32.992962+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:38:32.992962+00:00",
+      "diagnostics": []
+    },
+    "scottish-mortgage-investment-trust:2022": {
+      "candidateHash": "d1950c971b9bd293fad92cc31d2d016234c1593954b52f689d0e2d6ad0fc4f7d",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:38:38.270949+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:38:38.270949+00:00",
+      "diagnostics": []
+    },
+    "prudential:2022": {
+      "candidateHash": "de9e7e1a629edb746fdc0e5fc942c30886283914f8e588016b9532e4f2b6c1bb",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:38:48.251843+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:38:48.251843+00:00",
+      "diagnostics": []
+    },
+    "mandg:2022": {
+      "candidateHash": "73cb1e0d1985950a6b8fceccc4a52ef800496141eae7b4b38960a92f87e65411",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:38:50.902858+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:38:50.902858+00:00",
+      "diagnostics": []
+    },
+    "associated-british-foods:2021": {
+      "candidateHash": "b2c9846ba6e9df4c554ab6f25c16e19a923fe30c1eb1a619f8de499255c3bdfc",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:38:51.146940+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:38:51.146940+00:00",
+      "diagnostics": []
+    },
+    "weir:2022": {
+      "candidateHash": "7e1ff63e54237b577e905477938619d6ffc56ee473968799a6ee95d46af50cea",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:38:54.758138+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:38:54.758138+00:00",
+      "diagnostics": []
+    },
+    "smiths:2022": {
+      "candidateHash": "e3b2428d7ff2b71dde54a7007cd6ea6b918082deeb64da0fb2b620b1ec8d0c6d",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:38:58.937329+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:38:58.937329+00:00",
+      "diagnostics": []
+    },
+    "3i:2021": {
+      "candidateHash": "d4207a19f11737528c62efabfb4bb9566050ae4acc8f154e8dad14b8325d42da",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:39:07.101687+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:39:07.101687+00:00",
+      "diagnostics": []
+    },
+    "legal-and-general:2022": {
+      "candidateHash": "b84c3372c1807614c483bb726af5151d5a42b00a371e37b28700630977ac6936",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:39:07.455012+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:39:07.455012+00:00",
+      "diagnostics": []
+    },
+    "auto-trader:2021": {
+      "candidateHash": "e291728eeee2c066edc0688963f09fee50efba9a986d25ef939e4e92be570c2d",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:39:10.751436+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:39:10.751436+00:00",
+      "diagnostics": []
+    },
+    "burberry:2021": {
+      "candidateHash": "6bd9b5be2ce2c089ad63f05623d5e1a174f8b190a1e7760aae63ccbbd0a6f7c9",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:39:15.161846+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:39:15.161846+00:00",
+      "diagnostics": []
+    },
+    "beazley:2021": {
+      "candidateHash": "ab9b2396598b796abb8f486a3282c6e834c42488694eb1eef4574b257c6cd6ac",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:39:22.899665+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:39:22.899665+00:00",
+      "diagnostics": []
+    },
+    "fandc-investment-trust:2021": {
+      "candidateHash": "af011b60df07b53028ab440b107faa20712d1dbacc125ea8ce2a712bd677e567",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:39:26.998841+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:39:26.998841+00:00",
+      "diagnostics": []
+    },
+    "bt:2021": {
+      "candidateHash": "7976601b2af97401afec9b16eac5879133f13ca97832c9db160f14b92c4dcc17",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:39:28.041464+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:39:28.041464+00:00",
+      "diagnostics": []
+    },
+    "hiscox:2021": {
+      "candidateHash": "a633191d4b01f6afd67ca2cc2dd80b93c59d7e6e375e912fdab3d57d5dc51620",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:39:28.543860+00:00",
+      "status": "extraction_failed",
+      "retryAfter": "2026-09-24T23:39:28.543860+00:00",
+      "diagnostics": [
+        {
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000021436/NI-000021436.pdf",
+          "error": "ValueError: document is too short to be a full annual report (3 pages, 1353 words)"
+        }
+      ]
+    },
+    "experian:2021": {
+      "candidateHash": "75d1e8192b8189ba9e1659b6de0f4dcd3a064bc528f6c5e2ead79831a9abc4a2",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:39:35.741836+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:39:35.741836+00:00",
+      "diagnostics": []
+    },
+    "centrica:2021": {
+      "candidateHash": "82a41b6df700aaedd0a2576f5378e043de4664bf6dc11d431f46a5fad6623c06",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:39:35.789890+00:00",
+      "status": "extraction_failed",
+      "retryAfter": "2026-09-24T23:39:35.789890+00:00",
+      "diagnostics": [
+        {
+          "error": "ValueError: Requested 2021, document identifies 2020; needs source review"
+        }
+      ]
+    },
+    "aviva:2021": {
+      "candidateHash": "2776effb9d96ae6a48fa5e28c9e8161025b655f88079877bac868a4096356cb1",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:39:39.496267+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:39:39.496267+00:00",
+      "diagnostics": []
+    },
+    "fresnillo:2021": {
+      "candidateHash": "3073b494444e42e9f25f1856dbd676636258d8b7c95251d218b7bef771b22952",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:39:45.992852+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:39:45.992852+00:00",
+      "diagnostics": []
+    },
+    "jd-sports-fashion:2021": {
+      "candidateHash": "89bd667506cd30ca7935cd8ff5e886a9ad8617e1c5704a36f19917e0d390633d",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:39:50.100910+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:39:50.100910+00:00",
+      "diagnostics": []
+    },
+    "kingfisher:2021": {
+      "candidateHash": "1168c7f009bbdd8e55cc1a9fb126559e9fa27c387205fc12c409d91ba5e8000f",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:40:02.377854+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:40:02.377854+00:00",
+      "diagnostics": []
+    },
+    "standard-chartered:2022": {
+      "candidateHash": "6c06aa763a2bd692eeda38e8d951694ee8826cd802737622a8897b2434aa0d32",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:40:04.487504+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:40:04.487504+00:00",
+      "diagnostics": []
+    },
+    "computacenter:2021": {
+      "candidateHash": "5e4fff15d7ea4f7a330798ec9c28b053644122fafcb02591137cdd5e91d8718a",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:40:06.084851+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:40:06.084851+00:00",
+      "diagnostics": []
+    },
+    "intercontinental-hotels:2021": {
+      "candidateHash": "e94a1451fcc28e83f35d9c9f4cbee0deecd32bf468ff0f40bddbe2f8f7ce364e",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:40:06.894846+00:00",
+      "status": "extraction_failed",
+      "retryAfter": "2026-09-24T23:40:06.894846+00:00",
+      "diagnostics": [
+        {
+          "error": "ValueError: Requested 2021, document identifies 2020; needs source review"
+        }
+      ]
+    },
+    "intertek:2021": {
+      "candidateHash": "45b8bbe19d1b0dae1744d02b6fdbf68fd8c514c860ea3a3380d6f6e5ee118c74",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:40:09.013696+00:00",
+      "status": "extraction_failed",
+      "retryAfter": "2026-09-24T23:40:09.013696+00:00",
+      "diagnostics": [
+        {
+          "error": "ValueError: Requested 2021, document identifies 2020; needs source review"
+        }
+      ]
+    },
+    "land-securities:2021": {
+      "candidateHash": "dbe6ec2df3e0814e17cdf5431699ff147d41a792c82a0f6513c9e4ced978c601",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:40:21.585838+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:40:21.585838+00:00",
+      "diagnostics": []
+    },
+    "pershing-square:2021": {
+      "candidateHash": "2d8d15e7912518ab006f209b86d2abdb3cae3f5f252a8be3213afc90bd2454b5",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:40:32.594348+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:40:32.594348+00:00",
+      "diagnostics": []
+    },
+    "imperial-brands:2021": {
+      "candidateHash": "3a1989edbb95e96f27aa7a2a2c56eacc579cfdf1eaefa45c3fa7fb935966b649",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:40:37.224846+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:40:37.224846+00:00",
+      "diagnostics": []
+    },
+    "polar-capital-technology-trust:2021": {
+      "candidateHash": "8b28d097a4944947f35f66a70241e46d43525e2687a47c235c3947fbbdd113ce",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:40:37.938625+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:40:37.938625+00:00",
+      "diagnostics": []
+    },
+    "legal-and-general:2021": {
+      "candidateHash": "3b2a1343cad57cd8f72572e8f371bbb31d9c65beeba1c14207693c9a31765301",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:40:43.730121+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:40:43.730121+00:00",
+      "diagnostics": []
+    },
+    "mandg:2021": {
+      "candidateHash": "c248a95ed63edf499688077455c9b9ce9fedc4c361de84f6a5179e4e7c6b0add",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:40:44.117757+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:40:44.117757+00:00",
+      "diagnostics": []
+    },
+    "melrose-industries:2021": {
+      "candidateHash": "87748ab9a083d44ed68e59ad64a1bca3a7e44a7bdb49d0273dd4e894240b6081",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:40:44.990133+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:40:44.990133+00:00",
+      "diagnostics": []
+    },
+    "londonmetric-property:2021": {
+      "candidateHash": "5dbc6d1096037a245340ab1ec23a930cb8978859d048abc9686f2f86ac231359",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:40:52.300030+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:40:52.300030+00:00",
+      "diagnostics": []
+    },
+    "scottish-mortgage-investment-trust:2021": {
+      "candidateHash": "b1b282c12cc6dccba3ba376829b675dcaf64e29d7039c50935de2377b04dba5b",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:41:00.024420+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:41:00.024420+00:00",
+      "diagnostics": []
+    },
+    "schroders:2021": {
+      "candidateHash": "3bc995efa87ca2f334c1697ee9caf61023dc529dca39dd75eb936d59dcb0ba1f",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:41:06.832144+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:41:06.832144+00:00",
+      "diagnostics": []
+    },
+    "tesco:2021": {
+      "candidateHash": "d4d85c78324486c26c5f0824ae2e1159b91aedc02a38833a203d92733bf3a80e",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:41:20.495546+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:41:20.495546+00:00",
+      "diagnostics": []
+    },
+    "smith-and-nephew:2021": {
+      "candidateHash": "f3ab33d531173842b685aaaaa93a0f3666eebd2ea44acc293473dfd665982aab",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:41:27.664850+00:00",
+      "status": "extraction_failed",
+      "retryAfter": "2026-09-24T23:41:27.664850+00:00",
+      "diagnostics": [
+        {
+          "error": "ValueError: Requested 2021, document identifies 2020; needs source review"
+        }
+      ]
+    },
+    "smiths:2021": {
+      "candidateHash": "cf5e9a84b18764edbcd9fa247e2cceb7b82472a6a83d9d661cae378f6e42c3bf",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:41:30.980229+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:41:30.980229+00:00",
+      "diagnostics": []
+    },
+    "weir:2021": {
+      "candidateHash": "e7fee95813d88d651e6017eb39fa03f3a4a4984a2b366bd7de8ee9d42f197857",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:41:38.458232+00:00",
+      "status": "extraction_failed",
+      "retryAfter": "2026-09-24T23:41:38.458232+00:00",
+      "diagnostics": [
+        {
+          "error": "ValueError: Requested 2021, document identifies 2020; needs source review"
+        }
+      ]
+    },
+    "sage:2021": {
+      "candidateHash": "bbeff399cda65f89efd4f56c67e96ea73a4af46494628585088dca054345f37f",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:41:44.719859+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:41:44.719859+00:00",
+      "diagnostics": []
+    },
+    "unilever:2021": {
+      "candidateHash": "481670bcbab5a58db6e2e217de9e58077535ddbe425314b504923c68062ae4a8",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:41:47.886888+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:41:47.886888+00:00",
+      "diagnostics": []
+    },
+    "sse:2021": {
+      "candidateHash": "fe217742d9aeb5d8828e80b289e3da2ca829bd81ded25ca48432ceb467e03365",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:41:49.203856+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:41:49.203856+00:00",
+      "diagnostics": []
+    },
+    "segro:2021": {
+      "candidateHash": "7ef916e4c7f674a839458dae7250af694bca619c38701031358fdc6559472976",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:41:56.628560+00:00",
+      "status": "extraction_failed",
+      "retryAfter": "2026-09-24T23:41:56.628560+00:00",
+      "diagnostics": [
+        {
+          "error": "ValueError: Requested 2021, document identifies 2020; needs source review"
+        }
+      ]
+    },
+    "3i:2020": {
+      "candidateHash": "f26a6a946afd02ba2af8e85cba49fd3c54c648bc050a0ef6c7ec9f505dccfe27",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:41:56.818101+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:41:56.818101+00:00",
+      "diagnostics": []
+    },
+    "babcock-international:2020": {
+      "candidateHash": "893ff96951923651f66af736ce5111084ff27af315f67ba03cadf6ee7edc5ade",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:42:02.713860+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:42:02.713860+00:00",
+      "diagnostics": []
+    },
+    "auto-trader:2020": {
+      "candidateHash": "6bf7fe72b31ed98e715376000a518cd9fa9596293ede9d5dab8dcea5631d6256",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:42:04.584925+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:42:04.584925+00:00",
+      "diagnostics": []
+    },
+    "prudential:2021": {
+      "candidateHash": "da54d615c988f506f465c62d5948da0df06f583d638157e08f4ccd7e5510e6a4",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:42:05.071479+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:42:05.071479+00:00",
+      "diagnostics": []
+    },
+    "associated-british-foods:2020": {
+      "candidateHash": "042d539ede90f17619cff541f6b128dd34db6dc6fc4c79b1f1ae430dc23d57d9",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:42:08.229855+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:42:08.229855+00:00",
+      "diagnostics": []
+    },
+    "bt:2020": {
+      "candidateHash": "18eb98fb0de97cfa4e9366db6474e09ca1f82c87306c06d988dfaaf05aa34231",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:42:17.282849+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:42:17.282849+00:00",
+      "diagnostics": []
+    },
+    "burberry:2020": {
+      "candidateHash": "2fb4bbfe1dd08f1dca4ba69aad37f4701da5b54fdd70260e8b33c829026348f3",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:42:17.423843+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:42:17.423843+00:00",
+      "diagnostics": []
+    },
+    "beazley:2020": {
+      "candidateHash": "eada285bc5d7fb1a009f5055563f59b16323e929bdd5b66151162a0def92504f",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:42:20.250536+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:42:20.250536+00:00",
+      "diagnostics": []
+    },
+    "fandc-investment-trust:2020": {
+      "candidateHash": "f56beae19dfe95f15de2795d69a4325f9b20c6b3f4975b3a79cfebe266dcb023",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:42:20.719858+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:42:20.719858+00:00",
+      "diagnostics": []
+    },
+    "experian:2020": {
+      "candidateHash": "04420be03a96772a2dab6659af8b63c3ac2dca5c79b591b43a121f819c98ee20",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:42:26.455443+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:42:26.455443+00:00",
+      "diagnostics": []
+    },
+    "convatec:2020": {
+      "candidateHash": "ca89db8c9d46a7fb1b4a15d88c95cee8f64d79e4785ba92429544c12db0e21ec",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:42:32.276857+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:42:32.276857+00:00",
+      "diagnostics": []
+    },
+    "fresnillo:2020": {
+      "candidateHash": "809263db7b6df5528f2fd564f8e8b9214abadd62e0beed24f52c4cdab0df4eda",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:42:37.513848+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:42:37.513848+00:00",
+      "diagnostics": []
+    },
+    "ig-group:2020": {
+      "candidateHash": "3b8db66fff30c0e7a2560d5e29e24e0d4e2d9f1e3cab80989be3aefd0c48aa52",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:42:43.401848+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:42:43.401848+00:00",
+      "diagnostics": []
+    },
+    "imperial-brands:2020": {
+      "candidateHash": "c9e606d723b2a37caf46641850d5a63677b9a0127cce03a5edbd7684cd0ada22",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:42:44.138036+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:42:44.138036+00:00",
+      "diagnostics": []
+    },
+    "hiscox:2020": {
+      "candidateHash": "1df306857ae50bb1d6d6ceb5a14f2ad80d369021d5429913ec20be23061c834a",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:42:48.137849+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:42:48.137849+00:00",
+      "diagnostics": []
+    },
+    "glencore:2020": {
+      "candidateHash": "9a68bbd150cba6c1262d3d984361b494ab924659eaedb3c43e08ac61a41f1279",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:42:56.205851+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:42:56.205851+00:00",
+      "diagnostics": []
+    },
+    "international-consolidated-airlines:2020": {
+      "candidateHash": "7fa9b27e7edc1db1767cc9501c8c7a1c0aad3c220c753335e195ac5cc5540d4c",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:43:01.424470+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:43:01.424470+00:00",
+      "diagnostics": []
+    },
+    "kingfisher:2020": {
+      "candidateHash": "f52d0d0a9e96c3c8d55e57ee459ac09a2a579448bf12fb8201832fbb3b3657a4",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:43:04.245856+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:43:04.245856+00:00",
+      "diagnostics": []
+    },
+    "coca-cola-hbc:2020": {
+      "candidateHash": "ff7c7ae12254d743f083c566092f6fb9cc6bef8f65d873830b77165be5162848",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:43:07.212091+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:43:07.212091+00:00",
+      "diagnostics": []
+    },
+    "bp:2020": {
+      "candidateHash": "8f927ebede519173e58e11ca34b1fd21ba98ba04d5e7163239416f4d03e01a0f",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:43:10.724137+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:43:10.724137+00:00",
+      "diagnostics": []
+    },
+    "land-securities:2020": {
+      "candidateHash": "346d108ffae7eb103ed7f46d21fb5afaa7aab3fbfea1a81eca3471289e2b4fe5",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:43:15.503498+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:43:15.503498+00:00",
+      "diagnostics": []
+    },
+    "londonmetric-property:2020": {
+      "candidateHash": "7f55185218eac0bff2897b21cf9cb5b8bdb0b1dacabd9f133888eea73d5a6a17",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:43:16.835639+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:43:16.835639+00:00",
+      "diagnostics": []
+    },
+    "jd-sports-fashion:2020": {
+      "candidateHash": "269487f1f7304b102c0b2253c42d981d1025c02797a87b8319ffa44ee29762f8",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-24T17:43:17.933572+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-24T23:43:17.933572+00:00",
       "diagnostics": []
     }
   }
