@@ -81,6 +81,9 @@ jobs:
           python scripts/build_report_register.py
           python automation/build_company_reports.py
 
+      - name: Refresh growth-confidence scores from new intelligence
+        run: python scripts/generate_growth_confidence_history.py --companies uk-companies.json
+
       - name: Preserve report extraction diagnostics
         if: always()
         uses: actions/upload-artifact@v4
@@ -101,7 +104,7 @@ jobs:
           git config user.name "stocklayer-annual-report-bot"
           git config user.email "stocklayer-annual-report-bot@users.noreply.github.com"
 
-          git add annual-reports/*.json annual-reports/coverage-summary.md
+          git add annual-reports/*.json annual-reports/coverage-summary.md history/growth-confidence/*.json
           git commit -m "Update annual report monitoring" || echo "No annual report changes to commit"
 
           # These feeds were built before any concurrent data update was incorporated.
