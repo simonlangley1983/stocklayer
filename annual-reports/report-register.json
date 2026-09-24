@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T23:07:40.852398+00:00",
+  "generatedAt": "2026-09-24T23:47:37.851361+00:00",
   "companyCount": 100,
   "verifiedCurrentCount": 16,
   "companies": {
@@ -317,8 +317,8 @@
         },
         {
           "year": 2021,
-          "url": "https://www.bat.com/content/dam/batcom/global/main-nav/investors-and-reporting/reporting/combined-annual-and-esg-report/previous-annual-reporting/BAT_Annual_Report_on_Form_20-F_2021.pdf",
-          "sha256": "be78f9cca0fa4336af9ecf42deca27a688d9b02bed765dd1ed8d64b34ef9a141",
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000044428/NI-000044428.pdf",
+          "sha256": "fea6ea158a6802c70f54af861cf4c5438e34386081234b48b44bd39af7253cca",
           "extractionStatus": "extracted"
         },
         {
@@ -405,15 +405,11 @@
         },
         "british-american-tobacco:2022": {
           "candidateHash": "0d4ed543b175db2c4f47482d00184125b2d34cd7c9b1a98a0bac27356978176c",
-          "attemptCount": 1,
-          "lastAttempt": "2026-09-24T17:38:22.836488+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-24T23:38:22.836488+00:00",
-          "diagnostics": [
-            {
-              "error": "ValueError: Requested 2022, document identifies 2021; needs source review"
-            }
-          ]
+          "attemptCount": 2,
+          "lastAttempt": "2026-09-24T23:47:37.761061+00:00",
+          "status": "extracted",
+          "retryAfter": "2027-09-24T23:47:37.761061+00:00",
+          "diagnostics": []
         }
       }
     },
@@ -1119,9 +1115,9 @@
         "bae-systems:2023": {
           "candidateHash": "6107e34bd8e14a18c5beaf5f49e6e2837f0d25b284b1d333899f38d246a29ef5",
           "attemptCount": 1,
-          "lastAttempt": "2026-09-24T23:06:25.861789+00:00",
+          "lastAttempt": "2026-09-24T23:46:44.256024+00:00",
           "status": "extraction_failed",
-          "retryAfter": "2026-09-25T05:06:25.861789+00:00",
+          "retryAfter": "2026-09-25T05:46:44.256024+00:00",
           "diagnostics": [
             {
               "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000071620/NI-000071620.pdf",
@@ -2371,6 +2367,18 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2020,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000022858/NI-000022858.pdf",
+          "sha256": "41929c7e8023a328bb6a119476c47fc6e05580752c60a9c4fd23f96be3571bc1",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2021,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000044191/NI-000044191.pdf",
+          "sha256": "da067e66320654aca48caa116060632b402ae9605cc466c779efbf26b8e02dd8",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2023,
           "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000092834/NI-000092834.pdf",
           "sha256": "58cbc96cb23ab51080404aac47bac31d027c829dba868e35648eaa551b0b3f60",
@@ -2401,27 +2409,19 @@
         },
         "centrica:2022": {
           "candidateHash": "069153478f61ede8b5b4791c4c995f2361ef89605de01747f74c3dfc6221b9d1",
-          "attemptCount": 1,
-          "lastAttempt": "2026-09-24T17:37:49.926878+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-24T23:37:49.926878+00:00",
-          "diagnostics": [
-            {
-              "error": "ValueError: Requested 2022, document identifies 2021; needs source review"
-            }
-          ]
+          "attemptCount": 2,
+          "lastAttempt": "2026-09-24T23:47:20.873903+00:00",
+          "status": "extracted",
+          "retryAfter": "2027-09-24T23:47:20.873903+00:00",
+          "diagnostics": []
         },
         "centrica:2021": {
           "candidateHash": "82a41b6df700aaedd0a2576f5378e043de4664bf6dc11d431f46a5fad6623c06",
-          "attemptCount": 1,
-          "lastAttempt": "2026-09-24T17:39:35.789890+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-24T23:39:35.789890+00:00",
-          "diagnostics": [
-            {
-              "error": "ValueError: Requested 2021, document identifies 2020; needs source review"
-            }
-          ]
+          "attemptCount": 2,
+          "lastAttempt": "2026-09-24T23:47:19.121807+00:00",
+          "status": "extracted",
+          "retryAfter": "2027-09-24T23:47:19.121807+00:00",
+          "diagnostics": []
         }
       }
     },
@@ -3235,10 +3235,10 @@
       "retryDiagnostics": {
         "hiscox:2021": {
           "candidateHash": "a633191d4b01f6afd67ca2cc2dd80b93c59d7e6e375e912fdab3d57d5dc51620",
-          "attemptCount": 1,
-          "lastAttempt": "2026-09-24T17:39:28.543860+00:00",
+          "attemptCount": 2,
+          "lastAttempt": "2026-09-24T23:46:43.756077+00:00",
           "status": "extraction_failed",
-          "retryAfter": "2026-09-24T23:39:28.543860+00:00",
+          "retryAfter": "2026-09-25T11:46:43.756077+00:00",
           "diagnostics": [
             {
               "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000021436/NI-000021436.pdf",
@@ -3569,6 +3569,12 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2020,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000020445/NI-000020445.pdf",
+          "sha256": "b39c627c0eb0d17c7868de1df7f8570ea296c15940c70d0c8d6f93e91221683d",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2024,
           "url": "https://www.ihgplc.com/~/media/Files/I/Ihg-Plc/investors/annual-report/2024/ihg_rbr_24-25_interactive.pdf",
           "sha256": "c8286e98a2614485241d4927d25712e98154c3f09bdf71ac3881a951d4977ac1",
@@ -3617,10 +3623,10 @@
         },
         "intercontinental-hotels:2022": {
           "candidateHash": "4738f05b108fb195b008dfdfcad3f9df797fa87bb8b87ed50fcb4346f7fee6a9",
-          "attemptCount": 1,
-          "lastAttempt": "2026-09-24T17:37:53.595776+00:00",
+          "attemptCount": 2,
+          "lastAttempt": "2026-09-24T23:46:43.862548+00:00",
           "status": "extraction_failed",
-          "retryAfter": "2026-09-24T23:37:53.595776+00:00",
+          "retryAfter": "2026-09-25T11:46:43.862548+00:00",
           "diagnostics": [
             {
               "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000044285/NI-000044285.pdf",
@@ -3630,15 +3636,11 @@
         },
         "intercontinental-hotels:2021": {
           "candidateHash": "e94a1451fcc28e83f35d9c9f4cbee0deecd32bf468ff0f40bddbe2f8f7ce364e",
-          "attemptCount": 1,
-          "lastAttempt": "2026-09-24T17:40:06.894846+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-24T23:40:06.894846+00:00",
-          "diagnostics": [
-            {
-              "error": "ValueError: Requested 2021, document identifies 2020; needs source review"
-            }
-          ]
+          "attemptCount": 2,
+          "lastAttempt": "2026-09-24T23:47:25.645548+00:00",
+          "status": "extracted",
+          "retryAfter": "2027-09-24T23:47:25.645548+00:00",
+          "diagnostics": []
         }
       }
     },
@@ -3715,6 +3717,12 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2020,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000021626/NI-000021626.pdf",
+          "sha256": "13f414250f2a7c41a3f219e12fde2addd1d408b163fa0d2ac0d9c4de417fcbcf",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2022,
           "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000070663/NI-000070663.pdf",
           "sha256": "25d64ab80a6d2ab8a15122e3e8459d2eb14c35938e2c537668fa6d42229dafad",
@@ -3767,15 +3775,11 @@
         },
         "intertek:2021": {
           "candidateHash": "45b8bbe19d1b0dae1744d02b6fdbf68fd8c514c860ea3a3380d6f6e5ee118c74",
-          "attemptCount": 1,
-          "lastAttempt": "2026-09-24T17:40:09.013696+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-24T23:40:09.013696+00:00",
-          "diagnostics": [
-            {
-              "error": "ValueError: Requested 2021, document identifies 2020; needs source review"
-            }
-          ]
+          "attemptCount": 2,
+          "lastAttempt": "2026-09-24T23:47:20.803843+00:00",
+          "status": "extracted",
+          "retryAfter": "2027-09-24T23:47:20.803843+00:00",
+          "diagnostics": []
         }
       }
     },
@@ -5394,6 +5398,12 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2020,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000020714/NI-000020714.pdf",
+          "sha256": "b082971bbb36880bca98727e47f756846e82ae1ef0de7937d3f83ca56c49769e",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2023,
           "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000091874/NI-000091874.pdf",
           "sha256": "2c7ec61e3ebda4ca82d009aff81233a2329e1f4f9caac18bd997dc8ddb20d61c",
@@ -5432,15 +5442,11 @@
         },
         "segro:2021": {
           "candidateHash": "7ef916e4c7f674a839458dae7250af694bca619c38701031358fdc6559472976",
-          "attemptCount": 1,
-          "lastAttempt": "2026-09-24T17:41:56.628560+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-24T23:41:56.628560+00:00",
-          "diagnostics": [
-            {
-              "error": "ValueError: Requested 2021, document identifies 2020; needs source review"
-            }
-          ]
+          "attemptCount": 2,
+          "lastAttempt": "2026-09-24T23:47:36.280369+00:00",
+          "status": "extracted",
+          "retryAfter": "2027-09-24T23:47:36.280369+00:00",
+          "diagnostics": []
         }
       }
     },
@@ -5510,6 +5516,12 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2020,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000020211/NI-000020211.pdf",
+          "sha256": "c85b68bc1eb98766c0b4f42f5fbbaad60e4a2fbf44391d94bebc4dae44f19496",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2023,
           "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000091505/NI-000091505.pdf",
           "sha256": "ddf253ed4c02863d7e0e291a0db69092056ac3576cba06cbaf01fdeace793dec",
@@ -5534,15 +5546,11 @@
         },
         "smith-and-nephew:2021": {
           "candidateHash": "f3ab33d531173842b685aaaaa93a0f3666eebd2ea44acc293473dfd665982aab",
-          "attemptCount": 1,
-          "lastAttempt": "2026-09-24T17:41:27.664850+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-24T23:41:27.664850+00:00",
-          "diagnostics": [
-            {
-              "error": "ValueError: Requested 2021, document identifies 2020; needs source review"
-            }
-          ]
+          "attemptCount": 2,
+          "lastAttempt": "2026-09-24T23:47:24.608488+00:00",
+          "status": "extracted",
+          "retryAfter": "2027-09-24T23:47:24.608488+00:00",
+          "diagnostics": []
         }
       }
     },
@@ -6069,6 +6077,12 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2020,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000021899/NI-000021899.pdf",
+          "sha256": "90890d8599fc904192b3382b063111cb9a30e758a1acc95bcd39a582bd30f775",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2022,
           "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000045493/NI-000045493.pdf",
           "sha256": "b09f5f08063b2ff0e9186fe8957121114f6dd29e95fb026c14b8f9b2a80612ae",
@@ -6119,15 +6133,11 @@
         },
         "weir:2021": {
           "candidateHash": "e7fee95813d88d651e6017eb39fa03f3a4a4984a2b366bd7de8ee9d42f197857",
-          "attemptCount": 1,
-          "lastAttempt": "2026-09-24T17:41:38.458232+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-24T23:41:38.458232+00:00",
-          "diagnostics": [
-            {
-              "error": "ValueError: Requested 2021, document identifies 2020; needs source review"
-            }
-          ]
+          "attemptCount": 2,
+          "lastAttempt": "2026-09-24T23:47:05.893552+00:00",
+          "status": "extracted",
+          "retryAfter": "2027-09-24T23:47:05.893552+00:00",
+          "diagnostics": []
         }
       }
     },
