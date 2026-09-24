@@ -29,7 +29,7 @@ def save(path, value):
     temp.replace(path)
 
 
-def queue_groups(index, companies, existing, state, start_year, end_year, now):
+def queue_groups(index, companies, existing, state, start_year, end_year, now, fca_only=False):
     groups = []
     known = {c["slug"]: c for c in companies}
     for slug, indexed in index.get("companies", {}).items():
@@ -38,6 +38,8 @@ def queue_groups(index, companies, existing, state, start_year, end_year, now):
         company = {**indexed, **known[slug]}
         by_year = {}
         for candidate in indexed.get("reports", []):
+            if fca_only and candidate.get("discoveryStatus") != "fca_nsm_candidate":
+                continue
             filename = urllib.parse.unquote(Path(urllib.parse.urlparse(candidate.get("url", "")).path).name).lower()
             if filename.endswith(('.xlsx', '.xls', '.zip', '.csv')):
                 continue
@@ -110,6 +112,7 @@ def main():
     parser.add_argument("--end-year", type=int, default=datetime.now(timezone.utc).year)
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--latest-only", action="store_true")
+    parser.add_argument("--fca-only", action="store_true", help="Process only FCA NSM-discovered candidates")
     args = parser.parse_args()
     if min(args.batch_size, args.workers, args.report_timeout) < 1:
         parser.error("batch size, workers and timeout must be positive")
@@ -122,13 +125,15 @@ def main():
             if record.get("report_data_status") == "extracted":
                 existing.setdefault(f"{record['company_slug']}:{record['report_year']}", record)
     companies = read(ROOT / "uk-companies.json")
+    if not companies:
+        companies = read(ROOT / "ftse100.json")
     if not companies or len({c['slug'] for c in companies}) != 100:
         raise ValueError("Expected the current 100-company universe")
     state_path = directory / "backfill-state.json"
     state = read(state_path, {"attempts": {}})
     now = datetime.now(timezone.utc)
     pending = queue_groups(read(directory / "reports-index.json"), companies, existing,
-                           state["attempts"], args.start_year, args.end_year, now)
+                           state["attempts"], args.start_year, args.end_year, now, args.fca_only)
     if args.latest_only:
         latest = {}
         for record in existing.values():
