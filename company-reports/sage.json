@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-24T20:38:55.301241Z",
+  "generatedAt": "2026-09-24T21:57:12.717214Z",
   "company": {
     "companyName": "Sage Group PLC",
     "ticker": "SGE.L",
@@ -694,8 +694,81 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 2,
+    "reportCount": 3,
     "reports": [
+      {
+        "year": 2020,
+        "title": "Financial Year 2020 Annual Report and Accounts",
+        "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000015513.pdf",
+        "sourceUrl": "https://data.fca.org.uk/#/nsm/nationalstoragemechanism",
+        "wordCount": 126431,
+        "pageCount": 248,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 28,
+            "per10kWords": 2.215
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 234,
+            "per10kWords": 18.508
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 18,
+            "per10kWords": 1.424
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 45,
+            "per10kWords": 3.559
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 24,
+            "per10kWords": 1.898
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 1,
+            "per10kWords": 0.079
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 28,
+            "per10kWords": 2.215
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 46.6,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2021,
         "title": "Annual Report and Accounts",
@@ -892,7 +965,7 @@
   "overallConfidence": {
     "score": 50.0,
     "label": "Mixed",
-    "evidenceCoverage": 53,
+    "evidenceCoverage": 62,
     "components": [
       {
         "key": "press",
@@ -915,13 +988,22 @@
         "label": "Emerging themes",
         "score": 34.9,
         "weight": 0.25,
-        "reliability": 0.333,
+        "reliability": 0.667,
         "detail": "Change in growth-theme density compared with pressure and risk themes."
       }
     ],
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2020-12-31",
+      "type": "annual_report",
+      "title": "Financial Year 2020 Annual Report and Accounts",
+      "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000015513.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2021-12-31",
       "type": "annual_report",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-24T20:38:55.301241Z",
+  "generatedAt": "2026-09-24T21:57:12.717214Z",
   "company": {
     "companyName": "NatWest Group PLC",
     "ticker": "NWG.L",
@@ -860,8 +860,81 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 2,
+    "reportCount": 3,
     "reports": [
+      {
+        "year": 2020,
+        "title": "Annual Report",
+        "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000019594/NI-000019594.pdf",
+        "sourceUrl": "https://data.fca.org.uk/#/nsm/nationalstoragemechanism",
+        "wordCount": 268682,
+        "pageCount": 367,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 7,
+            "per10kWords": 0.261
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 8,
+            "per10kWords": 0.298
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 11,
+            "per10kWords": 0.409
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 473,
+            "per10kWords": 17.604
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 99,
+            "per10kWords": 3.685
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 18,
+            "per10kWords": 0.67
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 4,
+            "per10kWords": 0.149
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 2,
+            "per10kWords": 0.074
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 32,
+            "per10kWords": 1.191
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 3,
+            "per10kWords": 0.112
+          }
+        ],
+        "positivityScore": 19.4,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2023,
         "title": "Annual Report and Accounts 2023",
@@ -1058,7 +1131,7 @@
   "overallConfidence": {
     "score": 51.5,
     "label": "Mixed",
-    "evidenceCoverage": 83,
+    "evidenceCoverage": 92,
     "components": [
       {
         "key": "press",
@@ -1081,13 +1154,22 @@
         "label": "Emerging themes",
         "score": 98.2,
         "weight": 0.25,
-        "reliability": 0.333,
+        "reliability": 0.667,
         "detail": "Change in growth-theme density compared with pressure and risk themes."
       }
     ],
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2020-12-31",
+      "type": "annual_report",
+      "title": "Annual Report",
+      "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000019594/NI-000019594.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2023-12-31",
       "type": "annual_report",

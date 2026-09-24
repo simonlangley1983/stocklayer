@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-24T20:38:55.301241Z",
+  "generatedAt": "2026-09-24T21:57:12.717214Z",
   "company": {
     "companyName": "Scottish Mortgage Investment Trust PLC",
     "ticker": "SMT.L",
@@ -781,8 +781,81 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 6,
+    "reportCount": 7,
     "reports": [
+      {
+        "year": 2020,
+        "title": "Annual Report and Financial Statements 31 March 2020",
+        "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000004566.pdf",
+        "sourceUrl": "https://data.fca.org.uk/#/nsm/nationalstoragemechanism",
+        "wordCount": 59481,
+        "pageCount": 92,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 16,
+            "per10kWords": 2.69
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 6,
+            "per10kWords": 1.009
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 1,
+            "per10kWords": 0.168
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 30,
+            "per10kWords": 5.044
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 12,
+            "per10kWords": 2.017
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 2,
+            "per10kWords": 0.336
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 19,
+            "per10kWords": 3.194
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 37.3,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2021,
         "title": "Annual Report Financial Statements 31 March 2021",
@@ -1301,6 +1374,15 @@
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2020-12-31",
+      "type": "annual_report",
+      "title": "Annual Report and Financial Statements 31 March 2020",
+      "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000004566.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2021-12-31",
       "type": "annual_report",

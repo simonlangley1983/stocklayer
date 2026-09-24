@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-24T20:38:55.301241Z",
+  "generatedAt": "2026-09-24T21:57:12.717214Z",
   "company": {
     "companyName": "M&G PLC",
     "ticker": "MNG.L",
@@ -743,8 +743,81 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 4,
+    "reportCount": 5,
     "reports": [
+      {
+        "year": 2020,
+        "title": "CORRECTION: M&G plc Annual Report & Accounts 2020",
+        "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000022193/NI-000022193.pdf",
+        "sourceUrl": "https://data.fca.org.uk/#/nsm/nationalstoragemechanism",
+        "wordCount": 177980,
+        "pageCount": 306,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 8,
+            "per10kWords": 0.449
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 1,
+            "per10kWords": 0.056
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 244,
+            "per10kWords": 13.709
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 21,
+            "per10kWords": 1.18
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 7,
+            "per10kWords": 0.393
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 3,
+            "per10kWords": 0.169
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 1,
+            "per10kWords": 0.056
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 67,
+            "per10kWords": 3.764
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 1,
+            "per10kWords": 0.056
+          }
+        ],
+        "positivityScore": 30.0,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2021,
         "title": "Annual Financial Report",
@@ -1117,6 +1190,15 @@
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2020-12-31",
+      "type": "annual_report",
+      "title": "CORRECTION: M&G plc Annual Report & Accounts 2020",
+      "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000022193/NI-000022193.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2021-12-31",
       "type": "annual_report",

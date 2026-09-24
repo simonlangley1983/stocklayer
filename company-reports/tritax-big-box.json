@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-24T20:38:55.301241Z",
+  "generatedAt": "2026-09-24T21:57:12.717214Z",
   "company": {
     "companyName": "Tritax Big Box REIT PLC",
     "ticker": "BBOX.L",
@@ -207,7 +207,7 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 6,
+    "reportCount": 7,
     "reports": [
       {
         "year": 2019,
@@ -280,6 +280,79 @@
           }
         ],
         "positivityScore": 40.7,
+        "positivityMethod": "lexical annual-report tone"
+      },
+      {
+        "year": 2020,
+        "title": "Tritax Big Box REIT plc Annual Report 2020",
+        "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000022724/NI-000022724.pdf",
+        "sourceUrl": "https://data.fca.org.uk/#/nsm/nationalstoragemechanism",
+        "wordCount": 82603,
+        "pageCount": 144,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 51,
+            "per10kWords": 6.174
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 16,
+            "per10kWords": 1.937
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 22,
+            "per10kWords": 2.663
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 46.1,
         "positivityMethod": "lexical annual-report tone"
       },
       {
@@ -732,6 +805,15 @@
       "type": "annual_report",
       "title": "tritaxbigbox-annual-report-2019.pdf",
       "url": "https://www.tritaxbigbox.co.uk/media/ar2agvpo/tritaxbigbox-annual-report-2019.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
+    {
+      "date": "2020-12-31",
+      "type": "annual_report",
+      "title": "Tritax Big Box REIT plc Annual Report 2020",
+      "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000022724/NI-000022724.pdf",
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
