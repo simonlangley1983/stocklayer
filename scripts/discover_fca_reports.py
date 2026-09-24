@@ -5,7 +5,10 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]; API='https://api.data.fca.org.uk/search?index=nsm-search'
 def norm(value): return re.sub(r'\b(plc|p\.l\.c|group|holdings|limited|ltd|public|company)\b|[^a-z0-9]','',str(value).lower())
-companies=json.loads((ROOT/'ftse100.json').read_text()); names={norm(c['companyName']):c for c in companies}
+companies_path = ROOT / 'uk-companies.json'
+if not companies_path.exists():
+    companies_path = ROOT / 'ftse100.json'
+companies=json.loads(companies_path.read_text()); names={norm(c['companyName']):c for c in companies}
 index_path=ROOT/'annual-reports/reports-index.json'; index=json.loads(index_path.read_text()); added=[]
 for year in range(2020,2026):
  body={"from":0,"size":4000,"criteriaObj":{"criteria":[{"name":"type_code","value":["ACS"]}],"dateCriteria":[{"name":"document_date","value":{"from":f"01/01/{year}","to":f"31/12/{year}"}}]}}
