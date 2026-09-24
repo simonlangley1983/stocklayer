@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-24T17:43:20.563881Z",
+  "generatedAt": "2026-09-24T17:45:56.045031Z",
   "company": {
     "companyName": "AstraZeneca",
     "ticker": "AZN.L",
@@ -21,8 +21,8 @@
   "pressCoverage": {
     "periodStart": "2026-07-05",
     "periodEnd": "2026-09-23",
-    "observationCount": 74,
-    "scoredDayCount": 74,
+    "observationCount": 77,
+    "scoredDayCount": 76,
     "latestScore": 83.0,
     "latestScoreDate": "2026-09-23",
     "series": [
@@ -573,6 +573,33 @@
         "storyCount": 6,
         "sourceCount": 6,
         "confidence": 56.2,
+        "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-08",
+        "dailyScore": null,
+        "rollingScore": 51.6,
+        "storyCount": 0,
+        "sourceCount": 0,
+        "confidence": 0.0,
+        "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-09",
+        "dailyScore": 59.2,
+        "rollingScore": 52.9,
+        "storyCount": 5,
+        "sourceCount": 5,
+        "confidence": 75.4,
+        "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-10",
+        "dailyScore": 53.2,
+        "rollingScore": 52.7,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 16.0,
         "coverageStatus": "ok"
       },
       {
@@ -1358,17 +1385,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 55.1,
+    "score": 55.0,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 57.2,
+        "score": 57.1,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 74 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 76 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1710,6 +1737,26 @@
           "url": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/astrazenecas-breast-cancer-drug-fails-in-late-stage-trial/articleshow/134125851.cms",
           "publisher": "economictimes.indiatimes.com",
           "date": "2026-09-12"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
+    {
+      "id": "805fcf8935737801585c",
+      "type": "clinical",
+      "title": "Tuesday Health Report : New AstraZeneca drug may be first to reduce COPD symptoms , FDA approval sought",
+      "date": "2026-09-09",
+      "status": "pending_review",
+      "reviewDate": "2027-03-08",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://www.wbrz.com/news/tuesday-health-report-new-astrazeneca-drug-may-be-first-to-reduce-copd-symptoms-fda-approval-sought",
+          "publisher": "wbrz.com",
+          "date": "2026-09-09"
         }
       ],
       "classification": "headline rule; requires verification",
