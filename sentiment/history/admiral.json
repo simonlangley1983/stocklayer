@@ -2298,6 +2298,103 @@
         }
       ],
       "changeFromPreviousScoredDay": null
+    },
+    {
+      "date": "2026-09-23",
+      "dailyScore": 21.6,
+      "dailyLabel": "Very negative",
+      "rollingScore": 45.6,
+      "confidence": 62.8,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 30,
+      "eligibleArticleCount": 3,
+      "storyCount": 3,
+      "effectiveStoryCount": 3.0,
+      "sourceCount": 3,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 3,
+      "dispersion": 0.0031,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 19,
+        "missing_company_alias": 8
+      },
+      "topStories": [
+        {
+          "id": "290af833837414dd",
+          "storyClusterId": "story-001",
+          "title": "Insurance giant Admiral cuts 500 jobs",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPN3hUSEg0bVBJc19YbkxjZ21mcVNMNkd2MnV2REVDRjhDOS1zZmNMc2FCcXJOMHJNV1JXaWpWTVdPNFpYb1AtNUlTQWZFcWlJTmNVMWtUOEMzQkc5S2VncWdSVmxNNmhPYjJvc2g4Q1lobzNDcWF3aTYtYllUODFFYVhSRmZoWkVrUC1rLWYtMEPSAZYBQVVfeXFMTVVvcEJHbTl3TTNCVTBWbWxTMWV1OXo2YURfWnNrWnBKOXN5LVJObEQ2bV94azN1dlBlS1FQMGdBTzR5TVhSUlk5QUNEd19DaFlYd3dxZmNZSEZiUmZJdDQ1dGpTem81WUhCcEgzQXAtaDBqZFVheUhhWVhlaWFDT244di1RZ2ZUZHJCeTBGVXg3UjRZX0RB?oc=5",
+          "source": "walesonline.co.uk",
+          "publishedAt": "2026-09-23T13:21:16Z",
+          "polarity": -0.9496,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "430024abb02d94b8",
+          "storyClusterId": "story-003",
+          "title": "Admiral to Cut 500 Jobs in UK as Insurer Targets £100 Million in Savings",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOR083T2tXZ2hhdG1mY1VENWZhdGZHLWU0RmdQbGlyeEVMUEpkZWExV2F5RlhXN3BlQzNHRTBnOEM3bDE3elpuVkpnOHA0bjFfNEhDcmRGeS1OMTRsNGljTWUyeGdJVHJNcHNvVUR5U3RkYnZYUmJobHJsXzUzNkh0NHNjcTJObzBuUC15YkFNOHFqbTNQblJ3QnRR?oc=5",
+          "source": "usaherald.com",
+          "publishedAt": "2026-09-23T20:43:54Z",
+          "polarity": -0.9459,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "a8e96fcd6b3fa333",
+          "storyClusterId": "story-002",
+          "title": "Admiral insurance firm to cut 500 jobs in the UK",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE11aXBEUEVDUUdGSUFUVzBlMERaYVhTOWYzbEhhQXZ4a3gwMmZkbThaRExUOTJkTkNVWk1pZllrOUI0cE95aDAwVGtXcWxuODVTcUZkX1BhNnJjRjR2UGc?oc=5",
+          "source": "bbc.co.uk",
+          "publishedAt": "2026-09-23T14:00:21Z",
+          "polarity": -0.9418,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "workforce_reduction",
+          "direction": "negative",
+          "severity": "high",
+          "status": "confirmed",
+          "evidenceArticleIds": [
+            "a8e96fcd6b3fa333",
+            "290af833837414dd",
+            "430024abb02d94b8"
+          ],
+          "sourceCount": 3
+        },
+        {
+          "type": "sentiment_drop",
+          "direction": "negative",
+          "severity": "high",
+          "status": "calculated",
+          "detail": "Daily score decreased by 32.3 points",
+          "evidenceArticleIds": [
+            "290af833837414dd",
+            "430024abb02d94b8",
+            "a8e96fcd6b3fa333"
+          ]
+        },
+        {
+          "type": "bad_press",
+          "direction": "negative",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Daily press score is 21.6",
+          "evidenceArticleIds": [
+            "290af833837414dd",
+            "430024abb02d94b8",
+            "a8e96fcd6b3fa333"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -32.3
     }
   ]
 }
