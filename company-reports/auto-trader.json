@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-24T16:48:17.555138Z",
+  "generatedAt": "2026-09-24T17:06:28.829097Z",
   "company": {
     "companyName": "Auto Trader Group PLC",
     "ticker": "AUTO.L",
@@ -878,8 +878,81 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 2,
+    "reportCount": 3,
     "reports": [
+      {
+        "year": 2024,
+        "title": "Auto Trader Group plc Annual Report and Financial Statements 2024",
+        "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000099957/NI-000099957.pdf",
+        "sourceUrl": "https://data.fca.org.uk/#/nsm/nationalstoragemechanism",
+        "wordCount": 126491,
+        "pageCount": 166,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 23,
+            "per10kWords": 1.818
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 18,
+            "per10kWords": 1.423
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 46,
+            "per10kWords": 3.637
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 122,
+            "per10kWords": 9.645
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 46,
+            "per10kWords": 3.637
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 16,
+            "per10kWords": 1.265
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 3,
+            "per10kWords": 0.237
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 1,
+            "per10kWords": 0.079
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 8,
+            "per10kWords": 0.632
+          }
+        ],
+        "positivityScore": 39.1,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2025,
         "title": "The full report",
@@ -950,7 +1023,7 @@
             "per10kWords": 0.481
           }
         ],
-        "positivityScore": null,
+        "positivityScore": 52.2,
         "positivityMethod": "year-on-year thematic direction proxy"
       },
       {
@@ -1076,7 +1149,7 @@
   "overallConfidence": {
     "score": 51.9,
     "label": "Mixed",
-    "evidenceCoverage": 83,
+    "evidenceCoverage": 92,
     "components": [
       {
         "key": "press",
@@ -1099,13 +1172,22 @@
         "label": "Emerging themes",
         "score": 71.1,
         "weight": 0.25,
-        "reliability": 0.333,
+        "reliability": 0.667,
         "detail": "Change in growth-theme density compared with pressure and risk themes."
       }
     ],
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2024-12-31",
+      "type": "annual_report",
+      "title": "Auto Trader Group plc Annual Report and Financial Statements 2024",
+      "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000099957/NI-000099957.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2025-12-31",
       "type": "annual_report",

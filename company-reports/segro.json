@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-24T16:48:17.555138Z",
+  "generatedAt": "2026-09-24T17:06:28.829097Z",
   "company": {
     "companyName": "Segro PLC",
     "ticker": "SGRO.L",
@@ -860,8 +860,81 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 1,
+    "reportCount": 2,
     "reports": [
+      {
+        "year": 2024,
+        "title": "Results for the year ended 31 December 2024",
+        "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000112828/NI-000112828.pdf",
+        "sourceUrl": "https://data.fca.org.uk/#/nsm/nationalstoragemechanism",
+        "wordCount": 31922,
+        "pageCount": 73,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 4,
+            "per10kWords": 1.253
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 3,
+            "per10kWords": 0.94
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 14,
+            "per10kWords": 4.386
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 4,
+            "per10kWords": 1.253
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 5,
+            "per10kWords": 1.566
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 38,
+            "per10kWords": 11.904
+          }
+        ],
+        "positivityScore": 58.0,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2025,
         "title": "segro_annual-report-accounts-2025.pdf",
@@ -936,15 +1009,56 @@
         "positivityMethod": "lexical annual-report tone"
       }
     ],
-    "emergingKeywords": [],
+    "emergingKeywords": [
+      {
+        "key": "regulation",
+        "label": "Regulation",
+        "mentions": 70,
+        "per10kWords": 5.764,
+        "previousPer10kWords": 4.386,
+        "changePer10kWords": 1.378
+      },
+      {
+        "key": "data_center",
+        "label": "Data centres",
+        "mentions": 156,
+        "per10kWords": 12.846,
+        "previousPer10kWords": 11.904,
+        "changePer10kWords": 0.942
+      },
+      {
+        "key": "supply_chain",
+        "label": "Supply chain",
+        "mentions": 26,
+        "per10kWords": 2.141,
+        "previousPer10kWords": 1.566,
+        "changePer10kWords": 0.575
+      },
+      {
+        "key": "ai",
+        "label": "AI",
+        "mentions": 22,
+        "per10kWords": 1.812,
+        "previousPer10kWords": 1.253,
+        "changePer10kWords": 0.559
+      },
+      {
+        "key": "cybersecurity",
+        "label": "Cybersecurity",
+        "mentions": 6,
+        "per10kWords": 0.494,
+        "previousPer10kWords": 0.0,
+        "changePer10kWords": 0.494
+      }
+    ],
     "latestPositivity": 45.3,
     "latestPositivityMethod": "lexical annual-report tone",
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 49.2,
+    "score": 50.5,
     "label": "Mixed",
-    "evidenceCoverage": 100,
+    "evidenceCoverage": 83,
     "components": [
       {
         "key": "press",
@@ -961,11 +1075,28 @@
         "weight": 0.35,
         "reliability": 1.0,
         "detail": "Lexical annual-report tone."
+      },
+      {
+        "key": "themes",
+        "label": "Emerging themes",
+        "score": 54.5,
+        "weight": 0.25,
+        "reliability": 0.333,
+        "detail": "Change in growth-theme density compared with pressure and risk themes."
       }
     ],
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2024-12-31",
+      "type": "annual_report",
+      "title": "Results for the year ended 31 December 2024",
+      "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000112828/NI-000112828.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2025-12-31",
       "type": "annual_report",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-24T16:48:17.555138Z",
+  "generatedAt": "2026-09-24T17:06:28.829097Z",
   "company": {
     "companyName": "BP",
     "ticker": "BP.L",
@@ -842,8 +842,81 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 1,
+    "reportCount": 2,
     "reports": [
+      {
+        "year": 2024,
+        "title": "REPLACEMENT - BP p.l.c. Annual Report and Form 20-F",
+        "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000114303/NI-000114303.pdf",
+        "sourceUrl": "https://data.fca.org.uk/#/nsm/nationalstoragemechanism",
+        "wordCount": 265864,
+        "pageCount": 372,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 9,
+            "per10kWords": 0.339
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 1,
+            "per10kWords": 0.038
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 33,
+            "per10kWords": 1.241
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 203,
+            "per10kWords": 7.635
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 35,
+            "per10kWords": 1.316
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 8,
+            "per10kWords": 0.301
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 103,
+            "per10kWords": 3.874
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 20,
+            "per10kWords": 0.752
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 4,
+            "per10kWords": 0.15
+          }
+        ],
+        "positivityScore": 29.1,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2025,
         "title": "",
@@ -918,15 +991,56 @@
         "positivityMethod": "lexical annual-report tone"
       }
     ],
-    "emergingKeywords": [],
+    "emergingKeywords": [
+      {
+        "key": "regulation",
+        "label": "Regulation",
+        "mentions": 215,
+        "per10kWords": 7.813,
+        "previousPer10kWords": 7.635,
+        "changePer10kWords": 0.178
+      },
+      {
+        "key": "supply_chain",
+        "label": "Supply chain",
+        "mentions": 13,
+        "per10kWords": 0.472,
+        "previousPer10kWords": 0.301,
+        "changePer10kWords": 0.171
+      },
+      {
+        "key": "competition",
+        "label": "Competition",
+        "mentions": 40,
+        "per10kWords": 1.454,
+        "previousPer10kWords": 1.316,
+        "changePer10kWords": 0.138
+      },
+      {
+        "key": "ai",
+        "label": "AI",
+        "mentions": 12,
+        "per10kWords": 0.436,
+        "previousPer10kWords": 0.339,
+        "changePer10kWords": 0.097
+      },
+      {
+        "key": "cloud",
+        "label": "Cloud",
+        "mentions": 3,
+        "per10kWords": 0.109,
+        "previousPer10kWords": 0.038,
+        "changePer10kWords": 0.071
+      }
+    ],
     "latestPositivity": 29.7,
     "latestPositivityMethod": "lexical annual-report tone",
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 41.2,
-    "label": "Low",
-    "evidenceCoverage": 100,
+    "score": 43.9,
+    "label": "Mixed",
+    "evidenceCoverage": 83,
     "components": [
       {
         "key": "press",
@@ -943,11 +1057,28 @@
         "weight": 0.35,
         "reliability": 1.0,
         "detail": "Lexical annual-report tone."
+      },
+      {
+        "key": "themes",
+        "label": "Emerging themes",
+        "score": 49.9,
+        "weight": 0.25,
+        "reliability": 0.333,
+        "detail": "Change in growth-theme density compared with pressure and risk themes."
       }
     ],
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2024-12-31",
+      "type": "annual_report",
+      "title": "REPLACEMENT - BP p.l.c. Annual Report and Form 20-F",
+      "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000114303/NI-000114303.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2025-12-31",
       "type": "annual_report",

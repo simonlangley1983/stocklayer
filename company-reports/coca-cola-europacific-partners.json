@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-24T16:48:17.555138Z",
+  "generatedAt": "2026-09-24T17:06:28.829097Z",
   "company": {
     "companyName": "Coca-Cola Europacific Partners PLC",
     "ticker": "CCEP.L",
@@ -212,8 +212,81 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 1,
+    "reportCount": 2,
     "reports": [
+      {
+        "year": 2023,
+        "title": "2023 Integrated Report and Form 20-F",
+        "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000091974/NI-000091974.pdf",
+        "sourceUrl": "https://data.fca.org.uk/#/nsm/nationalstoragemechanism",
+        "wordCount": 183557,
+        "pageCount": 282,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 16,
+            "per10kWords": 0.872
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 36,
+            "per10kWords": 1.961
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 115,
+            "per10kWords": 6.265
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 27,
+            "per10kWords": 1.471
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 80,
+            "per10kWords": 4.358
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 3,
+            "per10kWords": 0.163
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 55,
+            "per10kWords": 2.996
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 37.4,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2025,
         "title": "Coca-Cola Europacific Partners Annual Report 2025",
@@ -288,15 +361,56 @@
         "positivityMethod": "lexical annual-report tone"
       }
     ],
-    "emergingKeywords": [],
+    "emergingKeywords": [
+      {
+        "key": "regulation",
+        "label": "Regulation",
+        "mentions": 170,
+        "per10kWords": 9.634,
+        "previousPer10kWords": 6.265,
+        "changePer10kWords": 3.369
+      },
+      {
+        "key": "ai",
+        "label": "AI",
+        "mentions": 38,
+        "per10kWords": 2.154,
+        "previousPer10kWords": 0.872,
+        "changePer10kWords": 1.282
+      },
+      {
+        "key": "competition",
+        "label": "Competition",
+        "mentions": 41,
+        "per10kWords": 2.324,
+        "previousPer10kWords": 1.471,
+        "changePer10kWords": 0.853
+      },
+      {
+        "key": "cybersecurity",
+        "label": "Cybersecurity",
+        "mentions": 41,
+        "per10kWords": 2.324,
+        "previousPer10kWords": 1.961,
+        "changePer10kWords": 0.363
+      },
+      {
+        "key": "restructuring",
+        "label": "Restructuring",
+        "mentions": 57,
+        "per10kWords": 3.23,
+        "previousPer10kWords": 2.996,
+        "changePer10kWords": 0.234
+      }
+    ],
     "latestPositivity": 41.6,
     "latestPositivityMethod": "lexical annual-report tone",
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 47.1,
+    "score": 47.4,
     "label": "Mixed",
-    "evidenceCoverage": 63,
+    "evidenceCoverage": 55,
     "components": [
       {
         "key": "press",
@@ -313,11 +427,28 @@
         "weight": 0.35,
         "reliability": 1.0,
         "detail": "Lexical annual-report tone."
+      },
+      {
+        "key": "themes",
+        "label": "Emerging themes",
+        "score": 47.2,
+        "weight": 0.25,
+        "reliability": 0.333,
+        "detail": "Change in growth-theme density compared with pressure and risk themes."
       }
     ],
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2023-12-31",
+      "type": "annual_report",
+      "title": "2023 Integrated Report and Form 20-F",
+      "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000091974/NI-000091974.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2025-12-31",
       "type": "annual_report",

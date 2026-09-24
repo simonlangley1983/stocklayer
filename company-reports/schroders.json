@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-24T16:48:17.555138Z",
+  "generatedAt": "2026-09-24T17:06:28.829097Z",
   "company": {
     "companyName": "Schroders PLC",
     "ticker": "SDR.L",
@@ -905,8 +905,81 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 1,
+    "reportCount": 2,
     "reports": [
+      {
+        "year": 2024,
+        "title": "Annual Report and Accounts 2024",
+        "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000115743/NI-000115743.pdf",
+        "sourceUrl": "https://data.fca.org.uk/#/nsm/nationalstoragemechanism",
+        "wordCount": 118637,
+        "pageCount": 192,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 47,
+            "per10kWords": 3.962
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 2,
+            "per10kWords": 0.169
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 4,
+            "per10kWords": 0.337
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 96,
+            "per10kWords": 8.092
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 20,
+            "per10kWords": 1.686
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 6,
+            "per10kWords": 0.506
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 46,
+            "per10kWords": 3.877
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 2,
+            "per10kWords": 0.169
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 13,
+            "per10kWords": 1.096
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 34.8,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2025,
         "title": "Official full annual report 2025",
@@ -981,15 +1054,56 @@
         "positivityMethod": "lexical annual-report tone"
       }
     ],
-    "emergingKeywords": [],
+    "emergingKeywords": [
+      {
+        "key": "regulation",
+        "label": "Regulation",
+        "mentions": 137,
+        "per10kWords": 10.163,
+        "previousPer10kWords": 8.092,
+        "changePer10kWords": 2.071
+      },
+      {
+        "key": "competition",
+        "label": "Competition",
+        "mentions": 35,
+        "per10kWords": 2.596,
+        "previousPer10kWords": 1.686,
+        "changePer10kWords": 0.91
+      },
+      {
+        "key": "restructuring",
+        "label": "Restructuring",
+        "mentions": 24,
+        "per10kWords": 1.78,
+        "previousPer10kWords": 1.096,
+        "changePer10kWords": 0.684
+      },
+      {
+        "key": "cybersecurity",
+        "label": "Cybersecurity",
+        "mentions": 8,
+        "per10kWords": 0.593,
+        "previousPer10kWords": 0.337,
+        "changePer10kWords": 0.256
+      },
+      {
+        "key": "supply_chain",
+        "label": "Supply chain",
+        "mentions": 9,
+        "per10kWords": 0.668,
+        "previousPer10kWords": 0.506,
+        "changePer10kWords": 0.162
+      }
+    ],
     "latestPositivity": 37.3,
     "latestPositivityMethod": "lexical annual-report tone",
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 45.4,
-    "label": "Mixed",
-    "evidenceCoverage": 100,
+    "score": 41.1,
+    "label": "Low",
+    "evidenceCoverage": 83,
     "components": [
       {
         "key": "press",
@@ -1006,11 +1120,28 @@
         "weight": 0.35,
         "reliability": 1.0,
         "detail": "Lexical annual-report tone."
+      },
+      {
+        "key": "themes",
+        "label": "Emerging themes",
+        "score": 25.1,
+        "weight": 0.25,
+        "reliability": 0.333,
+        "detail": "Change in growth-theme density compared with pressure and risk themes."
       }
     ],
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2024-12-31",
+      "type": "annual_report",
+      "title": "Annual Report and Accounts 2024",
+      "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000115743/NI-000115743.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2025-12-31",
       "type": "annual_report",
