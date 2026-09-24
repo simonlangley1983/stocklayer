@@ -79,7 +79,7 @@ def queue_groups(index, companies, existing, state, start_year, end_year, now, f
         -g[1], g[5].get("lastAttempt", ""), g[3]))
 
 
-def run_group(group, timeout):
+def run_group(group, timeout, accept_detected_year=False):
     company, year, candidates = group[:3]
     try:
         result = subprocess.run(
@@ -89,7 +89,11 @@ def run_group(group, timeout):
         )
         if result.returncode:
             raise RuntimeError(result.stderr[-1500:])
-        return json.loads(result.stdout)
+        record = json.loads(result.stdout)
+        if (record.get("report_data_status") == "extracted" and int(record.get("report_year", 0)) != year
+                and not accept_detected_year):
+            raise ValueError(f"Requested {year}, document identifies {record.get('report_year')}; needs source review")
+        return record
     except Exception as error:
         return {"company_slug": company["slug"], "ticker": company.get("ticker"),
                 "report_year": year, "report_data_status": "extraction_failed",
@@ -148,7 +152,7 @@ def main():
         return 0
     recovered = 0
     with ThreadPoolExecutor(max_workers=args.workers) as executor:
-        futures = {executor.submit(run_group, group, args.report_timeout): group for group in batch}
+        futures = {executor.submit(run_group, group, args.report_timeout, args.fca_only): group for group in batch}
         for future in as_completed(futures):
             group = futures[future]
             record = future.result()
