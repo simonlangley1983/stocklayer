@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-09-24T04:45:51.164332Z",
+  "generatedAt": "2026-09-24T05:26:31.805194Z",
   "asOfDate": "2026-09-23",
   "companies": {
     "astrazeneca": {
@@ -125,142 +125,26 @@
       "ticker": "SHEL.L",
       "slug": "shell",
       "date": "2026-09-23",
-      "dailyScore": 66.4,
-      "dailyLabel": "Positive",
-      "rollingScore": 54.3,
-      "confidence": 64.2,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "storyCount": 13,
-      "sourceCount": 15,
-      "changeFromPreviousScoredDay": 14.8,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 51.8,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "divestment",
+          "type": "no_coverage",
           "direction": "neutral",
-          "severity": "medium",
-          "status": "confirmed",
-          "evidenceArticleIds": [
-            "0abb59745512cb63",
-            "f8a4415c9a28afe6",
-            "bc09c7c8e2dd07d5"
-          ],
-          "sourceCount": 3
-        },
-        {
-          "type": "sentiment_jump",
-          "direction": "positive",
-          "severity": "high",
+          "severity": "low",
           "status": "calculated",
-          "detail": "Daily score increased by 14.8 points",
-          "evidenceArticleIds": [
-            "9f2540e31f006580",
-            "6d8a4b2056773e78",
-            "6c9253717518c2ca",
-            "e31465c6782e63c8",
-            "0abb59745512cb63"
-          ]
-        },
-        {
-          "type": "good_press",
-          "direction": "positive",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "Daily press score is 66.4",
-          "evidenceArticleIds": [
-            "9f2540e31f006580",
-            "6d8a4b2056773e78",
-            "6c9253717518c2ca",
-            "e31465c6782e63c8",
-            "0abb59745512cb63"
-          ]
-        },
-        {
-          "type": "coverage_spike",
-          "direction": "neutral",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "13 stories versus trailing median 4",
-          "evidenceArticleIds": [
-            "9f2540e31f006580",
-            "6d8a4b2056773e78",
-            "6c9253717518c2ca",
-            "e31465c6782e63c8",
-            "0abb59745512cb63"
-          ]
-        },
-        {
-          "type": "collection_degraded",
-          "direction": "neutral",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "9f2540e31f006580",
-            "6d8a4b2056773e78",
-            "6c9253717518c2ca",
-            "e31465c6782e63c8",
-            "0abb59745512cb63"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "9f2540e31f006580",
-          "storyClusterId": "story-002",
-          "title": "Shell Energy signs 15-year contract with Greenlight Renewables",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOU2RvNk5pNE44OURKMk52Qm1aam1pQUV5dWdmY1VBaGVNV2lpbGl3cWFobVplSGg0MGlZbURFVTc0aHhjQXJtdVdrTURQMWcxTWV1cFpXN2RiWHNvVXBrREJoS3k4VGN5QlJpeG5NbFB5OTQ1YkVKNkRGNUNUXzlqRkFtTFpuNjZrcUwxUVFuc2FYdDMwSnN5SFFiYldrVGs0WjNzSEtIOFpmZ3JpNW93Vmh5QTNpd1MzOG8tZnhYbXFpYWhBWmhaWVFmYjVCZWV4a0JDT2xn?oc=5",
-          "source": "solarbytes.info",
-          "publishedAt": "2026-09-23T04:55:53Z",
-          "polarity": 0.8961,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "6d8a4b2056773e78",
-          "storyClusterId": "story-009",
-          "title": "Shell, Trinidad's NGC agree on Aphrodite gas supply terms, clearing way for project",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNNlE1V25zckZPNlpUQ1ZRVzVFTmU0ZG5sMTVPZ2p2Q3JabTZmbHVNNS1jWThxSGQ3WF9xbVZEdHAyWXRZdXI1UDhqMzI5dzV5VXpJN0tnY1B3MzFZOEVhSzJXLTVHdGQzVHEyNnNHUU1EZ29zcWFHLUV2QXczV1pKZVJvcXJoQU5PUXRUUVJVN1BpSHVjb2JiVGtEcU10OGpNc1lsQzFHbEhDazJpdzBCb1AxVnNYX1QzY1oxUlZ4Z2xaX2M?oc=5",
-          "source": "reuters.com",
-          "publishedAt": "2026-09-23T18:26:47Z",
-          "polarity": 0.8908,
-          "sentiment": "Very positive",
-          "publisherCount": 2
-        },
-        {
-          "id": "6c9253717518c2ca",
-          "storyClusterId": "story-004",
-          "title": "Shell stock gains as gas lifts earnings forecasts",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZGtGcEVQQzFua3dGemxyb0tDeWY1ekNEdU5IZ2tCNmZ0ZXJCWER5WTVhQ1FBNVowTDlEek5VSXMzeWFMTXBzcjllVEE2VkliRmsyT3lHcU9nNnVrWkJUYXJ3dnJ5eFppTFRQSXdQcFBzR2VmdDFWZlVCRlFRc05YVW8wdWU5ZmIxd1lDVjBRNkFyMzNoaWFnNTltTHRVTjNZWDI5T2EwYzRseTE5Qndhc1hn?oc=5",
-          "source": "ad-hoc-news.de",
-          "publishedAt": "2026-09-23T09:22:34Z",
-          "polarity": 0.868,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "e31465c6782e63c8",
-          "storyClusterId": "story-012",
-          "title": "Shell and Trinidad agree on Aphrodite gas supply terms, clearing way for project (SHEL:NYSE)",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQWjdac1ZrWkJfNGZRRzY4MzdiTHROcE4ta2FIajQ5eGJiXzM3RllPVTI4MU0xV1lqSmxhZWYyWHllYWFSd25ZQ0NLNzAtcEEzRnBmQW9tLWU3OHZXWXJMMHE5MlIyT3BaVWYtRUI2b2xvWnhHV0l3Y0JEV283M1pkM2Y2QlhGNjBSdjJSTUhDSEd0Nm1PSDMxX2ZLWWJwNnFuVjh1dWIySkJMaTczODF2UXByS1E2SWVS?oc=5",
-          "source": "seekingalpha.com",
-          "publishedAt": "2026-09-23T20:45:12Z",
-          "polarity": 0.7262,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "0abb59745512cb63",
-          "storyClusterId": "story-003",
-          "title": "Shell done with US Gulf oil asset sale set to realize $1.7 billion total deal value",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNaFF5amZXcy1MNExTY21aTjA0bGJCbVNTTnQxdk4wNU1BTGQxdDdONXVHTUJnOFZDU0U0QWE3S3pDWHJ1TDl3bXFoRGhoNkxXV0VUWnBWM0xhRm14eUdlVzNhSVpveU5EOFpxT0FidU81NGxrRkxBTWctY0NmM3hXYVVqYk9qc0hobERpQ0tEdGJjQkYtRVBxMUsxNlNQQ0p2TGdLQlpfaG9XMnZTUGVEN1hjckRQZw?oc=5",
-          "source": "offshore-energy.biz",
-          "publishedAt": "2026-09-23T08:10:38Z",
-          "polarity": 0.7253,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "hsbc": {
       "companyName": "HSBC",
