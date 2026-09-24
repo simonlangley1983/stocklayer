@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-24T05:26:33.790222Z",
+  "generatedAt": "2026-09-24T09:06:06.216071Z",
   "company": {
     "companyName": "Experian",
     "ticker": "EXPN.L",
@@ -752,7 +752,7 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 2,
+    "reportCount": 3,
     "reports": [
       {
         "year": 2023,
@@ -825,6 +825,79 @@
           }
         ],
         "positivityScore": 48.2,
+        "positivityMethod": "lexical annual-report tone"
+      },
+      {
+        "year": 2025,
+        "title": "Experian Annual Report 2025",
+        "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2025/experian-annual-report-2025.pdf",
+        "sourceUrl": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2025/experian-annual-report-2025.pdf",
+        "wordCount": 153300,
+        "pageCount": 248,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 56,
+            "per10kWords": 3.653
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 34,
+            "per10kWords": 2.218
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 11,
+            "per10kWords": 0.718
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 171,
+            "per10kWords": 11.155
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 68,
+            "per10kWords": 4.436
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 11,
+            "per10kWords": 0.718
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 1,
+            "per10kWords": 0.065
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 19,
+            "per10kWords": 1.239
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 7,
+            "per10kWords": 0.457
+          }
+        ],
+        "positivityScore": 50.0,
         "positivityMethod": "lexical annual-report tone"
       },
       {
@@ -907,40 +980,40 @@
         "label": "AI",
         "mentions": 209,
         "per10kWords": 13.764,
-        "previousPer10kWords": 1.441,
-        "changePer10kWords": 12.323
+        "previousPer10kWords": 3.653,
+        "changePer10kWords": 10.111
       },
       {
         "key": "regulation",
         "label": "Regulation",
         "mentions": 192,
         "per10kWords": 12.645,
-        "previousPer10kWords": 11.023,
-        "changePer10kWords": 1.622
-      },
-      {
-        "key": "cloud",
-        "label": "Cloud",
-        "mentions": 27,
-        "per10kWords": 1.778,
-        "previousPer10kWords": 0.814,
-        "changePer10kWords": 0.964
-      },
-      {
-        "key": "competition",
-        "label": "Competition",
-        "mentions": 58,
-        "per10kWords": 3.82,
-        "previousPer10kWords": 3.069,
-        "changePer10kWords": 0.751
+        "previousPer10kWords": 11.155,
+        "changePer10kWords": 1.49
       },
       {
         "key": "cybersecurity",
         "label": "Cybersecurity",
         "mentions": 27,
         "per10kWords": 1.778,
-        "previousPer10kWords": 1.253,
-        "changePer10kWords": 0.525
+        "previousPer10kWords": 0.718,
+        "changePer10kWords": 1.06
+      },
+      {
+        "key": "supply_chain",
+        "label": "Supply chain",
+        "mentions": 14,
+        "per10kWords": 0.922,
+        "previousPer10kWords": 0.718,
+        "changePer10kWords": 0.204
+      },
+      {
+        "key": "restructuring",
+        "label": "Restructuring",
+        "mentions": 20,
+        "per10kWords": 1.317,
+        "previousPer10kWords": 1.239,
+        "changePer10kWords": 0.078
       }
     ],
     "latestPositivity": 49.3,
@@ -948,9 +1021,9 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 61.5,
+    "score": 61.9,
     "label": "Positive",
-    "evidenceCoverage": 83,
+    "evidenceCoverage": 92,
     "components": [
       {
         "key": "press",
@@ -973,7 +1046,7 @@
         "label": "Emerging themes",
         "score": 100.0,
         "weight": 0.25,
-        "reliability": 0.333,
+        "reliability": 0.667,
         "detail": "Change in growth-theme density compared with pressure and risk themes."
       }
     ],
@@ -985,6 +1058,15 @@
       "type": "annual_report",
       "title": "experian_annual_report_2023_web.pdf",
       "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2023/annual-report/experian_annual_report_2023_web.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
+    {
+      "date": "2025-12-31",
+      "type": "annual_report",
+      "title": "Experian Annual Report 2025",
+      "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2025/experian-annual-report-2025.pdf",
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
