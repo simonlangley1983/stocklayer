@@ -3,7 +3,7 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-09-24T04:45:51.164332Z",
+  "generatedAt": "2026-09-24T05:26:31.805194Z",
   "asOfDate": "2026-09-23",
   "companyCount": 100,
   "companies": {
@@ -50,49 +50,22 @@
       "ticker": "SHEL.L",
       "slug": "shell",
       "date": "2026-09-23",
-      "dailyScore": 66.4,
-      "dailyLabel": "Positive",
-      "rollingScore": 54.3,
-      "confidence": 64.2,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "storyCount": 13,
-      "sourceCount": 15,
-      "changeFromPreviousScoredDay": 14.8,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 51.8,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "divestment",
+          "type": "no_coverage",
           "direction": "neutral",
-          "severity": "medium",
-          "status": "confirmed"
-        },
-        {
-          "type": "sentiment_jump",
-          "direction": "positive",
-          "severity": "high",
+          "severity": "low",
           "status": "calculated",
-          "detail": "Daily score increased by 14.8 points"
-        },
-        {
-          "type": "good_press",
-          "direction": "positive",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "Daily press score is 66.4"
-        },
-        {
-          "type": "coverage_spike",
-          "direction": "neutral",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "13 stories versus trailing median 4"
-        },
-        {
-          "type": "collection_degraded",
-          "direction": "neutral",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "The provider result ceiling was reached for this day"
+          "detail": "Collection succeeded but found no eligible coverage"
         }
       ]
     },
