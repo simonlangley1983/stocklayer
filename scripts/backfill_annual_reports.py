@@ -89,10 +89,7 @@ def run_group(group, timeout):
         )
         if result.returncode:
             raise RuntimeError(result.stderr[-1500:])
-        record = json.loads(result.stdout)
-        if record.get("report_data_status") == "extracted" and int(record.get("report_year", 0)) != year:
-            raise ValueError(f"Requested {year}, document identifies {record.get('report_year')}; needs source review")
-        return record
+        return json.loads(result.stdout)
     except Exception as error:
         return {"company_slug": company["slug"], "ticker": company.get("ticker"),
                 "report_year": year, "report_data_status": "extraction_failed",
@@ -159,14 +156,19 @@ def main():
             success = record.get("report_data_status") == "extracted"
             finished = datetime.now(timezone.utc)
             attempts = group[5].get("attemptCount", 0) + 1
+            actual_key = f"{record.get('company_slug')}:{record.get('report_year')}" if success else key
+            # FCA filings are commonly dated in the following calendar year. Trust an
+            # annual report's detected financial year, but do not keep retrying that
+            # same filing for the (incorrect) filing year.
+            retry_hours = 24 * 365 if success and actual_key != key else min(168, 6 * 2 ** min(attempts - 1, 5))
             state["attempts"][key] = {
                 "candidateHash": group[4], "attemptCount": attempts,
                 "lastAttempt": finished.isoformat(), "status": record.get("report_data_status"),
-                "retryAfter": (finished + timedelta(hours=min(168, 6 * 2 ** min(attempts - 1, 5)))).isoformat(),
+                "retryAfter": (finished + timedelta(hours=retry_hours)).isoformat(),
                 "diagnostics": record.get("attempts", []),
             }
             if success:
-                existing[key] = record
+                existing[actual_key] = record
                 recovered += 1
                 history.update({"generated_at": finished.isoformat(),
                                 "reports": sorted(existing.values(), key=lambda r: (r['company_slug'], r['report_year'])),
