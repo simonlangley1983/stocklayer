@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-24T17:06:28.829097Z",
+  "generatedAt": "2026-09-24T17:43:20.563881Z",
   "company": {
     "companyName": "Schroders PLC",
     "ticker": "SDR.L",
@@ -905,8 +905,81 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 2,
+    "reportCount": 3,
     "reports": [
+      {
+        "year": 2021,
+        "title": "Annual Report and Accounts 2021",
+        "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000046185/NI-000046185.pdf",
+        "sourceUrl": "https://data.fca.org.uk/#/nsm/nationalstoragemechanism",
+        "wordCount": 113979,
+        "pageCount": 192,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 8,
+            "per10kWords": 0.702
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 12,
+            "per10kWords": 1.053
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 108,
+            "per10kWords": 9.475
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 35,
+            "per10kWords": 3.071
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 10,
+            "per10kWords": 0.877
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 50,
+            "per10kWords": 4.387
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 1,
+            "per10kWords": 0.088
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 1,
+            "per10kWords": 0.088
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 39.0,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2024,
         "title": "Annual Report and Accounts 2024",
@@ -1101,9 +1174,9 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 41.1,
+    "score": 40.7,
     "label": "Low",
-    "evidenceCoverage": 83,
+    "evidenceCoverage": 92,
     "components": [
       {
         "key": "press",
@@ -1126,13 +1199,22 @@
         "label": "Emerging themes",
         "score": 25.1,
         "weight": 0.25,
-        "reliability": 0.333,
+        "reliability": 0.667,
         "detail": "Change in growth-theme density compared with pressure and risk themes."
       }
     ],
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2021-12-31",
+      "type": "annual_report",
+      "title": "Annual Report and Accounts 2021",
+      "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000046185/NI-000046185.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2024-12-31",
       "type": "annual_report",

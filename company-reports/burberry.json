@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-24T17:06:28.829097Z",
+  "generatedAt": "2026-09-24T17:43:20.563881Z",
   "company": {
     "companyName": "Burberry Group PLC",
     "ticker": "BRBY.L",
@@ -212,8 +212,154 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 4,
+    "reportCount": 6,
     "reports": [
+      {
+        "year": 2020,
+        "title": "Annual Report and Accounts",
+        "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000005632.pdf",
+        "sourceUrl": "https://data.fca.org.uk/#/nsm/nationalstoragemechanism",
+        "wordCount": 148043,
+        "pageCount": 277,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 8,
+            "per10kWords": 0.54
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 50,
+            "per10kWords": 3.377
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 23,
+            "per10kWords": 1.554
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 100,
+            "per10kWords": 6.755
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 77,
+            "per10kWords": 5.201
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 27,
+            "per10kWords": 1.824
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 31.9,
+        "positivityMethod": "lexical annual-report tone"
+      },
+      {
+        "year": 2021,
+        "title": "Annual Report and Accounts",
+        "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000027026/NI-000027026.pdf",
+        "sourceUrl": "https://data.fca.org.uk/#/nsm/nationalstoragemechanism",
+        "wordCount": 131230,
+        "pageCount": 306,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 1,
+            "per10kWords": 0.076
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 7,
+            "per10kWords": 0.533
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 56,
+            "per10kWords": 4.267
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 16,
+            "per10kWords": 1.219
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 107,
+            "per10kWords": 8.154
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 77,
+            "per10kWords": 5.868
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 28,
+            "per10kWords": 2.134
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 38.3,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2023,
         "title": "Annual Report 2022-23",
@@ -586,6 +732,24 @@
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2020-12-31",
+      "type": "annual_report",
+      "title": "Annual Report and Accounts",
+      "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000005632.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
+    {
+      "date": "2021-12-31",
+      "type": "annual_report",
+      "title": "Annual Report and Accounts",
+      "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000027026/NI-000027026.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2023-12-31",
       "type": "annual_report",

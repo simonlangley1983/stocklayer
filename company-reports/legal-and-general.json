@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-24T17:06:28.829097Z",
+  "generatedAt": "2026-09-24T17:43:20.563881Z",
   "company": {
     "companyName": "Legal & General Group PLC",
     "ticker": "LGEN.L",
@@ -770,8 +770,154 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 3,
+    "reportCount": 5,
     "reports": [
+      {
+        "year": 2021,
+        "title": "Annual Financial Report",
+        "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000021690/NI-000021690.pdf",
+        "sourceUrl": "https://data.fca.org.uk/#/nsm/nationalstoragemechanism",
+        "wordCount": 155088,
+        "pageCount": 262,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 3,
+            "per10kWords": 0.193
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 3,
+            "per10kWords": 0.193
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 4,
+            "per10kWords": 0.258
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 151,
+            "per10kWords": 9.736
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 25,
+            "per10kWords": 1.612
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 11,
+            "per10kWords": 0.709
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 3,
+            "per10kWords": 0.193
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 2,
+            "per10kWords": 0.129
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 1,
+            "per10kWords": 0.064
+          }
+        ],
+        "positivityScore": 32.1,
+        "positivityMethod": "lexical annual-report tone"
+      },
+      {
+        "year": 2022,
+        "title": "Annual Report & Accounts (Annual Financial Report)",
+        "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000070282/NI-000070282.pdf",
+        "sourceUrl": "https://data.fca.org.uk/#/nsm/nationalstoragemechanism",
+        "wordCount": 176096,
+        "pageCount": 272,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 2,
+            "per10kWords": 0.114
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 3,
+            "per10kWords": 0.17
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 6,
+            "per10kWords": 0.341
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 175,
+            "per10kWords": 9.938
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 27,
+            "per10kWords": 1.533
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 15,
+            "per10kWords": 0.852
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 3,
+            "per10kWords": 0.17
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 2,
+            "per10kWords": 0.114
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 2,
+            "per10kWords": 0.114
+          }
+        ],
+        "positivityScore": 31.7,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2023,
         "title": "Replacement Annual Report and Accounts 2023",
@@ -1039,9 +1185,9 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 46.2,
+    "score": 46.0,
     "label": "Mixed",
-    "evidenceCoverage": 92,
+    "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
@@ -1064,13 +1210,31 @@
         "label": "Emerging themes",
         "score": 61.0,
         "weight": 0.25,
-        "reliability": 0.667,
+        "reliability": 1.0,
         "detail": "Change in growth-theme density compared with pressure and risk themes."
       }
     ],
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2021-12-31",
+      "type": "annual_report",
+      "title": "Annual Financial Report",
+      "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000021690/NI-000021690.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
+    {
+      "date": "2022-12-31",
+      "type": "annual_report",
+      "title": "Annual Report & Accounts (Annual Financial Report)",
+      "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000070282/NI-000070282.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2023-12-31",
       "type": "annual_report",

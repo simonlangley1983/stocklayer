@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-24T17:06:28.829097Z",
+  "generatedAt": "2026-09-24T17:43:20.563881Z",
   "company": {
     "companyName": "Babcock International Group PLC",
     "ticker": "BAB.L",
@@ -257,8 +257,81 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 5,
+    "reportCount": 7,
     "reports": [
+      {
+        "year": 2020,
+        "title": "Annual Report and Accounts for the year ended 31 March 2020",
+        "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000007055.pdf",
+        "sourceUrl": "https://data.fca.org.uk/#/nsm/nationalstoragemechanism",
+        "wordCount": 122667,
+        "pageCount": 228,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 2,
+            "per10kWords": 0.163
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 3,
+            "per10kWords": 0.245
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 58,
+            "per10kWords": 4.728
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 27,
+            "per10kWords": 2.201
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 61,
+            "per10kWords": 4.973
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 2,
+            "per10kWords": 0.163
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 47,
+            "per10kWords": 3.832
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 41.7,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2021,
         "title": "Annual-Report-and-Financial-Statements-2021-singles.pdf",
@@ -330,6 +403,79 @@
           }
         ],
         "positivityScore": 35.5,
+        "positivityMethod": "lexical annual-report tone"
+      },
+      {
+        "year": 2022,
+        "title": "Annual Report and Financial Statements",
+        "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000057785/NI-000057785.pdf",
+        "sourceUrl": "https://data.fca.org.uk/#/nsm/nationalstoragemechanism",
+        "wordCount": 222232,
+        "pageCount": 248,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 8,
+            "per10kWords": 0.36
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 2,
+            "per10kWords": 0.09
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 5,
+            "per10kWords": 0.225
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 136,
+            "per10kWords": 6.12
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 29,
+            "per10kWords": 1.305
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 107,
+            "per10kWords": 4.815
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 5,
+            "per10kWords": 0.225
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 44,
+            "per10kWords": 1.98
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 38.1,
         "positivityMethod": "lexical annual-report tone"
       },
       {
@@ -705,10 +851,28 @@
   },
   "events": [
     {
+      "date": "2020-12-31",
+      "type": "annual_report",
+      "title": "Annual Report and Accounts for the year ended 31 March 2020",
+      "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000007055.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
+    {
       "date": "2021-12-31",
       "type": "annual_report",
       "title": "Annual-Report-and-Financial-Statements-2021-singles.pdf",
       "url": "https://www.babcockinternational.com/wp-content/uploads/2025/07/Annual-Report-and-Financial-Statements-2021-singles.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
+    {
+      "date": "2022-12-31",
+      "type": "annual_report",
+      "title": "Annual Report and Financial Statements",
+      "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000057785/NI-000057785.pdf",
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-24T17:06:28.829097Z",
+  "generatedAt": "2026-09-24T17:43:20.563881Z",
   "company": {
     "companyName": "Haleon PLC",
     "ticker": "HLN.L",
@@ -878,8 +878,81 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 3,
+    "reportCount": 4,
     "reports": [
+      {
+        "year": 2022,
+        "title": "Haleon Annual Report and Accounts and 20F 2022",
+        "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000070634/NI-000070634.pdf",
+        "sourceUrl": "https://data.fca.org.uk/#/nsm/nationalstoragemechanism",
+        "wordCount": 139553,
+        "pageCount": 236,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 3,
+            "per10kWords": 0.215
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 2,
+            "per10kWords": 0.143
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 14,
+            "per10kWords": 1.003
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 161,
+            "per10kWords": 11.537
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 76,
+            "per10kWords": 5.446
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 49,
+            "per10kWords": 3.511
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 50,
+            "per10kWords": 3.583
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 1,
+            "per10kWords": 0.072
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 44,
+            "per10kWords": 3.153
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 42.6,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2023,
         "title": "Haleon plc Annual Report and Form 20-F 2023",
@@ -1147,9 +1220,9 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 45.8,
+    "score": 45.6,
     "label": "Mixed",
-    "evidenceCoverage": 92,
+    "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
@@ -1172,13 +1245,22 @@
         "label": "Emerging themes",
         "score": 33.8,
         "weight": 0.25,
-        "reliability": 0.667,
+        "reliability": 1.0,
         "detail": "Change in growth-theme density compared with pressure and risk themes."
       }
     ],
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2022-12-31",
+      "type": "annual_report",
+      "title": "Haleon Annual Report and Accounts and 20F 2022",
+      "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000070634/NI-000070634.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2023-12-31",
       "type": "annual_report",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-24T17:06:28.829097Z",
+  "generatedAt": "2026-09-24T17:43:20.563881Z",
   "company": {
     "companyName": "Glencore",
     "ticker": "GLEN.L",
@@ -833,7 +833,7 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 6,
+    "reportCount": 7,
     "reports": [
       {
         "year": 2019,
@@ -909,6 +909,79 @@
         "positivityMethod": "year-on-year thematic direction proxy"
       },
       {
+        "year": 2020,
+        "title": "2020 Annual Report of Glencore plc",
+        "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000021030/NI-000021030.pdf",
+        "sourceUrl": "https://data.fca.org.uk/#/nsm/nationalstoragemechanism",
+        "wordCount": 153749,
+        "pageCount": 250,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 1,
+            "per10kWords": 0.065
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 8,
+            "per10kWords": 0.52
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 117,
+            "per10kWords": 7.61
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 24,
+            "per10kWords": 1.561
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 24,
+            "per10kWords": 1.561
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 56,
+            "per10kWords": 3.642
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 6,
+            "per10kWords": 0.39
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 20.9,
+        "positivityMethod": "lexical annual-report tone"
+      },
+      {
         "year": 2021,
         "title": "GLEN-2021-annual-report-.pdf",
         "url": "https://www.glencore.com/.rest/api/v1/documents/ce4fec31fc81d6049d076b15db35d45d/GLEN-2021-annual-report-.pdf",
@@ -978,7 +1051,7 @@
             "per10kWords": 0.0
           }
         ],
-        "positivityScore": 47.8,
+        "positivityScore": 49.5,
         "positivityMethod": "year-on-year thematic direction proxy"
       },
       {
@@ -1358,6 +1431,15 @@
       "type": "annual_report",
       "title": "glen-2019-annual-report-interactive.pdf",
       "url": "https://www.glencore.com/.rest/api/v1/documents/5a08fe1942f92df7f2301ac3681e23aa/glen-2019-annual-report-interactive.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
+    {
+      "date": "2020-12-31",
+      "type": "annual_report",
+      "title": "2020 Annual Report of Glencore plc",
+      "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000021030/NI-000021030.pdf",
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-24T17:06:28.829097Z",
+  "generatedAt": "2026-09-24T17:43:20.563881Z",
   "company": {
     "companyName": "Pearson PLC",
     "ticker": "PSON.L",
@@ -770,8 +770,81 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 1,
+    "reportCount": 2,
     "reports": [
+      {
+        "year": 2022,
+        "title": "Pearson plc Annual Report and Accounts 2022",
+        "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000070448/NI-000070448.pdf",
+        "sourceUrl": "https://data.fca.org.uk/#/nsm/nationalstoragemechanism",
+        "wordCount": 146103,
+        "pageCount": 116,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 9,
+            "per10kWords": 0.616
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 8,
+            "per10kWords": 0.548
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 36,
+            "per10kWords": 2.464
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 52,
+            "per10kWords": 3.559
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 44,
+            "per10kWords": 3.012
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 7,
+            "per10kWords": 0.479
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 15,
+            "per10kWords": 1.027
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 1,
+            "per10kWords": 0.068
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 67,
+            "per10kWords": 4.586
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 2,
+            "per10kWords": 0.137
+          }
+        ],
+        "positivityScore": 45.1,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2025,
         "title": "Pearson plc Annual Report and Accounts 2025",
@@ -846,15 +919,56 @@
         "positivityMethod": "lexical annual-report tone"
       }
     ],
-    "emergingKeywords": [],
+    "emergingKeywords": [
+      {
+        "key": "china",
+        "label": "China",
+        "mentions": 11,
+        "per10kWords": 2.247,
+        "previousPer10kWords": 1.027,
+        "changePer10kWords": 1.22
+      },
+      {
+        "key": "margin_pressure",
+        "label": "Margin pressure",
+        "mentions": 0,
+        "per10kWords": 0.0,
+        "previousPer10kWords": 0.068,
+        "changePer10kWords": -0.068
+      },
+      {
+        "key": "data_center",
+        "label": "Data centres",
+        "mentions": 0,
+        "per10kWords": 0.0,
+        "previousPer10kWords": 0.137,
+        "changePer10kWords": -0.137
+      },
+      {
+        "key": "supply_chain",
+        "label": "Supply chain",
+        "mentions": 1,
+        "per10kWords": 0.204,
+        "previousPer10kWords": 0.479,
+        "changePer10kWords": -0.275
+      },
+      {
+        "key": "cloud",
+        "label": "Cloud",
+        "mentions": 0,
+        "per10kWords": 0.0,
+        "previousPer10kWords": 0.548,
+        "changePer10kWords": -0.548
+      }
+    ],
     "latestPositivity": 10.1,
     "latestPositivityMethod": "lexical annual-report tone",
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 29.6,
+    "score": 37.6,
     "label": "Low",
-    "evidenceCoverage": 100,
+    "evidenceCoverage": 83,
     "components": [
       {
         "key": "press",
@@ -871,11 +985,28 @@
         "weight": 0.35,
         "reliability": 1.0,
         "detail": "Lexical annual-report tone."
+      },
+      {
+        "key": "themes",
+        "label": "Emerging themes",
+        "score": 57.6,
+        "weight": 0.25,
+        "reliability": 0.333,
+        "detail": "Change in growth-theme density compared with pressure and risk themes."
       }
     ],
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2022-12-31",
+      "type": "annual_report",
+      "title": "Pearson plc Annual Report and Accounts 2022",
+      "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000070448/NI-000070448.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2025-12-31",
       "type": "annual_report",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-24T17:06:28.829097Z",
+  "generatedAt": "2026-09-24T17:43:20.563881Z",
   "company": {
     "companyName": "Unilever",
     "ticker": "ULVR.L",
@@ -788,8 +788,154 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 2,
+    "reportCount": 4,
     "reports": [
+      {
+        "year": 2021,
+        "title": "Annual Reports and Accounts of Unilever PLC 2020",
+        "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000020829/NI-000020829.pdf",
+        "sourceUrl": "https://data.fca.org.uk/#/nsm/nationalstoragemechanism",
+        "wordCount": 154785,
+        "pageCount": 209,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 4,
+            "per10kWords": 0.258
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 1,
+            "per10kWords": 0.065
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 3,
+            "per10kWords": 0.194
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 103,
+            "per10kWords": 6.654
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 49,
+            "per10kWords": 3.166
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 79,
+            "per10kWords": 5.104
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 46,
+            "per10kWords": 2.972
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 16,
+            "per10kWords": 1.034
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 5,
+            "per10kWords": 0.323
+          }
+        ],
+        "positivityScore": 44.9,
+        "positivityMethod": "lexical annual-report tone"
+      },
+      {
+        "year": 2023,
+        "title": "Unilever PLC Annual Report on Form 20-F 2023",
+        "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000091833/NI-000091833.pdf",
+        "sourceUrl": "https://data.fca.org.uk/#/nsm/nationalstoragemechanism",
+        "wordCount": 148360,
+        "pageCount": 266,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 6,
+            "per10kWords": 0.404
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 47,
+            "per10kWords": 3.168
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 98,
+            "per10kWords": 6.606
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 72,
+            "per10kWords": 4.853
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 69,
+            "per10kWords": 4.651
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 44,
+            "per10kWords": 2.966
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 28,
+            "per10kWords": 1.887
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 51.3,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2024,
         "title": "Unilever Annual report 2024",
@@ -984,9 +1130,9 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 50.8,
+    "score": 50.9,
     "label": "Mixed",
-    "evidenceCoverage": 83,
+    "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
@@ -1009,13 +1155,31 @@
         "label": "Emerging themes",
         "score": 61.9,
         "weight": 0.25,
-        "reliability": 0.333,
+        "reliability": 1.0,
         "detail": "Change in growth-theme density compared with pressure and risk themes."
       }
     ],
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2021-12-31",
+      "type": "annual_report",
+      "title": "Annual Reports and Accounts of Unilever PLC 2020",
+      "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000020829/NI-000020829.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
+    {
+      "date": "2023-12-31",
+      "type": "annual_report",
+      "title": "Unilever PLC Annual Report on Form 20-F 2023",
+      "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000091833/NI-000091833.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2024-12-31",
       "type": "annual_report",

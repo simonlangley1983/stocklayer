@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-24T17:06:28.829097Z",
+  "generatedAt": "2026-09-24T17:43:20.563881Z",
   "company": {
     "companyName": "IG Group Holdings PLC",
     "ticker": "IGG.L",
@@ -212,8 +212,81 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 5,
+    "reportCount": 6,
     "reports": [
+      {
+        "year": 2020,
+        "title": "Annual Report",
+        "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000009201.pdf",
+        "sourceUrl": "https://data.fca.org.uk/#/nsm/nationalstoragemechanism",
+        "wordCount": 112134,
+        "pageCount": 213,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 1,
+            "per10kWords": 0.089
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 162,
+            "per10kWords": 14.447
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 44,
+            "per10kWords": 3.924
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 1,
+            "per10kWords": 0.089
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 15,
+            "per10kWords": 1.338
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 5,
+            "per10kWords": 0.446
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 3,
+            "per10kWords": 0.268
+          }
+        ],
+        "positivityScore": 35.6,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2021,
         "title": "Annual report 2021 Annual report 2021 about Download",
@@ -659,6 +732,15 @@
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2020-12-31",
+      "type": "annual_report",
+      "title": "Annual Report",
+      "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000009201.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2021-12-31",
       "type": "annual_report",

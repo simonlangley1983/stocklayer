@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-24T17:06:28.829097Z",
+  "generatedAt": "2026-09-24T17:43:20.563881Z",
   "company": {
     "companyName": "Hiscox Ltd",
     "ticker": "HSX.L",
@@ -788,8 +788,81 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 1,
+    "reportCount": 2,
     "reports": [
+      {
+        "year": 2020,
+        "title": "Hiscox Ltd 2020 Annual Report and Accounts",
+        "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000021365/NI-000021365.pdf",
+        "sourceUrl": "https://data.fca.org.uk/#/nsm/nationalstoragemechanism",
+        "wordCount": 106550,
+        "pageCount": 192,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 5,
+            "per10kWords": 0.469
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 70,
+            "per10kWords": 6.57
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 18,
+            "per10kWords": 1.689
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 3,
+            "per10kWords": 0.282
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 27.8,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2025,
         "title": "Official full annual report 2025",
@@ -864,15 +937,56 @@
         "positivityMethod": "lexical annual-report tone"
       }
     ],
-    "emergingKeywords": [],
+    "emergingKeywords": [
+      {
+        "key": "ai",
+        "label": "AI",
+        "mentions": 65,
+        "per10kWords": 5.382,
+        "previousPer10kWords": 0.0,
+        "changePer10kWords": 5.382
+      },
+      {
+        "key": "restructuring",
+        "label": "Restructuring",
+        "mentions": 15,
+        "per10kWords": 1.242,
+        "previousPer10kWords": 0.282,
+        "changePer10kWords": 0.96
+      },
+      {
+        "key": "cloud",
+        "label": "Cloud",
+        "mentions": 11,
+        "per10kWords": 0.911,
+        "previousPer10kWords": 0.0,
+        "changePer10kWords": 0.911
+      },
+      {
+        "key": "supply_chain",
+        "label": "Supply chain",
+        "mentions": 10,
+        "per10kWords": 0.828,
+        "previousPer10kWords": 0.0,
+        "changePer10kWords": 0.828
+      },
+      {
+        "key": "regulation",
+        "label": "Regulation",
+        "mentions": 81,
+        "per10kWords": 6.707,
+        "previousPer10kWords": 6.57,
+        "changePer10kWords": 0.137
+      }
+    ],
     "latestPositivity": 35.6,
     "latestPositivityMethod": "lexical annual-report tone",
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 44.6,
+    "score": 53.8,
     "label": "Mixed",
-    "evidenceCoverage": 100,
+    "evidenceCoverage": 83,
     "components": [
       {
         "key": "press",
@@ -889,11 +1003,28 @@
         "weight": 0.35,
         "reliability": 1.0,
         "detail": "Lexical annual-report tone."
+      },
+      {
+        "key": "themes",
+        "label": "Emerging themes",
+        "score": 82.7,
+        "weight": 0.25,
+        "reliability": 0.333,
+        "detail": "Change in growth-theme density compared with pressure and risk themes."
       }
     ],
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2020-12-31",
+      "type": "annual_report",
+      "title": "Hiscox Ltd 2020 Annual Report and Accounts",
+      "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000021365/NI-000021365.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2025-12-31",
       "type": "annual_report",
