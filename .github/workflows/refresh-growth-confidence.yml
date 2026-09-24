@@ -1,0 +1,28 @@
+name: Refresh growth confidence after intelligence updates
+
+on:
+  push:
+    paths:
+      - 'annual-reports/extracted-keywords-history.json'
+      - 'sentiment/**'
+      - 'analytics/company-intelligence-summary.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh-growth-confidence:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Recalculate growth confidence
+        run: python scripts/generate_growth_confidence_history.py --companies ftse100.json
+      - name: Commit refreshed scores
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'Refresh growth confidence from intelligence updates'
+          file_pattern: 'history/growth-confidence/*.json'
