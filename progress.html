@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>StockLayer — Data progress</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f4f7fb;color:#14243d;font:16px/1.5 system-ui,sans-serif}main{max-width:1100px;margin:auto;padding:32px 20px}header{display:flex;justify-content:space-between;align-items:center;gap:20px}h1{font-size:32px;margin:12px 0}h2{font-size:18px;margin:0 0 12px}a{color:#245bcc}button,input{font:inherit;padding:10px 14px;border:1px solid #cbd5e1;border-radius:8px;background:white}button{cursor:pointer}.muted,small{color:#596b82}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:24px 0}.card,section{background:white;border:1px solid #dce5ef;border-radius:14px;padding:22px}.number{font-size:38px;font-weight:700;letter-spacing:-1px}.number small{font-size:18px;font-weight:400}progress{display:block;width:100%;height:12px;margin:14px 0;accent-color:#2464e8}.notice{padding:14px 18px;background:#fff3d8;border-radius:9px;margin:18px 0}.good{color:#097858}.bad{color:#a94715}.pill{display:inline-block;padding:3px 9px;border-radius:999px;background:#e7f7ef;color:#097858;font-size:13px;font-weight:700}.pill.wait{background:#fff3d8;color:#8a5700}.pill.fail{background:#fde8e4;color:#a94715}section{margin:20px 0}table{border-collapse:collapse;width:100%;font-size:14px}td,th{padding:12px 8px;text-align:left;border-bottom:1px solid #e4eaf2}th{color:#596b82}.scroll{overflow:auto}input{width:100%;margin-bottom:12px}li{margin:8px 0}@media(max-width:700px){.grid{grid-template-columns:1fr}header{align-items:flex-start}h1{font-size:26px}.number{font-size:34px}}
+</style></head><body><main>
+<header><div><a href="/">StockLayer</a><h1>Data progress</h1><div class="muted">Reports, news coverage and remaining gaps</div></div><button id="refresh">Refresh now</button></header>
+<p id="status" role="status" aria-live="polite">Loading published data…</p>
+<div class="notice">Refreshes every 60 seconds while open, and when you return to this page. Counts change after a collection run publishes its results; they are not live extraction counters.</div>
+<section><h2>Live collection activity</h2><div id="live-run">Checking the current GitHub Actions run…</div></section>
+<section><h2>Latest annual report coverage</h2><div id="latest-register">Loading report register…</div><p class="muted">A recent report is not proof that it is the latest available. Availability needs a dated issuer check.</p></section><div id="metrics" class="grid"></div>
+<p id="integrity" role="status">Published annual-report coverage has not yet been verified.</p>
+<section><h2>Latest collection results</h2><div id="runs">Loading…</div><p><a href="https://github.com/simonlangley1983/stocklayer/actions" target="_blank" rel="noopener">View running jobs and diagnostics ↗</a></p></section>
+<section><h2>Last 24 hours</h2><p id="comparison-note" class="muted">Loading the published baseline from 24 hours ago…</p><ul id="changes"></ul></section>
+<section><h2>Company coverage</h2><input id="search" aria-label="Find a company" placeholder="Find a company"><div class="scroll"><table><thead><tr><th>Company</th><th>Newest published report</th><th>Latest availability</th><th>Missing historical years</th><th>Scored news days</th><th>Latest news day checked</th></tr></thead><tbody id="companies"></tbody></table></div></section>
+<small>“Checked” includes days with no eligible news. “Scored” requires news evidence. Missing report years are dataset gaps; a report may not exist for a company that listed later.</small>
+</main><script>
+const base='https://raw.githubusercontent.com/simonlangley1983/stocklayer/main/';
+const actions='https://api.github.com/repos/simonlangley1983/stocklayer/actions/workflows/monitor-annual-reports.yml/runs?per_page=1';
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const num=n=>Number(n).toLocaleString('en-GB');
+const stamp=s=>s?new Date(s).toLocaleString('en-GB'):'Unavailable';
+let rows=[],busy=false,reportVersion=null,publishedYears=new Map();
+async function loadLiveRun(){
+ const target=document.querySelector('#live-run');
+ try{
+  const response=await fetch(actions,{cache:'no-store'});if(!response.ok)throw Error('GitHub status unavailable ('+response.status+')');
+  const run=(await response.json()).workflow_runs?.[0];if(!run)throw Error('No collection runs found');
+  let current='Preparing job';
+  if(['in_progress','queued','waiting','requested','pending'].includes(run.status)){
+   const jobs=await fetch(run.jobs_url,{cache:'no-store'});if(jobs.ok){const steps=(await jobs.json()).jobs?.flatMap(j=>j.steps||[])||[];current=steps.find(s=>s.status==='in_progress')?.name||steps.find(s=>s.status==='queued')?.name||current}
+  }
+  const state=run.conclusion||run.status;const kind=run.conclusion==='failure'||run.conclusion==='cancelled'?'fail':['in_progress','queued','waiting','requested','pending'].includes(run.status)?'wait':'';
+  const label=state.replaceAll('_',' ');const detail=kind==='wait'?`Current step: ${esc(current)}.`:run.conclusion==='success'?'Latest run completed successfully.':run.conclusion?`Latest run completed: ${esc(label)}.`:`Run status: ${esc(label)}.`;
+  target.innerHTML=`<p><span class="pill ${kind}">${esc(label)}</span> <a href="${esc(run.html_url)}" target="_blank" rel="noopener">Open run ↗</a></p><p>${detail}</p><small>Started ${stamp(run.run_started_at||run.created_at)} · updated ${stamp(run.updated_at)}. This refreshes every 60 seconds.</small>`;
+ }catch(e){target.textContent='Live run status unavailable: '+e.message}
+}
+async function verifyReports(manifest){
+ if(reportVersion===manifest.generatedAt)return publishedYears;
+ const result=new Map();let next=0;
+ await Promise.all(Array.from({length:6},async()=>{
+  while(next<manifest.companies.length){const company=manifest.companies[next++];
+   try{const response=await fetch(base+'company-reports/'+encodeURIComponent(company.slug)+'.json?v='+encodeURIComponent(manifest.generatedAt),{cache:'no-store'});
+    if(!response.ok)throw Error('Unavailable');const report=await response.json();
+    if(report.generatedAt!==manifest.generatedAt||!Array.isArray(report.annualReportAnalysis?.reports))throw Error('Mismatched publication');
+    result.set(company.slug,[...new Set(report.annualReportAnalysis.reports.map(r=>Number(r.year)).filter(Number.isInteger))]);
+   }catch{result.set(company.slug,null)}
+  }
+ }));
+ publishedYears=result;if([...result.values()].every(v=>v!==null))reportVersion=manifest.generatedAt;return result;
+}
+let baseline=null,baselineFetched=0;
+async function changes24(a,n){
+ try{
+  if(!baseline||Date.now()-baselineFetched>15*60*1000){
+   const cutoff=new Date(Date.now()-24*60*60*1000).toISOString();
+   const response=await fetch('https://api.github.com/repos/simonlangley1983/stocklayer/commits?sha=main&per_page=1&until='+encodeURIComponent(cutoff));
+   if(!response.ok)throw Error('History unavailable ('+response.status+')');
+   const commits=await response.json();if(!commits.length)throw Error('No published baseline exists');
+   const sha=commits[0].sha;
+   const values=await Promise.all(['annual-reports/backfill-progress.json','sentiment/coverage-status.json'].map(async p=>{const r=await fetch(base.replace('/main/','/'+sha+'/')+p);if(!r.ok)throw Error('Historical coverage unavailable');return r.json()}));
+   baseline={a:values[0],n:values[1],cutoff,commit:commits[0].commit.committer.date};baselineFetched=Date.now();
+  }
+  const old=baseline;const signed=x=>(x>0?'+':'')+num(x);
+  const reportCount=x=>Object.keys(x.missingYearsByCompany).length*(x.targetEndYear-x.targetStartYear+1)-x.missingCompanyYears;
+  const sameTarget=a.targetStartYear===old.a.targetStartYear&&a.targetEndYear===old.a.targetEndYear&&Object.keys(a.missingYearsByCompany).sort().join()===Object.keys(old.a.missingYearsByCompany).sort().join();
+  const recovered=Object.entries(a.missingYearsByCompany).flatMap(([slug,years])=>(old.a.missingYearsByCompany[slug]||[]).filter(y=>!years.includes(y)).map(y=>`${n.companies.find(c=>c.slug===slug)?.companyName||slug}: ${y}`));
+  const lines=[sameTarget?`Reports available: ${signed(reportCount(a)-reportCount(old.a))} net (${num(reportCount(old.a))} → ${num(reportCount(a))})`:'Report targets changed; totals are not directly comparable.',`News days checked: ${signed(n.completedCompanyDays-old.n.completedCompanyDays)} net (${num(old.n.completedCompanyDays)} → ${num(n.completedCompanyDays)})`,`Scored news days: ${signed(n.scoredCompanyDays-old.n.scoredCompanyDays)} net (${num(old.n.scoredCompanyDays)} → ${num(n.scoredCompanyDays)})`,`Days with no eligible news: ${signed(n.noNewsCompanyDays-old.n.noNewsCompanyDays)} net`];
+  if(sameTarget)lines.push(recovered.length?'Report gaps filled: '+recovered.join('; '):'No report gaps filled in this comparison.');
+  document.querySelector('#comparison-note').textContent=`Extraction-audit comparison (separate from verified published coverage above). Compared with the repository state at ${stamp(old.cutoff)} (last commit ${stamp(old.commit)}). Baseline refreshed every 15 minutes. News figures are net changes in rolling coverage; days leaving the window can reduce totals. Latest news dates: ${old.n.endDate} → ${n.endDate}.`;
+  document.querySelector('#changes').innerHTML=lines.map(line=>`<li>${esc(line)}</li>`).join('');
+ }catch(e){document.querySelector('#comparison-note').textContent='24-hour comparison unavailable: '+e.message;document.querySelector('#changes').textContent='Current coverage figures above remain available. Retry with Refresh now.';baseline=null}
+}
+function renderRows(){const q=document.querySelector('#search').value.toLowerCase();document.querySelector('#companies').innerHTML=rows.filter(c=>c.companyName.toLowerCase().includes(q)).map(c=>`<tr><td>${esc(c.companyName)}</td><td>${esc(c.latestReportYear??'Unverified')}</td><td>${esc(c.availability||'Unverified')}</td><td>${esc(c.missing===null?'Unverified — report unavailable':c.missing.join(', ')||'None — verified')}</td><td>${num(c.scoredDays)}</td><td class="${c.latestDayComplete?'good':'bad'}">${c.latestDayComplete?'Checked':'Pending / incomplete'}</td></tr>`).join('')}
+function card(title,value,total,detail,time){return `<div class="card"><h2>${title}</h2><div class="number">${num(value)} <small>/ ${num(total)}</small></div><progress value="${value}" max="${total}" aria-label="${title}"></progress><p>${detail}</p><small>Published ${stamp(time)}</small></div>`}
+async function refresh(){if(busy)return;busy=true;document.querySelector('#refresh').disabled=true;
+loadLiveRun();
+try{
+ const paths=['annual-reports/backfill-progress.json','sentiment/coverage-status.json','sentiment/run-status.json','company-reports/manifest.json'];
+ const [a,n,r,manifest]=await Promise.all(paths.map(async p=>{const response=await fetch(base+p+'?v='+Date.now(),{cache:'no-store'});if(!response.ok)throw Error('Feed unavailable ('+response.status+')');return response.json()}));
+ if(!a.missingYearsByCompany||!Array.isArray(n.companies)||!Number.isFinite(n.requestedCompanyDays))throw Error('Unexpected feed format');
+ let register=null;
+ try{const rr=await fetch(base+'annual-reports/report-register.json?v='+Date.now(),{cache:'no-store'});if(rr.ok)register=await rr.json()}catch{}
+ document.querySelector('#latest-register').textContent=register?`${register.verifiedCurrentCount} / ${register.companyCount} issuer checks confirm the latest report is loaded. ${Object.values(register.companies).filter(c=>c.archiveStatus==='needs_source_review').length} companies need archive-source review. Register updated ${stamp(register.generatedAt)}.`:'Report register unavailable — latest availability is unverified.';
+ const verified=await verifyReports(manifest);
+ const targets=Array.from({length:a.targetEndYear-a.targetStartYear+1},(_,i)=>a.targetStartYear+i);
+ const companies=manifest.companies;
+ let missingTotal=0,unknown=0,disagreements=0;
+ rows=companies.map(c=>{const news=n.companies.find(x=>x.slug===c.slug);const years=verified.get(c.slug);
+  const missing=years?targets.filter(y=>!years.includes(y)):null;
+  if(missing===null)unknown++;else{missingTotal+=missing.length;if(JSON.stringify([...missing].sort())!==JSON.stringify([...(a.missingYearsByCompany[c.slug]||[])].sort()))disagreements++}
+  return {availability:register?.companies?.[c.slug]?.status?.replaceAll('_',' ')||'Unverified',latestReportYear:years?.length?Math.max(...years):null,slug:c.slug,companyName:news?.companyName||c.slug,scoredDays:news?.scoredDays??0,latestDayComplete:news?.latestDayComplete??false,missing};
+ }).sort((x,y)=>x.companyName.localeCompare(y.companyName));
+ const total=companies.length*targets.length,available=total-missingTotal;
+ document.querySelector('#integrity').textContent=unknown?`${unknown} company reports could not be verified. Annual totals are withheld; unavailable records are not labelled missing.`:disagreements?`${disagreements} companies disagree with the extraction audit. The figures and missing years shown here come from the published reports.`:`All ${companies.length} company reports checked against publication ${stamp(manifest.generatedAt)}. Coverage agrees with the extraction audit.`;
+ document.querySelector('#metrics').innerHTML=(unknown?'<div class="card"><h2>Annual reports</h2><p>Coverage unverified — retrying on next refresh</p></div>':card('Annual reports',available,total,`${num(missingTotal)} missing · ${a.targetStartYear}–${a.targetEndYear}`,manifest.generatedAt))+card('News days checked',n.completedCompanyDays,n.requestedCompanyDays,`${num(n.scoredCompanyDays)} scored · ${num(n.noNewsCompanyDays)} with no eligible news`,n.checkedAt)+card('Latest news day checked',n.latestDayCompletedCompanies,n.companyCount,`${esc(n.endDate)} · ${num(n.companyCount-n.latestDayCompletedCompanies)} pending / incomplete`,n.checkedAt);
+ document.querySelector('#runs').innerHTML=`<p><strong>Annual reports:</strong> ${num(a.recovered)} recovered from ${num(a.attempted)} attempts in the last batch.</p><p><strong>News:</strong> ${esc(r.status)} · ${num(r.completedObservationCount)} / ${num(r.requestedObservationCount)} requested company-days completed in the last run (${esc(r.provider)}). Published ${stamp(r.generatedAt)}.</p>`;
+ await changes24(a,n);
+ renderRows();
+ const stale=[a.checkedAt,n.checkedAt].some(t=>!t||Date.now()-Date.parse(t)>24*60*60*1000);
+ document.querySelector('#status').textContent=`Last checked ${new Date().toLocaleTimeString('en-GB')}${stale?' · Warning: a coverage feed is over 24 hours old.':' · Published feeds loaded'}`;
+}catch(e){document.querySelector('#status').textContent='Refresh failed — displayed figures may be stale. '+e.message}finally{busy=false;document.querySelector('#refresh').disabled=false}}
+document.querySelector('#refresh').onclick=refresh;document.querySelector('#search').oninput=renderRows;setInterval(()=>{if(!document.hidden)refresh()},60000);document.addEventListener('visibilitychange',()=>{if(!document.hidden)refresh()});refresh();
+</script></body></html>
