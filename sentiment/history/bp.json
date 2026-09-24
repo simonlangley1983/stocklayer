@@ -3351,38 +3351,27 @@
     },
     {
       "date": "2026-09-23",
-      "dailyScore": 54.2,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.6,
-      "confidence": 64.9,
+      "dailyScore": 59.5,
+      "dailyLabel": "Slightly positive",
+      "rollingScore": 50.5,
+      "confidence": 62.8,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
       "collectionCompleteness": 0.75,
-      "candidateCount": 74,
-      "eligibleArticleCount": 9,
-      "storyCount": 9,
-      "effectiveStoryCount": 9.0,
-      "sourceCount": 9,
+      "candidateCount": 66,
+      "eligibleArticleCount": 8,
+      "storyCount": 8,
+      "effectiveStoryCount": 8.0,
+      "sourceCount": 8,
       "positiveStoryCount": 4,
       "neutralStoryCount": 2,
-      "negativeStoryCount": 3,
-      "dispersion": 0.6197,
+      "negativeStoryCount": 2,
+      "dispersion": 0.5222,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 49,
-        "missing_company_alias": 16
+        "ambiguous_company_without_alias": 43,
+        "missing_company_alias": 15
       },
       "topStories": [
-        {
-          "id": "351cbb442738e58f",
-          "storyClusterId": "story-004",
-          "title": "Aker BP stock falls 1.1 percent as oil prices weaken",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOQTBGMnpUX1BaY2VhMW1yV3RMeTAyQjczajE3M2NMWVZMbVBrU01McmpoX1JnUWVKWXFTUHJJNVl4Ymtka3FUUTVhWG54SFpjWjBqMS1QUjNvbWh5azIxdDNhOEZLbENIbnl2ZE5VeXJFWUR4ckZURzFpYlhkTW5WZ05WSko3eC1ENEVuT1NremladUt1QVo1QVotNDhIQ3NRSXlnYWFPQU9VSm83TU9sZ1lNX0R5UQ?oc=5",
-          "source": "ad-hoc-news.de",
-          "publishedAt": "2026-09-23T08:52:06Z",
-          "polarity": -0.9606,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
         {
           "id": "e181d7a3ab676a7a",
           "storyClusterId": "story-002",
@@ -3396,7 +3385,7 @@
         },
         {
           "id": "6e145860145901a5",
-          "storyClusterId": "story-009",
+          "storyClusterId": "story-007",
           "title": "BP PLC Stock (BP) Closed Up by 3.23% on Sep 23: Drivers Behind the Movement",
           "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZV9BSHRwQ3k4RXZXT1J5MWNWeFljMXl6aGdpdWkxdFBIMnVyQnJNa1NjcGFlUXppckJzQ1ZOczRsWVRvSExIS2VOa1JrQ2wzdnFzRVM0OUdrVWVLUmhaV1pDdEtrandfUThFSXNVblotV3Rya19pbzkwaVduNjJjSnJBWEhyeUpR?oc=5",
           "source": "tradingkey.com",
@@ -3426,6 +3415,17 @@
           "polarity": -0.6393,
           "sentiment": "Very negative",
           "publisherCount": 1
+        },
+        {
+          "id": "654d8ec8f106a658",
+          "storyClusterId": "story-005",
+          "title": "BP Exits Bay du Nord Oil Project, Leaving Equinor as Sole Owner",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPQUJZaS1yeFMteU1TTjRLQVY1QnBZV3R0bzNkVlhwd0pfcUZLQmhpdGx6WkRsaTg5UWxSTml5akhVY2lmdDBodDNZSUVJSDNqdjNUSzVlZ1lSbklCd25jd2p1ZTFNN0M5c3llZTY2ZlJsWGhLeUZnUmdvcVdac1QzVTN5em1icXRHNE5vaTFlVVFiVlVkTE1R?oc=5",
+          "source": "energynow.ca",
+          "publishedAt": "2026-09-23T12:14:42Z",
+          "polarity": -0.3651,
+          "sentiment": "Negative",
+          "publisherCount": 1
         }
       ],
       "flags": [
@@ -3440,35 +3440,21 @@
           "sourceCount": 1
         },
         {
-          "type": "high_disagreement",
-          "direction": "mixed",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "Positive and negative coverage is unusually dispersed",
-          "evidenceArticleIds": [
-            "351cbb442738e58f",
-            "e181d7a3ab676a7a",
-            "6e145860145901a5",
-            "42bac73e7a51f5d3",
-            "3e80ad4a46e109f8"
-          ]
-        },
-        {
           "type": "collection_degraded",
           "direction": "neutral",
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
-            "351cbb442738e58f",
             "e181d7a3ab676a7a",
             "6e145860145901a5",
             "42bac73e7a51f5d3",
-            "3e80ad4a46e109f8"
+            "3e80ad4a46e109f8",
+            "654d8ec8f106a658"
           ]
         }
       ],
-      "changeFromPreviousScoredDay": 2.7
+      "changeFromPreviousScoredDay": 8.0
     }
   ]
 }

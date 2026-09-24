@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-09-24T05:26:31.805194Z",
+  "generatedAt": "2026-09-24T10:17:31.207063Z",
   "asOfDate": "2026-09-23",
   "companies": {
     "astrazeneca": {
@@ -125,42 +125,142 @@
       "ticker": "SHEL.L",
       "slug": "shell",
       "date": "2026-09-23",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 51.8,
-      "confidence": 0.0,
-      "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "dailyScore": 62.1,
+      "dailyLabel": "Positive",
+      "rollingScore": 53.5,
+      "confidence": 62.6,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "storyCount": 11,
+      "sourceCount": 12,
+      "changeFromPreviousScoredDay": 0.9,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "divestment",
           "direction": "neutral",
-          "severity": "low",
+          "severity": "medium",
+          "status": "confirmed",
+          "evidenceArticleIds": [
+            "0abb59745512cb63",
+            "f8a4415c9a28afe6",
+            "bc09c7c8e2dd07d5"
+          ],
+          "sourceCount": 3
+        },
+        {
+          "type": "coverage_spike",
+          "direction": "neutral",
+          "severity": "medium",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "11 stories versus trailing median 3",
+          "evidenceArticleIds": [
+            "6d8a4b2056773e78",
+            "e31465c6782e63c8",
+            "0abb59745512cb63",
+            "cef267d860a8a702",
+            "f7bb9dc298d09b26"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "6d8a4b2056773e78",
+            "e31465c6782e63c8",
+            "0abb59745512cb63",
+            "cef267d860a8a702",
+            "f7bb9dc298d09b26"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "6d8a4b2056773e78",
+          "storyClusterId": "story-007",
+          "title": "Shell, Trinidad's NGC agree on Aphrodite gas supply terms, clearing way for project",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNNlE1V25zckZPNlpUQ1ZRVzVFTmU0ZG5sMTVPZ2p2Q3JabTZmbHVNNS1jWThxSGQ3WF9xbVZEdHAyWXRZdXI1UDhqMzI5dzV5VXpJN0tnY1B3MzFZOEVhSzJXLTVHdGQzVHEyNnNHUU1EZ29zcWFHLUV2QXczV1pKZVJvcXJoQU5PUXRUUVJVN1BpSHVjb2JiVGtEcU10OGpNc1lsQzFHbEhDazJpdzBCb1AxVnNYX1QzY1oxUlZ4Z2xaX2M?oc=5",
+          "source": "reuters.com",
+          "publishedAt": "2026-09-23T18:26:47Z",
+          "polarity": 0.8908,
+          "sentiment": "Very positive",
+          "publisherCount": 2
+        },
+        {
+          "id": "e31465c6782e63c8",
+          "storyClusterId": "story-010",
+          "title": "Shell and Trinidad agree on Aphrodite gas supply terms, clearing way for project (SHEL:NYSE)",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQWjdac1ZrWkJfNGZRRzY4MzdiTHROcE4ta2FIajQ5eGJiXzM3RllPVTI4MU0xV1lqSmxhZWYyWHllYWFSd25ZQ0NLNzAtcEEzRnBmQW9tLWU3OHZXWXJMMHE5MlIyT3BaVWYtRUI2b2xvWnhHV0l3Y0JEV283M1pkM2Y2QlhGNjBSdjJSTUhDSEd0Nm1PSDMxX2ZLWWJwNnFuVjh1dWIySkJMaTczODF2UXByS1E2SWVS?oc=5",
+          "source": "seekingalpha.com",
+          "publishedAt": "2026-09-23T20:45:12Z",
+          "polarity": 0.7262,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "0abb59745512cb63",
+          "storyClusterId": "story-002",
+          "title": "Shell done with US Gulf oil asset sale set to realize $1.7 billion total deal value",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNaFF5amZXcy1MNExTY21aTjA0bGJCbVNTTnQxdk4wNU1BTGQxdDdONXVHTUJnOFZDU0U0QWE3S3pDWHJ1TDl3bXFoRGhoNkxXV0VUWnBWM0xhRm14eUdlVzNhSVpveU5EOFpxT0FidU81NGxrRkxBTWctY0NmM3hXYVVqYk9qc0hobERpQ0tEdGJjQkYtRVBxMUsxNlNQQ0p2TGdLQlpfaG9XMnZTUGVEN1hjckRQZw?oc=5",
+          "source": "offshore-energy.biz",
+          "publishedAt": "2026-09-23T08:10:38Z",
+          "polarity": 0.7253,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "cef267d860a8a702",
+          "storyClusterId": "story-009",
+          "title": "Shell, Trinidad's NGC reach gas supply deal for Aphrodite project",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQUnF2aW1BdnVBU2pfMTdMZ2E0Y1VjdnE3aWJUVzBvSnN2N0VSYk5wU2lGWjltTllSaU4wOXJEM0M3cGI0UGdWbGlLeE9FTzR6dTZoWEt3Si1jZWRlc0NNemg4dFloQnhrXy1JS2tuTnJ3YUlKLS1uRjRvR2xqcUxldmtMRUg0YWEtVXJSMzRuREpyNEpRanpPTDZWc2FSN0tqdGhNSGNPM3E?oc=5",
+          "source": "pgjonline.com",
+          "publishedAt": "2026-09-23T20:42:30Z",
+          "polarity": 0.6457,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "f7bb9dc298d09b26",
+          "storyClusterId": "story-011",
+          "title": "Talos Energy closes $420-million ‘deepwater bolt-on’ from Shell",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNNHhBRkYtSDJiUXFGNkhzUzFxTGJILVBZVmtqMVhaUEJNSzhPVjUwaXh1c051emFZdWhzUklES1VyWnZwT1lnelVyRXVqMGptVllXc3BTYXBrYmNranpySlUtZUUtblpacThoei05NW5uQ09Ob2hoYlhEUWxJdEJGekFQVTFTNmE4M2p0bFV1N2xvOUU3Um5qWHoya1pUd3g0RVQyMW1nUmRTZTdMSHdOSmR6azVLUTFld244d0JlZ244MHp3aEtLRV9LSms?oc=5",
+          "source": "offshore-mag.com",
+          "publishedAt": "2026-09-23T22:51:44Z",
+          "polarity": -0.1961,
+          "sentiment": "Slightly negative",
+          "publisherCount": 1
+        }
+      ]
     },
     "hsbc": {
       "companyName": "HSBC",
       "ticker": "HSBA.L",
       "slug": "hsbc",
       "date": "2026-09-23",
-      "dailyScore": 59.2,
+      "dailyScore": 59.1,
       "dailyLabel": "Slightly positive",
       "rollingScore": 50.3,
-      "confidence": 42.1,
-      "confidenceBand": "medium",
+      "confidence": 39.9,
+      "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 4,
+      "storyCount": 3,
       "sourceCount": 3,
-      "changeFromPreviousScoredDay": 18.4,
+      "changeFromPreviousScoredDay": 18.3,
       "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 39.9",
+          "evidenceArticleIds": [
+            "9a7997190023a54c",
+            "8a70829f6929caac",
+            "09d4fb9b171af1fd"
+          ]
+        },
         {
           "type": "collection_degraded",
           "direction": "neutral",
@@ -169,7 +269,6 @@
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
             "9a7997190023a54c",
-            "446b4866ec79b577",
             "8a70829f6929caac",
             "09d4fb9b171af1fd"
           ]
@@ -178,7 +277,7 @@
       "topStories": [
         {
           "id": "9a7997190023a54c",
-          "storyClusterId": "story-003",
+          "storyClusterId": "story-002",
           "title": "HSBC Holdings stock gains from buybacks and higher income guidance",
           "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQaWZDWXNaZXZadDBrRnlBeEhadDhCbjloOWNVbjJ2akJEc0NOSncxRmhJVkxDWDk1R09SRi1CMzNUUFdZOGNBaXJ4RE10T3N3Mm93M3lqSDR1bHR6bWx1bEhkbjUzMWVOc1ZFMTNHNTc2X2RELUR6cXUwdEpGdHZHaFZpLU1tWGY0ZXhmbWREcVdVdEk5U1NQeWhmamxQUDRtTTFISWw4cGhwME55NW9MUGZQd3JlTEkzb0k2alE5Q1FTS2RlbXNwYQ?oc=5",
           "source": "ad-hoc-news.de",
@@ -188,19 +287,8 @@
           "publisherCount": 1
         },
         {
-          "id": "446b4866ec79b577",
-          "storyClusterId": "story-001",
-          "title": "HSBC Holdings stock gains support as Citi lifts target",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNUllmMi1ZYklPVm4wXzN2ZnVXbE5jelJRYXgtOVFBN1F0UzNUQkhsQnNxcld0NWdrdUFLLUlJVTh6cHhTUTBNVENDcWt3TU04eU1VaDJQRE4tMmNnQi1YcHVCMjBYdzBOSUlOWFYtNXpPTlZWVExlV2UzcnFReWZfOXh0c295ZEZ1RmZVRTFrRnZUVnItbUhuZkE3a003d25mV05CRjkxcFJ1Y0l0X0lfa3NjOA?oc=5",
-          "source": "ad-hoc-news.de",
-          "publishedAt": "2026-09-23T08:48:15Z",
-          "polarity": 0.826,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
           "id": "8a70829f6929caac",
-          "storyClusterId": "story-004",
+          "storyClusterId": "story-003",
           "title": "HSBC Holdings Stock Price Today (0005) | HKEX",
           "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1ibmhINEpJTHZVY3dmdUdmMFY3NzREbHQ3aG5KY3dvMkRFX25adGFQZ0t0eEIzMXBpRXJnLWcxQUtxY0VVZDZGVlFNNUxhYU9WZG1oMXU5TmRCMkNu?oc=5",
           "source": "techgraph.co",
@@ -211,11 +299,11 @@
         },
         {
           "id": "09d4fb9b171af1fd",
-          "storyClusterId": "story-002",
+          "storyClusterId": "story-001",
           "title": "HSBC News | HSBC HOLDINGS PLC-SPONS ADR (NYSE:HSBC)",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1aZkxJM0x3Uy1DVVkzckp6Mk8yOXVESXBqb3R6cVg2ODkyaXFZQzRLWHVQdTBkMHNMeTdEZ0w0Q1lPVFl6b0ZELW5ESWZkT2Y4clFQSFJHSVJYVEU?oc=5",
           "source": "chartmill.com",
-          "publishedAt": "2026-09-23T11:35:47Z",
+          "publishedAt": "2026-09-23T00:04:00Z",
           "polarity": 0.0003,
           "sentiment": "Neutral / mixed",
           "publisherCount": 1
@@ -364,15 +452,15 @@
       "ticker": "BATS.L",
       "slug": "british-american-tobacco",
       "date": "2026-09-23",
-      "dailyScore": 50.4,
+      "dailyScore": 51.2,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.4,
-      "confidence": 61.7,
+      "rollingScore": 49.5,
+      "confidence": 62.2,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 50,
-      "sourceCount": 43,
-      "changeFromPreviousScoredDay": -0.5,
+      "storyCount": 40,
+      "sourceCount": 37,
+      "changeFromPreviousScoredDay": 0.3,
       "flags": [
         {
           "type": "collection_degraded",
@@ -381,8 +469,8 @@
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
-            "72c7329e2f04b972",
             "b8487f91108d3824",
+            "ae54fcd6b39e0fef",
             "1fa73a9d4d622b70",
             "f84b8ab788bcef0c",
             "1bf9661c326fa3ee"
@@ -391,19 +479,8 @@
       ],
       "topStories": [
         {
-          "id": "72c7329e2f04b972",
-          "storyClusterId": "story-025",
-          "title": "Cole County Health Department stresses vaccines in pets after bat tests positive for rabies",
-          "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNb3gwSUViaHdLYlJKRGQtbWJQVmwyY21fYmFISmpxQXVnRkR3Y01wUDRQRk5SdXNVRlczZUIzLVNuUHRQc24tLWdsODkxa2FjNkQxUXdVQzJONVB2Y3E0TmlmaXZRRGV6VXpvY2VNcVNsVThKMk80SnJZZ0ViZ3lkUjdFaFF5S3QyMUZuRUUtcllDMVB5MjJiOVJsZk1Nb1pPOFdWZVlSRkNmZ3RLc1FTdm9CbDdKNVBVSHFrTTNsQUtrd1hjTVdnT1hlaE5jdGJicU5rdWtvRkhzdk5kUDlJZzRwcGdVNWIxQzJ5aEI0dlJzZkMzUlZPSURDeWptRFN6eEtOdmUzaw?oc=5",
-          "source": "kjluradio.com",
-          "publishedAt": "2026-09-23T14:01:00Z",
-          "polarity": -0.8649,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
           "id": "b8487f91108d3824",
-          "storyClusterId": "story-045",
+          "storyClusterId": "story-035",
           "title": "‘We will fail to exist’: Two years in, Helene threatens Bat Cave’s first responders",
           "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPTTdGbGhYUHZwVGVBdjhVdHFEUWd6eFJLUlhnak03OWY4QUh3dE0zN1hyeWdGemRQVTdZUWI2QVNVRXJMNXBFZXZvQ0UxRHhEbVo0M2tzWmdhekxDZms4bFJxNkFzdXNYbURtSUVTUkZEUVFDNnZMX2o0U0d1ejAyM0FibEdHNTktbmNJQWhxZnNibVFLd3NfWDV5eHQ4VllCZ3puVHdXT1DSAbwBQVVfeXFMTnlIQWlZNEo4NEJuWDhLb01aZ3RNREFYOGlUM0dSeTkxUlloZGtoNk45c25CRmt3OVU3UGdPTTlmZU9DS091bmJGbUtsb3cyTlFtZlY0NHpwWjJFLWMyclpDTTZfTTJva1dNN1ZRTDRySUQxTHVXb1llQkszeHhPTFhqclpOWTE5OWNTQUhudUsxZXR6emdkTXd3SkhPb2FvVlpBNmVCTkpqM180NDlHTXpwSTZPY3c2VlM2ZC0?oc=5",
           "source": "wbtv.com",
@@ -413,8 +490,19 @@
           "publisherCount": 1
         },
         {
+          "id": "ae54fcd6b39e0fef",
+          "storyClusterId": "story-031",
+          "title": "Car thief used tow van to steal vehicles and attacked owners with a baseball bat",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQMTR1ZDFWNUNEQmI5cVpLQXJQRXY2ckhlUExXUWxnc2twOVpNTFFENVI2Ymx2V0FWTDlpc0RQcnF2d2x1LWlBNW5CbkM0ZXBNbnZKNFJwYmMyM2hQNjlYWDRmT3BmVzJmWVV5ZGJENno0ZmNCUVI0UzJkd2VxdUZRbDJUWkFtS3lG?oc=5",
+          "source": "walesonline.co.uk",
+          "publishedAt": "2026-09-23T19:01:00Z",
+          "polarity": -0.8108,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
           "id": "1fa73a9d4d622b70",
-          "storyClusterId": "story-018",
+          "storyClusterId": "story-013",
           "title": "British American Tobacco stock gains 0.7 percent before investor day",
           "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQTDJSeHFlVkFIbm5oaVA3ZjNORlhucGdydVluckZiVllKbkhDaXhvZUpaTXdiWFVTZWVTMG5IdE5oX3A2M0dWN3NTTW5YeHhBdzhwSDVxUjI1THhWeVRYRXRGa1lGdVZKeVJiMnRwM1JmR0VJTGxkRVdGRzZTZkNhd1FKVFZ4UFppc19HZnU0Sk13bjZGekxJLS1UMHNXbDR0U3kzMmRSaEdMb3I5VkhSV0JXbFdFaGhHaFQtbnhoYkV4RWlkX2U0Q2NzTQ?oc=5",
           "source": "ad-hoc-news.de",
@@ -425,7 +513,7 @@
         },
         {
           "id": "f84b8ab788bcef0c",
-          "storyClusterId": "story-031",
+          "storyClusterId": "story-020",
           "title": "Will Jacks shines with bat & ball to lead England to win over Sri Lanka in first ODI",
           "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQdmtIRF83S2stLWRvZlRodFhxdkRVMEkzT29JSTJ1RlpVejQ0U0FoOThOVFBTTTV0NEhnUlh6NFFJRFZMa2REcWZITllvV3JVbnI2TDV2ZzlNejlUY3UzSUFtQzFBLWRVamQxcmZwYXJ4ZGRhRFBuQUpLVnU3alVsRnoxZHJxb3Ywc3BVSVhMUlhWYkl4ZE5FWWszR2N3ZDJTM0dFT1JDYlBaZjgxSldERko1SlRrOTZYQXhxVFlkQWZrUQ?oc=5",
           "source": "flashscore.com",
@@ -436,7 +524,7 @@
         },
         {
           "id": "1bf9661c326fa3ee",
-          "storyClusterId": "story-048",
+          "storyClusterId": "story-038",
           "title": "BAT stock gains 0.18 percent after the close",
           "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQcnUtMFMwWEpUN2tib0F3aWcyaTRyVnJ6X1R6OFZ1NkNWTU8zVGdDRDhTS3V1VlFUbk9QSTJhcU90anFtRmZEUy05cl95MmMzOU90X3dPOWJrSEtGbG91R3ZabUQ5eGZxM2x3eHZKOUVaaENFX2dZWlRyOVFtUjFfaFBsbnFGQ0VkRXlHbFRqMHM1YnhUTkR6V0p2VVZhNFJPb2ZxSV9R?oc=5",
           "source": "ad-hoc-news.de",
@@ -452,15 +540,15 @@
       "ticker": "BP.L",
       "slug": "bp",
       "date": "2026-09-23",
-      "dailyScore": 54.2,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.6,
-      "confidence": 64.9,
+      "dailyScore": 59.5,
+      "dailyLabel": "Slightly positive",
+      "rollingScore": 50.5,
+      "confidence": 62.8,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 9,
-      "sourceCount": 9,
-      "changeFromPreviousScoredDay": 2.7,
+      "storyCount": 8,
+      "sourceCount": 8,
+      "changeFromPreviousScoredDay": 8.0,
       "flags": [
         {
           "type": "analyst_upgrade",
@@ -473,46 +561,21 @@
           "sourceCount": 1
         },
         {
-          "type": "high_disagreement",
-          "direction": "mixed",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "Positive and negative coverage is unusually dispersed",
-          "evidenceArticleIds": [
-            "351cbb442738e58f",
-            "e181d7a3ab676a7a",
-            "6e145860145901a5",
-            "42bac73e7a51f5d3",
-            "3e80ad4a46e109f8"
-          ]
-        },
-        {
           "type": "collection_degraded",
           "direction": "neutral",
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
-            "351cbb442738e58f",
             "e181d7a3ab676a7a",
             "6e145860145901a5",
             "42bac73e7a51f5d3",
-            "3e80ad4a46e109f8"
+            "3e80ad4a46e109f8",
+            "654d8ec8f106a658"
           ]
         }
       ],
       "topStories": [
-        {
-          "id": "351cbb442738e58f",
-          "storyClusterId": "story-004",
-          "title": "Aker BP stock falls 1.1 percent as oil prices weaken",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOQTBGMnpUX1BaY2VhMW1yV3RMeTAyQjczajE3M2NMWVZMbVBrU01McmpoX1JnUWVKWXFTUHJJNVl4Ymtka3FUUTVhWG54SFpjWjBqMS1QUjNvbWh5azIxdDNhOEZLbENIbnl2ZE5VeXJFWUR4ckZURzFpYlhkTW5WZ05WSko3eC1ENEVuT1NremladUt1QVo1QVotNDhIQ3NRSXlnYWFPQU9VSm83TU9sZ1lNX0R5UQ?oc=5",
-          "source": "ad-hoc-news.de",
-          "publishedAt": "2026-09-23T08:52:06Z",
-          "polarity": -0.9606,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
         {
           "id": "e181d7a3ab676a7a",
           "storyClusterId": "story-002",
@@ -526,7 +589,7 @@
         },
         {
           "id": "6e145860145901a5",
-          "storyClusterId": "story-009",
+          "storyClusterId": "story-007",
           "title": "BP PLC Stock (BP) Closed Up by 3.23% on Sep 23: Drivers Behind the Movement",
           "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZV9BSHRwQ3k4RXZXT1J5MWNWeFljMXl6aGdpdWkxdFBIMnVyQnJNa1NjcGFlUXppckJzQ1ZOczRsWVRvSExIS2VOa1JrQ2wzdnFzRVM0OUdrVWVLUmhaV1pDdEtrandfUThFSXNVblotV3Rya19pbzkwaVduNjJjSnJBWEhyeUpR?oc=5",
           "source": "tradingkey.com",
@@ -555,6 +618,17 @@
           "publishedAt": "2026-09-23T07:15:01Z",
           "polarity": -0.6393,
           "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "654d8ec8f106a658",
+          "storyClusterId": "story-005",
+          "title": "BP Exits Bay du Nord Oil Project, Leaving Equinor as Sole Owner",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPQUJZaS1yeFMteU1TTjRLQVY1QnBZV3R0bzNkVlhwd0pfcUZLQmhpdGx6WkRsaTg5UWxSTml5akhVY2lmdDBodDNZSUVJSDNqdjNUSzVlZ1lSbklCd25jd2p1ZTFNN0M5c3llZTY2ZlJsWGhLeUZnUmdvcVdac1QzVTN5em1icXRHNE5vaTFlVVFiVlVkTE1R?oc=5",
+          "source": "energynow.ca",
+          "publishedAt": "2026-09-23T12:14:42Z",
+          "polarity": -0.3651,
+          "sentiment": "Negative",
           "publisherCount": 1
         }
       ]
@@ -1145,7 +1219,7 @@
           "title": "REG - Barclays PLC SEGRO PLC - Form 8.3 SEGRO PLC",
           "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPUXlPYVBLZExiQ2FORG95YVM3SjZQVlZyTXJYRDl1MUgxZzBHV3FhbThLbzRVdENPVjRCUnJhTzNkRXg5SGo4RmVOWTY0UldOd3IyMlVOelhNYldQT25oWm51TVRYWElHaDRERUxDeFJIcEg0VktFYVdBbzM5cjZnZ3VINWM1RWc4aVZNSm9HLW5pcFJsSjNQTWxKd3o1b2dFVlF3QmlMUXhSakVFU05VMlQyNEljTXBibVBsTU1n?oc=5",
           "source": "tradingview.com",
-          "publishedAt": "2026-09-23T15:27:00Z",
+          "publishedAt": "2026-09-23T14:36:26Z",
           "polarity": 0.0053,
           "sentiment": "Neutral / mixed",
           "publisherCount": 1
@@ -4524,26 +4598,40 @@
       "ticker": "PSH.L",
       "slug": "pershing-square",
       "date": "2026-09-23",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
+      "dailyScore": 50.1,
+      "dailyLabel": "Neutral / mixed",
       "rollingScore": 50.2,
-      "confidence": 0.0,
+      "confidence": 15.2,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -0.9,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.2",
+          "evidenceArticleIds": [
+            "3db1940f042985b9"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "3db1940f042985b9",
+          "storyClusterId": "story-001",
+          "title": "Pershing Square Holdings Ltd Public Class USD Accum.Shs To Go Ex-Dividend On November 12th, 2026 With 0.1837 USD Dividend Per Share",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUU1BSmUzZ09OekMxd0FaVlEyYmp4YmZtTmN0aHg0ckQyaG55cnhhcUkyajNXSHVsUC1QYm1hUnJkOEpCT0p1bDFYM3lCS3NPWUxjZHYtNHhfM05qeElXWUxURnlfNWdnU080X3NWS0ZkMUxWQVl6WVJXekFzY3JpQzZxN0tZbV9TWFpVMktiVURfT3YxajdFNU0zUm0zOEhIUmZRVVh6OA?oc=5",
+          "source": "moomoo.com",
+          "publishedAt": "2026-09-23T14:41:52Z",
+          "polarity": 0.0053,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
     },
     "persimmon": {
       "companyName": "Persimmon PLC",
@@ -5534,15 +5622,15 @@
       "ticker": "TSCO.L",
       "slug": "tesco",
       "date": "2026-09-23",
-      "dailyScore": 58.8,
+      "dailyScore": 57.1,
       "dailyLabel": "Slightly positive",
-      "rollingScore": 50.3,
-      "confidence": 66.0,
+      "rollingScore": 50.0,
+      "confidence": 65.4,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 47,
-      "sourceCount": 49,
-      "changeFromPreviousScoredDay": 5.2,
+      "storyCount": 39,
+      "sourceCount": 41,
+      "changeFromPreviousScoredDay": 3.5,
       "flags": [
         {
           "type": "collection_degraded",
@@ -5552,10 +5640,10 @@
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
             "ba54aad47023f5a1",
-            "4873552cc57caf97",
+            "50fc2f2c9e0f4d76",
             "db4fe15335199466",
-            "da9e6d3332c84316",
-            "78c463c535a6a65e"
+            "f59740a8aadf9500",
+            "fd9993ce40209241"
           ]
         }
       ],
@@ -5572,19 +5660,19 @@
           "publisherCount": 1
         },
         {
-          "id": "4873552cc57caf97",
-          "storyClusterId": "story-019",
+          "id": "50fc2f2c9e0f4d76",
+          "storyClusterId": "story-017",
           "title": "Brits warned of bread shortage at Tesco, Asda and other supermarkets",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNMV93LTZuMGNzUk9nM3pzQi1ZMk05VUdNckdScU9WWHpISEtDdXA1TTdmSWp2UloyWmRhazRhNUdRWTBLVmxJWDlVakVDVzBrUE00ZjVTMVpuQ2dMSlpENDk5aHMwem5idGppcnlEV2w5NF9kcGJmT3lkc1hJbk1LUzJjRUZmdnJPaG5aQnFCbUY1LVREQUVTZkI2YVRJWTFYMXRacUFaMXZnRmlZNXRJ?oc=5",
-          "source": "swindonadvertiser.co.uk",
-          "publishedAt": "2026-09-23T08:50:00Z",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQaG9rcTBOTEtFbndHaUVpZWk4NGZqU1lMSUU4SGVnNnZxUDNXMWF2R0l5Y1FPLWxTRURYMnNiYzNiUmRxNlY4aEFIcndDNlR1SnZmV0k1Wms2YXRuTUVDZlExR25MOEk0NkpVS2FkRmUyQ2NwTzZfMHZGaHptT3JKek42YUpJVFp1ZUFNRGs3Yk1UbUFINFNmeUpDcmxXUF9ZVnpsY2NtZw?oc=5",
+          "source": "theboltonnews.co.uk",
+          "publishedAt": "2026-09-23T15:15:23Z",
           "polarity": -0.9515,
           "sentiment": "Very negative",
           "publisherCount": 5
         },
         {
           "id": "db4fe15335199466",
-          "storyClusterId": "story-015",
+          "storyClusterId": "story-013",
           "title": "Police release CCTV image following cash theft in early-morning Tesco Express break-in",
           "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQWTVKX2NmOXJhbzMxUFJxSkVvWjVHNjg2cWxHVWI5MTJjRXpFMHVGQWcyaHlWSlo2ZFp2eTV1S1ZrMlR0MG9ScG9reUtoVlNmQ1NIY0FxR1B0SGVMNlVCbUZQWGVYZVg4OFlOQjRsUHlUcVFZWnJCd0UxR2MxQmNhaUw0bFRuNUI5VG1WdXFtUGl3eDZaaFpKUk9lN24yWHNZZXhVMGNFSUZiZWJOQ3NfaDE3RGZGSExoTGE2U2x1NNIBxAFBVV95cUxPNmdjQWlXODA4NXhvMXk4LUNWMGdYanFsRXBCajVfWTk1ZlNPbm1uZEFwNjZ6OVdkTWpibml4by1IclJ5cmVFbEJzQkk2cVM2NkItSDVITEpyNy1RRU1odzJaWUc0MXQzOC1tU29zTzZrRm9wTnVFRm5JU0RpWk5kQ0Nldm1PdEwtS195TGJJUVphYTdBaGw5VnJ4Skd5emhWbXdlb3p0WHNUdlM4dzRlUVBtMnQyN09odnpDOElmSWdXMUFX?oc=5",
           "source": "localrags.co.uk",
@@ -5594,24 +5682,24 @@
           "publisherCount": 1
         },
         {
-          "id": "da9e6d3332c84316",
-          "storyClusterId": "story-045",
-          "title": "Tesco customers in Scotland get major boost from TODAY",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNb01IR0F2d2NZUFlIT3Y3RzJQUnRCUWRxT0JHWTNhcTdKYU5hR28xLTJ2S0dvcU1vSGtpRlNxVkdLMk5UeXFzYWs3MVVINy1YbElDUWZTWUVXX1ZJNWZCQkk0ZTRBTHQ5TUEzOXMwemZWWkVIaDM4X0dFY2g1Tk1KOW5LcTJmNVVmRXZnSVktelNhMnM?oc=5",
-          "source": "thescottishsun.co.uk",
-          "publishedAt": "2026-09-23T16:06:00Z",
-          "polarity": 0.9302,
-          "sentiment": "Very positive",
+          "id": "f59740a8aadf9500",
+          "storyClusterId": "story-037",
+          "title": "Tesco’s slow retreat from Europe is depressing",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5lS01SVUVuaUo1eGl5WXhack1wMkZNejJiSkpudG51WXVJVkJuTmhpWUhWUjRWcUQ0NkpxRFZtZ0lkM1FWZHZ4VHJRVEN6UlR0RHJSZ2piS0c4RFVBTldwZmpESDBIb0lBOWRidzJkcE1NX25JMmdLcg?oc=5",
+          "source": "cityam.com",
+          "publishedAt": "2026-09-23T18:15:49Z",
+          "polarity": -0.9133,
+          "sentiment": "Very negative",
           "publisherCount": 1
         },
         {
-          "id": "78c463c535a6a65e",
-          "storyClusterId": "story-034",
-          "title": "Tesco announces major 'nationwide' change bringing 'added benefits' to shoppers",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQWWgxQnVNbEtqM1JpSTl2T1VMS3QxRW5wZnNlTmZiTV9PNG5NSFNKTzFqNW1FUzB5Skk3QW1qOVI5NGVGSnZjNlV4dEtoczZCU3A5SmtyVTE5QzRQQ1hIWU1rOXFjeklaNWd5MU45WWk3SV82NUJTMkNYYkZfblQyd3hiRHpNc0ZNZERUZ21pVWVwQ1o3cFJ4MTBB0gGfAUFVX3lxTE5uOTMxYVJneXFJeTcyYlo1YXRKSGI0LVZsMlYwQzVaaUo2TDlYS3NDekxsQXRfMlFIem1kUDl6dThxaWV3b2JPVVBCQmlVTURBTDJGaE4tZjNzV2Y2eVQ5TjVtclRIdm1ocWN0TTMybFdidTYwTEF6TzZCVUpBaE1rMVp4MjJyNWtUbmhlSzl2OE9TRG1uTVVkMkltOTFoYw?oc=5",
-          "source": "mirror.co.uk",
-          "publishedAt": "2026-09-23T12:22:00Z",
-          "polarity": 0.9212,
+          "id": "fd9993ce40209241",
+          "storyClusterId": "story-015",
+          "title": "Impossible Foods Teams Up With Tesco For Entry Into UK Supermarkets",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPMmQzbnVZVFFKcURnTmZlUU10ZkppYWN0bzVfUEtLMWh4RnVhaWJCbFpNdmNFbWRPRVE0Z1BvdENXMVhXSVR6RUZrbXFmQk1FdU9xaGNTSGhwYnJIbXd1RHNNYTFYOE5sRXh0azhYOXowTm5sZm05bU9PRWhZVC1IeU5TUXNHSXlSVGVLVjY0NnY0OXFZbGFBUld5bVRTR19IejZ5QXBLSUhwS1drakN5UUc4RTE1ZXR5aEd0S05GZUhldG9UczE2Y0lSVlJJME9udnlv?oc=5",
+          "source": "tradingview.com",
+          "publishedAt": "2026-09-23T08:36:21Z",
+          "polarity": 0.8459,
           "sentiment": "Very positive",
           "publisherCount": 1
         }
@@ -6059,22 +6147,22 @@
       "ticker": "BRBY.L",
       "slug": "burberry",
       "date": "2026-09-23",
-      "dailyScore": 53.8,
+      "dailyScore": 53.9,
       "dailyLabel": "Neutral / mixed",
       "rollingScore": 50.9,
-      "confidence": 60.6,
+      "confidence": 60.7,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 24,
-      "sourceCount": 24,
-      "changeFromPreviousScoredDay": 1.1,
+      "storyCount": 23,
+      "sourceCount": 23,
+      "changeFromPreviousScoredDay": 1.2,
       "flags": [
         {
           "type": "coverage_spike",
           "direction": "neutral",
           "severity": "medium",
           "status": "calculated",
-          "detail": "24 stories versus trailing median 7",
+          "detail": "23 stories versus trailing median 7",
           "evidenceArticleIds": [
             "0e073830c29184eb",
             "006eb6d79c9e0283",
@@ -6101,7 +6189,7 @@
       "topStories": [
         {
           "id": "0e073830c29184eb",
-          "storyClusterId": "story-008",
+          "storyClusterId": "story-007",
           "title": "Burberry, Kering Cite ‘Resets’ to Capitalize on Luxury’s Rebound",
           "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQejY4alFQNWUxODNJT2lQU0JicHVfT1FTRFlkOGk2Q1lVVXhDZm4yZ3pHckdmR1JaV0NWeTBrRndZdmR0aEVEVmh6THRuSHNMMU1zMHMwNW5tbUFnSmtvaDBreXFvVjNnaHo4cTVCcEsxY0J1UHFEU2FBMUZfUGJUMW84WXp1Z2djRHJrN3p5bUxLQ29SaHFxNC15cDN2UQ?oc=5",
           "source": "wwd.com",
@@ -6112,7 +6200,7 @@
         },
         {
           "id": "006eb6d79c9e0283",
-          "storyClusterId": "story-017",
+          "storyClusterId": "story-016",
           "title": "Citi cuts Burberry stock price target on softer luxury backdrop",
           "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNdmdHcW8yYmt4LXhacTRfTTRRWlhQb3lPcUVtYkwtQndvTVJlVHlDOFAxY25VSHRZSTFHOTZSeG1XMHpEdHRHVmlvQ2w5a0JsSWtHZDFNRkxzUHYtLUpiMi10d2VyX3l6M3FqSjV3Tnp3R3dfSGF4UmRGamlCN2ZRVHpQYm9iajA4ZmtQbW0xLTJUX1RLVHZURFU0dHJ4TEUxZFozMFJUVE1CV3NHa3dNajN0YzRQR2xpd2JwblVlSFhpeEk?oc=5",
           "source": "investing.com",
@@ -6123,7 +6211,7 @@
         },
         {
           "id": "5d64f0550b0b949c",
-          "storyClusterId": "story-020",
+          "storyClusterId": "story-019",
           "title": "Burberry stock gains 1.12 percent as RBC cuts target",
           "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNM0kwVlZSQVZia1RBT3cwRzBnSVNYb2ZiMWo4WEdJY2t0M3Y5MHh0SmxpdFF5cjR3Qzl2Q25BYmN2VDJnSVg2MU1hOFd5M2lVVzF6cU03eWg2TDdaYlF6TFdsNVFISWdnOVpjQkZTRm5McHU1aFhlS3ZVdWdoT2VEV1kyMTdiMkQ0c2hwVVR0VzZIbnQ1TC16bU5ycXpIOXNkWTUxNzlmYkVabUFXVFFLT0VsOGtRUQ?oc=5",
           "source": "ad-hoc-news.de",
@@ -6134,7 +6222,7 @@
         },
         {
           "id": "f51757c6415810a3",
-          "storyClusterId": "story-018",
+          "storyClusterId": "story-017",
           "title": "Burberry Marks 170 Years With A V&A Exhibition Celebrating The Trench",
           "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE52VzNKV01oMDNuTzUxNnA1YTFUam5JbjBFRVE1ekFBNEtScnd0am9iWEV2OXlhOFJ2MnRNekRNYnpUTVc1aVNLeVJ0bjdJa0xKTktVRWs0bnBUUQ?oc=5",
           "source": "10magazine.com",
@@ -6145,7 +6233,7 @@
         },
         {
           "id": "04f12f651de7bba5",
-          "storyClusterId": "story-013",
+          "storyClusterId": "story-012",
           "title": "Burberry (LSE:BRBY): Can The Heritage Brand's Recovery Survive A Softer Luxury Cycle?",
           "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQUHdkYTNSRE9ZLUxDNnZiRXN2V1hrV1pTNlBXWWJkR2JtMVhIcmZsSzN5MWxoUHFDMVJmd1JodUkzX0RZenpHbE9JTVhOWDh4S0tEZmNmbTJtczhHUm5Gb2Fkc1hCS3ZTRDNlU0NVQUF4S1pIUHh0YjNWaGQ0UlE1Z05nTGdLLTV5WEszOXBjMlRLeWZocXd6c19kUWJRVG01VGVTdXo4bU9jeWZNczFaVHRpMjdyaW5fS2t5Vw?oc=5",
           "source": "kalkinemedia.com",
@@ -6161,15 +6249,15 @@
       "ticker": "IGG.L",
       "slug": "ig-group",
       "date": "2026-09-23",
-      "dailyScore": 53.1,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 48.2,
-      "confidence": 65.5,
+      "dailyScore": 56.8,
+      "dailyLabel": "Slightly positive",
+      "rollingScore": 48.8,
+      "confidence": 65.4,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 42,
-      "sourceCount": 37,
-      "changeFromPreviousScoredDay": 4.5,
+      "storyCount": 36,
+      "sourceCount": 30,
+      "changeFromPreviousScoredDay": 8.2,
       "flags": [
         {
           "type": "merger_acquisition",
@@ -6188,29 +6276,29 @@
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
-            "ed9553a0cd33f9e3",
+            "6cf6a80d781746e1",
             "dcfb90a700f572f6",
-            "30872532c3cf98fe",
             "f3b0da5979c37478",
-            "66680759ce10c8ff"
+            "ffb6541ee30cd358",
+            "e9b0cc3c7639ce58"
           ]
         }
       ],
       "topStories": [
         {
-          "id": "ed9553a0cd33f9e3",
-          "storyClusterId": "story-021",
-          "title": "LHC summons Punjab IG over alleged police violation of court order",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNOG5wd0tZSHJCZ2p2cWdVTWdWZG05dG9hTEJQMUVuWGQ4WjFmRU0tQkFKS05WNmdhMmVHYU0xZmpFLV9LN1JOc09wTUJ6Q3YtdjNuRnBSbkV1OW1HUHd1LVhxRjFqZnd3NWNOcEhCZ01NY3IzZFlIOFNEcmVGenQ1ZklZV1NvWDVLZlpOZV9mWFppMHQ0OVU5aTFLa1UyLTJyNE41SQ?oc=5",
-          "source": "minutemirror.com.pk",
-          "publishedAt": "2026-09-23T09:44:57Z",
-          "polarity": -0.9194,
-          "sentiment": "Very negative",
+          "id": "6cf6a80d781746e1",
+          "storyClusterId": "story-036",
+          "title": "IG Metall Seeks 5% Pay Rise for 3.7M Workers",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxORDBJLTJ4azlDWWpmUFgzcDl3V3V5RFUtcFdUcDctQlhDOGRraENRYnQ2U092ODk0S0diaU9SSVpacnFraXptTTRmd3RkM3JrZXRRTE9DTU1UZDlMMWxHNzVESmFzYWJzZE85bFcxZXJNYzZndjdUa1FoR29EUmhPaTJNZVdmN0J3MHBOUnJvLWdSZw?oc=5",
+          "source": "briefs.co",
+          "publishedAt": "2026-09-23T22:54:39Z",
+          "polarity": 0.9154,
+          "sentiment": "Very positive",
           "publisherCount": 1
         },
         {
           "id": "dcfb90a700f572f6",
-          "storyClusterId": "story-019",
+          "storyClusterId": "story-018",
           "title": "IG Metall Demands 5% Pay Rise for 3.7 Million German Machinery Workers",
           "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE95NS1zY2cxalNyRGZGanpQZWRjSTM3eTQwRldWVUc2YnJvX0pnOTVFa18wTEdoYmctN3k1bjNMLUVlRE1MVjdOTlVTblNLWjJ6R18tUHNXa2tUTXl6OU9DaVh6TGs?oc=5",
           "source": "mezha.net",
@@ -6220,19 +6308,8 @@
           "publisherCount": 1
         },
         {
-          "id": "30872532c3cf98fe",
-          "storyClusterId": "story-006",
-          "title": "ASI who tipped smugglers about police location dismissed: Cop had been suspended for a year; IG issued orde...",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPRzk0ZlNZTlk0NTV1Q0ZBUHpKVXE2OGdVQ1ZtU3Nab2YzWm5ZX0kyUWxnbE8zUEVmY1BGaEtSSXFyQjJWYnlvSmM2am5ZVUlVQmxkcWk3WGRVaVFuX1FMMHlpcjJMbjY5QmV4azMzSVhBbXJTOXh4YkRxd21xQ3JtVEtlRjZBa0pQXzUtSVdab0l5ZEJyRXBDU1BIQkVBNUQ4WG91U3NxZUtVSTRXY3lReGVTZzlUdFV5Q3Mydk1sWl9sZWYtS1hxOGNJT1pyZ1VybllQMjV30gHWAUFVX3lxTE9HOTRmU1lOWTQ1NXVDRkFQekpVcTY4Z1VDVm1Tc1pvZjNabllfSTJRbGdsTzNQRWZjUEZoS1JJcXJCMlZieW9KYzZqbllVSVVCbGRxaTdYZFVpUW5fUUwweWlyMkxuNjlCZXhrMzNJWEFtclM5eHhiRHF3bXFDcm1US2VGNkFrSlBfNS1JV1pvSXlkQnJFcENTUEhCRUE1RDhYb3VTc3FlS1VJNFdjeVF4ZVNnOVR0VXlDczJ2TWxaX2xlZi1LWHE4Y0lPWnJnVXJuWVAyNXc?oc=5",
-          "source": "bhaskarenglish.in",
-          "publishedAt": "2026-09-23T02:41:17Z",
-          "polarity": -0.9102,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
           "id": "f3b0da5979c37478",
-          "storyClusterId": "story-023",
+          "storyClusterId": "story-021",
           "title": "IG Group stock gains 3.72 percent on client growth",
           "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPRzloazNrcm95d1lBMkIxbWhub2lsdnR1NXZ5OVNiWWh3aXNwNy1GeFNtNUVYdGQzQ0pkS1VDZ3hKU05Kd2xITWw0N0FQWnR2OHIxS0t0aGQ0ckxDM1VseE44WlE2YlRieUwxcDV4akNZczhUMEtvaW1wVlRMbWRfQkxoSTloR3ZSMlpSNnBrb21KdEduUENKREJVd200TVh1TGNnTmtxd3hoVXJKb2R0aV85bw?oc=5",
           "source": "ad-hoc-news.de",
@@ -6242,13 +6319,24 @@
           "publisherCount": 1
         },
         {
-          "id": "66680759ce10c8ff",
-          "storyClusterId": "story-018",
-          "title": "IG Metall seeks 5% pay rise in Germany wage talks",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxONjQ4RVlHWVFTY3JtZms3dlpYWjM2Y2ZwX1BYdVdzVDJBd0MxZkdRZzBmWHJtR3ByQnltU0V0RThkTE5Sc1hqaGhSaExwVzdabzNxS2hhLWZ1dlRmM1h6VUlOTU00aHYxN09INUxNT3VsQ3hodXV2aGlQbWFzOUUtWDVjNGZFVldfNHYwSjVaWlg1ODI2eGZB?oc=5",
-          "source": "tradersunion.com",
-          "publishedAt": "2026-09-23T09:25:36Z",
-          "polarity": 0.8864,
+          "id": "ffb6541ee30cd358",
+          "storyClusterId": "story-015",
+          "title": "Germany's IG Metall demands 5% pay rise for industry ahead of wage talks",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNNkVhOWYwRnVHWURhWmtjQVVFSG9JdXM4eTFMRVRmdlBDVVN4ZEhzVGJOY1Jnb1puUU9INUhYWWozeE5PVVFDdTdxUDBVWnpJNzJvdjJLYUljaGRfU2RuWlVzU3FTV3FUUUtUR2h3Q3Z3ODlKRDBtTDI0UFFYOW8yME4zU1FjcUd0Y3BFNVY2MUxWNmZTVGZGUVF4dW1lcGwwcFR3YTZkZjduOUU3N0FRWjBWNlk1SHJFMnVkTFUzaFFkUQ?oc=5",
+          "source": "marketscreener.com",
+          "publishedAt": "2026-09-23T09:02:00Z",
+          "polarity": 0.879,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "e9b0cc3c7639ce58",
+          "storyClusterId": "story-029",
+          "title": "Germany: IG Metall demands 5% pay rise amid severe pressure",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNQXhmdEgwRkJFNzVJdzEyYW9sNU80MUc3V0c4OW56VlhrN0t6RndKdVZkLWtPRHM0WE1qeGtxUXFNTG9JV21RZ3FpN0hHaWxDdUNncy1MWnQxODA1UGNROUVEeExCXzFpR2pObndtS0ZteFdIb3ozb3RtX25PVXozOEVXTWpDSGgwLVNfaXkxelJhQXdkSlRXSWRZM3k?oc=5",
+          "source": "mind.eu.com",
+          "publishedAt": "2026-09-23T13:12:44Z",
+          "polarity": 0.8641,
           "sentiment": "Very positive",
           "publisherCount": 1
         }
@@ -6323,15 +6411,15 @@
       "ticker": "ABDN.L",
       "slug": "aberdeen-group",
       "date": "2026-09-23",
-      "dailyScore": 48.6,
+      "dailyScore": 49.7,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.9,
-      "confidence": 62.5,
+      "rollingScore": 51.1,
+      "confidence": 62.8,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 50,
-      "sourceCount": 29,
-      "changeFromPreviousScoredDay": -5.1,
+      "storyCount": 46,
+      "sourceCount": 22,
+      "changeFromPreviousScoredDay": -4.0,
       "flags": [
         {
           "type": "fine_or_lawsuit",
@@ -6354,14 +6442,14 @@
             "6d59905acd7085a9",
             "0e1a3f783ad719a4",
             "65889b1fbacac27c",
-            "4b57cf25a6cd700c"
+            "12206f1a25392779"
           ]
         }
       ],
       "topStories": [
         {
           "id": "2341d557ee423394",
-          "storyClusterId": "story-014",
+          "storyClusterId": "story-013",
           "title": "Man arrested and charged over spate of break-ins and thefts at Aberdeen city centre shops",
           "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQRDRpYkhMeklNclJXN090a3UyRTVHM2pfTmh3WU95R09Wa2RmTzNndW44bE02aFo3ZUgyNUtFajVWTWNhRWtLbzVPY2RzT2ZmVjNHTl9TcklTV3QwbUhzTGplN01PS3dCdi03T1BEU0lnal9SbXBmWjFqU0Y5ZExKU0x2bGx2QXQ5?oc=5",
           "source": "pressandjournal.co.uk",
@@ -6372,7 +6460,7 @@
         },
         {
           "id": "6d59905acd7085a9",
-          "storyClusterId": "story-013",
+          "storyClusterId": "story-012",
           "title": "Aberdeen harbour worker killed by falling steel tubes as company fined £322K",
           "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOSDNOWExWLTVEa1RyVGdrV2ZGRUpGdThKZ2pOd1RTdTIyb1BWdThqMG9ZV3VwVlRaLTgyTXZrZ0tKcmtBWmNsVXE3RjhWZEVxOE9DazlVb1RROXNFbHhyWTBoX0x5ZFM5TTdZczNZYXVrRmlEZ3pnTkJIZnBhWUF4NF9RTjRYZG14MFQtY3hQMmUyWE9JYXpTS3JKY1NOTnpsT0HSAaIBQVVfeXFMTkgzTlhMVi01RGtUclRna1dmRkVKRnU4SmdqTndUU3UyMm9QVnU4ajBvWVd1cFZUWi04Mk12a2dLSnJrQVpjbFVxN0Y4VmRFcThPQ2s5VW9UUTlzRWx4clkwaF9MeWRTOU03WXMzWWF1a0ZpRGd6Z05CSGZwYVlBeDRfUU40WGRteDBULWN4UDJlMlhPSWF6U0tySmNTTk56bE9B?oc=5",
           "source": "aberdeenlive.news",
@@ -6387,14 +6475,14 @@
           "title": "Man arrested after spate of Aberdeen city centre business break-ins and thefts",
           "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPR0R6UnY1UDlHVUtYZTB2d1lhRmlUSjhrOV9uUEpXclg3Q3EwRExEWlRGbzJJUkJRQ3o2S1hfdXgydHRyek8zVTVFb3dOWjdtMDdtdk5udDRnZktaZElPZVZQNkhqaURpNzgwNHY4bkp4Mnc0Q3NseGswM2JKYlM4VFZYcC1xZVFKM1Via2w5aE1JTmdqd0HSAZsBQVVfeXFMT3pjVEtYN3dQTE53aWE0Rl94TTZOZ3dWRkxaRkU5aHlWOWkyN2RORDRlblBGYlc4a041dWhXY0gxcDRaa2lWcWYzeXdwY0xKX0YwajVMQzlmLWJHczVkNmhfQzdwMURhd1ZCeDJGXzQ4ME84U0hxS2hnTmVYV1hfYUZFQjJjOFY0Wm1jdjkwS042X2FLT3U5VDItSUk?oc=5",
           "source": "aberdeenlive.news",
-          "publishedAt": "2026-09-23T10:46:06Z",
+          "publishedAt": "2026-09-23T10:54:39Z",
           "polarity": -0.8872,
           "sentiment": "Very negative",
           "publisherCount": 1
         },
         {
           "id": "65889b1fbacac27c",
-          "storyClusterId": "story-009",
+          "storyClusterId": "story-008",
           "title": "Teenager charged after girl, 15, 'sexually assaulted' in Aberdeen",
           "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQNnBpRkJ4enlzZnlTZ2lsN0lYQlIxdU13UElsY19vemQ1MHBWb2gwLVdiWDgzZkZfdmljUWozdmVsalNweFl6Zl8yWjR3X1ItMnA2RFlabGdzbGwzR1o1WUtkQlNkd2t1cDRidTYycVRQWXdlZlVwZmo2WlVoWG9ZTHlRYjBIOGpoQ04xUUlMLVFqQdIBlwFBVV95cUxOa24taG4tanJ2VTlqUDUwMmd0OFR3bnMzclNfeTBCYmJETzlaRjF5cFRqYVVRNnMwZEcxa1lFZmFHbndScmctV2Y4YXpscnZROGYwbnBqQnpBYlNtOWo3OUtMdW54eHdBYl96S3pmMjFtRFVEUjlvMWg2ZkR0UXVyS0E4ci1oN1E2cm82S2hEZkpFUUpJWmVV?oc=5",
           "source": "aberdeenlive.news",
@@ -6404,15 +6492,15 @@
           "publisherCount": 1
         },
         {
-          "id": "4b57cf25a6cd700c",
-          "storyClusterId": "story-010",
+          "id": "12206f1a25392779",
+          "storyClusterId": "story-009",
           "title": "Teenager arrested after girl, 15, sexually assaulted in Aberdeen",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1Pb2FHdURXRFlGZEQ0VTA5NUpFNmdMRl9JMmVyU3JNTzNydlBhdUFfUnhCWEJTWGU4aUZpTk1LaVFEOFdFclB1TjdjVzRmelpJMG1CaXRzXzhQTE0?oc=5",
-          "source": "bbc.com",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE4xMkNqLWFFcFlWREc5RndzaGVhUktKYUxXaVdHNDhWSGR2eXdxdHUweHA2OVA0UlY5OGN2NFNNZkNUS0I4aUc2STNwajlPSVcyVWZzQlgwQlFmcTZhWEE?oc=5",
+          "source": "bbc.co.uk",
           "publishedAt": "2026-09-23T08:47:41Z",
           "polarity": -0.8565,
           "sentiment": "Very negative",
-          "publisherCount": 2
+          "publisherCount": 1
         }
       ]
     },

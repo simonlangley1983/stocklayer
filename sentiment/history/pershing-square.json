@@ -3055,35 +3055,49 @@
     },
     {
       "date": "2026-09-23",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
+      "dailyScore": 50.1,
+      "dailyLabel": "Neutral / mixed",
       "rollingScore": 50.2,
-      "confidence": 0.0,
+      "confidence": 15.2,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 0,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 1,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 0,
+      "neutralStoryCount": 1,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {},
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "3db1940f042985b9",
+          "storyClusterId": "story-001",
+          "title": "Pershing Square Holdings Ltd Public Class USD Accum.Shs To Go Ex-Dividend On November 12th, 2026 With 0.1837 USD Dividend Per Share",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUU1BSmUzZ09OekMxd0FaVlEyYmp4YmZtTmN0aHg0ckQyaG55cnhhcUkyajNXSHVsUC1QYm1hUnJkOEpCT0p1bDFYM3lCS3NPWUxjZHYtNHhfM05qeElXWUxURnlfNWdnU080X3NWS0ZkMUxWQVl6WVJXekFzY3JpQzZxN0tZbV9TWFpVMktiVURfT3YxajdFNU0zUm0zOEhIUmZRVVh6OA?oc=5",
+          "source": "moomoo.com",
+          "publishedAt": "2026-09-23T14:41:52Z",
+          "polarity": 0.0053,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.2",
+          "evidenceArticleIds": [
+            "3db1940f042985b9"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": -0.9
     }
   ]
 }
