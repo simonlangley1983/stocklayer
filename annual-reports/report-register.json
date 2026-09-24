@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T12:13:47.782176+00:00",
+  "generatedAt": "2026-09-24T17:06:26.272545+00:00",
   "companyCount": 100,
   "verifiedCurrentCount": 16,
   "companies": {
@@ -374,6 +374,12 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2024,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000114303/NI-000114303.pdf",
+          "sha256": "cb408ce4ad1d40decee6d46c47a12a46db771deb19822c534650f88f059cedd1",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2025,
           "url": "https://www.bp.com/api/files/6cqieuqhq4no/master/33M2iHp8A6d07McKzKqLNP/12b5d4eccb4e02093d1ad9efc0d6a746/bp-annual-report-and-form-20f-2025.pdf",
           "sha256": "bbe4e34edda665ed3d5d84291b79d13118e31ca1355e794a43f11fd50ab8a237",
@@ -381,7 +387,16 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "bp:2024": {
+          "candidateHash": "0dbf77837eef9ad7bb7a5a9dc4b5fda773306ebaabb4144001ae636b120b8a4b",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:03:40.661460+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:03:40.661460+00:00",
+          "diagnostics": []
+        }
+      }
     },
     "gsk": {
       "companyName": "GSK",
@@ -1031,15 +1046,15 @@
           ]
         },
         "bae-systems:2023": {
-          "candidateHash": "b6db15b3021bb6c3640537574a21992f9f481261a73fee4fb6c534cb9e40fb89",
-          "attemptCount": 5,
-          "lastAttempt": "2026-09-22T12:57:35.977651+00:00",
+          "candidateHash": "6107e34bd8e14a18c5beaf5f49e6e2837f0d25b284b1d333899f38d246a29ef5",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:04:39.883066+00:00",
           "status": "extraction_failed",
-          "retryAfter": "2026-09-26T12:57:35.977651+00:00",
+          "retryAfter": "2026-09-24T23:04:39.883066+00:00",
           "diagnostics": [
             {
-              "url": "https://www.baesystems.com/investors/dam/jcr%3Ae7ded7b7-2ddd-499d-bbe7-ba6774ce6137/BAESystemsAnnualReport2023.2025-04-29-16-31-08.pdf",
-              "error": "report page did not expose a usable full report"
+              "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000071620/NI-000071620.pdf",
+              "error": "ValueError: document is too short to be a full annual report (4 pages, 2805 words)"
             }
           ]
         },
@@ -1209,9 +1224,9 @@
           "extractionStatus": "extracted"
         },
         {
-          "year": 2026,
-          "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
-          "sha256": "bc8580de7d242b6ac5d38270b11a83596a94ae36425ba09b78c2663c11ad468c",
+          "year": 2024,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000098469/NI-000098469.pdf",
+          "sha256": "8a7a858f5b0fae3e94b9c48b31d0b541ed3cc74ef81f6e5175e0052b9b367758",
           "extractionStatus": "extracted"
         },
         {
@@ -1219,10 +1234,25 @@
           "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2025/experian-annual-report-2025.pdf",
           "sha256": "a995dbb96b1362311b570e10db86e8d780b067a1c9492d1890c5a8d8230e2e58",
           "extractionStatus": "extracted"
+        },
+        {
+          "year": 2026,
+          "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+          "sha256": "bc8580de7d242b6ac5d38270b11a83596a94ae36425ba09b78c2663c11ad468c",
+          "extractionStatus": "extracted"
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "experian:2024": {
+          "candidateHash": "37a15c828d20f82d4b98925901f6090478ddc5c5f570510357e92470fc0f3fa5",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:03:29.641535+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:03:29.641535+00:00",
+          "diagnostics": []
+        }
+      }
     },
     "glencore": {
       "companyName": "Glencore",
@@ -1437,6 +1467,12 @@
           "extractionStatus": "extracted"
         },
         {
+          "year": 2024,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000115433/NI-000115433.pdf",
+          "sha256": "a0417ce00d3b19c4fcf2151b783e17c6cadf60ab799915477212099167c4d91a",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2025,
           "url": "https://media.umbraco.io/alliance-trust/zhcddtp5/4041-alliance-witan-annual-report_interactive.pdf",
           "sha256": "179242c12d3a5a70708c4b2c042e0259c8b280d9802cae0eb1855cd763acf7a8",
@@ -1444,7 +1480,16 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "alliance-witan:2024": {
+          "candidateHash": "03b55586e0565a771406c5b866241636fde2e6cec59d94204522a783058e8277",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:02:45.844082+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:02:45.844082+00:00",
+          "diagnostics": []
+        }
+      }
     },
     "anglo-american": {
       "companyName": "Anglo American PLC",
@@ -1651,6 +1696,18 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2023,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000085313/NI-000085313.pdf",
+          "sha256": "d24649ec2893fb8999597adc87672f5e2103e2345e57508e429bc2f9b3814462",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2024,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000107174/NI-000107174.pdf",
+          "sha256": "728d1dce6c3a84d9f25a9e38d3d071e69906ee9005a789029a9a5b65ba48c50e",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2025,
           "url": "https://www.abf.co.uk/content/dam/abf/corporate/Documents/investors/annual-and-interim-reports/2025/abf-annual-report-2025.pdf.downloadasset.pdf",
           "sha256": "13698a284342a1adc43d1874b5b0b24d6606aff1aaf693697b54155e59252e87",
@@ -1658,7 +1715,24 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "associated-british-foods:2024": {
+          "candidateHash": "763d11a7db0d91f1e064bf66ebedaa4e79962df58969b0d5432a8ef3bf9f57c0",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:03:03.982630+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:03:03.982630+00:00",
+          "diagnostics": []
+        },
+        "associated-british-foods:2023": {
+          "candidateHash": "66865f1972cbe8a6a8212d3e53b69ca35279db9deecf0245848ad025cbd46849",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:04:37.640676+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:04:37.640676+00:00",
+          "diagnostics": []
+        }
+      }
     },
     "auto-trader": {
       "companyName": "Auto Trader Group PLC",
@@ -1671,6 +1745,12 @@
       "latestAvailabilityVerifiedAt": null,
       "status": "latest_availability_unverified",
       "documents": [
+        {
+          "year": 2024,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000099957/NI-000099957.pdf",
+          "sha256": "dbb99a058c218093adb6c9ecf6e6bc848d481c92057490387c355ae4ba0875e2",
+          "extractionStatus": "extracted"
+        },
         {
           "year": 2025,
           "url": "https://plc.autotrader.co.uk/media/ujinai40/at-ar25-web.pdf",
@@ -1685,7 +1765,16 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "auto-trader:2024": {
+          "candidateHash": "3aa847d0b257d2705bd35cbeebb280024d4b0dd02a7443cb7a78fe663d833add",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:03:06.365836+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:03:06.365836+00:00",
+          "diagnostics": []
+        }
+      }
     },
     "aviva": {
       "companyName": "Aviva PLC",
@@ -1713,7 +1802,20 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "aviva:2023": {
+          "candidateHash": "8594f3405a994169c949c934b8ddbfe6fd108ef7a5d81c74e39e9d2ee0e85aa3",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:05:02.366960+00:00",
+          "status": "extraction_failed",
+          "retryAfter": "2026-09-24T23:05:02.366960+00:00",
+          "diagnostics": [
+            {
+              "error": "ValueError: Requested 2023, document identifies 2022; needs source review"
+            }
+          ]
+        }
+      }
     },
     "barratt-redrow": {
       "companyName": "Barratt Redrow PLC",
@@ -1746,6 +1848,12 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2024,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000115170/NI-000115170.pdf",
+          "sha256": "3187edbbb249c04646e7a0444e393f6bfe12d4bed1da409bd54341c5f48b3bf3",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2025,
           "url": "https://prod.dxp.beazley.com/globalassets/ir-documents/annual-reports/annual-report-2025/annual-report-and-accounts.pdf",
           "sha256": "98ef57c12e4aa9a3543e8849232fafed20cce9602236586d28b695ba895acc04",
@@ -1753,7 +1861,28 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "beazley:2024": {
+          "candidateHash": "9e5336c716c9c56aa7560aa7353a18e0f45b2e0ed1d12f35e06737f575a03562",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:03:06.748623+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:03:06.748623+00:00",
+          "diagnostics": []
+        },
+        "beazley:2023": {
+          "candidateHash": "5174c370a5a15148e9cf90771e2942f2f951db548b4c9910ed307cb6693281c4",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:05:11.108878+00:00",
+          "status": "extraction_failed",
+          "retryAfter": "2026-09-24T23:05:11.108878+00:00",
+          "diagnostics": [
+            {
+              "error": "ValueError: Requested 2023, document identifies 2022; needs source review"
+            }
+          ]
+        }
+      }
     },
     "british-land": {
       "companyName": "British Land Co PLC",
@@ -1917,6 +2046,12 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2023,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000092834/NI-000092834.pdf",
+          "sha256": "58cbc96cb23ab51080404aac47bac31d027c829dba868e35648eaa551b0b3f60",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2024,
           "url": "https://www.centrica.com/media/2pjoazw0/annual-report-and-accounts-2024-untagged.pdf",
           "sha256": "8dfb34030fe638abdc3096ade2e0a21407a633e14e83ef7b8b3df5515ef380f5",
@@ -1930,7 +2065,16 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "centrica:2023": {
+          "candidateHash": "5538ec40c883b6393fc672c481f04a39b8ce85e797738368862062a0e8afd13c",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:05:31.556095+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:05:31.556095+00:00",
+          "diagnostics": []
+        }
+      }
     },
     "coca-cola-hbc": {
       "companyName": "Coca-Cola HBC AG",
@@ -2197,7 +2341,20 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "endeavour-mining:2024": {
+          "candidateHash": "6a9296f43ba8abbceda99c106c35a7846582add67f443d4169b2782aa370e00d",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:03:33.942078+00:00",
+          "status": "extraction_failed",
+          "retryAfter": "2026-09-24T23:03:33.942078+00:00",
+          "diagnostics": [
+            {
+              "error": "ValueError: Requested 2024, document identifies 2023; needs source review"
+            }
+          ]
+        }
+      }
     },
     "entain": {
       "companyName": "Entain PLC",
@@ -2266,6 +2423,18 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2023,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000091393/NI-000091393.pdf",
+          "sha256": "01a0ef0c75319e8424b8210f9207d1fcc361a48007bcf30bf53bdb4a310054f6",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2024,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000115201/NI-000115201.pdf",
+          "sha256": "54271d28984397aa474d08a5f67e388e8ed58c68577f8171754cbd4fd31fead7",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2025,
           "url": "https://docs.columbiathreadneedle.com/documents/FandC%20-%20Annual%20Report%20and%20Accounts.pdf?inline=true",
           "sha256": "4749ef1477edaab1192ca3505314fabeed6c15593a59d801e54141cf42fd9e49",
@@ -2273,7 +2442,24 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "fandc-investment-trust:2024": {
+          "candidateHash": "255a520a13a0517f00d88c0057b7f0418efe72550dea355219ba27a462384b59",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:03:14.355354+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:03:14.355354+00:00",
+          "diagnostics": []
+        },
+        "fandc-investment-trust:2023": {
+          "candidateHash": "f9808e5935fa4a7db69ea65b3f478e94594962dd5f29adfd599b1827160fa941",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:05:11.626995+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:05:11.626995+00:00",
+          "diagnostics": []
+        }
+      }
     },
     "fresnillo": {
       "companyName": "Fresnillo PLC",
@@ -2345,15 +2531,15 @@
           "extractionStatus": "extracted"
         },
         {
-          "year": 2026,
-          "url": "https://assets.ctfassets.net/ost7hseic9hc/1C4g3JYVr04ZCkPb39ygIA/93055850ed01cc1fa1da261e29a57fa5/Accounts_2025-26_FINAL_v2.pdf",
-          "sha256": "272727e6b60a0c7c03e1797941a1d7f0c410b13c6d07fcdb810788d0810cebc3",
-          "extractionStatus": "extracted"
-        },
-        {
           "year": 2025,
           "url": "https://assets.ctfassets.net/ost7hseic9hc/3kXsoA4jSOmOj6BLZ7bV7F/c34a5f56769e8be055c19b8e1ccc5526/Accounts_2024-25_FINAL.pdf",
           "sha256": "a58a3a47de3a92b7b72c79db615d577b65a17185e094f1a15fa1efb8d7eab44d",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2026,
+          "url": "https://assets.ctfassets.net/ost7hseic9hc/1C4g3JYVr04ZCkPb39ygIA/93055850ed01cc1fa1da261e29a57fa5/Accounts_2025-26_FINAL_v2.pdf",
+          "sha256": "272727e6b60a0c7c03e1797941a1d7f0c410b13c6d07fcdb810788d0810cebc3",
           "extractionStatus": "extracted"
         }
       ],
@@ -2370,6 +2556,19 @@
               "error": "ValueError: Requested 2025, document identifies 2026; needs source review"
             }
           ]
+        },
+        "games-workshop:2024": {
+          "candidateHash": "2be09a4baeea756484ac659a9e4d8f5c6746710e6e4f2e1fdd7d19ad01345ccf",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:03:11.437094+00:00",
+          "status": "extraction_failed",
+          "retryAfter": "2026-09-24T23:03:11.437094+00:00",
+          "diagnostics": [
+            {
+              "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000101730/NI-000101730.pdf",
+              "error": "ValueError: document is too short to be a full annual report (26 pages, 15727 words)"
+            }
+          ]
         }
       }
     },
@@ -2383,6 +2582,18 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2023,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000092007/NI-000092007.pdf",
+          "sha256": "1c314e9be2b00d0d29a3d4a64fcb52812f44dbe4af23005447011a0f10132e8e",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2024,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000115587/NI-000115587.pdf",
+          "sha256": "0d729f9785bf6c8fdc7db88df82526099a9cc0d399bb73992e8d091158acfbfc",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2025,
           "url": "https://www.haleon.com/content/dam/haleon/corporate/documents/investors/oar-2025/Annual-Report-and-Form-20-F-2025.pdf.downloadasset.pdf",
           "sha256": "4d8fe78c8cdc0e27e6510861aa4aad70571609d98de777c78585a27be2da06fc",
@@ -2390,7 +2601,24 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "haleon:2024": {
+          "candidateHash": "548999d5bf678e31f3f5719ed2e98300647aef73efcd7635ac7a2065f6b2ed40",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:03:39.394095+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:03:39.394095+00:00",
+          "diagnostics": []
+        },
+        "haleon:2023": {
+          "candidateHash": "4d32b93f653fc97de1dbe7d3073bbb611028b5522c8b67e19ee05eeb31ed4122",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:05:31.703865+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:05:31.703865+00:00",
+          "diagnostics": []
+        }
+      }
     },
     "halma": {
       "companyName": "Halma PLC",
@@ -2613,6 +2841,18 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2023,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000087118/NI-000087118.pdf",
+          "sha256": "cf4dd79155b806d73696cffab120dd31054282afd0341471cb8718919412c046",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2024,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000109503/NI-000109503.pdf",
+          "sha256": "283f9aa0d2d6b6142cdda6a3e198c91541d10f80a796c33aa0ee7a2004293c6c",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2025,
           "url": "https://www.imperialbrandsplc.com/content/dam/imperialbrands/corporate/documents/investor-hub/reports/oar-2025/imperial-brands-2025-annual-report.pdf",
           "sha256": "769a4cdf04b7c2574b010488fb193bea41cb7fc4582d50233c09672c00ea1cc1",
@@ -2620,7 +2860,24 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "imperial-brands:2024": {
+          "candidateHash": "a24835607dd3da9977da5d86acdc90735c53cb4bf18e07fa97b9c67fdb2f7d18",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:03:34.217499+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:03:34.217499+00:00",
+          "diagnostics": []
+        },
+        "imperial-brands:2023": {
+          "candidateHash": "b2ebd17f53b086f225ccb77863e545593cfbc212664a5229e92bc85dd1481418",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:05:46.133368+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:05:46.133368+00:00",
+          "diagnostics": []
+        }
+      }
     },
     "informa": {
       "companyName": "Informa PLC",
@@ -2762,6 +3019,19 @@
               "error": "ValueError: document is too short to be a full annual report (21 pages, 5575 words)"
             }
           ]
+        },
+        "intercontinental-hotels:2023": {
+          "candidateHash": "85afde3249bc1eec869ee8861751477b5415337e46d1b1961f308f12ebe129a9",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:05:12.516154+00:00",
+          "status": "extraction_failed",
+          "retryAfter": "2026-09-24T23:05:12.516154+00:00",
+          "diagnostics": [
+            {
+              "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000069528/NI-000069528.pdf",
+              "error": "ValueError: document is too short to be a full annual report (2 pages, 444 words)"
+            }
+          ]
         }
       }
     },
@@ -2838,6 +3108,18 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2023,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000092473/NI-000092473.pdf",
+          "sha256": "4eedf2739f89efdba7cd2c289c99e6fa5d292d63d86e1f5663fde99262507ca8",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2024,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000115526/NI-000115526.pdf",
+          "sha256": "4088734c307648335a4b1f708caff4289fde09b8baf160ffa704d7927a287e00",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2025,
           "url": "https://www.intertek.com/siteassets/investors/2026/ara/intertek-annual-report--accounts-2025-combined.pdf",
           "sha256": "6908bb5d9252982f520f3ed745a1097e4780e8a109383fad2d2a8644f6205b94",
@@ -2845,7 +3127,24 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "intertek:2024": {
+          "candidateHash": "fa47b631361a6960c6a1023d61fcb0d4956bbf82db5bc5ff8ef3187c1d62adfc",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:03:52.541227+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:03:52.541227+00:00",
+          "diagnostics": []
+        },
+        "intertek:2023": {
+          "candidateHash": "e8ce81192d332c3b6068edd304b72151186255f60df346353e00e833693a8df1",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:05:55.869076+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:05:55.869076+00:00",
+          "diagnostics": []
+        }
+      }
     },
     "international-consolidated-airlines": {
       "companyName": "International Consolidated Airlines Group SA",
@@ -2859,6 +3158,12 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2023,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000094624/NI-000094624.pdf",
+          "sha256": "379cfcbffc667ca824d3ffed65f1ef294923c3658a3d3be6a5fa2b04bda0567b",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2025,
           "url": "https://www.iairgroup.com/media/ktnlp1jx/iag-annual-report-and-accounts-2025.pdf",
           "sha256": "876d0b0df9b1ee792437f268bb5bcd17cfbf180cea17a663115c7551a288397b",
@@ -2866,7 +3171,16 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "international-consolidated-airlines:2023": {
+          "candidateHash": "8f1c1077e1250c42433b6f4862404739386ce5d4d93a5201687a488036f6cf1d",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:05:35.253098+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:05:35.253098+00:00",
+          "diagnostics": []
+        }
+      }
     },
     "jd-sports-fashion": {
       "companyName": "JD Sports Fashion PLC",
@@ -2887,7 +3201,21 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "jd-sports-fashion:2023": {
+          "candidateHash": "33677580b648a77eda8cbba9a23292191b16a14f01931f85dac86896f773aa46",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:05:31.659389+00:00",
+          "status": "extraction_failed",
+          "retryAfter": "2026-09-24T23:05:31.659389+00:00",
+          "diagnostics": [
+            {
+              "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000076046/NI-000076046.pdf",
+              "error": "ValueError: document is too short to be a full annual report (12 pages, 7346 words)"
+            }
+          ]
+        }
+      }
     },
     "kingfisher": {
       "companyName": "Kingfisher PLC",
@@ -2901,6 +3229,24 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2023,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000071730/NI-000071730.pdf",
+          "sha256": "1d4b7c58d62c17f804159bed35e432ca225f55d96d312fba618cf581e789a3a1",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2024,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000094362/NI-000094362.pdf",
+          "sha256": "9315c987052d3171f097ebd3bc4ac65bb193427cff1ea81ed0d1b580999e622b",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2025,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000116719/NI-000116719.pdf",
+          "sha256": "229bd50b5b5c06e03950e3f9a91f347db76ce7c1996a8689f92d2aedac685699",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2026,
           "url": "https://www.kingfisher.com/~/media/Files/K/Kingfisher-Plc/Universal/investors/result-reports-presentation/2026/2526-annual-report-and-accounts.pdf",
           "sha256": "25416e44fb8afe68b8fd56988aa93a3826f81e72b62a78b88a69f45f7fb3f75a",
@@ -2908,7 +3254,32 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "kingfisher:2025": {
+          "candidateHash": "3ebb2106216cb1df3bf77bde959468228a1f90668ae05b1e1049ee04288fe172",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:02:51.875614+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:02:51.875614+00:00",
+          "diagnostics": []
+        },
+        "kingfisher:2024": {
+          "candidateHash": "6c616bce27d3a7c729f1f25ba34985bc03e2e94df75d8dc4a5334bb7aec88257",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:03:48.347055+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:03:48.347055+00:00",
+          "diagnostics": []
+        },
+        "kingfisher:2023": {
+          "candidateHash": "5df6d6694ba40c44427ac74b648d2fdfdc73bb3c0185c18c7103fd73151bff80",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:05:41.926078+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:05:41.926078+00:00",
+          "diagnostics": []
+        }
+      }
     },
     "land-securities": {
       "companyName": "Land Securities Group PLC",
@@ -2921,6 +3292,18 @@
       "latestAvailabilityVerifiedAt": null,
       "status": "latest_availability_unverified",
       "documents": [
+        {
+          "year": 2023,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000076547/NI-000076547.pdf",
+          "sha256": "dcde948399ad0a13c0948e2d31538c7a76ef019ecd71040a488c724b9e63a728",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2024,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000098174/NI-000098174.pdf",
+          "sha256": "03dcbeb642186cc8ee294d2e5facdbef7a6b3d5ffa4f66060beb90c7ef3e3a98",
+          "extractionStatus": "extracted"
+        },
         {
           "year": 2025,
           "url": "https://content.landsec.com/media/0ilhb1mo/annual_report_2025_interactive_0_0.pdf",
@@ -2943,6 +3326,22 @@
           "status": "extracted",
           "retryAfter": "2026-09-14T12:36:31.955178+00:00",
           "diagnostics": []
+        },
+        "land-securities:2024": {
+          "candidateHash": "3492358cf39288283d0520d8e3ba7b887ce83828575ad10ef51d79f8b851b085",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:03:56.921081+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:03:56.921081+00:00",
+          "diagnostics": []
+        },
+        "land-securities:2023": {
+          "candidateHash": "f775c6efdb889ab36443b2d138521279776e736169a839f2a1e79a3416651654",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:06:02.051347+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:06:02.051347+00:00",
+          "diagnostics": []
         }
       }
     },
@@ -2956,6 +3355,18 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2023,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000091859/NI-000091859.pdf",
+          "sha256": "4457d2ad8bb359c2e70824e80cfad73ce447eeef9070005df3ad3112cf56ae2a",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2024,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000115343/NI-000115343.pdf",
+          "sha256": "1f208035b62e2ceed95427c213dd5442814b63498ec336cfc588a6b04e894eaf",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2025,
           "url": "https://group.legalandgeneral.com/asset/4984d6/globalassets/group/reporting-hub/reports/2026/annual-report-and-accounts-2025/annual-report-and-accounts-2025-accessible-pdf.pdf",
           "sha256": "3e3d4278a3096dc67f8aacbe326f890e0e1b015281a9da9c91ea5ebb3d232a40",
@@ -2963,7 +3374,24 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "legal-and-general:2024": {
+          "candidateHash": "88f47008a1ee5c1b4210a569f4471c134ab309d15e782b1237ed21b7452e3108",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:04:20.090076+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:04:20.090076+00:00",
+          "diagnostics": []
+        },
+        "legal-and-general:2023": {
+          "candidateHash": "f927fe606f96e66e02468b50e49bbaf3eb5131b766d8e796c6472c91acfcfd56",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:06:17.886650+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:06:17.886650+00:00",
+          "diagnostics": []
+        }
+      }
     },
     "londonmetric-property": {
       "companyName": "LondonMetric Property PLC",
@@ -2978,6 +3406,18 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2023,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000077033/NI-000077033.pdf",
+          "sha256": "06b81c5f378aab3ae000fb69b3eae01b9e30e4009da130a3436aace82c7eedec",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2024,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000099180/NI-000099180.pdf",
+          "sha256": "43dd423ef2ffb85fc52ebaafa96823dacc8f414984d846ea4098db7b97dd67b8",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2026,
           "url": "https://www.londonmetric.com/~/media/Files/L/londonmetric/results-and-presentations/presentation/annual-report-and-accounts-2026.pdf",
           "sha256": "31a4b2cb9218e2a32a593caf64637b550cae9163e9f585568a7f6a0450fc89f2",
@@ -2985,7 +3425,24 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "londonmetric-property:2024": {
+          "candidateHash": "4df87d8f8e5a7b19983948bf4100a351e078cf881af11052c072d5032de9cdf3",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:03:57.654751+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:03:57.654751+00:00",
+          "diagnostics": []
+        },
+        "londonmetric-property:2023": {
+          "candidateHash": "74f5264239cd6361cb982c6735ee00106a404013f3efadef8370db7afe81a220",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:06:10.313049+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:06:10.313049+00:00",
+          "diagnostics": []
+        }
+      }
     },
     "mandg": {
       "companyName": "M&G PLC",
@@ -3089,6 +3546,18 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2023,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000073602/NI-000073602.pdf",
+          "sha256": "1b844daa0cdd29322296a5468622640828dbffa656f912ed482557a16fce21ff",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2024,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000116544/NI-000116544.pdf",
+          "sha256": "d56080081c444845c5b5e8d0989c93e0a6f9bbd98ea0d901079d0f275d175218",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2025,
           "url": "https://www.melroseplc.net/media/qc0eu5o1/melrose-annual-report25.pdf",
           "sha256": "36c10bcf1e8967c1b0d12d82a4b5c88e413e5da8e72ed41ccaf653bff081b26a",
@@ -3096,7 +3565,24 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "melrose-industries:2024": {
+          "candidateHash": "9e278d19213335e18f51dd554352b60c92cbf4d5a0bc38cb14bcd8560417dc26",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:04:10.704059+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:04:10.704059+00:00",
+          "diagnostics": []
+        },
+        "melrose-industries:2023": {
+          "candidateHash": "86f2de3b3314cc4103921508d8ca7a48f054285f67178b2571790b11e7405505",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:06:15.667052+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:06:15.667052+00:00",
+          "diagnostics": []
+        }
+      }
     },
     "natwest": {
       "companyName": "NatWest Group PLC",
@@ -3108,6 +3594,12 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2023,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000092117/NI-000092117.pdf",
+          "sha256": "6971c823954e4eb315ff4c5be89a953f49d1847b9165713e96cc1eed80c90c34",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2025,
           "url": "https://investors.natwestgroup.com/~/media/Files/R/RBS-IR-V2/results-center/13022026/nwg-annual-report-and-accounts-2025.pdf",
           "sha256": "e7b26778dadeebfc94f60c32dd65013768554511480608ebaade41d0f8a265f8",
@@ -3115,7 +3607,16 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "natwest:2023": {
+          "candidateHash": "f5eac4b1058e9cf320b714fa4a4044cd2c37fae71b5e4a7c168c4693e25d862d",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:06:26.194754+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:06:26.194754+00:00",
+          "diagnostics": []
+        }
+      }
     },
     "next": {
       "companyName": "Next PLC",
@@ -3239,7 +3740,20 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "pearson:2024": {
+          "candidateHash": "8704c32716ce62562e01039da90edee4c8a90661b84972f1e8fb2841ccc0c159",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:03:56.379087+00:00",
+          "status": "extraction_failed",
+          "retryAfter": "2026-09-24T23:03:56.379087+00:00",
+          "diagnostics": [
+            {
+              "error": "ValueError: Requested 2024, document identifies 2023; needs source review"
+            }
+          ]
+        }
+      }
     },
     "pershing-square": {
       "companyName": "Pershing Square Holdings Ltd",
@@ -3251,6 +3765,18 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2023,
+          "url": "https://data.fca.org.uk/#/nsm/nationalstoragemechanism",
+          "sha256": "ee48c0c3aff5c7183d82a377c4a87f790f9f4d18a8bda973d3559062b4cd8f7b",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2024,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000115169/NI-000115169.pdf",
+          "sha256": "df90de27f6682d800161259b8a714091483f81caee02bc36734d1cb1a7ee2c22",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2025,
           "url": "https://assets.pershingsquareholdings.com/wp-content/uploads/2026/02/18175039/Pershing-Square-Holdings-Ltd.-2025-Annual-Report.pdf",
           "sha256": "9cd5b25df4854833bb61ff012c690005661053cdc8fb28e6622e85a44e5ddfa0",
@@ -3258,7 +3784,24 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "pershing-square:2024": {
+          "candidateHash": "d8e932bd86a2e675278568219c452bff7369008415a36550b393710b8190e99e",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:04:28.145130+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:04:28.145130+00:00",
+          "diagnostics": []
+        },
+        "pershing-square:2023": {
+          "candidateHash": "da72d07299f21ed3ea64054bfecd4b487ba36a08bf4e719eb841201013945c91",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:05:48.712683+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:05:48.712683+00:00",
+          "diagnostics": []
+        }
+      }
     },
     "persimmon": {
       "companyName": "Persimmon PLC",
@@ -3438,7 +3981,20 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "prudential:2024": {
+          "candidateHash": "3de2094d09e80bb769cb47e87cf1b519bd2806c5a41e2f6f717fa81f3d048bfb",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:04:48.395083+00:00",
+          "status": "extraction_failed",
+          "retryAfter": "2026-09-24T23:04:48.395083+00:00",
+          "diagnostics": [
+            {
+              "error": "ValueError: Requested 2024, document identifies 2023; needs source review"
+            }
+          ]
+        }
+      }
     },
     "reckitt-benckiser": {
       "companyName": "Reckitt Benckiser Group PLC",
@@ -3541,7 +4097,20 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {},
+      "retryDiagnostics": {
+        "rentokil-initial:2024": {
+          "candidateHash": "8605301d5aa253aead334a7c783e3d13b23f569d17d02f1c5599ed7e67ae5bd2",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:04:44.355411+00:00",
+          "status": "extraction_failed",
+          "retryAfter": "2026-09-24T23:04:44.355411+00:00",
+          "diagnostics": [
+            {
+              "error": "ValueError: Requested 2024, document identifies 2023; needs source review"
+            }
+          ]
+        }
+      },
       "latestAvailabilitySource": "https://www.rentokil-initial.com/investors/annual-reports"
     },
     "sage": {
@@ -3604,6 +4173,12 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2024,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000115743/NI-000115743.pdf",
+          "sha256": "097f6c919fbcfb0378690c0f3be0d28042c7dc75fe38df43962f73a064b7c832",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2025,
           "url": "https://mybrand.schroders.com/m/74f3d9a5f99e1565/original/Schroders-Annual-Report-FY25-Full-report-interactive.pdf",
           "sha256": "6a72467f358b54148dff4b8381f4197be2057dd3ff753e88f221ba1386346594",
@@ -3611,7 +4186,28 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "schroders:2024": {
+          "candidateHash": "c980e3e3e526ac808ab81947b01f26d8f2c5f058271bfa8cb1e201585fd390d8",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:04:26.800091+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:04:26.800091+00:00",
+          "diagnostics": []
+        },
+        "schroders:2023": {
+          "candidateHash": "2d2e394e3a5d57d9794886cdfe69a7fd1b82c6329684f05a9d0b4fd12cf22ddd",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:06:15.769742+00:00",
+          "status": "extraction_failed",
+          "retryAfter": "2026-09-24T23:06:15.769742+00:00",
+          "diagnostics": [
+            {
+              "error": "ValueError: Requested 2023, document identifies 2022; needs source review"
+            }
+          ]
+        }
+      }
     },
     "scottish-mortgage-investment-trust": {
       "companyName": "Scottish Mortgage Investment Trust PLC",
@@ -3623,6 +4219,24 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2023,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000075903/NI-000075903.pdf",
+          "sha256": "8e36f798ffa8a2d0465534411e712fa01decb25755cdee05585098ace4493b49",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2024,
+          "url": "https://data.fca.org.uk/#/nsm/nationalstoragemechanism",
+          "sha256": "f54c0db682ea541a9131112511e59f8cf452a21188a14ad809ab50086b6271fc",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2025,
+          "url": "https://data.fca.org.uk/#/nsm/nationalstoragemechanism",
+          "sha256": "b1f7e81333adecaaa6d11a91cd6561e2c3170d3d92f872c2c68f05df80d309df",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2026,
           "url": "https://www.scottishmortgage.com/api/document-download?bg-url=%2Fen%2Fuk%2Findividual-investors%2Fliterature-library%2Ffunds%2Finvestment-trusts%2Fscottish-mortgage%2Fannual-reports%2Fscottish-mortgage-annual-report-including-the-notice-of-agm-march-2026%2F",
           "sha256": "cd8c7b849769f55250fa4d6e2bff1af5a00a9a5da51c8ddc3abe4939da7a932f",
@@ -3630,7 +4244,32 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "scottish-mortgage-investment-trust:2025": {
+          "candidateHash": "6d0b97f89ef99ab7e51b95eb53cdddad176e0254488c7cfc9b022747533865c1",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:02:36.586216+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:02:36.586216+00:00",
+          "diagnostics": []
+        },
+        "scottish-mortgage-investment-trust:2024": {
+          "candidateHash": "ed47d8605e13534bb8ffb6010107c1aa916c28c411224e63210f3b5c1ee0bc2a",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:03:59.728069+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:03:59.728069+00:00",
+          "diagnostics": []
+        },
+        "scottish-mortgage-investment-trust:2023": {
+          "candidateHash": "6b907fde3e1112fb42bc2106d6df6c185bd0ad206f84997e399db8e4eb8a55eb",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:06:07.381330+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:06:07.381330+00:00",
+          "diagnostics": []
+        }
+      }
     },
     "segro": {
       "companyName": "Segro PLC",
@@ -3644,6 +4283,12 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2024,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000112828/NI-000112828.pdf",
+          "sha256": "e9c25229aafad8c57ec467dd64164949c5806d6612a663f3fec1111937559a3e",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2025,
           "url": "https://www.segro.com/media/kbshtxbq/segro_annual-report-accounts-2025.pdf",
           "sha256": "1363570fff3d02a86ca6af4fcabbf3d6b6b858d37bf995423ec17b3e84c9a626",
@@ -3651,7 +4296,16 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "segro:2024": {
+          "candidateHash": "66a7d3e15c55cb57acf9dec453524d5e11298136f469aa9ca59eb05e6ee45835",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:04:08.940394+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:04:08.940394+00:00",
+          "diagnostics": []
+        }
+      }
     },
     "severn-trent": {
       "companyName": "Severn Trent PLC",
@@ -3826,6 +4480,12 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2025,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000122522/NI-000122522.pdf",
+          "sha256": "8db3150a0f36c607ae09cfe61931eddd68a9dce8ab027030f57ede8f8326a993",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2026,
           "url": "https://www.sse.com/media/gugb5kyl/sse_ar26_interactive_18mb.pdf",
           "sha256": "2ddacc4ad4176d9d24205d8b29b9a7f9b64be234884fef0a175f1e71ae5e204a",
@@ -3833,7 +4493,16 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "sse:2025": {
+          "candidateHash": "28ff635612b76385556f5174689e830670350e4312e24769ae7ead764aa4da94",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:03:46.831086+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:03:46.831086+00:00",
+          "diagnostics": []
+        }
+      }
     },
     "st-jamess-place": {
       "companyName": "St James's Place PLC",
@@ -3864,6 +4533,12 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2024,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000113255/NI-000113255.pdf",
+          "sha256": "34fa09f48534afc81d2fe832c7f95eb8257522cbabfba090ce549cef766a5024",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2025,
           "url": "https://www.sc.com/en/uploads/sites/66/content/docs/standard-chartered-plc-2025-annual-report.pdf",
           "sha256": "83e3dd2b671f9e40faaa4b69be7aa6df41a8f05a4f7f8fb5eca8e8ea035ed80d",
@@ -3871,7 +4546,16 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "standard-chartered:2024": {
+          "candidateHash": "c4924cd6c7b8d632cb0c623ca7a0b715ba577c4c87eb94a592af349c322cb2de",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:05:10.690615+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:05:10.690615+00:00",
+          "diagnostics": []
+        }
+      }
     },
     "tesco": {
       "companyName": "Tesco PLC",
@@ -3891,6 +4575,12 @@
           "extractionStatus": "extracted"
         },
         {
+          "year": 2024,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000096769/NI-000096769.pdf",
+          "sha256": "91be77afa00a8ca05267edd680e861f3af9d5d6d995e15d17756a662944733be",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2025,
           "url": "https://www.tescoplc.com/media/ky0bfwpo/tesco_ar25_interactive.pdf",
           "sha256": "016e77082da46c0cf319d80aa589af936452b215c7bf447d145f5866311be52c",
@@ -3904,7 +4594,16 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {},
+      "retryDiagnostics": {
+        "tesco:2024": {
+          "candidateHash": "1786258d032305a46acd4f93738e49712f74aa1449909c3b7ab02337a128873b",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:04:46.147116+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:04:46.147116+00:00",
+          "diagnostics": []
+        }
+      },
       "latestAvailabilitySource": "https://www.tescoplc.com/media/gmylxjfw/tesco_ar26_interactive.pdf"
     },
     "united-utilities": {
@@ -4007,6 +4706,12 @@
           "extractionStatus": "extracted"
         },
         {
+          "year": 2024,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000097578/NI-000097578.pdf",
+          "sha256": "a49428313cc474004f8e46cef80fcd1442aadbea6b2016b7b9a8014aa1b0b1f4",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2025,
           "url": "https://www.vodafone.com/~/media/Files/V/vodafone/corp/documents/performance/financial-results/2025/form-20-f-2025.pdf",
           "sha256": "4bcd1269fd96f56bf8080387869f3650c7c8f5e0ce0d9d069795fe127e9a11bb",
@@ -4022,17 +4727,12 @@
       "pendingCandidates": [],
       "retryDiagnostics": {
         "vodafone:2024": {
-          "candidateHash": "0fb50ee5b837716f7914a8441599713e5697383b084c537c46c4c7e8e46eea8a",
+          "candidateHash": "2e59011a3b7324dc6111c68b9661d9aa2f184687597065918af1e3d47f40ec23",
           "attemptCount": 1,
-          "lastAttempt": "2026-09-13T10:42:54.917702+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-13T16:42:54.917702+00:00",
-          "diagnostics": [
-            {
-              "url": "https://www.vodafone.com/~/media/Files/V/vodafone/corp/documents/annual-reporting/vodafone-esg-addendum-2024.xlsx",
-              "error": "report page did not expose a usable full report"
-            }
-          ]
+          "lastAttempt": "2026-09-24T17:05:48.353068+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:05:48.353068+00:00",
+          "diagnostics": []
         }
       },
       "latestAvailabilitySource": "https://www.vodafone.com/investors/performance-and-reports/annual-reporting"
@@ -4102,6 +4802,12 @@
           "extractionStatus": "extracted"
         },
         {
+          "year": 2024,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000097080/NI-000097080.pdf",
+          "sha256": "24bc0f56dbbf8c749a905a3f59a5b81b63f28c35b56cb8e72e1414484ec90c27",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2025,
           "url": "https://cdn.whitbread.co.uk/media/2025/05/Whitbread-PLC-Annual-Report-and-Accounts-2024-25.pdf",
           "sha256": "d0c29034a0841386fa7d2996bdcfaae87eb79493bc22aa71e13a6899d4e95e3d",
@@ -4117,16 +4823,12 @@
       "pendingCandidates": [],
       "retryDiagnostics": {
         "whitbread:2024": {
-          "candidateHash": "b65bc1528f9423e0893e82df5dba9c6265a473713aa30a13d9b92748687b8708",
+          "candidateHash": "ad180ff31ece30d5375f04b4b18f225709afa53e0a21e02ba05c715eb2523bb7",
           "attemptCount": 1,
-          "lastAttempt": "2026-09-14T06:36:57.484058+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-14T12:36:57.484058+00:00",
-          "diagnostics": [
-            {
-              "error": "ValueError: Requested 2024, document identifies 2025; needs source review"
-            }
-          ]
+          "lastAttempt": "2026-09-24T17:04:47.231089+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:04:47.231089+00:00",
+          "diagnostics": []
         },
         "whitbread:2021": {
           "candidateHash": "2a29e9487e703412884f31031a7b78df1b2698468b49c52e202f4d7214d32aa5",
@@ -4167,6 +4869,18 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2023,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000079543/NI-000079543.pdf",
+          "sha256": "abfa6ad519477cfd63ea51445be99e6a5da1575cb8dc30726cc195d6384feb8a",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2024,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000100881/NI-000100881.pdf",
+          "sha256": "593e60ca44461a52b5f3a84c2e8cb2c812f67b134e0e56dac17a2f4f1e6e2ccb",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2025,
           "url": "https://www.pctannualhighlights.co.uk/static/literature/270997_PCTT_AR_WEB_ctDgfnW.pdf",
           "sha256": "9e37c9a8a504693cc8fe426998d2a1f95d3d77e663d745bd9990a406ffc77207",
@@ -4180,7 +4894,24 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "polar-capital-technology-trust:2024": {
+          "candidateHash": "0c4d45a2420be9fcfc4ab43b2b98f236f8929808fa2531f39f46aa23cb7b3ae4",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:03:56.808091+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:03:56.808091+00:00",
+          "diagnostics": []
+        },
+        "polar-capital-technology-trust:2023": {
+          "candidateHash": "cdc069f7aa08faa1216931b1c03694c6d0928d7115631db25af9e4e2de3c90dc",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:05:56.867356+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:05:56.867356+00:00",
+          "diagnostics": []
+        }
+      }
     },
     "computacenter": {
       "companyName": "Computacenter PLC",
@@ -4199,7 +4930,32 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "computacenter:2024": {
+          "candidateHash": "e01d689db8aefbb24e063dd77a31410b24a7cae0419a021a5424506c88a14af2",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:03:36.182852+00:00",
+          "status": "extraction_failed",
+          "retryAfter": "2026-09-24T23:03:36.182852+00:00",
+          "diagnostics": [
+            {
+              "error": "ValueError: Requested 2024, document identifies 2023; needs source review"
+            }
+          ]
+        },
+        "computacenter:2023": {
+          "candidateHash": "83fa5f47125ab96309fb80e2f97f2eab842a28f54a3c55593c6b1d5202481cc5",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:05:29.913090+00:00",
+          "status": "extraction_failed",
+          "retryAfter": "2026-09-24T23:05:29.913090+00:00",
+          "diagnostics": [
+            {
+              "error": "ValueError: Requested 2023, document identifies 2022; needs source review"
+            }
+          ]
+        }
+      }
     },
     "investec": {
       "companyName": "Investec PLC",
@@ -4275,6 +5031,24 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2023,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000076750/NI-000076750.pdf",
+          "sha256": "7b8ca8fe3a7c765ac4763deba52a1534ce86330214b784e2b25a87bfad791df3",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2024,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000097857/NI-000097857.pdf",
+          "sha256": "90b7ce0993a898ddf3cf3bf643400a644599fbb3ba2616fe93680ad4225bd429",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2025,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000121387/NI-000121387.pdf",
+          "sha256": "3bbc3a1d54b09c642317028b865f5ed6c45b52de9fbeda5315bc26d9b952b43c",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2026,
           "url": "https://www.burberryplc.com/content/dam/burberryplc/corporate/oar/oar-2025-2026/annual-report-2025-26.pdf.downloadasset.pdf",
           "sha256": "89279657e423064a91eabbd6ada8b43d8305ae38b92d7b339a59c906355739c3",
@@ -4284,16 +5058,28 @@
       "pendingCandidates": [],
       "retryDiagnostics": {
         "burberry:2025": {
-          "candidateHash": "d2584ed8fa6ed4bdd8292a6791fc3780756b135f53772bab40327a36d7e680ff",
+          "candidateHash": "d509d08ee49794d247860514e8823a184454a2145cad6a63a4a62a3640c7d558",
           "attemptCount": 1,
-          "lastAttempt": "2026-09-14T06:36:34.607305+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-14T12:36:34.607305+00:00",
-          "diagnostics": [
-            {
-              "error": "ValueError: Requested 2025, document identifies 2026; needs source review"
-            }
-          ]
+          "lastAttempt": "2026-09-24T17:03:02.525603+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:03:02.525603+00:00",
+          "diagnostics": []
+        },
+        "burberry:2024": {
+          "candidateHash": "e5eb8b806041af7c93995dd9c4401690348a3c8b1c47acae526eb0dfb01222a4",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:03:05.492082+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:03:05.492082+00:00",
+          "diagnostics": []
+        },
+        "burberry:2023": {
+          "candidateHash": "cca72394ca4b97dbb54d6bbe960d60e59a1ef32aa208a479402343d32f191467",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:05:04.248067+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:05:04.248067+00:00",
+          "diagnostics": []
         }
       }
     },
@@ -4468,6 +5254,12 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2023,
+          "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000091974/NI-000091974.pdf",
+          "sha256": "2fb5d73585db037fbb7cdaeb94cbc02eb696a572648666b7bfe806cc54a3642a",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2025,
           "url": "https://ir.cocacolaep.com/static-files/3da8b539-de28-4d6a-930e-49d2f660c3f1",
           "sha256": "74d7ef549b28456add1d9074236a1f8f2f04690bf3d7c0b5018ecc5b9d7262d8",
@@ -4475,7 +5267,16 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "coca-cola-europacific-partners:2023": {
+          "candidateHash": "86f6ae668fbb739f5a839dbda4fddb45becf84a29d2862adca5231c55e6c37f2",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-24T17:05:38.793082+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-24T23:05:38.793082+00:00",
+          "diagnostics": []
+        }
+      }
     },
     "metlen-energy-metals": {
       "companyName": "Metlen Energy & Metals PLC",
