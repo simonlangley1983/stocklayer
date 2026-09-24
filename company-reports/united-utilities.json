@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-23T23:27:50.004835Z",
+  "generatedAt": "2026-09-24T01:33:59.602133Z",
   "company": {
     "companyName": "United Utilities Group PLC",
     "ticker": "UU.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-22",
-    "observationCount": 75,
-    "scoredDayCount": 64,
-    "latestScore": 28.7,
-    "latestScoreDate": "2026-09-22",
+    "periodEnd": "2026-09-23",
+    "observationCount": 76,
+    "scoredDayCount": 65,
+    "latestScore": 41.9,
+    "latestScoreDate": "2026-09-23",
     "series": [
       {
         "date": "2026-06-30",
@@ -700,19 +700,18 @@
         "sourceCount": 2,
         "confidence": 50.3,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-23",
+        "dailyScore": 41.9,
+        "rollingScore": 48.6,
+        "storyCount": 3,
+        "sourceCount": 3,
+        "confidence": 53.4,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
-      {
-        "date": "2026-07-31",
-        "type": "press_story",
-        "title": "United Utilities wins go ahead for Near Sawrey treatment upgrade",
-        "source": "nwemail.co.uk",
-        "url": "https://www.nwemail.co.uk/news/26418647.united-utilities-wins-go-ahead-near-sawrey-treatment-upgrade",
-        "direction": "Very positive",
-        "detail": null,
-        "significance": 1.291
-      },
       {
         "date": "2026-08-03",
         "type": "high_disagreement",
@@ -802,6 +801,16 @@
         "direction": "negative",
         "detail": "Daily score decreased by 34.0 points",
         "significance": 1.603
+      },
+      {
+        "date": "2026-09-23",
+        "type": "sentiment_jump",
+        "title": "United Utilities stock falls 1.63 percent in London",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNTzRWU2hBaVRvRF9VUDJ5bDd2NlVJTVh2OF9hSGgyUksyc1REQklmZUtGZUNKR3dodjFqWUZMYzI5YTAxMzl3Mkd6Sk56ajNVTjVoZU42M3NNQndhamZtSEx0WmRyOVZKaFVHUGNfNDlzRXI1eWxGUG5waHJJa2VyY3VKck1fUnZVNVdrY1F0cGh4aGtXN3hIaG9faUtMVllaaFRlWEVHSk5rZE92bjd0UGVVU3Q?oc=5",
+        "direction": "positive",
+        "detail": "Daily score increased by 13.2 points",
+        "significance": 1.571
       }
     ]
   },
@@ -1367,17 +1376,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 47.6,
+    "score": 47.5,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 45.2,
+        "score": 45.1,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 64 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 65 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1452,16 +1461,6 @@
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
-    },
-    {
-      "date": "2026-07-31",
-      "type": "press_story",
-      "title": "United Utilities wins go ahead for Near Sawrey treatment upgrade",
-      "source": "nwemail.co.uk",
-      "url": "https://www.nwemail.co.uk/news/26418647.united-utilities-wins-go-ahead-near-sawrey-treatment-upgrade",
-      "direction": "Very positive",
-      "detail": null,
-      "significance": 1.291
     },
     {
       "date": "2026-08-03",
@@ -1552,6 +1551,16 @@
       "direction": "negative",
       "detail": "Daily score decreased by 34.0 points",
       "significance": 1.603
+    },
+    {
+      "date": "2026-09-23",
+      "type": "sentiment_jump",
+      "title": "United Utilities stock falls 1.63 percent in London",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNTzRWU2hBaVRvRF9VUDJ5bDd2NlVJTVh2OF9hSGgyUksyc1REQklmZUtGZUNKR3dodjFqWUZMYzI5YTAxMzl3Mkd6Sk56ajNVTjVoZU42M3NNQndhamZtSEx0WmRyOVZKaFVHUGNfNDlzRXI1eWxGUG5waHJJa2VyY3VKck1fUnZVNVdrY1F0cGh4aGtXN3hIaG9faUtMVllaaFRlWEVHSk5rZE92bjd0UGVVU3Q?oc=5",
+      "direction": "positive",
+      "detail": "Daily score increased by 13.2 points",
+      "significance": 1.571
     },
     {
       "date": "2026-12-31",

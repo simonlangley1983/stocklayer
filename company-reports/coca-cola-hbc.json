@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-23T23:27:50.004835Z",
+  "generatedAt": "2026-09-24T01:33:59.602133Z",
   "company": {
     "companyName": "Coca-Cola HBC AG",
     "ticker": "CCH.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-15",
-    "periodEnd": "2026-09-22",
-    "observationCount": 71,
-    "scoredDayCount": 33,
-    "latestScore": 57.7,
-    "latestScoreDate": "2026-09-22",
+    "periodEnd": "2026-09-23",
+    "observationCount": 72,
+    "scoredDayCount": 34,
+    "latestScore": 60.5,
+    "latestScoreDate": "2026-09-23",
     "series": [
       {
         "date": "2026-06-15",
@@ -664,19 +664,18 @@
         "sourceCount": 5,
         "confidence": 65.9,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-23",
+        "dailyScore": 60.5,
+        "rollingScore": 55.9,
+        "storyCount": 3,
+        "sourceCount": 3,
+        "confidence": 53.7,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
-      {
-        "date": "2026-07-09",
-        "type": "press_story",
-        "title": "Coca - Cola HBC Says Egypt Is Shifting From Acquisition Story to Growth Engine",
-        "source": "finance.yahoo.com",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/coca-cola-hbc-says-egypt-170543459.html",
-        "direction": "Positive",
-        "detail": null,
-        "significance": 0.618
-      },
       {
         "date": "2026-09-15",
         "type": "press_story",
@@ -766,6 +765,16 @@
         "direction": "Very positive",
         "detail": null,
         "significance": 0.957
+      },
+      {
+        "date": "2026-09-23",
+        "type": "press_story",
+        "title": "Coca-Cola HBC stock gains 3.04 percent on forecast optimism",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOaWRranRKU3dnOEZJWXJUNEgyMFh1cUwwcmptNVhjRHlxX2V4ZFZ6ZlVlQlZtd3JlNHZGdWlReVhERjFRMUJHMmpoWVNybnlxSUJVY2w1cFVybmlHZlc3aEhoMXExWGx3cGMxNzhkOU16d2s0cXN2N0VSa0hIUUV6Vk1SWFZyRWNEZkJzaWlydzJDS2pNeVQzdlhFb29FRFFWWVpQM0JLWm5KZVlnOFJJVkV3NEcxa3RYR3c?oc=5",
+        "direction": "Very positive",
+        "detail": null,
+        "significance": 1.026
       }
     ]
   },
@@ -852,17 +861,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 51.5,
+    "score": 52.1,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.5,
+        "score": 52.1,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 29 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 30 scored days in the latest 90 calendar days; 30-day half-life."
       }
     ],
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
@@ -876,16 +885,6 @@
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
-    },
-    {
-      "date": "2026-07-09",
-      "type": "press_story",
-      "title": "Coca - Cola HBC Says Egypt Is Shifting From Acquisition Story to Growth Engine",
-      "source": "finance.yahoo.com",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/coca-cola-hbc-says-egypt-170543459.html",
-      "direction": "Positive",
-      "detail": null,
-      "significance": 0.618
     },
     {
       "date": "2026-09-15",
@@ -976,6 +975,16 @@
       "direction": "Very positive",
       "detail": null,
       "significance": 0.957
+    },
+    {
+      "date": "2026-09-23",
+      "type": "press_story",
+      "title": "Coca-Cola HBC stock gains 3.04 percent on forecast optimism",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOaWRranRKU3dnOEZJWXJUNEgyMFh1cUwwcmptNVhjRHlxX2V4ZFZ6ZlVlQlZtd3JlNHZGdWlReVhERjFRMUJHMmpoWVNybnlxSUJVY2w1cFVybmlHZlc3aEhoMXExWGx3cGMxNzhkOU16d2s0cXN2N0VSa0hIUUV6Vk1SWFZyRWNEZkJzaWlydzJDS2pNeVQzdlhFb29FRFFWWVpQM0JLWm5KZVlnOFJJVkV3NEcxa3RYR3c?oc=5",
+      "direction": "Very positive",
+      "detail": null,
+      "significance": 1.026
     }
   ],
   "persistentEvents": [

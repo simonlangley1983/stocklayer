@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-23T23:27:50.004835Z",
+  "generatedAt": "2026-09-24T01:33:59.602133Z",
   "company": {
     "companyName": "InterContinental Hotels Group PLC",
     "ticker": "IHG.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-15",
-    "periodEnd": "2026-09-22",
-    "observationCount": 60,
-    "scoredDayCount": 48,
-    "latestScore": 42.7,
-    "latestScoreDate": "2026-09-22",
+    "periodEnd": "2026-09-23",
+    "observationCount": 61,
+    "scoredDayCount": 49,
+    "latestScore": 41.9,
+    "latestScoreDate": "2026-09-23",
     "series": [
       {
         "date": "2026-07-15",
@@ -565,19 +565,18 @@
         "sourceCount": 3,
         "confidence": 51.4,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-23",
+        "dailyScore": 41.9,
+        "rollingScore": 50.3,
+        "storyCount": 3,
+        "sourceCount": 4,
+        "confidence": 51.7,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
-      {
-        "date": "2026-07-16",
-        "type": "press_story",
-        "title": "IHG Hotels & Resorts Expands Its Upper Luxury Presence in Greater China with the signing of Regent Chengdu",
-        "source": "webwire.com",
-        "url": "https://www.webwire.com/ViewPressRel.asp?aId=357764",
-        "direction": "Very positive",
-        "detail": null,
-        "significance": 1.073
-      },
       {
         "date": "2026-09-15",
         "type": "high_disagreement",
@@ -667,6 +666,16 @@
         "direction": "negative",
         "detail": "Daily score decreased by 15.8 points",
         "significance": 1.445
+      },
+      {
+        "date": "2026-09-23",
+        "type": "share_buyback",
+        "title": "InterContinental Hotels Repurchases and Cancels 5,000 Ordinary Shares",
+        "source": "tipranks.com",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQaVVMTEdrdkwzRlg5aVdJbDZoa05iRExDb2NNazhzQXA2RlFrTXFwZk1GT1pkZ1plUmJNRVV5d2xYM1NZcnYxZmR5dTdXLXBpbF9BZHNXWGRnY2RmTVZKVWlwcGg3LV9BNERGZ1FPRld4ZUdhSGJwSVJEYnJYekdqTlYzVXQwTGJrSmt4UDhOdDVyWGRFSENscE8tQVI5alJMX1EzNlhWbzFtVzdaa3FHRUlXNURGb2p5ZGFTOA?oc=5",
+        "direction": "positive",
+        "detail": null,
+        "significance": 1.509
       }
     ]
   },
@@ -867,17 +876,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 75.2,
+    "score": 75.1,
     "label": "Strong",
     "evidenceCoverage": 60,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.8,
+        "score": 51.4,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 48 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 49 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "themes",
@@ -908,16 +917,6 @@
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
-    },
-    {
-      "date": "2026-07-16",
-      "type": "press_story",
-      "title": "IHG Hotels & Resorts Expands Its Upper Luxury Presence in Greater China with the signing of Regent Chengdu",
-      "source": "webwire.com",
-      "url": "https://www.webwire.com/ViewPressRel.asp?aId=357764",
-      "direction": "Very positive",
-      "detail": null,
-      "significance": 1.073
     },
     {
       "date": "2026-09-15",
@@ -1008,6 +1007,16 @@
       "direction": "negative",
       "detail": "Daily score decreased by 15.8 points",
       "significance": 1.445
+    },
+    {
+      "date": "2026-09-23",
+      "type": "share_buyback",
+      "title": "InterContinental Hotels Repurchases and Cancels 5,000 Ordinary Shares",
+      "source": "tipranks.com",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQaVVMTEdrdkwzRlg5aVdJbDZoa05iRExDb2NNazhzQXA2RlFrTXFwZk1GT1pkZ1plUmJNRVV5d2xYM1NZcnYxZmR5dTdXLXBpbF9BZHNXWGRnY2RmTVZKVWlwcGg3LV9BNERGZ1FPRld4ZUdhSGJwSVJEYnJYekdqTlYzVXQwTGJrSmt4UDhOdDVyWGRFSENscE8tQVI5alJMX1EzNlhWbzFtVzdaa3FHRUlXNURGb2p5ZGFTOA?oc=5",
+      "direction": "positive",
+      "detail": null,
+      "significance": 1.509
     }
   ],
   "persistentEvents": []

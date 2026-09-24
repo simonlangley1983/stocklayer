@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-23T23:27:50.004835Z",
+  "generatedAt": "2026-09-24T01:33:59.602133Z",
   "company": {
     "companyName": "London Stock Exchange Group",
     "ticker": "LSEG.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-05",
-    "periodEnd": "2026-09-22",
-    "observationCount": 74,
-    "scoredDayCount": 54,
-    "latestScore": 61.2,
-    "latestScoreDate": "2026-09-22",
+    "periodEnd": "2026-09-23",
+    "observationCount": 75,
+    "scoredDayCount": 55,
+    "latestScore": 64.1,
+    "latestScoreDate": "2026-09-23",
     "series": [
       {
         "date": "2026-07-05",
@@ -691,6 +691,15 @@
         "sourceCount": 2,
         "confidence": 36.2,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-23",
+        "dailyScore": 64.1,
+        "rollingScore": 55.4,
+        "storyCount": 5,
+        "sourceCount": 5,
+        "confidence": 69.7,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1139,17 +1148,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 54.7,
+    "score": 54.9,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 52.7,
+        "score": 53.2,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 54 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 55 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1309,6 +1318,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "21558a11053248eafe95",
+      "type": "regulatory_legal",
+      "title": "Partior and LSEG target prefunded nostro dependence in cross-border settlement",
+      "date": "2026-09-23",
+      "status": "pending_review",
+      "reviewDate": "2027-03-22",
+      "direction": "Slightly positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPLTR2MjZ0QVZ5a0s3YlI1OVJzaW9iaW9lY3A1Sms5TTBVVmJkaWFaemhEclRUbEVET0x6M0V1eFU4VXZHTXAtUXJUZWZQMHRSVTJfR1d0cjVEeTN2cHFBejFvbG9yWWJuMUlGMGd0SmMxYll4ZGYtdUNOWUlvTk5FM3FMeVY0R3ZWbE82NnpjTjNUYmhWZ3pQQlVBXzlsdXZaQUNXM2FKVnhFdDEybHE1azhQN3hmNm1Qc3lmYVdEVlpieUVjTlZoSThB?oc=5",
+          "publisher": "theasianbanker.com",
+          "date": "2026-09-23"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "d50fa577ac1f66064dd5",
       "type": "regulatory_legal",

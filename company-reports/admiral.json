@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-23T23:27:50.004835Z",
+  "generatedAt": "2026-09-24T01:33:59.602133Z",
   "company": {
     "companyName": "Admiral Group PLC",
     "ticker": "ADM.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-22",
-    "observationCount": 69,
-    "scoredDayCount": 3,
-    "latestScore": 53.9,
-    "latestScoreDate": "2026-09-21",
+    "periodEnd": "2026-09-23",
+    "observationCount": 70,
+    "scoredDayCount": 4,
+    "latestScore": 21.6,
+    "latestScoreDate": "2026-09-23",
     "series": [
       {
         "date": "2026-06-30",
@@ -646,6 +646,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-23",
+        "dailyScore": 21.6,
+        "rollingScore": 45.6,
+        "storyCount": 3,
+        "sourceCount": 3,
+        "confidence": 62.8,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -678,6 +687,26 @@
         "direction": "Positive",
         "detail": null,
         "significance": 0.382
+      },
+      {
+        "date": "2026-09-23",
+        "type": "workforce_reduction",
+        "title": "Insurance giant Admiral cuts 500 jobs",
+        "source": "walesonline.co.uk",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPN3hUSEg0bVBJc19YbkxjZ21mcVNMNkd2MnV2REVDRjhDOS1zZmNMc2FCcXJOMHJNV1JXaWpWTVdPNFpYb1AtNUlTQWZFcWlJTmNVMWtUOEMzQkc5S2VncWdSVmxNNmhPYjJvc2g4Q1lobzNDcWF3aTYtYllUODFFYVhSRmZoWkVrUC1rLWYtMEPSAZYBQVVfeXFMTVVvcEJHbTl3TTNCVTBWbWxTMWV1OXo2YURfWnNrWnBKOXN5LVJObEQ2bV94azN1dlBlS1FQMGdBTzR5TVhSUlk5QUNEd19DaFlYd3dxZmNZSEZiUmZJdDQ1dGpTem81WUhCcEgzQXAtaDBqZFVheUhhWVhlaWFDT244di1RZ2ZUZHJCeTBGVXg3UjRZX0RB?oc=5",
+        "direction": "negative",
+        "detail": null,
+        "significance": 1.6
+      },
+      {
+        "date": "2026-09-23",
+        "type": "workforce_reduction",
+        "title": "Admiral to Cut 500 Jobs in UK as Insurer Targets £100 Million in Savings",
+        "source": "usaherald.com",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOR083T2tXZ2hhdG1mY1VENWZhdGZHLWU0RmdQbGlyeEVMUEpkZWExV2F5RlhXN3BlQzNHRTBnOEM3bDE3elpuVkpnOHA0bjFfNEhDcmRGeS1OMTRsNGljTWUyeGdJVHJNcHNvVUR5U3RkYnZYUmJobHJsXzUzNkh0NHNjcTJObzBuUC15YkFNOHFqbTNQblJ3QnRR?oc=5",
+        "direction": "negative",
+        "detail": null,
+        "significance": 1.596
       }
     ]
   },
@@ -1170,17 +1199,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 49.6,
+    "score": 46.0,
     "label": "Mixed",
-    "evidenceCoverage": 66,
+    "evidenceCoverage": 68,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 53.6,
+        "score": 43.1,
         "weight": 0.4,
-        "reliability": 0.15,
-        "detail": "Recency-weighted average of 3 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.2,
+        "detail": "Recency-weighted average of 4 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1285,6 +1314,26 @@
       "direction": "Positive",
       "detail": null,
       "significance": 0.382
+    },
+    {
+      "date": "2026-09-23",
+      "type": "workforce_reduction",
+      "title": "Insurance giant Admiral cuts 500 jobs",
+      "source": "walesonline.co.uk",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPN3hUSEg0bVBJc19YbkxjZ21mcVNMNkd2MnV2REVDRjhDOS1zZmNMc2FCcXJOMHJNV1JXaWpWTVdPNFpYb1AtNUlTQWZFcWlJTmNVMWtUOEMzQkc5S2VncWdSVmxNNmhPYjJvc2g4Q1lobzNDcWF3aTYtYllUODFFYVhSRmZoWkVrUC1rLWYtMEPSAZYBQVVfeXFMTVVvcEJHbTl3TTNCVTBWbWxTMWV1OXo2YURfWnNrWnBKOXN5LVJObEQ2bV94azN1dlBlS1FQMGdBTzR5TVhSUlk5QUNEd19DaFlYd3dxZmNZSEZiUmZJdDQ1dGpTem81WUhCcEgzQXAtaDBqZFVheUhhWVhlaWFDT244di1RZ2ZUZHJCeTBGVXg3UjRZX0RB?oc=5",
+      "direction": "negative",
+      "detail": null,
+      "significance": 1.6
+    },
+    {
+      "date": "2026-09-23",
+      "type": "workforce_reduction",
+      "title": "Admiral to Cut 500 Jobs in UK as Insurer Targets £100 Million in Savings",
+      "source": "usaherald.com",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOR083T2tXZ2hhdG1mY1VENWZhdGZHLWU0RmdQbGlyeEVMUEpkZWExV2F5RlhXN3BlQzNHRTBnOEM3bDE3elpuVkpnOHA0bjFfNEhDcmRGeS1OMTRsNGljTWUyeGdJVHJNcHNvVUR5U3RkYnZYUmJobHJsXzUzNkh0NHNjcTJObzBuUC15YkFNOHFqbTNQblJ3QnRR?oc=5",
+      "direction": "negative",
+      "detail": null,
+      "significance": 1.596
     }
   ],
   "persistentEvents": []

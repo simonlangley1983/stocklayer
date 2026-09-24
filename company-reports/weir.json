@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-23T23:27:50.004835Z",
+  "generatedAt": "2026-09-24T01:33:59.602133Z",
   "company": {
     "companyName": "Weir Group PLC",
     "ticker": "WEIR.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-22",
-    "observationCount": 70,
-    "scoredDayCount": 14,
-    "latestScore": 55.7,
-    "latestScoreDate": "2026-09-22",
+    "periodEnd": "2026-09-23",
+    "observationCount": 71,
+    "scoredDayCount": 15,
+    "latestScore": 54.6,
+    "latestScoreDate": "2026-09-23",
     "series": [
       {
         "date": "2026-06-30",
@@ -655,6 +655,15 @@
         "sourceCount": 18,
         "confidence": 87.3,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-23",
+        "dailyScore": 54.6,
+        "rollingScore": 54.2,
+        "storyCount": 19,
+        "sourceCount": 19,
+        "confidence": 79.3,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -739,16 +748,6 @@
         "significance": 1.04
       },
       {
-        "date": "2026-09-21",
-        "type": "press_story",
-        "title": "Weir Group stock gains as BNP Paribas lifts price target",
-        "source": "ad-hoc-news.de",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPMHUtQWlxSVM2ekR4SDBvak84SmJaMHNEWVRFTTVZX3BJV28tcWJIMy1rczlDdzI4V1FQUW1ZUVh2WDJKVG9MS3dwa2VSSGFESFVlQm81ZVBiR2xGeDhvem83ZDJFMDFnaS1qMS1Kd2JpUS1mTl9kZ0EtcUFJd1RjNnN5RUFQbXlsTHpHVVVGV2ZuV0piUGx2Njlnbmd0WXBObk8zWk5GUEtHcHhjdWN2UkxEYXVNa1BlMVFZ?oc=5",
-        "direction": "Very positive",
-        "detail": null,
-        "significance": 1.03
-      },
-      {
         "date": "2026-09-22",
         "type": "press_story",
         "title": "€500k allocated for repair works to Fermoy Weir - Significant shortfall still remains",
@@ -757,6 +756,16 @@
         "direction": "Very negative",
         "detail": null,
         "significance": 1.077
+      },
+      {
+        "date": "2026-09-23",
+        "type": "press_story",
+        "title": "Weir gets momentum, tops CCHS -",
+        "source": "heraldstaronline.com",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPNkh5cnFTQmxwM1VmR0VCNDVqMHRQQlNDUzVHcE5KRTRGNWo3SU80bXcybEg3S040aTI5Wk9CYXUxZzBSemwxVlVWNDZESXU0blNRN2d4dlBVYkE5Ql9vWmFTSDZJLUNZck9COWxkV05ocVlkOGdpVFNHa1hGU0hhd2dzU0hxek1oYzZJYzFGZmpxSHcx?oc=5",
+        "direction": "Very positive",
+        "detail": null,
+        "significance": 1.043
       }
     ]
   },
@@ -843,17 +852,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 51.1,
+    "score": 51.2,
     "label": "Mixed",
-    "evidenceCoverage": 84,
+    "evidenceCoverage": 87,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 53.9,
+        "score": 54.0,
         "weight": 0.4,
-        "reliability": 0.7,
-        "detail": "Recency-weighted average of 14 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.75,
+        "detail": "Recency-weighted average of 15 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -957,16 +966,6 @@
       "significance": 1.04
     },
     {
-      "date": "2026-09-21",
-      "type": "press_story",
-      "title": "Weir Group stock gains as BNP Paribas lifts price target",
-      "source": "ad-hoc-news.de",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPMHUtQWlxSVM2ekR4SDBvak84SmJaMHNEWVRFTTVZX3BJV28tcWJIMy1rczlDdzI4V1FQUW1ZUVh2WDJKVG9MS3dwa2VSSGFESFVlQm81ZVBiR2xGeDhvem83ZDJFMDFnaS1qMS1Kd2JpUS1mTl9kZ0EtcUFJd1RjNnN5RUFQbXlsTHpHVVVGV2ZuV0piUGx2Njlnbmd0WXBObk8zWk5GUEtHcHhjdWN2UkxEYXVNa1BlMVFZ?oc=5",
-      "direction": "Very positive",
-      "detail": null,
-      "significance": 1.03
-    },
-    {
       "date": "2026-09-22",
       "type": "press_story",
       "title": "€500k allocated for repair works to Fermoy Weir - Significant shortfall still remains",
@@ -975,6 +974,16 @@
       "direction": "Very negative",
       "detail": null,
       "significance": 1.077
+    },
+    {
+      "date": "2026-09-23",
+      "type": "press_story",
+      "title": "Weir gets momentum, tops CCHS -",
+      "source": "heraldstaronline.com",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPNkh5cnFTQmxwM1VmR0VCNDVqMHRQQlNDUzVHcE5KRTRGNWo3SU80bXcybEg3S040aTI5Wk9CYXUxZzBSemwxVlVWNDZESXU0blNRN2d4dlBVYkE5Ql9vWmFTSDZJLUNZck9COWxkV05ocVlkOGdpVFNHa1hGU0hhd2dzU0hxek1oYzZJYzFGZmpxSHcx?oc=5",
+      "direction": "Very positive",
+      "detail": null,
+      "significance": 1.043
     }
   ],
   "persistentEvents": []

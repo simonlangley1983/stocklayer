@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-23T23:27:50.004835Z",
+  "generatedAt": "2026-09-24T01:33:59.602133Z",
   "company": {
     "companyName": "Legal & General Group PLC",
     "ticker": "LGEN.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-10",
-    "periodEnd": "2026-09-22",
-    "observationCount": 70,
-    "scoredDayCount": 68,
-    "latestScore": 65.3,
-    "latestScoreDate": "2026-09-22",
+    "periodEnd": "2026-09-23",
+    "observationCount": 71,
+    "scoredDayCount": 69,
+    "latestScore": 17.3,
+    "latestScoreDate": "2026-09-23",
     "series": [
       {
         "date": "2026-07-10",
@@ -655,19 +655,18 @@
         "sourceCount": 3,
         "confidence": 58.1,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-23",
+        "dailyScore": 17.3,
+        "rollingScore": 45.5,
+        "storyCount": 21,
+        "sourceCount": 29,
+        "confidence": 96.7,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
-      {
-        "date": "2026-07-15",
-        "type": "press_story",
-        "title": "Legal & General Group ( OTCMKTS : LGGNY ) Hits New 52 - Week High – Here Why",
-        "source": "dailypolitical.com",
-        "url": "https://www.dailypolitical.com/2026/07/15/legal-general-group-otcmktslggny-hits-new-52-week-high-heres-why.html",
-        "direction": "Very positive",
-        "detail": null,
-        "significance": 1.002
-      },
       {
         "date": "2026-09-15",
         "type": "press_story",
@@ -697,16 +696,6 @@
         "direction": "mixed",
         "detail": "Positive and negative coverage is unusually dispersed",
         "significance": 1.58
-      },
-      {
-        "date": "2026-09-19",
-        "type": "press_story",
-        "title": "Legal & General stock steadies after recent results and dividend update",
-        "source": "ad-hoc-news.de",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOY2hna1J0UjdadmcwWVVOZVV4OTl5cUdVa2o2NmF2NjlpSDJGQ3NyVmxrMm93cllVU1BZUW12NDBoS1BkSmo2UmE1aHNkV2lGTW0zZElTR2h6bm1ackVXR3AxSDdyTnRUU1BrTDk3aTdMUzFjaXRrX1ZQOFA2dXQtV0FEMXRTdEo0eTRRYVJvZHV0ZzhtcVQzeUgtV2VTU28xVzJiNW1fMWNZcWdpc2FvcHd3UmM4bENLTjZTcXF5SjNWUTczNl9fMA?oc=5",
-        "direction": "Very negative",
-        "detail": null,
-        "significance": 0.843
       },
       {
         "date": "2026-09-20",
@@ -757,6 +746,26 @@
         "direction": "positive",
         "detail": "Daily score increased by 18.9 points",
         "significance": 1.245
+      },
+      {
+        "date": "2026-09-23",
+        "type": "workforce_reduction",
+        "title": "Legal & General to cut around 1,000 jobs by middle of 2027",
+        "source": "sharecast.com",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNT2RJNGlLdmN5VzY1SWhVZXhnMzR6bVdyZkhicjhlMEdlZnpOT0NNbnFNYWZFQUlwMWh0WE03QWNjamV3QUxhY3JVUEhzdXRYdnZ3anZwNl85V0FZWnF2NUU4SVV1Z0hUNlVhUU84ZUNaelhFaHhVSDlaek1hTkZROE1MTFJYSHpTZEV1RmRtTzVGeG54dHNVYkJGdll1MmFQWUIxUFVGVHMwcFpFS2lFbVQwSTZhS1VoelFoWTAtYU12UQ?oc=5",
+        "direction": "negative",
+        "detail": null,
+        "significance": 1.76
+      },
+      {
+        "date": "2026-09-23",
+        "type": "workforce_reduction",
+        "title": "Legal & General to Cut 10% of Jobs by Middle of 2027",
+        "source": "wsj.com",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQT052amtRNHlQNkkxZmo1bUJOUng4OE9UNzhLMnk0bUVmNUR5MHdnb3FlUjUyM3FhZEZBOVlkTC1VT3VCRnhjc0FKNWZFcERmemlKcmpUT1JFNnlrQ1ZjOVhnVHRUS0RYX3gzSmZLXzNjcG81NDhQVkpBV0dUc2xwQlVYZjRROVFaTHhISVdMd0o?oc=5",
+        "direction": "negative",
+        "detail": null,
+        "significance": 1.613
       }
     ]
   },
@@ -843,17 +852,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 41.6,
+    "score": 41.0,
     "label": "Low",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.9,
+        "score": 50.8,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 68 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 69 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -875,16 +884,6 @@
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
-    },
-    {
-      "date": "2026-07-15",
-      "type": "press_story",
-      "title": "Legal & General Group ( OTCMKTS : LGGNY ) Hits New 52 - Week High – Here Why",
-      "source": "dailypolitical.com",
-      "url": "https://www.dailypolitical.com/2026/07/15/legal-general-group-otcmktslggny-hits-new-52-week-high-heres-why.html",
-      "direction": "Very positive",
-      "detail": null,
-      "significance": 1.002
     },
     {
       "date": "2026-09-15",
@@ -915,16 +914,6 @@
       "direction": "mixed",
       "detail": "Positive and negative coverage is unusually dispersed",
       "significance": 1.58
-    },
-    {
-      "date": "2026-09-19",
-      "type": "press_story",
-      "title": "Legal & General stock steadies after recent results and dividend update",
-      "source": "ad-hoc-news.de",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOY2hna1J0UjdadmcwWVVOZVV4OTl5cUdVa2o2NmF2NjlpSDJGQ3NyVmxrMm93cllVU1BZUW12NDBoS1BkSmo2UmE1aHNkV2lGTW0zZElTR2h6bm1ackVXR3AxSDdyTnRUU1BrTDk3aTdMUzFjaXRrX1ZQOFA2dXQtV0FEMXRTdEo0eTRRYVJvZHV0ZzhtcVQzeUgtV2VTU28xVzJiNW1fMWNZcWdpc2FvcHd3UmM4bENLTjZTcXF5SjNWUTczNl9fMA?oc=5",
-      "direction": "Very negative",
-      "detail": null,
-      "significance": 0.843
     },
     {
       "date": "2026-09-20",
@@ -975,6 +964,26 @@
       "direction": "positive",
       "detail": "Daily score increased by 18.9 points",
       "significance": 1.245
+    },
+    {
+      "date": "2026-09-23",
+      "type": "workforce_reduction",
+      "title": "Legal & General to cut around 1,000 jobs by middle of 2027",
+      "source": "sharecast.com",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNT2RJNGlLdmN5VzY1SWhVZXhnMzR6bVdyZkhicjhlMEdlZnpOT0NNbnFNYWZFQUlwMWh0WE03QWNjamV3QUxhY3JVUEhzdXRYdnZ3anZwNl85V0FZWnF2NUU4SVV1Z0hUNlVhUU84ZUNaelhFaHhVSDlaek1hTkZROE1MTFJYSHpTZEV1RmRtTzVGeG54dHNVYkJGdll1MmFQWUIxUFVGVHMwcFpFS2lFbVQwSTZhS1VoelFoWTAtYU12UQ?oc=5",
+      "direction": "negative",
+      "detail": null,
+      "significance": 1.76
+    },
+    {
+      "date": "2026-09-23",
+      "type": "workforce_reduction",
+      "title": "Legal & General to Cut 10% of Jobs by Middle of 2027",
+      "source": "wsj.com",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQT052amtRNHlQNkkxZmo1bUJOUng4OE9UNzhLMnk0bUVmNUR5MHdnb3FlUjUyM3FhZEZBOVlkTC1VT3VCRnhjc0FKNWZFcERmemlKcmpUT1JFNnlrQ1ZjOVhnVHRUS0RYX3gzSmZLXzNjcG81NDhQVkpBV0dUc2xwQlVYZjRROVFaTHhISVdMd0o?oc=5",
+      "direction": "negative",
+      "detail": null,
+      "significance": 1.613
     }
   ],
   "persistentEvents": []

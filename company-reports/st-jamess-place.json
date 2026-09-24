@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-23T23:27:50.004835Z",
+  "generatedAt": "2026-09-24T01:33:59.602133Z",
   "company": {
     "companyName": "St James's Place PLC",
     "ticker": "STJ.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-10",
-    "periodEnd": "2026-09-22",
-    "observationCount": 67,
-    "scoredDayCount": 7,
-    "latestScore": 37.9,
-    "latestScoreDate": "2026-09-22",
+    "periodEnd": "2026-09-23",
+    "observationCount": 68,
+    "scoredDayCount": 8,
+    "latestScore": 50.3,
+    "latestScoreDate": "2026-09-23",
     "series": [
       {
         "date": "2026-07-10",
@@ -628,6 +628,15 @@
         "sourceCount": 1,
         "confidence": 18.9,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-23",
+        "dailyScore": 50.3,
+        "rollingScore": 48.2,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.1,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -700,6 +709,16 @@
         "direction": "Very negative",
         "detail": null,
         "significance": 0.876
+      },
+      {
+        "date": "2026-09-23",
+        "type": "press_story",
+        "title": "REG - St. James's Place - Holding(s) in Company",
+        "source": "tradingview.com",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOWWZhVVd1b2hsYUJCdmpVX29PRzJvaXhDdy1TVVJVd09aT013U2NGSnNrLWNKZ2l3OEV5cTRMZ1FjbUV4eVMyLWozNzU3bUQyazZBR2NSUlliQ0tQNi1ncTBmdVlld1ZVeGU3RnE1SVlkZ2g5UHlHUmhnWjhrZ0tmN0J0enpBZG1teGY1NG1aYkExWlVWWlM1TE54ejRxRkNxRkVGOHJVNDNRTGM4X0J2MVhIamIwVi1r?oc=5",
+        "direction": "Neutral / mixed",
+        "detail": null,
+        "significance": 0.17
       }
     ]
   },
@@ -786,17 +805,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 45.0,
+    "score": 45.1,
     "label": "Mixed",
-    "evidenceCoverage": 65,
+    "evidenceCoverage": 68,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 47.3,
+        "score": 47.7,
         "weight": 0.4,
-        "reliability": 0.35,
-        "detail": "Recency-weighted average of 7 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.4,
+        "detail": "Recency-weighted average of 8 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -888,6 +907,16 @@
       "direction": "Very negative",
       "detail": null,
       "significance": 0.876
+    },
+    {
+      "date": "2026-09-23",
+      "type": "press_story",
+      "title": "REG - St. James's Place - Holding(s) in Company",
+      "source": "tradingview.com",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOWWZhVVd1b2hsYUJCdmpVX29PRzJvaXhDdy1TVVJVd09aT013U2NGSnNrLWNKZ2l3OEV5cTRMZ1FjbUV4eVMyLWozNzU3bUQyazZBR2NSUlliQ0tQNi1ncTBmdVlld1ZVeGU3RnE1SVlkZ2g5UHlHUmhnWjhrZ0tmN0J0enpBZG1teGY1NG1aYkExWlVWWlM1TE54ejRxRkNxRkVGOHJVNDNRTGM4X0J2MVhIamIwVi1r?oc=5",
+      "direction": "Neutral / mixed",
+      "detail": null,
+      "significance": 0.17
     }
   ],
   "persistentEvents": []
