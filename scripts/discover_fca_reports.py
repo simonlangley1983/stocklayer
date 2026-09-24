@@ -24,5 +24,8 @@ for year in range(2020,2026):
    record['reports'].append({'year':year,'title':source.get('headline') or 'FCA Annual Financial Report','url':url,'sourceUrl':'https://data.fca.org.uk/#/nsm/nationalstoragemechanism','discoveryStatus':'fca_nsm_candidate'})
    added.append({'slug':company['slug'],'year':year,'url':url})
 index['fcaNsmLastCheckedAt']=datetime.now(timezone.utc).isoformat();index['fcaNsmCandidatesAdded']=len(added)
-index_path.write_text(json.dumps(index,indent=2)+'\n');(ROOT/'outputs/fca-nsm-discovery.json').write_text(json.dumps({'added':added},indent=2)+'\n')
+index_path.write_text(json.dumps(index,indent=2)+'\n')
+diagnostics_path = ROOT / 'outputs' / 'fca-nsm-discovery.json'
+diagnostics_path.parent.mkdir(parents=True, exist_ok=True)
+diagnostics_path.write_text(json.dumps({'added':added},indent=2)+'\n')
 print(f'Added {len(added)} FCA candidates')
