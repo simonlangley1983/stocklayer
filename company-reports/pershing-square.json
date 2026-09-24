@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-24T09:06:06.216071Z",
+  "generatedAt": "2026-09-24T10:17:33.493939Z",
   "company": {
     "companyName": "Pershing Square Holdings Ltd",
     "ticker": "PSH.L",
@@ -22,9 +22,9 @@
     "periodStart": "2026-06-30",
     "periodEnd": "2026-09-23",
     "observationCount": 83,
-    "scoredDayCount": 17,
-    "latestScore": 51.0,
-    "latestScoreDate": "2026-09-07",
+    "scoredDayCount": 18,
+    "latestScore": 50.1,
+    "latestScoreDate": "2026-09-23",
     "series": [
       {
         "date": "2026-06-30",
@@ -766,12 +766,12 @@
       },
       {
         "date": "2026-09-23",
-        "dailyScore": null,
+        "dailyScore": 50.1,
         "rollingScore": 50.2,
-        "storyCount": 0,
-        "sourceCount": 0,
-        "confidence": 0.0,
-        "coverageStatus": "no_coverage"
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -794,6 +794,16 @@
         "direction": "Neutral / mixed",
         "detail": null,
         "significance": 0.332
+      },
+      {
+        "date": "2026-09-23",
+        "type": "press_story",
+        "title": "Pershing Square Holdings Ltd Public Class USD Accum.Shs To Go Ex-Dividend On November 12th, 2026 With 0.1837 USD Dividend Per Share",
+        "source": "moomoo.com",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUU1BSmUzZ09OekMxd0FaVlEyYmp4YmZtTmN0aHg0ckQyaG55cnhhcUkyajNXSHVsUC1QYm1hUnJkOEpCT0p1bDFYM3lCS3NPWUxjZHYtNHhfM05qeElXWUxURnlfNWdnU080X3NWS0ZkMUxWQVl6WVJXekFzY3JpQzZxN0tZbV9TWFpVMktiVURfT3YxajdFNU0zUm0zOEhIUmZRVVh6OA?oc=5",
+        "direction": "Neutral / mixed",
+        "detail": null,
+        "significance": 0.155
       }
     ]
   },
@@ -880,17 +890,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 44.2,
+    "score": 44.0,
     "label": "Mixed",
-    "evidenceCoverage": 92,
+    "evidenceCoverage": 95,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 52.4,
+        "score": 52.1,
         "weight": 0.4,
-        "reliability": 0.85,
-        "detail": "Recency-weighted average of 17 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.9,
+        "detail": "Recency-weighted average of 18 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -932,6 +942,16 @@
       "direction": "Neutral / mixed",
       "detail": null,
       "significance": 0.332
+    },
+    {
+      "date": "2026-09-23",
+      "type": "press_story",
+      "title": "Pershing Square Holdings Ltd Public Class USD Accum.Shs To Go Ex-Dividend On November 12th, 2026 With 0.1837 USD Dividend Per Share",
+      "source": "moomoo.com",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUU1BSmUzZ09OekMxd0FaVlEyYmp4YmZtTmN0aHg0ckQyaG55cnhhcUkyajNXSHVsUC1QYm1hUnJkOEpCT0p1bDFYM3lCS3NPWUxjZHYtNHhfM05qeElXWUxURnlfNWdnU080X3NWS0ZkMUxWQVl6WVJXekFzY3JpQzZxN0tZbV9TWFpVMktiVURfT3YxajdFNU0zUm0zOEhIUmZRVVh6OA?oc=5",
+      "direction": "Neutral / mixed",
+      "detail": null,
+      "significance": 0.155
     }
   ],
   "persistentEvents": []
