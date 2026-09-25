@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-09-25T20:37:13.247641Z",
-  "asOfDate": "2026-09-24",
+  "generatedAt": "2026-09-25T23:50:09.756103Z",
+  "asOfDate": "2026-09-25",
   "companies": {
     "astrazeneca": {
       "companyName": "AstraZeneca",
@@ -3667,121 +3667,63 @@
       "companyName": "JD Sports Fashion PLC",
       "ticker": "JD.L",
       "slug": "jd-sports-fashion",
-      "date": "2026-09-24",
-      "dailyScore": 53.7,
+      "date": "2026-09-25",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 48.7,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
+      "flags": [
+        {
+          "type": "no_coverage",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
+        }
+      ],
+      "topStories": []
+    },
+    "kingfisher": {
+      "companyName": "Kingfisher PLC",
+      "ticker": "KGF.L",
+      "slug": "kingfisher",
+      "date": "2026-09-25",
+      "dailyScore": 50.7,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 48.6,
-      "confidence": 16.1,
+      "rollingScore": 53.2,
+      "confidence": 15.2,
       "confidenceBand": "low",
       "coverageStatus": "ok",
       "storyCount": 1,
       "sourceCount": 1,
-      "changeFromPreviousScoredDay": 25.1,
+      "changeFromPreviousScoredDay": 0.1,
       "flags": [
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 16.1",
+          "detail": "Confidence is 15.2",
           "evidenceArticleIds": [
-            "47dd7f932aac95ab"
+            "4a44773a03096d5c"
           ]
         }
       ],
       "topStories": [
         {
-          "id": "47dd7f932aac95ab",
+          "id": "4a44773a03096d5c",
           "storyClusterId": "story-001",
-          "title": "JD Sports Fashion's (JD) \"Buy\" Rating Reiterated at Berenberg Bank",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZjV0d1dCOFZjVHI1RmRYa05UMzFodUhzUmZYWkFCRG13LTVIWGthb1RwajNxZmtJYXFHYkU4d2NKRGF1amc4b2pfVlE2ZFR0U0VDWlpkMVRVNWNxUHdmMUxNOWlhRjVfM285RXk2UE16SVdCTWV2MG5VSHZZeDhKa2FueU01enV2RlVYUEdlcDRqaHU1Z3NUb3hKN0ZSYjJOaDJNczN1M1pSMjZlLWY2V0J0YnUwLW9QVzMyTlJHWUg?oc=5",
-          "source": "marketbeat.com",
-          "publishedAt": "2026-09-24T10:42:08Z",
-          "polarity": 0.223,
-          "sentiment": "Positive",
-          "publisherCount": 1
-        }
-      ]
-    },
-    "kingfisher": {
-      "companyName": "Kingfisher PLC",
-      "ticker": "KGF.L",
-      "slug": "kingfisher",
-      "date": "2026-09-24",
-      "dailyScore": 50.6,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 53.9,
-      "confidence": 78.8,
-      "confidenceBand": "high",
-      "coverageStatus": "ok",
-      "storyCount": 9,
-      "sourceCount": 9,
-      "changeFromPreviousScoredDay": -6.7,
-      "flags": [
-        {
-          "type": "earnings_beat",
-          "direction": "positive",
-          "severity": "medium",
-          "status": "possible",
-          "evidenceArticleIds": [
-            "4105c9de54ae123d"
-          ],
-          "sourceCount": 1
-        }
-      ],
-      "topStories": [
-        {
-          "id": "4105c9de54ae123d",
-          "storyClusterId": "story-008",
-          "title": "Kingfisher Raises Full-Year Profit Guidance After First-Half Adjusted Profit Rises 9.9% To £404 Million",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxONTRVSGRqOE1LNC1UUlVXYUkzMDZVMjRRNjExRWNaVDJHVDVOMXRKaHFBYmw1TUw4RjZNdk5wekhqdENSd3g0LXN3alVGTTBsbU9RZkZTV3prdUF3dzhXRE9SaGFveE5PLWJSM0hHYy1TT2FTWm02aEQyXzhZRFZTQklpX2FFTjd2X0QtR2RqLUFpN0hvcDZhMURSZk9zdS1LbVZqWXRrOVNmdnhGc2JDTzBOMmxuVmQydFpOS0Rn0gHDAUFVX3lxTE9JOWFtUEJ2YVhrVGtuOWJ4VngzYVQ1cjdxUXNxV2otQnpfQXRpeUREM0FZQzRwaUg2RVo1TlFMNkRFX05UQ0kxTTFmV1pSZFNnQ21meFdTeG80V2JTOWVUSzFtOURTb05QUGFib0QyR2l1MnRzMGRwMWZtQUJtRHAtNnVybG9XWklrdkE0OXJmZTZFMW43MzgyaFlOc1VYYkt3NUdUSWpFTmFEUlhDSHRuYk16S1pfSkltQTJCOXhQT016Zw?oc=5",
-          "source": "pulse2.com",
-          "publishedAt": "2026-09-24T15:48:18Z",
-          "polarity": 0.8806,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "4f14d18828a04bba",
-          "storyClusterId": "story-001",
-          "title": "LONDON BROKER RATINGS: Investec cuts Kingfisher; Bernstein cuts Segro",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOenFuTzV5cU9UWXQtZTJaTm43U2JCYml0bFFHR0tnOWRsN2tlYm9kaGpON2d5c2hKSHI4WFJ6VXNVRnZRMExjVDF5cTIxblhHeEZfWXg2bXZhMkhDR19XWTRINnVyQzUtY1hoa05aMkZVOVU2UDEwWFJhM2h2Z1F4ZmRqYV9hLUM2VlRIR3owZC05a2psWmN6SzhZeU9INUhiUldJVDVGdUhYcWdkRzJ4c3VzWWxpQQ?oc=5",
-          "source": "lse.co.uk",
-          "publishedAt": "2026-09-24T08:44:00Z",
-          "polarity": -0.6609,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "f3eea85a341b5d93",
-          "storyClusterId": "story-005",
-          "title": "Investec Downgrades Kingfisher plc to Hold, Boosts PT",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQOTNsY2dta0VmOE9CX21HREpudGswMWw2MWg1ZERpVHFpQWt2c1VOZ0dCSGRtNHIzTmpSOXNQUXBndUx2dndieS1iXzBJc3hHSXRRYmhZZWZTNnh0NHdoY3plN3R0dVZjdm5LbUxCX1dZN3pFcm9kZjNFV1A5QXdicXFlVkxaTDdjaHY3SnZ6SC1zVTN2Ykd3VTdSTENlSmh0YU5DN3JIU1I?oc=5",
-          "source": "marketscreener.com",
-          "publishedAt": "2026-09-24T12:32:21Z",
-          "polarity": -0.1924,
-          "sentiment": "Slightly negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "bbec52fa6d7121c7",
-          "storyClusterId": "story-007",
-          "title": "DLK HOBBY 1/100 ZAW-S02 Kingfisher Model Kit Features a Transforming Support Craft and Full Aerial Arsenal",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE44REJZeU1DU2ZuMUY2VDFQU1FJVk5lVE1WQVBFeEhsZDFnSDEyY1lJZ1liR1BwREEyakhTcl9IREhtNUxBb09TWHlmN3RmRkJV?oc=5",
-          "source": "toy-people.com",
-          "publishedAt": "2026-09-24T13:50:12Z",
-          "polarity": 0.132,
-          "sentiment": "Slightly positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "59562c731858a9aa",
-          "storyClusterId": "story-002",
-          "title": "Morrisons poaches Kingfisher’s AI boss",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOY1pYa0Y2M0E2ODRURFBmckM3YS1hYTJUYmJLazVBei1yN2FlRHNXa2dtNjhnMDhzcE5UQUo3RmQtdUdaNkJna3hoQ1VuamhDVFBEazItajVfQjltaS1sTVRvNG9hdlJDSUdxM00zUWZBaGtYUkEyelZlSnNDNW5xUzVGUDYzMTVpMVpXNzhsTVk4MkU?oc=5",
-          "source": "retail-week.com",
-          "publishedAt": "2026-09-24T09:43:05Z",
-          "polarity": -0.0297,
+          "title": "Kingfisher ( LON : KGF ) to Repurchase 0 Stock",
+          "url": "https://www.tickerreport.com/banking-finance/13595232/kingfisher-lonkgf-to-repurchase-0-stock.html",
+          "source": "tickerreport.com",
+          "publishedAt": "2026-09-25T05:30:00Z",
+          "polarity": 0.044,
           "sentiment": "Neutral / mixed",
           "publisherCount": 1
         }
@@ -5899,74 +5841,27 @@
       "companyName": "Investec PLC",
       "ticker": "INVP.L",
       "slug": "investec",
-      "date": "2026-09-24",
-      "dailyScore": 37.7,
-      "dailyLabel": "Negative",
-      "rollingScore": 46.9,
-      "confidence": 78.7,
-      "confidenceBand": "high",
-      "coverageStatus": "ok",
-      "storyCount": 6,
-      "sourceCount": 6,
-      "changeFromPreviousScoredDay": -10.1,
-      "flags": [],
-      "topStories": [
+      "date": "2026-09-25",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 47.2,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
+      "flags": [
         {
-          "id": "a8d4191132dfe964",
-          "storyClusterId": "story-006",
-          "title": "Investec urges Baillie Gifford US Growth shareholders to reject Saba or 'suffer the consequences'",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOY0d5T29teDlERWlWeklUOEtHV1FCN19tVl9Ec195QmRaOGFBWnRZX3FnNVNmLWRldW02a0luRnlWd2ZxRWV3YXhnU1VVblJQaHJLQk5mYUVYM0FYaFpwMFRndE5Ld2NjMkpxZ1FnMjd1Y3dOWnM2T1dwZVNZU2tZb2pSVndCcW5KcUN1eTRfcHQ2WXdjclZlaHIxdThET24yQ0ZqOHVlX3lnNGF1ZWNtR2xaSzBKOG1wZkFBRjByZl9lYzNtQ0tuZXk5NA?oc=5",
-          "source": "investmentweek.co.uk",
-          "publishedAt": "2026-09-24T13:41:29Z",
-          "polarity": -0.7705,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "4f14d18828a04bba",
-          "storyClusterId": "story-002",
-          "title": "LONDON BROKER RATINGS: Investec cuts Kingfisher; Bernstein cuts Segro",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOenFuTzV5cU9UWXQtZTJaTm43U2JCYml0bFFHR0tnOWRsN2tlYm9kaGpON2d5c2hKSHI4WFJ6VXNVRnZRMExjVDF5cTIxblhHeEZfWXg2bXZhMkhDR19XWTRINnVyQzUtY1hoa05aMkZVOVU2UDEwWFJhM2h2Z1F4ZmRqYV9hLUM2VlRIR3owZC05a2psWmN6SzhZeU9INUhiUldJVDVGdUhYcWdkRzJ4c3VzWWxpQQ?oc=5",
-          "source": "lse.co.uk",
-          "publishedAt": "2026-09-24T08:44:00Z",
-          "polarity": -0.6609,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "7408fc1f92946fda",
-          "storyClusterId": "story-003",
-          "title": "Saba Capital’s bid to overhaul Baillie Gifford US Growth Trust board puts strategy at risk, Investec says",
-          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPaW1JVnpFZTNUZkpUV05HSHpiVHYwVzhLTkxURWRob05KRjA0ZFlYdjZPc2o0QzNqdU9PR1JzZ0tsQkhlLXlZSWpwSHpVVy1uYl96RU1MVHEwZDFwQ2dVUDZlVHY3TTR2YzA0bWh4RW5mNGtabTRmQ0lPUTVBbWRnYnhLUXJocUtvS1pXQ2VYcjRaUkVLUUU1TDlCLU5GTzhQZVUxbk1mR3N0SE53VkJ6V2hLbUVIZURSUWJsQ092MjNfWTZWSDlUa3dwU05LSlVYU2VYQWFQb0MxSFk?oc=5",
-          "source": "scottishfinancialnews.com",
-          "publishedAt": "2026-09-24T08:54:00Z",
-          "polarity": -0.6064,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "f3eea85a341b5d93",
-          "storyClusterId": "story-005",
-          "title": "Investec Downgrades Kingfisher plc to Hold, Boosts PT",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQOTNsY2dta0VmOE9CX21HREpudGswMWw2MWg1ZERpVHFpQWt2c1VOZ0dCSGRtNHIzTmpSOXNQUXBndUx2dndieS1iXzBJc3hHSXRRYmhZZWZTNnh0NHdoY3plN3R0dVZjdm5LbUxCX1dZN3pFcm9kZjNFV1A5QXdicXFlVkxaTDdjaHY3SnZ6SC1zVTN2Ykd3VTdSTENlSmh0YU5DN3JIU1I?oc=5",
-          "source": "marketscreener.com",
-          "publishedAt": "2026-09-24T12:32:21Z",
-          "polarity": -0.1924,
-          "sentiment": "Slightly negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "6daae7d997477791",
-          "storyClusterId": "story-004",
-          "title": "Investec (LSE:INVP) keeps guidance intact in its pre-close update: what stood out for the lender?",
-          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPR29JYW42MGpFQ21DRDB0VndDUlMydlVpTHNURkJURWYzTXVWVGpIMWFuRWdWWTNEOEIwb0hCalh6NFN5dmlSX080TUpIYWIwT00zUmFjN0hfMEtOdFdRcy1JNkZVd3MzN29VemNBLTJhc2JfNjlzMW4xc3hpTlB5TjhWRlNmNWtLS1EzOTd4eWVLVlNDVF94RkxGNXFNUGNpdlZCZHZsYmVjS3NCQndDM2QxbjhTUUdBZGZYR1VwVVBpWmFhTWkwUmN0MUNza0Q1Uk1V?oc=5",
-          "source": "kalkinemedia.com",
-          "publishedAt": "2026-09-24T10:53:00Z",
-          "polarity": 0.1909,
-          "sentiment": "Slightly positive",
-          "publisherCount": 1
+          "type": "no_coverage",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
-      ]
+      ],
+      "topStories": []
     },
     "burberry": {
       "companyName": "Burberry Group PLC",
