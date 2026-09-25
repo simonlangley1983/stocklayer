@@ -348,6 +348,9 @@ def candidate_score(report: dict[str, Any]) -> int:
 
 
 def is_known_non_report_candidate(report: dict[str, Any]) -> bool:
+    # Verified four-page filing notice, not the full BAE annual report.
+    if str(report.get("url") or "").split("?", 1)[0].endswith("/NI-000071620/NI-000071620.pdf"):
+        return True
     haystack = f"{report.get('title') or ''} {report.get('url') or ''}".lower()
     normalised = re.sub(r"[_-]+", " ", haystack)
     if any(marker in normalised for marker in (
