@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T20:26:44.357438+00:00",
+  "generatedAt": "2026-09-25T22:49:06.640558+00:00",
   "companyCount": 100,
   "verifiedCurrentCount": 16,
   "companies": {
@@ -92,15 +92,58 @@
       "pendingCandidates": [],
       "retryDiagnostics": {
         "shell:2020": {
-          "candidateHash": "94b6a8098a41ac034ada490120015ab0b6d684f78c6eb04a0296835d312c3605",
+          "candidateHash": "347d30e00c184f5826904d6dfc6e8f14d502ac6e451baf45a0ea65a222717a60",
           "attemptCount": 1,
-          "lastAttempt": "2026-09-25T18:01:09.323445+00:00",
+          "lastAttempt": "2026-09-25T22:48:31.976958+00:00",
           "status": "extraction_failed",
-          "retryAfter": "2026-09-26T00:01:09.323445+00:00",
+          "retryAfter": "2026-09-26T04:48:31.976958+00:00",
           "diagnostics": [
             {
               "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/s/NYSE_SHLX_2020.pdf",
-              "error": "HTTPError: HTTP Error 503: "
+              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+            },
+            {
+              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/r/NYSE_RDS_2020.pdf",
+              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+            }
+          ]
+        },
+        "shell:2021": {
+          "candidateHash": "0d295da24fd2c6579736d4c728be93a567a8817bb5906634f92a4daf50a694df",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-25T22:47:51.914633+00:00",
+          "status": "extraction_failed",
+          "retryAfter": "2026-09-26T04:47:51.914633+00:00",
+          "diagnostics": [
+            {
+              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/s/NYSE_SHEL_2021.pdf",
+              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+            }
+          ]
+        },
+        "shell:2022": {
+          "candidateHash": "ee51e3713385f18eeaf846735cf61592e5ce8616ba7b674f55104242b3a04947",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-25T22:47:51.971212+00:00",
+          "status": "extraction_failed",
+          "retryAfter": "2026-09-26T04:47:51.971212+00:00",
+          "diagnostics": [
+            {
+              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/s/NYSE_SHEL_2022.pdf",
+              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+            }
+          ]
+        },
+        "shell:2023": {
+          "candidateHash": "b77d0406e714a6b229a533b5d723bb185bb657e8e462922b17c6f6170f7f622d",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-25T22:47:51.988626+00:00",
+          "status": "extraction_failed",
+          "retryAfter": "2026-09-26T04:47:51.988626+00:00",
+          "diagnostics": [
+            {
+              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/s/NYSE_SHEL_2023.pdf",
+              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
             }
           ]
         }
@@ -440,9 +483,9 @@
         "british-american-tobacco:2022": {
           "candidateHash": "0d4ed543b175db2c4f47482d00184125b2d34cd7c9b1a98a0bac27356978176c",
           "attemptCount": 1,
-          "lastAttempt": "2026-09-25T20:26:44.267391+00:00",
+          "lastAttempt": "2026-09-25T22:49:06.515009+00:00",
           "status": "extracted",
-          "retryAfter": "2027-09-25T20:26:44.267391+00:00",
+          "retryAfter": "2027-09-25T22:49:06.515009+00:00",
           "diagnostics": []
         },
         "british-american-tobacco:2023": {
@@ -502,6 +545,45 @@
           "status": "extracted",
           "retryAfter": "2026-09-24T23:43:10.724137+00:00",
           "diagnostics": []
+        },
+        "bp:2023": {
+          "candidateHash": "3fa7f02389d23531ae8fcda10e4f2c173615d81833440ccbd87bcc6e3b6c63b4",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-25T22:47:51.837154+00:00",
+          "status": "extraction_failed",
+          "retryAfter": "2026-09-26T04:47:51.837154+00:00",
+          "diagnostics": [
+            {
+              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BP_2023.pdf",
+              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+            }
+          ]
+        },
+        "bp:2022": {
+          "candidateHash": "1f38ebfb08f04e4ad6076e6f233921d0194d2de3d4fff980f54e82e69b262fc8",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-25T22:47:51.985359+00:00",
+          "status": "extraction_failed",
+          "retryAfter": "2026-09-26T04:47:51.985359+00:00",
+          "diagnostics": [
+            {
+              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BP_2022.pdf",
+              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+            }
+          ]
+        },
+        "bp:2021": {
+          "candidateHash": "ad1538eace1daca2b404986edbaa406a5cd88a14a531202b8b37115a3932751f",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-25T22:47:52.007631+00:00",
+          "status": "extraction_failed",
+          "retryAfter": "2026-09-26T04:47:52.007631+00:00",
+          "diagnostics": [
+            {
+              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BP_2021.pdf",
+              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20003 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+            }
+          ]
         }
       }
     },
