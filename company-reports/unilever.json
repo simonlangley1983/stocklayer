@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-25T17:25:13.457585Z",
+  "generatedAt": "2026-09-25T18:50:14.304013Z",
   "company": {
     "companyName": "Unilever",
     "ticker": "ULVR.L",
@@ -797,7 +797,7 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 5,
+    "reportCount": 6,
     "reports": [
       {
         "year": 2020,
@@ -943,6 +943,79 @@
           }
         ],
         "positivityScore": 44.9,
+        "positivityMethod": "lexical annual-report tone"
+      },
+      {
+        "year": 2022,
+        "title": "Annual report archive PDF",
+        "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/u/LSE_ULVR_2022.pdf",
+        "sourceUrl": "https://www.annualreports.com/Company/unilever-plc",
+        "wordCount": 155140,
+        "pageCount": 241,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 2,
+            "per10kWords": 0.129
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 8,
+            "per10kWords": 0.516
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 122,
+            "per10kWords": 7.864
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 60,
+            "per10kWords": 3.867
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 62,
+            "per10kWords": 3.996
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 61,
+            "per10kWords": 3.932
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 14,
+            "per10kWords": 0.902
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 45.3,
         "positivityMethod": "lexical annual-report tone"
       },
       {
@@ -1258,6 +1331,15 @@
       "type": "annual_report",
       "title": "Annual Reports and Accounts of Unilever PLC 2020",
       "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000020829/NI-000020829.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
+    {
+      "date": "2022-12-31",
+      "type": "annual_report",
+      "title": "Annual report archive PDF",
+      "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/u/LSE_ULVR_2022.pdf",
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
