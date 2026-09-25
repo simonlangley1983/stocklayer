@@ -69,12 +69,16 @@ jobs:
         if: ${{ !inputs.extraction_only }}
         run: python scripts/discover_fca_reports.py --start-year 2020
 
+      - name: Discover historical archive reports
+        if: ${{ !inputs.extraction_only }}
+        run: python scripts/discover_annualreports_archive.py --start-year 2020
+
       - name: Backfill a resumable batch of missing annual reports
         run: python scripts/backfill_annual_reports.py --batch-size 60 --workers 8 --report-timeout 120 --start-year 2020 --fca-only
 
       - name: Recover historical reports after latest-year priority work
         if: ${{ !inputs.historical && github.event.schedule != '40 2 * * 0' }}
-        run: python scripts/backfill_annual_reports.py --batch-size 36 --workers 8 --report-timeout 120 --start-year 2020
+        run: python scripts/backfill_annual_reports.py --batch-size 60 --workers 8 --report-timeout 120 --start-year 2020
 
       - name: Build customer company reports
         run: |
