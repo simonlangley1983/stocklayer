@@ -765,37 +765,84 @@
     },
     {
       "date": "2026-09-24",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.2,
-      "confidence": 0.0,
-      "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "dailyScore": 48.0,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.8,
+      "confidence": 76.9,
+      "confidenceBand": "high",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 4,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
-      "positiveStoryCount": 0,
-      "neutralStoryCount": 0,
-      "negativeStoryCount": 0,
-      "dispersion": 0.0,
+      "candidateCount": 11,
+      "eligibleArticleCount": 9,
+      "storyCount": 9,
+      "effectiveStoryCount": 9.0,
+      "sourceCount": 9,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 7,
+      "negativeStoryCount": 1,
+      "dispersion": 0.3198,
       "rejectedCandidateCounts": {
-        "missing_company_alias": 4
+        "missing_company_alias": 2
       },
-      "topStories": [],
-      "flags": [
+      "topStories": [
         {
-          "type": "no_coverage",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "id": "4d86b1c0ac8a92a7",
+          "storyClusterId": "story-006",
+          "title": "Burberry stock slips as RBC cuts its price target",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOX0FKTGdlTjFxWDZLbnoxcUpPanR2T2h6OXRpLVEybncwSnAxVlRxR2RudWxEbUgwVVFteUFZbHBNbHlGTjZRME03Tlh6bC1XX0EwcDBPMDRkak1oQk1mUmlTdUxoNkk3dm04R2hFZ1dGMXNicWlweWNVYThXUkZzNm9zRDNrclB6cGtocXIyVUwzU3JaUWctZU90aHNLWW1fdGNzUnJTYnlDdDcxWkFMZWZ3?oc=5",
+          "source": "ad-hoc-news.de",
+          "publishedAt": "2026-09-24T15:17:08Z",
+          "polarity": -0.9404,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "f8b930676a914871",
+          "storyClusterId": "story-009",
+          "title": "Burberry Refreshes Its 170-Year Heritage With Playful Details at London Fashion Week",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5lSmhueHZ4U3Z5NDRjV3lGWlhYdjRpUXJlOUR3RmlUWTRkMnFkd09zaUxtNnhOYW9VQUFBTjJHNXgteEhvVzFab2FBVnpNOHZFN1RqQ3FNTE14YmNwOE1zNmtVLWVwTmhVQW5N?oc=5",
+          "source": "mezha.net",
+          "publishedAt": "2026-09-24T18:48:13Z",
+          "polarity": 0.16,
+          "sentiment": "Slightly positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "777bf70227fd0b8e",
+          "storyClusterId": "story-007",
+          "title": "Burberry reclaims London’s waterways for its gritty Winter 2026 campaign",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBhZURQZnlxZHVSalJqaktNLTVCZnQ5X0JxNEFtNUY1NEYtSXllQmdMSTVaVnVZUGp3UVdyUno0aW9RYkR2QU5oSE84OER6QQ?oc=5",
+          "source": "senatus.net",
+          "publishedAt": "2026-09-24T15:21:33Z",
+          "polarity": 0.1343,
+          "sentiment": "Slightly positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "c7bfdfad96da3b81",
+          "storyClusterId": "story-008",
+          "title": "Burberry Eases Its Codes & Enlists Central Cee for SS27",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxONHNnaDNYanhNXzBpUDBFd09lUU9JMWRDWTJfZG0xZ09aS1ZrcGxnbDcxTDNqeFdhN1lEaVpTQm5DYk0tOWFpeG5Ec2xGREtBWkNvMWoxd1FuakxLQzFCQUlSWFZCdTlhOXV4RlpGUEsySzBFczExSHlocmhfZlB3ZUg3UjVianI3TW0zV29oSnI5SWFR?oc=5",
+          "source": "hypebeast.com",
+          "publishedAt": "2026-09-24T17:21:55Z",
+          "polarity": 0.0886,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "9270d93099ac9e71",
+          "storyClusterId": "story-001",
+          "title": "Romeo Beckham leads celebrities at Burberry's London Fashion Week show",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNa2hPcHRkaUx1WktTcTJreVhydEdUdlBpd0JHX1FFRFdVWGZXaERpWmlYNTFPc3JwVjhjaElGaDNoT3ozR1NnWEtTS1RiNW9EQW1YR1FfVXFWbndYc1BTdUNCZnpadzhEWWt3dnV4eUx5eE96c2kwQ0sxamRTRXB1T2FPZzZSeXhsb1pPT05CQ3JvWmZUUmc?oc=5",
+          "source": "standard.co.uk",
+          "publishedAt": "2026-09-23T23:25:49Z",
+          "polarity": 0.0493,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "flags": [],
+      "changeFromPreviousScoredDay": -1.6
     }
   ]
 }

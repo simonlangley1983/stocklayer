@@ -2454,6 +2454,65 @@
         }
       ],
       "changeFromPreviousScoredDay": null
+    },
+    {
+      "date": "2026-09-24",
+      "dailyScore": 40.7,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 49.9,
+      "confidence": 13.6,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 89,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 1,
+      "dispersion": 0.0,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 82,
+        "missing_company_alias": 6
+      },
+      "topStories": [
+        {
+          "id": "e0f68525d5ef1b34",
+          "storyClusterId": "story-001",
+          "title": "Shrinking market, growing appetite: Luxury fashion’s next wave of spenders",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxONDhCUjA3WXA0VDA5eUVIVjNOQVYwUFlkWnZwQnUxVmlocElNV0d1b1dTSFNZZFpETmRXNnEwZTM2QkVXeC1RTmQ2UXlJamFzdWZWZTRUckkyQ2E3NkNUTVozUTkteDFDeFkzTDkxTFQzYy1SZDIyUjJRTkJXTzFNZVAwV1I2eUc2d2hCOXRhN3ktdk5DUHI1aFFKU1NnN0hoTTljbVp2R2NxNEpKS0tteFJIeVU?oc=5",
+          "source": "savanta.com",
+          "publishedAt": "2026-09-24T16:00:58Z",
+          "polarity": -0.5565,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 13.6",
+          "evidenceArticleIds": [
+            "e0f68525d5ef1b34"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "e0f68525d5ef1b34"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -14.4
     }
   ]
 }
