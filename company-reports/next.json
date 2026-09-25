@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-25T20:26:46.947721Z",
+  "generatedAt": "2026-09-25T20:37:15.389211Z",
   "company": {
     "companyName": "Next PLC",
     "ticker": "NXT.L",
@@ -22,9 +22,9 @@
     "periodStart": "2026-06-30",
     "periodEnd": "2026-09-24",
     "observationCount": 71,
-    "scoredDayCount": 5,
-    "latestScore": 55.1,
-    "latestScoreDate": "2026-09-19",
+    "scoredDayCount": 6,
+    "latestScore": 40.7,
+    "latestScoreDate": "2026-09-24",
     "series": [
       {
         "date": "2026-06-30",
@@ -658,12 +658,12 @@
       },
       {
         "date": "2026-09-24",
-        "dailyScore": null,
-        "rollingScore": 51.1,
-        "storyCount": 0,
-        "sourceCount": 0,
-        "confidence": 0.0,
-        "coverageStatus": "no_coverage"
+        "dailyScore": 40.7,
+        "rollingScore": 49.9,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 13.6,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -726,6 +726,16 @@
         "direction": "Positive",
         "detail": null,
         "significance": 0.455
+      },
+      {
+        "date": "2026-09-24",
+        "type": "press_story",
+        "title": "Shrinking market, growing appetite: Luxury fashion’s next wave of spenders",
+        "source": "savanta.com",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxONDhCUjA3WXA0VDA5eUVIVjNOQVYwUFlkWnZwQnUxVmlocElNV0d1b1dTSFNZZFpETmRXNnEwZTM2QkVXeC1RTmQ2UXlJamFzdWZWZTRUckkyQ2E3NkNUTVozUTkteDFDeFkzTDkxTFQzYy1SZDIyUjJRTkJXTzFNZVAwV1I2eUc2d2hCOXRhN3ktdk5DUHI1aFFKU1NnN0hoTTljbVp2R2NxNEpKS0tteFJIeVU?oc=5",
+        "direction": "Very negative",
+        "detail": null,
+        "significance": 0.707
       }
     ]
   },
@@ -1291,17 +1301,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 52.3,
+    "score": 51.0,
     "label": "Mixed",
-    "evidenceCoverage": 70,
+    "evidenceCoverage": 72,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 57.3,
+        "score": 53.5,
         "weight": 0.4,
-        "reliability": 0.25,
-        "detail": "Recency-weighted average of 5 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.3,
+        "detail": "Recency-weighted average of 6 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1436,6 +1446,16 @@
       "direction": "Positive",
       "detail": null,
       "significance": 0.455
+    },
+    {
+      "date": "2026-09-24",
+      "type": "press_story",
+      "title": "Shrinking market, growing appetite: Luxury fashion’s next wave of spenders",
+      "source": "savanta.com",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxONDhCUjA3WXA0VDA5eUVIVjNOQVYwUFlkWnZwQnUxVmlocElNV0d1b1dTSFNZZFpETmRXNnEwZTM2QkVXeC1RTmQ2UXlJamFzdWZWZTRUckkyQ2E3NkNUTVozUTkteDFDeFkzTDkxTFQzYy1SZDIyUjJRTkJXTzFNZVAwV1I2eUc2d2hCOXRhN3ktdk5DUHI1aFFKU1NnN0hoTTljbVp2R2NxNEpKS0tteFJIeVU?oc=5",
+      "direction": "Very negative",
+      "detail": null,
+      "significance": 0.707
     },
     {
       "date": "2026-12-31",
