@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-25T01:37:24.485967Z",
+  "generatedAt": "2026-09-25T01:42:02.271130Z",
   "company": {
     "companyName": "Admiral Group PLC",
     "ticker": "ADM.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-23",
-    "observationCount": 70,
-    "scoredDayCount": 4,
-    "latestScore": 21.6,
-    "latestScoreDate": "2026-09-23",
+    "periodEnd": "2026-09-24",
+    "observationCount": 71,
+    "scoredDayCount": 5,
+    "latestScore": 20.4,
+    "latestScoreDate": "2026-09-24",
     "series": [
       {
         "date": "2026-06-30",
@@ -655,6 +655,15 @@
         "sourceCount": 3,
         "confidence": 62.8,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-24",
+        "dailyScore": 20.4,
+        "rollingScore": 41.3,
+        "storyCount": 5,
+        "sourceCount": 5,
+        "confidence": 78.5,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -707,6 +716,26 @@
         "direction": "negative",
         "detail": null,
         "significance": 1.596
+      },
+      {
+        "date": "2026-09-24",
+        "type": "workforce_reduction",
+        "title": "Admiral to cut 500 roles from its UK insurance business",
+        "source": "express.co.uk",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOUUZYZEtMM3M2TTZla2pwVnc4T3Z6b2wxTFdxVW9nMUlmT0JBdkNCbVNyUmc0TVI2ekh0OVpVc09HMXpERXVxTy03dzVLSHdVdTM5ekVDdTJ5eFNQUzhtNEZiQUFvZzJEMk0waVk1UHhNM3hhTGxtLVc2LTEtWDk0Z2s4VW1qd3ZaeEFCR3Vn0gGTAUFVX3lxTE9mSVo1azh4bVZsQ2hZZV94d0tTdHRodXNLeDVCbFBHcG9yZ3REWXNGMTNpX3d5R1ltRFAxY3RTUC1MRTV5ZTExZk5ZRHgwdzBEZEp4QnhSbmVCMUFEVHNzWk4xVXhFTnE0eFI2QklJNTcyU0l1c0Y1R00xendzcnhrdkVuQTNfSE52cEdzLS1VV1cxOA?oc=5",
+        "direction": "negative",
+        "detail": null,
+        "significance": 1.59
+      },
+      {
+        "date": "2026-09-24",
+        "type": "workforce_reduction",
+        "title": "Admiral Insurance set to cut around 500 UK jobs",
+        "source": "insurancetimes.co.uk",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPS3JLWGwxelZGVDVKNjVNemxtZENhNzNSeEtTN19Ddi1tTkJGdnIxdGdhVVFCRnRrb29ZTnhwWDlyc0N4ejRic09CbjQ1S2FpX1NxR3VYUTZnOFNhTWVmRDkyWEMzbWg3Q0xlRTRqQ3Z3TVhJeWxIVHNlT2NTb1YtS0pBajZwNGNfekE0Si1wUDBNWkNRdG84NzEyWnMxeUcyNk1J?oc=5",
+        "direction": "negative",
+        "detail": null,
+        "significance": 1.589
       }
     ]
   },
@@ -1199,17 +1228,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 46.0,
+    "score": 44.0,
     "label": "Mixed",
-    "evidenceCoverage": 68,
+    "evidenceCoverage": 70,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 43.1,
+        "score": 37.4,
         "weight": 0.4,
-        "reliability": 0.2,
-        "detail": "Recency-weighted average of 4 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.25,
+        "detail": "Recency-weighted average of 5 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1334,6 +1363,26 @@
       "direction": "negative",
       "detail": null,
       "significance": 1.596
+    },
+    {
+      "date": "2026-09-24",
+      "type": "workforce_reduction",
+      "title": "Admiral to cut 500 roles from its UK insurance business",
+      "source": "express.co.uk",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOUUZYZEtMM3M2TTZla2pwVnc4T3Z6b2wxTFdxVW9nMUlmT0JBdkNCbVNyUmc0TVI2ekh0OVpVc09HMXpERXVxTy03dzVLSHdVdTM5ekVDdTJ5eFNQUzhtNEZiQUFvZzJEMk0waVk1UHhNM3hhTGxtLVc2LTEtWDk0Z2s4VW1qd3ZaeEFCR3Vn0gGTAUFVX3lxTE9mSVo1azh4bVZsQ2hZZV94d0tTdHRodXNLeDVCbFBHcG9yZ3REWXNGMTNpX3d5R1ltRFAxY3RTUC1MRTV5ZTExZk5ZRHgwdzBEZEp4QnhSbmVCMUFEVHNzWk4xVXhFTnE0eFI2QklJNTcyU0l1c0Y1R00xendzcnhrdkVuQTNfSE52cEdzLS1VV1cxOA?oc=5",
+      "direction": "negative",
+      "detail": null,
+      "significance": 1.59
+    },
+    {
+      "date": "2026-09-24",
+      "type": "workforce_reduction",
+      "title": "Admiral Insurance set to cut around 500 UK jobs",
+      "source": "insurancetimes.co.uk",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPS3JLWGwxelZGVDVKNjVNemxtZENhNzNSeEtTN19Ddi1tTkJGdnIxdGdhVVFCRnRrb29ZTnhwWDlyc0N4ejRic09CbjQ1S2FpX1NxR3VYUTZnOFNhTWVmRDkyWEMzbWg3Q0xlRTRqQ3Z3TVhJeWxIVHNlT2NTb1YtS0pBajZwNGNfekE0Si1wUDBNWkNRdG84NzEyWnMxeUcyNk1J?oc=5",
+      "direction": "negative",
+      "detail": null,
+      "significance": 1.589
     }
   ],
   "persistentEvents": []

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-25T01:37:24.485967Z",
+  "generatedAt": "2026-09-25T01:42:02.271130Z",
   "company": {
     "companyName": "Severn Trent PLC",
     "ticker": "SVT.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-23",
-    "observationCount": 78,
-    "scoredDayCount": 64,
-    "latestScore": 55.9,
-    "latestScoreDate": "2026-09-23",
+    "periodEnd": "2026-09-24",
+    "observationCount": 79,
+    "scoredDayCount": 65,
+    "latestScore": 46.6,
+    "latestScoreDate": "2026-09-24",
     "series": [
       {
         "date": "2026-06-30",
@@ -727,6 +727,15 @@
         "sourceCount": 1,
         "confidence": 16.7,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-24",
+        "dailyScore": 46.6,
+        "rollingScore": 48.8,
+        "storyCount": 5,
+        "sourceCount": 6,
+        "confidence": 73.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -791,16 +800,6 @@
         "significance": 1.542
       },
       {
-        "date": "2026-08-02",
-        "type": "press_story",
-        "title": "Severn Trent reservoirs drop to lowest levels in 8 months as Birmingham in drought",
-        "source": "birminghammail.co.uk",
-        "url": "https://www.birminghammail.co.uk/news/midlands-news/severn-trent-reservoirs-drop-lowest-34392883",
-        "direction": "Very negative",
-        "detail": null,
-        "significance": 1.099
-      },
-      {
         "date": "2026-08-14",
         "type": "coverage_spike",
         "title": "Severn Trent PLC ( OTCMKTS : STRNY ) Sees Large Growth in Short Interest",
@@ -829,6 +828,16 @@
         "direction": "neutral",
         "detail": "7 stories versus trailing median 2",
         "significance": 1.493
+      },
+      {
+        "date": "2026-09-24",
+        "type": "high_disagreement",
+        "title": "Kidderminster residents face water supply issues as Severn Trent investigates",
+        "source": "kidderminstershuttle.co.uk",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNN0hjTmRlcmowQi0zejl6VDAtQTNsU2Y5RzBSN2xkZURaMEdxcDl3eVBBQUNXTk11WS14NmlnZWdLNGN2UDdDQWt1azIycDlPZC05UkdpS1BvQ19ISVZodHlONVN3UXdSR2VzT2ZDTnl0R0h4Y09qR3VUOTZXSHkxQkJXRlVPMnlpR0dQbm9XMzNfUmhCWVpJTHJKVHExQ1V0OGI5UE9VcERDdw?oc=5",
+        "direction": "mixed",
+        "detail": "Positive and negative coverage is unusually dispersed",
+        "significance": 1.528
       }
     ]
   },
@@ -1175,17 +1184,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 43.8,
+    "score": 43.9,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 44.9,
+        "score": 45.0,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 64 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 65 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1295,16 +1304,6 @@
       "significance": 1.542
     },
     {
-      "date": "2026-08-02",
-      "type": "press_story",
-      "title": "Severn Trent reservoirs drop to lowest levels in 8 months as Birmingham in drought",
-      "source": "birminghammail.co.uk",
-      "url": "https://www.birminghammail.co.uk/news/midlands-news/severn-trent-reservoirs-drop-lowest-34392883",
-      "direction": "Very negative",
-      "detail": null,
-      "significance": 1.099
-    },
-    {
       "date": "2026-08-14",
       "type": "coverage_spike",
       "title": "Severn Trent PLC ( OTCMKTS : STRNY ) Sees Large Growth in Short Interest",
@@ -1333,6 +1332,16 @@
       "direction": "neutral",
       "detail": "7 stories versus trailing median 2",
       "significance": 1.493
+    },
+    {
+      "date": "2026-09-24",
+      "type": "high_disagreement",
+      "title": "Kidderminster residents face water supply issues as Severn Trent investigates",
+      "source": "kidderminstershuttle.co.uk",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNN0hjTmRlcmowQi0zejl6VDAtQTNsU2Y5RzBSN2xkZURaMEdxcDl3eVBBQUNXTk11WS14NmlnZWdLNGN2UDdDQWt1azIycDlPZC05UkdpS1BvQ19ISVZodHlONVN3UXdSR2VzT2ZDTnl0R0h4Y09qR3VUOTZXSHkxQkJXRlVPMnlpR0dQbm9XMzNfUmhCWVpJTHJKVHExQ1V0OGI5UE9VcERDdw?oc=5",
+      "direction": "mixed",
+      "detail": "Positive and negative coverage is unusually dispersed",
+      "significance": 1.528
     },
     {
       "date": "2026-12-31",
