@@ -348,6 +348,12 @@ def candidate_score(report: dict[str, Any]) -> int:
 
 
 def is_known_non_report_candidate(report: dict[str, Any]) -> bool:
+    # Verified short FCA filing notices, not full annual reports.
+    if str(report.get("url") or "").split("?", 1)[0].endswith((
+        "/NI-000044285/NI-000044285.pdf",
+        "/NI-000021436/NI-000021436.pdf",
+    )):
+        return True
     # Verified four-page filing notice, not the full BAE annual report.
     if str(report.get("url") or "").split("?", 1)[0].endswith("/NI-000071620/NI-000071620.pdf"):
         return True
