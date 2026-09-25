@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T17:25:10.782773+00:00",
+  "generatedAt": "2026-09-25T18:50:11.371942+00:00",
   "companyCount": 100,
   "verifiedCurrentCount": 16,
   "companies": {
@@ -90,7 +90,21 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {},
+      "retryDiagnostics": {
+        "shell:2020": {
+          "candidateHash": "94b6a8098a41ac034ada490120015ab0b6d684f78c6eb04a0296835d312c3605",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-25T18:01:09.323445+00:00",
+          "status": "extraction_failed",
+          "retryAfter": "2026-09-26T00:01:09.323445+00:00",
+          "diagnostics": [
+            {
+              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/s/NYSE_SHLX_2020.pdf",
+              "error": "HTTPError: HTTP Error 503: "
+            }
+          ]
+        }
+      },
       "latestAvailabilitySource": "https://www.shell.com/investors/results-and-reporting/annual-report-archive.html",
       "discoveryReview": {
         "checkedAt": "2026-09-17T12:49:21.301149+00:00",
@@ -189,6 +203,12 @@
           "extractionStatus": "extracted"
         },
         {
+          "year": 2022,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/u/LSE_ULVR_2022.pdf",
+          "sha256": "f412c7553ea5c6ba848e138a4a672b7903c6c73247f154efa1ae9ae7e7fc6420",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2023,
           "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000091833/NI-000091833.pdf",
           "sha256": "b2d9dba13c089dd0543ae8c1b45ab53e82771c33e71833921ac918e79f4877e3",
@@ -231,6 +251,14 @@
           "lastAttempt": "2026-09-24T21:56:45.202131+00:00",
           "status": "extracted",
           "retryAfter": "2026-09-25T03:56:45.202131+00:00",
+          "diagnostics": []
+        },
+        "unilever:2022": {
+          "candidateHash": "c82607c6109f1823e2f7f3f991eb084384ba5e4aef0bcdf41e7b4b49c78acd1a",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-25T18:01:34.771911+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-26T00:01:34.771911+00:00",
           "diagnostics": []
         }
       },
@@ -322,6 +350,12 @@
           "extractionStatus": "extracted"
         },
         {
+          "year": 2023,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BATS_2023.pdf",
+          "sha256": "eb2191b64844aef0c4f9d8ea0047adb4cbbbb8d2dbf05340dcb8797e4e8563f4",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2024,
           "url": "https://www.bat.com/ar/2024/documents/BAT_Combined_Annual_and_Sustainability_Report_2024_Reduced_Secured.pdf",
           "sha256": "9229ecee0655ac5b344d2bc43fb8f0cacf99a7a5b9c5ec74b3e10e4c7bd37ec4",
@@ -405,10 +439,18 @@
         },
         "british-american-tobacco:2022": {
           "candidateHash": "0d4ed543b175db2c4f47482d00184125b2d34cd7c9b1a98a0bac27356978176c",
-          "attemptCount": 2,
-          "lastAttempt": "2026-09-24T23:47:37.761061+00:00",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-25T18:50:11.254415+00:00",
           "status": "extracted",
-          "retryAfter": "2027-09-24T23:47:37.761061+00:00",
+          "retryAfter": "2027-09-25T18:50:11.254415+00:00",
+          "diagnostics": []
+        },
+        "british-american-tobacco:2023": {
+          "candidateHash": "0c27d67ef13f6d1f0ba8b7f5039b292ef6a33653e53cd6165f92e87d052934c1",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-25T18:01:44.265503+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-26T00:01:44.265503+00:00",
           "diagnostics": []
         }
       }
