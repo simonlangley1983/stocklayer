@@ -1,7 +1,15 @@
 import unittest
 import monitor_annual_reports as monitor
+import discover_annualreports_archive as archive
 
 class ReportDiscoveryTests(unittest.TestCase):
+    def test_archive_search_selects_the_exact_issuer_not_the_first_match(self):
+        html = '''
+        <span class="companyName"><a href="/Company/aker-bp">Aker BP ASA</a></span>
+        <span class="companyName"><a href="/Company/bp-plc">BP plc</a></span>
+        '''
+        self.assertEqual(archive.choose_page("BP PLC", html), "/Company/bp-plc")
+
     def test_annual_pdf_in_quarterly_folder(self):
         self.assertTrue(monitor.is_report_link('Annual report and accounts', 'https://example.com/2024/q4/2024-lbg-annual-report.pdf', 2026))
 
