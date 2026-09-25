@@ -73,6 +73,9 @@ jobs:
         if: ${{ !inputs.extraction_only }}
         run: python scripts/discover_annualreports_archive.py --start-year 2020
 
+      - name: Extract newly discovered archive reports
+        run: python scripts/backfill_annual_reports.py --batch-size 60 --workers 8 --report-timeout 120 --start-year 2020
+
       - name: Backfill a resumable batch of missing annual reports
         run: python scripts/backfill_annual_reports.py --batch-size 60 --workers 8 --report-timeout 120 --start-year 2020 --fca-only
 
