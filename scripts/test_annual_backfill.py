@@ -3,6 +3,9 @@ import unittest
 from datetime import datetime, timezone, timedelta
 from unittest.mock import patch
 import subprocess
+import json
+from pathlib import Path
+from tempfile import TemporaryDirectory
 
 import backfill_annual_reports as backfill
 
@@ -42,6 +45,14 @@ class BackfillTests(unittest.TestCase):
     def test_slow_report_cannot_block_batch_forever(self):
         with patch.object(backfill.subprocess, 'run', side_effect=subprocess.TimeoutExpired('worker', 1)):
             self.assertEqual(backfill.run_group(self.queue()[0], 1)['report_data_status'], 'extraction_failed')
+
+    def test_result_describes_only_newly_extracted_company(self):
+        # The workflow uses this result to avoid a confidence rebuild after a failure.
+        with TemporaryDirectory() as temporary:
+            result_file = Path(temporary) / 'result.json'
+            backfill.save(result_file, {'attempted': 1, 'recovered': 0,
+                                        'newDataAdded': False, 'companySlugs': []})
+            self.assertEqual(json.loads(result_file.read_text())['newDataAdded'], False)
 
 
 if __name__ == '__main__':
