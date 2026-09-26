@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-26T01:08:27.175716Z",
+  "generatedAt": "2026-09-26T01:46:54.150726Z",
   "company": {
     "companyName": "Anglo American PLC",
     "ticker": "AAL.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-14",
-    "periodEnd": "2026-09-24",
-    "observationCount": 85,
-    "scoredDayCount": 75,
-    "latestScore": 63.5,
-    "latestScoreDate": "2026-09-24",
+    "periodEnd": "2026-09-25",
+    "observationCount": 86,
+    "scoredDayCount": 76,
+    "latestScore": 58.7,
+    "latestScoreDate": "2026-09-25",
     "series": [
       {
         "date": "2026-06-14",
@@ -790,6 +790,15 @@
         "sourceCount": 4,
         "confidence": 64.6,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-25",
+        "dailyScore": 58.7,
+        "rollingScore": 53.1,
+        "storyCount": 5,
+        "sourceCount": 4,
+        "confidence": 68.3,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1530,17 +1539,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 55.0,
+    "score": 55.1,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 48.6,
+        "score": 48.9,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 70 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 71 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "themes",
@@ -1728,6 +1737,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "fbd1b3bf429af4bd318a",
+      "type": "clinical",
+      "title": "Anglo American (LSE:AAL) enters the Teck approval window: will Beijing sign off on Anglo Teck?",
+      "date": "2026-09-25",
+      "status": "pending_review",
+      "reviewDate": "2027-03-24",
+      "direction": "Neutral / mixed",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNOXJVZDZyU3RNQU4wb0ZXaS1sbFRKb05lWl9ZMzNmZVVkd0JzdkJzV1hwc1NTSi1hZmxiVTREcmN0YmdOOXNqbFpBUnhtXzJSeHVGMEJvQ1ItVy1GZjhIZ2w1V09lMHY0Nlc0aTQ1VGVHU3h1bE5OaHNOX1M0V2FZTmxDVGJ2MEVkbGxqaU9jMG5Uby1JaXBoVkdobnU2VTNPTEk2d0Rwdmd5V25LWXphanV0QkRaSEtKbUszZVJJUXI3WEFIZjRYMzBjZGJ4bTZfTDZQblFESGt5UQ?oc=5",
+          "publisher": "kalkinemedia.com",
+          "date": "2026-09-25"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "3f515ee80eb9048e5649",
       "type": "regulatory_legal",

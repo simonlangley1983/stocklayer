@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-26T01:08:27.175716Z",
+  "generatedAt": "2026-09-26T01:46:54.150726Z",
   "company": {
     "companyName": "Croda International PLC",
     "ticker": "CRDA.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-15",
-    "periodEnd": "2026-09-24",
-    "observationCount": 82,
-    "scoredDayCount": 24,
-    "latestScore": 49.2,
-    "latestScoreDate": "2026-09-23",
+    "periodEnd": "2026-09-25",
+    "observationCount": 83,
+    "scoredDayCount": 25,
+    "latestScore": 57.5,
+    "latestScoreDate": "2026-09-25",
     "series": [
       {
         "date": "2026-06-15",
@@ -763,6 +763,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-25",
+        "dailyScore": 57.5,
+        "rollingScore": 51.4,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 17.3,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -855,6 +864,16 @@
         "direction": "Neutral / mixed",
         "detail": null,
         "significance": 0.199
+      },
+      {
+        "date": "2026-09-25",
+        "type": "press_story",
+        "title": "Croda International (LON:CRDA) Stock Rating Reaffirmed as \"Buy\" by Jefferies Financial Group",
+        "source": "marketbeat.com",
+        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOS25QdzF0aEhqWlI4SWg5LWk4OVRkRVd0eXhHZEFGQkdXbWt2UWRBR3lhZjFEVXR2d0NJOWdRMHp4OWh2RjB3SjRYWDBpMi04anpacjBVOWZTcE50OVFyQXFDT3RLb1I2UzluSkhUQnk0UGNfT1BvSzdpa0szTUI0YmJfSnFBREdKLXZhZmFfUDgzOWhDSGZ4anN3TEZDSkIxSWlvRUhram1YOVF4OEdjMHZ5ZGptOHA4SGo2eXc5VDhmYUdOMmUtaWI0dHBHX0IxOUNUa2lQdmV0Y0NFZmNRWm16WEE?oc=5",
+        "direction": "Positive",
+        "detail": null,
+        "significance": 0.597
       }
     ]
   },
@@ -1347,17 +1366,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 49.5,
+    "score": 49.9,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 49.3,
+        "score": 50.1,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 23 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 24 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1522,6 +1541,16 @@
       "direction": "Neutral / mixed",
       "detail": null,
       "significance": 0.199
+    },
+    {
+      "date": "2026-09-25",
+      "type": "press_story",
+      "title": "Croda International (LON:CRDA) Stock Rating Reaffirmed as \"Buy\" by Jefferies Financial Group",
+      "source": "marketbeat.com",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOS25QdzF0aEhqWlI4SWg5LWk4OVRkRVd0eXhHZEFGQkdXbWt2UWRBR3lhZjFEVXR2d0NJOWdRMHp4OWh2RjB3SjRYWDBpMi04anpacjBVOWZTcE50OVFyQXFDT3RLb1I2UzluSkhUQnk0UGNfT1BvSzdpa0szTUI0YmJfSnFBREdKLXZhZmFfUDgzOWhDSGZ4anN3TEZDSkIxSWlvRUhram1YOVF4OEdjMHZ5ZGptOHA4SGo2eXc5VDhmYUdOMmUtaWI0dHBHX0IxOUNUa2lQdmV0Y0NFZmNRWm16WEE?oc=5",
+      "direction": "Positive",
+      "detail": null,
+      "significance": 0.597
     }
   ],
   "persistentEvents": []

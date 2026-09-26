@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-26T01:08:27.175716Z",
+  "generatedAt": "2026-09-26T01:46:54.150726Z",
   "company": {
     "companyName": "DCC PLC",
     "ticker": "DCC.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-15",
-    "periodEnd": "2026-09-24",
-    "observationCount": 84,
-    "scoredDayCount": 55,
-    "latestScore": 54.1,
-    "latestScoreDate": "2026-09-24",
+    "periodEnd": "2026-09-25",
+    "observationCount": 85,
+    "scoredDayCount": 56,
+    "latestScore": 51.2,
+    "latestScoreDate": "2026-09-25",
     "series": [
       {
         "date": "2026-06-15",
@@ -781,6 +781,15 @@
         "sourceCount": 6,
         "confidence": 67.6,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-25",
+        "dailyScore": 51.2,
+        "rollingScore": 50.1,
+        "storyCount": 5,
+        "sourceCount": 5,
+        "confidence": 60.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1455,10 +1464,10 @@
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 49.4,
+        "score": 49.5,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 50 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 51 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1645,6 +1654,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "c38619f5d6615afdc148",
+      "type": "acquisition",
+      "title": "Barclays Capital Securities Reveals 1.91% Stake in DCC Energy Plc Amid Energy Capital Partners and KKR Takeover Bid",
+      "date": "2026-09-25",
+      "status": "pending_review",
+      "reviewDate": "2027-03-24",
+      "direction": "Neutral / mixed",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPMy11Zkt5cmJSR2padnQyT0lFbjBXeFZmNDJYX3FYVmw0X0hHaV9acHVLamYtUGYzcWVxTmQ4S09FSzg5Z1Y3TkxPZlM5dHVoX3BnV2VTQmtxX09fNG1lMU5fcUJHN2tvM0ZnVnZEcXQxX0lRMWRBME9FVU9mOGFsTHVFT1lMU0JMdUZhMnhYUUtHOEd1YVR6aVI1eHgtVEZDOUkwdTlpdnhucUFNRW9ZSm1YbkZvWWlPWjZtMHppSm1ub2liR21EUTF0YmgzdE8tc2tnY0ZyYnVJYU5ERHV6Y3A3a2ZJQzhjWmdTd09kWWM5dw?oc=5",
+          "publisher": "kalkinemedia.com",
+          "date": "2026-09-25"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "bdf01fd125d0d364bb76",
       "type": "acquisition",

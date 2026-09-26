@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-26T01:08:27.175716Z",
+  "generatedAt": "2026-09-26T01:46:54.150726Z",
   "company": {
     "companyName": "United Utilities Group PLC",
     "ticker": "UU.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-24",
-    "observationCount": 78,
-    "scoredDayCount": 66,
-    "latestScore": 35.7,
-    "latestScoreDate": "2026-09-24",
+    "periodEnd": "2026-09-25",
+    "observationCount": 79,
+    "scoredDayCount": 67,
+    "latestScore": 65.3,
+    "latestScoreDate": "2026-09-25",
     "series": [
       {
         "date": "2026-06-30",
@@ -727,6 +727,15 @@
         "sourceCount": 4,
         "confidence": 65.2,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-25",
+        "dailyScore": 65.3,
+        "rollingScore": 50.3,
+        "storyCount": 17,
+        "sourceCount": 15,
+        "confidence": 84.4,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -739,16 +748,6 @@
         "direction": "mixed",
         "detail": "Positive and negative coverage is unusually dispersed",
         "significance": 1.582
-      },
-      {
-        "date": "2026-08-20",
-        "type": "coverage_spike",
-        "title": "United Utilities issues update as road affected by leak for WEEKS",
-        "source": "manchestereveningnews.co.uk",
-        "url": "https://www.manchestereveningnews.co.uk/news/greater-manchester-news/united-utilities-issues-update-road-34491146",
-        "direction": "neutral",
-        "detail": "7 stories versus trailing median 2",
-        "significance": 1.477
       },
       {
         "date": "2026-08-28",
@@ -829,6 +828,16 @@
         "direction": "positive",
         "detail": "Daily score increased by 13.2 points",
         "significance": 1.571
+      },
+      {
+        "date": "2026-09-25",
+        "type": "trading_update",
+        "title": "United Utilities says AMP8 investment on track; seeks extra funding",
+        "source": "marketscreener.com",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPU25hWkFSaUNab3NYeHByVm1vUmtoSVRvUHdwZldpdTRVckY5SlRJSDEzaUE0SjJybU1xWi1pVi05M2trV0h3QXhuREdpQ0p5aWZsSThjRXBSVjJsbjZKRktaT19ULXlYdXRHc0pxZXNhY2ljakF5aGs0X1lfV0xtVTZSRDhMV0JEb2JxNlQ0WXBTUks1b1NQMU5pM0k1QkxQSlZlOEdSU0JnYVNDSUNCbTEwSTNfOHdUMkdB?oc=5",
+        "direction": "neutral",
+        "detail": null,
+        "significance": 1.557
       }
     ]
   },
@@ -1394,17 +1403,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 47.4,
+    "score": 47.7,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 44.8,
+        "score": 45.5,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 66 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 67 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1491,16 +1500,6 @@
       "significance": 1.582
     },
     {
-      "date": "2026-08-20",
-      "type": "coverage_spike",
-      "title": "United Utilities issues update as road affected by leak for WEEKS",
-      "source": "manchestereveningnews.co.uk",
-      "url": "https://www.manchestereveningnews.co.uk/news/greater-manchester-news/united-utilities-issues-update-road-34491146",
-      "direction": "neutral",
-      "detail": "7 stories versus trailing median 2",
-      "significance": 1.477
-    },
-    {
       "date": "2026-08-28",
       "type": "sentiment_jump",
       "title": "United Utilities apologises as restaurant owner  heartbroken",
@@ -1581,6 +1580,16 @@
       "significance": 1.571
     },
     {
+      "date": "2026-09-25",
+      "type": "trading_update",
+      "title": "United Utilities says AMP8 investment on track; seeks extra funding",
+      "source": "marketscreener.com",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPU25hWkFSaUNab3NYeHByVm1vUmtoSVRvUHdwZldpdTRVckY5SlRJSDEzaUE0SjJybU1xWi1pVi05M2trV0h3QXhuREdpQ0p5aWZsSThjRXBSVjJsbjZKRktaT19ULXlYdXRHc0pxZXNhY2ljakF5aGs0X1lfV0xtVTZSRDhMV0JEb2JxNlQ0WXBTUks1b1NQMU5pM0k1QkxQSlZlOEdSU0JnYVNDSUNCbTEwSTNfOHdUMkdB?oc=5",
+      "direction": "neutral",
+      "detail": null,
+      "significance": 1.557
+    },
+    {
       "date": "2026-12-31",
       "type": "annual_report",
       "title": "United Utilities Annual Report 2026",
@@ -1590,5 +1599,26 @@
       "approximateDate": true
     }
   ],
-  "persistentEvents": []
+  "persistentEvents": [
+    {
+      "id": "8bf485f13b1c01acffba",
+      "type": "acquisition",
+      "title": "United Utilities reiterates FY outlook, Harworth board accepts Peel's sweetened takeover bid",
+      "date": "2026-09-25",
+      "status": "pending_review",
+      "reviewDate": "2027-03-24",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxONW5rMGxER1pxaFdVSno4YkNpOU1NcHlKanBsODdTWVF1MFN0dHlSa2tpNlVIYmVKOXpCSGJ6THFxTkY0MkJFbEpZblVhdkljejR3SmRhdzR5Q3BtWjdTNWhyTnhEWVNWVEZEcHlzLUxRZnN1OExvNDh3TDlSRXZfcmZfcGlxZUFwXzNYVzktdEJ2dXRaWnVucUZGb1FycGcxdHQwTXVjdmIzM3hDS29Tb2NRbC1oWi1GLVNucDZnOW5zNWtTMFNRbGZ4NGFJc25QbkQyVnoxVGYyOFVBVUlaRVNSR0tRdW9CSHc?oc=5",
+          "publisher": "sharecast.com",
+          "date": "2026-09-25"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    }
+  ]
 }

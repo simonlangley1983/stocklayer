@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-26T01:08:27.175716Z",
+  "generatedAt": "2026-09-26T01:46:54.150726Z",
   "company": {
     "companyName": "NatWest Group PLC",
     "ticker": "NWG.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-24",
-    "observationCount": 82,
-    "scoredDayCount": 77,
-    "latestScore": 55.2,
-    "latestScoreDate": "2026-09-24",
+    "periodEnd": "2026-09-25",
+    "observationCount": 83,
+    "scoredDayCount": 78,
+    "latestScore": 61.2,
+    "latestScoreDate": "2026-09-25",
     "series": [
       {
         "date": "2026-06-30",
@@ -763,6 +763,15 @@
         "sourceCount": 19,
         "confidence": 82.7,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-25",
+        "dailyScore": 61.2,
+        "rollingScore": 55.0,
+        "storyCount": 24,
+        "sourceCount": 18,
+        "confidence": 84.5,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -777,16 +786,6 @@
         "significance": 1.692
       },
       {
-        "date": "2026-07-31",
-        "type": "sentiment_drop",
-        "title": "NatWest reports profit up 20 %, raises performance outlook",
-        "source": "rte.ie",
-        "url": "https://www.rte.ie/news/business/2026/0731/1585937-natwest-half-year-results",
-        "direction": "negative",
-        "detail": "Daily score decreased by 13.5 points",
-        "significance": 1.577
-      },
-      {
         "date": "2026-08-11",
         "type": "high_disagreement",
         "title": "NatWest boosts its support for farmers hit by drought",
@@ -795,16 +794,6 @@
         "direction": "mixed",
         "detail": "Positive and negative coverage is unusually dispersed",
         "significance": 1.579
-      },
-      {
-        "date": "2026-09-15",
-        "type": "analyst_upgrade",
-        "title": "NatWest price target raised to 830 GBp from 790 GBp at JPMorgan",
-        "source": "tipranks.com",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPaTF4NkgwVjg1cXFlWVFvTkV6b0xDdW5zbExtWlU5UEJZaXB3UWFfX2xNN2JWOGRKS3dtUTVxMnljREw1RjU5eXVRdDZ1ZktmeG1WMGFRWWNIZUFRVmh2SThkb1ZjeHpaVG0yM2hLYnAtOExhZVRXZzhVbVUwd25pNktNVzFTZV91MkZQLXJwSjQycmstSjByeUJyY09leVVqUDZsT292aFZaV2pSS0hiN2Z0TQ?oc=5",
-        "direction": "positive",
-        "detail": null,
-        "significance": 1.568
       },
       {
         "date": "2026-09-17",
@@ -865,6 +854,26 @@
         "direction": "positive",
         "detail": null,
         "significance": 1.606
+      },
+      {
+        "date": "2026-09-25",
+        "type": "share_buyback",
+        "title": "NatWest stock slips 0.14 percent ahead of the open",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOa1FlUk5fN2R1blhBNm9sX3pvWkhIZ3dzSmFNV2w5RVpCZUZiRGZicENiLXA0cWJCZ282WGZXTkY0TzB5WnlGVWVRUWpMZVMyT3JHYTFZXzlMMXFuRWxVOWg3U0plbFRuM1lFRU5RU2p5ZUtrQVY0b3hZeVJZaEV3R08wWmpSYUtvNXhRUVd6eUl2TFI3TkVYVmlfU2RkZExBYmViYTBEczNxZlcw?oc=5",
+        "direction": "positive",
+        "detail": null,
+        "significance": 1.596
+      },
+      {
+        "date": "2026-09-25",
+        "type": "share_buyback",
+        "title": "Scottish businesses report efficiency gains from AI, NatWest research finds",
+        "source": "heraldscotland.com",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOUTg0UEVsNXpWTzNUMG5vdmFPYWZTUGJMNzdSZHVNRV9GU2pHajJzLTZqaENJNXFlNVBCem52azlTQ0w0UlZsZGZ2R1ctcUxXc05tT3ZXWEVycFNIUVItSmVFejJQc2hVZUQyMER2QnNnNzgxMXlheWJtWWpITlVNNFB1Z3V6emVVenRmaVNhdVpjdllITGg5MkItd015UQ?oc=5",
+        "direction": "positive",
+        "detail": null,
+        "significance": 1.589
       }
     ]
   },
@@ -1138,17 +1147,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 51.6,
+    "score": 51.7,
     "label": "Mixed",
     "evidenceCoverage": 92,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 50.5,
+        "score": 50.8,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 77 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 78 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1208,16 +1217,6 @@
       "significance": 1.692
     },
     {
-      "date": "2026-07-31",
-      "type": "sentiment_drop",
-      "title": "NatWest reports profit up 20 %, raises performance outlook",
-      "source": "rte.ie",
-      "url": "https://www.rte.ie/news/business/2026/0731/1585937-natwest-half-year-results",
-      "direction": "negative",
-      "detail": "Daily score decreased by 13.5 points",
-      "significance": 1.577
-    },
-    {
       "date": "2026-08-11",
       "type": "high_disagreement",
       "title": "NatWest boosts its support for farmers hit by drought",
@@ -1226,16 +1225,6 @@
       "direction": "mixed",
       "detail": "Positive and negative coverage is unusually dispersed",
       "significance": 1.579
-    },
-    {
-      "date": "2026-09-15",
-      "type": "analyst_upgrade",
-      "title": "NatWest price target raised to 830 GBp from 790 GBp at JPMorgan",
-      "source": "tipranks.com",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPaTF4NkgwVjg1cXFlWVFvTkV6b0xDdW5zbExtWlU5UEJZaXB3UWFfX2xNN2JWOGRKS3dtUTVxMnljREw1RjU5eXVRdDZ1ZktmeG1WMGFRWWNIZUFRVmh2SThkb1ZjeHpaVG0yM2hLYnAtOExhZVRXZzhVbVUwd25pNktNVzFTZV91MkZQLXJwSjQycmstSjByeUJyY09leVVqUDZsT292aFZaV2pSS0hiN2Z0TQ?oc=5",
-      "direction": "positive",
-      "detail": null,
-      "significance": 1.568
     },
     {
       "date": "2026-09-17",
@@ -1296,6 +1285,26 @@
       "direction": "positive",
       "detail": null,
       "significance": 1.606
+    },
+    {
+      "date": "2026-09-25",
+      "type": "share_buyback",
+      "title": "NatWest stock slips 0.14 percent ahead of the open",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOa1FlUk5fN2R1blhBNm9sX3pvWkhIZ3dzSmFNV2w5RVpCZUZiRGZicENiLXA0cWJCZ282WGZXTkY0TzB5WnlGVWVRUWpMZVMyT3JHYTFZXzlMMXFuRWxVOWg3U0plbFRuM1lFRU5RU2p5ZUtrQVY0b3hZeVJZaEV3R08wWmpSYUtvNXhRUVd6eUl2TFI3TkVYVmlfU2RkZExBYmViYTBEczNxZlcw?oc=5",
+      "direction": "positive",
+      "detail": null,
+      "significance": 1.596
+    },
+    {
+      "date": "2026-09-25",
+      "type": "share_buyback",
+      "title": "Scottish businesses report efficiency gains from AI, NatWest research finds",
+      "source": "heraldscotland.com",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOUTg0UEVsNXpWTzNUMG5vdmFPYWZTUGJMNzdSZHVNRV9GU2pHajJzLTZqaENJNXFlNVBCem52azlTQ0w0UlZsZGZ2R1ctcUxXc05tT3ZXWEVycFNIUVItSmVFejJQc2hVZUQyMER2QnNnNzgxMXlheWJtWWpITlVNNFB1Z3V6emVVenRmaVNhdVpjdllITGg5MkItd015UQ?oc=5",
+      "direction": "positive",
+      "detail": null,
+      "significance": 1.589
     }
   ],
   "persistentEvents": [

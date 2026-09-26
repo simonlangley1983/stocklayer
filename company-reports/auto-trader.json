@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-26T01:08:27.175716Z",
+  "generatedAt": "2026-09-26T01:46:54.150726Z",
   "company": {
     "companyName": "Auto Trader Group PLC",
     "ticker": "AUTO.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-14",
-    "periodEnd": "2026-09-24",
-    "observationCount": 84,
-    "scoredDayCount": 23,
-    "latestScore": 59.3,
-    "latestScoreDate": "2026-09-24",
+    "periodEnd": "2026-09-25",
+    "observationCount": 85,
+    "scoredDayCount": 24,
+    "latestScore": 34.2,
+    "latestScoreDate": "2026-09-25",
     "series": [
       {
         "date": "2026-06-14",
@@ -781,19 +781,18 @@
         "sourceCount": 2,
         "confidence": 45.0,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-25",
+        "dailyScore": 34.2,
+        "rollingScore": 50.0,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 19.7,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
-      {
-        "date": "2026-07-13",
-        "type": "press_story",
-        "title": "Exploring Auto Trader Camper Vans : Your Ultimate Guide To Finding The Perfect Mobile Escape",
-        "source": "unitaid.eu",
-        "url": "https://www.unitaid.eu/vans-your-ultimate-guide-finding-t4fw.html",
-        "direction": "Neutral / mixed",
-        "detail": null,
-        "significance": 0.24
-      },
       {
         "date": "2026-07-17",
         "type": "press_story",
@@ -883,6 +882,16 @@
         "direction": "Very positive",
         "detail": null,
         "significance": 1.021
+      },
+      {
+        "date": "2026-09-25",
+        "type": "press_story",
+        "title": "Auto Trader (AUTO) slips as AI agents spook marketplaces this week: is the car portal's moat under threat?",
+        "source": "kalkinemedia.com",
+        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQV3Azb0ZDWHc5T21vYnFwVTQxc2t3M3Q4UVQwOFBmdkNFR3FaSUo2Z1EtVmFpTUNncFhTRkhqd3BoR0JFMUdDSG1OdGtKWDA2Q2doYkJnbkMzMGxBb1BRWUpuQVlmNU8ybi1OOXhGN2RtWTE2VkhHWFpvS2dtYnpkdVJYb3c1Rzl4SWVBcmVPdHItQ1g0R3J1UEZlQzNycm5EM1VWdWxwQ01FcEpWeThWMXNtVWZUQ01DQ1NaRXN6U0QtYlVXdU9VX1VFd2xYR2F1UkM2ZW5ValJqeTAxRnc?oc=5",
+        "direction": "Very negative",
+        "detail": null,
+        "significance": 1.098
       }
     ]
   },
@@ -1375,17 +1384,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 52.3,
+    "score": 51.6,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 52.9,
+        "score": 51.2,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 21 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 22 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1451,16 +1460,6 @@
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
-    },
-    {
-      "date": "2026-07-13",
-      "type": "press_story",
-      "title": "Exploring Auto Trader Camper Vans : Your Ultimate Guide To Finding The Perfect Mobile Escape",
-      "source": "unitaid.eu",
-      "url": "https://www.unitaid.eu/vans-your-ultimate-guide-finding-t4fw.html",
-      "direction": "Neutral / mixed",
-      "detail": null,
-      "significance": 0.24
     },
     {
       "date": "2026-07-17",
@@ -1551,6 +1550,16 @@
       "direction": "Very positive",
       "detail": null,
       "significance": 1.021
+    },
+    {
+      "date": "2026-09-25",
+      "type": "press_story",
+      "title": "Auto Trader (AUTO) slips as AI agents spook marketplaces this week: is the car portal's moat under threat?",
+      "source": "kalkinemedia.com",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQV3Azb0ZDWHc5T21vYnFwVTQxc2t3M3Q4UVQwOFBmdkNFR3FaSUo2Z1EtVmFpTUNncFhTRkhqd3BoR0JFMUdDSG1OdGtKWDA2Q2doYkJnbkMzMGxBb1BRWUpuQVlmNU8ybi1OOXhGN2RtWTE2VkhHWFpvS2dtYnpkdVJYb3c1Rzl4SWVBcmVPdHItQ1g0R3J1UEZlQzNycm5EM1VWdWxwQ01FcEpWeThWMXNtVWZUQ01DQ1NaRXN6U0QtYlVXdU9VX1VFd2xYR2F1UkM2ZW5ValJqeTAxRnc?oc=5",
+      "direction": "Very negative",
+      "detail": null,
+      "significance": 1.098
     },
     {
       "date": "2026-12-31",

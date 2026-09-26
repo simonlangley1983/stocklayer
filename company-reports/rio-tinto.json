@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-26T01:08:27.175716Z",
+  "generatedAt": "2026-09-26T01:46:54.150726Z",
   "company": {
     "companyName": "Rio Tinto",
     "ticker": "RIO.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-24",
-    "observationCount": 82,
-    "scoredDayCount": 69,
-    "latestScore": 68.8,
-    "latestScoreDate": "2026-09-24",
+    "periodEnd": "2026-09-25",
+    "observationCount": 83,
+    "scoredDayCount": 70,
+    "latestScore": 56.3,
+    "latestScoreDate": "2026-09-25",
     "series": [
       {
         "date": "2026-06-30",
@@ -763,6 +763,15 @@
         "sourceCount": 21,
         "confidence": 89.9,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-25",
+        "dailyScore": 56.3,
+        "rollingScore": 56.3,
+        "storyCount": 10,
+        "sourceCount": 9,
+        "confidence": 81.8,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -775,16 +784,6 @@
         "direction": "positive",
         "detail": null,
         "significance": 1.615
-      },
-      {
-        "date": "2026-07-29",
-        "type": "sentiment_jump",
-        "title": "Rio Tinto Boosts Shareholder Returns with Performance Jump",
-        "source": "miragenews.com",
-        "url": "https://www.miragenews.com/rio-tinto-boosts-shareholder-returns-with-1717881",
-        "direction": "positive",
-        "detail": "Daily score increased by 15.8 points",
-        "significance": 1.585
       },
       {
         "date": "2026-07-30",
@@ -865,6 +864,16 @@
         "direction": "positive",
         "detail": "Daily press score is 68.8",
         "significance": 1.614
+      },
+      {
+        "date": "2026-09-25",
+        "type": "sentiment_drop",
+        "title": "Rio Tinto stock trades at USD 94.32, down 0.16 percent in New York trading",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQSGZDNHliRWVGWG5yTnJlVzktTmNwdy1xTHBYcV9PU01pNGRvZEZ2ZEJLeFhjdW1heGxMX04tcHdEWXhZWDgxb2UySHBYd0R3ci12SFp1UHNsLXlQNDc3Y1puVlJLMzBjU1NDNFIwV1pmU1NxVXQyWU80ZWt3OGpZcUJlZUtxRzBYOWFyR1AybFk2YTVqckhVYVhPb1ktZVFFT1RQX3dDNV9ONkJYOTlWREY0bVNUeklFc3dKd0JCT21EbGVjdkdLRW9ZbFU?oc=5",
+        "direction": "negative",
+        "detail": "Daily score decreased by 12.5 points",
+        "significance": 1.616
       }
     ]
   },
@@ -1357,17 +1366,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 49.4,
+    "score": 49.5,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 53.0,
+        "score": 53.1,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 69 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 70 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1454,16 +1463,6 @@
       "significance": 1.615
     },
     {
-      "date": "2026-07-29",
-      "type": "sentiment_jump",
-      "title": "Rio Tinto Boosts Shareholder Returns with Performance Jump",
-      "source": "miragenews.com",
-      "url": "https://www.miragenews.com/rio-tinto-boosts-shareholder-returns-with-1717881",
-      "direction": "positive",
-      "detail": "Daily score increased by 15.8 points",
-      "significance": 1.585
-    },
-    {
       "date": "2026-07-30",
       "type": "sentiment_drop",
       "title": "Erste Group Bank Forecasts Reduced Earnings for Rio Tinto",
@@ -1542,6 +1541,16 @@
       "direction": "positive",
       "detail": "Daily press score is 68.8",
       "significance": 1.614
+    },
+    {
+      "date": "2026-09-25",
+      "type": "sentiment_drop",
+      "title": "Rio Tinto stock trades at USD 94.32, down 0.16 percent in New York trading",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQSGZDNHliRWVGWG5yTnJlVzktTmNwdy1xTHBYcV9PU01pNGRvZEZ2ZEJLeFhjdW1heGxMX04tcHdEWXhZWDgxb2UySHBYd0R3ci12SFp1UHNsLXlQNDc3Y1puVlJLMzBjU1NDNFIwV1pmU1NxVXQyWU80ZWt3OGpZcUJlZUtxRzBYOWFyR1AybFk2YTVqckhVYVhPb1ktZVFFT1RQX3dDNV9ONkJYOTlWREY0bVNUeklFc3dKd0JCT21EbGVjdkdLRW9ZbFU?oc=5",
+      "direction": "negative",
+      "detail": "Daily score decreased by 12.5 points",
+      "significance": 1.616
     }
   ],
   "persistentEvents": [

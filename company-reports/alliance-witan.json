@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-26T01:08:27.175716Z",
+  "generatedAt": "2026-09-26T01:46:54.150726Z",
   "company": {
     "companyName": "Alliance Witan PLC",
     "ticker": "ALW.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-24",
-    "observationCount": 77,
-    "scoredDayCount": 20,
-    "latestScore": 57.3,
-    "latestScoreDate": "2026-09-18",
+    "periodEnd": "2026-09-25",
+    "observationCount": 78,
+    "scoredDayCount": 21,
+    "latestScore": 50.3,
+    "latestScoreDate": "2026-09-25",
     "series": [
       {
         "date": "2026-06-30",
@@ -718,6 +718,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-25",
+        "dailyScore": 50.3,
+        "rollingScore": 51.1,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -790,6 +799,16 @@
         "direction": "Positive",
         "detail": null,
         "significance": 0.591
+      },
+      {
+        "date": "2026-09-25",
+        "type": "press_story",
+        "title": "Alliance Witan – Stock Spotlight: Experian",
+        "source": "quoteddata.com",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE81TkVGaDRXVG5OSTRfVUpjYm5EOGRwRW96bUwtRTZTaWpQdk45c2o3RklpNTNHQUVGV0N2Z3RhYmg5eGlGZ3BTcDh1cjh0N0U4a1YzTU1BRmNWOHBjaXVqYU8yLWphWUdlUmc3SHZoa3J2ZkZFWU1UYzdHSQ?oc=5",
+        "direction": "Neutral / mixed",
+        "detail": null,
+        "significance": 0.17
       }
     ]
   },
@@ -1136,17 +1155,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 64.1,
+    "score": 64.0,
     "label": "Positive",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 53.0,
+        "score": 52.7,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 20 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 21 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "themes",
@@ -1265,6 +1284,16 @@
       "direction": "Positive",
       "detail": null,
       "significance": 0.591
+    },
+    {
+      "date": "2026-09-25",
+      "type": "press_story",
+      "title": "Alliance Witan – Stock Spotlight: Experian",
+      "source": "quoteddata.com",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE81TkVGaDRXVG5OSTRfVUpjYm5EOGRwRW96bUwtRTZTaWpQdk45c2o3RklpNTNHQUVGV0N2Z3RhYmg5eGlGZ3BTcDh1cjh0N0U4a1YzTU1BRmNWOHBjaXVqYU8yLWphWUdlUmc3SHZoa3J2ZkZFWU1UYzdHSQ?oc=5",
+      "direction": "Neutral / mixed",
+      "detail": null,
+      "significance": 0.17
     }
   ],
   "persistentEvents": []

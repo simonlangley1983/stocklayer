@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-26T01:08:27.175716Z",
+  "generatedAt": "2026-09-26T01:46:54.150726Z",
   "company": {
     "companyName": "Smith & Nephew PLC",
     "ticker": "SN.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-24",
-    "observationCount": 74,
-    "scoredDayCount": 44,
-    "latestScore": 54.3,
-    "latestScoreDate": "2026-09-24",
+    "periodEnd": "2026-09-25",
+    "observationCount": 75,
+    "scoredDayCount": 45,
+    "latestScore": 41.0,
+    "latestScoreDate": "2026-09-25",
     "series": [
       {
         "date": "2026-06-30",
@@ -691,6 +691,15 @@
         "sourceCount": 3,
         "confidence": 55.8,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-25",
+        "dailyScore": 41.0,
+        "rollingScore": 50.4,
+        "storyCount": 2,
+        "sourceCount": 2,
+        "confidence": 37.4,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -765,16 +774,6 @@
         "significance": 1.541
       },
       {
-        "date": "2026-09-21",
-        "type": "coverage_spike",
-        "title": "Smith & Nephew stock heads into the open after a 0.8% dip",
-        "source": "ad-hoc-news.de",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPanJtaWZOSmM5VURpSmJkUVFmUjFKZkJGWGVQVGZvVDRpMHZVNXFJT1J6UlA2by1TRDMwZ01iOGk3RHZ2b3JXaGVsbXVBNTlPc0ZJYzN3QlIwbGU1T09oeW1lalRvVm4tb29DQTl4UFFZX0hxNmhmc3lsN1VVU3Q3OTNNM1VyYmVIb1l0ZTJpOFZhRXloclN1TUtyRzJyRV96NXQ2czUzYnFjbFhCRUlhcWRfNDVJeVcxX3VQX3RheEdBUFZ0a0djRg?oc=5",
-        "direction": "neutral",
-        "detail": "5 stories versus trailing median 1.5",
-        "significance": 1.074
-      },
-      {
         "date": "2026-09-23",
         "type": "high_disagreement",
         "title": "Smith & Nephew stock hits 52-week low at 27.05 USD",
@@ -793,6 +792,16 @@
         "direction": "mixed",
         "detail": "Positive and negative coverage is unusually dispersed",
         "significance": 1.53
+      },
+      {
+        "date": "2026-09-25",
+        "type": "high_disagreement",
+        "title": "Smith & Nephew stock faces a Q2 revenue miss",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNMUZya2NmWl9tckt4ZXhBbEJKVmNhUmhMZ0xpRGZONFIzOXlwaUVYRXhiYVhrS2VNRnpwSGlWR3NkNW1zanZranV1cHdlNDd2NE1RNVYtTFdJZjNzUTBzd3VuOFR5UzRqcG94ZmFmVnZPTFk0OHFpMktGMkc3WklIQ19kSWJlanFjUFpfamtMS3BaOHN2WVFNR25TX3dsSGxBb3BYSHZvdjU?oc=5",
+        "direction": "mixed",
+        "detail": "Positive and negative coverage is unusually dispersed",
+        "significance": 1.607
       }
     ]
   },
@@ -1066,17 +1075,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 58.5,
+    "score": 58.4,
     "label": "Positive",
     "evidenceCoverage": 92,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.6,
+        "score": 51.1,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 44 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 45 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1196,16 +1205,6 @@
       "significance": 1.541
     },
     {
-      "date": "2026-09-21",
-      "type": "coverage_spike",
-      "title": "Smith & Nephew stock heads into the open after a 0.8% dip",
-      "source": "ad-hoc-news.de",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPanJtaWZOSmM5VURpSmJkUVFmUjFKZkJGWGVQVGZvVDRpMHZVNXFJT1J6UlA2by1TRDMwZ01iOGk3RHZ2b3JXaGVsbXVBNTlPc0ZJYzN3QlIwbGU1T09oeW1lalRvVm4tb29DQTl4UFFZX0hxNmhmc3lsN1VVU3Q3OTNNM1VyYmVIb1l0ZTJpOFZhRXloclN1TUtyRzJyRV96NXQ2czUzYnFjbFhCRUlhcWRfNDVJeVcxX3VQX3RheEdBUFZ0a0djRg?oc=5",
-      "direction": "neutral",
-      "detail": "5 stories versus trailing median 1.5",
-      "significance": 1.074
-    },
-    {
       "date": "2026-09-23",
       "type": "high_disagreement",
       "title": "Smith & Nephew stock hits 52-week low at 27.05 USD",
@@ -1224,6 +1223,16 @@
       "direction": "mixed",
       "detail": "Positive and negative coverage is unusually dispersed",
       "significance": 1.53
+    },
+    {
+      "date": "2026-09-25",
+      "type": "high_disagreement",
+      "title": "Smith & Nephew stock faces a Q2 revenue miss",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNMUZya2NmWl9tckt4ZXhBbEJKVmNhUmhMZ0xpRGZONFIzOXlwaUVYRXhiYVhrS2VNRnpwSGlWR3NkNW1zanZranV1cHdlNDd2NE1RNVYtTFdJZjNzUTBzd3VuOFR5UzRqcG94ZmFmVnZPTFk0OHFpMktGMkc3WklIQ19kSWJlanFjUFpfamtMS3BaOHN2WVFNR25TX3dsSGxBb3BYSHZvdjU?oc=5",
+      "direction": "mixed",
+      "detail": "Positive and negative coverage is unusually dispersed",
+      "significance": 1.607
     }
   ],
   "persistentEvents": []
