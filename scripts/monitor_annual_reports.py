@@ -117,6 +117,7 @@ OFFICIAL_REPORT_SEEDS: dict[str, list[dict[str, Any]]] = {
         {"year": 2023, "title": "Barratt Developments Annual Report and Accounts 2023", "url": "https://www.barrattredrow.co.uk/~/media/Files/B/Barratt-Developments-V2/documents/investor/2023-barratt-annual-report.pdf"},
         {"year": 2024, "title": "Barratt Developments Annual Report and Accounts 2024", "url": "https://www.barrattredrow.co.uk/~/media/Files/B/Barratt-Developments-V2/documents/reports-and-presentation/2025/barratt-developments-plc-annual-report-and-accounts-2024-accessible.pdf"},
     ],
+    "JD.L": [{"year": 2025, "title": "JD Sports Fashion Annual Report and Accounts 2025", "url": "https://www.jdplc.com/wp-content/uploads/2026/07/24467_JD_Sports_AR25_Web.pdf"}],
     "PCT.L": [{"year": 2025, "title": "Polar Capital Technology Trust Annual Report 2025", "url": "https://www.pctannualhighlights.co.uk/static/literature/270997_PCTT_AR_WEB_ctDgfnW.pdf"}],
     "CCC.L": [{"year": 2025, "title": "Computacenter Annual Report and Accounts 2025", "url": "https://investors.computacenter.com/static-files/cef18bb9-9750-4d16-adbe-39bbeb650da4"}],
     "BRBY.L": [{"year": 2026, "title": "Burberry Annual Report 2025/26", "url": "https://www.burberryplc.com/content/dam/burberryplc/corporate/oar/oar-2025-2026/annual-report-2025-26.pdf.downloadasset.pdf"}],
