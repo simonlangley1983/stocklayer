@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-26T18:24:58.561608Z",
+  "generatedAt": "2026-09-26T20:01:21.832595Z",
   "company": {
     "companyName": "BP",
     "ticker": "BP.L",
@@ -23,7 +23,7 @@
     "periodEnd": "2026-09-25",
     "observationCount": 81,
     "scoredDayCount": 24,
-    "latestScore": 51.4,
+    "latestScore": 57.5,
     "latestScoreDate": "2026-09-25",
     "series": [
       {
@@ -748,11 +748,11 @@
       },
       {
         "date": "2026-09-25",
-        "dailyScore": 51.4,
-        "rollingScore": 52.3,
-        "storyCount": 9,
+        "dailyScore": 57.5,
+        "rollingScore": 53.3,
+        "storyCount": 10,
         "sourceCount": 10,
-        "confidence": 57.5,
+        "confidence": 58.8,
         "coverageStatus": "ok"
       }
     ],
@@ -1129,14 +1129,14 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 44.0,
+    "score": 44.2,
     "label": "Mixed",
     "evidenceCoverage": 92,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 52.3,
+        "score": 52.7,
         "weight": 0.4,
         "reliability": 1.0,
         "detail": "Recency-weighted average of 24 scored days in the latest 90 calendar days; 30-day half-life."
@@ -1290,6 +1290,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "36c4ed521224a6f201c4",
+      "type": "acquisition",
+      "title": "BP p.l.c. Reportedly Considering the Acquisition of Devon Energy's Shale Asset Base in South Texas",
+      "date": "2026-09-25",
+      "status": "pending_review",
+      "reviewDate": "2027-03-24",
+      "direction": "Slightly positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNWFA4ZVlPOWthUGNQdXZLV3lYbFFVNDB4ZWRXZkZFZjFzWVMyUVdwLU00YmYwbEMtM2YtX3hhbG5hSmNxR01CZVZTZFQtZU03OE5aYnVzT0haTW1CMUpFSWhCeTF5OEpaVS1TVHU5ZS1lWFFIRkRMRXBUd0dKdVlOTkdBTXBQakZ6MF9KUFN6dzlKakI0LVZRSUN3c3FqaWMyUlNOZVUyMkhycDZadVpWZTM4cmFfTlFldVRLYk5YTThRNG5sY1VGR0RDaXNldUlVREw4UDg3UDBDdlJrV2EyVE1DNUk?oc=5",
+          "publisher": "marketscreener.com",
+          "date": "2026-09-25"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "8bd09e96f5ea27bee69a",
       "type": "acquisition",
