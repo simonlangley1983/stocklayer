@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-26T13:05:57.017717Z",
+  "generatedAt": "2026-09-26T15:03:09.616637Z",
   "company": {
     "companyName": "Standard Life PLC",
     "ticker": "SDLF.L",
@@ -22,9 +22,9 @@
     "periodStart": "2026-06-30",
     "periodEnd": "2026-09-25",
     "observationCount": 84,
-    "scoredDayCount": 6,
-    "latestScore": 43.8,
-    "latestScoreDate": "2026-09-24",
+    "scoredDayCount": 7,
+    "latestScore": 49.5,
+    "latestScoreDate": "2026-09-25",
     "series": [
       {
         "date": "2026-06-30",
@@ -775,12 +775,12 @@
       },
       {
         "date": "2026-09-25",
-        "dailyScore": null,
-        "rollingScore": 51.0,
-        "storyCount": 0,
-        "sourceCount": 0,
-        "confidence": 0.0,
-        "coverageStatus": "no_coverage"
+        "dailyScore": 49.5,
+        "rollingScore": 50.8,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -845,16 +845,6 @@
         "significance": 0.324
       },
       {
-        "date": "2026-09-21",
-        "type": "press_story",
-        "title": "Standard Life Discloses ShareSave Option Exercise by Senior Executive",
-        "source": "tipranks.com",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNYTZ0OHQ5Um1CRU9OemRnd1BTMnhOejBYTzBEc21tcDVpZ1FIaDhvaVV5cU9EalVJR0tOalcyNDRlSDB3M3dPdFFBM2pDZklSUnVfcVpXWDhMUjlMWHo2LVozdXJZTzVpX3ZxeFIwVEpCOVhMMzRDOG43a3VqVlhPa1BzdjhXWmg4eW1HdUxwRmJNMk81U2YyQW12LUNxWG53aUpPQXh4QWp1X2h4SGVHVWpTRzA2aDlVSGw2XzNn?oc=5",
-        "direction": "Neutral / mixed",
-        "detail": null,
-        "significance": 0.161
-      },
-      {
         "date": "2026-09-23",
         "type": "analyst_upgrade",
         "title": "Standard Life price target raised to 970 GBp from 885 GBp at RBC Capital",
@@ -883,6 +873,16 @@
         "direction": "negative",
         "detail": "Daily score decreased by 21.5 points",
         "significance": 0.71
+      },
+      {
+        "date": "2026-09-25",
+        "type": "press_story",
+        "title": "Standard Life plc (SDLF.L) stock price, news, quote and history",
+        "source": "uk.finance.yahoo.com",
+        "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBmMFZUUVdGNFFGYkMxOThLRWxjTzRGY1plZXFvWVVzNHJDaTRuM1dqbXAySFRMZlpWd3VQazh6WnRHYTVSUVhxV2ptclp3VllTN18wbQ?oc=5",
+        "direction": "Neutral / mixed",
+        "detail": null,
+        "significance": 0.179
       }
     ]
   },
@@ -1302,17 +1302,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 44.3,
+    "score": 44.1,
     "label": "Mixed",
-    "evidenceCoverage": 72,
+    "evidenceCoverage": 74,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 53.6,
+        "score": 53.0,
         "weight": 0.4,
-        "reliability": 0.3,
-        "detail": "Recency-weighted average of 6 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.35,
+        "detail": "Recency-weighted average of 7 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1440,16 +1440,6 @@
       "significance": 0.324
     },
     {
-      "date": "2026-09-21",
-      "type": "press_story",
-      "title": "Standard Life Discloses ShareSave Option Exercise by Senior Executive",
-      "source": "tipranks.com",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNYTZ0OHQ5Um1CRU9OemRnd1BTMnhOejBYTzBEc21tcDVpZ1FIaDhvaVV5cU9EalVJR0tOalcyNDRlSDB3M3dPdFFBM2pDZklSUnVfcVpXWDhMUjlMWHo2LVozdXJZTzVpX3ZxeFIwVEpCOVhMMzRDOG43a3VqVlhPa1BzdjhXWmg4eW1HdUxwRmJNMk81U2YyQW12LUNxWG53aUpPQXh4QWp1X2h4SGVHVWpTRzA2aDlVSGw2XzNn?oc=5",
-      "direction": "Neutral / mixed",
-      "detail": null,
-      "significance": 0.161
-    },
-    {
       "date": "2026-09-23",
       "type": "analyst_upgrade",
       "title": "Standard Life price target raised to 970 GBp from 885 GBp at RBC Capital",
@@ -1478,6 +1468,16 @@
       "direction": "negative",
       "detail": "Daily score decreased by 21.5 points",
       "significance": 0.71
+    },
+    {
+      "date": "2026-09-25",
+      "type": "press_story",
+      "title": "Standard Life plc (SDLF.L) stock price, news, quote and history",
+      "source": "uk.finance.yahoo.com",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBmMFZUUVdGNFFGYkMxOThLRWxjTzRGY1plZXFvWVVzNHJDaTRuM1dqbXAySFRMZlpWd3VQazh6WnRHYTVSUVhxV2ptclp3VllTN18wbQ?oc=5",
+      "direction": "Neutral / mixed",
+      "detail": null,
+      "significance": 0.179
     }
   ],
   "persistentEvents": []
