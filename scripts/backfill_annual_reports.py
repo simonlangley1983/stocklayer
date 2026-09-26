@@ -115,6 +115,8 @@ def main():
     parser.add_argument("--latest-only", action="store_true")
     parser.add_argument("--fca-only", action="store_true", help="Process only FCA NSM-discovered candidates")
     parser.add_argument("--ticker", action="append", default=[], help="Process only the specified ticker(s)")
+    parser.add_argument("--result-file", type=Path,
+                        help="Write a small machine-readable result for a scheduled run")
     args = parser.parse_args()
     if min(args.batch_size, args.workers, args.report_timeout) < 1:
         parser.error("batch size, workers and timeout must be positive")
@@ -155,6 +157,7 @@ def main():
         print(json.dumps([g[3] for g in batch]))
         return 0
     recovered = 0
+    recovered_slugs = []
     with ThreadPoolExecutor(max_workers=args.workers) as executor:
         futures = {executor.submit(run_group, group, args.report_timeout, args.fca_only): group for group in batch}
         for future in as_completed(futures):
@@ -178,6 +181,7 @@ def main():
             if success:
                 existing[actual_key] = record
                 recovered += 1
+                recovered_slugs.append(record["company_slug"])
                 history.update({"generated_at": finished.isoformat(),
                                 "reports": sorted(existing.values(), key=lambda r: (r['company_slug'], r['report_year'])),
                                 "group_count": len(existing), "extracted_count": len(existing), "failed_count": 0})
@@ -192,6 +196,15 @@ def main():
                "missingCompanyYears": sum(map(len, missing.values())), "missingYearsByCompany": missing,
                "note": "Dataset gaps, not proof of publication availability; newer issuers may not have all target years."}
     save(directory / "backfill-progress.json", summary)
+    result = {
+        "attempted": len(batch),
+        "recovered": recovered,
+        # A confidence refresh is needed only when extraction added a new record.
+        "newDataAdded": bool(recovered),
+        "companySlugs": sorted(set(recovered_slugs)),
+    }
+    if args.result_file:
+        save(args.result_file, result)
     message = f"Annual report backfill: {recovered} recovered from {len(batch)} attempts; {summary['missingCompanyYears']} gaps remain for {args.start_year}-{target_end}."
     print(message)
     if os.environ.get("GITHUB_STEP_SUMMARY"):
