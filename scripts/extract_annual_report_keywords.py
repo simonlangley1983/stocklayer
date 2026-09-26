@@ -124,6 +124,22 @@ FULL_REPORT_OVERRIDES: dict[tuple[str, int], str] = {
     ): "https://www.bat.com/content/dam/batcom/global/main-nav/investors-and-reporting/reporting/combined-annual-and-sustainability-report/BAT_Annual_Report_2025.pdf",
     (
         "BTRW.L",
+        2021,
+    ): "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BDEV_2021.pdf",
+    (
+        "BTRW.L",
+        2022,
+    ): "https://www.barrattredrow.co.uk/~/media/Files/B/Barratt-Developments-V2/documents/reports-and-presentation/2022/reports/barratt-ar2022-single.pdf",
+    (
+        "BTRW.L",
+        2023,
+    ): "https://www.barrattredrow.co.uk/~/media/Files/B/Barratt-Developments-V2/documents/investor/2023-barratt-annual-report.pdf",
+    (
+        "BTRW.L",
+        2024,
+    ): "https://www.barrattredrow.co.uk/~/media/Files/B/Barratt-Developments-V2/documents/reports-and-presentation/2025/barratt-developments-plc-annual-report-and-accounts-2024-accessible.pdf",
+    (
+        "BTRW.L",
         2025,
     ): "https://www.barrattredrow.co.uk/~/media/Files/B/Barratt-Developments-V2/documents/annual-report-2025/barratt-redrow-plc-annual-report-and-accounts-2025.pdf",
     (
