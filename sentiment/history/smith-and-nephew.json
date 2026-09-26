@@ -3681,6 +3681,77 @@
       ],
       "flags": [],
       "changeFromPreviousScoredDay": 0.6
+    },
+    {
+      "date": "2026-09-25",
+      "dailyScore": 41.0,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 50.4,
+      "confidence": 37.4,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 3,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 1,
+      "dispersion": 0.5961,
+      "rejectedCandidateCounts": {
+        "missing_company_alias": 1
+      },
+      "topStories": [
+        {
+          "id": "4587d294d8316986",
+          "storyClusterId": "story-001",
+          "title": "Smith & Nephew stock faces a Q2 revenue miss",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNMUZya2NmWl9tckt4ZXhBbEJKVmNhUmhMZ0xpRGZONFIzOXlwaUVYRXhiYVhrS2VNRnpwSGlWR3NkNW1zanZranV1cHdlNDd2NE1RNVYtTFdJZjNzUTBzd3VuOFR5UzRqcG94ZmFmVnZPTFk0OHFpMktGMkc3WklIQ19kSWJlanFjUFpfamtMS3BaOHN2WVFNR25TX3dsSGxBb3BYSHZvdjU?oc=5",
+          "source": "ad-hoc-news.de",
+          "publishedAt": "2026-09-25T06:24:01Z",
+          "polarity": -0.9573,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "48cc4ca3321cd83a",
+          "storyClusterId": "story-002",
+          "title": "Smith & Nephew (LSE:SN) Rolls Out EVOS PELVIC This Week: Can It Lift Its Orthopaedic Trauma Game?",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxORVFReV96OXFXYk1INUVNOFRjaXZMMGY5Vm1MWFMyN0pWUmVaZ3E1aFpPLXlCOGlwT2pEeHp3VFFhZFZ1T3QzZ3FSMi1rUmJzWmxGQ0JBd2xBa2VsMzJ2UDhlMWV5c1NPQ2lHdWVkbl9SODgyRFE1cVFpcnNzZi12dEtVUkpwMHNGTlNsZThsOFVUalZ0aHhFU1NRdzBQcDNqeDh2MXVJVWlYSTluWEdLTkFjZEdPMEIzVUZlMEtFdlZzY0pKUjA3SWdBWDhRcjlaR2c?oc=5",
+          "source": "kalkinemedia.com",
+          "publishedAt": "2026-09-25T10:10:00Z",
+          "polarity": 0.235,
+          "sentiment": "Positive",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "4587d294d8316986",
+            "48cc4ca3321cd83a"
+          ]
+        },
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 37.4",
+          "evidenceArticleIds": [
+            "4587d294d8316986",
+            "48cc4ca3321cd83a"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -13.3
     }
   ]
 }

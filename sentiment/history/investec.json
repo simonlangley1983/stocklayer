@@ -1534,37 +1534,75 @@
     },
     {
       "date": "2026-09-25",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 47.2,
-      "confidence": 0.0,
-      "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "dailyScore": 39.5,
+      "dailyLabel": "Negative",
+      "rollingScore": 46.0,
+      "confidence": 52.9,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 3,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
-      "positiveStoryCount": 0,
+      "candidateCount": 9,
+      "eligibleArticleCount": 3,
+      "storyCount": 3,
+      "effectiveStoryCount": 3.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 1,
       "neutralStoryCount": 0,
-      "negativeStoryCount": 0,
-      "dispersion": 0.0,
+      "negativeStoryCount": 2,
+      "dispersion": 0.8326,
       "rejectedCandidateCounts": {
-        "missing_company_alias": 3
+        "missing_company_alias": 6
       },
-      "topStories": [],
-      "flags": [
+      "topStories": [
         {
-          "type": "no_coverage",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "id": "66f1c37aa94de3c1",
+          "storyClusterId": "story-003",
+          "title": "Investec (LSE:INVP) Slides as Yields Jump This Week: Is Its UK Bank the Weak Link?",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQSHZ1RTdYb0RrWUhuQ3pIblA4VnZPLWZzcXpMNlp3TVA4QTNQOFpMZXlLWFdMNEMySDRfZzdZTzhqNHdsV1BUNUlRZEN0Zl9ONDc0NXFfWGtCOFE5anNRR0xKRzdrbXp1X2xVWExnMUsza3FEUTI3ZkI4U05QeGF1VHpRZzhmT1EtdTRPekpSX0piaFhpalJWR1MxcGRuNnhmMEpSUDNVV1NJLVItbHNyQTQ1bmVpbERkcE1vSUVDVQ?oc=5",
+          "source": "kalkinemedia.com",
+          "publishedAt": "2026-09-25T12:17:00Z",
+          "polarity": -0.9392,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "5cdcab8ec368cbdb",
+          "storyClusterId": "story-001",
+          "title": "Investec stock slips 2.05 percent ahead of the open",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQU1NIUjlxbnBpeWpJTTRWRm1uTmZudDlMbzhKU051N1VsSnRiTUY4STJMeGs2bXNoc1lmWktyNVRhTy1DRVc2aUlyNzg0blFDTHdwQy1aTVVNNkVnclZLeWVUR1JpSWhFN1dLWHc1azM2TzE2SkEyeG8wTzZqaUVUUFRoY0V0cnhvX0ZoVTdaQk5OS0l1Y25NSklzT1U1Tk04SkFuM2JKTDdTRGlYdUE?oc=5",
+          "source": "ad-hoc-news.de",
+          "publishedAt": "2026-09-25T04:33:54Z",
+          "polarity": -0.9375,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "64e45ec991cdf5a6",
+          "storyClusterId": "story-002",
+          "title": "Investec stock gets higher earnings guidance ahead of results",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPM1dqNWJFZW9uVkNzZ0plQnVXcS1oVm80NVp6ZXVzNkZTaXNTQjdUWTJrMWQ5MklLRmpzN3V0ZC1BRzVjNnVkOFFhNTB3RlVKdFQ1bzBRZmVIcGVFYUhueEtIb1V4aHF2cm45eEdCR2JBckFmcmlybHRTa21xQ3huT2lqOEM5b1JaU3p5N3RxLXUwY2FIaFJIb2J3XzFFN1ByU2FQWFVCMjJxY0pfbFU5Wk83aFFYaTBUbGI0czVFTUxPZw?oc=5",
+          "source": "ad-hoc-news.de",
+          "publishedAt": "2026-09-25T11:48:58Z",
+          "polarity": 0.8278,
+          "sentiment": "Very positive",
+          "publisherCount": 1
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "flags": [
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "66f1c37aa94de3c1",
+            "5cdcab8ec368cbdb",
+            "64e45ec991cdf5a6"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 1.8
     }
   ]
 }

@@ -4945,6 +4945,91 @@
         }
       ],
       "changeFromPreviousScoredDay": -0.1
+    },
+    {
+      "date": "2026-09-25",
+      "dailyScore": 50.1,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 51.0,
+      "confidence": 36.4,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 61,
+      "eligibleArticleCount": 3,
+      "storyCount": 3,
+      "effectiveStoryCount": 3.0,
+      "sourceCount": 3,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 3,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0225,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 51,
+        "missing_company_alias": 7
+      },
+      "topStories": [
+        {
+          "id": "b901696eb084922a",
+          "storyClusterId": "story-001",
+          "title": "Precision Trading with Barclays Bank Plc Zc Sp Etn Redeem 23/01/2043 Usd 16.855272 - Ser B Midterm Future (VXZ) Risk Zones",
+          "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxNLWtLSzhySEx1MVZGSjJvMXhMc2dDMTF1ODd1aDMyVFIzT1FEaVB1VzhoeUdzMGY4UkV1S0R3LVNseVpySjZ1S3dPYkM2aDYtcTZzLUdudUFvRktRU2lKSFpZWHRIdnBHdW9Qb2I1R3ZrV2hTR201blk0MVgwSEFlTG0yQlhuWXFBbkRsa3FJWDV6ZVVjUEZlMVFDTXk3LTJ4VWxzN3RmYW5WX1Vwemx1a3I2SkdZVk5jZ1pUTjFYVFRMRVFZYjY0UWdKcUhFUzN3WTA4RXNDSEdfQ2NKNnBEcm9QelIwZWl6dERmSmF0QWtnY0Z4ZmlGajYtbGZXaUFmY0V3VHdTTHRUbWdKUk8xS0ZkLXV4NE9XNUYxNllFU29KazF5?oc=5",
+          "source": "news.stocktradersdaily.com",
+          "publishedAt": "2026-09-25T03:02:02Z",
+          "polarity": 0.0359,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "bde8dc284d4ad9e8",
+          "storyClusterId": "story-003",
+          "title": "REG - Entain PLC Barclays PLC - TR-1: Notification of Major Holdings",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNazlkWTVhVHJJeks0aWJEOGFYM0ZaX1RpSjNmZTQ2T2RXaXVhR1RzbDZwQi1OSlNGTEZ3Qm1zX2xUNExkSjJaODNqdUhQay1OTlpfR2V5YlJmNnlSd3kxVVQwYmwxM2pSeVgtUzhYd2lhY0ZfdmYwX3dSazIySEZIMXJJTmZCd29XRW9yTlg4cm5rNWFGeEdWY2RVMHdQc3dVLXV1QkhzMmhHTWVoeHNpRzJQcFZmbEpzUEhBRHVyOEtvNDBlZllqVDcwQ1NSaHdMa0ZIeTd3?oc=5",
+          "source": "tradingview.com",
+          "publishedAt": "2026-09-25T14:22:21Z",
+          "polarity": -0.0167,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "83148460235ed7cf",
+          "storyClusterId": "story-002",
+          "title": "Barclays Regulatory News. Live BARC RNS. Regulatory News Articles for Barclays Plc Ord 25p",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNkx3bWdVN0xwMkVkaFhiUFR5MlFWdFB4cmQ0TkRwUkxiX1JXQlh1ZV9ZSzd6ZHRwTUFDZDZWZXVLQmRhNUtCOThTSnJ6amFBMkVWaHp2djc5cW9xcktxWjBNMzVLWFFsQy0yUlV0TnlBbEJlWTROanhIby1RYk14LS1mQ1BXeHRuOWlYSjVUMkJRU2dYTWtLT0RLZW8?oc=5",
+          "source": "lse.co.uk",
+          "publishedAt": "2026-09-25T13:27:33Z",
+          "polarity": -0.0045,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 36.4",
+          "evidenceArticleIds": [
+            "b901696eb084922a",
+            "bde8dc284d4ad9e8",
+            "83148460235ed7cf"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "b901696eb084922a",
+            "bde8dc284d4ad9e8",
+            "83148460235ed7cf"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -1.8
     }
   ]
 }
