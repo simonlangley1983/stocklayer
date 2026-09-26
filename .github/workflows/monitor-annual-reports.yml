@@ -55,7 +55,7 @@ jobs:
         run: python scripts/backfill_annual_reports.py --batch-size 24 --workers 8 --report-timeout 90 --latest-only
 
       - name: Monitor annual report source pages
-        timeout-minutes: 20
+        timeout-minutes: 5
         continue-on-error: true
         if: ${{ !inputs.extraction_only }}
         run: >-
