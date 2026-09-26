@@ -108,19 +108,20 @@ jobs:
           git config user.name "stocklayer-annual-report-bot"
           git config user.email "stocklayer-annual-report-bot@users.noreply.github.com"
 
-          git add annual-reports/*.json annual-reports/coverage-summary.md history/growth-confidence/*.json
+          git add annual-reports/*.json annual-reports/coverage-summary.md
           git commit -m "Update annual report monitoring" || echo "No annual report changes to commit"
 
           # These feeds were built before any concurrent data update was incorporated.
           # Discard only the generated copies; they are rebuilt after the rebase below.
-          git restore company-reports
+          git restore company-reports history/growth-confidence
 
           # Daily sentiment may update main during the slower PDF extraction.
           # Rebase onto that data, rebuild the combined feeds, and retry a raced push.
           for attempt in 1 2 3; do
             git pull --rebase origin main
             python automation/build_company_reports.py
-            git add company-reports/*.json
+            python scripts/generate_growth_confidence_history.py --companies uk-companies.json
+            git add company-reports/*.json history/growth-confidence/*.json
             git commit -m "Rebuild customer company reports" || echo "No company report changes to commit"
             if git push origin HEAD:main; then
               exit 0
