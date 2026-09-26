@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T07:49:41.592849+00:00",
+  "generatedAt": "2026-09-26T08:03:38.852163+00:00",
   "companyCount": 100,
   "verifiedCurrentCount": 16,
   "companies": {
@@ -77,6 +77,12 @@
       "status": "verified_current",
       "documents": [
         {
+          "year": 2020,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/r/NYSE_RDS_2020.pdf",
+          "sha256": "f53d8bd7be770841bf64718d90eb31e0f28b63d86df8be4bfb7362974da8721c",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2024,
           "url": "https://www.shell.com/investors/results-and-reporting/annual-report/_jcr_content/root/main/section/promo/links/item0.stream/1752580693041/6c20b8111738b9a590ba145f0d1c4fa0e530dae0/shell-annual-report-2024.pdf",
           "sha256": "0b88a901a12bb5e61cc37ac2f2ff60508f086fd7de753aa716e8999e348e7f14",
@@ -92,21 +98,12 @@
       "pendingCandidates": [],
       "retryDiagnostics": {
         "shell:2020": {
-          "candidateHash": "347d30e00c184f5826904d6dfc6e8f14d502ac6e451baf45a0ea65a222717a60",
-          "attemptCount": 2,
-          "lastAttempt": "2026-09-26T07:23:19.707598+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-26T19:23:19.707598+00:00",
-          "diagnostics": [
-            {
-              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/s/NYSE_SHLX_2020.pdf",
-              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-            },
-            {
-              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/r/NYSE_RDS_2020.pdf",
-              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-            }
-          ]
+          "candidateHash": "9b3417c1e75e284ef448acede551d99e7717a11091baf6c0bf41dcab9a7ae324",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-26T08:03:38.740027+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-26T14:03:38.740027+00:00",
+          "diagnostics": []
         },
         "shell:2021": {
           "candidateHash": "0d295da24fd2c6579736d4c728be93a567a8817bb5906634f92a4daf50a694df",
