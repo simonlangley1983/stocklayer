@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T08:03:38.740027+00:00",
+  "generated_at": "2026-09-26T08:10:24.035107+00:00",
   "source_index": "annual-reports/reports-index.json",
   "source_index_generated_at": "2026-09-11T21:15:50.158616+00:00",
   "methodology": {
@@ -19,8 +19,8 @@
       "data_center_mentions": "\\bdata[\\s-]+cent(?:er|re)s?\\b"
     }
   },
-  "group_count": 561,
-  "extracted_count": 561,
+  "group_count": 562,
+  "extracted_count": 562,
   "failed_count": 0,
   "reports": [
     {
@@ -82,6 +82,37 @@
       "positive_tone_mentions": 444,
       "negative_tone_mentions": 915,
       "tone_positivity_score": 32.7,
+      "tone_method": "disclosed financial-language lexical balance over extracted full-report text",
+      "attempts": []
+    },
+    {
+      "company_name": "3i Group",
+      "ticker": "III.L",
+      "company_slug": "3i",
+      "report_year": 2024,
+      "index_group_year": 2024,
+      "report_title": "AnnualReports.com archive PDF",
+      "report_url": "https://www.annualreports.com/HostedData/AnnualReportArchive/3/LSE_III_2024.pdf",
+      "report_source_url": "https://www.annualreports.com/Company/3i-group-plc",
+      "report_data_status": "extracted",
+      "document_format": "pdf",
+      "page_count": 226,
+      "source_sha256": "1288c79e43f72fd9f4914e8622d0865525a2ff4c7f688c71a6b17e28336601cd",
+      "extracted_word_count": 123632,
+      "keyword_count_method": "case-insensitive keyword-family regex over extracted full-report text",
+      "ai_mentions": 15,
+      "cloud_mentions": 6,
+      "cybersecurity_mentions": 22,
+      "regulation_mentions": 100,
+      "competition_mentions": 13,
+      "supply_chain_mentions": 23,
+      "china_mentions": 1,
+      "margin_pressure_mentions": 0,
+      "restructuring_mentions": 17,
+      "data_center_mentions": 1,
+      "positive_tone_mentions": 673,
+      "negative_tone_mentions": 1191,
+      "tone_positivity_score": 36.1,
       "tone_method": "disclosed financial-language lexical balance over extracted full-report text",
       "attempts": []
     },
