@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T17:32:26.359975+00:00",
+  "generatedAt": "2026-09-26T17:35:07.461027+00:00",
   "companyCount": 100,
   "verifiedCurrentCount": 16,
   "companies": {
@@ -5557,6 +5557,12 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2024,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/j/LSE_GB0767628_2024.pdf",
+          "sha256": "bf96ad75a0df4b399c92e21f2da5ce90d9c9f73684c881104aed6c531e7f640f",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2025,
           "url": "https://corporate.sainsburys.co.uk/media/1kydmu4w/sainsbury-annual-report-and-financial-statements-2025-accessible.pdf",
           "sha256": "8d27282385aa16543dae5f8ecd9fdecb1ae181b7548879f20450555e6899321d",
@@ -5570,7 +5576,16 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "j-sainsbury:2024": {
+          "candidateHash": "d9b7b74f2b9668cbcd4abb82971a4586179a170351386e3260e008f71beeb4cf",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-26T17:35:07.366960+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-26T23:35:07.366960+00:00",
+          "diagnostics": []
+        }
+      }
     },
     "schroders": {
       "companyName": "Schroders PLC",
