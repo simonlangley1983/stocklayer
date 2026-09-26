@@ -2,8 +2,9 @@ name: Monitor annual reports
 
 on:
   schedule:
-    - cron: "20 0,6,12,18 * * *"
-    - cron: "40 2 * * 0"
+    # Routine collection checks verified sources once each morning. Historical
+    # recovery is deliberately manual: it is network-heavy and low-yield.
+    - cron: "20 6 * * *"
   workflow_dispatch:
     inputs:
       historical:
@@ -17,7 +18,7 @@ on:
 
 concurrency:
   group: annual-report-collection
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 permissions:
   contents: write
@@ -25,7 +26,7 @@ permissions:
 jobs:
   monitor-annual-reports:
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    timeout-minutes: 30
 
     steps:
       - name: Check out repository
@@ -51,7 +52,7 @@ jobs:
         run: python scripts/build_report_register.py
 
       - name: Extract already indexed reports before discovery
-        run: python scripts/backfill_annual_reports.py --batch-size 48 --workers 8 --report-timeout 120 ${{ (inputs.historical || github.event.schedule == '40 2 * * 0') && '--start-year 2020' || '--latest-only' }}
+        run: python scripts/backfill_annual_reports.py --batch-size 24 --workers 8 --report-timeout 90 --latest-only
 
       - name: Monitor annual report source pages
         timeout-minutes: 20
@@ -59,29 +60,32 @@ jobs:
         if: ${{ !inputs.extraction_only }}
         run: >-
           python scripts/monitor_annual_reports.py
-          ${{ (inputs.historical || github.event.schedule == '40 2 * * 0') && '--timeout 8' || '--registered-sources-only' }}
-          --max-sources-per-company 3
-          --max-child-pages-per-company 6
-          --timeout 8
-          --workers 12
+          --registered-sources-only
+          --max-sources-per-company 1
+          --max-child-pages-per-company 1
+          --timeout 5
+          --workers 20
 
       - name: Discover FCA-filed annual reports
         if: ${{ !inputs.extraction_only }}
         run: python scripts/discover_fca_reports.py --start-year 2020
 
+      - name: Extract verified manually supplied reports
+        run: python scripts/backfill_annual_reports.py --ticker BTRW.L --batch-size 8 --workers 4 --report-timeout 90 --start-year 2021
+
       - name: Discover historical archive reports
-        if: ${{ !inputs.extraction_only }}
-        run: python scripts/discover_annualreports_archive.py --start-year 2020
+        if: ${{ inputs.historical && !inputs.extraction_only }}
+        run: python scripts/discover_annualreports_archive.py --start-year 2020 --timeout 8 --max-failures 8
 
       - name: Extract newly discovered archive reports
-        run: python scripts/backfill_annual_reports.py --batch-size 60 --workers 8 --report-timeout 120 --start-year 2020
+        run: python scripts/backfill_annual_reports.py --batch-size 24 --workers 8 --report-timeout 90 --latest-only
 
       - name: Backfill a resumable batch of missing annual reports
-        run: python scripts/backfill_annual_reports.py --batch-size 60 --workers 8 --report-timeout 120 --start-year 2020 --fca-only
+        run: python scripts/backfill_annual_reports.py --batch-size 24 --workers 8 --report-timeout 90 --latest-only --fca-only
 
       - name: Recover historical reports after latest-year priority work
-        if: ${{ !inputs.historical && github.event.schedule != '40 2 * * 0' }}
-        run: python scripts/backfill_annual_reports.py --batch-size 60 --workers 8 --report-timeout 120 --start-year 2020
+        if: ${{ inputs.historical }}
+        run: python scripts/backfill_annual_reports.py --batch-size 24 --workers 8 --report-timeout 90 --start-year 2020
 
       - name: Build customer company reports
         run: |
