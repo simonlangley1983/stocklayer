@@ -166,6 +166,7 @@ FULL_REPORT_OVERRIDES: dict[tuple[str, int], str] = {
         "VOD.L",
         2025,
     ): "https://www.vodafone.com/~/media/Files/V/vodafone/corp/documents/performance/financial-results/2025/form-20-f-2025.pdf",
+    ("JD.L", 2025): "https://www.jdplc.com/wp-content/uploads/2026/07/24467_JD_Sports_AR25_Web.pdf",
     ("SHEL.L", 2025): "https://www.shell.com/investors/results-and-reporting/annual-report-archive/_jcr_content/root/main/section_812377294/tabs/tab_copy_copy/text.multi.stream/1774544186011/5727c329a58b5eb7a54442c0a03f562a5aef1159/shell-annual-report-2025-interactive.pdf",
     ("ULVR.L", 2025): "https://www.unilever.com/files/unilever-annual-report-and-accounts-2025.pdf",
     ("ADM.L", 2025): "https://www.admiralgroup.co.uk/static-files/b4032ccb-738f-454d-92a1-ec2e95677423",
