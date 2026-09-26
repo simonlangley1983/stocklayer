@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-26T17:45:03.310303Z",
+  "generatedAt": "2026-09-26T17:52:19.116823Z",
   "company": {
     "companyName": "British Land Co PLC",
     "ticker": "BLND.L",
@@ -801,8 +801,81 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 3,
+    "reportCount": 4,
     "reports": [
+      {
+        "year": 2023,
+        "title": "British Land Annual Report and Accounts 2023",
+        "url": "https://www.britishland.com/media/stlf1oim/british-land-2023-annual-report.pdf",
+        "sourceUrl": "https://www.britishland.com/investors/annual-reports-and-accounts/",
+        "wordCount": 151469,
+        "pageCount": 260,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 4,
+            "per10kWords": 0.264
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 11,
+            "per10kWords": 0.726
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 54,
+            "per10kWords": 3.565
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 35,
+            "per10kWords": 2.311
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 21,
+            "per10kWords": 1.386
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 2,
+            "per10kWords": 0.132
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 1,
+            "per10kWords": 0.066
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 10,
+            "per10kWords": 0.66
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 34.6,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2024,
         "title": "British Land Annual Report and Accounts 2024",
@@ -1072,7 +1145,7 @@
   "overallConfidence": {
     "score": 50.3,
     "label": "Mixed",
-    "evidenceCoverage": 62,
+    "evidenceCoverage": 70,
     "components": [
       {
         "key": "press",
@@ -1095,13 +1168,22 @@
         "label": "Emerging themes",
         "score": 59.8,
         "weight": 0.25,
-        "reliability": 0.667,
+        "reliability": 1.0,
         "detail": "Change in growth-theme density compared with pressure and risk themes."
       }
     ],
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2023-12-31",
+      "type": "annual_report",
+      "title": "British Land Annual Report and Accounts 2023",
+      "url": "https://www.britishland.com/media/stlf1oim/british-land-2023-annual-report.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2024-12-31",
       "type": "annual_report",
