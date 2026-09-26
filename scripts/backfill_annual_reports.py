@@ -114,6 +114,7 @@ def main():
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--latest-only", action="store_true")
     parser.add_argument("--fca-only", action="store_true", help="Process only FCA NSM-discovered candidates")
+    parser.add_argument("--ticker", action="append", default=[], help="Process only the specified ticker(s)")
     args = parser.parse_args()
     if min(args.batch_size, args.workers, args.report_timeout) < 1:
         parser.error("batch size, workers and timeout must be positive")
@@ -145,6 +146,9 @@ def main():
             if group[1] > latest.get(slug, 0) and (slug not in newest or group[1] > newest[slug][1]):
                 newest[slug] = group
         pending = list(newest.values())
+    if args.ticker:
+        wanted_tickers = set(args.ticker)
+        pending = [group for group in pending if group[0].get("ticker") in wanted_tickers]
     batch = pending[:args.batch_size]
     print(f"Eligible pending groups: {len(pending)}; this batch: {len(batch)}", flush=True)
     if args.dry_run:
