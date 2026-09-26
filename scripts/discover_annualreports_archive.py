@@ -31,17 +31,17 @@ SEARCH_ALIASES = {
 }
 
 
-def get(url: str, timeout: int) -> str:
-    """Fetch a page with a small, polite retry for transient archive limits."""
+def get(url: str, timeout: int, retries: int) -> str:
+    """Fetch a page with bounded retries for transient archive limits."""
     error: Exception | None = None
-    for attempt in range(3):
+    for attempt in range(retries + 1):
         try:
             request = urllib.request.Request(url, headers=HEADERS)
             with urllib.request.urlopen(request, timeout=timeout) as response:
                 return response.read(3 * 1024 * 1024).decode("utf-8", errors="replace")
         except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as caught:
             error = caught
-            if attempt == 2:
+            if attempt == retries:
                 break
             time.sleep(1.5 * (attempt + 1))
     raise RuntimeError(str(error) if error else "archive request failed")
@@ -90,6 +90,9 @@ def main() -> int:
     parser.add_argument("--end-year", type=int, default=2025)
     parser.add_argument("--limit", type=int, default=0)
     parser.add_argument("--timeout", type=int, default=25)
+    parser.add_argument("--retries", type=int, default=0)
+    parser.add_argument("--max-failures", type=int, default=8,
+                        help="Stop after this many failed companies; prevents a blocked archive consuming a run")
     parser.add_argument("--delay", type=float, default=0.4, help="Seconds between archive requests")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
@@ -101,11 +104,11 @@ def main() -> int:
         companies = companies[:args.limit]
     index_path = ROOT / "annual-reports" / "reports-index.json"
     index = json.loads(index_path.read_text(encoding="utf-8"))
-    added = checked = matched = 0
+    added = checked = matched = failures = 0
     for company in companies:
         search_name = SEARCH_ALIASES.get(company["slug"], company["companyName"])
         try:
-            search = get(ARCHIVE + "/Companies?search=" + urllib.parse.quote(search_name), args.timeout)
+            search = get(ARCHIVE + "/Companies?search=" + urllib.parse.quote(search_name), args.timeout, args.retries)
             time.sleep(args.delay)
             href = choose_page(search_name, search)
             if not href:
@@ -113,11 +116,15 @@ def main() -> int:
                 continue
             matched += 1
             page = ARCHIVE + href
-            html = get(page, args.timeout)
+            html = get(page, args.timeout, args.retries)
             time.sleep(args.delay)
             checked += 1
         except Exception as error:
+            failures += 1
             print(f"{company['slug']}: archive lookup failed ({type(error).__name__}: {error})")
+            if failures >= args.max_failures:
+                print(f"Stopping archive discovery after {failures} failures; retry in a future manual run")
+                break
             continue
         reports = index.setdefault("companies", {}).setdefault(company["slug"], {"reports": []}).setdefault("reports", [])
         known = {report.get("url") for report in reports}
@@ -140,7 +147,7 @@ def main() -> int:
             added += 1
     if not args.dry_run:
         index_path.write_text(json.dumps(index, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"Matched {matched} archive companies; checked {checked} pages; added {added} candidates")
+    print(f"Matched {matched} archive companies; checked {checked} pages; added {added} candidates; failures {failures}")
     return 0
 
 
