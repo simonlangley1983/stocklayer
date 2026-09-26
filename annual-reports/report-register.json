@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T17:15:23.926583+00:00",
+  "generatedAt": "2026-09-26T17:22:50.780205+00:00",
   "companyCount": 100,
   "verifiedCurrentCount": 16,
   "companies": {
@@ -479,10 +479,10 @@
         },
         "british-american-tobacco:2022": {
           "candidateHash": "dbb31980c4e91ce3d5565eccbc822b3ab19703694d95decb74150f16bc432aef",
-          "attemptCount": 1,
-          "lastAttempt": "2026-09-26T07:24:30.960345+00:00",
+          "attemptCount": 2,
+          "lastAttempt": "2026-09-26T17:22:50.682717+00:00",
           "status": "extraction_failed",
-          "retryAfter": "2026-09-26T13:24:30.960345+00:00",
+          "retryAfter": "2026-09-27T05:22:50.682717+00:00",
           "diagnostics": [
             {
               "error": "ValueError: Requested 2022, document identifies 2021; needs source review"
@@ -3464,6 +3464,12 @@
           "extractionStatus": "extracted"
         },
         {
+          "year": 2024,
+          "url": "https://www.hiscoxgroup.com/sites/group/files/2025-03/Hiscox_report_and_accounts_2024_0.pdf",
+          "sha256": "9359d317718077b2e153948c68793bb40d07de195ef687bce7006014078bce38",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2025,
           "url": "https://www.hiscoxgroup.com/sites/group/files/2026-03/Hiscox_report_and_accounts_2025.pdf",
           "sha256": "dedb8a5fb12908d614413258444e81d598fc2a86e68bc2eca1cd39629dbb06f6",
@@ -3491,6 +3497,14 @@
           "lastAttempt": "2026-09-24T17:42:48.137849+00:00",
           "status": "extracted",
           "retryAfter": "2026-09-24T23:42:48.137849+00:00",
+          "diagnostics": []
+        },
+        "hiscox:2024": {
+          "candidateHash": "49e3a859b59bfe144fc176e3a34b3b210a60e1b44b9bf064967cb45b0af00f5a",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-26T17:22:33.694735+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-26T23:22:33.694735+00:00",
           "diagnostics": []
         }
       }
