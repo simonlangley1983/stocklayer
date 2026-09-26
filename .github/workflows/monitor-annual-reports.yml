@@ -66,10 +66,6 @@ jobs:
           --timeout 5
           --workers 20
 
-      - name: Discover FCA-filed annual reports
-        if: ${{ !inputs.extraction_only }}
-        run: python scripts/discover_fca_reports.py --start-year 2020
-
       - name: Extract verified manually supplied reports
         run: python scripts/backfill_annual_reports.py --ticker BTRW.L --batch-size 8 --workers 4 --report-timeout 90 --start-year 2021
 
@@ -79,9 +75,6 @@ jobs:
 
       - name: Extract newly discovered archive reports
         run: python scripts/backfill_annual_reports.py --batch-size 24 --workers 8 --report-timeout 90 --latest-only
-
-      - name: Backfill a resumable batch of missing annual reports
-        run: python scripts/backfill_annual_reports.py --batch-size 24 --workers 8 --report-timeout 90 --latest-only --fca-only
 
       - name: Recover historical reports after latest-year priority work
         if: ${{ inputs.historical }}
