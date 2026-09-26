@@ -4948,27 +4948,38 @@
     },
     {
       "date": "2026-09-25",
-      "dailyScore": 50.1,
+      "dailyScore": 50.7,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 51.0,
-      "confidence": 36.4,
-      "confidenceBand": "low",
+      "rollingScore": 51.1,
+      "confidence": 42.5,
+      "confidenceBand": "medium",
       "coverageStatus": "ok",
       "collectionCompleteness": 0.75,
-      "candidateCount": 57,
-      "eligibleArticleCount": 3,
-      "storyCount": 3,
-      "effectiveStoryCount": 3.0,
-      "sourceCount": 3,
+      "candidateCount": 56,
+      "eligibleArticleCount": 4,
+      "storyCount": 4,
+      "effectiveStoryCount": 4.0,
+      "sourceCount": 4,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 3,
+      "neutralStoryCount": 4,
       "negativeStoryCount": 0,
-      "dispersion": 0.0225,
+      "dispersion": 0.0337,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 46,
+        "ambiguous_company_without_alias": 44,
         "missing_company_alias": 8
       },
       "topStories": [
+        {
+          "id": "8cf5c67c04ee9fb5",
+          "storyClusterId": "story-004",
+          "title": "Barclays Bank PLC Capped Dual Directional Buffer Note ACERPXX (ACERPXX) Risk",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE53bmJMOWUwLUg4Ym5EU3UxVTROTHZqU1ZxV0trZ3hVSHBrYUwwbjNEbkZwcmVLMXZaVkNzMEwtNnM3ejFBcnducFc0alR2b2dnVTc4M1pUbVJMZlVY?oc=5",
+          "source": "ca.finance.yahoo.com",
+          "publishedAt": "2026-09-25T21:44:40Z",
+          "polarity": 0.0683,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
         {
           "id": "b901696eb084922a",
           "storyClusterId": "story-001",
@@ -5005,31 +5016,20 @@
       ],
       "flags": [
         {
-          "type": "low_confidence",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Confidence is 36.4",
-          "evidenceArticleIds": [
-            "b901696eb084922a",
-            "bde8dc284d4ad9e8",
-            "206c26863976846b"
-          ]
-        },
-        {
           "type": "collection_degraded",
           "direction": "neutral",
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
+            "8cf5c67c04ee9fb5",
             "b901696eb084922a",
             "bde8dc284d4ad9e8",
             "206c26863976846b"
           ]
         }
       ],
-      "changeFromPreviousScoredDay": -1.8
+      "changeFromPreviousScoredDay": -1.2
     }
   ]
 }
