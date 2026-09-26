@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T17:35:07.461027+00:00",
+  "generatedAt": "2026-09-26T17:42:31.689418+00:00",
   "companyCount": 100,
   "verifiedCurrentCount": 16,
   "companies": {
@@ -3464,6 +3464,18 @@
           "extractionStatus": "extracted"
         },
         {
+          "year": 2021,
+          "url": "https://www.hiscoxgroup.com/sites/group/files/2022-03/Hiscox_report_and_accounts_2021_0.pdf",
+          "sha256": "f4aee0f0244a591e76e56c979ddc39ffe4d8ef54ed303282d859bf50efd0bd96",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2022,
+          "url": "https://www.hiscoxgroup.com/sites/group/files/2023-03/Hiscox_report_and_accounts_2022_2.pdf",
+          "sha256": "545f42435953ebe1094c5d605ae5ebef1fac67bde2f7c958ea52220c255d0acf",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2023,
           "url": "https://www.hiscoxgroup.com/sites/group/files/2024-03/Hiscox_report_and_accounts_2023_1.pdf",
           "sha256": "e870342cc677b7637b72e438a21a9a1d4e6c92cb898e496595a7e503c467f7de",
@@ -3485,17 +3497,12 @@
       "pendingCandidates": [],
       "retryDiagnostics": {
         "hiscox:2021": {
-          "candidateHash": "a633191d4b01f6afd67ca2cc2dd80b93c59d7e6e375e912fdab3d57d5dc51620",
-          "attemptCount": 3,
-          "lastAttempt": "2026-09-25T11:51:20.533135+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-26T11:51:20.533135+00:00",
-          "diagnostics": [
-            {
-              "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000021436/NI-000021436.pdf",
-              "error": "ValueError: document is too short to be a full annual report (3 pages, 1353 words)"
-            }
-          ]
+          "candidateHash": "6f1945b753383e8604fbb85e83f730a00800702d74d63c02e168888b82e00d1d",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-26T17:42:27.949728+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-26T23:42:27.949728+00:00",
+          "diagnostics": []
         },
         "hiscox:2020": {
           "candidateHash": "1df306857ae50bb1d6d6ceb5a14f2ad80d369021d5429913ec20be23061c834a",
@@ -3519,6 +3526,14 @@
           "lastAttempt": "2026-09-26T17:32:24.377876+00:00",
           "status": "extracted",
           "retryAfter": "2026-09-26T23:32:24.377876+00:00",
+          "diagnostics": []
+        },
+        "hiscox:2022": {
+          "candidateHash": "4f93d41ab9d73ae0f75036abd4aab936d11853820e843359e4bf36f597da9171",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-26T17:42:28.190672+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-26T23:42:28.190672+00:00",
           "diagnostics": []
         }
       }
@@ -5557,6 +5572,18 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2020,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/j/LSE_GB0767628_2020.pdf",
+          "sha256": "0146f790cfe35dcfefa1b9fd0c204bdd7613c2ccdcfbc14bd7947ec7498ac2b8",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2021,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/j/LSE_GB0767628_2021.pdf",
+          "sha256": "1f4d514817acb2d9f88bba3b84ce07c96dd467367bfcf05c5ef1d10fb10f71f5",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2024,
           "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/j/LSE_GB0767628_2024.pdf",
           "sha256": "bf96ad75a0df4b399c92e21f2da5ce90d9c9f73684c881104aed6c531e7f640f",
@@ -5583,6 +5610,48 @@
           "lastAttempt": "2026-09-26T17:35:07.366960+00:00",
           "status": "extracted",
           "retryAfter": "2026-09-26T23:35:07.366960+00:00",
+          "diagnostics": []
+        },
+        "j-sainsbury:2023": {
+          "candidateHash": "27709337a3002387bf46cb720da9264f20dfba7781f9d8ae4aeb426ab5b42082",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-26T17:42:03.886324+00:00",
+          "status": "extraction_failed",
+          "retryAfter": "2026-09-26T23:42:03.886324+00:00",
+          "diagnostics": [
+            {
+              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/j/LSE_GB0767628_2023.pdf",
+              "error": "HTTPError: HTTP Error 503: "
+            }
+          ]
+        },
+        "j-sainsbury:2022": {
+          "candidateHash": "a8acdd3d679ad39a4349e427af80228237e72f4f44951bc13e758ffc2dbfd63b",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-26T17:42:03.908018+00:00",
+          "status": "extraction_failed",
+          "retryAfter": "2026-09-26T23:42:03.908018+00:00",
+          "diagnostics": [
+            {
+              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/j/LSE_GB0767628_2022.pdf",
+              "error": "HTTPError: HTTP Error 503: "
+            }
+          ]
+        },
+        "j-sainsbury:2020": {
+          "candidateHash": "44b7a61faa70824f2fe027b6f76dabadb54bfc927f4c0161ec9d9b6767d912e4",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-26T17:42:29.970010+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-26T23:42:29.970010+00:00",
+          "diagnostics": []
+        },
+        "j-sainsbury:2021": {
+          "candidateHash": "b3e05d5504e8d9d061189e7a2aaf30f7d532be16280a5826e2dbce9d7e391958",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-26T17:42:31.569126+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-26T23:42:31.569126+00:00",
           "diagnostics": []
         }
       }
