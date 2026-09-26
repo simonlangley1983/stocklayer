@@ -11,6 +11,7 @@ concurrency:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   recover-one-report:
@@ -49,3 +50,11 @@ jobs:
           git commit -m "Recover one annual report" || exit 0
           git pull --rebase origin main
           git push origin HEAD:main
+
+      - name: Stop when recovery is no longer making progress
+        shell: bash
+        run: |
+          if [ "$(jq -r '.consecutiveNoProgress' annual-reports/last-recovery-result.json)" -ge 10 ]; then
+            echo "Ten runs completed without a new report; disabling this schedule."
+            gh api --method PUT repos/${{ github.repository }}/actions/workflows/recover-one-annual-report.yml/disable
+          fi
