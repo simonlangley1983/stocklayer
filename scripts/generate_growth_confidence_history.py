@@ -383,6 +383,8 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--companies", type=Path, default=DEFAULT_COMPANIES_FILE)
     parser.add_argument("--date", default=date.today().isoformat())
+    parser.add_argument("--slug", action="append", default=[],
+                        help="Recalculate only these company slugs")
     args = parser.parse_args()
 
     snapshot_date = date.fromisoformat(args.date)
@@ -393,6 +395,11 @@ def main() -> int:
     companies = load_json(source_file, [])
     if not isinstance(companies, list) or not companies:
         raise SystemExit(f"No companies found in {source_file}")
+    if args.slug:
+        requested = set(args.slug)
+        companies = [company for company in companies if company.get("slug") in requested]
+        if not companies:
+            raise SystemExit("No requested companies found")
 
     global REPORTS_BY_SLUG, SENTIMENT_BY_SLUG
     report_history = load_json(REPORT_HISTORY_FILE, {"reports": []})
@@ -406,7 +413,15 @@ def main() -> int:
     daily_file = HISTORY_DIR / f"{snapshot_date.isoformat()}.json"
     history = build_history(snapshot)
 
-    write_json(daily_file, snapshot)
+    # A targeted refresh must not erase today's observations for other companies.
+    daily_snapshot = snapshot
+    if args.slug and daily_file.exists():
+        current = load_json(daily_file, {})
+        prior = current.get("companies", []) if isinstance(current, dict) else []
+        retained = [item for item in prior if item.get("slug") not in set(args.slug)]
+        daily_snapshot = {**snapshot, "companies": retained + snapshot["companies"],
+                          "companyCount": len(retained) + len(snapshot["companies"])}
+    write_json(daily_file, daily_snapshot)
     write_json(HISTORY_FILE, history)
     print(f"Snapshotted {len(snapshot['companies'])} companies to {daily_file.relative_to(ROOT)}")
     print(f"Updated rolling history at {HISTORY_FILE.relative_to(ROOT)}")
