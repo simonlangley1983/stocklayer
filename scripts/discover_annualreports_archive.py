@@ -89,6 +89,8 @@ def main() -> int:
     parser.add_argument("--start-year", type=int, default=2020)
     parser.add_argument("--end-year", type=int, default=2025)
     parser.add_argument("--limit", type=int, default=0)
+    parser.add_argument("--ticker", action="append", default=[],
+                        help="Search only the specified ticker(s)")
     parser.add_argument("--timeout", type=int, default=25)
     parser.add_argument("--retries", type=int, default=0)
     parser.add_argument("--max-failures", type=int, default=8,
@@ -100,8 +102,13 @@ def main() -> int:
     if not companies_path.exists():
         companies_path = ROOT / "ftse100.json"
     companies = json.loads(companies_path.read_text(encoding="utf-8"))
+    if args.ticker:
+        wanted_tickers = set(args.ticker)
+        companies = [company for company in companies if company.get("ticker") in wanted_tickers]
     if args.limit:
         companies = companies[:args.limit]
+    if not companies:
+        parser.error("No companies matched the requested ticker(s)")
     index_path = ROOT / "annual-reports" / "reports-index.json"
     index = json.loads(index_path.read_text(encoding="utf-8"))
     added = checked = matched = failures = 0
