@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-26T21:43:19.761283Z",
+  "generatedAt": "2026-09-26T22:26:51.690509Z",
   "company": {
     "companyName": "JD Sports Fashion PLC",
     "ticker": "JD.L",
@@ -823,7 +823,7 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 3,
+    "reportCount": 4,
     "reports": [
       {
         "year": 2020,
@@ -972,6 +972,79 @@
         "positivityMethod": "lexical annual-report tone"
       },
       {
+        "year": 2025,
+        "title": "Official full annual report 2025",
+        "url": "https://www.jdplc.com/wp-content/uploads/2026/07/24467_JD_Sports_AR25_Web.pdf",
+        "sourceUrl": null,
+        "wordCount": 190266,
+        "pageCount": 256,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 9,
+            "per10kWords": 0.473
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 7,
+            "per10kWords": 0.368
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 18,
+            "per10kWords": 0.946
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 90,
+            "per10kWords": 4.73
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 53,
+            "per10kWords": 2.786
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 127,
+            "per10kWords": 6.675
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 6,
+            "per10kWords": 0.315
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 18,
+            "per10kWords": 0.946
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 2,
+            "per10kWords": 0.105
+          }
+        ],
+        "positivityScore": 45.1,
+        "positivityMethod": "lexical annual-report tone"
+      },
+      {
         "year": 2026,
         "title": "2026-Annual-Report-and-Accounts.pdf",
         "url": "https://www.jdplc.com/wp-content/uploads/2026/07/2026-Annual-Report-and-Accounts.pdf",
@@ -1051,32 +1124,32 @@
         "label": "Restructuring",
         "mentions": 41,
         "per10kWords": 2.3,
-        "previousPer10kWords": 0.985,
-        "changePer10kWords": 1.315
+        "previousPer10kWords": 0.946,
+        "changePer10kWords": 1.354
+      },
+      {
+        "key": "regulation",
+        "label": "Regulation",
+        "mentions": 104,
+        "per10kWords": 5.835,
+        "previousPer10kWords": 4.73,
+        "changePer10kWords": 1.105
       },
       {
         "key": "ai",
         "label": "AI",
         "mentions": 21,
         "per10kWords": 1.178,
-        "previousPer10kWords": 0.0,
-        "changePer10kWords": 1.178
+        "previousPer10kWords": 0.473,
+        "changePer10kWords": 0.705
       },
       {
         "key": "cybersecurity",
         "label": "Cybersecurity",
         "mentions": 21,
         "per10kWords": 1.178,
-        "previousPer10kWords": 0.269,
-        "changePer10kWords": 0.909
-      },
-      {
-        "key": "cloud",
-        "label": "Cloud",
-        "mentions": 6,
-        "per10kWords": 0.337,
-        "previousPer10kWords": 0.09,
-        "changePer10kWords": 0.247
+        "previousPer10kWords": 0.946,
+        "changePer10kWords": 0.232
       },
       {
         "key": "margin_pressure",
@@ -1092,9 +1165,9 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 50.9,
+    "score": 47.5,
     "label": "Mixed",
-    "evidenceCoverage": 92,
+    "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
@@ -1115,9 +1188,9 @@
       {
         "key": "themes",
         "label": "Emerging themes",
-        "score": 62.5,
+        "score": 49.0,
         "weight": 0.25,
-        "reliability": 0.667,
+        "reliability": 1.0,
         "detail": "Change in growth-theme density compared with pressure and risk themes."
       }
     ],
@@ -1138,6 +1211,15 @@
       "type": "annual_report",
       "title": "JD Sports Fashion Plc - Annual Report 2021",
       "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000026699/NI-000026699.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
+    {
+      "date": "2025-12-31",
+      "type": "annual_report",
+      "title": "Official full annual report 2025",
+      "url": "https://www.jdplc.com/wp-content/uploads/2026/07/24467_JD_Sports_AR25_Web.pdf",
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
