@@ -1459,12 +1459,16 @@
       "diagnostics": []
     },
     "british-american-tobacco:2022": {
-      "candidateHash": "0d4ed543b175db2c4f47482d00184125b2d34cd7c9b1a98a0bac27356978176c",
+      "candidateHash": "dbb31980c4e91ce3d5565eccbc822b3ab19703694d95decb74150f16bc432aef",
       "attemptCount": 1,
-      "lastAttempt": "2026-09-25T22:49:06.515009+00:00",
-      "status": "extracted",
-      "retryAfter": "2027-09-25T22:49:06.515009+00:00",
-      "diagnostics": []
+      "lastAttempt": "2026-09-26T01:08:24.442667+00:00",
+      "status": "extraction_failed",
+      "retryAfter": "2026-09-26T07:08:24.442667+00:00",
+      "diagnostics": [
+        {
+          "error": "ValueError: Requested 2022, document identifies 2021; needs source review"
+        }
+      ]
     },
     "endeavour-mining:2022": {
       "candidateHash": "cd779f10f73abe423b87a897905d08b24b71102e14202964727a24a3db1ee300",
