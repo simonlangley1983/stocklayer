@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T18:15:14.975274+00:00",
+  "generatedAt": "2026-09-26T18:22:45.862494+00:00",
   "companyCount": 100,
   "verifiedCurrentCount": 16,
   "companies": {
@@ -3673,7 +3673,21 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "imi:2024": {
+          "candidateHash": "af41a1257ff480bfd282aef61676a88746627fa0bd060befab2bef3553580629",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-26T18:22:06.824578+00:00",
+          "status": "extraction_failed",
+          "retryAfter": "2026-09-27T00:22:06.824578+00:00",
+          "diagnostics": [
+            {
+              "url": "https://www.imiplc.com/media/hyld141s/imi-ara-2024.pdf",
+              "error": "HTTPError: HTTP Error 403: "
+            }
+          ]
+        }
+      }
     },
     "imperial-brands": {
       "companyName": "Imperial Brands PLC",
@@ -5939,12 +5953,16 @@
           "diagnostics": []
         },
         "segro:2021": {
-          "candidateHash": "7ef916e4c7f674a839458dae7250af694bca619c38701031358fdc6559472976",
-          "attemptCount": 2,
-          "lastAttempt": "2026-09-24T23:47:36.280369+00:00",
-          "status": "extracted",
-          "retryAfter": "2027-09-24T23:47:36.280369+00:00",
-          "diagnostics": []
+          "candidateHash": "79118191d4f190614657933568640a788670828be03f18546b12c7db4a0b89aa",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-26T18:22:45.765209+00:00",
+          "status": "extraction_failed",
+          "retryAfter": "2026-09-27T00:22:45.765209+00:00",
+          "diagnostics": [
+            {
+              "error": "ValueError: Requested 2021, document identifies 2020; needs source review"
+            }
+          ]
         },
         "segro:2022": {
           "candidateHash": "8b0e6d0b02d2de695f6becbf3a96b883d8531f9027809bf2e82133f4b30e5c51",
@@ -5977,6 +5995,18 @@
           "year": 2021,
           "url": "https://www.severntrent.com/content/dam/stw-plc/shareholder-resources/ara-annual-report-2021.pdf",
           "sha256": "6bcd42235296927d4d0ebcddb52c76785c85a455f61c2fea60c1480dd45e9188",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2022,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/s/LSE_SVT_2022.pdf",
+          "sha256": "bfa2a7ae2f701d5dd2d915e7a320d15569af61a8d77cdec1e87a80f4b8723cdd",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2023,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/s/LSE_SVT_2023.pdf",
+          "sha256": "f7844a7f84912f0bf4e7e306677f1e4ae58e06c248a18872284781bfabd1c2ac",
           "extractionStatus": "extracted"
         },
         {
@@ -6022,6 +6052,22 @@
           "lastAttempt": "2026-09-26T18:15:14.877002+00:00",
           "status": "extracted",
           "retryAfter": "2026-09-27T00:15:14.877002+00:00",
+          "diagnostics": []
+        },
+        "severn-trent:2023": {
+          "candidateHash": "14d803c4b18178e94ba6d1367699845f565b5c9417266448b829f65353139d50",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-26T18:22:33.915366+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-27T00:22:33.915366+00:00",
+          "diagnostics": []
+        },
+        "severn-trent:2022": {
+          "candidateHash": "307832e238b713ca0dab9c1a1ec69a00dcb6288da0e607e2168996fe00d71cc6",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-26T18:22:38.655147+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-27T00:22:38.655147+00:00",
           "diagnostics": []
         }
       }
