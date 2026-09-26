@@ -204,7 +204,10 @@ def main():
         "companySlugs": sorted(set(recovered_slugs)),
     }
     if args.result_file:
+        result["consecutiveNoProgress"] = 0 if recovered else int(state.get("consecutiveNoProgress", 0)) + 1
+        state["consecutiveNoProgress"] = result["consecutiveNoProgress"]
         save(args.result_file, result)
+    save(state_path, state)
     message = f"Annual report backfill: {recovered} recovered from {len(batch)} attempts; {summary['missingCompanyYears']} gaps remain for {args.start_year}-{target_end}."
     print(message)
     if os.environ.get("GITHUB_STEP_SUMMARY"):
