@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-27T08:46:31.787313Z",
+  "generatedAt": "2026-09-27T10:39:45.726456Z",
   "company": {
     "companyName": "Shell",
     "ticker": "SHEL.L",
@@ -23,7 +23,7 @@
     "periodEnd": "2026-09-26",
     "observationCount": 80,
     "scoredDayCount": 39,
-    "latestScore": 53.3,
+    "latestScore": 41.0,
     "latestScoreDate": "2026-09-26",
     "series": [
       {
@@ -739,11 +739,11 @@
       },
       {
         "date": "2026-09-26",
-        "dailyScore": 53.3,
-        "rollingScore": 52.8,
-        "storyCount": 1,
-        "sourceCount": 1,
-        "confidence": 12.0,
+        "dailyScore": 41.0,
+        "rollingScore": 51.2,
+        "storyCount": 2,
+        "sourceCount": 2,
+        "confidence": 27.8,
         "coverageStatus": "ok"
       }
     ],
@@ -851,7 +851,7 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 3,
+    "reportCount": 4,
     "reports": [
       {
         "year": 2020,
@@ -924,6 +924,79 @@
           }
         ],
         "positivityScore": 32.9,
+        "positivityMethod": "lexical annual-report tone"
+      },
+      {
+        "year": 2023,
+        "title": "AnnualReports.com archive PDF",
+        "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/s/NYSE_SHEL_2023.pdf",
+        "sourceUrl": "https://www.annualreports.com/Company/shell-plc",
+        "wordCount": 280634,
+        "pageCount": 402,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 12,
+            "per10kWords": 0.428
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 37,
+            "per10kWords": 1.318
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 281,
+            "per10kWords": 10.013
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 57,
+            "per10kWords": 2.031
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 36,
+            "per10kWords": 1.283
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 68,
+            "per10kWords": 2.423
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 10,
+            "per10kWords": 0.356
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 1,
+            "per10kWords": 0.036
+          }
+        ],
+        "positivityScore": 32.1,
         "positivityMethod": "lexical annual-report tone"
       },
       {
@@ -1120,14 +1193,14 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 45.8,
+    "score": 45.3,
     "label": "Mixed",
-    "evidenceCoverage": 92,
+    "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.4,
+        "score": 50.8,
         "weight": 0.4,
         "reliability": 1.0,
         "detail": "Recency-weighted average of 39 scored days in the latest 90 calendar days; 30-day half-life."
@@ -1145,7 +1218,7 @@
         "label": "Emerging themes",
         "score": 49.0,
         "weight": 0.25,
-        "reliability": 0.667,
+        "reliability": 1.0,
         "detail": "Change in growth-theme density compared with pressure and risk themes."
       }
     ],
@@ -1157,6 +1230,15 @@
       "type": "annual_report",
       "title": "AnnualReports.com archive PDF",
       "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/r/NYSE_RDS_2020.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
+    {
+      "date": "2023-12-31",
+      "type": "annual_report",
+      "title": "AnnualReports.com archive PDF",
+      "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/s/NYSE_SHEL_2023.pdf",
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
