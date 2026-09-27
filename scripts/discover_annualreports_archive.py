@@ -89,8 +89,12 @@ def main() -> int:
     parser.add_argument("--start-year", type=int, default=2020)
     parser.add_argument("--end-year", type=int, default=2025)
     parser.add_argument("--limit", type=int, default=0)
+    parser.add_argument("--offset", type=int, default=0,
+                        help="Skip this many eligible companies before applying --limit")
     parser.add_argument("--ticker", action="append", default=[],
                         help="Search only the specified ticker(s)")
+    parser.add_argument("--missing-only", action="store_true",
+                        help="Search only companies with a missing extracted report in the requested years")
     parser.add_argument("--timeout", type=int, default=25)
     parser.add_argument("--retries", type=int, default=0)
     parser.add_argument("--max-failures", type=int, default=8,
@@ -105,12 +109,30 @@ def main() -> int:
     if args.ticker:
         wanted_tickers = set(args.ticker)
         companies = [company for company in companies if company.get("ticker") in wanted_tickers]
+    index_path = ROOT / "annual-reports" / "reports-index.json"
+    index = json.loads(index_path.read_text(encoding="utf-8"))
+    if args.missing_only:
+        existing = set()
+        for filename in ("extracted-keywords-history.json", "extracted-keywords.json"):
+            payload_path = ROOT / "annual-reports" / filename
+            if not payload_path.exists():
+                continue
+            payload = json.loads(payload_path.read_text(encoding="utf-8"))
+            existing.update(
+                (record.get("company_slug"), record.get("report_year"))
+                for record in payload.get("reports", [])
+                if record.get("report_data_status") == "extracted"
+            )
+        companies = [company for company in companies if any(
+            (company["slug"], year) not in existing
+            for year in range(args.start_year, args.end_year + 1)
+        )]
+    if args.offset:
+        companies = companies[args.offset:] + companies[:args.offset]
     if args.limit:
         companies = companies[:args.limit]
     if not companies:
-        parser.error("No companies matched the requested ticker(s)")
-    index_path = ROOT / "annual-reports" / "reports-index.json"
-    index = json.loads(index_path.read_text(encoding="utf-8"))
+        parser.error("No companies matched the requested filters")
     added = checked = matched = failures = 0
     for company in companies:
         search_name = SEARCH_ALIASES.get(company["slug"], company["companyName"])
