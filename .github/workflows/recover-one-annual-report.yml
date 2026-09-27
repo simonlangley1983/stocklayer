@@ -53,8 +53,15 @@ jobs:
           fi
           report_updated=$(jq -r '.generated_at // empty' annual-reports/extracted-keywords-history.json)
           feed_updated=$(jq -r '.generatedAt // empty' company-reports/manifest.json)
-          if [ -n "$report_updated" ] && { [ -z "$feed_updated" ] || [[ "$feed_updated" < "$report_updated" ]]; }; then
-            python automation/build_company_reports.py
+          if [ -n "$report_updated" ]; then
+            report_epoch=$(date -u -d "$report_updated" +%s)
+            feed_epoch=0
+            if [ -n "$feed_updated" ]; then
+              feed_epoch=$(date -u -d "$feed_updated" +%s)
+            fi
+            if [ "$report_epoch" -gt "$feed_epoch" ]; then
+              python automation/build_company_reports.py
+            fi
           fi
           git config user.name "stocklayer-annual-report-bot"
           git config user.email "stocklayer-annual-report-bot@users.noreply.github.com"
