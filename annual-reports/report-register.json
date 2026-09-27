@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T22:26:49.348364+00:00",
+  "generatedAt": "2026-09-27T12:15:45.301325+00:00",
   "companyCount": 100,
   "verifiedCurrentCount": 16,
   "companies": {
@@ -83,6 +83,12 @@
           "extractionStatus": "extracted"
         },
         {
+          "year": 2023,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/s/NYSE_SHEL_2023.pdf",
+          "sha256": "d944ec8c973f4988fbb07174ec922d5ae21a3818662d08a6de41cfe70150a78d",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2024,
           "url": "https://www.shell.com/investors/results-and-reporting/annual-report/_jcr_content/root/main/section/promo/links/item0.stream/1752580693041/6c20b8111738b9a590ba145f0d1c4fa0e530dae0/shell-annual-report-2024.pdf",
           "sha256": "0b88a901a12bb5e61cc37ac2f2ff60508f086fd7de753aa716e8999e348e7f14",
@@ -133,16 +139,11 @@
         },
         "shell:2023": {
           "candidateHash": "b77d0406e714a6b229a533b5d723bb185bb657e8e462922b17c6f6170f7f622d",
-          "attemptCount": 2,
-          "lastAttempt": "2026-09-26T07:22:39.274657+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-26T19:22:39.274657+00:00",
-          "diagnostics": [
-            {
-              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/s/NYSE_SHEL_2023.pdf",
-              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-            }
-          ]
+          "attemptCount": 3,
+          "lastAttempt": "2026-09-27T10:35:57.123883+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-28T10:35:57.123883+00:00",
+          "diagnostics": []
         }
       },
       "latestAvailabilitySource": "https://www.shell.com/investors/results-and-reporting/annual-report-archive.html",
@@ -3676,10 +3677,10 @@
       "retryDiagnostics": {
         "imi:2024": {
           "candidateHash": "af41a1257ff480bfd282aef61676a88746627fa0bd060befab2bef3553580629",
-          "attemptCount": 1,
-          "lastAttempt": "2026-09-26T18:22:06.824578+00:00",
+          "attemptCount": 2,
+          "lastAttempt": "2026-09-27T05:08:44.354239+00:00",
           "status": "extraction_failed",
-          "retryAfter": "2026-09-27T00:22:06.824578+00:00",
+          "retryAfter": "2026-09-27T17:08:44.354239+00:00",
           "diagnostics": [
             {
               "url": "https://www.imiplc.com/media/hyld141s/imi-ara-2024.pdf",
@@ -5498,10 +5499,10 @@
       "retryDiagnostics": {
         "rentokil-initial:2024": {
           "candidateHash": "1d150aea519d79332a81ecb9edfd58baa4bbe824ebbdd5000705181701f7af1e",
-          "attemptCount": 1,
-          "lastAttempt": "2026-09-26T17:15:23.831019+00:00",
+          "attemptCount": 2,
+          "lastAttempt": "2026-09-26T23:56:41.267349+00:00",
           "status": "extraction_failed",
-          "retryAfter": "2026-09-26T23:15:23.831019+00:00",
+          "retryAfter": "2026-09-27T11:56:41.267349+00:00",
           "diagnostics": [
             {
               "error": "ValueError: Requested 2024, document identifies 2023; needs source review"
