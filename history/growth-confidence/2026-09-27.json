@@ -1,0 +1,54 @@
+{
+  "date": "2026-09-27",
+  "generatedAt": "2026-09-27T10:35:57.231607+00:00",
+  "source": "uk-companies.json",
+  "companyCount": 1,
+  "methodology": {
+    "name": "StockLayer growth confidence validation snapshot",
+    "scoreRange": "0-100",
+    "weights": {
+      "momentum": 0.35,
+      "annualReportHealth": 0.3,
+      "marketPosition": 0.2,
+      "riskBalance": 0.15
+    },
+    "forwardReturnWindows": [
+      "7d",
+      "30d",
+      "180d",
+      "365d"
+    ],
+    "note": "Daily score snapshots are compared with later share-price observations once enough time has elapsed."
+  },
+  "companies": [
+    {
+      "date": "2026-09-27",
+      "slug": "shell",
+      "companyName": "Shell",
+      "ticker": "SHEL.L",
+      "ftseRank": 2,
+      "sharePrice": 36.055,
+      "sharePriceDate": "2026-09-25T12:31:59+00:00",
+      "marketCap": "182.92B",
+      "marketCapValue": 182917857280,
+      "globalMarketCapRank": 69,
+      "growthConfidence": 57,
+      "growthConfidenceLabel": "Caution",
+      "growthConfidenceSummary": "Caution: lifted by risk balance.",
+      "components": {
+        "momentum": 68,
+        "annualReportHealth": 7,
+        "marketPosition": 57,
+        "riskBalance": 70,
+        "annualReportIntelLoaded": true,
+        "annualReportRecency": {
+          "latestYear": 2025,
+          "age": 1,
+          "confidence": 0.82,
+          "label": "2025 report"
+        }
+      },
+      "forwardReturns": {}
+    }
+  ]
+}
