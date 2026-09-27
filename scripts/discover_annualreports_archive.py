@@ -111,6 +111,7 @@ def main() -> int:
         companies = [company for company in companies if company.get("ticker") in wanted_tickers]
     index_path = ROOT / "annual-reports" / "reports-index.json"
     index = json.loads(index_path.read_text(encoding="utf-8"))
+    missing_years_by_slug = {}
     if args.missing_only:
         existing = set()
         for filename in ("extracted-keywords-history.json", "extracted-keywords.json"):
@@ -123,12 +124,17 @@ def main() -> int:
                 for record in payload.get("reports", [])
                 if record.get("report_data_status") == "extracted"
             )
-        companies = [company for company in companies if any(
-            (company["slug"], year) not in existing
-            for year in range(args.start_year, args.end_year + 1)
-        )]
-    if args.offset:
-        companies = companies[args.offset:] + companies[:args.offset]
+        missing_years_by_slug = {
+            company["slug"]: {
+                year for year in range(args.start_year, args.end_year + 1)
+                if (company["slug"], year) not in existing
+            }
+            for company in companies
+        }
+        companies = [company for company in companies if missing_years_by_slug[company["slug"]]]
+    if companies and args.offset:
+        offset = args.offset % len(companies)
+        companies = companies[offset:] + companies[:offset]
     if args.limit:
         companies = companies[:args.limit]
     if not companies:
@@ -164,6 +170,8 @@ def main() -> int:
             year = int(match.group(1))
             url = urllib.parse.urljoin(ARCHIVE, href.replace("&amp;", "&"))
             if not args.start_year <= year <= args.end_year or url in known:
+                continue
+            if args.missing_only and year not in missing_years_by_slug[company["slug"]]:
                 continue
             reports.append({
                 "year": year,
