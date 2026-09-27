@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-27T01:09:18.684124Z",
+  "generatedAt": "2026-09-27T01:38:08.308222Z",
   "company": {
     "companyName": "M&G PLC",
     "ticker": "MNG.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-05",
-    "periodEnd": "2026-09-25",
-    "observationCount": 70,
-    "scoredDayCount": 49,
-    "latestScore": 58.6,
-    "latestScoreDate": "2026-09-25",
+    "periodEnd": "2026-09-26",
+    "observationCount": 71,
+    "scoredDayCount": 50,
+    "latestScore": 51.4,
+    "latestScoreDate": "2026-09-26",
     "series": [
       {
         "date": "2026-07-05",
@@ -655,6 +655,15 @@
         "sourceCount": 5,
         "confidence": 69.1,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-26",
+        "dailyScore": 51.4,
+        "rollingScore": 54.7,
+        "storyCount": 3,
+        "sourceCount": 3,
+        "confidence": 48.7,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1183,10 +1192,10 @@
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 53.0,
+        "score": 52.9,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 49 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 50 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1355,6 +1364,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "680df0ed73b57c101cae",
+      "type": "acquisition",
+      "title": "EU Commission clears acquisition of Reno de Medici by M&G and Arini",
+      "date": "2026-09-26",
+      "status": "pending_review",
+      "reviewDate": "2027-03-25",
+      "direction": "Neutral / mixed",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQMTZ3TnU0bldtRGhzRk5wc1hLOG9qbnp5SWxfMkx1Qy00ekRmbWVjVzkyXzN4cGJCZmxrZFYxeU1DZWxzajd4NDZCZG5mcEQwbUhEcHNFSGZGaWxVZUZNX3pJUWQ3VVB1NnIxSU92b0NROHpaWnB5ZTFJRFJBazQ3bnZIbnNaZ1BNZW5ZeVgwOTNrYzdQMERpTFlmN2xiRTUyd3dzUjQzQUlDaDlDTUdGTFJ3eE5nRWFXYTdBR2dVQzBTQW5rZTlIZXVSN2t1dw?oc=5",
+          "publisher": "ieu-monitoring.com",
+          "date": "2026-09-26"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "deb5ff46f1e9d86cc8c4",
       "type": "acquisition",

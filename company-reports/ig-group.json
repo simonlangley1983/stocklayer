@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-27T01:09:18.684124Z",
+  "generatedAt": "2026-09-27T01:38:08.308222Z",
   "company": {
     "companyName": "IG Group Holdings PLC",
     "ticker": "IGG.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-09-15",
-    "periodEnd": "2026-09-25",
-    "observationCount": 11,
-    "scoredDayCount": 11,
-    "latestScore": 45.6,
-    "latestScoreDate": "2026-09-25",
+    "periodEnd": "2026-09-26",
+    "observationCount": 12,
+    "scoredDayCount": 12,
+    "latestScore": 48.1,
+    "latestScoreDate": "2026-09-26",
     "series": [
       {
         "date": "2026-09-15",
@@ -123,6 +123,15 @@
         "storyCount": 26,
         "sourceCount": 23,
         "confidence": 62.9,
+        "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-26",
+        "dailyScore": 48.1,
+        "rollingScore": 49.0,
+        "storyCount": 12,
+        "sourceCount": 12,
+        "confidence": 83.9,
         "coverageStatus": "ok"
       }
     ],
@@ -718,17 +727,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 46.7,
+    "score": 46.8,
     "label": "Mixed",
-    "evidenceCoverage": 82,
+    "evidenceCoverage": 84,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 46.4,
+        "score": 46.6,
         "weight": 0.4,
-        "reliability": 0.55,
-        "detail": "Recency-weighted average of 11 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.6,
+        "detail": "Recency-weighted average of 12 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -905,5 +914,26 @@
       "significance": 1.574
     }
   ],
-  "persistentEvents": []
+  "persistentEvents": [
+    {
+      "id": "32b588f2d768f4d371af",
+      "type": "clinical",
+      "title": "Naqvi assails PTI's 'version of equality before law' after KP IG told to ensure speaker's approval for any MPA's arrest",
+      "date": "2026-09-26",
+      "status": "pending_review",
+      "reviewDate": "2027-03-25",
+      "direction": "Very negative",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBfZ0huaDJBY3k4ZTZpcjhlOEJhVjBQcXVpNkdBaU9tbTBoN0ZPUVhXczRFMlBsVmJKaWNvNGlNcS1iNTJtdWNZV9IBTkFVX3lxTE5EYXNnRHhsaTJxc0tYMFlVLWVZS2RnMnB5eHBCOGRtbmRsY0Y3c0xKYVp1ZC0td2tndUNKbFBRTHN2V3JoaWd4MFk0SExXQQ?oc=5",
+          "publisher": "dawn.com",
+          "date": "2026-09-26"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    }
+  ]
 }
