@@ -1,12 +1,12 @@
-name: Recover one annual report
+name: Recover historical annual-report gaps
 
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "15 10 * * 1-5"
   workflow_dispatch:
 
 concurrency:
-  group: single-annual-report-recovery
+  group: historical-annual-report-recovery
   cancel-in-progress: false
 
 permissions:
@@ -16,7 +16,7 @@ permissions:
 jobs:
   recover-one-report:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
@@ -29,10 +29,17 @@ jobs:
 
       - run: python -m pip install "pypdf>=6,<7" "cryptography>=45,<46" "curl-cffi>=0.13,<0.14"
 
-      - name: Recover exactly one outstanding indexed report
+      - name: Discover a rotating batch of genuine historical gaps
+        shell: bash
+        run: >-
+          python scripts/discover_annualreports_archive.py
+          --start-year 2020 --end-year 2024 --missing-only --limit 10
+          --offset $(( ($(date -u +%j) % 10) * 10 )) --timeout 12 --retries 1 --max-failures 4
+
+      - name: Validate and extract newly discovered reports
         run: >-
           python scripts/backfill_annual_reports.py
-          --batch-size 1 --workers 1 --report-timeout 90 --start-year 2020 --end-year 2024
+          --batch-size 24 --workers 4 --report-timeout 90 --start-year 2020 --end-year 2024
           --result-file annual-reports/last-recovery-result.json
 
       - name: Update affected confidence score only when new data was added
@@ -47,14 +54,7 @@ jobs:
           git config user.name "stocklayer-annual-report-bot"
           git config user.email "stocklayer-annual-report-bot@users.noreply.github.com"
           git add annual-reports/*.json history/growth-confidence/*.json
-          git commit -m "Recover one annual report" || exit 0
+          git commit -m "Recover historical annual-report gaps" || exit 0
           git pull --rebase origin main
           git push origin HEAD:main
 
-      - name: Stop when recovery is no longer making progress
-        shell: bash
-        run: |
-          if [ "$(jq -r '.consecutiveNoProgress' annual-reports/last-recovery-result.json)" -ge 10 ]; then
-            echo "Ten runs completed without a new report; disabling this schedule."
-            gh api --method PUT repos/${{ github.repository }}/actions/workflows/recover-one-annual-report.yml/disable
-          fi
