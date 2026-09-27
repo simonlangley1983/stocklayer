@@ -5210,6 +5210,65 @@
         }
       ],
       "changeFromPreviousScoredDay": -0.4
+    },
+    {
+      "date": "2026-09-26",
+      "dailyScore": 50.0,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.4,
+      "confidence": 11.4,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 12,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 8,
+        "missing_company_alias": 3
+      },
+      "topStories": [
+        {
+          "id": "09d4fb9b171af1fd",
+          "storyClusterId": "story-001",
+          "title": "HSBC News | HSBC HOLDINGS PLC-SPONS ADR (NYSE:HSBC)",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1aZkxJM0x3Uy1DVVkzckp6Mk8yOXVESXBqb3R6cVg2ODkyaXFZQzRLWHVQdTBkMHNMeTdEZ0w0Q1lPVFl6b0ZELW5ESWZkT2Y4clFQSFJHSVJYVEU?oc=5",
+          "source": "chartmill.com",
+          "publishedAt": "2026-09-26T08:44:30Z",
+          "polarity": 0.0003,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 11.4",
+          "evidenceArticleIds": [
+            "09d4fb9b171af1fd"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "09d4fb9b171af1fd"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 0.3
     }
   ]
 }
