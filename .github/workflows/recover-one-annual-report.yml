@@ -42,7 +42,7 @@ jobs:
           --batch-size 24 --workers 4 --report-timeout 90 --start-year 2020 --end-year $(( $(date -u +%Y) - 1 ))
           --result-file annual-reports/last-recovery-result.json
 
-      - name: Update affected confidence score only when new data was added
+      - name: Refresh confidence and customer reports after extraction
         id: result
         shell: bash
         run: |
@@ -51,9 +51,14 @@ jobs:
               python scripts/generate_growth_confidence_history.py --companies uk-companies.json --slug "$slug"
             done
           fi
+          report_updated=$(jq -r '.generated_at // empty' annual-reports/extracted-keywords-history.json)
+          feed_updated=$(jq -r '.generatedAt // empty' company-reports/manifest.json)
+          if [ -n "$report_updated" ] && { [ -z "$feed_updated" ] || [[ "$feed_updated" < "$report_updated" ]]; }; then
+            python automation/build_company_reports.py
+          fi
           git config user.name "stocklayer-annual-report-bot"
           git config user.email "stocklayer-annual-report-bot@users.noreply.github.com"
-          git add annual-reports/*.json history/growth-confidence/*.json
+          git add annual-reports/*.json history/growth-confidence/*.json company-reports/*.json
           git commit -m "Recover historical annual-report gaps" || exit 0
           git pull --rebase origin main
           git push origin HEAD:main
