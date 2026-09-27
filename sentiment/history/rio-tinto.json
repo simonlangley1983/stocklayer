@@ -6569,37 +6569,51 @@
     },
     {
       "date": "2026-09-26",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 55.7,
-      "confidence": 0.0,
+      "dailyScore": 43.8,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 54.3,
+      "confidence": 16.9,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 5,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 6,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
       "positiveStoryCount": 0,
       "neutralStoryCount": 0,
-      "negativeStoryCount": 0,
+      "negativeStoryCount": 1,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
         "missing_company_alias": 5
       },
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "df73cdc5d597223a",
+          "storyClusterId": "story-001",
+          "title": "JPMorgan Ceases to Be Substantial Shareholder in Rio Tinto",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPbWE4TmFZWDNEZVBnOHhodE10MHd5OER0X3hZcUJ2VVB2eUM4dmlTbHVjellndzhMT2hia2c4MzY5UGt5TDVSTXp5eDBtNi14YnVRZWJ2UEQzM0hzNWd3Y3I0LVMybWtyaEMyX0pWOUg2TllGbHpfZC0xTERIbmpJMUM3R2ZueUE0YzNVNFA2ZmlSNVdHZUE2T0pjUjdwOThNb1F2ek5BNmpsR1hDcFRr?oc=5",
+          "source": "tipranks.com",
+          "publishedAt": "2026-09-26T02:56:49Z",
+          "polarity": -0.3703,
+          "sentiment": "Negative",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 16.9",
+          "evidenceArticleIds": [
+            "df73cdc5d597223a"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": -12.5
     }
   ]
 }

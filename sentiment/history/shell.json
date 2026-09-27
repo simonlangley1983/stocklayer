@@ -3999,30 +3999,41 @@
     },
     {
       "date": "2026-09-26",
-      "dailyScore": 53.3,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 52.8,
-      "confidence": 12.0,
+      "dailyScore": 41.0,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 51.2,
+      "confidence": 27.8,
       "confidenceBand": "low",
       "coverageStatus": "ok",
       "collectionCompleteness": 0.75,
-      "candidateCount": 48,
-      "eligibleArticleCount": 1,
-      "storyCount": 1,
-      "effectiveStoryCount": 1.0,
-      "sourceCount": 1,
+      "candidateCount": 47,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
       "positiveStoryCount": 1,
       "neutralStoryCount": 0,
-      "negativeStoryCount": 0,
-      "dispersion": 0.0,
+      "negativeStoryCount": 1,
+      "dispersion": 0.5598,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 40,
+        "ambiguous_company_without_alias": 38,
         "missing_company_alias": 7
       },
       "topStories": [
         {
-          "id": "5daa94ef79c3af55",
+          "id": "4ddc557ed84f0178",
           "storyClusterId": "story-001",
+          "title": "Shell CEO Says Blockade May Mean Energy Shortages Last Into 2027",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNUE5peTN1Q0FReVdyZWZzcWNOa3h4c1U3TkluZjliZDRaaEhHV2d3c09QX3hPZjFLUUdzRzRLdjkwR2RyWGdpd2dmTGxGQzlmUk8tOEFYTGNzSGJaMUZreVJtak5sU3BBbjUzekNhUS05ZjNEUTcxUzdFZGNETFNrd1pCTEhFRjZOSkt4ZDR2dzA1Tkd3S05CdkdIbw?oc=5",
+          "source": "energynow.com",
+          "publishedAt": "2026-09-26T11:01:44Z",
+          "polarity": -0.9205,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "5daa94ef79c3af55",
+          "storyClusterId": "story-002",
           "title": "Shell marks 125 years of energy leadership",
           "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOMml5WndBT05faTlnaFJKVE5DYWJDTzRqSDdoMmo3V2hNdG1GX1U1MkJGcy1MWnhSWWItcmhGUmItcnlCclpDaFpKTDZoY1JEeGd4UDdsdkhhWUpCQXR0cjVxdVc0Vkl1RGtVUDJtVW92WER4THV2NUt4WXplLXh4dERLa3MxVGZ5SEtFRmk3MllzZTNBcmdTY1lXeEtQeDJHVHE1NzRBbVUyN1Ezd2FNNThpaS1XUWJzUUdjTUhpdm9LN0s1MVRNSlNDaUhjd2RP?oc=5",
           "source": "theaustralian.com.au",
@@ -4034,12 +4045,24 @@
       ],
       "flags": [
         {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "4ddc557ed84f0178",
+            "5daa94ef79c3af55"
+          ]
+        },
+        {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 12.0",
+          "detail": "Confidence is 27.8",
           "evidenceArticleIds": [
+            "4ddc557ed84f0178",
             "5daa94ef79c3af55"
           ]
         },
@@ -4050,11 +4073,12 @@
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
+            "4ddc557ed84f0178",
             "5daa94ef79c3af55"
           ]
         }
       ],
-      "changeFromPreviousScoredDay": -11.0
+      "changeFromPreviousScoredDay": -23.3
     }
   ]
 }
