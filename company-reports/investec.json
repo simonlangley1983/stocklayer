@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-28T00:49:21.364808Z",
+  "generatedAt": "2026-09-28T01:50:13.795612Z",
   "company": {
     "companyName": "Investec PLC",
     "ticker": "INVP.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-15",
-    "periodEnd": "2026-09-26",
-    "observationCount": 27,
-    "scoredDayCount": 16,
-    "latestScore": 39.5,
-    "latestScoreDate": "2026-09-25",
+    "periodEnd": "2026-09-27",
+    "observationCount": 28,
+    "scoredDayCount": 17,
+    "latestScore": 52.9,
+    "latestScoreDate": "2026-09-27",
     "series": [
       {
         "date": "2026-06-15",
@@ -268,6 +268,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-27",
+        "dailyScore": 52.9,
+        "rollingScore": 47.5,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.8,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1008,17 +1017,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 57.3,
+    "score": 57.6,
     "label": "Mixed",
-    "evidenceCoverage": 82,
+    "evidenceCoverage": 84,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 46.0,
+        "score": 46.7,
         "weight": 0.4,
-        "reliability": 0.55,
-        "detail": "Recency-weighted average of 11 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.6,
+        "detail": "Recency-weighted average of 12 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
