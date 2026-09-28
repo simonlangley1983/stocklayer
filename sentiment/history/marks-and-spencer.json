@@ -5403,6 +5403,90 @@
         }
       ],
       "changeFromPreviousScoredDay": 2.0
+    },
+    {
+      "date": "2026-09-27",
+      "dailyScore": 45.3,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 51.4,
+      "confidence": 47.2,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 8,
+      "eligibleArticleCount": 3,
+      "storyCount": 3,
+      "effectiveStoryCount": 3.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 1,
+      "dispersion": 0.5603,
+      "rejectedCandidateCounts": {
+        "missing_company_alias": 5
+      },
+      "topStories": [
+        {
+          "id": "374c02a184cf6947",
+          "storyClusterId": "story-001",
+          "title": "Marks & Spencer shuts down food hall for good in huge blow to historic UK seaside town despite petition from shoppers",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdUNoN1BnanhSMGxvcVRoZHR5bGxnNk8yQTViaFhLczJiaUlVUEhVZFF2b0QxTDh3VmVEUC1zQ21TWjNpMTVyMUN6bGo5UWFqZW1qLUVpQzA5bDVzbnZzbzRETEtWMUhBUE9SSzBlaXo5TlRBTDhHRlV1Y3F0VWdscXVWYXpndGxKMkJV?oc=5",
+          "source": "thesun.co.uk",
+          "publishedAt": "2026-09-27T02:00:00Z",
+          "polarity": -0.9126,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "8a7fd3e329eb4265",
+          "storyClusterId": "story-003",
+          "title": "Marks & Spencer's 'perfect for walking my dog in the rain' wellies now £36",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPRU42VUlxNVBrREFWSjVCY2VrZGFCblNVaVl1YXZpZDlhQUVqMFZjZlJCSlpqX2lNQ2ExWFpxWnFLZGpfT0JlRDcyazNUdUw0Wk41a0xGZzBnM3BMMXU1WGNGREJHTDQtQVpnMmNEWldFZ2N1ZEN3cXFfT2xLNG93djFUSnE0X25teTBTTzQ1ZXVaZnQxQmNJN2Y1c9IBmwFBVV95cUxPRU42VUlxNVBrREFWSjVCY2VrZGFCblNVaVl1YXZpZDlhQUVqMFZjZlJCSlpqX2lNQ2ExWFpxWnFLZGpfT0JlRDcyazNUdUw0Wk41a0xGZzBnM3BMMXU1WGNGREJHTDQtQVpnMmNEWldFZ2N1ZEN3cXFfT2xLNG93djFUSnE0X25teTBTTzQ1ZXVaZnQxQmNJN2Y1cw?oc=5",
+          "source": "birminghammail.co.uk",
+          "publishedAt": "2026-09-27T06:07:00Z",
+          "polarity": 0.4251,
+          "sentiment": "Positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "88a3338db012935b",
+          "storyClusterId": "story-002",
+          "title": "The £25 Marks & Spencer shopping list that makes 12 different meals and includes chia seeds",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNV21wcUNUNDZReHVJTDg3bWpEQmtXcmxydGFoTnNWdTJrM3VCa25NRElxRi13eVlTWElHYlBWSGZJTUhGN3AtbjF0Y0ZFQ09xY1hNLXVJd0NXSXJEaFJ6UmNmV0N4N3FramIwSzVtbEZnRFdFY1lFTzk3U1VNdExUa1RuazJ0ZWYzc19mZHBwcnNqN1lsbk1lMHR6Z9IBmwFBVV95cUxNV21wcUNUNDZReHVJTDg3bWpEQmtXcmxydGFoTnNWdTJrM3VCa25NRElxRi13eVlTWElHYlBWSGZJTUhGN3AtbjF0Y0ZFQ09xY1hNLXVJd0NXSXJEaFJ6UmNmV0N4N3FramIwSzVtbEZnRFdFY1lFTzk3U1VNdExUa1RuazJ0ZWYzc19mZHBwcnNqN1lsbk1lMHR6Zw?oc=5",
+          "source": "birminghammail.co.uk",
+          "publishedAt": "2026-09-27T04:30:00Z",
+          "polarity": 0.0219,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "sentiment_drop",
+          "direction": "negative",
+          "severity": "high",
+          "status": "calculated",
+          "detail": "Daily score decreased by 12.4 points",
+          "evidenceArticleIds": [
+            "374c02a184cf6947",
+            "8a7fd3e329eb4265",
+            "88a3338db012935b"
+          ]
+        },
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "374c02a184cf6947",
+            "8a7fd3e329eb4265",
+            "88a3338db012935b"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -12.4
     }
   ]
 }
