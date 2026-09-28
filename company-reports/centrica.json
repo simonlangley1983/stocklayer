@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-28T14:33:45.310525Z",
+  "generatedAt": "2026-09-28T18:14:06.121313Z",
   "company": {
     "companyName": "Centrica PLC",
     "ticker": "CNA.L",
@@ -887,7 +887,7 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 5,
+    "reportCount": 6,
     "reports": [
       {
         "year": 2020,
@@ -1033,6 +1033,79 @@
           }
         ],
         "positivityScore": 22.9,
+        "positivityMethod": "lexical annual-report tone"
+      },
+      {
+        "year": 2022,
+        "title": "AnnualReports.com archive PDF",
+        "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/c/LSE_CNA_2022.pdf",
+        "sourceUrl": "https://www.annualreports.com/Company/centrica-plc",
+        "wordCount": 170038,
+        "pageCount": 264,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 4,
+            "per10kWords": 0.235
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 8,
+            "per10kWords": 0.47
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 5,
+            "per10kWords": 0.294
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 126,
+            "per10kWords": 7.41
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 21,
+            "per10kWords": 1.235
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 17,
+            "per10kWords": 1.0
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 3,
+            "per10kWords": 0.176
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 9,
+            "per10kWords": 0.529
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 2,
+            "per10kWords": 0.118
+          }
+        ],
+        "positivityScore": 26.8,
         "positivityMethod": "lexical annual-report tone"
       },
       {
@@ -1348,6 +1421,15 @@
       "type": "annual_report",
       "title": "Centrica plc Annual Report and Accounts 2021",
       "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000044191/NI-000044191.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
+    {
+      "date": "2022-12-31",
+      "type": "annual_report",
+      "title": "AnnualReports.com archive PDF",
+      "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/c/LSE_CNA_2022.pdf",
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true

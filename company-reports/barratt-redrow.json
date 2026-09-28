@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-28T14:33:45.310525Z",
+  "generatedAt": "2026-09-28T18:14:06.121313Z",
   "company": {
     "companyName": "Barratt Redrow PLC",
     "ticker": "BTRW.L",
@@ -869,8 +869,81 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 5,
+    "reportCount": 6,
     "reports": [
+      {
+        "year": 2020,
+        "title": "AnnualReports.com archive PDF",
+        "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BDEV_2020.pdf",
+        "sourceUrl": "https://www.annualreports.com/Company/barratt-developments-plc",
+        "wordCount": 149558,
+        "pageCount": 246,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 1,
+            "per10kWords": 0.067
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 1,
+            "per10kWords": 0.067
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 86,
+            "per10kWords": 5.75
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 25,
+            "per10kWords": 1.672
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 44,
+            "per10kWords": 2.942
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 1,
+            "per10kWords": 0.067
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 2,
+            "per10kWords": 0.134
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 43.6,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2021,
         "title": "Official full annual report 2021",
@@ -1316,6 +1389,15 @@
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2020-12-31",
+      "type": "annual_report",
+      "title": "AnnualReports.com archive PDF",
+      "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BDEV_2020.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2021-12-31",
       "type": "annual_report",

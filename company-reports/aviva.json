@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-28T14:33:45.310525Z",
+  "generatedAt": "2026-09-28T18:14:06.121313Z",
   "company": {
     "companyName": "Aviva PLC",
     "ticker": "AV.L",
@@ -806,8 +806,81 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 4,
+    "reportCount": 6,
     "reports": [
+      {
+        "year": 2020,
+        "title": "AnnualReports.com archive PDF",
+        "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/A/LSE_AV_2020.pdf",
+        "sourceUrl": "https://www.annualreports.com/Company/Aviva",
+        "wordCount": 219185,
+        "pageCount": 288,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 73,
+            "per10kWords": 3.331
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 3,
+            "per10kWords": 0.137
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 7,
+            "per10kWords": 0.319
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 273,
+            "per10kWords": 12.455
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 41,
+            "per10kWords": 1.871
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 9,
+            "per10kWords": 0.411
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 15,
+            "per10kWords": 0.684
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 14,
+            "per10kWords": 0.639
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 29.0,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2021,
         "title": "Annual Report and Accounts",
@@ -879,6 +952,79 @@
           }
         ],
         "positivityScore": 27.1,
+        "positivityMethod": "lexical annual-report tone"
+      },
+      {
+        "year": 2022,
+        "title": "AnnualReports.com archive PDF",
+        "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/A/LSE_AV_2022.pdf",
+        "sourceUrl": "https://www.annualreports.com/Company/Aviva",
+        "wordCount": 205547,
+        "pageCount": 344,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 16,
+            "per10kWords": 0.778
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 5,
+            "per10kWords": 0.243
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 225,
+            "per10kWords": 10.946
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 34,
+            "per10kWords": 1.654
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 17,
+            "per10kWords": 0.827
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 20,
+            "per10kWords": 0.973
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 13,
+            "per10kWords": 0.632
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 28.4,
         "positivityMethod": "lexical annual-report tone"
       },
       {
@@ -1181,10 +1327,28 @@
   },
   "events": [
     {
+      "date": "2020-12-31",
+      "type": "annual_report",
+      "title": "AnnualReports.com archive PDF",
+      "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/A/LSE_AV_2020.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
+    {
       "date": "2021-12-31",
       "type": "annual_report",
       "title": "Annual Report and Accounts",
       "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000043784/NI-000043784.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
+    {
+      "date": "2022-12-31",
+      "type": "annual_report",
+      "title": "AnnualReports.com archive PDF",
+      "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/A/LSE_AV_2022.pdf",
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
