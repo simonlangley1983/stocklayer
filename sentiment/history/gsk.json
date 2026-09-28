@@ -5711,37 +5711,51 @@
     },
     {
       "date": "2026-09-27",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 53.2,
-      "confidence": 0.0,
+      "dailyScore": 54.8,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 53.4,
+      "confidence": 16.4,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 9,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
-      "positiveStoryCount": 0,
+      "candidateCount": 7,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 1,
       "neutralStoryCount": 0,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
-        "missing_company_alias": 9
+        "missing_company_alias": 6
       },
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "360de1956a9d90d6",
+          "storyClusterId": "story-001",
+          "title": "GSK’s Tuas vaccine facility is Singapore’s largest after S$300 million investment: Gan Kim Yong",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNMVgzUmgtUUM0N3FtSXd4eV9TRlQ5eXVscEQ3NDhGSXJfNjY1X2JEa2luSzlDd1Rhdm1GSnlURmNWcS1kWHI5dUliZGxPdFhueTdwU2F3eC05YnhkMWRjYjZxZWp2YXoxUmhZLXc5c0I4UkhJcHZ6MnU4Mkk5LWE2ZXlWOHVYWmUxQjNpOWVVWDA0X2d3RjI2TlRFaW51LTg4YnI0THVGTnJRbTRJdEQ3ZzRFa2NsUEpWSE5BVFVhVExRSXRQczJhQnVFaWczTmEw?oc=5",
+          "source": "edb.gov.sg",
+          "publishedAt": "2026-09-27T07:00:00Z",
+          "polarity": 0.2888,
+          "sentiment": "Positive",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 16.4",
+          "evidenceArticleIds": [
+            "360de1956a9d90d6"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": 5.0
     }
   ]
 }
