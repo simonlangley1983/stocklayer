@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-28T05:58:07.489682Z",
+  "generatedAt": "2026-09-28T08:45:54.497545Z",
   "company": {
     "companyName": "Prudential PLC",
     "ticker": "PRU.L",
@@ -842,7 +842,7 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 4,
+    "reportCount": 5,
     "reports": [
       {
         "year": 2020,
@@ -1064,6 +1064,79 @@
         "positivityMethod": "lexical annual-report tone"
       },
       {
+        "year": 2024,
+        "title": "AnnualReports.com archive PDF",
+        "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/p/LSE_PRU_2024.pdf",
+        "sourceUrl": "https://www.annualreports.com/Company/prudential-plc",
+        "wordCount": 270501,
+        "pageCount": 424,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 71,
+            "per10kWords": 2.625
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 3,
+            "per10kWords": 0.111
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 27,
+            "per10kWords": 0.998
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 447,
+            "per10kWords": 16.525
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 43,
+            "per10kWords": 1.59
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 26,
+            "per10kWords": 0.961
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 225,
+            "per10kWords": 8.318
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 39,
+            "per10kWords": 1.442
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 28.9,
+        "positivityMethod": "lexical annual-report tone"
+      },
+      {
         "year": 2025,
         "title": "Official full annual report 2025",
         "url": "https://www.prudentialplc.com/content/dam/prudential-plc/investor/results-and-reports/lastest-annual-report/prudential-plc-ar-2025.pdf",
@@ -1139,20 +1212,28 @@
     ],
     "emergingKeywords": [
       {
+        "key": "competition",
+        "label": "Competition",
+        "mentions": 60,
+        "per10kWords": 2.178,
+        "previousPer10kWords": 1.59,
+        "changePer10kWords": 0.588
+      },
+      {
         "key": "ai",
         "label": "AI",
         "mentions": 75,
         "per10kWords": 2.722,
-        "previousPer10kWords": 1.046,
-        "changePer10kWords": 1.676
+        "previousPer10kWords": 2.625,
+        "changePer10kWords": 0.097
       },
       {
         "key": "supply_chain",
         "label": "Supply chain",
         "mentions": 27,
         "per10kWords": 0.98,
-        "previousPer10kWords": 0.498,
-        "changePer10kWords": 0.482
+        "previousPer10kWords": 0.961,
+        "changePer10kWords": 0.019
       },
       {
         "key": "margin_pressure",
@@ -1169,14 +1250,6 @@
         "per10kWords": 0.0,
         "previousPer10kWords": 0.0,
         "changePer10kWords": 0.0
-      },
-      {
-        "key": "restructuring",
-        "label": "Restructuring",
-        "mentions": 27,
-        "per10kWords": 0.98,
-        "previousPer10kWords": 0.997,
-        "changePer10kWords": -0.017
       }
     ],
     "latestPositivity": 31.2,
@@ -1184,7 +1257,7 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 54.8,
+    "score": 45.1,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
@@ -1207,7 +1280,7 @@
       {
         "key": "themes",
         "label": "Emerging themes",
-        "score": 88.9,
+        "score": 50.1,
         "weight": 0.25,
         "reliability": 1.0,
         "detail": "Change in growth-theme density compared with pressure and risk themes."
@@ -1239,6 +1312,15 @@
       "type": "annual_report",
       "title": "Form 20-F",
       "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000071169/NI-000071169.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
+    {
+      "date": "2024-12-31",
+      "type": "annual_report",
+      "title": "AnnualReports.com archive PDF",
+      "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/p/LSE_PRU_2024.pdf",
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true

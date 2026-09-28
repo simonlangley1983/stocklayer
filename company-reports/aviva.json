@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-28T05:58:07.489682Z",
+  "generatedAt": "2026-09-28T08:45:54.497545Z",
   "company": {
     "companyName": "Aviva PLC",
     "ticker": "AV.L",
@@ -806,7 +806,7 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 3,
+    "reportCount": 4,
     "reports": [
       {
         "year": 2021,
@@ -879,6 +879,79 @@
           }
         ],
         "positivityScore": 27.1,
+        "positivityMethod": "lexical annual-report tone"
+      },
+      {
+        "year": 2023,
+        "title": "AnnualReports.com archive PDF",
+        "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/A/LSE_AV_2023.pdf",
+        "sourceUrl": "https://www.annualreports.com/Company/Aviva",
+        "wordCount": 213498,
+        "pageCount": 372,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 29,
+            "per10kWords": 1.358
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 1,
+            "per10kWords": 0.047
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 4,
+            "per10kWords": 0.187
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 214,
+            "per10kWords": 10.024
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 32,
+            "per10kWords": 1.499
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 22,
+            "per10kWords": 1.03
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 33,
+            "per10kWords": 1.546
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 45,
+            "per10kWords": 2.108
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 29.0,
         "positivityMethod": "lexical annual-report tone"
       },
       {
@@ -1075,9 +1148,9 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 48.0,
+    "score": 47.9,
     "label": "Mixed",
-    "evidenceCoverage": 92,
+    "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
@@ -1100,7 +1173,7 @@
         "label": "Emerging themes",
         "score": 63.1,
         "weight": 0.25,
-        "reliability": 0.667,
+        "reliability": 1.0,
         "detail": "Change in growth-theme density compared with pressure and risk themes."
       }
     ],
@@ -1112,6 +1185,15 @@
       "type": "annual_report",
       "title": "Annual Report and Accounts",
       "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000043784/NI-000043784.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
+    {
+      "date": "2023-12-31",
+      "type": "annual_report",
+      "title": "AnnualReports.com archive PDF",
+      "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/A/LSE_AV_2023.pdf",
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
