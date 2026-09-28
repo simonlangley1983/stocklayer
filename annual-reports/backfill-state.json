@@ -529,14 +529,14 @@
     },
     "phoenix:2021": {
       "candidateHash": "1e9c3910938803be6af48e6bc99340d103c44c1873f8c13b9c5fd2710eca8f4d",
-      "attemptCount": 2,
-      "lastAttempt": "2026-09-28T08:45:14.133736+00:00",
+      "attemptCount": 3,
+      "lastAttempt": "2026-09-28T23:19:33.504814+00:00",
       "status": "extraction_failed",
-      "retryAfter": "2026-09-28T20:45:14.133736+00:00",
+      "retryAfter": "2026-09-29T23:19:33.504814+00:00",
       "diagnostics": [
         {
           "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/P/LSE_PHNX_2021.pdf",
-          "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20000 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+          "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
         }
       ]
     },
@@ -916,16 +916,12 @@
       "diagnostics": []
     },
     "computacenter:2024": {
-      "candidateHash": "e01d689db8aefbb24e063dd77a31410b24a7cae0419a021a5424506c88a14af2",
-      "attemptCount": 4,
-      "lastAttempt": "2026-09-26T12:21:34.564344+00:00",
-      "status": "extraction_failed",
-      "retryAfter": "2026-09-28T12:21:34.564344+00:00",
-      "diagnostics": [
-        {
-          "error": "ValueError: Requested 2024, document identifies 2023; needs source review"
-        }
-      ]
+      "candidateHash": "a353bb8158cb7e49b8054cbadd97261d35d389cbbadf3c14d2f553433a411417",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-28T23:18:41.350849+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-29T05:18:41.350849+00:00",
+      "diagnostics": []
     },
     "haleon:2024": {
       "candidateHash": "548999d5bf678e31f3f5719ed2e98300647aef73efcd7635ac7a2065f6b2ed40",
@@ -1132,16 +1128,12 @@
       "diagnostics": []
     },
     "computacenter:2023": {
-      "candidateHash": "83fa5f47125ab96309fb80e2f97f2eab842a28f54a3c55593c6b1d5202481cc5",
-      "attemptCount": 4,
-      "lastAttempt": "2026-09-26T12:21:35.313735+00:00",
-      "status": "extraction_failed",
-      "retryAfter": "2026-09-28T12:21:35.313735+00:00",
-      "diagnostics": [
-        {
-          "error": "ValueError: Requested 2023, document identifies 2022; needs source review"
-        }
-      ]
+      "candidateHash": "9077ec9375c370905ce028f860ea91909ca53339d72da250c9fb72ddd8d3d460",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-28T23:18:33.246701+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-29T05:18:33.246701+00:00",
+      "diagnostics": []
     },
     "centrica:2023": {
       "candidateHash": "5538ec40c883b6393fc672c481f04a39b8ce85e797738368862062a0e8afd13c",
@@ -2548,49 +2540,44 @@
     },
     "prudential:2023": {
       "candidateHash": "b41bae1ec7d371c44fe5ed7dd9b6bb09262186bdf710b58e3772c77b69e67182",
-      "attemptCount": 2,
-      "lastAttempt": "2026-09-28T08:43:36.550901+00:00",
+      "attemptCount": 3,
+      "lastAttempt": "2026-09-28T23:18:12.335589+00:00",
       "status": "extraction_failed",
-      "retryAfter": "2026-09-28T20:43:36.550901+00:00",
+      "retryAfter": "2026-09-29T23:18:12.335589+00:00",
       "diagnostics": [
         {
           "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/p/LSE_PRU_2023.pdf",
-          "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+          "error": "HTTPError: HTTP Error 503: "
         }
       ]
     },
     "natwest:2024": {
       "candidateHash": "e93703e80f1199f7dd2e67fff4a3b36c62c5e83e609de0e0024ec65bcebb5300",
-      "attemptCount": 2,
-      "lastAttempt": "2026-09-28T08:42:55.872980+00:00",
-      "status": "extraction_failed",
-      "retryAfter": "2026-09-28T20:42:55.872980+00:00",
-      "diagnostics": [
-        {
-          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/n/NYSE_NWG_2024.pdf",
-          "error": "HTTPError: HTTP Error 503: "
-        }
-      ]
+      "attemptCount": 3,
+      "lastAttempt": "2026-09-28T23:18:56.482608+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-09-29T23:18:56.482608+00:00",
+      "diagnostics": []
     },
     "natwest:2022": {
       "candidateHash": "6131a45c47f034fb0c0b0339333dae511a741eb419c1f90f50c7a12d07115a39",
-      "attemptCount": 2,
-      "lastAttempt": "2026-09-28T08:44:26.412309+00:00",
+      "attemptCount": 3,
+      "lastAttempt": "2026-09-28T23:19:13.513263+00:00",
       "status": "extraction_failed",
-      "retryAfter": "2026-09-28T20:44:26.412309+00:00",
+      "retryAfter": "2026-09-29T23:19:13.513263+00:00",
       "diagnostics": [
         {
           "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/n/NYSE_NWG_2022.pdf",
-          "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+          "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
         }
       ]
     },
     "natwest:2021": {
       "candidateHash": "bd310d6beaad830de3d0bb5540770119c39e18abd4037b4f273487f35754a234",
-      "attemptCount": 2,
-      "lastAttempt": "2026-09-28T08:45:06.606242+00:00",
+      "attemptCount": 3,
+      "lastAttempt": "2026-09-28T23:19:21.621276+00:00",
       "status": "extraction_failed",
-      "retryAfter": "2026-09-28T20:45:06.606242+00:00",
+      "retryAfter": "2026-09-29T23:19:21.621276+00:00",
       "diagnostics": [
         {
           "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/n/NYSE_NWG_2021.pdf",
@@ -2600,14 +2587,14 @@
     },
     "phoenix:2020": {
       "candidateHash": "fabf18ea52950c18e668a980070c9fc797c8d57b0795057f1bd04b4a0c0ab1cf",
-      "attemptCount": 2,
-      "lastAttempt": "2026-09-28T08:45:54.321337+00:00",
+      "attemptCount": 3,
+      "lastAttempt": "2026-09-28T23:19:53.787558+00:00",
       "status": "extraction_failed",
-      "retryAfter": "2026-09-28T20:45:54.321337+00:00",
+      "retryAfter": "2026-09-29T23:19:53.787558+00:00",
       "diagnostics": [
         {
           "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/P/LSE_PHNX_2020.pdf",
-          "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+          "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
         }
       ]
     },
@@ -2690,6 +2677,45 @@
       "status": "extracted",
       "retryAfter": "2026-09-29T00:13:27.521772+00:00",
       "diagnostics": []
+    },
+    "burberry:2022": {
+      "candidateHash": "77dbfa9af5faae5dcfbf1becdb3f486d01db2df0081d4b5a1f4f978218041924",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-28T23:18:12.782257+00:00",
+      "status": "extraction_failed",
+      "retryAfter": "2026-09-29T05:18:12.782257+00:00",
+      "diagnostics": [
+        {
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BRBY_2022.pdf",
+          "error": "HTTPError: HTTP Error 429: "
+        }
+      ]
+    },
+    "computacenter:2022": {
+      "candidateHash": "8fcce3a2a90f66207eceeee5f9b14590f3ae3e88492c03280875062a64322518",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-28T23:18:53.254623+00:00",
+      "status": "extraction_failed",
+      "retryAfter": "2026-09-29T05:18:53.254623+00:00",
+      "diagnostics": [
+        {
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/c/LSE_CCC_2022.pdf",
+          "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+        }
+      ]
+    },
+    "computacenter:2020": {
+      "candidateHash": "ad5b0356804690bacd3307b22136198629c1de4fc33b7014865b3c1d3d3e1546",
+      "attemptCount": 1,
+      "lastAttempt": "2026-09-28T23:19:36.743472+00:00",
+      "status": "extraction_failed",
+      "retryAfter": "2026-09-29T05:19:36.743472+00:00",
+      "diagnostics": [
+        {
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/c/LSE_CCC_2020.pdf",
+          "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+        }
+      ]
     }
   },
   "consecutiveNoProgress": 0

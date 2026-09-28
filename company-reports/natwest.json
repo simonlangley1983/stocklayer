@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-28T22:36:40.910529Z",
+  "generatedAt": "2026-09-28T23:19:54.056370Z",
   "company": {
     "companyName": "NatWest Group PLC",
     "ticker": "NWG.L",
@@ -896,7 +896,7 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 3,
+    "reportCount": 4,
     "reports": [
       {
         "year": 2020,
@@ -1045,6 +1045,79 @@
         "positivityMethod": "lexical annual-report tone"
       },
       {
+        "year": 2024,
+        "title": "AnnualReports.com archive PDF",
+        "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/n/NYSE_NWG_2024.pdf",
+        "sourceUrl": "https://www.annualreports.com/Company/natwest-group-plc",
+        "wordCount": 336025,
+        "pageCount": 436,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 99,
+            "per10kWords": 2.946
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 14,
+            "per10kWords": 0.417
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 106,
+            "per10kWords": 3.155
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 649,
+            "per10kWords": 19.314
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 145,
+            "per10kWords": 4.315
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 49,
+            "per10kWords": 1.458
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 22,
+            "per10kWords": 0.655
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 2,
+            "per10kWords": 0.06
+          }
+        ],
+        "positivityScore": 16.2,
+        "positivityMethod": "lexical annual-report tone"
+      },
+      {
         "year": 2025,
         "title": "nwg-annual-report-and-accounts-2025.pdf",
         "url": "https://investors.natwestgroup.com/~/media/Files/R/RBS-IR-V2/results-center/13022026/nwg-annual-report-and-accounts-2025.pdf",
@@ -1124,40 +1197,40 @@
         "label": "AI",
         "mentions": 204,
         "per10kWords": 5.779,
-        "previousPer10kWords": 1.579,
-        "changePer10kWords": 4.2
+        "previousPer10kWords": 2.946,
+        "changePer10kWords": 2.833
+      },
+      {
+        "key": "regulation",
+        "label": "Regulation",
+        "mentions": 693,
+        "per10kWords": 19.631,
+        "previousPer10kWords": 19.314,
+        "changePer10kWords": 0.317
       },
       {
         "key": "cybersecurity",
         "label": "Cybersecurity",
         "mentions": 122,
         "per10kWords": 3.456,
-        "previousPer10kWords": 0.428,
-        "changePer10kWords": 3.028
+        "previousPer10kWords": 3.155,
+        "changePer10kWords": 0.301
       },
       {
         "key": "cloud",
         "label": "Cloud",
         "mentions": 19,
         "per10kWords": 0.538,
-        "previousPer10kWords": 0.321,
-        "changePer10kWords": 0.217
+        "previousPer10kWords": 0.417,
+        "changePer10kWords": 0.121
       },
       {
-        "key": "china",
-        "label": "China",
-        "mentions": 1,
-        "per10kWords": 0.028,
-        "previousPer10kWords": 0.08,
-        "changePer10kWords": -0.052
-      },
-      {
-        "key": "margin_pressure",
-        "label": "Margin pressure",
-        "mentions": 0,
-        "per10kWords": 0.0,
-        "previousPer10kWords": 0.08,
-        "changePer10kWords": -0.08
+        "key": "restructuring",
+        "label": "Restructuring",
+        "mentions": 26,
+        "per10kWords": 0.737,
+        "previousPer10kWords": 0.655,
+        "changePer10kWords": 0.082
       }
     ],
     "latestPositivity": 19.8,
@@ -1165,9 +1238,9 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 52.0,
+    "score": 44.6,
     "label": "Mixed",
-    "evidenceCoverage": 92,
+    "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
@@ -1188,9 +1261,9 @@
       {
         "key": "themes",
         "label": "Emerging themes",
-        "score": 98.2,
+        "score": 68.3,
         "weight": 0.25,
-        "reliability": 0.667,
+        "reliability": 1.0,
         "detail": "Change in growth-theme density compared with pressure and risk themes."
       }
     ],
@@ -1211,6 +1284,15 @@
       "type": "annual_report",
       "title": "Annual Report and Accounts 2023",
       "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000092117/NI-000092117.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
+    {
+      "date": "2024-12-31",
+      "type": "annual_report",
+      "title": "AnnualReports.com archive PDF",
+      "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/n/NYSE_NWG_2024.pdf",
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
