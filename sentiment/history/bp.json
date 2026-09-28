@@ -3279,47 +3279,101 @@
     },
     {
       "date": "2026-09-22",
-      "dailyScore": 51.5,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 48.5,
-      "confidence": 28.5,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 48.1,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 0,
+      "eligibleArticleCount": 0,
+      "storyCount": 0,
+      "effectiveStoryCount": 0,
+      "sourceCount": 0,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0,
+      "rejectedCandidateCounts": {},
+      "topStories": [],
+      "flags": [
+        {
+          "type": "no_coverage",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
+        }
+      ],
+      "changeFromPreviousScoredDay": null
+    },
+    {
+      "date": "2026-09-23",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 48.3,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 2,
+      "eligibleArticleCount": 0,
+      "storyCount": 0,
+      "effectiveStoryCount": 0,
+      "sourceCount": 0,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0,
+      "rejectedCandidateCounts": {
+        "missing_company_alias": 2
+      },
+      "topStories": [],
+      "flags": [
+        {
+          "type": "no_coverage",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
+        }
+      ],
+      "changeFromPreviousScoredDay": null
+    },
+    {
+      "date": "2026-09-24",
+      "dailyScore": 38.8,
+      "dailyLabel": "Negative",
+      "rollingScore": 47.3,
+      "confidence": 18.5,
       "confidenceBand": "low",
       "coverageStatus": "ok",
-      "collectionCompleteness": 0.75,
-      "candidateCount": 52,
-      "eligibleArticleCount": 2,
-      "storyCount": 2,
-      "effectiveStoryCount": 2.0,
-      "sourceCount": 2,
-      "positiveStoryCount": 1,
+      "collectionCompleteness": 1.0,
+      "candidateCount": 2,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 0,
       "neutralStoryCount": 0,
       "negativeStoryCount": 1,
-      "dispersion": 0.2576,
+      "dispersion": 0.0,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 24,
-        "missing_company_alias": 26
+        "missing_company_alias": 1
       },
       "topStories": [
         {
-          "id": "f1cb4bd1702a218f",
-          "storyClusterId": "story-002",
-          "title": "BP CEO Says Oil Giant Needs to Make ‘Fewer and Better’ Choices",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPOWVRTjZDMl90aDg1TmVuS19FQVBSSjk4OW5NT05fX1A3RkR4Qmh4Z2Z6R3F3MzhpRzUwMWlJN1JuX1p3RTNkcTdPZF9GLV9zWXZ5YXJEYTBIcU5qVGdEY3hhS2pkV0NFdThMcERsM1BxOGNRSFZsVmp4MFVvYm05SWdjd1BNRWtFYklua040M0ZPTU5RU2c?oc=5",
-          "source": "energynow.com",
-          "publishedAt": "2026-09-22T22:29:43Z",
-          "polarity": 0.3179,
-          "sentiment": "Positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "a01ac31d2d52e8e2",
+          "id": "f45d9b93333f6553",
           "storyClusterId": "story-001",
-          "title": "BP (LSE:BP) Pressured As Oil Slide Deepens",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPZjZta2NZVHlJYURnY2ZGbUtZdlItQVNNc0tfdVlYMlpQaktwaXFtREVPV0lVbmJTdS1LYWZEeTk0Q2VqSXlNUzF0RGlNRHgyNVJycldWRGFkQWZrcVQ1WlhnanJGMWxuUWs3eU5YRlI2YzFhbkgyaVRMYmtqRWRLU0x3cXNDNUQ4Wnc?oc=5",
-          "source": "kalkinemedia.com",
-          "publishedAt": "2026-09-22T12:36:00Z",
-          "polarity": -0.1973,
-          "sentiment": "Slightly negative",
+          "title": "BP PLC 9 Percent Preferred Shares ( LON : BP . B ) Hits New 52 - Week Low – Here What Happened",
+          "url": "https://www.themarketsdaily.com/2026/09/24/bp-plc-9-percent-preferred-shares-lonbp-b-hits-new-52-week-low-heres-what-happened.html",
+          "source": "themarketsdaily.com",
+          "publishedAt": "2026-09-24T19:30:00Z",
+          "polarity": -0.6702,
+          "sentiment": "Very negative",
           "publisherCount": 1
         }
       ],
@@ -3329,447 +3383,77 @@
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 28.5",
+          "detail": "Confidence is 18.5",
           "evidenceArticleIds": [
-            "f1cb4bd1702a218f",
-            "a01ac31d2d52e8e2"
-          ]
-        },
-        {
-          "type": "collection_degraded",
-          "direction": "neutral",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "f1cb4bd1702a218f",
-            "a01ac31d2d52e8e2"
+            "f45d9b93333f6553"
           ]
         }
       ],
-      "changeFromPreviousScoredDay": 18.8
-    },
-    {
-      "date": "2026-09-23",
-      "dailyScore": 59.7,
-      "dailyLabel": "Slightly positive",
-      "rollingScore": 50.5,
-      "confidence": 61.9,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "collectionCompleteness": 0.75,
-      "candidateCount": 62,
-      "eligibleArticleCount": 7,
-      "storyCount": 7,
-      "effectiveStoryCount": 7.0,
-      "sourceCount": 6,
-      "positiveStoryCount": 4,
-      "neutralStoryCount": 1,
-      "negativeStoryCount": 2,
-      "dispersion": 0.557,
-      "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 39,
-        "missing_company_alias": 16
-      },
-      "topStories": [
-        {
-          "id": "e181d7a3ab676a7a",
-          "storyClusterId": "story-002",
-          "title": "BP plc : Upgraded to Buy by JP Morgan",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRFlCaXJ1UDBhLTdGdGl3cmRfc1AydkRNZ2Vxam0tUUtQVWNpTnQ5TFVhLWxQcnRXdURLTHQtbUt0WDBkcTRVVjJuY3Atdm4xTmRkc0xXTzVLZlI4bTdDYjd0eHF0dUlaS1ByejIxbVBZeWVodHdrblJ2cDA0TEJzNTVQcjRqQl8zYWVqNVJtb29SQQ?oc=5",
-          "source": "marketscreener.com",
-          "publishedAt": "2026-09-23T05:02:24Z",
-          "polarity": 0.8642,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "6e145860145901a5",
-          "storyClusterId": "story-007",
-          "title": "BP PLC Stock (BP) Closed Up by 3.23% on Sep 23: Drivers Behind the Movement",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZV9BSHRwQ3k4RXZXT1J5MWNWeFljMXl6aGdpdWkxdFBIMnVyQnJNa1NjcGFlUXppckJzQ1ZOczRsWVRvSExIS2VOa1JrQ2wzdnFzRVM0OUdrVWVLUmhaV1pDdEtrandfUThFSXNVblotV3Rya19pbzkwaVduNjJjSnJBWEhyeUpR?oc=5",
-          "source": "tradingkey.com",
-          "publishedAt": "2026-09-23T20:15:23Z",
-          "polarity": 0.8306,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "42bac73e7a51f5d3",
-          "storyClusterId": "story-001",
-          "title": "EU Oil & Gas: Valuation and Sensitivity Screening; Upgrade BP to Overweight, Downgrade TotalEnergies to Neutral",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQYml5YXk0MGNEcDl4OGQ3MFpNM2JyLVVpT2JKckxxZF94bGZLYTk4UEQ3RFRVYkFncWtrb1ZUN3VMQkE0a01vdGRMSktBZS05eDJOVmFCcWx6NHczZUtOZFRNQlpCd1o5SHEyN2c1UV9kUmdScFZxV1Z1QTdpUWNraFF1cHBuZ1BKNlk5Szc0b2h2Ri0tbnlUUTFmbVB5bFo1TFBic29n?oc=5",
-          "source": "news.futunn.com",
-          "publishedAt": "2026-09-23T01:27:29Z",
-          "polarity": 0.7115,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "3e80ad4a46e109f8",
-          "storyClusterId": "story-003",
-          "title": "Key facts: Michigan Antitrust Suit Dismissed; BP PLC (BP.) Exits Sapref",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQaXlhdVVGZ1JuTWRQUWdIYjAyVUE4QTFUX3Uya2JSaDQ4RGRuUmtKbG1pbXBNN3U5aGJ5MTNWTXNCaHh0b0JmYTNrV25nVWdmbllCeHRxYjFCMFc3SzhqQmIwdjJPQnR2ZEo4cm0tdE03b0lSYVBucUVnMDRDeHhJYzNaZHc3amFwUEhmRzdTamxwVlplRXN2RFNoTU9lQWoyRjhRam9mZ3dGUzA3X19pZloyNi1SbzBtWVhZZDgtckVoN3N0WWdF?oc=5",
-          "source": "tradingview.com",
-          "publishedAt": "2026-09-23T07:15:01Z",
-          "polarity": -0.6393,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "654d8ec8f106a658",
-          "storyClusterId": "story-005",
-          "title": "BP Exits Bay du Nord Oil Project, Leaving Equinor as Sole Owner",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPQUJZaS1yeFMteU1TTjRLQVY1QnBZV3R0bzNkVlhwd0pfcUZLQmhpdGx6WkRsaTg5UWxSTml5akhVY2lmdDBodDNZSUVJSDNqdjNUSzVlZ1lSbklCd25jd2p1ZTFNN0M5c3llZTY2ZlJsWGhLeUZnUmdvcVdac1QzVTN5em1icXRHNE5vaTFlVVFiVlVkTE1R?oc=5",
-          "source": "energynow.ca",
-          "publishedAt": "2026-09-23T12:14:42Z",
-          "polarity": -0.3651,
-          "sentiment": "Negative",
-          "publisherCount": 1
-        }
-      ],
-      "flags": [
-        {
-          "type": "analyst_upgrade",
-          "direction": "positive",
-          "severity": "low",
-          "status": "possible",
-          "evidenceArticleIds": [
-            "e181d7a3ab676a7a"
-          ],
-          "sourceCount": 1
-        },
-        {
-          "type": "high_disagreement",
-          "direction": "mixed",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "Positive and negative coverage is unusually dispersed",
-          "evidenceArticleIds": [
-            "e181d7a3ab676a7a",
-            "6e145860145901a5",
-            "42bac73e7a51f5d3",
-            "3e80ad4a46e109f8",
-            "654d8ec8f106a658"
-          ]
-        },
-        {
-          "type": "collection_degraded",
-          "direction": "neutral",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "e181d7a3ab676a7a",
-            "6e145860145901a5",
-            "42bac73e7a51f5d3",
-            "3e80ad4a46e109f8",
-            "654d8ec8f106a658"
-          ]
-        }
-      ],
-      "changeFromPreviousScoredDay": 8.2
-    },
-    {
-      "date": "2026-09-24",
-      "dailyScore": 64.6,
-      "dailyLabel": "Positive",
-      "rollingScore": 52.8,
-      "confidence": 60.6,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "collectionCompleteness": 0.75,
-      "candidateCount": 59,
-      "eligibleArticleCount": 11,
-      "storyCount": 8,
-      "effectiveStoryCount": 8.0,
-      "sourceCount": 8,
-      "positiveStoryCount": 5,
-      "neutralStoryCount": 3,
-      "negativeStoryCount": 0,
-      "dispersion": 0.3121,
-      "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 35,
-        "missing_company_alias": 13
-      },
-      "topStories": [
-        {
-          "id": "bb0b264d23b5688a",
-          "storyClusterId": "story-008",
-          "title": "Badawi, bp Discuss $700 Mn Drilling Program to Boost Egypt Gas Output",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQR21wMVNRc3ZjRW01TmlZY2lZMUs3blNNUVZETkt3eWxGR3Vib2RGQUNFRmFRNk56V1l3THpPZm9ncUowcVpob3FDZHRlOGpEaENScGlERldNRlJKbWR1Vm1PX2N0MHhtUjRGdjgtLThMUnJGTkd6aFczcnc2MGJ6RU1ObU5Tek1YYWNWa1luaG0zQWd1alp4dnZEWjFTLWs?oc=5",
-          "source": "egyptoil-gas.com",
-          "publishedAt": "2026-09-24T20:00:17Z",
-          "polarity": 0.881,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "8869304148861fb8",
-          "storyClusterId": "story-004",
-          "title": "BP eyes Devon Energy asset amid renewed US M&A ambitions, sources say",
-          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZC1DX1BKV0loY3E3eGRoZXhRLWlNNFRKUVlzR3UtRjZCeDdGN3hHVHJEYjJJLTktY2pZYVBlRnIwZE1YeF9RbzF0RjRFY1lkWnk4NEdfU250YXNRQUR4SjBQMFRYX0VvUkpIWnFxWDdEdmdXcnlUQ0J0eWtvZU04U3ZGUTZpYmVVSWVYYVVkSmVScEJ0RnpRMWhRUkJ2R1ByR0ZjbjBlVWk2ckwtREFBazZaZGhaQWtWRmk3LWdGMGtwcU9TMEQ4dDNSNmVDVXM0eEUyRQ?oc=5",
-          "source": "tradingview.com",
-          "publishedAt": "2026-09-24T21:11:52Z",
-          "polarity": 0.8631,
-          "sentiment": "Very positive",
-          "publisherCount": 3
-        },
-        {
-          "id": "6709744c13d85432",
-          "storyClusterId": "story-002",
-          "title": "BP plc : Buy rating from RBC",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNODQ2ZUZvT212aTVzTUEzeHhVMEkwS0hEb3dacDlXVG82QVB1SEtsZkdHaXNVRDNUdzh4TFlyS05tUXZ4SlNsVG5rMVNFcUNRZW9jZHl2Mi1tUklzbmZ2dUs4bmxZZFFTNWhjWWJmUDZwWjRqamhSUzhhYTZ2dG9EMGpGeXJkUQ?oc=5",
-          "source": "marketscreener.com",
-          "publishedAt": "2026-09-24T12:45:40Z",
-          "polarity": 0.3954,
-          "sentiment": "Positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "f1085d5eb68e02a6",
-          "storyClusterId": "story-001",
-          "title": "BP CEO Says Oil Giant Needs to Make ‘Fewer and Better’ Choices",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOdkJWcUtzSUp5QVU4REotRDdzTjBmRm1CLVRuNDd5dlFtUnNuOUk4YVFqSUt4ZUhyZlVndnhfdU1ZV2EtSGl6dWNRaHNHSjJJZk5LTEhqQ2trNVotTC1mczQtUHZwREh4WVdZXzYzU2tleDIzaW9fQ1FnNHdnczFETVFmZkF5MVFHX2NwNGk0MUZ5ZG1B?oc=5",
-          "source": "energynow.ca",
-          "publishedAt": "2026-09-24T11:50:02Z",
-          "polarity": 0.3179,
-          "sentiment": "Positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "9ec151ee7139cdae",
-          "storyClusterId": "story-006",
-          "title": "Market Chatter: BP Weighs Acquisition of Devon Energy's South Texas Assets",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPSDJIOHAzRmZYYU5fUW9kX2N6Z1NyNGZWdGhIYVRCUG9UaFBzWkpTT3Yta3l5bUxkWVdrZGFEaEFPcDBOSlBrTVFGRzhqQUIzb212UnNyRUowVmQxM3RCZ0JQYVBFVnVVdW1MeHg0U0dHYUsxb2Z4cGxPQi1hQWtjaHlfVXZBLUxtNlk5SXhEWjNKYnhmUno4OA?oc=5",
-          "source": "finance.yahoo.com",
-          "publishedAt": "2026-09-24T18:19:40Z",
-          "polarity": 0.1831,
-          "sentiment": "Slightly positive",
-          "publisherCount": 2
-        }
-      ],
-      "flags": [
-        {
-          "type": "collection_degraded",
-          "direction": "neutral",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "bb0b264d23b5688a",
-            "8869304148861fb8",
-            "6709744c13d85432",
-            "f1085d5eb68e02a6",
-            "9ec151ee7139cdae"
-          ]
-        }
-      ],
-      "changeFromPreviousScoredDay": 4.9
+      "changeFromPreviousScoredDay": 6.1
     },
     {
       "date": "2026-09-25",
-      "dailyScore": 57.5,
-      "dailyLabel": "Slightly positive",
-      "rollingScore": 53.3,
-      "confidence": 58.8,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "collectionCompleteness": 0.75,
-      "candidateCount": 51,
-      "eligibleArticleCount": 12,
-      "storyCount": 10,
-      "effectiveStoryCount": 10.0,
-      "sourceCount": 10,
-      "positiveStoryCount": 4,
-      "neutralStoryCount": 6,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 47.6,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 0,
+      "eligibleArticleCount": 0,
+      "storyCount": 0,
+      "effectiveStoryCount": 0,
+      "sourceCount": 0,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 0,
       "negativeStoryCount": 0,
-      "dispersion": 0.1937,
-      "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 29,
-        "missing_company_alias": 10
-      },
-      "topStories": [
-        {
-          "id": "2203df5d08271724",
-          "storyClusterId": "story-006",
-          "title": "BP continues Egypt drilling programme amid reported asset sale talks - Energy - Business",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOYXNMdlZPQkFBcXFvZE5pMUpRa3FOR2dDajNOTXNGYnhrUVN0QnBDLXZSM0hWeHc0Zk5SM21KRE9oZTRpNllILUdPc3QxNW5GZ081Um5IRjI1eDVjNF94Qm9NVW04MDZHaUlsM1VYRnowY01xT3AtMWt3VWRUTmdhVllPaUxnZFhiam5ZYUV5di1UVWVYbFRVcXphaXZhc1YyTUplQ25LdEhFYUktSFRUVlRjdW4zZw?oc=5",
-          "source": "english.ahram.org.eg",
-          "publishedAt": "2026-09-25T12:24:15Z",
-          "polarity": 0.5392,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "2d5cac25c7017823",
-          "storyClusterId": "story-005",
-          "title": "Aker BP raises estimate for oil and gas discoveries",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1WRzNCN2FyemNSNXFuUU9oZ0JRdlNjZnNFWHJ2OFN5cTRIUEZKa19jdGRqT3o3VUJ4Qm0wOWVmai0zWG92QkdQaWlxRVdrYmh5TVR1M0RzcW9RQUd2NmFoNEYwSWNWNThtaDBVbVBlTU0yQQ?oc=5",
-          "source": "energywatch.com",
-          "publishedAt": "2026-09-25T10:00:08Z",
-          "polarity": 0.4296,
-          "sentiment": "Positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "f1085d5eb68e02a6",
-          "storyClusterId": "story-009",
-          "title": "BP CEO Says Oil Giant Needs to Make ‘Fewer and Better’ Choices",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOdkJWcUtzSUp5QVU4REotRDdzTjBmRm1CLVRuNDd5dlFtUnNuOUk4YVFqSUt4ZUhyZlVndnhfdU1ZV2EtSGl6dWNRaHNHSjJJZk5LTEhqQ2trNVotTC1mczQtUHZwREh4WVdZXzYzU2tleDIzaW9fQ1FnNHdnczFETVFmZkF5MVFHX2NwNGk0MUZ5ZG1B?oc=5",
-          "source": "energynow.ca",
-          "publishedAt": "2026-09-25T22:23:41Z",
-          "polarity": 0.3179,
-          "sentiment": "Positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "97bfccd7c85284dc",
-          "storyClusterId": "story-004",
-          "title": "HSBC shuffles oil stocks ratings, upgrades BP and TotalEnergies to Buy",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQcExqSE92UlV1MVVpci1kN2FVcWJVY05HdEZOQTAyMzZtOUc5NTBtcU9FTkh2NUVFQ2c5b0pnZC1aeTJDR2UxNU12U1NMTHJ4V1pabnBmcVZsWEhTTnVuY0pPVmxXd0NpYmZLWUhrQnVnVDJnb2tHb095SkZSSUxtbGJ1SjVRQWlwMnZTcFMtempiYVM3SUpZRmVpWHZIUQ?oc=5",
-          "source": "finance.yahoo.com",
-          "publishedAt": "2026-09-25T07:42:01Z",
-          "polarity": 0.3074,
-          "sentiment": "Positive",
-          "publisherCount": 2
-        },
-        {
-          "id": "5b2368ab50c6bd7c",
-          "storyClusterId": "story-007",
-          "title": "BP p.l.c. Reportedly Considering the Acquisition of Devon Energy's Shale Asset Base in South Texas",
-          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNWFA4ZVlPOWthUGNQdXZLV3lYbFFVNDB4ZWRXZkZFZjFzWVMyUVdwLU00YmYwbEMtM2YtX3hhbG5hSmNxR01CZVZTZFQtZU03OE5aYnVzT0haTW1CMUpFSWhCeTF5OEpaVS1TVHU5ZS1lWFFIRkRMRXBUd0dKdVlOTkdBTXBQakZ6MF9KUFN6dzlKakI0LVZRSUN3c3FqaWMyUlNOZVUyMkhycDZadVpWZTM4cmFfTlFldVRLYk5YTThRNG5sY1VGR0RDaXNldUlVREw4UDg3UDBDdlJrV2EyVE1DNUk?oc=5",
-          "source": "marketscreener.com",
-          "publishedAt": "2026-09-25T12:37:58Z",
-          "polarity": 0.1408,
-          "sentiment": "Slightly positive",
-          "publisherCount": 1
-        }
-      ],
+      "dispersion": 0.0,
+      "rejectedCandidateCounts": {},
+      "topStories": [],
       "flags": [
         {
-          "type": "divestment",
+          "type": "no_coverage",
           "direction": "neutral",
-          "severity": "medium",
-          "status": "possible",
-          "evidenceArticleIds": [
-            "2203df5d08271724"
-          ],
-          "sourceCount": 1
-        },
-        {
-          "type": "collection_degraded",
-          "direction": "neutral",
-          "severity": "medium",
+          "severity": "low",
           "status": "calculated",
-          "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "2203df5d08271724",
-            "2d5cac25c7017823",
-            "f1085d5eb68e02a6",
-            "97bfccd7c85284dc",
-            "5b2368ab50c6bd7c"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "changeFromPreviousScoredDay": -7.1
+      "changeFromPreviousScoredDay": null
     },
     {
       "date": "2026-09-26",
-      "dailyScore": 52.1,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 52.8,
-      "confidence": 53.3,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "collectionCompleteness": 0.75,
-      "candidateCount": 33,
-      "eligibleArticleCount": 6,
-      "storyCount": 6,
-      "effectiveStoryCount": 6.0,
-      "sourceCount": 5,
-      "positiveStoryCount": 2,
-      "neutralStoryCount": 3,
-      "negativeStoryCount": 1,
-      "dispersion": 0.2174,
-      "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 11,
-        "missing_company_alias": 16
-      },
-      "topStories": [
-        {
-          "id": "654d8ec8f106a658",
-          "storyClusterId": "story-003",
-          "title": "BP Exits Bay du Nord Oil Project, Leaving Equinor as Sole Owner",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPQUJZaS1yeFMteU1TTjRLQVY1QnBZV3R0bzNkVlhwd0pfcUZLQmhpdGx6WkRsaTg5UWxSTml5akhVY2lmdDBodDNZSUVJSDNqdjNUSzVlZ1lSbklCd25jd2p1ZTFNN0M5c3llZTY2ZlJsWGhLeUZnUmdvcVdac1QzVTN5em1icXRHNE5vaTFlVVFiVlVkTE1R?oc=5",
-          "source": "energynow.ca",
-          "publishedAt": "2026-09-26T12:23:56Z",
-          "polarity": -0.3651,
-          "sentiment": "Negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "f1cb4bd1702a218f",
-          "storyClusterId": "story-002",
-          "title": "BP CEO Says Oil Giant Needs to Make ‘Fewer and Better’ Choices",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPOWVRTjZDMl90aDg1TmVuS19FQVBSSjk4OW5NT05fX1A3RkR4Qmh4Z2Z6R3F3MzhpRzUwMWlJN1JuX1p3RTNkcTdPZF9GLV9zWXZ5YXJEYTBIcU5qVGdEY3hhS2pkV0NFdThMcERsM1BxOGNRSFZsVmp4MFVvYm05SWdjd1BNRWtFYklua040M0ZPTU5RU2c?oc=5",
-          "source": "energynow.com",
-          "publishedAt": "2026-09-26T11:47:32Z",
-          "polarity": 0.3179,
-          "sentiment": "Positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "e77d593ea6d92c17",
-          "storyClusterId": "story-005",
-          "title": "Up 30% this year, are BP shares really in recovery — or riding the oil spike wave?",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNUndsSklJUlFxX2R5RVNsMFFDY2N4OUpndnpsMFRnSUNmRW1OQWhuQkt3emRFckVCbk9JbGtQN0Nxd1I2ekRUelE4blkxLXh2amowalhBTlk2YVVMNEFoYlhHRE1FTTBleTNOdjZvNUZSdHJIMmFzMXpuS2w5OVdZRWFQLXV6eUtFRXZYTDg5OTc4dFNGMnlIN3JFZjhNTDJHLTZBV3JKenI4bFBLVk5SeHlBQnRja2JUVjJ3?oc=5",
-          "source": "twelfthmagpie.com",
-          "publishedAt": "2026-09-26T16:29:00Z",
-          "polarity": 0.1883,
-          "sentiment": "Slightly positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "d8bf5e8d5f6dc79b",
-          "storyClusterId": "story-004",
-          "title": "ConocoPhillips Joins BP in Iraq as Baghdad Seeks More US Energy Investment",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOVGtXMmtNWFJ0azJ5cGN1N1pycEJuMmN0aFFkOU9FU2tqamN2VGoxcXVlVUxXeWxCanlTSEE3M0dJenItME5BczctT0pYTng4aGNIUlJPWUJxend3NXJoLVd5XzJ5bGRsT0F2MVlVaTJmLVZnb1RrR0I5bmxXTzN3UHFJTGpNbzlEaUx3cWdTa3VkdFA5OVhVVWMyWjZ6dGdWVUZyX01DbTc?oc=5",
-          "source": "energynow.com",
-          "publishedAt": "2026-09-26T12:38:36Z",
-          "polarity": 0.1458,
-          "sentiment": "Slightly positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "90a2b19ae5252b53",
-          "storyClusterId": "story-006",
-          "title": "BP Stock Climbs Premarket: Oil Major Reportedly Sells 5% Stake In Australian Browse LNG Project",
-          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNY1h4ZjZlMU5NVS1SZVJ1Zi1HMktzV0tjd2lDTUwwdU5PNjZFY05FT3owZVFSWldPeTVVcm9oZzIwNU1lUmpKeW0zNDNSWUJJUGNwX2o4Y3FKekdjbTdaTkVHTkFCTTdQY0JNVmNtSC1GV19fY2JoOHhUNWk1b3Z4amtmR3NBdnUzVnc5VlJwUE5UOHFKNldVTWo0R3pJeU5zV0o5SFhBRTYtZ0t5WWlVZThMcURGR1M3c1NaRDZqX2FTaUtoUlhsRDdSeU1CbzY5TUNrdlM2VkhjODBEVXc?oc=5",
-          "source": "stocktwits.com",
-          "publishedAt": "2026-09-26T18:19:08Z",
-          "polarity": 0.0939,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ],
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 47.8,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 0,
+      "eligibleArticleCount": 0,
+      "storyCount": 0,
+      "effectiveStoryCount": 0,
+      "sourceCount": 0,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0,
+      "rejectedCandidateCounts": {},
+      "topStories": [],
       "flags": [
         {
-          "type": "collection_degraded",
+          "type": "no_coverage",
           "direction": "neutral",
-          "severity": "medium",
+          "severity": "low",
           "status": "calculated",
-          "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "654d8ec8f106a658",
-            "f1cb4bd1702a218f",
-            "e77d593ea6d92c17",
-            "d8bf5e8d5f6dc79b",
-            "90a2b19ae5252b53"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "changeFromPreviousScoredDay": -5.4
+      "changeFromPreviousScoredDay": null
     },
     {
       "date": "2026-09-27",
