@@ -1,0 +1,54 @@
+{
+  "date": "2026-09-28",
+  "generatedAt": "2026-09-28T00:49:21.286492+00:00",
+  "source": "uk-companies.json",
+  "companyCount": 1,
+  "methodology": {
+    "name": "StockLayer growth confidence validation snapshot",
+    "scoreRange": "0-100",
+    "weights": {
+      "momentum": 0.35,
+      "annualReportHealth": 0.3,
+      "marketPosition": 0.2,
+      "riskBalance": 0.15
+    },
+    "forwardReturnWindows": [
+      "7d",
+      "30d",
+      "180d",
+      "365d"
+    ],
+    "note": "Daily score snapshots are compared with later share-price observations once enough time has elapsed."
+  },
+  "companies": [
+    {
+      "date": "2026-09-28",
+      "slug": "rentokil-initial",
+      "companyName": "Rentokil Initial PLC",
+      "ticker": "RTO.L",
+      "ftseRank": 78,
+      "sharePrice": 3.083,
+      "sharePriceDate": "2026-09-25T12:31:43+00:00",
+      "marketCap": "10.72B",
+      "marketCapValue": 10719181824,
+      "globalMarketCapRank": 1534,
+      "growthConfidence": 53,
+      "growthConfidenceLabel": "Caution",
+      "growthConfidenceSummary": "Caution: lifted by annual reports and risk balance.",
+      "components": {
+        "momentum": 40,
+        "annualReportHealth": 88,
+        "marketPosition": 35,
+        "riskBalance": 70,
+        "annualReportIntelLoaded": true,
+        "annualReportRecency": {
+          "latestYear": 2025,
+          "age": 1,
+          "confidence": 0.82,
+          "label": "2025 report"
+        }
+      },
+      "forwardReturns": {}
+    }
+  ]
+}
