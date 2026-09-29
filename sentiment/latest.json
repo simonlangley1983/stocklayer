@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-09-29T11:28:39.815258Z",
+  "generatedAt": "2026-09-29T17:03:59.313892Z",
   "asOfDate": "2026-09-28",
   "companies": {
     "astrazeneca": {
@@ -170,88 +170,26 @@
       "ticker": "HSBA.L",
       "slug": "hsbc",
       "date": "2026-09-28",
-      "dailyScore": 52.5,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.0,
-      "confidence": 47.3,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "storyCount": 5,
-      "sourceCount": 5,
-      "changeFromPreviousScoredDay": 2.5,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 49.5,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "collection_degraded",
+          "type": "no_coverage",
           "direction": "neutral",
-          "severity": "medium",
+          "severity": "low",
           "status": "calculated",
-          "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "970da14ee0f739ce",
-            "6a9c15e244eb2e1b",
-            "bcfc4c50f3057fc4",
-            "c037cfd8956b6a11",
-            "f9eaa2e3d2b58d8e"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "970da14ee0f739ce",
-          "storyClusterId": "story-001",
-          "title": "HSBC Holdings (LSE:HSBA) India Expansion and Funding Strategy Take Focus",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOcEFpZGpLZ2lzT1FvRTFKLXNURGY0dEtwUEhyV3I1MXo1R2sxNGxZUWR2RXZnNlQtSk1QRE9tYXFsekhXVV9KTHJNYTJLSzIyeWNlYm9Ya1lBblJCeENtOVExenBWa1FqVktFTW13YzlCY1M5czd6WkJaUk5nWW96RUljNURqV0x3aHlxOGlyRGtYaEVtRkNSWFY3OTY0MTRjOFNPVWsyNkhodlI3ejJncTNsRlc?oc=5",
-          "source": "kalkinemedia.com",
-          "publishedAt": "2026-09-28T06:49:00Z",
-          "polarity": 0.1851,
-          "sentiment": "Slightly positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "6a9c15e244eb2e1b",
-          "storyClusterId": "story-003",
-          "title": "HSBC Holdings plc Adopts Nasdaq, Inc.?s Enhanced Exchange-Traded Derivatives Platform",
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNS3RNTVB3aF9tVjFXNzlyV1d0S1dkRHpkZk9qRHc3bE9qN0UzeTJqcVNzbXVyYlFMTjdoaU84ZjgyTW1DNHFvY29nYnBqbmNKcmNiLTY0RnN3QThkVzY4VlhTX205bzJJeTY5M09yYUh5OUt2RmZxUkF1dktXaUJiZ3F1R2ZUc3E1c0RKT05USWZiU1BkRkVRSFZPTjRKVHhrN2V4SFN3ZGxJSGtyZUhUMmkyOE5qa0cxMWhMRjdKSzlvRFJTWlUzVVdsSGtiZnlrT2c?oc=5",
-          "source": "marketscreener.com",
-          "publishedAt": "2026-09-28T13:37:36Z",
-          "polarity": 0.1696,
-          "sentiment": "Slightly positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "bcfc4c50f3057fc4",
-          "storyClusterId": "story-002",
-          "title": "HSBC Holdings plc (HSBC) Stock Price, News, Quote & History",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1VUlBsUWJId3ZwZ2I0dUhCbEI1bzRwMzFCczEyVjhqS0VJUmRUby00cDZtMDNTNzZxQXpsRE9HZTVsOEdHRlBycnJvTU5Ra2RIaVE?oc=5",
-          "source": "ca.finance.yahoo.com",
-          "publishedAt": "2026-09-28T09:25:17Z",
-          "polarity": -0.0312,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        },
-        {
-          "id": "c037cfd8956b6a11",
-          "storyClusterId": "story-005",
-          "title": "Notes due in 2027 are set for full redemption by HSBC Holdings (HSBC) in November 2026.",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNRVdjbXUtS014TDZjZUhjRW8xR1ZZOU8zUno0ck1UU2YwWFJTS1l0M2J0WURxLS1iNzJ6SVBRMWxDNEdSU3NLVDZYZlhVUzR3YzZpOXluRWVXUVlXM1QwYjdrOUhMZUUwc1VfeVRsSWVtUmF4UkF1bFZrSU42OVcxR1FQeW9hN0ZHRzZLM3hmSkhHdmJwWXQycUhuV0M0NGtaNlc2R2syMGx3VmhlVWNuRUhVSQ?oc=5",
-          "source": "stocktitan.net",
-          "publishedAt": "2026-09-28T14:50:13Z",
-          "polarity": 0.0155,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        },
-        {
-          "id": "f9eaa2e3d2b58d8e",
-          "storyClusterId": "story-004",
-          "title": "REG - HSBC Holdings PLC - Director/PDMR Shareholding",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNem83cmpLbXRici1ueFUzQkpDdUFMbU05anhwQVRQcFJNQ1c2TTdOa1FUdzRJNnMwQmdxYXdicVpuNXR4ZFVWZHVVOXp2R05ZYXZBNURLYk8tVFNERUlSZlBybmt1ZUxMZWlyRVcwTGlKZWNaZFpqVU91UkpzVEdZR2xHRnYtUXRJVHJXQ3NPWWNldHhfQzNtM0FqanlYY0dWU0NUNlhhcm83cGRjSnVOZ3JyRlFKUG93RU9qNXY0ZjdMQQ?oc=5",
-          "source": "tradingview.com",
-          "publishedAt": "2026-09-28T14:30:00Z",
-          "polarity": 0.0148,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "unilever": {
       "companyName": "Unilever",
