@@ -2,9 +2,9 @@ name: Monitor annual reports
 
 on:
   schedule:
-    # Routine collection checks verified sources once each morning. Historical
-    # recovery is deliberately manual: it is network-heavy and low-yield.
-    - cron: "20 6 * * *"
+    # Check registered issuer sources throughout the day. Historical recovery
+    # remains manual because it is network-heavy and low-yield.
+    - cron: "*/15 * * * *"
   workflow_dispatch:
     inputs:
       historical:
@@ -67,7 +67,7 @@ jobs:
           --workers 20
 
       - name: Extract verified manually supplied reports
-        run: python scripts/backfill_annual_reports.py --ticker BTRW.L --ticker JD.L --batch-size 8 --workers 4 --report-timeout 90 --start-year 2021
+        run: python scripts/backfill_annual_reports.py --ticker BTRW.L --batch-size 8 --workers 4 --report-timeout 90 --start-year 2021
 
       - name: Discover historical archive reports
         if: ${{ inputs.historical && !inputs.extraction_only }}
@@ -108,20 +108,19 @@ jobs:
           git config user.name "stocklayer-annual-report-bot"
           git config user.email "stocklayer-annual-report-bot@users.noreply.github.com"
 
-          git add annual-reports/*.json annual-reports/coverage-summary.md
+          git add annual-reports/*.json annual-reports/coverage-summary.md history/growth-confidence/*.json
           git commit -m "Update annual report monitoring" || echo "No annual report changes to commit"
 
           # These feeds were built before any concurrent data update was incorporated.
           # Discard only the generated copies; they are rebuilt after the rebase below.
-          git restore company-reports history/growth-confidence
+          git restore company-reports
 
           # Daily sentiment may update main during the slower PDF extraction.
           # Rebase onto that data, rebuild the combined feeds, and retry a raced push.
           for attempt in 1 2 3; do
             git pull --rebase origin main
             python automation/build_company_reports.py
-            python scripts/generate_growth_confidence_history.py --companies uk-companies.json
-            git add company-reports/*.json history/growth-confidence/*.json
+            git add company-reports/*.json
             git commit -m "Rebuild customer company reports" || echo "No company report changes to commit"
             if git push origin HEAD:main; then
               exit 0
