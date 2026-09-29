@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T14:16:06.254425+00:00",
+  "generatedAt": "2026-09-29T13:11:52.183150+00:00",
   "companyCount": 100,
   "verifiedCurrentCount": 16,
   "companies": {
@@ -113,23 +113,23 @@
         },
         "shell:2021": {
           "candidateHash": "0d295da24fd2c6579736d4c728be93a567a8817bb5906634f92a4daf50a694df",
-          "attemptCount": 3,
-          "lastAttempt": "2026-09-28T08:44:57.093830+00:00",
+          "attemptCount": 4,
+          "lastAttempt": "2026-09-29T12:55:43.729497+00:00",
           "status": "extraction_failed",
-          "retryAfter": "2026-09-29T08:44:57.093830+00:00",
+          "retryAfter": "2026-10-01T12:55:43.729497+00:00",
           "diagnostics": [
             {
               "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/s/NYSE_SHEL_2021.pdf",
-              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
             }
           ]
         },
         "shell:2022": {
           "candidateHash": "ee51e3713385f18eeaf846735cf61592e5ce8616ba7b674f55104242b3a04947",
-          "attemptCount": 3,
-          "lastAttempt": "2026-09-28T08:44:16.900772+00:00",
+          "attemptCount": 4,
+          "lastAttempt": "2026-09-29T12:55:43.605303+00:00",
           "status": "extraction_failed",
-          "retryAfter": "2026-09-29T08:44:16.900772+00:00",
+          "retryAfter": "2026-10-01T12:55:43.605303+00:00",
           "diagnostics": [
             {
               "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/s/NYSE_SHEL_2022.pdf",
@@ -391,6 +391,12 @@
           "extractionStatus": "extracted"
         },
         {
+          "year": 2022,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BATS_2022.pdf",
+          "sha256": "2e3b29ce593bbcfef361722ce9802ca2018ed627080e2e5a36c3a6dc63ab20e5",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2023,
           "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BATS_2023.pdf",
           "sha256": "eb2191b64844aef0c4f9d8ea0047adb4cbbbb8d2dbf05340dcb8797e4e8563f4",
@@ -480,16 +486,11 @@
         },
         "british-american-tobacco:2022": {
           "candidateHash": "62c89f64a3f94672299e90430137bfe390e9bcc9d80e35758d15ee276c002371",
-          "attemptCount": 1,
-          "lastAttempt": "2026-09-28T08:43:53.679399+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-28T14:43:53.679399+00:00",
-          "diagnostics": [
-            {
-              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BATS_2022.pdf",
-              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-            }
-          ]
+          "attemptCount": 2,
+          "lastAttempt": "2026-09-28T18:13:43.503327+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-29T06:13:43.503327+00:00",
+          "diagnostics": []
         },
         "british-american-tobacco:2023": {
           "candidateHash": "0c27d67ef13f6d1f0ba8b7f5039b292ef6a33653e53cd6165f92e87d052934c1",
@@ -551,40 +552,40 @@
         },
         "bp:2023": {
           "candidateHash": "3fa7f02389d23531ae8fcda10e4f2c173615d81833440ccbd87bcc6e3b6c63b4",
-          "attemptCount": 3,
-          "lastAttempt": "2026-09-28T08:42:56.346975+00:00",
+          "attemptCount": 4,
+          "lastAttempt": "2026-09-29T12:55:02.874305+00:00",
           "status": "extraction_failed",
-          "retryAfter": "2026-09-29T08:42:56.346975+00:00",
+          "retryAfter": "2026-10-01T12:55:02.874305+00:00",
           "diagnostics": [
             {
               "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BP_2023.pdf",
-              "error": "HTTPError: HTTP Error 429: "
+              "error": "HTTPError: HTTP Error 503: "
             }
           ]
         },
         "bp:2022": {
           "candidateHash": "1f38ebfb08f04e4ad6076e6f233921d0194d2de3d4fff980f54e82e69b262fc8",
-          "attemptCount": 3,
-          "lastAttempt": "2026-09-28T08:44:16.751465+00:00",
+          "attemptCount": 4,
+          "lastAttempt": "2026-09-29T12:55:02.871445+00:00",
           "status": "extraction_failed",
-          "retryAfter": "2026-09-29T08:44:16.751465+00:00",
+          "retryAfter": "2026-10-01T12:55:02.871445+00:00",
           "diagnostics": [
             {
               "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BP_2022.pdf",
-              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+              "error": "HTTPError: HTTP Error 503: "
             }
           ]
         },
         "bp:2021": {
           "candidateHash": "ad1538eace1daca2b404986edbaa406a5cd88a14a531202b8b37115a3932751f",
-          "attemptCount": 3,
-          "lastAttempt": "2026-09-28T08:44:56.936908+00:00",
+          "attemptCount": 4,
+          "lastAttempt": "2026-09-29T12:55:03.509386+00:00",
           "status": "extraction_failed",
-          "retryAfter": "2026-09-29T08:44:56.936908+00:00",
+          "retryAfter": "2026-10-01T12:55:03.509386+00:00",
           "diagnostics": [
             {
               "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BP_2021.pdf",
-              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+              "error": "HTTPError: HTTP Error 429: "
             }
           ]
         }
@@ -1212,6 +1213,30 @@
       "status": "verified_current",
       "documents": [
         {
+          "year": 2020,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BA_2020.pdf",
+          "sha256": "8b381a224e4db914e2cd12135ea63a10f1a1dbf8a072b92688b9f157427af13a",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2021,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BA_2021.pdf",
+          "sha256": "3ae8909721a1029148eecd81e4e748a05d3621d19e8c7b9c7257384c4ffbeac7",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2022,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BA_2022.pdf",
+          "sha256": "abd1b8e743658903311e8fdb7269789c55c73e7ffc768e1a9f2a3aa8d29d8de9",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2023,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BA_2023.pdf",
+          "sha256": "58db903dfa4ce40762e0b99b14248cd60c4067edba3f9cdfc0698090043f9cb3",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2024,
           "url": "https://www.baesystems.com/investors/dam/jcr%3Af57706a5-0a28-441a-8829-0e0c213436c1/BAE-Systems-Annual-Report-2024.2025-04-29-16-28-37.pdf",
           "sha256": "7a8a3b7e371cf0dede29d68bce8df0937769b186afd11d9ced6402fd458bf423",
@@ -1241,69 +1266,53 @@
         },
         "bae-systems:2023": {
           "candidateHash": "9cae872a0aae194c19986487ab2f34447b045eb61fad3d437ef7fa6ad94a1539",
-          "attemptCount": 1,
-          "lastAttempt": "2026-09-28T08:42:56.493184+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-28T14:42:56.493184+00:00",
+          "attemptCount": 2,
+          "lastAttempt": "2026-09-28T18:11:57.577364+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-29T06:11:57.577364+00:00",
           "diagnostics": [
             {
               "url": "https://www.baesystems.com/investors/dam/jcr%3Ae7ded7b7-2ddd-499d-bbe7-ba6774ce6137/BAESystemsAnnualReport2023.2025-04-29-16-31-08.pdf",
               "error": "report page did not expose a usable full report"
-            },
-            {
-              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BA_2023.pdf",
-              "error": "HTTPError: HTTP Error 429: "
             }
           ]
         },
         "bae-systems:2022": {
           "candidateHash": "5d1239fcc490e990b3c9c6001e0a92eab3769d3da7625868e6870b8027574792",
-          "attemptCount": 1,
-          "lastAttempt": "2026-09-28T08:43:46.226589+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-28T14:43:46.226589+00:00",
+          "attemptCount": 2,
+          "lastAttempt": "2026-09-28T18:12:48.299001+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-29T06:12:48.299001+00:00",
           "diagnostics": [
             {
               "url": "https://www.baesystems.com/investors/dam/jcr%3A13199694-90e6-430c-afcb-c20096212bad/BAESystemsAnnualReport2022.2025-04-29-16-32-19.pdf",
               "error": "report page did not expose a usable full report"
-            },
-            {
-              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BA_2022.pdf",
-              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
             }
           ]
         },
         "bae-systems:2021": {
           "candidateHash": "6c99cdb95fbc2a7443bfb8195f1235147549d1b74072daf560ce8266e180068a",
-          "attemptCount": 1,
-          "lastAttempt": "2026-09-28T08:44:33.950930+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-28T14:44:33.950930+00:00",
+          "attemptCount": 2,
+          "lastAttempt": "2026-09-28T18:13:34.809723+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-29T06:13:34.809723+00:00",
           "diagnostics": [
             {
               "url": "https://www.baesystems.com/investors/dam/jcr%3Ad0a0ffc3-b44e-485c-aeb6-c7228b1ac5c9/BAESystemsAnnualReport2021.2025-04-29-16-34-04.pdf",
               "error": "report page did not expose a usable full report"
-            },
-            {
-              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BA_2021.pdf",
-              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
             }
           ]
         },
         "bae-systems:2020": {
           "candidateHash": "a125a776d0973098402c1769e930f2d844eaa581a760fddbb5e9ec068c802064",
-          "attemptCount": 1,
-          "lastAttempt": "2026-09-28T08:45:37.381233+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-28T14:45:37.381233+00:00",
+          "attemptCount": 2,
+          "lastAttempt": "2026-09-28T18:13:53.102755+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-29T06:13:53.102755+00:00",
           "diagnostics": [
             {
               "url": "https://www.baesystems.com/investors/dam/jcr%3Adfe9bb28-cd46-41d8-9123-41fff0dabd7e/BAESystemsAnnualReport2020.2025-04-29-16-43-10.pdf",
               "error": "report page did not expose a usable full report"
-            },
-            {
-              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BA_2020.pdf",
-              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
             }
           ]
         }
@@ -2144,6 +2153,12 @@
           "extractionStatus": "extracted"
         },
         {
+          "year": 2023,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/A/LSE_AUTO_2023.pdf",
+          "sha256": "f10e82d739bee62d0af924a7fa471dad779b3315938fd8299bb951fbd04aa515",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2024,
           "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000099957/NI-000099957.pdf",
           "sha256": "dbb99a058c218093adb6c9ecf6e6bc848d481c92057490387c355ae4ba0875e2",
@@ -2198,16 +2213,11 @@
         },
         "auto-trader:2023": {
           "candidateHash": "b63e0c96253586892102590abaad4f079eb72a75f45ed2967d08eb0871eb263f",
-          "attemptCount": 1,
-          "lastAttempt": "2026-09-28T08:42:55.868304+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-28T14:42:55.868304+00:00",
-          "diagnostics": [
-            {
-              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/A/LSE_AUTO_2023.pdf",
-              "error": "HTTPError: HTTP Error 503: "
-            }
-          ]
+          "attemptCount": 2,
+          "lastAttempt": "2026-09-28T18:11:40.152529+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-29T06:11:40.152529+00:00",
+          "diagnostics": []
         }
       }
     },
@@ -2224,9 +2234,21 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2020,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/A/LSE_AV_2020.pdf",
+          "sha256": "1dd5eafd376f19b9658a8ad33523558e77acf6c025be6436515fa6bdd0b87801",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2021,
           "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000043784/NI-000043784.pdf",
           "sha256": "7696758c6180dcdb2c5082ec8e14192ad29e6f1c552a54372134f99f39c328ac",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2022,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/A/LSE_AV_2022.pdf",
+          "sha256": "999dd34f444fa7cc6036aa564b9526846200a8b50b6d4ad517a2fe2bc677c0d8",
           "extractionStatus": "extracted"
         },
         {
@@ -2268,29 +2290,19 @@
         },
         "aviva:2022": {
           "candidateHash": "27b129ddb8cc50f8ed7dbbefbd3a241d3001e5a6fa36232e44675196cc652cd9",
-          "attemptCount": 1,
-          "lastAttempt": "2026-09-28T08:43:36.708127+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-28T14:43:36.708127+00:00",
-          "diagnostics": [
-            {
-              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/A/LSE_AV_2022.pdf",
-              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-            }
-          ]
+          "attemptCount": 2,
+          "lastAttempt": "2026-09-28T18:12:27.968719+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-29T06:12:27.968719+00:00",
+          "diagnostics": []
         },
         "aviva:2020": {
           "candidateHash": "df8fa8d614b5f664e5cded5159c7ec6b98a4bdb90aa92fdd6e663404aca27ff7",
-          "attemptCount": 1,
-          "lastAttempt": "2026-09-28T08:45:37.128503+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-28T14:45:37.128503+00:00",
-          "diagnostics": [
-            {
-              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/A/LSE_AV_2020.pdf",
-              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-            }
-          ]
+          "attemptCount": 2,
+          "lastAttempt": "2026-09-28T18:14:05.113057+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-29T06:14:05.113057+00:00",
+          "diagnostics": []
         }
       }
     },
@@ -2305,6 +2317,12 @@
       "latestAvailabilityVerifiedAt": null,
       "status": "latest_availability_unverified",
       "documents": [
+        {
+          "year": 2020,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BDEV_2020.pdf",
+          "sha256": "056cbc3bb17136b1073bc40a4ef4ae7dfe8bc7b4aa2f988311333198d3e73375",
+          "extractionStatus": "extracted"
+        },
         {
           "year": 2021,
           "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BDEV_2021.pdf",
@@ -2372,16 +2390,11 @@
         },
         "barratt-redrow:2020": {
           "candidateHash": "b487c27c36c3e8451fb1646d0922931a7aca289095ae98bb8f8d460704c886c1",
-          "attemptCount": 1,
-          "lastAttempt": "2026-09-28T08:45:46.784350+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-28T14:45:46.784350+00:00",
-          "diagnostics": [
-            {
-              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BDEV_2020.pdf",
-              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-            }
-          ]
+          "attemptCount": 2,
+          "lastAttempt": "2026-09-28T18:13:59.085456+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-29T06:13:59.085456+00:00",
+          "diagnostics": []
         }
       }
     },
@@ -2663,6 +2676,18 @@
           "extractionStatus": "extracted"
         },
         {
+          "year": 2021,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BNZL_2021.pdf",
+          "sha256": "a750af7e74f883632a08e88dd696db1fe6b78aef63657139426d55727351934f",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2022,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BNZL_2022.pdf",
+          "sha256": "8f99d61099c9f44d775a63e0880e51458ac60e4e00ff320e671456c13f9542fa",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2023,
           "url": "https://www.bunzl.com/media/0aljxph1/annual-report-2023.pdf",
           "sha256": "6de8ac8979a4da750e2983efb1fbc973911cc9f60dd952e287936f70e187920e",
@@ -2690,6 +2715,22 @@
           "status": "extracted",
           "retryAfter": "2026-09-14T20:13:32.465275+00:00",
           "diagnostics": []
+        },
+        "bunzl:2022": {
+          "candidateHash": "c039ba17c62ee1aac6569a7cbe24a24069b18dfb4922073f21569f2f8f2f37cc",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-28T18:11:59.677568+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-29T00:11:59.677568+00:00",
+          "diagnostics": []
+        },
+        "bunzl:2021": {
+          "candidateHash": "2a81c63eb35ad3e4ffe2c138ba58a18a2daf2a8a509083b40d172fff9a819bbd",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-28T18:13:12.137691+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-29T00:13:12.137691+00:00",
+          "diagnostics": []
         }
       }
     },
@@ -2714,6 +2755,12 @@
           "year": 2021,
           "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000044191/NI-000044191.pdf",
           "sha256": "da067e66320654aca48caa116060632b402ae9605cc466c779efbf26b8e02dd8",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2022,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/c/LSE_CNA_2022.pdf",
+          "sha256": "c14a349bfdaa33033a63dfce035ea737974801025d309714c8603a99bbb88bfe",
           "extractionStatus": "extracted"
         },
         {
@@ -2746,11 +2793,11 @@
           "diagnostics": []
         },
         "centrica:2022": {
-          "candidateHash": "069153478f61ede8b5b4791c4c995f2361ef89605de01747f74c3dfc6221b9d1",
-          "attemptCount": 2,
-          "lastAttempt": "2026-09-24T23:47:20.873903+00:00",
+          "candidateHash": "218a1e01a1d361024b31a8c56a7862133564f63fb48b86525c9b968c0b67fc29",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-28T18:11:58.374047+00:00",
           "status": "extracted",
-          "retryAfter": "2027-09-24T23:47:20.873903+00:00",
+          "retryAfter": "2026-09-29T00:11:58.374047+00:00",
           "diagnostics": []
         },
         "centrica:2021": {
@@ -3738,6 +3785,36 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2020,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/i/LSE_IMI_2020.pdf",
+          "sha256": "1e861424be750974e5e5d667f1a84808bf2d66465259b0f63fe6d45651f35483",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2021,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/i/LSE_IMI_2021.pdf",
+          "sha256": "96aec5ad4cd69f2142c92cce64ead5af6924d0434c4abb7b53642f83566651a8",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2022,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/i/LSE_IMI_2022.pdf",
+          "sha256": "2692b1bfd096a87ddf4d1c2927a389deeea865867b3ca143592d5850e0f7afa3",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2023,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/i/LSE_IMI_2023.pdf",
+          "sha256": "50c8ccc744d4b99858b381ea5f74a9e2c85b39fdbe90934450a8cc8075992019",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2024,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/i/LSE_IMI_2024.pdf",
+          "sha256": "ac7045c58a9d46cca8c8ff43f477067230aa3cb4b289bd309ec5586a6bbe384e",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2025,
           "url": "https://data.fca.org.uk/artefacts/NSM/DirectUpload/NI-000142148/reports/2138002W9Q21PF751R30-2025-12-31-T01_ixbrl.html",
           "sha256": "abc22e31cf5320901f2452b2c3c09323af0feafb8bcb2fd7474c7cbf7dab4dee",
@@ -3747,17 +3824,49 @@
       "pendingCandidates": [],
       "retryDiagnostics": {
         "imi:2024": {
-          "candidateHash": "af41a1257ff480bfd282aef61676a88746627fa0bd060befab2bef3553580629",
-          "attemptCount": 3,
-          "lastAttempt": "2026-09-27T21:37:05.965098+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-28T21:37:05.965098+00:00",
+          "candidateHash": "02c80fe3c31a86bdc7d4de92a55d4e96c18e8449c16c7064b8e20c803bafbce0",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-28T18:11:20.521625+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-29T00:11:20.521625+00:00",
           "diagnostics": [
             {
               "url": "https://www.imiplc.com/media/hyld141s/imi-ara-2024.pdf",
               "error": "HTTPError: HTTP Error 403: "
             }
           ]
+        },
+        "imi:2023": {
+          "candidateHash": "80176fd857cb4fb48df6b32dbbb21ef0aca1baea13ce5565b65531add94d81ac",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-28T18:11:04.873666+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-29T00:11:04.873666+00:00",
+          "diagnostics": []
+        },
+        "imi:2022": {
+          "candidateHash": "d742a3a70b854aa6ac401d080dc40274b6c48c2b82ad904a5f5b138225192cc2",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-28T18:11:59.050985+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-29T00:11:59.050985+00:00",
+          "diagnostics": []
+        },
+        "imi:2021": {
+          "candidateHash": "c0f93d7b2dbcc48497023287d335be705f2ea638048ccb52825eac0b8c336362",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-28T18:12:55.410847+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-29T00:12:55.410847+00:00",
+          "diagnostics": []
+        },
+        "imi:2020": {
+          "candidateHash": "3bd43f885f8847fab6384cda4dbe960522f8b83faffc1d018fd543f76e99b08f",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-28T18:13:27.521772+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-29T00:13:27.521772+00:00",
+          "diagnostics": []
         }
       }
     },
@@ -3897,6 +4006,12 @@
           "extractionStatus": "extracted"
         },
         {
+          "year": 2024,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/i/LSE_INF_2024.pdf",
+          "sha256": "399e78c98656889109e72a09e2af7944e30df0e70fec646b8c0581cf8072c859",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2025,
           "url": "https://www.informa.com/globalassets/documents/investor-relations/2026/2025-informa-annual-report.pdf",
           "sha256": "446950e7eafd9a88099f7e5193fd4c197bbb5e201286e0452c169bbff13d83a5",
@@ -3925,11 +4040,11 @@
           ]
         },
         "informa:2024": {
-          "candidateHash": "c214ff0141df4c5f2dbc1175716ba83c578815b634d84616ea5a15f1bfc4a369",
-          "attemptCount": 6,
-          "lastAttempt": "2026-09-22T12:57:36.233429+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-29T12:57:36.233429+00:00",
+          "candidateHash": "a4d62faa7ea857fa12df219e31a0437a7e991d87410a03d09027098710edc130",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-28T18:11:26.955385+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-29T00:11:26.955385+00:00",
           "diagnostics": [
             {
               "url": "https://www.informa.com/globalassets/documents/investor-relations/2025/2024-informa-annual-report.pdf",
@@ -3971,6 +4086,24 @@
           "extractionStatus": "extracted"
         },
         {
+          "year": 2021,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/i/NYSE_IHG_2021.pdf",
+          "sha256": "b0b6f807d8f1a1b2787d4aaa43126a2460c18310d76a95d4343dda5a428d75cd",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2022,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/i/NYSE_IHG_2022.pdf",
+          "sha256": "a1e36888c66e2fb33f3da5fe01ee8d3a10ee6df30ddb4adfc8db23068b93173a",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2023,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/i/NYSE_IHG_2023.pdf",
+          "sha256": "381ab89af4fc458f57b955b4ede565ac58e288ce402a60b42cd919bc131bef3e",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2024,
           "url": "https://www.ihgplc.com/~/media/Files/I/Ihg-Plc/investors/annual-report/2024/ihg_rbr_24-25_interactive.pdf",
           "sha256": "c8286e98a2614485241d4927d25712e98154c3f09bdf71ac3881a951d4977ac1",
@@ -4005,37 +4138,27 @@
           ]
         },
         "intercontinental-hotels:2023": {
-          "candidateHash": "85afde3249bc1eec869ee8861751477b5415337e46d1b1961f308f12ebe129a9",
-          "attemptCount": 4,
-          "lastAttempt": "2026-09-26T12:20:22.824303+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-28T12:20:22.824303+00:00",
-          "diagnostics": [
-            {
-              "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000069528/NI-000069528.pdf",
-              "error": "ValueError: document is too short to be a full annual report (2 pages, 444 words)"
-            }
-          ]
+          "candidateHash": "fd00e1c808c4f79d271e19fc6a9c3b7c94663f06bc9e13d96395572f954afaa0",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-28T18:11:31.066567+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-29T00:11:31.066567+00:00",
+          "diagnostics": []
         },
         "intercontinental-hotels:2022": {
-          "candidateHash": "4738f05b108fb195b008dfdfcad3f9df797fa87bb8b87ed50fcb4346f7fee6a9",
-          "attemptCount": 3,
-          "lastAttempt": "2026-09-25T11:51:20.765393+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-26T11:51:20.765393+00:00",
-          "diagnostics": [
-            {
-              "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000044285/NI-000044285.pdf",
-              "error": "ValueError: document is too short to be a full annual report (2 pages, 372 words)"
-            }
-          ]
+          "candidateHash": "626eeab1ab2e8b53bfbde31535a5df09c52357c232020e36c1f2c785d23e2410",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-28T18:12:38.326441+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-29T00:12:38.326441+00:00",
+          "diagnostics": []
         },
         "intercontinental-hotels:2021": {
-          "candidateHash": "e94a1451fcc28e83f35d9c9f4cbee0deecd32bf468ff0f40bddbe2f8f7ce364e",
-          "attemptCount": 2,
-          "lastAttempt": "2026-09-24T23:47:25.645548+00:00",
+          "candidateHash": "57e90ee5ded8001b77eae026a3daa436e740aecbb31ce6a3f9c8d7ff69b0b142",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-28T18:13:26.801446+00:00",
           "status": "extracted",
-          "retryAfter": "2027-09-24T23:47:25.645548+00:00",
+          "retryAfter": "2026-09-29T00:13:26.801446+00:00",
           "diagnostics": []
         }
       }
@@ -4170,12 +4293,17 @@
           "diagnostics": []
         },
         "intertek:2021": {
-          "candidateHash": "45b8bbe19d1b0dae1744d02b6fdbf68fd8c514c860ea3a3380d6f6e5ee118c74",
+          "candidateHash": "91f7bd04c1c628c1e218f938f692fadbb60ab0aac2d347175f5f9a6f1aa761a3",
           "attemptCount": 2,
-          "lastAttempt": "2026-09-24T23:47:20.803843+00:00",
-          "status": "extracted",
-          "retryAfter": "2027-09-24T23:47:20.803843+00:00",
-          "diagnostics": []
+          "lastAttempt": "2026-09-29T12:55:43.771384+00:00",
+          "status": "extraction_failed",
+          "retryAfter": "2026-09-30T00:55:43.771384+00:00",
+          "diagnostics": [
+            {
+              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/i/LSE_ITRK_2021.pdf",
+              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+            }
+          ]
         }
       }
     },
@@ -4253,6 +4381,12 @@
           "extractionStatus": "extracted"
         },
         {
+          "year": 2024,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/J/LSE_JD_2024.pdf",
+          "sha256": "28fb99a653d00aed171597d8ee3ff675e1590cd83d86be7f37f7b8cb1802806a",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2025,
           "url": "https://www.jdplc.com/wp-content/uploads/2026/07/24467_JD_Sports_AR25_Web.pdf",
           "sha256": "98518bc96f339d3feae867c1f10b0ceae7d58d4f0b230815999415e9b17d0039",
@@ -4268,15 +4402,15 @@
       "pendingCandidates": [],
       "retryDiagnostics": {
         "jd-sports-fashion:2023": {
-          "candidateHash": "33677580b648a77eda8cbba9a23292191b16a14f01931f85dac86896f773aa46",
-          "attemptCount": 4,
-          "lastAttempt": "2026-09-26T12:20:22.887230+00:00",
+          "candidateHash": "7356f65b13455f8fb2a0a0d82e12a37fab57433bf69858daf1d5dc82ce6b1a26",
+          "attemptCount": 2,
+          "lastAttempt": "2026-09-29T12:55:43.602253+00:00",
           "status": "extraction_failed",
-          "retryAfter": "2026-09-28T12:20:22.887230+00:00",
+          "retryAfter": "2026-09-30T00:55:43.602253+00:00",
           "diagnostics": [
             {
-              "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000076046/NI-000076046.pdf",
-              "error": "ValueError: document is too short to be a full annual report (12 pages, 7346 words)"
+              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/J/LSE_JD_2023.pdf",
+              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
             }
           ]
         },
@@ -4302,6 +4436,27 @@
           "lastAttempt": "2026-09-26T22:26:48.874899+00:00",
           "status": "extracted",
           "retryAfter": "2026-09-27T22:26:48.874899+00:00",
+          "diagnostics": []
+        },
+        "jd-sports-fashion:2022": {
+          "candidateHash": "56bccfa6d3595f564bb36a96e70b73aa2dc1a3aacb782d19f28f27368a7104f0",
+          "attemptCount": 2,
+          "lastAttempt": "2026-09-29T12:55:03.492400+00:00",
+          "status": "extraction_failed",
+          "retryAfter": "2026-09-30T00:55:03.492400+00:00",
+          "diagnostics": [
+            {
+              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/J/LSE_JD_2022.pdf",
+              "error": "HTTPError: HTTP Error 429: "
+            }
+          ]
+        },
+        "jd-sports-fashion:2024": {
+          "candidateHash": "bc9c1d0e0c13cfddb4011c5feef569c1c3a4ffe72d0654e9f2e8e42622d27511",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-29T05:45:45.840994+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-29T11:45:45.840994+00:00",
           "diagnostics": []
         }
       }
@@ -4919,6 +5074,12 @@
           "extractionStatus": "extracted"
         },
         {
+          "year": 2024,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/n/NYSE_NWG_2024.pdf",
+          "sha256": "12531b371f6efae995416e36073e4596c93832d3541e7b29ea40a197c02da39f",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2025,
           "url": "https://investors.natwestgroup.com/~/media/Files/R/RBS-IR-V2/results-center/13022026/nwg-annual-report-and-accounts-2025.pdf",
           "sha256": "e7b26778dadeebfc94f60c32dd65013768554511480608ebaade41d0f8a265f8",
@@ -4945,36 +5106,31 @@
         },
         "natwest:2024": {
           "candidateHash": "e93703e80f1199f7dd2e67fff4a3b36c62c5e83e609de0e0024ec65bcebb5300",
-          "attemptCount": 2,
-          "lastAttempt": "2026-09-28T08:42:55.872980+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-28T20:42:55.872980+00:00",
-          "diagnostics": [
-            {
-              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/n/NYSE_NWG_2024.pdf",
-              "error": "HTTPError: HTTP Error 503: "
-            }
-          ]
+          "attemptCount": 3,
+          "lastAttempt": "2026-09-28T23:18:56.482608+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-29T23:18:56.482608+00:00",
+          "diagnostics": []
         },
         "natwest:2022": {
           "candidateHash": "6131a45c47f034fb0c0b0339333dae511a741eb419c1f90f50c7a12d07115a39",
-          "attemptCount": 2,
-          "lastAttempt": "2026-09-28T08:44:26.412309+00:00",
+          "attemptCount": 3,
+          "lastAttempt": "2026-09-28T23:19:13.513263+00:00",
           "status": "extraction_failed",
-          "retryAfter": "2026-09-28T20:44:26.412309+00:00",
+          "retryAfter": "2026-09-29T23:19:13.513263+00:00",
           "diagnostics": [
             {
               "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/n/NYSE_NWG_2022.pdf",
-              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
             }
           ]
         },
         "natwest:2021": {
           "candidateHash": "bd310d6beaad830de3d0bb5540770119c39e18abd4037b4f273487f35754a234",
-          "attemptCount": 2,
-          "lastAttempt": "2026-09-28T08:45:06.606242+00:00",
+          "attemptCount": 3,
+          "lastAttempt": "2026-09-28T23:19:21.621276+00:00",
           "status": "extraction_failed",
-          "retryAfter": "2026-09-28T20:45:06.606242+00:00",
+          "retryAfter": "2026-09-29T23:19:21.621276+00:00",
           "diagnostics": [
             {
               "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/n/NYSE_NWG_2021.pdf",
@@ -5418,27 +5574,27 @@
         },
         "phoenix:2021": {
           "candidateHash": "1e9c3910938803be6af48e6bc99340d103c44c1873f8c13b9c5fd2710eca8f4d",
-          "attemptCount": 2,
-          "lastAttempt": "2026-09-28T08:45:14.133736+00:00",
+          "attemptCount": 3,
+          "lastAttempt": "2026-09-28T23:19:33.504814+00:00",
           "status": "extraction_failed",
-          "retryAfter": "2026-09-28T20:45:14.133736+00:00",
+          "retryAfter": "2026-09-29T23:19:33.504814+00:00",
           "diagnostics": [
             {
               "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/P/LSE_PHNX_2021.pdf",
-              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20000 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
             }
           ]
         },
         "phoenix:2020": {
           "candidateHash": "fabf18ea52950c18e668a980070c9fc797c8d57b0795057f1bd04b4a0c0ab1cf",
-          "attemptCount": 2,
-          "lastAttempt": "2026-09-28T08:45:54.321337+00:00",
+          "attemptCount": 3,
+          "lastAttempt": "2026-09-28T23:19:53.787558+00:00",
           "status": "extraction_failed",
-          "retryAfter": "2026-09-28T20:45:54.321337+00:00",
+          "retryAfter": "2026-09-29T23:19:53.787558+00:00",
           "diagnostics": [
             {
               "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/P/LSE_PHNX_2020.pdf",
-              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
             }
           ]
         }
@@ -5520,14 +5676,14 @@
         },
         "prudential:2023": {
           "candidateHash": "b41bae1ec7d371c44fe5ed7dd9b6bb09262186bdf710b58e3772c77b69e67182",
-          "attemptCount": 2,
-          "lastAttempt": "2026-09-28T08:43:36.550901+00:00",
+          "attemptCount": 3,
+          "lastAttempt": "2026-09-28T23:18:12.335589+00:00",
           "status": "extraction_failed",
-          "retryAfter": "2026-09-28T20:43:36.550901+00:00",
+          "retryAfter": "2026-09-29T23:18:12.335589+00:00",
           "diagnostics": [
             {
               "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/p/LSE_PRU_2023.pdf",
-              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+              "error": "HTTPError: HTTP Error 503: "
             }
           ]
         }
@@ -5768,6 +5924,18 @@
           "extractionStatus": "extracted"
         },
         {
+          "year": 2022,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/j/LSE_GB0767628_2022.pdf",
+          "sha256": "11a1407fde0f38f9f05deb8e41c607599c91e566877acc58084563619f276a98",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2023,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/j/LSE_GB0767628_2023.pdf",
+          "sha256": "4d222c4253328de311a403cb45257e63b6d6a9ae6099a515f07d8067a26ca1b3",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2024,
           "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/j/LSE_GB0767628_2024.pdf",
           "sha256": "bf96ad75a0df4b399c92e21f2da5ce90d9c9f73684c881104aed6c531e7f640f",
@@ -5798,29 +5966,19 @@
         },
         "j-sainsbury:2023": {
           "candidateHash": "27709337a3002387bf46cb720da9264f20dfba7781f9d8ae4aeb426ab5b42082",
-          "attemptCount": 2,
-          "lastAttempt": "2026-09-28T00:48:00.903376+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-28T12:48:00.903376+00:00",
-          "diagnostics": [
-            {
-              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/j/LSE_GB0767628_2023.pdf",
-              "error": "HTTPError: HTTP Error 429: "
-            }
-          ]
+          "attemptCount": 3,
+          "lastAttempt": "2026-09-28T18:11:20.087511+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-29T18:11:20.087511+00:00",
+          "diagnostics": []
         },
         "j-sainsbury:2022": {
           "candidateHash": "a8acdd3d679ad39a4349e427af80228237e72f4f44951bc13e758ffc2dbfd63b",
-          "attemptCount": 2,
-          "lastAttempt": "2026-09-28T00:48:41.138903+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-28T12:48:41.138903+00:00",
-          "diagnostics": [
-            {
-              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/j/LSE_GB0767628_2022.pdf",
-              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-            }
-          ]
+          "attemptCount": 3,
+          "lastAttempt": "2026-09-28T18:12:27.670347+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-29T18:12:27.670347+00:00",
+          "diagnostics": []
         },
         "j-sainsbury:2020": {
           "candidateHash": "44b7a61faa70824f2fe027b6f76dabadb54bfc927f4c0161ec9d9b6767d912e4",
@@ -7161,6 +7319,18 @@
           "extractionStatus": "extracted"
         },
         {
+          "year": 2023,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/c/LSE_CCC_2023.pdf",
+          "sha256": "8df7e50711107858b2a196e1921e9959f03ed36781b52aff8daf7a22405c18a7",
+          "extractionStatus": "extracted"
+        },
+        {
+          "year": 2024,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/c/LSE_CCC_2024.pdf",
+          "sha256": "709679f2204dd4d44b8ccd936da6ef7ac96b7c98e911249dec68e68108e5a69e",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2025,
           "url": "https://investors.computacenter.com/static-files/cef18bb9-9750-4d16-adbe-39bbeb650da4",
           "sha256": "5a1828f0288cd732c74f02c32556948829f554c549057b89751d424d06ad05bf",
@@ -7170,28 +7340,20 @@
       "pendingCandidates": [],
       "retryDiagnostics": {
         "computacenter:2024": {
-          "candidateHash": "e01d689db8aefbb24e063dd77a31410b24a7cae0419a021a5424506c88a14af2",
-          "attemptCount": 4,
-          "lastAttempt": "2026-09-26T12:21:34.564344+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-28T12:21:34.564344+00:00",
-          "diagnostics": [
-            {
-              "error": "ValueError: Requested 2024, document identifies 2023; needs source review"
-            }
-          ]
+          "candidateHash": "a353bb8158cb7e49b8054cbadd97261d35d389cbbadf3c14d2f553433a411417",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-28T23:18:41.350849+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-29T05:18:41.350849+00:00",
+          "diagnostics": []
         },
         "computacenter:2023": {
-          "candidateHash": "83fa5f47125ab96309fb80e2f97f2eab842a28f54a3c55593c6b1d5202481cc5",
-          "attemptCount": 4,
-          "lastAttempt": "2026-09-26T12:21:35.313735+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-28T12:21:35.313735+00:00",
-          "diagnostics": [
-            {
-              "error": "ValueError: Requested 2023, document identifies 2022; needs source review"
-            }
-          ]
+          "candidateHash": "9077ec9375c370905ce028f860ea91909ca53339d72da250c9fb72ddd8d3d460",
+          "attemptCount": 1,
+          "lastAttempt": "2026-09-28T23:18:33.246701+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-29T05:18:33.246701+00:00",
+          "diagnostics": []
         },
         "computacenter:2021": {
           "candidateHash": "5e4fff15d7ea4f7a330798ec9c28b053644122fafcb02591137cdd5e91d8718a",
@@ -7200,6 +7362,32 @@
           "status": "extracted",
           "retryAfter": "2026-09-24T23:40:06.084851+00:00",
           "diagnostics": []
+        },
+        "computacenter:2022": {
+          "candidateHash": "8fcce3a2a90f66207eceeee5f9b14590f3ae3e88492c03280875062a64322518",
+          "attemptCount": 2,
+          "lastAttempt": "2026-09-29T05:45:29.170292+00:00",
+          "status": "extraction_failed",
+          "retryAfter": "2026-09-29T17:45:29.170292+00:00",
+          "diagnostics": [
+            {
+              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/c/LSE_CCC_2022.pdf",
+              "error": "HTTPError: HTTP Error 429: "
+            }
+          ]
+        },
+        "computacenter:2020": {
+          "candidateHash": "ad5b0356804690bacd3307b22136198629c1de4fc33b7014865b3c1d3d3e1546",
+          "attemptCount": 2,
+          "lastAttempt": "2026-09-29T05:45:49.692224+00:00",
+          "status": "extraction_failed",
+          "retryAfter": "2026-09-29T17:45:49.692224+00:00",
+          "diagnostics": [
+            {
+              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/c/LSE_CCC_2020.pdf",
+              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+            }
+          ]
         }
       }
     },
@@ -7289,6 +7477,12 @@
           "extractionStatus": "extracted"
         },
         {
+          "year": 2022,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BRBY_2022.pdf",
+          "sha256": "1b8f3d97998271e5464f622d13e28ec70d3de37d9e2f958108cfcea7c251c48f",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2023,
           "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000076750/NI-000076750.pdf",
           "sha256": "7b8ca8fe3a7c765ac4763deba52a1534ce86330214b784e2b25a87bfad791df3",
@@ -7353,6 +7547,14 @@
           "lastAttempt": "2026-09-24T17:42:17.423843+00:00",
           "status": "extracted",
           "retryAfter": "2026-09-24T23:42:17.423843+00:00",
+          "diagnostics": []
+        },
+        "burberry:2022": {
+          "candidateHash": "77dbfa9af5faae5dcfbf1becdb3f486d01db2df0081d4b5a1f4f978218041924",
+          "attemptCount": 2,
+          "lastAttempt": "2026-09-29T05:45:35.656684+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-09-29T17:45:35.656684+00:00",
           "diagnostics": []
         }
       }
