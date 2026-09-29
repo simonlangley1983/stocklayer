@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T02:30:18.584939Z",
+  "generatedAt": "2026-09-29T02:39:42.512198Z",
   "company": {
     "companyName": "Rolls-Royce",
     "ticker": "RR.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-05",
-    "periodEnd": "2026-09-27",
-    "observationCount": 80,
-    "scoredDayCount": 79,
-    "latestScore": 66.3,
-    "latestScoreDate": "2026-09-27",
+    "periodEnd": "2026-09-28",
+    "observationCount": 81,
+    "scoredDayCount": 80,
+    "latestScore": 66.7,
+    "latestScoreDate": "2026-09-28",
     "series": [
       {
         "date": "2026-07-05",
@@ -745,6 +745,15 @@
         "sourceCount": 10,
         "confidence": 85.1,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-28",
+        "dailyScore": 66.7,
+        "rollingScore": 58.1,
+        "storyCount": 60,
+        "sourceCount": 47,
+        "confidence": 87.5,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -799,16 +808,6 @@
         "significance": 1.609
       },
       {
-        "date": "2026-09-17",
-        "type": "coverage_spike",
-        "title": "Sigma has secured a further contract with Rolls-Royce",
-        "source": "memuknews.com",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQaXpxdTRyVFVjOF92c1ZBazB6Z2cyNmVVdENIV2FmaTRPc2tyMWNyYnI1SVltLWd6MzdhcnRJaUxTUjh5Z2c0Y0g1UE93elJScmd3YmpJWF9EdkppelhVQTloQW9uU3hXdlg5X3hGQlBxRWprdzVhSmJDTEN6Z1VkOUNDMGZFdw?oc=5",
-        "direction": "neutral",
-        "detail": "44 stories versus trailing median 11",
-        "significance": 1.584
-      },
-      {
         "date": "2026-09-20",
         "type": "coverage_spike",
         "title": "Rolls-Royce Holdings (LON: RR.) Shares Slip 2% As Investors Lock In Gains From Powerful Rally",
@@ -847,6 +846,16 @@
         "direction": "neutral",
         "detail": "40 stories versus trailing median 13",
         "significance": 1.606
+      },
+      {
+        "date": "2026-09-28",
+        "type": "good_press",
+        "title": "Rolls-Royce stock at GBp 1,474.40 on September 28, 2026, down 0.47 percent",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNZjlhR0ZyVWVkVi1xRXhTNndpRVc3X2VldmU3RDhFMGJVN1lnY3ppUzQxM09vcFdqWGtyOVBCUUhCN3VBS0RweVJScjlLc2U3dGFqNm50NG44N2xlR21mUi0xa0VLamFwLWgyekFnMUltZGdHY0kwVU56NWNjY2ZjTm9SSDF6X2tBWVVGTC1OOVRBQVNuT3NNcFUzVHlMTVBTSlVwY2hTRnNQMXJ3ZzZ4SlRaUGVGdGRoZWVzbmFZTTVjbXVxZXFnM0VnZw?oc=5",
+        "direction": "positive",
+        "detail": "Daily press score is 66.7",
+        "significance": 1.594
       }
     ]
   },
@@ -1339,17 +1348,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 52.4,
+    "score": 52.5,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 53.5,
+        "score": 53.9,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 79 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 80 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1476,16 +1485,6 @@
       "significance": 1.609
     },
     {
-      "date": "2026-09-17",
-      "type": "coverage_spike",
-      "title": "Sigma has secured a further contract with Rolls-Royce",
-      "source": "memuknews.com",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQaXpxdTRyVFVjOF92c1ZBazB6Z2cyNmVVdENIV2FmaTRPc2tyMWNyYnI1SVltLWd6MzdhcnRJaUxTUjh5Z2c0Y0g1UE93elJScmd3YmpJWF9EdkppelhVQTloQW9uU3hXdlg5X3hGQlBxRWprdzVhSmJDTEN6Z1VkOUNDMGZFdw?oc=5",
-      "direction": "neutral",
-      "detail": "44 stories versus trailing median 11",
-      "significance": 1.584
-    },
-    {
       "date": "2026-09-20",
       "type": "coverage_spike",
       "title": "Rolls-Royce Holdings (LON: RR.) Shares Slip 2% As Investors Lock In Gains From Powerful Rally",
@@ -1524,9 +1523,39 @@
       "direction": "neutral",
       "detail": "40 stories versus trailing median 13",
       "significance": 1.606
+    },
+    {
+      "date": "2026-09-28",
+      "type": "good_press",
+      "title": "Rolls-Royce stock at GBp 1,474.40 on September 28, 2026, down 0.47 percent",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNZjlhR0ZyVWVkVi1xRXhTNndpRVc3X2VldmU3RDhFMGJVN1lnY3ppUzQxM09vcFdqWGtyOVBCUUhCN3VBS0RweVJScjlLc2U3dGFqNm50NG44N2xlR21mUi0xa0VLamFwLWgyekFnMUltZGdHY0kwVU56NWNjY2ZjTm9SSDF6X2tBWVVGTC1OOVRBQVNuT3NNcFUzVHlMTVBTSlVwY2hTRnNQMXJ3ZzZ4SlRaUGVGdGRoZWVzbmFZTTVjbXVxZXFnM0VnZw?oc=5",
+      "direction": "positive",
+      "detail": "Daily press score is 66.7",
+      "significance": 1.594
     }
   ],
   "persistentEvents": [
+    {
+      "id": "d45a473da34d8a751058",
+      "type": "contract",
+      "title": "Škoda JS wins major contract for Rolls-Royce SMRs",
+      "date": "2026-09-28",
+      "status": "pending_review",
+      "reviewDate": "2027-03-27",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9UVWl2aDQ1STJNbnA3WnBQRTAwMmlZV3BvdTlyTzhyR1MzN0JRbFdISjBHTlV0ZjFuQkVuM2J1Z1NsYUZlbHhfZjdodVlKbDN5Ny1QSjhGb0tlczZ5VnhvSVNVcENwbHh3amh4VjFfSXpONXdFbWpLR3FVYw?oc=5",
+          "publisher": "ceenergynews.com",
+          "date": "2026-09-28"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "d5b6ef0a8345685c1bc6",
       "type": "contract",

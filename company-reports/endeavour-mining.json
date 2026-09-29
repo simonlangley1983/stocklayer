@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T02:30:18.584939Z",
+  "generatedAt": "2026-09-29T02:39:42.512198Z",
   "company": {
     "companyName": "Endeavour Mining PLC",
     "ticker": "EDV.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-27",
-    "observationCount": 70,
-    "scoredDayCount": 38,
-    "latestScore": 65.1,
-    "latestScoreDate": "2026-09-25",
+    "periodEnd": "2026-09-28",
+    "observationCount": 71,
+    "scoredDayCount": 39,
+    "latestScore": 41.5,
+    "latestScoreDate": "2026-09-28",
     "series": [
       {
         "date": "2026-06-30",
@@ -655,6 +655,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-28",
+        "dailyScore": 41.5,
+        "rollingScore": 50.5,
+        "storyCount": 4,
+        "sourceCount": 4,
+        "confidence": 62.6,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -687,16 +696,6 @@
         "direction": "negative",
         "detail": "Daily score decreased by 12.9 points",
         "significance": 1.607
-      },
-      {
-        "date": "2026-09-17",
-        "type": "press_story",
-        "title": "Endeavour Mining's Gilded Run Is Forged by Surging Price Hikes",
-        "source": "marketscreener.com",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQQ0pkQlduV04tLWhuRVBocEdQcmlRdzRtRGwwZWlsVTBXRmlIUndWUDYyQ2V1RjNzbUVreWJXSmthVnhveWNaZ1lUeHM2V2FQVEp3WkliaEQweWlkaWJQZnQ1Ul9zcjlHRnJRWFpCQzZPY1otQU5qaE1lUFFLWUxFazFjS1U2UVh2RzROckhSUWYzdmxsazZneHdNaF9LZXd2QW1SOFBDOERLT0dHMmliN2xWa2wwdw?oc=5",
-        "direction": "Very negative",
-        "detail": null,
-        "significance": 0.98
       },
       {
         "date": "2026-09-22",
@@ -757,6 +756,16 @@
         "direction": "positive",
         "detail": "Daily score increased by 24.9 points",
         "significance": 1.378
+      },
+      {
+        "date": "2026-09-28",
+        "type": "sentiment_drop",
+        "title": "Endeavour Mining falls Monday, underperforms market",
+        "source": "marketwatch.com",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOQjd5M090N3RkX3dXdUNrcWkxaXBCcEI2VS1rZFhndXZLYWlxbWdyVFNtOWRlbVZTRWNsWkk4b0lKZTI3OEFuaWdwTDgwanh0WmxER0hkcWd5V2E0M203aTFIVVpDYXpXQklKckRjMkxqZldIQjRsTkxjLWNQR3VvSEw4Z0JuN0Jrc3VVU0d4bzM4YnpicGNFdFQyRzZvcmh6NmhqS3J6eDRjVVpUWUduTDNJTkRocmltVmtJdHBULUc1Z2hlM1NN?oc=5",
+        "direction": "negative",
+        "detail": "Daily score decreased by 23.6 points",
+        "significance": 1.535
       }
     ]
   },
@@ -957,17 +966,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 43.2,
+    "score": 43.1,
     "label": "Mixed",
     "evidenceCoverage": 83,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 49.0,
+        "score": 48.6,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 37 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 38 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1038,16 +1047,6 @@
       "significance": 1.607
     },
     {
-      "date": "2026-09-17",
-      "type": "press_story",
-      "title": "Endeavour Mining's Gilded Run Is Forged by Surging Price Hikes",
-      "source": "marketscreener.com",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQQ0pkQlduV04tLWhuRVBocEdQcmlRdzRtRGwwZWlsVTBXRmlIUndWUDYyQ2V1RjNzbUVreWJXSmthVnhveWNaZ1lUeHM2V2FQVEp3WkliaEQweWlkaWJQZnQ1Ul9zcjlHRnJRWFpCQzZPY1otQU5qaE1lUFFLWUxFazFjS1U2UVh2RzROckhSUWYzdmxsazZneHdNaF9LZXd2QW1SOFBDOERLT0dHMmliN2xWa2wwdw?oc=5",
-      "direction": "Very negative",
-      "detail": null,
-      "significance": 0.98
-    },
-    {
       "date": "2026-09-22",
       "type": "press_story",
       "title": "Endeavour Mining Dividend Outlook: Record Free Cash Flow and Net Cash Position Strengthen the Case for a Sustainable 2.96% Yield",
@@ -1106,6 +1105,16 @@
       "direction": "positive",
       "detail": "Daily score increased by 24.9 points",
       "significance": 1.378
+    },
+    {
+      "date": "2026-09-28",
+      "type": "sentiment_drop",
+      "title": "Endeavour Mining falls Monday, underperforms market",
+      "source": "marketwatch.com",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOQjd5M090N3RkX3dXdUNrcWkxaXBCcEI2VS1rZFhndXZLYWlxbWdyVFNtOWRlbVZTRWNsWkk4b0lKZTI3OEFuaWdwTDgwanh0WmxER0hkcWd5V2E0M203aTFIVVpDYXpXQklKckRjMkxqZldIQjRsTkxjLWNQR3VvSEw4Z0JuN0Jrc3VVU0d4bzM4YnpicGNFdFQyRzZvcmh6NmhqS3J6eDRjVVpUWUduTDNJTkRocmltVmtJdHBULUc1Z2hlM1NN?oc=5",
+      "direction": "negative",
+      "detail": "Daily score decreased by 23.6 points",
+      "significance": 1.535
     }
   ],
   "persistentEvents": []

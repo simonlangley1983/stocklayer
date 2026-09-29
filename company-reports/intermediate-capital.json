@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T02:30:18.584939Z",
+  "generatedAt": "2026-09-29T02:39:42.512198Z",
   "company": {
     "companyName": "Intermediate Capital Group PLC",
     "ticker": "ICG.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-15",
-    "periodEnd": "2026-09-27",
-    "observationCount": 88,
-    "scoredDayCount": 15,
-    "latestScore": 51.5,
-    "latestScoreDate": "2026-09-25",
+    "periodEnd": "2026-09-28",
+    "observationCount": 89,
+    "scoredDayCount": 16,
+    "latestScore": 46.6,
+    "latestScoreDate": "2026-09-28",
     "series": [
       {
         "date": "2026-06-15",
@@ -817,6 +817,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-28",
+        "dailyScore": 46.6,
+        "rollingScore": 49.8,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 16.3,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -859,6 +868,16 @@
         "direction": "Neutral / mixed",
         "detail": null,
         "significance": 0.241
+      },
+      {
+        "date": "2026-09-28",
+        "type": "press_story",
+        "title": "Why Did Intermediate Capital Group's (LSE:ICG) Trading Statement Draw Attention?",
+        "source": "kalkinemedia.com",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOemh3VTJDdjM0SFVWZExRbVlGc19EbjlaeHRrNlZ1Z1AtSHRBMzMySW9rSjh1VW0tSDJQbktrREVwNnN6NGNsdmFuR0s0U3VoMjBXeFdIR0VLVGxaM3RUcTNpSHU1dVU1OUtWWi05SmFXNHdOdkNWZWgzRGgtT0FtLVQ2XzZxQXE3Zm1DNXVpb3VCLWdZNGNDM0J1ZC1lNTBWNHItd3F5Z2FLeDBHSFl3QWFURlI4VG5KZ3pIbQ?oc=5",
+        "direction": "Negative",
+        "detail": null,
+        "significance": 0.355
       }
     ]
   },
@@ -1497,17 +1516,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 47.0,
+    "score": 46.6,
     "label": "Mixed",
-    "evidenceCoverage": 88,
+    "evidenceCoverage": 90,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 53.4,
+        "score": 52.4,
         "weight": 0.4,
-        "reliability": 0.7,
-        "detail": "Recency-weighted average of 14 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.75,
+        "detail": "Recency-weighted average of 15 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1631,6 +1650,16 @@
       "direction": "Neutral / mixed",
       "detail": null,
       "significance": 0.241
+    },
+    {
+      "date": "2026-09-28",
+      "type": "press_story",
+      "title": "Why Did Intermediate Capital Group's (LSE:ICG) Trading Statement Draw Attention?",
+      "source": "kalkinemedia.com",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOemh3VTJDdjM0SFVWZExRbVlGc19EbjlaeHRrNlZ1Z1AtSHRBMzMySW9rSjh1VW0tSDJQbktrREVwNnN6NGNsdmFuR0s0U3VoMjBXeFdIR0VLVGxaM3RUcTNpSHU1dVU1OUtWWi05SmFXNHdOdkNWZWgzRGgtT0FtLVQ2XzZxQXE3Zm1DNXVpb3VCLWdZNGNDM0J1ZC1lNTBWNHItd3F5Z2FLeDBHSFl3QWFURlI4VG5KZ3pIbQ?oc=5",
+      "direction": "Negative",
+      "detail": null,
+      "significance": 0.355
     },
     {
       "date": "2026-12-31",

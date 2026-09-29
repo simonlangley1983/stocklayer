@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T02:30:18.584939Z",
+  "generatedAt": "2026-09-29T02:39:42.512198Z",
   "company": {
     "companyName": "Pearson PLC",
     "ticker": "PSON.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-27",
-    "observationCount": 75,
-    "scoredDayCount": 68,
-    "latestScore": 45.3,
-    "latestScoreDate": "2026-09-27",
+    "periodEnd": "2026-09-28",
+    "observationCount": 76,
+    "scoredDayCount": 69,
+    "latestScore": 53.6,
+    "latestScoreDate": "2026-09-28",
     "series": [
       {
         "date": "2026-06-30",
@@ -700,19 +700,18 @@
         "sourceCount": 9,
         "confidence": 80.6,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-28",
+        "dailyScore": 53.6,
+        "rollingScore": 50.2,
+        "storyCount": 19,
+        "sourceCount": 18,
+        "confidence": 85.7,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
-      {
-        "date": "2026-07-30",
-        "type": "press_story",
-        "title": "Pearson Candy to close St . Paul factory , lay off 80 workers",
-        "source": "twincities.com",
-        "url": "https://www.twincities.com/2026/07/30/pearsons-candy-to-close-longtime-st-paul-factory-cutting-about-80-jobs",
-        "direction": "Very negative",
-        "detail": null,
-        "significance": 1.108
-      },
       {
         "date": "2026-07-31",
         "type": "interim_results",
@@ -754,16 +753,6 @@
         "significance": 1.557
       },
       {
-        "date": "2026-09-17",
-        "type": "press_story",
-        "title": "Pearson stock edges lower as investors digest interim figures and valuation debate",
-        "source": "ad-hoc-news.de",
-        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxORVVNZnRYSXRaNVlwcTJQUG0zQk4zNVplUnRwZ0RoQmhnVXlaeVpxdDNNQ1I0R1FLZDIxU2RLUllDbGxEc245bXBIYVZIRzR2aWN4LTRTcjVvSm4ySGFvbldYLXZSamhHY2tnSlhCRGFvUE1GeGZ1NkhpRmhSb0pMSC1IcEdiWGdibnpoNGFUdzllQjZqU1Z1UFZFOG1VaWt3UlVoQ1JYZ2NGbkNrZGd4Y2EtejdEQ0Fsdm1Hb1NKM05VTktPVlVV?oc=5",
-        "direction": "Very negative",
-        "detail": null,
-        "significance": 1.099
-      },
-      {
         "date": "2026-09-19",
         "type": "sentiment_drop",
         "title": "Pearson Stock Slumps As Analysts Slash Outlook",
@@ -802,6 +791,26 @@
         "direction": "positive",
         "detail": null,
         "significance": 1.568
+      },
+      {
+        "date": "2026-09-28",
+        "type": "workforce_reduction",
+        "title": "Pearson's Candy Shuts St. Paul Factory, Cuts 80 Jobs",
+        "source": "hoodline.com",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTl92TUlZNUtiRGZBQnN5WnUyTms4eGZkTnhTMUEtM0RZR3E4eDBmMDdtdWFkNTlNUFdjLXJmSHBKdS1HSHRsMnBXRG8tUzRheGFaZ2xlQTV2dk1VdlBYVlBhRjNyNGV3OFVVSkRCdHlJVVdKUnk2SkMwUHBzbG5DR2FoNVM3QlBEeU8wLUk4aWpHaXlCVTZfNlZRaXI?oc=5",
+        "direction": "negative",
+        "detail": null,
+        "significance": 1.608
+      },
+      {
+        "date": "2026-09-28",
+        "type": "workforce_reduction",
+        "title": "Pearson's Candy Company shuts down St. Paul factory for good",
+        "source": "mprnews.org",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQN1M3YmhDblpmZWlocWtOZXpaMFJheGs1UVhKREJwUWthbktWRHkwY09xZzB6QjZTUXJBTVduc3BmbDVsUDhuRlhod0dVS3FWNE55TGhGeV9jX0syRUxDcWtUekZfejBPbjdVcXJuUDVGbGFhNVFUMVBGa2pQcnFtYzZSNzVVSEhHbEdrUHRjUDZxeHNj?oc=5",
+        "direction": "negative",
+        "detail": null,
+        "significance": 1.581
       }
     ]
   },
@@ -1294,17 +1303,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 22.3,
+    "score": 22.4,
     "label": "Low",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 46.9,
+        "score": 47.1,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 67 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 68 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1381,16 +1390,6 @@
       "approximateDate": true
     },
     {
-      "date": "2026-07-30",
-      "type": "press_story",
-      "title": "Pearson Candy to close St . Paul factory , lay off 80 workers",
-      "source": "twincities.com",
-      "url": "https://www.twincities.com/2026/07/30/pearsons-candy-to-close-longtime-st-paul-factory-cutting-about-80-jobs",
-      "direction": "Very negative",
-      "detail": null,
-      "significance": 1.108
-    },
-    {
       "date": "2026-07-31",
       "type": "interim_results",
       "title": "Pearson Candy Company closing St . Paul facility , laying off 80 workers in September",
@@ -1431,16 +1430,6 @@
       "significance": 1.557
     },
     {
-      "date": "2026-09-17",
-      "type": "press_story",
-      "title": "Pearson stock edges lower as investors digest interim figures and valuation debate",
-      "source": "ad-hoc-news.de",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxORVVNZnRYSXRaNVlwcTJQUG0zQk4zNVplUnRwZ0RoQmhnVXlaeVpxdDNNQ1I0R1FLZDIxU2RLUllDbGxEc245bXBIYVZIRzR2aWN4LTRTcjVvSm4ySGFvbldYLXZSamhHY2tnSlhCRGFvUE1GeGZ1NkhpRmhSb0pMSC1IcEdiWGdibnpoNGFUdzllQjZqU1Z1UFZFOG1VaWt3UlVoQ1JYZ2NGbkNrZGd4Y2EtejdEQ0Fsdm1Hb1NKM05VTktPVlVV?oc=5",
-      "direction": "Very negative",
-      "detail": null,
-      "significance": 1.099
-    },
-    {
       "date": "2026-09-19",
       "type": "sentiment_drop",
       "title": "Pearson Stock Slumps As Analysts Slash Outlook",
@@ -1479,6 +1468,26 @@
       "direction": "positive",
       "detail": null,
       "significance": 1.568
+    },
+    {
+      "date": "2026-09-28",
+      "type": "workforce_reduction",
+      "title": "Pearson's Candy Shuts St. Paul Factory, Cuts 80 Jobs",
+      "source": "hoodline.com",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTl92TUlZNUtiRGZBQnN5WnUyTms4eGZkTnhTMUEtM0RZR3E4eDBmMDdtdWFkNTlNUFdjLXJmSHBKdS1HSHRsMnBXRG8tUzRheGFaZ2xlQTV2dk1VdlBYVlBhRjNyNGV3OFVVSkRCdHlJVVdKUnk2SkMwUHBzbG5DR2FoNVM3QlBEeU8wLUk4aWpHaXlCVTZfNlZRaXI?oc=5",
+      "direction": "negative",
+      "detail": null,
+      "significance": 1.608
+    },
+    {
+      "date": "2026-09-28",
+      "type": "workforce_reduction",
+      "title": "Pearson's Candy Company shuts down St. Paul factory for good",
+      "source": "mprnews.org",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQN1M3YmhDblpmZWlocWtOZXpaMFJheGs1UVhKREJwUWthbktWRHkwY09xZzB6QjZTUXJBTVduc3BmbDVsUDhuRlhod0dVS3FWNE55TGhGeV9jX0syRUxDcWtUekZfejBPbjdVcXJuUDVGbGFhNVFUMVBGa2pQcnFtYzZSNzVVSEhHbEdrUHRjUDZxeHNj?oc=5",
+      "direction": "negative",
+      "detail": null,
+      "significance": 1.581
     }
   ],
   "persistentEvents": [

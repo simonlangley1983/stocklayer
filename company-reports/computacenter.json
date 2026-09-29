@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T02:30:18.584939Z",
+  "generatedAt": "2026-09-29T02:39:42.512198Z",
   "company": {
     "companyName": "Computacenter PLC",
     "ticker": "CCC.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-15",
-    "periodEnd": "2026-09-27",
-    "observationCount": 32,
-    "scoredDayCount": 16,
-    "latestScore": 36.8,
-    "latestScoreDate": "2026-09-25",
+    "periodEnd": "2026-09-28",
+    "observationCount": 33,
+    "scoredDayCount": 17,
+    "latestScore": 45.7,
+    "latestScoreDate": "2026-09-28",
     "series": [
       {
         "date": "2026-06-15",
@@ -313,6 +313,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-28",
+        "dailyScore": 45.7,
+        "rollingScore": 51.1,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 18.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -761,17 +770,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 54.0,
+    "score": 53.6,
     "label": "Mixed",
-    "evidenceCoverage": 88,
+    "evidenceCoverage": 90,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 59.9,
+        "score": 58.7,
         "weight": 0.4,
-        "reliability": 0.7,
-        "detail": "Recency-weighted average of 14 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.75,
+        "detail": "Recency-weighted average of 15 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",

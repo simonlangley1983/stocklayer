@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T02:30:18.584939Z",
+  "generatedAt": "2026-09-29T02:39:42.512198Z",
   "company": {
     "companyName": "Weir Group PLC",
     "ticker": "WEIR.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-27",
-    "observationCount": 75,
-    "scoredDayCount": 19,
-    "latestScore": 56.5,
-    "latestScoreDate": "2026-09-27",
+    "periodEnd": "2026-09-28",
+    "observationCount": 76,
+    "scoredDayCount": 20,
+    "latestScore": 50.4,
+    "latestScoreDate": "2026-09-28",
     "series": [
       {
         "date": "2026-06-30",
@@ -700,6 +700,15 @@
         "sourceCount": 4,
         "confidence": 63.2,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-28",
+        "dailyScore": 50.4,
+        "rollingScore": 52.2,
+        "storyCount": 5,
+        "sourceCount": 5,
+        "confidence": 68.6,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1294,17 +1303,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 52.6,
+    "score": 52.5,
     "label": "Mixed",
-    "evidenceCoverage": 98,
+    "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 53.8,
+        "score": 53.6,
         "weight": 0.4,
-        "reliability": 0.95,
-        "detail": "Recency-weighted average of 19 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 1.0,
+        "detail": "Recency-weighted average of 20 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",

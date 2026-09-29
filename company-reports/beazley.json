@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T02:30:18.584939Z",
+  "generatedAt": "2026-09-29T02:39:42.512198Z",
   "company": {
     "companyName": "Beazley PLC",
     "ticker": "BEZ.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-14",
-    "periodEnd": "2026-09-27",
-    "observationCount": 89,
-    "scoredDayCount": 67,
-    "latestScore": 44.1,
-    "latestScoreDate": "2026-09-26",
+    "periodEnd": "2026-09-28",
+    "observationCount": 90,
+    "scoredDayCount": 68,
+    "latestScore": 56.8,
+    "latestScoreDate": "2026-09-28",
     "series": [
       {
         "date": "2026-06-14",
@@ -826,6 +826,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-28",
+        "dailyScore": 56.8,
+        "rollingScore": 51.4,
+        "storyCount": 7,
+        "sourceCount": 4,
+        "confidence": 63.0,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1274,17 +1283,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 42.4,
+    "score": 42.5,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 50.7,
+        "score": 50.9,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 62 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 63 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1444,6 +1453,66 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "fb3cdedcb069035ca313",
+      "type": "acquisition",
+      "title": "Beazley (LSE:BEZ) Takeover Moves Closer as Zurich Deal Enters Final Stage",
+      "date": "2026-09-28",
+      "status": "pending_review",
+      "reviewDate": "2027-03-27",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNc0lGVU1tTS1SeTZwbkE0aHhFb0VpN05vU1ZaM1dKZjRHejdpa0dBd0xaUk1FRkIxZlhzUnlMdGZuTWVvNDRMZUM2cnJCX29vUkZTOUUwMGZKaXJERURraFRnaVR1dTNSTE9NN2pSYW5HSzZ0UkhCZUNBSDY1WnRWT241VGUwbFhKWkxwOHNGY25fQ2dBejFDbklpWkhoa0dxenJUcldpd0N1WVpDUC11Tjd0NHpYZw?oc=5",
+          "publisher": "kalkinemedia.com",
+          "date": "2026-09-28"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
+    {
+      "id": "ca6b66b0d1c3e5f88dc8",
+      "type": "acquisition",
+      "title": "Weekly Recap: Beazley takeover okayed and BlackRock lacks vote",
+      "date": "2026-09-28",
+      "status": "pending_review",
+      "reviewDate": "2027-03-27",
+      "direction": "Slightly positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPX1AydVRNYmRjS0UySXFLOGNDdDZ4clk2cy1RY1l4VUl4R1NvRWFRQk5heXBCeWlCWHpzYkpBbkk1UGtMakdpTUxmU095R29LM1JKZFFUYVdRMmdtbHlWYlBwLTBxeEMweGFUU3UtNGo4aVhqVEFnbGdhSVp0SmlqMU5RX3QzdmQzaTA3aE01UllvTVVYTzNKU3RYaFJFUUM4OGVFWlBKalg2dnMtSExLQWdCVV9vWmhsSWFPYVh0b3M?oc=5",
+          "publisher": "tradingview.com",
+          "date": "2026-09-28"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
+    {
+      "id": "b982ea05cd3e2efa4e93",
+      "type": "clinical",
+      "title": "Weekly Recap: Beazley deal approved and Alex Wells named Zurich U.S. CEO",
+      "date": "2026-09-28",
+      "status": "pending_review",
+      "reviewDate": "2027-03-27",
+      "direction": "Neutral / mixed",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQZnlfSmVlYlFvaFMyUVFwdjVoOHJZcDJLU0JBZW1NcGt0THFUcGtWS0pFVVpXMG9ZLXdyQlZ4QzlHVUYxb243dS1VaU9sYXVwY0VTYTg2bG8zM3hzaHZVQXU3OUpncHNpcmgyUmtibS1VWThwNWlXcEQxdlhyVUZiR2hHU0lxR1Y2TDBaQzBidkVRZlVPUTU5RHRFN3J4bV8yNU5CRE95dGZBNUtJZ0ZLTEYybjNPSXItTHZtS3RqamJYSFF5aVZHVURXUno?oc=5",
+          "publisher": "tradingview.com",
+          "date": "2026-09-28"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "5684ec32d3b572dce6fb",
       "type": "clinical",

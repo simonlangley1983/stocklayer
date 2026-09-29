@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T02:30:18.584939Z",
+  "generatedAt": "2026-09-29T02:39:42.512198Z",
   "company": {
     "companyName": "Tritax Big Box REIT PLC",
     "ticker": "BBOX.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-09-05",
-    "periodEnd": "2026-09-27",
-    "observationCount": 23,
-    "scoredDayCount": 4,
-    "latestScore": 63.8,
-    "latestScoreDate": "2026-09-23",
+    "periodEnd": "2026-09-28",
+    "observationCount": 24,
+    "scoredDayCount": 5,
+    "latestScore": 43.5,
+    "latestScoreDate": "2026-09-28",
     "series": [
       {
         "date": "2026-09-05",
@@ -232,6 +232,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-28",
+        "dailyScore": 43.5,
+        "rollingScore": 50.3,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 17.3,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -284,6 +293,16 @@
         "direction": "positive",
         "detail": "Daily score increased by 16.0 points",
         "significance": 1.035
+      },
+      {
+        "date": "2026-09-28",
+        "type": "press_story",
+        "title": "What Is Driving Tritax Big Box REIT (LSE:BBOX) Deeper Into The Spotlight?",
+        "source": "kalkinemedia.com",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPMXlFZmxlZFZTTk9BdHU3NW82MUlJYmpoWjdfUzdsTXg5TVcwSEtKSTY5aEtyOEM5Y2JkT1NCU0pSQ3NIdm1CY0t0S1JETDM5V2lWMFVNQ09yTTF5ZkVJUmhZb3lIQmpWYlJ2VVhBZG44WVBDYnRqYmV1YWZGc3VPWEMzbm9iQ3Jwb1QxU092eFltSTVuN3AyOGVVNHJPWFFYX1RtV01DbUs0a24zRUlQU0xLZmdDZmdnS0tNS0x4QnMwRGtzUkpVZDduaS1nSXM0?oc=5",
+        "direction": "Negative",
+        "detail": null,
+        "significance": 0.539
       }
     ]
   },
@@ -849,17 +868,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 58.7,
-    "label": "Positive",
-    "evidenceCoverage": 68,
+    "score": 57.9,
+    "label": "Mixed",
+    "evidenceCoverage": 70,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 53.6,
+        "score": 51.2,
         "weight": 0.4,
-        "reliability": 0.2,
-        "detail": "Recency-weighted average of 4 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.25,
+        "detail": "Recency-weighted average of 5 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -993,6 +1012,16 @@
       "direction": "positive",
       "detail": "Daily score increased by 16.0 points",
       "significance": 1.035
+    },
+    {
+      "date": "2026-09-28",
+      "type": "press_story",
+      "title": "What Is Driving Tritax Big Box REIT (LSE:BBOX) Deeper Into The Spotlight?",
+      "source": "kalkinemedia.com",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPMXlFZmxlZFZTTk9BdHU3NW82MUlJYmpoWjdfUzdsTXg5TVcwSEtKSTY5aEtyOEM5Y2JkT1NCU0pSQ3NIdm1CY0t0S1JETDM5V2lWMFVNQ09yTTF5ZkVJUmhZb3lIQmpWYlJ2VVhBZG44WVBDYnRqYmV1YWZGc3VPWEMzbm9iQ3Jwb1QxU092eFltSTVuN3AyOGVVNHJPWFFYX1RtV01DbUs0a24zRUlQU0xLZmdDZmdnS0tNS0x4QnMwRGtzUkpVZDduaS1nSXM0?oc=5",
+      "direction": "Negative",
+      "detail": null,
+      "significance": 0.539
     }
   ],
   "persistentEvents": []

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T02:30:18.584939Z",
+  "generatedAt": "2026-09-29T02:39:42.512198Z",
   "company": {
     "companyName": "BP",
     "ticker": "BP.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-14",
-    "periodEnd": "2026-09-27",
-    "observationCount": 83,
-    "scoredDayCount": 22,
-    "latestScore": 59.3,
-    "latestScoreDate": "2026-09-27",
+    "periodEnd": "2026-09-28",
+    "observationCount": 84,
+    "scoredDayCount": 23,
+    "latestScore": 51.4,
+    "latestScoreDate": "2026-09-28",
     "series": [
       {
         "date": "2026-06-14",
@@ -772,6 +772,15 @@
         "sourceCount": 5,
         "confidence": 76.5,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-28",
+        "dailyScore": 51.4,
+        "rollingScore": 53.1,
+        "storyCount": 7,
+        "sourceCount": 6,
+        "confidence": 56.1,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1154,10 +1163,10 @@
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 50.3,
+        "score": 50.4,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 22 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 23 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1308,6 +1317,46 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "31d825e189b98016f45a",
+      "type": "acquisition",
+      "title": "BP evaluated Devon Energy's Eagle Ford shale assets and ultimately abandoned the acquisition plan.",
+      "date": "2026-09-28",
+      "status": "pending_review",
+      "reviewDate": "2027-03-27",
+      "direction": "Slightly negative",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5oWFBZOC1GeXlEckU4SzkwT3U2clZWb01PVzBvdldjRGFOc21UcENzRnVLT011dmZyWGhnT25uV2NkNnBBQjJ1T0VQaDFzUVY2b1E?oc=5",
+          "publisher": "news.chemnet.com",
+          "date": "2026-09-28"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
+    {
+      "id": "2dc29da5e04931fa1f34",
+      "type": "acquisition",
+      "title": "BP Reviews Devon Energy's Eagle Ford Asset After Its Merger With Coterra",
+      "date": "2026-09-28",
+      "status": "pending_review",
+      "reviewDate": "2027-03-27",
+      "direction": "Negative",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOYktWNU9lbnNlZkpOREVvYW43UEVxZGNOMTNFNV9NbGVoVm5wY21rMUtCdm9BcExYNjFtbUw0bUplbHltaUZJaVhqREZkUU1qSVpiQkFfdjN5X3ltSFM3dUVDRE9RVWl3eDgwcnBrU1dsZlJYUzdQX3hCWXZlZWxXalVNQ1NfZEl1NHhMRVVpN3ZBRjg4SG9INWk2SkNUUQ?oc=5",
+          "publisher": "energynews.pro",
+          "date": "2026-09-28"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "36c4ed521224a6f201c4",
       "type": "acquisition",
