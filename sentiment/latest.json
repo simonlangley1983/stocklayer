@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-09-28T22:36:38.695103Z",
-  "asOfDate": "2026-09-27",
+  "generatedAt": "2026-09-29T02:30:16.625170Z",
+  "asOfDate": "2026-09-28",
   "companies": {
     "astrazeneca": {
       "companyName": "AstraZeneca",
@@ -1735,27 +1735,65 @@
       "companyName": "Entain PLC",
       "ticker": "ENT.L",
       "slug": "entain",
-      "date": "2026-09-27",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 49.9,
-      "confidence": 0.0,
-      "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "date": "2026-09-28",
+      "dailyScore": 31.2,
+      "dailyLabel": "Negative",
+      "rollingScore": 47.2,
+      "confidence": 42.1,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "storyCount": 3,
+      "sourceCount": 35,
+      "changeFromPreviousScoredDay": -26.7,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "collection_degraded",
           "direction": "neutral",
-          "severity": "low",
+          "severity": "medium",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "c6f17fb23fef606d",
+            "149444540b80b5e1",
+            "03d28d72bf635d26"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "c6f17fb23fef606d",
+          "storyClusterId": "story-001",
+          "title": "Ladbrokes owner Entain cuts revenue outlook after Brazil online betting ban",
+          "url": "https://www.thestar.com.my/tech/tech-news/2026/09/28/ladbrokes-owner-entain-cuts-revenue-outlook-after-brazil-online-betting-ban",
+          "source": "thestar.com.my",
+          "publishedAt": "2026-09-28T07:00:00Z",
+          "polarity": -0.9522,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "149444540b80b5e1",
+          "storyClusterId": "story-003",
+          "title": "Flutter and Entain warn over hit from Brazilian gambling ban",
+          "url": "https://www.richmondandtwickenhamtimes.co.uk/news/national/26588043.flutter-entain-warn-hit-brazilian-gambling-ban",
+          "source": "richmondandtwickenhamtimes.co.uk",
+          "publishedAt": "2026-09-28T15:45:00Z",
+          "polarity": -0.901,
+          "sentiment": "Very negative",
+          "publisherCount": 19
+        },
+        {
+          "id": "03d28d72bf635d26",
+          "storyClusterId": "story-002",
+          "title": "Entain reveals impact from Brazil online gambling ban",
+          "url": "https://www.bournemouthecho.co.uk/news/national/26585808.entain-reveals-impact-brazil-online-gambling-ban",
+          "source": "bournemouthecho.co.uk",
+          "publishedAt": "2026-09-28T08:15:00Z",
+          "polarity": -0.0313,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 17
+        }
+      ]
     },
     "fandc-investment-trust": {
       "companyName": "F&C Investment Trust PLC",
