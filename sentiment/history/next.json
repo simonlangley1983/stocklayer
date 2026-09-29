@@ -2674,6 +2674,65 @@
         }
       ],
       "changeFromPreviousScoredDay": 1.0
+    },
+    {
+      "date": "2026-09-28",
+      "dailyScore": 58.0,
+      "dailyLabel": "Slightly positive",
+      "rollingScore": 51.1,
+      "confidence": 13.0,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 80,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 73,
+        "missing_company_alias": 6
+      },
+      "topStories": [
+        {
+          "id": "6b752101ce8e6a80",
+          "storyClusterId": "story-001",
+          "title": "Trust infrastructure could be the next advantage in UK retail banking",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPQnNMUDFOdnRVaUhfb3J0VlplRXkzdkJPN05DZWdkMlFCUVFxelZ3dWk2dTFvRkY2RDNxenk5bzVlX09hLW1Lc2ZVN2lqcllodHppMGZDUXR6SGdOd3BzcXE0TkkwRHBPaS1OUGp1YS1QWHNsVE90OS1pXzBGMi1PNzdPMXhXcHdtanNuU3NSVUJQMF9mN1laUU9UTkxKcF9Hbl82MF90TFZaNDQ3cU5r?oc=5",
+          "source": "thedrum.com",
+          "publishedAt": "2026-09-28T12:09:35Z",
+          "polarity": 0.4802,
+          "sentiment": "Positive",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 13.0",
+          "evidenceArticleIds": [
+            "6b752101ce8e6a80"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "6b752101ce8e6a80"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 6.6
     }
   ]
 }

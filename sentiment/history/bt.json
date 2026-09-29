@@ -2592,6 +2592,67 @@
         }
       ],
       "changeFromPreviousScoredDay": null
+    },
+    {
+      "date": "2026-09-28",
+      "dailyScore": 30.4,
+      "dailyLabel": "Negative",
+      "rollingScore": 48.8,
+      "confidence": 39.4,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 44,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 2,
+      "dispersion": 0.1591,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 31,
+        "missing_company_alias": 11
+      },
+      "topStories": [
+        {
+          "id": "facc6911c3ba1077",
+          "storyClusterId": "story-001",
+          "title": "Ofcom orders BT’s Openreach to withdraw discounted broadband deal over competition fears",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQVjhmNjM4b0w4aU9GMUFSYk1VMVFZWWw2dW9YR21SYW00Mnk1TERGM21KRGtEWXFUTXIwWnhNOVVZanZWYnVuX21jalprSmh1cXBzVlFIc21HWGJFRjJoMWhJaWtjMkJaNW5pbVVIaTkwN3ZNTENYek1OMlQwaWdYQjBHbnBaRzNna1B1dFNZSUpvajdmcmVhclVSVktGSjdJRG82bGN2cnhEdzZuM1NscFlhdXVJTk5UY3RKMklR?oc=5",
+          "source": "streamlinefeed.co.ke",
+          "publishedAt": "2026-09-28T09:25:27Z",
+          "polarity": -0.9412,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "e4e5fcd36659b635",
+          "storyClusterId": "story-002",
+          "title": "BT blocked from offering broadband discounts",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPaEJ6bl9uYkdsa1dTZkdhcnJrREJZVXBNYTU5OC1XUjJBaFpDdDVOYm4yTkhoRkRQOVc4dnVyTk05Z19HdThOVjNrQ2pqRUNXSFlRdktZWl9WTW1BT1Y5NGlGYnoyZDhFb2J0NmhfSXZWbktnQ1UwY2VZTTY4QTY2SU42S3ZBcHprdkFYX0d6LVlQLW5OY00zWA?oc=5",
+          "source": "telegraph.co.uk",
+          "publishedAt": "2026-09-28T13:56:00Z",
+          "polarity": -0.623,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 39.4",
+          "evidenceArticleIds": [
+            "facc6911c3ba1077",
+            "e4e5fcd36659b635"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -16.2
     }
   ]
 }
