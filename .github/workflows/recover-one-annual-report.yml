@@ -2,7 +2,7 @@ name: Recover historical annual-report gaps
 
 on:
   schedule:
-    - cron: "15 */2 * * *"
+    - cron: "*/15 * * * *"
   workflow_dispatch:
 
 concurrency:
@@ -33,13 +33,13 @@ jobs:
         shell: bash
         run: >-
           python scripts/discover_annualreports_archive.py
-          --start-year 2020 --end-year $(( $(date -u +%Y) - 1 )) --missing-only --limit 10
-          --offset $(( (${{ github.run_number }} - 1) * 10 )) --timeout 12 --retries 1 --max-failures 4
+          --start-year 2020 --end-year $(( $(date -u +%Y) - 1 )) --missing-only --limit 1
+          --offset $(( (${{ github.run_number }} - 1) % 58 )) --timeout 20 --retries 1 --max-failures 1
 
       - name: Validate and extract newly discovered reports
         run: >-
           python scripts/backfill_annual_reports.py
-          --batch-size 24 --workers 4 --report-timeout 90 --start-year 2020 --end-year $(( $(date -u +%Y) - 1 ))
+          --batch-size 1 --workers 1 --report-timeout 120 --start-year 2020 --end-year $(( $(date -u +%Y) - 1 ))
           --result-file annual-reports/last-recovery-result.json
 
       - name: Refresh confidence and customer reports after extraction
