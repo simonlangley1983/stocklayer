@@ -1,0 +1,83 @@
+{
+  "date": "2026-09-29",
+  "generatedAt": "2026-09-29T05:45:49.866786+00:00",
+  "source": "uk-companies.json",
+  "companyCount": 2,
+  "methodology": {
+    "name": "StockLayer growth confidence validation snapshot",
+    "scoreRange": "0-100",
+    "weights": {
+      "momentum": 0.35,
+      "annualReportHealth": 0.3,
+      "marketPosition": 0.2,
+      "riskBalance": 0.15
+    },
+    "forwardReturnWindows": [
+      "7d",
+      "30d",
+      "180d",
+      "365d"
+    ],
+    "note": "Daily score snapshots are compared with later share-price observations once enough time has elapsed."
+  },
+  "companies": [
+    {
+      "date": "2026-09-29",
+      "slug": "burberry",
+      "companyName": "Burberry Group PLC",
+      "ticker": "BRBY.L",
+      "ftseRank": null,
+      "sharePrice": 10.235,
+      "sharePriceDate": "2026-09-28T16:47:46+00:00",
+      "marketCap": "3.98B",
+      "marketCapValue": 3983750000,
+      "globalMarketCapRank": null,
+      "growthConfidence": 56,
+      "growthConfidenceLabel": "Caution",
+      "growthConfidenceSummary": "Caution: lifted by risk balance and market position.",
+      "components": {
+        "momentum": 41,
+        "annualReportHealth": 57,
+        "marketPosition": 67,
+        "riskBalance": 70,
+        "annualReportIntelLoaded": true,
+        "annualReportRecency": {
+          "latestYear": 2026,
+          "age": 0,
+          "confidence": 1.0,
+          "label": "current report"
+        }
+      },
+      "forwardReturns": {}
+    },
+    {
+      "date": "2026-09-29",
+      "slug": "jd-sports-fashion",
+      "companyName": "JD Sports Fashion PLC",
+      "ticker": "JD.L",
+      "ftseRank": 61,
+      "sharePrice": 0.7918000000000001,
+      "sharePriceDate": "2026-09-28T15:35:09+00:00",
+      "marketCap": "4.26B",
+      "marketCapValue": 4256326400,
+      "globalMarketCapRank": 613,
+      "growthConfidence": 38,
+      "growthConfidenceLabel": "Weak",
+      "growthConfidenceSummary": "Weak: lifted by risk balance.",
+      "components": {
+        "momentum": 41,
+        "annualReportHealth": 27,
+        "marketPosition": 40,
+        "riskBalance": 70,
+        "annualReportIntelLoaded": true,
+        "annualReportRecency": {
+          "latestYear": 2026,
+          "age": 0,
+          "confidence": 1.0,
+          "label": "current report"
+        }
+      },
+      "forwardReturns": {}
+    }
+  ]
+}
