@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T21:00:16.851338+00:00",
+  "generatedAt": "2026-09-30T21:17:36.602347+00:00",
   "companyCount": 100,
   "verifiedCurrentCount": 16,
   "companies": {
@@ -105,6 +105,12 @@
           "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/s/NYSE_SHEL_2022.pdf",
           "sha256": "f69e2ea59c85551bb81a2ed686d30377cc87db86120750d6bb2a4eafbf0df6a2",
           "extractionStatus": "extracted"
+        },
+        {
+          "year": 2021,
+          "url": "https://www.shell.com/investors/results-and-reporting/annual-report-archive/_jcr_content/root/main/section_812377294/tabs/tab_338953895/text.multi.stream/1742905417223/ddb70e54fdb262fa1e81db12f2d92233672f779d/shell-annual-report-2021.pdf",
+          "sha256": "45a8e9784c9d46437175ad10c41370922bebabdcb9db4760941319d974962e34",
+          "extractionStatus": "extracted"
         }
       ],
       "pendingCandidates": [],
@@ -119,16 +125,11 @@
         },
         "shell:2021": {
           "candidateHash": "0d295da24fd2c6579736d4c728be93a567a8817bb5906634f92a4daf50a694df",
-          "attemptCount": 4,
-          "lastAttempt": "2026-09-29T12:55:43.729497+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-10-01T12:55:43.729497+00:00",
-          "diagnostics": [
-            {
-              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/s/NYSE_SHEL_2021.pdf",
-              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-            }
-          ]
+          "attemptCount": 5,
+          "lastAttempt": "2026-09-30T21:17:36.602347+00:00",
+          "status": "extracted",
+          "diagnostics": [],
+          "verifiedSourceUrl": "https://www.shell.com/investors/results-and-reporting/annual-report-archive/_jcr_content/root/main/section_812377294/tabs/tab_338953895/text.multi.stream/1742905417223/ddb70e54fdb262fa1e81db12f2d92233672f779d/shell-annual-report-2021.pdf"
         },
         "shell:2022": {
           "candidateHash": "ee51e3713385f18eeaf846735cf61592e5ce8616ba7b674f55104242b3a04947",
