@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T19:54:50.870750Z",
+  "generatedAt": "2026-09-30T20:54:07.759870Z",
   "company": {
     "companyName": "London Stock Exchange Group",
     "ticker": "LSEG.L",
@@ -860,7 +860,7 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 5,
+    "reportCount": 6,
     "reports": [
       {
         "year": 2020,
@@ -1006,6 +1006,79 @@
           }
         ],
         "positivityScore": 33.3,
+        "positivityMethod": "lexical annual-report tone"
+      },
+      {
+        "year": 2022,
+        "title": "LSEG Annual Report 2022",
+        "url": "https://www.lseg.com/content/dam/lseg/en_us/documents/investor-relations/annual-reports/lseg-annual-report-2022.pdf",
+        "sourceUrl": "https://www.lseg.com/en/investor-relations/annual-reports/2022",
+        "wordCount": 144985,
+        "pageCount": 256,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 23,
+            "per10kWords": 1.586
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 72,
+            "per10kWords": 4.966
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 19,
+            "per10kWords": 1.31
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 146,
+            "per10kWords": 10.07
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 28,
+            "per10kWords": 1.931
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 8,
+            "per10kWords": 0.552
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 20,
+            "per10kWords": 1.379
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 9,
+            "per10kWords": 0.621
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 5,
+            "per10kWords": 0.345
+          }
+        ],
+        "positivityScore": 41.4,
         "positivityMethod": "lexical annual-report tone"
       },
       {
@@ -1321,6 +1394,15 @@
       "type": "annual_report",
       "title": "Annual Report and Accounts",
       "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000045673/NI-000045673.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
+    {
+      "date": "2022-12-31",
+      "type": "annual_report",
+      "title": "LSEG Annual Report 2022",
+      "url": "https://www.lseg.com/content/dam/lseg/en_us/documents/investor-relations/annual-reports/lseg-annual-report-2022.pdf",
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
