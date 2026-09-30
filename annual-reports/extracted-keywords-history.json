@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T20:53:27.781868+00:00",
+  "generated_at": "2026-09-30T21:00:16.851338+00:00",
   "source_index": "annual-reports/reports-index.json",
   "source_index_generated_at": "2026-09-11T21:15:50.158616+00:00",
   "methodology": {
@@ -19,8 +19,8 @@
       "data_center_mentions": "\\bdata[\\s-]+cent(?:er|re)s?\\b"
     }
   },
-  "group_count": 630,
-  "extracted_count": 630,
+  "group_count": 631,
+  "extracted_count": 631,
   "failed_count": 0,
   "reports": [
     {
@@ -16458,6 +16458,37 @@
       "positive_tone_mentions": 726,
       "negative_tone_mentions": 1479,
       "tone_positivity_score": 32.9,
+      "tone_method": "disclosed financial-language lexical balance over extracted full-report text",
+      "attempts": []
+    },
+    {
+      "company_name": "Shell plc",
+      "ticker": "SHEL.L",
+      "company_slug": "shell",
+      "report_year": 2022,
+      "index_group_year": 2022,
+      "report_title": "Shell plc Annual Report 2022",
+      "report_url": "https://www.annualreports.com/HostedData/AnnualReportArchive/s/NYSE_SHEL_2022.pdf",
+      "report_source_url": "https://shell.gcs-web.com/node/22866",
+      "report_data_status": "extracted",
+      "document_format": "pdf",
+      "page_count": 399,
+      "source_sha256": "f69e2ea59c85551bb81a2ed686d30377cc87db86120750d6bb2a4eafbf0df6a2",
+      "extracted_word_count": 283030,
+      "keyword_count_method": "case-insensitive keyword-family regex over extracted full-report text",
+      "ai_mentions": 6,
+      "cloud_mentions": 0,
+      "cybersecurity_mentions": 16,
+      "regulation_mentions": 270,
+      "competition_mentions": 57,
+      "supply_chain_mentions": 37,
+      "china_mentions": 43,
+      "margin_pressure_mentions": 0,
+      "restructuring_mentions": 11,
+      "data_center_mentions": 0,
+      "positive_tone_mentions": 1036,
+      "negative_tone_mentions": 1798,
+      "tone_positivity_score": 36.6,
       "tone_method": "disclosed financial-language lexical balance over extracted full-report text",
       "attempts": []
     },

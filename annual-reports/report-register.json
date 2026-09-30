@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T20:53:27.781868+00:00",
+  "generatedAt": "2026-09-30T21:00:16.851338+00:00",
   "companyCount": 100,
   "verifiedCurrentCount": 16,
   "companies": {
@@ -99,6 +99,12 @@
           "url": "https://www.shell.com/investors/results-and-reporting/annual-report-archive/_jcr_content/root/main/section_812377294/tabs/tab_copy_copy/text.multi.stream/1774544186011/5727c329a58b5eb7a54442c0a03f562a5aef1159/shell-annual-report-2025-interactive.pdf",
           "sha256": "90b21028e1616c41c7d73c3e996fd6128d837a41b38d432286e991aed3fbd9a1",
           "extractionStatus": "extracted"
+        },
+        {
+          "year": 2022,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/s/NYSE_SHEL_2022.pdf",
+          "sha256": "f69e2ea59c85551bb81a2ed686d30377cc87db86120750d6bb2a4eafbf0df6a2",
+          "extractionStatus": "extracted"
         }
       ],
       "pendingCandidates": [],
@@ -126,16 +132,11 @@
         },
         "shell:2022": {
           "candidateHash": "ee51e3713385f18eeaf846735cf61592e5ce8616ba7b674f55104242b3a04947",
-          "attemptCount": 4,
-          "lastAttempt": "2026-09-29T12:55:43.605303+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-10-01T12:55:43.605303+00:00",
-          "diagnostics": [
-            {
-              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/s/NYSE_SHEL_2022.pdf",
-              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-            }
-          ]
+          "attemptCount": 5,
+          "lastAttempt": "2026-09-30T21:00:16.851338+00:00",
+          "status": "extracted",
+          "diagnostics": [],
+          "verifiedSourceUrl": "https://www.annualreports.com/HostedData/AnnualReportArchive/s/NYSE_SHEL_2022.pdf"
         },
         "shell:2023": {
           "candidateHash": "b77d0406e714a6b229a533b5d723bb185bb657e8e462922b17c6f6170f7f622d",
