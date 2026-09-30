@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T01:53:35.425854Z",
+  "generatedAt": "2026-09-30T02:15:19.146815Z",
   "company": {
     "companyName": "AstraZeneca",
     "ticker": "AZN.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-05",
-    "periodEnd": "2026-09-28",
-    "observationCount": 82,
-    "scoredDayCount": 81,
-    "latestScore": 60.3,
-    "latestScoreDate": "2026-09-28",
+    "periodEnd": "2026-09-29",
+    "observationCount": 83,
+    "scoredDayCount": 82,
+    "latestScore": 67.5,
+    "latestScoreDate": "2026-09-29",
     "series": [
       {
         "date": "2026-07-05",
@@ -763,6 +763,15 @@
         "sourceCount": 25,
         "confidence": 88.1,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-29",
+        "dailyScore": 67.5,
+        "rollingScore": 60.1,
+        "storyCount": 71,
+        "sourceCount": 71,
+        "confidence": 67.3,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -805,16 +814,6 @@
         "direction": "neutral",
         "detail": "61 stories versus trailing median 9",
         "significance": 1.613
-      },
-      {
-        "date": "2026-09-15",
-        "type": "coverage_spike",
-        "title": "AstraZeneca Momentum Weakens: Stock Gains 3.37% (September 15, 2026)",
-        "source": "journalarta.com",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxORUhKamJxTnlCeFo1UHEwYXNYQ01adndqemo3dlA0WXF4S0g1aEx0M2kyY3c5TEpJR1RMLUkxaWk4MUVjNzhnZHl5bkhOekJuaDBOSXNzQlNTMmh4cmRBeHBfOHliSE5sZHF0X3Y0N0JsZEREeW9ybEJaR29JZzA4RnNraGtPUGpFV3poLVNvempDS01VMTRIS2VSUGwxZWRMdWh3VQ?oc=5",
-        "direction": "neutral",
-        "detail": "35 stories versus trailing median 9",
-        "significance": 1.603
       },
       {
         "date": "2026-09-21",
@@ -865,6 +864,16 @@
         "direction": "mixed",
         "detail": "Positive and negative coverage is unusually dispersed",
         "significance": 1.606
+      },
+      {
+        "date": "2026-09-29",
+        "type": "good_press",
+        "title": "FTSE 100 today: Stocks fall as shop prices slow; AstraZeneca buys Summit stake",
+        "source": "investing.com",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNVk80YUZjOFNMMDg4dmhGZHQtNko5QmNOR2xQUVFXb0gxVnM5NHVRQ0lGTE9NRzdlNkYtN05aRGxqSlF6UHlMWC1XZGxwVEFJeFRzZGxiWTlHTjlCNktleHozc2dUWUNiYjRWSVpibGNxb09aMUFMUHZHbFNtbHp2RFNmeTBFS0RQLVlIbm9TcjItRVdLSXQ4b09STUlyN1ZjNTZncGdpSmxyR3dkUE1TVndmcVB1WFEtQUpr?oc=5",
+        "direction": "positive",
+        "detail": "Daily press score is 67.5",
+        "significance": 1.605
       }
     ]
   },
@@ -1430,17 +1439,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 55.3,
+    "score": 55.4,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 57.8,
+        "score": 58.1,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 81 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 82 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1566,16 +1575,6 @@
       "significance": 1.613
     },
     {
-      "date": "2026-09-15",
-      "type": "coverage_spike",
-      "title": "AstraZeneca Momentum Weakens: Stock Gains 3.37% (September 15, 2026)",
-      "source": "journalarta.com",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxORUhKamJxTnlCeFo1UHEwYXNYQ01adndqemo3dlA0WXF4S0g1aEx0M2kyY3c5TEpJR1RMLUkxaWk4MUVjNzhnZHl5bkhOekJuaDBOSXNzQlNTMmh4cmRBeHBfOHliSE5sZHF0X3Y0N0JsZEREeW9ybEJaR29JZzA4RnNraGtPUGpFV3poLVNvempDS01VMTRIS2VSUGwxZWRMdWh3VQ?oc=5",
-      "direction": "neutral",
-      "detail": "35 stories versus trailing median 9",
-      "significance": 1.603
-    },
-    {
       "date": "2026-09-21",
       "type": "sentiment_jump",
       "title": "AstraZeneca stock slips in after-hours trading on EU opinion news",
@@ -1624,6 +1623,16 @@
       "direction": "mixed",
       "detail": "Positive and negative coverage is unusually dispersed",
       "significance": 1.606
+    },
+    {
+      "date": "2026-09-29",
+      "type": "good_press",
+      "title": "FTSE 100 today: Stocks fall as shop prices slow; AstraZeneca buys Summit stake",
+      "source": "investing.com",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNVk80YUZjOFNMMDg4dmhGZHQtNko5QmNOR2xQUVFXb0gxVnM5NHVRQ0lGTE9NRzdlNkYtN05aRGxqSlF6UHlMWC1XZGxwVEFJeFRzZGxiWTlHTjlCNktleHozc2dUWUNiYjRWSVpibGNxb09aMUFMUHZHbFNtbHp2RFNmeTBFS0RQLVlIbm9TcjItRVdLSXQ4b09STUlyN1ZjNTZncGdpSmxyR3dkUE1TVndmcVB1WFEtQUpr?oc=5",
+      "direction": "positive",
+      "detail": "Daily press score is 67.5",
+      "significance": 1.605
     }
   ],
   "persistentEvents": [

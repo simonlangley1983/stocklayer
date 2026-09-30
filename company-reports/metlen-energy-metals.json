@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T01:53:35.425854Z",
+  "generatedAt": "2026-09-30T02:15:19.146815Z",
   "company": {
     "companyName": "Metlen Energy & Metals PLC",
     "ticker": "MTLN.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-09-09",
-    "periodEnd": "2026-09-28",
-    "observationCount": 19,
-    "scoredDayCount": 6,
-    "latestScore": 50.4,
-    "latestScoreDate": "2026-09-28",
+    "periodEnd": "2026-09-29",
+    "observationCount": 20,
+    "scoredDayCount": 7,
+    "latestScore": 50.0,
+    "latestScoreDate": "2026-09-29",
     "series": [
       {
         "date": "2026-09-09",
@@ -196,6 +196,15 @@
         "sourceCount": 1,
         "confidence": 15.4,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-29",
+        "dailyScore": 50.0,
+        "rollingScore": 50.4,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -288,6 +297,16 @@
         "direction": "Neutral / mixed",
         "detail": null,
         "significance": 0.176
+      },
+      {
+        "date": "2026-09-29",
+        "type": "press_story",
+        "title": "Why Did JPMorgan Launch Coverage Of Metlen Energy & Metals (LSE:MTLN) This Week?",
+        "source": "kalkinemedia.com",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMVhNanctUllLaUxMU18tdmpGb05ldHppQ2c3cFc0MTVIaG4tNVFXVW9MdVBkNXpHTzVRZXFPVEdWaG94N25TSEZFX3VDcFRfQzFDSlRoYW1sNk9WQklUR19CNUpyVXRzQnR1Nnk4MVlJZnl1TzZNUUdlS2RER2hzWWM2bnhsWmVndjdlVTZGbDdTWmtqNmpyUEJrNkxESXRSWWhiUjRaZEw1YU5XRnl5bGZvWFNGVlE?oc=5",
+        "direction": "Neutral / mixed",
+        "detail": null,
+        "significance": 0.152
       }
     ]
   },
@@ -780,17 +799,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 47.8,
+    "score": 47.6,
     "label": "Mixed",
-    "evidenceCoverage": 72,
+    "evidenceCoverage": 74,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.6,
+        "score": 51.3,
         "weight": 0.4,
-        "reliability": 0.3,
-        "detail": "Recency-weighted average of 6 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.35,
+        "detail": "Recency-weighted average of 7 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -955,6 +974,16 @@
       "direction": "Neutral / mixed",
       "detail": null,
       "significance": 0.176
+    },
+    {
+      "date": "2026-09-29",
+      "type": "press_story",
+      "title": "Why Did JPMorgan Launch Coverage Of Metlen Energy & Metals (LSE:MTLN) This Week?",
+      "source": "kalkinemedia.com",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMVhNanctUllLaUxMU18tdmpGb05ldHppQ2c3cFc0MTVIaG4tNVFXVW9MdVBkNXpHTzVRZXFPVEdWaG94N25TSEZFX3VDcFRfQzFDSlRoYW1sNk9WQklUR19CNUpyVXRzQnR1Nnk4MVlJZnl1TzZNUUdlS2RER2hzWWM2bnhsWmVndjdlVTZGbDdTWmtqNmpyUEJrNkxESXRSWWhiUjRaZEw1YU5XRnl5bGZvWFNGVlE?oc=5",
+      "direction": "Neutral / mixed",
+      "detail": null,
+      "significance": 0.152
     }
   ],
   "persistentEvents": []

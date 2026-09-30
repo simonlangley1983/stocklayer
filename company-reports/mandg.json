@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T01:53:35.425854Z",
+  "generatedAt": "2026-09-30T02:15:19.146815Z",
   "company": {
     "companyName": "M&G PLC",
     "ticker": "MNG.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-05",
-    "periodEnd": "2026-09-28",
-    "observationCount": 73,
-    "scoredDayCount": 51,
-    "latestScore": 63.4,
-    "latestScoreDate": "2026-09-28",
+    "periodEnd": "2026-09-29",
+    "observationCount": 74,
+    "scoredDayCount": 52,
+    "latestScore": 59.4,
+    "latestScoreDate": "2026-09-29",
     "series": [
       {
         "date": "2026-07-05",
@@ -682,6 +682,15 @@
         "sourceCount": 5,
         "confidence": 73.5,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-29",
+        "dailyScore": 59.4,
+        "rollingScore": 55.8,
+        "storyCount": 5,
+        "sourceCount": 5,
+        "confidence": 66.7,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1210,10 +1219,10 @@
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 53.4,
+        "score": 53.6,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 51 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 52 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1382,6 +1391,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "09ceb2ef16cd84c26897",
+      "type": "clinical",
+      "title": "Commission´s approval of M&G / ARINI / RENO DE MEDICI now published",
+      "date": "2026-09-29",
+      "status": "pending_review",
+      "reviewDate": "2027-03-28",
+      "direction": "Slightly positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQZmFuY1hya0kxUi1kVldzT1l6N19RUWNna0NzUmJCdnFPR1ZxdS1Ccjl1T0QzSFM5MDVfODJzTDltTjRtMG4zdVVLb1dKbVl1MmktajR3dGJkbWV5bDJrcFE2aTNvRUpjMFF0S0FQYlhFMFFRQ3hVRDZ1T1NuRmtrMnhhX3FlckRGMTRsZVZ6THVDNHlHZHRsVVp5SHY0MGxMRUx1YnhR?oc=5",
+          "publisher": "eulawlive.com",
+          "date": "2026-09-29"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "680df0ed73b57c101cae",
       "type": "acquisition",

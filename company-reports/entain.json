@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T01:53:35.425854Z",
+  "generatedAt": "2026-09-30T02:15:19.146815Z",
   "company": {
     "companyName": "Entain PLC",
     "ticker": "ENT.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-15",
-    "periodEnd": "2026-09-28",
-    "observationCount": 88,
-    "scoredDayCount": 54,
-    "latestScore": 34.6,
-    "latestScoreDate": "2026-09-28",
+    "periodEnd": "2026-09-29",
+    "observationCount": 89,
+    "scoredDayCount": 55,
+    "latestScore": 38.5,
+    "latestScoreDate": "2026-09-29",
     "series": [
       {
         "date": "2026-06-15",
@@ -817,6 +817,15 @@
         "sourceCount": 49,
         "confidence": 91.0,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-29",
+        "dailyScore": 38.5,
+        "rollingScore": 45.6,
+        "storyCount": 5,
+        "sourceCount": 5,
+        "confidence": 75.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -849,16 +858,6 @@
         "direction": "negative",
         "detail": "Daily press score is 32.1",
         "significance": 1.603
-      },
-      {
-        "date": "2026-09-15",
-        "type": "bad_press",
-        "title": "Entain Warns New Zealand Online Casino Advertising War Could Trigger Backlash",
-        "source": "casino.com",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOM21RdDNYVmxpVkdqYjZSNFZVVlhKNm1ZdTBYZDhaZU5rX3RJazVqUTJJajVEczJQbGpjaHlqMER5blFwT0JuSUlOY2lpWXltSHl4WnV3YjlrNzZxcGtnRTR1MmxweHdRbno4c2ZwR2FvdG1fc25vU0VoQnRra3Vlakc1RloycWNNS19GTmozUmw1b3FIbktnYjNRbm8zTUQ0Z1BaSC12S3pkUkExUmgzX211SWp5dw?oc=5",
-        "direction": "negative",
-        "detail": "Daily press score is 32.1",
-        "significance": 1.582
       },
       {
         "date": "2026-09-16",
@@ -919,6 +918,16 @@
         "direction": "negative",
         "detail": "Daily score decreased by 23.3 points",
         "significance": 1.606
+      },
+      {
+        "date": "2026-09-29",
+        "type": "high_disagreement",
+        "title": "Entain Slashes 2026 Revenue Forecast After Brazil Bans Online Betting",
+        "source": "thesportsgeek.com",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPMHRrSzZyWVg3OG1LN0dsZDcxSEdTTF9kM3psMHNkLTJScWVFU3REX3FUVF83UTlIZDU5TE1fdDlwWU9VVEVCQ0I2TXV0OHR2Q1ZtcEY3cUhhdW50eEd6R1IyazRjekNWYVdPSl9HSENSYWVxLVItRmJOSmd1aFVyd244Wkw0MlBMY1ZwclhEYVlLOVhCYVZTQVRHNm9ycEN6?oc=5",
+        "direction": "mixed",
+        "detail": "Positive and negative coverage is unusually dispersed",
+        "significance": 1.613
       }
     ]
   },
@@ -1484,17 +1493,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 50.4,
+    "score": 50.3,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 44.5,
+        "score": 44.3,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 51 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 52 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1610,16 +1619,6 @@
       "significance": 1.603
     },
     {
-      "date": "2026-09-15",
-      "type": "bad_press",
-      "title": "Entain Warns New Zealand Online Casino Advertising War Could Trigger Backlash",
-      "source": "casino.com",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOM21RdDNYVmxpVkdqYjZSNFZVVlhKNm1ZdTBYZDhaZU5rX3RJazVqUTJJajVEczJQbGpjaHlqMER5blFwT0JuSUlOY2lpWXltSHl4WnV3YjlrNzZxcGtnRTR1MmxweHdRbno4c2ZwR2FvdG1fc25vU0VoQnRra3Vlakc1RloycWNNS19GTmozUmw1b3FIbktnYjNRbm8zTUQ0Z1BaSC12S3pkUkExUmgzX211SWp5dw?oc=5",
-      "direction": "negative",
-      "detail": "Daily press score is 32.1",
-      "significance": 1.582
-    },
-    {
       "date": "2026-09-16",
       "type": "workforce_reduction",
       "title": "Ladbrokes owner Entain to cut 400 jobs as it warns over gambling tax",
@@ -1678,6 +1677,16 @@
       "direction": "negative",
       "detail": "Daily score decreased by 23.3 points",
       "significance": 1.606
+    },
+    {
+      "date": "2026-09-29",
+      "type": "high_disagreement",
+      "title": "Entain Slashes 2026 Revenue Forecast After Brazil Bans Online Betting",
+      "source": "thesportsgeek.com",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPMHRrSzZyWVg3OG1LN0dsZDcxSEdTTF9kM3psMHNkLTJScWVFU3REX3FUVF83UTlIZDU5TE1fdDlwWU9VVEVCQ0I2TXV0OHR2Q1ZtcEY3cUhhdW50eEd6R1IyazRjekNWYVdPSl9HSENSYWVxLVItRmJOSmd1aFVyd244Wkw0MlBMY1ZwclhEYVlLOVhCYVZTQVRHNm9ycEN6?oc=5",
+      "direction": "mixed",
+      "detail": "Positive and negative coverage is unusually dispersed",
+      "significance": 1.613
     }
   ],
   "persistentEvents": [

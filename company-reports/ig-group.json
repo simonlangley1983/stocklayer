@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T01:53:35.425854Z",
+  "generatedAt": "2026-09-30T02:15:19.146815Z",
   "company": {
     "companyName": "IG Group Holdings PLC",
     "ticker": "IGG.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-09-15",
-    "periodEnd": "2026-09-28",
-    "observationCount": 14,
-    "scoredDayCount": 14,
-    "latestScore": 33.8,
-    "latestScoreDate": "2026-09-28",
+    "periodEnd": "2026-09-29",
+    "observationCount": 15,
+    "scoredDayCount": 15,
+    "latestScore": 44.8,
+    "latestScoreDate": "2026-09-29",
     "series": [
       {
         "date": "2026-09-15",
@@ -150,6 +150,15 @@
         "storyCount": 48,
         "sourceCount": 45,
         "confidence": 89.2,
+        "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-29",
+        "dailyScore": 44.8,
+        "rollingScore": 46.3,
+        "storyCount": 28,
+        "sourceCount": 26,
+        "confidence": 63.5,
         "coverageStatus": "ok"
       }
     ],
@@ -745,17 +754,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 46.4,
+    "score": 46.3,
     "label": "Mixed",
-    "evidenceCoverage": 88,
+    "evidenceCoverage": 90,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
         "score": 45.7,
         "weight": 0.4,
-        "reliability": 0.7,
-        "detail": "Recency-weighted average of 14 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.75,
+        "detail": "Recency-weighted average of 15 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",

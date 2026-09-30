@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T01:53:35.425854Z",
+  "generatedAt": "2026-09-30T02:15:19.146815Z",
   "company": {
     "companyName": "Persimmon PLC",
     "ticker": "PSN.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-28",
-    "observationCount": 81,
-    "scoredDayCount": 70,
-    "latestScore": 68.2,
-    "latestScoreDate": "2026-09-28",
+    "periodEnd": "2026-09-29",
+    "observationCount": 82,
+    "scoredDayCount": 71,
+    "latestScore": 61.0,
+    "latestScoreDate": "2026-09-29",
     "series": [
       {
         "date": "2026-06-30",
@@ -754,6 +754,15 @@
         "sourceCount": 15,
         "confidence": 87.2,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-29",
+        "dailyScore": 61.0,
+        "rollingScore": 55.0,
+        "storyCount": 3,
+        "sourceCount": 3,
+        "confidence": 53.7,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1348,17 +1357,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 52.4,
+    "score": 52.5,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.4,
+        "score": 51.7,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 69 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 70 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1535,5 +1544,26 @@
       "significance": 1.583
     }
   ],
-  "persistentEvents": []
+  "persistentEvents": [
+    {
+      "id": "e989255cd46c4cca366a",
+      "type": "clinical",
+      "title": "Persimmon secures approval for 388 Humberside homes",
+      "date": "2026-09-29",
+      "status": "pending_review",
+      "reviewDate": "2027-03-28",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOXzcxZTFQSkswd2ZxZEhTcDl0VXF6N2ZGQWtYcWRPSzJ4UmNtSzgwekEyeDg5Q3RHdGthS0k3NGFsWENFY2NBaUVOMzVOYzBCNWtBLTJNUlNIazNrcG5LUkVJZ0dKLXM2X0NzWnBObnpYZUpwRWs0SE5tNWJDbFRPN2t2emFVRnJCODUyWUpxa0tlZw?oc=5",
+          "publisher": "developmentfinancetoday.co.uk",
+          "date": "2026-09-29"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    }
+  ]
 }

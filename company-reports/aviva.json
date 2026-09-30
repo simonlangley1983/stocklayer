@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T01:53:35.425854Z",
+  "generatedAt": "2026-09-30T02:15:19.146815Z",
   "company": {
     "companyName": "Aviva PLC",
     "ticker": "AV.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-05",
-    "periodEnd": "2026-09-28",
-    "observationCount": 76,
-    "scoredDayCount": 72,
-    "latestScore": 62.0,
-    "latestScoreDate": "2026-09-28",
+    "periodEnd": "2026-09-29",
+    "observationCount": 77,
+    "scoredDayCount": 73,
+    "latestScore": 42.1,
+    "latestScoreDate": "2026-09-29",
     "series": [
       {
         "date": "2026-07-05",
@@ -709,6 +709,15 @@
         "sourceCount": 6,
         "confidence": 79.8,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-29",
+        "dailyScore": 42.1,
+        "rollingScore": 51.1,
+        "storyCount": 13,
+        "sourceCount": 11,
+        "confidence": 90.3,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -721,16 +730,6 @@
         "direction": "mixed",
         "detail": "Positive and negative coverage is unusually dispersed",
         "significance": 1.581
-      },
-      {
-        "date": "2026-09-15",
-        "type": "sentiment_jump",
-        "title": "Aviva Aesthetics Expands Texas Presence Through Partnership with Muse Med Spa",
-        "source": "streetinsider.com",
-        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOZVhOVEFWa3hxS01lOTFldlQyQS01ZVBoN2R1dzdSTl9XaE12dkc0V0I3TUVLdXZ6ZjVVQV9QazZDcGFHNl9feS1jeUdnMkhsX014Smlkd2hGc3l0MHBqRWpCbmNSYjFIVUJZTjdKYk1Ld0NOTTVEdExKdGpzcnh4UmYwNW01TzJoQVdBMVZkOWtGVS1QbG5WWXhUR2NBbHp4RTRaanQ3c3pqaXFyQjlBb2pWSzhzb1V6MnpGdC1rOHpoeVBoVHM3SDZqY28tV2VfWXc?oc=5",
-        "direction": "positive",
-        "detail": "Daily score increased by 26.6 points",
-        "significance": 1.486
       },
       {
         "date": "2026-09-18",
@@ -803,14 +802,24 @@
         "significance": 1.581
       },
       {
-        "date": "2026-09-28",
-        "type": "interim_results",
-        "title": "Aviva stock at GBp 699.20 on September 25, 2026, up 0.20 percent",
-        "source": "ad-hoc-news.de",
-        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQVDQ3MzdLekhoTFgyb3lRR21mdWZVS0ZZb09DZDlwaGR6dDhrdk9Eb2tCZC1PNk5SUWhkUTdzTEx5b3RxVnp1eVQ4ejViMUxFRzE0d3J3ZGZyNGVHQWJaUGw3R0NxLVhjV0tTODkyX01lZmZhZkp4Zzd2cUJMcGRLWFhseE9nLS1TcW5vOVRHQlFjejhWdUlzdktlZEpVWmhXeWpnSllrTjNOaVpNNjVFbk9yb3VFLXcySzBwVw?oc=5",
-        "direction": "neutral",
-        "detail": null,
-        "significance": 1.509
+        "date": "2026-09-29",
+        "type": "sentiment_drop",
+        "title": "Aviva boss warns more homes will be uninsurable due to flood risk",
+        "source": "bbc.co.uk",
+        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBBM1IyNThHdXZ2aUV0X1I3Z0s1MWRGRVR6QXJhZ2JrbmtfZnkyNWotdExZbVpqMTRBZERCZE93SWFyUlJqYmdaTzlVOFNJeWpnNnJtUzZEQ0N4aG1aS1E?oc=5",
+        "direction": "negative",
+        "detail": "Daily score decreased by 19.9 points",
+        "significance": 1.605
+      },
+      {
+        "date": "2026-09-29",
+        "type": "sentiment_drop",
+        "title": "Aviva Chief Warns UK Housebuilding in Flood Zones Risks Creating Uninsurable Assets",
+        "source": "streamlinefeed.co.ke",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOaHlxSmNnZTJEYXRtbTM4cWNZbXRoczQ4SGJ5ZjRRY1FnRHk1TWoxWUFGRGZuSmVVUVQ1bHZSbFRjdXNIekFYMGVZR2xreEhqUVNQelVDZzk2VDhtc2VyeUlIYmNlVUVFNEl4RjlEYUJkSGFac0JvZ1N5bEJJWjlTY1ZmdE5PTnNqZFl3bGRyS1lwcHpDVnkxSm5ERDd4VEx1YVlSYlZteHZNakp2OGZBdTkyOE9wYTJE?oc=5",
+        "direction": "negative",
+        "detail": "Daily score decreased by 19.9 points",
+        "significance": 1.599
       }
     ]
   },
@@ -1303,17 +1312,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 48.0,
+    "score": 47.9,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.9,
+        "score": 51.6,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 72 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 73 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1400,16 +1409,6 @@
       "significance": 1.581
     },
     {
-      "date": "2026-09-15",
-      "type": "sentiment_jump",
-      "title": "Aviva Aesthetics Expands Texas Presence Through Partnership with Muse Med Spa",
-      "source": "streetinsider.com",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOZVhOVEFWa3hxS01lOTFldlQyQS01ZVBoN2R1dzdSTl9XaE12dkc0V0I3TUVLdXZ6ZjVVQV9QazZDcGFHNl9feS1jeUdnMkhsX014Smlkd2hGc3l0MHBqRWpCbmNSYjFIVUJZTjdKYk1Ld0NOTTVEdExKdGpzcnh4UmYwNW01TzJoQVdBMVZkOWtGVS1QbG5WWXhUR2NBbHp4RTRaanQ3c3pqaXFyQjlBb2pWSzhzb1V6MnpGdC1rOHpoeVBoVHM3SDZqY28tV2VfWXc?oc=5",
-      "direction": "positive",
-      "detail": "Daily score increased by 26.6 points",
-      "significance": 1.486
-    },
-    {
       "date": "2026-09-18",
       "type": "high_disagreement",
       "title": "Aviva stock dips after BNP Paribas reiterates Buy rating and 800 pence target",
@@ -1480,14 +1479,24 @@
       "significance": 1.581
     },
     {
-      "date": "2026-09-28",
-      "type": "interim_results",
-      "title": "Aviva stock at GBp 699.20 on September 25, 2026, up 0.20 percent",
-      "source": "ad-hoc-news.de",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQVDQ3MzdLekhoTFgyb3lRR21mdWZVS0ZZb09DZDlwaGR6dDhrdk9Eb2tCZC1PNk5SUWhkUTdzTEx5b3RxVnp1eVQ4ejViMUxFRzE0d3J3ZGZyNGVHQWJaUGw3R0NxLVhjV0tTODkyX01lZmZhZkp4Zzd2cUJMcGRLWFhseE9nLS1TcW5vOVRHQlFjejhWdUlzdktlZEpVWmhXeWpnSllrTjNOaVpNNjVFbk9yb3VFLXcySzBwVw?oc=5",
-      "direction": "neutral",
-      "detail": null,
-      "significance": 1.509
+      "date": "2026-09-29",
+      "type": "sentiment_drop",
+      "title": "Aviva boss warns more homes will be uninsurable due to flood risk",
+      "source": "bbc.co.uk",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBBM1IyNThHdXZ2aUV0X1I3Z0s1MWRGRVR6QXJhZ2JrbmtfZnkyNWotdExZbVpqMTRBZERCZE93SWFyUlJqYmdaTzlVOFNJeWpnNnJtUzZEQ0N4aG1aS1E?oc=5",
+      "direction": "negative",
+      "detail": "Daily score decreased by 19.9 points",
+      "significance": 1.605
+    },
+    {
+      "date": "2026-09-29",
+      "type": "sentiment_drop",
+      "title": "Aviva Chief Warns UK Housebuilding in Flood Zones Risks Creating Uninsurable Assets",
+      "source": "streamlinefeed.co.ke",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOaHlxSmNnZTJEYXRtbTM4cWNZbXRoczQ4SGJ5ZjRRY1FnRHk1TWoxWUFGRGZuSmVVUVQ1bHZSbFRjdXNIekFYMGVZR2xreEhqUVNQelVDZzk2VDhtc2VyeUlIYmNlVUVFNEl4RjlEYUJkSGFac0JvZ1N5bEJJWjlTY1ZmdE5PTnNqZFl3bGRyS1lwcHpDVnkxSm5ERDd4VEx1YVlSYlZteHZNakp2OGZBdTkyOE9wYTJE?oc=5",
+      "direction": "negative",
+      "detail": "Daily score decreased by 19.9 points",
+      "significance": 1.599
     }
   ],
   "persistentEvents": [

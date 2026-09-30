@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T01:53:35.425854Z",
+  "generatedAt": "2026-09-30T02:15:19.146815Z",
   "company": {
     "companyName": "Standard Chartered PLC",
     "ticker": "STAN.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-05",
-    "periodEnd": "2026-09-28",
-    "observationCount": 74,
-    "scoredDayCount": 72,
-    "latestScore": 60.6,
-    "latestScoreDate": "2026-09-28",
+    "periodEnd": "2026-09-29",
+    "observationCount": 75,
+    "scoredDayCount": 73,
+    "latestScore": 59.3,
+    "latestScoreDate": "2026-09-29",
     "series": [
       {
         "date": "2026-07-05",
@@ -691,19 +691,18 @@
         "sourceCount": 29,
         "confidence": 83.4,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-29",
+        "dailyScore": 59.3,
+        "rollingScore": 56.0,
+        "storyCount": 22,
+        "sourceCount": 20,
+        "confidence": 86.5,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
-      {
-        "date": "2026-08-12",
-        "type": "sentiment_jump",
-        "title": "Hong Kong stablecoin selection expands with Standard Chartered - led venture launch",
-        "source": "scmp.com",
-        "url": "https://www.scmp.com/business/cryptocurrency/article/3363800/hong-kong-stablecoin-selection-expands-standard-chartered-led-ventures-launch",
-        "direction": "positive",
-        "detail": "Daily score increased by 20.4 points",
-        "significance": 1.572
-      },
       {
         "date": "2026-08-16",
         "type": "sentiment_drop",
@@ -793,6 +792,16 @@
         "direction": "mixed",
         "detail": "Positive and negative coverage is unusually dispersed",
         "significance": 1.596
+      },
+      {
+        "date": "2026-09-29",
+        "type": "analyst_upgrade",
+        "title": "Standard Chartered Warns Bitcoin Faces $50K Drop Before Year-End Rally",
+        "source": "coinmarketcap.com",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOR3BoNzN4dEE3LURCS2d0aVJQcVU4TmkxVnEtRVY3cFdrLVRqYngwdkczalJwVU02VEtkdnRTZ2FYdzUzallhZkpmQVpQc2pkb2d2Z1VIeWZNVjhwNWppMVEtRElKb2ZOeFRubERmNEVnY1BKc1FmdUcxa2VXNW05TS1CQktJY0I1aThZeGpjdVFkUDRvcHJsWTJTQVQwM2NvU2RZZ2M4UlRpbkFOLXVfMXpjME5RM21O?oc=5",
+        "direction": "positive",
+        "detail": null,
+        "significance": 1.604
       }
     ]
   },
@@ -1292,10 +1301,10 @@
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 56.9,
+        "score": 57.0,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 72 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 73 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1370,16 +1379,6 @@
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
-    },
-    {
-      "date": "2026-08-12",
-      "type": "sentiment_jump",
-      "title": "Hong Kong stablecoin selection expands with Standard Chartered - led venture launch",
-      "source": "scmp.com",
-      "url": "https://www.scmp.com/business/cryptocurrency/article/3363800/hong-kong-stablecoin-selection-expands-standard-chartered-led-ventures-launch",
-      "direction": "positive",
-      "detail": "Daily score increased by 20.4 points",
-      "significance": 1.572
     },
     {
       "date": "2026-08-16",
@@ -1470,6 +1469,16 @@
       "direction": "mixed",
       "detail": "Positive and negative coverage is unusually dispersed",
       "significance": 1.596
+    },
+    {
+      "date": "2026-09-29",
+      "type": "analyst_upgrade",
+      "title": "Standard Chartered Warns Bitcoin Faces $50K Drop Before Year-End Rally",
+      "source": "coinmarketcap.com",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOR3BoNzN4dEE3LURCS2d0aVJQcVU4TmkxVnEtRVY3cFdrLVRqYngwdkczalJwVU02VEtkdnRTZ2FYdzUzallhZkpmQVpQc2pkb2d2Z1VIeWZNVjhwNWppMVEtRElKb2ZOeFRubERmNEVnY1BKc1FmdUcxa2VXNW05TS1CQktJY0I1aThZeGpjdVFkUDRvcHJsWTJTQVQwM2NvU2RZZ2M4UlRpbkFOLXVfMXpjME5RM21O?oc=5",
+      "direction": "positive",
+      "detail": null,
+      "significance": 1.604
     }
   ],
   "persistentEvents": []

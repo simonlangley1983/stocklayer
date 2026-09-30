@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T01:53:35.425854Z",
+  "generatedAt": "2026-09-30T02:15:19.146815Z",
   "company": {
     "companyName": "Coca-Cola Europacific Partners PLC",
     "ticker": "CCEP.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-09-15",
-    "periodEnd": "2026-09-28",
-    "observationCount": 14,
-    "scoredDayCount": 9,
-    "latestScore": 63.8,
-    "latestScoreDate": "2026-09-28",
+    "periodEnd": "2026-09-29",
+    "observationCount": 15,
+    "scoredDayCount": 10,
+    "latestScore": 62.1,
+    "latestScoreDate": "2026-09-29",
     "series": [
       {
         "date": "2026-09-15",
@@ -150,6 +150,15 @@
         "storyCount": 9,
         "sourceCount": 7,
         "confidence": 82.8,
+        "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-29",
+        "dailyScore": 62.1,
+        "rollingScore": 54.3,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 18.6,
         "coverageStatus": "ok"
       }
     ],
@@ -453,17 +462,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 48.1,
+    "score": 48.4,
     "label": "Mixed",
-    "evidenceCoverage": 61,
+    "evidenceCoverage": 63,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 53.2,
+        "score": 54.2,
         "weight": 0.4,
-        "reliability": 0.45,
-        "detail": "Recency-weighted average of 9 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.5,
+        "detail": "Recency-weighted average of 10 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",

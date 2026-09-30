@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T01:53:35.425854Z",
+  "generatedAt": "2026-09-30T02:15:19.146815Z",
   "company": {
     "companyName": "Smith & Nephew PLC",
     "ticker": "SN.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-28",
-    "observationCount": 78,
-    "scoredDayCount": 47,
-    "latestScore": 41.6,
-    "latestScoreDate": "2026-09-28",
+    "periodEnd": "2026-09-29",
+    "observationCount": 79,
+    "scoredDayCount": 48,
+    "latestScore": 34.1,
+    "latestScoreDate": "2026-09-29",
     "series": [
       {
         "date": "2026-06-30",
@@ -727,6 +727,15 @@
         "sourceCount": 2,
         "confidence": 35.3,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-29",
+        "dailyScore": 34.1,
+        "rollingScore": 46.7,
+        "storyCount": 3,
+        "sourceCount": 3,
+        "confidence": 61.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -749,16 +758,6 @@
         "direction": "neutral",
         "detail": "6 stories versus trailing median 1",
         "significance": 1.496
-      },
-      {
-        "date": "2026-09-15",
-        "type": "coverage_spike",
-        "title": "Smith & Nephew stock heads into the open after a near 4 percent FTSE 100 gain",
-        "source": "ad-hoc-news.de",
-        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQUUoxV1g3Tlh0VWx0emN6aXU3WWtiUzBDOTRJSUxSYVpQNDZWdVVQT2N0Y3djeVFCVndBTzZ3Vy1jUWdqRWd5QWNjanVNcjlLRXRWUWlUa1FiMlZidkhjQ2cyeVZvN0pKT2h2NktPc0FJVEdjekhPV1d3WUJXRzZVckhiUlozVkthWFJWemZxcmRoaDc5d0FVaE94dk1UQUlseWYwaXYwRjlIQmlWLWdjNE9wQV9tc21QeWR3LUhvMzUxOHFOSHdjLVBSNTRNZw?oc=5",
-        "direction": "neutral",
-        "detail": "6 stories versus trailing median 1",
-        "significance": 1.32
       },
       {
         "date": "2026-09-16",
@@ -829,6 +828,16 @@
         "direction": "mixed",
         "detail": "Positive and negative coverage is unusually dispersed",
         "significance": 1.607
+      },
+      {
+        "date": "2026-09-29",
+        "type": "bad_press",
+        "title": "Smith & Nephew stock faces analyst downgrades after weak growth",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOOGdKZWVleVJva01lWjlpUEJmUVJERkotNEJ2S00yYUdIZW44bzljb3ctS1pGZkJEbUxEVXpKOEw0TkxOWTlmRHBwZDdNeF9xSzBfMnJxWEdZVjU2eUVlRDEyakFQVmFRRUdKa29NcHBfa1doTmk2c2Zsb040NXpleW9kRHljeThSbW9kbW8xd3QxNFJTR2U3NHg3REFHc0VQTW9tcEY5Vk9vSk5xaHlqTHJqNl9Nc0JRUGhQS1g3blNDeEdXTVBj?oc=5",
+        "direction": "negative",
+        "detail": "Daily press score is 34.1",
+        "significance": 1.608
       }
     ]
   },
@@ -1102,17 +1111,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 58.1,
-    "label": "Positive",
+    "score": 57.8,
+    "label": "Mixed",
     "evidenceCoverage": 92,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 50.5,
+        "score": 49.8,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 46 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 47 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1180,16 +1189,6 @@
       "direction": "neutral",
       "detail": "6 stories versus trailing median 1",
       "significance": 1.496
-    },
-    {
-      "date": "2026-09-15",
-      "type": "coverage_spike",
-      "title": "Smith & Nephew stock heads into the open after a near 4 percent FTSE 100 gain",
-      "source": "ad-hoc-news.de",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQUUoxV1g3Tlh0VWx0emN6aXU3WWtiUzBDOTRJSUxSYVpQNDZWdVVQT2N0Y3djeVFCVndBTzZ3Vy1jUWdqRWd5QWNjanVNcjlLRXRWUWlUa1FiMlZidkhjQ2cyeVZvN0pKT2h2NktPc0FJVEdjekhPV1d3WUJXRzZVckhiUlozVkthWFJWemZxcmRoaDc5d0FVaE94dk1UQUlseWYwaXYwRjlIQmlWLWdjNE9wQV9tc21QeWR3LUhvMzUxOHFOSHdjLVBSNTRNZw?oc=5",
-      "direction": "neutral",
-      "detail": "6 stories versus trailing median 1",
-      "significance": 1.32
     },
     {
       "date": "2026-09-16",
@@ -1260,6 +1259,16 @@
       "direction": "mixed",
       "detail": "Positive and negative coverage is unusually dispersed",
       "significance": 1.607
+    },
+    {
+      "date": "2026-09-29",
+      "type": "bad_press",
+      "title": "Smith & Nephew stock faces analyst downgrades after weak growth",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOOGdKZWVleVJva01lWjlpUEJmUVJERkotNEJ2S00yYUdIZW44bzljb3ctS1pGZkJEbUxEVXpKOEw0TkxOWTlmRHBwZDdNeF9xSzBfMnJxWEdZVjU2eUVlRDEyakFQVmFRRUdKa29NcHBfa1doTmk2c2Zsb040NXpleW9kRHljeThSbW9kbW8xd3QxNFJTR2U3NHg3REFHc0VQTW9tcEY5Vk9vSk5xaHlqTHJqNl9Nc0JRUGhQS1g3blNDeEdXTVBj?oc=5",
+      "direction": "negative",
+      "detail": "Daily press score is 34.1",
+      "significance": 1.608
     }
   ],
   "persistentEvents": []
