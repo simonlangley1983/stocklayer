@@ -5404,25 +5404,25 @@
     },
     {
       "date": "2026-09-29",
-      "dailyScore": 51.3,
+      "dailyScore": 52.1,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.3,
-      "confidence": 43.0,
-      "confidenceBand": "medium",
+      "rollingScore": 50.4,
+      "confidence": 36.9,
+      "confidenceBand": "low",
       "coverageStatus": "ok",
       "collectionCompleteness": 0.75,
-      "candidateCount": 59,
-      "eligibleArticleCount": 5,
-      "storyCount": 4,
-      "effectiveStoryCount": 4.0,
-      "sourceCount": 5,
+      "candidateCount": 58,
+      "eligibleArticleCount": 4,
+      "storyCount": 3,
+      "effectiveStoryCount": 3.0,
+      "sourceCount": 4,
       "positiveStoryCount": 1,
-      "neutralStoryCount": 3,
+      "neutralStoryCount": 2,
       "negativeStoryCount": 0,
-      "dispersion": 0.1168,
+      "dispersion": 0.1203,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 29,
-        "missing_company_alias": 24
+        "ambiguous_company_without_alias": 27,
+        "missing_company_alias": 26
       },
       "topStories": [
         {
@@ -5434,17 +5434,6 @@
           "publishedAt": "2026-09-29T02:25:07Z",
           "polarity": 0.2397,
           "sentiment": "Positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "3f443cffedc6f5da",
-          "storyClusterId": "story-004",
-          "title": "HSBC Holdings stock after-hours at EUR 17.68: minus 0.95 percent",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOdk9WZlpPX1c4LUhuM1FRUG1LSWw0UWJ2X1A5RVZhZFEzdnlwTlhEVGhEOUFlUjNqSE1Ebkh2c0Roc2poSmYzWkQzZEZZRklwMkx5R2JNVm1SbXV1UFZ5Z25CMklEbXNIbmZvb0tsQ290aWVGV0FjanVKcDBtcGFBRDdvRjY2cVNNUWhGSFY1SnV1QmNDRTJhUmpPUERGR2NhUTJfY1dseEp4TUs1UjVUbW5BaUtqTTdTU0tKRGdHRQ?oc=5",
-          "source": "ad-hoc-news.de",
-          "publishedAt": "2026-09-29T18:20:08Z",
-          "polarity": -0.0515,
-          "sentiment": "Neutral / mixed",
           "publisherCount": 1
         },
         {
@@ -5482,6 +5471,18 @@
           "sourceCount": 1
         },
         {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 36.9",
+          "evidenceArticleIds": [
+            "2fb0886b8a6737ee",
+            "fc40804520ff335c",
+            "2d54e2ef439afd93"
+          ]
+        },
+        {
           "type": "collection_degraded",
           "direction": "neutral",
           "severity": "medium",
@@ -5489,13 +5490,12 @@
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
             "2fb0886b8a6737ee",
-            "3f443cffedc6f5da",
             "fc40804520ff335c",
             "2d54e2ef439afd93"
           ]
         }
       ],
-      "changeFromPreviousScoredDay": -2.0
+      "changeFromPreviousScoredDay": -1.2
     }
   ]
 }
