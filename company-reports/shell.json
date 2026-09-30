@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T20:54:07.759870Z",
+  "generatedAt": "2026-09-30T21:01:39.700950Z",
   "company": {
     "companyName": "Shell",
     "ticker": "SHEL.L",
@@ -878,7 +878,7 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 4,
+    "reportCount": 5,
     "reports": [
       {
         "year": 2020,
@@ -951,6 +951,79 @@
           }
         ],
         "positivityScore": 32.9,
+        "positivityMethod": "lexical annual-report tone"
+      },
+      {
+        "year": 2022,
+        "title": "Shell plc Annual Report 2022",
+        "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/s/NYSE_SHEL_2022.pdf",
+        "sourceUrl": "https://shell.gcs-web.com/node/22866",
+        "wordCount": 283030,
+        "pageCount": 399,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 6,
+            "per10kWords": 0.212
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 16,
+            "per10kWords": 0.565
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 270,
+            "per10kWords": 9.54
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 57,
+            "per10kWords": 2.014
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 37,
+            "per10kWords": 1.307
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 43,
+            "per10kWords": 1.519
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 11,
+            "per10kWords": 0.389
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 36.6,
         "positivityMethod": "lexical annual-report tone"
       },
       {
@@ -1257,6 +1330,15 @@
       "type": "annual_report",
       "title": "AnnualReports.com archive PDF",
       "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/r/NYSE_RDS_2020.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
+    {
+      "date": "2022-12-31",
+      "type": "annual_report",
+      "title": "Shell plc Annual Report 2022",
+      "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/s/NYSE_SHEL_2022.pdf",
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
