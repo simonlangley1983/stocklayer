@@ -4959,6 +4959,78 @@
         }
       ],
       "changeFromPreviousScoredDay": 3.0
+    },
+    {
+      "date": "2026-09-29",
+      "dailyScore": 50.9,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 51.2,
+      "confidence": 19.6,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 56,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 2,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0106,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 49,
+        "missing_company_alias": 5
+      },
+      "topStories": [
+        {
+          "id": "1dbf1876a1027c1b",
+          "storyClusterId": "story-002",
+          "title": "Common equity tier 1 of Barclays PLC Sponsored ADR – HAN:BCY2",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUmhhNzJMSDlSLW5TVzhUNWg4V1RFa25BZ3h5SlJ2X3J2emNnUkZlb281MDI0RFVtLXNMcVhsV2toTlViakh0ZVFTOVJjUjBZZ29EU2FnZk95VTNxMDlWa0h5Y25tNm9lMUFLRm9VOTMtVmFUN0NSVEV1OVBkYW9xS3RPVzY4S0RyLTdxa2dVeU9kRFQ2?oc=5",
+          "source": "tradingview.com",
+          "publishedAt": "2026-09-29T16:07:37Z",
+          "polarity": 0.0479,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "a34ce74f2fe8537e",
+          "storyClusterId": "story-001",
+          "title": "REG - Barclays PLC Adv Medical Solutns. - Form 8.3 ADVANCED MEDICAL SOLUTIONS GROUP PLC",
+          "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOUXNKTUQtNHFxRVlCcEZEdkEtOU1KcXF2N3o4UDdfQ21aQTcwV2FaaDBfcEd6MFVSM1FPWGJNbUdDR1h0eUZyZlk3NlA5MHVGSUhZVDZXVW1WOXktSTFfbUFaS2tLczZEMFZoV0FFMlBmODZ3bHFBNDM2VTRZM2d1N0FHZ0piNFdiTTVlR25FdFdEX0dWdEVSS05nbHdYTmE2bFYwYmhxdE1fTDlKeGhaZTRkS0tSNDZJcF9NbC1JLUY1cmVXWmZBMl9jMTJqMnZYdkFWNDZocndZc3ZfQ0FIQ1NiU3lfem5aZFdzWWY2OA?oc=5",
+          "source": "tradingview.com",
+          "publishedAt": "2026-09-29T13:35:39Z",
+          "polarity": 0.0266,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 19.6",
+          "evidenceArticleIds": [
+            "1dbf1876a1027c1b",
+            "a34ce74f2fe8537e"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "1dbf1876a1027c1b",
+            "a34ce74f2fe8537e"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -4.2
     }
   ]
 }
