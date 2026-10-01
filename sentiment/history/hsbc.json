@@ -5512,25 +5512,25 @@
     },
     {
       "date": "2026-09-30",
-      "dailyScore": 48.8,
+      "dailyScore": 48.3,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.1,
-      "confidence": 43.6,
-      "confidenceBand": "medium",
+      "rollingScore": 50.0,
+      "confidence": 25.2,
+      "confidenceBand": "low",
       "coverageStatus": "ok",
       "collectionCompleteness": 0.75,
-      "candidateCount": 63,
-      "eligibleArticleCount": 4,
-      "storyCount": 4,
-      "effectiveStoryCount": 4.0,
-      "sourceCount": 4,
+      "candidateCount": 57,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 4,
+      "neutralStoryCount": 2,
       "negativeStoryCount": 0,
-      "dispersion": 0.0398,
+      "dispersion": 0.0133,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 54,
-        "missing_company_alias": 5
+        "ambiguous_company_without_alias": 47,
+        "missing_company_alias": 8
       },
       "topStories": [
         {
@@ -5546,7 +5546,7 @@
         },
         {
           "id": "4a0f89c2791d21d8",
-          "storyClusterId": "story-003",
+          "storyClusterId": "story-002",
           "title": "REG - HSBC Holdings PLC - Notification of issuance under block listing",
           "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNUmJBQTI0ZTRITDZ0a09oanBQUUpqWTFibUQtQmowWldyMGxKOGFzRC1PMC1JQ0R0OVFyR0tYS0ViODhRRXlLY2x1ZHFfdWFCNm9YQ1AzVWFQMExtTVQ0Rk1UV2J6NTFoX1RnU1JfVE5mNWVVRHZabzBjS0hRemJqUVZHR2dOa1lvcGdDeEJDdWhrLW9lWlE5WjFOTy1CWldsQVJwekRBWU5YRVU5R0ZidUJPMDFVdENCX1gzdjNpWTNqT2V2NnNSN1c1ajA1U3pjc1JzX1RucEphZw?oc=5",
           "source": "tradingview.com",
@@ -5554,31 +5554,20 @@
           "polarity": -0.0565,
           "sentiment": "Neutral / mixed",
           "publisherCount": 1
-        },
-        {
-          "id": "fc40804520ff335c",
-          "storyClusterId": "story-002",
-          "title": "HSBC Holdings plc (0005.HK) stock price, news, quote and history",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8tZFZYZU1lMVRsclZqbF9SWU1vTXNLYWlZU05XZUExQlB1cndDbUcyN2lYSUdMQXFkSS16U3RxM21fZnFvNUctRlhYbDdaV2pOZC1PME1B?oc=5",
-          "source": "uk.finance.yahoo.com",
-          "publishedAt": "2026-09-30T04:59:29Z",
-          "polarity": -0.0305,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        },
-        {
-          "id": "1da8c80e4426307c",
-          "storyClusterId": "story-004",
-          "title": "HSBC Holdings Announces Total Voting Rights and Share Capital as of September 29, 2026",
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOQmhXdUNrUkp4cmRYNVdhcC1JdTBoWkZuM21tRTdQTi1FQUtINEZPcUpRQUgtNF9ONkVVbVU5YjZ1VlpRdVphWGtvQ29jd05oaXhYa3BvME1SdkVDSGVYem1pT1JYc1lXYjVMcWpZaHFWRU9CeG81Qm1jZXgyOERZTmNtbDlESllUcXZsbzVwTXhvRXlGN195NVVtdy1RcXlYUzhWY0E1dWJoZlk5MWhqdElQVzlqVTVleHlGdVNJU1dSRVhlNlhFeWh6a3M?oc=5",
-          "source": "kalkinemedia.com",
-          "publishedAt": "2026-09-30T18:23:52Z",
-          "polarity": 0.0247,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
         }
       ],
       "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 25.2",
+          "evidenceArticleIds": [
+            "e9212d8a17124c44",
+            "4a0f89c2791d21d8"
+          ]
+        },
         {
           "type": "collection_degraded",
           "direction": "neutral",
@@ -5587,13 +5576,11 @@
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
             "e9212d8a17124c44",
-            "4a0f89c2791d21d8",
-            "fc40804520ff335c",
-            "1da8c80e4426307c"
+            "4a0f89c2791d21d8"
           ]
         }
       ],
-      "changeFromPreviousScoredDay": -2.4
+      "changeFromPreviousScoredDay": -2.9
     }
   ]
 }
