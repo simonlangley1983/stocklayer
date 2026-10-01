@@ -2592,6 +2592,66 @@
         }
       ],
       "changeFromPreviousScoredDay": 0.5
+    },
+    {
+      "date": "2026-09-30",
+      "dailyScore": 47.0,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.7,
+      "confidence": 36.0,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 4,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 1,
+      "dispersion": 0.0977,
+      "rejectedCandidateCounts": {
+        "missing_company_alias": 2
+      },
+      "topStories": [
+        {
+          "id": "dab20af705608731",
+          "storyClusterId": "story-002",
+          "title": "International Consolidated Airlines Group stock trades at EUR 5.16 as fuel costs test margins",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQa09TSkV5QlBjMkduYXd0RnVZblM2bVNqbEpKbEZlOUJoVUphZnFSTWcwbmZTOHhRRHZ5TVJUSVdBbnpQSEMzOFRaU3YxLVN5RHJ5NUJadkFONWNUZ1JMbDVhNE1McDlSam9HQ19FR09zUml0M01rSlFhWmhQcTBCRjZnWG5Ic2FMdEc1RDRleVIyWmg2alFhSHBTNUhGOThneGRtLWVDRFFocWpVM0JpREcxaG5UMGhHbGdPMFlJYWs0YW9mYndrRW52aktndDJQdXg0?oc=5",
+          "source": "ad-hoc-news.de",
+          "publishedAt": "2026-09-30T10:38:37Z",
+          "polarity": -0.2185,
+          "sentiment": "Negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "e1f87b8dfaf3edb3",
+          "storyClusterId": "story-001",
+          "title": "International Consolidated Airlines Group S.A. (IAG.MC) Stock Price, News, Quote & History",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9xc2pjWlZHUkNvR1NlbldNejY5U1NJeUg0NUNBeGNhZmlxdFBSTzhNNTVUeEQzcGNsMnFiUWlwSzFZVlowWHZFeEJlNlJLSGpmYlQycg?oc=5",
+          "source": "ca.finance.yahoo.com",
+          "publishedAt": "2026-09-30T01:41:25Z",
+          "polarity": -0.0231,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 36.0",
+          "evidenceArticleIds": [
+            "dab20af705608731",
+            "e1f87b8dfaf3edb3"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -4.3
     }
   ]
 }
