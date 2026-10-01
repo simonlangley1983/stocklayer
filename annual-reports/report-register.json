@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T08:56:49.328734+00:00",
+  "generatedAt": "2026-10-01T15:55:49.505873+00:00",
   "companyCount": 100,
   "verifiedCurrentCount": 16,
   "companies": {
@@ -4246,6 +4246,12 @@
           "extractionStatus": "extracted"
         },
         {
+          "year": 2021,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/i/LSE_ITRK_2021.pdf",
+          "sha256": "2da489539ff9369cdbe277d5010cf8c4c0ebd087f252ef9857ab356e2e7c0024",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2022,
           "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000070663/NI-000070663.pdf",
           "sha256": "25d64ab80a6d2ab8a15122e3e8459d2eb14c35938e2c537668fa6d42229dafad",
@@ -4298,16 +4304,11 @@
         },
         "intertek:2021": {
           "candidateHash": "91f7bd04c1c628c1e218f938f692fadbb60ab0aac2d347175f5f9a6f1aa761a3",
-          "attemptCount": 2,
-          "lastAttempt": "2026-09-29T12:55:43.771384+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-30T00:55:43.771384+00:00",
-          "diagnostics": [
-            {
-              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/i/LSE_ITRK_2021.pdf",
-              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-            }
-          ]
+          "attemptCount": 3,
+          "lastAttempt": "2026-10-01T14:34:09.395550+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-10-02T14:34:09.395550+00:00",
+          "diagnostics": []
         }
       }
     },
