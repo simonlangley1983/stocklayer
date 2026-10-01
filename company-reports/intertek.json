@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T02:12:10.871559Z",
+  "generatedAt": "2026-10-01T02:17:04.279997Z",
   "company": {
     "companyName": "Intertek Group PLC",
     "ticker": "ITRK.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-10",
-    "periodEnd": "2026-09-29",
-    "observationCount": 77,
-    "scoredDayCount": 53,
-    "latestScore": 50.2,
-    "latestScoreDate": "2026-09-29",
+    "periodEnd": "2026-09-30",
+    "observationCount": 78,
+    "scoredDayCount": 54,
+    "latestScore": 65.1,
+    "latestScoreDate": "2026-09-30",
     "series": [
       {
         "date": "2026-07-10",
@@ -718,19 +718,18 @@
         "sourceCount": 1,
         "confidence": 15.1,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-30",
+        "dailyScore": 65.1,
+        "rollingScore": 54.9,
+        "storyCount": 4,
+        "sourceCount": 3,
+        "confidence": 54.8,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
-      {
-        "date": "2026-07-22",
-        "type": "merger_acquisition",
-        "title": "Intertek Gp ( OTCMKTS : IKTSY ) Downgraded by Jefferies Financial Group to  Hold",
-        "source": "themarketsdaily.com",
-        "url": "https://www.themarketsdaily.com/2026/07/22/intertek-gp-otcmktsiktsy-downgraded-by-jefferies-financial-group-to-hold.html",
-        "direction": "neutral",
-        "detail": null,
-        "significance": 1.388
-      },
       {
         "date": "2026-07-27",
         "type": "high_disagreement",
@@ -820,6 +819,16 @@
         "direction": "negative",
         "detail": "Daily score decreased by 13.9 points",
         "significance": 1.452
+      },
+      {
+        "date": "2026-09-30",
+        "type": "sentiment_jump",
+        "title": "Could New UK CBD Rules Boost Demand For Testing At FTSE 100 Group Intertek (LSE:ITRK)?",
+        "source": "kalkinemedia.com",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxONTRpTjBMZDY1SUdDcUNWWUQ3SXI4MUFqQWNJZVh5OWpqWXhKblUyZkVSUUFINDgzZTF4QmFIODd0QThVWHNtUmU2U2lOTDNOS0t6Sy1UUDBfX3pXbDY2YkVEa0RjS0p1MlRQdDZaelpFeVhBaUltUXdCVjA4RDFIYVV2bUZyUXg3cHNURGNBZW10UkxsM0twRGlNeHN4UGFweGhsanRGM2R6Tjctck44eWZDV2F4anM2djlCc3ZwQ1RwRjRV?oc=5",
+        "direction": "positive",
+        "detail": "Daily score increased by 14.9 points",
+        "significance": 1.577
       }
     ]
   },
@@ -1239,17 +1248,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 60.5,
+    "score": 60.6,
     "label": "Positive",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 55.3,
+        "score": 55.7,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 53 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 54 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1315,16 +1324,6 @@
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
-    },
-    {
-      "date": "2026-07-22",
-      "type": "merger_acquisition",
-      "title": "Intertek Gp ( OTCMKTS : IKTSY ) Downgraded by Jefferies Financial Group to  Hold",
-      "source": "themarketsdaily.com",
-      "url": "https://www.themarketsdaily.com/2026/07/22/intertek-gp-otcmktsiktsy-downgraded-by-jefferies-financial-group-to-hold.html",
-      "direction": "neutral",
-      "detail": null,
-      "significance": 1.388
     },
     {
       "date": "2026-07-27",
@@ -1415,6 +1414,16 @@
       "direction": "negative",
       "detail": "Daily score decreased by 13.9 points",
       "significance": 1.452
+    },
+    {
+      "date": "2026-09-30",
+      "type": "sentiment_jump",
+      "title": "Could New UK CBD Rules Boost Demand For Testing At FTSE 100 Group Intertek (LSE:ITRK)?",
+      "source": "kalkinemedia.com",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxONTRpTjBMZDY1SUdDcUNWWUQ3SXI4MUFqQWNJZVh5OWpqWXhKblUyZkVSUUFINDgzZTF4QmFIODd0QThVWHNtUmU2U2lOTDNOS0t6Sy1UUDBfX3pXbDY2YkVEa0RjS0p1MlRQdDZaelpFeVhBaUltUXdCVjA4RDFIYVV2bUZyUXg3cHNURGNBZW10UkxsM0twRGlNeHN4UGFweGhsanRGM2R6Tjctck44eWZDV2F4anM2djlCc3ZwQ1RwRjRV?oc=5",
+      "direction": "positive",
+      "detail": "Daily score increased by 14.9 points",
+      "significance": 1.577
     }
   ],
   "persistentEvents": [

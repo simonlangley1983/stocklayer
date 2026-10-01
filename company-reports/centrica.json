@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T02:12:10.871559Z",
+  "generatedAt": "2026-10-01T02:17:04.279997Z",
   "company": {
     "companyName": "Centrica PLC",
     "ticker": "CNA.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-29",
-    "observationCount": 86,
-    "scoredDayCount": 49,
-    "latestScore": 61.2,
-    "latestScoreDate": "2026-09-29",
+    "periodEnd": "2026-09-30",
+    "observationCount": 87,
+    "scoredDayCount": 50,
+    "latestScore": 62.9,
+    "latestScoreDate": "2026-09-30",
     "series": [
       {
         "date": "2026-06-30",
@@ -799,6 +799,15 @@
         "sourceCount": 1,
         "confidence": 18.3,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-30",
+        "dailyScore": 62.9,
+        "rollingScore": 54.0,
+        "storyCount": 6,
+        "sourceCount": 6,
+        "confidence": 74.5,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -823,16 +832,6 @@
         "significance": 1.35
       },
       {
-        "date": "2026-08-09",
-        "type": "press_story",
-        "title": "Centrica ( LSE : CNA ) Stock Fair Value Edges Lower After Analyst Target Revisions",
-        "source": "finance.yahoo.com",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/centrica-lse-cna-stock-fair-071649113.html",
-        "direction": "Very negative",
-        "detail": null,
-        "significance": 1.096
-      },
-      {
         "date": "2026-08-26",
         "type": "sentiment_jump",
         "title": "Short Interest in Centrica PLC ( OTCMKTS : CPYYY ) Grows By 1 , 531 . 3 %",
@@ -841,16 +840,6 @@
         "direction": "positive",
         "detail": "Daily score increased by 21.8 points",
         "significance": 1.572
-      },
-      {
-        "date": "2026-09-17",
-        "type": "press_story",
-        "title": "Centrica wins BESS optimisation deal for Danish wind-storage site",
-        "source": "renewablesnow.com",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWkZOQmdVcm85SndrLWdOejRFeDIycGJ4bno0XzNLcG9IN2o0aDlHbkZwNUY3d2FIZ1p4UW5naWF1LWJ1U2ZaZjF3UTgwdk5mV2JOMzFSVHpmY0t3WkNjRmVHQU83SVZZOGpVSVN0cjlMeVBIcTVWdlBUZlZYYjc3VjNMdGVNbi1KUUc1TTVEVmx4NmVwZGtSUDhmTkZpdUJQNkpmOXFOOTI?oc=5",
-        "direction": "Very positive",
-        "detail": null,
-        "significance": 1.041
       },
       {
         "date": "2026-09-18",
@@ -901,6 +890,26 @@
         "direction": "positive",
         "detail": "Daily score increased by 12.8 points",
         "significance": 1.522
+      },
+      {
+        "date": "2026-09-30",
+        "type": "coverage_spike",
+        "title": "Ksi Lisims LNG signs long-term supply deal with Centrica Energy",
+        "source": "bnnbloomberg.ca",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPdTJMYVMzMjRzeDlLV2lLdzRMQUJpNmpvMlRGbTlzWFhRY29RTnBHMVNjQWxSYTM0MGVXYUJQNzUxWXkyR3o3ejhrc0JhX2xiU0JnaFdNRFp1WlFFTXpTclpsaTB5andaOGg3MTlVUUpHdnNyUHgtV3RDU3h1dTFybGJfNXllX28zb0FsbU9FdmdVMVZneUFDZ3EzeV90S2w2Ni1ic1BRa1dyUTd1U1lSNWRFaFZWSGplUHJFNzktVlF5TGc?oc=5",
+        "direction": "neutral",
+        "detail": "6 stories versus trailing median 2",
+        "significance": 1.692
+      },
+      {
+        "date": "2026-09-30",
+        "type": "coverage_spike",
+        "title": "Centrica signs 20-year supply agreement with BC's Ksi Lisims LNG project",
+        "source": "westernstandard.news",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQcW9ZcmMtdncyRDhSa3dFNmxnUnloVERnRkRrUnZLeUIyN0pnN0FhUHo3djNWQ3JrVTRvam9xQ0U5Y1BwUzJab08zX3NIdzNPLVlZdUdIRWtONUFCTHh4aGxDbEZ6c1UwOEFYbG1YbGQ4Zl9ZWmlJbS1KcGx0Z2c3d2R3TmV6dDczcTNrUHVrVDA4VUdfS3h5M19JeXhUQ3VnbjM3X1d6bzNNY2stUWwyX1ByUWFNdw?oc=5",
+        "direction": "neutral",
+        "detail": "6 stories versus trailing median 2",
+        "significance": 1.579
       }
     ]
   },
@@ -1393,17 +1402,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 42.1,
+    "score": 42.3,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 49.3,
+        "score": 49.9,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 48 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 49 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1500,16 +1509,6 @@
       "significance": 1.35
     },
     {
-      "date": "2026-08-09",
-      "type": "press_story",
-      "title": "Centrica ( LSE : CNA ) Stock Fair Value Edges Lower After Analyst Target Revisions",
-      "source": "finance.yahoo.com",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/centrica-lse-cna-stock-fair-071649113.html",
-      "direction": "Very negative",
-      "detail": null,
-      "significance": 1.096
-    },
-    {
       "date": "2026-08-26",
       "type": "sentiment_jump",
       "title": "Short Interest in Centrica PLC ( OTCMKTS : CPYYY ) Grows By 1 , 531 . 3 %",
@@ -1518,16 +1517,6 @@
       "direction": "positive",
       "detail": "Daily score increased by 21.8 points",
       "significance": 1.572
-    },
-    {
-      "date": "2026-09-17",
-      "type": "press_story",
-      "title": "Centrica wins BESS optimisation deal for Danish wind-storage site",
-      "source": "renewablesnow.com",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWkZOQmdVcm85SndrLWdOejRFeDIycGJ4bno0XzNLcG9IN2o0aDlHbkZwNUY3d2FIZ1p4UW5naWF1LWJ1U2ZaZjF3UTgwdk5mV2JOMzFSVHpmY0t3WkNjRmVHQU83SVZZOGpVSVN0cjlMeVBIcTVWdlBUZlZYYjc3VjNMdGVNbi1KUUc1TTVEVmx4NmVwZGtSUDhmTkZpdUJQNkpmOXFOOTI?oc=5",
-      "direction": "Very positive",
-      "detail": null,
-      "significance": 1.041
     },
     {
       "date": "2026-09-18",
@@ -1578,9 +1567,49 @@
       "direction": "positive",
       "detail": "Daily score increased by 12.8 points",
       "significance": 1.522
+    },
+    {
+      "date": "2026-09-30",
+      "type": "coverage_spike",
+      "title": "Ksi Lisims LNG signs long-term supply deal with Centrica Energy",
+      "source": "bnnbloomberg.ca",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPdTJMYVMzMjRzeDlLV2lLdzRMQUJpNmpvMlRGbTlzWFhRY29RTnBHMVNjQWxSYTM0MGVXYUJQNzUxWXkyR3o3ejhrc0JhX2xiU0JnaFdNRFp1WlFFTXpTclpsaTB5andaOGg3MTlVUUpHdnNyUHgtV3RDU3h1dTFybGJfNXllX28zb0FsbU9FdmdVMVZneUFDZ3EzeV90S2w2Ni1ic1BRa1dyUTd1U1lSNWRFaFZWSGplUHJFNzktVlF5TGc?oc=5",
+      "direction": "neutral",
+      "detail": "6 stories versus trailing median 2",
+      "significance": 1.692
+    },
+    {
+      "date": "2026-09-30",
+      "type": "coverage_spike",
+      "title": "Centrica signs 20-year supply agreement with BC's Ksi Lisims LNG project",
+      "source": "westernstandard.news",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQcW9ZcmMtdncyRDhSa3dFNmxnUnloVERnRkRrUnZLeUIyN0pnN0FhUHo3djNWQ3JrVTRvam9xQ0U5Y1BwUzJab08zX3NIdzNPLVlZdUdIRWtONUFCTHh4aGxDbEZ6c1UwOEFYbG1YbGQ4Zl9ZWmlJbS1KcGx0Z2c3d2R3TmV6dDczcTNrUHVrVDA4VUdfS3h5M19JeXhUQ3VnbjM3X1d6bzNNY2stUWwyX1ByUWFNdw?oc=5",
+      "direction": "neutral",
+      "detail": "6 stories versus trailing median 2",
+      "significance": 1.579
     }
   ],
   "persistentEvents": [
+    {
+      "id": "948dc63907c8b722b7db",
+      "type": "acquisition",
+      "title": "Centrica Discloses Director Share Acquisition via Dividend Reinvestment Plan",
+      "date": "2026-09-30",
+      "status": "pending_review",
+      "reviewDate": "2027-03-29",
+      "direction": "Neutral / mixed",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQVXJOc0J5UXAyZTljdTY4dXlPdGIzMjRwTVNKT2lrV0hqaGs5bGc2N2RfeTY1Wmdfa2FTLUhKbUJtZkNhUzl1VmRwbGFjZHRLZkFJdjZIdjg3bWxwXzQ2LUxpbVRWRnFYQVVuckZ2YUNTUFNjX1ZBSHA0UnkwTTJEeHN3Z3EtcHF3clhUN193WWZLSE9OZXBXeTZYNHhNZ1lwVTZqeldJaFE4SkY5LXRkNmRGZHJhWU9SVWt0dU90djRyU3R5eF9B?oc=5",
+          "publisher": "tipranks.com",
+          "date": "2026-09-30"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "483536d79ba401774db6",
       "type": "acquisition",

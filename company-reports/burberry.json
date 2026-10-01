@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T02:12:10.871559Z",
+  "generatedAt": "2026-10-01T02:17:04.279997Z",
   "company": {
     "companyName": "Burberry Group PLC",
     "ticker": "BRBY.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-09-10",
-    "periodEnd": "2026-09-29",
-    "observationCount": 20,
-    "scoredDayCount": 16,
-    "latestScore": 55.6,
-    "latestScoreDate": "2026-09-29",
+    "periodEnd": "2026-09-30",
+    "observationCount": 21,
+    "scoredDayCount": 17,
+    "latestScore": 52.8,
+    "latestScoreDate": "2026-09-30",
     "series": [
       {
         "date": "2026-09-10",
@@ -204,6 +204,15 @@
         "storyCount": 10,
         "sourceCount": 10,
         "confidence": 77.8,
+        "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-30",
+        "dailyScore": 52.8,
+        "rollingScore": 53.5,
+        "storyCount": 8,
+        "sourceCount": 8,
+        "confidence": 78.0,
         "coverageStatus": "ok"
       }
     ],
@@ -872,17 +881,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 43.1,
+    "score": 43.0,
     "label": "Mixed",
-    "evidenceCoverage": 92,
+    "evidenceCoverage": 94,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
         "score": 51.9,
         "weight": 0.4,
-        "reliability": 0.8,
-        "detail": "Recency-weighted average of 16 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.85,
+        "detail": "Recency-weighted average of 17 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",

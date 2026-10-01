@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T02:12:10.871559Z",
+  "generatedAt": "2026-10-01T02:17:04.279997Z",
   "company": {
     "companyName": "BAE Systems",
     "ticker": "BA.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-14",
-    "periodEnd": "2026-09-29",
-    "observationCount": 85,
-    "scoredDayCount": 70,
-    "latestScore": 60.2,
-    "latestScoreDate": "2026-09-29",
+    "periodEnd": "2026-09-30",
+    "observationCount": 86,
+    "scoredDayCount": 71,
+    "latestScore": 74.9,
+    "latestScoreDate": "2026-09-30",
     "series": [
       {
         "date": "2026-06-14",
@@ -790,19 +790,18 @@
         "sourceCount": 13,
         "confidence": 89.0,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-30",
+        "dailyScore": 74.9,
+        "rollingScore": 61.3,
+        "storyCount": 9,
+        "sourceCount": 8,
+        "confidence": 86.5,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
-      {
-        "date": "2026-08-06",
-        "type": "high_disagreement",
-        "title": "FTSE 100 Analysis : Strong BAE Systems Earnings Support the Index Rally Near Record Highs",
-        "source": "actionforex.com",
-        "url": "https://www.actionforex.com/contributors/technical-analysis/649728-ftse-100-analysis-strong-bae-systems-earnings-support-the-index-rally-near-record-highs",
-        "direction": "mixed",
-        "detail": "Positive and negative coverage is unusually dispersed",
-        "significance": 1.575
-      },
       {
         "date": "2026-08-12",
         "type": "high_disagreement",
@@ -892,6 +891,16 @@
         "direction": "positive",
         "detail": "Daily press score is 65.2",
         "significance": 1.582
+      },
+      {
+        "date": "2026-09-29",
+        "type": "sentiment_jump",
+        "title": "BAE Systems (BAESY) Secures $137.66M Contract for Virginia-Class Submarine Propulsors",
+        "source": "gurufocus.com",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNYnJ6OFotcGtUMFItd21XcF9aMzVqMXI2bzVLUVZjVkpDYy1weDFoTVZHczJvckdKdW5sc2p0dHRNaUYwM2dRUjgwXzNqRjNCQzNQcmtTdjI5VWkzSU9oNGNEbnNiTzk3cVZWNVVkdldOT2UxdHBKUVFLaDdmNkZ3dTV1dUdRX1RQRXJ1WUptbnEtdk5DSk5uY3IwNFE2MS00NF9pTFNLbVNEbUtXaDAtRDYwMXdqUExVb3RR?oc=5",
+        "direction": "positive",
+        "detail": "Daily score increased by 14.7 points",
+        "significance": 1.575
       }
     ]
   },
@@ -1384,17 +1393,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 53.1,
+    "score": 53.3,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 59.3,
+        "score": 59.8,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 65 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 66 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1469,16 +1478,6 @@
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
-    },
-    {
-      "date": "2026-08-06",
-      "type": "high_disagreement",
-      "title": "FTSE 100 Analysis : Strong BAE Systems Earnings Support the Index Rally Near Record Highs",
-      "source": "actionforex.com",
-      "url": "https://www.actionforex.com/contributors/technical-analysis/649728-ftse-100-analysis-strong-bae-systems-earnings-support-the-index-rally-near-record-highs",
-      "direction": "mixed",
-      "detail": "Positive and negative coverage is unusually dispersed",
-      "significance": 1.575
     },
     {
       "date": "2026-08-12",
@@ -1569,6 +1568,16 @@
       "direction": "positive",
       "detail": "Daily press score is 65.2",
       "significance": 1.582
+    },
+    {
+      "date": "2026-09-29",
+      "type": "sentiment_jump",
+      "title": "BAE Systems (BAESY) Secures $137.66M Contract for Virginia-Class Submarine Propulsors",
+      "source": "gurufocus.com",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNYnJ6OFotcGtUMFItd21XcF9aMzVqMXI2bzVLUVZjVkpDYy1weDFoTVZHczJvckdKdW5sc2p0dHRNaUYwM2dRUjgwXzNqRjNCQzNQcmtTdjI5VWkzSU9oNGNEbnNiTzk3cVZWNVVkdldOT2UxdHBKUVFLaDdmNkZ3dTV1dUdRX1RQRXJ1WUptbnEtdk5DSk5uY3IwNFE2MS00NF9pTFNLbVNEbUtXaDAtRDYwMXdqUExVb3RR?oc=5",
+      "direction": "positive",
+      "detail": "Daily score increased by 14.7 points",
+      "significance": 1.575
     }
   ],
   "persistentEvents": [

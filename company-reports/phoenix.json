@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T02:12:10.871559Z",
+  "generatedAt": "2026-10-01T02:17:04.279997Z",
   "company": {
     "companyName": "Standard Life PLC",
     "ticker": "SDLF.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-29",
-    "observationCount": 88,
-    "scoredDayCount": 10,
-    "latestScore": 62.7,
-    "latestScoreDate": "2026-09-29",
+    "periodEnd": "2026-09-30",
+    "observationCount": 89,
+    "scoredDayCount": 11,
+    "latestScore": 56.1,
+    "latestScoreDate": "2026-09-30",
     "series": [
       {
         "date": "2026-06-30",
@@ -817,19 +817,18 @@
         "sourceCount": 5,
         "confidence": 72.9,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-30",
+        "dailyScore": 56.1,
+        "rollingScore": 53.2,
+        "storyCount": 3,
+        "sourceCount": 3,
+        "confidence": 51.4,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
-      {
-        "date": "2026-09-15",
-        "type": "press_story",
-        "title": "Over a third increase pension contributions after pay rises – Standard Life",
-        "source": "corporate-adviser.com",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNcXEtX3pvLXRRaEtOenBwZ3Z6QklxaVlNVThORTNqRlNPbFY4QXd6WnhhVnpsWXRydU51dHUtbGlTdC1CdkhsUVNXQVBqLWxBU2FHM1Q2VjIycUlXR0RjY0R6STNHN3d4Sk5BMExlZm5xek5HX0ZTdWhtTm9DaVYxQUFueXc5VUhkSlJaMzQ5UklpQmdNNjduQzQtRGJsSGs3NE1TTUlWZ9IBrAFBVV95cUxQcDNGX0UwVDB4YlJOWS1FZW4wR0JfSVJoNk5HREVRSHVxU0RuN3psb3Brcm1jMlFYSVdPbW9lRk8xbDdPM0k0MkR6MHVVY2s4SVFkQklXQnFnazVHblc0emZ3LTYyc19UamVzOTZLWUU3d25Mb3FsUzVfUWRBM2xXNDJxTVp0aVhELVVibEw3dzdpV25MRkhOUE5LOWRCRENHLWdwUXlLX1ludk9Y?oc=5",
-        "direction": "Positive",
-        "detail": null,
-        "significance": 0.359
-      },
       {
         "date": "2026-09-16",
         "type": "sentiment_jump",
@@ -919,6 +918,16 @@
         "direction": "neutral",
         "detail": "6 stories versus trailing median 2",
         "significance": 1.357
+      },
+      {
+        "date": "2026-09-30",
+        "type": "press_story",
+        "title": "AJ Bell teams up with Standard Life to launch offshore bond",
+        "source": "professionaladviser.com",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPN1pUZmpoUlo1dGhSOHg3cFAyU3gwZl9VTVBHVFpTTmYtZndHaGRSdHhvNjdNMFZ3aU5NMkUxazZMSktpWGtqZGhtYmNjU0ZWLU9VdTZ6V2psSnhCQk9uazExMDV1Zjc1REhzaTRNS01pWEZ5ckdVV09iOVBoUXF4MXRfM2k3VDhmUFc5V0N3cDFzWTFzeGlJMTFPVUJzUQ?oc=5",
+        "direction": "Very positive",
+        "detail": null,
+        "significance": 0.731
       }
     ]
   },
@@ -1340,15 +1349,15 @@
   "overallConfidence": {
     "score": 44.2,
     "label": "Mixed",
-    "evidenceCoverage": 80,
+    "evidenceCoverage": 82,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 53.8,
+        "score": 54.0,
         "weight": 0.4,
-        "reliability": 0.5,
-        "detail": "Recency-weighted average of 10 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.55,
+        "detail": "Recency-weighted average of 11 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1414,16 +1423,6 @@
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
-    },
-    {
-      "date": "2026-09-15",
-      "type": "press_story",
-      "title": "Over a third increase pension contributions after pay rises – Standard Life",
-      "source": "corporate-adviser.com",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNcXEtX3pvLXRRaEtOenBwZ3Z6QklxaVlNVThORTNqRlNPbFY4QXd6WnhhVnpsWXRydU51dHUtbGlTdC1CdkhsUVNXQVBqLWxBU2FHM1Q2VjIycUlXR0RjY0R6STNHN3d4Sk5BMExlZm5xek5HX0ZTdWhtTm9DaVYxQUFueXc5VUhkSlJaMzQ5UklpQmdNNjduQzQtRGJsSGs3NE1TTUlWZ9IBrAFBVV95cUxQcDNGX0UwVDB4YlJOWS1FZW4wR0JfSVJoNk5HREVRSHVxU0RuN3psb3Brcm1jMlFYSVdPbW9lRk8xbDdPM0k0MkR6MHVVY2s4SVFkQklXQnFnazVHblc0emZ3LTYyc19UamVzOTZLWUU3d25Mb3FsUzVfUWRBM2xXNDJxTVp0aVhELVVibEw3dzdpV25MRkhOUE5LOWRCRENHLWdwUXlLX1ludk9Y?oc=5",
-      "direction": "Positive",
-      "detail": null,
-      "significance": 0.359
     },
     {
       "date": "2026-09-16",
@@ -1514,6 +1513,16 @@
       "direction": "neutral",
       "detail": "6 stories versus trailing median 2",
       "significance": 1.357
+    },
+    {
+      "date": "2026-09-30",
+      "type": "press_story",
+      "title": "AJ Bell teams up with Standard Life to launch offshore bond",
+      "source": "professionaladviser.com",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPN1pUZmpoUlo1dGhSOHg3cFAyU3gwZl9VTVBHVFpTTmYtZndHaGRSdHhvNjdNMFZ3aU5NMkUxazZMSktpWGtqZGhtYmNjU0ZWLU9VdTZ6V2psSnhCQk9uazExMDV1Zjc1REhzaTRNS01pWEZ5ckdVV09iOVBoUXF4MXRfM2k3VDhmUFc5V0N3cDFzWTFzeGlJMTFPVUJzUQ?oc=5",
+      "direction": "Very positive",
+      "detail": null,
+      "significance": 0.731
     }
   ],
   "persistentEvents": [

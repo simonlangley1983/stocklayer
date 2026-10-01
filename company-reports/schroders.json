@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T02:12:10.871559Z",
+  "generatedAt": "2026-10-01T02:17:04.279997Z",
   "company": {
     "companyName": "Schroders PLC",
     "ticker": "SDR.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-29",
-    "observationCount": 92,
-    "scoredDayCount": 73,
-    "latestScore": 44.9,
-    "latestScoreDate": "2026-09-29",
+    "periodEnd": "2026-09-30",
+    "observationCount": 93,
+    "scoredDayCount": 74,
+    "latestScore": 56.8,
+    "latestScoreDate": "2026-09-30",
     "series": [
       {
         "date": "2026-06-30",
@@ -853,6 +853,15 @@
         "sourceCount": 11,
         "confidence": 81.2,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-30",
+        "dailyScore": 56.8,
+        "rollingScore": 51.4,
+        "storyCount": 11,
+        "sourceCount": 8,
+        "confidence": 82.7,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1447,17 +1456,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 40.1,
+    "score": 40.2,
     "label": "Low",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.9,
+        "score": 52.1,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 73 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 74 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1635,6 +1644,46 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "d5717f07e5443976621d",
+      "type": "acquisition",
+      "title": "Schroders Capital CEO to leave as Nuveen takeover nears completion",
+      "date": "2026-09-30",
+      "status": "pending_review",
+      "reviewDate": "2027-03-29",
+      "direction": "Very negative",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOeDRwX285cnd6ZnhmNm9WSlJMRUJBTjdBNXZUY1huT0E3N1RlOGxNUnpWUkpsY1cxS3M4M2ZmWDVDWHFkTGg2Mm5JMklTQkFsRWszM0dmQjE5NE1Ea3JUbzY4RlJQcGRMaGtTRmt4LVVFeHc0Z3U3azJLeXowdV9aSktKRkVQVW1iNTVmUmhfdVFnX1Q5UlZNUFVBMmw4ZGFnR0xYSlhn?oc=5",
+          "publisher": "privateequitywire.co.uk",
+          "date": "2026-09-30"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
+    {
+      "id": "784edb5b223c25e099db",
+      "type": "acquisition",
+      "title": "Nuveen's £10B Takeover Of Schroders Wins Court Approval",
+      "date": "2026-09-30",
+      "status": "pending_review",
+      "reviewDate": "2027-03-29",
+      "direction": "Positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9RZHc2aTEtcnFXdlM5UUg1S0JCUnJZTF9qbFFNSnZHeERJd1pXOWxGbGxsZWstTzVCU1BISGRSTHdfdmZYVEtPZXEzVDFPUkhQNWJZYW5B0gFWQVVfeXFMT1FkdzZpMS1ycVd2UzlRSDVLQkJScllMX2psUU1Kdkd4REl3Wlc5bEZsbGxlay1PNUJTUEhIZFJMd192ZlhUS09lcTNUMU9SSFA1YllhbkE?oc=5",
+          "publisher": "law360.com",
+          "date": "2026-09-30"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "c5beb8e9e00d5b639d9e",
       "type": "acquisition",

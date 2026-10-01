@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T02:12:10.871559Z",
+  "generatedAt": "2026-10-01T02:17:04.279997Z",
   "company": {
     "companyName": "BP",
     "ticker": "BP.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-14",
-    "periodEnd": "2026-09-29",
-    "observationCount": 85,
-    "scoredDayCount": 24,
-    "latestScore": 51.3,
-    "latestScoreDate": "2026-09-29",
+    "periodEnd": "2026-09-30",
+    "observationCount": 86,
+    "scoredDayCount": 25,
+    "latestScore": 65.8,
+    "latestScoreDate": "2026-09-30",
     "series": [
       {
         "date": "2026-06-14",
@@ -790,6 +790,15 @@
         "sourceCount": 3,
         "confidence": 37.0,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-30",
+        "dailyScore": 65.8,
+        "rollingScore": 54.6,
+        "storyCount": 7,
+        "sourceCount": 5,
+        "confidence": 56.6,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -832,16 +841,6 @@
         "direction": "negative",
         "detail": "Daily score decreased by 13.3 points",
         "significance": 1.595
-      },
-      {
-        "date": "2026-09-18",
-        "type": "divestment",
-        "title": "Aker BP Gets A Forecast Lift From Higher Oil And Gas",
-        "source": "finimize.com",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNclNjeEgwaVFzNG9XTWt3Y3B4OTV0OVdCaWFrdk15TnF5Q0FiVFJrT1FaVFBxMTVBSWNpd3dhTjVLbGpsSHhQdklZUWhaejRmM0R2TWcta3JlODViOHJLNGtsb1M3NDdTT0JyUXlGc3l5bTd1SURMNkdDeDVjZVF2aUpkczRTWEp2?oc=5",
-        "direction": "neutral",
-        "detail": null,
-        "significance": 1.572
       },
       {
         "date": "2026-09-19",
@@ -892,6 +891,16 @@
         "direction": "mixed",
         "detail": "Positive and negative coverage is unusually dispersed",
         "significance": 1.577
+      },
+      {
+        "date": "2026-09-30",
+        "type": "sentiment_jump",
+        "title": "bp enhances gas reinjection capacity at Central Azeri",
+        "source": "news.az",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9UQ3JaTENVZzFQdm5ySGNsbHhEbEk3emVTY01aZnhrNXpDdnNnWElBNkpfU0FXaTNLWFJtLWxuYi1TV0VYTFNxRUpTbURIN0I4VHJEUktGenloa3ZGUXljUU5jQzc5dXlXVWJuLS1UQk5nY2pyNldZN2N5Qm90OVE?oc=5",
+        "direction": "positive",
+        "detail": "Daily score increased by 14.5 points",
+        "significance": 1.587
       }
     ]
   },
@@ -1165,17 +1174,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 43.4,
+    "score": 43.8,
     "label": "Mixed",
     "evidenceCoverage": 92,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 50.6,
+        "score": 51.7,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 24 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 25 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1265,16 +1274,6 @@
       "significance": 1.595
     },
     {
-      "date": "2026-09-18",
-      "type": "divestment",
-      "title": "Aker BP Gets A Forecast Lift From Higher Oil And Gas",
-      "source": "finimize.com",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNclNjeEgwaVFzNG9XTWt3Y3B4OTV0OVdCaWFrdk15TnF5Q0FiVFJrT1FaVFBxMTVBSWNpd3dhTjVLbGpsSHhQdklZUWhaejRmM0R2TWcta3JlODViOHJLNGtsb1M3NDdTT0JyUXlGc3l5bTd1SURMNkdDeDVjZVF2aUpkczRTWEp2?oc=5",
-      "direction": "neutral",
-      "detail": null,
-      "significance": 1.572
-    },
-    {
       "date": "2026-09-19",
       "type": "high_disagreement",
       "title": "XOM, CVX, BP, COP: Rising Gas Prices in the U.S. Cause Oil Stocks to Fall Today",
@@ -1323,6 +1322,16 @@
       "direction": "mixed",
       "detail": "Positive and negative coverage is unusually dispersed",
       "significance": 1.577
+    },
+    {
+      "date": "2026-09-30",
+      "type": "sentiment_jump",
+      "title": "bp enhances gas reinjection capacity at Central Azeri",
+      "source": "news.az",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9UQ3JaTENVZzFQdm5ySGNsbHhEbEk3emVTY01aZnhrNXpDdnNnWElBNkpfU0FXaTNLWFJtLWxuYi1TV0VYTFNxRUpTbURIN0I4VHJEUktGenloa3ZGUXljUU5jQzc5dXlXVWJuLS1UQk5nY2pyNldZN2N5Qm90OVE?oc=5",
+      "direction": "positive",
+      "detail": "Daily score increased by 14.5 points",
+      "significance": 1.587
     }
   ],
   "persistentEvents": [

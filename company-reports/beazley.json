@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T02:12:10.871559Z",
+  "generatedAt": "2026-10-01T02:17:04.279997Z",
   "company": {
     "companyName": "Beazley PLC",
     "ticker": "BEZ.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-14",
-    "periodEnd": "2026-09-29",
-    "observationCount": 91,
-    "scoredDayCount": 69,
-    "latestScore": 53.7,
-    "latestScoreDate": "2026-09-29",
+    "periodEnd": "2026-09-30",
+    "observationCount": 92,
+    "scoredDayCount": 70,
+    "latestScore": 36.8,
+    "latestScoreDate": "2026-09-30",
     "series": [
       {
         "date": "2026-06-14",
@@ -844,6 +844,15 @@
         "sourceCount": 5,
         "confidence": 67.7,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-30",
+        "dailyScore": 36.8,
+        "rollingScore": 49.2,
+        "storyCount": 3,
+        "sourceCount": 3,
+        "confidence": 55.4,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -876,16 +885,6 @@
         "direction": "negative",
         "detail": null,
         "significance": 1.595
-      },
-      {
-        "date": "2026-09-16",
-        "type": "sentiment_jump",
-        "title": "Beazley stock heads into the open after a modest gain",
-        "source": "ad-hoc-news.de",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNQVpnSGNxQ2JjMk9XVHlzRE4yQVpyMGZzY1hRTnlGLUpGdXBMTHlZdUdjZk0yQ3ctajg5b0lvYnZlbUtGMmhzdHRxcnRuUnBKclVuczB0YkZqNGtIQmNzRmlyOXNSbTNoaGRpSTFDcnpqVHVLS043dlRaYVVSWDE3Ym5wZENqY3MyTmJnWDZHSVFSN0gyWTNtYzBrelBmU2ktbGhfdG1DUXpLaUJ2R2Rta3FoY0dfZ2c?oc=5",
-        "direction": "positive",
-        "detail": "Daily score increased by 13.8 points",
-        "significance": 1.347
       },
       {
         "date": "2026-09-17",
@@ -946,6 +945,16 @@
         "direction": "neutral",
         "detail": "9 stories versus trailing median 3",
         "significance": 1.573
+      },
+      {
+        "date": "2026-09-30",
+        "type": "sentiment_drop",
+        "title": "Zurich Insurance Group stock falls 1.32 percent as Beazley deal nears close",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQSWxCZzlHUHdpUERHUWR1SlA3LTlkT2w4TXE4eHk0VnR3LUZVaS14c0liZWtaN0RnWXJ6YkZWRGhYdjIxaHFIS1AtMUdaX05yYlRhRk9XWGl1c2FoWmdHeXVTVmVwMklFd3V6VXQtblR5RVZ0dk5HS0ZISnRLYW53eFMtUVhYSktRSEhSNW85bkNKcEZjMW83Y0lqRzFkUWQ1LWxnRzJCYkpKMmpVQnhBT1JWYkZaenIwZm43Zk9xMGlLX21UNjFPeXhhbTE?oc=5",
+        "direction": "negative",
+        "detail": "Daily score decreased by 16.9 points",
+        "significance": 1.599
       }
     ]
   },
@@ -1292,17 +1301,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 42.5,
+    "score": 42.3,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.0,
+        "score": 50.5,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 64 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 65 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1391,16 +1400,6 @@
       "significance": 1.595
     },
     {
-      "date": "2026-09-16",
-      "type": "sentiment_jump",
-      "title": "Beazley stock heads into the open after a modest gain",
-      "source": "ad-hoc-news.de",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNQVpnSGNxQ2JjMk9XVHlzRE4yQVpyMGZzY1hRTnlGLUpGdXBMTHlZdUdjZk0yQ3ctajg5b0lvYnZlbUtGMmhzdHRxcnRuUnBKclVuczB0YkZqNGtIQmNzRmlyOXNSbTNoaGRpSTFDcnpqVHVLS043dlRaYVVSWDE3Ym5wZENqY3MyTmJnWDZHSVFSN0gyWTNtYzBrelBmU2ktbGhfdG1DUXpLaUJ2R2Rta3FoY0dfZ2c?oc=5",
-      "direction": "positive",
-      "detail": "Daily score increased by 13.8 points",
-      "significance": 1.347
-    },
-    {
       "date": "2026-09-17",
       "type": "coverage_spike",
       "title": "Four Corners breaches code again after Beazley-led AWM complaint",
@@ -1459,6 +1458,16 @@
       "direction": "neutral",
       "detail": "9 stories versus trailing median 3",
       "significance": 1.573
+    },
+    {
+      "date": "2026-09-30",
+      "type": "sentiment_drop",
+      "title": "Zurich Insurance Group stock falls 1.32 percent as Beazley deal nears close",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQSWxCZzlHUHdpUERHUWR1SlA3LTlkT2w4TXE4eHk0VnR3LUZVaS14c0liZWtaN0RnWXJ6YkZWRGhYdjIxaHFIS1AtMUdaX05yYlRhRk9XWGl1c2FoWmdHeXVTVmVwMklFd3V6VXQtblR5RVZ0dk5HS0ZISnRLYW53eFMtUVhYSktRSEhSNW85bkNKcEZjMW83Y0lqRzFkUWQ1LWxnRzJCYkpKMmpVQnhBT1JWYkZaenIwZm43Zk9xMGlLX21UNjFPeXhhbTE?oc=5",
+      "direction": "negative",
+      "detail": "Daily score decreased by 16.9 points",
+      "significance": 1.599
     }
   ],
   "persistentEvents": [

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T02:12:10.871559Z",
+  "generatedAt": "2026-10-01T02:17:04.279997Z",
   "company": {
     "companyName": "Whitbread PLC",
     "ticker": "WTB.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-05",
-    "periodEnd": "2026-09-29",
-    "observationCount": 83,
-    "scoredDayCount": 74,
-    "latestScore": 50.7,
-    "latestScoreDate": "2026-09-29",
+    "periodEnd": "2026-09-30",
+    "observationCount": 84,
+    "scoredDayCount": 75,
+    "latestScore": 59.4,
+    "latestScoreDate": "2026-09-30",
     "series": [
       {
         "date": "2026-07-05",
@@ -772,6 +772,15 @@
         "sourceCount": 1,
         "confidence": 15.7,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-30",
+        "dailyScore": 59.4,
+        "rollingScore": 51.7,
+        "storyCount": 2,
+        "sourceCount": 2,
+        "confidence": 35.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -804,16 +813,6 @@
         "direction": "Very positive",
         "detail": null,
         "significance": 1.068
-      },
-      {
-        "date": "2026-08-12",
-        "type": "sentiment_jump",
-        "title": "Over 50 former Whitbread sites to be rebranded into new chain of value - led pubs",
-        "source": "restaurantonline.co.uk",
-        "url": "https://www.restaurantonline.co.uk/Article/2026/08/12/over-50-former-whitbread-sites-to-be-rebranded-into-new-chain-of-value-led-pubs",
-        "direction": "positive",
-        "detail": "Daily score increased by 18.4 points",
-        "significance": 0.754
       },
       {
         "date": "2026-09-01",
@@ -874,6 +873,16 @@
         "direction": "negative",
         "detail": "Daily score decreased by 20.2 points",
         "significance": 1.571
+      },
+      {
+        "date": "2026-09-30",
+        "type": "press_story",
+        "title": "Premier Inn owner Whitbread gives Microsoft AI a hospitable welcome",
+        "source": "ukstories.microsoft.com",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZGRjX3Ntd3RXdlE1c1M1U2g5b0ZHLUI2djc3d1NmQUg5dFczRFRELU9QWG04U1FjVm9pUGs3eGRYWTR2SkZsenRJckwwYnZGdjlhTDNabWFqZk92ZlVSaXRXSG9UVmhsZnMyaldPc0RaTjFYNTU4Wno2RDNKQlh3TkRXcTZCQTh5Z1dRd3ppR2hZOE0zVjNNekxKZFVjVHpzU0ZRSi1XNEx0VlR4dkE?oc=5",
+        "direction": "Very positive",
+        "detail": null,
+        "significance": 0.85
       }
     ]
   },
@@ -1512,17 +1521,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 49.1,
+    "score": 49.3,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 42.1,
+        "score": 42.6,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 74 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 75 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1638,16 +1647,6 @@
       "significance": 1.068
     },
     {
-      "date": "2026-08-12",
-      "type": "sentiment_jump",
-      "title": "Over 50 former Whitbread sites to be rebranded into new chain of value - led pubs",
-      "source": "restaurantonline.co.uk",
-      "url": "https://www.restaurantonline.co.uk/Article/2026/08/12/over-50-former-whitbread-sites-to-be-rebranded-into-new-chain-of-value-led-pubs",
-      "direction": "positive",
-      "detail": "Daily score increased by 18.4 points",
-      "significance": 0.754
-    },
-    {
       "date": "2026-09-01",
       "type": "press_story",
       "title": "Whitbread to close 3 North Wales restaurants in coming days",
@@ -1706,6 +1705,16 @@
       "direction": "negative",
       "detail": "Daily score decreased by 20.2 points",
       "significance": 1.571
+    },
+    {
+      "date": "2026-09-30",
+      "type": "press_story",
+      "title": "Premier Inn owner Whitbread gives Microsoft AI a hospitable welcome",
+      "source": "ukstories.microsoft.com",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZGRjX3Ntd3RXdlE1c1M1U2g5b0ZHLUI2djc3d1NmQUg5dFczRFRELU9QWG04U1FjVm9pUGs3eGRYWTR2SkZsenRJckwwYnZGdjlhTDNabWFqZk92ZlVSaXRXSG9UVmhsZnMyaldPc0RaTjFYNTU4Wno2RDNKQlh3TkRXcTZCQTh5Z1dRd3ppR2hZOE0zVjNNekxKZFVjVHpzU0ZRSi1XNEx0VlR4dkE?oc=5",
+      "direction": "Very positive",
+      "detail": null,
+      "significance": 0.85
     },
     {
       "date": "2026-12-31",
