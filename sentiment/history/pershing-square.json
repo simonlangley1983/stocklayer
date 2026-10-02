@@ -3518,6 +3518,66 @@
         }
       ],
       "changeFromPreviousScoredDay": 0.0
+    },
+    {
+      "date": "2026-10-01",
+      "dailyScore": 50.0,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.5,
+      "confidence": 31.8,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 3,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 2,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0333,
+      "rejectedCandidateCounts": {
+        "missing_company_alias": 1
+      },
+      "topStories": [
+        {
+          "id": "15c5a15264496ef8",
+          "storyClusterId": "story-001",
+          "title": "Revenue per share of Pershing Square Holdings, Ltd. Public Class USD Accum.Shs – HAN:7P2",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPeTFVTnpmbnhneTZMX3NRQnFfUURIQklXQXlqNmpNbUVrTVJDSnBrVkU1b3FFRHZORElBbWJvOXBDZU9zaThZbjkybkhkRm52S241QzV3NHRRV2Q3VUE5YkIwWFo3NGVkdnBEUDh4ZGtLVnNXbFEwLUlPRjhJVlk2Z1J4V2xXMTctc0p3dzR6S0wxbmRybHhKUGVPMA?oc=5",
+          "source": "tradingview.com",
+          "publishedAt": "2026-10-01T01:21:43Z",
+          "polarity": 0.0352,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "b510052ed05c7a14",
+          "storyClusterId": "story-002",
+          "title": "Pershing Square Holdings, Ltd. (PSH.L) Stock Price, News, Quote & History",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1kT3hBeHlOamJPNFVMVVI0aTNmWHZmR3dxczNHSGtSN1hQMmJUcXh1WWlZR011b1dXbkFJdkdRcVZsUVNFLU12ZmZweTZvYUFtUXlV?oc=5",
+          "source": "ca.finance.yahoo.com",
+          "publishedAt": "2026-10-01T04:38:34Z",
+          "polarity": -0.0313,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 31.8",
+          "evidenceArticleIds": [
+            "15c5a15264496ef8",
+            "b510052ed05c7a14"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -0.4
     }
   ]
 }
