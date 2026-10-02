@@ -2822,35 +2822,49 @@
     },
     {
       "date": "2026-10-01",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
+      "dailyScore": 50.9,
+      "dailyLabel": "Neutral / mixed",
       "rollingScore": 50.8,
-      "confidence": 0.0,
+      "confidence": 11.5,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 0.75,
-      "candidateCount": 47,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 42,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 0,
+      "neutralStoryCount": 1,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 42,
-        "missing_company_alias": 5
+        "ambiguous_company_without_alias": 39,
+        "missing_company_alias": 2
       },
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "7bdf3a0b646b2593",
+          "storyClusterId": "story-001",
+          "title": "Pakistan’s fashion brand Khaadi plans record IPO next month",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZEIyV2xnTHZGQnlvRk5UQ2U0RzBKOG1Ccm1ISmhkeThWMFBQb0VsNU02MkJXTnJJNEJiRDRyTGVtX2JUcFc4cnprZ3p5ekdNdkNQb0duaUIzVllLZXZEcXA2R0VUUFA2cDRCVUN1OWZFemVHck1KckxZN0hSQWlWb0c1UlE4T3ZkME5OYzdOQlFkLWJZZmUtZnNvd1BHWXNXUkREc1A1YUFRWnM?oc=5",
+          "source": "ww.fashionnetwork.com",
+          "publishedAt": "2026-10-01T18:17:30Z",
+          "polarity": 0.056,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 11.5",
+          "evidenceArticleIds": [
+            "7bdf3a0b646b2593"
+          ]
         },
         {
           "type": "collection_degraded",
@@ -2858,10 +2872,12 @@
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": []
+          "evidenceArticleIds": [
+            "7bdf3a0b646b2593"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": -7.1
     }
   ]
 }

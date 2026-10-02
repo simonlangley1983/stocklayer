@@ -3518,35 +3518,49 @@
     },
     {
       "date": "2026-10-01",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 49.5,
-      "confidence": 0.0,
+      "dailyScore": 34.8,
+      "dailyLabel": "Negative",
+      "rollingScore": 47.7,
+      "confidence": 19.8,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 0,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 1,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
       "positiveStoryCount": 0,
       "neutralStoryCount": 0,
-      "negativeStoryCount": 0,
+      "negativeStoryCount": 1,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {},
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "2881cffb5b98eb26",
+          "storyClusterId": "story-001",
+          "title": "3i Group slides Thursday, underperforms market",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQeFFSS3hqa1FPTjlqbEFLeWcxck9DV0pVenBYRGJkWm5JaTBYSnZrUXZsYlcyR0xXRUpWRGdBOUEtZFhVcGMtZ0xzRnFfVl9sUmlzWnF1a01UYmlCNFRTNW9mclpRSUJXMEY2a1lxdTllODIxbVh2RU5jSjlEZTFpS3l4UzB6bWJqa0NGTHFXbkRUdXBWRnc0TjNQbXl0M2VJSk13b1VwbUE?oc=5",
+          "source": "marketwatch.com",
+          "publishedAt": "2026-10-01T16:06:00Z",
+          "polarity": -0.9094,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 19.8",
+          "evidenceArticleIds": [
+            "2881cffb5b98eb26"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": -16.9
     }
   ]
 }

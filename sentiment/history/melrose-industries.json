@@ -2476,37 +2476,51 @@
     },
     {
       "date": "2026-10-01",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 48.5,
-      "confidence": 0.0,
+      "dailyScore": 35.2,
+      "dailyLabel": "Negative",
+      "rollingScore": 46.8,
+      "confidence": 19.8,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 2,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 3,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
       "positiveStoryCount": 0,
       "neutralStoryCount": 0,
-      "negativeStoryCount": 0,
+      "negativeStoryCount": 1,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
         "missing_company_alias": 2
       },
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "df8b54ca552ffe5d",
+          "storyClusterId": "story-001",
+          "title": "Melrose Industries slips Thursday, underperforms market",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQdUl4YjdIeUZwQXZTWDNPazhQUGFNd3N3M1NFXzc0R3pYdFFuVnlVdlIzSWZncjdTOWNpVk1MMWJJX3libEREblAxR2FFaUhQamhSeFJhdC01b01nVlI0Q1A5U3J0R084aWdDcHJrRW9oNVZ6b2xRSGpxMnZONTBYWUJqN0ZXdU1hMGtvLTFia2Jjc3Jpb01NRlcxdHk2Nzg5YWZOeTJJN0hWSG41VmY5SEZsdjc?oc=5",
+          "source": "marketwatch.com",
+          "publishedAt": "2026-10-01T16:07:00Z",
+          "polarity": -0.8906,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 19.8",
+          "evidenceArticleIds": [
+            "df8b54ca552ffe5d"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": -9.0
     }
   ]
 }

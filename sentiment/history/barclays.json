@@ -4967,38 +4967,88 @@
     },
     {
       "date": "2026-10-01",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
+      "dailyScore": 50.5,
+      "dailyLabel": "Neutral / mixed",
       "rollingScore": 50.6,
-      "confidence": 0.0,
+      "confidence": 30.9,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "collectionCompleteness": 1.0,
-      "candidateCount": 12,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 66,
+      "eligibleArticleCount": 3,
+      "storyCount": 3,
+      "effectiveStoryCount": 3.0,
+      "sourceCount": 2,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 0,
+      "neutralStoryCount": 3,
       "negativeStoryCount": 0,
-      "dispersion": 0.0,
+      "dispersion": 0.0212,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 2,
-        "missing_company_alias": 10
+        "ambiguous_company_without_alias": 59,
+        "missing_company_alias": 4
       },
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "9370d479467d3dd1",
+          "storyClusterId": "story-001",
+          "title": "Barclays PLC : JP Morgan maintains a Buy rating",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOVUhSRUM1V3dRMG53NzhoaHhxQkstSWRQQTlacmlndmY5QzRKbmtWVUhxTTlwcDlydmwwTGVUM05BZWg4QzFrMnJ6OG5WTC1Wa21ZNU9nLTZBc1JTN1haWXNVV3BZSW5ROVdMSFV3Q2h5SzUyMEE5Mml3UHVQVkFPRWMyOUtFRnpCR2hneWZPXzFVbFRSUUJwU1QtVy1SeWM?oc=5",
+          "source": "marketscreener.com",
+          "publishedAt": "2026-10-01T06:19:24Z",
+          "polarity": 0.047,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "4a658cf247496b7f",
+          "storyClusterId": "story-002",
+          "title": "REG - Barclays PLC Tate & Lyle PLC - Form 8.3 TATE & LYLE PLC",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNbV9QTjVqenNTbDkxb0tLbUZ5RlVsUnR6YndzV0gxRjdLdm40M1ZYYUo5TjVRYUpzRzRRN1otLTd5VHozS3ZvYzN0SndyaXNQTFFMcnh4ci01S3o1SWk4WV9ycDR6TTZuNDRvMHdpQWRuMTlOeTl1NkU0R21QSjk4R2V2enFyN0QybDRUS0lJNDZIUzNqRE5odExBVHRzOHhsdlhrVXNpZVlWYWtYekdQV2NEUXZlVll2X0xnWmwybjBrX01ERHQ3QQ?oc=5",
+          "source": "tradingview.com",
+          "publishedAt": "2026-10-01T13:48:20Z",
+          "polarity": 0.004,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "5dc8b57fd3accc31",
+          "storyClusterId": "story-003",
+          "title": "Barclays PLC Sponsored ADR Revenue Breakdown – HAM:BCY2",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE84ajlZLUF0MHg3UW4wcU9fNVQ4TU9ndDZRQVNrWmNSUkJoc3RHcGVjVnYyc25wMmhwUGh4THg5ektLdEE3LVh3ZllRT1o1dEhManJCSjhQQ3F6WjhIbV9KMmRIMkZtV2xyUmxtZVo0bjZ1Y3M?oc=5",
+          "source": "tradingview.com",
+          "publishedAt": "2026-10-01T17:50:37Z",
+          "polarity": 0.0004,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 30.9",
+          "evidenceArticleIds": [
+            "9370d479467d3dd1",
+            "4a658cf247496b7f",
+            "5dc8b57fd3accc31"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "9370d479467d3dd1",
+            "4a658cf247496b7f",
+            "5dc8b57fd3accc31"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": -0.7
     }
   ]
 }
