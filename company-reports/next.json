@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-02T08:54:55.270314Z",
+  "generatedAt": "2026-10-02T11:13:46.016357Z",
   "company": {
     "companyName": "Next PLC",
     "ticker": "NXT.L",
@@ -22,9 +22,9 @@
     "periodStart": "2026-06-30",
     "periodEnd": "2026-10-01",
     "observationCount": 78,
-    "scoredDayCount": 10,
-    "latestScore": 50.9,
-    "latestScoreDate": "2026-10-01",
+    "scoredDayCount": 9,
+    "latestScore": 58.0,
+    "latestScoreDate": "2026-09-28",
     "series": [
       {
         "date": "2026-06-30",
@@ -721,12 +721,12 @@
       },
       {
         "date": "2026-10-01",
-        "dailyScore": 50.9,
+        "dailyScore": null,
         "rollingScore": 50.8,
-        "storyCount": 1,
-        "sourceCount": 2,
-        "confidence": 13.9,
-        "coverageStatus": "ok"
+        "storyCount": 0,
+        "sourceCount": 0,
+        "confidence": 0.0,
+        "coverageStatus": "no_coverage"
       }
     ],
     "stories": [
@@ -801,6 +801,16 @@
         "significance": 0.707
       },
       {
+        "date": "2026-09-25",
+        "type": "press_story",
+        "title": "Dental health charity appoints retail expert as next chief",
+        "source": "thirdsector.co.uk",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNT2lOQl9WYi12Q1BfSHItUUZTSjlTOU9ab3YyLWpBZnlCNkJvanc4ajZxVUw1elU1VUxYT1VTRzBaaV9JVjVpWGZFNmExMU92MVNMaWdpbW93b3FFRXIwcE53amZ6TXVMVFdRLXpTZXZtR0hod0tQc0dmOG5lWFVmRS11dEluLTBJNlZEZzZNTDExWjQ1OFFocWVKbDJnazMtc1BhVmRPOERMaUNrbHE0YnB3?oc=5",
+        "direction": "Neutral / mixed",
+        "detail": null,
+        "significance": 0.172
+      },
+      {
         "date": "2026-09-27",
         "type": "press_story",
         "title": "ShopMy, Mile, TikTok: The 6 New Platforms To Find Your Next Fashion Buy In 2026",
@@ -819,16 +829,6 @@
         "direction": "Positive",
         "detail": null,
         "significance": 0.63
-      },
-      {
-        "date": "2026-10-01",
-        "type": "press_story",
-        "title": "Pakistan’s fashion brand Khaadi plans record IPO next month",
-        "source": "ww.fashionnetwork.com",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZEIyV2xnTHZGQnlvRk5UQ2U0RzBKOG1Ccm1ISmhkeThWMFBQb0VsNU02MkJXTnJJNEJiRDRyTGVtX2JUcFc4cnprZ3p5ekdNdkNQb0duaUIzVllLZXZEcXA2R0VUUFA2cDRCVUN1OWZFemVHck1KckxZN0hSQWlWb0c1UlE4T3ZkME5OYzdOQlFkLWJZZmUtZnNvd1BHWXNXUkREc1A1YUFRWnM?oc=5",
-        "direction": "Neutral / mixed",
-        "detail": null,
-        "significance": 0.356
       }
     ]
   },
@@ -1394,17 +1394,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 50.9,
+    "score": 51.0,
     "label": "Mixed",
-    "evidenceCoverage": 80,
+    "evidenceCoverage": 78,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 53.1,
+        "score": 53.4,
         "weight": 0.4,
-        "reliability": 0.5,
-        "detail": "Recency-weighted average of 10 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.45,
+        "detail": "Recency-weighted average of 9 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1551,6 +1551,16 @@
       "significance": 0.707
     },
     {
+      "date": "2026-09-25",
+      "type": "press_story",
+      "title": "Dental health charity appoints retail expert as next chief",
+      "source": "thirdsector.co.uk",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNT2lOQl9WYi12Q1BfSHItUUZTSjlTOU9ab3YyLWpBZnlCNkJvanc4ajZxVUw1elU1VUxYT1VTRzBaaV9JVjVpWGZFNmExMU92MVNMaWdpbW93b3FFRXIwcE53amZ6TXVMVFdRLXpTZXZtR0hod0tQc0dmOG5lWFVmRS11dEluLTBJNlZEZzZNTDExWjQ1OFFocWVKbDJnazMtc1BhVmRPOERMaUNrbHE0YnB3?oc=5",
+      "direction": "Neutral / mixed",
+      "detail": null,
+      "significance": 0.172
+    },
+    {
       "date": "2026-09-27",
       "type": "press_story",
       "title": "ShopMy, Mile, TikTok: The 6 New Platforms To Find Your Next Fashion Buy In 2026",
@@ -1569,16 +1579,6 @@
       "direction": "Positive",
       "detail": null,
       "significance": 0.63
-    },
-    {
-      "date": "2026-10-01",
-      "type": "press_story",
-      "title": "Pakistan’s fashion brand Khaadi plans record IPO next month",
-      "source": "ww.fashionnetwork.com",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZEIyV2xnTHZGQnlvRk5UQ2U0RzBKOG1Ccm1ISmhkeThWMFBQb0VsNU02MkJXTnJJNEJiRDRyTGVtX2JUcFc4cnprZ3p5ekdNdkNQb0duaUIzVllLZXZEcXA2R0VUUFA2cDRCVUN1OWZFemVHck1KckxZN0hSQWlWb0c1UlE4T3ZkME5OYzdOQlFkLWJZZmUtZnNvd1BHWXNXUkREc1A1YUFRWnM?oc=5",
-      "direction": "Neutral / mixed",
-      "detail": null,
-      "significance": 0.356
     },
     {
       "date": "2026-12-31",
