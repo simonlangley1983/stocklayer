@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T07:13:18.347652+00:00",
+  "generatedAt": "2026-10-02T11:25:20.832008+00:00",
   "companyCount": 100,
   "verifiedCurrentCount": 16,
   "companies": {
@@ -5005,6 +5005,12 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2020,
+          "url": "https://www.melroseplc.net/media/hbdngcxz/melrose-annual-report-and-accounts-2020.pdf",
+          "sha256": "f9fa6ccc111c2cd0396d99945b29d6ee63864dad62988cacc05e6665cab816af",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2021,
           "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000022630/NI-000022630.pdf",
           "sha256": "f9e5ad14342e0e2af77b93d9f5544114f32acb9696524bfde97c09f989699478",
@@ -5032,12 +5038,6 @@
           "year": 2025,
           "url": "https://www.melroseplc.net/media/qc0eu5o1/melrose-annual-report25.pdf",
           "sha256": "36c10bcf1e8967c1b0d12d82a4b5c88e413e5da8e72ed41ccaf653bff081b26a",
-          "extractionStatus": "extracted"
-        },
-        {
-          "year": 2020,
-          "url": "https://www.melroseplc.net/media/hbdngcxz/melrose-annual-report-and-accounts-2020.pdf",
-          "sha256": "f9fa6ccc111c2cd0396d99945b29d6ee63864dad62988cacc05e6665cab816af",
           "extractionStatus": "extracted"
         }
       ],
@@ -5569,6 +5569,12 @@
           "extractionStatus": "extracted"
         },
         {
+          "year": 2021,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/P/LSE_PHNX_2021.pdf",
+          "sha256": "c9c8b4497e7c322b6a4e94b64a5157e6839569398cdbdc13dd80a8c23fb09d7f",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2022,
           "url": "https://library.standardlife.co.uk/phoenix-group-annual-report-and-accounts-2022.pdf",
           "sha256": "d299d8358c5476a5647fb1ddbd501579e95b33ec6ec2bc28e8288e5f0a476b0b",
@@ -5605,16 +5611,11 @@
         },
         "phoenix:2021": {
           "candidateHash": "1e9c3910938803be6af48e6bc99340d103c44c1873f8c13b9c5fd2710eca8f4d",
-          "attemptCount": 3,
-          "lastAttempt": "2026-09-28T23:19:33.504814+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-29T23:19:33.504814+00:00",
-          "diagnostics": [
-            {
-              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/P/LSE_PHNX_2021.pdf",
-              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-            }
-          ]
+          "attemptCount": 4,
+          "lastAttempt": "2026-10-02T08:54:55.040831+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-10-04T08:54:55.040831+00:00",
+          "diagnostics": []
         },
         "phoenix:2020": {
           "candidateHash": "fabf18ea52950c18e668a980070c9fc797c8d57b0795057f1bd04b4a0c0ab1cf",
