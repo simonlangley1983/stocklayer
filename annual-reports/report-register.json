@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T16:49:58.123459+00:00",
+  "generatedAt": "2026-10-02T17:55:37.481163+00:00",
   "companyCount": 100,
   "verifiedCurrentCount": 16,
   "companies": {
@@ -4402,22 +4402,23 @@
           "url": "https://www.jdplc.com/wp-content/uploads/2026/07/2026-Annual-Report-and-Accounts.pdf",
           "sha256": "17ce881804ff35e81953b40c850d572f0c0502f5c40f4661c30a3e5b7bc2fcac",
           "extractionStatus": "extracted"
+        },
+        {
+          "year": 2023,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/J/LSE_JD_2023.pdf",
+          "sha256": "edfdc1e44cdc632e302475008ec6522692967c5f256bad6fecc0a119b9db8925",
+          "extractionStatus": "extracted"
         }
       ],
       "pendingCandidates": [],
       "retryDiagnostics": {
         "jd-sports-fashion:2023": {
           "candidateHash": "7356f65b13455f8fb2a0a0d82e12a37fab57433bf69858daf1d5dc82ce6b1a26",
-          "attemptCount": 2,
-          "lastAttempt": "2026-09-29T12:55:43.602253+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-30T00:55:43.602253+00:00",
-          "diagnostics": [
-            {
-              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/J/LSE_JD_2023.pdf",
-              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-            }
-          ]
+          "attemptCount": 3,
+          "lastAttempt": "2026-10-02T17:55:37.481163+00:00",
+          "status": "extracted",
+          "diagnostics": [],
+          "verifiedSourceUrl": "https://www.annualreports.com/HostedData/AnnualReportArchive/J/LSE_JD_2023.pdf"
         },
         "jd-sports-fashion:2021": {
           "candidateHash": "89bd667506cd30ca7935cd8ff5e886a9ad8617e1c5704a36f19917e0d390633d",
