@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-02T15:43:09.306307Z",
+  "generatedAt": "2026-10-02T16:45:46.850200Z",
   "company": {
     "companyName": "Melrose Industries PLC",
     "ticker": "MRO.L",
@@ -22,9 +22,9 @@
     "periodStart": "2026-07-17",
     "periodEnd": "2026-10-01",
     "observationCount": 62,
-    "scoredDayCount": 24,
-    "latestScore": 44.2,
-    "latestScoreDate": "2026-09-30",
+    "scoredDayCount": 25,
+    "latestScore": 35.2,
+    "latestScoreDate": "2026-10-01",
     "series": [
       {
         "date": "2026-07-17",
@@ -577,12 +577,12 @@
       },
       {
         "date": "2026-10-01",
-        "dailyScore": null,
-        "rollingScore": 48.5,
-        "storyCount": 0,
-        "sourceCount": 0,
-        "confidence": 0.0,
-        "coverageStatus": "no_coverage"
+        "dailyScore": 35.2,
+        "rollingScore": 46.8,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 19.8,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -595,16 +595,6 @@
         "direction": "negative",
         "detail": "Daily score decreased by 25.4 points",
         "significance": 1.745
-      },
-      {
-        "date": "2026-08-01",
-        "type": "press_story",
-        "title": "Melrose Industries ( LON : MRO ) Releases Quarterly Earnings Results",
-        "source": "dailypolitical.com",
-        "url": "https://www.dailypolitical.com/2026/08/01/melrose-industries-lonmro-releases-quarterly-earnings-results.html",
-        "direction": "Slightly negative",
-        "detail": null,
-        "significance": 0.341
       },
       {
         "date": "2026-08-03",
@@ -685,6 +675,16 @@
         "direction": "Negative",
         "detail": null,
         "significance": 0.499
+      },
+      {
+        "date": "2026-10-01",
+        "type": "press_story",
+        "title": "Melrose Industries slips Thursday, underperforms market",
+        "source": "marketwatch.com",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQdUl4YjdIeUZwQXZTWDNPazhQUGFNd3N3M1NFXzc0R3pYdFFuVnlVdlIzSWZncjdTOWNpVk1MMWJJX3libEREblAxR2FFaUhQamhSeFJhdC01b01nVlI0Q1A5U3J0R084aWdDcHJrRW9oNVZ6b2xRSGpxMnZONTBYWUJqN0ZXdU1hMGtvLTFia2Jjc3Jpb01NRlcxdHk2Nzg5YWZOeTJJN0hWSG41VmY5SEZsdjc?oc=5",
+        "direction": "Very negative",
+        "detail": null,
+        "significance": 1.041
       }
     ]
   },
@@ -1177,17 +1177,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 43.3,
+    "score": 42.9,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 47.1,
+        "score": 46.3,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 24 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 25 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1274,16 +1274,6 @@
       "significance": 1.745
     },
     {
-      "date": "2026-08-01",
-      "type": "press_story",
-      "title": "Melrose Industries ( LON : MRO ) Releases Quarterly Earnings Results",
-      "source": "dailypolitical.com",
-      "url": "https://www.dailypolitical.com/2026/08/01/melrose-industries-lonmro-releases-quarterly-earnings-results.html",
-      "direction": "Slightly negative",
-      "detail": null,
-      "significance": 0.341
-    },
-    {
       "date": "2026-08-03",
       "type": "press_story",
       "title": "Melrose Industries ( LON : MRO ) Receives Outperform Rating from Royal Bank Of Canada",
@@ -1362,6 +1352,16 @@
       "direction": "Negative",
       "detail": null,
       "significance": 0.499
+    },
+    {
+      "date": "2026-10-01",
+      "type": "press_story",
+      "title": "Melrose Industries slips Thursday, underperforms market",
+      "source": "marketwatch.com",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQdUl4YjdIeUZwQXZTWDNPazhQUGFNd3N3M1NFXzc0R3pYdFFuVnlVdlIzSWZncjdTOWNpVk1MMWJJX3libEREblAxR2FFaUhQamhSeFJhdC01b01nVlI0Q1A5U3J0R084aWdDcHJrRW9oNVZ6b2xRSGpxMnZONTBYWUJqN0ZXdU1hMGtvLTFia2Jjc3Jpb01NRlcxdHk2Nzg5YWZOeTJJN0hWSG41VmY5SEZsdjc?oc=5",
+      "direction": "Very negative",
+      "detail": null,
+      "significance": 1.041
     }
   ],
   "persistentEvents": []
