@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-02T00:25:55.675167Z",
+  "generatedAt": "2026-10-02T02:24:16.843224Z",
   "company": {
     "companyName": "British Land Co PLC",
     "ticker": "BLND.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-14",
-    "periodEnd": "2026-09-30",
-    "observationCount": 85,
-    "scoredDayCount": 6,
-    "latestScore": 64.5,
-    "latestScoreDate": "2026-09-30",
+    "periodEnd": "2026-10-01",
+    "observationCount": 86,
+    "scoredDayCount": 7,
+    "latestScore": 35.9,
+    "latestScoreDate": "2026-10-01",
     "series": [
       {
         "date": "2026-06-14",
@@ -790,6 +790,15 @@
         "sourceCount": 1,
         "confidence": 19.7,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-01",
+        "dailyScore": 35.9,
+        "rollingScore": 50.0,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 19.8,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -852,6 +861,16 @@
         "direction": "Very positive",
         "detail": null,
         "significance": 1.019
+      },
+      {
+        "date": "2026-10-01",
+        "type": "press_story",
+        "title": "British Land Co. slips Thursday, underperforms market",
+        "source": "marketwatch.com",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQ0FZREs5Z0pPcVZiY3FSam1oRDYxVVZ3OGY0ZENfWmRsalcyTGxFNU5yM1FTN3Y2RGFzbjNDdVphLVhLNDBSTmdlazdlby0taEhWa18yX1NZcUYyYXRJTmpLTE44bGdGY3Y5Rk51RnBlei1OeUpBTjB0UEtzQ0Z6Tl9TbnBNd096XzlCVmtGQ2RsMU9KbkVrejhaZ29DSUxUSWxHcjA0cHp1SmhUQ0hoeW5pUmhHNF9LbEU0ME5zVkgtOHBONFRvYQ?oc=5",
+        "direction": "Very negative",
+        "detail": null,
+        "significance": 0.998
       }
     ]
   },
@@ -1271,17 +1290,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 51.2,
+    "score": 50.0,
     "label": "Mixed",
-    "evidenceCoverage": 72,
+    "evidenceCoverage": 74,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 55.5,
+        "score": 52.0,
         "weight": 0.4,
-        "reliability": 0.3,
-        "detail": "Recency-weighted average of 6 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.35,
+        "detail": "Recency-weighted average of 7 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1398,6 +1417,16 @@
       "direction": "Very positive",
       "detail": null,
       "significance": 1.019
+    },
+    {
+      "date": "2026-10-01",
+      "type": "press_story",
+      "title": "British Land Co. slips Thursday, underperforms market",
+      "source": "marketwatch.com",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQ0FZREs5Z0pPcVZiY3FSam1oRDYxVVZ3OGY0ZENfWmRsalcyTGxFNU5yM1FTN3Y2RGFzbjNDdVphLVhLNDBSTmdlazdlby0taEhWa18yX1NZcUYyYXRJTmpLTE44bGdGY3Y5Rk51RnBlei1OeUpBTjB0UEtzQ0Z6Tl9TbnBNd096XzlCVmtGQ2RsMU9KbkVrejhaZ29DSUxUSWxHcjA0cHp1SmhUQ0hoeW5pUmhHNF9LbEU0ME5zVkgtOHBONFRvYQ?oc=5",
+      "direction": "Very negative",
+      "detail": null,
+      "significance": 0.998
     },
     {
       "date": "2026-12-31",

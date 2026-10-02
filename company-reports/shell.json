@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-02T00:25:55.675167Z",
+  "generatedAt": "2026-10-02T02:24:16.843224Z",
   "company": {
     "companyName": "Shell",
     "ticker": "SHEL.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-30",
-    "observationCount": 84,
-    "scoredDayCount": 43,
-    "latestScore": 60.8,
-    "latestScoreDate": "2026-09-30",
+    "periodEnd": "2026-10-01",
+    "observationCount": 85,
+    "scoredDayCount": 44,
+    "latestScore": 61.8,
+    "latestScoreDate": "2026-10-01",
     "series": [
       {
         "date": "2026-06-30",
@@ -781,6 +781,15 @@
         "sourceCount": 8,
         "confidence": 63.2,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-01",
+        "dailyScore": 61.8,
+        "rollingScore": 54.7,
+        "storyCount": 9,
+        "sourceCount": 9,
+        "confidence": 59.9,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1375,17 +1384,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 45.7,
+    "score": 45.9,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.8,
+        "score": 52.2,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 43 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 44 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1562,5 +1571,26 @@
       "significance": 1.547
     }
   ],
-  "persistentEvents": []
+  "persistentEvents": [
+    {
+      "id": "aa7c6c5b45d1a3adb43d",
+      "type": "acquisition",
+      "title": "Renaissance Africa Energy Completes Acquisition of Shell’s SPDC in Nigeria",
+      "date": "2026-10-01",
+      "status": "pending_review",
+      "reviewDate": "2027-03-30",
+      "direction": "Positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPMjdpRkFZMThPQVd0ZHcxNzZ4cUtLMmd3Y0tqSDhheXExMXZ4RmVkb1VJM21MS1kxRW12Zm5STUhZYllDa2tMemU2aEZCZTVKZENldWU1Skg4bUtvcVFsSVlhbjQ5aktpSTduNnp1Tk91MXJYem10WDNxZzBQVC0xZzFKSEZyTkJRdzRONFlkSWZmNlhrYTFjWW5lblpUYXI2TU5VdGNLejRaUGR5bFExdzhTVkw0REk2TkZjd3JUaGNMc0dwWVY3VWgwS1k4eUptTjJBSUc2NG1NeHdFa1dpRVkwaWhFVm9vZFR5YnpWT3d2bDE3alRMTWFLUkg1N01Gcnc?oc=5",
+          "publisher": "proshare.co",
+          "date": "2026-10-01"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    }
+  ]
 }

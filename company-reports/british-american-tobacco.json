@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-02T00:25:55.675167Z",
+  "generatedAt": "2026-10-02T02:24:16.843224Z",
   "company": {
     "companyName": "British American Tobacco",
     "ticker": "BATS.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-30",
-    "observationCount": 80,
-    "scoredDayCount": 55,
-    "latestScore": 54.7,
-    "latestScoreDate": "2026-09-30",
+    "periodEnd": "2026-10-01",
+    "observationCount": 81,
+    "scoredDayCount": 56,
+    "latestScore": 45.4,
+    "latestScoreDate": "2026-10-01",
     "series": [
       {
         "date": "2026-06-30",
@@ -745,6 +745,15 @@
         "sourceCount": 28,
         "confidence": 61.5,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-01",
+        "dailyScore": 45.4,
+        "rollingScore": 48.4,
+        "storyCount": 58,
+        "sourceCount": 52,
+        "confidence": 64.7,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -767,16 +776,6 @@
         "direction": "negative",
         "detail": "Daily score decreased by 13.8 points",
         "significance": 1.665
-      },
-      {
-        "date": "2026-09-15",
-        "type": "sentiment_drop",
-        "title": "Durham enjoy strong opening day with the bat against Worcestershire as Mayank Agarwal scores 177",
-        "source": "durhamcricket.co.uk",
-        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOVTJvdzZQdzNCVDdGbFptd2ZDWXEwc1NLaGF2VndiZUdhV1RwOVJGNDJIejhIMU1WR1YtaUQ5RlNmLV9KbER2azFkeXNTWGN5aXhqNXRyS3lnQjFrc0Y2cDZRTVZfMno0QlRUN0lQbTZMZ29RN0lmaDdWZW1OS1gxUFpaUU5fTFM3SHpmbG5KTTlfQm9mc3FVSzZjVkthZjF0TXljcDN2S0F4RjNZcjdWYllnMkF2cGZldmttWk1JM25ib2ROdDg0ZnRPd0FRYXJIZVdtZnlXeDcyX21B?oc=5",
-        "direction": "negative",
-        "detail": "Daily score decreased by 13.8 points",
-        "significance": 1.535
       },
       {
         "date": "2026-09-16",
@@ -847,6 +846,16 @@
         "direction": "neutral",
         "detail": "40 stories versus trailing median 2",
         "significance": 1.603
+      },
+      {
+        "date": "2026-10-01",
+        "type": "analyst_upgrade",
+        "title": "British American Tobacco (LSE:BATS) Shares Dropped, So What Is Driving Attention Now?",
+        "source": "finance.yahoo.com",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPVWt0ZDRtOW1IMUV2YU8wQW9ZSk9jd0VrNXgtX0V3d0lyZi1ZLVhWRXg1bmhoQ0xnMEtBWmRQUjUxR3QxZUhOdEpYQ0d4aUJiYjdKUEQxYTFkOVlkNDZmY0YyUDJaRkVJbk9WVXZ1aERaTGE3aWNmOVpxUXpxeUhwUjNjSnZsNTcxUDFqOEZGbTVtRFdtajRGOUx0cVlYd28?oc=5",
+        "direction": "positive",
+        "detail": null,
+        "significance": 1.575
       }
     ]
   },
@@ -1346,10 +1355,10 @@
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 48.0,
+        "score": 47.9,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 54 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 55 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1446,16 +1455,6 @@
       "significance": 1.665
     },
     {
-      "date": "2026-09-15",
-      "type": "sentiment_drop",
-      "title": "Durham enjoy strong opening day with the bat against Worcestershire as Mayank Agarwal scores 177",
-      "source": "durhamcricket.co.uk",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOVTJvdzZQdzNCVDdGbFptd2ZDWXEwc1NLaGF2VndiZUdhV1RwOVJGNDJIejhIMU1WR1YtaUQ5RlNmLV9KbER2azFkeXNTWGN5aXhqNXRyS3lnQjFrc0Y2cDZRTVZfMno0QlRUN0lQbTZMZ29RN0lmaDdWZW1OS1gxUFpaUU5fTFM3SHpmbG5KTTlfQm9mc3FVSzZjVkthZjF0TXljcDN2S0F4RjNZcjdWYllnMkF2cGZldmttWk1JM25ib2ROdDg0ZnRPd0FRYXJIZVdtZnlXeDcyX21B?oc=5",
-      "direction": "negative",
-      "detail": "Daily score decreased by 13.8 points",
-      "significance": 1.535
-    },
-    {
       "date": "2026-09-16",
       "type": "coverage_spike",
       "title": "British American Tobacco stock edges lower as investors digest recent earnings and income outlook",
@@ -1524,6 +1523,16 @@
       "direction": "neutral",
       "detail": "40 stories versus trailing median 2",
       "significance": 1.603
+    },
+    {
+      "date": "2026-10-01",
+      "type": "analyst_upgrade",
+      "title": "British American Tobacco (LSE:BATS) Shares Dropped, So What Is Driving Attention Now?",
+      "source": "finance.yahoo.com",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPVWt0ZDRtOW1IMUV2YU8wQW9ZSk9jd0VrNXgtX0V3d0lyZi1ZLVhWRXg1bmhoQ0xnMEtBWmRQUjUxR3QxZUhOdEpYQ0d4aUJiYjdKUEQxYTFkOVlkNDZmY0YyUDJaRkVJbk9WVXZ1aERaTGE3aWNmOVpxUXpxeUhwUjNjSnZsNTcxUDFqOEZGbTVtRFdtajRGOUx0cVlYd28?oc=5",
+      "direction": "positive",
+      "detail": null,
+      "significance": 1.575
     }
   ],
   "persistentEvents": [

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-02T00:25:55.675167Z",
+  "generatedAt": "2026-10-02T02:24:16.843224Z",
   "company": {
     "companyName": "Tritax Big Box REIT PLC",
     "ticker": "BBOX.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-09-05",
-    "periodEnd": "2026-09-30",
-    "observationCount": 26,
-    "scoredDayCount": 5,
-    "latestScore": 43.5,
-    "latestScoreDate": "2026-09-28",
+    "periodEnd": "2026-10-01",
+    "observationCount": 27,
+    "scoredDayCount": 6,
+    "latestScore": 60.4,
+    "latestScoreDate": "2026-10-01",
     "series": [
       {
         "date": "2026-09-05",
@@ -259,6 +259,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-10-01",
+        "dailyScore": 60.4,
+        "rollingScore": 51.5,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 18.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -321,6 +330,16 @@
         "direction": "Negative",
         "detail": null,
         "significance": 0.539
+      },
+      {
+        "date": "2026-10-01",
+        "type": "press_story",
+        "title": "Is Tritax Big Box REIT (LSE:BBOX) Turning Data Centre Pipeline Into Earnings Momentum Today?",
+        "source": "kalkinemedia.com",
+        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNaXNhWVM0OTZ1LUt6VmdCdE9PSEdlUEVVcnBhdkk2R2xWZWZpUU1ObXJfS2NkeUthTlJwU2FwUTRwU1ZHNmFMaldtZ0RnbDhDb0N5eGNzdFlYYnljM19YWHp2UmdPby14UXN0LVNBdFFmNmEwV2Z0RnFLQ0dkMFByLU1ScV9Gc1ctVFd6RmVOdzhEQlpXLXZEREUzSEotSUlGaWxNMFRQSHdkdUpCVVdwUk1rUmFiMDJrQVhXcDRTemNmaFdfVlAwTXBDNVo1cUNXUjJ5Q1J4dmlvbC1CRDVnVEtzWW5KLXJlZWc?oc=5",
+        "direction": "Very positive",
+        "detail": null,
+        "significance": 0.776
       }
     ]
   },
@@ -886,17 +905,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 57.9,
-    "label": "Mixed",
-    "evidenceCoverage": 70,
+    "score": 58.7,
+    "label": "Positive",
+    "evidenceCoverage": 72,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.2,
+        "score": 53.1,
         "weight": 0.4,
-        "reliability": 0.25,
-        "detail": "Recency-weighted average of 5 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.3,
+        "detail": "Recency-weighted average of 6 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1040,6 +1059,16 @@
       "direction": "Negative",
       "detail": null,
       "significance": 0.539
+    },
+    {
+      "date": "2026-10-01",
+      "type": "press_story",
+      "title": "Is Tritax Big Box REIT (LSE:BBOX) Turning Data Centre Pipeline Into Earnings Momentum Today?",
+      "source": "kalkinemedia.com",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNaXNhWVM0OTZ1LUt6VmdCdE9PSEdlUEVVcnBhdkk2R2xWZWZpUU1ObXJfS2NkeUthTlJwU2FwUTRwU1ZHNmFMaldtZ0RnbDhDb0N5eGNzdFlYYnljM19YWHp2UmdPby14UXN0LVNBdFFmNmEwV2Z0RnFLQ0dkMFByLU1ScV9Gc1ctVFd6RmVOdzhEQlpXLXZEREUzSEotSUlGaWxNMFRQSHdkdUpCVVdwUk1rUmFiMDJrQVhXcDRTemNmaFdfVlAwTXBDNVo1cUNXUjJ5Q1J4dmlvbC1CRDVnVEtzWW5KLXJlZWc?oc=5",
+      "direction": "Very positive",
+      "detail": null,
+      "significance": 0.776
     }
   ],
   "persistentEvents": []

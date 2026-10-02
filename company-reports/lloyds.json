@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-02T00:25:55.675167Z",
+  "generatedAt": "2026-10-02T02:24:16.843224Z",
   "company": {
     "companyName": "Lloyds Banking Group",
     "ticker": "LLOY.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-10",
-    "periodEnd": "2026-09-30",
-    "observationCount": 80,
-    "scoredDayCount": 74,
-    "latestScore": 54.7,
-    "latestScoreDate": "2026-09-30",
+    "periodEnd": "2026-10-01",
+    "observationCount": 81,
+    "scoredDayCount": 75,
+    "latestScore": 55.8,
+    "latestScoreDate": "2026-10-01",
     "series": [
       {
         "date": "2026-07-10",
@@ -745,6 +745,15 @@
         "sourceCount": 12,
         "confidence": 85.0,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-01",
+        "dailyScore": 55.8,
+        "rollingScore": 50.1,
+        "storyCount": 11,
+        "sourceCount": 10,
+        "confidence": 80.7,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1412,17 +1421,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 53.2,
+    "score": 53.3,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 48.6,
+        "score": 48.8,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 74 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 75 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "themes",
@@ -1601,6 +1610,46 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "c55282064e2e64e53922",
+      "type": "regulatory_legal",
+      "title": "🚨𝗝𝗨𝗦𝗧 𝗜𝗡: 🇬🇧 UK’s Lloyds Banking Group has completed its first stablecoin settlement pilot with Visa, enabling 24/7 settlement including weekends.",
+      "date": "2026-10-01",
+      "status": "pending_review",
+      "reviewDate": "2027-03-30",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOdkVxeG83T2pUTlczRXRlQkpkX21naE5NUV9DV3hrWFFvWkJRQWJhSzZUUl9vcC0zTG9tUDNKb0wtSkJrc2FocFhnYzFRd0hINVRBYTc4NzBWaENUTmwwV1VrY2hjT0w0djJQbnU2VDZFclgyWFJzTjJPMDFhVndQcG9iUElYb0Fjdk5CSDFja2lVSThTeXJLbHBVYi1Ha2hfTXVON2dubFppdFFNOFJ0a0ZnTWQ?oc=5",
+          "publisher": "moomoo.com",
+          "date": "2026-10-01"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
+    {
+      "id": "653f29cd486ee8761b2e",
+      "type": "regulatory_legal",
+      "title": "Cuy Sheffield: Visa and Lloyds Banking Group partner on stablecoin settlement pilot",
+      "date": "2026-10-01",
+      "status": "pending_review",
+      "reviewDate": "2027-03-30",
+      "direction": "Neutral / mixed",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNVkpjQTRLV1RNbzBMTmoxeDYyT1FwdmwxMnNReXdxUDJ5UU9NVnpRdWNjeXdGeGd2MkJqdHBJTjdaRXQ5XzhEZ3JRWlNiejVfaVA4Y2Y4T05yMHpjT2kwdzRFOG8ybTZMbmY4aFR3WTI4Y3drVEk1R1RJLUZ3LVRMMmtVNUlEM3FBMktqUFdRYw?oc=5",
+          "publisher": "tradersunion.com",
+          "date": "2026-10-01"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "09f1d19b8b2362a8031d",
       "type": "acquisition",

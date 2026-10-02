@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-02T00:25:55.675167Z",
+  "generatedAt": "2026-10-02T02:24:16.843224Z",
   "company": {
     "companyName": "Smith & Nephew PLC",
     "ticker": "SN.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-09-30",
-    "observationCount": 84,
-    "scoredDayCount": 49,
-    "latestScore": 43.1,
-    "latestScoreDate": "2026-09-30",
+    "periodEnd": "2026-10-01",
+    "observationCount": 85,
+    "scoredDayCount": 50,
+    "latestScore": 43.6,
+    "latestScoreDate": "2026-10-01",
     "series": [
       {
         "date": "2026-06-30",
@@ -781,6 +781,15 @@
         "sourceCount": 2,
         "confidence": 35.2,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-01",
+        "dailyScore": 43.6,
+        "rollingScore": 46.2,
+        "storyCount": 8,
+        "sourceCount": 7,
+        "confidence": 76.4,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1156,17 +1165,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 57.7,
+    "score": 57.6,
     "label": "Mixed",
     "evidenceCoverage": 92,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 49.5,
+        "score": 49.2,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 48 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 49 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",

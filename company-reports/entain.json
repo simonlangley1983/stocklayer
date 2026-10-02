@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-02T00:25:55.675167Z",
+  "generatedAt": "2026-10-02T02:24:16.843224Z",
   "company": {
     "companyName": "Entain PLC",
     "ticker": "ENT.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-15",
-    "periodEnd": "2026-09-30",
-    "observationCount": 90,
-    "scoredDayCount": 56,
-    "latestScore": 56.8,
-    "latestScoreDate": "2026-09-30",
+    "periodEnd": "2026-10-01",
+    "observationCount": 91,
+    "scoredDayCount": 57,
+    "latestScore": 37.9,
+    "latestScoreDate": "2026-10-01",
     "series": [
       {
         "date": "2026-06-15",
@@ -835,6 +835,15 @@
         "sourceCount": 4,
         "confidence": 59.5,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-01",
+        "dailyScore": 37.9,
+        "rollingScore": 46.1,
+        "storyCount": 15,
+        "sourceCount": 13,
+        "confidence": 86.9,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -847,16 +856,6 @@
         "direction": "mixed",
         "detail": "Positive and negative coverage is unusually dispersed",
         "significance": 1.61
-      },
-      {
-        "date": "2026-06-17",
-        "type": "high_disagreement",
-        "title": "Entain Warns of Surge in Illegal Gambling Promotions Ahead of 2026 FIFA World Cup",
-        "source": "newsnet5.com",
-        "url": "https://www.newsnet5.com/news/entain-warning-illegal-gambling-promotions-2026-fifa-world-cup",
-        "direction": "mixed",
-        "detail": "Positive and negative coverage is unusually dispersed",
-        "significance": 1.591
       },
       {
         "date": "2026-09-15",
@@ -937,6 +936,16 @@
         "direction": "mixed",
         "detail": "Positive and negative coverage is unusually dispersed",
         "significance": 1.613
+      },
+      {
+        "date": "2026-10-01",
+        "type": "sentiment_drop",
+        "title": "SIS Black Market Deal With Santeda Sparks Rift With Shareholder Entain",
+        "source": "gambling.com",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPeGZsM0x6TC1DaFB4dy1FdUZRZ1dfXzFwb3Z5MTdnWkx4a3dJeVNPakxaOGlVMzhoT0hhdmdNN2M4OFZEdkQ5OTBtQmFIMEFqRlFTQWtmUUU1cU9Jd3FlazZCTnVNTTJEQVdXNEdNNUFSWmVGaTMzMEFRMkdCem9XMkEwWC1kd3dt?oc=5",
+        "direction": "negative",
+        "detail": "Daily score decreased by 18.9 points",
+        "significance": 1.748
       }
     ]
   },
@@ -1502,17 +1511,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 50.5,
+    "score": 50.4,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 44.8,
+        "score": 44.5,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 53 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 54 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1608,16 +1617,6 @@
       "significance": 1.61
     },
     {
-      "date": "2026-06-17",
-      "type": "high_disagreement",
-      "title": "Entain Warns of Surge in Illegal Gambling Promotions Ahead of 2026 FIFA World Cup",
-      "source": "newsnet5.com",
-      "url": "https://www.newsnet5.com/news/entain-warning-illegal-gambling-promotions-2026-fifa-world-cup",
-      "direction": "mixed",
-      "detail": "Positive and negative coverage is unusually dispersed",
-      "significance": 1.591
-    },
-    {
       "date": "2026-09-15",
       "type": "bad_press",
       "title": "Entain Suffers Setback in Legal War on UK Matched Betting Sites",
@@ -1696,6 +1695,16 @@
       "direction": "mixed",
       "detail": "Positive and negative coverage is unusually dispersed",
       "significance": 1.613
+    },
+    {
+      "date": "2026-10-01",
+      "type": "sentiment_drop",
+      "title": "SIS Black Market Deal With Santeda Sparks Rift With Shareholder Entain",
+      "source": "gambling.com",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPeGZsM0x6TC1DaFB4dy1FdUZRZ1dfXzFwb3Z5MTdnWkx4a3dJeVNPakxaOGlVMzhoT0hhdmdNN2M4OFZEdkQ5OTBtQmFIMEFqRlFTQWtmUUU1cU9Jd3FlazZCTnVNTTJEQVdXNEdNNUFSWmVGaTMzMEFRMkdCem9XMkEwWC1kd3dt?oc=5",
+      "direction": "negative",
+      "detail": "Daily score decreased by 18.9 points",
+      "significance": 1.748
     }
   ],
   "persistentEvents": [
