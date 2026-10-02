@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-10-02T11:13:43.472520Z",
+  "generatedAt": "2026-10-02T13:13:08.119624Z",
   "asOfDate": "2026-10-01",
   "companies": {
     "astrazeneca": {
@@ -1134,76 +1134,26 @@
       "ticker": "BARC.L",
       "slug": "barclays",
       "date": "2026-10-01",
-      "dailyScore": 50.5,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.8,
-      "confidence": 30.9,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 50.6,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 3,
-      "sourceCount": 2,
-      "changeFromPreviousScoredDay": 0.5,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 30.9",
-          "evidenceArticleIds": [
-            "9370d479467d3dd1",
-            "4a658cf247496b7f",
-            "5dc8b57fd3accc31"
-          ]
-        },
-        {
-          "type": "collection_degraded",
-          "direction": "neutral",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "9370d479467d3dd1",
-            "4a658cf247496b7f",
-            "5dc8b57fd3accc31"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "9370d479467d3dd1",
-          "storyClusterId": "story-001",
-          "title": "Barclays PLC : JP Morgan maintains a Buy rating",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOVUhSRUM1V3dRMG53NzhoaHhxQkstSWRQQTlacmlndmY5QzRKbmtWVUhxTTlwcDlydmwwTGVUM05BZWg4QzFrMnJ6OG5WTC1Wa21ZNU9nLTZBc1JTN1haWXNVV3BZSW5ROVdMSFV3Q2h5SzUyMEE5Mml3UHVQVkFPRWMyOUtFRnpCR2hneWZPXzFVbFRSUUJwU1QtVy1SeWM?oc=5",
-          "source": "marketscreener.com",
-          "publishedAt": "2026-10-01T06:19:24Z",
-          "polarity": 0.047,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        },
-        {
-          "id": "4a658cf247496b7f",
-          "storyClusterId": "story-002",
-          "title": "REG - Barclays PLC Tate & Lyle PLC - Form 8.3 TATE & LYLE PLC",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNbV9QTjVqenNTbDkxb0tLbUZ5RlVsUnR6YndzV0gxRjdLdm40M1ZYYUo5TjVRYUpzRzRRN1otLTd5VHozS3ZvYzN0SndyaXNQTFFMcnh4ci01S3o1SWk4WV9ycDR6TTZuNDRvMHdpQWRuMTlOeTl1NkU0R21QSjk4R2V2enFyN0QybDRUS0lJNDZIUzNqRE5odExBVHRzOHhsdlhrVXNpZVlWYWtYekdQV2NEUXZlVll2X0xnWmwybjBrX01ERHQ3QQ?oc=5",
-          "source": "tradingview.com",
-          "publishedAt": "2026-10-01T13:48:20Z",
-          "polarity": 0.004,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        },
-        {
-          "id": "5dc8b57fd3accc31",
-          "storyClusterId": "story-003",
-          "title": "Barclays PLC Sponsored ADR Revenue Breakdown – HAM:BCY2",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE84ajlZLUF0MHg3UW4wcU9fNVQ4TU9ndDZRQVNrWmNSUkJoc3RHcGVjVnYyc25wMmhwUGh4THg5ektLdEE3LVh3ZllRT1o1dEhManJCSjhQQ3F6WjhIbV9KMmRIMkZtV2xyUmxtZVo0bjZ1Y3M?oc=5",
-          "source": "tradingview.com",
-          "publishedAt": "2026-10-01T17:50:37Z",
-          "polarity": 0.0004,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "compass": {
       "companyName": "Compass Group",
