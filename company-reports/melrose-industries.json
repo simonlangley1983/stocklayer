@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-02T06:15:27.922520Z",
+  "generatedAt": "2026-10-02T07:14:05.048629Z",
   "company": {
     "companyName": "Melrose Industries PLC",
     "ticker": "MRO.L",
@@ -689,8 +689,81 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 5,
+    "reportCount": 6,
     "reports": [
+      {
+        "year": 2020,
+        "title": "Melrose Industries PLC Annual Report 2020",
+        "url": "https://www.melroseplc.net/media/hbdngcxz/melrose-annual-report-and-accounts-2020.pdf",
+        "sourceUrl": "https://www.melroseplc.net/investors/results-reports-and-presentations/",
+        "wordCount": 157554,
+        "pageCount": 111,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 3,
+            "per10kWords": 0.19
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 14,
+            "per10kWords": 0.889
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 78,
+            "per10kWords": 4.951
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 21,
+            "per10kWords": 1.333
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 24,
+            "per10kWords": 1.523
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 19,
+            "per10kWords": 1.206
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 75,
+            "per10kWords": 4.76
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 20,
+            "per10kWords": 1.269
+          }
+        ],
+        "positivityScore": 41.2,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2021,
         "title": "Final annual report",
@@ -1136,6 +1209,15 @@
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2020-12-31",
+      "type": "annual_report",
+      "title": "Melrose Industries PLC Annual Report 2020",
+      "url": "https://www.melroseplc.net/media/hbdngcxz/melrose-annual-report-and-accounts-2020.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2021-12-31",
       "type": "annual_report",
