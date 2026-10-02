@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-02T13:13:10.175765Z",
+  "generatedAt": "2026-10-02T15:43:09.306307Z",
   "company": {
     "companyName": "Prudential PLC",
     "ticker": "PRU.L",
@@ -878,7 +878,7 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 5,
+    "reportCount": 6,
     "reports": [
       {
         "year": 2020,
@@ -1097,6 +1097,79 @@
           }
         ],
         "positivityScore": 27.6,
+        "positivityMethod": "lexical annual-report tone"
+      },
+      {
+        "year": 2023,
+        "title": "AnnualReports.com archive PDF",
+        "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/p/LSE_PRU_2023.pdf",
+        "sourceUrl": "https://www.annualreports.com/Company/prudential-plc",
+        "wordCount": 261331,
+        "pageCount": 408,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 42,
+            "per10kWords": 1.607
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 2,
+            "per10kWords": 0.077
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 19,
+            "per10kWords": 0.727
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 419,
+            "per10kWords": 16.033
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 40,
+            "per10kWords": 1.531
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 26,
+            "per10kWords": 0.995
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 146,
+            "per10kWords": 5.587
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 33,
+            "per10kWords": 1.263
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 25.6,
         "positivityMethod": "lexical annual-report tone"
       },
       {
@@ -1348,6 +1421,15 @@
       "type": "annual_report",
       "title": "Form 20-F",
       "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000071169/NI-000071169.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
+    {
+      "date": "2023-12-31",
+      "type": "annual_report",
+      "title": "AnnualReports.com archive PDF",
+      "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/p/LSE_PRU_2023.pdf",
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
