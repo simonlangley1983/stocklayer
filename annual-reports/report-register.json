@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T07:43:03.488070+00:00",
+  "generatedAt": "2026-10-03T07:43:14.304092+00:00",
   "companyCount": 100,
   "verifiedCurrentCount": 16,
   "companies": {
@@ -538,6 +538,12 @@
           "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BP_2021.pdf",
           "sha256": "52bb30cd6463cde40c8acb39c4a3ff953b99e5a3d54edd1527fe71bdc07d9cae",
           "extractionStatus": "extracted"
+        },
+        {
+          "year": 2022,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BP_2022.pdf",
+          "sha256": "68b4b79a687ecf083b79ce99f3ed4044f46a553f105b378751806cd72ffcf11e",
+          "extractionStatus": "extracted"
         }
       ],
       "pendingCandidates": [],
@@ -573,16 +579,11 @@
         },
         "bp:2022": {
           "candidateHash": "1f38ebfb08f04e4ad6076e6f233921d0194d2de3d4fff980f54e82e69b262fc8",
-          "attemptCount": 4,
-          "lastAttempt": "2026-09-29T12:55:02.871445+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-10-01T12:55:02.871445+00:00",
-          "diagnostics": [
-            {
-              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BP_2022.pdf",
-              "error": "HTTPError: HTTP Error 503: "
-            }
-          ]
+          "attemptCount": 5,
+          "lastAttempt": "2026-10-03T07:43:14.304092+00:00",
+          "status": "extracted",
+          "diagnostics": [],
+          "verifiedSourceUrl": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BP_2022.pdf"
         },
         "bp:2021": {
           "candidateHash": "ad1538eace1daca2b404986edbaa406a5cd88a14a531202b8b37115a3932751f",

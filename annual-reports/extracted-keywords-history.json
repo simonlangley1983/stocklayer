@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T07:43:03.488070+00:00",
+  "generated_at": "2026-10-03T07:43:14.304092+00:00",
   "source_index": "annual-reports/reports-index.json",
   "source_index_generated_at": "2026-09-11T21:15:50.158616+00:00",
   "methodology": {
@@ -19,8 +19,8 @@
       "data_center_mentions": "\\bdata[\\s-]+cent(?:er|re)s?\\b"
     }
   },
-  "group_count": 659,
-  "extracted_count": 659,
+  "group_count": 660,
+  "extracted_count": 660,
   "failed_count": 0,
   "reports": [
     {
@@ -3455,6 +3455,37 @@
       "positive_tone_mentions": 945,
       "negative_tone_mentions": 2380,
       "tone_positivity_score": 28.4,
+      "tone_method": "disclosed financial-language lexical balance over extracted full-report text",
+      "attempts": []
+    },
+    {
+      "company_name": "BP",
+      "ticker": "BP.L",
+      "company_slug": "bp",
+      "report_year": 2022,
+      "index_group_year": 2022,
+      "report_title": "BP Annual Report 2022",
+      "report_url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BP_2022.pdf",
+      "report_source_url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BP_2022.pdf",
+      "report_data_status": "extracted",
+      "document_format": "pdf",
+      "page_count": 406,
+      "source_sha256": "68b4b79a687ecf083b79ce99f3ed4044f46a553f105b378751806cd72ffcf11e",
+      "extracted_word_count": 295521,
+      "keyword_count_method": "case-insensitive keyword-family regex over extracted full-report text",
+      "ai_mentions": 0,
+      "cloud_mentions": 2,
+      "cybersecurity_mentions": 15,
+      "regulation_mentions": 203,
+      "competition_mentions": 40,
+      "supply_chain_mentions": 13,
+      "china_mentions": 96,
+      "margin_pressure_mentions": 0,
+      "restructuring_mentions": 24,
+      "data_center_mentions": 3,
+      "positive_tone_mentions": 1004,
+      "negative_tone_mentions": 2222,
+      "tone_positivity_score": 31.1,
       "tone_method": "disclosed financial-language lexical balance over extracted full-report text",
       "attempts": []
     },
