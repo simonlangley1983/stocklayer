@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T16:55:00.316989Z",
+  "generatedAt": "2026-10-03T17:15:02.888621Z",
   "company": {
     "companyName": "British Land Co PLC",
     "ticker": "BLND.L",
@@ -894,8 +894,154 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 5,
+    "reportCount": 7,
     "reports": [
+      {
+        "year": 2020,
+        "title": "British Land Annual Report 2020",
+        "url": "https://examples.integratedreporting.ifrs.org/wp-content/uploads/2022/07/British-Land_Annual-Report2020.pdf",
+        "sourceUrl": "https://examples.integratedreporting.ifrs.org/wp-content/uploads/2022/07/British-Land_Annual-Report2020.pdf",
+        "wordCount": 116032,
+        "pageCount": 232,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 1,
+            "per10kWords": 0.086
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 2,
+            "per10kWords": 0.172
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 4,
+            "per10kWords": 0.345
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 40,
+            "per10kWords": 3.447
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 14,
+            "per10kWords": 1.207
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 16,
+            "per10kWords": 1.379
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 1,
+            "per10kWords": 0.086
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 37.2,
+        "positivityMethod": "lexical annual-report tone"
+      },
+      {
+        "year": 2021,
+        "title": "British Land Annual Report 2021",
+        "url": "https://www.annualreports.co.uk/HostedData/AnnualReportArchive/b/LSE_BLND_2021.pdf",
+        "sourceUrl": "https://www.annualreports.co.uk/HostedData/AnnualReportArchive/b/LSE_BLND_2021.pdf",
+        "wordCount": 143121,
+        "pageCount": 244,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 3,
+            "per10kWords": 0.21
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 8,
+            "per10kWords": 0.559
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 55,
+            "per10kWords": 3.843
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 23,
+            "per10kWords": 1.607
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 7,
+            "per10kWords": 0.489
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 4,
+            "per10kWords": 0.279
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 34.1,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2022,
         "title": "British Land Annual Report and Accounts 2022",
@@ -1341,6 +1487,24 @@
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2020-12-31",
+      "type": "annual_report",
+      "title": "British Land Annual Report 2020",
+      "url": "https://examples.integratedreporting.ifrs.org/wp-content/uploads/2022/07/British-Land_Annual-Report2020.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
+    {
+      "date": "2021-12-31",
+      "type": "annual_report",
+      "title": "British Land Annual Report 2021",
+      "url": "https://www.annualreports.co.uk/HostedData/AnnualReportArchive/b/LSE_BLND_2021.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2022-12-31",
       "type": "annual_report",
