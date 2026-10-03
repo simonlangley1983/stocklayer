@@ -3770,37 +3770,51 @@
     },
     {
       "date": "2026-10-02",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 49.5,
-      "confidence": 0.0,
+      "dailyScore": 64.9,
+      "dailyLabel": "Positive",
+      "rollingScore": 51.4,
+      "confidence": 19.7,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 1,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
-      "positiveStoryCount": 0,
+      "candidateCount": 2,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 1,
       "neutralStoryCount": 0,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
         "missing_company_alias": 1
       },
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "b8bbd81607abf898",
+          "storyClusterId": "story-001",
+          "title": "Rentokil Initial rallies Friday, outperforms market",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPcjNZWnA1aURMUE9vU2VPQ3VLY05kT0RsTGpHdmt5MTFQYzlnWk9FU005OGd5bTVobWZPOHVQVXB3ZHlVWTFrcndyeVRiQmN5aFdKMmFxZXhaTXRqdWFfNXg5UXlwcFlhYy1pYmxVOG9yb01rUmJva2NPaTNBeFJDMmdjYVdGUi1DSWU5RnJGVmhkZG41NFZZa3gzM0RicGRsN0oxZFBYcldLWjl0X3hz?oc=5",
+          "source": "marketwatch.com",
+          "publishedAt": "2026-10-02T16:07:00Z",
+          "polarity": 0.8951,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 19.7",
+          "evidenceArticleIds": [
+            "b8bbd81607abf898"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": 9.7
     }
   ]
 }
