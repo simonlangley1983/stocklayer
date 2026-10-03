@@ -3,7 +3,7 @@ import unittest
 from datetime import datetime, timezone
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
-from update_global_market_caps import build, fresh, positive, select_record
+from update_global_market_caps import build, fresh, positive, select_record, add_year_comparison, historical_record
 
 NOW = datetime(2026, 10, 3, tzinfo=timezone.utc)
 
@@ -53,6 +53,26 @@ class GlobalMarketCapTests(unittest.TestCase):
                         LastSeen=NOW.isoformat()) for i in range(10001)]
         with self.assertRaises(ValueError):
             build(companies, {}, {'metadata':{'asOf':NOW.isoformat()}, 'data':records}, NOW, lambda _: {})
+
+    def test_historical_rank_and_signed_movement_survive_refresh(self):
+        company = dict(slug='beazley', companyName='Beazley PLC', ticker='BEZ.L')
+        day = '2025-10-03'
+        records = [dict(Name=f'Issuer {i}', AssetType='Company', MarketCap=100+i,
+                        LastSeen=day) for i in range(10001)]
+        records.append(dict(Name='Beazley', AssetType='Company', Ticker='BEZ.L', MarketCap=200, LastSeen=day))
+        result = dict(companies={'beazley':dict(ranks={'current':9900},marketCapsUsd={'current':250},marketCapDates={})},
+                      dates={},coverage={},unmatched={})
+        add_year_comparison([company], result, {'metadata':{'asOf':day},'data':records}, day)
+        self.assertEqual(result['coverage']['1y'], 1)
+        self.assertEqual(result['companies']['beazley']['ranks']['1y'], 9901)
+        self.assertEqual(company['globalMarketCapRankChange'], 1)
+        self.assertTrue(result['rankHistoryComparable'])
+
+    def test_historical_aberdeen_does_not_match_canadian_namesake(self):
+        company = dict(slug='aberdeen-group',companyName='Aberdeen Group PLC',ticker='ABDN.L')
+        correct = dict(Name='ABRDN',Ticker='SLFPF',MarketCap=4800000000,LastSeen=NOW.isoformat())
+        wrong = dict(Name='Aberdeen',Ticker='AABVF',MarketCap=3200000,LastSeen=NOW.isoformat())
+        self.assertEqual(historical_record(company,[wrong,correct],NOW),correct)
 
 
 if __name__ == '__main__':

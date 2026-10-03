@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-03T07:55:33.238084+00:00",
+  "generatedAt": "2026-10-03T12:41:19.119188+00:00",
   "source": "AssetMarketCap / Yahoo Finance",
-  "methodology": "Current USD issuer market caps ranked within the fresh, name-deduplicated AssetMarketCap company universe, supplemented by verified Yahoo Finance issuers. Provider-universe rank, not an exhaustive worldwide census. Historical ranks use an older methodology and are not comparable.",
+  "methodology": "Current and 12-month USD issuer market caps ranked within each dated, fresh, name-deduplicated AssetMarketCap company universe, supplemented with dated verified issuer values. Provider coverage changes over time. Standard Life historical market cap is estimated from dated shares and unadjusted price; JD Sports uses a dated market-cap series. Older mixed-method comparisons remain archived.",
   "dates": {
     "current": "2026-10-03",
-    "1y": "2025-07-25",
+    "1y": "2025-10-03",
     "2y": "2024-07-25",
     "3y": "2023-07-25",
     "5y": "2021-07-25",
@@ -12,7 +12,7 @@
   },
   "coverage": {
     "current": 100,
-    "1y": 0,
+    "1y": 100,
     "2y": 0,
     "3y": 0,
     "5y": 0,
@@ -20,108 +20,7 @@
   },
   "unmatched": {
     "current": [],
-    "1y": [
-      "astrazeneca",
-      "shell",
-      "hsbc",
-      "unilever",
-      "relx",
-      "british-american-tobacco",
-      "bp",
-      "gsk",
-      "rolls-royce",
-      "lseg",
-      "diageo",
-      "rio-tinto",
-      "national-grid",
-      "barclays",
-      "compass",
-      "bae-systems",
-      "lloyds",
-      "3i",
-      "experian",
-      "glencore",
-      "admiral",
-      "airtel-africa",
-      "alliance-witan",
-      "anglo-american",
-      "antofagasta",
-      "associated-british-foods",
-      "auto-trader",
-      "aviva",
-      "barratt-redrow",
-      "beazley",
-      "british-land",
-      "bt",
-      "bunzl",
-      "centrica",
-      "coca-cola-hbc",
-      "convatec",
-      "croda-international",
-      "dcc",
-      "diploma",
-      "endeavour-mining",
-      "entain",
-      "fandc-investment-trust",
-      "fresnillo",
-      "games-workshop",
-      "haleon",
-      "halma",
-      "hiscox",
-      "howden-joinery",
-      "imi",
-      "imperial-brands",
-      "informa",
-      "intercontinental-hotels",
-      "intermediate-capital",
-      "intertek",
-      "international-consolidated-airlines",
-      "jd-sports-fashion",
-      "kingfisher",
-      "land-securities",
-      "legal-and-general",
-      "londonmetric-property",
-      "mandg",
-      "marks-and-spencer",
-      "melrose-industries",
-      "natwest",
-      "next",
-      "pearson",
-      "pershing-square",
-      "persimmon",
-      "phoenix",
-      "prudential",
-      "reckitt-benckiser",
-      "rentokil-initial",
-      "sage",
-      "j-sainsbury",
-      "schroders",
-      "scottish-mortgage-investment-trust",
-      "segro",
-      "severn-trent",
-      "smith-and-nephew",
-      "smiths",
-      "spirax",
-      "sse",
-      "st-jamess-place",
-      "standard-chartered",
-      "tesco",
-      "united-utilities",
-      "vodafone",
-      "weir",
-      "whitbread",
-      "polar-capital-technology-trust",
-      "computacenter",
-      "investec",
-      "burberry",
-      "ig-group",
-      "tritax-big-box",
-      "aberdeen-group",
-      "coca-cola-europacific-partners",
-      "metlen-energy-metals",
-      "lion-finance-group",
-      "babcock-international"
-    ],
+    "1y": [],
     "2y": [
       "astrazeneca",
       "shell",
@@ -537,7 +436,7 @@
       "ticker": "AZN.L",
       "ranks": {
         "current": 70,
-        "1y": null,
+        "1y": 46,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -545,7 +444,7 @@
       },
       "marketCapsUsd": {
         "current": 243970087588.3561,
-        "1y": null,
+        "1y": 263891771048.0962,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -553,7 +452,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -565,8 +464,18 @@
         "source": "https://assetmarketcap.com/data/daily.json",
         "providerName": "AstraZeneca",
         "providerTicker": "AZN.L",
-        "observedAt": "2026-10-03T07:30:06",
+        "observedAt": "2026-10-03T12:30:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 263891771048.0962,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "AstraZeneca PLC R",
+          "providerTicker": "ZEG.DE",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "shell": {
@@ -574,7 +483,7 @@
       "ticker": "SHEL.L",
       "ranks": {
         "current": 58,
-        "1y": null,
+        "1y": 72,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -582,7 +491,7 @@
       },
       "marketCapsUsd": {
         "current": 271572992466.73923,
-        "1y": null,
+        "1y": 212888997684.12607,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -590,7 +499,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -602,8 +511,18 @@
         "source": "https://assetmarketcap.com/data/daily.json",
         "providerName": "Shell",
         "providerTicker": "SHEL.L",
-        "observedAt": "2026-10-03T07:30:06",
+        "observedAt": "2026-10-03T12:30:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 212888997684.12607,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "SHELL",
+          "providerTicker": "RYDAF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "hsbc": {
@@ -611,7 +530,7 @@
       "ticker": "HSBA.L",
       "ranks": {
         "current": 47,
-        "1y": null,
+        "1y": 56,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -619,7 +538,7 @@
       },
       "marketCapsUsd": {
         "current": 326956023963.8397,
-        "1y": null,
+        "1y": 249994659671.2719,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -627,7 +546,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -639,16 +558,26 @@
         "source": "https://assetmarketcap.com/data/daily.json",
         "providerName": "HSBC",
         "providerTicker": "HSBA.L",
-        "observedAt": "2026-10-03T07:30:06",
+        "observedAt": "2026-10-03T12:30:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 249994659671.2719,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "HSBC",
+          "providerTicker": "HBCYF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "unilever": {
       "companyName": "Unilever",
       "ticker": "ULVR.L",
       "ranks": {
-        "current": 163,
-        "1y": null,
+        "current": 162,
+        "1y": 105,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -656,7 +585,7 @@
       },
       "marketCapsUsd": {
         "current": 127958873387.66992,
-        "1y": null,
+        "1y": 166993267095.48108,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -664,7 +593,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -676,16 +605,26 @@
         "source": "https://assetmarketcap.com/data/daily.json",
         "providerName": "Unilever",
         "providerTicker": "ULVR.L",
-        "observedAt": "2026-10-03T07:30:06",
+        "observedAt": "2026-10-03T12:30:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 166993267095.48108,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Unilever",
+          "providerTicker": "UNLYF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "relx": {
       "companyName": "RELX",
       "ticker": "REL.L",
       "ranks": {
-        "current": 414,
-        "1y": null,
+        "current": 412,
+        "1y": 237,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -693,7 +632,7 @@
       },
       "marketCapsUsd": {
         "current": 58234983535.63976,
-        "1y": null,
+        "1y": 85275550207.02904,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -701,7 +640,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -715,14 +654,24 @@
         "providerTicker": "REL.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 85275550207.02904,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "RELX",
+          "providerTicker": "RELX",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "british-american-tobacco": {
       "companyName": "British American Tobacco",
       "ticker": "BATS.L",
       "ranks": {
-        "current": 192,
-        "1y": null,
+        "current": 191,
+        "1y": 164,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -730,7 +679,7 @@
       },
       "marketCapsUsd": {
         "current": 112924131774.242,
-        "1y": null,
+        "1y": 115563349680.0,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -738,7 +687,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -750,16 +699,26 @@
         "source": "https://assetmarketcap.com/data/daily.json",
         "providerName": "British American Tobacco p.l.c",
         "providerTicker": "BATS.L",
-        "observedAt": "2026-10-03T07:30:06",
+        "observedAt": "2026-10-03T12:30:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 115563349680.0,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "British American Tobacco p.l.c",
+          "providerTicker": "BTAFF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "bp": {
       "companyName": "BP",
       "ticker": "BP.L",
       "ranks": {
-        "current": 189,
-        "1y": null,
+        "current": 188,
+        "1y": 223,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -767,7 +726,7 @@
       },
       "marketCapsUsd": {
         "current": 114226055832.23195,
-        "1y": null,
+        "1y": 90748595932.3764,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -775,7 +734,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -787,16 +746,26 @@
         "source": "https://assetmarketcap.com/data/daily.json",
         "providerName": "BP p.l.c",
         "providerTicker": "BP.L",
-        "observedAt": "2026-10-03T07:30:06",
+        "observedAt": "2026-10-03T12:30:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 90748595932.3764,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "BP",
+          "providerTicker": "BPAQF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "gsk": {
       "companyName": "GSK",
       "ticker": "GSK.L",
       "ranks": {
-        "current": 245,
-        "1y": null,
+        "current": 244,
+        "1y": 221,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -804,7 +773,7 @@
       },
       "marketCapsUsd": {
         "current": 94497673941.56299,
-        "1y": null,
+        "1y": 91351818945.58232,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -812,7 +781,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -824,16 +793,26 @@
         "source": "https://assetmarketcap.com/data/daily.json",
         "providerName": "GSK",
         "providerTicker": "GSK.L",
-        "observedAt": "2026-10-03T07:30:06",
+        "observedAt": "2026-10-03T12:30:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 91351818945.58232,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "GSK",
+          "providerTicker": "GLAXF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "rolls-royce": {
       "companyName": "Rolls-Royce",
       "ticker": "RR.L",
       "ranks": {
-        "current": 123,
-        "1y": null,
+        "current": 122,
+        "1y": 138,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -841,7 +820,7 @@
       },
       "marketCapsUsd": {
         "current": 161115145915.08237,
-        "1y": null,
+        "1y": 132255556108.34201,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -849,7 +828,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -861,16 +840,26 @@
         "source": "https://assetmarketcap.com/data/daily.json",
         "providerName": "Rolls-Royce",
         "providerTicker": "RR.L",
-        "observedAt": "2026-10-03T07:30:06",
+        "observedAt": "2026-10-03T12:30:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 132255556108.34201,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Rolls Royce",
+          "providerTicker": "RYCEF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "lseg": {
       "companyName": "London Stock Exchange Group",
       "ticker": "LSEG.L",
       "ranks": {
-        "current": 460,
-        "1y": null,
+        "current": 458,
+        "1y": 354,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -878,7 +867,7 @@
       },
       "marketCapsUsd": {
         "current": 51575950466.876625,
-        "1y": null,
+        "1y": 60849703278.0,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -886,7 +875,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -900,14 +889,24 @@
         "providerTicker": "LSEG.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 60849703278.0,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "London Stock Exchange",
+          "providerTicker": "LDNXF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "diageo": {
       "companyName": "Diageo",
       "ticker": "DGE.L",
       "ranks": {
-        "current": 501,
-        "1y": null,
+        "current": 499,
+        "1y": 406,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -915,7 +914,7 @@
       },
       "marketCapsUsd": {
         "current": 47214514100.64753,
-        "1y": null,
+        "1y": 54774661129.11327,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -923,7 +922,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -937,14 +936,24 @@
         "providerTicker": "DGE.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 54774661129.11327,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Diageo",
+          "providerTicker": "DGEAF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "rio-tinto": {
       "companyName": "Rio Tinto",
       "ticker": "RIO.L",
       "ranks": {
-        "current": 137,
-        "1y": null,
+        "current": 136,
+        "1y": 179,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -952,7 +961,7 @@
       },
       "marketCapsUsd": {
         "current": 152084045883.56567,
-        "1y": null,
+        "1y": 107137161697.62115,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -960,7 +969,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -972,16 +981,26 @@
         "source": "https://assetmarketcap.com/data/daily.json",
         "providerName": "Rio Tinto",
         "providerTicker": "RIO.L",
-        "observedAt": "2026-10-03T07:30:06",
+        "observedAt": "2026-10-03T12:30:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 107137161697.62115,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Rio Tinto",
+          "providerTicker": "RTPPF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "national-grid": {
       "companyName": "National Grid",
       "ticker": "NG.L",
       "ranks": {
-        "current": 311,
-        "1y": null,
+        "current": 309,
+        "1y": 281,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -989,7 +1008,7 @@
       },
       "marketCapsUsd": {
         "current": 75546542483.12587,
-        "1y": null,
+        "1y": 74967506225.18137,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -997,7 +1016,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-02",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1011,14 +1030,24 @@
         "providerTicker": "NG.L",
         "observedAt": "2026-10-02T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 74967506225.18137,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "National Grid",
+          "providerTicker": "NGGTF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "barclays": {
       "companyName": "Barclays",
       "ticker": "BARC.L",
       "ranks": {
-        "current": 293,
-        "1y": null,
+        "current": 291,
+        "1y": 288,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1026,7 +1055,7 @@
       },
       "marketCapsUsd": {
         "current": 78504725514.63077,
-        "1y": null,
+        "1y": 73224789375.78406,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1034,7 +1063,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1046,16 +1075,26 @@
         "source": "https://assetmarketcap.com/data/daily.json",
         "providerName": "Barclays",
         "providerTicker": "BARC.L",
-        "observedAt": "2026-10-03T07:30:06",
+        "observedAt": "2026-10-03T12:30:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 73224789375.78406,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Barclays",
+          "providerTicker": "BCS",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "compass": {
       "companyName": "Compass Group",
       "ticker": "CPG.L",
       "ranks": {
-        "current": 471,
-        "1y": null,
+        "current": 469,
+        "1y": 369,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1063,7 +1102,7 @@
       },
       "marketCapsUsd": {
         "current": 50550530048.0,
-        "1y": null,
+        "1y": 59270035409.97966,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1071,7 +1110,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1085,14 +1124,24 @@
         "providerTicker": "CPG.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 59270035409.97966,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Compass",
+          "providerTicker": "CMPGY",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "bae-systems": {
       "companyName": "BAE Systems",
       "ticker": "BA.L",
       "ranks": {
-        "current": 318,
-        "1y": null,
+        "current": 316,
+        "1y": 248,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1100,7 +1149,7 @@
       },
       "marketCapsUsd": {
         "current": 74518794266.91933,
-        "1y": null,
+        "1y": 82774569997.7828,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1108,7 +1157,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1122,14 +1171,24 @@
         "providerTicker": "BA.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 82774569997.7828,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "BAE Systems",
+          "providerTicker": "BAESF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "lloyds": {
       "companyName": "Lloyds Banking Group",
       "ticker": "LLOY.L",
       "ranks": {
-        "current": 290,
-        "1y": null,
+        "current": 288,
+        "1y": 314,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1137,7 +1196,7 @@
       },
       "marketCapsUsd": {
         "current": 79261999960.44904,
-        "1y": null,
+        "1y": 67882479860.784485,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1145,7 +1204,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1157,16 +1216,26 @@
         "source": "https://assetmarketcap.com/data/daily.json",
         "providerName": "Lloyds Banking",
         "providerTicker": "LLOY.L",
-        "observedAt": "2026-10-03T07:30:06",
+        "observedAt": "2026-10-03T12:30:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 67882479860.784485,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Lloyds Banking Group Plc American",
+          "providerTicker": "LYG",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "3i": {
       "companyName": "3i Group",
       "ticker": "III.L",
       "ranks": {
-        "current": 680,
-        "1y": null,
+        "current": 678,
+        "1y": 362,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1174,7 +1243,7 @@
       },
       "marketCapsUsd": {
         "current": 34277584898.460674,
-        "1y": null,
+        "1y": 59791162209.26558,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1182,7 +1251,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-02",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1196,14 +1265,24 @@
         "providerTicker": "III.L",
         "observedAt": "2026-10-02T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 59791162209.26558,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "3i",
+          "providerTicker": "TGOPY",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "experian": {
       "companyName": "Experian",
       "ticker": "EXPN.L",
       "ranks": {
-        "current": 805,
-        "1y": null,
+        "current": 803,
+        "1y": 484,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1211,7 +1290,7 @@
       },
       "marketCapsUsd": {
         "current": 28600132718.60859,
-        "1y": null,
+        "1y": 45496177704.15216,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1219,7 +1298,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1233,14 +1312,24 @@
         "providerTicker": "EXPN.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 45496177704.15216,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Experian",
+          "providerTicker": "EXPGY",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "glencore": {
       "companyName": "Glencore",
       "ticker": "GLEN.L",
       "ranks": {
-        "current": 263,
-        "1y": null,
+        "current": 262,
+        "1y": 399,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1248,7 +1337,7 @@
       },
       "marketCapsUsd": {
         "current": 88584010183.80617,
-        "1y": null,
+        "1y": 54995359205.809326,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1256,7 +1345,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1268,16 +1357,26 @@
         "source": "https://assetmarketcap.com/data/daily.json",
         "providerName": "Glencore",
         "providerTicker": "8GC.F",
-        "observedAt": "2026-10-03T07:30:06",
+        "observedAt": "2026-10-03T12:30:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 54995359205.809326,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Glencore",
+          "providerTicker": "GLNCY",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "admiral": {
       "companyName": "Admiral Group PLC",
       "ticker": "ADM.L",
       "ranks": {
-        "current": 1398,
-        "1y": null,
+        "current": 1396,
+        "1y": 1457,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1285,7 +1384,7 @@
       },
       "marketCapsUsd": {
         "current": 14199884198.485094,
-        "1y": null,
+        "1y": 13563263058.921432,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1293,7 +1392,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-02",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1310,15 +1409,25 @@
         "nativeMarketCap": 10724604928,
         "nativeCurrency": "GBP",
         "fxRate": 1.3240473,
-        "fxObservedAt": "2026-10-02T21:29:05+00:00"
+        "fxObservedAt": "2026-10-02T21:29:47+00:00"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 13563263058.921432,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Admiral",
+          "providerTicker": "AMIGF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "airtel-africa": {
       "companyName": "Airtel Africa PLC",
       "ticker": "AAF.L",
       "ranks": {
-        "current": 1347,
-        "1y": null,
+        "current": 1345,
+        "1y": 1633,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1326,7 +1435,7 @@
       },
       "marketCapsUsd": {
         "current": 14774148628.16717,
-        "1y": null,
+        "1y": 11719356129.911701,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1334,7 +1443,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1348,14 +1457,24 @@
         "providerTicker": "AAF.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 11719356129.911701,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Airtel Africa",
+          "providerTicker": "AAF.L",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "alliance-witan": {
       "companyName": "Alliance Witan PLC",
       "ticker": "ALW.L",
       "ranks": {
-        "current": 2403,
-        "1y": null,
+        "current": 2401,
+        "1y": 2475,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1363,7 +1482,7 @@
       },
       "marketCapsUsd": {
         "current": 6708363034.396724,
-        "1y": null,
+        "1y": 6665748906.868115,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1371,7 +1490,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1385,14 +1504,24 @@
         "providerTicker": "ALW.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 6665748906.868115,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Alliance Witan",
+          "providerTicker": "ALW.L",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "anglo-american": {
       "companyName": "Anglo American PLC",
       "ticker": "AAL.L",
       "ranks": {
-        "current": 429,
-        "1y": null,
+        "current": 427,
+        "1y": 537,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1400,7 +1529,7 @@
       },
       "marketCapsUsd": {
         "current": 56501724734.06055,
-        "1y": null,
+        "1y": 40631074289.661194,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1408,7 +1537,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-02",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1422,14 +1551,24 @@
         "providerTicker": "AAL.L",
         "observedAt": "2026-10-02T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 40631074289.661194,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Anglo American",
+          "providerTicker": "NGLOY",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "antofagasta": {
       "companyName": "Antofagasta PLC",
       "ticker": "ANTO.L",
       "ranks": {
-        "current": 477,
-        "1y": null,
+        "current": 475,
+        "1y": 606,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1437,7 +1576,7 @@
       },
       "marketCapsUsd": {
         "current": 49673682878.07284,
-        "1y": null,
+        "1y": 36212402865.73137,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1445,7 +1584,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1459,6 +1598,16 @@
         "providerTicker": "ANTO.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 36212402865.73137,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Antofagasta",
+          "providerTicker": "ANFGF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "ashtead": {
@@ -1494,8 +1643,8 @@
       "companyName": "Associated British Foods PLC",
       "ticker": "ABF.L",
       "ranks": {
-        "current": 1231,
-        "1y": null,
+        "current": 1229,
+        "1y": 1047,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1503,7 +1652,7 @@
       },
       "marketCapsUsd": {
         "current": 16898822770.051586,
-        "1y": null,
+        "1y": 20256830906.63144,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1511,7 +1660,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1525,14 +1674,24 @@
         "providerTicker": "ABF.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 20256830906.63144,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Associated British Foods",
+          "providerTicker": "ASBFY",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "auto-trader": {
       "companyName": "Auto Trader Group PLC",
       "ticker": "AUTO.L",
       "ranks": {
-        "current": 2976,
-        "1y": null,
+        "current": 2974,
+        "1y": 1935,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1540,7 +1699,7 @@
       },
       "marketCapsUsd": {
         "current": 4697496375.433575,
-        "1y": null,
+        "1y": 9334509943.239454,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1548,7 +1707,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1562,14 +1721,24 @@
         "providerTicker": "AUTO.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 9334509943.239454,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "AUTO TRADER",
+          "providerTicker": "ATDRF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "aviva": {
       "companyName": "Aviva PLC",
       "ticker": "AV.L",
       "ranks": {
-        "current": 839,
-        "1y": null,
+        "current": 837,
+        "1y": 781,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1577,7 +1746,7 @@
       },
       "marketCapsUsd": {
         "current": 26891189795.05644,
-        "1y": null,
+        "1y": 28233317009.683754,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1585,7 +1754,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1599,14 +1768,24 @@
         "providerTicker": "AV.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 28233317009.683754,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Aviva",
+          "providerTicker": "AIVAF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "barratt-redrow": {
       "companyName": "Barratt Redrow PLC",
       "ticker": "BTRW.L",
       "ranks": {
-        "current": 2614,
-        "1y": null,
+        "current": 2612,
+        "1y": 2280,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1614,7 +1793,7 @@
       },
       "marketCapsUsd": {
         "current": 5809715058.645043,
-        "1y": null,
+        "1y": 7493839201.734726,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1622,7 +1801,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1636,14 +1815,24 @@
         "providerTicker": "BTRW.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 7493839201.734726,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Barratt Developments",
+          "providerTicker": "BTDPF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "beazley": {
       "companyName": "Beazley PLC",
       "ticker": "BEZ.L",
       "ranks": {
-        "current": 1776,
-        "1y": null,
+        "current": 1774,
+        "1y": 2354,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1651,7 +1840,7 @@
       },
       "marketCapsUsd": {
         "current": 10348246958.229044,
-        "1y": null,
+        "1y": 7160469444.071246,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1659,7 +1848,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1673,6 +1862,16 @@
         "providerTicker": "BEZ.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 7160469444.071246,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Beazley",
+          "providerTicker": "BEZ.L",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "berkeley": {
@@ -1708,8 +1907,8 @@
       "companyName": "British Land Co PLC",
       "ticker": "BLND.L",
       "ranks": {
-        "current": 2805,
-        "1y": null,
+        "current": 2803,
+        "1y": 2997,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1717,7 +1916,7 @@
       },
       "marketCapsUsd": {
         "current": 5179305429.122688,
-        "1y": null,
+        "1y": 4856397707.45104,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1725,7 +1924,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-02",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1739,14 +1938,24 @@
         "providerTicker": "BLND.L",
         "observedAt": "2026-10-02T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 4856397707.45104,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "British Land",
+          "providerTicker": "BTLCY",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "bt": {
       "companyName": "BT Group PLC",
       "ticker": "BT-A.L",
       "ranks": {
-        "current": 906,
-        "1y": null,
+        "current": 904,
+        "1y": 868,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1754,7 +1963,7 @@
       },
       "marketCapsUsd": {
         "current": 24922322918.940674,
-        "1y": null,
+        "1y": 25175325606.146744,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1762,7 +1971,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-02",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1776,14 +1985,24 @@
         "providerTicker": "BT-A.L",
         "observedAt": "2026-10-02T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 25175325606.146744,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "BT",
+          "providerTicker": "BTGOF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "bunzl": {
       "companyName": "Bunzl PLC",
       "ticker": "BNZL.L",
       "ranks": {
-        "current": 1715,
-        "1y": null,
+        "current": 1713,
+        "1y": 1713,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1791,7 +2010,7 @@
       },
       "marketCapsUsd": {
         "current": 10944116926.596403,
-        "1y": null,
+        "1y": 11019912912.48993,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1799,7 +2018,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1813,14 +2032,24 @@
         "providerTicker": "BNZL.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 11019912912.48993,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Bunzl",
+          "providerTicker": "BZLFF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "centrica": {
       "companyName": "Centrica PLC",
       "ticker": "CNA.L",
       "ranks": {
-        "current": 1973,
-        "1y": null,
+        "current": 1971,
+        "1y": 1737,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1828,7 +2057,7 @@
       },
       "marketCapsUsd": {
         "current": 8938130227.490303,
-        "1y": null,
+        "1y": 10777748559.390602,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1836,7 +2065,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-02",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1853,15 +2082,25 @@
         "nativeMarketCap": 6750612480,
         "nativeCurrency": "GBP",
         "fxRate": 1.3240473,
-        "fxObservedAt": "2026-10-02T21:29:05+00:00"
+        "fxObservedAt": "2026-10-02T21:29:47+00:00"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 10777748559.390602,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Centrica",
+          "providerTicker": "CPYYY",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "coca-cola-hbc": {
       "companyName": "Coca-Cola HBC AG",
       "ticker": "CCH.L",
       "ranks": {
-        "current": 1019,
-        "1y": null,
+        "current": 1017,
+        "1y": 1214,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1869,7 +2108,7 @@
       },
       "marketCapsUsd": {
         "current": 21097081620.86441,
-        "1y": null,
+        "1y": 16866766836.269028,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1877,7 +2116,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-02",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1891,14 +2130,24 @@
         "providerTicker": "C0Q.F",
         "observedAt": "2026-10-02T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 16866766836.269028,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "COCA-COLA HBC",
+          "providerTicker": "CCHBF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "convatec": {
       "companyName": "Convatec Group PLC",
       "ticker": "CTEC.L",
       "ranks": {
-        "current": 2695,
-        "1y": null,
+        "current": 2693,
+        "1y": 2522,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1906,7 +2155,7 @@
       },
       "marketCapsUsd": {
         "current": 5502557126.250547,
-        "1y": null,
+        "1y": 6446655384.059649,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1914,7 +2163,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1928,14 +2177,24 @@
         "providerTicker": "CTEC.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 6446655384.059649,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Convatec",
+          "providerTicker": "CTEC.L",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "croda-international": {
       "companyName": "Croda International PLC",
       "ticker": "CRDA.L",
       "ranks": {
-        "current": 2546,
-        "1y": null,
+        "current": 2544,
+        "1y": 2811,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1943,7 +2202,7 @@
       },
       "marketCapsUsd": {
         "current": 6053817677.132391,
-        "1y": null,
+        "1y": 5430451613.172867,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1951,7 +2210,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1965,14 +2224,24 @@
         "providerTicker": "CRDA.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 5430451613.172867,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Croda",
+          "providerTicker": "COIHF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "dcc": {
       "companyName": "DCC PLC",
       "ticker": "DCC.L",
       "ranks": {
-        "current": 2243,
-        "1y": null,
+        "current": 2241,
+        "1y": 2568,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1980,7 +2249,7 @@
       },
       "marketCapsUsd": {
         "current": 7429859275.277262,
-        "1y": null,
+        "1y": 6272298307.5,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -1988,7 +2257,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2002,14 +2271,24 @@
         "providerTicker": "DCC.F",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 6272298307.5,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "DCC",
+          "providerTicker": "DCCPF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "diploma": {
       "companyName": "Diploma PLC",
       "ticker": "DPLM.L",
       "ranks": {
-        "current": 1437,
-        "1y": null,
+        "current": 1435,
+        "1y": 1882,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2017,7 +2296,7 @@
       },
       "marketCapsUsd": {
         "current": 13665919713.981236,
-        "1y": null,
+        "1y": 9687204719.206932,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2025,7 +2304,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-02",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2039,6 +2318,16 @@
         "providerTicker": "DPLM.L",
         "observedAt": "2026-10-02T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 9687204719.206932,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Diploma",
+          "providerTicker": "DPLM.L",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "easyjet": {
@@ -2074,8 +2363,8 @@
       "companyName": "Endeavour Mining PLC",
       "ticker": "EDV.L",
       "ranks": {
-        "current": 1446,
-        "1y": null,
+        "current": 1444,
+        "1y": 1814,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2083,7 +2372,7 @@
       },
       "marketCapsUsd": {
         "current": 13575404882.60905,
-        "1y": null,
+        "1y": 10234059670.0,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2091,7 +2380,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2105,14 +2394,24 @@
         "providerTicker": "EDV.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 10234059670.0,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "ENDEAVOUR Mining",
+          "providerTicker": "EDVMF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "entain": {
       "companyName": "Entain PLC",
       "ticker": "ENT.L",
       "ranks": {
-        "current": 3477,
-        "1y": null,
+        "current": 3475,
+        "1y": 2252,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2120,7 +2419,7 @@
       },
       "marketCapsUsd": {
         "current": 3593020137.435802,
-        "1y": null,
+        "1y": 7621494031.849136,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2128,7 +2427,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2142,14 +2441,24 @@
         "providerTicker": "GVC.VI",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 7621494031.849136,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "ENTAIN",
+          "providerTicker": "GMVHF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "fandc-investment-trust": {
       "companyName": "F&C Investment Trust PLC",
       "ticker": "FCIT.L",
       "ranks": {
-        "current": 2033,
-        "1y": null,
+        "current": 2031,
+        "1y": 2035,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2157,7 +2466,7 @@
       },
       "marketCapsUsd": {
         "current": 8564567111.323546,
-        "1y": null,
+        "1y": 8724193199.143877,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2165,7 +2474,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2179,14 +2488,24 @@
         "providerTicker": "FCIT.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 8724193199.143877,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "F&C Investment Trust Ordinary S",
+          "providerTicker": "FCT.NZ",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "fresnillo": {
       "companyName": "Fresnillo PLC",
       "ticker": "FRES.L",
       "ranks": {
-        "current": 794,
-        "1y": null,
+        "current": 792,
+        "1y": 930,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2194,7 +2513,7 @@
       },
       "marketCapsUsd": {
         "current": 28924716652.66262,
-        "1y": null,
+        "1y": 23336149114.05587,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2202,7 +2521,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-02",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2216,14 +2535,24 @@
         "providerTicker": "FRES.MX",
         "observedAt": "2026-10-02T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 23336149114.05587,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Fresnillo",
+          "providerTicker": "FNLPF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "games-workshop": {
       "companyName": "Games Workshop Group PLC",
       "ticker": "GAW.L",
       "ranks": {
-        "current": 2224,
-        "1y": null,
+        "current": 2222,
+        "1y": 2510,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2231,7 +2560,7 @@
       },
       "marketCapsUsd": {
         "current": 7528127576.84352,
-        "1y": null,
+        "1y": 6499852672.0,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2239,7 +2568,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2253,14 +2582,24 @@
         "providerTicker": "GAW.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 6499852672.0,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Games Workshop",
+          "providerTicker": "GMWKF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "haleon": {
       "companyName": "Haleon PLC",
       "ticker": "HLN.L",
       "ranks": {
-        "current": 623,
-        "1y": null,
+        "current": 621,
+        "1y": 551,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2268,7 +2607,7 @@
       },
       "marketCapsUsd": {
         "current": 38266691676.62101,
-        "1y": null,
+        "1y": 39674393911.04208,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2276,7 +2615,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2290,14 +2629,24 @@
         "providerTicker": "HLN.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 39674393911.04208,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Haleon",
+          "providerTicker": "HLN.L",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "halma": {
       "companyName": "Halma PLC",
       "ticker": "HLMA.L",
       "ranks": {
-        "current": 1168,
-        "1y": null,
+        "current": 1166,
+        "1y": 1145,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2305,7 +2654,7 @@
       },
       "marketCapsUsd": {
         "current": 18018763149.09819,
-        "1y": null,
+        "1y": 18140417693.75,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2313,7 +2662,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2327,6 +2676,16 @@
         "providerTicker": "HLMA.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 18140417693.75,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Halma",
+          "providerTicker": "HLMAF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "hargreaves-lansdown": {
@@ -2391,8 +2750,8 @@
       "companyName": "Hiscox Ltd",
       "ticker": "HSX.L",
       "ranks": {
-        "current": 2168,
-        "1y": null,
+        "current": 2166,
+        "1y": 2588,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2400,7 +2759,7 @@
       },
       "marketCapsUsd": {
         "current": 7831831787.291495,
-        "1y": null,
+        "1y": 6205999217.679153,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2408,7 +2767,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2422,14 +2781,24 @@
         "providerTicker": "H2X3.F",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 6205999217.679153,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Hiscox",
+          "providerTicker": "HCXLF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "howden-joinery": {
       "companyName": "Howden Joinery Group PLC",
       "ticker": "HWDN.L",
       "ranks": {
-        "current": 2728,
-        "1y": null,
+        "current": 2726,
+        "1y": 2601,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2437,7 +2806,7 @@
       },
       "marketCapsUsd": {
         "current": 5421886439.269939,
-        "1y": null,
+        "1y": 6138684898.216036,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2445,7 +2814,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2459,14 +2828,24 @@
         "providerTicker": "HWDN.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 6138684898.216036,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Howden Joinery",
+          "providerTicker": "HWDJF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "imi": {
       "companyName": "IMI PLC",
       "ticker": "IMI.L",
       "ranks": {
-        "current": 1857,
-        "1y": null,
+        "current": 1855,
+        "1y": 2250,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2474,7 +2853,7 @@
       },
       "marketCapsUsd": {
         "current": 9740654668.486656,
-        "1y": null,
+        "1y": 7624827240.0,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2482,7 +2861,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2496,14 +2875,24 @@
         "providerTicker": "IMI.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 7624827240.0,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "IMI",
+          "providerTicker": "IMIAF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "imperial-brands": {
       "companyName": "Imperial Brands PLC",
       "ticker": "IMB.L",
       "ranks": {
-        "current": 924,
-        "1y": null,
+        "current": 922,
+        "1y": 663,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2511,7 +2900,7 @@
       },
       "marketCapsUsd": {
         "current": 24334640797.993576,
-        "1y": null,
+        "1y": 33477628279.55439,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2519,7 +2908,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2533,14 +2922,24 @@
         "providerTicker": "IMB.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 33477628279.55439,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Imperial Brands",
+          "providerTicker": "IMBBY",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "informa": {
       "companyName": "Informa PLC",
       "ticker": "INF.L",
       "ranks": {
-        "current": 1399,
-        "1y": null,
+        "current": 1397,
+        "1y": 1250,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2548,7 +2947,7 @@
       },
       "marketCapsUsd": {
         "current": 14198838862.392117,
-        "1y": null,
+        "1y": 16280413142.052574,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2556,7 +2955,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2570,14 +2969,24 @@
         "providerTicker": "INF.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 16280413142.052574,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Informa",
+          "providerTicker": "IFJPY",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "intercontinental-hotels": {
       "companyName": "InterContinental Hotels Group PLC",
       "ticker": "IHG.L",
       "ranks": {
-        "current": 942,
-        "1y": null,
+        "current": 940,
+        "1y": 1111,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2585,7 +2994,7 @@
       },
       "marketCapsUsd": {
         "current": 23503730688.0,
-        "1y": null,
+        "1y": 18767972580.2025,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2593,7 +3002,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2607,14 +3016,24 @@
         "providerTicker": "IHG.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 18767972580.2025,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Intercontinental Hotels",
+          "providerTicker": "IHG",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "intermediate-capital": {
       "companyName": "Intermediate Capital Group PLC",
       "ticker": "ICG.L",
       "ranks": {
-        "current": 2380,
-        "1y": null,
+        "current": 2378,
+        "1y": 1993,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2622,7 +3041,7 @@
       },
       "marketCapsUsd": {
         "current": 6790696803.670119,
-        "1y": null,
+        "1y": 8988642349.451313,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2630,7 +3049,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2644,14 +3063,24 @@
         "providerTicker": "ICG.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 8988642349.451313,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "ICG",
+          "providerTicker": "ICG.L",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "intertek": {
       "companyName": "Intertek Group PLC",
       "ticker": "ITRK.L",
       "ranks": {
-        "current": 1610,
-        "1y": null,
+        "current": 1608,
+        "1y": 1792,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2659,7 +3088,7 @@
       },
       "marketCapsUsd": {
         "current": 11951047776.52685,
-        "1y": null,
+        "1y": 10422507125.71611,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2667,7 +3096,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-02",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2681,14 +3110,24 @@
         "providerTicker": "ITRK.L",
         "observedAt": "2026-10-02T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 10422507125.71611,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Intertek",
+          "providerTicker": "IKTSY",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "international-consolidated-airlines": {
       "companyName": "International Consolidated Airlines Group SA",
       "ticker": "IAG.L",
       "ranks": {
-        "current": 881,
-        "1y": null,
+        "current": 879,
+        "1y": 849,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2696,7 +3135,7 @@
       },
       "marketCapsUsd": {
         "current": 25523909520.648193,
-        "1y": null,
+        "1y": 25653763104.85504,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2704,7 +3143,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2718,14 +3157,24 @@
         "providerTicker": "IAG.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 25653763104.85504,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "International Consolidated Airl",
+          "providerTicker": "BABWF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "jd-sports-fashion": {
       "companyName": "JD Sports Fashion PLC",
       "ticker": "JD.L",
       "ranks": {
-        "current": 2871,
-        "1y": null,
+        "current": 2869,
+        "1y": 2640,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2733,7 +3182,7 @@
       },
       "marketCapsUsd": {
         "current": 4976912520.989799,
-        "1y": null,
+        "1y": 6007900000,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2741,7 +3190,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-09-27",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2755,14 +3204,24 @@
         "providerTicker": "JD.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 6007900000,
+          "observedAt": "2025-09-27T00:00:00+00:00",
+          "source": "https://companiesmarketcap.com/jd-sports/marketcap/",
+          "providerName": "JD Sports Fashion",
+          "providerTicker": "JD.L",
+          "matchMethod": "dated-market-cap-series"
+        }
       }
     },
     "kingfisher": {
       "companyName": "Kingfisher PLC",
       "ticker": "KGF.L",
       "ranks": {
-        "current": 2312,
-        "1y": null,
+        "current": 2310,
+        "1y": 2340,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2770,7 +3229,7 @@
       },
       "marketCapsUsd": {
         "current": 7112057092.437658,
-        "1y": null,
+        "1y": 7201501391.5548935,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2778,7 +3237,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2792,14 +3251,24 @@
         "providerTicker": "KGF.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 7201501391.5548935,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Kingfisher",
+          "providerTicker": "KGFHF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "land-securities": {
       "companyName": "Land Securities Group PLC",
       "ticker": "LAND.L",
       "ranks": {
-        "current": 2412,
-        "1y": null,
+        "current": 2410,
+        "1y": 2648,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2807,7 +3276,7 @@
       },
       "marketCapsUsd": {
         "current": 6670212564.4204035,
-        "1y": null,
+        "1y": 5983355319.473814,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2815,7 +3284,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-02",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2829,14 +3298,24 @@
         "providerTicker": "LAND.L",
         "observedAt": "2026-10-02T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 5983355319.473814,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "LAND SECURITIES",
+          "providerTicker": "LSGOF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "legal-and-general": {
       "companyName": "Legal & General Group PLC",
       "ticker": "LGEN.L",
       "ranks": {
-        "current": 1056,
-        "1y": null,
+        "current": 1054,
+        "1y": 1151,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2844,7 +3323,7 @@
       },
       "marketCapsUsd": {
         "current": 20325354473.775517,
-        "1y": null,
+        "1y": 18028209346.544518,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2852,7 +3331,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-02",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2866,14 +3345,24 @@
         "providerTicker": "LGEN.L",
         "observedAt": "2026-10-02T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 18028209346.544518,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Legal & General",
+          "providerTicker": "LGGNY",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "londonmetric-property": {
       "companyName": "LondonMetric Property PLC",
       "ticker": "LMP.L",
       "ranks": {
-        "current": 2682,
-        "1y": null,
+        "current": 2680,
+        "1y": 2723,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2881,7 +3370,7 @@
       },
       "marketCapsUsd": {
         "current": 5545843066.78295,
-        "1y": null,
+        "1y": 5727706690.476871,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2889,7 +3378,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2903,14 +3392,24 @@
         "providerTicker": "LMP.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 5727706690.476871,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "LONDONMETRIC PROPERTY",
+          "providerTicker": "LNSPF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "mandg": {
       "companyName": "M&G PLC",
       "ticker": "MNG.L",
       "ranks": {
-        "current": 1835,
-        "1y": null,
+        "current": 1833,
+        "1y": 2162,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2918,7 +3417,7 @@
       },
       "marketCapsUsd": {
         "current": 9898389644.085505,
-        "1y": null,
+        "1y": 7993560068.46957,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2926,7 +3425,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2940,14 +3439,24 @@
         "providerTicker": "MNG.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 7993560068.46957,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "M&G",
+          "providerTicker": "MNG.L",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "marks-and-spencer": {
       "companyName": "Marks & Spencer Group PLC",
       "ticker": "MKS.L",
       "ranks": {
-        "current": 1773,
-        "1y": null,
+        "current": 1771,
+        "1y": 1829,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2955,7 +3464,7 @@
       },
       "marketCapsUsd": {
         "current": 10383802042.742325,
-        "1y": null,
+        "1y": 10152969030.439796,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2963,7 +3472,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2977,14 +3486,24 @@
         "providerTicker": "MKS.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 10152969030.439796,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Marks & Spencer",
+          "providerTicker": "MAKSY",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "melrose-industries": {
       "companyName": "Melrose Industries PLC",
       "ticker": "MRO.L",
       "ranks": {
-        "current": 2160,
-        "1y": null,
+        "current": 2158,
+        "1y": 1675,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -2992,7 +3511,7 @@
       },
       "marketCapsUsd": {
         "current": 7862319587.046759,
-        "1y": null,
+        "1y": 11276039057.559822,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3000,7 +3519,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-01",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3014,6 +3533,16 @@
         "providerTicker": "MRO.L",
         "observedAt": "2026-10-01T00:00:09",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 11276039057.559822,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Melrose Industries",
+          "providerTicker": "MLSPF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "mondi": {
@@ -3049,8 +3578,8 @@
       "companyName": "NatWest Group PLC",
       "ticker": "NWG.L",
       "ranks": {
-        "current": 341,
-        "1y": null,
+        "current": 339,
+        "1y": 370,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3058,7 +3587,7 @@
       },
       "marketCapsUsd": {
         "current": 69671642876.69576,
-        "1y": null,
+        "1y": 59101949835.66151,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3066,7 +3595,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3080,14 +3609,24 @@
         "providerTicker": "NWG.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 59101949835.66151,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "NatWest",
+          "providerTicker": "RBSPF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "next": {
       "companyName": "Next PLC",
       "ticker": "NXT.L",
       "ranks": {
-        "current": 998,
-        "1y": null,
+        "current": 996,
+        "1y": 1084,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3095,7 +3634,7 @@
       },
       "marketCapsUsd": {
         "current": 21731505140.768257,
-        "1y": null,
+        "1y": 19463158802.5,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3103,7 +3642,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3117,14 +3656,24 @@
         "providerTicker": "NXT.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 19463158802.5,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Next",
+          "providerTicker": "NXGPY",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "pearson": {
       "companyName": "Pearson PLC",
       "ticker": "PSON.L",
       "ranks": {
-        "current": 1855,
-        "1y": null,
+        "current": 1853,
+        "1y": 1965,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3132,7 +3681,7 @@
       },
       "marketCapsUsd": {
         "current": 9746053748.781927,
-        "1y": null,
+        "1y": 9135368083.5,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3140,7 +3689,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-02",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3154,14 +3703,24 @@
         "providerTicker": "PSON.L",
         "observedAt": "2026-10-02T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 9135368083.5,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Pearson",
+          "providerTicker": "PSO",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "pershing-square": {
       "companyName": "Pershing Square Holdings Ltd",
       "ticker": "PSH.L",
       "ranks": {
-        "current": 2049,
-        "1y": null,
+        "current": 2047,
+        "1y": 1464,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3169,7 +3728,7 @@
       },
       "marketCapsUsd": {
         "current": 8489459030.885684,
-        "1y": null,
+        "1y": 13479188000.0,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3177,7 +3736,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3191,14 +3750,24 @@
         "providerTicker": "PSH.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 13479188000.0,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Pershing Square",
+          "providerTicker": "PSHZF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "persimmon": {
       "companyName": "Persimmon PLC",
       "ticker": "PSN.L",
       "ranks": {
-        "current": 2781,
-        "1y": null,
+        "current": 2779,
+        "1y": 2919,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3206,7 +3775,7 @@
       },
       "marketCapsUsd": {
         "current": 5267139040.715213,
-        "1y": null,
+        "1y": 5090828048.551895,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3214,7 +3783,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3228,14 +3797,24 @@
         "providerTicker": "PSN.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 5090828048.551895,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Persimmon",
+          "providerTicker": "PSMMY",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "phoenix": {
       "companyName": "Standard Life PLC",
       "ticker": "SDLF.L",
       "ranks": {
-        "current": 1656,
-        "1y": null,
+        "current": 1654,
+        "1y": 2021,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3243,7 +3822,7 @@
       },
       "marketCapsUsd": {
         "current": 11535764389.41174,
-        "1y": null,
+        "1y": 8818447663.077784,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3251,7 +3830,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3265,14 +3844,30 @@
         "providerTicker": "SDLF.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 8818447663.077784,
+          "observedAt": "2025-10-03",
+          "source": "https://finance.yahoo.com/quote/SDLF.L/history/",
+          "providerName": "Standard Life",
+          "providerTicker": "SDLF.L",
+          "matchMethod": "historical-shares-times-unadjusted-close",
+          "shares": 998949480.0,
+          "sharesObservedAt": "2025-10-02T00:00:00-04:00",
+          "closeGBp": 656.5,
+          "fxRate": 1.3446643352508545,
+          "fxObservedAt": "2025-10-03",
+          "estimated": true
+        }
       }
     },
     "prudential": {
       "companyName": "Prudential PLC",
       "ticker": "PRU.L",
       "ranks": {
-        "current": 768,
-        "1y": null,
+        "current": 766,
+        "1y": 615,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3280,7 +3875,7 @@
       },
       "marketCapsUsd": {
         "current": 29927058525.192192,
-        "1y": null,
+        "1y": 35681165494.0,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3288,7 +3883,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-02",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3305,15 +3900,25 @@
         "nativeMarketCap": 22602711040,
         "nativeCurrency": "GBP",
         "fxRate": 1.3240473,
-        "fxObservedAt": "2026-10-02T21:29:05+00:00"
+        "fxObservedAt": "2026-10-02T21:29:47+00:00"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 35681165494.0,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Prudential",
+          "providerTicker": "PUKPF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "reckitt-benckiser": {
       "companyName": "Reckitt Benckiser Group PLC",
       "ticker": "RKT.L",
       "ranks": {
-        "current": 584,
-        "1y": null,
+        "current": 582,
+        "1y": 408,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3321,7 +3926,7 @@
       },
       "marketCapsUsd": {
         "current": 41374645751.91306,
-        "1y": null,
+        "1y": 54010663117.6791,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3329,7 +3934,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3343,14 +3948,24 @@
         "providerTicker": "RKT.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 54010663117.6791,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Reckitt Benckiser",
+          "providerTicker": "RBGLY",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "rentokil-initial": {
       "companyName": "Rentokil Initial PLC",
       "ticker": "RTO.L",
       "ranks": {
-        "current": 1833,
-        "1y": null,
+        "current": 1831,
+        "1y": 1534,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3358,7 +3973,7 @@
       },
       "marketCapsUsd": {
         "current": 9910631721.085287,
-        "1y": null,
+        "1y": 12757145407.363472,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3366,7 +3981,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-01",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3380,6 +3995,16 @@
         "providerTicker": "RTO.L",
         "observedAt": "2026-10-01T00:00:09",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 12757145407.363472,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "RENTOKIL INITIAL",
+          "providerTicker": "RKLIF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "rightmove": {
@@ -3415,8 +4040,8 @@
       "companyName": "Sage Group PLC",
       "ticker": "SGE.L",
       "ranks": {
-        "current": 1635,
-        "1y": null,
+        "current": 1633,
+        "1y": 1384,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3424,7 +4049,7 @@
       },
       "marketCapsUsd": {
         "current": 11736474198.5535,
-        "1y": null,
+        "1y": 14511853775.796764,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3432,7 +4057,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3446,14 +4071,24 @@
         "providerTicker": "SGE.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 14511853775.796764,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Sage",
+          "providerTicker": "SGGEF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "j-sainsbury": {
       "companyName": "J Sainsbury PLC",
       "ticker": "SBRY.L",
       "ranks": {
-        "current": 1925,
-        "1y": null,
+        "current": 1923,
+        "1y": 1709,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3461,7 +4096,7 @@
       },
       "marketCapsUsd": {
         "current": 9336093446.3616,
-        "1y": null,
+        "1y": 11037597874.721907,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3469,7 +4104,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3483,14 +4118,24 @@
         "providerTicker": "SBRY.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 11037597874.721907,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "J Sainsbury",
+          "providerTicker": "JSNSF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "schroders": {
       "companyName": "Schroders PLC",
       "ticker": "SDR.L",
       "ranks": {
-        "current": 1588,
-        "1y": null,
+        "current": 1586,
+        "1y": 2126,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3498,7 +4143,7 @@
       },
       "marketCapsUsd": {
         "current": 12171701002.539112,
-        "1y": null,
+        "1y": 8140515589.5,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3506,7 +4151,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3520,14 +4165,24 @@
         "providerTicker": "SDR.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 8140515589.5,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "SCHRODERS",
+          "providerTicker": "SHNWF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "scottish-mortgage-investment-trust": {
       "companyName": "Scottish Mortgage Investment Trust PLC",
       "ticker": "SMT.L",
       "ranks": {
-        "current": 985,
-        "1y": null,
+        "current": 983,
+        "1y": 1178,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3535,7 +4190,7 @@
       },
       "marketCapsUsd": {
         "current": 22034404605.406925,
-        "1y": null,
+        "1y": 17347794675.424736,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3543,7 +4198,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3557,14 +4212,24 @@
         "providerTicker": "SMT.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 17347794675.424736,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Scottish Mortgage Investment Trust",
+          "providerTicker": "SMT.L",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "segro": {
       "companyName": "Segro PLC",
       "ticker": "SGRO.L",
       "ranks": {
-        "current": 1254,
-        "1y": null,
+        "current": 1252,
+        "1y": 1597,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3572,7 +4237,7 @@
       },
       "marketCapsUsd": {
         "current": 16410194129.017038,
-        "1y": null,
+        "1y": 12093095646.826452,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3580,7 +4245,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3594,14 +4259,24 @@
         "providerTicker": "SGRO.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 12093095646.826452,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Segro Plc REIT",
+          "providerTicker": "SEGXF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "severn-trent": {
       "companyName": "Severn Trent PLC",
       "ticker": "SVT.L",
       "ranks": {
-        "current": 1549,
-        "1y": null,
+        "current": 1547,
+        "1y": 1748,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3609,7 +4284,7 @@
       },
       "marketCapsUsd": {
         "current": 12482160672.361883,
-        "1y": null,
+        "1y": 10732314423.110771,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3617,7 +4292,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3631,14 +4306,24 @@
         "providerTicker": "SVT.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 10732314423.110771,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Severn Trent",
+          "providerTicker": "STRNY",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "smith-and-nephew": {
       "companyName": "Smith & Nephew PLC",
       "ticker": "SN.L",
       "ranks": {
-        "current": 1713,
-        "1y": null,
+        "current": 1711,
+        "1y": 1305,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3646,7 +4331,7 @@
       },
       "marketCapsUsd": {
         "current": 10970819880.717314,
-        "1y": null,
+        "1y": 15456809123.565445,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3654,7 +4339,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3668,6 +4353,16 @@
         "providerTicker": "SN.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 15456809123.565445,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Smith & Nephew SNATS",
+          "providerTicker": "SNN",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "ds-smith": {
@@ -3703,8 +4398,8 @@
       "companyName": "Smiths Group PLC",
       "ticker": "SMIN.L",
       "ranks": {
-        "current": 1767,
-        "1y": null,
+        "current": 1765,
+        "1y": 1745,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3712,7 +4407,7 @@
       },
       "marketCapsUsd": {
         "current": 10444540847.898932,
-        "1y": null,
+        "1y": 10756513310.246155,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3720,7 +4415,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3734,14 +4429,24 @@
         "providerTicker": "SMIN.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 10756513310.246155,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Smiths",
+          "providerTicker": "SMGZY",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "spirax": {
       "companyName": "Spirax Group PLC",
       "ticker": "SPX.L",
       "ranks": {
-        "current": 2319,
-        "1y": null,
+        "current": 2317,
+        "1y": 2341,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3749,7 +4454,7 @@
       },
       "marketCapsUsd": {
         "current": 7080617983.929294,
-        "1y": null,
+        "1y": 7199387011.132614,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3757,7 +4462,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3771,14 +4476,24 @@
         "providerTicker": "SPX.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 7199387011.132614,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "SPIRAX",
+          "providerTicker": "SPXSY",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "sse": {
       "companyName": "SSE PLC",
       "ticker": "SSE.L",
       "ranks": {
-        "current": 602,
-        "1y": null,
+        "current": 600,
+        "1y": 831,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3786,7 +4501,7 @@
       },
       "marketCapsUsd": {
         "current": 39812268486.2847,
-        "1y": null,
+        "1y": 26439602320.799828,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3794,7 +4509,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-02",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3808,14 +4523,24 @@
         "providerTicker": "SSE.L",
         "observedAt": "2026-10-02T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 26439602320.799828,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "SSE",
+          "providerTicker": "SSEZY",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "st-jamess-place": {
       "companyName": "St James's Place PLC",
       "ticker": "STJ.L",
       "ranks": {
-        "current": 2374,
-        "1y": null,
+        "current": 2372,
+        "1y": 1997,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3823,7 +4548,7 @@
       },
       "marketCapsUsd": {
         "current": 6812236806.682983,
-        "1y": null,
+        "1y": 8978278723.5,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3831,7 +4556,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3845,14 +4570,24 @@
         "providerTicker": "STJ.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 8978278723.5,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "St. James Place Capital",
+          "providerTicker": "STJPF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "standard-chartered": {
       "companyName": "Standard Chartered PLC",
       "ticker": "STAN.L",
       "ranks": {
-        "current": 379,
-        "1y": null,
+        "current": 377,
+        "1y": 465,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3860,7 +4595,7 @@
       },
       "marketCapsUsd": {
         "current": 63154287320.26798,
-        "1y": null,
+        "1y": 47126991692.20381,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3868,7 +4603,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3882,6 +4617,16 @@
         "providerTicker": "STAN.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 47126991692.20381,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Standard Chartered",
+          "providerTicker": "SCBFF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "taylor-wimpey": {
@@ -3917,8 +4662,8 @@
       "companyName": "Tesco PLC",
       "ticker": "TSCO.L",
       "ranks": {
-        "current": 619,
-        "1y": null,
+        "current": 617,
+        "1y": 552,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3926,7 +4671,7 @@
       },
       "marketCapsUsd": {
         "current": 38714392615.600746,
-        "1y": null,
+        "1y": 39592445997.06917,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3934,7 +4679,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3948,6 +4693,16 @@
         "providerTicker": "TSCO.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 39592445997.06917,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Tesco",
+          "providerTicker": "TSCDY",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "unite": {
@@ -3983,8 +4738,8 @@
       "companyName": "United Utilities Group PLC",
       "ticker": "UU.L",
       "ranks": {
-        "current": 1415,
-        "1y": null,
+        "current": 1413,
+        "1y": 1749,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -3992,7 +4747,7 @@
       },
       "marketCapsUsd": {
         "current": 13950174472.279144,
-        "1y": null,
+        "1y": 10726104502.996254,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -4000,7 +4755,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -4014,14 +4769,24 @@
         "providerTicker": "UU.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 10726104502.996254,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "UNITED UTILITIES",
+          "providerTicker": "UUGWF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "vodafone": {
       "companyName": "Vodafone Group PLC",
       "ticker": "VOD.L",
       "ranks": {
-        "current": 616,
-        "1y": null,
+        "current": 614,
+        "1y": 785,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -4029,7 +4794,7 @@
       },
       "marketCapsUsd": {
         "current": 38930890510.74355,
-        "1y": null,
+        "1y": 28059401051.757267,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -4037,7 +4802,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -4051,14 +4816,24 @@
         "providerTicker": "VOD.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 28059401051.757267,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Vodafone",
+          "providerTicker": "VODPF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "weir": {
       "companyName": "Weir Group PLC",
       "ticker": "WEIR.L",
       "ranks": {
-        "current": 1983,
-        "1y": null,
+        "current": 1981,
+        "1y": 1830,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -4066,7 +4841,7 @@
       },
       "marketCapsUsd": {
         "current": 8876566370.588314,
-        "1y": null,
+        "1y": 10149377117.978989,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -4074,7 +4849,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -4088,14 +4863,24 @@
         "providerTicker": "WEIR.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 10149377117.978989,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Weir",
+          "providerTicker": "WEGRY",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "whitbread": {
       "companyName": "Whitbread PLC",
       "ticker": "WTB.L",
       "ranks": {
-        "current": 2739,
-        "1y": null,
+        "current": 2737,
+        "1y": 2200,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -4103,7 +4888,7 @@
       },
       "marketCapsUsd": {
         "current": 5404738574.8459015,
-        "1y": null,
+        "1y": 7855945938.520386,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -4111,7 +4896,7 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
@@ -4125,6 +4910,16 @@
         "providerTicker": "WTB.L",
         "observedAt": "2026-10-03T00:00:07",
         "matchMethod": "verified-name-and-listing"
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 7855945938.520386,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Whitbread",
+          "providerTicker": "WTBCF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "wpp": {
@@ -4168,8 +4963,8 @@
         "matchMethod": "verified-name-and-listing"
       },
       "ranks": {
-        "current": 1796,
-        "1y": null,
+        "current": 1794,
+        "1y": 2405,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -4177,7 +4972,7 @@
       },
       "marketCapsUsd": {
         "current": 10216118428.80123,
-        "1y": null,
+        "1y": 6901670538.073283,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -4185,11 +4980,21 @@
       },
       "marketCapDates": {
         "current": "2026-10-01",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
         "10y": null
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 6901670538.073283,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Polar Capital Technology Trust",
+          "providerTicker": "PCT.L",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "computacenter": {
@@ -4204,8 +5009,8 @@
         "matchMethod": "verified-name-and-listing"
       },
       "ranks": {
-        "current": 2226,
-        "1y": null,
+        "current": 2224,
+        "1y": 3414,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -4213,7 +5018,7 @@
       },
       "marketCapsUsd": {
         "current": 7517490906.904014,
-        "1y": null,
+        "1y": 3881032540.0275507,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -4221,11 +5026,21 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
         "10y": null
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 3881032540.0275507,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Computacenter",
+          "providerTicker": "CCC.L",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "investec": {
@@ -4241,11 +5056,11 @@
         "nativeMarketCap": 3791032064,
         "nativeCurrency": "GBP",
         "fxRate": 1.3240473,
-        "fxObservedAt": "2026-10-02T21:29:05+00:00"
+        "fxObservedAt": "2026-10-02T21:29:47+00:00"
       },
       "ranks": {
-        "current": 2856,
-        "1y": null,
+        "current": 2854,
+        "1y": 3018,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -4253,7 +5068,7 @@
       },
       "marketCapsUsd": {
         "current": 5019505768.552627,
-        "1y": null,
+        "1y": 4807593120.014823,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -4261,11 +5076,21 @@
       },
       "marketCapDates": {
         "current": "2026-10-02",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
         "10y": null
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 4807593120.014823,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Investec",
+          "providerTicker": "IVTJF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "burberry": {
@@ -4280,8 +5105,8 @@
         "matchMethod": "verified-name-and-listing"
       },
       "ranks": {
-        "current": 2932,
-        "1y": null,
+        "current": 2930,
+        "1y": 2672,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -4289,7 +5114,7 @@
       },
       "marketCapsUsd": {
         "current": 4818499013.243751,
-        "1y": null,
+        "1y": 5909243999.736528,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -4297,11 +5122,21 @@
       },
       "marketCapDates": {
         "current": "2026-10-02",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
         "10y": null
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 5909243999.736528,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Burberry",
+          "providerTicker": "BURBY",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "ig-group": {
@@ -4316,8 +5151,8 @@
         "matchMethod": "verified-name-and-listing"
       },
       "ranks": {
-        "current": 2618,
-        "1y": null,
+        "current": 2616,
+        "1y": 2964,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -4325,7 +5160,7 @@
       },
       "marketCapsUsd": {
         "current": 5788271407.1970825,
-        "1y": null,
+        "1y": 4967614994.25,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -4333,11 +5168,21 @@
       },
       "marketCapDates": {
         "current": "2026-10-01",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
         "10y": null
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 4967614994.25,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "IG",
+          "providerTicker": "IGGHY",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "tritax-big-box": {
@@ -4352,8 +5197,8 @@
         "matchMethod": "verified-name-and-listing"
       },
       "ranks": {
-        "current": 2712,
-        "1y": null,
+        "current": 2710,
+        "1y": 2985,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -4361,7 +5206,7 @@
       },
       "marketCapsUsd": {
         "current": 5463376983.740851,
-        "1y": null,
+        "1y": 4906783286.475718,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -4369,11 +5214,21 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
         "10y": null
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 4906783286.475718,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Tritax Big Box REIT",
+          "providerTicker": "BBOX.L",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "aberdeen-group": {
@@ -4388,8 +5243,8 @@
         "matchMethod": "verified-name-and-listing"
       },
       "ranks": {
-        "current": 2621,
-        "1y": null,
+        "current": 2619,
+        "1y": 3008,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -4397,7 +5252,7 @@
       },
       "marketCapsUsd": {
         "current": 5772260762.651751,
-        "1y": null,
+        "1y": 4828201286.169102,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -4405,11 +5260,21 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
         "10y": null
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 4828201286.169102,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "ABRDN",
+          "providerTicker": "SLFPF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "coca-cola-europacific-partners": {
@@ -4424,8 +5289,8 @@
         "matchMethod": "verified-name-and-listing"
       },
       "ranks": {
-        "current": 533,
-        "1y": null,
+        "current": 531,
+        "1y": 558,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -4433,7 +5298,7 @@
       },
       "marketCapsUsd": {
         "current": 44726632556.88131,
-        "1y": null,
+        "1y": 39318839519.42435,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -4441,11 +5306,21 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
         "10y": null
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 39318839519.42435,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Coca-Cola Europacific Partners",
+          "providerTicker": "CCEP.L",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "metlen-energy-metals": {
@@ -4460,8 +5335,8 @@
         "matchMethod": "verified-name-and-listing"
       },
       "ranks": {
-        "current": 2157,
-        "1y": null,
+        "current": 2155,
+        "1y": 2196,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -4469,7 +5344,7 @@
       },
       "marketCapsUsd": {
         "current": 7877620083.232205,
-        "1y": null,
+        "1y": 7873332819.373989,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -4477,11 +5352,21 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
         "10y": null
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 7873332819.373989,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Metlen Energy & Metals",
+          "providerTicker": "MTLN.L",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "lion-finance-group": {
@@ -4496,8 +5381,8 @@
         "matchMethod": "verified-name-and-listing"
       },
       "ranks": {
-        "current": 2218,
-        "1y": null,
+        "current": 2216,
+        "1y": 3112,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -4505,7 +5390,7 @@
       },
       "marketCapsUsd": {
         "current": 7560309678.053069,
-        "1y": null,
+        "1y": 4562614302.376404,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -4513,11 +5398,21 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
         "10y": null
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 4562614302.376404,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "BANK OF GEORGIA",
+          "providerTicker": "BDGSF",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     },
     "babcock-international": {
@@ -4532,8 +5427,8 @@
         "matchMethod": "verified-name-and-listing"
       },
       "ranks": {
-        "current": 2570,
-        "1y": null,
+        "current": 2568,
+        "1y": 2013,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -4541,7 +5436,7 @@
       },
       "marketCapsUsd": {
         "current": 5983282903.366656,
-        "1y": null,
+        "1y": 8854238127.040037,
         "2y": null,
         "3y": null,
         "5y": null,
@@ -4549,11 +5444,21 @@
       },
       "marketCapDates": {
         "current": "2026-10-03",
-        "1y": null,
+        "1y": "2025-10-03",
         "2y": null,
         "3y": null,
         "5y": null,
         "10y": null
+      },
+      "historicalEvidence": {
+        "1y": {
+          "marketCapUsd": 8854238127.040037,
+          "observedAt": "2025-10-03T21:00:00",
+          "source": "https://assetmarketcap.com/data/history/2025-10-03",
+          "providerName": "Babcock",
+          "providerTicker": "BCKIY",
+          "matchMethod": "verified-historical-issuer"
+        }
       }
     }
   },
@@ -7480,7 +8385,10 @@
     }
   },
   "currentSource": "AssetMarketCap / Yahoo Finance",
-  "rankHistoryComparable": false,
-  "universeCount": 19807,
-  "sourceAsOf": "2026-10-03T07:37:31.357804Z"
+  "rankHistoryComparable": true,
+  "universeCount": 19805,
+  "sourceAsOf": "2026-10-03T12:38:04.197786Z",
+  "historicalUniverseCount": {
+    "1y": 22644
+  }
 }
