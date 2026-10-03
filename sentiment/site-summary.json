@@ -3,7 +3,7 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-10-03T15:11:51.323203Z",
+  "generatedAt": "2026-10-03T16:54:58.260382Z",
   "asOfDate": "2026-10-02",
   "companyCount": 100,
   "companies": {
@@ -2123,54 +2123,22 @@
       "ticker": "IGG.L",
       "slug": "ig-group",
       "date": "2026-10-02",
-      "dailyScore": 22.8,
-      "dailyLabel": "Very negative",
-      "rollingScore": 40.8,
-      "confidence": 69.7,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "storyCount": 63,
-      "sourceCount": 41,
-      "changeFromPreviousScoredDay": -14.8,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 47.5,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "trading_update",
+          "type": "no_coverage",
           "direction": "neutral",
-          "severity": "medium",
-          "status": "confirmed"
-        },
-        {
-          "type": "profit_warning",
-          "direction": "negative",
-          "severity": "critical",
-          "status": "possible"
-        },
-        {
-          "type": "guidance_cut",
-          "direction": "negative",
-          "severity": "high",
-          "status": "confirmed"
-        },
-        {
-          "type": "sentiment_drop",
-          "direction": "negative",
-          "severity": "high",
+          "severity": "low",
           "status": "calculated",
-          "detail": "Daily score decreased by 14.8 points"
-        },
-        {
-          "type": "bad_press",
-          "direction": "negative",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "Daily press score is 22.8"
-        },
-        {
-          "type": "collection_degraded",
-          "direction": "neutral",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "The provider result ceiling was reached for this day"
+          "detail": "Collection succeeded but found no eligible coverage"
         }
       ]
     },
