@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T02:11:11.595527Z",
+  "generatedAt": "2026-10-03T02:23:53.472010Z",
   "company": {
     "companyName": "NatWest Group PLC",
     "ticker": "NWG.L",
@@ -941,7 +941,7 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 4,
+    "reportCount": 5,
     "reports": [
       {
         "year": 2020,
@@ -1014,6 +1014,79 @@
           }
         ],
         "positivityScore": 19.4,
+        "positivityMethod": "lexical annual-report tone"
+      },
+      {
+        "year": 2022,
+        "title": "AnnualReports.com archive PDF",
+        "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/n/NYSE_NWG_2022.pdf",
+        "sourceUrl": "https://www.annualreports.com/Company/natwest-group-plc",
+        "wordCount": 278041,
+        "pageCount": 221,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 10,
+            "per10kWords": 0.36
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 14,
+            "per10kWords": 0.504
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 12,
+            "per10kWords": 0.432
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 537,
+            "per10kWords": 19.314
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 103,
+            "per10kWords": 3.704
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 43,
+            "per10kWords": 1.547
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 2,
+            "per10kWords": 0.072
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 1,
+            "per10kWords": 0.036
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 29,
+            "per10kWords": 1.043
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 3,
+            "per10kWords": 0.108
+          }
+        ],
+        "positivityScore": 21.5,
         "positivityMethod": "lexical annual-report tone"
       },
       {
@@ -1320,6 +1393,15 @@
       "type": "annual_report",
       "title": "Annual Report",
       "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000019594/NI-000019594.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
+    {
+      "date": "2022-12-31",
+      "type": "annual_report",
+      "title": "AnnualReports.com archive PDF",
+      "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/n/NYSE_NWG_2022.pdf",
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true

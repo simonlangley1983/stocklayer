@@ -2532,16 +2532,11 @@
     },
     "natwest:2022": {
       "candidateHash": "6131a45c47f034fb0c0b0339333dae511a741eb419c1f90f50c7a12d07115a39",
-      "attemptCount": 3,
-      "lastAttempt": "2026-09-28T23:19:13.513263+00:00",
-      "status": "extraction_failed",
-      "retryAfter": "2026-09-29T23:19:13.513263+00:00",
-      "diagnostics": [
-        {
-          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/n/NYSE_NWG_2022.pdf",
-          "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-        }
-      ]
+      "attemptCount": 4,
+      "lastAttempt": "2026-10-03T02:23:53.235183+00:00",
+      "status": "extracted",
+      "retryAfter": "2026-10-05T02:23:53.235183+00:00",
+      "diagnostics": []
     },
     "natwest:2021": {
       "candidateHash": "bd310d6beaad830de3d0bb5540770119c39e18abd4037b4f273487f35754a234",
@@ -2826,5 +2821,5 @@
       "attemptCount": 1
     }
   },
-  "consecutiveNoProgress": 2
+  "consecutiveNoProgress": 0
 }
