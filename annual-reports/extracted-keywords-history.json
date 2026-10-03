@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T00:08:13.065621+00:00",
+  "generated_at": "2026-10-03T00:08:24.746611+00:00",
   "source_index": "annual-reports/reports-index.json",
   "source_index_generated_at": "2026-09-11T21:15:50.158616+00:00",
   "methodology": {
@@ -19,8 +19,8 @@
       "data_center_mentions": "\\bdata[\\s-]+cent(?:er|re)s?\\b"
     }
   },
-  "group_count": 652,
-  "extracted_count": 652,
+  "group_count": 653,
+  "extracted_count": 653,
   "failed_count": 0,
   "reports": [
     {
@@ -17175,6 +17175,39 @@
       "tone_positivity_score": 45.0,
       "tone_method": "disclosed financial-language lexical balance over extracted full-report text",
       "attempts": []
+    },
+    {
+      "company_name": "Smith+Nephew",
+      "ticker": "SN.L",
+      "company_slug": "smith-and-nephew",
+      "report_year": 2024,
+      "index_group_year": 2024,
+      "report_title": "Smith+Nephew Annual Report 2024",
+      "report_url": "https://cdn.financialreports.eu/financialreports/media/filings/4588/2025/10-K/4588_10-k_2025-03-10_cd8f033b-5cc5-45a4-be70-e47aba10ebac.pdf",
+      "report_source_url": "https://www.sec.gov/Archives/edgar/data/845982/000155837025002553/tmb-20250310x6k.htm",
+      "report_data_status": "extracted",
+      "document_format": "pdf",
+      "page_count": 292,
+      "source_sha256": "7dcc38fd99e0395bbbc7513edb14a9ffbe0a8d5e3a8ca9b2101c43698dce1bde",
+      "extracted_word_count": 160522,
+      "keyword_count_method": "case-insensitive keyword-family regex over extracted full-report text",
+      "ai_mentions": 76,
+      "cloud_mentions": 0,
+      "cybersecurity_mentions": 52,
+      "regulation_mentions": 241,
+      "competition_mentions": 96,
+      "supply_chain_mentions": 49,
+      "china_mentions": 73,
+      "margin_pressure_mentions": 1,
+      "restructuring_mentions": 56,
+      "data_center_mentions": 0,
+      "positive_tone_mentions": 1075,
+      "negative_tone_mentions": 1189,
+      "tone_positivity_score": 47.5,
+      "tone_method": "disclosed financial-language lexical balance over extracted full-report text",
+      "attempts": [],
+      "year_verification": "Cover states Annual Report 2024; SEC filing confirms fiscal year 2024 report sent on 10 March 2025. Archive filename uses publication date.",
+      "filename_inferred_year": 2025
     },
     {
       "company_name": "Smith & Nephew PLC",
