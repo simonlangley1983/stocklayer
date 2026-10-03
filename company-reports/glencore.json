@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T00:22:15.109879Z",
+  "generatedAt": "2026-10-03T02:11:11.595527Z",
   "company": {
     "companyName": "Glencore",
     "ticker": "GLEN.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-10-01",
-    "observationCount": 91,
-    "scoredDayCount": 75,
-    "latestScore": 61.6,
-    "latestScoreDate": "2026-10-01",
+    "periodEnd": "2026-10-02",
+    "observationCount": 92,
+    "scoredDayCount": 76,
+    "latestScore": 76.6,
+    "latestScoreDate": "2026-10-02",
     "series": [
       {
         "date": "2026-06-30",
@@ -844,6 +844,15 @@
         "sourceCount": 7,
         "confidence": 77.4,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-02",
+        "dailyScore": 76.6,
+        "rollingScore": 59.9,
+        "storyCount": 39,
+        "sourceCount": 32,
+        "confidence": 91.7,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1511,17 +1520,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 41.5,
+    "score": 41.9,
     "label": "Low",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 49.9,
+        "score": 50.8,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 73 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 74 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1708,6 +1717,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "585c6831454d0009a4f2",
+      "type": "clinical",
+      "title": "Glencore Wins Key Investment Approval for Argentine MARA Copper Project",
+      "date": "2026-10-02",
+      "status": "pending_review",
+      "reviewDate": "2027-03-31",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNMGpBenRCeVdxaDdua3UzekhtWFYtNU5fVGtSQWdpZ3BxQzl2OG1zM2FjYlVDZlNJS0tOY0tlT09uNktFaEZWV2gxRVJrLXJLWHBsMjZIWkFKX2VUel9idUFSempHUFpyVjRDSUxXMlc2cXk5ZkRJUDg1bUZxRllGdUFsblg2N0NuUktYNTR5Z2VKak45MWNJWjY1VjlfcHF6WjNoVndvVHpQaktVaWRPbGhXb3RNSXRJaVhpdktCbEI?oc=5",
+          "publisher": "tipranks.com",
+          "date": "2026-10-02"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "657b28c0a71306f043af",
       "type": "clinical",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T00:22:15.109879Z",
+  "generatedAt": "2026-10-03T02:11:11.595527Z",
   "company": {
     "companyName": "London Stock Exchange Group",
     "ticker": "LSEG.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-05",
-    "periodEnd": "2026-10-01",
-    "observationCount": 83,
-    "scoredDayCount": 62,
-    "latestScore": 53.7,
-    "latestScoreDate": "2026-10-01",
+    "periodEnd": "2026-10-02",
+    "observationCount": 84,
+    "scoredDayCount": 63,
+    "latestScore": 49.6,
+    "latestScoreDate": "2026-10-02",
     "series": [
       {
         "date": "2026-07-05",
@@ -772,6 +772,15 @@
         "sourceCount": 9,
         "confidence": 79.9,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-02",
+        "dailyScore": 49.6,
+        "rollingScore": 53.6,
+        "storyCount": 3,
+        "sourceCount": 4,
+        "confidence": 48.5,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1366,17 +1375,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 55.3,
+    "score": 55.2,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 54.2,
+        "score": 54.1,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 61 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 62 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",

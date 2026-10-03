@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T00:22:15.109879Z",
+  "generatedAt": "2026-10-03T02:11:11.595527Z",
   "company": {
     "companyName": "Lloyds Banking Group",
     "ticker": "LLOY.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-10",
-    "periodEnd": "2026-10-01",
-    "observationCount": 81,
-    "scoredDayCount": 75,
-    "latestScore": 55.8,
-    "latestScoreDate": "2026-10-01",
+    "periodEnd": "2026-10-02",
+    "observationCount": 82,
+    "scoredDayCount": 76,
+    "latestScore": 54.6,
+    "latestScoreDate": "2026-10-02",
     "series": [
       {
         "date": "2026-07-10",
@@ -754,6 +754,15 @@
         "sourceCount": 10,
         "confidence": 80.7,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-02",
+        "dailyScore": 54.6,
+        "rollingScore": 50.9,
+        "storyCount": 7,
+        "sourceCount": 7,
+        "confidence": 72.0,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1421,17 +1430,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 53.3,
+    "score": 53.4,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 48.8,
+        "score": 49.0,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 75 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 76 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "themes",
@@ -1610,6 +1619,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "cdec4fe89e010b5c6460",
+      "type": "regulatory_legal",
+      "title": "Visa and Lloyds Bank Complete Live Stablecoin Settlement Pilot, Moving $750,000 Across Borders",
+      "date": "2026-10-02",
+      "status": "pending_review",
+      "reviewDate": "2027-03-31",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQUnF1cHRXUUw4dTNlM2NiUWpkSmhtQTVxWEd4cFNwaW1iYV80WGpFaDh6eDRRVUZ1RzU5WlYzM2U1V2dkNUtBSnAtSk9YYWdOU2R5ZFowVTlwY2NIMWQ2MmU3TkhBQ1hLT2F4VzN2YmJWVDl5anN5TGtHZTdaZEp5WmNYa0pISFp6MFVyLTI3UHVsYkYzUHh2NUFZYlVuM05BcUdXV3dPVDBOZUZHX3NJSGtTSHBjdnNaS2gta21JNDFPRE5jemwydnZlWjRyQ0Etd0d4UGxCSQ?oc=5",
+          "publisher": "crowdfundinsider.com",
+          "date": "2026-10-02"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "c55282064e2e64e53922",
       "type": "regulatory_legal",

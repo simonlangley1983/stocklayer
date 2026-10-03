@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T00:22:15.109879Z",
+  "generatedAt": "2026-10-03T02:11:11.595527Z",
   "company": {
     "companyName": "BP",
     "ticker": "BP.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-14",
-    "periodEnd": "2026-10-01",
-    "observationCount": 87,
-    "scoredDayCount": 26,
-    "latestScore": 55.4,
-    "latestScoreDate": "2026-10-01",
+    "periodEnd": "2026-10-02",
+    "observationCount": 88,
+    "scoredDayCount": 27,
+    "latestScore": 65.3,
+    "latestScoreDate": "2026-10-02",
     "series": [
       {
         "date": "2026-06-14",
@@ -808,6 +808,15 @@
         "sourceCount": 2,
         "confidence": 32.6,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-02",
+        "dailyScore": 65.3,
+        "rollingScore": 55.7,
+        "storyCount": 6,
+        "sourceCount": 6,
+        "confidence": 55.7,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1183,17 +1192,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 43.9,
+    "score": 44.2,
     "label": "Mixed",
     "evidenceCoverage": 92,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.9,
+        "score": 52.8,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 26 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 27 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1344,6 +1353,46 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "e4a3b93438ef6b05b5ce",
+      "type": "clinical",
+      "title": "Namibia: Eco (Atlantic) Oil & Gas receives final Ministerial approval for Namibia Licences farm-down to BP",
+      "date": "2026-10-02",
+      "status": "pending_review",
+      "reviewDate": "2027-03-31",
+      "direction": "Positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQWF9PdEN4Yk1nZlNzdDF3TXcxbDVtdVJ5Z2VtU3lZTTZaNk1FQUJFdDhlTV83WUZzUVhaRUN0Z2swUTdiY0xZZDUyR0xZanU5UHhTOWVvMTNSeGVnbjRUN2lyVjRkS0JyNkstbGJzTFhON2JPbUdHai1aWVZDNmFUVXN3eTN2S2VqNmlhbjdGR0R4cGZDdWV1SDVselByRmdScHA5Rk83bkc1WTlOUk4xN3gtR242MTlZNUhFYjNVUmtDWkxMbGp0TkdBMmJWLXpYUGFZdGIwaw?oc=5",
+          "publisher": "megaproject.com",
+          "date": "2026-10-02"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
+    {
+      "id": "25722bad7ef2b802d086",
+      "type": "clinical",
+      "title": "Eco (Atlantic) Oil & Gas Wins Approval for Namibian Licenses Farm-down to BP",
+      "date": "2026-10-02",
+      "status": "pending_review",
+      "reviewDate": "2027-03-31",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPQ01xdVhCVHZTUnc2eVdYcVpJS0JpTkEwbnlIaUZZcEkySEd2a3Jpb1UxUFJVdWliaXdTcEQ4M1pWaVdYb3NZVE1PdUtxSEtTbzY2cDk5N2lXdGpFMV9xc05DMXc1RmtRdDQzN3lYVUJlb3hIODJVVnVnbUQtM3NQQURPWjh6NTdLX2FNVjdsNF9uUmlGOU8yaE9DV0RtTWdneDVkaDZ2NXpaeHBHUHMtRzVZRjBkaUVqR3E0TEtUSVpmY1E?oc=5",
+          "publisher": "marketscreener.com",
+          "date": "2026-10-02"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "31d825e189b98016f45a",
       "type": "acquisition",
