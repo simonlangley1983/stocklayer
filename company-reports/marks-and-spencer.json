@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T07:36:10.659500Z",
+  "generatedAt": "2026-10-03T07:45:39.440841Z",
   "company": {
     "companyName": "Marks & Spencer Group PLC",
     "ticker": "MKS.L",
@@ -860,8 +860,81 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 5,
+    "reportCount": 7,
     "reports": [
+      {
+        "year": 2020,
+        "title": "Marks and Spencer Annual Report 2020",
+        "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/m/OTC_MAKSF_2020.pdf",
+        "sourceUrl": "https://www.annualreports.com/HostedData/AnnualReportArchive/m/OTC_MAKSF_2020.pdf",
+        "wordCount": 148295,
+        "pageCount": 204,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 1,
+            "per10kWords": 0.067
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 4,
+            "per10kWords": 0.27
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 52,
+            "per10kWords": 3.507
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 28,
+            "per10kWords": 1.888
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 64,
+            "per10kWords": 4.316
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 12,
+            "per10kWords": 0.809
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 15,
+            "per10kWords": 1.011
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 34.8,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2021,
         "title": "Annual Report:",
@@ -933,6 +1006,79 @@
           }
         ],
         "positivityScore": 38.3,
+        "positivityMethod": "lexical annual-report tone"
+      },
+      {
+        "year": 2022,
+        "title": "Marks and Spencer Annual Report 2022",
+        "url": "https://corporate.marksandspencer.com/sites/marksandspencer/files/Annual%20reports/m-and-s_ar22_full-ar.pdf",
+        "sourceUrl": "https://corporate.marksandspencer.com/sites/marksandspencer/files/Annual%20reports/m-and-s_ar22_full-ar.pdf",
+        "wordCount": 149656,
+        "pageCount": 216,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 3,
+            "per10kWords": 0.2
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 4,
+            "per10kWords": 0.267
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 3,
+            "per10kWords": 0.2
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 60,
+            "per10kWords": 4.009
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 23,
+            "per10kWords": 1.537
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 57,
+            "per10kWords": 3.809
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 5,
+            "per10kWords": 0.334
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 21,
+            "per10kWords": 1.403
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 38.7,
         "positivityMethod": "lexical annual-report tone"
       },
       {
@@ -1308,10 +1454,28 @@
   },
   "events": [
     {
+      "date": "2020-12-31",
+      "type": "annual_report",
+      "title": "Marks and Spencer Annual Report 2020",
+      "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/m/OTC_MAKSF_2020.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
+    {
       "date": "2021-12-31",
       "type": "annual_report",
       "title": "Annual Report:",
       "url": "https://corporate.marksandspencer.com/sites/marksandspencer/files/2023-01/M%26S_AR21_Full_210601.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
+    {
+      "date": "2022-12-31",
+      "type": "annual_report",
+      "title": "Marks and Spencer Annual Report 2022",
+      "url": "https://corporate.marksandspencer.com/sites/marksandspencer/files/Annual%20reports/m-and-s_ar22_full-ar.pdf",
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
