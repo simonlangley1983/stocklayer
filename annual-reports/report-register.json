@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T05:36:31.459135+00:00",
+  "generatedAt": "2026-10-03T07:42:53.265438+00:00",
   "companyCount": 100,
   "verifiedCurrentCount": 16,
   "companies": {
@@ -5678,6 +5678,12 @@
           "url": "https://library.standardlife.co.uk/annual-report-and-accounts-2025-spread.pdf",
           "sha256": "713660946075b64d5b3bae9b3f929b136504318d55449640f6786bdc2dffe379",
           "extractionStatus": "extracted"
+        },
+        {
+          "year": 2020,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/P/LSE_PHNX_2020.pdf",
+          "sha256": "e6e257485446d66d6adc85ca253455c3350aa997f3a973eb31e26641029a1d56",
+          "extractionStatus": "extracted"
         }
       ],
       "pendingCandidates": [],
@@ -5700,16 +5706,11 @@
         },
         "phoenix:2020": {
           "candidateHash": "fabf18ea52950c18e668a980070c9fc797c8d57b0795057f1bd04b4a0c0ab1cf",
-          "attemptCount": 3,
-          "lastAttempt": "2026-09-28T23:19:53.787558+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-09-29T23:19:53.787558+00:00",
-          "diagnostics": [
-            {
-              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/P/LSE_PHNX_2020.pdf",
-              "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 20002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-            }
-          ]
+          "attemptCount": 4,
+          "lastAttempt": "2026-10-03T07:42:53.265438+00:00",
+          "status": "extracted",
+          "diagnostics": [],
+          "verifiedSourceUrl": "https://www.annualreports.com/HostedData/AnnualReportArchive/P/LSE_PHNX_2020.pdf"
         }
       }
     },
