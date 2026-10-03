@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T07:42:53.265438+00:00",
+  "generatedAt": "2026-10-03T07:43:03.488070+00:00",
   "companyCount": 100,
   "verifiedCurrentCount": 16,
   "companies": {
@@ -532,6 +532,12 @@
           "url": "https://www.bp.com/api/files/6cqieuqhq4no/master/33M2iHp8A6d07McKzKqLNP/12b5d4eccb4e02093d1ad9efc0d6a746/bp-annual-report-and-form-20f-2025.pdf",
           "sha256": "bbe4e34edda665ed3d5d84291b79d13118e31ca1355e794a43f11fd50ab8a237",
           "extractionStatus": "extracted"
+        },
+        {
+          "year": 2021,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BP_2021.pdf",
+          "sha256": "52bb30cd6463cde40c8acb39c4a3ff953b99e5a3d54edd1527fe71bdc07d9cae",
+          "extractionStatus": "extracted"
         }
       ],
       "pendingCandidates": [],
@@ -580,16 +586,11 @@
         },
         "bp:2021": {
           "candidateHash": "ad1538eace1daca2b404986edbaa406a5cd88a14a531202b8b37115a3932751f",
-          "attemptCount": 4,
-          "lastAttempt": "2026-09-29T12:55:03.509386+00:00",
-          "status": "extraction_failed",
-          "retryAfter": "2026-10-01T12:55:03.509386+00:00",
-          "diagnostics": [
-            {
-              "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BP_2021.pdf",
-              "error": "HTTPError: HTTP Error 429: "
-            }
-          ]
+          "attemptCount": 5,
+          "lastAttempt": "2026-10-03T07:43:03.488070+00:00",
+          "status": "extracted",
+          "diagnostics": [],
+          "verifiedSourceUrl": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BP_2021.pdf"
         }
       }
     },
