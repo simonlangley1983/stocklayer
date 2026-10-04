@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T05:50:02.920414Z",
+  "generatedAt": "2026-10-04T06:47:35.806803Z",
   "company": {
     "companyName": "Endeavour Mining PLC",
     "ticker": "EDV.L",
@@ -860,8 +860,81 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 5,
+    "reportCount": 6,
     "reports": [
+      {
+        "year": 2020,
+        "title": "Endeavour Mining 2020 Integrated Management Discussion & Analysis and Audited Financial Statements",
+        "url": "https://edv-14806-s3.s3.eu-west-2.amazonaws.com/files/6317/1949/2065/edv-integrated-fs-and-mda-q4-2020-vdef.pdf",
+        "sourceUrl": "https://www.endeavourmining.com/investors/results-and-reporting/",
+        "wordCount": 53364,
+        "pageCount": 112,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 1,
+            "per10kWords": 0.187
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 2,
+            "per10kWords": 0.375
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 16,
+            "per10kWords": 2.998
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 5,
+            "per10kWords": 0.937
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 7,
+            "per10kWords": 1.312
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 0,
+            "per10kWords": 0.0
+          }
+        ],
+        "positivityScore": 10.7,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2021,
         "title": "Endeavour Mining Annual Report 2021",
@@ -1307,6 +1380,15 @@
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2020-12-31",
+      "type": "annual_report",
+      "title": "Endeavour Mining 2020 Integrated Management Discussion & Analysis and Audited Financial Statements",
+      "url": "https://edv-14806-s3.s3.eu-west-2.amazonaws.com/files/6317/1949/2065/edv-integrated-fs-and-mda-q4-2020-vdef.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2021-12-31",
       "type": "annual_report",

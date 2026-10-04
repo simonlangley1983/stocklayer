@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T05:50:02.920414Z",
+  "generatedAt": "2026-10-04T06:47:35.806803Z",
   "company": {
     "companyName": "Computacenter PLC",
     "ticker": "CCC.L",
@@ -473,8 +473,81 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 4,
+    "reportCount": 6,
     "reports": [
+      {
+        "year": 2020,
+        "title": "Computacenter Annual Report 2020",
+        "url": "https://www.annualreports.co.uk/HostedData/AnnualReportArchive/c/LSE_CCC_2020.pdf",
+        "sourceUrl": "https://investors.computacenter.com/results-presentations/annual-interim-reports",
+        "wordCount": 118998,
+        "pageCount": 202,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 4,
+            "per10kWords": 0.336
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 22,
+            "per10kWords": 1.849
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 4,
+            "per10kWords": 0.336
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 56,
+            "per10kWords": 4.706
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 32,
+            "per10kWords": 2.689
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 11,
+            "per10kWords": 0.924
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 6,
+            "per10kWords": 0.504
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 15,
+            "per10kWords": 1.261
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 33,
+            "per10kWords": 2.773
+          }
+        ],
+        "positivityScore": 46.0,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2021,
         "title": "2021 Annual Report and Accounts",
@@ -546,6 +619,79 @@
           }
         ],
         "positivityScore": 46.9,
+        "positivityMethod": "lexical annual-report tone"
+      },
+      {
+        "year": 2022,
+        "title": "Computacenter Annual Report 2022",
+        "url": "https://www.annualreports.co.uk/HostedData/AnnualReportArchive/c/LSE_CCC_2022.pdf",
+        "sourceUrl": "https://investors.computacenter.com/results-presentations/annual-interim-reports",
+        "wordCount": 140784,
+        "pageCount": 216,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 10,
+            "per10kWords": 0.71
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 15,
+            "per10kWords": 1.065
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 57,
+            "per10kWords": 4.049
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 48,
+            "per10kWords": 3.409
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 45,
+            "per10kWords": 3.196
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 5,
+            "per10kWords": 0.355
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 13,
+            "per10kWords": 0.923
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 30,
+            "per10kWords": 2.131
+          }
+        ],
+        "positivityScore": 46.4,
         "positivityMethod": "lexical annual-report tone"
       },
       {
@@ -848,10 +994,28 @@
   },
   "events": [
     {
+      "date": "2020-12-31",
+      "type": "annual_report",
+      "title": "Computacenter Annual Report 2020",
+      "url": "https://www.annualreports.co.uk/HostedData/AnnualReportArchive/c/LSE_CCC_2020.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
+    {
       "date": "2021-12-31",
       "type": "annual_report",
       "title": "2021 Annual Report and Accounts",
       "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000047995/NI-000047995.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
+    {
+      "date": "2022-12-31",
+      "type": "annual_report",
+      "title": "Computacenter Annual Report 2022",
+      "url": "https://www.annualreports.co.uk/HostedData/AnnualReportArchive/c/LSE_CCC_2022.pdf",
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true

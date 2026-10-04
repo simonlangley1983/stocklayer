@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T05:50:02.920414Z",
+  "generatedAt": "2026-10-04T06:47:35.806803Z",
   "company": {
     "companyName": "Lion Finance Group PLC",
     "ticker": "BGEO.L",
@@ -392,7 +392,7 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 7,
+    "reportCount": 8,
     "reports": [
       {
         "year": 2018,
@@ -611,6 +611,79 @@
           }
         ],
         "positivityScore": 27.4,
+        "positivityMethod": "lexical annual-report tone"
+      },
+      {
+        "year": 2021,
+        "title": "Bank of Georgia Annual Report 2021",
+        "url": "https://cdn.association.ge/static/members/banks/documents/ARA2021_for_web.pdf",
+        "sourceUrl": "https://cdn.association.ge/static/members/banks/documents/ARA2021_for_web.pdf",
+        "wordCount": 202524,
+        "pageCount": 384,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 10,
+            "per10kWords": 0.494
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 1,
+            "per10kWords": 0.049
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 9,
+            "per10kWords": 0.444
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 248,
+            "per10kWords": 12.245
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 39,
+            "per10kWords": 1.926
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 8,
+            "per10kWords": 0.395
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 4,
+            "per10kWords": 0.198
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 4,
+            "per10kWords": 0.198
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 1,
+            "per10kWords": 0.049
+          }
+        ],
+        "positivityScore": 29.1,
         "positivityMethod": "lexical annual-report tone"
       },
       {
@@ -1008,6 +1081,15 @@
       "type": "annual_report",
       "title": "Bank-of-Georgia-Group-PLC-Annual-Report-2020.pdf",
       "url": "https://ramad.bog.ge/s3/BogGroup/2022/03/Bank-of-Georgia-Group-PLC-Annual-Report-2020.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
+    {
+      "date": "2021-12-31",
+      "type": "annual_report",
+      "title": "Bank of Georgia Annual Report 2021",
+      "url": "https://cdn.association.ge/static/members/banks/documents/ARA2021_for_web.pdf",
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
