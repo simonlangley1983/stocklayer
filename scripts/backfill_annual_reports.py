@@ -29,7 +29,7 @@ def save(path, value):
     temp.replace(path)
 
 
-def queue_groups(index, companies, existing, state, start_year, end_year, now, fca_only=False):
+def queue_groups(index, companies, existing, state, start_year, end_year, now, fca_only=False, exclusions=None):
     groups = []
     known = {c["slug"]: c for c in companies}
     for slug, indexed in index.get("companies", {}).items():
@@ -58,6 +58,8 @@ def queue_groups(index, companies, existing, state, start_year, end_year, now, f
             if isinstance(year, int) and start_year <= year <= end_year and not is_known_non_report_candidate(candidate):
                 by_year.setdefault(year, []).append(candidate)
         for year, candidates in by_year.items():
+            if str(year) in (exclusions or {}).get(slug, {}):
+                continue
             key = f"{slug}:{year}"
             if key in existing:
                 continue
@@ -121,6 +123,7 @@ def main():
     if min(args.batch_size, args.workers, args.report_timeout) < 1:
         parser.error("batch size, workers and timeout must be positive")
     directory = ROOT / "annual-reports"
+    exclusions = read(directory / "report-year-exclusions.json", {})
     history_path = directory / "extracted-keywords-history.json"
     history = read(history_path, {"reports": []})
     existing = {}
@@ -137,7 +140,7 @@ def main():
     state = read(state_path, {"attempts": {}})
     now = datetime.now(timezone.utc)
     pending = queue_groups(read(directory / "reports-index.json"), companies, existing,
-                           state["attempts"], args.start_year, args.end_year, now, args.fca_only)
+                           state["attempts"], args.start_year, args.end_year, now, args.fca_only, exclusions)
     if args.latest_only:
         latest = {}
         for record in existing.values():
@@ -190,10 +193,12 @@ def main():
             print(f"{key}: {record.get('report_data_status')}", flush=True)
     target_end = min(args.end_year, datetime.now(timezone.utc).year - 1)
     missing = {c['slug']: [y for y in range(args.start_year, target_end + 1)
-                           if f"{c['slug']}:{y}" not in existing] for c in companies}
+                           if f"{c['slug']}:{y}" not in existing
+                           and str(y) not in exclusions.get(c['slug'], {})] for c in companies}
     summary = {"checkedAt": datetime.now(timezone.utc).isoformat(), "targetStartYear": args.start_year,
                "targetEndYear": target_end, "attempted": len(batch), "recovered": recovered,
                "missingCompanyYears": sum(map(len, missing.values())), "missingYearsByCompany": missing,
+               "notApplicableYearsByCompany": exclusions,
                "note": "Dataset gaps, not proof of publication availability; newer issuers may not have all target years."}
     save(directory / "backfill-progress.json", summary)
     result = {
