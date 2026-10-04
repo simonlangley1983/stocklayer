@@ -5137,24 +5137,24 @@
     },
     {
       "date": "2026-10-03",
-      "dailyScore": 51.1,
+      "dailyScore": 50.6,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.8,
-      "confidence": 24.0,
+      "rollingScore": 49.7,
+      "confidence": 36.6,
       "confidenceBand": "low",
       "coverageStatus": "ok",
       "collectionCompleteness": 0.75,
-      "candidateCount": 26,
-      "eligibleArticleCount": 2,
-      "storyCount": 2,
-      "effectiveStoryCount": 2.0,
-      "sourceCount": 2,
+      "candidateCount": 28,
+      "eligibleArticleCount": 3,
+      "storyCount": 3,
+      "effectiveStoryCount": 3.0,
+      "sourceCount": 3,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 2,
+      "neutralStoryCount": 3,
       "negativeStoryCount": 0,
-      "dispersion": 0.0394,
+      "dispersion": 0.0492,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 19,
+        "ambiguous_company_without_alias": 20,
         "missing_company_alias": 5
       },
       "topStories": [
@@ -5166,6 +5166,17 @@
           "source": "hellorayo.co.uk",
           "publishedAt": "2026-10-02T23:41:31Z",
           "polarity": 0.0854,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "e3841aca16fde775",
+          "storyClusterId": "story-003",
+          "title": "Barclays PLC (BCS) Stock Price, News, Quote & History",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE02bWpoV1h1M2RwNGdzclBoSUNZYmVjbEF6WldaSEs1aUdwOUdpcGkxUnZmQWZaNVVDQk92dTc3QzUtSGZQdHdQWU5falRHOTBR?oc=5",
+          "source": "ca.finance.yahoo.com",
+          "publishedAt": "2026-10-03T18:15:10Z",
+          "polarity": -0.0331,
           "sentiment": "Neutral / mixed",
           "publisherCount": 1
         },
@@ -5187,9 +5198,10 @@
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 24.0",
+          "detail": "Confidence is 36.6",
           "evidenceArticleIds": [
             "8da5f1102e28d765",
+            "e3841aca16fde775",
             "17a6bdbcaf31cdde"
           ]
         },
@@ -5201,11 +5213,12 @@
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
             "8da5f1102e28d765",
+            "e3841aca16fde775",
             "17a6bdbcaf31cdde"
           ]
         }
       ],
-      "changeFromPreviousScoredDay": 7.5
+      "changeFromPreviousScoredDay": 7.0
     }
   ]
 }
