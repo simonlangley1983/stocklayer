@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T01:12:36.070784Z",
+  "generatedAt": "2026-10-04T02:48:46.373813Z",
   "company": {
     "companyName": "Marks & Spencer Group PLC",
     "ticker": "MKS.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-10-02",
-    "observationCount": 81,
-    "scoredDayCount": 70,
-    "latestScore": 50.5,
-    "latestScoreDate": "2026-10-02",
+    "periodEnd": "2026-10-03",
+    "observationCount": 82,
+    "scoredDayCount": 71,
+    "latestScore": 66.4,
+    "latestScoreDate": "2026-10-03",
     "series": [
       {
         "date": "2026-06-30",
@@ -754,6 +754,15 @@
         "sourceCount": 1,
         "confidence": 15.2,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-03",
+        "dailyScore": 66.4,
+        "rollingScore": 52.9,
+        "storyCount": 4,
+        "sourceCount": 4,
+        "confidence": 65.0,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -818,16 +827,6 @@
         "significance": 1.494
       },
       {
-        "date": "2026-09-23",
-        "type": "sentiment_drop",
-        "title": "Harry Corry shuts Kilmarnock store to make way for new Marks & Spencer site",
-        "source": "kilmarnocktoday.co.uk",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPS0p5SEQ2NkFBRjdvMTZaQXBHYk82LXJCS2JGY3kzNXRUd0NFYldaV1pseVRDa2V5bzZEZWhSVlR5QkNhR2ZQb2hCZVppV2ZVdDZ5NS1uRFgyVWNLVjk5X2FxT0prTS1TT3R5OGdyc1VhRjBXTXNJSF91SXFUS1AwS0hySU45NWcwRTN2M21rbi1pUGg4VHFEQlhRRFZvNHZlQ0tIb2dR?oc=5",
-        "direction": "negative",
-        "detail": "Daily score decreased by 12.1 points",
-        "significance": 1.461
-      },
-      {
         "date": "2026-09-27",
         "type": "sentiment_drop",
         "title": "Marks & Spencer shuts down food hall for good in huge blow to historic UK seaside town despite petition from shoppers",
@@ -856,6 +855,16 @@
         "direction": "neutral",
         "detail": "11 stories versus trailing median 3.5",
         "significance": 1.516
+      },
+      {
+        "date": "2026-10-03",
+        "type": "sentiment_jump",
+        "title": "Sparrow Group Receives Top Honor from Marks & Spencer",
+        "source": "businessinbangladesh.com.bd",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQczVPRXo5NjRWbHlxdVZtMnZWcmJGbFpySk1UZm9aS1pQdDNFaU5tcy05c0cwSEdsbnBYdWhfdVZSVDJtaUNWNTM0TE94MjVpbzdfaThUYzNxOFBaR3QzR3pRQVlOZUNUc2JUOHRqSjVJZ0FvQVByTTAzMmJJeGVVTEVqR3dPYWFsS3VNZkNTTnlZQQ?oc=5",
+        "direction": "positive",
+        "detail": "Daily score increased by 15.9 points",
+        "significance": 1.55
       }
     ]
   },
@@ -1421,17 +1430,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 45.7,
+    "score": 45.9,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.4,
+        "score": 51.9,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 69 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 70 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1568,16 +1577,6 @@
       "significance": 1.494
     },
     {
-      "date": "2026-09-23",
-      "type": "sentiment_drop",
-      "title": "Harry Corry shuts Kilmarnock store to make way for new Marks & Spencer site",
-      "source": "kilmarnocktoday.co.uk",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPS0p5SEQ2NkFBRjdvMTZaQXBHYk82LXJCS2JGY3kzNXRUd0NFYldaV1pseVRDa2V5bzZEZWhSVlR5QkNhR2ZQb2hCZVppV2ZVdDZ5NS1uRFgyVWNLVjk5X2FxT0prTS1TT3R5OGdyc1VhRjBXTXNJSF91SXFUS1AwS0hySU45NWcwRTN2M21rbi1pUGg4VHFEQlhRRFZvNHZlQ0tIb2dR?oc=5",
-      "direction": "negative",
-      "detail": "Daily score decreased by 12.1 points",
-      "significance": 1.461
-    },
-    {
       "date": "2026-09-27",
       "type": "sentiment_drop",
       "title": "Marks & Spencer shuts down food hall for good in huge blow to historic UK seaside town despite petition from shoppers",
@@ -1606,6 +1605,16 @@
       "direction": "neutral",
       "detail": "11 stories versus trailing median 3.5",
       "significance": 1.516
+    },
+    {
+      "date": "2026-10-03",
+      "type": "sentiment_jump",
+      "title": "Sparrow Group Receives Top Honor from Marks & Spencer",
+      "source": "businessinbangladesh.com.bd",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQczVPRXo5NjRWbHlxdVZtMnZWcmJGbFpySk1UZm9aS1pQdDNFaU5tcy05c0cwSEdsbnBYdWhfdVZSVDJtaUNWNTM0TE94MjVpbzdfaThUYzNxOFBaR3QzR3pRQVlOZUNUc2JUOHRqSjVJZ0FvQVByTTAzMmJJeGVVTEVqR3dPYWFsS3VNZkNTTnlZQQ?oc=5",
+      "direction": "positive",
+      "detail": "Daily score increased by 15.9 points",
+      "significance": 1.55
     },
     {
       "date": "2026-12-31",

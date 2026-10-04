@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T01:12:36.070784Z",
+  "generatedAt": "2026-10-04T02:48:46.373813Z",
   "company": {
     "companyName": "Aberdeen Group PLC",
     "ticker": "ABDN.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-09-12",
-    "periodEnd": "2026-10-02",
-    "observationCount": 21,
-    "scoredDayCount": 17,
-    "latestScore": 51.6,
-    "latestScoreDate": "2026-10-02",
+    "periodEnd": "2026-10-03",
+    "observationCount": 22,
+    "scoredDayCount": 18,
+    "latestScore": 47.1,
+    "latestScoreDate": "2026-10-03",
     "series": [
       {
         "date": "2026-09-12",
@@ -213,6 +213,15 @@
         "storyCount": 34,
         "sourceCount": 19,
         "confidence": 62.4,
+        "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-03",
+        "dailyScore": 47.1,
+        "rollingScore": 49.4,
+        "storyCount": 24,
+        "sourceCount": 18,
+        "confidence": 60.5,
         "coverageStatus": "ok"
       }
     ],
@@ -808,17 +817,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 47.3,
+    "score": 47.2,
     "label": "Mixed",
-    "evidenceCoverage": 94,
+    "evidenceCoverage": 96,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
         "score": 47.6,
         "weight": 0.4,
-        "reliability": 0.85,
-        "detail": "Recency-weighted average of 17 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.9,
+        "detail": "Recency-weighted average of 18 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
