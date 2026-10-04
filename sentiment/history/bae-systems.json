@@ -6646,6 +6646,90 @@
         }
       ],
       "changeFromPreviousScoredDay": -5.8
+    },
+    {
+      "date": "2026-10-03",
+      "dailyScore": 46.7,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 59.5,
+      "confidence": 56.1,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 5,
+      "eligibleArticleCount": 3,
+      "storyCount": 3,
+      "effectiveStoryCount": 3.0,
+      "sourceCount": 3,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 1,
+      "dispersion": 0.6452,
+      "rejectedCandidateCounts": {
+        "missing_company_alias": 2
+      },
+      "topStories": [
+        {
+          "id": "f5d9dafd7166e33a",
+          "storyClusterId": "story-003",
+          "title": "BAE Systems stock falls 1.13 percent as backlog hits GBP 84.0 billion",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNcWV5TXgxcElPOVdvV1ZDTFd6US1DSVp6NmVyWUlFZmJxWE1aOXZwcWtqb2l4bll2RU9PMUhRVndxc3NlUFY3bkdlZ0dWcEcxNzR5bmQ0MzcyMWVCMEdFWk9DODlXVTYyQjA0YlZoUzdOUzEzT0hiT01peXY2aTJiUGVNcTFSVGhtMnpITGdrWTBTUl9qN3dNMXRQWU56VXBSTmh4alZidFV2SjV3Y1JfNThabl9VdmpfYWFxUHRORXg2UXdtMEFiTmkteEM?oc=5",
+          "source": "ad-hoc-news.de",
+          "publishedAt": "2026-10-03T21:40:14Z",
+          "polarity": -0.9562,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "678fc550e33800a1",
+          "storyClusterId": "story-001",
+          "title": "BAE Systems to add jam-resistant M-code GPS to US Navy JPALS landing system",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNdVk4VDd3RTgxa2VXc2J2QTVyTm5jRWFaMW1YemZhZ1FMMUNLa3BoVTJYbzV2WTA5am9SZW81Y2lHeEsycDF6RHlyZm5MdnBzWmltUW5kWXJLTHBrNzdDRUdxa0xPZEIxSnhmU1BabE1ad1ZpUXBId0Y4TjVWV2FEQk9uSWpqQXdESHhqc1htU3RxZWp5ZnE3OWh2YXBYV3VhYnFsaG1RSEZoeGJoWUE?oc=5",
+          "source": "app.dealroom.co",
+          "publishedAt": "2026-10-03T07:20:07Z",
+          "polarity": 0.6081,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "85b2846e201bf952",
+          "storyClusterId": "story-002",
+          "title": "Bae Systems PLC (OTCMKTS:BAESY) Stock Has Average Target Price of $113.00",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOMmJ5NTFNeG1lU29KTzgtcjhyOE0tcWpwU0U4T0ptbmZuNkJ6WFU4czBTRFVucGpZSU5DUzk5RDk4R0NtU0l6M0F4VlN5UG1RQUk1RUR4T3FnNFBOS3FfYWI3U2Rpa3FIdEk2Y05xQ21feTVjMHVCbVZPNEVVT203OGVzaGt6dXZvLWh2WngwRTJWZVlmb1VSczRHUGlvVHV0Z1ZzVzdOa3U3ZnpBT19OMnBob0l3a3cxVDU0VnM1b1UwM0ZxZDdEU1BrTjByQQ?oc=5",
+          "source": "marketbeat.com",
+          "publishedAt": "2026-10-03T08:28:47Z",
+          "polarity": 0.0215,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "sentiment_drop",
+          "direction": "negative",
+          "severity": "high",
+          "status": "calculated",
+          "detail": "Daily score decreased by 22.1 points",
+          "evidenceArticleIds": [
+            "f5d9dafd7166e33a",
+            "678fc550e33800a1",
+            "85b2846e201bf952"
+          ]
+        },
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "f5d9dafd7166e33a",
+            "678fc550e33800a1",
+            "85b2846e201bf952"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -22.1
     }
   ]
 }

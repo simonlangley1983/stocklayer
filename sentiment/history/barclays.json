@@ -5134,6 +5134,78 @@
         }
       ],
       "changeFromPreviousScoredDay": -6.9
+    },
+    {
+      "date": "2026-10-03",
+      "dailyScore": 51.2,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.8,
+      "confidence": 24.0,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 24,
+      "eligibleArticleCount": 3,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 2,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0403,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 16,
+        "missing_company_alias": 5
+      },
+      "topStories": [
+        {
+          "id": "243d4d4de38861b1",
+          "storyClusterId": "story-001",
+          "title": "Longton's former Barclays Bank to become community arts hub | News - Greatest Hits Radio (Staffordshire & Cheshire)",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQRnRjS0p2elE5Y2Rna2x4Uks2aDFTLTM4Z1RLbTdNelY3eF9FTHNIcm9vVlVVTVZMM0Z3LVQ3bE5XWE8xN2NHSjdmYUxzeWlPNkg3N19fLTViVmUyRnljTkd4ZzROYlF0ZjZEZTB5a0I2emE2eDg2dTdGRFNNU1VSOUd1RnI1Vks2dzM1N2o0dzg?oc=5",
+          "source": "hellorayo.co.uk",
+          "publishedAt": "2026-10-02T23:49:34Z",
+          "polarity": 0.0872,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "17a6bdbcaf31cdde",
+          "storyClusterId": "story-002",
+          "title": "Barclays PLC ADR Unsponsored Brazilian Depositary Receipt Repr 1 ADR",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5uT1NVYy0tVUNtbXMybFo0aDNvc2JvdUVfYnZiUkVlZWV4RjZpVFRBeWRtRzNRRkM5UFVBSFFPakN6SXZwMjQ3M0xSSm1FdGVxM3lOeWw1Q2Z0RHJkeGlIWjNMVW5fM3F4YW9vRUtYRTZHWWkyZGoyZkhZeHlPVHM?oc=5",
+          "source": "tradingview.com",
+          "publishedAt": "2026-10-03T14:30:53Z",
+          "polarity": 0.0066,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 24.0",
+          "evidenceArticleIds": [
+            "243d4d4de38861b1",
+            "17a6bdbcaf31cdde"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "243d4d4de38861b1",
+            "17a6bdbcaf31cdde"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 7.6
     }
   ]
 }

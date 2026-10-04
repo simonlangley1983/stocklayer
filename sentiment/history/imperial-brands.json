@@ -4229,6 +4229,76 @@
         }
       ],
       "changeFromPreviousScoredDay": 3.4
+    },
+    {
+      "date": "2026-10-03",
+      "dailyScore": 52.3,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.7,
+      "confidence": 26.8,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 3,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 0,
+      "dispersion": 0.1,
+      "rejectedCandidateCounts": {
+        "missing_company_alias": 1
+      },
+      "topStories": [
+        {
+          "id": "fc80780e8e7ef6bf",
+          "storyClusterId": "story-002",
+          "title": "Imperial Brands stock gets a 3,500 GBp analyst target",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPckVBdXBZdE5YWmlJa1hyUWFVVG1wVUhXNDlfb3RCZU5WT0gzaENSYkttTFI0SWFDM3lxWGNzdm95ZXF3U2tPTklxS1J4dkg5VmoyNnJ4LVIzRS0zQktIZkNBdHljQWFEdFRMelFlcXNYRXBOaXFYNVExcE40VnlyZV9RSEo4dy1BX2l5ZVJrVkxZR0lhR3djQU92cVpNY0ZNQ3RyVFFwNjBoRmY3dkZYckRnSnZSWGc?oc=5",
+          "source": "ad-hoc-news.de",
+          "publishedAt": "2026-10-03T19:22:31Z",
+          "polarity": 0.1919,
+          "sentiment": "Slightly positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "eb44a5d938582fb9",
+          "storyClusterId": "story-001",
+          "title": "Imperial Brands announces Sue Clark's board role as Imperial Brands stock trades EUR 28.90",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxObzE2UzR5VzQ2RWhNdUNIZGFDZlFNSmY0VU92dW1MR05IRG5pRkFSdTNhVGdFaVFQeU9LWlU2ckZlVjV5Z1lJSmw2NUFRaFNfWGRub0tkYVE4Umhzb0JtWU1ueENLU0ZpYWFWUVg1ZWxwd3FUak11SjNEQVUwVUdTX3FHNm1QbXYtbUNlWWRaNWJVNlFVWXJNaElSVlVTZlBlWjl5WWlBWG9yNUdtWUNmR3k4QWZfdjZraVlackJxV0ZzOEMxZ0dNV1hrTjhGUndrZnc?oc=5",
+          "source": "ad-hoc-news.de",
+          "publishedAt": "2026-10-03T09:10:29Z",
+          "polarity": -0.0081,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "fine_or_lawsuit",
+          "direction": "negative",
+          "severity": "high",
+          "status": "possible",
+          "evidenceArticleIds": [
+            "eb44a5d938582fb9"
+          ],
+          "sourceCount": 1
+        },
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 26.8",
+          "evidenceArticleIds": [
+            "fc80780e8e7ef6bf",
+            "eb44a5d938582fb9"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -2.3
     }
   ]
 }

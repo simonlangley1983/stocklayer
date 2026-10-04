@@ -7105,6 +7105,66 @@
         }
       ],
       "changeFromPreviousScoredDay": 15.0
+    },
+    {
+      "date": "2026-10-03",
+      "dailyScore": 60.8,
+      "dailyLabel": "Positive",
+      "rollingScore": 59.2,
+      "confidence": 36.1,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 3,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 0,
+      "dispersion": 0.4616,
+      "rejectedCandidateCounts": {
+        "missing_company_alias": 1
+      },
+      "topStories": [
+        {
+          "id": "53ce039e1026ced8",
+          "storyClusterId": "story-001",
+          "title": "Glencore Says Trading Profits Will Top $5 Billion",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQeDc4T0R0VUd5WTh5WXQwMWJZZ1l1TXRyVFVzMVp5RktVYzdfRlI3R29aOE84ekhxQ29VZkxsUXlwUmVIQ2E1LWVVckQ5N1lYQUJVeEczNVZ1UzF5eWQyd2JiRTNzTTJsMUs0T2JCN1Y1MGZKRHpQY1VhY2JRYkFFLTZn?oc=5",
+          "source": "briefs.co",
+          "publishedAt": "2026-10-02T23:58:21Z",
+          "polarity": 0.8942,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "b90fd57594f7fad5",
+          "storyClusterId": "story-002",
+          "title": "Glencore Plc (GLEN.L) stock price, news, quote and history",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9OclF0QU45X3ZobGNobzJETnVuTHFaV2lYb1plbWJKTmtfUjA1WVFUam9ucnlLMl85NThwVFdJM29YOTJTTWRQUE9COF9ZQjdXUWd0Nw?oc=5",
+          "source": "uk.finance.yahoo.com",
+          "publishedAt": "2026-10-03T00:27:38Z",
+          "polarity": -0.029,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 36.1",
+          "evidenceArticleIds": [
+            "53ce039e1026ced8",
+            "b90fd57594f7fad5"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -15.8
     }
   ]
 }
