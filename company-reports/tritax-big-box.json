@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T23:12:24.760215Z",
+  "generatedAt": "2026-10-05T23:16:19.415841Z",
   "company": {
     "companyName": "Tritax Big Box REIT PLC",
     "ticker": "BBOX.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-09-05",
-    "periodEnd": "2026-10-04",
-    "observationCount": 30,
-    "scoredDayCount": 6,
-    "latestScore": 60.4,
-    "latestScoreDate": "2026-10-01",
+    "periodEnd": "2026-10-05",
+    "observationCount": 31,
+    "scoredDayCount": 7,
+    "latestScore": 34.5,
+    "latestScoreDate": "2026-10-05",
     "series": [
       {
         "date": "2026-09-05",
@@ -295,6 +295,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-10-05",
+        "dailyScore": 34.5,
+        "rollingScore": 49.0,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 19.7,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -367,6 +376,16 @@
         "direction": "Very positive",
         "detail": null,
         "significance": 0.776
+      },
+      {
+        "date": "2026-10-05",
+        "type": "press_story",
+        "title": "Is Tritax Big Box REIT (LSE:BBOX) pivoting harder toward data centres after its latest results this week?",
+        "source": "kalkinemedia.com",
+        "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOcDhzWWdXTC13R0tENk91eXFrZUVtdDJDbjR0Xy1EdklSeXZ6VUs3NTB3cHlmTVo1SVVRdVNXSUd1aEZUa1Q3SEtBZU9DV3ppWWVpZC1Pa2E2OEU2S0JWZ2x4Q1FHUTZualktMG14Qzc4amtWVUdwMUJYdlBEcEd1eDhyUTRSQTZSSTlLNHBGNnlzaXZZYS00d3Q0QlRqQTdKeHpWUGtSYUF2T2pDTHVqZndYVnZpRHJTZGlqcXlnWE5zbG9MSTZrek10blZfNVhjMHFQU2ktOFNBZFduQUxsc18zX2NGcVMtbkxSNXFYWHdrRFp1OHBGSE50SQ?oc=5",
+        "direction": "Very negative",
+        "detail": null,
+        "significance": 1.08
       }
     ]
   },
@@ -932,17 +951,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 58.7,
-    "label": "Positive",
-    "evidenceCoverage": 72,
+    "score": 57.6,
+    "label": "Mixed",
+    "evidenceCoverage": 74,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 53.1,
+        "score": 49.7,
         "weight": 0.4,
-        "reliability": 0.3,
-        "detail": "Recency-weighted average of 6 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.35,
+        "detail": "Recency-weighted average of 7 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1096,6 +1115,16 @@
       "direction": "Very positive",
       "detail": null,
       "significance": 0.776
+    },
+    {
+      "date": "2026-10-05",
+      "type": "press_story",
+      "title": "Is Tritax Big Box REIT (LSE:BBOX) pivoting harder toward data centres after its latest results this week?",
+      "source": "kalkinemedia.com",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOcDhzWWdXTC13R0tENk91eXFrZUVtdDJDbjR0Xy1EdklSeXZ6VUs3NTB3cHlmTVo1SVVRdVNXSUd1aEZUa1Q3SEtBZU9DV3ppWWVpZC1Pa2E2OEU2S0JWZ2x4Q1FHUTZualktMG14Qzc4amtWVUdwMUJYdlBEcEd1eDhyUTRSQTZSSTlLNHBGNnlzaXZZYS00d3Q0QlRqQTdKeHpWUGtSYUF2T2pDTHVqZndYVnZpRHJTZGlqcXlnWE5zbG9MSTZrek10blZfNVhjMHFQU2ktOFNBZFduQUxsc18zX2NGcVMtbkxSNXFYWHdrRFp1OHBGSE50SQ?oc=5",
+      "direction": "Very negative",
+      "detail": null,
+      "significance": 1.08
     }
   ],
   "persistentEvents": []

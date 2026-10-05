@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T23:12:24.760215Z",
+  "generatedAt": "2026-10-05T23:16:19.415841Z",
   "company": {
     "companyName": "Computacenter PLC",
     "ticker": "CCC.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-15",
-    "periodEnd": "2026-10-04",
-    "observationCount": 39,
-    "scoredDayCount": 22,
-    "latestScore": 33.9,
-    "latestScoreDate": "2026-10-04",
+    "periodEnd": "2026-10-05",
+    "observationCount": 40,
+    "scoredDayCount": 23,
+    "latestScore": 64.4,
+    "latestScoreDate": "2026-10-05",
     "series": [
       {
         "date": "2026-06-15",
@@ -376,6 +376,15 @@
         "sourceCount": 1,
         "confidence": 19.8,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-05",
+        "dailyScore": 64.4,
+        "rollingScore": 51.9,
+        "storyCount": 4,
+        "sourceCount": 3,
+        "confidence": 56.6,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -388,16 +397,6 @@
         "direction": "Very positive",
         "detail": null,
         "significance": 1.176
-      },
-      {
-        "date": "2026-09-09",
-        "type": "press_story",
-        "title": "Computacenter Delivers  Record  Performance As H1 Revenue Hits $9 . 3B",
-        "source": "crn.com",
-        "url": "https://www.crn.com/news-network/computacenter-delivers-record-performance-as-h1-revenue-hits-9-3b",
-        "direction": "Very positive",
-        "detail": null,
-        "significance": 1.076
       },
       {
         "date": "2026-09-21",
@@ -470,14 +469,24 @@
         "significance": 1.605
       },
       {
-        "date": "2026-10-04",
-        "type": "press_story",
-        "title": "Computacenter stock fell 1.19 percent on October 2 despite a raised outlook",
+        "date": "2026-10-05",
+        "type": "sentiment_jump",
+        "title": "Can Computacenter (LSE:CCC) Hold Its Momentum After Lifting Profit Guidance On AI Demand?",
+        "source": "kalkinemedia.com",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNYnlhdVZ4bnFYV3E1aU4xWWFpWGRNeFBQVmlULXhKdEVsVGlDbmdRV3hfNEFhVVBiNG1TTDg3UXdjcWJWOGVFb2pIdTEycWhTd01KV1FMZEZReXBhbHZBWVN3YVl5UUJnX2k2d1MwOUlYNG04Uk1ZTElWWnhEYU0tY1hMSW9qY3Q4QWo2bWprYUptT0hkN3ZfWldmd3Y3Rkt1OUdid2RHd3VOdE5ZeTMyWldXbmE3SlNZLWFFWEdYaW8zMlNHZm43Q2hvOA?oc=5",
+        "direction": "positive",
+        "detail": "Daily score increased by 30.5 points",
+        "significance": 1.569
+      },
+      {
+        "date": "2026-10-05",
+        "type": "sentiment_jump",
+        "title": "Computacenter stock reports record first half and higher outlook",
         "source": "ad-hoc-news.de",
-        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQQ25VN0lhMmVtam1aV21Pa01OYVo1SzVXcnhRVEJlQkVoOFRWWTh1TUVjTDZJNkp3Rm9wM0hQVHM4UkJzRW52aUYzSS04LW9NMWxMcGRBRU1ja3ZTdGxCN2FQY1Zab2V6TGtJN280aFZzUVNZN1hMajhCRFdmdDB1LWg2dTZFMlhOMjk2NkdGUEViUk1TWl9HN0lwam84S251dW9EWEY1SVpxTG5EbERKd0ZfdlY5YmUyenV3OWlybGcxZFFUY3hhLVZWU056ay0xZjh3Tg?oc=5",
-        "direction": "Very negative",
-        "detail": null,
-        "significance": 1.119
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNOGRGYWF2cHk3MFI4UDlnU1hmUFNCQzhRd3Z5UmNDQlZBeTFTTFhNTEhQbWo0WmdKMm14dmF5elU0TkdBMGM0UC1ZM21wcHJfa0J5SHZxa1RjRExwM3pScE1oNU00aUR2UVUySmd5dk9HN25ZRDBHaGJFUHNxUThDeXA3ZFdyTXMtYXJuYVBLc0tEWkdzNGtmWkNTS3ZZMnJUYW1GektIaHk3dVFBRDZxQ09fSlh6bC1rWTBsMDM0UC1yU2Z4dkE?oc=5",
+        "direction": "positive",
+        "detail": "Daily score increased by 30.5 points",
+        "significance": 1.521
       }
     ]
   },
@@ -970,17 +979,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 52.8,
+    "score": 53.0,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 56.2,
+        "score": 56.7,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 20 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 21 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1067,16 +1076,6 @@
       "significance": 1.176
     },
     {
-      "date": "2026-09-09",
-      "type": "press_story",
-      "title": "Computacenter Delivers  Record  Performance As H1 Revenue Hits $9 . 3B",
-      "source": "crn.com",
-      "url": "https://www.crn.com/news-network/computacenter-delivers-record-performance-as-h1-revenue-hits-9-3b",
-      "direction": "Very positive",
-      "detail": null,
-      "significance": 1.076
-    },
-    {
       "date": "2026-09-21",
       "type": "interim_results",
       "title": "Computacenter stock holds firm as FY 2025 cash flow anchors valuation",
@@ -1147,14 +1146,24 @@
       "significance": 1.605
     },
     {
-      "date": "2026-10-04",
-      "type": "press_story",
-      "title": "Computacenter stock fell 1.19 percent on October 2 despite a raised outlook",
+      "date": "2026-10-05",
+      "type": "sentiment_jump",
+      "title": "Can Computacenter (LSE:CCC) Hold Its Momentum After Lifting Profit Guidance On AI Demand?",
+      "source": "kalkinemedia.com",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNYnlhdVZ4bnFYV3E1aU4xWWFpWGRNeFBQVmlULXhKdEVsVGlDbmdRV3hfNEFhVVBiNG1TTDg3UXdjcWJWOGVFb2pIdTEycWhTd01KV1FMZEZReXBhbHZBWVN3YVl5UUJnX2k2d1MwOUlYNG04Uk1ZTElWWnhEYU0tY1hMSW9qY3Q4QWo2bWprYUptT0hkN3ZfWldmd3Y3Rkt1OUdid2RHd3VOdE5ZeTMyWldXbmE3SlNZLWFFWEdYaW8zMlNHZm43Q2hvOA?oc=5",
+      "direction": "positive",
+      "detail": "Daily score increased by 30.5 points",
+      "significance": 1.569
+    },
+    {
+      "date": "2026-10-05",
+      "type": "sentiment_jump",
+      "title": "Computacenter stock reports record first half and higher outlook",
       "source": "ad-hoc-news.de",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQQ25VN0lhMmVtam1aV21Pa01OYVo1SzVXcnhRVEJlQkVoOFRWWTh1TUVjTDZJNkp3Rm9wM0hQVHM4UkJzRW52aUYzSS04LW9NMWxMcGRBRU1ja3ZTdGxCN2FQY1Zab2V6TGtJN280aFZzUVNZN1hMajhCRFdmdDB1LWg2dTZFMlhOMjk2NkdGUEViUk1TWl9HN0lwam84S251dW9EWEY1SVpxTG5EbERKd0ZfdlY5YmUyenV3OWlybGcxZFFUY3hhLVZWU056ay0xZjh3Tg?oc=5",
-      "direction": "Very negative",
-      "detail": null,
-      "significance": 1.119
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNOGRGYWF2cHk3MFI4UDlnU1hmUFNCQzhRd3Z5UmNDQlZBeTFTTFhNTEhQbWo0WmdKMm14dmF5elU0TkdBMGM0UC1ZM21wcHJfa0J5SHZxa1RjRExwM3pScE1oNU00aUR2UVUySmd5dk9HN25ZRDBHaGJFUHNxUThDeXA3ZFdyTXMtYXJuYVBLc0tEWkdzNGtmWkNTS3ZZMnJUYW1GektIaHk3dVFBRDZxQ09fSlh6bC1rWTBsMDM0UC1yU2Z4dkE?oc=5",
+      "direction": "positive",
+      "detail": "Daily score increased by 30.5 points",
+      "significance": 1.521
     }
   ],
   "persistentEvents": []

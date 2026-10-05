@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T23:12:24.760215Z",
+  "generatedAt": "2026-10-05T23:16:19.415841Z",
   "company": {
     "companyName": "Halma PLC",
     "ticker": "HLMA.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-05",
-    "periodEnd": "2026-10-04",
-    "observationCount": 89,
-    "scoredDayCount": 43,
-    "latestScore": 68.1,
-    "latestScoreDate": "2026-10-04",
+    "periodEnd": "2026-10-05",
+    "observationCount": 90,
+    "scoredDayCount": 44,
+    "latestScore": 48.0,
+    "latestScoreDate": "2026-10-05",
     "series": [
       {
         "date": "2026-07-05",
@@ -826,6 +826,15 @@
         "sourceCount": 1,
         "confidence": 40.5,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-05",
+        "dailyScore": 48.0,
+        "rollingScore": 56.5,
+        "storyCount": 5,
+        "sourceCount": 3,
+        "confidence": 60.9,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -900,16 +909,6 @@
         "significance": 1.571
       },
       {
-        "date": "2026-09-25",
-        "type": "sentiment_drop",
-        "title": "Halma margin upgrade drives UBS and Panmure Liberum forecast rise",
-        "source": "uk.finance.yahoo.com",
-        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNVTVQRVBzU1NFS0dQYkItRUFtajNTMUZKRzVUNjY2YXRXZk5ZTi1PNjM4akJjM2ZoOUtBbEEyUWVQVEEzMkZVN1BrN1RWVHY5a2dYWlNIb3IwR2p5c1d6UVlBWEZqWll0YnJfdU5GLVZHS080SGgzRG5zQUMxWWtQcUl4N2gtbnc?oc=5",
-        "direction": "negative",
-        "detail": "Daily score decreased by 15.0 points",
-        "significance": 1.481
-      },
-      {
         "date": "2026-09-29",
         "type": "good_press",
         "title": "Halma stock raises its fiscal 2027 margin outlook 2.0 percent higher from prior guidance?",
@@ -928,6 +927,16 @@
         "direction": "positive",
         "detail": "Daily press score is 65.0",
         "significance": 1.52
+      },
+      {
+        "date": "2026-10-05",
+        "type": "sentiment_drop",
+        "title": "Halma stock fell 2 percent as higher margin guidance meets valuation",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPQlZPN2cyY0xkUTJnQ0RvTVhzWWlXMTlRcExIYWQ5ZHpqN19yOWllN1Z2WmlFbmhDcnR4cHFiM1lvcFZUQl90ZlAyS1BOMk1hZWJhR1NjLUd5LVcwSWJtM1RLazVBMzhHSllwak4wVENJSTJKQ2I4alhXZlhfOVM5WjBXcEVQTi13aGd2T0ZSSnVENFk5ekNNMGFJTjlZeHA1djl0OUdRRU9ESEhsVEk0aXA4MUx4MFU2TTJpVlFuNnBNRnItVTVkMTFBUQ?oc=5",
+        "direction": "negative",
+        "detail": "Daily score decreased by 20.1 points",
+        "significance": 1.615
       }
     ]
   },
@@ -1566,17 +1575,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 57.0,
+    "score": 56.8,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 58.3,
+        "score": 57.8,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 41 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 42 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1732,16 +1741,6 @@
       "significance": 1.571
     },
     {
-      "date": "2026-09-25",
-      "type": "sentiment_drop",
-      "title": "Halma margin upgrade drives UBS and Panmure Liberum forecast rise",
-      "source": "uk.finance.yahoo.com",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNVTVQRVBzU1NFS0dQYkItRUFtajNTMUZKRzVUNjY2YXRXZk5ZTi1PNjM4akJjM2ZoOUtBbEEyUWVQVEEzMkZVN1BrN1RWVHY5a2dYWlNIb3IwR2p5c1d6UVlBWEZqWll0YnJfdU5GLVZHS080SGgzRG5zQUMxWWtQcUl4N2gtbnc?oc=5",
-      "direction": "negative",
-      "detail": "Daily score decreased by 15.0 points",
-      "significance": 1.481
-    },
-    {
       "date": "2026-09-29",
       "type": "good_press",
       "title": "Halma stock raises its fiscal 2027 margin outlook 2.0 percent higher from prior guidance?",
@@ -1760,6 +1759,16 @@
       "direction": "positive",
       "detail": "Daily press score is 65.0",
       "significance": 1.52
+    },
+    {
+      "date": "2026-10-05",
+      "type": "sentiment_drop",
+      "title": "Halma stock fell 2 percent as higher margin guidance meets valuation",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPQlZPN2cyY0xkUTJnQ0RvTVhzWWlXMTlRcExIYWQ5ZHpqN19yOWllN1Z2WmlFbmhDcnR4cHFiM1lvcFZUQl90ZlAyS1BOMk1hZWJhR1NjLUd5LVcwSWJtM1RLazVBMzhHSllwak4wVENJSTJKQ2I4alhXZlhfOVM5WjBXcEVQTi13aGd2T0ZSSnVENFk5ekNNMGFJTjlZeHA1djl0OUdRRU9ESEhsVEk0aXA4MUx4MFU2TTJpVlFuNnBNRnItVTVkMTFBUQ?oc=5",
+      "direction": "negative",
+      "detail": "Daily score decreased by 20.1 points",
+      "significance": 1.615
     },
     {
       "date": "2026-12-31",

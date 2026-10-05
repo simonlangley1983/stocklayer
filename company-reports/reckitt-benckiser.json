@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T23:12:24.760215Z",
+  "generatedAt": "2026-10-05T23:16:19.415841Z",
   "company": {
     "companyName": "Reckitt Benckiser Group PLC",
     "ticker": "RKT.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-10",
-    "periodEnd": "2026-10-04",
-    "observationCount": 87,
-    "scoredDayCount": 40,
-    "latestScore": 53.2,
-    "latestScoreDate": "2026-10-04",
+    "periodEnd": "2026-10-05",
+    "observationCount": 88,
+    "scoredDayCount": 41,
+    "latestScore": 56.6,
+    "latestScoreDate": "2026-10-05",
     "series": [
       {
         "date": "2026-07-10",
@@ -808,19 +808,18 @@
         "sourceCount": 2,
         "confidence": 36.4,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-05",
+        "dailyScore": 56.6,
+        "rollingScore": 51.2,
+        "storyCount": 7,
+        "sourceCount": 5,
+        "confidence": 77.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
-      {
-        "date": "2026-08-08",
-        "type": "analyst_upgrade",
-        "title": "Reckitt Benckiser Group ( LON : RKT ) Price Target Raised to GBX 5 , 352",
-        "source": "themarketsdaily.com",
-        "url": "https://www.themarketsdaily.com/2026/08/08/reckitt-benckiser-group-lonrkt-price-target-raised-to-gbx-5352.html",
-        "direction": "positive",
-        "detail": null,
-        "significance": 1.572
-      },
       {
         "date": "2026-09-15",
         "type": "high_disagreement",
@@ -910,6 +909,16 @@
         "direction": "negative",
         "detail": "Daily score decreased by 23.7 points",
         "significance": 1.589
+      },
+      {
+        "date": "2026-10-05",
+        "type": "share_buyback",
+        "title": "Reckitt Benckiser stock stalls near GBX4,989 resistance as share buyback reduces trading float",
+        "source": "tradersunion.com",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQMzU5MWlUUk5ROHlrZnBid1lhSUxBcERlTnFybkJLOTkwR2JvT2hsalFTWS1jV0lQMW05SjBnbDBRS3BiM19rcnhuZFVBbFY1Y21EY2pMNmM5YnhaWjluLV9xQ2E3c2NPeDA1NmlIWkZadFNzREhLc3RMeDN0b2VlX3BzVThweTJTN2xHbEE3OA?oc=5",
+        "direction": "positive",
+        "detail": null,
+        "significance": 1.607
       }
     ]
   },
@@ -1409,10 +1418,10 @@
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.0,
+        "score": 51.2,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 40 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 41 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1487,16 +1496,6 @@
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
-    },
-    {
-      "date": "2026-08-08",
-      "type": "analyst_upgrade",
-      "title": "Reckitt Benckiser Group ( LON : RKT ) Price Target Raised to GBX 5 , 352",
-      "source": "themarketsdaily.com",
-      "url": "https://www.themarketsdaily.com/2026/08/08/reckitt-benckiser-group-lonrkt-price-target-raised-to-gbx-5352.html",
-      "direction": "positive",
-      "detail": null,
-      "significance": 1.572
     },
     {
       "date": "2026-09-15",
@@ -1587,6 +1586,16 @@
       "direction": "negative",
       "detail": "Daily score decreased by 23.7 points",
       "significance": 1.589
+    },
+    {
+      "date": "2026-10-05",
+      "type": "share_buyback",
+      "title": "Reckitt Benckiser stock stalls near GBX4,989 resistance as share buyback reduces trading float",
+      "source": "tradersunion.com",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQMzU5MWlUUk5ROHlrZnBid1lhSUxBcERlTnFybkJLOTkwR2JvT2hsalFTWS1jV0lQMW05SjBnbDBRS3BiM19rcnhuZFVBbFY1Y21EY2pMNmM5YnhaWjluLV9xQ2E3c2NPeDA1NmlIWkZadFNzREhLc3RMeDN0b2VlX3BzVThweTJTN2xHbEE3OA?oc=5",
+      "direction": "positive",
+      "detail": null,
+      "significance": 1.607
     }
   ],
   "persistentEvents": []
