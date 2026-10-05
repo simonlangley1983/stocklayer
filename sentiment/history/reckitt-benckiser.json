@@ -4124,6 +4124,76 @@
         }
       ],
       "changeFromPreviousScoredDay": 7.3
+    },
+    {
+      "date": "2026-10-04",
+      "dailyScore": 53.2,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.0,
+      "confidence": 36.4,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 5,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 0,
+      "dispersion": 0.16,
+      "rejectedCandidateCounts": {
+        "missing_company_alias": 3
+      },
+      "topStories": [
+        {
+          "id": "ac6ea24dda8ed8fe",
+          "storyClusterId": "story-002",
+          "title": "Reckitt Benckiser stock gets mixed broker targets before Q3 update",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOTjU4OHNNVGRrYmVLbjJ0VFN4emJ4eGVuUE05aW5oSkhRMjNRQi1oODJPWFlBaERBaGtkU3hteWtLMkJZOTZ1cFU1dWNWLUFZaDNSV21SQ3BNYjdDVThubjB2NGZYR19BREtYbTc2NFU0Wmw5QUowTXFmYjJ0R0diM1ctb1VsaDhaT1lBb1RtaU5yMGZfTldra19wbUZNVG41VGFsWnlwcUNuN084bGNxdVpfZkVxaVRMdkRCSTJLbXQzTGo1TmhYTQ?oc=5",
+          "source": "ad-hoc-news.de",
+          "publishedAt": "2026-10-04T19:16:53Z",
+          "polarity": 0.2871,
+          "sentiment": "Positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "e950c581120f35e5",
+          "storyClusterId": "story-001",
+          "title": "Reckitt Benckiser Group plc (RBGLY) stock price, news, quote and history",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9FcnF1Y2pmMU5MaVVuZHNfbkoyZnJrRk5PMFlpRlB0WEdfN0laMVZzaVRGUlg2MnAxNkdMYXF6Z1pnMFM3aUl3ZmlwU3I0QlYwcVJn?oc=5",
+          "source": "uk.finance.yahoo.com",
+          "publishedAt": "2026-10-04T09:34:13Z",
+          "polarity": -0.033,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "trading_update",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "possible",
+          "evidenceArticleIds": [
+            "ac6ea24dda8ed8fe"
+          ],
+          "sourceCount": 1
+        },
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 36.4",
+          "evidenceArticleIds": [
+            "ac6ea24dda8ed8fe",
+            "e950c581120f35e5"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 0.7
     }
   ]
 }
