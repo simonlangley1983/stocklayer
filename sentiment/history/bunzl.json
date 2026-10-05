@@ -3714,35 +3714,49 @@
     },
     {
       "date": "2026-10-04",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 51.1,
-      "confidence": 0.0,
+      "dailyScore": 49.6,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.9,
+      "confidence": 15.2,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 0,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 1,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 0,
+      "neutralStoryCount": 1,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {},
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "67a56384b787d186",
+          "storyClusterId": "story-001",
+          "title": "Bunzl plc (BNZL.L) Stock Price, News, Quote & History",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9iMllfVHBRNVdhVUR1ODZRYjdFdTdJcjA4OEVOYTdHNFhBeDVfUjlsZ2RQVXkySnZkYWMzU2poblppOVpELXpuTFB6RE5fY1l3dzFPYw?oc=5",
+          "source": "ca.finance.yahoo.com",
+          "publishedAt": "2026-10-04T06:30:35Z",
+          "polarity": -0.0255,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.2",
+          "evidenceArticleIds": [
+            "67a56384b787d186"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": -11.4
     }
   ]
 }
