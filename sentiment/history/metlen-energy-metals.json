@@ -977,6 +977,76 @@
         }
       ],
       "changeFromPreviousScoredDay": null
+    },
+    {
+      "date": "2026-10-05",
+      "dailyScore": 53.3,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.9,
+      "confidence": 40.3,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 7,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 1,
+      "dispersion": 0.7945,
+      "rejectedCandidateCounts": {
+        "missing_company_alias": 5
+      },
+      "topStories": [
+        {
+          "id": "0dfb00773a8f2010",
+          "storyClusterId": "story-001",
+          "title": "Metlen Energy & Metals Signs Long-Term Agreement With Japanese Co For 16% Of Annual Gallium Production",
+          "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNSXBfX1c4Z3VVSUNQa0I3OTlVVUdwWWVNQlQ1cjhkaWxUUGJCeU4xY0R6T0NTSjJWTDRjWVFyWjJCVTYyaFpmdUdLVXJBSUFTaGhDVlZMVVlENEtzNDJMcFRxbk9VQ1hiSVBVN3Q0cDBGcW1hbTFyc2gtV2t6M3o5RjZtUlVhckxiNDRtV29GbEVPWXdvWnZSdGYwdXRwdDN3RnFtMWFiTWdtVHNSMTJXRmFpdWo0VWpfMGIxQ0cxNTdlMDQ3RVZqWVkzeVBlRTZIaExpMl80RHVaZTRNQTJtSWNUdXJoWWF3N3dUR1ZjZDFqZnZjYWdOaFltNGsxdw?oc=5",
+          "source": "tradingview.com",
+          "publishedAt": "2026-10-05T06:43:00Z",
+          "polarity": 0.9251,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "1487c457f11b48f1",
+          "storyClusterId": "story-002",
+          "title": "Metlen Energy & Metals Tightens Free Float with Latest Share Buyback on Euronext Athens",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPRWRfcV9hbGI1VzZGTTNQQVgxa2trQnhnNmZseldxUUhYNnZHQUhya3FhNmNXYVJSNkRuZFpoUFRjX2UtMU1wUUE0RDhWMDhOdTRic3dRRVZmOWtVX0UzdjN6Zm9MWGJIT1RadXEtLVFPRHAwSTRhbTJ0SjNweXRuWE84eGxGUHV1ZzZDSnZzM1ZHMVd5VEVKbmpPRmZaRE13UWx1SW0yWFRYTFY1MlNGNG14UGMtYVFNYnlZeEtuSEZIR21kMnAwUXVvY1ZVMngybXZn?oc=5",
+          "source": "tipranks.com",
+          "publishedAt": "2026-10-05T08:47:53Z",
+          "polarity": -0.6639,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "share_buyback",
+          "direction": "positive",
+          "severity": "medium",
+          "status": "possible",
+          "evidenceArticleIds": [
+            "1487c457f11b48f1"
+          ],
+          "sourceCount": 1
+        },
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "0dfb00773a8f2010",
+            "1487c457f11b48f1"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 1.9
     }
   ]
 }
