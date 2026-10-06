@@ -5283,25 +5283,25 @@
     },
     {
       "date": "2026-10-05",
-      "dailyScore": 49.8,
+      "dailyScore": 49.7,
       "dailyLabel": "Neutral / mixed",
       "rollingScore": 49.7,
-      "confidence": 36.3,
-      "confidenceBand": "low",
+      "confidence": 45.1,
+      "confidenceBand": "medium",
       "coverageStatus": "ok",
       "collectionCompleteness": 0.75,
-      "candidateCount": 80,
-      "eligibleArticleCount": 3,
-      "storyCount": 3,
-      "effectiveStoryCount": 3.0,
-      "sourceCount": 3,
+      "candidateCount": 73,
+      "eligibleArticleCount": 5,
+      "storyCount": 5,
+      "effectiveStoryCount": 4.615,
+      "sourceCount": 4,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 3,
+      "neutralStoryCount": 5,
       "negativeStoryCount": 0,
-      "dispersion": 0.0199,
+      "dispersion": 0.019,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 74,
-        "missing_company_alias": 3
+        "ambiguous_company_without_alias": 64,
+        "missing_company_alias": 4
       },
       "topStories": [
         {
@@ -5312,6 +5312,17 @@
           "source": "ca.finance.yahoo.com",
           "publishedAt": "2026-10-05T00:33:33Z",
           "polarity": -0.0335,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "e3841aca16fde775",
+          "storyClusterId": "story-005",
+          "title": "Barclays PLC (BCS) Stock Price, News, Quote & History",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE02bWpoV1h1M2RwNGdzclBoSUNZYmVjbEF6WldaSEs1aUdwOUdpcGkxUnZmQWZaNVVDQk92dTc3QzUtSGZQdHdQWU5falRHOTBR?oc=5",
+          "source": "ca.finance.yahoo.com",
+          "publishedAt": "2026-10-05T19:50:40Z",
+          "polarity": -0.0331,
           "sentiment": "Neutral / mixed",
           "publisherCount": 1
         },
@@ -5328,7 +5339,7 @@
         },
         {
           "id": "4906d47e6b0e9b80",
-          "storyClusterId": "story-003",
+          "storyClusterId": "story-004",
           "title": "REG - Barclays PLC SEGRO PLC - Form 8.3 SEGRO PLC",
           "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQWjZKb3lDb1hDZDZnWUZtSUJXWjNKekJvQUZ2R1VpbS1UYXFqT3U2YjZOV1ZIOUc4Vlp5V1FtSWFwQk16c19HN29KcFhfb1NLYm43b2JqT3Y3SklqWDIweUNFeTF6bnp6eDZvNFdTTGpxLUI0R0t4SEhwc013Znp6b2M0T3czZTFoajEwRVhyNjZxY0c5Sm1UMWNNWTE0MW9wNFl0eG55TThlYTZnVGZMYk5OR1RDQ2VlTXdKeUtR?oc=5",
           "source": "tradingview.com",
@@ -5336,21 +5347,20 @@
           "polarity": 0.0053,
           "sentiment": "Neutral / mixed",
           "publisherCount": 1
+        },
+        {
+          "id": "5645eb65051f8aa8",
+          "storyClusterId": "story-003",
+          "title": "Barclays Regulatory News. Live BARC RNS. Regulatory News Articles for Barclays Plc Ord 25p",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWmJZbzV2RVFCaXlnOWlVamI1YTBYUDNfWmdfVHdsUGRtVnR5RWtVdjFaZUU3RUo4RXAyUWJyczFFVUMxeTh4TnNIdHdPeTdoUHE1a3dOZnBSSjlPakFPWGhXb3l2cG1IT1hmSHA3SDQxNHlOUDJKSzJfSjFvYWhrdUliYk9saWlyVE82Sk5OdnhJRzlsY0tOTGRsVTF3ZjA?oc=5",
+          "source": "lse.co.uk",
+          "publishedAt": "2026-10-05T11:46:18Z",
+          "polarity": -0.0045,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
         }
       ],
       "flags": [
-        {
-          "type": "low_confidence",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Confidence is 36.3",
-          "evidenceArticleIds": [
-            "417627ded298c796",
-            "508d0396b0b84d97",
-            "4906d47e6b0e9b80"
-          ]
-        },
         {
           "type": "collection_degraded",
           "direction": "neutral",
@@ -5359,12 +5369,14 @@
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
             "417627ded298c796",
+            "e3841aca16fde775",
             "508d0396b0b84d97",
-            "4906d47e6b0e9b80"
+            "4906d47e6b0e9b80",
+            "5645eb65051f8aa8"
           ]
         }
       ],
-      "changeFromPreviousScoredDay": 0.0
+      "changeFromPreviousScoredDay": -0.1
     }
   ]
 }

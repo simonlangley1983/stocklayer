@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-10-06T21:30:30.274103Z",
+  "generatedAt": "2026-10-06T21:46:57.900068Z",
   "asOfDate": "2026-10-05",
   "companies": {
     "astrazeneca": {
@@ -97,16 +97,26 @@
       "ticker": "SHEL.L",
       "slug": "shell",
       "date": "2026-10-05",
-      "dailyScore": 57.2,
-      "dailyLabel": "Slightly positive",
-      "rollingScore": 55.1,
-      "confidence": 41.0,
-      "confidenceBand": "medium",
+      "dailyScore": 50.5,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 54.2,
+      "confidence": 11.4,
+      "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 4,
-      "sourceCount": 3,
-      "changeFromPreviousScoredDay": -3.2,
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -9.9,
       "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 11.4",
+          "evidenceArticleIds": [
+            "fb4e3db36c71c864"
+          ]
+        },
         {
           "type": "collection_degraded",
           "direction": "neutral",
@@ -114,36 +124,11 @@
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
-            "37c3bf71814c5ba1",
-            "0f94dfedd84aca1d",
-            "fb4e3db36c71c864",
-            "9ffcc0a7aee4e643"
+            "fb4e3db36c71c864"
           ]
         }
       ],
       "topStories": [
-        {
-          "id": "37c3bf71814c5ba1",
-          "storyClusterId": "story-004",
-          "title": "Shell’s ARC Deal Seen as Win for Mark Carney’s Pro-Oil Pivot",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOSWR2UUUyM1BNNmdwdDB1T1VicDRyVkhTdEFtRVNtbUpicW9JRU5iZW9OQ3pCR0YxZE14M2dqWUJPM2wycEFWY291UFdXNG9qZkdXSkNGbUJtbnZROExraFlOYlY3TWZkeUtJVjdNWEdEVEM1dGZ2T3JVQjFXMWFLREhQOWhyeW1FR2dXcE44aVlvZDA?oc=5",
-          "source": "energynow.com",
-          "publishedAt": "2026-10-05T16:44:30Z",
-          "polarity": 0.8038,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "0f94dfedd84aca1d",
-          "storyClusterId": "story-003",
-          "title": "Chevron, Shell Closing in on First Big Oil Production Deals in Venezuela Since US Captured Maduro",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQdVJYLTVsYzNudVh6UzN2TUNKcTNrWlpDSHZCanMxLXFXTTY3aHQ5enBwZVF4WGk0WFFOLVc2bUd4eGk3ZEVBWHlndC16WUhmLVVpeHRwTTNjdTE1cUFkMlp4a0RjcTVPM2dUYW8xTlJnVHZKMWNNU05qTzA1R0EtTzBCY2JlS2pzSHEzdUxIVEJ6VXc3aVdwd1NlMS1VNUVJUTRaTTA3ZGxuTGM5ZEJHNklJVnhuLWNTSjhzanFBTkVubmhfRlZuSVdvaEc0WHJ0aFBmUmRR?oc=5",
-          "source": "energynow.com",
-          "publishedAt": "2026-10-05T16:15:04Z",
-          "polarity": 0.547,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
         {
           "id": "fb4e3db36c71c864",
           "storyClusterId": "story-001",
@@ -152,17 +137,6 @@
           "source": "finance.yahoo.com",
           "publishedAt": "2026-10-05T05:16:00Z",
           "polarity": 0.0275,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        },
-        {
-          "id": "9ffcc0a7aee4e643",
-          "storyClusterId": "story-002",
-          "title": "Shell plc (SHEL) Stock Price, News, Quote & History",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5GWEZveEpMaUdaVmY1b05LVDBMWDBEMV9CZHpRc3lwVXhyX0NIY2lBaUQzaF8yaW1Ud0ZGR00yTmltdTlpT282bDdfajVvNENhVlE?oc=5",
-          "source": "ca.finance.yahoo.com",
-          "publishedAt": "2026-10-05T12:25:53Z",
-          "polarity": -0.0248,
           "sentiment": "Neutral / mixed",
           "publisherCount": 1
         }
@@ -411,15 +385,15 @@
       "ticker": "BATS.L",
       "slug": "british-american-tobacco",
       "date": "2026-10-05",
-      "dailyScore": 41.8,
+      "dailyScore": 42.9,
       "dailyLabel": "Slightly negative",
-      "rollingScore": 46.2,
-      "confidence": 63.6,
+      "rollingScore": 46.4,
+      "confidence": 63.5,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 48,
-      "sourceCount": 41,
-      "changeFromPreviousScoredDay": 1.9,
+      "storyCount": 45,
+      "sourceCount": 39,
+      "changeFromPreviousScoredDay": 3.0,
       "flags": [
         {
           "type": "collection_degraded",
@@ -439,7 +413,7 @@
       "topStories": [
         {
           "id": "615dc3383dbdd42a",
-          "storyClusterId": "story-039",
+          "storyClusterId": "story-035",
           "title": "BAT stock fell 0.60 percent as guidance stayed cautious",
           "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOQkx3UjZpbjk4S1J1UGc0dkxYQnlyaHJRWWRMME1tZmppTC1DOXNJNkVIWml1aDdTeWlyd2VrSUpDSjRRSzJQRV82V1FyNXZtMXBkbnZ6M3dNMFM1VDV5WV9TT1BEVy1MUTFvYk1GNUhWSUN3LVhKandPVTJDR0FiRDFCTzFnRGFYVUhOUkVQT3VYUndrbjIyRTllSzVlbUtEcWE1MWRQbEs0M0xZQldyY19tTF9lNW1iN3c?oc=5",
           "source": "ad-hoc-news.de",
@@ -450,7 +424,7 @@
         },
         {
           "id": "007e0aeb7f788551",
-          "storyClusterId": "story-021",
+          "storyClusterId": "story-019",
           "title": "Bat-human interactions are on the rise, leading to rabies concerns",
           "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPQXkwU0Y2bk8xQjFxVHpWUU9QaG9qbXhRRHM5dFZMMmo4cFg3SlFjS3lhWU5nOFFodzB1eXA3eWlqTFVtamMtUDNkNGZDY3pLYmV4YnRPazYwYk00WHE2QmJrWmFsakhtMGhjTVRuc0VVYmVoSXFwTW4xODRaaFNJbjNTb004VTRHMXJoQWlCTml2a3M5X1hZWmRmOFZQcS1RSk50dzVnYnRFVkxFOGxj?oc=5",
           "source": "ideastream.org",
@@ -461,7 +435,7 @@
         },
         {
           "id": "e30b305c24fd9663",
-          "storyClusterId": "story-035",
+          "storyClusterId": "story-031",
           "title": "Pine Bluff Woman Charged After Alleged Baseball Bat Attack and Vehicle Vandalism",
           "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNYlZDUDhEZmJzem9nYWN2Q084M0pyRlNfYUd5VTlKcEFpNjkzSkpLV3NobDJob0kySmZkZ2JFNnhLVkZHRHdiM0N2YmlTc0QwTjJqZzV4STNKQlczaGZDRHpRNHZqVkNMdTNOR2FKeUhXX0F6RmFvT05oRDRHOENXYkg0bzhyN0JDVkZIT3hjZllNYnF4V1BoR1lDZG5WZUVfR1pPWkFhTEdJam1PeGVMbkNCVGpteE55TDZnZEhmMA?oc=5",
           "source": "deltaplexnews.com",
@@ -472,7 +446,7 @@
         },
         {
           "id": "95d3a5e6cb480dc3",
-          "storyClusterId": "story-026",
+          "storyClusterId": "story-024",
           "title": "British American Tobacco (BTI) Edges Higher to $52.64 as Shares Hold Mid-Range - Hull Moving Average",
           "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZmczZW9hWGktV3Q2bV80STVVT051TmNFRkdKTkVBaFlrZ05XR1BYdEpIcjJ2YUFQZkRZb1dIcXVCWHhUaHVGNGxhdkgwVlVxMTRxTmhYOHlPQ01OLUozUVNINGxtX2RKTFlnRG9lalJiSWdUWFE5Wm9fWTZ1dHViRVo0bVp0QnRCU3NRR3l6b2EwdTVuXzM4QjNZSktqZUowWF9iQXV0eXhYT1pkNmVqRlBKNzB5N1U?oc=5",
           "source": "siam.in",
@@ -483,7 +457,7 @@
         },
         {
           "id": "f37f5664bd7f3ccd",
-          "storyClusterId": "story-038",
+          "storyClusterId": "story-034",
           "title": "Brothers jailed after violent baseball bat attack on woman and partner in Kirkby",
           "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOX0Z2bkVvN3lXWmJJd1dSbjRNYW5PdkZPNUxja1VFbVl2NS1UNUZQdG9BSm55Wk9fS1lCMzhmMWdldlp5RWlmUFdOX2lOVC1KZ09hNnhzaGpqXzdZS0h1VmRpa2s3WXJfYVhKOURHZV9EZUI5SWdwYW1iWnJrY3VWdk93a0Mwb2dxTjlYT242U2JKV1dkSzcwRjJVVFhWV0EwUHM2V2lCZHlBUlpWOTNQNThDeVBmZi12NW1tUk5QNGU?oc=5",
           "source": "chad.co.uk",
@@ -530,7 +504,7 @@
           "title": "UAE, Qatari Firms Debut in Venezuela Through BP-Led Gas Deal",
           "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUjNQMHBTTFZoUG53dFloZGFLTHhad0tmT3JQV2RzeGdGb2x4RlNyT0JZTC1lc19RTHJ6TEtVUDFxWF82OU0ySGR6eW5GU1NwVVE4eWM1SmVJU2t2Y1dKLWNkaDNGM09LaHBQcEpVMDlMUDAwT0dMeENqdFo3eUU3TDBCM1ViRGFoREVPWjhQVFU4WDJ3?oc=5",
           "source": "energynow.com",
-          "publishedAt": "2026-10-05T20:27:29Z",
+          "publishedAt": "2026-10-05T20:43:53Z",
           "polarity": 0.8252,
           "sentiment": "Very positive",
           "publisherCount": 1
@@ -1141,28 +1115,16 @@
       "ticker": "BARC.L",
       "slug": "barclays",
       "date": "2026-10-05",
-      "dailyScore": 49.8,
+      "dailyScore": 49.7,
       "dailyLabel": "Neutral / mixed",
       "rollingScore": 49.7,
-      "confidence": 36.3,
-      "confidenceBand": "low",
+      "confidence": 45.1,
+      "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 3,
-      "sourceCount": 3,
-      "changeFromPreviousScoredDay": 0.0,
+      "storyCount": 5,
+      "sourceCount": 4,
+      "changeFromPreviousScoredDay": -0.1,
       "flags": [
-        {
-          "type": "low_confidence",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Confidence is 36.3",
-          "evidenceArticleIds": [
-            "417627ded298c796",
-            "508d0396b0b84d97",
-            "4906d47e6b0e9b80"
-          ]
-        },
         {
           "type": "collection_degraded",
           "direction": "neutral",
@@ -1171,8 +1133,10 @@
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
             "417627ded298c796",
+            "e3841aca16fde775",
             "508d0396b0b84d97",
-            "4906d47e6b0e9b80"
+            "4906d47e6b0e9b80",
+            "5645eb65051f8aa8"
           ]
         }
       ],
@@ -1189,6 +1153,17 @@
           "publisherCount": 1
         },
         {
+          "id": "e3841aca16fde775",
+          "storyClusterId": "story-005",
+          "title": "Barclays PLC (BCS) Stock Price, News, Quote & History",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE02bWpoV1h1M2RwNGdzclBoSUNZYmVjbEF6WldaSEs1aUdwOUdpcGkxUnZmQWZaNVVDQk92dTc3QzUtSGZQdHdQWU5falRHOTBR?oc=5",
+          "source": "ca.finance.yahoo.com",
+          "publishedAt": "2026-10-05T19:50:40Z",
+          "polarity": -0.0331,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
           "id": "508d0396b0b84d97",
           "storyClusterId": "story-002",
           "title": "eyeQ: Barclays, Bank of America, Relx, Ferrari",
@@ -1201,12 +1176,23 @@
         },
         {
           "id": "4906d47e6b0e9b80",
-          "storyClusterId": "story-003",
+          "storyClusterId": "story-004",
           "title": "REG - Barclays PLC SEGRO PLC - Form 8.3 SEGRO PLC",
           "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQWjZKb3lDb1hDZDZnWUZtSUJXWjNKekJvQUZ2R1VpbS1UYXFqT3U2YjZOV1ZIOUc4Vlp5V1FtSWFwQk16c19HN29KcFhfb1NLYm43b2JqT3Y3SklqWDIweUNFeTF6bnp6eDZvNFdTTGpxLUI0R0t4SEhwc013Znp6b2M0T3czZTFoajEwRVhyNjZxY0c5Sm1UMWNNWTE0MW9wNFl0eG55TThlYTZnVGZMYk5OR1RDQ2VlTXdKeUtR?oc=5",
           "source": "tradingview.com",
           "publishedAt": "2026-10-05T13:43:42Z",
           "polarity": 0.0053,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "5645eb65051f8aa8",
+          "storyClusterId": "story-003",
+          "title": "Barclays Regulatory News. Live BARC RNS. Regulatory News Articles for Barclays Plc Ord 25p",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWmJZbzV2RVFCaXlnOWlVamI1YTBYUDNfWmdfVHdsUGRtVnR5RWtVdjFaZUU3RUo4RXAyUWJyczFFVUMxeTh4TnNIdHdPeTdoUHE1a3dOZnBSSjlPakFPWGhXb3l2cG1IT1hmSHA3SDQxNHlOUDJKSzJfSjFvYWhrdUliYk9saWlyVE82Sk5OdnhJRzlsY0tOTGRsVTF3ZjA?oc=5",
+          "source": "lse.co.uk",
+          "publishedAt": "2026-10-05T11:46:18Z",
+          "polarity": -0.0045,
           "sentiment": "Neutral / mixed",
           "publisherCount": 1
         }
@@ -2263,11 +2249,11 @@
       "dailyScore": 58.7,
       "dailyLabel": "Slightly positive",
       "rollingScore": 49.9,
-      "confidence": 63.8,
+      "confidence": 63.5,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
       "storyCount": 11,
-      "sourceCount": 11,
+      "sourceCount": 12,
       "changeFromPreviousScoredDay": -3.4,
       "flags": [
         {
@@ -2302,7 +2288,7 @@
       "topStories": [
         {
           "id": "e574eedbd924c6ca",
-          "storyClusterId": "story-002",
+          "storyClusterId": "story-003",
           "title": "BT to buy broadband supplier TalkTalk in £400m rescue deal, saving 900 jobs",
           "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNT3hxWVJacnBoQ0NBd2tSLU1kMnRkQ3lLTEZhMXh3eEtwOURQSEtVT0hwNDFkOW1yNWxnWTc3NEU3cFkxWlk2N3p0aWF1QllzczN2ZjNZcjJJQWptN2FXM2s3YWxwRzV0c2J4akpVNGdIUVNROXlySzR0V09WRnZyWWdLSGlLQ2M3V24zYndNTnM1QQ?oc=5",
           "source": "theguardian.com",
@@ -2313,7 +2299,7 @@
         },
         {
           "id": "3ab349d15354d6bd",
-          "storyClusterId": "story-005",
+          "storyClusterId": "story-006",
           "title": "BT agrees rescue deal to buy broadband operator TalkTalk",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5PZWxFTXJkMGJXSTItMTVMcENuZThCLXQyVVUwQmM1bktSQlJ2UlZYNlhKZnhmYjBHRWdORU9zNGRaMUc5ck54NjNOSUg3a3VCRS1RRmk2Y0NoTDQ?oc=5",
           "source": "bbc.com",
@@ -2324,7 +2310,7 @@
         },
         {
           "id": "c9b2c437b1f97ffd",
-          "storyClusterId": "story-003",
+          "storyClusterId": "story-004",
           "title": "TalkTalk rescued by BT in £400m deal - what it means for broadband company's 2.5 million customers",
           "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOcTN4TU5jbl9ZTGRLU0hGRW5SYWZfZTdHUEwtd0FsWTlPNEh2ZmNRUVVJLTFxR3hiNVVQVzJhTDExNHlqRG5PaTBjZzcxRkpCWUtFVUR3OU9qcEl5WXpUaWhmY2V1M2liZzNRT0dTOXV3QUxnd1hsYjg0d042SnJ1Sw?oc=5",
           "source": "aol.co.uk",
@@ -2714,26 +2700,40 @@
       "ticker": "DPLM.L",
       "slug": "diploma",
       "date": "2026-10-05",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 51.4,
-      "confidence": 0.0,
+      "dailyScore": 50.1,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 51.2,
+      "confidence": 15.2,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -8.1,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.2",
+          "evidenceArticleIds": [
+            "77c57cd6197d8673"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "77c57cd6197d8673",
+          "storyClusterId": "story-001",
+          "title": "Six-month industrial training mandatory for diploma students in Punjab",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNdkl6eTFDNi1oWllTTXF0RXZ3eThpMWY3Z2hHYUw4WFZNSkVySzBUZmJtaDM1R2hJdVF1NDM4bFJ1ZmFPNWZRaDRJenFNbnl1NHZmZ3VKNE8tOURwN3pWRzJPOW5zdHpoVkNLSk5uSFFiM0F5MlVMOWtpSWdxa3lEZUxDNFd0ZC02VVZoYWlMa2wxVl9UcUEwMWtQMGROM2lkU0tvUVItVXN4UE9NdUNYV1hn0gG2AUFVX3lxTE9kOFZHX0RJbV9fd2YzRkdlYzJhQUkxN0piOUtHZ2NXWDl3ck90UlY5Ry1hVkh6emhlR2JKUUtTZldWbEU2RGNwSkNDUmFBdUlMTmVJa1RLbTlieW5WVGpUT3RWZ3k1RXhjYmo1TTkzX2JkNmhFYnZ1dTNnalVmOExHeFdFb1V2WWpsREZiUFBsNG1qcjg4MUI2RHAxZTh2NW1yM0RVclpfZlhzQzFKX2Q4SFRLcXRB?oc=5",
+          "source": "tribuneindia.com",
+          "publishedAt": "2026-10-05T07:00:00Z",
+          "polarity": 0.0031,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
     },
     "endeavour-mining": {
       "companyName": "Endeavour Mining PLC",
