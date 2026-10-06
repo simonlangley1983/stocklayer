@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T21:30:32.076983Z",
+  "generatedAt": "2026-10-06T21:47:01.395537Z",
   "company": {
     "companyName": "Diploma PLC",
     "ticker": "DPLM.L",
@@ -22,9 +22,9 @@
     "periodStart": "2026-06-15",
     "periodEnd": "2026-10-05",
     "observationCount": 87,
-    "scoredDayCount": 5,
-    "latestScore": 58.2,
-    "latestScoreDate": "2026-09-30",
+    "scoredDayCount": 6,
+    "latestScore": 50.1,
+    "latestScoreDate": "2026-10-05",
     "series": [
       {
         "date": "2026-06-15",
@@ -802,12 +802,12 @@
       },
       {
         "date": "2026-10-05",
-        "dailyScore": null,
-        "rollingScore": 51.4,
-        "storyCount": 0,
-        "sourceCount": 0,
-        "confidence": 0.0,
-        "coverageStatus": "no_coverage"
+        "dailyScore": 50.1,
+        "rollingScore": 51.2,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -880,6 +880,16 @@
         "direction": "Neutral / mixed",
         "detail": null,
         "significance": 0.192
+      },
+      {
+        "date": "2026-10-05",
+        "type": "press_story",
+        "title": "Six-month industrial training mandatory for diploma students in Punjab",
+        "source": "tribuneindia.com",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNdkl6eTFDNi1oWllTTXF0RXZ3eThpMWY3Z2hHYUw4WFZNSkVySzBUZmJtaDM1R2hJdVF1NDM4bFJ1ZmFPNWZRaDRJenFNbnl1NHZmZ3VKNE8tOURwN3pWRzJPOW5zdHpoVkNLSk5uSFFiM0F5MlVMOWtpSWdxa3lEZUxDNFd0ZC02VVZoYWlMa2wxVl9UcUEwMWtQMGROM2lkU0tvUVItVXN4UE9NdUNYV1hn0gG2AUFVX3lxTE9kOFZHX0RJbV9fd2YzRkdlYzJhQUkxN0piOUtHZ2NXWDl3ck90UlY5Ry1hVkh6emhlR2JKUUtTZldWbEU2RGNwSkNDUmFBdUlMTmVJa1RLbTlieW5WVGpUT3RWZ3k1RXhjYmo1TTkzX2JkNmhFYnZ1dTNnalVmOExHeFdFb1V2WWpsREZiUFBsNG1qcjg4MUI2RHAxZTh2NW1yM0RVclpfZlhzQzFKX2Q4SFRLcXRB?oc=5",
+        "direction": "Neutral / mixed",
+        "detail": null,
+        "significance": 0.153
       }
     ]
   },
@@ -1445,17 +1455,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 55.3,
+    "score": 54.8,
     "label": "Mixed",
-    "evidenceCoverage": 70,
+    "evidenceCoverage": 72,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 57.4,
+        "score": 55.9,
         "weight": 0.4,
-        "reliability": 0.25,
-        "detail": "Recency-weighted average of 5 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.3,
+        "detail": "Recency-weighted average of 6 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1609,6 +1619,16 @@
       "direction": "Neutral / mixed",
       "detail": null,
       "significance": 0.192
+    },
+    {
+      "date": "2026-10-05",
+      "type": "press_story",
+      "title": "Six-month industrial training mandatory for diploma students in Punjab",
+      "source": "tribuneindia.com",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNdkl6eTFDNi1oWllTTXF0RXZ3eThpMWY3Z2hHYUw4WFZNSkVySzBUZmJtaDM1R2hJdVF1NDM4bFJ1ZmFPNWZRaDRJenFNbnl1NHZmZ3VKNE8tOURwN3pWRzJPOW5zdHpoVkNLSk5uSFFiM0F5MlVMOWtpSWdxa3lEZUxDNFd0ZC02VVZoYWlMa2wxVl9UcUEwMWtQMGROM2lkU0tvUVItVXN4UE9NdUNYV1hn0gG2AUFVX3lxTE9kOFZHX0RJbV9fd2YzRkdlYzJhQUkxN0piOUtHZ2NXWDl3ck90UlY5Ry1hVkh6emhlR2JKUUtTZldWbEU2RGNwSkNDUmFBdUlMTmVJa1RLbTlieW5WVGpUT3RWZ3k1RXhjYmo1TTkzX2JkNmhFYnZ1dTNnalVmOExHeFdFb1V2WWpsREZiUFBsNG1qcjg4MUI2RHAxZTh2NW1yM0RVclpfZlhzQzFKX2Q4SFRLcXRB?oc=5",
+      "direction": "Neutral / mixed",
+      "detail": null,
+      "significance": 0.153
     }
   ],
   "persistentEvents": []
