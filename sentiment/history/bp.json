@@ -4187,27 +4187,38 @@
     },
     {
       "date": "2026-10-05",
-      "dailyScore": 55.4,
+      "dailyScore": 59.1,
       "dailyLabel": "Slightly positive",
-      "rollingScore": 56.1,
-      "confidence": 38.3,
-      "confidenceBand": "low",
+      "rollingScore": 56.7,
+      "confidence": 40.8,
+      "confidenceBand": "medium",
       "coverageStatus": "ok",
       "collectionCompleteness": 0.75,
-      "candidateCount": 85,
-      "eligibleArticleCount": 3,
-      "storyCount": 3,
-      "effectiveStoryCount": 3.0,
+      "candidateCount": 65,
+      "eligibleArticleCount": 4,
+      "storyCount": 4,
+      "effectiveStoryCount": 3.077,
       "sourceCount": 3,
-      "positiveStoryCount": 1,
+      "positiveStoryCount": 2,
       "neutralStoryCount": 2,
       "negativeStoryCount": 0,
-      "dispersion": 0.1006,
+      "dispersion": 0.2923,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 49,
-        "missing_company_alias": 33
+        "ambiguous_company_without_alias": 45,
+        "missing_company_alias": 16
       },
       "topStories": [
+        {
+          "id": "4a7a5717bd4ff97a",
+          "storyClusterId": "story-003",
+          "title": "UAE, Qatari Firms Debut in Venezuela Through BP-Led Gas Deal",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUjNQMHBTTFZoUG53dFloZGFLTHhad0tmT3JQV2RzeGdGb2x4RlNyT0JZTC1lc19RTHJ6TEtVUDFxWF82OU0ySGR6eW5GU1NwVVE4eWM1SmVJU2t2Y1dKLWNkaDNGM09LaHBQcEpVMDlMUDAwT0dMeENqdFo3eUU3TDBCM1ViRGFoREVPWjhQVFU4WDJ3?oc=5",
+          "source": "energynow.com",
+          "publishedAt": "2026-10-05T20:27:29Z",
+          "polarity": 0.8252,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
         {
           "id": "f1085d5eb68e02a6",
           "storyClusterId": "story-001",
@@ -4220,17 +4231,6 @@
           "publisherCount": 1
         },
         {
-          "id": "d8bf5e8d5f6dc79b",
-          "storyClusterId": "story-003",
-          "title": "ConocoPhillips Joins BP in Iraq as Baghdad Seeks More US Energy Investment",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOVGtXMmtNWFJ0azJ5cGN1N1pycEJuMmN0aFFkOU9FU2tqamN2VGoxcXVlVUxXeWxCanlTSEE3M0dJenItME5BczctT0pYTng4aGNIUlJPWUJxend3NXJoLVd5XzJ5bGRsT0F2MVlVaTJmLVZnb1RrR0I5bmxXTzN3UHFJTGpNbzlEaUx3cWdTa3VkdFA5OVhVVWMyWjZ6dGdWVUZyX01DbTc?oc=5",
-          "source": "energynow.com",
-          "publishedAt": "2026-10-05T16:27:36Z",
-          "polarity": 0.1458,
-          "sentiment": "Slightly positive",
-          "publisherCount": 1
-        },
-        {
           "id": "6d75b86a011cae24",
           "storyClusterId": "story-002",
           "title": "BP to take full control of Calypso gas field",
@@ -4240,21 +4240,20 @@
           "polarity": 0.079,
           "sentiment": "Neutral / mixed",
           "publisherCount": 1
+        },
+        {
+          "id": "d8bf5e8d5f6dc79b",
+          "storyClusterId": "story-004",
+          "title": "ConocoPhillips Joins BP in Iraq as Baghdad Seeks More US Energy Investment",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOVGtXMmtNWFJ0azJ5cGN1N1pycEJuMmN0aFFkOU9FU2tqamN2VGoxcXVlVUxXeWxCanlTSEE3M0dJenItME5BczctT0pYTng4aGNIUlJPWUJxend3NXJoLVd5XzJ5bGRsT0F2MVlVaTJmLVZnb1RrR0I5bmxXTzN3UHFJTGpNbzlEaUx3cWdTa3VkdFA5OVhVVWMyWjZ6dGdWVUZyX01DbTc?oc=5",
+          "source": "energynow.com",
+          "publishedAt": "2026-10-05T20:59:39Z",
+          "polarity": 0.1458,
+          "sentiment": "Slightly positive",
+          "publisherCount": 1
         }
       ],
       "flags": [
-        {
-          "type": "low_confidence",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Confidence is 38.3",
-          "evidenceArticleIds": [
-            "f1085d5eb68e02a6",
-            "d8bf5e8d5f6dc79b",
-            "6d75b86a011cae24"
-          ]
-        },
         {
           "type": "collection_degraded",
           "direction": "neutral",
@@ -4262,13 +4261,14 @@
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
+            "4a7a5717bd4ff97a",
             "f1085d5eb68e02a6",
-            "d8bf5e8d5f6dc79b",
-            "6d75b86a011cae24"
+            "6d75b86a011cae24",
+            "d8bf5e8d5f6dc79b"
           ]
         }
       ],
-      "changeFromPreviousScoredDay": -10.1
+      "changeFromPreviousScoredDay": -6.4
     }
   ]
 }
