@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T19:04:03.612931Z",
+  "generatedAt": "2026-10-07T22:08:23.403305Z",
   "company": {
     "companyName": "LondonMetric Property PLC",
     "ticker": "LMP.L",
@@ -22,9 +22,9 @@
     "periodStart": "2026-07-17",
     "periodEnd": "2026-10-06",
     "observationCount": 75,
-    "scoredDayCount": 32,
-    "latestScore": 50.4,
-    "latestScoreDate": "2026-10-05",
+    "scoredDayCount": 33,
+    "latestScore": 64.6,
+    "latestScoreDate": "2026-10-06",
     "series": [
       {
         "date": "2026-07-17",
@@ -694,12 +694,12 @@
       },
       {
         "date": "2026-10-06",
-        "dailyScore": null,
-        "rollingScore": 51.1,
-        "storyCount": 0,
-        "sourceCount": 0,
-        "confidence": 0.0,
-        "coverageStatus": "no_coverage"
+        "dailyScore": 64.6,
+        "rollingScore": 52.8,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 19.6,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -784,16 +784,6 @@
         "significance": 0.255
       },
       {
-        "date": "2026-09-30",
-        "type": "press_story",
-        "title": "Cash per share of LondonMetric Property Plc – HAN:5PP",
-        "source": "tradingview.com",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZEJUMDJDYzlJUENNMWQ5OThMVGV0ZFhBNDg3UWszY0psR0dlcTZIeGtUQURlbTZrdEx2cjR3bmp3cjg2WHBxcUVWYVFGTW1hNWJDalJSckU3d1JQRU9acG1OMmpUWnZJTjNVcUxrUVZhanBjeW4xM0NwT0FFdzgzSi1LZmU3S2xqblUteXZlMS1sVWpUdzZN?oc=5",
-        "direction": "Neutral / mixed",
-        "detail": null,
-        "significance": 0.202
-      },
-      {
         "date": "2026-10-01",
         "type": "press_story",
         "title": "Is LondonMetric Property (LSE:LMP) Gaining From A Sector Sentiment Shift This Week As FTSE 100 Holds Steady?",
@@ -802,6 +792,16 @@
         "direction": "Very positive",
         "detail": null,
         "significance": 1.059
+      },
+      {
+        "date": "2026-10-06",
+        "type": "press_story",
+        "title": "LondonMetric Property advances Tuesday, outperforms market",
+        "source": "marketwatch.com",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVEdDaTVOOVRoeTFZdUJuSHFGYWluV2d1Q2l5bS1TUHZZMTg2VXlFZ1NIN0Nmbk5QaWNrSWd4V1VGT20ybWs0N1ljZW9fTGp1YnRRZmlFWG4zTGMtcUpnQzdaUjJBN2hRVmt0MWFBZUl0YW5zQWtYZnFjaXI4Mlhjb0xoc3NuenhESW8wOTVxWk5LSTg1dW93VzNfd19JeHh1aTlIZTFoNTA3U3Zjamx6UW1yOExuLUVZ?oc=5",
+        "direction": "Very positive",
+        "detail": null,
+        "significance": 1.025
       }
     ]
   },
@@ -1367,17 +1367,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 49.6,
+    "score": 50.0,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.8,
+        "score": 52.7,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 32 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 33 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1534,16 +1534,6 @@
       "significance": 0.255
     },
     {
-      "date": "2026-09-30",
-      "type": "press_story",
-      "title": "Cash per share of LondonMetric Property Plc – HAN:5PP",
-      "source": "tradingview.com",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZEJUMDJDYzlJUENNMWQ5OThMVGV0ZFhBNDg3UWszY0psR0dlcTZIeGtUQURlbTZrdEx2cjR3bmp3cjg2WHBxcUVWYVFGTW1hNWJDalJSckU3d1JQRU9acG1OMmpUWnZJTjNVcUxrUVZhanBjeW4xM0NwT0FFdzgzSi1LZmU3S2xqblUteXZlMS1sVWpUdzZN?oc=5",
-      "direction": "Neutral / mixed",
-      "detail": null,
-      "significance": 0.202
-    },
-    {
       "date": "2026-10-01",
       "type": "press_story",
       "title": "Is LondonMetric Property (LSE:LMP) Gaining From A Sector Sentiment Shift This Week As FTSE 100 Holds Steady?",
@@ -1552,6 +1542,16 @@
       "direction": "Very positive",
       "detail": null,
       "significance": 1.059
+    },
+    {
+      "date": "2026-10-06",
+      "type": "press_story",
+      "title": "LondonMetric Property advances Tuesday, outperforms market",
+      "source": "marketwatch.com",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVEdDaTVOOVRoeTFZdUJuSHFGYWluV2d1Q2l5bS1TUHZZMTg2VXlFZ1NIN0Nmbk5QaWNrSWd4V1VGT20ybWs0N1ljZW9fTGp1YnRRZmlFWG4zTGMtcUpnQzdaUjJBN2hRVmt0MWFBZUl0YW5zQWtYZnFjaXI4Mlhjb0xoc3NuenhESW8wOTVxWk5LSTg1dW93VzNfd19JeHh1aTlIZTFoNTA3U3Zjamx6UW1yOExuLUVZ?oc=5",
+      "direction": "Very positive",
+      "detail": null,
+      "significance": 1.025
     },
     {
       "date": "2026-12-31",
