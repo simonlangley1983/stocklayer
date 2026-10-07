@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T02:04:45.358531Z",
+  "generatedAt": "2026-10-07T02:34:27.367050Z",
   "company": {
     "companyName": "Polar Capital Technology Trust PLC",
     "ticker": "PCT.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-09-15",
-    "periodEnd": "2026-10-05",
-    "observationCount": 21,
-    "scoredDayCount": 8,
-    "latestScore": 50.0,
-    "latestScoreDate": "2026-10-05",
+    "periodEnd": "2026-10-06",
+    "observationCount": 22,
+    "scoredDayCount": 9,
+    "latestScore": 50.1,
+    "latestScoreDate": "2026-10-06",
     "series": [
       {
         "date": "2026-09-15",
@@ -209,6 +209,15 @@
       {
         "date": "2026-10-05",
         "dailyScore": 50.0,
+        "rollingScore": 50.1,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.1,
+        "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-06",
+        "dailyScore": 50.1,
         "rollingScore": 50.1,
         "storyCount": 1,
         "sourceCount": 1,
@@ -881,17 +890,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 39.1,
+    "score": 39.0,
     "label": "Low",
-    "evidenceCoverage": 76,
+    "evidenceCoverage": 78,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
         "score": 49.9,
         "weight": 0.4,
-        "reliability": 0.4,
-        "detail": "Recency-weighted average of 8 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.45,
+        "detail": "Recency-weighted average of 9 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",

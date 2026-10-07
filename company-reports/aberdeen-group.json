@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T02:04:45.358531Z",
+  "generatedAt": "2026-10-07T02:34:27.367050Z",
   "company": {
     "companyName": "Aberdeen Group PLC",
     "ticker": "ABDN.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-09-12",
-    "periodEnd": "2026-10-05",
-    "observationCount": 24,
-    "scoredDayCount": 19,
-    "latestScore": 52.1,
-    "latestScoreDate": "2026-10-05",
+    "periodEnd": "2026-10-06",
+    "observationCount": 25,
+    "scoredDayCount": 20,
+    "latestScore": 54.6,
+    "latestScoreDate": "2026-10-06",
     "series": [
       {
         "date": "2026-09-12",
@@ -240,6 +240,15 @@
         "storyCount": 48,
         "sourceCount": 27,
         "confidence": 84.2,
+        "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-06",
+        "dailyScore": 54.6,
+        "rollingScore": 51.0,
+        "storyCount": 48,
+        "sourceCount": 37,
+        "confidence": 63.2,
         "coverageStatus": "ok"
       }
     ],
@@ -835,17 +844,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 47.6,
+    "score": 47.8,
     "label": "Mixed",
-    "evidenceCoverage": 98,
+    "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 48.7,
+        "score": 49.1,
         "weight": 0.4,
-        "reliability": 0.95,
-        "detail": "Recency-weighted average of 19 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 1.0,
+        "detail": "Recency-weighted average of 20 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1023,6 +1032,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "a56d9e33558987dc0bae",
+      "type": "acquisition",
+      "title": "FirstGroup strengthens Aberdeen coach business with acquisition of J.D. Peace & Co Aberdeen Ltd",
+      "date": "2026-10-06",
+      "status": "pending_review",
+      "reviewDate": "2027-04-04",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPdERxVGswaTdQQUxWMmx2MUREVHJxMHBnTGMtZ2VMQS01VC0xeDJWWmgtSGo3bTFBeUNoNHg4ektXQTYtR3kwc012a01yZGV1VU1VVHphakZWRENILTRnVGFURjJ6WEVzUGhjYkVtM0VzYVZEUThQeERHS09TYmozTEpacnoxbXF6M29qSUV2MmxhYkVnRDhqRS1MY21rdzJnbnZyOU94UGRHY0oyeUMxM1RQaEhSdW1RYVkwLTl3OG9RS0otYkEwRVBMNTI?oc=5",
+          "publisher": "news.firstgroupplc.com",
+          "date": "2026-10-06"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "7b48084bb61dab89bf83",
       "type": "financial_distress",

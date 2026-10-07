@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T02:04:45.358531Z",
+  "generatedAt": "2026-10-07T02:34:27.367050Z",
   "company": {
     "companyName": "Coca-Cola HBC AG",
     "ticker": "CCH.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-15",
-    "periodEnd": "2026-10-05",
-    "observationCount": 84,
-    "scoredDayCount": 41,
-    "latestScore": 49.8,
-    "latestScoreDate": "2026-10-05",
+    "periodEnd": "2026-10-06",
+    "observationCount": 85,
+    "scoredDayCount": 42,
+    "latestScore": 62.5,
+    "latestScoreDate": "2026-10-06",
     "series": [
       {
         "date": "2026-06-15",
@@ -781,19 +781,18 @@
         "sourceCount": 1,
         "confidence": 15.2,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-06",
+        "dailyScore": 62.5,
+        "rollingScore": 53.7,
+        "storyCount": 2,
+        "sourceCount": 2,
+        "confidence": 36.6,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
-      {
-        "date": "2026-09-15",
-        "type": "press_story",
-        "title": "Nigerian Bottling Company marks 75 years in Nigeria, Coca-Cola HBC confirms investment plan",
-        "source": "ua.news",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPRHpQbUtfQ3hNSjA2WDZBTUtyaXd3RHh2blRIcWRHbkpYZWpkYkkzNzBrT2d3MVZEa1AtXzlRWG1hWlpKT2k4S3Q3WHljTE9lcE16Q29uOU0wUGk3ZE9HWWtkbm1aOTlTMXh1RW5EdTU2NEtLUGVhUzZGUzM2UGwtUFc1Mk1FSkVKMlM5Y3JhVjZ5OUo2VkhQdGFsTllYSTFBU2tJQVFWNmxhVW9UM3NYMFREZGd1NzMyQWdxQU5VdldtenFGOFlaaEpuYw?oc=5",
-        "direction": "Very positive",
-        "detail": null,
-        "significance": 0.937
-      },
       {
         "date": "2026-09-16",
         "type": "sentiment_jump",
@@ -883,6 +882,16 @@
         "direction": "positive",
         "detail": "Daily score increased by 13.0 points",
         "significance": 1.246
+      },
+      {
+        "date": "2026-10-06",
+        "type": "press_story",
+        "title": "Coffee and energy drinks add to high 2025 turnover at Coca-Cola HBC in Northern Ireland",
+        "source": "belfasttelegraph.co.uk",
+        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQTjF4NFJTWldLSU0wU0RrZ2NvNy1mazd3ZnpYd1l6Y0ZRQWRNdzZOR1VtMjR1YkhON0VoN25JWExmeVo1cnpOcEVEWk5xRWZINnpmR1ktMHktTk1jV0x5TkZZU1BLN0xFeS1kNVB5Zk45SC1pQ29sMG9TNXZfWlpudV9RM2pIYTNKVnN2WDM5emhPakhQaG9GY3BXUzM2UGhaZ2RDck9pVTVUbF9fS1M3WGt6dURSM3M2TndTWFN6UU9YeWNnSEx0ajlBaVVETTNXZF9TdWdCLVcycFQwMThucWt3?oc=5",
+        "direction": "Very positive",
+        "detail": null,
+        "significance": 1.074
       }
     ]
   },
@@ -1375,17 +1384,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 58.3,
+    "score": 58.5,
     "label": "Positive",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 52.8,
+        "score": 53.4,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 34 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 35 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "themes",
@@ -1452,16 +1461,6 @@
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
-    },
-    {
-      "date": "2026-09-15",
-      "type": "press_story",
-      "title": "Nigerian Bottling Company marks 75 years in Nigeria, Coca-Cola HBC confirms investment plan",
-      "source": "ua.news",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPRHpQbUtfQ3hNSjA2WDZBTUtyaXd3RHh2blRIcWRHbkpYZWpkYkkzNzBrT2d3MVZEa1AtXzlRWG1hWlpKT2k4S3Q3WHljTE9lcE16Q29uOU0wUGk3ZE9HWWtkbm1aOTlTMXh1RW5EdTU2NEtLUGVhUzZGUzM2UGwtUFc1Mk1FSkVKMlM5Y3JhVjZ5OUo2VkhQdGFsTllYSTFBU2tJQVFWNmxhVW9UM3NYMFREZGd1NzMyQWdxQU5VdldtenFGOFlaaEpuYw?oc=5",
-      "direction": "Very positive",
-      "detail": null,
-      "significance": 0.937
     },
     {
       "date": "2026-09-16",
@@ -1552,6 +1551,16 @@
       "direction": "positive",
       "detail": "Daily score increased by 13.0 points",
       "significance": 1.246
+    },
+    {
+      "date": "2026-10-06",
+      "type": "press_story",
+      "title": "Coffee and energy drinks add to high 2025 turnover at Coca-Cola HBC in Northern Ireland",
+      "source": "belfasttelegraph.co.uk",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQTjF4NFJTWldLSU0wU0RrZ2NvNy1mazd3ZnpYd1l6Y0ZRQWRNdzZOR1VtMjR1YkhON0VoN25JWExmeVo1cnpOcEVEWk5xRWZINnpmR1ktMHktTk1jV0x5TkZZU1BLN0xFeS1kNVB5Zk45SC1pQ29sMG9TNXZfWlpudV9RM2pIYTNKVnN2WDM5emhPakhQaG9GY3BXUzM2UGhaZ2RDck9pVTVUbF9fS1M3WGt6dURSM3M2TndTWFN6UU9YeWNnSEx0ajlBaVVETTNXZF9TdWdCLVcycFQwMThucWt3?oc=5",
+      "direction": "Very positive",
+      "detail": null,
+      "significance": 1.074
     }
   ],
   "persistentEvents": [
