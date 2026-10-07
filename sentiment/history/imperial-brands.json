@@ -4413,6 +4413,88 @@
       ],
       "flags": [],
       "changeFromPreviousScoredDay": 16.6
+    },
+    {
+      "date": "2026-10-06",
+      "dailyScore": 49.9,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 51.4,
+      "confidence": 55.2,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 4,
+      "eligibleArticleCount": 3,
+      "storyCount": 3,
+      "effectiveStoryCount": 3.0,
+      "sourceCount": 3,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 1,
+      "dispersion": 0.5364,
+      "rejectedCandidateCounts": {
+        "missing_company_alias": 1
+      },
+      "topStories": [
+        {
+          "id": "67cd53b6c8603f13",
+          "storyClusterId": "story-001",
+          "title": "Morningstar raises fair value for Imperial Brands stock to GBp 3,400.00",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPTmpUUGNlSUdIVFFfdFZmMm5vMDl5MlI0ejU2VkFYTDlKaUVmLUowcUxjMTBVRFdfZ3p2Sm5mXy1yTVJFcF9pT0NEbi15aHRoS3Z5RDZfR0oxSVBsYURISFozMzFSRTRidDlkZFlNNVBCQ3QxNDN3VGJ2TEFKVFhMQWlLT0VTd2FjU0FlZFpUaGk0cnpwMFBLa0NzZmNpNEFaMzdIcmVWaVpDMGlaMWFRWE1HcnpXZ2FNUTJXakJoTjFKTTctYVVSdVEzWGZlSk0?oc=5",
+          "source": "ad-hoc-news.de",
+          "publishedAt": "2026-10-06T07:33:52Z",
+          "polarity": 0.6719,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "a1057034cd9a0b7e",
+          "storyClusterId": "story-002",
+          "title": "Imperial Brands Cancels Further Shares Under £1.45bn Buyback",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQazdtMXNUT3FCR0xJRHc0dVVhZFhBR3ZCamcxSFExdXZ0NE1LRW5OY3kxMFloNHpYS3FCZXpmbUR3QnVIRURIWC1rZl9SZ1lPLWYtNnNPYUduZHloMmlPUVhFNUduazFSclN1RGNzb2JlM2p5NUdOSFAxWVhYUDc3TVg2Nk1NcHM2N3djX213SUJBY2tXUklzT2xuUHRmVTBqVHJUOWRPUjFDclRqbmRPbFFBU24?oc=5",
+          "source": "tipranks.com",
+          "publishedAt": "2026-10-06T08:52:58Z",
+          "polarity": -0.6405,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "64e24cb513fa3375",
+          "storyClusterId": "story-003",
+          "title": "What Are The Latest Share Buyback Notices From Imperial Brands (LSE:IMB) Telling Investors?",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOdE1rRXduNjM4THdsMzd5VVpOUHR1M1pBTWFhVUJqSjNrcDNFMDl0enhORm5QcU42MURwN0NBNGpKc05XZVdsMFVNc1JXRGUtSW0xa3lIX0M4cno5ek9NRjlaME9MZ2tCVHRLT2JTSmtfZHp3MUU3dHJSSUdvbTdnWXNxamVWekJ5cjhJamViS0RwMkxzWmtHYkFJRUtiTTRaX1lJV0lGSmFJeFNEekluYUY0d1J4ZFNCcHhOSVcweWFVck13eUtFeFh2VQ?oc=5",
+          "source": "kalkinemedia.com",
+          "publishedAt": "2026-10-06T10:08:00Z",
+          "polarity": -0.0384,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "share_buyback",
+          "direction": "positive",
+          "severity": "medium",
+          "status": "possible",
+          "evidenceArticleIds": [
+            "64e24cb513fa3375"
+          ],
+          "sourceCount": 1
+        },
+        {
+          "type": "sentiment_drop",
+          "direction": "negative",
+          "severity": "high",
+          "status": "calculated",
+          "detail": "Daily score decreased by 15.5 points",
+          "evidenceArticleIds": [
+            "67cd53b6c8603f13",
+            "a1057034cd9a0b7e",
+            "64e24cb513fa3375"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -15.5
     }
   ]
 }

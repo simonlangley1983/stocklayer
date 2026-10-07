@@ -5572,6 +5572,76 @@
         }
       ],
       "changeFromPreviousScoredDay": -40.5
+    },
+    {
+      "date": "2026-10-06",
+      "dailyScore": 39.1,
+      "dailyLabel": "Negative",
+      "rollingScore": 44.9,
+      "confidence": 36.6,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 7,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 1,
+      "dispersion": 0.4846,
+      "rejectedCandidateCounts": {
+        "missing_company_alias": 5
+      },
+      "topStories": [
+        {
+          "id": "360d16ac804fb480",
+          "storyClusterId": "story-002",
+          "title": "Entain Plans 400 Job Cuts Amid Rising UK Gambling Taxes",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQQjhhOFpHN1UzM1g5bEI0TU1YS21Bcmk3SWpuenNrU2RpdzV5OUJ2R1JNOXdwZGMtRmg2clVaX2tCVDFWTm9RMXMweU5yRHNwNzUxQ3dSRjdvOU9ubmZuRmdlQnYwWF9MMXI5THlRZEhiV21fa09CUnZHQ2JiZTlrLTBCVWQ?oc=5",
+          "source": "playusa.com",
+          "publishedAt": "2026-10-06T20:15:00Z",
+          "polarity": -0.9188,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "085f38204592eb31",
+          "storyClusterId": "story-001",
+          "title": "Entain launches campaign against betting shop tax rise",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNbTVFZjRmSzAwbzVvOUxlaXE1LXpsWDlLTl96UERKRXZ3WWVuOFBaakZxNEF0V0JiVi15YWEwb0dkQW9HTS0yTnhaNXRRQzdwdnVFNW9lSGpJdHlJTlBjMGVXUmJiSWtGTmJ5YW1yOUhVc3F4TjBiMW9uWlRjZzFmcEtPYmlDOEY5SXNmcjZTWFo0MVRvcngycko5NEtnUEx0?oc=5",
+          "source": "standard.co.uk",
+          "publishedAt": "2026-10-06T17:05:43Z",
+          "polarity": 0.0505,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "workforce_reduction",
+          "direction": "negative",
+          "severity": "high",
+          "status": "possible",
+          "evidenceArticleIds": [
+            "360d16ac804fb480"
+          ],
+          "sourceCount": 1
+        },
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 36.6",
+          "evidenceArticleIds": [
+            "360d16ac804fb480",
+            "085f38204592eb31"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 15.4
     }
   ]
 }
