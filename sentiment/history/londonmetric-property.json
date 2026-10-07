@@ -3064,35 +3064,49 @@
     },
     {
       "date": "2026-10-06",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 51.1,
-      "confidence": 0.0,
+      "dailyScore": 64.6,
+      "dailyLabel": "Positive",
+      "rollingScore": 52.8,
+      "confidence": 19.6,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 0,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
-      "positiveStoryCount": 0,
+      "candidateCount": 1,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 1,
       "neutralStoryCount": 0,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {},
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "a4c29bbd073e354e",
+          "storyClusterId": "story-001",
+          "title": "LondonMetric Property advances Tuesday, outperforms market",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVEdDaTVOOVRoeTFZdUJuSHFGYWluV2d1Q2l5bS1TUHZZMTg2VXlFZ1NIN0Nmbk5QaWNrSWd4V1VGT20ybWs0N1ljZW9fTGp1YnRRZmlFWG4zTGMtcUpnQzdaUjJBN2hRVmt0MWFBZUl0YW5zQWtYZnFjaXI4Mlhjb0xoc3NuenhESW8wOTVxWk5LSTg1dW93VzNfd19JeHh1aTlIZTFoNTA3U3Zjamx6UW1yOExuLUVZ?oc=5",
+          "source": "marketwatch.com",
+          "publishedAt": "2026-10-06T16:06:00Z",
+          "polarity": 0.8752,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 19.6",
+          "evidenceArticleIds": [
+            "a4c29bbd073e354e"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": 14.2
     }
   ]
 }
