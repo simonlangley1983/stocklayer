@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T23:39:32.793675Z",
+  "generatedAt": "2026-10-08T02:49:46.920831Z",
   "company": {
     "companyName": "J Sainsbury PLC",
     "ticker": "SBRY.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-10-06",
-    "observationCount": 83,
-    "scoredDayCount": 20,
-    "latestScore": 52.4,
-    "latestScoreDate": "2026-10-06",
+    "periodEnd": "2026-10-07",
+    "observationCount": 84,
+    "scoredDayCount": 21,
+    "latestScore": 50.1,
+    "latestScoreDate": "2026-10-07",
     "series": [
       {
         "date": "2026-06-30",
@@ -772,6 +772,15 @@
         "sourceCount": 1,
         "confidence": 15.7,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-07",
+        "dailyScore": 50.1,
+        "rollingScore": 50.4,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.1,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1439,17 +1448,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 32.0,
+    "score": 31.9,
     "label": "Low",
-    "evidenceCoverage": 98,
+    "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
         "score": 50.2,
         "weight": 0.4,
-        "reliability": 0.95,
-        "detail": "Recency-weighted average of 19 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 1.0,
+        "detail": "Recency-weighted average of 20 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",

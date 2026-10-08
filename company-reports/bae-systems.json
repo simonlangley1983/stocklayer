@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T23:39:32.793675Z",
+  "generatedAt": "2026-10-08T02:49:46.920831Z",
   "company": {
     "companyName": "BAE Systems",
     "ticker": "BA.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-14",
-    "periodEnd": "2026-10-06",
-    "observationCount": 92,
-    "scoredDayCount": 77,
-    "latestScore": 54.0,
-    "latestScoreDate": "2026-10-06",
+    "periodEnd": "2026-10-07",
+    "observationCount": 93,
+    "scoredDayCount": 78,
+    "latestScore": 65.8,
+    "latestScoreDate": "2026-10-07",
     "series": [
       {
         "date": "2026-06-14",
@@ -853,6 +853,15 @@
         "sourceCount": 10,
         "confidence": 82.3,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-07",
+        "dailyScore": 65.8,
+        "rollingScore": 58.4,
+        "storyCount": 13,
+        "sourceCount": 11,
+        "confidence": 86.1,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1447,17 +1456,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 53.4,
+    "score": 53.5,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 59.9,
+        "score": 60.1,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 72 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 73 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1635,6 +1644,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "59b13797a38df59992a8",
+      "type": "contract",
+      "title": "BAE Systems wins Lockheed Martin contract to supply F-35 EW systems",
+      "date": "2026-10-07",
+      "status": "pending_review",
+      "reviewDate": "2027-04-05",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5zNUlWVEliTnlfNXI4eVo5a05mZThaV2R1Z2c3Q2hZUDJwb2s3LUh0dEs2ZldWbVFoNjNJZTJaQ3MxZURGaTA3dzRqRU50ZnAzbEJpS2IzT3FGT2JoajJTTnd5TXBvMkNhTEoyT3V5TWkyeUtzSGZz?oc=5",
+          "publisher": "airforce-technology.com",
+          "date": "2026-10-07"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "bc496d52a614b1e146a4",
       "type": "contract",

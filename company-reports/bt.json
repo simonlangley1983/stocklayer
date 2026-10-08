@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T23:39:32.793675Z",
+  "generatedAt": "2026-10-08T02:49:46.920831Z",
   "company": {
     "companyName": "BT Group PLC",
     "ticker": "BT-A.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-10-06",
-    "observationCount": 87,
-    "scoredDayCount": 17,
-    "latestScore": 36.8,
-    "latestScoreDate": "2026-10-06",
+    "periodEnd": "2026-10-07",
+    "observationCount": 88,
+    "scoredDayCount": 18,
+    "latestScore": 40.6,
+    "latestScoreDate": "2026-10-07",
     "series": [
       {
         "date": "2026-06-30",
@@ -808,6 +808,15 @@
         "sourceCount": 3,
         "confidence": 42.7,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-07",
+        "dailyScore": 40.6,
+        "rollingScore": 47.0,
+        "storyCount": 4,
+        "sourceCount": 4,
+        "confidence": 46.8,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1475,17 +1484,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 49.0,
+    "score": 48.7,
     "label": "Mixed",
-    "evidenceCoverage": 94,
+    "evidenceCoverage": 96,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 49.8,
+        "score": 49.1,
         "weight": 0.4,
-        "reliability": 0.85,
-        "detail": "Recency-weighted average of 17 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.9,
+        "detail": "Recency-weighted average of 18 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1672,6 +1681,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "4adef57f6bf05a343868",
+      "type": "financial_distress",
+      "title": "BT Group buys broadband provider TalkTalk to save it from bankruptcy",
+      "date": "2026-10-07",
+      "status": "pending_review",
+      "reviewDate": "2027-01-05",
+      "direction": "Neutral / mixed",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOTFFFU3lqQktsQUJJendDMEtZODkxelJWSi1BUUM5ekJnMXBRQUpzbWVHSV9ORXN1Rm1vZXVnZ1huWHJlMVRDOHJjNjJQYVB5anVDaDZCeDRqTGpXWDVFUU1La043Rll5OTBWNEpGWXJNQTNtTUNwRDQzN3doNXNDbEhGa25tdDNBbHhQSnAzSkx5SDM1LXo1Nw?oc=5",
+          "publisher": "benton.org",
+          "date": "2026-10-07"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "7bcd3d41728162f22d92",
       "type": "acquisition",

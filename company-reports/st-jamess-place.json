@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T23:39:32.793675Z",
+  "generatedAt": "2026-10-08T02:49:46.920831Z",
   "company": {
     "companyName": "St James's Place PLC",
     "ticker": "STJ.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-10",
-    "periodEnd": "2026-10-06",
-    "observationCount": 81,
-    "scoredDayCount": 17,
-    "latestScore": 62.2,
-    "latestScoreDate": "2026-10-05",
+    "periodEnd": "2026-10-07",
+    "observationCount": 82,
+    "scoredDayCount": 18,
+    "latestScore": 40.2,
+    "latestScoreDate": "2026-10-07",
     "series": [
       {
         "date": "2026-07-10",
@@ -754,19 +754,18 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-10-07",
+        "dailyScore": 40.2,
+        "rollingScore": 49.4,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 18.3,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
-      {
-        "date": "2026-09-17",
-        "type": "press_story",
-        "title": "St James’s Place looks smartly attired for the AI wealth party",
-        "source": "ft.com",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQQnpEQkdHb0k2TUtWbnNDV2JxajZIVVhJWlJWSWJPUHl4NWtmRVdnRi05OEVzYURqWFl4WDZLeUZ1VGtxdUZscnExZDIyUEFfN2dKY1lqY1pfSzNEN0JYazREOHphdXFPd1lNbEFITXhrdEY2ay10OUZabUxOYUFuR1lWU3Q?oc=5",
-        "direction": "Positive",
-        "detail": null,
-        "significance": 0.603
-      },
       {
         "date": "2026-09-21",
         "type": "press_story",
@@ -856,6 +855,16 @@
         "direction": "Very positive",
         "detail": null,
         "significance": 1.079
+      },
+      {
+        "date": "2026-10-07",
+        "type": "press_story",
+        "title": "St. James's Place (LON:STJ) Sets New 1-Year Low - What's Next?",
+        "source": "marketbeat.com",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPeGJNaWhyVkh2QU9FUDdJUGZIU0o5RXBPYWNSXzFwOUdabDluVmFIOWxReVpZQ0VSMWdfcS1PVjJ1NzJoZ0ZlcHJXQ0ljcGsyaEQ3a0NtNm5MUXVNZ3JMam5HVXZxbUNKeHlVakQyTTNDeVBLajg0czFLbnhaUElJVGtNMnNzay15N1dPbllTQmktcWJfQm1zbjlrNEVDQVEyOFhhNVVrX1VzSHc2ckNvbmdTOG8?oc=5",
+        "direction": "Very negative",
+        "detail": null,
+        "significance": 0.735
       }
     ]
   },
@@ -1348,17 +1357,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 46.2,
+    "score": 45.9,
     "label": "Mixed",
-    "evidenceCoverage": 94,
+    "evidenceCoverage": 96,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 49.1,
+        "score": 48.4,
         "weight": 0.4,
-        "reliability": 0.85,
-        "detail": "Recency-weighted average of 17 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.9,
+        "detail": "Recency-weighted average of 18 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1433,16 +1442,6 @@
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
-    },
-    {
-      "date": "2026-09-17",
-      "type": "press_story",
-      "title": "St James’s Place looks smartly attired for the AI wealth party",
-      "source": "ft.com",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQQnpEQkdHb0k2TUtWbnNDV2JxajZIVVhJWlJWSWJPUHl4NWtmRVdnRi05OEVzYURqWFl4WDZLeUZ1VGtxdUZscnExZDIyUEFfN2dKY1lqY1pfSzNEN0JYazREOHphdXFPd1lNbEFITXhrdEY2ay10OUZabUxOYUFuR1lWU3Q?oc=5",
-      "direction": "Positive",
-      "detail": null,
-      "significance": 0.603
     },
     {
       "date": "2026-09-21",
@@ -1533,6 +1532,16 @@
       "direction": "Very positive",
       "detail": null,
       "significance": 1.079
+    },
+    {
+      "date": "2026-10-07",
+      "type": "press_story",
+      "title": "St. James's Place (LON:STJ) Sets New 1-Year Low - What's Next?",
+      "source": "marketbeat.com",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPeGJNaWhyVkh2QU9FUDdJUGZIU0o5RXBPYWNSXzFwOUdabDluVmFIOWxReVpZQ0VSMWdfcS1PVjJ1NzJoZ0ZlcHJXQ0ljcGsyaEQ3a0NtNm5MUXVNZ3JMam5HVXZxbUNKeHlVakQyTTNDeVBLajg0czFLbnhaUElJVGtNMnNzay15N1dPbllTQmktcWJfQm1zbjlrNEVDQVEyOFhhNVVrX1VzSHc2ckNvbmdTOG8?oc=5",
+      "direction": "Very negative",
+      "detail": null,
+      "significance": 0.735
     }
   ],
   "persistentEvents": []

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T23:39:32.793675Z",
+  "generatedAt": "2026-10-08T02:49:46.920831Z",
   "company": {
     "companyName": "Auto Trader Group PLC",
     "ticker": "AUTO.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-14",
-    "periodEnd": "2026-10-06",
-    "observationCount": 96,
-    "scoredDayCount": 30,
-    "latestScore": 45.5,
-    "latestScoreDate": "2026-10-06",
+    "periodEnd": "2026-10-07",
+    "observationCount": 97,
+    "scoredDayCount": 31,
+    "latestScore": 59.8,
+    "latestScoreDate": "2026-10-07",
     "series": [
       {
         "date": "2026-06-14",
@@ -889,6 +889,15 @@
         "sourceCount": 1,
         "confidence": 17.0,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-07",
+        "dailyScore": 59.8,
+        "rollingScore": 50.5,
+        "storyCount": 2,
+        "sourceCount": 2,
+        "confidence": 36.4,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -931,16 +940,6 @@
         "direction": "neutral",
         "detail": "5 stories versus trailing median 1",
         "significance": 1.582
-      },
-      {
-        "date": "2026-09-23",
-        "type": "coverage_spike",
-        "title": "2023 Toyota Yaris for sale - Listing #1378036 | Auto Trader NZ",
-        "source": "autotrader.co.nz",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5zdjF6V3Z4dXkzWVFiUW5xZHI2MnBPd3Z6SVFCYXpELVhOeFhWcnNLcldlSDRrS3lJcF9CM0JjZGZUSmFDT1A0NmdIelZhSGtveGZEWXRVWFh2STllRWR5cElqeXFqZGxIaUo4a2J5dW1EZw?oc=5",
-        "direction": "neutral",
-        "detail": "5 stories versus trailing median 1",
-        "significance": 0.682
       },
       {
         "date": "2026-09-24",
@@ -991,6 +990,16 @@
         "direction": "Very negative",
         "detail": null,
         "significance": 1.065
+      },
+      {
+        "date": "2026-10-07",
+        "type": "press_story",
+        "title": "Auto Trader : Autotrader forecasts nearly 10.2 million new and used car transactions in 2026 as UK Car market continues to grow",
+        "source": "marketscreener.com",
+        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQcEIyRXNxQ3h5SFN2b2pybXlicTZ6OUZ4aVFpbk1rVGVsZzFRNTBPeGhYU0ptb2duYUMwWkhzLTNfclVqVUhUd2dxOHJFeWFhekpGRjJnbWpEODBpanlRT1YtdlRuckdiZHNfUlh5RmVtb1hBcWtQVXA2cGVVXzRfTl9jV1kxRWtOeWM4amctamkwRGg5eFV1a3FXSHlXMVFqWEJHTjdtOFowYl9KRFFYQXhoTERsWEdhbkN3ZTdrNU82YmxhUjJTNWt1WnV2WEN2d2ZLM1lMRXMyRDhJZnBoNE9DMjNoQQ?oc=5",
+        "direction": "Very positive",
+        "detail": null,
+        "significance": 0.758
       }
     ]
   },
@@ -1556,17 +1565,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 51.1,
+    "score": 51.3,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 49.9,
+        "score": 50.5,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 27 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 28 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1683,16 +1692,6 @@
       "significance": 1.582
     },
     {
-      "date": "2026-09-23",
-      "type": "coverage_spike",
-      "title": "2023 Toyota Yaris for sale - Listing #1378036 | Auto Trader NZ",
-      "source": "autotrader.co.nz",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5zdjF6V3Z4dXkzWVFiUW5xZHI2MnBPd3Z6SVFCYXpELVhOeFhWcnNLcldlSDRrS3lJcF9CM0JjZGZUSmFDT1A0NmdIelZhSGtveGZEWXRVWFh2STllRWR5cElqeXFqZGxIaUo4a2J5dW1EZw?oc=5",
-      "direction": "neutral",
-      "detail": "5 stories versus trailing median 1",
-      "significance": 0.682
-    },
-    {
       "date": "2026-09-24",
       "type": "press_story",
       "title": "BMW tops charts among new car buyers on Auto Trader",
@@ -1741,6 +1740,16 @@
       "direction": "Very negative",
       "detail": null,
       "significance": 1.065
+    },
+    {
+      "date": "2026-10-07",
+      "type": "press_story",
+      "title": "Auto Trader : Autotrader forecasts nearly 10.2 million new and used car transactions in 2026 as UK Car market continues to grow",
+      "source": "marketscreener.com",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQcEIyRXNxQ3h5SFN2b2pybXlicTZ6OUZ4aVFpbk1rVGVsZzFRNTBPeGhYU0ptb2duYUMwWkhzLTNfclVqVUhUd2dxOHJFeWFhekpGRjJnbWpEODBpanlRT1YtdlRuckdiZHNfUlh5RmVtb1hBcWtQVXA2cGVVXzRfTl9jV1kxRWtOeWM4amctamkwRGg5eFV1a3FXSHlXMVFqWEJHTjdtOFowYl9KRFFYQXhoTERsWEdhbkN3ZTdrNU82YmxhUjJTNWt1WnV2WEN2d2ZLM1lMRXMyRDhJZnBoNE9DMjNoQQ?oc=5",
+      "direction": "Very positive",
+      "detail": null,
+      "significance": 0.758
     },
     {
       "date": "2026-12-31",
