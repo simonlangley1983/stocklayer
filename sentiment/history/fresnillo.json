@@ -4889,6 +4889,76 @@
       ],
       "flags": [],
       "changeFromPreviousScoredDay": 11.7
+    },
+    {
+      "date": "2026-10-07",
+      "dailyScore": 50.3,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 48.5,
+      "confidence": 40.4,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 4,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 1,
+      "dispersion": 0.8355,
+      "rejectedCandidateCounts": {
+        "missing_company_alias": 2
+      },
+      "topStories": [
+        {
+          "id": "18b182e9b16cd859",
+          "storyClusterId": "story-002",
+          "title": "Fresnillo’s Q3 Output Looks Steady, RBC Says",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1oRjN6cTdSdVptZjM1d2N4dHpQeVJFRkdtTDBzdnJvVWJRWnpTOHJtdl90VHVuam9MLWllX1ZVeHFIMnZNUTNRYlptSl9qbzg5aWQzallweVRQQmlxdG5iZ0FYS1BDeDZlV0FlSXhoSWxhWERWdXNIenVuNA?oc=5",
+          "source": "finimize.com",
+          "publishedAt": "2026-10-07T10:24:55Z",
+          "polarity": 0.8481,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "8c5bb3e098b17e29",
+          "storyClusterId": "story-001",
+          "title": "RBC Forecasts 'Neutral' Q3 Results from Fresnillo",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOUGdoTkNMSXFQYy1NektuLXVDSmI0eFp1d3FFM0h5R2w5LTNGQ3dzcjRmU2U2blVQcTNoZmtRcjd4RHFBeWU1eHI3cm9pZDBCbGxwb25oTHdXYVk5UXJtYW1JWDdFa3BwRmExNHF5VGRQLVl3LURwR25na05hQlU5U3RSWWNGRm5YVGVDR1F2NERJazNCVl8zNFQxZG1sTXVGUXc?oc=5",
+          "source": "marketscreener.com",
+          "publishedAt": "2026-10-07T10:18:14Z",
+          "polarity": -0.8228,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "trading_update",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "possible",
+          "evidenceArticleIds": [
+            "8c5bb3e098b17e29"
+          ],
+          "sourceCount": 1
+        },
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "18b182e9b16cd859",
+            "8c5bb3e098b17e29"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 2.8
     }
   ]
 }
