@@ -4043,37 +4043,51 @@
     },
     {
       "date": "2026-10-07",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 53.6,
-      "confidence": 0.0,
+      "dailyScore": 36.0,
+      "dailyLabel": "Negative",
+      "rollingScore": 51.4,
+      "confidence": 19.7,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 2,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 3,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
       "positiveStoryCount": 0,
       "neutralStoryCount": 0,
-      "negativeStoryCount": 0,
+      "negativeStoryCount": 1,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
         "missing_company_alias": 2
       },
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "05af759f98cc2960",
+          "storyClusterId": "story-001",
+          "title": "Endeavour Mining slips Wednesday, underperforms market",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQQzNsUG9kWDhTejNPT2hackIwS19FUVYtYzMwQVdDUTYwREdBemZzb0x6RmtPZWtBNzJMY1A0RlFzV05adXVBTUhIcjYxTkotZjBuOXlBN1B1S0ZveWRnTlBBSHprN3hLV25vODBVS082M1lvTExxbmhtMFpzMkx6VXBDT0FjcjV3ck9LNld6cmtmSHpCelpSc001T0JzMC13UkZtOWE0STBiR2ZiTFJMbnVrcw?oc=5",
+          "source": "marketwatch.com",
+          "publishedAt": "2026-10-07T16:07:00Z",
+          "polarity": -0.8399,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 19.7",
+          "evidenceArticleIds": [
+            "05af759f98cc2960"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": -27.4
     }
   ]
 }
