@@ -6166,27 +6166,37 @@
     },
     {
       "date": "2026-10-08",
-      "dailyScore": 52.0,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 48.7,
-      "confidence": 24.2,
-      "confidenceBand": "low",
+      "dailyScore": 42.4,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 47.3,
+      "confidence": 40.4,
+      "confidenceBand": "medium",
       "coverageStatus": "ok",
       "collectionCompleteness": 0.75,
-      "candidateCount": 32,
-      "eligibleArticleCount": 2,
-      "storyCount": 2,
-      "effectiveStoryCount": 2.0,
-      "sourceCount": 2,
+      "candidateCount": 22,
+      "eligibleArticleCount": 3,
+      "storyCount": 3,
+      "effectiveStoryCount": 3.0,
+      "sourceCount": 3,
       "positiveStoryCount": 0,
       "neutralStoryCount": 2,
-      "negativeStoryCount": 0,
-      "dispersion": 0.067,
+      "negativeStoryCount": 1,
+      "dispersion": 0.4759,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 29,
-        "missing_company_alias": 1
+        "ambiguous_company_without_alias": 19
       },
       "topStories": [
+        {
+          "id": "7567748361e8ccc2",
+          "storyClusterId": "story-003",
+          "title": "HSBC Holdings slips Thursday, underperforms market",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxONTJVMm05aDdNWHZnNjdCODZKY0RqWHk2WmdDejh3bkhRNGxZcWM1a3QteHhRT0ZQUWlSeWZTODRHVkpGZXVWbDA0c01nNG1OeGs2ZEJZZ2V6aXM2SzZoUTFvWXlRRGVQS1hhb2Z1MHNuR3JoMkdOUVhDMUZ3VUNjYW5uSVZDS3hUWE1iTHpYbFlSVDJTTnJKdVl3eUlRT29fV1d6MnpZV2JhLWREcFJRX0dHWGVFdDVVM1lmbWJDM3hnTFE3QUE?oc=5",
+          "source": "marketwatch.com",
+          "publishedAt": "2026-10-08T16:07:00Z",
+          "polarity": -0.9228,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
         {
           "id": "dbb18818b1052b37",
           "storyClusterId": "story-002",
@@ -6212,29 +6222,19 @@
       ],
       "flags": [
         {
-          "type": "low_confidence",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Confidence is 24.2",
-          "evidenceArticleIds": [
-            "dbb18818b1052b37",
-            "6acc2338ad59cd1d"
-          ]
-        },
-        {
           "type": "collection_degraded",
           "direction": "neutral",
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
+            "7567748361e8ccc2",
             "dbb18818b1052b37",
             "6acc2338ad59cd1d"
           ]
         }
       ],
-      "changeFromPreviousScoredDay": 16.1
+      "changeFromPreviousScoredDay": 6.5
     }
   ]
 }
