@@ -4476,6 +4476,77 @@
         }
       ],
       "changeFromPreviousScoredDay": null
+    },
+    {
+      "date": "2026-10-08",
+      "dailyScore": 49.3,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.6,
+      "confidence": 33.6,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 5,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 1,
+      "dispersion": 0.8957,
+      "rejectedCandidateCounts": {
+        "missing_company_alias": 3
+      },
+      "topStories": [
+        {
+          "id": "ad752bf414908673",
+          "storyClusterId": "story-002",
+          "title": "Games Workshop passed AGM votes. Games Workshop stock sits 30.33 percent below its high",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPTjd2MnY0R0huNV9jNlVxYmxaSThnVTBqSEJ2Z2puejJnRHh5UF94WVRRZWNDQklKNjB0OS0yeXhtSmFFNnVCNnpwTldMNmhENHJvY0NTdWE2WHBsTE1hTXlKNEp2TXVxejVBNXNBQms3M3o4aTV1UlVmMERBUndWMUl2UXNpaEVVYzIwQjU4c2ZJMUZyeE5tRHZRanREZ1ZOSTFReWlXU011d056OFlFSDZmRWItMk11YmhaaU14Ylh6R3VQWVNiMFFqWG9KNnNZN09yYTVMUFhBelFKdVE?oc=5",
+          "source": "ad-hoc-news.de",
+          "publishedAt": "2026-10-08T14:30:48Z",
+          "polarity": -0.9222,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "682968bfca76be1b",
+          "storyClusterId": "story-001",
+          "title": "Games Workshop stock trades at GBp 16,460 as revenue rose 10.9%",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNSkNfU0hIQzNvd29Ham1kYUVacFN4bjU0M0o2X1plaE93NGxRV014endMMVR4RV90dFFwc0w0Q19UQWl0dGxGNGc1amNuM1Y5bk0xUm1ta3V5YWpUbl9IX212Z1JKdUhKYVNvWWxRZVpLLXhKWXZPTHhUaW1YV2h5b2xraXdWQnJCdXczWmFZb0JwV21yMHY1aWt6WXFwYW5VdDdpYzJDX3NsYkxvbjhqVmtEcVl1MXU2bzQ5UEIzT0VNUVBsS1lHVw?oc=5",
+          "source": "ad-hoc-news.de",
+          "publishedAt": "2026-10-08T07:44:52Z",
+          "polarity": 0.8692,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "ad752bf414908673",
+            "682968bfca76be1b"
+          ]
+        },
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 33.6",
+          "evidenceArticleIds": [
+            "ad752bf414908673",
+            "682968bfca76be1b"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -0.5
     }
   ]
 }

@@ -6163,6 +6163,78 @@
         }
       ],
       "changeFromPreviousScoredDay": -20.6
+    },
+    {
+      "date": "2026-10-08",
+      "dailyScore": 52.0,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 48.7,
+      "confidence": 24.2,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 32,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 2,
+      "negativeStoryCount": 0,
+      "dispersion": 0.067,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 29,
+        "missing_company_alias": 1
+      },
+      "topStories": [
+        {
+          "id": "dbb18818b1052b37",
+          "storyClusterId": "story-002",
+          "title": "Is Asia Giving HSBC Holdings (LSE:HSBA) The Edge Over UK Lenders?",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNOGFWamVQX3VralNxblRMVkxTakd4eTE5S2VySFM1Y1kwdlZzRFJtMEhHR0RudUhvMTZnOUo2b0t3dXA5YTVKcEUzcmZqN0FRa0l3VHJoaTRJZWZ6dVJ1MTlmaVpNZFdNbWZIeWc2UktjZldVbWFlX1dtWmt2aTVUQmMzNGplWnFCTXBRRm9tN21yRC1kOEU2N1lqOU9WaEZkZ08taExkSVU?oc=5",
+          "source": "kalkinemedia.com",
+          "publishedAt": "2026-10-08T07:57:00Z",
+          "polarity": 0.147,
+          "sentiment": "Slightly positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "6acc2338ad59cd1d",
+          "storyClusterId": "story-001",
+          "title": "HSBC Holdings plc (HSBC) options chain",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQQmN1cmo2LUZoc2dheVZOMVhjMzg0SF9zZ1pFbndRZmtqRkpxajlBcUR0N3ZLWncyT0hScUI5Vlp2OUphamp6RG9fRzJja1pZSXdFUzlEa2ppTkFmOUdKR2RCVjZUYTFqZ0VZcEJNWkg1Q1l6WFdxNU5XazA0UjZmd3NYN2FtZkhlekN1SlhZd1VOUQ?oc=5",
+          "source": "uk.finance.yahoo.com",
+          "publishedAt": "2026-10-08T04:14:20Z",
+          "polarity": 0.0131,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 24.2",
+          "evidenceArticleIds": [
+            "dbb18818b1052b37",
+            "6acc2338ad59cd1d"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "dbb18818b1052b37",
+            "6acc2338ad59cd1d"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 16.1
     }
   ]
 }
