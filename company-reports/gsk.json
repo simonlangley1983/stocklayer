@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-09T01:39:19.793528Z",
+  "generatedAt": "2026-10-09T03:01:59.970454Z",
   "company": {
     "companyName": "GSK",
     "ticker": "GSK.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-15",
-    "periodEnd": "2026-10-07",
-    "observationCount": 81,
-    "scoredDayCount": 78,
-    "latestScore": 59.0,
-    "latestScoreDate": "2026-10-07",
+    "periodEnd": "2026-10-08",
+    "observationCount": 82,
+    "scoredDayCount": 79,
+    "latestScore": 47.6,
+    "latestScoreDate": "2026-10-08",
     "series": [
       {
         "date": "2026-06-15",
@@ -754,6 +754,15 @@
         "sourceCount": 10,
         "confidence": 82.5,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-08",
+        "dailyScore": 47.6,
+        "rollingScore": 53.5,
+        "storyCount": 24,
+        "sourceCount": 19,
+        "confidence": 88.8,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -818,16 +827,6 @@
         "significance": 1.605
       },
       {
-        "date": "2026-09-23",
-        "type": "coverage_spike",
-        "title": "Open letter on declining pharma investment Europe pressures GSK stock below GBX1,884 support",
-        "source": "tradersunion.com",
-        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMG5nSmF5WnhVaWN0a1Zpb2xTTG0tckE4M2J4d2dUcHl3cDdqVVptWDJTTlBHTTY5eTNuR1hrSVJQYnNyOGZPNXd3ckh5aE9tTHBDRUtQeVBENzRpNGJ5a0tnU3JOM0UxTXpMMUl1aVJLME5qVVAwZjVtczc2VVJBTVhZNWRIRkZDSDJr?oc=5",
-        "direction": "neutral",
-        "detail": "15 stories versus trailing median 4",
-        "significance": 1.59
-      },
-      {
         "date": "2026-09-24",
         "type": "earnings_miss",
         "title": "GSK stock falls 1.05 percent as Q2 profit drops",
@@ -856,6 +855,16 @@
         "direction": "negative",
         "detail": "Daily score decreased by 16.2 points",
         "significance": 1.606
+      },
+      {
+        "date": "2026-10-08",
+        "type": "high_disagreement",
+        "title": "GSK shares drop more than 2% after adding a new hepatology candidate amid persistent selling",
+        "source": "tradersunion.com",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPWWtqb1hhaFBDZ2U1UHVqQWpyWHlxenJIdUloM3FsdF92WVJxLVZDaFVSTnIzNTdqdVZVYU5JMnd0andZYU9Kbi1DOFlMYjdUUEFjMWR3djZiM3hqM2ZHQ0tJYlRfc09FU29mRW1UdXJTalJIeHFPZl82UDhLZVJvcmNiMDdwOFRWX1E?oc=5",
+        "direction": "mixed",
+        "detail": "Positive and negative coverage is unusually dispersed",
+        "significance": 1.603
       }
     ]
   },
@@ -1348,17 +1357,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 52.9,
+    "score": 52.8,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 56.9,
+        "score": 56.6,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 69 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 70 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1495,16 +1504,6 @@
       "significance": 1.605
     },
     {
-      "date": "2026-09-23",
-      "type": "coverage_spike",
-      "title": "Open letter on declining pharma investment Europe pressures GSK stock below GBX1,884 support",
-      "source": "tradersunion.com",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMG5nSmF5WnhVaWN0a1Zpb2xTTG0tckE4M2J4d2dUcHl3cDdqVVptWDJTTlBHTTY5eTNuR1hrSVJQYnNyOGZPNXd3ckh5aE9tTHBDRUtQeVBENzRpNGJ5a0tnU3JOM0UxTXpMMUl1aVJLME5qVVAwZjVtczc2VVJBTVhZNWRIRkZDSDJr?oc=5",
-      "direction": "neutral",
-      "detail": "15 stories versus trailing median 4",
-      "significance": 1.59
-    },
-    {
       "date": "2026-09-24",
       "type": "earnings_miss",
       "title": "GSK stock falls 1.05 percent as Q2 profit drops",
@@ -1533,9 +1532,39 @@
       "direction": "negative",
       "detail": "Daily score decreased by 16.2 points",
       "significance": 1.606
+    },
+    {
+      "date": "2026-10-08",
+      "type": "high_disagreement",
+      "title": "GSK shares drop more than 2% after adding a new hepatology candidate amid persistent selling",
+      "source": "tradersunion.com",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPWWtqb1hhaFBDZ2U1UHVqQWpyWHlxenJIdUloM3FsdF92WVJxLVZDaFVSTnIzNTdqdVZVYU5JMnd0andZYU9Kbi1DOFlMYjdUUEFjMWR3djZiM3hqM2ZHQ0tJYlRfc09FU29mRW1UdXJTalJIeHFPZl82UDhLZVJvcmNiMDdwOFRWX1E?oc=5",
+      "direction": "mixed",
+      "detail": "Positive and negative coverage is unusually dispersed",
+      "significance": 1.603
     }
   ],
   "persistentEvents": [
+    {
+      "id": "184ae96594655f51897d",
+      "type": "acquisition",
+      "title": "Can GSK plc (LSE:GSK) strengthen its blood-cancer pipeline after this week's T cell engager acquisition?",
+      "date": "2026-10-08",
+      "status": "pending_review",
+      "reviewDate": "2027-04-06",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPc2FINkI0RG5ZWHFlTjBJTWlzTlhkNnhIcUM5OXlDaTI3S0Jsd2VRdEc3MFFreHkycVhveWsyLVdLWGxVOFo1SS1DV2pHelh6V1psS0ExQmRpcXg3anU5Qkc2a2EzVG9aMXZWcDdydE5id1BGamlsYmRUTURXbEIzSHJjVkpteUtEUjhTalhuWmxlV2pLU042MUJ3SmZ0OVU2ZUM1Y29jWUVQUUlhUnJFWnBTQzg3NDhLTnd1dE1pU3RPWWZUaDVHWDY2Uy1UU3Y2eWhTUVpmc3VHS280Unc?oc=5",
+          "publisher": "kalkinemedia.com",
+          "date": "2026-10-08"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "392e4984cda23eb7bdc0",
       "type": "acquisition",

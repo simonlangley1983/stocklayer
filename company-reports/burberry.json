@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-09T01:39:19.793528Z",
+  "generatedAt": "2026-10-09T03:01:59.970454Z",
   "company": {
     "companyName": "Burberry Group PLC",
     "ticker": "BRBY.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-09-05",
-    "periodEnd": "2026-10-07",
-    "observationCount": 33,
-    "scoredDayCount": 25,
-    "latestScore": 41.0,
-    "latestScoreDate": "2026-10-07",
+    "periodEnd": "2026-10-08",
+    "observationCount": 34,
+    "scoredDayCount": 26,
+    "latestScore": 48.6,
+    "latestScoreDate": "2026-10-08",
     "series": [
       {
         "date": "2026-09-05",
@@ -321,6 +321,15 @@
         "storyCount": 7,
         "sourceCount": 7,
         "confidence": 76.0,
+        "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-08",
+        "dailyScore": 48.6,
+        "rollingScore": 50.7,
+        "storyCount": 7,
+        "sourceCount": 7,
+        "confidence": 72.8,
         "coverageStatus": "ok"
       }
     ],
@@ -989,17 +998,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 42.9,
+    "score": 42.8,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 52.0,
+        "score": 51.8,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 25 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 26 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1185,5 +1194,26 @@
       "approximateDate": true
     }
   ],
-  "persistentEvents": []
+  "persistentEvents": [
+    {
+      "id": "62efc5735ed3e555e842",
+      "type": "leadership_restructuring",
+      "title": "Burberry Replaces Chief Executive As Annual Profits Slump",
+      "date": "2026-10-08",
+      "status": "pending_review",
+      "reviewDate": "2027-01-06",
+      "direction": "Very negative",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOcUxTS29QOVlWVnk5MS1PRzF6TEw4RUZHQm9PRWlxcmE2Z29pREN1RUFTYTNnaHhTTmdlYlhkRVd3U2tDRjBUcFBzRnhBMDJoRFdVNTNwUHlnZGNPNFA5YkhfQVJKVm1xZE5KSGJIdzQxQjhWQS1XV1JPVE82d3ZPRnljZ1ZFRXpPT0pWeDlSSkpOa1BtRzBEQnM3bTdaN25fU3hKSlh6dXRHZGtfYkwxc2pSd0hldWNZSnJUN19sclZKUUtIM0V4bHBLcktMTXJNV3RsZ0c2Wm1kREdw?oc=5",
+          "publisher": "nfocusmagazine.com",
+          "date": "2026-10-08"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    }
+  ]
 }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-09T01:39:19.793528Z",
+  "generatedAt": "2026-10-09T03:01:59.970454Z",
   "company": {
     "companyName": "Whitbread PLC",
     "ticker": "WTB.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-05",
-    "periodEnd": "2026-10-07",
-    "observationCount": 91,
-    "scoredDayCount": 80,
-    "latestScore": 54.9,
-    "latestScoreDate": "2026-10-07",
+    "periodEnd": "2026-10-08",
+    "observationCount": 92,
+    "scoredDayCount": 81,
+    "latestScore": 52.4,
+    "latestScoreDate": "2026-10-08",
     "series": [
       {
         "date": "2026-07-05",
@@ -844,6 +844,15 @@
         "sourceCount": 10,
         "confidence": 77.7,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-08",
+        "dailyScore": 52.4,
+        "rollingScore": 52.1,
+        "storyCount": 2,
+        "sourceCount": 2,
+        "confidence": 32.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1584,17 +1593,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 50.0,
+    "score": 50.2,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 44.4,
+        "score": 44.7,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 73 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 74 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1790,6 +1799,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "6fe3c6792784e0a8f965",
+      "type": "acquisition",
+      "title": "Whitbread Acquires Two Future Inns",
+      "date": "2026-10-08",
+      "status": "pending_review",
+      "reviewDate": "2027-04-06",
+      "direction": "Slightly positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOa0d0YmZjMHpUOXJiUWNxOEhEQUdTUVZuRWp1TFQ0ZmpUbXl2bDd6d2NqWUltQi1HQXk1M0ZHc3o3Z0JaWmhIMlF3Vk02MUpZRlRzRVNDOHM2MUpJQ3hqa3BKWHZRZmg2TmF3QnFFSENnUWNpbklPNzFxWlZNR01Ea3RNNnBERVk?oc=5",
+          "publisher": "tophotel.news",
+          "date": "2026-10-08"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "fa150a34e7e722938629",
       "type": "acquisition",
