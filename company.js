@@ -786,14 +786,14 @@ async function loadCompany() {
 
     try {
         const [companyDetail, ai, risk, leadership, acquisitions, events, historyData, companiesIndex, rankings, strategicData, strategicMetadata] = await Promise.all([
-            fetchJson(`companies/${stock}.json`),
+            fetchJson(`companies/${stock}.json`, {}),
             fetchJson(`ai/${stock}-summary.json`, {}),
             fetchJson(`risk/${stock}-risk.json`, {}),
             fetchJson(`leadership/${stock}-ceo.json`, {}),
             fetchJson(`acquisitions/${stock}-acquisitions.json`, {}),
             fetchJson(`events/${stock}-events.json`, {}),
             fetchJson(`history/${stock}-history.json`, {}),
-            fetchJson('companies.json', []),
+            fetchJson('ftse100.json', []),
             buildCompanyMetricRankings(stock),
             fetchJson(`strategic-intelligence/${stock}.json`, {}),
             fetchJson('strategic-intelligence/metadata.json', {})
