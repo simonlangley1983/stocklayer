@@ -1599,6 +1599,21 @@ body.company-page .strip-card { border-radius: 0; box-shadow: none; }
   font-size: 27px;
 }
 
+.company-report-link {
+  padding: 0;
+  border: 0;
+  color: inherit;
+  background: transparent;
+  font: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.company-report-link:hover { color: #1466D9; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.company-report-link:focus-visible { outline: 3px solid #8DB8FF; outline-offset: 3px; border-radius: 3px; }
+
 .stocklayer-intel-modal .report-enhanced-summary {
   display: grid;
   gap: 12px;

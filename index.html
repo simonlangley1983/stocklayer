@@ -6,7 +6,7 @@
   <title>StockLayer UK</title>
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <meta name="referrer" content="origin">
-  <link rel="stylesheet" href="/stocklayer.css?v=20261010-15">
+  <link rel="stylesheet" href="/stocklayer.css?v=20261010-16">
 
   <style>
     body {
@@ -9672,7 +9672,7 @@
           ${renderLogo(company)}
           <div class="company-identity">
             <div class="card-title-row">
-              <h3>${escapeHtml(companyDisplayName)}</h3>
+              <h3><button class="company-report-link" type="button" aria-label="Generate AI investment report for ${escapeHtml(companyDisplayName)}">${escapeHtml(companyDisplayName)}</button></h3>
             </div>
             ${state.sort === 'globalMarketCapRank' ? `<small class="ftse-company-value">${escapeHtml(currentMarketCapText)}</small>` : ''}
             <small class="company-meta">
@@ -9755,6 +9755,13 @@
         });
         methodologyButton.addEventListener('keydown', event => {
           event.stopPropagation();
+        });
+      });
+
+      card.querySelectorAll('.company-report-link').forEach(reportLink => {
+        reportLink.addEventListener('click', event => {
+          event.stopPropagation();
+          openMethodologyModal(company);
         });
       });
 
