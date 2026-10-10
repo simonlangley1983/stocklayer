@@ -6235,6 +6235,65 @@
         }
       ],
       "changeFromPreviousScoredDay": 6.5
+    },
+    {
+      "date": "2026-10-09",
+      "dailyScore": 50.1,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 47.8,
+      "confidence": 11.4,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 61,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 58,
+        "missing_company_alias": 2
+      },
+      "topStories": [
+        {
+          "id": "fb4cf1a99830102d",
+          "storyClusterId": "story-001",
+          "title": "HSBC Bank USA, N.A. Point to Point CD AAZYLXX (AAZYLXX) latest stock news and headlines",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9ZZzB6eW82ZWFRSzAzWnVnN1hYZTRscG9pT09PMUk2ZzdfaVkxWjVpd28yaVNTeXNwQk91VnNNZHJRX2diNDNXczFqbmxud2d6MGxjaWdwRWpuaVdF?oc=5",
+          "source": "uk.finance.yahoo.com",
+          "publishedAt": "2026-10-09T06:38:27Z",
+          "polarity": 0.0057,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 11.4",
+          "evidenceArticleIds": [
+            "fb4cf1a99830102d"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "fb4cf1a99830102d"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 7.7
     }
   ]
 }
