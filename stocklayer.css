@@ -2255,9 +2255,10 @@ body.company-page .strip-card { border-radius: 0; box-shadow: none; }
 .report-strategic-evidence li a { margin-top:6px; color:#0A5CC6; font-weight:700; }
 .report-strategic-evidence blockquote { margin:6px 0; padding-left:10px; border-left:3px solid #8FB8EC; color:#35557E; font-style:italic; }
 .report-strategic-quote-label { display:block; margin-top:7px; color:#526B8E; font-size:11px; font-weight:800; text-transform:uppercase; }
-.report-strategic-attribution { display:flex; flex-wrap:wrap; justify-content:space-between; gap:8px; margin-top:18px; padding-top:14px; border-top:1px solid #DCE7F5; color:#526B8E; font-size:12px; }
-.report-strategic-attribution a { display:inline-flex; vertical-align:middle; margin-left:5px; }
-.report-strategic-attribution img { display:block; width:auto; height:22px; max-width:150px; object-fit:contain; }
+.report-strategic-provider { display:flex; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:12px; color:#082B59; font-size:15px; font-weight:800; }
+.report-strategic-provider a { display:inline-flex; align-items:center; padding:6px 10px; border:1px solid #D4E0EF; border-radius:8px; background:#FFF; }
+.report-strategic-provider img { display:block; width:auto; height:26px; max-width:180px; object-fit:contain; }
+.report-strategic-refresh { margin-top:18px; padding-top:14px; border-top:1px solid #DCE7F5; color:#526B8E; font-size:12px; }
 @media (max-width:640px) { .report-strategic-summary { grid-template-columns:1fr; } .report-strategic-controls,.report-strategic-card-heading { align-items:stretch; flex-direction:column; } .report-strategic-controls select { width:100%; margin:6px 0 0; } }
 
 @media (max-width: 470px) {
