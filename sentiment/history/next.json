@@ -3198,49 +3198,35 @@
     },
     {
       "date": "2026-10-09",
-      "dailyScore": 52.2,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 51.4,
-      "confidence": 11.7,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 51.3,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
+      "coverageStatus": "no_coverage",
       "collectionCompleteness": 0.75,
-      "candidateCount": 87,
-      "eligibleArticleCount": 1,
-      "storyCount": 1,
-      "effectiveStoryCount": 1.0,
-      "sourceCount": 1,
+      "candidateCount": 55,
+      "eligibleArticleCount": 0,
+      "storyCount": 0,
+      "effectiveStoryCount": 0,
+      "sourceCount": 0,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 1,
+      "neutralStoryCount": 0,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 78,
-        "missing_company_alias": 8
+        "ambiguous_company_without_alias": 50,
+        "missing_company_alias": 5
       },
-      "topStories": [
-        {
-          "id": "d5346dc62878aa74",
-          "storyClusterId": "story-001",
-          "title": "Retail media’s next growth area is brands that don’t even sell in store",
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOVzRBdWY1dTZGbTNSOGp1RlNaU2pwOG9CMkw1RzBqQkNUcG01S240eDdHdUFnUFNuTHFvVTMtOUNtcWJ2Y2h5bllvMzNPSkducWtsd0E5ZWZQVmYzSlhQVWREZHpqckJIM0NsYjJZeEw1ZzdicEVyY1hkZ1hDWGltY2dEUDYzRzMzdlMwRDNRUkVPcFRSYkxUSUhpVDBnLWRnSjk2bTFNQlZpS2lEUVBFcjVBaEVZQmZtOXYtX0lDajMxYUNTWENSOGxiTXA?oc=5",
-          "source": "thegrocer.co.uk",
-          "publishedAt": "2026-10-09T11:26:52Z",
-          "polarity": 0.1327,
-          "sentiment": "Slightly positive",
-          "publisherCount": 1
-        }
-      ],
+      "topStories": [],
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 11.7",
-          "evidenceArticleIds": [
-            "d5346dc62878aa74"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         },
         {
           "type": "collection_degraded",
@@ -3248,12 +3234,10 @@
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "d5346dc62878aa74"
-          ]
+          "evidenceArticleIds": []
         }
       ],
-      "changeFromPreviousScoredDay": -10.4
+      "changeFromPreviousScoredDay": null
     }
   ]
 }

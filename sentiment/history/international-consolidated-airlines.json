@@ -3202,37 +3202,51 @@
     },
     {
       "date": "2026-10-09",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 51.4,
-      "confidence": 0.0,
+      "dailyScore": 47.7,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.9,
+      "confidence": 15.7,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 2,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 3,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 0,
+      "neutralStoryCount": 1,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
         "missing_company_alias": 2
       },
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "2ec24ffc22e35b54",
+          "storyClusterId": "story-001",
+          "title": "International Consolidated Airlines Group Earnings Date and Estimates",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOUHFfQmZHZnVwOUhtdlJoYWF0dk15N0h5WUFWck5EMWxWZ25PbG1yQU9NTlBSWkdodkZDdXhpd2pybE1KckpOMFFRa3Bac2JSY3FxeHJXcWtwcG9WeXpLbHIzWmR5ZGVQRXhNSVVhaTNmM2dWbk1uVXhyR2ROb3dEV0RaX3NzZFpaOG94LTA1aHdUM3l4dkpVd05Wb0ltZXdfNDRtOEp5NmI?oc=5",
+          "source": "marketbeat.com",
+          "publishedAt": "2026-10-09T19:48:51Z",
+          "polarity": -0.1359,
+          "sentiment": "Slightly negative",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.7",
+          "evidenceArticleIds": [
+            "2ec24ffc22e35b54"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": -1.9
     }
   ]
 }
