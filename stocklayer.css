@@ -2312,11 +2312,13 @@ body.company-page .strip-card { border-radius: 0; box-shadow: none; }
 .report-strategic-evidence li a { margin-top:6px; color:#0A5CC6; font-weight:700; }
 .report-strategic-evidence blockquote { margin:6px 0; padding-left:10px; border-left:3px solid #8FB8EC; color:#35557E; font-style:italic; }
 .report-strategic-quote-label { display:block; margin-top:7px; color:#526B8E; font-size:11px; font-weight:800; text-transform:uppercase; }
-.report-strategic-provider { display:flex; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:12px; color:#082B59; font-size:15px; font-weight:800; }
-.report-strategic-provider a { display:inline-flex; align-items:center; padding:6px 10px; border:1px solid #D4E0EF; border-radius:8px; background:#FFF; }
-.report-strategic-provider img { display:block; width:auto; height:26px; max-width:180px; object-fit:contain; }
+.report-strategic-header { display:grid; grid-template-columns:minmax(0,1fr) auto; align-items:start; gap:20px; }
+.report-strategic-provider { display:grid; justify-items:center; gap:7px; min-width:188px; padding:13px 16px; border:1px solid #C9D9EC; border-radius:12px; background:#F7FAFE; box-shadow:0 6px 18px rgba(8,43,89,.06); color:#35557E; font-size:12px; font-weight:800; letter-spacing:.04em; text-transform:uppercase; }
+.report-strategic-provider a { display:flex; align-items:center; justify-content:center; min-height:30px; }
+.report-strategic-provider img { display:block; width:auto; height:30px; max-width:178px; object-fit:contain; }
+.report-strategic-provider a:focus-visible { outline:3px solid #8DB8FF; outline-offset:4px; border-radius:4px; }
 .report-strategic-refresh { margin-top:18px; padding-top:14px; border-top:1px solid #DCE7F5; color:#526B8E; font-size:12px; }
-@media (max-width:640px) { .report-strategic-summary { grid-template-columns:1fr; } .report-strategic-controls,.report-strategic-card-heading { align-items:stretch; flex-direction:column; } .report-strategic-controls select { width:100%; margin:6px 0 0; } }
+@media (max-width:640px) { .report-strategic-header { grid-template-columns:1fr; gap:14px; } .report-strategic-provider { justify-items:start; min-width:0; width:100%; box-sizing:border-box; } .report-strategic-summary { grid-template-columns:1fr; } .report-strategic-controls,.report-strategic-card-heading { align-items:stretch; flex-direction:column; } .report-strategic-controls select { width:100%; margin:6px 0 0; } }
 
 @media (max-width: 470px) {
   .company-report-profile dl,
