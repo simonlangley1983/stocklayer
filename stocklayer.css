@@ -1647,9 +1647,12 @@ body.company-page .strip-card { border-radius: 0; box-shadow: none; }
   top: 0;
   z-index: 3;
   display: flex;
-  gap: 8px;
-  padding: 10px;
-  overflow-x: auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 8px;
+  overflow: visible;
   max-width: 100%;
   box-sizing: border-box;
   border: 1px solid #dbe3ee;
@@ -1659,10 +1662,10 @@ body.company-page .strip-card { border-radius: 0; box-shadow: none; }
 }
 
 .company-report-nav a {
-  padding: 8px 13px;
+  padding: 8px 10px;
   border-radius: 999px;
   color: #334155;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
   text-decoration: none;
   white-space: nowrap;
