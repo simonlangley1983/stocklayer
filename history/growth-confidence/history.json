@@ -1,14 +1,24 @@
 {
-  "generatedAt": "2026-10-10T11:39:30.711875+00:00",
+  "generatedAt": "2026-10-10T16:02:09.663901+00:00",
   "methodology": {
     "name": "StockLayer growth confidence validation snapshot",
     "scoreRange": "0-100",
     "weights": {
-      "momentum": 0.35,
-      "annualReportHealth": 0.3,
-      "marketPosition": 0.2,
-      "riskBalance": 0.15
+      "base": {
+        "momentum": 0.35,
+        "annualReportHealth": 0.3,
+        "marketPosition": 0.2,
+        "riskBalance": 0.15
+      },
+      "withStrategicMomentum": {
+        "momentum": 0.28,
+        "annualReportHealth": 0.24,
+        "marketPosition": 0.16,
+        "riskBalance": 0.12,
+        "strategicMomentum": 0.2
+      }
     },
+    "strategicMomentum": "Where available, evidenced SignalStrata initiatives contribute 20%. Relevance supplies context only and is combined with stage, evidence recency and source confidence.",
     "forwardReturnWindows": [
       "7d",
       "30d",
@@ -532,6 +542,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 58,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 58,
+              "reliability": 0.99,
+              "initiativeCount": 25,
+              "evidenceCount": 35
             }
           },
           "forwardReturns": {}
@@ -1038,7 +1056,7 @@
           "marketCap": "182.92B",
           "marketCapValue": 182917857280,
           "globalMarketCapRank": 58,
-          "growthConfidence": 58,
+          "growthConfidence": 60,
           "growthConfidenceLabel": "Positive",
           "growthConfidenceSummary": "Positive: lifted by risk balance.",
           "components": {
@@ -1052,6 +1070,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 61,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 61,
+              "reliability": 1.0,
+              "initiativeCount": 5,
+              "evidenceCount": 6
             }
           },
           "forwardReturns": {}
@@ -1558,9 +1584,9 @@
           "marketCap": "266.28B",
           "marketCapValue": 266277404672,
           "globalMarketCapRank": 47,
-          "growthConfidence": 86,
-          "growthConfidenceLabel": "Strong",
-          "growthConfidenceSummary": "Strong: lifted by annual reports and momentum.",
+          "growthConfidence": 75,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by annual reports and momentum.",
           "components": {
             "momentum": 77,
             "annualReportHealth": 88,
@@ -1572,6 +1598,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 37,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 37,
+              "reliability": 0.848,
+              "initiativeCount": 46,
+              "evidenceCount": 46
             }
           },
           "forwardReturns": {}
@@ -2078,7 +2112,7 @@
           "marketCap": "98.52B",
           "marketCapValue": 98519638016,
           "globalMarketCapRank": 162,
-          "growthConfidence": 63,
+          "growthConfidence": 64,
           "growthConfidenceLabel": "Positive",
           "growthConfidenceSummary": "Positive: lifted by annual reports and risk balance.",
           "components": {
@@ -2092,6 +2126,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 60,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 60,
+              "reliability": 0.932,
+              "initiativeCount": 22,
+              "evidenceCount": 28
             }
           },
           "forwardReturns": {}
@@ -2598,7 +2640,7 @@
           "marketCap": "44.86B",
           "marketCapValue": 44856176640,
           "globalMarketCapRank": 412,
-          "growthConfidence": 34,
+          "growthConfidence": 39,
           "growthConfidenceLabel": "Weak",
           "growthConfidenceSummary": "Weak: lifted by risk balance.",
           "components": {
@@ -2612,6 +2654,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 58,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 58,
+              "reliability": 0.917,
+              "initiativeCount": 12,
+              "evidenceCount": 12
             }
           },
           "forwardReturns": {}
@@ -3132,6 +3182,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 60,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 60,
+              "reliability": 0.912,
+              "initiativeCount": 34,
+              "evidenceCount": 39
             }
           },
           "forwardReturns": {}
@@ -3638,9 +3696,9 @@
           "marketCap": "84.73B",
           "marketCapValue": 84732092416,
           "globalMarketCapRank": 188,
-          "growthConfidence": 60,
-          "growthConfidenceLabel": "Positive",
-          "growthConfidenceSummary": "Positive: lifted by risk balance and momentum.",
+          "growthConfidence": 54,
+          "growthConfidenceLabel": "Caution",
+          "growthConfidenceSummary": "Caution: lifted by risk balance and momentum.",
           "components": {
             "momentum": 65,
             "annualReportHealth": 35,
@@ -3652,6 +3710,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 36,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 36,
+              "reliability": 0.936,
+              "initiativeCount": 39,
+              "evidenceCount": 39
             }
           },
           "forwardReturns": {}
@@ -4158,7 +4224,7 @@
           "marketCap": "76.89B",
           "marketCapValue": 76887400448,
           "globalMarketCapRank": 244,
-          "growthConfidence": 67,
+          "growthConfidence": 64,
           "growthConfidenceLabel": "Positive",
           "growthConfidenceSummary": "Positive: lifted by annual reports and risk balance.",
           "components": {
@@ -4172,6 +4238,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 53,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 53,
+              "reliability": 0.909,
+              "initiativeCount": 11,
+              "evidenceCount": 13
             }
           },
           "forwardReturns": {}
@@ -4678,7 +4752,7 @@
           "marketCap": "117.02B",
           "marketCapValue": 117022023680,
           "globalMarketCapRank": 122,
-          "growthConfidence": 95,
+          "growthConfidence": 87,
           "growthConfidenceLabel": "Strong",
           "growthConfidenceSummary": "Strong: lifted by momentum and annual reports.",
           "components": {
@@ -4692,6 +4766,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 55,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 55,
+              "reliability": 0.854,
+              "initiativeCount": 24,
+              "evidenceCount": 25
             }
           },
           "forwardReturns": {}
@@ -5198,7 +5280,7 @@
           "marketCap": "42.72B",
           "marketCapValue": 42721480704,
           "globalMarketCapRank": 458,
-          "growthConfidence": 60,
+          "growthConfidence": 62,
           "growthConfidenceLabel": "Positive",
           "growthConfidenceSummary": "Positive: lifted by annual reports and risk balance.",
           "components": {
@@ -5212,6 +5294,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 65,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 65,
+              "reliability": 0.942,
+              "initiativeCount": 13,
+              "evidenceCount": 18
             }
           },
           "forwardReturns": {}
@@ -5718,7 +5808,7 @@
           "marketCap": "34.74B",
           "marketCapValue": 34743513088,
           "globalMarketCapRank": 499,
-          "growthConfidence": 31,
+          "growthConfidence": 38,
           "growthConfidenceLabel": "Weak",
           "growthConfidenceSummary": "Weak: lifted by risk balance.",
           "components": {
@@ -5732,6 +5822,14 @@
               "age": 0,
               "confidence": 1.0,
               "label": "current report"
+            },
+            "strategicMomentum": 58,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 58,
+              "reliability": 0.846,
+              "initiativeCount": 39,
+              "evidenceCount": 51
             }
           },
           "forwardReturns": {}
@@ -6238,9 +6336,9 @@
           "marketCap": "111.71B",
           "marketCapValue": 111707267072,
           "globalMarketCapRank": 136,
-          "growthConfidence": 64,
-          "growthConfidenceLabel": "Positive",
-          "growthConfidenceSummary": "Positive: lifted by momentum.",
+          "growthConfidence": 57,
+          "growthConfidenceLabel": "Caution",
+          "growthConfidenceSummary": "Caution: lifted by momentum.",
           "components": {
             "momentum": 73,
             "annualReportHealth": 27,
@@ -6252,6 +6350,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 35,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 35,
+              "reliability": 0.899,
+              "initiativeCount": 57,
+              "evidenceCount": 57
             }
           },
           "forwardReturns": {}
@@ -6758,7 +6864,7 @@
           "marketCap": "62.21B",
           "marketCapValue": 62206558208,
           "globalMarketCapRank": 309,
-          "growthConfidence": 42,
+          "growthConfidence": 46,
           "growthConfidenceLabel": "Caution",
           "growthConfidenceSummary": "Caution: lifted by risk balance.",
           "components": {
@@ -6772,6 +6878,14 @@
               "age": 0,
               "confidence": 1.0,
               "label": "current report"
+            },
+            "strategicMomentum": 58,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 58,
+              "reliability": 1.0,
+              "initiativeCount": 7,
+              "evidenceCount": 9
             }
           },
           "forwardReturns": {}
@@ -7278,9 +7392,9 @@
           "marketCap": "70.86B",
           "marketCapValue": 70859186176,
           "globalMarketCapRank": 291,
-          "growthConfidence": 78,
-          "growthConfidenceLabel": "Strong",
-          "growthConfidenceSummary": "Strong: lifted by annual reports and momentum.",
+          "growthConfidence": 75,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by annual reports and momentum.",
           "components": {
             "momentum": 72,
             "annualReportHealth": 88,
@@ -7292,6 +7406,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 59,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 59,
+              "reliability": 0.909,
+              "initiativeCount": 44,
+              "evidenceCount": 55
             }
           },
           "forwardReturns": {}
@@ -7798,7 +7920,7 @@
           "marketCap": "51.50B",
           "marketCapValue": 51502489600,
           "globalMarketCapRank": 469,
-          "growthConfidence": 59,
+          "growthConfidence": 61,
           "growthConfidenceLabel": "Positive",
           "growthConfidenceSummary": "Positive: lifted by annual reports and risk balance.",
           "components": {
@@ -7812,6 +7934,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 62,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 62,
+              "reliability": 0.967,
+              "initiativeCount": 15,
+              "evidenceCount": 20
             }
           },
           "forwardReturns": {}
@@ -8332,7 +8462,10 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
-            }
+            },
+            "strategicMomentum": 50,
+            "strategicMomentumAvailable": false,
+            "strategicMomentumDetail": null
           },
           "forwardReturns": {}
         }
@@ -8838,7 +8971,7 @@
           "marketCap": "65.89B",
           "marketCapValue": 65891950592,
           "globalMarketCapRank": 288,
-          "growthConfidence": 75,
+          "growthConfidence": 72,
           "growthConfidenceLabel": "Positive",
           "growthConfidenceSummary": "Positive: lifted by annual reports and momentum.",
           "components": {
@@ -8852,6 +8985,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 56,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 56,
+              "reliability": 0.96,
+              "initiativeCount": 25,
+              "evidenceCount": 37
             }
           },
           "forwardReturns": {}
@@ -9358,7 +9499,7 @@
           "marketCap": "27.67B",
           "marketCapValue": 27667136512,
           "globalMarketCapRank": 678,
-          "growthConfidence": 44,
+          "growthConfidence": 48,
           "growthConfidenceLabel": "Caution",
           "growthConfidenceSummary": "Caution: lifted by risk balance.",
           "components": {
@@ -9372,6 +9513,14 @@
               "age": 0,
               "confidence": 1.0,
               "label": "current report"
+            },
+            "strategicMomentum": 59,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 59,
+              "reliability": 0.974,
+              "initiativeCount": 19,
+              "evidenceCount": 21
             }
           },
           "forwardReturns": {}
@@ -9878,7 +10027,7 @@
           "marketCap": "24.25B",
           "marketCapValue": 24253536256,
           "globalMarketCapRank": 803,
-          "growthConfidence": 54,
+          "growthConfidence": 56,
           "growthConfidenceLabel": "Caution",
           "growthConfidenceSummary": "Caution: lifted by annual reports and risk balance.",
           "components": {
@@ -9892,6 +10041,14 @@
               "age": 0,
               "confidence": 1.0,
               "label": "current report"
+            },
+            "strategicMomentum": 60,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 60,
+              "reliability": 1.0,
+              "initiativeCount": 9,
+              "evidenceCount": 16
             }
           },
           "forwardReturns": {}
@@ -10398,7 +10555,7 @@
           "marketCap": "62.96B",
           "marketCapValue": 62960947200,
           "globalMarketCapRank": 262,
-          "growthConfidence": 83,
+          "growthConfidence": 79,
           "growthConfidenceLabel": "Strong",
           "growthConfidenceSummary": "Strong: lifted by annual reports and momentum.",
           "components": {
@@ -10412,6 +10569,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 59,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 59,
+              "reliability": 0.95,
+              "initiativeCount": 10,
+              "evidenceCount": 10
             }
           },
           "forwardReturns": {}
@@ -10918,7 +11083,7 @@
           "marketCap": "10.72B",
           "marketCapValue": 10724604928,
           "globalMarketCapRank": 1396,
-          "growthConfidence": 65,
+          "growthConfidence": 63,
           "growthConfidenceLabel": "Positive",
           "growthConfidenceSummary": "Positive: lifted by annual reports and risk balance.",
           "components": {
@@ -10932,6 +11097,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 55,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 55,
+              "reliability": 0.966,
+              "initiativeCount": 29,
+              "evidenceCount": 34
             }
           },
           "forwardReturns": {}
@@ -11438,9 +11611,9 @@
           "marketCap": "12.15B",
           "marketCapValue": 12151449600,
           "globalMarketCapRank": 1345,
-          "growthConfidence": 79,
-          "growthConfidenceLabel": "Strong",
-          "growthConfidenceSummary": "Strong: lifted by annual reports and momentum.",
+          "growthConfidence": 75,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by annual reports and momentum.",
           "components": {
             "momentum": 74,
             "annualReportHealth": 100,
@@ -11452,6 +11625,14 @@
               "age": 0,
               "confidence": 1.0,
               "label": "current report"
+            },
+            "strategicMomentum": 58,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 58,
+              "reliability": 0.93,
+              "initiativeCount": 25,
+              "evidenceCount": 34
             }
           },
           "forwardReturns": {}
@@ -11972,6 +12153,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 59,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 59,
+              "reliability": 0.833,
+              "initiativeCount": 6,
+              "evidenceCount": 10
             }
           },
           "forwardReturns": {}
@@ -12478,7 +12667,7 @@
           "marketCap": "39.87B",
           "marketCapValue": 39870066688,
           "globalMarketCapRank": 427,
-          "growthConfidence": 82,
+          "growthConfidence": 77,
           "growthConfidenceLabel": "Strong",
           "growthConfidenceSummary": "Strong: lifted by annual reports and momentum.",
           "components": {
@@ -12492,6 +12681,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 55,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 55,
+              "reliability": 1.0,
+              "initiativeCount": 17,
+              "evidenceCount": 20
             }
           },
           "forwardReturns": {}
@@ -12998,9 +13195,9 @@
           "marketCap": "35.80B",
           "marketCapValue": 35796459520,
           "globalMarketCapRank": 475,
-          "growthConfidence": 79,
-          "growthConfidenceLabel": "Strong",
-          "growthConfidenceSummary": "Strong: lifted by momentum and annual reports.",
+          "growthConfidence": 68,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by momentum and annual reports.",
           "components": {
             "momentum": 82,
             "annualReportHealth": 71,
@@ -13012,6 +13209,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 34,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 34,
+              "reliability": 1.0,
+              "initiativeCount": 19,
+              "evidenceCount": 19
             }
           },
           "forwardReturns": {}
@@ -13518,7 +13723,7 @@
           "marketCap": "13.96B",
           "marketCapValue": 13964439552,
           "globalMarketCapRank": 1229,
-          "growthConfidence": 32,
+          "growthConfidence": 39,
           "growthConfidenceLabel": "Weak",
           "growthConfidenceSummary": "Weak: lifted by risk balance.",
           "components": {
@@ -13532,6 +13737,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 59,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 59,
+              "reliability": 0.92,
+              "initiativeCount": 22,
+              "evidenceCount": 22
             }
           },
           "forwardReturns": {}
@@ -14038,7 +14251,7 @@
           "marketCap": "3.83B",
           "marketCapValue": 3829836288,
           "globalMarketCapRank": 2974,
-          "growthConfidence": 49,
+          "growthConfidence": 53,
           "growthConfidenceLabel": "Caution",
           "growthConfidenceSummary": "Caution: lifted by annual reports.",
           "components": {
@@ -14052,6 +14265,14 @@
               "age": 0,
               "confidence": 1.0,
               "label": "current report"
+            },
+            "strategicMomentum": 63,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 63,
+              "reliability": 0.95,
+              "initiativeCount": 20,
+              "evidenceCount": 30
             }
           },
           "forwardReturns": {}
@@ -14572,7 +14793,10 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
-            }
+            },
+            "strategicMomentum": 50,
+            "strategicMomentumAvailable": false,
+            "strategicMomentumDetail": null
           },
           "forwardReturns": {}
         }
@@ -15078,7 +15302,7 @@
           "marketCap": "4.12B",
           "marketCapValue": 4122467584,
           "globalMarketCapRank": 2612,
-          "growthConfidence": 29,
+          "growthConfidence": 36,
           "growthConfidenceLabel": "Weak",
           "growthConfidenceSummary": "Weak: lifted by risk balance.",
           "components": {
@@ -15092,6 +15316,14 @@
               "age": 0,
               "confidence": 1.0,
               "label": "current report"
+            },
+            "strategicMomentum": 59,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 59,
+              "reliability": 0.887,
+              "initiativeCount": 20,
+              "evidenceCount": 31
             }
           },
           "forwardReturns": {}
@@ -15612,6 +15844,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 59,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 59,
+              "reliability": 0.875,
+              "initiativeCount": 26,
+              "evidenceCount": 31
             }
           },
           "forwardReturns": {}
@@ -16118,7 +16358,7 @@
           "marketCap": "4.50B",
           "marketCapValue": 4497380352,
           "globalMarketCapRank": 2803,
-          "growthConfidence": 67,
+          "growthConfidence": 65,
           "growthConfidenceLabel": "Positive",
           "growthConfidenceSummary": "Positive: lifted by annual reports and risk balance.",
           "components": {
@@ -16132,6 +16372,14 @@
               "age": 0,
               "confidence": 1.0,
               "label": "current report"
+            },
+            "strategicMomentum": 55,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 55,
+              "reliability": 0.967,
+              "initiativeCount": 15,
+              "evidenceCount": 17
             }
           },
           "forwardReturns": {}
@@ -16652,7 +16900,10 @@
               "age": 0,
               "confidence": 1.0,
               "label": "current report"
-            }
+            },
+            "strategicMomentum": 50,
+            "strategicMomentumAvailable": false,
+            "strategicMomentumDetail": null
           },
           "forwardReturns": {}
         }
@@ -17158,9 +17409,9 @@
           "marketCap": "8.86B",
           "marketCapValue": 8855749632,
           "globalMarketCapRank": 1713,
-          "growthConfidence": 40,
-          "growthConfidenceLabel": "Weak",
-          "growthConfidenceSummary": "Weak: lifted by risk balance.",
+          "growthConfidence": 44,
+          "growthConfidenceLabel": "Caution",
+          "growthConfidenceSummary": "Caution: lifted by risk balance.",
           "components": {
             "momentum": 54,
             "annualReportHealth": 6,
@@ -17172,6 +17423,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 57,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 57,
+              "reliability": 0.97,
+              "initiativeCount": 25,
+              "evidenceCount": 33
             }
           },
           "forwardReturns": {}
@@ -17678,7 +17937,7 @@
           "marketCap": "7.38B",
           "marketCapValue": 7382327808,
           "globalMarketCapRank": 1971,
-          "growthConfidence": 46,
+          "growthConfidence": 48,
           "growthConfidenceLabel": "Caution",
           "growthConfidenceSummary": "Caution: lifted by risk balance.",
           "components": {
@@ -17692,6 +17951,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 55,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 55,
+              "reliability": 0.917,
+              "initiativeCount": 9,
+              "evidenceCount": 10
             }
           },
           "forwardReturns": {}
@@ -18212,7 +18479,10 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
-            }
+            },
+            "strategicMomentum": 50,
+            "strategicMomentumAvailable": false,
+            "strategicMomentumDetail": null
           },
           "forwardReturns": {}
         }
@@ -18718,7 +18988,7 @@
           "marketCap": "4.22B",
           "marketCapValue": 4221621760,
           "globalMarketCapRank": 2693,
-          "growthConfidence": 34,
+          "growthConfidence": 41,
           "growthConfidenceLabel": "Weak",
           "growthConfidenceSummary": "Weak: lifted by risk balance.",
           "components": {
@@ -18732,6 +19002,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 63,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 63,
+              "reliability": 1.0,
+              "initiativeCount": 6,
+              "evidenceCount": 7
             }
           },
           "forwardReturns": {}
@@ -19238,7 +19516,7 @@
           "marketCap": "4.09B",
           "marketCapValue": 4085863424,
           "globalMarketCapRank": 2544,
-          "growthConfidence": 58,
+          "growthConfidence": 60,
           "growthConfidenceLabel": "Positive",
           "growthConfidenceSummary": "Positive: lifted by annual reports and risk balance.",
           "components": {
@@ -19252,6 +19530,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 60,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 60,
+              "reliability": 1.0,
+              "initiativeCount": 10,
+              "evidenceCount": 15
             }
           },
           "forwardReturns": {}
@@ -19758,7 +20044,7 @@
           "marketCap": "5.37B",
           "marketCapValue": 5368907264,
           "globalMarketCapRank": 2241,
-          "growthConfidence": 74,
+          "growthConfidence": 72,
           "growthConfidenceLabel": "Positive",
           "growthConfidenceSummary": "Positive: lifted by annual reports and risk balance.",
           "components": {
@@ -19772,6 +20058,14 @@
               "age": 0,
               "confidence": 1.0,
               "label": "current report"
+            },
+            "strategicMomentum": 59,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 59,
+              "reliability": 0.922,
+              "initiativeCount": 16,
+              "evidenceCount": 24
             }
           },
           "forwardReturns": {}
@@ -20278,7 +20572,7 @@
           "marketCap": "10.08B",
           "marketCapValue": 10083932160,
           "globalMarketCapRank": 1435,
-          "growthConfidence": 73,
+          "growthConfidence": 71,
           "growthConfidenceLabel": "Positive",
           "growthConfidenceSummary": "Positive: lifted by momentum and risk balance.",
           "components": {
@@ -20292,6 +20586,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 57,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 57,
+              "reliability": 0.96,
+              "initiativeCount": 25,
+              "evidenceCount": 25
             }
           },
           "forwardReturns": {}
@@ -20798,7 +21100,7 @@
           "marketCap": "8.69B",
           "marketCapValue": 8694465536,
           "globalMarketCapRank": 1444,
-          "growthConfidence": 74,
+          "growthConfidence": 72,
           "growthConfidenceLabel": "Positive",
           "growthConfidenceSummary": "Positive: lifted by momentum and risk balance.",
           "components": {
@@ -20812,6 +21114,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 60,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 60,
+              "reliability": 0.889,
+              "initiativeCount": 9,
+              "evidenceCount": 15
             }
           },
           "forwardReturns": {}
@@ -21318,7 +21628,7 @@
           "marketCap": "3.54B",
           "marketCapValue": 3541251840,
           "globalMarketCapRank": 3475,
-          "growthConfidence": 24,
+          "growthConfidence": 27,
           "growthConfidenceLabel": "Weak",
           "growthConfidenceSummary": "Weak: held back by momentum and annual reports.",
           "components": {
@@ -21332,6 +21642,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 43,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 43,
+              "reliability": 0.952,
+              "initiativeCount": 21,
+              "evidenceCount": 21
             }
           },
           "forwardReturns": {}
@@ -21852,7 +22170,10 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
-            }
+            },
+            "strategicMomentum": 50,
+            "strategicMomentumAvailable": false,
+            "strategicMomentumDetail": null
           },
           "forwardReturns": {}
         }
@@ -22358,9 +22679,9 @@
           "marketCap": "18.76B",
           "marketCapValue": 18761310208,
           "globalMarketCapRank": 792,
-          "growthConfidence": 77,
-          "growthConfidenceLabel": "Strong",
-          "growthConfidenceSummary": "Strong: lifted by momentum and risk balance.",
+          "growthConfidence": 73,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by momentum and risk balance.",
           "components": {
             "momentum": 90,
             "annualReportHealth": 50,
@@ -22372,6 +22693,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 56,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 56,
+              "reliability": 0.962,
+              "initiativeCount": 13,
+              "evidenceCount": 13
             }
           },
           "forwardReturns": {}
@@ -22892,7 +23221,10 @@
               "age": 0,
               "confidence": 1.0,
               "label": "current report"
-            }
+            },
+            "strategicMomentum": 50,
+            "strategicMomentumAvailable": false,
+            "strategicMomentumDetail": null
           },
           "forwardReturns": {}
         }
@@ -23398,9 +23730,9 @@
           "marketCap": "32.02B",
           "marketCapValue": 32015616000,
           "globalMarketCapRank": 621,
-          "growthConfidence": 39,
-          "growthConfidenceLabel": "Weak",
-          "growthConfidenceSummary": "Weak: lifted by risk balance.",
+          "growthConfidence": 45,
+          "growthConfidenceLabel": "Caution",
+          "growthConfidenceSummary": "Caution: lifted by risk balance.",
           "components": {
             "momentum": 50,
             "annualReportHealth": 6,
@@ -23412,6 +23744,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 62,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 62,
+              "reliability": 0.966,
+              "initiativeCount": 22,
+              "evidenceCount": 31
             }
           },
           "forwardReturns": {}
@@ -23918,7 +24258,7 @@
           "marketCap": "13.65B",
           "marketCapValue": 13649293312,
           "globalMarketCapRank": 1166,
-          "growthConfidence": 62,
+          "growthConfidence": 64,
           "growthConfidenceLabel": "Positive",
           "growthConfidenceSummary": "Positive: lifted by annual reports and risk balance.",
           "components": {
@@ -23932,6 +24272,14 @@
               "age": 0,
               "confidence": 1.0,
               "label": "current report"
+            },
+            "strategicMomentum": 62,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 62,
+              "reliability": 0.944,
+              "initiativeCount": 9,
+              "evidenceCount": 10
             }
           },
           "forwardReturns": {}
@@ -24438,7 +24786,7 @@
           "marketCap": "5.89B",
           "marketCapValue": 5886681600,
           "globalMarketCapRank": 2166,
-          "growthConfidence": 59,
+          "growthConfidence": 60,
           "growthConfidenceLabel": "Positive",
           "growthConfidenceSummary": "Positive: lifted by momentum and risk balance.",
           "components": {
@@ -24452,6 +24800,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 58,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 58,
+              "reliability": 0.978,
+              "initiativeCount": 23,
+              "evidenceCount": 23
             }
           },
           "forwardReturns": {}
@@ -24958,7 +25314,7 @@
           "marketCap": "4.20B",
           "marketCapValue": 4199404032,
           "globalMarketCapRank": 2726,
-          "growthConfidence": 46,
+          "growthConfidence": 49,
           "growthConfidenceLabel": "Caution",
           "growthConfidenceSummary": "Caution: lifted by risk balance.",
           "components": {
@@ -24972,6 +25328,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 57,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 57,
+              "reliability": 0.889,
+              "initiativeCount": 18,
+              "evidenceCount": 21
             }
           },
           "forwardReturns": {}
@@ -25492,7 +25856,10 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
-            }
+            },
+            "strategicMomentum": 50,
+            "strategicMomentumAvailable": false,
+            "strategicMomentumDetail": null
           },
           "forwardReturns": {}
         }
@@ -25998,7 +26365,7 @@
           "marketCap": "21.64B",
           "marketCapValue": 21644128256,
           "globalMarketCapRank": 922,
-          "growthConfidence": 51,
+          "growthConfidence": 53,
           "growthConfidenceLabel": "Caution",
           "growthConfidenceSummary": "Caution: lifted by risk balance and annual reports.",
           "components": {
@@ -26012,6 +26379,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 56,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 56,
+              "reliability": 0.943,
+              "initiativeCount": 22,
+              "evidenceCount": 27
             }
           },
           "forwardReturns": {}
@@ -26532,6 +26907,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 57,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 57,
+              "reliability": 0.963,
+              "initiativeCount": 20,
+              "evidenceCount": 21
             }
           },
           "forwardReturns": {}
@@ -27038,7 +27421,7 @@
           "marketCap": "23.11B",
           "marketCapValue": 23108995072,
           "globalMarketCapRank": 940,
-          "growthConfidence": 65,
+          "growthConfidence": 63,
           "growthConfidenceLabel": "Positive",
           "growthConfidenceSummary": "Positive: lifted by momentum and risk balance.",
           "components": {
@@ -27052,6 +27435,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 55,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 55,
+              "reliability": 0.969,
+              "initiativeCount": 8,
+              "evidenceCount": 10
             }
           },
           "forwardReturns": {}
@@ -27558,9 +27949,9 @@
           "marketCap": "5.38B",
           "marketCapValue": 5376224768,
           "globalMarketCapRank": 2378,
-          "growthConfidence": 36,
-          "growthConfidenceLabel": "Weak",
-          "growthConfidenceSummary": "Weak: lifted by risk balance.",
+          "growthConfidence": 42,
+          "growthConfidenceLabel": "Caution",
+          "growthConfidenceSummary": "Caution: lifted by risk balance.",
           "components": {
             "momentum": 43,
             "annualReportHealth": 21,
@@ -27572,6 +27963,14 @@
               "age": 0,
               "confidence": 1.0,
               "label": "current report"
+            },
+            "strategicMomentum": 61,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 61,
+              "reliability": 0.854,
+              "initiativeCount": 12,
+              "evidenceCount": 16
             }
           },
           "forwardReturns": {}
@@ -28078,7 +28477,7 @@
           "marketCap": "8.93B",
           "marketCapValue": 8933479424,
           "globalMarketCapRank": 1608,
-          "growthConfidence": 68,
+          "growthConfidence": 67,
           "growthConfidenceLabel": "Positive",
           "growthConfidenceSummary": "Positive: lifted by annual reports and risk balance.",
           "components": {
@@ -28092,6 +28491,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 60,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 60,
+              "reliability": 0.852,
+              "initiativeCount": 27,
+              "evidenceCount": 36
             }
           },
           "forwardReturns": {}
@@ -28612,6 +29019,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 57,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 57,
+              "reliability": 0.95,
+              "initiativeCount": 15,
+              "evidenceCount": 20
             }
           },
           "forwardReturns": {}
@@ -29118,7 +29533,7 @@
           "marketCap": "4.26B",
           "marketCapValue": 4256326400,
           "globalMarketCapRank": 2869,
-          "growthConfidence": 33,
+          "growthConfidence": 39,
           "growthConfidenceLabel": "Weak",
           "growthConfidenceSummary": "Weak: lifted by risk balance.",
           "components": {
@@ -29132,6 +29547,14 @@
               "age": 0,
               "confidence": 1.0,
               "label": "current report"
+            },
+            "strategicMomentum": 57,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 57,
+              "reliability": 1.0,
+              "initiativeCount": 10,
+              "evidenceCount": 10
             }
           },
           "forwardReturns": {}
@@ -29638,7 +30061,7 @@
           "marketCap": "4.94B",
           "marketCapValue": 4936714752,
           "globalMarketCapRank": 2310,
-          "growthConfidence": 56,
+          "growthConfidence": 57,
           "growthConfidenceLabel": "Caution",
           "growthConfidenceSummary": "Caution: lifted by risk balance.",
           "components": {
@@ -29652,6 +30075,14 @@
               "age": 0,
               "confidence": 1.0,
               "label": "current report"
+            },
+            "strategicMomentum": 55,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 55,
+              "reliability": 0.956,
+              "initiativeCount": 17,
+              "evidenceCount": 17
             }
           },
           "forwardReturns": {}
@@ -30158,7 +30589,7 @@
           "marketCap": "5.17B",
           "marketCapValue": 5166900736,
           "globalMarketCapRank": 2410,
-          "growthConfidence": 52,
+          "growthConfidence": 55,
           "growthConfidenceLabel": "Caution",
           "growthConfidenceSummary": "Caution: lifted by risk balance.",
           "components": {
@@ -30172,6 +30603,14 @@
               "age": 0,
               "confidence": 1.0,
               "label": "current report"
+            },
+            "strategicMomentum": 62,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 62,
+              "reliability": 0.85,
+              "initiativeCount": 15,
+              "evidenceCount": 21
             }
           },
           "forwardReturns": {}
@@ -30678,7 +31117,7 @@
           "marketCap": "16.37B",
           "marketCapValue": 16367087616,
           "globalMarketCapRank": 1054,
-          "growthConfidence": 68,
+          "growthConfidence": 65,
           "growthConfidenceLabel": "Positive",
           "growthConfidenceSummary": "Positive: lifted by annual reports and risk balance.",
           "components": {
@@ -30692,6 +31131,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 52,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 52,
+              "reliability": 0.917,
+              "initiativeCount": 6,
+              "evidenceCount": 6
             }
           },
           "forwardReturns": {}
@@ -31198,7 +31645,7 @@
           "marketCap": "4.57B",
           "marketCapValue": 4567339520,
           "globalMarketCapRank": 2680,
-          "growthConfidence": 42,
+          "growthConfidence": 46,
           "growthConfidenceLabel": "Caution",
           "growthConfidenceSummary": "Caution: lifted by risk balance.",
           "components": {
@@ -31212,6 +31659,14 @@
               "age": 0,
               "confidence": 1.0,
               "label": "current report"
+            },
+            "strategicMomentum": 58,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 58,
+              "reliability": 0.913,
+              "initiativeCount": 26,
+              "evidenceCount": 33
             }
           },
           "forwardReturns": {}
@@ -31718,7 +32173,7 @@
           "marketCap": "8.48B",
           "marketCapValue": 8481228288,
           "globalMarketCapRank": 1833,
-          "growthConfidence": 68,
+          "growthConfidence": 67,
           "growthConfidenceLabel": "Positive",
           "growthConfidenceSummary": "Positive: lifted by annual reports and risk balance.",
           "components": {
@@ -31732,6 +32187,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 60,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 60,
+              "reliability": 0.92,
+              "initiativeCount": 28,
+              "evidenceCount": 34
             }
           },
           "forwardReturns": {}
@@ -32238,7 +32701,7 @@
           "marketCap": "7.82B",
           "marketCapValue": 7820720640,
           "globalMarketCapRank": 1771,
-          "growthConfidence": 61,
+          "growthConfidence": 60,
           "growthConfidenceLabel": "Positive",
           "growthConfidenceSummary": "Positive: lifted by annual reports and risk balance.",
           "components": {
@@ -32252,6 +32715,14 @@
               "age": 0,
               "confidence": 1.0,
               "label": "current report"
+            },
+            "strategicMomentum": 56,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 56,
+              "reliability": 0.94,
+              "initiativeCount": 50,
+              "evidenceCount": 69
             }
           },
           "forwardReturns": {}
@@ -32772,7 +33243,10 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
-            }
+            },
+            "strategicMomentum": 50,
+            "strategicMomentumAvailable": false,
+            "strategicMomentumDetail": null
           },
           "forwardReturns": {}
         }
@@ -33278,7 +33752,7 @@
           "marketCap": "53.76B",
           "marketCapValue": 53764878336,
           "globalMarketCapRank": 339,
-          "growthConfidence": 81,
+          "growthConfidence": 77,
           "growthConfidenceLabel": "Strong",
           "growthConfidenceSummary": "Strong: lifted by annual reports and momentum.",
           "components": {
@@ -33292,6 +33766,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 57,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 57,
+              "reliability": 0.963,
+              "initiativeCount": 47,
+              "evidenceCount": 70
             }
           },
           "forwardReturns": {}
@@ -33798,7 +34280,7 @@
           "marketCap": "16.88B",
           "marketCapValue": 16877379584,
           "globalMarketCapRank": 996,
-          "growthConfidence": 73,
+          "growthConfidence": 71,
           "growthConfidenceLabel": "Positive",
           "growthConfidenceSummary": "Positive: lifted by annual reports and risk balance.",
           "components": {
@@ -33812,6 +34294,14 @@
               "age": 0,
               "confidence": 1.0,
               "label": "current report"
+            },
+            "strategicMomentum": 58,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 58,
+              "reliability": 0.969,
+              "initiativeCount": 16,
+              "evidenceCount": 20
             }
           },
           "forwardReturns": {}
@@ -34318,7 +34808,7 @@
           "marketCap": "7.36B",
           "marketCapValue": 7361094144,
           "globalMarketCapRank": 1853,
-          "growthConfidence": 44,
+          "growthConfidence": 47,
           "growthConfidenceLabel": "Caution",
           "growthConfidenceSummary": "Caution: lifted by risk balance.",
           "components": {
@@ -34332,6 +34822,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 58,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 58,
+              "reliability": 0.871,
+              "initiativeCount": 31,
+              "evidenceCount": 37
             }
           },
           "forwardReturns": {}
@@ -34852,6 +35350,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 54,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 54,
+              "reliability": 0.9,
+              "initiativeCount": 5,
+              "evidenceCount": 7
             }
           },
           "forwardReturns": {}
@@ -35372,6 +35878,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 58,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 58,
+              "reliability": 0.972,
+              "initiativeCount": 18,
+              "evidenceCount": 18
             }
           },
           "forwardReturns": {}
@@ -35892,6 +36406,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 56,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 56,
+              "reliability": 0.923,
+              "initiativeCount": 26,
+              "evidenceCount": 35
             }
           },
           "forwardReturns": {}
@@ -36398,7 +36920,7 @@
           "marketCap": "27.28B",
           "marketCapValue": 27284461568,
           "globalMarketCapRank": 766,
-          "growthConfidence": 48,
+          "growthConfidence": 51,
           "growthConfidenceLabel": "Caution",
           "growthConfidenceSummary": "Caution: lifted by risk balance.",
           "components": {
@@ -36412,6 +36934,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 56,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 56,
+              "reliability": 0.934,
+              "initiativeCount": 34,
+              "evidenceCount": 38
             }
           },
           "forwardReturns": {}
@@ -36918,7 +37448,7 @@
           "marketCap": "31.44B",
           "marketCapValue": 31435220992,
           "globalMarketCapRank": 582,
-          "growthConfidence": 42,
+          "growthConfidence": 45,
           "growthConfidenceLabel": "Caution",
           "growthConfidenceSummary": "Caution: lifted by risk balance.",
           "components": {
@@ -36932,6 +37462,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 54,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 54,
+              "reliability": 0.865,
+              "initiativeCount": 24,
+              "evidenceCount": 32
             }
           },
           "forwardReturns": {}
@@ -37438,7 +37976,7 @@
           "marketCap": "10.72B",
           "marketCapValue": 10719181824,
           "globalMarketCapRank": 1831,
-          "growthConfidence": 50,
+          "growthConfidence": 52,
           "growthConfidenceLabel": "Caution",
           "growthConfidenceSummary": "Caution: lifted by annual reports and risk balance.",
           "components": {
@@ -37452,6 +37990,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 57,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 57,
+              "reliability": 0.942,
+              "initiativeCount": 13,
+              "evidenceCount": 17
             }
           },
           "forwardReturns": {}
@@ -37958,7 +38504,7 @@
           "marketCap": "7.70B",
           "marketCapValue": 7702638592,
           "globalMarketCapRank": 1633,
-          "growthConfidence": 56,
+          "growthConfidence": 57,
           "growthConfidenceLabel": "Caution",
           "growthConfidenceSummary": "Caution: lifted by annual reports and risk balance.",
           "components": {
@@ -37972,6 +38518,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 58,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 58,
+              "reliability": 0.971,
+              "initiativeCount": 17,
+              "evidenceCount": 20
             }
           },
           "forwardReturns": {}
@@ -38492,6 +39046,14 @@
               "age": 0,
               "confidence": 1.0,
               "label": "current report"
+            },
+            "strategicMomentum": 59,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 59,
+              "reliability": 0.931,
+              "initiativeCount": 18,
+              "evidenceCount": 24
             }
           },
           "forwardReturns": {}
@@ -38998,9 +39560,9 @@
           "marketCap": "9.18B",
           "marketCapValue": 9176603648,
           "globalMarketCapRank": 1586,
-          "growthConfidence": 56,
-          "growthConfidenceLabel": "Caution",
-          "growthConfidenceSummary": "Caution: lifted by momentum.",
+          "growthConfidence": 58,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by momentum.",
           "components": {
             "momentum": 79,
             "annualReportHealth": 6,
@@ -39012,6 +39574,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 59,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 59,
+              "reliability": 0.909,
+              "initiativeCount": 22,
+              "evidenceCount": 29
             }
           },
           "forwardReturns": {}
@@ -39518,7 +40088,7 @@
           "marketCap": "14.14B",
           "marketCapValue": 14136758272,
           "globalMarketCapRank": 983,
-          "growthConfidence": 82,
+          "growthConfidence": 79,
           "growthConfidenceLabel": "Strong",
           "growthConfidenceSummary": "Strong: lifted by annual reports and momentum.",
           "components": {
@@ -39532,6 +40102,14 @@
               "age": 0,
               "confidence": 1.0,
               "label": "current report"
+            },
+            "strategicMomentum": 61,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 61,
+              "reliability": 0.981,
+              "initiativeCount": 13,
+              "evidenceCount": 19
             }
           },
           "forwardReturns": {}
@@ -40052,7 +40630,10 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
-            }
+            },
+            "strategicMomentum": 50,
+            "strategicMomentumAvailable": false,
+            "strategicMomentumDetail": null
           },
           "forwardReturns": {}
         }
@@ -40558,7 +41139,7 @@
           "marketCap": "9.11B",
           "marketCapValue": 9114271744,
           "globalMarketCapRank": 1547,
-          "growthConfidence": 43,
+          "growthConfidence": 45,
           "growthConfidenceLabel": "Caution",
           "growthConfidenceSummary": "Caution: lifted by risk balance.",
           "components": {
@@ -40572,6 +41153,14 @@
               "age": 0,
               "confidence": 1.0,
               "label": "current report"
+            },
+            "strategicMomentum": 51,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 51,
+              "reliability": 0.893,
+              "initiativeCount": 7,
+              "evidenceCount": 7
             }
           },
           "forwardReturns": {}
@@ -41092,7 +41681,10 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
-            }
+            },
+            "strategicMomentum": 50,
+            "strategicMomentumAvailable": false,
+            "strategicMomentumDetail": null
           },
           "forwardReturns": {}
         }
@@ -41598,7 +42190,7 @@
           "marketCap": "7.93B",
           "marketCapValue": 7925921280,
           "globalMarketCapRank": 1765,
-          "growthConfidence": 72,
+          "growthConfidence": 70,
           "growthConfidenceLabel": "Positive",
           "growthConfidenceSummary": "Positive: lifted by annual reports and risk balance.",
           "components": {
@@ -41612,6 +42204,14 @@
               "age": 0,
               "confidence": 1.0,
               "label": "current report"
+            },
+            "strategicMomentum": 59,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 59,
+              "reliability": 0.917,
+              "initiativeCount": 6,
+              "evidenceCount": 8
             }
           },
           "forwardReturns": {}
@@ -42118,9 +42718,9 @@
           "marketCap": "5.22B",
           "marketCapValue": 5224748032,
           "globalMarketCapRank": 2317,
-          "growthConfidence": 57,
-          "growthConfidenceLabel": "Caution",
-          "growthConfidenceSummary": "Caution: lifted by annual reports and risk balance.",
+          "growthConfidence": 59,
+          "growthConfidenceLabel": "Positive",
+          "growthConfidenceSummary": "Positive: lifted by annual reports and risk balance.",
           "components": {
             "momentum": 49,
             "annualReportHealth": 81,
@@ -42132,6 +42732,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 63,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 63,
+              "reliability": 0.935,
+              "initiativeCount": 23,
+              "evidenceCount": 34
             }
           },
           "forwardReturns": {}
@@ -42638,7 +43246,7 @@
           "marketCap": "29.22B",
           "marketCapValue": 29216428032,
           "globalMarketCapRank": 600,
-          "growthConfidence": 71,
+          "growthConfidence": 70,
           "growthConfidenceLabel": "Positive",
           "growthConfidenceSummary": "Positive: lifted by momentum and risk balance.",
           "components": {
@@ -42652,6 +43260,14 @@
               "age": 0,
               "confidence": 1.0,
               "label": "current report"
+            },
+            "strategicMomentum": 59,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 59,
+              "reliability": 1.0,
+              "initiativeCount": 11,
+              "evidenceCount": 15
             }
           },
           "forwardReturns": {}
@@ -43158,7 +43774,7 @@
           "marketCap": "5.45B",
           "marketCapValue": 5449344512,
           "globalMarketCapRank": 2372,
-          "growthConfidence": 43,
+          "growthConfidence": 47,
           "growthConfidenceLabel": "Caution",
           "growthConfidenceSummary": "Caution: lifted by risk balance.",
           "components": {
@@ -43172,6 +43788,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 58,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 58,
+              "reliability": 0.979,
+              "initiativeCount": 12,
+              "evidenceCount": 14
             }
           },
           "forwardReturns": {}
@@ -43678,7 +44302,7 @@
           "marketCap": "46.47B",
           "marketCapValue": 46470578176,
           "globalMarketCapRank": 377,
-          "growthConfidence": 89,
+          "growthConfidence": 84,
           "growthConfidenceLabel": "Strong",
           "growthConfidenceSummary": "Strong: lifted by momentum and annual reports.",
           "components": {
@@ -43692,6 +44316,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 60,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 60,
+              "reliability": 1.0,
+              "initiativeCount": 18,
+              "evidenceCount": 20
             }
           },
           "forwardReturns": {}
@@ -44198,7 +44830,7 @@
           "marketCap": "29.93B",
           "marketCapValue": 29932959744,
           "globalMarketCapRank": 617,
-          "growthConfidence": 70,
+          "growthConfidence": 68,
           "growthConfidenceLabel": "Positive",
           "growthConfidenceSummary": "Positive: lifted by annual reports and risk balance.",
           "components": {
@@ -44212,6 +44844,14 @@
               "age": 0,
               "confidence": 1.0,
               "label": "current report"
+            },
+            "strategicMomentum": 56,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 56,
+              "reliability": 0.933,
+              "initiativeCount": 15,
+              "evidenceCount": 19
             }
           },
           "forwardReturns": {}
@@ -44732,7 +45372,10 @@
               "age": 0,
               "confidence": 1.0,
               "label": "current report"
-            }
+            },
+            "strategicMomentum": 50,
+            "strategicMomentumAvailable": false,
+            "strategicMomentumDetail": null
           },
           "forwardReturns": {}
         }
@@ -45252,7 +45895,10 @@
               "age": 0,
               "confidence": 1.0,
               "label": "current report"
-            }
+            },
+            "strategicMomentum": 50,
+            "strategicMomentumAvailable": false,
+            "strategicMomentumDetail": null
           },
           "forwardReturns": {}
         }
@@ -45758,7 +46404,7 @@
           "marketCap": "6.79B",
           "marketCapValue": 6791451136,
           "globalMarketCapRank": 1981,
-          "growthConfidence": 59,
+          "growthConfidence": 60,
           "growthConfidenceLabel": "Positive",
           "growthConfidenceSummary": "Positive: lifted by annual reports and risk balance.",
           "components": {
@@ -45772,6 +46418,14 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
+            },
+            "strategicMomentum": 61,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 61,
+              "reliability": 0.906,
+              "initiativeCount": 24,
+              "evidenceCount": 37
             }
           },
           "forwardReturns": {}
@@ -46278,7 +46932,7 @@
           "marketCap": "4.07B",
           "marketCapValue": 4073239296,
           "globalMarketCapRank": 2737,
-          "growthConfidence": 53,
+          "growthConfidence": 54,
           "growthConfidenceLabel": "Caution",
           "growthConfidenceSummary": "Caution: lifted by annual reports and risk balance.",
           "components": {
@@ -46292,6 +46946,14 @@
               "age": 0,
               "confidence": 1.0,
               "label": "current report"
+            },
+            "strategicMomentum": 55,
+            "strategicMomentumAvailable": true,
+            "strategicMomentumDetail": {
+              "score": 55,
+              "reliability": 0.901,
+              "initiativeCount": 38,
+              "evidenceCount": 51
             }
           },
           "forwardReturns": {}
@@ -46812,7 +47474,10 @@
               "age": 0,
               "confidence": 1.0,
               "label": "current report"
-            }
+            },
+            "strategicMomentum": 50,
+            "strategicMomentumAvailable": false,
+            "strategicMomentumDetail": null
           },
           "forwardReturns": {}
         }
@@ -47332,7 +47997,10 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
-            }
+            },
+            "strategicMomentum": 50,
+            "strategicMomentumAvailable": false,
+            "strategicMomentumDetail": null
           },
           "forwardReturns": {}
         }
@@ -47852,7 +48520,10 @@
               "age": 0,
               "confidence": 1.0,
               "label": "current report"
-            }
+            },
+            "strategicMomentum": 50,
+            "strategicMomentumAvailable": false,
+            "strategicMomentumDetail": null
           },
           "forwardReturns": {}
         }
@@ -48372,7 +49043,10 @@
               "age": 0,
               "confidence": 1.0,
               "label": "current report"
-            }
+            },
+            "strategicMomentum": 50,
+            "strategicMomentumAvailable": false,
+            "strategicMomentumDetail": null
           },
           "forwardReturns": {}
         }
@@ -48892,7 +49566,10 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
-            }
+            },
+            "strategicMomentum": 50,
+            "strategicMomentumAvailable": false,
+            "strategicMomentumDetail": null
           },
           "forwardReturns": {}
         }
@@ -49412,7 +50089,10 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
-            }
+            },
+            "strategicMomentum": 50,
+            "strategicMomentumAvailable": false,
+            "strategicMomentumDetail": null
           },
           "forwardReturns": {}
         }
@@ -49932,7 +50612,10 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
-            }
+            },
+            "strategicMomentum": 50,
+            "strategicMomentumAvailable": false,
+            "strategicMomentumDetail": null
           },
           "forwardReturns": {}
         }
@@ -50452,7 +51135,10 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
-            }
+            },
+            "strategicMomentum": 50,
+            "strategicMomentumAvailable": false,
+            "strategicMomentumDetail": null
           },
           "forwardReturns": {}
         }
@@ -50972,7 +51658,10 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
-            }
+            },
+            "strategicMomentum": 50,
+            "strategicMomentumAvailable": false,
+            "strategicMomentumDetail": null
           },
           "forwardReturns": {}
         }
@@ -51492,7 +52181,10 @@
               "age": 1,
               "confidence": 0.82,
               "label": "2025 report"
-            }
+            },
+            "strategicMomentum": 50,
+            "strategicMomentumAvailable": false,
+            "strategicMomentumDetail": null
           },
           "forwardReturns": {}
         }
@@ -52012,7 +52704,10 @@
               "age": 0,
               "confidence": 1.0,
               "label": "current report"
-            }
+            },
+            "strategicMomentum": 50,
+            "strategicMomentumAvailable": false,
+            "strategicMomentumDetail": null
           },
           "forwardReturns": {}
         }
