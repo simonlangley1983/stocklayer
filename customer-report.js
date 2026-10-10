@@ -350,9 +350,37 @@
     });
   }
 
+  function sectionExecutiveSummary(report, company, strategicData, growthConfidenceHistory) {
+    const item = report.company || {};
+    const confidence = confidenceWithStrategicMomentum(report.overallConfidence || {}, strategicData);
+    const pressPoints = Array.isArray(report.pressCoverage?.series)
+      ? report.pressCoverage.series.map(point => ({ date: point.date, value: finite(point.dailyScore) })).filter(point => point.date && point.value != null)
+      : [];
+    const latestPress = pressPoints.at(-1);
+    const themes = (report.annualReportAnalysis?.emergingKeywords || [])
+      .filter(theme => Number(theme.changePer10kWords) > 0)
+      .sort((a, b) => Number(b.changePer10kWords) - Number(a.changePer10kWords))
+      .slice(0, 3)
+      .map(theme => theme.label)
+      .filter(Boolean);
+    const initiatives = Array.isArray(strategicData?.initiatives) ? strategicData.initiatives : [];
+    const categories = [...new Set(initiatives.map(initiative => initiative.category).filter(Boolean))].slice(0, 3);
+    const observations = growthConfidenceHistory?.companies?.[company.slug]?.observations || [];
+    const range = observations.length ? `${fmtDate(observations[0].date)} to ${fmtDate(observations.at(-1).date)}` : null;
+    const overview = [item.sector || company?.sector, item.ticker || company?.ticker, item.ftseRank ? `UK 100 rank #${item.ftseRank}` : ''].filter(Boolean).join(' ? ');
+    const rows = [
+      ['Company', overview || 'Company profile and listing information are included in this report.'],
+      ['Growth confidence', confidence.score == null ? 'A current Growth Confidence score is not available yet.' : `${Math.round(confidence.score)}/100, rated ${confidence.label || 'Unavailable'}${range ? `. Recorded history: ${range}.` : '.'}`],
+      ['Press signal', latestPress ? `${Math.round(latestPress.value)}/100 ${scoreLabel(latestPress.value).toLowerCase()} press sentiment, latest observation ${fmtDate(latestPress.date)}.` : 'Press sentiment is not available yet.'],
+      ['Annual-report themes', themes.length ? `The strongest recent increases are ${themes.join(', ')}.` : 'Annual-report theme changes are not available yet.'],
+      ['Strategic Intelligence', initiatives.length ? `${initiatives.length} identified initiatives${categories.length ? ` across ${categories.join(', ')}` : ''}${strategicData.latestEvidenceDate ? `, with latest evidence from ${fmtDate(strategicData.latestEvidenceDate)}` : ''}.` : 'Strategic Intelligence is not currently available for this company.']
+    ];
+    return `<section class="company-report-section report-executive-summary" aria-labelledby="report-section-summary"><header><span class="report-executive-kicker">At a glance</span><h3 id="report-section-summary">Executive summary</h3><p>A concise view of the company intelligence covered in this report.</p></header><div class="report-executive-grid">${rows.map(([label, text]) => `<div><strong>${escapeHtml(label)}</strong><p>${escapeHtml(text)}</p></div>`).join('')}</div></section>`;
+  }
+
   function render(report, company, strategicData, growthConfidenceHistory) {
     const strategic = strategicSection(strategicData);
-    return `<div class="company-report"><nav class="company-report-nav" aria-label="Report sections"><a href="#report-section-growth-history">Growth confidence</a><a href="#report-section-company">Overview</a><a href="#report-section-confidence">Confidence</a><a href="#report-section-trends">Trends & events</a><a href="#report-section-themes">Themes</a>${strategic ? '<a href="#report-section-strategic">Strategic Intelligence</a>' : ''}</nav>${sectionGrowthConfidenceHistory(growthConfidenceHistory, company.slug)}${sectionOne(report, company)}${sectionTwo(report, strategicData)}${sectionThree(report)}${sectionFour(report)}${strategic}<p class="company-report-disclaimer">StockLayer indicators are descriptive research signals, not financial advice. Source links and methodology notes are provided so the evidence can be checked.</p></div>`;
+    return `<div class="company-report"><nav class="company-report-nav" aria-label="Report sections"><a href="#report-section-summary">Summary</a><a href="#report-section-growth-history">Growth confidence</a><a href="#report-section-company">Overview</a><a href="#report-section-confidence">Confidence</a><a href="#report-section-trends">Trends & events</a><a href="#report-section-themes">Themes</a>${strategic ? '<a href="#report-section-strategic">Strategic Intelligence</a>' : ''}</nav>${sectionExecutiveSummary(report, company, strategicData, growthConfidenceHistory)}${sectionGrowthConfidenceHistory(growthConfidenceHistory, company.slug)}${sectionOne(report, company)}${sectionTwo(report, strategicData)}${sectionThree(report)}${sectionFour(report)}${strategic}<p class="company-report-disclaimer">StockLayer indicators are descriptive research signals, not financial advice. Source links and methodology notes are provided so the evidence can be checked.</p></div>`;
   }
 
   async function open({ company, modal, title, subtitle, content }) {
