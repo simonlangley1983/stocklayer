@@ -1825,6 +1825,17 @@ body.company-page .strip-card { border-radius: 0; box-shadow: none; }
   overscroll-behavior-inline: contain;
 }
 
+.report-sentiment-top { border-color: #C9DDF8; background: linear-gradient(135deg, #F8FBFF 0%, #FFFFFF 68%); }
+.report-sentiment-header { display: flex; align-items: start; justify-content: space-between; gap: 24px; }
+.report-sentiment-header > div:first-child { min-width: 0; }
+.report-sentiment-header p { max-width: 690px; margin-bottom: 0; color: #64748B; line-height: 1.55; }
+.report-sentiment-latest { flex: 0 0 auto; min-width: 132px; padding: 12px 15px; border: 1px solid #D6E4F4; border-radius: 10px; background: #FFF; text-align: right; }
+.report-sentiment-latest span,.report-sentiment-latest strong,.report-sentiment-latest small { display: block; }
+.report-sentiment-latest span { color: #526B8E; font-size: 11px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
+.report-sentiment-latest strong { margin: 2px 0; font-size: 30px; line-height: 1; }
+.report-sentiment-latest small { color: #526B8E; font-size: 12px; }
+.report-sentiment-chart { margin-top: 0; }
+
 .report-chart-line {
   fill: none;
   stroke: #2563eb;
@@ -2268,6 +2279,8 @@ body.company-page .strip-card { border-radius: 0; box-shadow: none; }
   .company-report-chart-card { overflow-x: hidden; }
   .company-report-chart { min-width: 0; width: 100%; height: auto; }
   .company-report-section { padding: 18px; }
+  .report-sentiment-header { display: grid; gap: 14px; }
+  .report-sentiment-latest { width: 100%; box-sizing: border-box; text-align: left; }
   .company-report-profile dl,
   .company-report-stat-grid { grid-template-columns: 1fr 1fr; }
   .report-confidence-hero { grid-template-columns: 1fr; }

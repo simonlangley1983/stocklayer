@@ -84,7 +84,7 @@
   function lineChart(points, options = {}) {
     const values = points.filter(point => point.value != null && point.date);
     if (values.length < 2) return '<p class="report-empty">Not enough scored observations to draw this chart yet.</p>';
-    const width = 900, height = 290;
+    const width = options.width || 900, height = options.height || 290;
     const pad = { left: options.scoreScale ? 86 : 48, right: 20, top: 24, bottom: 38 };
     const minDate = Math.min(...values.map(point => Date.parse(`${point.date}T12:00:00Z`)));
     const maxDate = Math.max(...values.map(point => Date.parse(`${point.date}T12:00:00Z`)));
@@ -177,6 +177,19 @@
       || (typeof window.getCompanyUsp === 'function' ? window.getCompanyUsp(company) : '')
       || item.introduction;
     return `<section class="company-report-section company-report-overview" aria-labelledby="report-section-company"><header><h3 id="report-section-company">Company overview</h3></header><div class="company-report-profile"><div><p class="company-report-intro">${escapeHtml(richerIntro || item.introduction)}</p><dl><div><dt>Company type</dt><dd>${escapeHtml(item.sector || 'Unavailable')}</dd></div><div><dt>Listing</dt><dd>${escapeHtml(item.ticker || 'Unavailable')}</dd></div><div><dt>UK 100 rank</dt><dd>${item.ftseRank ? `#${item.ftseRank}` : 'Unavailable'}</dd></div><div><dt>Market value</dt><dd>${escapeHtml(companyMarketValue(item, company))}</dd></div></dl></div></div></section>`;
+  }
+
+  function sectionSentiment(report) {
+    const press = report.pressCoverage || {};
+    const series = Array.isArray(press.series)
+      ? press.series.map(item => ({ date: item.date, value: finite(item.dailyScore) }))
+      : [];
+    const scored = series.filter(item => item.value != null && item.date);
+    const latest = scored.at(-1);
+    const score = latest?.value;
+    const label = scoreLabel(score);
+    const date = latest?.date ? fmtDate(latest.date) : 'Unavailable';
+    return `<section class="company-report-section report-sentiment-top" aria-labelledby="report-section-sentiment"><header class="report-sentiment-header"><div><h3 id="report-section-sentiment">Sentiment over time</h3><p>Daily press sentiment from the available news and market coverage. Scores range from 0 negative to 100 positive.</p></div><div class="report-sentiment-latest ${scoreClass(score)}"><span>Latest sentiment</span><strong>${score == null ? '?' : Math.round(score)}</strong><small>${escapeHtml(label)} ? ${escapeHtml(date)}</small></div></header><div class="company-report-chart-card report-sentiment-chart">${lineChart(series, { lower: 0, upper: 100, scoreScale: true, connectGaps: true, height: 230, label: 'Daily press sentiment score over time' })}</div></section>`;
   }
 
   function sectionTwo(report, strategicData) {
@@ -309,7 +322,7 @@
 
   function render(report, company, strategicData) {
     const strategic = strategicSection(strategicData);
-    return `<div class="company-report"><nav class="company-report-nav" aria-label="Report sections"><a href="#report-section-company">Overview</a><a href="#report-section-confidence">Confidence</a><a href="#report-section-trends">Trends & events</a><a href="#report-section-themes">Themes</a>${strategic ? '<a href="#report-section-strategic">Strategic Intelligence</a>' : ''}</nav>${sectionOne(report, company)}${sectionTwo(report, strategicData)}${sectionThree(report)}${sectionFour(report)}${strategic}<p class="company-report-disclaimer">StockLayer indicators are descriptive research signals, not financial advice. Source links and methodology notes are provided so the evidence can be checked.</p></div>`;
+    return `<div class="company-report"><nav class="company-report-nav" aria-label="Report sections"><a href="#report-section-sentiment">Sentiment</a><a href="#report-section-company">Overview</a><a href="#report-section-confidence">Confidence</a><a href="#report-section-trends">Trends & events</a><a href="#report-section-themes">Themes</a>${strategic ? '<a href="#report-section-strategic">Strategic Intelligence</a>' : ''}</nav>${sectionSentiment(report)}${sectionOne(report, company)}${sectionTwo(report, strategicData)}${sectionThree(report)}${sectionFour(report)}${strategic}<p class="company-report-disclaimer">StockLayer indicators are descriptive research signals, not financial advice. Source links and methodology notes are provided so the evidence can be checked.</p></div>`;
   }
 
   async function open({ company, modal, title, subtitle, content }) {
