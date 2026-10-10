@@ -1591,7 +1591,9 @@ body.company-page .strip-card { border-radius: 0; box-shadow: none; }
 }
 
 .report-title-signalstrata {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
   margin-left: 5px;
   color: #527199;
   font-size: .58em;
@@ -1600,6 +1602,9 @@ body.company-page .strip-card { border-radius: 0; box-shadow: none; }
   white-space: nowrap;
   vertical-align: middle;
 }
+
+.report-title-signalstrata a { display: inline-flex; align-items: center; }
+.report-title-signalstrata img { display: block; width: auto; height: 18px; max-width: 118px; object-fit: contain; }
 
 .company-report {
   display: grid;

@@ -326,7 +326,7 @@
       }
       if (loadId !== activeLoadId || modal.hidden) return;
       title.hidden = false;
-      title.innerHTML = `${escapeHtml(name)} report${hasStrategicIntelligence ? ' <span class="report-title-signalstrata">(enhanced by Signal:Strata)</span>' : ''}`;
+      title.innerHTML = `${escapeHtml(name)} report${hasStrategicIntelligence ? ' <span class="report-title-signalstrata">(enhanced by <a href="https://signalstrata.io/" target="_blank" rel="noopener noreferrer"><img src="images/signalstrata-logo.png" alt="SignalStrata"></a>)</span>' : ''}`;
       subtitle.textContent = '';
       subtitle.hidden = true;
       content.innerHTML = reportHtml;
