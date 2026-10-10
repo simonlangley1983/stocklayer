@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-10T00:04:06.832863Z",
+  "generatedAt": "2026-10-10T02:31:33.393434Z",
   "company": {
     "companyName": "Alliance Witan PLC",
     "ticker": "ALW.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-10-08",
-    "observationCount": 91,
-    "scoredDayCount": 22,
+    "periodEnd": "2026-10-09",
+    "observationCount": 92,
+    "scoredDayCount": 23,
     "latestScore": 50.1,
-    "latestScoreDate": "2026-10-08",
+    "latestScoreDate": "2026-10-09",
     "series": [
       {
         "date": "2026-06-30",
@@ -844,6 +844,15 @@
         "sourceCount": 1,
         "confidence": 15.1,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-09",
+        "dailyScore": 50.1,
+        "rollingScore": 50.3,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -936,6 +945,16 @@
         "direction": "Neutral / mixed",
         "detail": null,
         "significance": 0.154
+      },
+      {
+        "date": "2026-10-09",
+        "type": "press_story",
+        "title": "Alliance Witan: Stock Spotlight: Techtronic",
+        "source": "quoteddata.com",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5CWERGRWR4czVBU1l1eDdNSTg5eEJtSTFRby1SME52V1NpTzh4V0hyNVBZbXdmd0kyMl9aZzIxMzY3RGlJbzZRZlJFTDdEUm1iVnBpY0o1S0tVQTFPU2JueFI3YkE0UVdqd2pWNDJpMWh3Wm5Ockl0X1VGODQzQQ?oc=5",
+        "direction": "Neutral / mixed",
+        "detail": null,
+        "significance": 0.157
       }
     ]
   },
@@ -1501,17 +1520,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 63.8,
+    "score": 63.7,
     "label": "Positive",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 52.3,
+        "score": 52.0,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 20 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 21 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "themes",
@@ -1677,6 +1696,16 @@
       "direction": "Neutral / mixed",
       "detail": null,
       "significance": 0.154
+    },
+    {
+      "date": "2026-10-09",
+      "type": "press_story",
+      "title": "Alliance Witan: Stock Spotlight: Techtronic",
+      "source": "quoteddata.com",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5CWERGRWR4czVBU1l1eDdNSTg5eEJtSTFRby1SME52V1NpTzh4V0hyNVBZbXdmd0kyMl9aZzIxMzY3RGlJbzZRZlJFTDdEUm1iVnBpY0o1S0tVQTFPU2JueFI3YkE0UVdqd2pWNDJpMWh3Wm5Ockl0X1VGODQzQQ?oc=5",
+      "direction": "Neutral / mixed",
+      "detail": null,
+      "significance": 0.157
     }
   ],
   "persistentEvents": []

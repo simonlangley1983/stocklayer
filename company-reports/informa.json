@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-10T00:04:06.832863Z",
+  "generatedAt": "2026-10-10T02:31:33.393434Z",
   "company": {
     "companyName": "Informa PLC",
     "ticker": "INF.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-15",
-    "periodEnd": "2026-10-08",
-    "observationCount": 95,
-    "scoredDayCount": 74,
-    "latestScore": 61.9,
-    "latestScoreDate": "2026-10-08",
+    "periodEnd": "2026-10-09",
+    "observationCount": 96,
+    "scoredDayCount": 75,
+    "latestScore": 58.1,
+    "latestScoreDate": "2026-10-09",
     "series": [
       {
         "date": "2026-06-15",
@@ -880,6 +880,15 @@
         "sourceCount": 15,
         "confidence": 83.6,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-09",
+        "dailyScore": 58.1,
+        "rollingScore": 53.6,
+        "storyCount": 7,
+        "sourceCount": 7,
+        "confidence": 76.7,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1620,17 +1629,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 77.1,
+    "score": 77.2,
     "label": "Strong",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 54.8,
+        "score": 54.9,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 66 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 67 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "themes",
@@ -1818,6 +1827,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "b1aa8351151d24a14710",
+      "type": "acquisition",
+      "title": "Informa’s £2.24bn Clarion takeover creates bigger B2B giant",
+      "date": "2026-10-09",
+      "status": "pending_review",
+      "reviewDate": "2027-04-07",
+      "direction": "Negative",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNa2RTalBDaEI3NnJTNFFMem9PMnludG1yLVJiZ01VRGtWSWJlLWh1aTlBSUY1U3NJWkh4NEZxMlh4cGNwajY3VnF6dHJLaEFoZlI4SjJsY0ZLZjRFc1Mxb2I0S3BGNWt3UGdsLXVlaVBicVhaVVRRODM2dnY3dHZDYTJWbDJ1cWhQTXpXMEl1Wkg5ZUZUZ1R1NDFfOHJEOFU1eENKcTZoMlJTYWZLNGVUaEdtUVpvMEFBOWk1V092cXMzQ0xuLTZ5TnE1cndMQQ?oc=5",
+          "publisher": "meetings-conventions-asia.com",
+          "date": "2026-10-09"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "ebe599e9426fd0b2826a",
       "type": "acquisition",
