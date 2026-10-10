@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-10T11:39:32.058902Z",
+  "generatedAt": "2026-10-10T13:08:29.463914Z",
   "company": {
     "companyName": "Smith & Nephew PLC",
     "ticker": "SN.L",
@@ -21,8 +21,8 @@
   "pressCoverage": {
     "periodStart": "2026-06-30",
     "periodEnd": "2026-10-09",
-    "observationCount": 95,
-    "scoredDayCount": 58,
+    "observationCount": 98,
+    "scoredDayCount": 59,
     "latestScore": 49.9,
     "latestScoreDate": "2026-10-09",
     "series": [
@@ -576,6 +576,33 @@
         "coverageStatus": "ok"
       },
       {
+        "date": "2026-09-03",
+        "dailyScore": 34.4,
+        "rollingScore": 48.5,
+        "storyCount": 1,
+        "sourceCount": 2,
+        "confidence": 24.0,
+        "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-09-04",
+        "dailyScore": null,
+        "rollingScore": 48.6,
+        "storyCount": 0,
+        "sourceCount": 0,
+        "confidence": 0.0,
+        "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-09-05",
+        "dailyScore": null,
+        "rollingScore": 48.7,
+        "storyCount": 0,
+        "sourceCount": 0,
+        "confidence": 0.0,
+        "coverageStatus": "no_coverage"
+      },
+      {
         "date": "2026-09-06",
         "dailyScore": null,
         "rollingScore": 50.4,
@@ -894,14 +921,14 @@
         "significance": 1.589
       },
       {
-        "date": "2026-09-15",
-        "type": "coverage_spike",
-        "title": "Smith & Nephew fined after heavy crate fell on man",
-        "source": "hulldailymail.co.uk",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNSXI3SzFvWU9Zd1JsWTZndlo5UXZzdXhmaXdMc3FUYlZyR3FzbzN2QmM1c0VnSTdCeGpHdmRqeTR1cTQ0eDNHdldUazRmeS03MlNCMkE5b0pBSWRHcGZkVVlMS184Nk1tdUo4UVlORDR5a1M0b3BDTlRBT2oxMVFiNlRFX2ZMcGl6X0QyY0U2STFEV3RORlFBbXU4OXbSAaIBQVVfeXFMTWdhM0hxRk1EWjVZYVU2dFJhdUcwa1pMT2RrbjYxNTJMX1NJVDhjNW45QllmZ3FXVjNjRDZkeHROYWFEdlA3OWhyOWhSODRYRmNqUXZpZjRtVmhJcmNSZllRaWdxaWZWOE11XzdPaEY5Mm1LUFlReTFKdlM0THdKWWdvWVEtdlBTMjlVdWhRWXJaQUlFU19DbkZQY0ZuSGFyaF93?oc=5",
-        "direction": "neutral",
-        "detail": "6 stories versus trailing median 1",
-        "significance": 1.496
+        "date": "2026-09-03",
+        "type": "analyst_downgrade",
+        "title": "Smith & Nephew SNATS ( NYSE : SNN ) Sets New 52 - Week Low on Analyst Downgrade",
+        "source": "dailypolitical.com",
+        "url": "https://www.dailypolitical.com/2026/09/03/smith-nephew-snats-nysesnn-sets-new-52-week-low-on-analyst-downgrade.html",
+        "direction": "negative",
+        "detail": null,
+        "significance": 1.738
       },
       {
         "date": "2026-09-16",
@@ -1474,17 +1501,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 53.9,
+    "score": 53.7,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 49.2,
+        "score": 48.9,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 54 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 55 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1571,14 +1598,14 @@
       "significance": 1.589
     },
     {
-      "date": "2026-09-15",
-      "type": "coverage_spike",
-      "title": "Smith & Nephew fined after heavy crate fell on man",
-      "source": "hulldailymail.co.uk",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNSXI3SzFvWU9Zd1JsWTZndlo5UXZzdXhmaXdMc3FUYlZyR3FzbzN2QmM1c0VnSTdCeGpHdmRqeTR1cTQ0eDNHdldUazRmeS03MlNCMkE5b0pBSWRHcGZkVVlMS184Nk1tdUo4UVlORDR5a1M0b3BDTlRBT2oxMVFiNlRFX2ZMcGl6X0QyY0U2STFEV3RORlFBbXU4OXbSAaIBQVVfeXFMTWdhM0hxRk1EWjVZYVU2dFJhdUcwa1pMT2RrbjYxNTJMX1NJVDhjNW45QllmZ3FXVjNjRDZkeHROYWFEdlA3OWhyOWhSODRYRmNqUXZpZjRtVmhJcmNSZllRaWdxaWZWOE11XzdPaEY5Mm1LUFlReTFKdlM0THdKWWdvWVEtdlBTMjlVdWhRWXJaQUlFU19DbkZQY0ZuSGFyaF93?oc=5",
-      "direction": "neutral",
-      "detail": "6 stories versus trailing median 1",
-      "significance": 1.496
+      "date": "2026-09-03",
+      "type": "analyst_downgrade",
+      "title": "Smith & Nephew SNATS ( NYSE : SNN ) Sets New 52 - Week Low on Analyst Downgrade",
+      "source": "dailypolitical.com",
+      "url": "https://www.dailypolitical.com/2026/09/03/smith-nephew-snats-nysesnn-sets-new-52-week-low-on-analyst-downgrade.html",
+      "direction": "negative",
+      "detail": null,
+      "significance": 1.738
     },
     {
       "date": "2026-09-16",
