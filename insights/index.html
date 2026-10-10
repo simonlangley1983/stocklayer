@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StockLayer insights</title>
+  <link rel="canonical" href="/insights">
+  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+  <style>
+    :root {
+      --ink: #0F2344;
+      --muted: #5B708F;
+      --blue: #2563EB;
+      --blue-dark: #1D4ED8;
+      --green: #0F9F75;
+      --orange: #C85A05;
+      --purple: #6D28D9;
+      --line: #DCE5F0;
+      --soft-blue: #EFF6FF;
+      --soft-green: #ECFDF5;
+      --soft-orange: #FFF7ED;
+      --soft-purple: #F5F3FF;
+      --white: #FFFFFF;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #F3F7FC 0, #FFFFFF 440px, #F8FAFC 100%);
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+    }
+
+    a {
+      font: inherit;
+    }
+
+    .site-header {
+      max-width: 1440px;
+      min-height: 92px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin: 0 auto;
+      padding: 18px 28px;
+    }
+
+    .brand {
+      flex: 0 1 300px;
+      min-width: 0;
+    }
+
+    .brand img {
+      display: block;
+      width: min(300px, 100%);
+      height: auto;
+    }
+
+    .site-navigation {
+      min-width: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(14px, 1.8vw, 28px);
+      margin-left: auto;
+    }
+
+    .site-navigation a {
+      position: relative;
+      padding: 11px 0;
+      color: #243B63;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .site-navigation a:hover,
+    .site-navigation a:focus-visible,
+    .site-navigation a.active {
+      color: var(--blue-dark);
+      outline: none;
+    }
+
+    .site-navigation a.active::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 3px;
+      left: 0;
+      height: 2px;
+      border-radius: 999px;
+      background: var(--blue);
+    }
+
+    .sign-in-button {
+      flex: 0 0 auto;
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      border: 1px solid #CBD5E1;
+      border-radius: 10px;
+      background: var(--white);
+      padding: 0 16px;
+      color: var(--ink);
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 3px 10px rgba(15, 35, 68, .07);
+    }
+
+    .sign-in-button:hover,
+    .sign-in-button:focus-visible {
+      border-color: #93A9C4;
+      background: #F8FAFC;
+      color: var(--blue-dark);
+      outline: 3px solid rgba(37, 99, 235, .16);
+    }
+
+    .google-icon {
+      width: 18px;
+      height: 18px;
+      flex: 0 0 auto;
+    }
+
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 34px 24px 70px;
+    }
+
+    .hero {
+      max-width: 100%;
+      margin: 24px 0 54px;
+      border: 1px solid rgba(198, 217, 232, .72);
+      border-radius: 26px;
+      background-image: linear-gradient(rgba(255, 255, 255, .86), rgba(255, 255, 255, .86)), url('/images/about-hero-background.png');
+      background-position: center;
+      background-size: cover;
+      padding: clamp(34px, 5vw, 58px);
+      text-align: left;
+      box-shadow: 0 12px 34px rgba(15, 35, 68, .055);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 12px;
+      color: var(--blue-dark);
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(40px, 6vw, 66px);
+      line-height: 1.02;
+      letter-spacing: -.035em;
+    }
+
+    .hero p {
+      max-width: 710px;
+      margin: 20px 0 0;
+      color: var(--muted);
+      font-size: clamp(18px, 2vw, 22px);
+    }
+
+    .section-heading {
+      max-width: 740px;
+      margin: 0 auto 28px;
+      text-align: center;
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      font-size: clamp(28px, 4vw, 40px);
+      line-height: 1.15;
+    }
+
+    .section-heading p {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .insight-types {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-bottom: 70px;
+    }
+
+    .insight-card {
+      min-width: 0;
+      display: grid;
+      grid-template-columns: 56px minmax(0, 1fr);
+      gap: 18px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, .95);
+      padding: 26px;
+      box-shadow: 0 8px 24px rgba(15, 35, 68, .055);
+    }
+
+    .insight-icon {
+      width: 56px;
+      height: 56px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 16px;
+      font-size: 23px;
+      font-weight: 800;
+    }
+
+    .share .insight-icon {
+      background: var(--soft-blue);
+      color: var(--blue-dark);
+    }
+
+    .value .insight-icon {
+      background: var(--soft-green);
+      color: var(--green);
+    }
+
+    .rank .insight-icon {
+      background: var(--soft-orange);
+      color: var(--orange);
+    }
+
+    .reports .insight-icon {
+      background: var(--soft-purple);
+      color: var(--purple);
+    }
+
+    .insight-card h3 {
+      margin: 0 0 7px;
+      font-size: 21px;
+      line-height: 1.2;
+    }
+
+    .insight-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .insight-card a {
+      display: inline-flex;
+      margin-top: 14px;
+      color: var(--blue-dark);
+      font-size: 14px;
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    .reading-guide {
+      margin-bottom: 70px;
+      border: 1px solid #BFDBFE;
+      border-radius: 18px;
+      background: var(--soft-blue);
+      padding: 30px;
+    }
+
+    .guide-steps {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .guide-step {
+      border-radius: 14px;
+      background: rgba(255, 255, 255, .82);
+      padding: 22px;
+    }
+
+    .guide-number {
+      width: 38px;
+      height: 38px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 11px;
+      background: var(--blue);
+      color: var(--white);
+      font-weight: 800;
+    }
+
+    .guide-step h3 {
+      margin: 14px 0 7px;
+      font-size: 19px;
+    }
+
+    .guide-step p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .example-panel {
+      max-width: 100%;
+      margin: 0 auto 70px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--white);
+      padding: 30px;
+      box-shadow: 0 8px 24px rgba(15, 35, 68, .055);
+    }
+
+    .example-panel h2 {
+      margin: 0;
+      font-size: 28px;
+      text-align: center;
+    }
+
+    .example-panel > p {
+      margin: 8px 0 24px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .example-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+      gap: 20px;
+      align-items: center;
+      border-radius: 14px;
+      background: #F8FAFC;
+      padding: 22px;
+    }
+
+    .example-point {
+      text-align: center;
+    }
+
+    .example-point strong {
+      display: block;
+      color: var(--green);
+      font-size: 29px;
+      line-height: 1.1;
+    }
+
+    .example-point span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .example-plus {
+      color: var(--blue-dark);
+      font-size: 14px;
+      font-weight: 800;
+      text-align: center;
+    }
+
+    .example-result {
+      margin: 18px 0 0;
+      color: var(--ink) !important;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .important-note {
+      max-width: 900px;
+      margin: 0 auto;
+      border-left: 5px solid var(--orange);
+      border-radius: 12px;
+      background: var(--soft-orange);
+      padding: 24px 26px;
+    }
+
+    .important-note h2 {
+      margin: 0 0 8px;
+      color: #9A3F04;
+      font-size: 24px;
+    }
+
+    .important-note p {
+      margin: 0;
+      color: #7C4A21;
+    }
+
+    .page-action {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 42px;
+    }
+
+    .primary-link,
+    .secondary-link {
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      padding: 0 22px;
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    .primary-link {
+      background: var(--blue);
+      color: var(--white);
+    }
+
+    .secondary-link {
+      border: 1px solid #CBD5E1;
+      background: var(--white);
+      color: var(--ink);
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      background: rgba(255, 255, 255, .8);
+    }
+
+    .footer-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 24px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 1050px) {
+      .site-header {
+        flex-wrap: wrap;
+        gap: 12px 18px;
+      }
+
+      .brand {
+        flex-basis: 210px;
+      }
+
+      .site-navigation {
+        order: 3;
+        width: 100%;
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-top: 2px;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .site-header {
+        padding: 14px 16px;
+      }
+
+      .brand {
+        flex-basis: min(215px, calc(100% - 190px));
+      }
+
+      .sign-in-button {
+        min-height: 40px;
+        padding: 0 11px;
+        font-size: 12px;
+      }
+
+      .site-navigation {
+        gap: 22px;
+      }
+
+      main {
+        padding: 24px 16px 54px;
+      }
+
+      .hero {
+        margin: 18px auto 42px;
+      }
+
+      .insight-types,
+      .guide-steps {
+        grid-template-columns: 1fr;
+      }
+
+      .insight-types,
+      .reading-guide,
+      .example-panel {
+        margin-bottom: 48px;
+      }
+
+      .insight-card {
+        grid-template-columns: 48px minmax(0, 1fr);
+        padding: 21px 18px;
+      }
+
+      .insight-icon {
+        width: 48px;
+        height: 48px;
+      }
+
+      .reading-guide,
+      .example-panel {
+        padding: 22px 18px;
+      }
+
+      .example-row {
+        grid-template-columns: 1fr;
+      }
+
+      .page-action {
+        flex-direction: column;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="/stocklayer.css?v=20261010-7">
+  <script src="/privacy-consent.js?v=20261005-footer-2" defer></script>
+  <script src="/mobile-navigation.js?v=20261007-muted-signin" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="StockLayer home">
+      <picture><img src="/images/stocklayer-wordmark.png?v=20260927-unified" alt="StockLayer" class="brand-logo"></picture>
+    </a>
+    <nav class="site-navigation" aria-label="Primary navigation">
+      <a href="/">Home</a>
+      <a href="/how">How it works</a>
+      <a href="/methodology">Methodology</a>
+      <a class="active" href="/insights" aria-current="page">Insights</a>
+      <a href="/about">About</a>
+    </nav>
+    <details class="desktop-login"><summary aria-label="Sign in"><svg class="login-profile-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/></svg><span>Sign in</span><svg class="login-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg></summary><div class="desktop-login-panel"><a href="/?signin=google"><svg class="google-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M21.6 12.23c0-.71-.06-1.4-.18-2.06H12v3.9h5.38a4.6 4.6 0 0 1-2 3.02v2.53h3.24c1.9-1.75 2.98-4.33 2.98-7.39Z"/><path fill="#34A853" d="M12 22c2.7 0 4.97-.9 6.62-2.38l-3.24-2.53c-.9.6-2.05.96-3.38.96-2.6 0-4.81-1.76-5.6-4.13H3.05v2.61A10 10 0 0 0 2 12c0 1.63.39 3.17 1.05 4.53l3.35-2.61Z"/><path fill="#FBBC05" d="M6.4 13.92A6.02 6.02 0 0 1 6.08 12c0-.67.12-1.32.32-1.92V7.47H3.05A10 10 0 0 0 2 12c0 1.63.39 3.17 1.05 4.53l3.35-2.61Z"/><path fill="#EA4335" d="M12 5.95c1.47 0 2.79.5 3.82 1.5l2.87-2.87A9.63 9.63 0 0 0 12 2a10 10 0 0 0-8.95 5.47l3.35 2.61C7.19 7.71 9.4 5.95 12 5.95Z"/></svg><span>Continue with Google</span></a></div></details>
+    <a class="sign-in-button" href="/?signin=google" aria-label="Sign in or register with Google">
+      <svg class="google-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="#4285F4" d="M21.6 12.23c0-.71-.06-1.4-.18-2.06H12v3.9h5.38a4.6 4.6 0 0 1-2 3.02v2.53h3.24c1.9-1.75 2.98-4.33 2.98-7.39Z"/>
+        <path fill="#34A853" d="M12 22c2.7 0 4.97-.9 6.62-2.38l-3.24-2.53c-.9.6-2.05.96-3.38.96-2.6 0-4.81-1.76-5.6-4.13H3.05v2.61A10 10 0 0 0 12 22Z"/>
+        <path fill="#FBBC05" d="M6.4 13.92A6.02 6.02 0 0 1 6.08 12c0-.67.12-1.32.32-1.92V7.47H3.05A10 10 0 0 0 2 12c0 1.63.39 3.17 1.05 4.53l3.35-2.61Z"/>
+        <path fill="#EA4335" d="M12 5.95c1.47 0 2.79.5 3.82 1.5l2.87-2.87A9.63 9.63 0 0 0 12 2a10 10 0 0 0-8.95 5.47l3.35 2.61C7.19 7.71 9.4 5.95 12 5.95Z"/>
+      </svg>
+      Sign in / Register
+    </a>
+    <div class="header-actions"><a class="google-sign-in-trigger" href="/?signin=google" aria-label="Sign in or register with Google"><svg class="google-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M21.6 12.23c0-.71-.06-1.4-.18-2.06H12v3.9h5.38a4.6 4.6 0 0 1-2 3.02v2.53h3.24c1.9-1.75 2.98-4.33 2.98-7.39Z"/><path fill="#34A853" d="M12 22c2.7 0 4.97-.9 6.62-2.38l-3.24-2.53c-.9.6-2.05.96-3.38.96-2.6 0-4.81-1.76-5.6-4.13H3.05v2.61A10 10 0 0 0 12 22Z"/><path fill="#FBBC05" d="M6.4 13.92A6.02 6.02 0 0 1 6.08 12c0-.67.12-1.32.32-1.92V7.47H3.05A10 10 0 0 0 2 12c0 1.63.39 3.17 1.05 4.53l3.35-2.61Z"/><path fill="#EA4335" d="M12 5.95c1.47 0 2.79.5 3.82 1.5l2.87-2.87A9.63 9.63 0 0 0 12 2a10 10 0 0 0-8.95 5.47l3.35 2.61C7.19 7.71 9.4 5.95 12 5.95Z"/></svg>Sign in with Google</a></div>
+  </header>
+
+  <main>
+    <section class="home-intro manchester-hero">
+      <div class="manchester-copy">
+        <h1 class="manchester-hero-title"><span class="hero-title-line">See what is</span><span class="hero-title-line"><span class="hero-highlight">changing</span> in the</span><span class="hero-title-line">FTSE 100</span></h1>
+        <p class="manchester-lede">Spot useful changes across the FTSE 100 and find a starting point for your research.</p>
+        <div class="manchester-actions"><a class="manchester-primary" href="/#coverage">Explore the FTSE 100</a></div>
+      </div>
+    </section>
+
+    <section aria-labelledby="insight-types-heading">
+      <div class="section-heading">
+        <h2 id="insight-types-heading">What you can explore</h2>
+        <p>Each type of insight answers a different question about a company.</p>
+      </div>
+      <div class="insight-types">
+        <article class="insight-card share">
+          <span class="insight-icon" aria-hidden="true">↗</span>
+          <div>
+            <h3>Share price changes</h3>
+            <p>See which share prices went up or down during the time you chose.</p>
+            <a href="/#coverage">Compare share prices</a>
+          </div>
+        </article>
+        <article class="insight-card value">
+          <span class="insight-icon" aria-hidden="true">£</span>
+          <div>
+            <h3>Market value changes</h3>
+            <p>See which companies gained or lost the most market value.</p>
+            <a href="/#coverage">Compare market values</a>
+          </div>
+        </article>
+        <article class="insight-card rank">
+          <span class="insight-icon" aria-hidden="true">#</span>
+          <div>
+            <h3>Rank changes</h3>
+            <p>See how a company's place has changed in the FTSE 100 and around the world.</p>
+            <a href="/#coverage">Explore company ranks</a>
+          </div>
+        </article>
+        <article class="insight-card reports">
+          <span class="insight-icon" aria-hidden="true">AI</span>
+          <div>
+            <h3>Company report insights</h3>
+            <p>See simple summaries of company reports, market signals and important themes.</p>
+            <a href="/#coverage">Open company analysis</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="reading-guide" aria-labelledby="guide-heading">
+      <div class="section-heading">
+        <h2 id="guide-heading">How to use an insight</h2>
+        <p>An insight is a clue. It is not the whole story.</p>
+      </div>
+      <div class="guide-steps">
+        <article class="guide-step">
+          <span class="guide-number">1</span>
+          <h3>Notice the change</h3>
+          <p>Look for a company or number that stands out from the others.</p>
+        </article>
+        <article class="guide-step">
+          <span class="guide-number">2</span>
+          <h3>Ask why</h3>
+          <p>Open the company page and look for news, reports and business changes.</p>
+        </article>
+        <article class="guide-step">
+          <span class="guide-number">3</span>
+          <h3>Check more facts</h3>
+          <p>Use other trusted sources before you make any decision.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="example-panel" aria-labelledby="example-heading">
+      <h2 id="example-heading">A simple example</h2>
+      <p>One number is more useful when you compare it with another number.</p>
+      <div class="example-row">
+        <div class="example-point">
+          <strong>+25%</strong>
+          <span>Company share price</span>
+        </div>
+        <span class="example-plus">compared with</span>
+        <div class="example-point">
+          <strong>+10%</strong>
+          <span>FTSE 100 average</span>
+        </div>
+      </div>
+      <p class="example-result">The company rose by more than the FTSE 100 average. The next step is to find out why.</p>
+    </section>
+
+    <aside class="important-note">
+      <h2>Insights are not advice</h2>
+      <p>StockLayer shows patterns and summaries to help with research. It does not know what will happen next and it does not tell you what to buy or sell.</p>
+    </aside>
+
+    <div class="page-action">
+      <a class="secondary-link" href="/methodology">Read our methodology</a>
+      <a class="primary-link" href="/#coverage">Explore the companies</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">StockLayer does not provide financial advice. Please do your own research.</div>
+  </footer>
+  <script>
+    if (window.location.pathname === '/insights/') {
+      window.history.replaceState({}, '', `/insights${window.location.search}${window.location.hash}`);
+    }
+  </script>
+</body>
+</html>

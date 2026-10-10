@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How StockLayer works</title>
+  <link rel="canonical" href="/how">
+  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+  <style>
+    :root {
+      --ink: #0F2344;
+      --muted: #5B708F;
+      --blue: #2563EB;
+      --blue-dark: #1D4ED8;
+      --green: #0F9F75;
+      --line: #DCE5F0;
+      --soft-blue: #EFF6FF;
+      --soft-green: #ECFDF5;
+      --white: #FFFFFF;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #F3F7FC 0, #FFFFFF 440px, #F8FAFC 100%);
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+    }
+
+    button,
+    a {
+      font: inherit;
+    }
+
+    .site-header {
+      max-width: 1440px;
+      min-height: 92px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin: 0 auto;
+      padding: 18px 28px;
+    }
+
+    .brand {
+      flex: 0 1 300px;
+      min-width: 0;
+    }
+
+    .brand img {
+      display: block;
+      width: min(300px, 100%);
+      height: auto;
+    }
+
+    .site-navigation {
+      min-width: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(14px, 1.8vw, 28px);
+      margin-left: auto;
+    }
+
+    .site-navigation a {
+      position: relative;
+      padding: 11px 0;
+      color: #243B63;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .site-navigation a:hover,
+    .site-navigation a:focus-visible,
+    .site-navigation a.active {
+      color: var(--blue-dark);
+      outline: none;
+    }
+
+    .site-navigation a.active::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 3px;
+      left: 0;
+      height: 2px;
+      border-radius: 999px;
+      background: var(--blue);
+    }
+
+    .sign-in-button {
+      flex: 0 0 auto;
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      border: 1px solid #CBD5E1;
+      border-radius: 10px;
+      background: var(--white);
+      padding: 0 16px;
+      color: var(--ink);
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 3px 10px rgba(15, 35, 68, .07);
+    }
+
+    .sign-in-button:hover,
+    .sign-in-button:focus-visible {
+      border-color: #93A9C4;
+      background: #F8FAFC;
+      color: var(--blue-dark);
+      outline: 3px solid rgba(37, 99, 235, .16);
+    }
+
+    .google-icon {
+      width: 18px;
+      height: 18px;
+      flex: 0 0 auto;
+    }
+
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 34px 24px 70px;
+    }
+
+    .hero {
+      max-width: 100%;
+      margin: 24px 0 54px;
+      border: 1px solid rgba(198, 217, 232, .72);
+      border-radius: 26px;
+      background-image: linear-gradient(rgba(255, 255, 255, .86), rgba(255, 255, 255, .86)), url('/images/about-hero-background.png');
+      background-position: center;
+      background-size: cover;
+      padding: clamp(34px, 5vw, 58px);
+      text-align: left;
+      box-shadow: 0 12px 34px rgba(15, 35, 68, .055);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 12px;
+      color: var(--blue-dark);
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(40px, 6vw, 68px);
+      line-height: 1.02;
+      letter-spacing: -.035em;
+    }
+
+    .hero p {
+      max-width: 680px;
+      margin: 20px 0 0;
+      color: var(--muted);
+      font-size: clamp(18px, 2vw, 22px);
+    }
+
+    .section-heading {
+      max-width: 720px;
+      margin: 0 auto 28px;
+      text-align: center;
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      font-size: clamp(28px, 4vw, 40px);
+      line-height: 1.15;
+    }
+
+    .section-heading p {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+      margin-bottom: 70px;
+    }
+
+    .step-card,
+    .meaning-card {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, .94);
+      box-shadow: 0 8px 24px rgba(15, 35, 68, .055);
+    }
+
+    .step-card {
+      padding: 24px;
+    }
+
+    .step-number {
+      width: 42px;
+      height: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      background: var(--soft-blue);
+      color: var(--blue-dark);
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    .step-card h3,
+    .meaning-card h3 {
+      margin: 17px 0 7px;
+      font-size: 20px;
+      line-height: 1.2;
+    }
+
+    .step-card p,
+    .meaning-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .meanings {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-bottom: 46px;
+    }
+
+    .meaning-card {
+      display: grid;
+      grid-template-columns: 48px minmax(0, 1fr);
+      gap: 16px;
+      padding: 24px;
+    }
+
+    .meaning-icon {
+      width: 48px;
+      height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 14px;
+      background: var(--soft-green);
+      color: var(--green);
+      font-size: 22px;
+      font-weight: 800;
+    }
+
+    .meaning-card h3 {
+      margin-top: 0;
+    }
+
+    .example {
+      max-width: 100%;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+      align-items: center;
+      gap: 24px;
+      margin: 0 auto 70px;
+      border: 1px solid #BFDBFE;
+      border-radius: 18px;
+      background: var(--soft-blue);
+      padding: 28px;
+    }
+
+    .example-value {
+      text-align: center;
+    }
+
+    .example-value strong {
+      display: block;
+      color: var(--blue-dark);
+      font-size: 34px;
+      line-height: 1.1;
+    }
+
+    .example-value span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .example-arrow {
+      color: var(--green);
+      font-size: 30px;
+      font-weight: 800;
+    }
+
+    .example-copy {
+      grid-column: 1 / -1;
+      margin: 0;
+      color: var(--ink);
+      text-align: center;
+      font-size: 16px;
+    }
+
+    .important-note {
+      max-width: 100%;
+      margin: 0 auto;
+      border-left: 5px solid var(--green);
+      border-radius: 12px;
+      background: var(--white);
+      padding: 24px 26px;
+      box-shadow: 0 8px 24px rgba(15, 35, 68, .05);
+    }
+
+    .important-note h2 {
+      margin: 0 0 8px;
+      font-size: 24px;
+    }
+
+    .important-note p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .page-action {
+      display: flex;
+      justify-content: center;
+      margin-top: 42px;
+    }
+
+    .primary-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      border-radius: 10px;
+      background: var(--blue);
+      padding: 0 22px;
+      color: var(--white);
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      background: rgba(255, 255, 255, .8);
+    }
+
+    .footer-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 24px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 1050px) {
+      .site-header {
+        flex-wrap: wrap;
+        gap: 12px 18px;
+      }
+
+      .brand {
+        flex-basis: 210px;
+      }
+
+      .site-navigation {
+        order: 3;
+        width: 100%;
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-top: 2px;
+      }
+
+      .steps {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 650px) {
+      .site-header {
+        padding: 14px 16px;
+      }
+
+      .brand {
+        flex-basis: min(215px, calc(100% - 105px));
+      }
+
+      .sign-in-button {
+        min-height: 40px;
+        padding: 0 12px;
+      }
+
+      .site-navigation {
+        gap: 22px;
+      }
+
+      main {
+        padding: 24px 16px 54px;
+      }
+
+      .hero {
+        margin: 18px auto 42px;
+      }
+
+      .steps,
+      .meanings {
+        grid-template-columns: 1fr;
+      }
+
+      .steps,
+      .meanings,
+      .example {
+        margin-bottom: 48px;
+      }
+
+      .example {
+        gap: 14px;
+        padding: 22px 16px;
+      }
+
+      .example-value strong {
+        font-size: 28px;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="/stocklayer.css?v=20261010-7">
+  <script src="/privacy-consent.js?v=20261005-footer-2" defer></script>
+  <script src="/mobile-navigation.js?v=20261007-muted-signin" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="StockLayer home">
+      <picture><img src="/images/stocklayer-wordmark.png?v=20260927-unified" alt="StockLayer" class="brand-logo"></picture>
+    </a>
+    <nav class="site-navigation" aria-label="Primary navigation">
+      <a href="/">Home</a>
+      <a class="active" href="/how" aria-current="page">How it works</a>
+      <a href="/methodology">Methodology</a>
+      <a href="/insights">Insights</a>
+      <a href="/about">About</a>
+    </nav>
+    <details class="desktop-login">
+      <summary aria-label="Sign in"><svg class="login-profile-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/></svg><span>Sign in</span><svg class="login-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg></summary>
+      <div class="desktop-login-panel"><a href="/?signin=google"><svg class="google-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M21.6 12.23c0-.71-.06-1.4-.18-2.06H12v3.9h5.38a4.6 4.6 0 0 1-2 3.02v2.53h3.24c1.9-1.75 2.98-4.33 2.98-7.39Z"/><path fill="#34A853" d="M12 22c2.7 0 4.97-.9 6.62-2.38l-3.24-2.53c-.9.6-2.05.96-3.38.96-2.6 0-4.81-1.76-5.6-4.13H3.05v2.61A10 10 0 0 0 12 22Z"/><path fill="#FBBC05" d="M6.4 13.92A6.02 6.02 0 0 1 6.08 12c0-.67.12-1.32.32-1.92V7.47H3.05A10 10 0 0 0 2 12c0 1.63.39 3.17 1.05 4.53l3.35-2.61Z"/><path fill="#EA4335" d="M12 5.95c1.47 0 2.79.5 3.82 1.5l2.87-2.87A9.63 9.63 0 0 0 12 2a10 10 0 0 0-8.95 5.47l3.35 2.61C7.19 7.71 9.4 5.95 12 5.95Z"/></svg><span>Continue with Google</span></a></div>
+    </details>
+    <a class="sign-in-button" href="/?signin=google" aria-label="Sign in with Google">
+      <svg class="google-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="#4285F4" d="M21.6 12.23c0-.71-.06-1.4-.18-2.06H12v3.9h5.38a4.6 4.6 0 0 1-2 3.02v2.53h3.24c1.9-1.75 2.98-4.33 2.98-7.39Z"/>
+        <path fill="#34A853" d="M12 22c2.7 0 4.97-.9 6.62-2.38l-3.24-2.53c-.9.6-2.05.96-3.38.96-2.6 0-4.81-1.76-5.6-4.13H3.05v2.61A10 10 0 0 0 12 22Z"/>
+        <path fill="#FBBC05" d="M6.4 13.92A6.02 6.02 0 0 1 6.08 12c0-.67.12-1.32.32-1.92V7.47H3.05A10 10 0 0 0 2 12c0 1.63.39 3.17 1.05 4.53l3.35-2.61Z"/>
+        <path fill="#EA4335" d="M12 5.95c1.47 0 2.79.5 3.82 1.5l2.87-2.87A9.63 9.63 0 0 0 12 2a10 10 0 0 0-8.95 5.47l3.35 2.61C7.19 7.71 9.4 5.95 12 5.95Z"/>
+      </svg>
+      Sign in / Register
+    </a>
+    <div class="header-actions"><a class="google-sign-in-trigger" href="/?signin=google" aria-label="Sign in or register with Google"><svg class="google-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M21.6 12.23c0-.71-.06-1.4-.18-2.06H12v3.9h5.38a4.6 4.6 0 0 1-2 3.02v2.53h3.24c1.9-1.75 2.98-4.33 2.98-7.39Z"/><path fill="#34A853" d="M12 22c2.7 0 4.97-.9 6.62-2.38l-3.24-2.53c-.9.6-2.05.96-3.38.96-2.6 0-4.81-1.76-5.6-4.13H3.05v2.61A10 10 0 0 0 12 22Z"/><path fill="#FBBC05" d="M6.4 13.92A6.02 6.02 0 0 1 6.08 12c0-.67.12-1.32.32-1.92V7.47H3.05A10 10 0 0 0 2 12c0 1.63.39 3.17 1.05 4.53l3.35-2.61Z"/><path fill="#EA4335" d="M12 5.95c1.47 0 2.79.5 3.82 1.5l2.87-2.87A9.63 9.63 0 0 0 12 2a10 10 0 0 0-8.95 5.47l3.35 2.61C7.19 7.71 9.4 5.95 12 5.95Z"/></svg>Sign in with Google</a></div>
+  </header>
+
+  <main class="how-page">
+    <section class="home-intro manchester-hero" aria-labelledby="how-page-title">
+      <div class="manchester-copy">
+        <h1 id="how-page-title" class="manchester-hero-title"><span class="hero-title-line">Company data</span><span class="hero-title-line">made easier to</span><span class="hero-title-line"><span class="hero-highlight">compare</span></span></h1>
+        <div class="manchester-lede">
+          <p>Explore the UK’s largest listed companies and compare the data that matters.</p>
+        </div>
+        <div class="manchester-actions">
+          <a class="manchester-primary" href="/#coverage">Explore the FTSE 100</a>
+          <a class="manchester-secondary" href="/methodology">View our methodology</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-chapter" aria-labelledby="journey-heading">
+      <header class="how-section-header">
+        <h2 id="journey-heading">From a list to an answer</h2>
+        <p>StockLayer is designed to make exploring the market quick and intuitive.</p>
+      </header>
+      <ol class="how-journey">
+        <li class="how-stage">
+          <span class="how-stage-number">STEP 01</span>
+          <h3>Choose what matters</h3>
+          <p>Start with the measure you want to explore, from FTSE rank and market value to share-price performance and StockLayer’s Growth Confidence score.</p>
+        </li>
+        <li class="how-stage">
+          <span class="how-stage-number">STEP 02</span>
+          <h3>Set the timeframe</h3>
+          <p>For performance measures, choose the period you want to examine, from recent movements to longer-term trends.</p>
+        </li>
+        <li class="how-stage">
+          <span class="how-stage-number">STEP 03</span>
+          <h3>Choose how to measure change</h3>
+          <p>View performance as a percentage or, where appropriate, as an absolute monetary change.</p>
+        </li>
+        <li class="how-stage">
+          <span class="how-stage-number">STEP 04</span>
+          <h3>Compare</h3>
+          <p>Sort the company list by any supported measure to quickly see the leaders, laggards and everything in between.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="how-chapter" aria-labelledby="numbers-heading">
+      <header class="how-section-header">
+        <h2 id="numbers-heading">Understanding the numbers</h2>
+        <p>StockLayer uses familiar market measures alongside a small number of calculated indicators. Here’s what each one tells you.</p>
+      </header>
+      <dl class="how-glossary">
+        <div class="how-glossary-row"><dt>FTSE rank</dt><dd>A company’s position when FTSE 100 constituents are ranked by market value. Rank 1 represents the largest company.</dd></div>
+        <div class="how-glossary-row"><dt>Share price</dt><dd>The market price of a single share. Useful for tracking price movements, but not for comparing the overall size of different companies.</dd></div>
+        <div class="how-glossary-row"><dt>Share price change</dt><dd>How much the share price has risen or fallen over your selected period. Available as an absolute value or percentage.</dd></div>
+        <div class="how-glossary-row"><dt>Market value</dt><dd>Also known as market capitalisation. The total market value of a company’s outstanding shares and a useful measure of company size.</dd></div>
+        <div class="how-glossary-row"><dt>Market value change</dt><dd>The increase or decrease in a company’s total market value over the selected period.</dd></div>
+        <div class="how-glossary-row how-glossary-growth">
+          <dt><span>StockLayer indicator</span>Growth Confidence</dt>
+          <dd>StockLayer’s proprietary 0–100 indicator designed to provide a consistent view of potential future growth using company and market data.<br><a href="/methodology#score-heading">How Growth Confidence is calculated <span aria-hidden="true">→</span></a></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="how-change" aria-labelledby="change-heading">
+      <h2 id="change-heading">Absolute change vs percentage change</h2>
+      <p class="how-change-intro">The same price movement can be expressed in two ways. StockLayer lets you switch between them depending on what you want to compare.</p>
+      <div class="how-calculation" aria-label="A price moves from ten pounds to twelve pounds, an absolute change of two pounds and a percentage change of twenty percent.">
+        <div class="how-calculation-item"><strong>£10.00</strong><span>Starting price</span></div>
+        <span class="how-calculation-divider" aria-hidden="true">+</span>
+        <div class="how-calculation-item how-calculation-positive"><strong>+£2.00</strong><span>Absolute change</span></div>
+        <span class="how-calculation-divider" aria-hidden="true">=</span>
+        <div class="how-calculation-item how-calculation-positive"><strong>+20.0%</strong><span>Percentage change</span></div>
+        <span class="how-calculation-divider" aria-hidden="true">→</span>
+        <div class="how-calculation-item"><strong>£12.00</strong><span>New price</span></div>
+      </div>
+      <p class="how-change-explanation">Percentage change is generally more useful when comparing companies with very different share prices. Absolute change shows the actual movement in pounds and pence.</p>
+    </section>
+
+    <section class="how-research" aria-labelledby="research-heading">
+      <h2 id="research-heading">Built for research, not recommendations</h2>
+      <p>StockLayer is designed to make public company information easier to explore and compare. It does not provide investment advice, recommendations or predictions and should not be used as the sole basis for an investment decision.</p>
+      <a href="/#coverage">Explore the FTSE 100 <span aria-hidden="true">→</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">StockLayer does not provide financial advice. Please do your own research.</div>
+  </footer>
+  <script>
+    if (window.location.pathname === '/how/') {
+      window.history.replaceState({}, '', `/how${window.location.search}${window.location.hash}`);
+    }
+  </script>
+</body>
+</html>

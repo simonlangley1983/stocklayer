@@ -1,0 +1,43 @@
+name: Refresh SignalStrata strategic intelligence
+
+on:
+  # GitHub Actions uses UTC. Running at both UTC hours and checking London time
+  # in the script keeps the actual refresh at 03:00 Europe/London year round.
+  schedule:
+    - cron: "0 2,3 * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: Run immediately instead of waiting for 03:00 Europe/London
+        required: false
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+jobs:
+  refresh-signalstrata:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Retrieve strategic intelligence
+        env:
+          SIGNALSTRATA_API_KEY: ${{ secrets.SIGNALSTRATA_API_KEY }}
+        run: >-
+          python scripts/refresh_signalstrata.py
+          --companies ftse100.json
+          --only-london-hour 3
+          ${{ github.event_name == 'workflow_dispatch' && '--force' || '' }}
+
+      - name: Commit changed strategic intelligence
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Refresh SignalStrata strategic intelligence"
+          file_pattern: "strategic-intelligence/*.json"

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StockLayer</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/stocklayer.css?v=20261010-7">
+  <script src="/privacy-consent.js" defer></script>
+  <script src="/mobile-navigation.js?v=20261007-muted-signin" defer></script>
+</head>
+<body class="company-page">
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="StockLayer home">
+      <picture><img src="/images/stocklayer-wordmark.png?v=20260927-unified" alt="StockLayer" class="brand-logo"></picture>
+    </a>
+    <nav class="site-navigation" aria-label="Primary navigation">
+      <a href="/">Home</a>
+      <a href="/how">How it works</a>
+      <a href="/methodology">Methodology</a>
+      <a href="/insights">Insights</a>
+      <a href="/about">About</a>
+    </nav>
+    <details class="desktop-login">
+      <summary aria-label="Sign in"><span>Sign in</span></summary>
+      <div class="desktop-login-panel"><a href="/?signin=google">Continue with Google</a></div>
+    </details>
+    <a class="sign-in-button" href="/?signin=google" aria-label="Sign in with Google">Sign in / Register</a>
+    <div class="header-actions"><a class="google-sign-in-trigger" href="/?signin=google" aria-label="Sign in or register with Google"><svg class="google-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M21.6 12.23c0-.71-.06-1.4-.18-2.06H12v3.9h5.38a4.6 4.6 0 0 1-2 3.02v2.53h3.24c1.9-1.75 2.98-4.33 2.98-7.39Z"/><path fill="#34A853" d="M12 22c2.7 0 4.97-.9 6.62-2.38l-3.24-2.53c-.9.6-2.05.96-3.38.96-2.6 0-4.81-1.76-5.6-4.13H3.05v2.61A10 10 0 0 0 12 22Z"/><path fill="#FBBC05" d="M6.4 13.92A6.02 6.02 0 0 1 6.08 12c0-.67.12-1.32.32-1.92V7.47H3.05A10 10 0 0 0 2 12c0 1.63.39 3.17 1.05 4.53l3.35-2.61Z"/><path fill="#EA4335" d="M12 5.95c1.47 0 2.79.5 3.82 1.5l2.87-2.87A9.63 9.63 0 0 0 12 2a10 10 0 0 0-8.95 5.47l3.35 2.61C7.19 7.71 9.4 5.95 12 5.95Z"/></svg>Sign in with Google</a></div>
+  </header>
+
+  <main id="company">
+    <section class="company-hero">
+      <div class="hero-brand-panel">
+        <img id="company-logo" class="company-page-logo" src="" alt="">
+      </div>
+
+      <div class="company-hero-main">
+        <div class="hero-company-copy">
+          <div class="company-title-row">
+            <h1 id="company-name">Loading...</h1>
+          </div>
+          <div class="company-kicker" id="company-kicker">Loading...</div>
+          <p id="company-summary">Loading company profile...</p>
+        </div>
+      </div>
+
+      <aside class="hero-market-panel" aria-label="Market summary">
+        <div class="hero-price" id="current-price">-</div>
+        <div class="hero-price-date" id="current-price-date">-</div>
+        <div class="hero-market-grid">
+          <div>
+            <span>Market Cap</span>
+            <strong id="market-cap">-</strong>
+          </div>
+          <div>
+            <span>P/E Ratio</span>
+            <strong id="pe-ratio">-</strong>
+          </div>
+          <div>
+            <span>Dividend Yield</span>
+            <strong id="dividend-yield">-</strong>
+          </div>
+        </div>
+        <div class="hero-market-notes">
+          <span id="market-cap-rank">-</span>
+          <span id="pe-ratio-rank">-</span>
+          <span id="dividend-yield-rank">-</span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="hero-detail-strip">
+      <div class="strip-card">
+        <span>Best ever</span>
+        <strong id="best-ever-price">-</strong>
+        <small id="best-ever-price-date">-</small>
+      </div>
+      <div class="strip-card strip-card-wide">
+        <span>Current vs best</span>
+        <strong id="current-vs-best">-</strong>
+      </div>
+      <div class="strip-card highlight-card">
+        <span>StockLayer volatility rating</span>
+        <strong id="volatility-rating">-</strong>
+        <small id="volatility-label">-</small>
+      </div>
+    </section>
+
+    <section class="lens-card">
+      <div class="lens-header">
+        <div>
+          <div class="section-kicker">StockLayer Lens</div>
+          <h2 id="lens-title">What matters here?</h2>
+        </div>
+        <div class="lens-rating">
+          <span id="lens-volatility">SLVR -</span>
+          <button class="slvr-help" type="button" aria-label="What is SLVR?" aria-expanded="false">?</button>
+          <div class="slvr-explainer" id="slvr-explainer" hidden>
+            <strong>What is SLVR?</strong>
+            <p><strong>StockLayer Volatility Rating (SLVR)</strong></p>
+            <p><strong>1-3</strong> Lower volatility<br>
+            <strong>4-6</strong> Moderate volatility<br>
+            <strong>7-10</strong> Higher volatility</p>
+            <p class="slvr-note">
+              SLVR measures expected share price volatility.
+              Higher scores suggest larger price swings, both up and down.
+            </p>
+          </div>
+        </div>
+      </div>
+      <p id="lens-summary">Loading StockLayer view...</p>
+      <div class="lens-grid">
+        <div class="lens-pill"><span>Volatility</span><strong id="lens-pill-volatility">-</strong></div>
+        <div class="lens-pill"><span>AI sensitivity</span><strong id="lens-pill-ai">-</strong></div>
+        <div class="lens-pill"><span>Market exposure</span><strong id="lens-pill-market">-</strong></div>
+        <div class="lens-pill"><span>Acquisition dependency</span><strong id="lens-pill-acquisition">-</strong></div>
+      </div>
+    </section>
+
+    <nav class="tab-nav" aria-label="Company dashboard sections">
+      <button class="tab-button active" type="button" data-tab="overview">Overview</button>
+      <button class="tab-button" type="button" data-tab="returns">Returns</button>
+      <button class="tab-button" type="button" data-tab="risk">Risk</button>
+      <button class="tab-button" type="button" data-tab="ceo">CEO</button>
+      <button class="tab-button" type="button" data-tab="acquisitions">Acquisitions</button>
+      <button class="tab-button" type="button" data-tab="strategic-intelligence">Strategic intelligence</button>
+      <button class="tab-button" type="button" data-tab="timeline">Timeline</button>
+    </nav>
+
+    <section class="tab-panel active" id="tab-overview">
+      <section class="dashboard-grid two-column">
+        <section class="content-card">
+          <h2>StockLayer view</h2>
+          <p id="stocklayer-view">Loading...</p>
+          <div class="so-what"><strong>So what?</strong><p id="overview-so-what">Loading...</p></div>
+        </section>
+        <section class="content-card">
+          <h2>Why investors own it</h2>
+          <ul id="why-investors-own-it"></ul>
+        </section>
+      </section>
+      <section class="dashboard-grid two-column">
+        <section class="content-card"><h2>Bull case</h2><ul id="bull-case"></ul></section>
+        <section class="content-card"><h2>Bear case</h2><ul id="bear-case"></ul></section>
+      </section>
+    </section>
+
+    <section class="tab-panel" id="tab-returns">
+      <section class="content-card">
+        <h2>If you had invested $1,000...</h2>
+        <p class="muted">Estimated current value based on available historical closing prices.</p>
+        <div id="investment-tool" class="investment-grid"></div>
+      </section>
+    </section>
+
+    <section class="tab-panel" id="tab-risk">
+      <section class="content-card">
+        <h2>Vulnerability markers</h2>
+        <p class="muted">A comparable StockLayer view of the company’s main external sensitivities.</p>
+        <div id="vulnerability-markers" class="risk-list"></div>
+      </section>
+    </section>
+
+    <section class="tab-panel" id="tab-ceo">
+      <section class="content-card"><h2>CEO watch</h2><div id="ceo-watch"></div></section>
+    </section>
+
+    <section class="tab-panel" id="tab-acquisitions">
+      <section class="content-card acquisition-strategy-card">
+        <div class="section-kicker dark-kicker">Acquisition strategy</div>
+        <h2>Cisco's acquisition record</h2>
+        <p id="acquisition-summary">Loading...</p>
+      </section>
+
+      <section class="acquisition-scorecard" id="acquisition-scorecard"></section>
+
+      <section class="content-card acquisition-takeaway-card">
+        <div class="section-kicker dark-kicker">StockLayer view</div>
+        <h2>What investors should learn</h2>
+        <p id="acquisition-investor-takeaway">Loading...</p>
+      </section>
+
+      <section class="content-card">
+        <div class="section-header-row">
+          <div>
+            <h2>Acquisition portfolio</h2>
+            <p class="muted">Grouped by StockLayer's perceived strategic outcome.</p>
+          </div>
+        </div>
+        <div id="acquisition-portfolio" class="acquisition-portfolio"></div>
+      </section>
+
+      <section class="content-card">
+        <div class="section-header-row">
+          <div>
+            <h2>Major acquisitions</h2>
+            <p class="muted">Sorted by date. Open a deal to view rationale, investor takeaway and shareholder response.</p>
+          </div>
+          <label class="sort-control">
+            <span>Sort by</span>
+            <select id="acquisition-sort">
+              <option value="date-desc" selected>Date: newest first</option>
+              <option value="date-asc">Date: oldest first</option>
+              <option value="effectiveness-desc">Effectiveness: highest first</option>
+              <option value="effectiveness-asc">Effectiveness: lowest first</option>
+              <option value="cost-desc">Cost: highest first</option>
+              <option value="cost-asc">Cost: lowest first</option>
+            </select>
+          </label>
+        </div>
+        <div id="major-acquisitions" class="acquisition-list acquisition-list-refined"></div>
+      </section>
+    </section>
+
+    <section class="tab-panel" id="tab-strategic-intelligence">
+      <section class="content-card strategic-intelligence-card">
+        <div class="section-kicker dark-kicker">Strategic Intelligence</div>
+        <h2>Strategic Intelligence</h2>
+        <p class="strategic-intelligence-intro">Explore the strategic initiatives shaping this company's future, from AI investment and digital transformation to acquisitions, partnerships and operational change.</p>
+        <div id="strategic-intelligence-content" aria-live="polite">
+          <p class="muted">Loading strategic intelligence...</p>
+        </div>
+      </section>
+    </section>
+
+    <section class="tab-panel" id="tab-timeline">
+      <section class="content-card">
+        <div class="section-header-row">
+          <div><h2>Event timeline</h2><p class="muted">Key events and acquisitions, shown in date order.</p></div>
+          <div class="timeline-controls">
+            <button id="timeline-prev" type="button" aria-label="Previous timeline event">←</button>
+            <button id="timeline-next" type="button" aria-label="Next timeline event">→</button>
+          </div>
+        </div>
+        <div id="timeline-carousel" class="timeline-carousel"></div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-disclaimer">
+        StockLayer does not provide financial advice - please do your own research.
+      </p>
+    </div>
+  </footer>
+
+  <script src="company.js?v=20261010-2"></script>
+</body>
+</html>

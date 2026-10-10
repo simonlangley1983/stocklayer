@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy and cookies | StockLayer</title>
+  <meta name="description" content="How StockLayer handles personal information, cookies and browser storage.">
+  <link rel="canonical" href="/privacy">
+  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/stocklayer.css?v=20261010-7">
+  <script src="/privacy-consent.js?v=20261005-footer-2" defer></script>
+  <style>
+    :root {
+      --ink: #0F2344;
+      --muted: #5B708F;
+      --blue: #2563EB;
+      --blue-dark: #1D4ED8;
+      --green: #0F9F75;
+      --line: #DCE5F0;
+      --soft-blue: #EFF6FF;
+      --soft-green: #ECFDF5;
+      --white: #FFFFFF;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #F3F7FC 0, #FFFFFF 520px, #F8FAFC 100%);
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.65;
+    }
+
+    a { color: var(--blue-dark); }
+
+    .site-header {
+      max-width: 1440px;
+      min-height: 92px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin: 0 auto;
+      padding: 18px 28px;
+    }
+
+    .brand {
+      flex: 0 1 300px;
+      min-width: 0;
+    }
+
+    .brand img {
+      display: block;
+      width: min(300px, 100%);
+      height: auto;
+    }
+
+    .site-navigation {
+      min-width: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(14px, 1.8vw, 28px);
+      margin-left: auto;
+    }
+
+    .site-navigation a {
+      position: relative;
+      padding: 11px 0;
+      color: #243B63;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .site-navigation a:hover,
+    .site-navigation a:focus-visible { color: var(--blue-dark); }
+
+    .sign-in-button {
+      flex: 0 0 auto;
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      border: 1px solid #CBD5E1;
+      border-radius: 10px;
+      background: var(--white);
+      padding: 0 16px;
+      color: var(--ink);
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 3px 10px rgba(15, 35, 68, .07);
+    }
+
+    .google-icon { width: 18px; height: 18px; flex: 0 0 auto; }
+
+    main {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 52px 24px 76px;
+    }
+
+    .policy-hero {
+      max-width: 100%;
+      margin: 24px 0 54px;
+      border: 1px solid rgba(198, 217, 232, .72);
+      border-radius: 26px;
+      background-image: linear-gradient(rgba(255, 255, 255, .86), rgba(255, 255, 255, .86)), url('/images/about-hero-background.png');
+      background-position: center;
+      background-size: cover;
+      padding: clamp(34px, 5vw, 58px);
+      box-shadow: 0 12px 34px rgba(15, 35, 68, .055);
+    }
+
+    .eyebrow {
+      color: var(--blue-dark);
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 10px 0 16px;
+      font-size: clamp(42px, 6vw, 66px);
+      line-height: 1.05;
+      letter-spacing: -.04em;
+    }
+
+    .policy-hero p {
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(18px, 2vw, 23px);
+    }
+
+    .last-updated {
+      display: inline-flex;
+      margin-top: 18px;
+      border-radius: 999px;
+      background: var(--soft-blue);
+      padding: 6px 12px;
+      color: #355170;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .policy-layout {
+      display: grid;
+      grid-template-columns: 220px minmax(0, 1fr);
+      gap: 42px;
+      align-items: start;
+    }
+
+    .contents {
+      position: sticky;
+      top: 22px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, .9);
+      padding: 20px;
+    }
+
+    .contents strong { display: block; margin-bottom: 10px; }
+
+    .contents a {
+      display: block;
+      padding: 5px 0;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .contents a:hover,
+    .contents a:focus-visible { color: var(--blue-dark); }
+
+    .policy-content {
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #cookies { order: -1; }
+
+    .policy-section {
+      margin-bottom: 24px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--white);
+      padding: clamp(24px, 4vw, 38px);
+      box-shadow: 0 8px 25px rgba(15, 35, 68, .045);
+      scroll-margin-top: 20px;
+    }
+
+    .policy-section h2 {
+      margin: 0 0 14px;
+      font-size: clamp(25px, 3vw, 32px);
+      line-height: 1.2;
+    }
+
+    .policy-section h3 {
+      margin: 24px 0 8px;
+      font-size: 19px;
+      line-height: 1.3;
+    }
+
+    .policy-section p { margin: 0 0 15px; color: #314968; }
+    .policy-section p:last-child { margin-bottom: 0; }
+    .policy-section ul { margin: 12px 0 0; padding-left: 22px; color: #314968; }
+    .policy-section li { margin-bottom: 9px; }
+
+    .plain-summary {
+      border-left: 5px solid var(--green);
+      background: var(--soft-green);
+    }
+
+    .personal-note {
+      border-color: #C9DDF9;
+      background: linear-gradient(145deg, #FFFFFF, var(--soft-blue));
+    }
+
+    .personal-note p { color: var(--ink); font-size: 17px; }
+
+    .storage-table-wrap { overflow-x: auto; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 18px;
+      font-size: 14px;
+    }
+
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 13px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th { background: #F5F8FC; color: var(--ink); }
+    td { color: #405572; }
+
+    .status-card {
+      display: grid;
+      grid-template-columns: 40px minmax(0, 1fr);
+      gap: 14px;
+      align-items: start;
+      margin: 18px 0;
+      border-radius: 14px;
+      background: var(--soft-green);
+      padding: 18px;
+    }
+
+    .status-icon {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--green);
+      color: white;
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    .status-card strong { display: block; margin-bottom: 3px; }
+    .status-card p { margin: 0; font-size: 14px; }
+
+    .policy-action {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 8px;
+      border: 1px solid #AFC4DD;
+      border-radius: 10px;
+      background: white;
+      padding: 0 16px;
+      color: var(--ink);
+      font: 750 14px/1 Arial, Helvetica, sans-serif;
+      cursor: pointer;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      background: rgba(255, 255, 255, .8);
+    }
+
+    .footer-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 24px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 1050px) {
+      .site-header { flex-wrap: wrap; gap: 12px 18px; }
+      .brand { flex-basis: 210px; }
+      .site-navigation { order: 3; width: 100%; justify-content: flex-start; overflow-x: auto; padding-top: 2px; }
+    }
+
+    @media (max-width: 760px) {
+      .policy-layout { grid-template-columns: 1fr; gap: 22px; }
+      .contents { position: static; }
+      .contents nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px 16px; }
+    }
+
+    @media (max-width: 650px) {
+      .site-header { padding: 14px 16px; }
+      .brand { flex-basis: min(215px, calc(100% - 190px)); }
+      .sign-in-button { min-height: 40px; padding: 0 11px; font-size: 12px; }
+      .site-navigation { gap: 22px; }
+      main { padding: 30px 16px 56px; }
+      .policy-hero { margin-bottom: 32px; }
+      .policy-section { padding: 23px 20px; }
+      .contents nav { grid-template-columns: 1fr; }
+    }
+  </style>
+  <script src="/mobile-navigation.js?v=20261007-muted-signin" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="StockLayer home">
+      <picture><img src="/images/stocklayer-wordmark.png?v=20260927-unified" alt="StockLayer" class="brand-logo"></picture>
+    </a>
+    <nav class="site-navigation" aria-label="Main navigation">
+      <a href="/">Home</a>
+      <a href="/how">How it works</a>
+      <a href="/methodology">Methodology</a>
+      <a href="/insights">Insights</a>
+      <a href="/about">About</a>
+    </nav>
+    <details class="desktop-login"><summary aria-label="Sign in"><svg class="login-profile-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/></svg><span>Sign in</span><svg class="login-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg></summary><div class="desktop-login-panel"><a href="/?signin=google"><svg class="google-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M21.6 12.23c0-.71-.06-1.4-.18-2.06H12v3.9h5.38a4.6 4.6 0 0 1-2 3.02v2.53h3.24c1.9-1.75 2.98-4.33 2.98-7.39Z"/><path fill="#34A853" d="M12 22c2.7 0 4.97-.9 6.62-2.38l-3.24-2.53c-.9.6-2.05.96-3.38.96-2.6 0-4.81-1.76-5.6-4.13H3.05v2.61A10 10 0 0 0 2 12c0 1.63.39 3.17 1.05 4.53l3.35-2.61Z"/><path fill="#FBBC05" d="M6.4 13.92A6.02 6.02 0 0 1 6.08 12c0-.67.12-1.32.32-1.92V7.47H3.05A10 10 0 0 0 2 12c0 1.63.39 3.17 1.05 4.53l3.35-2.61Z"/><path fill="#EA4335" d="M12 5.95c1.47 0 2.79.5 3.82 1.5l2.87-2.87A9.63 9.63 0 0 0 12 2a10 10 0 0 0-8.95 5.47l3.35 2.61C7.19 7.71 9.4 5.95 12 5.95Z"/></svg><span>Continue with Google</span></a></div></details>
+    <a class="sign-in-button" href="/#sign-in">
+      <svg class="google-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="#4285F4" d="M21.6 12.23c0-.71-.06-1.39-.18-2.05H12v3.88h5.38a4.6 4.6 0 0 1-2 3.02v2.52h3.24c1.9-1.75 2.98-4.33 2.98-7.37Z"/>
+        <path fill="#34A853" d="M12 22c2.7 0 4.98-.9 6.63-2.4l-3.24-2.52c-.9.6-2.05.96-3.39.96-2.61 0-4.82-1.76-5.61-4.13H3.04v2.6A10 10 0 0 0 12 22Z"/>
+        <path fill="#FBBC05" d="M6.39 13.91A6 6 0 0 1 6.08 12c0-.66.11-1.3.31-1.91v-2.6H3.04A10 10 0 0 0 2 12c0 1.61.38 3.14 1.04 4.51l3.35-2.6Z"/>
+        <path fill="#EA4335" d="M12 5.96c1.47 0 2.79.5 3.83 1.5l2.87-2.87A9.64 9.64 0 0 0 12 2a10 10 0 0 0-8.96 5.49l3.35 2.6C7.18 7.72 9.39 5.96 12 5.96Z"/>
+      </svg>
+      Sign in / Register
+    </a>
+    <div class="header-actions"><a class="google-sign-in-trigger" href="/?signin=google" aria-label="Sign in or register with Google"><svg class="google-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M21.6 12.23c0-.71-.06-1.4-.18-2.06H12v3.9h5.38a4.6 4.6 0 0 1-2 3.02v2.53h3.24c1.9-1.75 2.98-4.33 2.98-7.39Z"/><path fill="#34A853" d="M12 22c2.7 0 4.97-.9 6.62-2.38l-3.24-2.53c-.9.6-2.05.96-3.38.96-2.6 0-4.81-1.76-5.6-4.13H3.05v2.61A10 10 0 0 0 12 22Z"/><path fill="#FBBC05" d="M6.4 13.92A6.02 6.02 0 0 1 6.08 12c0-.67.12-1.32.32-1.92V7.47H3.05A10 10 0 0 0 2 12c0 1.63.39 3.17 1.05 4.53l3.35-2.61Z"/><path fill="#EA4335" d="M12 5.95c1.47 0 2.79.5 3.82 1.5l2.87-2.87A9.63 9.63 0 0 0 12 2a10 10 0 0 0-8.95 5.47l3.35 2.61C7.19 7.71 9.4 5.95 12 5.95Z"/></svg>Sign in with Google</a></div>
+  </header>
+
+  <main>
+    <section class="home-intro manchester-hero">
+      <div class="manchester-copy">
+        <h1 class="manchester-hero-title"><span class="hero-title-line">Privacy</span><span class="hero-title-line">and</span><span class="hero-title-line"><span class="hero-highlight">cookies</span></span></h1>
+        <p class="manchester-lede">Find out what StockLayer knows about you, why it needs it and the choices you have.</p>
+        <div class="manchester-actions"><a class="manchester-primary" href="/#coverage">Explore the FTSE 100</a></div>
+        <span class="last-updated">Last updated: 5 October 2026</span>
+      </div>
+    </section>
+
+    <div class="policy-layout">
+      <aside class="contents">
+        <strong>On this page</strong>
+        <nav aria-label="Privacy policy contents">
+          <a href="#cookies">Cookies and storage</a>
+          <a href="#summary">The short version</a>
+          <a href="#responsible">Who is responsible</a>
+          <a href="#information">Information used</a>
+          <a href="#sharing">Other services</a>
+          <a href="#retention">How long it is kept</a>
+          <a href="#rights">Your rights</a>
+          <a href="#contact">Contact and complaints</a>
+        </nav>
+      </aside>
+
+      <div class="policy-content">
+        <section class="policy-section plain-summary" id="summary">
+          <h2>The short version</h2>
+          <p>StockLayer does not sell your personal information. It does not currently use advertising cookies, behavioural tracking or analytics cookies. Essential browser storage is used only to remember choices you make on the site.</p>
+          <p>If that changes, this page and the cookie controls will be updated before any optional technology is switched on.</p>
+        </section>
+
+        <section class="policy-section" id="responsible">
+          <h2>Who is responsible for your information?</h2>
+          <p>StockLayer is operated by Simon Langley, who is responsible for deciding how personal information is used for this site.</p>
+          <p>For privacy questions, contact Simon at <a href="mailto:simon@simonlangley.co.uk">simon@simonlangley.co.uk</a>.</p>
+        </section>
+
+        <section class="policy-section" id="information">
+          <h2>Information we use</h2>
+          <h3>When you browse</h3>
+          <p>The web host and security services may receive technical details needed to send the site to your device and keep it secure. These can include your IP address, browser type, requested page, time of request and basic error or security logs.</p>
+          <h3>When you contact StockLayer</h3>
+          <p>If you contact Simon, the information you choose to provide will be used to read and reply to your message. This may include your name, contact details and the contents of your message.</p>
+          <h3>Accounts</h3>
+          <p>StockLayer does not currently offer account registration, direct messaging or Google sign-in. If this changes, this notice will be updated before personal information is collected for those features.</p>
+          <h3>Legal reasons for using information</h3>
+          <ul>
+            <li><strong>Legitimate interests:</strong> to operate, secure and improve StockLayer, and to respond to messages, provided those interests do not override your rights.</li>
+            <li><strong>Legal obligations:</strong> where information must be used or retained to comply with the law.</li>
+          </ul>
+        </section>
+
+        <section class="policy-section personal-note" id="cookies">
+          <h2>Cookies, browser storage and PECR</h2>
+          <p>One of my roles at Barclays was Head of Digital Privacy, so obviously I want to ensure that StockLayer stays on the right side of UK digital privacy regulations, which I came to love and admire so much.</p>
+          <p>This cookie statement is dedicated to my good pal Campbell Cowie. Colleagues at Barclays used to call us the Ant and Dec of Digital Privacy. Actually, that's a lie - we just called ourselves that.</p>
+          <h3>What StockLayer stores</h3>
+          <p>PECR covers cookies and other ways of storing or reading information on your device, including local browser storage. StockLayer currently uses only the items below. They remember choices that you actively make and are not used to track you across websites.</p>
+          <p>This approach follows the ICO's current <a href="https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-the-use-of-storage-and-access-technologies/what-are-the-exceptions/" target="_blank" rel="noreferrer">guidance on storage and access exceptions</a>. The preference cookie remembers the privacy choice you request. The introductory panel setting changes the site to match your chosen appearance and can be reversed on the companies page.</p>
+          <div class="storage-table-wrap">
+            <table>
+              <thead>
+                <tr><th>Name</th><th>Type</th><th>Purpose</th><th>Duration</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><code>stocklayer_privacy_choice</code></td><td>First-party cookie</td><td>Remembers that you have seen the privacy notice and records an essential-only choice.</td><td>Up to 6 months</td></tr>
+                <tr><td><code>stocklayerPrivacyChoice</code></td><td>Session fallback</td><td>Remembers the same choice in the current tab if your browser blocks the preference cookie.</td><td>Until the tab is closed</td></tr>
+                <tr><td><code>stocklayerHeroDismissed</code></td><td>Local storage</td><td>Remembers your request to hide the introductory panel on the companies page.</td><td>Until you show the panel again or clear browser data</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="status-card">
+            <span class="status-icon" aria-hidden="true">✓</span>
+            <div><strong>No optional cookies are active</strong><p>There are currently no advertising, profiling or analytics cookies on StockLayer. Optional technologies must not be added without updating this policy and asking for valid consent first.</p></div>
+          </div>
+          <button class="policy-action" type="button" onclick="window.StockLayerPrivacy?.openSettings()">Open cookie settings</button>
+        </section>
+
+        <section class="policy-section" id="sharing">
+          <h2>Other services used by the site</h2>
+          <p>StockLayer does not sell personal information. The site currently connects to a small number of other services to provide its content:</p>
+          <ul>
+            <li><strong>Web hosting and security providers</strong> deliver the site and may process technical request logs.</li>
+            <li><strong>GitHub</strong> supplies public company data files used by the site. A request to GitHub can include your IP address and browser details.</li>
+            <li><strong>Logo.dev</strong> may supply company logos on company detail pages. A logo request can include your IP address, browser details and the company domain being requested.</li>
+            <li><strong>External links</strong> such as LinkedIn open another organisation's website. Its own privacy policy applies after you follow the link.</li>
+          </ul>
+          <p>If the services used by StockLayer or the way information is shared changes, this notice will be updated before the new processing begins.</p>
+        </section>
+
+        <section class="policy-section" id="retention">
+          <h2>How long is information kept?</h2>
+          <p>Information should be kept only for as long as it is needed. Browser preferences last for the periods shown above. Messages are kept only while they are needed to respond and manage any reasonable follow-up. Technical logs follow the retention settings of the final hosting and security providers.</p>
+          <p>StockLayer does not currently operate account registration, contact forms or analytics. If any of these features are introduced, this notice will be updated before the feature starts collecting personal information.</p>
+        </section>
+
+        <section class="policy-section" id="rights">
+          <h2>Your data protection rights</h2>
+          <p>Depending on the situation, UK data protection law may give you the right to:</p>
+          <ul>
+            <li>ask for a copy of your personal information;</li>
+            <li>ask for incorrect information to be corrected;</li>
+            <li>ask for information to be deleted or its use restricted;</li>
+            <li>object to certain uses of your information;</li>
+            <li>receive information in a portable format; and</li>
+            <li>withdraw consent at any time where consent is being used.</li>
+          </ul>
+          <p>These rights are not absolute in every situation. You will not be charged for making a normal request.</p>
+        </section>
+
+        <section class="policy-section" id="contact">
+          <h2>Questions, requests and complaints</h2>
+          <p>To ask a privacy question or exercise a data protection right, email Simon at <a href="mailto:simon@simonlangley.co.uk">simon@simonlangley.co.uk</a>.</p>
+          <p>You can also complain to the <a href="https://ico.org.uk/make-a-complaint/data-protection-complaints/data-protection-complaints/" target="_blank" rel="noreferrer">Information Commissioner's Office</a>. It is helpful to contact StockLayer first so there is an opportunity to put things right.</p>
+          <p>This policy will be reviewed when the site's features, providers or use of personal information changes.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">StockLayer does not provide financial advice. Please do your own research.</div>
+  </footer>
+  <script>
+    if (window.location.pathname === '/privacy/') {
+      window.history.replaceState({}, '', `/privacy${window.location.search}${window.location.hash}`);
+    }
+  </script>
+</body>
+</html>
