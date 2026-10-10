@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-09T23:11:06.788411Z",
+  "generatedAt": "2026-10-10T00:04:06.832863Z",
   "company": {
     "companyName": "Smiths Group PLC",
     "ticker": "SMIN.L",
@@ -995,7 +995,7 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 6,
+    "reportCount": 7,
     "reports": [
       {
         "year": 2020,
@@ -1434,56 +1434,129 @@
         ],
         "positivityScore": 40.6,
         "positivityMethod": "lexical annual-report tone"
+      },
+      {
+        "year": 2026,
+        "title": "smiths-annual-report-2026.pdf",
+        "url": "https://www.smiths.com/media/kzmnw4vk/smiths-annual-report-2026.pdf",
+        "sourceUrl": "https://www.smiths.com/investors/annual-report",
+        "wordCount": 115458,
+        "pageCount": 188,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 19,
+            "per10kWords": 1.646
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 1,
+            "per10kWords": 0.087
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 15,
+            "per10kWords": 1.299
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 68,
+            "per10kWords": 5.89
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 27,
+            "per10kWords": 2.339
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 35,
+            "per10kWords": 3.031
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 13,
+            "per10kWords": 1.126
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 21,
+            "per10kWords": 1.819
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 19,
+            "per10kWords": 1.646
+          }
+        ],
+        "positivityScore": 45.2,
+        "positivityMethod": "lexical annual-report tone"
       }
     ],
     "emergingKeywords": [
       {
-        "key": "regulation",
-        "label": "Regulation",
-        "mentions": 73,
-        "per10kWords": 5.615,
-        "previousPer10kWords": 4.981,
-        "changePer10kWords": 0.634
-      },
-      {
-        "key": "cybersecurity",
-        "label": "Cybersecurity",
+        "key": "data_center",
+        "label": "Data centres",
         "mentions": 19,
-        "per10kWords": 1.461,
-        "previousPer10kWords": 1.012,
-        "changePer10kWords": 0.449
+        "per10kWords": 1.646,
+        "previousPer10kWords": 0.077,
+        "changePer10kWords": 1.569
       },
       {
-        "key": "supply_chain",
-        "label": "Supply chain",
-        "mentions": 48,
-        "per10kWords": 3.692,
-        "previousPer10kWords": 3.424,
-        "changePer10kWords": 0.268
+        "key": "ai",
+        "label": "AI",
+        "mentions": 19,
+        "per10kWords": 1.646,
+        "previousPer10kWords": 0.385,
+        "changePer10kWords": 1.261
+      },
+      {
+        "key": "competition",
+        "label": "Competition",
+        "mentions": 27,
+        "per10kWords": 2.339,
+        "previousPer10kWords": 1.769,
+        "changePer10kWords": 0.57
       },
       {
         "key": "restructuring",
         "label": "Restructuring",
-        "mentions": 17,
-        "per10kWords": 1.308,
-        "previousPer10kWords": 1.09,
-        "changePer10kWords": 0.218
+        "mentions": 21,
+        "per10kWords": 1.819,
+        "previousPer10kWords": 1.308,
+        "changePer10kWords": 0.511
       },
       {
-        "key": "data_center",
-        "label": "Data centres",
-        "mentions": 1,
-        "per10kWords": 0.077,
-        "previousPer10kWords": 0.0,
-        "changePer10kWords": 0.077
+        "key": "regulation",
+        "label": "Regulation",
+        "mentions": 68,
+        "per10kWords": 5.89,
+        "previousPer10kWords": 5.615,
+        "changePer10kWords": 0.275
       }
     ],
-    "latestPositivity": 40.6,
+    "latestPositivity": 45.2,
     "latestPositivityMethod": "lexical annual-report tone",
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 47.0,
+    "score": 51.7,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
@@ -1493,12 +1566,12 @@
         "score": 49.5,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 78 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 77 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
         "label": "Annual-report tone",
-        "score": 40.6,
+        "score": 45.2,
         "weight": 0.35,
         "reliability": 1.0,
         "detail": "Lexical annual-report tone."
@@ -1506,7 +1579,7 @@
       {
         "key": "themes",
         "label": "Emerging themes",
-        "score": 51.9,
+        "score": 64.4,
         "weight": 0.25,
         "reliability": 1.0,
         "detail": "Change in growth-theme density compared with pressure and risk themes."
@@ -1668,6 +1741,15 @@
       "direction": "neutral",
       "detail": null,
       "significance": 1.574
+    },
+    {
+      "date": "2026-12-31",
+      "type": "annual_report",
+      "title": "smiths-annual-report-2026.pdf",
+      "url": "https://www.smiths.com/media/kzmnw4vk/smiths-annual-report-2026.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
     }
   ],
   "persistentEvents": []
