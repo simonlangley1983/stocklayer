@@ -259,7 +259,7 @@
     return `<details class="report-strategic-evidence"><summary>View supporting sources (${evidence.length})</summary><ul>${evidence.map(item => {
       const sourceUrl = /^https?:\/\//i.test(String(item.sourceUrl || '')) ? item.sourceUrl : '';
       const date = item.date ? fmtDate(item.date) : (item.fiscalYear ? `FY ${escapeHtml(item.fiscalYear)}` : 'Date not supplied');
-      return `<li><strong>${escapeHtml(item.title || 'Supporting evidence')}</strong>${item.summary ? `<p>${escapeHtml(item.summary)}</p>` : ''}${item.quote ? `<span class="report-strategic-quote-label">Quoted source text</span><blockquote>${escapeHtml(item.quote)}</blockquote>` : ''}<small>${date}${item.sourceDocument ? ` ? ${escapeHtml(item.sourceDocument)}` : ''}${item.pageNumber ? ` ? Page ${escapeHtml(item.pageNumber)}` : ''}</small>${sourceUrl ? `<a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">Open original source</a>` : ''}</li>`;
+      return `<li><strong>${escapeHtml(item.title || 'Supporting evidence')}</strong>${item.summary ? `<p>${escapeHtml(item.summary)}</p>` : ''}${item.quote ? `<span class="report-strategic-quote-label">Quoted source text</span><blockquote>${escapeHtml(item.quote)}</blockquote>` : ''}<small>${date}${item.sourceDocument ? ` | ${escapeHtml(item.sourceDocument)}` : ''}${item.pageNumber ? ` | Page ${escapeHtml(item.pageNumber)}` : ''}</small>${sourceUrl ? `<a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">Open original source</a>` : ''}</li>`;
     }).join('')}</ul></details>`;
   }
 
@@ -367,15 +367,15 @@
     const categories = [...new Set(initiatives.map(initiative => initiative.category).filter(Boolean))].slice(0, 3);
     const observations = growthConfidenceHistory?.companies?.[company.slug]?.observations || [];
     const range = observations.length ? `${fmtDate(observations[0].date)} to ${fmtDate(observations.at(-1).date)}` : null;
-    const overview = [item.sector || company?.sector, item.ticker || company?.ticker, item.ftseRank ? `UK 100 rank #${item.ftseRank}` : ''].filter(Boolean).join(' ? ');
+    const overview = [item.sector || company?.sector, item.ticker || company?.ticker, item.ftseRank ? `UK 100 rank #${item.ftseRank}` : ''].filter(Boolean).join(' | ');
     const rows = [
-      ['Company', overview || 'Company profile and listing information are included in this report.'],
-      ['Growth confidence', confidence.score == null ? 'A current Growth Confidence score is not available yet.' : `${Math.round(confidence.score)}/100, rated ${confidence.label || 'Unavailable'}${range ? `. Recorded history: ${range}.` : '.'}`],
-      ['Press signal', latestPress ? `${Math.round(latestPress.value)}/100 ${scoreLabel(latestPress.value).toLowerCase()} press sentiment, latest observation ${fmtDate(latestPress.date)}.` : 'Press sentiment is not available yet.'],
-      ['Annual-report themes', themes.length ? `The strongest recent increases are ${themes.join(', ')}.` : 'Annual-report theme changes are not available yet.'],
-      ['Strategic Intelligence', initiatives.length ? `${initiatives.length} identified initiatives${categories.length ? ` across ${categories.join(', ')}` : ''}${strategicData.latestEvidenceDate ? `, with latest evidence from ${fmtDate(strategicData.latestEvidenceDate)}` : ''}.` : 'Strategic Intelligence is not currently available for this company.']
+      ['Company at a glance', overview || 'Basic company and listing information is included in this report.'],
+      ['How the outlook is changing', confidence.score == null ? 'There is not yet enough information to show a current Growth Confidence score.' : `StockLayer?s current Growth Confidence is ${Math.round(confidence.score)} out of 100, described as ${confidence.label || 'Unavailable'}${range ? `. We have recorded it from ${range}.` : '.'}`],
+      ['Recent news', latestPress ? `Recent news and market coverage is ${scoreLabel(latestPress.value).toLowerCase()}, scoring ${Math.round(latestPress.value)} out of 100. Last checked ${fmtDate(latestPress.date)}.` : 'There is not yet enough news coverage to show a recent press signal.'],
+      ['What stands out in its annual report', themes.length ? `Topics appearing more often in the latest annual report include ${themes.join(', ')}.` : 'There is not yet enough annual-report history to show changing topics.'],
+      ['Strategy and investment', initiatives.length ? `SignalStrata has found ${initiatives.length} strategic projects${categories.length ? ` across ${categories.join(', ')}` : ''}${strategicData.latestEvidenceDate ? `. The latest supporting evidence is from ${fmtDate(strategicData.latestEvidenceDate)}` : ''}.` : 'Strategic Intelligence is not currently available for this company.']
     ];
-    return `<section class="company-report-section report-executive-summary" aria-labelledby="report-section-summary"><header><span class="report-executive-kicker">At a glance</span><h3 id="report-section-summary">Executive summary</h3><p>A concise view of the company intelligence covered in this report.</p></header><div class="report-executive-grid">${rows.map(([label, text]) => `<div><strong>${escapeHtml(label)}</strong><p>${escapeHtml(text)}</p></div>`).join('')}</div></section>`;
+    return `<section class="company-report-section report-executive-summary" aria-labelledby="report-section-summary"><header><span class="report-executive-kicker">At a glance</span><h3 id="report-section-summary">Executive summary</h3><p>A plain-English overview of the key points in this report.</p></header><div class="report-executive-grid">${rows.map(([label, text]) => `<div><strong>${escapeHtml(label)}</strong><p>${escapeHtml(text)}</p></div>`).join('')}</div></section>`;
   }
 
   function render(report, company, strategicData, growthConfidenceHistory) {
