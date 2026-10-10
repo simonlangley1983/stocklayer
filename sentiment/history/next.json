@@ -3198,36 +3198,47 @@
     },
     {
       "date": "2026-10-09",
-      "dailyScore": 52.2,
+      "dailyScore": 52.7,
       "dailyLabel": "Neutral / mixed",
       "rollingScore": 51.4,
-      "confidence": 11.7,
+      "confidence": 24.3,
       "confidenceBand": "low",
       "coverageStatus": "ok",
       "collectionCompleteness": 0.75,
-      "candidateCount": 57,
-      "eligibleArticleCount": 1,
-      "storyCount": 1,
-      "effectiveStoryCount": 1.0,
-      "sourceCount": 1,
+      "candidateCount": 56,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 1,
+      "neutralStoryCount": 2,
       "negativeStoryCount": 0,
-      "dispersion": 0.0,
+      "dispersion": 0.026,
       "rejectedCandidateCounts": {
         "ambiguous_company_without_alias": 51,
-        "missing_company_alias": 5
+        "missing_company_alias": 3
       },
       "topStories": [
         {
           "id": "d5346dc62878aa74",
-          "storyClusterId": "story-001",
+          "storyClusterId": "story-002",
           "title": "Retail media’s next growth area is brands that don’t even sell in store",
           "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOVzRBdWY1dTZGbTNSOGp1RlNaU2pwOG9CMkw1RzBqQkNUcG01S240eDdHdUFnUFNuTHFvVTMtOUNtcWJ2Y2h5bllvMzNPSkducWtsd0E5ZWZQVmYzSlhQVWREZHpqckJIM0NsYjJZeEw1ZzdicEVyY1hkZ1hDWGltY2dEUDYzRzMzdlMwRDNRUkVPcFRSYkxUSUhpVDBnLWRnSjk2bTFNQlZpS2lEUVBFcjVBaEVZQmZtOXYtX0lDajMxYUNTWENSOGxiTXA?oc=5",
           "source": "thegrocer.co.uk",
           "publishedAt": "2026-10-09T11:26:52Z",
           "polarity": 0.1327,
           "sentiment": "Slightly positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "ee91fbbc3dc3bd69",
+          "storyClusterId": "story-001",
+          "title": "Givenchy takes wearable beauty to next level, transforming everyday make-up into fashion accessories",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQcFFZQWlTWGJlVnp5V0hMNU10NmkwWjk3czVCbld3Z3BJUDg4cHFtMUlRNFhUTWVDRTZpLVhMdm5VWFNLNGJfQzJkQk1WRmg0UkFhUldQX0d1Y1pMdkw2UW90cUdBVFZXUzJhLWd0bUhfLXNubkw0X0QtUHE4Q1BWajNZd2h5eWstZjdhVlFOaEM0OEM0ZGxCdmZEc0o4cmN6bjdrcUFXcVhxalNQN1I2YmRza1FHU01mTlNfdExhQm9xQ203SlE?oc=5",
+          "source": "theindustry.beauty",
+          "publishedAt": "2026-10-09T09:35:52Z",
+          "polarity": 0.0807,
+          "sentiment": "Neutral / mixed",
           "publisherCount": 1
         }
       ],
@@ -3237,9 +3248,10 @@
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 11.7",
+          "detail": "Confidence is 24.3",
           "evidenceArticleIds": [
-            "d5346dc62878aa74"
+            "d5346dc62878aa74",
+            "ee91fbbc3dc3bd69"
           ]
         },
         {
@@ -3249,11 +3261,12 @@
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
-            "d5346dc62878aa74"
+            "d5346dc62878aa74",
+            "ee91fbbc3dc3bd69"
           ]
         }
       ],
-      "changeFromPreviousScoredDay": -10.4
+      "changeFromPreviousScoredDay": -9.9
     }
   ]
 }
