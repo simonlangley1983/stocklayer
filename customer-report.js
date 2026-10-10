@@ -148,7 +148,7 @@
 
   function eventList(events) {
     if (!events.length) return '<p class="report-empty">No evidenced press events are available yet.</p>';
-    return `<ol class="company-report-events">${events.map((event, index) => `<li><span class="report-event-number">${index + 1}</span><time>${escapeHtml(fmtDate(event.date))}</time><div><strong>${escapeHtml(event.title)}</strong>${event.detail ? `<p>${escapeHtml(event.detail)}</p>` : ''}</div>${event.url ? `<a class="report-source-link" href="${escapeHtml(event.url)}" target="_blank" rel="noopener noreferrer">Source ↗</a>` : ''}</li>`).join('')}</ol>`;
+    return `<ol class="company-report-events">${events.map((event, index) => `<li><span class="report-event-number">${index + 1}</span><time>${escapeHtml(fmtDate(event.date))}</time><div><strong>${escapeHtml(event.title)}</strong>${event.detail ? `<p>${escapeHtml(event.detail)}</p>` : ''}</div>${event.url ? `<a class="report-source-link" href="${escapeHtml(event.url)}" target="_blank" rel="noopener noreferrer">Source ?</a>` : ''}</li>`).join('')}</ol>`;
   }
 
   function signalComparison(confidence) {
@@ -181,7 +181,7 @@
 
   function sectionTwo(report) {
     const confidence = report.overallConfidence || {};
-    return `<section class="company-report-section report-confidence-summary" aria-labelledby="report-section-confidence"><header><h3 id="report-section-confidence">Overall confidence</h3></header><div class="report-confidence-hero"><div class="report-confidence-score ${scoreClass(confidence.score)}"><strong>${confidence.score == null ? '—' : Math.round(Number(confidence.score))}</strong><span>/100</span><small>${escapeHtml(confidence.label || 'Unavailable')}</small></div><div><div class="report-overall-bar"><i style="width:${Math.max(0, Math.min(100, Number(confidence.score) || 0))}%"></i><b></b></div>${scoreScale('confidence')}<p>${escapeHtml(confidence.methodology || '')}</p><p class="report-evidence-coverage">Evidence coverage: ${Number(confidence.evidenceCoverage || 0)}%. This measures how much reliable source data supports the score, not whether the outlook is positive.</p></div></div><h4>What drives the score</h4>${signalComparison(confidence)}</section>`;
+    return `<section class="company-report-section report-confidence-summary" aria-labelledby="report-section-confidence"><header><h3 id="report-section-confidence">Overall confidence</h3></header><div class="report-confidence-hero"><div class="report-confidence-score ${scoreClass(confidence.score)}"><strong>${confidence.score == null ? '?' : Math.round(Number(confidence.score))}</strong><span>/100</span><small>${escapeHtml(confidence.label || 'Unavailable')}</small></div><div><div class="report-overall-bar"><i style="width:${Math.max(0, Math.min(100, Number(confidence.score) || 0))}%"></i><b></b></div>${scoreScale('confidence')}<p>${escapeHtml(confidence.methodology || '')}</p><p class="report-evidence-coverage">Evidence coverage: ${Number(confidence.evidenceCoverage || 0)}%. This measures how much reliable source data supports the score, not whether the outlook is positive.</p></div></div><h4>What drives the score</h4>${signalComparison(confidence)}</section>`;
   }
 
   function sectionThree(report) {
@@ -216,7 +216,7 @@
     return `<details class="report-strategic-evidence"><summary>View supporting sources (${evidence.length})</summary><ul>${evidence.map(item => {
       const sourceUrl = /^https?:\/\//i.test(String(item.sourceUrl || '')) ? item.sourceUrl : '';
       const date = item.date ? fmtDate(item.date) : (item.fiscalYear ? `FY ${escapeHtml(item.fiscalYear)}` : 'Date not supplied');
-      return `<li><strong>${escapeHtml(item.title || 'Supporting evidence')}</strong>${item.summary ? `<p>${escapeHtml(item.summary)}</p>` : ''}${item.quote ? `<span class="report-strategic-quote-label">Quoted source text</span><blockquote>${escapeHtml(item.quote)}</blockquote>` : ''}<small>${date}${item.sourceDocument ? ` · ${escapeHtml(item.sourceDocument)}` : ''}${item.pageNumber ? ` · Page ${escapeHtml(item.pageNumber)}` : ''}</small>${sourceUrl ? `<a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">Open original source</a>` : ''}</li>`;
+      return `<li><strong>${escapeHtml(item.title || 'Supporting evidence')}</strong>${item.summary ? `<p>${escapeHtml(item.summary)}</p>` : ''}${item.quote ? `<span class="report-strategic-quote-label">Quoted source text</span><blockquote>${escapeHtml(item.quote)}</blockquote>` : ''}<small>${date}${item.sourceDocument ? ` ? ${escapeHtml(item.sourceDocument)}` : ''}${item.pageNumber ? ` ? Page ${escapeHtml(item.pageNumber)}` : ''}</small>${sourceUrl ? `<a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">Open original source</a>` : ''}</li>`;
     }).join('')}</ul></details>`;
   }
 
@@ -268,12 +268,15 @@
     subtitle.hidden = true;
     subtitle.textContent = '';
     content.setAttribute('aria-busy', 'true');
+    const dialog = modal.querySelector('.stocklayer-intel-modal');
+    modal.classList.add('is-building-report');
+    dialog?.classList.add('is-building-report');
     const stages = [
       ['Loading annual reports', 'Fetching the available financial report analysis'],
       ['Loading press sentiment', 'Retrieving news and market coverage'],
       ['Analysing data', 'Preparing key trends and research signals'],
       ['Building charts and metrics', 'Creating visualisations and comparisons'],
-      ['Finalising report', 'Almost there…']
+      ['Finalising report', 'Almost there?']
     ];
     content.innerHTML = `
       <div class="report-build" role="status" aria-live="polite">
@@ -326,6 +329,8 @@
       subtitle.textContent = '';
       subtitle.hidden = true;
       content.innerHTML = reportHtml;
+      modal.classList.remove('is-building-report');
+      dialog?.classList.remove('is-building-report');
       wireStrategicControls(content);
       content.removeAttribute('aria-busy');
     } catch (error) {
@@ -333,6 +338,8 @@
       title.hidden = false;
       title.textContent = `${name} report`;
       content.innerHTML = `<div class="company-report-error"><strong>Report data is temporarily unavailable.</strong><p>${escapeHtml(error.message)}</p></div>`;
+      modal.classList.remove('is-building-report');
+      dialog?.classList.remove('is-building-report');
       content.removeAttribute('aria-busy');
     } finally {
       activeLoadingTimer = null;
