@@ -271,6 +271,9 @@
     const dialog = modal.querySelector('.stocklayer-intel-modal');
     modal.classList.add('is-building-report');
     dialog?.classList.add('is-building-report');
+    modal.classList.remove('has-strategic-report');
+    dialog?.classList.remove('has-strategic-report');
+    subtitle.classList.remove('report-enhanced-summary');
     const stages = [
       ['Loading annual reports', 'Fetching the available financial report analysis'],
       ['Loading press sentiment', 'Retrieving news and market coverage'],
@@ -326,9 +329,18 @@
       }
       if (loadId !== activeLoadId || modal.hidden) return;
       title.hidden = false;
-      title.innerHTML = `${escapeHtml(name)} report${hasStrategicIntelligence ? ' <span class="report-title-signalstrata">(enhanced by <a href="https://signalstrata.io/" target="_blank" rel="noopener noreferrer"><img src="images/signalstrata-logo.png" alt="SignalStrata"></a>)</span>' : ''}`;
-      subtitle.textContent = '';
-      subtitle.hidden = true;
+      title.textContent = `${name} report`;
+      modal.classList.toggle('has-strategic-report', hasStrategicIntelligence);
+      dialog?.classList.toggle('has-strategic-report', hasStrategicIntelligence);
+      if (hasStrategicIntelligence) {
+        subtitle.classList.add('report-enhanced-summary');
+        subtitle.innerHTML = `<span class="report-enhanced-provider">Enhanced by <a href="https://signalstrata.io/" target="_blank" rel="noopener noreferrer"><img src="images/signalstrata-logo.png" alt="SignalStrata"></a></span><span class="report-enhanced-copy">This report combines StockLayer's financial intelligence with strategic intelligence from SignalStrata.</span>`;
+        subtitle.hidden = false;
+      } else {
+        subtitle.classList.remove('report-enhanced-summary');
+        subtitle.textContent = '';
+        subtitle.hidden = true;
+      }
       content.innerHTML = reportHtml;
       modal.classList.remove('is-building-report');
       dialog?.classList.remove('is-building-report');
@@ -338,6 +350,11 @@
       if (loadId !== activeLoadId || modal.hidden) return;
       title.hidden = false;
       title.textContent = `${name} report`;
+      modal.classList.remove('has-strategic-report');
+      dialog?.classList.remove('has-strategic-report');
+      subtitle.classList.remove('report-enhanced-summary');
+      subtitle.textContent = '';
+      subtitle.hidden = true;
       content.innerHTML = `<div class="company-report-error"><strong>Report data is temporarily unavailable.</strong><p>${escapeHtml(error.message)}</p></div>`;
       modal.classList.remove('is-building-report');
       dialog?.classList.remove('is-building-report');

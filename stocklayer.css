@@ -1590,21 +1590,34 @@ body.company-page .strip-card { border-radius: 0; box-shadow: none; }
   overflow: hidden;
 }
 
-.report-title-signalstrata {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  margin-left: 5px;
-  color: #527199;
-  font-size: .58em;
-  font-weight: 750;
-  letter-spacing: 0;
-  white-space: nowrap;
-  vertical-align: middle;
+.stocklayer-intel-modal.has-strategic-report .picks-modal-header {
+  padding-bottom: 20px;
 }
 
-.report-title-signalstrata a { display: inline-flex; align-items: center; }
-.report-title-signalstrata img { display: block; width: auto; height: 18px; max-width: 118px; object-fit: contain; }
+.stocklayer-intel-modal.has-strategic-report .picks-modal-header h2 {
+  margin-bottom: 12px;
+  font-size: 27px;
+}
+
+.stocklayer-intel-modal .report-enhanced-summary {
+  display: grid;
+  gap: 12px;
+  max-width: 800px;
+}
+
+.report-enhanced-provider {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: #526B8E;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.report-enhanced-provider a { display: inline-flex; align-items: center; }
+.report-enhanced-provider img { display: block; width: auto; height: 27px; max-width: 210px; object-fit: contain; }
+.report-enhanced-copy { display: block; color: #526B8E; font-size: 16px; line-height: 1.45; }
 
 .company-report {
   display: grid;
@@ -2317,6 +2330,10 @@ body.company-page .strip-card { border-radius: 0; box-shadow: none; }
     flex: 0 0 auto;
     padding: 14px 16px 10px;
   }
+
+  .stocklayer-intel-modal.has-strategic-report .picks-modal-header h2 { font-size: 24px; }
+  .report-enhanced-copy { font-size: 14px; }
+  .report-enhanced-provider img { height: 23px; }
 
   .stocklayer-intel-modal .picks-modal-body {
     flex: 1 1 auto;
