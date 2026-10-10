@@ -95,7 +95,7 @@
     const values = points.filter(point => point.value != null && point.date);
     if (values.length < 2) return '<p class="report-empty">Not enough scored observations to draw this chart yet.</p>';
     const width = options.width || 900, height = options.height || 290;
-    const pad = { left: options.scoreScale ? 86 : 48, right: 20, top: 24, bottom: 38 };
+    const pad = { left: options.scoreScale ? 86 : 48, right: 20, top: 24, bottom: 44 };
     const minDate = Math.min(...values.map(point => Date.parse(`${point.date}T12:00:00Z`)));
     const maxDate = Math.max(...values.map(point => Date.parse(`${point.date}T12:00:00Z`)));
     const lower = options.lower ?? Math.max(0, Math.floor(Math.min(...values.map(point => point.value)) / 10) * 10 - 5);
@@ -131,8 +131,21 @@
         : Math.round(value);
       return `<line class="report-gridline" x1="${pad.left}" y1="${tickY}" x2="${width - pad.right}" y2="${tickY}"/><text x="4" y="${tickY + 4}">${label}</text>`;
     }).join('');
-    const start = values[0].date, end = values.at(-1).date;
-    return `<svg class="company-report-chart" viewBox="0 0 ${width} ${height}" role="img" aria-label="${escapeHtml(options.label || 'Score over time')}">${ticks}${eventMarkers}${paths}<text x="${pad.left}" y="${height - 8}">${escapeHtml(String(start).slice(0, 4))}</text><text x="${width - pad.right}" y="${height - 8}" text-anchor="end">${escapeHtml(String(end).slice(0, 4))}</text></svg>`;
+    const monthFormatter = new Intl.DateTimeFormat('en-GB', { month: 'short', year: 'numeric', timeZone: 'UTC' });
+    const monthTicks = values.reduce((ticks, point) => {
+      const timestamp = Date.parse(`${point.date}T12:00:00Z`);
+      const label = monthFormatter.format(new Date(timestamp));
+      if (!ticks.length || ticks.at(-1).label !== label) ticks.push({ timestamp, label });
+      return ticks;
+    }, []);
+    const axisCount = Math.min(4, monthTicks.length);
+    const selectedTicks = axisCount ? Array.from({ length: axisCount }, (_, index) => monthTicks[Math.round(index * (monthTicks.length - 1) / Math.max(1, axisCount - 1))]) : [];
+    const axisLabels = selectedTicks.map((tick, index) => {
+      const progress = (tick.timestamp - minDate) / Math.max(1, maxDate - minDate);
+      const anchor = index === 0 ? 'start' : index === selectedTicks.length - 1 ? 'end' : 'middle';
+      return `<text x="${(pad.left + plotWidth * progress).toFixed(1)}" y="${height - 10}" text-anchor="${anchor}">${escapeHtml(tick.label)}</text>`;
+    }).join('');
+    return `<svg class="company-report-chart" viewBox="0 0 ${width} ${height}" role="img" aria-label="${escapeHtml(options.label || 'Score over time')}">${ticks}${eventMarkers}${paths}${axisLabels}</svg>`;
   }
 
   function multiLineAnnualChart(reports) {
@@ -199,7 +212,12 @@
     const score = latest?.value;
     const label = latest?.label || (score == null ? 'Unavailable' : score >= 70 ? 'Strong' : score >= 55 ? 'Positive' : score >= 45 ? 'Mixed' : 'Lower');
     const date = latest?.date ? fmtDate(latest.date) : 'Unavailable';
-    return `<section class="company-report-section report-growth-history" aria-labelledby="report-section-growth-history"><header class="report-growth-history-header"><div><h3 id="report-section-growth-history">Growth confidence over time</h3><p>Recorded Growth Confidence at each snapshot. Scores can move when new company evidence is available or the quality of the underlying coverage improves.</p></div><div class="report-growth-history-latest ${scoreClass(score)}"><span>Latest confidence</span><strong>${score == null ? '?' : Math.round(score)}</strong><small>${escapeHtml(label)} ? ${escapeHtml(date)}</small></div></header><div class="company-report-chart-card report-growth-history-chart">${lineChart(series, { lower: 0, upper: 100, scoreScale: true, connectGaps: true, height: 230, label: 'Growth Confidence score over time' })}</div></section>`;
+    const scores = scored.map(item => item.value);
+    const best = scores.length ? Math.max(...scores) : null;
+    const worst = scores.length ? Math.min(...scores) : null;
+    const average = scores.length ? scores.reduce((total, value) => total + value, 0) / scores.length : null;
+    const stat = (label, value) => `<div><span>${label}</span><strong>${value == null ? '?' : Math.round(value)}</strong><small>/100</small></div>`;
+    return `<section class="company-report-section report-growth-history" aria-labelledby="report-section-growth-history"><header class="report-growth-history-header"><div><h3 id="report-section-growth-history">Growth confidence over time</h3><p>Recorded Growth Confidence at each snapshot. Scores can move when new company evidence is available or the quality of the underlying coverage improves.</p></div><div class="report-growth-history-latest ${scoreClass(score)}"><span>Latest confidence</span><strong>${score == null ? '?' : Math.round(score)}</strong><small>${escapeHtml(label)} ? ${escapeHtml(date)}</small></div></header><div class="report-growth-history-stats" aria-label="Growth confidence history summary">${stat('Best', best)}${stat('Average', average)}${stat('Worst', worst)}</div><div class="company-report-chart-card report-growth-history-chart">${lineChart(series, { lower: 0, upper: 100, scoreScale: true, connectGaps: true, height: 230, label: 'Growth Confidence score over time' })}</div></section>`;
   }
 
   function sectionTwo(report, strategicData) {

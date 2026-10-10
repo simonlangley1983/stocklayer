@@ -1834,6 +1834,12 @@ body.company-page .strip-card { border-radius: 0; box-shadow: none; }
 .report-growth-history-latest span { color: #526B8E; font-size: 11px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
 .report-growth-history-latest strong { margin: 2px 0; font-size: 30px; line-height: 1; }
 .report-growth-history-latest small { color: #526B8E; font-size: 12px; }
+.report-growth-history-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin: 2px 0 14px; }
+.report-growth-history-stats > div { padding: 11px 13px; border: 1px solid #D6E4F4; border-radius: 10px; background: #FFF; }
+.report-growth-history-stats span,.report-growth-history-stats strong,.report-growth-history-stats small { display: inline-block; }
+.report-growth-history-stats span { display: block; color: #526B8E; font-size: 11px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
+.report-growth-history-stats strong { margin-top: 2px; color: #082B59; font-size: 22px; line-height: 1; }
+.report-growth-history-stats small { margin-left: 2px; color: #526B8E; font-size: 12px; font-weight: 700; }
 .report-growth-history-chart { margin-top: 0; }
 
 .report-chart-line {
@@ -2281,6 +2287,7 @@ body.company-page .strip-card { border-radius: 0; box-shadow: none; }
   .company-report-section { padding: 18px; }
   .report-growth-history-header { display: grid; gap: 14px; }
   .report-growth-history-latest { width: 100%; box-sizing: border-box; text-align: left; }
+  .report-growth-history-stats { grid-template-columns: 1fr; }
   .company-report-profile dl,
   .company-report-stat-grid { grid-template-columns: 1fr 1fr; }
   .report-confidence-hero { grid-template-columns: 1fr; }
