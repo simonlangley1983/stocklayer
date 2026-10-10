@@ -210,14 +210,16 @@
     const scored = series.filter(item => item.value != null && item.date);
     const latest = scored.at(-1);
     const score = latest?.value;
-    const label = latest?.label || (score == null ? 'Unavailable' : score >= 70 ? 'Strong' : score >= 55 ? 'Positive' : score >= 45 ? 'Mixed' : 'Lower');
     const date = latest?.date ? fmtDate(latest.date) : 'Unavailable';
     const scores = scored.map(item => item.value);
     const best = scores.length ? Math.max(...scores) : null;
     const worst = scores.length ? Math.min(...scores) : null;
     const average = scores.length ? scores.reduce((total, value) => total + value, 0) / scores.length : null;
-    const stat = (label, value) => `<div><span>${label}</span><strong>${value == null ? '?' : Math.round(value)}</strong><small>/100</small></div>`;
-    return `<section class="company-report-section report-growth-history" aria-labelledby="report-section-growth-history"><header class="report-growth-history-header"><div><h3 id="report-section-growth-history">Growth confidence over time</h3><p>Recorded Growth Confidence at each snapshot. Scores can move when new company evidence is available or the quality of the underlying coverage improves.</p></div><div class="report-growth-history-latest ${scoreClass(score)}"><span>Latest confidence</span><strong>${score == null ? '?' : Math.round(score)}</strong><small>${escapeHtml(label)} ? ${escapeHtml(date)}</small></div></header><div class="report-growth-history-stats" aria-label="Growth confidence history summary">${stat('Best', best)}${stat('Average', average)}${stat('Worst', worst)}</div><div class="company-report-chart-card report-growth-history-chart">${lineChart(series, { lower: 0, upper: 100, scoreScale: true, connectGaps: true, height: 230, label: 'Growth Confidence score over time' })}</div></section>`;
+    const bestObservation = scored.find(item => item.value === best);
+    const worstObservation = scored.find(item => item.value === worst);
+    const averageRange = scored.length ? `${fmtDate(scored[0].date)} to ${fmtDate(scored.at(-1).date)}` : 'Unavailable';
+    const stat = (label, value, detail) => `<div><span>${label}</span><strong>${value == null ? '?' : Math.round(value)}<em>/100</em></strong><small>${escapeHtml(detail)}</small></div>`;
+    return `<section class="company-report-section report-growth-history" aria-labelledby="report-section-growth-history"><header class="report-growth-history-header"><div><h3 id="report-section-growth-history">Growth confidence over time</h3><p>Recorded Growth Confidence at each snapshot. Scores can move when new company evidence is available or the quality of the underlying coverage improves.</p></div><div class="report-growth-history-latest ${scoreClass(score)}"><span>Latest confidence</span><strong>${score == null ? '?' : Math.round(score)}</strong><small>${escapeHtml(date)}</small></div></header><div class="report-growth-history-stats" aria-label="Growth confidence history summary">${stat('Best', best, bestObservation?.date ? fmtDate(bestObservation.date) : 'Unavailable')}${stat('Average', average, averageRange)}${stat('Worst', worst, worstObservation?.date ? fmtDate(worstObservation.date) : 'Unavailable')}</div><div class="company-report-chart-card report-growth-history-chart">${lineChart(series, { lower: 0, upper: 100, scoreScale: true, connectGaps: true, height: 230, label: 'Growth Confidence score over time' })}</div></section>`;
   }
 
   function sectionTwo(report, strategicData) {
