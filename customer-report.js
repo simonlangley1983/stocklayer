@@ -312,6 +312,7 @@
       ]);
       if (loadId !== activeLoadId || modal.hidden) return;
       const reportHtml = render(report, company, strategicData);
+      const hasStrategicIntelligence = Array.isArray(strategicData?.initiatives) && strategicData.initiatives.length > 0;
       const steps = Array.from(content.querySelectorAll('.report-build-step'));
       for (let completed = 0; completed <= steps.length; completed++) {
         if (loadId !== activeLoadId || modal.hidden) return;
@@ -325,7 +326,7 @@
       }
       if (loadId !== activeLoadId || modal.hidden) return;
       title.hidden = false;
-      title.textContent = `${name} report`;
+      title.innerHTML = `${escapeHtml(name)} report${hasStrategicIntelligence ? ' <span class="report-title-signalstrata">(enhanced by Signal:Strata)</span>' : ''}`;
       subtitle.textContent = '';
       subtitle.hidden = true;
       content.innerHTML = reportHtml;
