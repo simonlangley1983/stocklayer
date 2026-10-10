@@ -36,8 +36,16 @@ jobs:
           --only-london-hour 3
           ${{ github.event_name == 'workflow_dispatch' && '--force' || '' }}
 
+      - name: Recalculate growth confidence with strategic momentum
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$(TZ=Europe/London date +%H)" = "03" ]; then
+            python scripts/generate_growth_confidence_history.py --companies ftse100.json
+          else
+            echo "Outside the London refresh hour. Growth confidence was not recalculated."
+          fi
+
       - name: Commit changed strategic intelligence
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Refresh SignalStrata strategic intelligence"
-          file_pattern: "strategic-intelligence/*.json"
+          file_pattern: "strategic-intelligence/*.json history/growth-confidence/*.json"

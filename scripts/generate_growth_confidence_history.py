@@ -18,6 +18,7 @@ HISTORY_DIR = ROOT / "history" / "growth-confidence"
 HISTORY_FILE = HISTORY_DIR / "history.json"
 REPORT_HISTORY_FILE = ROOT / "annual-reports" / "extracted-keywords-history.json"
 SENTIMENT_SUMMARY_FILE = ROOT / "analytics" / "company-intelligence-summary.json"
+STRATEGIC_INTELLIGENCE_DIR = ROOT / "strategic-intelligence"
 FORWARD_RETURN_DAYS = (7, 30, 180, 365)
 WEIGHTS = {
     "momentum": 0.35,
@@ -25,8 +26,10 @@ WEIGHTS = {
     "marketPosition": 0.20,
     "riskBalance": 0.15,
 }
+STRATEGIC_WEIGHT = 0.20
 REPORTS_BY_SLUG: dict[str, list[dict[str, Any]]] = {}
 SENTIMENT_BY_SLUG: dict[str, Any] = {}
+STRATEGIC_BY_SLUG: dict[str, Any] = {}
 
 
 def clamp_score(value: float | int | None, fallback: float = 50) -> float:
@@ -180,7 +183,53 @@ def risk_level(company: dict[str, Any]) -> str:
     return ("low", "medium", "high", "ultra")[score]
 
 
-def growth_components(company: dict[str, Any], snapshot_year: int) -> dict[str, Any]:
+def strategic_momentum(company: dict[str, Any], snapshot_date: date) -> dict[str, Any] | None:
+    """Score only recorded SignalStrata activity, with uncertainty pulling toward neutral."""
+    data = STRATEGIC_BY_SLUG.get(str(company.get("slug") or ""), {})
+    initiatives = data.get("initiatives", []) if isinstance(data, dict) else []
+    if not isinstance(initiatives, list) or not initiatives:
+        return None
+
+    stage_scores = {"committing": 45, "building": 60, "deploying": 70, "scaling": 80, "realising": 75}
+    confidence_weights = {"high": 1.0, "medium": 0.75, "low": 0.5}
+    initiative_scores: list[float] = []
+    reliabilities: list[float] = []
+    evidence_count = 0
+    for initiative in initiatives:
+        if not isinstance(initiative, dict):
+            continue
+        try:
+            relevance = clamp_score(float(initiative.get("relevancyScore")) * 100)
+        except (TypeError, ValueError):
+            relevance = 50
+        stage = stage_scores.get(str(initiative.get("activityStage") or "").casefold(), 50)
+        evidence = initiative.get("evidence") if isinstance(initiative.get("evidence"), list) else []
+        evidence_count += len(evidence)
+        dates = [item.get("date") for item in evidence if isinstance(item, dict) and item.get("date")]
+        timeline = initiative.get("timeline") if isinstance(initiative.get("timeline"), dict) else {}
+        latest = max(dates) if dates else timeline.get("latest_update")
+        try:
+            age = max(0, (snapshot_date - date.fromisoformat(str(latest)[:10])).days)
+        except (TypeError, ValueError):
+            age = None
+        recency = 50 if age is None else 85 if age <= 365 else 70 if age <= 730 else 58 if age <= 1095 else 50
+        initiative_scores.append(relevance * .45 + stage * .30 + recency * .25)
+        reliabilities.append(confidence_weights.get(str(initiative.get("confidence") or "").casefold(), .60))
+
+    if not initiative_scores:
+        return None
+    raw = sum(initiative_scores) / len(initiative_scores)
+    reliability = sum(reliabilities) / len(reliabilities)
+    score = clamp_score(50 + (raw - 50) * reliability)
+    return {
+        "score": round(score),
+        "reliability": round(reliability, 3),
+        "initiativeCount": len(initiative_scores),
+        "evidenceCount": evidence_count,
+    }
+
+
+def growth_components(company: dict[str, Any], snapshot_year: int, snapshot_date: date) -> dict[str, Any]:
     hash_value = company_hash(company)
     one_year = previous_growth(company, "1y")
     three_year = previous_growth(company, "3y")
@@ -211,6 +260,7 @@ def growth_components(company: dict[str, Any], snapshot_year: int) -> dict[str, 
     )
     risk_penalty = {"low": 8, "medium": 0, "high": -10, "ultra": -22}.get(risk, 0)
     risk_score = clamp_score(62 + risk_penalty)
+    strategic = strategic_momentum(company, snapshot_date)
 
     return {
         "momentum": round(momentum_score),
@@ -219,6 +269,9 @@ def growth_components(company: dict[str, Any], snapshot_year: int) -> dict[str, 
         "riskBalance": round(risk_score),
         "annualReportIntelLoaded": report_intel_loaded,
         "annualReportRecency": report_recency,
+        "strategicMomentum": strategic["score"] if strategic else 50,
+        "strategicMomentumAvailable": strategic is not None,
+        "strategicMomentumDetail": strategic,
     }
 
 
@@ -227,12 +280,15 @@ def decisive_score(base_score: float, components: dict[str, Any]) -> int:
     market_signal = components["marketPosition"] - 50
     report_signal = components["annualReportHealth"] - 50
     risk_signal = components["riskBalance"] - 50
+    strategic_signal = components["strategicMomentum"] - 50
     blended_signal = (
         momentum_signal * 0.46
         + market_signal * 0.24
         + report_signal * 0.16
         + risk_signal * 0.14
     )
+    if components.get("strategicMomentumAvailable"):
+        blended_signal = blended_signal * (1 - STRATEGIC_WEIGHT) + strategic_signal * STRATEGIC_WEIGHT
     stretched = 50 + blended_signal * 1.65
     anchored = stretched * 0.78 + base_score * 0.22
     return round(clamp_score(anchored))
@@ -255,6 +311,8 @@ def growth_summary(score: int, components: dict[str, Any]) -> str:
         ("annual reports", components["annualReportHealth"]),
         ("risk balance", components["riskBalance"]),
     ]
+    if components.get("strategicMomentumAvailable"):
+        signals.append(("strategic momentum", components["strategicMomentum"]))
     strongest = sorted(signals, key=lambda item: abs(item[1] - 50), reverse=True)[:2]
     positive = [name for name, value in strongest if value >= 58]
     negative = [name for name, value in strongest if value <= 42]
@@ -269,8 +327,13 @@ def growth_summary(score: int, components: dict[str, Any]) -> str:
 
 
 def company_observation(company: dict[str, Any], snapshot_date: date) -> dict[str, Any]:
-    components = growth_components(company, snapshot_date.year)
-    base_score = sum(components[key] * weight for key, weight in WEIGHTS.items())
+    components = growth_components(company, snapshot_date.year, snapshot_date)
+    weights = {key: weight * (1 - STRATEGIC_WEIGHT) for key, weight in WEIGHTS.items()}
+    if components.get("strategicMomentumAvailable"):
+        weights["strategicMomentum"] = STRATEGIC_WEIGHT
+    else:
+        weights = WEIGHTS
+    base_score = sum(components[key] * weight for key, weight in weights.items())
     score = decisive_score(base_score, components)
     return {
         "date": snapshot_date.isoformat(),
@@ -371,7 +434,11 @@ def build_snapshot(companies: list[dict[str, Any]], snapshot_date: date, source_
         "methodology": {
             "name": "StockLayer growth confidence validation snapshot",
             "scoreRange": "0-100",
-            "weights": WEIGHTS,
+            "weights": {
+                "base": WEIGHTS,
+                "withStrategicMomentum": {**{key: round(weight * (1 - STRATEGIC_WEIGHT), 3) for key, weight in WEIGHTS.items()}, "strategicMomentum": STRATEGIC_WEIGHT},
+            },
+            "strategicMomentum": "Where available, evidenced SignalStrata initiatives contribute 20%. Relevance supplies context only and is combined with stage, evidence recency and source confidence.",
             "forwardReturnWindows": [f"{days}d" for days in FORWARD_RETURN_DAYS],
             "note": "Daily score snapshots are compared with later share-price observations once enough time has elapsed.",
         },
@@ -401,7 +468,7 @@ def main() -> int:
         if not companies:
             raise SystemExit("No requested companies found")
 
-    global REPORTS_BY_SLUG, SENTIMENT_BY_SLUG
+    global REPORTS_BY_SLUG, SENTIMENT_BY_SLUG, STRATEGIC_BY_SLUG
     report_history = load_json(REPORT_HISTORY_FILE, {"reports": []})
     REPORTS_BY_SLUG = {}
     for report in report_history.get("reports", []):
@@ -409,6 +476,13 @@ def main() -> int:
             REPORTS_BY_SLUG.setdefault(report["company_slug"], []).append(report)
     sentiment_summary = load_json(SENTIMENT_SUMMARY_FILE, {"companies": {}})
     SENTIMENT_BY_SLUG = sentiment_summary.get("companies", {}) if isinstance(sentiment_summary, dict) else {}
+    STRATEGIC_BY_SLUG = {}
+    for path in STRATEGIC_INTELLIGENCE_DIR.glob("*.json"):
+        if path.name in {"metadata.json", "ticker-map.json"}:
+            continue
+        data = load_json(path, {})
+        if isinstance(data, dict) and data.get("slug"):
+            STRATEGIC_BY_SLUG[str(data["slug"])] = data
     snapshot = build_snapshot(companies, snapshot_date, source_file)
     daily_file = HISTORY_DIR / f"{snapshot_date.isoformat()}.json"
     history = build_history(snapshot)

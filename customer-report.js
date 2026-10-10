@@ -179,8 +179,8 @@
     return `<section class="company-report-section company-report-overview" aria-labelledby="report-section-company"><header><h3 id="report-section-company">Company overview</h3></header><div class="company-report-profile"><div><p class="company-report-intro">${escapeHtml(richerIntro || item.introduction)}</p><dl><div><dt>Company type</dt><dd>${escapeHtml(item.sector || 'Unavailable')}</dd></div><div><dt>Listing</dt><dd>${escapeHtml(item.ticker || 'Unavailable')}</dd></div><div><dt>UK 100 rank</dt><dd>${item.ftseRank ? `#${item.ftseRank}` : 'Unavailable'}</dd></div><div><dt>Market value</dt><dd>${escapeHtml(companyMarketValue(item, company))}</dd></div></dl></div></div></section>`;
   }
 
-  function sectionTwo(report) {
-    const confidence = report.overallConfidence || {};
+  function sectionTwo(report, strategicData) {
+    const confidence = confidenceWithStrategicMomentum(report.overallConfidence || {}, strategicData);
     return `<section class="company-report-section report-confidence-summary" aria-labelledby="report-section-confidence"><header><h3 id="report-section-confidence">Overall confidence</h3></header><div class="report-confidence-hero"><div class="report-confidence-score ${scoreClass(confidence.score)}"><strong>${confidence.score == null ? '?' : Math.round(Number(confidence.score))}</strong><span>/100</span><small>${escapeHtml(confidence.label || 'Unavailable')}</small></div><div><div class="report-overall-bar"><i style="width:${Math.max(0, Math.min(100, Number(confidence.score) || 0))}%"></i><b></b></div>${scoreScale('confidence')}<p>${escapeHtml(confidence.methodology || '')}</p><p class="report-evidence-coverage">Evidence coverage: ${Number(confidence.evidenceCoverage || 0)}%. This measures how much reliable source data supports the score, not whether the outlook is positive.</p></div></div><h4>What drives the score</h4>${signalComparison(confidence)}</section>`;
   }
 
@@ -234,6 +234,59 @@
     return `<section class="company-report-section report-strategic-section" aria-labelledby="report-section-strategic"><header><div class="report-strategic-provider">Strategic Intelligence powered by <a href="https://signalstrata.io/" target="_blank" rel="noopener noreferrer"><img src="images/signalstrata-logo.png" alt="SignalStrata"></a></div><h3 id="report-section-strategic">Strategic Intelligence</h3><p>Explore the strategic initiatives shaping this company's future, from AI investment and digital transformation to acquisitions, partnerships and operational change.</p></header><div class="report-strategic-summary"><div><strong>${initiatives.length}</strong><span>identified initiatives</span></div><div><strong>${latest}</strong><span>latest evidence</span></div><div><strong>${categories.length}</strong><span>activity areas</span></div></div><div class="report-strategic-controls"><div class="report-strategic-filters" aria-label="Filter Strategic Intelligence by category"><button type="button" class="active" data-strategic-filter="All">All</button>${categories.map(category => `<button type="button" data-strategic-filter="${escapeHtml(category)}">${escapeHtml(category)}</button>`).join('')}</div><label>Sort by <select data-strategic-sort><option value="useful">Relevance and recency</option><option value="recent">Most recent evidence</option><option value="category">Category</option></select></label></div><div class="report-strategic-list">${initiatives.map(strategicCard).join('')}</div><div class="report-strategic-refresh">Last synchronised: ${fmtDate(data.lastSynchronised)}</div></section>`;
   }
 
+  function reportConfidenceLabel(score) {
+    if (score >= 70) return 'Strong';
+    if (score >= 58) return 'Positive';
+    if (score >= 42) return 'Mixed';
+    return 'Low';
+  }
+
+  function strategicMomentum(data) {
+    const initiatives = Array.isArray(data?.initiatives) ? data.initiatives : [];
+    if (!initiatives.length) return null;
+    const stages = { committing: 45, building: 60, deploying: 70, scaling: 80, realising: 75 };
+    const confidences = { high: 1, medium: .75, low: .5 };
+    const now = Date.now();
+    const values = initiatives.map(initiative => {
+      const relevance = Math.max(0, Math.min(1, Number(initiative.relevancyScore))) * 100 || 50;
+      const stage = stages[String(initiative.activityStage || '').toLowerCase()] || 50;
+      const dates = (initiative.evidence || []).map(item => Date.parse(item.date || item.eventDate || '')).filter(Number.isFinite);
+      const latest = dates.length ? Math.max(...dates) : Date.parse(initiative.timeline?.latest_update || '');
+      const age = Number.isFinite(latest) ? Math.max(0, (now - latest) / 86400000) : null;
+      const recency = age == null ? 50 : age <= 365 ? 85 : age <= 730 ? 70 : age <= 1095 ? 58 : 50;
+      const reliability = confidences[String(initiative.confidence || '').toLowerCase()] || .6;
+      return { score: relevance * .45 + stage * .30 + recency * .25, reliability };
+    });
+    const raw = values.reduce((total, item) => total + item.score, 0) / values.length;
+    const reliability = values.reduce((total, item) => total + item.reliability, 0) / values.length;
+    const score = Math.round((50 + (raw - 50) * reliability) * 10) / 10;
+    return {
+      score,
+      reliability,
+      initiativeCount: initiatives.length,
+      detail: `Based on ${initiatives.length} evidenced initiative${initiatives.length === 1 ? '' : 's'}, reported delivery stages and evidence recency. SignalStrata relevance provides context, not an investor rating.`
+    };
+  }
+
+  function confidenceWithStrategicMomentum(confidence, strategicData) {
+    const momentum = strategicMomentum(strategicData);
+    if (!momentum || !Array.isArray(confidence?.components) || !confidence.components.length) return confidence;
+    const components = confidence.components.map(item => ({ ...item, weight: Number(item.weight || 0) * .8 }));
+    components.push({ key: 'strategic_momentum', label: 'Strategic momentum', score: momentum.score, weight: .20, reliability: momentum.reliability, detail: momentum.detail });
+    const totalWeight = components.reduce((total, item) => total + Number(item.weight || 0), 0);
+    const rawScore = components.reduce((total, item) => total + Number(item.score || 50) * Number(item.weight || 0), 0) / totalWeight;
+    const reliability = components.reduce((total, item) => total + Number(item.reliability || 0) * Number(item.weight || 0), 0) / totalWeight;
+    const score = Math.round((50 + (rawScore - 50) * (.55 + .45 * reliability)) * 10) / 10;
+    return {
+      ...confidence,
+      score,
+      label: reportConfidenceLabel(score),
+      evidenceCoverage: Math.round(reliability * 100),
+      components,
+      methodology: `${confidence.methodology} Where available, SignalStrata Strategic Momentum contributes 20% and combines evidenced initiatives, reported delivery stage, evidence recency and source confidence. It is not an investment recommendation.`
+    };
+  }
+
   function wireStrategicControls(content) {
     const list = content.querySelector('.report-strategic-list');
     if (!list) return;
@@ -256,7 +309,7 @@
 
   function render(report, company, strategicData) {
     const strategic = strategicSection(strategicData);
-    return `<div class="company-report"><nav class="company-report-nav" aria-label="Report sections"><a href="#report-section-company">Overview</a><a href="#report-section-confidence">Confidence</a><a href="#report-section-trends">Trends & events</a><a href="#report-section-themes">Themes</a>${strategic ? '<a href="#report-section-strategic">Strategic Intelligence</a>' : ''}</nav>${sectionOne(report, company)}${sectionTwo(report)}${sectionThree(report)}${sectionFour(report)}${strategic}<p class="company-report-disclaimer">StockLayer indicators are descriptive research signals, not financial advice. Source links and methodology notes are provided so the evidence can be checked.</p></div>`;
+    return `<div class="company-report"><nav class="company-report-nav" aria-label="Report sections"><a href="#report-section-company">Overview</a><a href="#report-section-confidence">Confidence</a><a href="#report-section-trends">Trends & events</a><a href="#report-section-themes">Themes</a>${strategic ? '<a href="#report-section-strategic">Strategic Intelligence</a>' : ''}</nav>${sectionOne(report, company)}${sectionTwo(report, strategicData)}${sectionThree(report)}${sectionFour(report)}${strategic}<p class="company-report-disclaimer">StockLayer indicators are descriptive research signals, not financial advice. Source links and methodology notes are provided so the evidence can be checked.</p></div>`;
   }
 
   async function open({ company, modal, title, subtitle, content }) {
