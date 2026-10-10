@@ -2216,6 +2216,41 @@ body.company-page .strip-card { border-radius: 0; box-shadow: none; }
   .report-theme-change > span { grid-column: 1 / -1; text-align: left; }
 }
 
+/* Strategic Intelligence inside the established company AI report. */
+.report-strategic-section { scroll-margin-top: 20px; }
+.report-strategic-summary { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin:18px 0; }
+.report-strategic-summary > div { padding:14px; border:1px solid #DCE7F5; border-radius:10px; background:#F7FAFE; }
+.report-strategic-summary strong,.report-strategic-summary span { display:block; }
+.report-strategic-summary strong { color:#082B59; font-size:20px; }
+.report-strategic-summary span { margin-top:3px; color:#526B8E; font-size:12px; }
+.report-strategic-controls { display:flex; align-items:end; justify-content:space-between; gap:14px; margin:18px 0; }
+.report-strategic-filters { display:flex; flex:1; flex-wrap:wrap; gap:7px; }
+.report-strategic-filters button { min-height:34px; padding:6px 10px; border:1px solid #C9D9EC; border-radius:999px; color:#173B70; background:#FFF; font:700 13px inherit; cursor:pointer; }
+.report-strategic-filters button.active,.report-strategic-filters button:hover,.report-strategic-filters button:focus-visible { border-color:#1466D9; color:#FFF; background:#1466D9; }
+.report-strategic-controls label { color:#35557E; font-size:13px; font-weight:700; }
+.report-strategic-controls select { margin-left:6px; padding:7px; border:1px solid #C9D9EC; border-radius:7px; color:#173B70; background:#FFF; }
+.report-strategic-list { display:grid; gap:12px; }
+.report-strategic-card { padding:17px; border:1px solid #DCE7F5; border-radius:12px; background:#FFF; }
+.report-strategic-card-heading { display:flex; align-items:flex-start; justify-content:space-between; gap:12px; }
+.report-strategic-card-heading > div > span { display:inline-block; padding:4px 8px; border-radius:999px; color:#006C5A; background:#EAF9F3; font-size:11px; font-weight:800; letter-spacing:.03em; text-transform:uppercase; }
+.report-strategic-card h4 { margin:8px 0; color:#082B59; font-size:18px; }
+.report-strategic-card > p { margin:0; }
+.report-strategic-card-heading small,.report-strategic-meta,.report-strategic-evidence small { color:#526B8E; font-size:12px; }
+.report-strategic-meta { display:flex; flex-wrap:wrap; gap:7px 16px; margin-top:12px; }
+.report-strategic-evidence { margin-top:14px; padding-top:12px; border-top:1px solid #DCE7F5; }
+.report-strategic-evidence summary { color:#0A5CC6; font-weight:700; cursor:pointer; }
+.report-strategic-evidence ul { display:grid; gap:10px; margin:12px 0 0; padding:0; list-style:none; }
+.report-strategic-evidence li { padding:12px; border-radius:8px; background:#F7FAFE; }
+.report-strategic-evidence li strong,.report-strategic-evidence li small,.report-strategic-evidence li a { display:block; }
+.report-strategic-evidence li p { margin:6px 0; }
+.report-strategic-evidence li a { margin-top:6px; color:#0A5CC6; font-weight:700; }
+.report-strategic-evidence blockquote { margin:6px 0; padding-left:10px; border-left:3px solid #8FB8EC; color:#35557E; font-style:italic; }
+.report-strategic-quote-label { display:block; margin-top:7px; color:#526B8E; font-size:11px; font-weight:800; text-transform:uppercase; }
+.report-strategic-attribution { display:flex; flex-wrap:wrap; justify-content:space-between; gap:8px; margin-top:18px; padding-top:14px; border-top:1px solid #DCE7F5; color:#526B8E; font-size:12px; }
+.report-strategic-attribution a { display:inline-flex; vertical-align:middle; margin-left:5px; }
+.report-strategic-attribution img { display:block; width:auto; height:22px; max-width:150px; object-fit:contain; }
+@media (max-width:640px) { .report-strategic-summary { grid-template-columns:1fr; } .report-strategic-controls,.report-strategic-card-heading { align-items:stretch; flex-direction:column; } .report-strategic-controls select { width:100%; margin:6px 0 0; } }
+
 @media (max-width: 470px) {
   .company-report-profile dl,
   .company-report-stat-grid { grid-template-columns: 1fr; }

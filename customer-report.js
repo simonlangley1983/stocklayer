@@ -3,6 +3,7 @@
 
   const DATA_BASE = 'https://raw.githubusercontent.com/simonlangley1983/stocklayer/main/';
   const cache = new Map();
+  const strategicCache = new Map();
   const colours = ['#2563eb', '#0f766e', '#b45309', '#7c3aed', '#be123c'];
   let activeLoadingTimer = null;
   let activeLoadId = 0;
@@ -29,6 +30,15 @@
         }));
     }
     return cache.get(slug);
+  }
+
+  async function fetchStrategicIntelligence(slug) {
+    if (!strategicCache.has(slug)) {
+      strategicCache.set(slug, fetch(`${DATA_BASE}strategic-intelligence/${encodeURIComponent(slug)}.json?v=${Date.now()}`, { cache: 'no-store' })
+        .then(response => response.ok ? response.json() : null)
+        .catch(() => null));
+    }
+    return strategicCache.get(slug);
   }
 
   const summaries = new Map();
@@ -196,8 +206,57 @@
     return `<section class="company-report-section" aria-labelledby="report-section-themes"><header><h3 id="report-section-themes">Annual-report themes</h3><p>Keyword rates are normalized per 10,000 report words, making reports of different lengths comparable.</p></header><div class="company-report-chart-card">${multiLineAnnualChart(annual.reports)}</div><div class="company-report-subsection"><h4>Largest increases in the latest report</h4>${increases.length ? `<div class="report-theme-changes">${changeRows}</div>` : '<p class="report-empty">A second report is needed to calculate emerging themes.</p>'}</div><p class="report-theme-note">Change versus the previous report, measured as additional mentions per 10,000 extracted words.</p></section>`;
   }
 
-  function render(report, company) {
-    return `<div class="company-report"><nav class="company-report-nav" aria-label="Report sections"><a href="#report-section-company">Overview</a><a href="#report-section-confidence">Confidence</a><a href="#report-section-trends">Trends & events</a><a href="#report-section-themes">Themes</a></nav>${sectionOne(report, company)}${sectionTwo(report)}${sectionThree(report)}${sectionFour(report)}<p class="company-report-disclaimer">StockLayer indicators are descriptive research signals, not financial advice. Source links and methodology notes are provided so the evidence can be checked.</p></div>`;
+  function strategicDate(initiative) {
+    const dates = (initiative.evidence || []).map(item => Date.parse(item.date || '')).filter(Number.isFinite);
+    return dates.length ? Math.max(...dates) : 0;
+  }
+
+  function strategicEvidence(evidence) {
+    if (!Array.isArray(evidence) || !evidence.length) return '';
+    return `<details class="report-strategic-evidence"><summary>View supporting sources (${evidence.length})</summary><ul>${evidence.map(item => {
+      const sourceUrl = /^https?:\/\//i.test(String(item.sourceUrl || '')) ? item.sourceUrl : '';
+      const date = item.date ? fmtDate(item.date) : (item.fiscalYear ? `FY ${escapeHtml(item.fiscalYear)}` : 'Date not supplied');
+      return `<li><strong>${escapeHtml(item.title || 'Supporting evidence')}</strong>${item.summary ? `<p>${escapeHtml(item.summary)}</p>` : ''}${item.quote ? `<span class="report-strategic-quote-label">Quoted source text</span><blockquote>${escapeHtml(item.quote)}</blockquote>` : ''}<small>${date}${item.sourceDocument ? ` · ${escapeHtml(item.sourceDocument)}` : ''}${item.pageNumber ? ` · Page ${escapeHtml(item.pageNumber)}` : ''}</small>${sourceUrl ? `<a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">Open original source</a>` : ''}</li>`;
+    }).join('')}</ul></details>`;
+  }
+
+  function strategicCard(initiative) {
+    const evidence = Array.isArray(initiative.evidence) ? initiative.evidence : [];
+    const date = strategicDate(initiative);
+    return `<article class="report-strategic-card" data-strategic-category="${escapeHtml(initiative.category || 'Other')}" data-strategic-date="${date}" data-strategic-relevance="${Number(initiative.relevancyScore) || 0}"><div class="report-strategic-card-heading"><div><span>${escapeHtml(initiative.category || 'Other')}</span><h4>${escapeHtml(initiative.name || 'Untitled initiative')}</h4></div><small>${evidence.length} source${evidence.length === 1 ? '' : 's'}</small></div>${initiative.summary ? `<p>${escapeHtml(initiative.summary)}</p>` : ''}<div class="report-strategic-meta">${initiative.activityStage ? `<span><b>Stage:</b> ${escapeHtml(initiative.activityStage)}</span>` : ''}${initiative.investmentSummary ? `<span><b>Investment:</b> ${escapeHtml(initiative.investmentSummary)}</span>` : ''}</div>${strategicEvidence(evidence)}</article>`;
+  }
+
+  function strategicSection(data) {
+    const initiatives = Array.isArray(data?.initiatives) ? data.initiatives : [];
+    if (!initiatives.length) return '';
+    const categories = [...new Set(initiatives.map(item => item.category || 'Other'))].sort();
+    const latest = data.latestEvidenceDate ? fmtDate(data.latestEvidenceDate) : 'Not supplied';
+    return `<section class="company-report-section report-strategic-section" aria-labelledby="report-section-strategic"><header><h3 id="report-section-strategic">Strategic Intelligence</h3><p>Explore the strategic initiatives shaping this company's future, from AI investment and digital transformation to acquisitions, partnerships and operational change.</p></header><div class="report-strategic-summary"><div><strong>${initiatives.length}</strong><span>identified initiatives</span></div><div><strong>${latest}</strong><span>latest evidence</span></div><div><strong>${categories.length}</strong><span>activity areas</span></div></div><div class="report-strategic-controls"><div class="report-strategic-filters" aria-label="Filter Strategic Intelligence by category"><button type="button" class="active" data-strategic-filter="All">All</button>${categories.map(category => `<button type="button" data-strategic-filter="${escapeHtml(category)}">${escapeHtml(category)}</button>`).join('')}</div><label>Sort by <select data-strategic-sort><option value="useful">Relevance and recency</option><option value="recent">Most recent evidence</option><option value="category">Category</option></select></label></div><div class="report-strategic-list">${initiatives.map(strategicCard).join('')}</div><div class="report-strategic-attribution"><span>Strategic data powered by <a href="https://signalstrata.io/" target="_blank" rel="noopener noreferrer"><img src="images/signalstrata-logo.png" alt="SignalStrata"></a></span><span>Last synchronised: ${fmtDate(data.lastSynchronised)}</span></div></section>`;
+  }
+
+  function wireStrategicControls(content) {
+    const list = content.querySelector('.report-strategic-list');
+    if (!list) return;
+    const cards = () => [...list.querySelectorAll('.report-strategic-card')];
+    content.querySelectorAll('[data-strategic-filter]').forEach(button => button.addEventListener('click', () => {
+      const category = button.dataset.strategicFilter;
+      content.querySelectorAll('[data-strategic-filter]').forEach(item => item.classList.toggle('active', item === button));
+      cards().forEach(card => { card.hidden = category !== 'All' && card.dataset.strategicCategory !== category; });
+    }));
+    content.querySelector('[data-strategic-sort]')?.addEventListener('change', event => {
+      const mode = event.target.value;
+      cards().sort((a, b) => mode === 'category'
+        ? a.dataset.strategicCategory.localeCompare(b.dataset.strategicCategory)
+        : mode === 'recent'
+          ? Number(b.dataset.strategicDate) - Number(a.dataset.strategicDate)
+          : Number(b.dataset.strategicRelevance) - Number(a.dataset.strategicRelevance) || Number(b.dataset.strategicDate) - Number(a.dataset.strategicDate))
+        .forEach(card => list.appendChild(card));
+    });
+  }
+
+  function render(report, company, strategicData) {
+    const strategic = strategicSection(strategicData);
+    return `<div class="company-report"><nav class="company-report-nav" aria-label="Report sections"><a href="#report-section-company">Overview</a><a href="#report-section-confidence">Confidence</a><a href="#report-section-trends">Trends & events</a><a href="#report-section-themes">Themes</a>${strategic ? '<a href="#report-section-strategic">Strategic Intelligence</a>' : ''}</nav>${sectionOne(report, company)}${sectionTwo(report)}${sectionThree(report)}${sectionFour(report)}${strategic}<p class="company-report-disclaimer">StockLayer indicators are descriptive research signals, not financial advice. Source links and methodology notes are provided so the evidence can be checked.</p></div>`;
   }
 
   async function open({ company, modal, title, subtitle, content }) {
@@ -244,9 +303,12 @@
     modal.hidden = false;
     modal.querySelector('.stocklayer-intel-modal')?.scrollTo(0, 0);
     try {
-      const report = await fetchReport(company.slug);
+      const [report, strategicData] = await Promise.all([
+        fetchReport(company.slug),
+        fetchStrategicIntelligence(company.slug)
+      ]);
       if (loadId !== activeLoadId || modal.hidden) return;
-      const reportHtml = render(report, company);
+      const reportHtml = render(report, company, strategicData);
       const steps = Array.from(content.querySelectorAll('.report-build-step'));
       for (let completed = 0; completed <= steps.length; completed++) {
         if (loadId !== activeLoadId || modal.hidden) return;
@@ -264,6 +326,7 @@
       subtitle.textContent = '';
       subtitle.hidden = true;
       content.innerHTML = reportHtml;
+      wireStrategicControls(content);
       content.removeAttribute('aria-busy');
     } catch (error) {
       if (loadId !== activeLoadId || modal.hidden) return;
