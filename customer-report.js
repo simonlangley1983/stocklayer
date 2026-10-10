@@ -255,8 +255,8 @@
           step.classList.toggle('is-active', index === completed);
           step.querySelector('span').textContent = index < completed ? 'Complete' : index === completed ? 'Preparing' : '';
         });
-        // Keep a brief visible loading state without holding a ready report back.
-        await new Promise(resolve => window.setTimeout(resolve, completed === steps.length ? 0 : 220));
+        // Include the final preparation pause while Finalising report is active.
+        await new Promise(resolve => window.setTimeout(resolve, completed === steps.length ? 0 : completed === steps.length - 1 ? 3200 : 700));
       }
       if (loadId !== activeLoadId || modal.hidden) return;
       title.hidden = false;
