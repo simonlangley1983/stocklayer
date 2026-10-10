@@ -6238,27 +6238,38 @@
     },
     {
       "date": "2026-10-09",
-      "dailyScore": 50.1,
+      "dailyScore": 49.7,
       "dailyLabel": "Neutral / mixed",
       "rollingScore": 47.8,
-      "confidence": 11.4,
+      "confidence": 23.8,
       "confidenceBand": "low",
       "coverageStatus": "ok",
       "collectionCompleteness": 0.75,
-      "candidateCount": 55,
-      "eligibleArticleCount": 1,
-      "storyCount": 1,
-      "effectiveStoryCount": 1.0,
-      "sourceCount": 1,
+      "candidateCount": 57,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 1,
+      "neutralStoryCount": 2,
       "negativeStoryCount": 0,
-      "dispersion": 0.0,
+      "dispersion": 0.0168,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 52,
+        "ambiguous_company_without_alias": 53,
         "missing_company_alias": 2
       },
       "topStories": [
+        {
+          "id": "07fb40d115d75972",
+          "storyClusterId": "story-002",
+          "title": "HSBC Holdings plc (HSBA.L) stock price, news, quote and history",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE0wQkpLY0hLem5jVFVOZThkTldPQTFPNnYxVk9fZ0FWSkdWd0ZlcTFkQzAyQ2pBNHI5NGJKV3VIQV9pbjdfWVRWNVprdDhuYVo0WGM3Qg?oc=5",
+          "source": "sg.finance.yahoo.com",
+          "publishedAt": "2026-10-09T15:24:36Z",
+          "polarity": -0.0279,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
         {
           "id": "fb4cf1a99830102d",
           "storyClusterId": "story-001",
@@ -6277,8 +6288,9 @@
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 11.4",
+          "detail": "Confidence is 23.8",
           "evidenceArticleIds": [
+            "07fb40d115d75972",
             "fb4cf1a99830102d"
           ]
         },
@@ -6289,11 +6301,12 @@
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
+            "07fb40d115d75972",
             "fb4cf1a99830102d"
           ]
         }
       ],
-      "changeFromPreviousScoredDay": 7.7
+      "changeFromPreviousScoredDay": 7.3
     }
   ]
 }
