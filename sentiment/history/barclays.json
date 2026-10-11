@@ -5716,6 +5716,65 @@
         }
       ],
       "changeFromPreviousScoredDay": 1.9
+    },
+    {
+      "date": "2026-10-10",
+      "dailyScore": 49.1,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.7,
+      "confidence": 11.5,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 33,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 30,
+        "missing_company_alias": 2
+      },
+      "topStories": [
+        {
+          "id": "3d358ed9b8bc7f26",
+          "storyClusterId": "story-001",
+          "title": "Diluted shares outstanding of Barclays PLC Sponsored ADR – HAN:BCY2",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQbWtQZmQtTXhKV3hXQ29ZeUJQSUMwdW1JNXFWWkFJRlZiZlBrbjVQcGFFejlFZUxMbUZzNDNRdllGQ0g0NmVsNGFfZDZSbzgxLXdhMXZ1Z19aRzNEemNxUlE5RXFneGdTQTJnTUtVM2xCUllXbTdfRHktZzN5T29SQTRDWEJSSVBxUmV2dF9CeGdOTEMtMm1nMktPM0dLMTFoREE?oc=5",
+          "source": "tradingview.com",
+          "publishedAt": "2026-10-10T20:23:20Z",
+          "polarity": -0.0515,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 11.5",
+          "evidenceArticleIds": [
+            "3d358ed9b8bc7f26"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "3d358ed9b8bc7f26"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -3.5
     }
   ]
 }
