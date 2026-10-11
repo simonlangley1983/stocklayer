@@ -3202,35 +3202,49 @@
     },
     {
       "date": "2026-10-10",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.9,
-      "confidence": 0.0,
+      "dailyScore": 64.0,
+      "dailyLabel": "Positive",
+      "rollingScore": 52.5,
+      "confidence": 19.1,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 0,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
-      "positiveStoryCount": 0,
+      "candidateCount": 1,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 1,
       "neutralStoryCount": 0,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {},
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "f171ca65b9b3b97c",
+          "storyClusterId": "story-001",
+          "title": "J Sainsbury (LON:SBRY) Earns \"Buy\" Rating from Deutsche Bank Aktiengesellschaft",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPTV96MEpFbXRXcEs5QWZrdGJ5Q3NPNnVQaXNoYm93Q3E4dDZwZE15T09XdVVKRTZROGpGaElLdWk4bFFUU3FMdEZ5WWNfZ2VFT2hwYllQUks5YkhkMTlwbXR0NWFJeDRZV1BYXy05RE1oXzg5d0tHdXdxbjQtbHkwVnRsWFFNTEQ1YWRSSTdCQ2FMcDFRZnRybXVWeWdaMUVUcHpRZEtabWlxN1RMN2ZiUmRJcjhkZkd0MHkwejE3OTREMW9kMkpvRGNRU24yQjBwZnFZ?oc=5",
+          "source": "marketbeat.com",
+          "publishedAt": "2026-10-10T07:00:00Z",
+          "polarity": 0.8401,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 19.1",
+          "evidenceArticleIds": [
+            "f171ca65b9b3b97c"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": 8.1
     }
   ]
 }

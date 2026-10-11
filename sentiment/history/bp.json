@@ -4673,27 +4673,38 @@
     },
     {
       "date": "2026-10-10",
-      "dailyScore": 52.4,
+      "dailyScore": 47.3,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 54.9,
-      "confidence": 11.9,
+      "rollingScore": 54.2,
+      "confidence": 25.6,
       "confidenceBand": "low",
       "coverageStatus": "ok",
       "collectionCompleteness": 0.75,
-      "candidateCount": 44,
-      "eligibleArticleCount": 1,
-      "storyCount": 1,
-      "effectiveStoryCount": 1.0,
-      "sourceCount": 1,
+      "candidateCount": 39,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
       "positiveStoryCount": 0,
       "neutralStoryCount": 1,
-      "negativeStoryCount": 0,
-      "dispersion": 0.0,
+      "negativeStoryCount": 1,
+      "dispersion": 0.2554,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 21,
-        "missing_company_alias": 22
+        "ambiguous_company_without_alias": 17,
+        "missing_company_alias": 20
       },
       "topStories": [
+        {
+          "id": "654d8ec8f106a658",
+          "storyClusterId": "story-002",
+          "title": "BP Exits Bay du Nord Oil Project, Leaving Equinor as Sole Owner",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPQUJZaS1yeFMteU1TTjRLQVY1QnBZV3R0bzNkVlhwd0pfcUZLQmhpdGx6WkRsaTg5UWxSTml5akhVY2lmdDBodDNZSUVJSDNqdjNUSzVlZ1lSbklCd25jd2p1ZTFNN0M5c3llZTY2ZlJsWGhLeUZnUmdvcVdac1QzVTN5em1icXRHNE5vaTFlVVFiVlVkTE1R?oc=5",
+          "source": "energynow.ca",
+          "publishedAt": "2026-10-10T13:15:55Z",
+          "polarity": -0.3651,
+          "sentiment": "Negative",
+          "publisherCount": 1
+        },
         {
           "id": "d8bf5e8d5f6dc79b",
           "storyClusterId": "story-001",
@@ -4712,8 +4723,9 @@
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 11.9",
+          "detail": "Confidence is 25.6",
           "evidenceArticleIds": [
+            "654d8ec8f106a658",
             "d8bf5e8d5f6dc79b"
           ]
         },
@@ -4724,11 +4736,12 @@
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
+            "654d8ec8f106a658",
             "d8bf5e8d5f6dc79b"
           ]
         }
       ],
-      "changeFromPreviousScoredDay": -1.2
+      "changeFromPreviousScoredDay": -6.3
     }
   ]
 }
