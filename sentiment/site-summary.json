@@ -3,7 +3,7 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-10-11T19:28:34.181119Z",
+  "generatedAt": "2026-10-11T21:02:02.457994Z",
   "asOfDate": "2026-10-10",
   "companyCount": 100,
   "companies": {
@@ -36,22 +36,28 @@
       "ticker": "SHEL.L",
       "slug": "shell",
       "date": "2026-10-10",
-      "dailyScore": 59.3,
-      "dailyLabel": "Slightly positive",
-      "rollingScore": 57.5,
-      "confidence": 26.4,
+      "dailyScore": 60.6,
+      "dailyLabel": "Positive",
+      "rollingScore": 57.7,
+      "confidence": 26.8,
       "confidenceBand": "low",
       "coverageStatus": "ok",
       "storyCount": 2,
       "sourceCount": 2,
-      "changeFromPreviousScoredDay": 0.2,
+      "changeFromPreviousScoredDay": 1.5,
       "flags": [
+        {
+          "type": "merger_acquisition",
+          "direction": "neutral",
+          "severity": "high",
+          "status": "possible"
+        },
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 26.4"
+          "detail": "Confidence is 26.8"
         },
         {
           "type": "collection_degraded",
@@ -150,7 +156,7 @@
       "confidenceBand": "medium",
       "coverageStatus": "ok",
       "storyCount": 24,
-      "sourceCount": 31,
+      "sourceCount": 32,
       "changeFromPreviousScoredDay": 4.0,
       "flags": [
         {
@@ -1582,22 +1588,22 @@
       "ticker": "PSH.L",
       "slug": "pershing-square",
       "date": "2026-10-10",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.3,
-      "confidence": 0.0,
+      "dailyScore": 49.6,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.2,
+      "confidence": 15.3,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -0.7,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "Confidence is 15.3"
         }
       ]
     },
@@ -1606,22 +1612,22 @@
       "ticker": "PSN.L",
       "slug": "persimmon",
       "date": "2026-10-10",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 49.7,
-      "confidence": 0.0,
+      "dailyScore": 65.4,
+      "dailyLabel": "Positive",
+      "rollingScore": 51.7,
+      "confidence": 19.6,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 14.7,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "Confidence is 19.6"
         }
       ]
     },
@@ -2255,11 +2261,11 @@
       "dailyScore": 49.5,
       "dailyLabel": "Neutral / mixed",
       "rollingScore": 50.3,
-      "confidence": 62.9,
+      "confidence": 62.7,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 26,
-      "sourceCount": 21,
+      "storyCount": 25,
+      "sourceCount": 20,
       "changeFromPreviousScoredDay": -9.4,
       "flags": [
         {
