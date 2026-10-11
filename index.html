@@ -6,7 +6,7 @@
   <title>StockLayer UK</title>
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <meta name="referrer" content="origin">
-  <link rel="stylesheet" href="/stocklayer.css?v=20261011-18">
+  <link rel="stylesheet" href="/stocklayer.css?v=20261011-20">
 
   <style>
     body {
@@ -9522,6 +9522,7 @@
 
     function buildCompanyCard(company, displayIndex = 0) {
       const slug = company.slug;
+      const companyReportUrl = `/company-report.html?stock=${encodeURIComponent(slug)}`;
       const card = document.createElement('div');
       const detailsOpen = state.view === 'grid' || state.openCompanySlugs.has(slug);
       card.className = `card mobile-sort-${state.sort}${detailsOpen ? ' details-open' : ''}${slug === 'intercontinental-hotels' ? ' company-name-compact' : ''}`;
@@ -9672,7 +9673,7 @@
           ${renderLogo(company)}
           <div class="company-identity">
             <div class="card-title-row">
-              <h3><button class="company-report-link" type="button" aria-label="Generate AI investment report for ${escapeHtml(companyDisplayName)}">${escapeHtml(companyDisplayName)}</button></h3>
+              <h3><a class="company-report-link" href="${companyReportUrl}" aria-label="Open Company Intelligence report for ${escapeHtml(companyDisplayName)}">${escapeHtml(companyDisplayName)}</a></h3>
             </div>
             ${state.sort === 'globalMarketCapRank' ? `<small class="ftse-company-value">${escapeHtml(currentMarketCapText)}</small>` : ''}
             <small class="company-meta">
@@ -9751,7 +9752,7 @@
       card.querySelectorAll('.methodology-button').forEach(methodologyButton => {
         methodologyButton.addEventListener('click', event => {
           event.stopPropagation();
-          openMethodologyModal(company);
+          window.location.href = companyReportUrl;
         });
         methodologyButton.addEventListener('keydown', event => {
           event.stopPropagation();
@@ -9761,7 +9762,6 @@
       card.querySelectorAll('.company-report-link').forEach(reportLink => {
         reportLink.addEventListener('click', event => {
           event.stopPropagation();
-          openMethodologyModal(company);
         });
       });
 
@@ -9772,13 +9772,13 @@
         growthPotentialMetric.setAttribute('aria-label', `View StockLayer growth intelligence for ${company.companyName || company.ticker || slug}`);
         growthPotentialMetric.addEventListener('click', event => {
           event.stopPropagation();
-          openMethodologyModal(company);
+          window.location.href = companyReportUrl;
         });
         growthPotentialMetric.addEventListener('keydown', event => {
           event.stopPropagation();
           if (event.key === 'Enter' || event.key === ' ') {
             event.preventDefault();
-            openMethodologyModal(company);
+            window.location.href = companyReportUrl;
           }
         });
       }
@@ -10516,7 +10516,7 @@
     loadCompanies();
   </script>
   <script src="sentiment-intelligence.js?v=20260908-clean-3" defer></script>
-  <script src="customer-report.js?v=20261011-executive-summary-2" defer></script>
+  <script src="customer-report.js?v=20261011-company-report-page-3" defer></script>
   <script src="hero-climbers.js?v=20260909-layout-2"></script>
   <script src="hero-visibility.js?v=20261004-mobile-fit"></script>
 </body>

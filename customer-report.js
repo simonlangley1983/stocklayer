@@ -116,6 +116,7 @@
     const paths = groups.filter(group => group.length > 1).map(group =>
       `<path class="report-chart-line" d="${group.map((point, index) => `${index ? 'L' : 'M'}${x(point.date).toFixed(1)},${y(point.value).toFixed(1)}`).join(' ')}"/>`
     ).join('');
+    const pointMarkers = values.map(point => `<circle class="report-chart-point" cx="${x(point.date).toFixed(1)}" cy="${y(point.value).toFixed(1)}" r="3"><title>${escapeHtml(`${fmtDate(point.date)}: ${Math.round(point.value)}/100`)}</title></circle>`).join('');
     const eventMarkers = (options.events || []).filter(event => {
       const time = Date.parse(`${event.date}T12:00:00Z`);
       return time >= minDate && time <= maxDate;
@@ -145,7 +146,7 @@
       const anchor = index === 0 ? 'start' : index === selectedTicks.length - 1 ? 'end' : 'middle';
       return `<text x="${(pad.left + plotWidth * progress).toFixed(1)}" y="${height - 10}" text-anchor="${anchor}">${escapeHtml(tick.label)}</text>`;
     }).join('');
-    return `<svg class="company-report-chart" viewBox="0 0 ${width} ${height}" role="img" aria-label="${escapeHtml(options.label || 'Score over time')}">${ticks}${eventMarkers}${paths}${axisLabels}</svg>`;
+    return `<svg class="company-report-chart" viewBox="0 0 ${width} ${height}" role="img" aria-label="${escapeHtml(options.label || 'Score over time')}">${ticks}${eventMarkers}${paths}${pointMarkers}${axisLabels}</svg>`;
   }
 
   function multiLineAnnualChart(reports) {
@@ -266,7 +267,7 @@
   function strategicCard(initiative) {
     const evidence = Array.isArray(initiative.evidence) ? initiative.evidence : [];
     const date = strategicDate(initiative);
-    return `<article class="report-strategic-card" data-strategic-category="${escapeHtml(initiative.category || 'Other')}" data-strategic-date="${date}" data-strategic-relevance="${Number(initiative.relevancyScore) || 0}"><div class="report-strategic-card-heading"><div><span>${escapeHtml(initiative.category || 'Other')}</span><h4>${escapeHtml(initiative.name || 'Untitled initiative')}</h4></div><small>${evidence.length} source${evidence.length === 1 ? '' : 's'}</small></div>${initiative.summary ? `<p>${escapeHtml(initiative.summary)}</p>` : ''}<div class="report-strategic-meta">${initiative.activityStage ? `<span><b>Stage:</b> ${escapeHtml(initiative.activityStage)}</span>` : ''}${initiative.investmentSummary ? `<span><b>Investment:</b> ${escapeHtml(initiative.investmentSummary)}</span>` : ''}</div>${strategicEvidence(evidence)}</article>`;
+    return `<article class="report-strategic-card" data-strategic-category="${escapeHtml(initiative.category || 'Other')}" data-strategic-date="${date}" data-strategic-relevance="${Number(initiative.relevancyScore) || 0}"><details><summary><span class="report-strategic-category">${escapeHtml(initiative.category || 'Other')}</span><strong>${escapeHtml(initiative.name || 'Untitled initiative')}</strong><small>${evidence.length} source${evidence.length === 1 ? '' : 's'}</small></summary><div class="report-strategic-card-body">${initiative.summary ? `<p>${escapeHtml(initiative.summary)}</p>` : ''}<div class="report-strategic-meta">${initiative.activityStage ? `<span><b>Stage:</b> ${escapeHtml(initiative.activityStage)}</span>` : ''}${initiative.investmentSummary ? `<span><b>Investment:</b> ${escapeHtml(initiative.investmentSummary)}</span>` : ''}</div>${strategicEvidence(evidence)}</div></details></article>`;
   }
 
   function strategicSection(data) {
@@ -350,6 +351,34 @@
     });
   }
 
+  function wireSectionNavigation(content) {
+    const links = [...content.querySelectorAll('.company-report-nav a[href^="#"]')];
+    if (!links.length || !('IntersectionObserver' in window)) return;
+    const byId = new Map(links.map(link => [link.getAttribute('href').slice(1), link]));
+    const sections = [...byId.keys()].map(id => document.getElementById(id)).filter(Boolean);
+    const setActive = id => links.forEach(link => link.classList.toggle('is-active', link === byId.get(id)));
+    const observer = new IntersectionObserver(entries => {
+      const visible = entries.filter(entry => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (visible?.target?.id) setActive(visible.target.id);
+    }, { rootMargin: '-18% 0px -68% 0px', threshold: [0, .1, .25] });
+    sections.forEach(section => observer.observe(section));
+    setActive(sections[0]?.id);
+  }
+
+  async function load(slug) {
+    const [report, strategicData, growthConfidenceHistory] = await Promise.all([
+      fetchReport(slug),
+      fetchStrategicIntelligence(slug),
+      fetchGrowthConfidenceHistory()
+    ]);
+    return { report, strategicData, growthConfidenceHistory };
+  }
+
+  function wireReportInteractions(content) {
+    wireStrategicControls(content);
+    wireSectionNavigation(content);
+  }
+
   function sectionExecutiveSummary(report, company, strategicData, growthConfidenceHistory) {
     const item = report.company || {};
     const confidence = confidenceWithStrategicMomentum(report.overallConfidence || {}, strategicData);
@@ -380,7 +409,7 @@
 
   function render(report, company, strategicData, growthConfidenceHistory) {
     const strategic = strategicSection(strategicData);
-    return `<div class="company-report"><nav class="company-report-nav" aria-label="Report sections"><a href="#report-section-summary">Summary</a><a href="#report-section-growth-history">Growth confidence</a><a href="#report-section-company">Overview</a><a href="#report-section-confidence">Confidence</a><a href="#report-section-trends">Trends & events</a><a href="#report-section-themes">Themes</a>${strategic ? '<a href="#report-section-strategic">Strategic Intelligence</a>' : ''}</nav>${sectionExecutiveSummary(report, company, strategicData, growthConfidenceHistory)}${sectionGrowthConfidenceHistory(growthConfidenceHistory, company.slug)}${sectionOne(report, company)}${sectionTwo(report, strategicData)}${sectionThree(report)}${sectionFour(report)}${strategic}<p class="company-report-disclaimer">StockLayer indicators are descriptive research signals, not financial advice. Source links and methodology notes are provided so the evidence can be checked.</p></div>`;
+    return `<div class="company-report"><nav class="company-report-nav" aria-label="Report sections"><a href="#report-section-summary">Summary</a><a href="#report-section-growth-history">Growth</a><a href="#report-section-company">Overview</a><a href="#report-section-confidence">Confidence</a><a href="#report-section-trends">Signals</a><a href="#report-section-themes">Annual reports</a>${strategic ? '<a href="#report-section-strategic">Strategic Intelligence</a>' : ''}</nav>${sectionExecutiveSummary(report, company, strategicData, growthConfidenceHistory)}${sectionGrowthConfidenceHistory(growthConfidenceHistory, company.slug)}${sectionOne(report, company)}${sectionTwo(report, strategicData)}${sectionThree(report)}${sectionFour(report)}${strategic}<p class="company-report-disclaimer">StockLayer indicators are descriptive research signals, not financial advice. Source links and methodology notes are provided so the evidence can be checked.</p></div>`;
   }
 
   async function open({ company, modal, title, subtitle, content }) {
@@ -433,11 +462,7 @@
     modal.hidden = false;
     modal.querySelector('.stocklayer-intel-modal')?.scrollTo(0, 0);
     try {
-      const [report, strategicData, growthConfidenceHistory] = await Promise.all([
-        fetchReport(company.slug),
-        fetchStrategicIntelligence(company.slug),
-        fetchGrowthConfidenceHistory()
-      ]);
+      const { report, strategicData, growthConfidenceHistory } = await load(company.slug);
       if (loadId !== activeLoadId || modal.hidden) return;
       const reportHtml = render(report, company, strategicData, growthConfidenceHistory);
       const hasStrategicIntelligence = Array.isArray(strategicData?.initiatives) && strategicData.initiatives.length > 0;
@@ -469,7 +494,7 @@
       content.innerHTML = reportHtml;
       modal.classList.remove('is-building-report');
       dialog?.classList.remove('is-building-report');
-      wireStrategicControls(content);
+      wireReportInteractions(content);
       content.removeAttribute('aria-busy');
     } catch (error) {
       if (loadId !== activeLoadId || modal.hidden) return;
@@ -489,6 +514,6 @@
     }
   }
 
-  window.StockLayerCompanyReport = { open, render, lineChart, multiLineAnnualChart, getSummary };
+  window.StockLayerCompanyReport = { open, load, render, wireReportInteractions, lineChart, multiLineAnnualChart, getSummary };
   preloadSummaries();
 })();

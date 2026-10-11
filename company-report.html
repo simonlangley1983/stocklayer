@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="StockLayer Company Intelligence report">
+  <title>Company Intelligence | StockLayer</title>
+  <link rel="stylesheet" href="/stocklayer.css?v=20261011-20">
+</head>
+<body class="company-report-page">
+  <header class="company-report-site-header">
+    <div class="company-report-site-header-inner">
+      <a class="company-report-wordmark" href="/" aria-label="StockLayer home"><img src="/images/stocklayer-wordmark.png" alt="StockLayer"></a>
+      <nav aria-label="Primary navigation">
+        <a href="/">Home</a><a href="/how/">How it works</a><a href="/methodology/">Methodology</a><a href="/insights/">Insights</a><a href="/about/">About</a>
+      </nav>
+      <a class="company-report-back-link" href="/">Back to company list</a>
+    </div>
+  </header>
+  <main class="company-report-page-main">
+    <div id="company-report-page-loading" class="company-report-page-loading" role="status">Preparing company intelligence report?</div>
+    <article id="company-report-page-article" hidden>
+      <header class="company-report-publication-header">
+        <div class="company-report-publication-heading">
+          <p class="company-report-publication-kicker">StockLayer research</p>
+          <h1 id="company-report-page-title">Company Intelligence</h1>
+          <p id="company-report-page-subtitle"></p>
+        </div>
+        <dl class="company-report-publication-meta">
+          <div><dt>Report updated</dt><dd id="company-report-page-updated">Loading</dd></div>
+          <div id="company-report-page-provider" hidden><dt>Strategic Intelligence</dt><dd>Enhanced by <a href="https://signalstrata.io/" target="_blank" rel="noopener noreferrer"><img src="/images/signalstrata-logo.png" alt="SignalStrata"></a></dd></div>
+        </dl>
+      </header>
+      <div id="company-report-page-content"></div>
+    </article>
+  </main>
+  <script src="/customer-report.js?v=20261011-company-report-page-3" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const slug = new URLSearchParams(window.location.search).get('stock') || 'astrazeneca';
+      const loading = document.getElementById('company-report-page-loading');
+      const article = document.getElementById('company-report-page-article');
+      const title = document.getElementById('company-report-page-title');
+      const subtitle = document.getElementById('company-report-page-subtitle');
+      const updated = document.getElementById('company-report-page-updated');
+      const provider = document.getElementById('company-report-page-provider');
+      const content = document.getElementById('company-report-page-content');
+      try {
+        const { report, strategicData, growthConfidenceHistory } = await window.StockLayerCompanyReport.load(slug);
+        const company = { ...(report.company || {}), slug };
+        const companyName = company.companyName || company.name || slug;
+        const ticker = company.ticker || 'Ticker unavailable';
+        title.textContent = `${companyName} | Company Intelligence`;
+        subtitle.textContent = `${ticker}${company.sector ? ` | ${company.sector}` : ''}${company.ftseRank ? ` | UK 100 rank #${company.ftseRank}` : ''}`;
+        const synchronised = strategicData?.lastSynchronised || growthConfidenceHistory?.generatedAt || report.generatedAt;
+        updated.textContent = synchronised ? new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }).format(new Date(synchronised)) : 'Not supplied';
+        provider.hidden = !(Array.isArray(strategicData?.initiatives) && strategicData.initiatives.length);
+        content.innerHTML = window.StockLayerCompanyReport.render(report, company, strategicData, growthConfidenceHistory);
+        window.StockLayerCompanyReport.wireReportInteractions(content);
+        document.title = `${companyName} | Company Intelligence | StockLayer`;
+        loading.hidden = true;
+        article.hidden = false;
+      } catch (error) {
+        loading.className = 'company-report-page-error';
+        loading.innerHTML = `<strong>Company report unavailable</strong><p>${String(error.message || error)}</p><a href="/">Return to the company list</a>`;
+      }
+    });
+  </script>
+</body>
+</html>
