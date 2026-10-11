@@ -2315,6 +2315,124 @@ body.company-page .strip-card { border-radius: 0; box-shadow: none; }
   .report-theme-change > span { grid-column: 1 / -1; text-align: left; }
 }
 
+/* Dedicated Company Intelligence report: explicit publication typography and hierarchy.
+   This is deliberately scoped so the existing site pages and report modal retain their styles. */
+body.company-report-page {
+  margin: 0;
+  font-family: Inter, Aptos, "Segoe UI", Roboto, Arial, sans-serif;
+  background: #F4F6F9;
+  color: #102747;
+}
+
+.company-report-page .company-report-site-header {
+  background: #FFFFFF;
+  border-bottom: 1px solid #D8E1EC;
+}
+
+.company-report-page .company-report-publication-header {
+  position: relative;
+  padding: 0 0 30px 22px;
+  border-bottom: 1px solid #B9C9DA;
+}
+
+.company-report-page .company-report-publication-header::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 30px 0;
+  width: 5px;
+  background: #1466D9;
+}
+
+.company-report-page .company-report-publication-header h1,
+.company-report-page .company-report-section h3,
+.company-report-page .company-report-section h4,
+.company-report-page .report-growth-history-latest strong,
+.company-report-page .report-growth-history-stats strong,
+.company-report-page .report-confidence-score strong {
+  font-family: Inter, Aptos, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.company-report-page .company-report-publication-header h1 {
+  font-weight: 800;
+}
+
+.company-report-page .company-report-section h3 {
+  font-weight: 800;
+  line-height: 1.12;
+}
+
+.company-report-page .company-report-section h4 {
+  font-weight: 750;
+}
+
+.company-report-page .company-report-section > header > p,
+.company-report-page .report-executive-grid p,
+.company-report-page .report-strategic-card-body,
+.company-report-page .company-report-intro,
+.company-report-page .company-report-lead {
+  font-family: Inter, Aptos, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.company-report-page .report-executive-summary {
+  padding: 32px;
+  border: 1px solid #C9DDF6;
+  border-left: 4px solid #1466D9;
+  background: #F7FBFF;
+}
+
+.company-report-page .report-executive-grid {
+  max-width: none;
+  border-top-color: #C9DDF6;
+}
+
+.company-report-page .report-executive-grid strong,
+.company-report-page .report-executive-grid p {
+  border-bottom-color: #DCE8F5;
+}
+
+.company-report-page .company-report-section {
+  padding-bottom: 48px;
+}
+
+.company-report-page .company-report-section:not(.report-executive-summary) {
+  padding-top: 8px;
+}
+
+.company-report-page .company-report-chart-card {
+  padding: 24px;
+  border: 1px solid #D8E1EC;
+  background: #FFFFFF;
+}
+
+.company-report-page .report-confidence-hero {
+  padding: 26px;
+  border: 1px solid #D8E1EC;
+  background: #FFFFFF;
+}
+
+.company-report-page .company-report-profile dl {
+  background: #FFFFFF;
+}
+
+.company-report-page .report-strategic-card summary {
+  transition: background-color .16s ease;
+}
+
+.company-report-page .report-strategic-card summary:hover {
+  background: #F7FAFE;
+}
+
+.company-report-page .report-strategic-card-body {
+  font-size: 15px;
+}
+
+@media (max-width: 640px) {
+  .company-report-page .company-report-publication-header { padding-left: 16px; }
+  .company-report-page .report-executive-summary { padding: 24px 18px; }
+  .company-report-page .company-report-chart-card,
+  .company-report-page .report-confidence-hero { padding: 18px; }
+}
+
 /* Strategic Intelligence inside the established company AI report. */
 .report-strategic-section { scroll-margin-top: 20px; }
 .report-strategic-summary { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin:18px 0; }
