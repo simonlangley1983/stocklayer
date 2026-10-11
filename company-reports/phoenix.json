@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-11T08:50:42.627142Z",
+  "generatedAt": "2026-10-11T11:31:23.763157Z",
   "company": {
     "companyName": "Standard Life PLC",
     "ticker": "SDLF.L",
@@ -22,9 +22,9 @@
     "periodStart": "2026-06-30",
     "periodEnd": "2026-10-10",
     "observationCount": 99,
-    "scoredDayCount": 19,
-    "latestScore": 43.8,
-    "latestScoreDate": "2026-10-09",
+    "scoredDayCount": 20,
+    "latestScore": 49.5,
+    "latestScoreDate": "2026-10-10",
     "series": [
       {
         "date": "2026-06-30",
@@ -910,12 +910,12 @@
       },
       {
         "date": "2026-10-10",
-        "dailyScore": null,
-        "rollingScore": 48.7,
-        "storyCount": 0,
-        "sourceCount": 0,
-        "confidence": 0.0,
-        "coverageStatus": "no_coverage"
+        "dailyScore": 49.5,
+        "rollingScore": 48.8,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1583,17 +1583,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 42.8,
+    "score": 42.6,
     "label": "Mixed",
-    "evidenceCoverage": 98,
+    "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.5,
+        "score": 51.4,
         "weight": 0.4,
-        "reliability": 0.95,
-        "detail": "Recency-weighted average of 19 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 1.0,
+        "detail": "Recency-weighted average of 20 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
