@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-10-11T11:31:21.215986Z",
+  "generatedAt": "2026-10-11T13:26:53.132982Z",
   "asOfDate": "2026-10-10",
   "companies": {
     "astrazeneca": {
@@ -937,50 +937,26 @@
       "ticker": "BARC.L",
       "slug": "barclays",
       "date": "2026-10-10",
-      "dailyScore": 49.1,
-      "dailyLabel": "Neutral / mixed",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
       "rollingScore": 49.7,
-      "confidence": 11.5,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": -3.5,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 11.5",
-          "evidenceArticleIds": [
-            "3d358ed9b8bc7f26"
-          ]
-        },
-        {
-          "type": "collection_degraded",
-          "direction": "neutral",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "3d358ed9b8bc7f26"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "3d358ed9b8bc7f26",
-          "storyClusterId": "story-001",
-          "title": "Diluted shares outstanding of Barclays PLC Sponsored ADR – HAN:BCY2",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQbWtQZmQtTXhKV3hXQ29ZeUJQSUMwdW1JNXFWWkFJRlZiZlBrbjVQcGFFejlFZUxMbUZzNDNRdllGQ0g0NmVsNGFfZDZSbzgxLXdhMXZ1Z19aRzNEemNxUlE5RXFneGdTQTJnTUtVM2xCUllXbTdfRHktZzN5T29SQTRDWEJSSVBxUmV2dF9CeGdOTEMtMm1nMktPM0dLMTFoREE?oc=5",
-          "source": "tradingview.com",
-          "publishedAt": "2026-10-10T20:23:20Z",
-          "polarity": -0.0515,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "compass": {
       "companyName": "Compass Group",
