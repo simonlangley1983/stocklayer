@@ -5113,25 +5113,25 @@
     },
     {
       "date": "2026-10-10",
-      "dailyScore": 59.3,
-      "dailyLabel": "Slightly positive",
-      "rollingScore": 57.5,
-      "confidence": 26.4,
+      "dailyScore": 60.6,
+      "dailyLabel": "Positive",
+      "rollingScore": 57.7,
+      "confidence": 26.8,
       "confidenceBand": "low",
       "coverageStatus": "ok",
       "collectionCompleteness": 0.75,
-      "candidateCount": 19,
+      "candidateCount": 17,
       "eligibleArticleCount": 2,
       "storyCount": 2,
       "effectiveStoryCount": 2.0,
       "sourceCount": 2,
-      "positiveStoryCount": 1,
-      "neutralStoryCount": 1,
+      "positiveStoryCount": 2,
+      "neutralStoryCount": 0,
       "negativeStoryCount": 0,
-      "dispersion": 0.3199,
+      "dispersion": 0.267,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 15,
-        "missing_company_alias": 2
+        "ambiguous_company_without_alias": 14,
+        "missing_company_alias": 1
       },
       "topStories": [
         {
@@ -5146,27 +5146,37 @@
           "publisherCount": 1
         },
         {
-          "id": "3b73d4316a662352",
+          "id": "d7a67d96bd673bec",
           "storyClusterId": "story-001",
-          "title": "Shell acquires waste oil recycling company EcoOils",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQbHg0QUVhVmM2ZnkwSUNMbkVoOTk3SmkzUHk0dnRTMlZRdVBmSFA5SW0wVUIwQ0FPYjlkSXRpeVZORnFBaVRZU3g3TDhpUEsxRlgtZDJwdGN0c185bHBRZzlTRWMyQkNIUFVLUEpOSDVXSzFERDVwVDRQdVpBQVNWeENNXzRuVDk4U1lhcU1BdFhsV1BJNUItODYzM2c0QQ?oc=5",
-          "source": "biodieselmagazine.com",
-          "publishedAt": "2026-10-10T02:42:56Z",
-          "polarity": 0.052,
-          "sentiment": "Neutral / mixed",
+          "title": "Shell plc agrees to buy 30% of Bay du Nord before 2027 investment decision",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE00Q2ZUS2YySGNWeXcwcmJjMzk4d19CTVhvdmJ3MFJEeHAtUlVaRG9GTDhEQWJPbGw1N2VHcEt0RzRYMVhxQmZ4NEw4RF9IUjNYbVY0V2J4eFlycFBuR0JacldJcGVsTkhwQmRacEc2dw?oc=5",
+          "source": "mugglehead.com",
+          "publishedAt": "2026-10-10T01:54:00Z",
+          "polarity": 0.1578,
+          "sentiment": "Slightly positive",
           "publisherCount": 1
         }
       ],
       "flags": [
         {
+          "type": "merger_acquisition",
+          "direction": "neutral",
+          "severity": "high",
+          "status": "possible",
+          "evidenceArticleIds": [
+            "d7a67d96bd673bec"
+          ],
+          "sourceCount": 1
+        },
+        {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 26.4",
+          "detail": "Confidence is 26.8",
           "evidenceArticleIds": [
             "93939e5e143e6259",
-            "3b73d4316a662352"
+            "d7a67d96bd673bec"
           ]
         },
         {
@@ -5177,11 +5187,11 @@
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
             "93939e5e143e6259",
-            "3b73d4316a662352"
+            "d7a67d96bd673bec"
           ]
         }
       ],
-      "changeFromPreviousScoredDay": 0.2
+      "changeFromPreviousScoredDay": 1.5
     }
   ]
 }

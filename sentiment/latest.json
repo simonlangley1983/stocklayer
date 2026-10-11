@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-10-11T19:28:34.181119Z",
+  "generatedAt": "2026-10-11T21:02:02.457994Z",
   "asOfDate": "2026-10-10",
   "companies": {
     "astrazeneca": {
@@ -97,25 +97,35 @@
       "ticker": "SHEL.L",
       "slug": "shell",
       "date": "2026-10-10",
-      "dailyScore": 59.3,
-      "dailyLabel": "Slightly positive",
-      "rollingScore": 57.5,
-      "confidence": 26.4,
+      "dailyScore": 60.6,
+      "dailyLabel": "Positive",
+      "rollingScore": 57.7,
+      "confidence": 26.8,
       "confidenceBand": "low",
       "coverageStatus": "ok",
       "storyCount": 2,
       "sourceCount": 2,
-      "changeFromPreviousScoredDay": 0.2,
+      "changeFromPreviousScoredDay": 1.5,
       "flags": [
+        {
+          "type": "merger_acquisition",
+          "direction": "neutral",
+          "severity": "high",
+          "status": "possible",
+          "evidenceArticleIds": [
+            "d7a67d96bd673bec"
+          ],
+          "sourceCount": 1
+        },
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 26.4",
+          "detail": "Confidence is 26.8",
           "evidenceArticleIds": [
             "93939e5e143e6259",
-            "3b73d4316a662352"
+            "d7a67d96bd673bec"
           ]
         },
         {
@@ -126,7 +136,7 @@
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
             "93939e5e143e6259",
-            "3b73d4316a662352"
+            "d7a67d96bd673bec"
           ]
         }
       ],
@@ -143,14 +153,14 @@
           "publisherCount": 1
         },
         {
-          "id": "3b73d4316a662352",
+          "id": "d7a67d96bd673bec",
           "storyClusterId": "story-001",
-          "title": "Shell acquires waste oil recycling company EcoOils",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQbHg0QUVhVmM2ZnkwSUNMbkVoOTk3SmkzUHk0dnRTMlZRdVBmSFA5SW0wVUIwQ0FPYjlkSXRpeVZORnFBaVRZU3g3TDhpUEsxRlgtZDJwdGN0c185bHBRZzlTRWMyQkNIUFVLUEpOSDVXSzFERDVwVDRQdVpBQVNWeENNXzRuVDk4U1lhcU1BdFhsV1BJNUItODYzM2c0QQ?oc=5",
-          "source": "biodieselmagazine.com",
-          "publishedAt": "2026-10-10T02:42:56Z",
-          "polarity": 0.052,
-          "sentiment": "Neutral / mixed",
+          "title": "Shell plc agrees to buy 30% of Bay du Nord before 2027 investment decision",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE00Q2ZUS2YySGNWeXcwcmJjMzk4d19CTVhvdmJ3MFJEeHAtUlVaRG9GTDhEQWJPbGw1N2VHcEt0RzRYMVhxQmZ4NEw4RF9IUjNYbVY0V2J4eFlycFBuR0JacldJcGVsTkhwQmRacEc2dw?oc=5",
+          "source": "mugglehead.com",
+          "publishedAt": "2026-10-10T01:54:00Z",
+          "polarity": 0.1578,
+          "sentiment": "Slightly positive",
           "publisherCount": 1
         }
       ]
@@ -366,7 +376,7 @@
       "confidenceBand": "medium",
       "coverageStatus": "ok",
       "storyCount": 24,
-      "sourceCount": 31,
+      "sourceCount": 32,
       "changeFromPreviousScoredDay": 4.0,
       "flags": [
         {
@@ -420,7 +430,7 @@
         },
         {
           "id": "2c0a8a533c0ae822",
-          "storyClusterId": "story-003",
+          "storyClusterId": "story-002",
           "title": "Reyes ties Korea single-season hits lead after teammates set up final at-bat - CHOSUNBIZ",
           "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNeVpQZG9EVG9FSkNDMFJrZ0FyV2NNMGJIamh3VndWaHE1ZGRfSDU1U2lmazBjNEVjR2NYSW8wWEVQaHZOdktUQ2NpeTdKZ2RIQmVQZVdDWnhzM1NOLUQ4bk01TDZBNVlVOG5GNVJiV3V6VWNvaFMyY2ZDM0ZnbWJVYUNval84NXp5bGwzTFRidkV3Y2vSAZMBQVVfeXFMTXlaUGRvRFRvRUpDQzBSa2dBcldjTTBiSGpod1Z3VmhxNWRkX0g1NVNpZmswYzRFY0djWElvMFhFUGh2TnZLVENjaXk3SmdkSEJlUGVXQ1p4czNTTi1EOG5NNUw2QTVZVThuRjVSYld1elVjb2hTMmNmQzNGZ21iVWFDb2pfODV6eWxsM0xUYnZFd2Nr?oc=5",
           "source": "biz.chosun.com",
@@ -2982,52 +2992,80 @@
       "ticker": "PSH.L",
       "slug": "pershing-square",
       "date": "2026-10-10",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.3,
-      "confidence": 0.0,
+      "dailyScore": 49.6,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.2,
+      "confidence": 15.3,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -0.7,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.3",
+          "evidenceArticleIds": [
+            "ebc84eb85b2ec67e"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "ebc84eb85b2ec67e",
+          "storyClusterId": "story-001",
+          "title": "Pershing Square Holdings, Ltd. (PSHZF) latest stock news and headlines",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1pbUJrdXF0ZjdfZHJWYjVpbDVpTFRrdGZHR2xvQ0Z6SllPVTdrRlhJTXY5ZHREeXdQeWVzWDhKTGRBOEV6WlluYkxWdFBZUzJXWnd0QTd5b0oxZw?oc=5",
+          "source": "uk.finance.yahoo.com",
+          "publishedAt": "2026-10-10T18:19:52Z",
+          "polarity": -0.022,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
     },
     "persimmon": {
       "companyName": "Persimmon PLC",
       "ticker": "PSN.L",
       "slug": "persimmon",
       "date": "2026-10-10",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 49.7,
-      "confidence": 0.0,
+      "dailyScore": 65.4,
+      "dailyLabel": "Positive",
+      "rollingScore": 51.7,
+      "confidence": 19.6,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 14.7,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 19.6",
+          "evidenceArticleIds": [
+            "b2a29da0f11c4fa0"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "b2a29da0f11c4fa0",
+          "storyClusterId": "story-001",
+          "title": "Swansea Council secures landmark affordable housing agreement with Persimmon",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQLVFZaXl6ejBOLVZ6MUhrdDJ3ZjQxMkR4WEVFbGJXalNmaUFsSF9rS3RyU3NIU3hlMXRRR1ZuRzNnenJGa3BnVXJkcC1ZVkhVN1Yta0V4Y2lqbXRtaGhGYm1IVlBTd1hmWnRvbl8zTVV0ektkRXcyaFYwMWpwRExJN3p3cWxMU2tadzBHNFFSaHJYc1Z3eVJ5MkRSNTBtZHBHRUxSUTZuQk14TDRIZU5FTGdIT1A5eTdH?oc=5",
+          "source": "herald.wales",
+          "publishedAt": "2026-10-10T09:50:14Z",
+          "polarity": 0.927,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        }
+      ]
     },
     "phoenix": {
       "companyName": "Standard Life PLC",
@@ -4199,11 +4237,11 @@
       "dailyScore": 49.5,
       "dailyLabel": "Neutral / mixed",
       "rollingScore": 50.3,
-      "confidence": 62.9,
+      "confidence": 62.7,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 26,
-      "sourceCount": 21,
+      "storyCount": 25,
+      "sourceCount": 20,
       "changeFromPreviousScoredDay": -9.4,
       "flags": [
         {
@@ -4257,14 +4295,14 @@
         },
         {
           "id": "fa1c268a2d67b84f",
-          "storyClusterId": "story-023",
+          "storyClusterId": "story-024",
           "title": "Aberdeen expects as always - but new CEO Adrian Bevington is well placed to deliver",
           "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPNk8yY3daYXVaeFJ2bjdtbWVqbFdQT2ZRaFhMV3dILUFjR3hjT0U2RWtaLWxIc1lJQTJXekh4enNTM2w1aWlTRHkxUXlKRmNyemNLZnUxRkFjdHJ2eGlMUFVfQWZXYVAxb1VUTS1lX2tXOWRHMWVsVlBnd0JteWFZWWJKNTFZUVVzRlNuNjRyMDVROVlQVW5FLXN3dkQtOWN3cklQU0U3azlhUVlx?oc=5",
           "source": "heraldscotland.com",
           "publishedAt": "2026-10-10T20:02:26Z",
           "polarity": 0.7843,
           "sentiment": "Very positive",
-          "publisherCount": 2
+          "publisherCount": 1
         },
         {
           "id": "a221bd1d82d258ae",
