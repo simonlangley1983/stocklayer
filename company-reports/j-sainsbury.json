@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-11T15:16:35.161002Z",
+  "generatedAt": "2026-10-11T16:44:57.673846Z",
   "company": {
     "companyName": "J Sainsbury PLC",
     "ticker": "SBRY.L",
@@ -22,9 +22,9 @@
     "periodStart": "2026-06-30",
     "periodEnd": "2026-10-10",
     "observationCount": 87,
-    "scoredDayCount": 22,
-    "latestScore": 55.9,
-    "latestScoreDate": "2026-10-08",
+    "scoredDayCount": 23,
+    "latestScore": 64.0,
+    "latestScoreDate": "2026-10-10",
     "series": [
       {
         "date": "2026-06-30",
@@ -802,12 +802,12 @@
       },
       {
         "date": "2026-10-10",
-        "dailyScore": null,
-        "rollingScore": 50.9,
-        "storyCount": 0,
-        "sourceCount": 0,
-        "confidence": 0.0,
-        "coverageStatus": "no_coverage"
+        "dailyScore": 64.0,
+        "rollingScore": 52.5,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 19.1,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -872,16 +872,6 @@
         "significance": 0.297
       },
       {
-        "date": "2026-09-25",
-        "type": "press_story",
-        "title": "J Sainsbury (LON:SBRY) Share Price Crosses Above 200-Day Moving Average - Time to Sell?",
-        "source": "marketbeat.com",
-        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNbnNMaHZEY3VEOG9peTJoUmYwQmo5c3BURVQwM1Z5STVmU05VS2hxdXFNX3F6MkxRemVRZ2YybEhXOVktZ2YxNndtMzZyYjhTYjBrV2lfaXkxQVBBMGlob3NLZm1RcE0tZjl3ZHhOOGRHR1RsY0RLcHpYRXU2U21TZUZkNEh0UUYtcy0zeHA0QmxYTGk5QzFwc1FjZGpUa09hRVJsMGRXVFlLWVZTRUx3TGJKY3JkWFI4Nk16M3A5M2IyeEpYQkkxRXhzYm54WXlkcDFlYUxSamNpQQ?oc=5",
-        "direction": "Slightly positive",
-        "detail": null,
-        "significance": 0.282
-      },
-      {
         "date": "2026-10-05",
         "type": "merger_acquisition",
         "title": "PRESS: J Sainsbury held merger talks with rival Morrisons - Sky News",
@@ -910,6 +900,16 @@
         "direction": "Positive",
         "detail": null,
         "significance": 0.631
+      },
+      {
+        "date": "2026-10-10",
+        "type": "press_story",
+        "title": "J Sainsbury (LON:SBRY) Earns \"Buy\" Rating from Deutsche Bank Aktiengesellschaft",
+        "source": "marketbeat.com",
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPTV96MEpFbXRXcEs5QWZrdGJ5Q3NPNnVQaXNoYm93Q3E4dDZwZE15T09XdVVKRTZROGpGaElLdWk4bFFUU3FMdEZ5WWNfZ2VFT2hwYllQUks5YkhkMTlwbXR0NWFJeDRZV1BYXy05RE1oXzg5d0tHdXdxbjQtbHkwVnRsWFFNTEQ1YWRSSTdCQ2FMcDFRZnRybXVWeWdaMUVUcHpRZEtabWlxN1RMN2ZiUmRJcjhkZkd0MHkwejE3OTREMW9kMkpvRGNRU24yQjBwZnFZ?oc=5",
+        "direction": "Very positive",
+        "detail": null,
+        "significance": 0.99
       }
     ]
   },
@@ -1475,17 +1475,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 32.0,
+    "score": 32.5,
     "label": "Low",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 50.6,
+        "score": 51.7,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 21 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 22 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1622,16 +1622,6 @@
       "significance": 0.297
     },
     {
-      "date": "2026-09-25",
-      "type": "press_story",
-      "title": "J Sainsbury (LON:SBRY) Share Price Crosses Above 200-Day Moving Average - Time to Sell?",
-      "source": "marketbeat.com",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNbnNMaHZEY3VEOG9peTJoUmYwQmo5c3BURVQwM1Z5STVmU05VS2hxdXFNX3F6MkxRemVRZ2YybEhXOVktZ2YxNndtMzZyYjhTYjBrV2lfaXkxQVBBMGlob3NLZm1RcE0tZjl3ZHhOOGRHR1RsY0RLcHpYRXU2U21TZUZkNEh0UUYtcy0zeHA0QmxYTGk5QzFwc1FjZGpUa09hRVJsMGRXVFlLWVZTRUx3TGJKY3JkWFI4Nk16M3A5M2IyeEpYQkkxRXhzYm54WXlkcDFlYUxSamNpQQ?oc=5",
-      "direction": "Slightly positive",
-      "detail": null,
-      "significance": 0.282
-    },
-    {
       "date": "2026-10-05",
       "type": "merger_acquisition",
       "title": "PRESS: J Sainsbury held merger talks with rival Morrisons - Sky News",
@@ -1660,6 +1650,16 @@
       "direction": "Positive",
       "detail": null,
       "significance": 0.631
+    },
+    {
+      "date": "2026-10-10",
+      "type": "press_story",
+      "title": "J Sainsbury (LON:SBRY) Earns \"Buy\" Rating from Deutsche Bank Aktiengesellschaft",
+      "source": "marketbeat.com",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPTV96MEpFbXRXcEs5QWZrdGJ5Q3NPNnVQaXNoYm93Q3E4dDZwZE15T09XdVVKRTZROGpGaElLdWk4bFFUU3FMdEZ5WWNfZ2VFT2hwYllQUks5YkhkMTlwbXR0NWFJeDRZV1BYXy05RE1oXzg5d0tHdXdxbjQtbHkwVnRsWFFNTEQ1YWRSSTdCQ2FMcDFRZnRybXVWeWdaMUVUcHpRZEtabWlxN1RMN2ZiUmRJcjhkZkd0MHkwejE3OTREMW9kMkpvRGNRU24yQjBwZnFZ?oc=5",
+      "direction": "Very positive",
+      "detail": null,
+      "significance": 0.99
     },
     {
       "date": "2026-12-31",
