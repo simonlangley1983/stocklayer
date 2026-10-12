@@ -35,7 +35,8 @@ class ProviderError(Exception):
 def request(url, key=None):
     headers = {"User-Agent": "StockLayer company logo refresh"}
     if key:
-        if urllib.parse.urlparse(url).hostname != "api.logo.dev":
+        parsed = urllib.parse.urlparse(url)
+        if parsed.scheme != "https" or parsed.hostname != "api.logo.dev":
             raise ValueError("Refusing to send API credentials to another host")
         headers["Authorization"] = f"Bearer {key}"
     class RestrictedRedirect(urllib.request.HTTPRedirectHandler):
@@ -64,6 +65,8 @@ def request(url, key=None):
             if error.code not in (429, 500, 502, 503, 504) or attempt == 3:
                 raise ProviderError(error.code) from None
             delay = error.headers.get("Retry-After", "")
+            if not delay and error.headers.get("RateLimit-Remaining") == "0":
+                delay = error.headers.get("RateLimit-Reset", "")
             time.sleep(min(60, max(1, float(delay) if delay.isdigit() else 2 ** (attempt + 1))))
         except (urllib.error.URLError, TimeoutError):
             if attempt == 3:
@@ -114,6 +117,8 @@ def download_url(value):
 def fetch_artwork(company, previous, key, fetch=request):
     slug, domain = company["slug"], company["domain"]
     response = json.loads(fetch(f"{API}?{urllib.parse.urlencode({'domain': domain, 'nosubscribe': 'true'})}", key))
+    if not isinstance(response, dict):
+        raise ValueError("Invalid brand response")
     brand = response.get("data")
     if not isinstance(brand, dict) or brand.get("status") not in (None, "ready"):
         raise ValueError("Invalid brand response")
@@ -121,7 +126,8 @@ def fetch_artwork(company, previous, key, fetch=request):
         asset = brand.get(kind)
         if not isinstance(asset, dict) or not asset.get("url"):
             continue
-        if asset.get("source", {}).get("has_transparency") is False:
+        source = asset.get("source")
+        if isinstance(source, dict) and source.get("has_transparency") is False:
             continue
         etag = asset.get("etag")
         if previous.get("etag") == etag and previous.get("kind") == kind and previous.get("domain") == domain and previous.get("sha256"):
@@ -134,7 +140,7 @@ def fetch_artwork(company, previous, key, fetch=request):
         content = fetch(download_url(asset["url"]))
         try:
             metadata = inspect_png(content)
-        except ValueError:
+        except (ValueError, OSError):
             continue
         asset_path = f"images/company-logos/{slug}-hero.png"
         atomic_write(ROOT / asset_path, content)

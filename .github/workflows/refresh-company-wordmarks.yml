@@ -19,7 +19,7 @@ concurrency:
 jobs:
   fetch-wordmarks:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -27,12 +27,15 @@ jobs:
           python-version: "3.12"
       - name: Install image inspection dependency
         run: python -m pip install 'Pillow>=11,<13'
+      - name: Test image verification and safe fallback behaviour
+        run: python -B -m unittest discover -s tests -p test_company_wordmarks.py -v
       - name: Fetch and verify transparent artwork
         id: fetch
         continue-on-error: true
         env:
           LOGO_DEV_SECRET_KEY: ${{ secrets.LOGO_DEV_SECRET_KEY }}
           LOGO_COMPANIES: ${{ inputs.companies }}
+          PYTHONUNBUFFERED: "1"
         run: python scripts/fetch_company_wordmarks.py --slugs "$LOGO_COMPANIES"
       - name: Save verified artwork and coverage report
         uses: stefanzweifel/git-auto-commit-action@v5
@@ -40,6 +43,7 @@ jobs:
           commit_message: "Refresh verified transparent company wordmarks"
           file_pattern: images/ logos/hero-manifest.json
       - name: Export upload-ready logos
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: transparent-company-wordmarks
