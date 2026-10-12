@@ -44,6 +44,7 @@ jobs:
           file_pattern: images/ logos/hero-manifest.json
       - name: Export upload-ready logos
         if: always()
+        continue-on-error: true
         uses: actions/upload-artifact@v4
         with:
           name: transparent-company-wordmarks
@@ -52,5 +53,5 @@ jobs:
             logos/hero-manifest.json
           if-no-files-found: ignore
       - name: Report refresh failure
-        if: steps.fetch.outcome == 'failure'
+        if: always() && steps.fetch.outcome == 'failure'
         run: exit 1
