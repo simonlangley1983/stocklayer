@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-10-12T16:04:28.248127Z",
+  "generatedAt": "2026-10-12T23:32:05.432171Z",
   "date": null,
   "dateRange": {
-    "start": "2026-07-14",
-    "end": "2026-10-11"
+    "start": "2026-07-15",
+    "end": "2026-10-12"
   },
   "provider": "gdelt-doc-v2",
   "model": "ProsusAI/finbert",
   "selectedCompanyCount": 100,
   "requestedDayCount": 90,
   "requestedObservationCount": 9000,
-  "completedObservationCount": 7621,
-  "completeness": 0.8468,
+  "completedObservationCount": 7555,
+  "completeness": 0.8394,
   "minimumCompleteness": 0.9,
   "status": "degraded",
   "companies": [
@@ -21,14 +21,15 @@
       "slug": "astrazeneca",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 85,
-      "coverageDayCount": 85,
+      "completedDayCount": 84,
+      "coverageDayCount": 84,
       "failedDates": [
         "2026-08-23",
         "2026-08-24",
         "2026-08-25",
         "2026-09-02",
-        "2026-10-06"
+        "2026-10-06",
+        "2026-10-12"
       ],
       "truncatedDates": [
         "2026-10-06"
@@ -43,7 +44,6 @@
       "completedDayCount": 57,
       "coverageDayCount": 47,
       "failedDates": [
-        "2026-07-14",
         "2026-07-19",
         "2026-07-20",
         "2026-07-21",
@@ -75,7 +75,8 @@
         "2026-10-07",
         "2026-10-08",
         "2026-10-09",
-        "2026-10-10"
+        "2026-10-10",
+        "2026-10-12"
       ],
       "truncatedDates": [
         "2026-07-19",
@@ -114,8 +115,8 @@
       "slug": "hsbc",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 61,
-      "coverageDayCount": 63,
+      "completedDayCount": 60,
+      "coverageDayCount": 62,
       "failedDates": [
         "2026-07-15",
         "2026-07-16",
@@ -145,7 +146,8 @@
         "2026-10-06",
         "2026-10-07",
         "2026-10-08",
-        "2026-10-09"
+        "2026-10-09",
+        "2026-10-12"
       ],
       "truncatedDates": [
         "2026-09-15",
@@ -172,22 +174,26 @@
     },
     {
       "slug": "unilever",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 90,
-      "coverageDayCount": 87,
-      "failedDates": [],
+      "completedDayCount": 89,
+      "coverageDayCount": 86,
+      "failedDates": [
+        "2026-10-12"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "relx",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 90,
-      "coverageDayCount": 56,
-      "failedDates": [],
+      "completedDayCount": 89,
+      "coverageDayCount": 55,
+      "failedDates": [
+        "2026-10-12"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
@@ -196,7 +202,7 @@
       "slug": "british-american-tobacco",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 60,
+      "completedDayCount": 59,
       "coverageDayCount": 61,
       "failedDates": [
         "2026-08-23",
@@ -228,7 +234,8 @@
         "2026-10-07",
         "2026-10-08",
         "2026-10-09",
-        "2026-10-10"
+        "2026-10-10",
+        "2026-10-12"
       ],
       "truncatedDates": [
         "2026-09-15",
@@ -261,8 +268,8 @@
       "slug": "bp",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 62,
-      "coverageDayCount": 35,
+      "completedDayCount": 61,
+      "coverageDayCount": 34,
       "failedDates": [
         "2026-07-15",
         "2026-07-16",
@@ -291,7 +298,8 @@
         "2026-10-07",
         "2026-10-08",
         "2026-10-09",
-        "2026-10-10"
+        "2026-10-10",
+        "2026-10-12"
       ],
       "truncatedDates": [
         "2026-09-15",
@@ -321,7 +329,6 @@
       "completedDayCount": 74,
       "coverageDayCount": 73,
       "failedDates": [
-        "2026-07-14",
         "2026-07-15",
         "2026-07-16",
         "2026-08-23",
@@ -336,7 +343,8 @@
         "2026-09-11",
         "2026-09-12",
         "2026-09-13",
-        "2026-09-15"
+        "2026-09-15",
+        "2026-10-12"
       ],
       "truncatedDates": [
         "2026-09-15"
@@ -348,8 +356,8 @@
       "slug": "rolls-royce",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 83,
-      "coverageDayCount": 84,
+      "completedDayCount": 82,
+      "coverageDayCount": 83,
       "failedDates": [
         "2026-07-15",
         "2026-07-16",
@@ -357,7 +365,8 @@
         "2026-08-24",
         "2026-08-25",
         "2026-09-04",
-        "2026-09-17"
+        "2026-09-17",
+        "2026-10-12"
       ],
       "truncatedDates": [
         "2026-09-04",
@@ -370,15 +379,16 @@
       "slug": "lseg",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 84,
-      "coverageDayCount": 64,
+      "completedDayCount": 83,
+      "coverageDayCount": 63,
       "failedDates": [
         "2026-08-23",
         "2026-08-24",
         "2026-08-25",
         "2026-09-06",
         "2026-09-07",
-        "2026-09-10"
+        "2026-09-10",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -386,11 +396,13 @@
     },
     {
       "slug": "diageo",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 90,
-      "coverageDayCount": 86,
-      "failedDates": [],
+      "completedDayCount": 89,
+      "coverageDayCount": 85,
+      "failedDates": [
+        "2026-10-12"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
@@ -399,12 +411,13 @@
       "slug": "rio-tinto",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 87,
-      "coverageDayCount": 77,
+      "completedDayCount": 86,
+      "coverageDayCount": 76,
       "failedDates": [
         "2026-08-23",
         "2026-08-24",
-        "2026-08-25"
+        "2026-08-25",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -417,14 +430,14 @@
       "completedDayCount": 82,
       "coverageDayCount": 81,
       "failedDates": [
-        "2026-07-14",
         "2026-07-15",
         "2026-07-16",
         "2026-08-23",
         "2026-08-24",
         "2026-08-25",
         "2026-08-26",
-        "2026-08-27"
+        "2026-08-27",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -437,7 +450,6 @@
       "completedDayCount": 69,
       "coverageDayCount": 49,
       "failedDates": [
-        "2026-07-14",
         "2026-07-15",
         "2026-07-16",
         "2026-08-23",
@@ -457,7 +469,8 @@
         "2026-10-02",
         "2026-10-03",
         "2026-10-05",
-        "2026-10-10"
+        "2026-10-10",
+        "2026-10-12"
       ],
       "truncatedDates": [
         "2026-09-17",
@@ -476,7 +489,7 @@
       "slug": "compass",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 80,
+      "completedDayCount": 79,
       "coverageDayCount": 27,
       "failedDates": [
         "2026-08-23",
@@ -488,7 +501,8 @@
         "2026-09-06",
         "2026-09-07",
         "2026-09-10",
-        "2026-09-13"
+        "2026-09-13",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -501,9 +515,9 @@
       "completedDayCount": 87,
       "coverageDayCount": 77,
       "failedDates": [
-        "2026-07-14",
         "2026-07-15",
-        "2026-07-16"
+        "2026-07-16",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -513,12 +527,13 @@
       "slug": "lloyds",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 87,
-      "coverageDayCount": 81,
+      "completedDayCount": 86,
+      "coverageDayCount": 80,
       "failedDates": [
         "2026-08-23",
         "2026-08-24",
-        "2026-08-25"
+        "2026-08-25",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -528,8 +543,8 @@
       "slug": "3i",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 82,
-      "coverageDayCount": 40,
+      "completedDayCount": 81,
+      "coverageDayCount": 39,
       "failedDates": [
         "2026-08-23",
         "2026-08-24",
@@ -538,7 +553,8 @@
         "2026-09-05",
         "2026-09-06",
         "2026-09-07",
-        "2026-09-13"
+        "2026-09-13",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -551,14 +567,14 @@
       "completedDayCount": 82,
       "coverageDayCount": 76,
       "failedDates": [
-        "2026-07-14",
         "2026-08-23",
         "2026-08-24",
         "2026-08-25",
         "2026-08-26",
         "2026-09-03",
         "2026-09-11",
-        "2026-09-13"
+        "2026-09-13",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -568,12 +584,13 @@
       "slug": "glencore",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 87,
-      "coverageDayCount": 75,
+      "completedDayCount": 86,
+      "coverageDayCount": 74,
       "failedDates": [
         "2026-08-23",
         "2026-08-24",
-        "2026-08-25"
+        "2026-08-25",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -583,8 +600,8 @@
       "slug": "admiral",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 79,
-      "coverageDayCount": 11,
+      "completedDayCount": 78,
+      "coverageDayCount": 10,
       "failedDates": [
         "2026-07-15",
         "2026-07-16",
@@ -596,7 +613,8 @@
         "2026-09-08",
         "2026-09-09",
         "2026-09-10",
-        "2026-09-12"
+        "2026-09-12",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -609,7 +627,6 @@
       "completedDayCount": 78,
       "coverageDayCount": 54,
       "failedDates": [
-        "2026-07-14",
         "2026-08-23",
         "2026-08-24",
         "2026-08-25",
@@ -620,7 +637,8 @@
         "2026-09-07",
         "2026-09-08",
         "2026-09-10",
-        "2026-09-12"
+        "2026-09-12",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -633,12 +651,12 @@
       "completedDayCount": 84,
       "coverageDayCount": 21,
       "failedDates": [
-        "2026-07-14",
         "2026-08-23",
         "2026-08-24",
         "2026-08-25",
         "2026-09-04",
-        "2026-09-05"
+        "2026-09-05",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -646,11 +664,13 @@
     },
     {
       "slug": "anglo-american",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 90,
-      "coverageDayCount": 80,
-      "failedDates": [],
+      "completedDayCount": 89,
+      "coverageDayCount": 79,
+      "failedDates": [
+        "2026-10-12"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
@@ -659,15 +679,16 @@
       "slug": "antofagasta",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 84,
-      "coverageDayCount": 64,
+      "completedDayCount": 83,
+      "coverageDayCount": 63,
       "failedDates": [
         "2026-07-15",
         "2026-07-16",
         "2026-08-23",
         "2026-08-24",
         "2026-08-25",
-        "2026-09-03"
+        "2026-09-03",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -680,7 +701,6 @@
       "completedDayCount": 81,
       "coverageDayCount": 34,
       "failedDates": [
-        "2026-07-14",
         "2026-07-15",
         "2026-07-16",
         "2026-08-23",
@@ -688,7 +708,8 @@
         "2026-08-25",
         "2026-09-06",
         "2026-09-07",
-        "2026-09-10"
+        "2026-09-10",
+        "2026-10-12"
       ],
       "truncatedDates": [
         "2026-09-10"
@@ -700,8 +721,8 @@
       "slug": "auto-trader",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 82,
-      "coverageDayCount": 28,
+      "completedDayCount": 81,
+      "coverageDayCount": 27,
       "failedDates": [
         "2026-07-15",
         "2026-07-16",
@@ -710,7 +731,8 @@
         "2026-08-25",
         "2026-09-03",
         "2026-09-07",
-        "2026-09-13"
+        "2026-09-13",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -720,11 +742,12 @@
       "slug": "aviva",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 88,
-      "coverageDayCount": 79,
+      "completedDayCount": 87,
+      "coverageDayCount": 78,
       "failedDates": [
         "2026-07-15",
-        "2026-07-16"
+        "2026-07-16",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -737,7 +760,7 @@
       "completedDayCount": 89,
       "coverageDayCount": 52,
       "failedDates": [
-        "2026-07-14"
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -747,15 +770,16 @@
       "slug": "beazley",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 84,
-      "coverageDayCount": 67,
+      "completedDayCount": 83,
+      "coverageDayCount": 66,
       "failedDates": [
         "2026-08-23",
         "2026-08-24",
         "2026-08-25",
         "2026-09-03",
         "2026-09-05",
-        "2026-09-07"
+        "2026-09-07",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -765,7 +789,7 @@
       "slug": "british-land",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 77,
+      "completedDayCount": 76,
       "coverageDayCount": 10,
       "failedDates": [
         "2026-07-15",
@@ -780,7 +804,8 @@
         "2026-09-08",
         "2026-09-09",
         "2026-09-11",
-        "2026-09-12"
+        "2026-09-12",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -790,7 +815,7 @@
       "slug": "bt",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 80,
+      "completedDayCount": 79,
       "coverageDayCount": 21,
       "failedDates": [
         "2026-08-23",
@@ -802,7 +827,8 @@
         "2026-09-07",
         "2026-10-05",
         "2026-10-06",
-        "2026-10-07"
+        "2026-10-07",
+        "2026-10-12"
       ],
       "truncatedDates": [
         "2026-10-05",
@@ -819,7 +845,6 @@
       "completedDayCount": 80,
       "coverageDayCount": 33,
       "failedDates": [
-        "2026-07-14",
         "2026-08-23",
         "2026-08-24",
         "2026-08-25",
@@ -828,7 +853,8 @@
         "2026-09-10",
         "2026-09-12",
         "2026-09-13",
-        "2026-09-14"
+        "2026-09-14",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -838,15 +864,16 @@
       "slug": "centrica",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 84,
-      "coverageDayCount": 52,
+      "completedDayCount": 83,
+      "coverageDayCount": 51,
       "failedDates": [
         "2026-07-15",
         "2026-07-16",
         "2026-08-23",
         "2026-08-24",
         "2026-08-25",
-        "2026-09-03"
+        "2026-09-03",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -859,7 +886,6 @@
       "completedDayCount": 80,
       "coverageDayCount": 40,
       "failedDates": [
-        "2026-07-14",
         "2026-07-15",
         "2026-07-16",
         "2026-08-23",
@@ -868,7 +894,8 @@
         "2026-09-10",
         "2026-09-11",
         "2026-09-12",
-        "2026-09-13"
+        "2026-09-13",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -878,8 +905,8 @@
       "slug": "convatec",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 73,
-      "coverageDayCount": 36,
+      "completedDayCount": 72,
+      "coverageDayCount": 35,
       "failedDates": [
         "2026-07-15",
         "2026-07-16",
@@ -897,7 +924,8 @@
         "2026-09-11",
         "2026-09-12",
         "2026-09-13",
-        "2026-09-14"
+        "2026-09-14",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -907,7 +935,7 @@
       "slug": "croda-international",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 80,
+      "completedDayCount": 79,
       "coverageDayCount": 31,
       "failedDates": [
         "2026-08-23",
@@ -919,7 +947,8 @@
         "2026-09-11",
         "2026-09-12",
         "2026-09-13",
-        "2026-09-14"
+        "2026-09-14",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -927,11 +956,13 @@
     },
     {
       "slug": "dcc",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 90,
-      "coverageDayCount": 61,
-      "failedDates": [],
+      "completedDayCount": 89,
+      "coverageDayCount": 60,
+      "failedDates": [
+        "2026-10-12"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
@@ -940,7 +971,7 @@
       "slug": "diploma",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 79,
+      "completedDayCount": 78,
       "coverageDayCount": 8,
       "failedDates": [
         "2026-08-23",
@@ -953,7 +984,8 @@
         "2026-09-10",
         "2026-09-11",
         "2026-09-12",
-        "2026-09-13"
+        "2026-09-13",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -963,14 +995,15 @@
       "slug": "endeavour-mining",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 85,
-      "coverageDayCount": 49,
+      "completedDayCount": 84,
+      "coverageDayCount": 48,
       "failedDates": [
         "2026-08-23",
         "2026-08-24",
         "2026-08-25",
         "2026-09-03",
-        "2026-09-04"
+        "2026-09-04",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -978,11 +1011,13 @@
     },
     {
       "slug": "entain",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 90,
-      "coverageDayCount": 57,
-      "failedDates": [],
+      "completedDayCount": 89,
+      "coverageDayCount": 56,
+      "failedDates": [
+        "2026-10-12"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
@@ -991,7 +1026,7 @@
       "slug": "fandc-investment-trust",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 72,
+      "completedDayCount": 71,
       "coverageDayCount": 26,
       "failedDates": [
         "2026-07-15",
@@ -1011,7 +1046,8 @@
         "2026-09-10",
         "2026-09-11",
         "2026-09-12",
-        "2026-09-13"
+        "2026-09-13",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1021,12 +1057,13 @@
       "slug": "fresnillo",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 87,
-      "coverageDayCount": 56,
+      "completedDayCount": 86,
+      "coverageDayCount": 55,
       "failedDates": [
         "2026-08-23",
         "2026-08-24",
-        "2026-08-25"
+        "2026-08-25",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1036,7 +1073,7 @@
       "slug": "games-workshop",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 81,
+      "completedDayCount": 80,
       "coverageDayCount": 50,
       "failedDates": [
         "2026-08-23",
@@ -1047,7 +1084,8 @@
         "2026-09-06",
         "2026-09-07",
         "2026-09-08",
-        "2026-09-09"
+        "2026-09-09",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1055,33 +1093,39 @@
     },
     {
       "slug": "haleon",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 90,
+      "completedDayCount": 89,
       "coverageDayCount": 55,
-      "failedDates": [],
+      "failedDates": [
+        "2026-10-12"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "halma",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 90,
+      "completedDayCount": 89,
       "coverageDayCount": 43,
-      "failedDates": [],
+      "failedDates": [
+        "2026-10-12"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
     },
     {
       "slug": "hiscox",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 90,
+      "completedDayCount": 89,
       "coverageDayCount": 50,
-      "failedDates": [],
+      "failedDates": [
+        "2026-10-12"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
@@ -1090,14 +1134,15 @@
       "slug": "howden-joinery",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 85,
+      "completedDayCount": 84,
       "coverageDayCount": 30,
       "failedDates": [
         "2026-08-23",
         "2026-08-24",
         "2026-08-25",
         "2026-09-03",
-        "2026-09-07"
+        "2026-09-07",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1107,7 +1152,7 @@
       "slug": "imi",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 82,
+      "completedDayCount": 81,
       "coverageDayCount": 11,
       "failedDates": [
         "2026-08-23",
@@ -1117,7 +1162,8 @@
         "2026-09-06",
         "2026-09-07",
         "2026-09-08",
-        "2026-09-09"
+        "2026-09-09",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1130,11 +1176,11 @@
       "completedDayCount": 85,
       "coverageDayCount": 45,
       "failedDates": [
-        "2026-07-14",
         "2026-08-23",
         "2026-08-24",
         "2026-08-25",
-        "2026-09-03"
+        "2026-09-03",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1144,8 +1190,8 @@
       "slug": "informa",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 82,
-      "coverageDayCount": 68,
+      "completedDayCount": 81,
+      "coverageDayCount": 67,
       "failedDates": [
         "2026-08-23",
         "2026-08-24",
@@ -1154,7 +1200,8 @@
         "2026-09-07",
         "2026-09-08",
         "2026-10-06",
-        "2026-10-07"
+        "2026-10-07",
+        "2026-10-12"
       ],
       "truncatedDates": [
         "2026-10-06",
@@ -1170,10 +1217,10 @@
       "completedDayCount": 86,
       "coverageDayCount": 68,
       "failedDates": [
-        "2026-07-14",
         "2026-08-23",
         "2026-08-24",
-        "2026-08-25"
+        "2026-08-25",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1183,8 +1230,8 @@
       "slug": "intermediate-capital",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 83,
-      "coverageDayCount": 14,
+      "completedDayCount": 82,
+      "coverageDayCount": 13,
       "failedDates": [
         "2026-07-15",
         "2026-07-16",
@@ -1192,7 +1239,8 @@
         "2026-08-24",
         "2026-08-25",
         "2026-09-03",
-        "2026-09-05"
+        "2026-09-05",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1202,14 +1250,15 @@
       "slug": "intertek",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 85,
-      "coverageDayCount": 59,
+      "completedDayCount": 84,
+      "coverageDayCount": 58,
       "failedDates": [
         "2026-08-22",
         "2026-08-23",
         "2026-08-24",
         "2026-08-25",
-        "2026-09-05"
+        "2026-09-05",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1222,7 +1271,6 @@
       "completedDayCount": 79,
       "coverageDayCount": 31,
       "failedDates": [
-        "2026-07-14",
         "2026-07-15",
         "2026-07-16",
         "2026-08-17",
@@ -1232,7 +1280,8 @@
         "2026-08-21",
         "2026-08-23",
         "2026-08-24",
-        "2026-08-25"
+        "2026-08-25",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1242,8 +1291,8 @@
       "slug": "jd-sports-fashion",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 83,
-      "coverageDayCount": 33,
+      "completedDayCount": 82,
+      "coverageDayCount": 32,
       "failedDates": [
         "2026-07-15",
         "2026-07-16",
@@ -1251,7 +1300,8 @@
         "2026-08-24",
         "2026-08-25",
         "2026-09-03",
-        "2026-09-05"
+        "2026-09-05",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1261,12 +1311,13 @@
       "slug": "kingfisher",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 87,
-      "coverageDayCount": 82,
+      "completedDayCount": 86,
+      "coverageDayCount": 81,
       "failedDates": [
         "2026-08-23",
         "2026-08-24",
-        "2026-08-25"
+        "2026-08-25",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1276,8 +1327,8 @@
       "slug": "land-securities",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 82,
-      "coverageDayCount": 42,
+      "completedDayCount": 81,
+      "coverageDayCount": 41,
       "failedDates": [
         "2026-08-23",
         "2026-08-24",
@@ -1286,7 +1337,8 @@
         "2026-09-11",
         "2026-09-12",
         "2026-09-13",
-        "2026-09-14"
+        "2026-09-14",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1296,12 +1348,13 @@
       "slug": "legal-and-general",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 87,
-      "coverageDayCount": 83,
+      "completedDayCount": 86,
+      "coverageDayCount": 82,
       "failedDates": [
         "2026-08-23",
         "2026-08-24",
-        "2026-08-25"
+        "2026-08-25",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1314,7 +1367,6 @@
       "completedDayCount": 80,
       "coverageDayCount": 33,
       "failedDates": [
-        "2026-07-14",
         "2026-07-15",
         "2026-07-16",
         "2026-08-23",
@@ -1323,7 +1375,8 @@
         "2026-08-27",
         "2026-09-03",
         "2026-09-06",
-        "2026-09-07"
+        "2026-09-07",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1336,7 +1389,6 @@
       "completedDayCount": 81,
       "coverageDayCount": 63,
       "failedDates": [
-        "2026-07-14",
         "2026-08-23",
         "2026-08-24",
         "2026-08-25",
@@ -1344,7 +1396,8 @@
         "2026-09-11",
         "2026-09-12",
         "2026-09-13",
-        "2026-09-14"
+        "2026-09-14",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1357,11 +1410,11 @@
       "completedDayCount": 85,
       "coverageDayCount": 75,
       "failedDates": [
-        "2026-07-14",
         "2026-08-23",
         "2026-08-24",
         "2026-08-25",
-        "2026-09-03"
+        "2026-09-03",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1374,7 +1427,6 @@
       "completedDayCount": 72,
       "coverageDayCount": 27,
       "failedDates": [
-        "2026-07-14",
         "2026-07-15",
         "2026-07-16",
         "2026-08-23",
@@ -1391,7 +1443,8 @@
         "2026-09-11",
         "2026-09-12",
         "2026-09-13",
-        "2026-09-14"
+        "2026-09-14",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1401,14 +1454,15 @@
       "slug": "natwest",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 85,
-      "coverageDayCount": 84,
+      "completedDayCount": 84,
+      "coverageDayCount": 83,
       "failedDates": [
         "2026-08-23",
         "2026-08-24",
         "2026-08-25",
         "2026-09-04",
-        "2026-09-14"
+        "2026-09-14",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1418,7 +1472,7 @@
       "slug": "next",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 47,
+      "completedDayCount": 46,
       "coverageDayCount": 12,
       "failedDates": [
         "2026-07-15",
@@ -1463,7 +1517,8 @@
         "2026-10-08",
         "2026-10-09",
         "2026-10-10",
-        "2026-10-11"
+        "2026-10-11",
+        "2026-10-12"
       ],
       "truncatedDates": [
         "2026-09-15",
@@ -1504,7 +1559,6 @@
       "completedDayCount": 74,
       "coverageDayCount": 76,
       "failedDates": [
-        "2026-07-14",
         "2026-07-15",
         "2026-07-16",
         "2026-08-17",
@@ -1519,7 +1573,8 @@
         "2026-08-26",
         "2026-08-27",
         "2026-09-02",
-        "2026-10-06"
+        "2026-10-06",
+        "2026-10-12"
       ],
       "truncatedDates": [
         "2026-08-22",
@@ -1533,11 +1588,13 @@
     },
     {
       "slug": "pershing-square",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 90,
+      "completedDayCount": 89,
       "coverageDayCount": 30,
-      "failedDates": [],
+      "failedDates": [
+        "2026-10-12"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
@@ -1546,8 +1603,8 @@
       "slug": "persimmon",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 80,
-      "coverageDayCount": 76,
+      "completedDayCount": 79,
+      "coverageDayCount": 75,
       "failedDates": [
         "2026-08-23",
         "2026-08-24",
@@ -1558,7 +1615,8 @@
         "2026-09-06",
         "2026-09-07",
         "2026-09-08",
-        "2026-09-14"
+        "2026-09-14",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1568,13 +1626,14 @@
       "slug": "phoenix",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 86,
+      "completedDayCount": 85,
       "coverageDayCount": 20,
       "failedDates": [
         "2026-08-23",
         "2026-08-24",
         "2026-08-25",
-        "2026-09-14"
+        "2026-09-14",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1584,15 +1643,16 @@
       "slug": "prudential",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 84,
-      "coverageDayCount": 84,
+      "completedDayCount": 83,
+      "coverageDayCount": 83,
       "failedDates": [
         "2026-08-23",
         "2026-08-24",
         "2026-08-25",
         "2026-09-03",
         "2026-09-07",
-        "2026-09-14"
+        "2026-09-14",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1600,11 +1660,13 @@
     },
     {
       "slug": "reckitt-benckiser",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 90,
-      "coverageDayCount": 44,
-      "failedDates": [],
+      "completedDayCount": 89,
+      "coverageDayCount": 43,
+      "failedDates": [
+        "2026-10-12"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
@@ -1613,7 +1675,7 @@
       "slug": "rentokil-initial",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 80,
+      "completedDayCount": 79,
       "coverageDayCount": 37,
       "failedDates": [
         "2026-08-23",
@@ -1625,7 +1687,8 @@
         "2026-09-11",
         "2026-09-12",
         "2026-09-13",
-        "2026-09-14"
+        "2026-09-14",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1638,14 +1701,14 @@
       "completedDayCount": 82,
       "coverageDayCount": 13,
       "failedDates": [
-        "2026-07-14",
         "2026-08-23",
         "2026-08-24",
         "2026-08-25",
         "2026-08-27",
         "2026-08-29",
         "2026-09-02",
-        "2026-09-03"
+        "2026-09-03",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1655,7 +1718,7 @@
       "slug": "j-sainsbury",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 79,
+      "completedDayCount": 78,
       "coverageDayCount": 22,
       "failedDates": [
         "2026-07-15",
@@ -1668,7 +1731,8 @@
         "2026-09-11",
         "2026-09-12",
         "2026-09-13",
-        "2026-09-14"
+        "2026-09-14",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1676,11 +1740,13 @@
     },
     {
       "slug": "schroders",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 90,
-      "coverageDayCount": 75,
-      "failedDates": [],
+      "completedDayCount": 89,
+      "coverageDayCount": 74,
+      "failedDates": [
+        "2026-10-12"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
@@ -1689,7 +1755,7 @@
       "slug": "scottish-mortgage-investment-trust",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 84,
+      "completedDayCount": 83,
       "coverageDayCount": 30,
       "failedDates": [
         "2026-08-23",
@@ -1697,7 +1763,8 @@
         "2026-08-25",
         "2026-08-27",
         "2026-08-29",
-        "2026-09-07"
+        "2026-09-07",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1707,14 +1774,15 @@
       "slug": "segro",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 85,
-      "coverageDayCount": 58,
+      "completedDayCount": 84,
+      "coverageDayCount": 57,
       "failedDates": [
         "2026-08-23",
         "2026-08-24",
         "2026-08-25",
         "2026-08-27",
-        "2026-09-09"
+        "2026-09-09",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1724,11 +1792,12 @@
       "slug": "severn-trent",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 88,
-      "coverageDayCount": 69,
+      "completedDayCount": 87,
+      "coverageDayCount": 68,
       "failedDates": [
         "2026-07-15",
-        "2026-07-16"
+        "2026-07-16",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1738,13 +1807,14 @@
       "slug": "smith-and-nephew",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 86,
-      "coverageDayCount": 56,
+      "completedDayCount": 85,
+      "coverageDayCount": 55,
       "failedDates": [
         "2026-08-23",
         "2026-08-24",
         "2026-08-25",
-        "2026-08-27"
+        "2026-08-27",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1754,14 +1824,15 @@
       "slug": "smiths",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 85,
-      "coverageDayCount": 79,
+      "completedDayCount": 84,
+      "coverageDayCount": 78,
       "failedDates": [
         "2026-08-23",
         "2026-08-24",
         "2026-08-25",
         "2026-08-26",
-        "2026-08-27"
+        "2026-08-27",
+        "2026-10-12"
       ],
       "truncatedDates": [
         "2026-08-26"
@@ -1773,7 +1844,7 @@
       "slug": "spirax",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 80,
+      "completedDayCount": 79,
       "coverageDayCount": 37,
       "failedDates": [
         "2026-08-17",
@@ -1785,7 +1856,8 @@
         "2026-08-24",
         "2026-08-25",
         "2026-08-27",
-        "2026-09-02"
+        "2026-09-02",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1795,7 +1867,7 @@
       "slug": "sse",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 79,
+      "completedDayCount": 78,
       "coverageDayCount": 20,
       "failedDates": [
         "2026-08-23",
@@ -1808,7 +1880,8 @@
         "2026-09-11",
         "2026-09-12",
         "2026-09-13",
-        "2026-09-14"
+        "2026-09-14",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1818,7 +1891,7 @@
       "slug": "st-jamess-place",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 82,
+      "completedDayCount": 81,
       "coverageDayCount": 22,
       "failedDates": [
         "2026-08-23",
@@ -1828,7 +1901,8 @@
         "2026-09-11",
         "2026-09-12",
         "2026-09-13",
-        "2026-09-14"
+        "2026-09-14",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1838,8 +1912,8 @@
       "slug": "standard-chartered",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 76,
-      "coverageDayCount": 76,
+      "completedDayCount": 75,
+      "coverageDayCount": 75,
       "failedDates": [
         "2026-08-23",
         "2026-08-24",
@@ -1854,7 +1928,8 @@
         "2026-09-13",
         "2026-09-14",
         "2026-09-16",
-        "2026-10-08"
+        "2026-10-08",
+        "2026-10-12"
       ],
       "truncatedDates": [
         "2026-09-16",
@@ -1867,8 +1942,8 @@
       "slug": "tesco",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 67,
-      "coverageDayCount": 78,
+      "completedDayCount": 66,
+      "coverageDayCount": 77,
       "failedDates": [
         "2026-07-15",
         "2026-07-16",
@@ -1892,7 +1967,8 @@
         "2026-10-06",
         "2026-10-08",
         "2026-10-09",
-        "2026-10-10"
+        "2026-10-10",
+        "2026-10-12"
       ],
       "truncatedDates": [
         "2026-08-26",
@@ -1913,11 +1989,13 @@
     },
     {
       "slug": "united-utilities",
-      "status": "ok",
+      "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 90,
-      "coverageDayCount": 72,
-      "failedDates": [],
+      "completedDayCount": 89,
+      "coverageDayCount": 71,
+      "failedDates": [
+        "2026-10-12"
+      ],
       "truncatedDates": [],
       "requestCount": 0,
       "error": null
@@ -1929,10 +2007,10 @@
       "completedDayCount": 86,
       "coverageDayCount": 84,
       "failedDates": [
-        "2026-07-14",
         "2026-08-23",
         "2026-08-24",
-        "2026-08-25"
+        "2026-08-25",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1945,7 +2023,6 @@
       "completedDayCount": 79,
       "coverageDayCount": 33,
       "failedDates": [
-        "2026-07-14",
         "2026-08-23",
         "2026-08-24",
         "2026-08-25",
@@ -1955,7 +2032,8 @@
         "2026-09-11",
         "2026-09-12",
         "2026-09-13",
-        "2026-09-14"
+        "2026-09-14",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -1965,14 +2043,15 @@
       "slug": "whitbread",
       "status": "degraded",
       "requestedDayCount": 90,
-      "completedDayCount": 85,
-      "coverageDayCount": 74,
+      "completedDayCount": 84,
+      "coverageDayCount": 73,
       "failedDates": [
         "2026-08-23",
         "2026-08-24",
         "2026-08-25",
         "2026-08-27",
-        "2026-09-01"
+        "2026-09-01",
+        "2026-10-12"
       ],
       "truncatedDates": [
         "2026-09-01"
@@ -1987,7 +2066,6 @@
       "completedDayCount": 27,
       "coverageDayCount": 11,
       "failedDates": [
-        "2026-07-14",
         "2026-07-15",
         "2026-07-16",
         "2026-07-17",
@@ -2049,7 +2127,8 @@
         "2026-09-11",
         "2026-09-12",
         "2026-09-13",
-        "2026-09-14"
+        "2026-09-14",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -2062,7 +2141,6 @@
       "completedDayCount": 46,
       "coverageDayCount": 26,
       "failedDates": [
-        "2026-07-14",
         "2026-07-15",
         "2026-07-16",
         "2026-07-17",
@@ -2105,7 +2183,8 @@
         "2026-08-23",
         "2026-08-24",
         "2026-08-25",
-        "2026-08-26"
+        "2026-08-26",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -2118,7 +2197,6 @@
       "completedDayCount": 42,
       "coverageDayCount": 24,
       "failedDates": [
-        "2026-07-14",
         "2026-07-15",
         "2026-07-16",
         "2026-07-17",
@@ -2165,7 +2243,8 @@
         "2026-08-27",
         "2026-08-28",
         "2026-08-29",
-        "2026-08-30"
+        "2026-08-30",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -2178,7 +2257,6 @@
       "completedDayCount": 37,
       "coverageDayCount": 29,
       "failedDates": [
-        "2026-07-14",
         "2026-07-15",
         "2026-07-16",
         "2026-07-17",
@@ -2230,7 +2308,8 @@
         "2026-09-01",
         "2026-09-02",
         "2026-09-03",
-        "2026-09-04"
+        "2026-09-04",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -2243,7 +2322,6 @@
       "completedDayCount": 16,
       "coverageDayCount": 24,
       "failedDates": [
-        "2026-07-14",
         "2026-07-15",
         "2026-07-16",
         "2026-07-17",
@@ -2316,7 +2394,8 @@
         "2026-09-25",
         "2026-10-02",
         "2026-10-03",
-        "2026-10-06"
+        "2026-10-06",
+        "2026-10-12"
       ],
       "truncatedDates": [
         "2026-09-15",
@@ -2341,7 +2420,6 @@
       "completedDayCount": 37,
       "coverageDayCount": 11,
       "failedDates": [
-        "2026-07-14",
         "2026-07-15",
         "2026-07-16",
         "2026-07-17",
@@ -2393,7 +2471,8 @@
         "2026-09-01",
         "2026-09-02",
         "2026-09-03",
-        "2026-09-04"
+        "2026-09-04",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -2406,7 +2485,6 @@
       "completedDayCount": 19,
       "coverageDayCount": 25,
       "failedDates": [
-        "2026-07-14",
         "2026-07-15",
         "2026-07-16",
         "2026-07-17",
@@ -2476,7 +2554,8 @@
         "2026-10-07",
         "2026-10-08",
         "2026-10-09",
-        "2026-10-10"
+        "2026-10-10",
+        "2026-10-12"
       ],
       "truncatedDates": [
         "2026-09-17",
@@ -2501,7 +2580,6 @@
       "completedDayCount": 27,
       "coverageDayCount": 17,
       "failedDates": [
-        "2026-07-14",
         "2026-07-15",
         "2026-07-16",
         "2026-07-17",
@@ -2563,7 +2641,8 @@
         "2026-09-11",
         "2026-09-12",
         "2026-09-13",
-        "2026-09-14"
+        "2026-09-14",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -2576,7 +2655,6 @@
       "completedDayCount": 32,
       "coverageDayCount": 12,
       "failedDates": [
-        "2026-07-14",
         "2026-07-15",
         "2026-07-16",
         "2026-07-17",
@@ -2633,7 +2711,8 @@
         "2026-09-06",
         "2026-09-07",
         "2026-09-08",
-        "2026-09-14"
+        "2026-09-14",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -2646,7 +2725,6 @@
       "completedDayCount": 37,
       "coverageDayCount": 14,
       "failedDates": [
-        "2026-07-14",
         "2026-07-15",
         "2026-07-16",
         "2026-07-17",
@@ -2698,7 +2776,8 @@
         "2026-09-01",
         "2026-09-02",
         "2026-09-03",
-        "2026-09-04"
+        "2026-09-04",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
@@ -2711,7 +2790,6 @@
       "completedDayCount": 32,
       "coverageDayCount": 19,
       "failedDates": [
-        "2026-07-14",
         "2026-07-15",
         "2026-07-16",
         "2026-07-17",
@@ -2768,7 +2846,8 @@
         "2026-09-06",
         "2026-09-07",
         "2026-09-08",
-        "2026-09-09"
+        "2026-09-09",
+        "2026-10-12"
       ],
       "truncatedDates": [],
       "requestCount": 0,
