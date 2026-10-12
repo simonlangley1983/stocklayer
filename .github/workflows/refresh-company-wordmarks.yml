@@ -1,0 +1,52 @@
+name: Refresh transparent company wordmarks
+
+on:
+  workflow_dispatch:
+    inputs:
+      companies:
+        description: "Company slugs separated by commas (leave blank for all companies)"
+        required: false
+        default: ""
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: transparent-company-wordmarks
+  cancel-in-progress: false
+
+jobs:
+  fetch-wordmarks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install image inspection dependency
+        run: python -m pip install 'Pillow>=11,<13'
+      - name: Fetch and verify transparent artwork
+        id: fetch
+        continue-on-error: true
+        env:
+          LOGO_DEV_SECRET_KEY: ${{ secrets.LOGO_DEV_SECRET_KEY }}
+          LOGO_COMPANIES: ${{ inputs.companies }}
+        run: python scripts/fetch_company_wordmarks.py --slugs "$LOGO_COMPANIES"
+      - name: Save verified artwork and coverage report
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Refresh verified transparent company wordmarks"
+          file_pattern: images/ logos/hero-manifest.json
+      - name: Export upload-ready logos
+        uses: actions/upload-artifact@v4
+        with:
+          name: transparent-company-wordmarks
+          path: |
+            images/company-logos/*.png
+            logos/hero-manifest.json
+          if-no-files-found: ignore
+      - name: Report refresh failure
+        if: steps.fetch.outcome == 'failure'
+        run: exit 1
