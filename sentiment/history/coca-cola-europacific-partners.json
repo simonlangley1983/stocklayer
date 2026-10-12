@@ -1439,6 +1439,76 @@
         }
       ],
       "changeFromPreviousScoredDay": null
+    },
+    {
+      "date": "2026-10-12",
+      "dailyScore": 59.8,
+      "dailyLabel": "Slightly positive",
+      "rollingScore": 52.3,
+      "confidence": 35.3,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 4,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 0,
+      "dispersion": 0.2534,
+      "rejectedCandidateCounts": {
+        "missing_company_alias": 2
+      },
+      "topStories": [
+        {
+          "id": "b72227f20f99b58a",
+          "storyClusterId": "story-002",
+          "title": "Coca-Cola Europacific Partners Advances EUR 1 Billion Share Buyback Programme",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPcXd4NTJBSG9oYTEwcU9qMFpVUDd0U05sTnFtdHhxSDZ3MmlQYkwzMFRocFBMNUoybHV5UXFmMGxfRzVTUWhIUTJrbWU5N2o4Yk1Yc3ptU3RlamQzSUlSalVSUWFGR2o0SmtTMm5DQXJ5dW1nTUxOeXJnN0JHSzNMc1BINlFHWS0wVHYzWTk5VE5wRDlSVUtPUWZ0SDVJVk54U1Axb0cxeW9xX2NrSDlOVWgzUUNvM1JIaGRvQnRpanNrRWlTRlZSa3RnMA?oc=5",
+          "source": "tipranks.com",
+          "publishedAt": "2026-10-12T13:03:45Z",
+          "polarity": 0.6437,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "014656ded414ef85",
+          "storyClusterId": "story-001",
+          "title": "Coca-Cola Europacific Partners buys back 198,944 shares",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQ0VyaUwtZEVDaldub3FWcjU3NGZLUjRhVEpkN1EyU2tqNUZSZ05SZzF2aXA1OGtLeW1ZV0xSZkdqSjQ4Zi1ocW9OS3pqWjJHa1MwQ0R3S1dCSFJpajR6OE5OU2FoMWV4cEdwSlU5MHY0aXRpbHZHd0VLeUpTQjVub0NtN3d2bDlzZ3JpNTNwbnZIVHAtTS1NQzF5b0VlOF9kTGRoRHp3bHFQcF8zOEVJ?oc=5",
+          "source": "investing.com",
+          "publishedAt": "2026-10-12T12:59:03Z",
+          "polarity": 0.1369,
+          "sentiment": "Slightly positive",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "share_buyback",
+          "direction": "positive",
+          "severity": "medium",
+          "status": "possible",
+          "evidenceArticleIds": [
+            "b72227f20f99b58a"
+          ],
+          "sourceCount": 1
+        },
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 35.3",
+          "evidenceArticleIds": [
+            "b72227f20f99b58a",
+            "014656ded414ef85"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 9.1
     }
   ]
 }
