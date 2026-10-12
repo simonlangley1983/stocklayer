@@ -7759,37 +7759,49 @@
     },
     {
       "date": "2026-10-11",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 54.6,
-      "confidence": 0.0,
+      "dailyScore": 63.6,
+      "dailyLabel": "Positive",
+      "rollingScore": 55.7,
+      "confidence": 19.0,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
       "candidateCount": 1,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
-      "positiveStoryCount": 0,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 1,
       "neutralStoryCount": 0,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
-      "rejectedCandidateCounts": {
-        "missing_company_alias": 1
-      },
-      "topStories": [],
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "bca8afb6dc60cb99",
+          "storyClusterId": "story-001",
+          "title": "Guinea’s $300 Million Glencore Bauxite Deal Opens a New Test for State-Owned Mining and Local Alumina Processing",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOOFQ5S0ZXbndBbk1GdHpQeEFCVENuSlBkazdWdjVtRjBDSGVENUlSRmdtSHA3ZS1Xdl84SlREdFBiSnFrUUw4amIzNlRDMHZscUo3eHVocWRnOWNUUmI2TFBENTBoSjM3YU42N3JORFl4SHFKNkhPdjJQZTV0bDlRQmZwXzJ1UVMtclFnS01IbXlxdnFNNXVQUGxpTDIwVHRocEZBOVhhSFVWRlNieE1tX1BUZnVlS05sVklNb1pqZGxXR25VcXVINlNPZVRMS1VDR0FfU3ZaTnBWbDYyamtNaDRwRXVDVVdWWFo4QXBn?oc=5",
+          "source": "wansom.ai",
+          "publishedAt": "2026-10-11T03:42:51Z",
+          "polarity": 0.8169,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 19.0",
+          "evidenceArticleIds": [
+            "bca8afb6dc60cb99"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": 14.1
     }
   ]
 }

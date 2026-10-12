@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-10-12T06:35:10.116718Z",
+  "generatedAt": "2026-10-12T13:23:49.596269Z",
   "asOfDate": "2026-10-11",
   "companies": {
     "astrazeneca": {
@@ -345,102 +345,26 @@
       "ticker": "BATS.L",
       "slug": "british-american-tobacco",
       "date": "2026-10-11",
-      "dailyScore": 41.7,
-      "dailyLabel": "Slightly negative",
-      "rollingScore": 48.3,
-      "confidence": 64.3,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "storyCount": 38,
-      "sourceCount": 35,
-      "changeFromPreviousScoredDay": -15.0,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 49.6,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "sentiment_drop",
-          "direction": "negative",
-          "severity": "high",
-          "status": "calculated",
-          "detail": "Daily score decreased by 15.0 points",
-          "evidenceArticleIds": [
-            "32b70f9c01b1d7c1",
-            "fdd9f59391f9b759",
-            "6509f2d27a53eece",
-            "46f161c1b79c18f7",
-            "eb6b90dc1adcbe5b"
-          ]
-        },
-        {
-          "type": "collection_degraded",
+          "type": "no_coverage",
           "direction": "neutral",
-          "severity": "medium",
+          "severity": "low",
           "status": "calculated",
-          "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "32b70f9c01b1d7c1",
-            "fdd9f59391f9b759",
-            "6509f2d27a53eece",
-            "46f161c1b79c18f7",
-            "eb6b90dc1adcbe5b"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "32b70f9c01b1d7c1",
-          "storyClusterId": "story-016",
-          "title": "KT's Choi Won-jun Throws Bat After Walk, Reprimanded by Captain Jang Sung-woo",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOVF9HUFRLT1JuaHl2WDNyQ3EzaGwtejY1QllwaWZkdXRqLWd2Y0dJZ1h3SG83VVNjS1lpT0ZnYUlMbnRITDJoNkIyWWdCSE50YjdXeTFGMWIxeDMtcnM1b3dPWXcyS3ZNYjVQSGpQRXJOZGV4VWFBZ2tIOGhYUWRlZHdYMFIwdw?oc=5",
-          "source": "chosun.com",
-          "publishedAt": "2026-10-11T09:37:18Z",
-          "polarity": -0.9244,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "fdd9f59391f9b759",
-          "storyClusterId": "story-007",
-          "title": "COURT ROUND-UP: Baseball bat thug tries to murder homeless man; and threats to staff at hospital among latest cases",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNM0R2cDB2V0tUNUNYeWs0cEVHRHVhcVlLUlh3bFJDS1ZMWGx1d2VDNXlsaVZKbDRxdnpDMHp4SzVWc2hhSFJoUGxsNUJCa0p5RFVGSWtpc2VJMFVqcFctTDdCZ0FhZkxhdDRlSDRCYk9PcVNKQzEwckR0ZXd6dnpWLTM2aUVZbjI4N1lFbkN0d1Nrb2QtclQzdUpoRGMyZVdfVWkzVWI5b0tnZnFy?oc=5",
-          "source": "inverness-courier.co.uk",
-          "publishedAt": "2026-10-11T04:30:00Z",
-          "polarity": -0.9159,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "6509f2d27a53eece",
-          "storyClusterId": "story-031",
-          "title": "Choi Won-jun, involved in the \"bat-smashing controversy,\" bowed his head: \"A clear mistake due to a lack of emotional control → I sincerely apologize\"",
-          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9XWnBXLVBhUENjaWFqM2pLY05GMFd3UXRtS3A5SGV3ZEVGc04tdkdlZzRFU2lsWjBYencyQVJfeXlrRGVvbmQ1cUU4b2owY3BBdVRuQmJSek83czdET0k0bFJWUFJmYlRZeDFtbmNvS2hBOWFuVV9ITXFR?oc=5",
-          "source": "starnewskorea.com",
-          "publishedAt": "2026-10-11T17:14:06Z",
-          "polarity": -0.894,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "46f161c1b79c18f7",
-          "storyClusterId": "story-004",
-          "title": "Dodgers prospect suffers freak kneecap injury after trying to avoid bat dog",
-          "url": "https://news.google.com/rss/articles/CBMiwgpBVV95cUxNdDNEYjRBQm5zQzhsdnJLT3hqTW9HMmNDel81dEk5V0hib2dCandhd2h6WXFZMkV6Wmpkd2pkdFYtLU91WktELWF3U25RTXFBUHI5NDFsWTd6UncySDA3eG1JYmdKQTZKdWlzY2xpUURkcHRhYUlDN1hYMDhjNXFKZ0pLOVBBUzdxd041dlRGekxxU2plbkpBclMtRXY4dGR1OG5vRDViUHhXWnU1S1ZpZHl1NEhsNHd4OER3dmhmZFhQcmh3X1VVN09QenJaX2FYS1l3cWZmc21RaTdoNlpvbVB5eDVxQzJaZlU3U3pnci1meFVmNF9HSmJCN0JwdFlxbGNmbmZEZGVFUzlkaUJvVk1TWGZDQ1VaZkdpdXJhSnlweldWREVUanRraTRqakpHVFEtN2FiSXJEUmU4UU5qZnRVN2ZNdFdmT2dKMTRjRm1MT1dYTG5WZEwzZ2FqS0stZjBCT0xvc2FWYjV1cmdocnVDUWszY1daNmVkOVZCcDNaXzcxekQtc3ZqSC1adDl4LTVGU2JvVVkwNm52aTVfUzJlSDd0VThsTDVuLU9tWnJEa2JwcElkd3ZYWl8wTExqX19abDBPbndYYmotTXJfaV9ON1pEQmlkNEVaNjlMbkZOcS14Y0VqeWtDMGhjRXc0Y0ZfdXM1NDkzWEE0X3ZQa1BqMHhybzd0dFN5Tzc5ZmhFYTd1WkFtSzVLdkMwblRPREJRNk1uR3hiRUpaNTBXRll4LTY1TTgxZmtJQTZFZ0tiTTFEVzF4OE12SnpmdDl1TGIxSFhzYUZCYnQzUlk4MDgydXpKamlyd2RfdlFNc3VTX0d1UEFCb08yenJmWGUzdUtTTkluV0R5WnRQOWZROC0yUU0wby1pNm02T3lEZGJtd2RSdXVSWDNFSk5yemNQR1FUSkFUWUxnT3EzNFpCLWZsRmJ0YlNOam40Unlpd25WZGlNemdjR1VmRDBwOU01Z3FQOXZINXRweXJoenRQbzJicFpVcVp2MDhIWWRjYmpURGI0UGhENXRsWW42Y0d4alhUU1lBMWpMZUJpamdNT3V0LTgzNTRpUTRrZ2xiNTdJWi04YmhNR3FUMVVQTXBMSFlfNDJmOUh4Sjc0NkNhdmZ1MXZqMGoxOHFWQ1pKcFJsMUpMc3lLRkotR1FranIyb0M4bF9EUGdqV29tVG5LYkNXcHUzOVFod1ctd1JuV1NWYVFtcmtoT0xjNVlhd3V6b29GRkxZdGtDM1ZtMF9WZXRCSDhMUWIxWjdqcmJudHMtZktwQ0d4RFBoOVlDT19EeE95MGt4Z0xwVGEtQV82bEZnSTgxd1dPUG1CWXpwanJFQ0REcENqU3JndDlScUVTUE41eTJxS3ViZVc1bW9uSEkwdlFISFMzYXgyN3J2WDZrZ2xsaldZRU5FUkFSZWZON3RPdTBZWGdTVlVfUXlOeFJCeGNPTkIzYnc3V2ZsdGJONlhGLU92N2NiMTczcVRCMk9PSUhkSUV6VklhbWhrSWVmVHBEbDBJTXlUbGdSMFBuWTdFZndPNXZDVEVseUZNMnBPenIzaHUtRm5DNnBfYlJhMk9MWElqX0NUZHltSjBaMGJjOFVNUFlQM0RFS05ieGN4ZTk4UzBRa09vd21JLUhidTQwTUw4RU9MTlJaZE5NZFZLMWpJcElxN2pVT0hJR2d4VnRsSUwwQUlOY2tzOVJKZzJNbThpakdFOGtmWDV4ZDkxejdtd1dMekt3V1Q4TWVYYnRVQU5aejdvZk1sVDMwOFdHZVN6ZndvTTJaaHNCQQ?oc=5",
-          "source": "abc7.com",
-          "publishedAt": "2026-10-11T01:24:56Z",
-          "polarity": -0.8844,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "eb6b90dc1adcbe5b",
-          "storyClusterId": "story-009",
-          "title": "Woman struck in head by bat at Yankees game suing for $10M: Complaint",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNSkZVRDFLbGpvSTUtUFB5Y2FOY0VKVEg2LVNWQnV1UE5XbWlDYy1JRGdNX1JPb0FUejRIVTVId2pjY0FkV1l6NURYRXppbkhnNjJvQUpocjVCM3ZLMlRzWW9LN3hUSEdPd2Z2Q21LSnNKa1JoTHZjU3lXRGU3LWhDVl9WQkVHRFJuNDAzZS1Kb9IBlAFBVV95cUxNZ1VNZV9IdUVDa1ZjNXV5M3NsTV9EVmtKR1FicThaczlyLWlZZE5QUHN4d25SeWZkOE0xYTEtUGZ3R3BKNVYzUEswLUloc3AyQXNTVnhsUFY4QnhqOFNyZGd0eFp1UDRPdTNZNFljdjQyM2RtMEVWdTNUY2JfR3RJR0I4a0ZvbkVCdkJxYnp1MHVJcS1f?oc=5",
-          "source": "abcnews.com",
-          "publishedAt": "2026-10-11T05:51:22Z",
-          "polarity": -0.858,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "bp": {
       "companyName": "BP",
@@ -1014,26 +938,40 @@
       "ticker": "LLOY.L",
       "slug": "lloyds",
       "date": "2026-10-11",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.6,
-      "confidence": 0.0,
+      "dailyScore": 49.4,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.5,
+      "confidence": 15.2,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -3.0,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.2",
+          "evidenceArticleIds": [
+            "f5a93b501b6e03ec"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "f5a93b501b6e03ec",
+          "storyClusterId": "story-001",
+          "title": "Lloyds Banking Group plc (LLOY.L) stock price, news, quote and history",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE4tb190RFNNOU5Ha2dhN0ZoV1NmemQtM0FDNjJHZS1XaVhrNXdiWUcyTmJrNTlJXzJmaUF5RkhUWTVwM29qcThHVmxpR0JOcjducERkTQ?oc=5",
+          "source": "uk.finance.yahoo.com",
+          "publishedAt": "2026-10-11T18:17:50Z",
+          "polarity": -0.033,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
     },
     "3i": {
       "companyName": "3i Group",
@@ -1118,26 +1056,40 @@
       "ticker": "GLEN.L",
       "slug": "glencore",
       "date": "2026-10-11",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 54.6,
-      "confidence": 0.0,
+      "dailyScore": 63.6,
+      "dailyLabel": "Positive",
+      "rollingScore": 55.7,
+      "confidence": 19.0,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 14.1,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 19.0",
+          "evidenceArticleIds": [
+            "bca8afb6dc60cb99"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "bca8afb6dc60cb99",
+          "storyClusterId": "story-001",
+          "title": "Guinea’s $300 Million Glencore Bauxite Deal Opens a New Test for State-Owned Mining and Local Alumina Processing",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOOFQ5S0ZXbndBbk1GdHpQeEFCVENuSlBkazdWdjVtRjBDSGVENUlSRmdtSHA3ZS1Xdl84SlREdFBiSnFrUUw4amIzNlRDMHZscUo3eHVocWRnOWNUUmI2TFBENTBoSjM3YU42N3JORFl4SHFKNkhPdjJQZTV0bDlRQmZwXzJ1UVMtclFnS01IbXlxdnFNNXVQUGxpTDIwVHRocEZBOVhhSFVWRlNieE1tX1BUZnVlS05sVklNb1pqZGxXR25VcXVINlNPZVRMS1VDR0FfU3ZaTnBWbDYyamtNaDRwRXVDVVdWWFo4QXBn?oc=5",
+          "source": "wansom.ai",
+          "publishedAt": "2026-10-11T03:42:51Z",
+          "polarity": 0.8169,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        }
+      ]
     },
     "admiral": {
       "companyName": "Admiral Group PLC",
@@ -2684,25 +2636,23 @@
       "ticker": "NXT.L",
       "slug": "next",
       "date": "2026-10-11",
-      "dailyScore": 50.6,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 51.1,
-      "confidence": 11.5,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 51.2,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": -2.1,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 11.5",
-          "evidenceArticleIds": [
-            "f5d5c51249345a3e"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         },
         {
           "type": "collection_degraded",
@@ -2710,24 +2660,10 @@
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "f5d5c51249345a3e"
-          ]
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "f5d5c51249345a3e",
-          "storyClusterId": "story-001",
-          "title": "Signs appear in window of former Next store in Middlesbrough advertising 'fashion house'",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQQnBHT2Zpc3I0Z2pfZkJZMnhVT3Z5MDktOXNCZWdiSkxDNk1qdnU2X2U1TnRYRXZxdTUyNXZWamJPY2VHNmtJV3dyZ0kwNmZMZW53MnFpZVBwazVhUG1MWk5GQTB0OVNyYS1vSEh1djIyNVVrNEd3cWptaUtVSnF3X2pRcFhSYzBXUmZrZ1NEY0hrZFdldmo3QndUcUZsZ9IBowFBVV95cUxNMDdOYTZCYVFPNHFYd2pZOVJlV3F5S2VWWFNNXzgzU0x3Z2tSMDRNZ3VtT1hSMWlZU1NUWWtvTWstZzQ3QUlpUnA1WG50c3pnemZWY2xONVNSc1VjdUR2YWNtWXZhUWx1bWg1RnphYWhrS3dSYjA4eUg2Z3d2UFkwcFhKSWNoODYwOWJpbVYwNWF1b2xjM2Z5bmp5SjJ4dk96azZn?oc=5",
-          "source": "gazettelive.co.uk",
-          "publishedAt": "2026-10-11T11:19:00Z",
-          "polarity": 0.0377,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "pearson": {
       "companyName": "Pearson PLC",
@@ -3751,52 +3687,80 @@
       "ticker": "WTB.L",
       "slug": "whitbread",
       "date": "2026-10-11",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 51.3,
-      "confidence": 0.0,
+      "dailyScore": 50.0,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 51.1,
+      "confidence": 15.2,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 0.2,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.2",
+          "evidenceArticleIds": [
+            "9e18784fec72fbf2"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "9e18784fec72fbf2",
+          "storyClusterId": "story-001",
+          "title": "Must read weekly preview: Hays, Bellway, Whitbread, US earnings season, UK GDP",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQeHFtNHVyTmhsa2RnRjJBd1hBWUJLQjJoTnlQWUp4TzB4Y3N2eFp6OWJYTThveU9Yd0RRYVhPdmFBUFBaR182Vk1kYzV3c280UThxLU12VGotM1RIVklSUklfSS1lY3ZTRTItanh5eFRBVkxhaHdUS1JHT0dySXNnOVFlVWEzcnZiLXB6dVBRdVV4QXVqUmwyanJuaHQ3dzZtWmFHZ3UyaTdxSnVlYmFmbWQ3ZzZRWi03TVlnMUVYRWk?oc=5",
+          "source": "ii.co.uk",
+          "publishedAt": "2026-10-11T08:11:04Z",
+          "polarity": -0.0026,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
     },
     "polar-capital-technology-trust": {
       "companyName": "Polar Capital Technology Trust PLC",
       "ticker": "PCT.L",
       "slug": "polar-capital-technology-trust",
       "date": "2026-10-11",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 48.6,
-      "confidence": 0.0,
+      "dailyScore": 49.4,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 48.7,
+      "confidence": 15.5,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 15.2,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.5",
+          "evidenceArticleIds": [
+            "576e34f8eead875c"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "576e34f8eead875c",
+          "storyClusterId": "story-001",
+          "title": "Polar Capital Technology Trust PLC Revenue Breakdown – HAN:0Y10",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE52dERZQWdUbi1fd1o3eEFYd3NNa0xCNzNLV3JCSUNkbXVzX3VuclZfUHdjVXpLSlFHbUU4cTVUMl9xLVktNEdOUS1mYXhtdEJESU9kSzR0UHV2M3pGSktjT0xNQ0I2UFVIS1MxeDdPdzByN3c?oc=5",
+          "source": "tradingview.com",
+          "publishedAt": "2026-10-11T09:15:54Z",
+          "polarity": -0.0337,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
     },
     "computacenter": {
       "companyName": "Computacenter PLC",
