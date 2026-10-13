@@ -3665,38 +3665,52 @@
     },
     {
       "date": "2026-10-12",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 47.2,
-      "confidence": 0.0,
-      "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "dailyScore": 39.0,
+      "dailyLabel": "Negative",
+      "rollingScore": 46.0,
+      "confidence": 41.0,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 35,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 41,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 0,
-      "negativeStoryCount": 0,
-      "dispersion": 0.0,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 1,
+      "dispersion": 0.5056,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 25,
-        "missing_company_alias": 10
+        "ambiguous_company_without_alias": 26,
+        "missing_company_alias": 13
       },
-      "topStories": [],
-      "flags": [
+      "topStories": [
         {
-          "type": "no_coverage",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "id": "b1c998b3807e24d7",
+          "storyClusterId": "story-001",
+          "title": "Some BT broadband customers could be hit with £15 extra charge this month",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1jV1RJOGM4YWZ4M3VwVUNma3pPeTZaMzI1Wl9TQzVub0RxcmQ3NHVPTGdIVTNvQkhSZzZuV2hURU5JSHVnbFpvcHZ0UVRrdVliaHRETkI4cXh1bnlKU292VEQ4bnN1eEhwUUE?oc=5",
+          "source": "gbnews.com",
+          "publishedAt": "2026-10-12T14:06:40Z",
+          "polarity": -0.9462,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "4dceb1dc33758e27",
+          "storyClusterId": "story-002",
+          "title": "INCA warns BT’s TalkTalk takeover could reduce broadband competition in the UK",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQemFJdjE3Smdfd1FmUnNxeTJ2eUVvZnVFbWd2akdoel9oVUFvWHVUcmxsaXBTZlRTMV9CVExaYktuMGg2cmRORVQ3WnUyMHNFemxsY0JTQVFnRkItOVNaQXRSQmM2Nk54ZzBTREl0aTNmWWRyckN0ek1uVWNra1pzUGVXcWhUdEJGQUhSY3M3c01pdTVxWnZmX1Y5NDNVTXVXUXlOazh0REZJZ05OT1l6VEg3OUc?oc=5",
+          "source": "systemtek.co.uk",
+          "publishedAt": "2026-10-12T18:11:00Z",
+          "polarity": 0.0651,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "flags": [],
+      "changeFromPreviousScoredDay": 4.7
     }
   ]
 }
