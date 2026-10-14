@@ -1662,6 +1662,62 @@
         }
       ],
       "changeFromPreviousScoredDay": 8.6
+    },
+    {
+      "date": "2026-10-13",
+      "dailyScore": 34.7,
+      "dailyLabel": "Negative",
+      "rollingScore": 49.3,
+      "confidence": 19.5,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 1,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 1,
+      "dispersion": 0.0,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "48b2f1473c8726f4",
+          "storyClusterId": "story-001",
+          "title": "Lion Finance cancels 34,000 shares in Lion Finance stock buyback",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOaHFYUllGMUlMcmNCOEVpeUhXQ0FHdU1VSFJmMG1aeC0wQ09Na0hHZG94Q2VuQkJqYzNneEpBdlVwX2pUZWxxTlItVzNNXzBOWmZuM2RtbHlhZEZPemdQQ2k0bHFSMmhDRFNnVm9OdW9mU05Qd3VZN1p4QXUtdGUzWkNUbDVERlhNRl94OVFKRWgzNUdnaG1GM3loYjZSX2xkOEV3ekc0VVFiX1d5VmVSUTJYbl8yZnNBZDYwTUpUQTQ?oc=5",
+          "source": "ad-hoc-news.de",
+          "publishedAt": "2026-10-13T01:43:03Z",
+          "polarity": -0.9151,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "share_buyback",
+          "direction": "positive",
+          "severity": "medium",
+          "status": "possible",
+          "evidenceArticleIds": [
+            "48b2f1473c8726f4"
+          ],
+          "sourceCount": 1
+        },
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 19.5",
+          "evidenceArticleIds": [
+            "48b2f1473c8726f4"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -24.1
     }
   ]
 }
