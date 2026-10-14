@@ -5924,37 +5924,51 @@
     },
     {
       "date": "2026-10-13",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 49.9,
-      "confidence": 0.0,
+      "dailyScore": 51.1,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.0,
+      "confidence": 15.4,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 8,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 10,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 0,
+      "neutralStoryCount": 1,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
-        "missing_company_alias": 8
+        "missing_company_alias": 9
       },
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "bd5baf2195d5077d",
+          "storyClusterId": "story-001",
+          "title": "Severn Trent asks customers to use water wisely",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQNXM3aVlZNUdfT3hxM3E5VXFudXB6MHZaQ1F4WnlnbHVCOGdTc1hRaTNWblluZVlQRUswUkg5cjd0cl9FQ21MWm5yLTlGYk50LWJFXzhHT2t0aENGWk85cktJbDFVdHhacFhyMFpUVW9rb0FFb19nSDFVVE5VUXk2cVl1RQ?oc=5",
+          "source": "herald.wales",
+          "publishedAt": "2026-10-13T14:50:55Z",
+          "polarity": 0.0643,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.4",
+          "evidenceArticleIds": [
+            "bd5baf2195d5077d"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": -0.9
     }
   ]
 }
