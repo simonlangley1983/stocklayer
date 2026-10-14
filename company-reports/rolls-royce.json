@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-14T01:44:59.658110Z",
+  "generatedAt": "2026-10-14T02:03:24.156604Z",
   "company": {
     "companyName": "Rolls-Royce",
     "ticker": "RR.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-05",
-    "periodEnd": "2026-10-12",
-    "observationCount": 95,
-    "scoredDayCount": 94,
-    "latestScore": 45.5,
-    "latestScoreDate": "2026-10-12",
+    "periodEnd": "2026-10-13",
+    "observationCount": 96,
+    "scoredDayCount": 95,
+    "latestScore": 57.6,
+    "latestScoreDate": "2026-10-13",
     "series": [
       {
         "date": "2026-07-05",
@@ -880,6 +880,15 @@
         "sourceCount": 13,
         "confidence": 85.4,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-13",
+        "dailyScore": 57.6,
+        "rollingScore": 52.6,
+        "storyCount": 19,
+        "sourceCount": 17,
+        "confidence": 89.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -892,16 +901,6 @@
         "direction": "positive",
         "detail": "Daily score increased by 14.9 points",
         "significance": 1.841
-      },
-      {
-        "date": "2026-07-30",
-        "type": "workforce_reduction",
-        "title": "Rising global threat sees Rolls - Royce share price soar",
-        "source": "derbytelegraph.co.uk",
-        "url": "https://www.derbytelegraph.co.uk/news/derby-news/rising-global-threat-sees-rolls-11084880",
-        "direction": "negative",
-        "detail": null,
-        "significance": 1.588
       },
       {
         "date": "2026-09-15",
@@ -982,6 +981,16 @@
         "direction": "positive",
         "detail": "Daily press score is 66.7",
         "significance": 1.594
+      },
+      {
+        "date": "2026-10-13",
+        "type": "sentiment_jump",
+        "title": "Why is Rolls-Royce stock down 3.1% today?",
+        "source": "tradersunion.com",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNQUh0UGg3T3UyVkhUelFremViUXprenZaUUVjMU5PekVaTmZFTTFqUmZZTWgxb0hKdF83S1ZCTDQ3cjJFaDE2Q09Pa1J1S2dCZjVVd3lXWl9NNmk1bmZwUUlwdHpSaExZLTZLNG9Tc2xpTHRsZGg4a3hYVmdiRjdvR1hPeHc1ODd2aVg4LTRBTWk?oc=5",
+        "direction": "positive",
+        "detail": "Daily score increased by 12.1 points",
+        "significance": 1.608
       }
     ]
   },
@@ -1474,17 +1483,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 52.8,
+    "score": 52.9,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 54.7,
+        "score": 54.8,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 84 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 85 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1571,16 +1580,6 @@
       "significance": 1.841
     },
     {
-      "date": "2026-07-30",
-      "type": "workforce_reduction",
-      "title": "Rising global threat sees Rolls - Royce share price soar",
-      "source": "derbytelegraph.co.uk",
-      "url": "https://www.derbytelegraph.co.uk/news/derby-news/rising-global-threat-sees-rolls-11084880",
-      "direction": "negative",
-      "detail": null,
-      "significance": 1.588
-    },
-    {
       "date": "2026-09-15",
       "type": "coverage_spike",
       "title": "Rolls-Royce shares have fallen 10% and insiders are buying the dip",
@@ -1659,6 +1658,16 @@
       "direction": "positive",
       "detail": "Daily press score is 66.7",
       "significance": 1.594
+    },
+    {
+      "date": "2026-10-13",
+      "type": "sentiment_jump",
+      "title": "Why is Rolls-Royce stock down 3.1% today?",
+      "source": "tradersunion.com",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNQUh0UGg3T3UyVkhUelFremViUXprenZaUUVjMU5PekVaTmZFTTFqUmZZTWgxb0hKdF83S1ZCTDQ3cjJFaDE2Q09Pa1J1S2dCZjVVd3lXWl9NNmk1bmZwUUlwdHpSaExZLTZLNG9Tc2xpTHRsZGg4a3hYVmdiRjdvR1hPeHc1ODd2aVg4LTRBTWk?oc=5",
+      "direction": "positive",
+      "detail": "Daily score increased by 12.1 points",
+      "significance": 1.608
     }
   ],
   "persistentEvents": [

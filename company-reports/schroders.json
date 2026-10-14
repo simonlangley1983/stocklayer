@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-14T01:44:59.658110Z",
+  "generatedAt": "2026-10-14T02:03:24.156604Z",
   "company": {
     "companyName": "Schroders PLC",
     "ticker": "SDR.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-10-12",
-    "observationCount": 105,
-    "scoredDayCount": 84,
-    "latestScore": 50.4,
-    "latestScoreDate": "2026-10-12",
+    "periodEnd": "2026-10-13",
+    "observationCount": 106,
+    "scoredDayCount": 85,
+    "latestScore": 44.0,
+    "latestScoreDate": "2026-10-13",
     "series": [
       {
         "date": "2026-06-30",
@@ -970,6 +970,15 @@
         "sourceCount": 1,
         "confidence": 15.2,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-13",
+        "dailyScore": 44.0,
+        "rollingScore": 48.9,
+        "storyCount": 6,
+        "sourceCount": 6,
+        "confidence": 69.9,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1564,17 +1573,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 40.1,
+    "score": 40.0,
     "label": "Low",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.9,
+        "score": 51.7,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 73 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 74 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1752,6 +1761,66 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "ee1bf5de2afb12f9f4ae",
+      "type": "acquisition",
+      "title": "Following Pantheon’s acquisition, Pearson (PSO) director Annette Thomas left Schroders’ board.",
+      "date": "2026-10-13",
+      "status": "pending_review",
+      "reviewDate": "2027-04-11",
+      "direction": "Negative",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOeC1hZDEzZkhIRzVMWDk3QlpVS2J4YlpBc1FxZkppUE4wRTc1eFpaMDhyVlFFWVlwVWRvblc2bVZiTDk3ZEh6dVY0WVJ2ZzNGb0pRRlJVYXptVXlOR2U2N0g3Y0haU0luWXd4LXk4NFUwSVhBM1dLT0w5Xy1ROHpvWjA3SjZ1SW1iZVd3SThkM0hkd0g2a2xzcVlQT0JUZjhDX3I5R3dvTEhmZw?oc=5",
+          "publisher": "stocktitan.net",
+          "date": "2026-10-13"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
+    {
+      "id": "4b3e0fa0952437cbc43f",
+      "type": "acquisition",
+      "title": "Annette Thomas Steps Down from Schroders Board Following Pantheon LLC Acquisition",
+      "date": "2026-10-13",
+      "status": "pending_review",
+      "reviewDate": "2027-04-11",
+      "direction": "Very negative",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPNU1XdWh0QkgzRUM5YVJ2a1lOQTdCMjdjWmFHbk4tci1CTDNTRHBtTW4wLUEzTGVsMWtwMW5JTmxQa21vcjV6VHRoMWZqX2NHaEdUZExIMXNRTlhVeEtSZHNiV0ZuSVNLeGthaHAxX0txOFN0WEYyUG1yRzcxMFA5SG85T3Jlek8xbmZ4eWxHVzJObmcweTNjazAzdk45Q2NpRXhMMUpMQ0xJaW9aM2Vsa2lSam5wRmZ4aDJ2RlRBVzRFRGlRR2RV?oc=5",
+          "publisher": "kalkinemedia.com",
+          "date": "2026-10-13"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
+    {
+      "id": "1a30dea5d08bc0e94b19",
+      "type": "acquisition",
+      "title": "Pearson Updates on Director Role Following Schroders Acquisition",
+      "date": "2026-10-13",
+      "status": "pending_review",
+      "reviewDate": "2027-04-11",
+      "direction": "Neutral / mixed",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNUDNCdlBvbG5JTXR5dnNtVEhoOWJERWdLX3NHLTBfOXZfQUFVVHhVZUxVVWZiU0g5TlhUZFhDd0RfTVpTUUJvRTVIMlprODNwZ3JfQzFhUkRjdVR2SGJJbmY0NTRGWklKdkVLdF82VGZFb2Ytemh0SS01YlVDQldzbklpcEhDUG85aTBPdjkyQ1lsOGNZZC00M2hSNGpYZWlZV3JqdktTaW14UEFFSVA5MVc0WXhxWjg?oc=5",
+          "publisher": "tipranks.com",
+          "date": "2026-10-13"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "85b4e7e0d87f39ae9a59",
       "type": "acquisition",
