@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-15T00:44:59.772910Z",
+  "generatedAt": "2026-10-15T01:39:02.889965Z",
   "company": {
     "companyName": "LondonMetric Property PLC",
     "ticker": "LMP.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-17",
-    "periodEnd": "2026-10-13",
-    "observationCount": 82,
-    "scoredDayCount": 35,
-    "latestScore": 39.1,
-    "latestScoreDate": "2026-10-13",
+    "periodEnd": "2026-10-14",
+    "observationCount": 83,
+    "scoredDayCount": 36,
+    "latestScore": 50.0,
+    "latestScoreDate": "2026-10-14",
     "series": [
       {
         "date": "2026-07-17",
@@ -763,6 +763,15 @@
         "sourceCount": 3,
         "confidence": 57.0,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-14",
+        "dailyScore": 50.0,
+        "rollingScore": 49.6,
+        "storyCount": 2,
+        "sourceCount": 2,
+        "confidence": 32.0,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1430,17 +1439,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 49.7,
+    "score": 49.6,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.9,
+        "score": 51.7,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 34 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 35 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1627,6 +1636,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "0143758f2ed65b96b389",
+      "type": "acquisition",
+      "title": "LondonMetric Property plc (LSE:LMP): what does the current Picton acquisition completion mean?",
+      "date": "2026-10-14",
+      "status": "pending_review",
+      "reviewDate": "2027-04-12",
+      "direction": "Neutral / mixed",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOdW1vaEx2czRpWGtXM0tWSzRTZEJ1WGs4U1dzazN2a2QtUEZ1M0h3WXNoX0ZqUktqelNGTEY2RDIwb0NvalB0d2dTNUVMYm9NYkZ6bGpCWEc0TXBFelZGbGczM1RmNlhidVBZSTh2MzhQSW5iWWlrUF9UM29Wb2IxTk9SQVl3WURLRklHWXplUXFydFltWm95dFdZYU8zWVhnNjlPTGpHNnFXYnV6b25md201VHdQX01wcWFGUXl2SDhycENkTDNlbi16NXdLUFhnYjVZQTFmaG5IcFFleHRDWm4zUUpCV2RUWHZZ?oc=5",
+          "publisher": "kalkinemedia.com",
+          "date": "2026-10-14"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "6f09f126bd788f9a6836",
       "type": "acquisition",

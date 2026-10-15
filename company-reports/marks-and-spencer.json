@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-15T00:44:59.772910Z",
+  "generatedAt": "2026-10-15T01:39:02.889965Z",
   "company": {
     "companyName": "Marks & Spencer Group PLC",
     "ticker": "MKS.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-10-13",
-    "observationCount": 92,
-    "scoredDayCount": 78,
-    "latestScore": 63.0,
-    "latestScoreDate": "2026-10-13",
+    "periodEnd": "2026-10-14",
+    "observationCount": 93,
+    "scoredDayCount": 79,
+    "latestScore": 46.0,
+    "latestScoreDate": "2026-10-14",
     "series": [
       {
         "date": "2026-06-30",
@@ -853,6 +853,15 @@
         "sourceCount": 6,
         "confidence": 73.5,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-14",
+        "dailyScore": 46.0,
+        "rollingScore": 52.3,
+        "storyCount": 5,
+        "sourceCount": 5,
+        "confidence": 73.1,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -917,16 +926,6 @@
         "significance": 1.526
       },
       {
-        "date": "2026-09-29",
-        "type": "coverage_spike",
-        "title": "Marks & Spencer expands beauty offer with new Sephora partnership",
-        "source": "theindustry.fashion",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNbkNYZzVFV2d6RDk4THoxbDRMam1iMTRmUmVacjFRd0FDcjNhWjN4bHZpeTREQTlSM3U3N29nVG9KTEZjaGszNV9idXhfYjdnbXVrdFZsS2NnWHlHbVo5RFBPN1FFNExsSG9SanpRTjVkR05aRWhRNDkzNXFDOE9LYmdCck8zLUk0UXVacmVTcXNEcXNOcFpMUXhPZlM?oc=5",
-        "direction": "neutral",
-        "detail": "11 stories versus trailing median 3.5",
-        "significance": 1.516
-      },
-      {
         "date": "2026-10-03",
         "type": "sentiment_jump",
         "title": "Sparrow Group Receives Top Honor from Marks & Spencer",
@@ -955,6 +954,16 @@
         "direction": "mixed",
         "detail": "Positive and negative coverage is unusually dispersed",
         "significance": 1.536
+      },
+      {
+        "date": "2026-10-14",
+        "type": "sentiment_drop",
+        "title": "Marks & Spencer confirms store closure in UK town store after more than 20 years",
+        "source": "express.co.uk",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBhd1l3QVJPYVhKTk8zMUI2TklDRnJBQVcyRDlXbktpMTJMVlB1Q1BWQXZmdzIxaDFKNEVVbWdFUTBGcWtESGhVWldFZ2Z6YW5WbHEtVWV5R3pkeGczblZIenROTzY1WkdOZjlxQVdPczE3dDZmYkozQ3l30gF_QVVfeXFMUDl6WWxyZ2x1MTVFbDJKSnZjQmhKd1NDUVhzdmJ5M21KUExTVU9zMEJqamRSc3c2V3IzUmVTYW11cVl1THl3cEdPcmRLbmVGdzRNMGpTcVp3MFVteTBJQlk3c0hXY3BnUVlKb0RncGZLUU1lWVJYTENybTlJZWp2cw?oc=5",
+        "direction": "negative",
+        "detail": "Daily score decreased by 17.0 points",
+        "significance": 1.553
       }
     ]
   },
@@ -1520,17 +1529,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 46.2,
+    "score": 46.1,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 52.6,
+        "score": 52.4,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 74 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 75 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1667,16 +1676,6 @@
       "significance": 1.526
     },
     {
-      "date": "2026-09-29",
-      "type": "coverage_spike",
-      "title": "Marks & Spencer expands beauty offer with new Sephora partnership",
-      "source": "theindustry.fashion",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNbkNYZzVFV2d6RDk4THoxbDRMam1iMTRmUmVacjFRd0FDcjNhWjN4bHZpeTREQTlSM3U3N29nVG9KTEZjaGszNV9idXhfYjdnbXVrdFZsS2NnWHlHbVo5RFBPN1FFNExsSG9SanpRTjVkR05aRWhRNDkzNXFDOE9LYmdCck8zLUk0UXVacmVTcXNEcXNOcFpMUXhPZlM?oc=5",
-      "direction": "neutral",
-      "detail": "11 stories versus trailing median 3.5",
-      "significance": 1.516
-    },
-    {
       "date": "2026-10-03",
       "type": "sentiment_jump",
       "title": "Sparrow Group Receives Top Honor from Marks & Spencer",
@@ -1705,6 +1704,16 @@
       "direction": "mixed",
       "detail": "Positive and negative coverage is unusually dispersed",
       "significance": 1.536
+    },
+    {
+      "date": "2026-10-14",
+      "type": "sentiment_drop",
+      "title": "Marks & Spencer confirms store closure in UK town store after more than 20 years",
+      "source": "express.co.uk",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBhd1l3QVJPYVhKTk8zMUI2TklDRnJBQVcyRDlXbktpMTJMVlB1Q1BWQXZmdzIxaDFKNEVVbWdFUTBGcWtESGhVWldFZ2Z6YW5WbHEtVWV5R3pkeGczblZIenROTzY1WkdOZjlxQVdPczE3dDZmYkozQ3l30gF_QVVfeXFMUDl6WWxyZ2x1MTVFbDJKSnZjQmhKd1NDUVhzdmJ5M21KUExTVU9zMEJqamRSc3c2V3IzUmVTYW11cVl1THl3cEdPcmRLbmVGdzRNMGpTcVp3MFVteTBJQlk3c0hXY3BnUVlKb0RncGZLUU1lWVJYTENybTlJZWp2cw?oc=5",
+      "direction": "negative",
+      "detail": "Daily score decreased by 17.0 points",
+      "significance": 1.553
     },
     {
       "date": "2026-12-31",
