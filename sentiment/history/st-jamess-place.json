@@ -3399,37 +3399,51 @@
     },
     {
       "date": "2026-10-14",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
+      "dailyScore": 49.6,
+      "dailyLabel": "Neutral / mixed",
       "rollingScore": 49.8,
-      "confidence": 0.0,
+      "confidence": 15.2,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 1,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 2,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 0,
+      "neutralStoryCount": 1,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
         "missing_company_alias": 1
       },
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "0c52a2d9de2fffe6",
+          "storyClusterId": "story-001",
+          "title": "0P000187S9.L Interactive Stock Chart | St James's Place Gilts Class R Stock - Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBlVW5NeGwxbFRrUmVXS1VnUGZXeVFMVGxXOHlnY2RQZ0k4VUZJLUM0dXFodXVxYXdhS2czdEd1LWU1WER6aGZWUUlVaWR4WTdCTVBvajRmMmdldlpO?oc=5",
+          "source": "ca.finance.yahoo.com",
+          "publishedAt": "2026-10-14T19:37:10Z",
+          "polarity": -0.0219,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.2",
+          "evidenceArticleIds": [
+            "0c52a2d9de2fffe6"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": -2.6
     }
   ]
 }

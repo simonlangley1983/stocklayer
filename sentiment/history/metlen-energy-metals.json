@@ -1471,37 +1471,51 @@
     },
     {
       "date": "2026-10-14",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
+      "dailyScore": 50.1,
+      "dailyLabel": "Neutral / mixed",
       "rollingScore": 50.6,
-      "confidence": 0.0,
+      "confidence": 15.2,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 3,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 4,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 0,
+      "neutralStoryCount": 1,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
         "missing_company_alias": 3
       },
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "52196bda9668ea96",
+          "storyClusterId": "story-001",
+          "title": "Metlen Energy & Metals Reviews Strategic Options for METKA Group",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOa2N6S1BuWW1aT3Rsb0Rpb0p3OXBXSVVldkU3VFdpS2ZYUWF4bkJFMzh1VkJYcFk0Mk1ONGx6Q0FSdERXalRxYjJBaDVmdjB0YmRsYkpOYkRaX2o5eE1mNVc3YVVwcG9yOG9feXk0ZlNBUG05WFZLZnVkaEZOTzQydHI2WEh0NkJZS0ZacG5HRjU1b2lRZkh3WFZZWTN5Yk50TldiYWIwX08yLTl6dThWM3RST0dUZw?oc=5",
+          "source": "marketscreener.com",
+          "publishedAt": "2026-10-14T18:33:00Z",
+          "polarity": 0.0052,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.2",
+          "evidenceArticleIds": [
+            "52196bda9668ea96"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": -0.5
     }
   ]
 }
