@@ -5211,25 +5211,25 @@
     },
     {
       "date": "2026-10-15",
-      "dailyScore": 40.8,
-      "dailyLabel": "Slightly negative",
-      "rollingScore": 53.0,
-      "confidence": 60.4,
+      "dailyScore": 45.2,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 53.8,
+      "confidence": 56.9,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
       "collectionCompleteness": 0.75,
       "candidateCount": 57,
-      "eligibleArticleCount": 7,
-      "storyCount": 7,
-      "effectiveStoryCount": 7.0,
-      "sourceCount": 7,
+      "eligibleArticleCount": 6,
+      "storyCount": 6,
+      "effectiveStoryCount": 6.0,
+      "sourceCount": 6,
       "positiveStoryCount": 2,
       "neutralStoryCount": 2,
-      "negativeStoryCount": 3,
-      "dispersion": 0.5583,
+      "negativeStoryCount": 2,
+      "dispersion": 0.5305,
       "rejectedCandidateCounts": {
         "ambiguous_company_without_alias": 36,
-        "missing_company_alias": 14
+        "missing_company_alias": 15
       },
       "topStories": [
         {
@@ -5240,17 +5240,6 @@
           "source": "theferret.scot",
           "publishedAt": "2026-10-15T05:04:11Z",
           "polarity": -0.934,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "23c4ca266fb266b0",
-          "storyClusterId": "story-006",
-          "title": "BP and major oil company CEOs pull out of Riyadh energy conference following airport attack that halted flights",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1pTVZqWk9yMVZXSzVjdmF0dWlyX2NnME5NbWVaZ3kwYUZsQUtnSU5qM010bXFhMkNvOGJKQ2MydEtjZ3BlaV93WXBlYVlRcms2c2VRS0Iya1dqSlJrdGhHQVM5cGxSSm5GN0tHMg?oc=5",
-          "source": "energiesmedia.com",
-          "publishedAt": "2026-10-15T18:51:38Z",
-          "polarity": -0.8874,
           "sentiment": "Very negative",
           "publisherCount": 1
         },
@@ -5286,6 +5275,17 @@
           "polarity": 0.3179,
           "sentiment": "Positive",
           "publisherCount": 1
+        },
+        {
+          "id": "fc7b46da5646d286",
+          "storyClusterId": "story-003",
+          "title": "Analysts Offer Insights on Energy Companies: Devon Energy (DVN) and BP (BP)",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOTDZFa3dBSWgzSUlQMmVUX2xfMkdUV3JlZGZLT05lX3RBeWNfMVlzQmNVYTM0N252NENveE1wZl9relJ5alJTaGZGVU42S1R0OTc0djdvemM5RzB1c2NfYldQMldqTmZjR2l2Y2Y0T1dPMVVLVy1Pc3U5a3lBZTd0WTRONjZZVHVQejRNSmhuTDc2enZnc3lhcXFKUzBnM0NRbW00YzBpd3RkTm1VMFVCOV9iZW9sVWFrQklWSXlicUxsb2gybS1rU3kxbERSRFh3OXVuV292dzRMM0FWeDlhSy1vUER6Z1R5LVE?oc=5",
+          "source": "theglobeandmail.com",
+          "publishedAt": "2026-10-15T11:25:55Z",
+          "polarity": 0.0472,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
         }
       ],
       "flags": [
@@ -5294,27 +5294,13 @@
           "direction": "negative",
           "severity": "high",
           "status": "calculated",
-          "detail": "Daily score decreased by 21.3 points",
+          "detail": "Daily score decreased by 16.9 points",
           "evidenceArticleIds": [
             "a2298d19e65ef39a",
-            "23c4ca266fb266b0",
             "5780c765f0cd0769",
             "abd399964e766260",
-            "f1cb4bd1702a218f"
-          ]
-        },
-        {
-          "type": "high_disagreement",
-          "direction": "mixed",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "Positive and negative coverage is unusually dispersed",
-          "evidenceArticleIds": [
-            "a2298d19e65ef39a",
-            "23c4ca266fb266b0",
-            "5780c765f0cd0769",
-            "abd399964e766260",
-            "f1cb4bd1702a218f"
+            "f1cb4bd1702a218f",
+            "fc7b46da5646d286"
           ]
         },
         {
@@ -5325,14 +5311,14 @@
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
             "a2298d19e65ef39a",
-            "23c4ca266fb266b0",
             "5780c765f0cd0769",
             "abd399964e766260",
-            "f1cb4bd1702a218f"
+            "f1cb4bd1702a218f",
+            "fc7b46da5646d286"
           ]
         }
       ],
-      "changeFromPreviousScoredDay": -21.3
+      "changeFromPreviousScoredDay": -16.9
     }
   ]
 }
