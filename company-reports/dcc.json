@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-16T00:56:05.923917Z",
+  "generatedAt": "2026-10-16T01:34:47.121678Z",
   "company": {
     "companyName": "DCC PLC",
     "ticker": "DCC.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-15",
-    "periodEnd": "2026-10-14",
-    "observationCount": 112,
-    "scoredDayCount": 76,
-    "latestScore": 48.2,
-    "latestScoreDate": "2026-10-14",
+    "periodEnd": "2026-10-15",
+    "observationCount": 113,
+    "scoredDayCount": 77,
+    "latestScore": 50.7,
+    "latestScoreDate": "2026-10-15",
     "series": [
       {
         "date": "2026-06-15",
@@ -1033,6 +1033,15 @@
         "sourceCount": 5,
         "confidence": 69.0,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-15",
+        "dailyScore": 50.7,
+        "rollingScore": 50.9,
+        "storyCount": 13,
+        "sourceCount": 8,
+        "confidence": 74.1,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1700,17 +1709,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 50.2,
+    "score": 50.3,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 50.1,
+        "score": 50.2,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 60 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 61 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1898,6 +1907,46 @@
   ],
   "persistentEvents": [
     {
+      "id": "c0fd397418576ce9ec2a",
+      "type": "acquisition",
+      "title": "J.P. Morgan Markets Limited Reports Matched Transactions in DCC Energy Plc Shares at 64.30p Amid Irish Takeover Panel Offer Process",
+      "date": "2026-10-15",
+      "status": "pending_review",
+      "reviewDate": "2027-04-13",
+      "direction": "Slightly positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOZ3dMbVpvdkM0eU10LTF2Zm1FSG84TnVITG1HZ0JIUElqOGNmbjQ1Q3hidVZBMXJIbWhoQTFFT0xBNDVDcmNHR2wyanRUSEhmYmN1RnZkV1Y0bEpublVNS1Q1OEpmMkVLaENnRFlvSzVBNjBRdE82Z0E2TEZYWjIxLU5IREJ6T0YtT2ZUVnBYbmwyUHViYzdMMlliT1I4T0YxMTBTYkliTjR4X3dPb0EzZnF3TkVJZXFIeUprM191c3paOFJPdG5KbXhkTE9ocHVjTURaUHo2TlNST19PZUVCdm0yN08tNHFfWFZoRjI1TFpQV3dzd25zX2RCY1JRS0JwYjNDeTVR?oc=5",
+          "publisher": "kalkinemedia.com",
+          "date": "2026-10-15"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
+    {
+      "id": "b4dfefc0750188a1f80d",
+      "type": "acquisition",
+      "title": "UBS Securities LLC Reports 16,530-Share Short Position in DCC Energy PLC via Irish Takeover Panel Form 38.5(b)",
+      "date": "2026-10-15",
+      "status": "pending_review",
+      "reviewDate": "2027-04-13",
+      "direction": "Slightly negative",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNWml1QnlHVU1zVm5GNW9zRlBQRWpNVkxmU1FaajJjWGMyVFdORF9KVktObGlPUl9OWWtVU3docHFtMGpKRkJyM05QWkFYUDdVNlFZMzhfeDNENXBUSC1ScHJXRlE3bmdSd0pqN1JWV2tSVEFDZ2tHazRwdlhRa3Z2UW9lUzJzNmxIQ2dITzZfMU45Z1dUa3pZN18tdTRHMzQwNXlwZm1pNjk1WTRnNFlVZEFXQ2R5OXNpdkxsdXdubGdReXk1WVp5cFlwOFdoTS1HSm5kWXd4ODZ3ZENUMDEzTEJ0UEkzQ2Q5?oc=5",
+          "publisher": "kalkinemedia.com",
+          "date": "2026-10-15"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
+    {
       "id": "fd35193f871907c4ab8c",
       "type": "acquisition",
       "title": "BNP Paribas Reports Share Transactions in DCC Energy Plc Amid KKR and Energy Capital Partners Takeover Bid",
@@ -1910,6 +1959,26 @@
       "sources": [
         {
           "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxONTNZT1hKOVJ5aHlabUVGUzNjVE91RFpTNWxncVBud0lOdTN6bkxhRGt4M0x5cUt5VW1TNXNHdnNZbGVXOTd6N1RWdThoZUVtRUJnVkU5RkhDTFVKYzhlMVpQWkR4MHVjTktCZHFIT0ZWSkg2YjBXSkczVDhXSms1dHNxWEVWQjBLOHdmOTJQeDFwcmdPSmpxRjNtM0FqU1NZU3lFMHdCZ1Y4YTZITndyWk0tb1JZcERVUXd6LUJkYzlTLUluM01tNnU2WTZGTkV1RFM0cFlnN2ZhOHhqQko1X25FNGtmMlNo?oc=5",
+          "publisher": "kalkinemedia.com",
+          "date": "2026-10-14"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
+    {
+      "id": "ca763038315b4fcd9f28",
+      "type": "acquisition",
+      "title": "AQR Capital Management Reports 1.37% Stake in DCC Energy plc in Compliance with Irish Takeover Panel Rules",
+      "date": "2026-10-14",
+      "status": "pending_review",
+      "reviewDate": "2027-04-12",
+      "direction": "Neutral / mixed",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPci1JME9mYXpsVnJBd21iOTdTWElhMkk0OHBlZjlfdy1BRk0ydlNqWTh1ZEVzMlRPazdqWndSTnVCM0xHejlXT1R6eS1FR2xCdzhLTjNSU0JLRk5kZXBJZkNjeXNLVVZZOWtVYjVUM1l5aDdsQXQtcTlBQlJadVRVUXFVM0NmYmFScERNZE8zbXVSNWNiVWNhaHVfa2NlV0ZqMkIzZDktNXltNXdMTVAtVDV2dGROUlpqMEw4eWVXVkhla1puckxyVk5SaEhDM25vY1FKMnZUX2t5R3VvTVoxV0dJQi1qUQ?oc=5",
           "publisher": "kalkinemedia.com",
           "date": "2026-10-14"
         }

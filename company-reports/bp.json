@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-16T00:56:05.923917Z",
+  "generatedAt": "2026-10-16T01:34:47.121678Z",
   "company": {
     "companyName": "BP",
     "ticker": "BP.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-14",
-    "periodEnd": "2026-10-14",
-    "observationCount": 100,
-    "scoredDayCount": 39,
-    "latestScore": 62.1,
-    "latestScoreDate": "2026-10-14",
+    "periodEnd": "2026-10-15",
+    "observationCount": 101,
+    "scoredDayCount": 40,
+    "latestScore": 41.6,
+    "latestScoreDate": "2026-10-15",
     "series": [
       {
         "date": "2026-06-14",
@@ -925,6 +925,15 @@
         "sourceCount": 6,
         "confidence": 63.6,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-15",
+        "dailyScore": 41.6,
+        "rollingScore": 53.1,
+        "storyCount": 7,
+        "sourceCount": 7,
+        "confidence": 60.4,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1019,13 +1028,13 @@
         "significance": 1.586
       },
       {
-        "date": "2026-10-13",
-        "type": "analyst_upgrade",
-        "title": "BP PLC (BP.US) reaches 2027 net debt target early, driven by strong performance in oil and gas trading and refining businesses",
-        "source": "moomoo.com",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTzlROTVWQXZKcERRN09ZLVV6cW85OHRyZzVlZHlsMW5hT0hUSnVTS3FwbG5pWE9jZ1VrMTlHUFNTZEFIckltY3N4LVB6MGFWSFpZQzhEWk9NeDFENmFiWlhIY3EyVXhZNXJLb1RXa20wMW9WVjItWHh3aGtSZm9kRGg0NURmMUtuZ0E3Mm5oc0ltaFNFaGFHamhyR245QQ?oc=5",
-        "direction": "positive",
-        "detail": null,
+        "date": "2026-10-15",
+        "type": "sentiment_drop",
+        "title": "Oil watchdog faces 'conflict of interests' row over directors’ Shell and BP shares",
+        "source": "theferret.scot",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9xWGlOeDliZGJTejVMUTdudG5HRTFoYXJ5SFo2ODBoQzFJb0lEZUk4RnNGTjdwc3lJX1U3ZXo0SW80VTVwSVFJMXNsMUYtZ1dnZkxkcFZuVFV4MW9NcTg3LXFjellhS0xta2w2anZB?oc=5",
+        "direction": "negative",
+        "detail": "Daily score decreased by 20.5 points",
         "significance": 1.584
       }
     ]
@@ -1519,17 +1528,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 45.0,
+    "score": 44.8,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 55.3,
+        "score": 54.7,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 36 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 37 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1696,13 +1705,13 @@
       "significance": 1.586
     },
     {
-      "date": "2026-10-13",
-      "type": "analyst_upgrade",
-      "title": "BP PLC (BP.US) reaches 2027 net debt target early, driven by strong performance in oil and gas trading and refining businesses",
-      "source": "moomoo.com",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTzlROTVWQXZKcERRN09ZLVV6cW85OHRyZzVlZHlsMW5hT0hUSnVTS3FwbG5pWE9jZ1VrMTlHUFNTZEFIckltY3N4LVB6MGFWSFpZQzhEWk9NeDFENmFiWlhIY3EyVXhZNXJLb1RXa20wMW9WVjItWHh3aGtSZm9kRGg0NURmMUtuZ0E3Mm5oc0ltaFNFaGFHamhyR245QQ?oc=5",
-      "direction": "positive",
-      "detail": null,
+      "date": "2026-10-15",
+      "type": "sentiment_drop",
+      "title": "Oil watchdog faces 'conflict of interests' row over directors’ Shell and BP shares",
+      "source": "theferret.scot",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9xWGlOeDliZGJTejVMUTdudG5HRTFoYXJ5SFo2ODBoQzFJb0lEZUk4RnNGTjdwc3lJX1U3ZXo0SW80VTVwSVFJMXNsMUYtZ1dnZkxkcFZuVFV4MW9NcTg3LXFjellhS0xta2w2anZB?oc=5",
+      "direction": "negative",
+      "detail": "Daily score decreased by 20.5 points",
       "significance": 1.584
     }
   ],

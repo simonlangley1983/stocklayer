@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-16T00:56:05.923917Z",
+  "generatedAt": "2026-10-16T01:34:47.121678Z",
   "company": {
     "companyName": "Pearson PLC",
     "ticker": "PSON.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-10-14",
-    "observationCount": 92,
-    "scoredDayCount": 85,
-    "latestScore": 47.4,
-    "latestScoreDate": "2026-10-14",
+    "periodEnd": "2026-10-15",
+    "observationCount": 93,
+    "scoredDayCount": 86,
+    "latestScore": 42.3,
+    "latestScoreDate": "2026-10-15",
     "series": [
       {
         "date": "2026-06-30",
@@ -853,6 +853,15 @@
         "sourceCount": 30,
         "confidence": 60.1,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-15",
+        "dailyScore": 42.3,
+        "rollingScore": 48.1,
+        "storyCount": 33,
+        "sourceCount": 42,
+        "confidence": 66.4,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -895,16 +904,6 @@
         "direction": "positive",
         "detail": null,
         "significance": 1.608
-      },
-      {
-        "date": "2026-09-21",
-        "type": "analyst_upgrade",
-        "title": "Pearson price target raised to 1,370 GBp from 1,360 GBp at JPMorgan",
-        "source": "tipranks.com",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQX1gtYXdpc1hUMDJHWUotY1d4WkFzOW53TlhuTXVzM25nXzZZZjZqM3lUR01jRWNCd1JyZ1NHM0pvY3ByUzlaa09pcUxyaWV3TnN1bkh2cVdKM01WajBWZlZLYU1YY2xWVld6OFJWUy1LQUVTbDdOT0l5ejIzVVY1WDhuWTgzdTdCcWhKbEpKVWZMenNGc0VvaVBTSGJWVWdoamlkbC10dGMySm1xdnh2eXRBVDhGQQ?oc=5",
-        "direction": "positive",
-        "detail": null,
-        "significance": 1.568
       },
       {
         "date": "2026-09-28",
@@ -955,6 +954,16 @@
         "direction": "neutral",
         "detail": null,
         "significance": 1.571
+      },
+      {
+        "date": "2026-10-15",
+        "type": "fine_or_lawsuit",
+        "title": "One person suffers life-threatening injuries after single-vehicle crash traps driver near Pearson",
+        "source": "cp24.com",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPbjJSb19ZbmhlWmVtTWZLWVNaLWZveTNleTlBTThKbDJwSDdxX1NEWXpCSXN4aDduMlluUU04MGhjX1o2ZEFDcTlTZXdIckdTUGoyaG1EclBFRlg2eEpCRkRPMmRXclZRX1BENnpKVU1NT0I0NnBaUTFubkFIelVaQkFXQlZ6TDZ2d1dIYlBhM0x4RG1hdDl1QXZCeHB1TzRjTUhDOXd4RXQtWHBGTERKSlZtZFlpb1lteHlIajdSeGRHbUxJMGtyWG1lMFd3TnNfZFE?oc=5",
+        "direction": "negative",
+        "detail": null,
+        "significance": 1.718
       }
     ]
   },
@@ -1447,17 +1456,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 22.6,
+    "score": 22.5,
     "label": "Low",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 47.6,
+        "score": 47.4,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 77 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 78 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1574,16 +1583,6 @@
       "significance": 1.608
     },
     {
-      "date": "2026-09-21",
-      "type": "analyst_upgrade",
-      "title": "Pearson price target raised to 1,370 GBp from 1,360 GBp at JPMorgan",
-      "source": "tipranks.com",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQX1gtYXdpc1hUMDJHWUotY1d4WkFzOW53TlhuTXVzM25nXzZZZjZqM3lUR01jRWNCd1JyZ1NHM0pvY3ByUzlaa09pcUxyaWV3TnN1bkh2cVdKM01WajBWZlZLYU1YY2xWVld6OFJWUy1LQUVTbDdOT0l5ejIzVVY1WDhuWTgzdTdCcWhKbEpKVWZMenNGc0VvaVBTSGJWVWdoamlkbC10dGMySm1xdnh2eXRBVDhGQQ?oc=5",
-      "direction": "positive",
-      "detail": null,
-      "significance": 1.568
-    },
-    {
       "date": "2026-09-28",
       "type": "workforce_reduction",
       "title": "Pearson's Candy Shuts St. Paul Factory, Cuts 80 Jobs",
@@ -1632,9 +1631,99 @@
       "direction": "neutral",
       "detail": null,
       "significance": 1.571
+    },
+    {
+      "date": "2026-10-15",
+      "type": "fine_or_lawsuit",
+      "title": "One person suffers life-threatening injuries after single-vehicle crash traps driver near Pearson",
+      "source": "cp24.com",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPbjJSb19ZbmhlWmVtTWZLWVNaLWZveTNleTlBTThKbDJwSDdxX1NEWXpCSXN4aDduMlluUU04MGhjX1o2ZEFDcTlTZXdIckdTUGoyaG1EclBFRlg2eEpCRkRPMmRXclZRX1BENnpKVU1NT0I0NnBaUTFubkFIelVaQkFXQlZ6TDZ2d1dIYlBhM0x4RG1hdDl1QXZCeHB1TzRjTUhDOXd4RXQtWHBGTERKSlZtZFlpb1lteHlIajdSeGRHbUxJMGtyWG1lMFd3TnNfZFE?oc=5",
+      "direction": "negative",
+      "detail": null,
+      "significance": 1.718
     }
   ],
   "persistentEvents": [
+    {
+      "id": "c026e17f9f5e26f4e36e",
+      "type": "regulatory_legal",
+      "title": "Pearson, activists file lawsuit over city council meeting ban",
+      "date": "2026-10-15",
+      "status": "pending_review",
+      "reviewDate": "2027-04-13",
+      "direction": "Very negative",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQNG5kUlZ2N3RCRFBxZXkxZkFxTE5QVkRYeWtrdGZjdlZoczYwaVk1Ujc3RWszMUFpSFhxNG9fQVhRWGlPcUxvempUYjIxTFA3Z1FFWFNMQzI4N2RBM0xIVUp4emlVX0NIc3I4ZEQ1ZGMwX1ladmtuZ08xeTlYOWxqdGNidmN4NWNBTnBkLU9UYmZOR1XSAZgBQVVfeXFMT29aRjc5WmlUbWtWTm95M2hBbUgwNzJheGt4bkhnQkZrZXF6Ymw4ZDJ6NTE0aWpxOVpJWVNfaHBTX0F2aDNZV2FwMnlLSUNrUWhXT2Z5UlhqdF9iTUtOSjd6Uldickk2X2pEZjUwVnhLaXdqTUFhNWdEZ1ZURDZyTVBsQ2tISXg4V1dESWFkUm0wbVRpeGlUYjU?oc=5",
+          "publisher": "wreg.com",
+          "date": "2026-10-15"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
+    {
+      "id": "9eee67642c481bf2cda5",
+      "type": "regulatory_legal",
+      "title": "Justin Pearson files lawsuit after being banned from council meetings",
+      "date": "2026-10-15",
+      "status": "pending_review",
+      "reviewDate": "2027-04-13",
+      "direction": "Very negative",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOeGNTUF9xSTllUUNDbXZOUW50RlJ3TzVlUHl3WUxMSng4bXh6SlRCb3ZYZG5Cb04wMHczYVNNUGtNRGpyeEpmTGlPbHFoc1cwcjdkd0dGb3VWa1dJWjBwV004RFBlN01KcVh0TUtLNXlVdkJGdS1tR2w0S2tGOWlrUVpmb18waFBKZWtRb1dEaFBNSlBiWUhIVEItNlk1d2PSAaQBQVVfeXFMTkw4U1RIVnpoZFd3SUhKdmFqaFhudDBZRk9VbS1WY001dzBaWmRFYnBBV0laX1dWN0ZRQ3k4WjRQbTd2SDhzbGtmOXh5ME5wUWFMampPNDdnVDQxRXdENGE1bG0wOWtmUGNZYmhBWWVCamJSSG1tbmswczRZQkNydGJmRGdYRGpNSnFNMlYwOW83UTlpTDlIZ1YycFRhVmxnRlg4b1Q?oc=5",
+          "publisher": "wreg.com",
+          "date": "2026-10-15"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
+    {
+      "id": "8bda7061ff79130facd7",
+      "type": "regulatory_legal",
+      "title": "Justin Pearson, others file lawsuit over Memphis City Council ban",
+      "date": "2026-10-15",
+      "status": "pending_review",
+      "reviewDate": "2027-04-13",
+      "direction": "Very negative",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOd2o2cFVfUFhWTVpqdWRLbGpjV2d5Ym1sdEItemdnOXBEQkxoYzZwTGRoa1F5emJDbHFJa0gxUFhsNEx1ZXJBQV9qUl9CUDJJaFVRQWpBcExuUnNQQVNSb015WDJiSkU1ZHY2bngxb0xHUGhqWDVBMXhQMllkUU9VU3JKZHRxdFpESW9rNjV6ZWY3bEpPVFdpYXRURlRxVzVUWG5pRUF3RkN1M1k3WlkzcDYyUDJyX0ZaQUZUdUtpTUtsaW14cVZoSFZLLVJJOGNNem5zT0x4ZVRTOFQyVGVzeWFRdGJlRkVkdVVCbQ?oc=5",
+          "publisher": "localmemphis.com",
+          "date": "2026-10-15"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
+    {
+      "id": "0dc13d14880141aaaf31",
+      "type": "regulatory_legal",
+      "title": "Justin Pearson files lawsuit after city council ban, claims home was doxed by Sen. Brent Taylor",
+      "date": "2026-10-15",
+      "status": "pending_review",
+      "reviewDate": "2027-04-13",
+      "direction": "Very negative",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOQmF6ZXpHaUlGUUkweHJ6djJ4ZWdRcTk2Sm1CaVRLbTJyb0YyQ2NSWGRzUFk2TjVaVHpFdm5hMlJmbHJQb045NXZZOGNrcG5EaG5qcXAzMWROSmhiMDJua3oxSWxTcEF1WFFwV3VuYzg2RkI4eDdYRUx3RGYyYjZydHpsYlY5M205djI2VV9Ha0w2TW1YZnhMaHljaS1JUEcyVkhfSUo5UERGaElWc0ZSSkthNjJZZ1ZkVkwtb3FtTmdpeWFOYi1xMUhmLUE2YjVpWkFuX29pajZvV1JsV0o5dFFYYXd3T3V2Y0E?oc=5",
+          "publisher": "actionnews5.com",
+          "date": "2026-10-15"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "220badecf7e0962578e5",
       "type": "acquisition",
