@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-17T01:01:33.624938Z",
+  "generatedAt": "2026-10-17T01:25:09.502178Z",
   "company": {
     "companyName": "Unilever",
     "ticker": "ULVR.L",
@@ -23,7 +23,7 @@
     "periodEnd": "2026-10-16",
     "observationCount": 104,
     "scoredDayCount": 99,
-    "latestScore": 50.4,
+    "latestScore": 54.6,
     "latestScoreDate": "2026-10-16",
     "series": [
       {
@@ -955,11 +955,11 @@
       },
       {
         "date": "2026-10-16",
-        "dailyScore": 50.4,
-        "rollingScore": 51.2,
-        "storyCount": 2,
-        "sourceCount": 2,
-        "confidence": 23.7,
+        "dailyScore": 54.6,
+        "rollingScore": 52.0,
+        "storyCount": 21,
+        "sourceCount": 14,
+        "confidence": 85.8,
         "coverageStatus": "ok"
       }
     ],
@@ -1555,14 +1555,14 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 51.1,
+    "score": 51.2,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.3,
+        "score": 51.4,
         "weight": 0.4,
         "reliability": 1.0,
         "detail": "Recency-weighted average of 86 scored days in the latest 90 calendar days; 30-day half-life."
@@ -1743,6 +1743,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "f27ade1a9eb2bfbb8248",
+      "type": "acquisition",
+      "title": "Jim Cramer and Elizabeth Warren criticize McCormick's $45B Unilever food merger — but for very different reasons",
+      "date": "2026-10-16",
+      "status": "pending_review",
+      "reviewDate": "2027-04-14",
+      "direction": "Very negative",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUU1mVTRNSXQ2VnZRbWVzU1d4TXBvVTZqRXBSQzFyZDYwdUo0NDQweHpCU2lXR3h6Q1F6NExBZG9zWUZHMml4YTUtdGNjZ214OVZhYUw1UnpJUG9pY0RjTmxKWkFNSm9hRVZTVFVnOWQ0eDdoWW5tTGItdzVEUFcwSzc2YnJJMUZOYUVFUVlpeDBhTHRIZnhUYllBV2lNbHNLNXpQRQ?oc=5",
+          "publisher": "finance.yahoo.com",
+          "date": "2026-10-16"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "0887cd08ec90c8cdec28",
       "type": "regulatory_legal",

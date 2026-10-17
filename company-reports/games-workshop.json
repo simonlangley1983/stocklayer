@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-17T01:01:33.624938Z",
+  "generatedAt": "2026-10-17T01:25:09.502178Z",
   "company": {
     "companyName": "Games Workshop Group PLC",
     "ticker": "GAW.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-15",
-    "periodEnd": "2026-10-15",
-    "observationCount": 99,
-    "scoredDayCount": 58,
-    "latestScore": 46.4,
-    "latestScoreDate": "2026-10-15",
+    "periodEnd": "2026-10-16",
+    "observationCount": 100,
+    "scoredDayCount": 59,
+    "latestScore": 45.6,
+    "latestScoreDate": "2026-10-16",
     "series": [
       {
         "date": "2026-06-15",
@@ -916,6 +916,15 @@
         "sourceCount": 2,
         "confidence": 40.7,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-16",
+        "dailyScore": 45.6,
+        "rollingScore": 48.4,
+        "storyCount": 8,
+        "sourceCount": 7,
+        "confidence": 74.3,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1583,17 +1592,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 43.5,
+    "score": 43.4,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.1,
+        "score": 50.9,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 52 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 53 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1779,5 +1788,26 @@
       "approximateDate": true
     }
   ],
-  "persistentEvents": []
+  "persistentEvents": [
+    {
+      "id": "32bdabee093f669022b8",
+      "type": "acquisition",
+      "title": "Games Workshop non-executive director acquires shares",
+      "date": "2026-10-16",
+      "status": "pending_review",
+      "reviewDate": "2027-04-14",
+      "direction": "Neutral / mixed",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRHhCTDFhUWJlUGFNNDBTRW9VcWptYjRVUS1vSXJYZmZSSEs2OWNWMWRGQV9RSEc2Z1JwaF9EZUNkWjUycWdMVmZuZkoxM3VnQm84dWZSSnQ3UGVJWUdOWWtrZl9ZQ0Zmd2duVFBreHdPOHQwaFdRYTNWN1hRUUdzeDBiYkk5eGNkaGtmNDVuaC1IZzJtTW9wX1JhQjRXTERvOURINVBoUjhmUEJGbHc?oc=5",
+          "publisher": "investing.com",
+          "date": "2026-10-16"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    }
+  ]
 }
