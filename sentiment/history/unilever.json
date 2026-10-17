@@ -8996,6 +8996,77 @@
       ],
       "flags": [],
       "changeFromPreviousScoredDay": 9.3
+    },
+    {
+      "date": "2026-10-16",
+      "dailyScore": 50.4,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 51.2,
+      "confidence": 23.7,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 50,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 2,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0097,
+      "rejectedCandidateCounts": {
+        "missing_company_alias": 48
+      },
+      "topStories": [
+        {
+          "id": "328c385881a02afb",
+          "storyClusterId": "story-001",
+          "title": "Guyasuta Investment Advisors Inc . Sells 8 , 442 Shares of Unilever PLC $UL",
+          "url": "https://www.dailypolitical.com/2026/10/16/guyasuta-investment-advisors-inc-sells-8442-shares-of-unilever-plc-ul.html",
+          "source": "dailypolitical.com",
+          "publishedAt": "2026-10-16T08:45:00Z",
+          "polarity": 0.0237,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "8fae0f027df0946a",
+          "storyClusterId": "story-002",
+          "title": "Unilever PLC $UL Stock : Guyasuta Investment Advisors Inc . Lowers Holdings",
+          "url": "https://www.tickerreport.com/banking-finance/13621498/unilever-plc-ul-stock-guyasuta-investment-advisors-inc-lowers-holdings.html",
+          "source": "tickerreport.com",
+          "publishedAt": "2026-10-16T08:45:00Z",
+          "polarity": 0.0043,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 23.7",
+          "evidenceArticleIds": [
+            "328c385881a02afb",
+            "8fae0f027df0946a"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "328c385881a02afb",
+            "8fae0f027df0946a"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -5.7
     }
   ]
 }
