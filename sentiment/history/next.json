@@ -3543,35 +3543,49 @@
     },
     {
       "date": "2026-10-16",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 51.1,
-      "confidence": 0.0,
+      "dailyScore": 52.3,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 51.2,
+      "confidence": 11.8,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 0.75,
-      "candidateCount": 50,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 56,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 0,
+      "neutralStoryCount": 1,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 46,
-        "missing_company_alias": 4
+        "ambiguous_company_without_alias": 53,
+        "missing_company_alias": 2
       },
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "5a54af93decfc346",
+          "storyClusterId": "story-001",
+          "title": "Major UK retailer set to open first store in Essex town next month",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNSFhDUnJmTGRNeGVHR1pIYTBTcEdIWlBDT1B3LXRMUzZUeE5XUlR2VEtDdWNsOENmUjFQcWR5XzNWUEFPbS1UckxMMVNkU0IteU5TblFjZTc1MF9kcHNWcW5XdnE2MmlDRjBMalBacTFvRW93d2M0SjJFWmhocURkQ1hrZVk3bEZuTkFKMWZqREQ2U1BWRWx4cFBaUkc0SWhvNTJqLVZZMEVOb3RFS1E?oc=5",
+          "source": "clactonandfrintongazette.co.uk",
+          "publishedAt": "2026-10-16T16:00:00Z",
+          "polarity": 0.1377,
+          "sentiment": "Slightly positive",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 11.8",
+          "evidenceArticleIds": [
+            "5a54af93decfc346"
+          ]
         },
         {
           "type": "collection_degraded",
@@ -3579,10 +3593,12 @@
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": []
+          "evidenceArticleIds": [
+            "5a54af93decfc346"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": -1.8
     }
   ]
 }
