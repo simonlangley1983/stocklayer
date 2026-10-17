@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-17T18:44:54.367840Z",
+  "generatedAt": "2026-10-17T19:02:31.499952Z",
   "company": {
     "companyName": "Shell",
     "ticker": "SHEL.L",
@@ -22,8 +22,8 @@
     "periodStart": "2026-06-30",
     "periodEnd": "2026-10-16",
     "observationCount": 100,
-    "scoredDayCount": 55,
-    "latestScore": 64.1,
+    "scoredDayCount": 52,
+    "latestScore": 49.9,
     "latestScoreDate": "2026-10-16",
     "series": [
       {
@@ -883,51 +883,61 @@
       },
       {
         "date": "2026-10-12",
-        "dailyScore": 51.5,
-        "rollingScore": 55.1,
-        "storyCount": 8,
-        "sourceCount": 8,
-        "confidence": 62.8,
-        "coverageStatus": "ok"
+        "dailyScore": null,
+        "rollingScore": 55.8,
+        "storyCount": 0,
+        "sourceCount": 0,
+        "confidence": 0.0,
+        "coverageStatus": "no_coverage"
       },
       {
         "date": "2026-10-13",
-        "dailyScore": 46.6,
-        "rollingScore": 53.2,
-        "storyCount": 20,
-        "sourceCount": 19,
-        "confidence": 65.7,
-        "coverageStatus": "ok"
+        "dailyScore": null,
+        "rollingScore": 55.3,
+        "storyCount": 0,
+        "sourceCount": 0,
+        "confidence": 0.0,
+        "coverageStatus": "no_coverage"
       },
       {
         "date": "2026-10-14",
-        "dailyScore": 59.6,
-        "rollingScore": 54.0,
-        "storyCount": 14,
-        "sourceCount": 14,
-        "confidence": 62.9,
-        "coverageStatus": "ok"
+        "dailyScore": null,
+        "rollingScore": 54.8,
+        "storyCount": 0,
+        "sourceCount": 0,
+        "confidence": 0.0,
+        "coverageStatus": "no_coverage"
       },
       {
         "date": "2026-10-15",
-        "dailyScore": 48.4,
-        "rollingScore": 52.8,
-        "storyCount": 12,
-        "sourceCount": 13,
-        "confidence": 62.7,
+        "dailyScore": 46.8,
+        "rollingScore": 53.4,
+        "storyCount": 2,
+        "sourceCount": 1,
+        "confidence": 27.2,
         "coverageStatus": "ok"
       },
       {
         "date": "2026-10-16",
-        "dailyScore": 64.1,
-        "rollingScore": 54.5,
-        "storyCount": 20,
-        "sourceCount": 17,
-        "confidence": 63.3,
+        "dailyScore": 49.9,
+        "rollingScore": 52.7,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.1,
         "coverageStatus": "ok"
       }
     ],
     "stories": [
+      {
+        "date": "2026-09-10",
+        "type": "coverage_spike",
+        "title": "Shell faces trial over alleged misleading evidence in Nigeria oil spill case",
+        "source": "premiumtimesng.com",
+        "url": "https://www.premiumtimesng.com/business/business-news/908629-shell-faces-trial-over-alleged-misleading-evidence-in-nigeria-oil-spill-case.html",
+        "direction": "neutral",
+        "detail": "8 stories versus trailing median 1",
+        "significance": 1.573
+      },
       {
         "date": "2026-09-16",
         "type": "sentiment_drop",
@@ -1017,16 +1027,6 @@
         "direction": "neutral",
         "detail": null,
         "significance": 1.583
-      },
-      {
-        "date": "2026-10-15",
-        "type": "merger_acquisition",
-        "title": "Oil watchdog faces 'conflict of interests' row over directors’ Shell and BP shares",
-        "source": "theferret.scot",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9xWGlOeDliZGJTejVMUTdudG5HRTFoYXJ5SFo2ODBoQzFJb0lEZUk4RnNGTjdwc3lJX1U3ZXo0SW80VTVwSVFJMXNsMUYtZ1dnZkxkcFZuVFV4MW9NcTg3LXFjellhS0xta2w2anZB?oc=5",
-        "direction": "neutral",
-        "detail": null,
-        "significance": 1.584
       }
     ]
   },
@@ -1519,17 +1519,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 46.7,
+    "score": 46.5,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 54.2,
+        "score": 53.7,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 51 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 48 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1604,6 +1604,16 @@
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
+    },
+    {
+      "date": "2026-09-10",
+      "type": "coverage_spike",
+      "title": "Shell faces trial over alleged misleading evidence in Nigeria oil spill case",
+      "source": "premiumtimesng.com",
+      "url": "https://www.premiumtimesng.com/business/business-news/908629-shell-faces-trial-over-alleged-misleading-evidence-in-nigeria-oil-spill-case.html",
+      "direction": "neutral",
+      "detail": "8 stories versus trailing median 1",
+      "significance": 1.573
     },
     {
       "date": "2026-09-16",
@@ -1694,16 +1704,6 @@
       "direction": "neutral",
       "detail": null,
       "significance": 1.583
-    },
-    {
-      "date": "2026-10-15",
-      "type": "merger_acquisition",
-      "title": "Oil watchdog faces 'conflict of interests' row over directors’ Shell and BP shares",
-      "source": "theferret.scot",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9xWGlOeDliZGJTejVMUTdudG5HRTFoYXJ5SFo2ODBoQzFJb0lEZUk4RnNGTjdwc3lJX1U3ZXo0SW80VTVwSVFJMXNsMUYtZ1dnZkxkcFZuVFV4MW9NcTg3LXFjellhS0xta2w2anZB?oc=5",
-      "direction": "neutral",
-      "detail": null,
-      "significance": 1.584
     }
   ],
   "persistentEvents": [
