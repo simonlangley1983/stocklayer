@@ -5935,23 +5935,22 @@
       "dailyScore": 49.8,
       "dailyLabel": "Neutral / mixed",
       "rollingScore": 49.3,
-      "confidence": 42.2,
-      "confidenceBand": "medium",
+      "confidence": 36.2,
+      "confidenceBand": "low",
       "coverageStatus": "ok",
       "collectionCompleteness": 0.75,
-      "candidateCount": 79,
-      "eligibleArticleCount": 4,
-      "storyCount": 4,
-      "effectiveStoryCount": 4.0,
-      "sourceCount": 4,
+      "candidateCount": 72,
+      "eligibleArticleCount": 3,
+      "storyCount": 3,
+      "effectiveStoryCount": 3.0,
+      "sourceCount": 3,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 4,
+      "neutralStoryCount": 3,
       "negativeStoryCount": 0,
-      "dispersion": 0.0022,
+      "dispersion": 0.0025,
       "rejectedCandidateCounts": {
         "ambiguous_company_without_alias": 66,
-        "duplicate_publisher_headline": 3,
-        "missing_company_alias": 6
+        "missing_company_alias": 3
       },
       "topStories": [
         {
@@ -5977,17 +5976,6 @@
           "publisherCount": 1
         },
         {
-          "id": "cd1bc0cfda642eac",
-          "storyClusterId": "story-004",
-          "title": "Form 424B2 BARCLAYS BANK PLC",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOaHpVQmctNV9JbllTYUtqVi1majBTRUYzNHJWeWR2ZWY3dW56QUVIRnlUVXlSVDQ0MDE3WTduVlpscU9uZWVXR01VWFhtd09CdXhxMGt6c0l1UU9DZklXejdvWjdwVERJYmJ2T1VsYk5uX0MzMFR4MlRFZkVWc1hHX1VQaE95eVhEY2t5WQ?oc=5",
-          "source": "streetinsider.com",
-          "publishedAt": "2026-10-16T21:21:10Z",
-          "polarity": -0.0066,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        },
-        {
           "id": "31fb98e27c874ac9",
           "storyClusterId": "story-002",
           "title": "Barclays Regulatory News. Live BARC RNS. Regulatory News Articles for Barclays Plc Ord 25p",
@@ -6001,6 +5989,18 @@
       ],
       "flags": [
         {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 36.2",
+          "evidenceArticleIds": [
+            "4fbaea6f761bd51e",
+            "bd345ac57eeafa07",
+            "31fb98e27c874ac9"
+          ]
+        },
+        {
           "type": "collection_degraded",
           "direction": "neutral",
           "severity": "medium",
@@ -6009,7 +6009,6 @@
           "evidenceArticleIds": [
             "4fbaea6f761bd51e",
             "bd345ac57eeafa07",
-            "cd1bc0cfda642eac",
             "31fb98e27c874ac9"
           ]
         }

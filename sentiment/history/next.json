@@ -3543,61 +3543,35 @@
     },
     {
       "date": "2026-10-16",
-      "dailyScore": 40.3,
-      "dailyLabel": "Slightly negative",
-      "rollingScore": 49.7,
-      "confidence": 27.5,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 51.1,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
+      "coverageStatus": "no_coverage",
       "collectionCompleteness": 0.75,
-      "candidateCount": 93,
-      "eligibleArticleCount": 2,
-      "storyCount": 2,
-      "effectiveStoryCount": 2.0,
-      "sourceCount": 2,
+      "candidateCount": 50,
+      "eligibleArticleCount": 0,
+      "storyCount": 0,
+      "effectiveStoryCount": 0,
+      "sourceCount": 0,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 1,
-      "negativeStoryCount": 1,
-      "dispersion": 0.5238,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 87,
+        "ambiguous_company_without_alias": 46,
         "missing_company_alias": 4
       },
-      "topStories": [
-        {
-          "id": "85f9fb69d643ce37",
-          "storyClusterId": "story-002",
-          "title": "Appeal Launched After Children’s Clothes Stolen from Hedge End Next Store Police are appealing for information after £320 worth of children’s clothing was reportedly stolen from a Next store in Hedge End. The reported shoplifting incident took place at the N",
-          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOeUlCRDkzNmxhRHl4WWF5NlRuZWc2RUpabmJKd0tLVjlwbjBxQ2p1dWF3bTdjR0UtaF9mdy1NZkdhbnNvOUlOZ3BuUVpWWWhoTERBNjhGLTgzMXBwUTd3d0lrNWJTMmE5X2dmVjZkSGVlaTRXamUxQXEtV0puN1BDTmwtVkR3dXY0dXh5WHhrYjdmUWxYU01YZGdSSi1GZkVKQkNtX3NyZzM5U1NHVlN5bGNnTFFJS29EY3Z4SDlELWJYdUdXRHlwcVR4LWJpdWpxMVlpZUdsMF8?oc=5",
-          "source": "facebook.com",
-          "publishedAt": "2026-10-16T17:00:57Z",
-          "polarity": -0.9099,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "5a54af93decfc346",
-          "storyClusterId": "story-001",
-          "title": "Major UK retailer set to open first store in Essex town next month",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNSFhDUnJmTGRNeGVHR1pIYTBTcEdIWlBDT1B3LXRMUzZUeE5XUlR2VEtDdWNsOENmUjFQcWR5XzNWUEFPbS1UckxMMVNkU0IteU5TblFjZTc1MF9kcHNWcW5XdnE2MmlDRjBMalBacTFvRW93d2M0SjJFWmhocURkQ1hrZVk3bEZuTkFKMWZqREQ2U1BWRWx4cFBaUkc0SWhvNTJqLVZZMEVOb3RFS1E?oc=5",
-          "source": "clactonandfrintongazette.co.uk",
-          "publishedAt": "2026-10-16T16:00:00Z",
-          "polarity": 0.1377,
-          "sentiment": "Slightly positive",
-          "publisherCount": 1
-        }
-      ],
+      "topStories": [],
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 27.5",
-          "evidenceArticleIds": [
-            "85f9fb69d643ce37",
-            "5a54af93decfc346"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         },
         {
           "type": "collection_degraded",
@@ -3605,13 +3579,10 @@
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "85f9fb69d643ce37",
-            "5a54af93decfc346"
-          ]
+          "evidenceArticleIds": []
         }
       ],
-      "changeFromPreviousScoredDay": -13.8
+      "changeFromPreviousScoredDay": null
     }
   ]
 }

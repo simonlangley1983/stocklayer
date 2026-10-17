@@ -6791,30 +6791,41 @@
     },
     {
       "date": "2026-10-16",
-      "dailyScore": 50.0,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.1,
-      "confidence": 11.4,
+      "dailyScore": 61.3,
+      "dailyLabel": "Positive",
+      "rollingScore": 51.6,
+      "confidence": 27.1,
       "confidenceBand": "low",
       "coverageStatus": "ok",
       "collectionCompleteness": 0.75,
-      "candidateCount": 58,
-      "eligibleArticleCount": 1,
-      "storyCount": 1,
-      "effectiveStoryCount": 1.0,
-      "sourceCount": 1,
-      "positiveStoryCount": 0,
+      "candidateCount": 52,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 1,
       "neutralStoryCount": 1,
       "negativeStoryCount": 0,
-      "dispersion": 0.0,
+      "dispersion": 0.4545,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 53,
+        "ambiguous_company_without_alias": 46,
         "missing_company_alias": 4
       },
       "topStories": [
         {
-          "id": "36290db23c56395a",
+          "id": "1208ca9be0554090",
           "storyClusterId": "story-001",
+          "title": "HSBC Holdings (00005) is set to expand its Hong Kong AI team, with plans to double its size over the next two to three years.",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPcjY2ZVZUYlI2T1BsTG9WOFpYVC1ya0t6WEU0RTVUSUp4R3VwY2JNQ2dUanJFTFZ0RDBfams3azM5b0hOblBsNi03cnBYZ0xmWWJsbnFZV3FLWl8xaWZNTXkzS1pDdnNReFc5VDl0VDVLM0h5VlM3RkxQc0tQNC03OUFJYUVNUEVXOWlURDNQTnVZWklvOW92UXRn?oc=5",
+          "source": "moomoo.com",
+          "publishedAt": "2026-10-16T07:26:59Z",
+          "polarity": 0.9063,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "36290db23c56395a",
+          "storyClusterId": "story-002",
           "title": "13,346 Shares in HSBC Holdings plc $HSBC Acquired by Signal Advisors Wealth LLC",
           "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQNlU2VERuekdQdmJxNl9LNGk5dkFwUmJtZW5FZ3Z2VnlzSWM1TDRhclpkREZlVkk5MF9SOE9TZTgzN1V2SldrZUY5X2dxRmpaUVcxQ0I5d2dfb1VXMGt4dVFLNncyRVZaTEpVNlZQUGF2VlJVR1F0UWQtZXpvcWV1WXQwbHdvd3dBdDFTZHNHUWR0UWxEOHZHczdIaVUyYXNXZVZFeVUxRzBnbnFiODBnZ1hiRl9CeDl1dUt0TE9VTUZkRlI4dlAteE1yWnBWeERxcTlJMg?oc=5",
           "source": "marketbeat.com",
@@ -6830,8 +6841,9 @@
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 11.4",
+          "detail": "Confidence is 27.1",
           "evidenceArticleIds": [
+            "1208ca9be0554090",
             "36290db23c56395a"
           ]
         },
@@ -6842,11 +6854,12 @@
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
+            "1208ca9be0554090",
             "36290db23c56395a"
           ]
         }
       ],
-      "changeFromPreviousScoredDay": 0.0
+      "changeFromPreviousScoredDay": 11.3
     }
   ]
 }
