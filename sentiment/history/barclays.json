@@ -6014,6 +6014,78 @@
         }
       ],
       "changeFromPreviousScoredDay": -1.8
+    },
+    {
+      "date": "2026-10-17",
+      "dailyScore": 50.5,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.5,
+      "confidence": 23.9,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 69,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 2,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0373,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 63,
+        "missing_company_alias": 4
+      },
+      "topStories": [
+        {
+          "id": "5fd3a1a36a00781e",
+          "storyClusterId": "story-002",
+          "title": "Rosen Law Firm Encourages Barclays PLC Investors to Inquire About Securities Class Action Investigation - BCS",
+          "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPc1VhM1o5YTF1Ymp3dlV0dF9aREJUNWhJN3FLcDMwdUtBQ3BTczlvYk90RjZyWXJwQzBJRFJqb0Y0UlF3MFUxSkRsOU5lLWdROWNDNV9ta1Y2YWc5ZnBXbEVGREIzcjR6bDF2cFczU2VNc0ZiSTRXa01LZFRkc0lPeWFnYmIxVDlQYkljLVFid0R6Xy1rT2xxcERVVFNYdjZwT1h0RE5mMUlJSGM2LXQzdElUbjlvWnRRd0JyT1RkMjV4UlFSRzB3WGFIN0JEZndScFo5bTJobk95V0VYMzNLdy1UTmZtajBzM2ZSSDRBOHJlY3NEazdDOWlDQTg?oc=5",
+          "source": "morningstar.com",
+          "publishedAt": "2026-10-17T19:41:00Z",
+          "polarity": 0.059,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "947a72e40708c85f",
+          "storyClusterId": "story-001",
+          "title": "Barclays Bank PLC Dual Directional Worst Of Buffer Note ABXXDXX (ABXXDXX) Stock Price, News, Quote & History",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5IMDVMeFE3VkU4bm9pT2RrOVA0Z1NYcWM5STJSX3dCXzltb3ktemxhc1JhWTViaHJTZEFOd3hZRzdTa2dpOW5Vak4tOER3T3VyaV9HMTF3?oc=5",
+          "source": "ca.finance.yahoo.com",
+          "publishedAt": "2026-10-17T13:17:47Z",
+          "polarity": -0.0157,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 23.9",
+          "evidenceArticleIds": [
+            "5fd3a1a36a00781e",
+            "947a72e40708c85f"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "5fd3a1a36a00781e",
+            "947a72e40708c85f"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 0.7
     }
   ]
 }
