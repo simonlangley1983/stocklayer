@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-10-18T19:09:35.893844Z",
+  "generatedAt": "2026-10-18T19:31:53.095380Z",
   "asOfDate": "2026-10-17",
   "companies": {
     "astrazeneca": {
@@ -139,7 +139,7 @@
           "title": "Shell’s ARC Deal Seen as Win for Mark Carney’s Pro-Oil Pivot",
           "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOSWR2UUUyM1BNNmdwdDB1T1VicDRyVkhTdEFtRVNtbUpicW9JRU5iZW9OQ3pCR0YxZE14M2dqWUJPM2wycEFWY291UFdXNG9qZkdXSkNGbUJtbnZROExraFlOYlY3TWZkeUtJVjdNWEdEVEM1dGZ2T3JVQjFXMWFLREhQOWhyeW1FR2dXcE44aVlvZDA?oc=5",
           "source": "energynow.com",
-          "publishedAt": "2026-10-17T07:41:14Z",
+          "publishedAt": "2026-10-17T12:34:14Z",
           "polarity": 0.8038,
           "sentiment": "Very positive",
           "publisherCount": 1
@@ -400,15 +400,15 @@
       "ticker": "BATS.L",
       "slug": "british-american-tobacco",
       "date": "2026-10-17",
-      "dailyScore": 43.1,
+      "dailyScore": 42.9,
       "dailyLabel": "Slightly negative",
-      "rollingScore": 50.3,
-      "confidence": 63.2,
+      "rollingScore": 50.2,
+      "confidence": 63.1,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 30,
-      "sourceCount": 28,
-      "changeFromPreviousScoredDay": -11.7,
+      "storyCount": 29,
+      "sourceCount": 27,
+      "changeFromPreviousScoredDay": -11.9,
       "flags": [
         {
           "type": "collection_degraded",
@@ -926,26 +926,89 @@
       "ticker": "BARC.L",
       "slug": "barclays",
       "date": "2026-10-17",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 48.7,
-      "confidence": 0.0,
+      "dailyScore": 50.6,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.0,
+      "confidence": 36.2,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 4,
+      "sourceCount": 2,
+      "changeFromPreviousScoredDay": 13.1,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 36.2",
+          "evidenceArticleIds": [
+            "f44aab4729b7cb3e",
+            "a80b6fd0a29014f3",
+            "417627ded298c796",
+            "947a72e40708c85f"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "f44aab4729b7cb3e",
+            "a80b6fd0a29014f3",
+            "417627ded298c796",
+            "947a72e40708c85f"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "f44aab4729b7cb3e",
+          "storyClusterId": "story-002",
+          "title": "Barclays Bank PLC Dual Directional Worst Of Buffer Note ABXXDXX (ABXXDXX) Holdings",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1JSlhZYWJTRVItU1luSHdKRHN5WHYzUmRkUkJIelNjR2hjYkhhclZhak94Qndod3pib2xyU0UxTkFUMUFCT0htOEFqQ3V2UHhxRVBvUndfVTNqZFA5S1dJZTRR?oc=5",
+          "source": "ca.finance.yahoo.com",
+          "publishedAt": "2026-10-17T14:08:52Z",
+          "polarity": 0.064,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "a80b6fd0a29014f3",
+          "storyClusterId": "story-004",
+          "title": "Rosen Law Firm Encourages Barclays PLC Investors to Inquire About Securities Class Action Investigation - BCS",
+          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOTTFVVTVFRHlxVTVKQWRwb1pFcXMxZnFxQVZaeHdVb1ZxdzhtZjAwbHFSZ2lmWEtyU0N0cUJNMEdXYVhsdkNyNEdwVlk1Z1VneTdXdU5BckUwbE5kTmxVdWF3bDhXY2RYMHIwNnJRRkx5Vk5fVWc3YWs1Rm5LbDQyWm0tR0pqT216dG9BR3dzN0dEaVl3TUZJNlZIVU45Z3N0OXI1X0Vva2tQMzR1cllUSGsyak1nZU9mX2djc3NXM0JLa0JHUTZnNWRmNDNFN2p2WDVLQmIwWU9SOURUOUNvRnFOVjhQWmZrTGdxcThWeE96bmNmQUdV?oc=5",
+          "source": "prnewswire.com",
+          "publishedAt": "2026-10-17T19:41:00Z",
+          "polarity": 0.059,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "417627ded298c796",
+          "storyClusterId": "story-003",
+          "title": "Barclays PLC (BARC.L) Stock Price, News, Quote & History",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9MNG1ma21lODFCWXhCTXhzOHBVMzNOYVJZMlNmeWZEenJOT3JmSXVfbm02cjgwUGxTd2lxekV5VFBGR1JlakQ0SjdyVzA5YTdkbms4UA?oc=5",
+          "source": "ca.finance.yahoo.com",
+          "publishedAt": "2026-10-17T16:04:38Z",
+          "polarity": -0.0335,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "947a72e40708c85f",
+          "storyClusterId": "story-001",
+          "title": "Barclays Bank PLC Dual Directional Worst Of Buffer Note ABXXDXX (ABXXDXX) Stock Price, News, Quote & History",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5IMDVMeFE3VkU4bm9pT2RrOVA0Z1NYcWM5STJSX3dCXzltb3ktemxhc1JhWTViaHJTZEFOd3hZRzdTa2dpOW5Vak4tOER3T3VyaV9HMTF3?oc=5",
+          "source": "ca.finance.yahoo.com",
+          "publishedAt": "2026-10-17T13:17:47Z",
+          "polarity": -0.0157,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
     },
     "compass": {
       "companyName": "Compass Group",
@@ -4471,15 +4534,15 @@
       "ticker": "ABDN.L",
       "slug": "aberdeen-group",
       "date": "2026-10-17",
-      "dailyScore": 53.0,
+      "dailyScore": 49.6,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 51.0,
-      "confidence": 60.2,
+      "rollingScore": 50.4,
+      "confidence": 59.0,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 65,
-      "sourceCount": 15,
-      "changeFromPreviousScoredDay": 4.9,
+      "storyCount": 66,
+      "sourceCount": 11,
+      "changeFromPreviousScoredDay": 1.5,
       "flags": [
         {
           "type": "collection_degraded",
@@ -4489,50 +4552,28 @@
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
             "3c6809a6d8fffead",
-            "7e3b246fddd85fb9",
-            "a8d2891e54458996",
             "09b7a62ccdff9b13",
-            "985084b27082dc02"
+            "985084b27082dc02",
+            "f66feb4f4b7a167f",
+            "c8e17beb6b7f6e5d"
           ]
         }
       ],
       "topStories": [
         {
           "id": "3c6809a6d8fffead",
-          "storyClusterId": "story-056",
+          "storyClusterId": "story-059",
           "title": "Improved second-half display helps Aberdeen to victory against St Mirren",
           "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOMW5zNWYxY2JUWHFGNktVUGN2dFFoRGNWZGNIQU0yTWxTdXBUZkpUREpfZXF1N3IxeEJxZHNCLTd1WS0tMWdIVzNTbkNpSWJEOWRVclBSN2lKc2RCMzdIUlQ1ZGZ1Zy0yNkJPZzBuSFhHOVQ1TmZjVGVDSjluZXVnd2FjemVkTVVwN3BtVkdraV9BZVNDU2FqU3M2RzlWTjBpYVNSd0VPOGFNaXdSaWNqVHgtRTlET2x1OExNenNB?oc=5",
           "source": "skysports.com",
           "publishedAt": "2026-10-17T22:57:26Z",
           "polarity": 0.9194,
           "sentiment": "Very positive",
-          "publisherCount": 5
-        },
-        {
-          "id": "7e3b246fddd85fb9",
-          "storyClusterId": "story-063",
-          "title": "Aberdeen 'showed we can be good side with good players'",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5JTzB2U2UzUnIzNHpTelVZWHg2V19yRW9ONWdaN0lKRlI4Vk9RTU9fd2Y4N2NBQUVFZHc1c0VrbkNEaGxVZUQtU2d0MlN6dFdFbG9SbjFkdXJDZw?oc=5",
-          "source": "bbc.com",
-          "publishedAt": "2026-10-17T17:44:46Z",
-          "polarity": 0.9125,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "a8d2891e54458996",
-          "storyClusterId": "story-060",
-          "title": "Stephen Robinson impressed by Aberdeen’s second-half response against St Mirren",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQUXptWFBTWTVVLU5UTnJ1ckdjZHZwNVhsTEhlUFY1UEZBamYyVm5QU2RjeHB5ZjBtRkYxT2puc1owS1VBdFpJdGJUSlk4V2lBOTVDeHJxQ3dRQ1Z3T2RQN2MyU3JWNjRaNzhjU2NZektRblp4N24zZ1VFS242NWY0SDJpMU10UENoRWYyV25Fd0lycjVsNExjaFpSU3lOejMxLW44RDhWZ1RKUmhybGdhVm9NckZGVXh6bGVMbk5oWHhudw?oc=5",
-          "source": "stalbansreview.co.uk",
-          "publishedAt": "2026-10-17T17:02:17Z",
-          "polarity": 0.8665,
-          "sentiment": "Very positive",
           "publisherCount": 2
         },
         {
           "id": "09b7a62ccdff9b13",
-          "storyClusterId": "story-062",
+          "storyClusterId": "story-064",
           "title": "Aberdeen 3 St Mirren 1: Dons hailed for rising to half-time boos",
           "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQbFhvM0l6akFDTlZqd29xRHEwZ1ZSeWdJcG8zWTNFYzcxaTZiNW5ENjd0VHdWOWhocXpjYzVIYnRDcEJCZkhBVFR5TkFIZFkweXdHNF96bW92X1p3X3RJdndtRDlCUG1SUlcwaXFjeVVSRmxOWjVKbWZUVGM2Smtfc1p6enZuWjNIb2NDa0pDZkFuQkgxZlE2MExDa1B4MGdJRTM2c1ctV1FGOWRUVVVUcmwwaUVsbDZMRFBWNXVjNlpkMkJpdl9hZVdPSTJCT0lvdlE?oc=5",
           "source": "pressandjournal.co.uk",
@@ -4543,13 +4584,35 @@
         },
         {
           "id": "985084b27082dc02",
-          "storyClusterId": "story-055",
+          "storyClusterId": "story-058",
           "title": "Aberdeen 3 St Mirren 1: Talking points as Dons end Pittodrie goal drought and wait for home Premiership win",
           "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNM3JLeDM0bHVnTXpsX2Z0cmRnT282VEw3aTVlNlNJSUhKNG5tUmtpUUxzc1NsZXk2dXcxc3lrXzNyYmg4Tk13eExmTktwQ2l0TXowREFOSHd0NVNyS3I5b1RvS3VsODEwSlRITFBKWlhzSnN6djNYWXVrVHlRTkdKVVRReGhlU2pHRnlOUVI4ekY3RVk2M3g2RUtQOElNX2Rzb0w4UXV2cUR3dw?oc=5",
           "source": "pressandjournal.co.uk",
           "publishedAt": "2026-10-17T16:03:25Z",
           "polarity": 0.4871,
           "sentiment": "Positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "f66feb4f4b7a167f",
+          "storyClusterId": "story-063",
+          "title": "Saints defeated by Aberdeen at Pittodrie",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBqb0NVem04d0pHSm5NbzUtMy16Ty1OYi0wOEJnLUVnRHY3eEFkNm44M3l4U0dWd3c1bVpuWEFfSEdTd1hjYlNuSG53VnptaWZidVFmeEJ4azdfQUF5aGhjbFM4TTFDdzNpU3hvYktR?oc=5",
+          "source": "stmirren.com",
+          "publishedAt": "2026-10-17T17:05:34Z",
+          "polarity": -0.4761,
+          "sentiment": "Negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "c8e17beb6b7f6e5d",
+          "storyClusterId": "story-057",
+          "title": "Aberdeen 3 St Mirren 1: Sule opens account but same old issues on show as losing run extends to five",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE45eld1dFNxeDlvYlJsWmZlMjdIdXlkZUtraG52UkJGYjQ0TVVZbm5qd3NLWEFWdTczZm5tU3I0Y0g3MUtEWkV3LXdROTJLV2RLZldEb1N3WUV6VThtWEtVTTJ4dkVjZklxUkVmUzJQMnEyTk9DanNOTzVxeGw?oc=5",
+          "source": "stmirrenmercury.substack.com",
+          "publishedAt": "2026-10-17T16:02:47Z",
+          "polarity": -0.4448,
+          "sentiment": "Negative",
           "publisherCount": 1
         }
       ]
