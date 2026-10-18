@@ -3,7 +3,7 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-10-18T14:43:19.687966Z",
+  "generatedAt": "2026-10-18T16:26:11.855089Z",
   "asOfDate": "2026-10-17",
   "companyCount": 100,
   "companies": {
@@ -311,29 +311,22 @@
       "ticker": "BARC.L",
       "slug": "barclays",
       "date": "2026-10-17",
-      "dailyScore": 50.6,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.5,
-      "confidence": 36.2,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 48.7,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 4,
-      "sourceCount": 2,
-      "changeFromPreviousScoredDay": 0.8,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 36.2"
-        },
-        {
-          "type": "collection_degraded",
-          "direction": "neutral",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "The provider result ceiling was reached for this day"
+          "detail": "Collection succeeded but found no eligible coverage"
         }
       ]
     },
