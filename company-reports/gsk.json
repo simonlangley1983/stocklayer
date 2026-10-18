@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-18T00:35:58.165037Z",
+  "generatedAt": "2026-10-18T01:19:12.254646Z",
   "company": {
     "companyName": "GSK",
     "ticker": "GSK.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-15",
-    "periodEnd": "2026-10-16",
-    "observationCount": 90,
-    "scoredDayCount": 87,
-    "latestScore": 40.7,
-    "latestScoreDate": "2026-10-16",
+    "periodEnd": "2026-10-17",
+    "observationCount": 91,
+    "scoredDayCount": 88,
+    "latestScore": 48.3,
+    "latestScoreDate": "2026-10-17",
     "series": [
       {
         "date": "2026-06-15",
@@ -835,6 +835,15 @@
         "sourceCount": 13,
         "confidence": 87.7,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-17",
+        "dailyScore": 48.3,
+        "rollingScore": 49.9,
+        "storyCount": 5,
+        "sourceCount": 5,
+        "confidence": 68.1,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1429,17 +1438,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 52.7,
+    "score": 52.6,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 56.3,
+        "score": 56.0,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 74 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 75 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1617,6 +1626,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "82050da0e8c0b3f6fba0",
+      "type": "leadership_restructuring",
+      "title": "Luke Miels: Flinders University Biologist, Global Pharma Leader, and Chief Executive Officer of GSK",
+      "date": "2026-10-17",
+      "status": "pending_review",
+      "reviewDate": "2027-01-15",
+      "direction": "Slightly positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPUy01alVpRHVFaWIzOTdoTEtwajNfRG9MWDRLTURKcGUwWlpDb0hqcUd1em1sSThUYkJKSmJHSi1JVU1LOVRSN1k2UzJGOUlJMHVWaTF4Q2dPRkM3MlVBdW96eTRzY1FZY0Zoc0hKelhYcWVPOHN2Ml9mR2N3c0F2WERKSFF5MEhaTmtxQWV4dnNKeXVJSmp5clpjbXRUZUxHdGUtWVdHbG9rVVFhaGtfQVFYWFdRaG1ZMzc0U2ZhaG8ySjhaZDhtMkotNA?oc=5",
+          "publisher": "bbntimes.com",
+          "date": "2026-10-17"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "bbb0c72c8d7fe20083e4",
       "type": "leadership_restructuring",

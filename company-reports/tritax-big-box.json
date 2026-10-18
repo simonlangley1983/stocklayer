@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-18T00:35:58.165037Z",
+  "generatedAt": "2026-10-18T01:19:12.254646Z",
   "company": {
     "companyName": "Tritax Big Box REIT PLC",
     "ticker": "BBOX.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-09-05",
-    "periodEnd": "2026-10-16",
-    "observationCount": 42,
-    "scoredDayCount": 14,
-    "latestScore": 60.7,
-    "latestScoreDate": "2026-10-15",
+    "periodEnd": "2026-10-17",
+    "observationCount": 43,
+    "scoredDayCount": 15,
+    "latestScore": 51.3,
+    "latestScoreDate": "2026-10-17",
     "series": [
       {
         "date": "2026-09-05",
@@ -403,6 +403,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-10-17",
+        "dailyScore": 51.3,
+        "rollingScore": 50.9,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.4,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1070,17 +1079,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 58.5,
+    "score": 58.6,
     "label": "Positive",
-    "evidenceCoverage": 88,
+    "evidenceCoverage": 90,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
         "score": 50.7,
         "weight": 0.4,
-        "reliability": 0.7,
-        "detail": "Recency-weighted average of 14 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.75,
+        "detail": "Recency-weighted average of 15 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
