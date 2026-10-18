@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-10-18T14:43:19.687966Z",
+  "generatedAt": "2026-10-18T16:26:11.855089Z",
   "asOfDate": "2026-10-17",
   "companies": {
     "astrazeneca": {
@@ -926,89 +926,26 @@
       "ticker": "BARC.L",
       "slug": "barclays",
       "date": "2026-10-17",
-      "dailyScore": 50.6,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.5,
-      "confidence": 36.2,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 48.7,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 4,
-      "sourceCount": 2,
-      "changeFromPreviousScoredDay": 0.8,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 36.2",
-          "evidenceArticleIds": [
-            "f44aab4729b7cb3e",
-            "a80b6fd0a29014f3",
-            "417627ded298c796",
-            "947a72e40708c85f"
-          ]
-        },
-        {
-          "type": "collection_degraded",
-          "direction": "neutral",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "f44aab4729b7cb3e",
-            "a80b6fd0a29014f3",
-            "417627ded298c796",
-            "947a72e40708c85f"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "f44aab4729b7cb3e",
-          "storyClusterId": "story-002",
-          "title": "Barclays Bank PLC Dual Directional Worst Of Buffer Note ABXXDXX (ABXXDXX) Holdings",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1JSlhZYWJTRVItU1luSHdKRHN5WHYzUmRkUkJIelNjR2hjYkhhclZhak94Qndod3pib2xyU0UxTkFUMUFCT0htOEFqQ3V2UHhxRVBvUndfVTNqZFA5S1dJZTRR?oc=5",
-          "source": "ca.finance.yahoo.com",
-          "publishedAt": "2026-10-17T14:08:52Z",
-          "polarity": 0.064,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        },
-        {
-          "id": "a80b6fd0a29014f3",
-          "storyClusterId": "story-004",
-          "title": "Rosen Law Firm Encourages Barclays PLC Investors to Inquire About Securities Class Action Investigation - BCS",
-          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOTTFVVTVFRHlxVTVKQWRwb1pFcXMxZnFxQVZaeHdVb1ZxdzhtZjAwbHFSZ2lmWEtyU0N0cUJNMEdXYVhsdkNyNEdwVlk1Z1VneTdXdU5BckUwbE5kTmxVdWF3bDhXY2RYMHIwNnJRRkx5Vk5fVWc3YWs1Rm5LbDQyWm0tR0pqT216dG9BR3dzN0dEaVl3TUZJNlZIVU45Z3N0OXI1X0Vva2tQMzR1cllUSGsyak1nZU9mX2djc3NXM0JLa0JHUTZnNWRmNDNFN2p2WDVLQmIwWU9SOURUOUNvRnFOVjhQWmZrTGdxcThWeE96bmNmQUdV?oc=5",
-          "source": "prnewswire.com",
-          "publishedAt": "2026-10-17T19:41:00Z",
-          "polarity": 0.059,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        },
-        {
-          "id": "417627ded298c796",
-          "storyClusterId": "story-003",
-          "title": "Barclays PLC (BARC.L) Stock Price, News, Quote & History",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9MNG1ma21lODFCWXhCTXhzOHBVMzNOYVJZMlNmeWZEenJOT3JmSXVfbm02cjgwUGxTd2lxekV5VFBGR1JlakQ0SjdyVzA5YTdkbms4UA?oc=5",
-          "source": "ca.finance.yahoo.com",
-          "publishedAt": "2026-10-17T16:04:38Z",
-          "polarity": -0.0335,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        },
-        {
-          "id": "947a72e40708c85f",
-          "storyClusterId": "story-001",
-          "title": "Barclays Bank PLC Dual Directional Worst Of Buffer Note ABXXDXX (ABXXDXX) Stock Price, News, Quote & History",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5IMDVMeFE3VkU4bm9pT2RrOVA0Z1NYcWM5STJSX3dCXzltb3ktemxhc1JhWTViaHJTZEFOd3hZRzdTa2dpOW5Vak4tOER3T3VyaV9HMTF3?oc=5",
-          "source": "ca.finance.yahoo.com",
-          "publishedAt": "2026-10-17T13:17:47Z",
-          "polarity": -0.0157,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "compass": {
       "companyName": "Compass Group",
