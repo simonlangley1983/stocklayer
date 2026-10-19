@@ -5930,6 +5930,91 @@
         }
       ],
       "changeFromPreviousScoredDay": 13.1
+    },
+    {
+      "date": "2026-10-18",
+      "dailyScore": 46.5,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 48.7,
+      "confidence": 32.3,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 45,
+      "eligibleArticleCount": 3,
+      "storyCount": 3,
+      "effectiveStoryCount": 3.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 2,
+      "negativeStoryCount": 1,
+      "dispersion": 0.1185,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 40,
+        "missing_company_alias": 2
+      },
+      "topStories": [
+        {
+          "id": "9e1ee222c9e61697",
+          "storyClusterId": "story-003",
+          "title": "News - Watch out for new “British Gas” and “Barclays Bank” scam",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOYnZ3VFlCOXR0ODF1T3VMaUJaV1dNTVdOUU5kTXBpNXdQc3lITXZVeVZNcHQtSGZqVWJ5UGZnZ3JidWI4NHYtSEpkUlk2d05fcmY3TENjNW1QYVVTWE9ZQUlfQVpXTDhTTzJLVEZZQzY3UFlIY2hQTGJiZWpIMXJLdS00WGdZdUhvS2xCXy1fUkZJRE9u?oc=5",
+          "source": "westcoasttoday.co.uk",
+          "publishedAt": "2026-10-18T07:13:26Z",
+          "polarity": -0.2843,
+          "sentiment": "Negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "417627ded298c796",
+          "storyClusterId": "story-002",
+          "title": "Barclays PLC (BARC.L) Stock Price, News, Quote & History",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9MNG1ma21lODFCWXhCTXhzOHBVMzNOYVJZMlNmeWZEenJOT3JmSXVfbm02cjgwUGxTd2lxekV5VFBGR1JlakQ0SjdyVzA5YTdkbms4UA?oc=5",
+          "source": "ca.finance.yahoo.com",
+          "publishedAt": "2026-10-18T04:41:35Z",
+          "polarity": -0.0335,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "6fbec20c2bb3458c",
+          "storyClusterId": "story-001",
+          "title": "Barclays Bank PLC (BCSPRC) Stock Price, News, Quote & History",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE41dXItQ2t3eWRfMC1OWXhpQkVIRENRTTJHRUdINnJ6c2duOE9ha096Z0I0WU1iWXZMTXdXU1lGLUkyWXNvR3I3djYza3BFOFUxbl9SdXdvdnVETVZRNFJ4UUhR?oc=5",
+          "source": "ca.finance.yahoo.com",
+          "publishedAt": "2026-10-17T23:25:45Z",
+          "polarity": -0.0322,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 32.3",
+          "evidenceArticleIds": [
+            "9e1ee222c9e61697",
+            "417627ded298c796",
+            "6fbec20c2bb3458c"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "9e1ee222c9e61697",
+            "417627ded298c796",
+            "6fbec20c2bb3458c"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -4.1
     }
   ]
 }
