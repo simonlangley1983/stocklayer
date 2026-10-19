@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-18T23:36:00.706076Z",
+  "generatedAt": "2026-10-19T01:29:00.438241Z",
   "company": {
     "companyName": "Sage Group PLC",
     "ticker": "SGE.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-10-17",
-    "observationCount": 93,
-    "scoredDayCount": 15,
-    "latestScore": 50.9,
-    "latestScoreDate": "2026-10-14",
+    "periodEnd": "2026-10-18",
+    "observationCount": 94,
+    "scoredDayCount": 16,
+    "latestScore": 53.2,
+    "latestScoreDate": "2026-10-18",
     "series": [
       {
         "date": "2026-06-30",
@@ -862,19 +862,18 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-10-18",
+        "dailyScore": 53.2,
+        "rollingScore": 50.7,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 16.0,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
-      {
-        "date": "2026-09-15",
-        "type": "press_story",
-        "title": "Why Has Sage Group plc (LSE:SGE) Returned to the UK Market Conversation?",
-        "source": "kalkinemedia.com",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNUnQxbW5NY1JxMVo0Y0JnX1JSSnk0WVh1ZXh3MTBUdU80SDZCeU1oLU5KVlV1UTBPQjYtRmxVMHdDVV9wbE5SNFdHUXR2ZUNvaWd4MjNMM19mUDdOM2paWElTcHowMm8xLW1QSkxIU0JpY2VWLUM2cHBiNVlJUjV6aVluel9JWGRBaG82c01XaGk1eHhpRDJGQ2FWLWNmM3pramFzNzRpYkVPSnpxUHU3cl9n?oc=5",
-        "direction": "Neutral / mixed",
-        "detail": null,
-        "significance": 0.196
-      },
       {
         "date": "2026-09-20",
         "type": "press_story",
@@ -964,6 +963,16 @@
         "direction": "Neutral / mixed",
         "detail": null,
         "significance": 0.202
+      },
+      {
+        "date": "2026-10-18",
+        "type": "press_story",
+        "title": "FTSE 100 Software Group Sage (LSE:SGE): Cloud and AI Growth Head Into Results",
+        "source": "kalkinemedia.com",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPM1hPeUdVaEpUOHNrQ1RlLTEwWkVwaTJwSEVoNnVNNGNIQjlSVG11NnE0MGFjaG5DN2V5c3JEald3MTNaQmVPaTJ3cld4UEkwVXBVN3k0aHhTUnRJNk5MRnMwdk9USTl0TnFQZkkyOEdPUjBVT3Zfal9PcFU5OXpCRGpfdlJzelpNMmgwUzR2Rjc0MkdlcW9LWDBDV3VuTkR0MHJZZEdqVjZnczFYYmVlQ1JwNkUxVjBZUndj?oc=5",
+        "direction": "Slightly positive",
+        "detail": null,
+        "significance": 0.343
       }
     ]
   },
@@ -1456,17 +1465,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 54.1,
+    "score": 54.2,
     "label": "Mixed",
-    "evidenceCoverage": 90,
+    "evidenceCoverage": 92,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.7,
+        "score": 51.8,
         "weight": 0.4,
-        "reliability": 0.75,
-        "detail": "Recency-weighted average of 15 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.8,
+        "detail": "Recency-weighted average of 16 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1541,16 +1550,6 @@
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
-    },
-    {
-      "date": "2026-09-15",
-      "type": "press_story",
-      "title": "Why Has Sage Group plc (LSE:SGE) Returned to the UK Market Conversation?",
-      "source": "kalkinemedia.com",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNUnQxbW5NY1JxMVo0Y0JnX1JSSnk0WVh1ZXh3MTBUdU80SDZCeU1oLU5KVlV1UTBPQjYtRmxVMHdDVV9wbE5SNFdHUXR2ZUNvaWd4MjNMM19mUDdOM2paWElTcHowMm8xLW1QSkxIU0JpY2VWLUM2cHBiNVlJUjV6aVluel9JWGRBaG82c01XaGk1eHhpRDJGQ2FWLWNmM3pramFzNzRpYkVPSnpxUHU3cl9n?oc=5",
-      "direction": "Neutral / mixed",
-      "detail": null,
-      "significance": 0.196
     },
     {
       "date": "2026-09-20",
@@ -1641,6 +1640,16 @@
       "direction": "Neutral / mixed",
       "detail": null,
       "significance": 0.202
+    },
+    {
+      "date": "2026-10-18",
+      "type": "press_story",
+      "title": "FTSE 100 Software Group Sage (LSE:SGE): Cloud and AI Growth Head Into Results",
+      "source": "kalkinemedia.com",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPM1hPeUdVaEpUOHNrQ1RlLTEwWkVwaTJwSEVoNnVNNGNIQjlSVG11NnE0MGFjaG5DN2V5c3JEald3MTNaQmVPaTJ3cld4UEkwVXBVN3k0aHhTUnRJNk5MRnMwdk9USTl0TnFQZkkyOEdPUjBVT3Zfal9PcFU5OXpCRGpfdlJzelpNMmgwUzR2Rjc0MkdlcW9LWDBDV3VuTkR0MHJZZEdqVjZnczFYYmVlQ1JwNkUxVjBZUndj?oc=5",
+      "direction": "Slightly positive",
+      "detail": null,
+      "significance": 0.343
     }
   ],
   "persistentEvents": []
