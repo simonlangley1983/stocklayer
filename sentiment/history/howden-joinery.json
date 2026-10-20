@@ -4155,35 +4155,49 @@
     },
     {
       "date": "2026-10-19",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 49.2,
-      "confidence": 0.0,
+      "dailyScore": 34.9,
+      "dailyLabel": "Negative",
+      "rollingScore": 47.4,
+      "confidence": 19.8,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 0,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 1,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
       "positiveStoryCount": 0,
       "neutralStoryCount": 0,
-      "negativeStoryCount": 0,
+      "negativeStoryCount": 1,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {},
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "fdec1ac2743bf638",
+          "storyClusterId": "story-001",
+          "title": "Howden Joinery Group falls Monday, underperforms market",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQdDYtZzhNUWxEQUFsZ1ZCRVJuRTV6ZFlUODc3WXpJajdCRXp3SWNsLXFrM2VJYWhsdUxwVDdabXc0dlVWX2J3SWEzbTMxUWhqOVVFbWxreGotN2RBdzRzeV9zZG9mY0hJQVNhSm5lbmRNckxrdFJiSVNZNENWdlNvZHN3bVhGZWZTM0ZuVFVVT1kyV0NGYlEzV1Q5UDAzaG15LUpoMFA1dE9GaUF0Ri1YQXBJODA?oc=5",
+          "source": "marketwatch.com",
+          "publishedAt": "2026-10-19T16:07:00Z",
+          "polarity": -0.9087,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 19.8",
+          "evidenceArticleIds": [
+            "fdec1ac2743bf638"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": -14.9
     }
   ]
 }
