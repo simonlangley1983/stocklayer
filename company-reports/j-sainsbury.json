@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-20T17:44:40.607724Z",
+  "generatedAt": "2026-10-20T20:45:55.790723Z",
   "company": {
     "companyName": "J Sainsbury PLC",
     "ticker": "SBRY.L",
@@ -22,9 +22,9 @@
     "periodStart": "2026-06-30",
     "periodEnd": "2026-10-19",
     "observationCount": 96,
-    "scoredDayCount": 27,
-    "latestScore": 51.7,
-    "latestScoreDate": "2026-10-18",
+    "scoredDayCount": 28,
+    "latestScore": 64.1,
+    "latestScoreDate": "2026-10-19",
     "series": [
       {
         "date": "2026-06-30",
@@ -883,12 +883,12 @@
       },
       {
         "date": "2026-10-19",
-        "dailyScore": null,
-        "rollingScore": 51.1,
-        "storyCount": 0,
-        "sourceCount": 0,
-        "confidence": 0.0,
-        "coverageStatus": "no_coverage"
+        "dailyScore": 64.1,
+        "rollingScore": 52.7,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 19.6,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -931,16 +931,6 @@
         "direction": "Negative",
         "detail": null,
         "significance": 0.488
-      },
-      {
-        "date": "2026-09-16",
-        "type": "press_story",
-        "title": "How Is J Sainsbury (LSE:SBRY) Reshaping Its Cost Base As Store Openings Accelerate?",
-        "source": "kalkinemedia.com",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxObUxhNTN3cENQTXRXS19vOGpTQ09WbFdLWmFfMFlGNEdoY3J5Q3dsemxYLWJ6dGRQSHJvNVVETmRaeVJDU1ZRODBOSndHVzV6alN1ZTVCZ1RXZmVieklUUS16b1FYSVh3RElvbXhGRXh6NEwyM1B0UnZJbHhleGdKeDRLWGtwczZDTmRHa2x0ZWtyRklDZ1U3elhlVDNvbUtJYTVaSkhEd05ZcHhxNHdyOUtXYXVvVVR3YWlPY093?oc=5",
-        "direction": "Positive",
-        "detail": null,
-        "significance": 0.377
       },
       {
         "date": "2026-10-05",
@@ -991,6 +981,16 @@
         "direction": "Negative",
         "detail": null,
         "significance": 0.614
+      },
+      {
+        "date": "2026-10-19",
+        "type": "press_story",
+        "title": "J Sainsbury rises Monday, outperforms market",
+        "source": "marketwatch.com",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOd2FnWm5BVWJZclQxQk5vRFpNNlI2b3k4RGZsSVpSOTM4MUhCLS1XMG1xaGxtMjRQT1htUy02Q2dlZnBtT1A5QVYxd0w4d0oyZHFHTFdPWWVqM0YyUXNESWhVamNyam93NGVTRTY4ZHk2dTNqNU9rdTRTSXRDRVo5WGluWmxfeU44QlF0Z2R0b0NsQzRFQU5raVJEOE9yVUlpOVhWNzJn?oc=5",
+        "direction": "Very positive",
+        "detail": null,
+        "significance": 0.994
       }
     ]
   },
@@ -1556,17 +1556,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 32.6,
+    "score": 32.9,
     "label": "Low",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.9,
+        "score": 52.7,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 26 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 27 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1683,16 +1683,6 @@
       "significance": 0.488
     },
     {
-      "date": "2026-09-16",
-      "type": "press_story",
-      "title": "How Is J Sainsbury (LSE:SBRY) Reshaping Its Cost Base As Store Openings Accelerate?",
-      "source": "kalkinemedia.com",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxObUxhNTN3cENQTXRXS19vOGpTQ09WbFdLWmFfMFlGNEdoY3J5Q3dsemxYLWJ6dGRQSHJvNVVETmRaeVJDU1ZRODBOSndHVzV6alN1ZTVCZ1RXZmVieklUUS16b1FYSVh3RElvbXhGRXh6NEwyM1B0UnZJbHhleGdKeDRLWGtwczZDTmRHa2x0ZWtyRklDZ1U3elhlVDNvbUtJYTVaSkhEd05ZcHhxNHdyOUtXYXVvVVR3YWlPY093?oc=5",
-      "direction": "Positive",
-      "detail": null,
-      "significance": 0.377
-    },
-    {
       "date": "2026-10-05",
       "type": "merger_acquisition",
       "title": "PRESS: J Sainsbury held merger talks with rival Morrisons - Sky News",
@@ -1741,6 +1731,16 @@
       "direction": "Negative",
       "detail": null,
       "significance": 0.614
+    },
+    {
+      "date": "2026-10-19",
+      "type": "press_story",
+      "title": "J Sainsbury rises Monday, outperforms market",
+      "source": "marketwatch.com",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOd2FnWm5BVWJZclQxQk5vRFpNNlI2b3k4RGZsSVpSOTM4MUhCLS1XMG1xaGxtMjRQT1htUy02Q2dlZnBtT1A5QVYxd0w4d0oyZHFHTFdPWWVqM0YyUXNESWhVamNyam93NGVTRTY4ZHk2dTNqNU9rdTRTSXRDRVo5WGluWmxfeU44QlF0Z2R0b0NsQzRFQU5raVJEOE9yVUlpOVhWNzJn?oc=5",
+      "direction": "Very positive",
+      "detail": null,
+      "significance": 0.994
     },
     {
       "date": "2026-12-31",
