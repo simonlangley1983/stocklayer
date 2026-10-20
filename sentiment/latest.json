@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-10-20T12:15:36.176986Z",
+  "generatedAt": "2026-10-20T15:44:08.541259Z",
   "asOfDate": "2026-10-19",
   "companies": {
     "astrazeneca": {
@@ -1084,30 +1084,16 @@
       "ticker": "BARC.L",
       "slug": "barclays",
       "date": "2026-10-19",
-      "dailyScore": 60.3,
-      "dailyLabel": "Positive",
-      "rollingScore": 50.6,
-      "confidence": 53.7,
+      "dailyScore": 54.4,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.6,
+      "confidence": 40.4,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 6,
-      "sourceCount": 5,
-      "changeFromPreviousScoredDay": 13.8,
+      "storyCount": 5,
+      "sourceCount": 4,
+      "changeFromPreviousScoredDay": 7.9,
       "flags": [
-        {
-          "type": "sentiment_jump",
-          "direction": "positive",
-          "severity": "high",
-          "status": "calculated",
-          "detail": "Daily score increased by 13.8 points",
-          "evidenceArticleIds": [
-            "69b7683a2f864834",
-            "87f681baac33bff5",
-            "f202faa0977c4bc0",
-            "3ac9962481cbb762",
-            "dc8a4df27c2b40f4"
-          ]
-        },
         {
           "type": "collection_degraded",
           "direction": "neutral",
@@ -1116,10 +1102,10 @@
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
             "69b7683a2f864834",
-            "87f681baac33bff5",
             "f202faa0977c4bc0",
             "3ac9962481cbb762",
-            "dc8a4df27c2b40f4"
+            "dc8a4df27c2b40f4",
+            "a25bed2ab035741c"
           ]
         }
       ],
@@ -1132,17 +1118,6 @@
           "source": "kalkinemedia.com",
           "publishedAt": "2026-10-19T17:20:11Z",
           "polarity": 0.8909,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "87f681baac33bff5",
-          "storyClusterId": "story-006",
-          "title": "Barclays Bank PLC Dual Directional Worst Of Buffer Note ABXXDXX (ABXXDXX) Performance History",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA0NUo3Q3JwaDhzdWkxODZaWjFrX3cxMENsNkVqSU9jNGtwV0VubGZIdDF0c0dOdXlaNm8tOS1XdWYzRzVxVTZwdW9DdHdncXJNNC1NVThtb1FCZDE1cTRKbVU3bXJaUQ?oc=5",
-          "source": "ca.finance.yahoo.com",
-          "publishedAt": "2026-10-19T18:36:50Z",
-          "polarity": 0.8279,
           "sentiment": "Very positive",
           "publisherCount": 1
         },
@@ -1176,6 +1151,17 @@
           "source": "tradingview.com",
           "publishedAt": "2026-10-19T09:00:01Z",
           "polarity": 0.0209,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "a25bed2ab035741c",
+          "storyClusterId": "story-005",
+          "title": "REG - Barclays PLC SThree plc - Form 8.3 STHREE PLC Replacement",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOdXpqRC1YcUxfQXV0NGRrQWhWTWNYdFI1b0h5RlpLTkZTXzh4c29WRE9UcGFhaTVlOEdJMV9oTkV1RzlmWk5BQUJZS0ZVRTJxcEVlVTFpemhjYTctS1Jya1NzSDUzMkJlSlZ6ci1ma0VLXzByYlBFVTcwNC1sVW5BcC1vOXZmQVFHbW1UNzVoVGpVRDJIS0dTQkRzU0JOUmNWM2l0OXkyd2hVaXhEbDhQZ3MyMUJUN1RSY3BpOXp6QW9iYk9kUXRkOFdrVXMyVVlC?oc=5",
+          "source": "tradingview.com",
+          "publishedAt": "2026-10-19T17:30:44Z",
+          "polarity": 0.0092,
           "sentiment": "Neutral / mixed",
           "publisherCount": 1
         }
@@ -3947,25 +3933,23 @@
       "ticker": "NXT.L",
       "slug": "next",
       "date": "2026-10-19",
-      "dailyScore": 50.4,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.8,
-      "confidence": 11.3,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 50.9,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": -1.9,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 11.3",
-          "evidenceArticleIds": [
-            "36cc7753e54048d8"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         },
         {
           "type": "collection_degraded",
@@ -3973,24 +3957,10 @@
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "36cc7753e54048d8"
-          ]
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "36cc7753e54048d8",
-          "storyClusterId": "story-001",
-          "title": "REG - Next PLC - Director/PDMR Shareholding",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPazYyb2JLY2FFNW9PV3R6b3BtaklQeEgtRVBENF9tLVhkUTlDUEpYcl8tdzJOVzFzZVdmeWZuSGs3VDJLUXI5NkZ0N2xzanQzWG5fQXlCTkJ0QnZudTFHMWx5VmRvR3JLMjQ0TzdsWnpibFc4Q2tPVUpjM3NEQ1RnSEYwbzhfS0o2bE0xVjJ5cTZxQjdmSmZPb2VuNXlabFdkSl9OdXBaY3BYdFRWVFA1SUhwSGJzdw?oc=5",
-          "source": "tradingview.com",
-          "publishedAt": "2026-10-19T15:53:00Z",
-          "polarity": 0.0212,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "pearson": {
       "companyName": "Pearson PLC",
@@ -5748,15 +5718,15 @@
       "ticker": "ABDN.L",
       "slug": "aberdeen-group",
       "date": "2026-10-19",
-      "dailyScore": 56.2,
+      "dailyScore": 56.7,
       "dailyLabel": "Slightly positive",
-      "rollingScore": 51.5,
-      "confidence": 63.5,
+      "rollingScore": 51.6,
+      "confidence": 64.1,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 34,
-      "sourceCount": 26,
-      "changeFromPreviousScoredDay": 4.5,
+      "storyCount": 33,
+      "sourceCount": 25,
+      "changeFromPreviousScoredDay": 5.0,
       "flags": [
         {
           "type": "collection_degraded",
@@ -5768,7 +5738,7 @@
             "a8b2bbc05a37a3f4",
             "5947bb43a8a4a364",
             "6e7d30eebd52df59",
-            "a2875be58846979d",
+            "a80fc513d4bd8a04",
             "aed3e7cde173d49b"
           ]
         }
@@ -5776,7 +5746,7 @@
       "topStories": [
         {
           "id": "a8b2bbc05a37a3f4",
-          "storyClusterId": "story-026",
+          "storyClusterId": "story-027",
           "title": "Power tools, electronics and clothing stolen amid spate of break-ins in Aberdeen",
           "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQNENITjlfQlQwT0xaQ2FRU0ljTmFvSXBvUGF5ZDE5alpTM1E3UXlGZDdZZUFucFFQNkIyLVB3bUI1YjRhOXNZTUJOWG9HQTV2NUlFNjNGSktNNzc0YzhIU2tqS2pGUm5ZQzFIamFiRWlhSHpPczBzY3hOdS1nSlc2RkUwSERiWDZPR3YzOVY2SUdUYmxLbjdTOTA3RE1sSnNXTEVvcEFzTkQ?oc=5",
           "source": "news.stv.tv",
@@ -5787,7 +5757,7 @@
         },
         {
           "id": "5947bb43a8a4a364",
-          "storyClusterId": "story-023",
+          "storyClusterId": "story-024",
           "title": "Police issue warning as 15 vehicles raided in Aberdeen during month-long crime spree",
           "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOQTllUlJvZDJOMVNobUFBUFlTN1VZNWFJNV9YV0o0Y09aeDg3SEFZMnhVNHdNSFM2M1lpcHdqSmQzZFc1UHg3RE5HemYxTm9pMXJrNFpmWVFxTGVKbWg0cGhrNW83a2R3d19fY0hKWU44SUVtb0p5MnhfcXhFdkpRRnZIcVV1VDFIN2FQNzk4RHBIR2JK0gGaAUFVX3lxTE8xcWN2eTRqN1dHMG1qeGgtZ3VCSDVLU2xNSk9VWVdrUy1DSkxkOXVfMUpyVkZ6em9MelphYzJVeWs1M2R0MTI1UUl4b1drUDllSmJLTllkQnBNaHFhR1RKRVpFQzZCbUFvb1BoZnNLOWFhZ2gwMmpGU0NaZ09vYjlCQ0Yyb2c1UFVEdFdpN1g2SW9Wb1hYRFdNc1E?oc=5",
           "source": "aberdeenlive.news",
@@ -5808,19 +5778,19 @@
           "publisherCount": 1
         },
         {
-          "id": "a2875be58846979d",
-          "storyClusterId": "story-020",
+          "id": "a80fc513d4bd8a04",
+          "storyClusterId": "story-017",
           "title": "'Aberdeen fans still want to see better product on pitch'",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5Va253dWtKdlJHSDFQdXNzSXdOMVg2aUMybklhQklST1BuTl80aTBYbVo3VkszdmpucFFLN1FWb2JwekpQcmRUTDFzeTNqVG1TaU9IUVEzTVhvUQ?oc=5",
-          "source": "bbc.com",
-          "publishedAt": "2026-10-19T14:01:23Z",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1VU1ZoaFJOdjlVbkpwaWxJVHhXQ0lSM0NYRUJIVWFZR0tmUmZxeGFsbFl4OWN6a2YtZURZMS1nRTlud0F2NFZoci1fTHlFZk9RRGZDWElUMU9pREcy?oc=5",
+          "source": "bbc.co.uk",
+          "publishedAt": "2026-10-19T13:23:09Z",
           "polarity": 0.8984,
           "sentiment": "Very positive",
           "publisherCount": 1
         },
         {
           "id": "aed3e7cde173d49b",
-          "storyClusterId": "story-025",
+          "storyClusterId": "story-026",
           "title": "EPF, KWAP, Aberdeen pare CTOS stakes as shares plunge 44pct",
           "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQY24wcWZQM0pyR3ZIajZnclljVkNNZ180cDhLNVhnZFA4NFA3a0l2dkFsdHN0bGdZRWhMOFd2cDU5RzBWcGxTTDRmbzhJRlFLdjVKbi1vajlDTXJYdjN3aEthN2VxcGVLNEc1bm5WRHZLWlNWWTZZZVR1Z0IwemZNSkRhemFCM24ydXNodkQtTW1vYkozUlA2UDV5enZoYm5tUXJSR3ZGbUp0Q2gxVTFDZDhR0gG3AUFVX3lxTE1HVUxZVklvZVp5MWRPVmE4bGN0OHZ1OUNpajJ4T2l3VnpsQlBBM0N0RHhZNXJwY1k5MWpweXlTSnU0c0NYRXVpVzVlNWZnOTlLMDZIR3RpaHJmWEd6YU5YLU9UZUY1VW10T0xkM2d4S1RhV3ptaU9BQXFLRWVxM3lrc1VtNGszUmhzM3RfVTJ0VW1EYU5QdEFLblEzREZVZmE4WUZFTm5XVTV4RlBiN016NDJId0hPdw?oc=5",
           "source": "nst.com.my",
