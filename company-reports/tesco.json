@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-20T01:53:31.294977Z",
+  "generatedAt": "2026-10-20T01:59:21.319134Z",
   "company": {
     "companyName": "Tesco PLC",
     "ticker": "TSCO.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-10-18",
-    "observationCount": 100,
-    "scoredDayCount": 95,
-    "latestScore": 39.1,
-    "latestScoreDate": "2026-10-18",
+    "periodEnd": "2026-10-19",
+    "observationCount": 101,
+    "scoredDayCount": 96,
+    "latestScore": 56.7,
+    "latestScoreDate": "2026-10-19",
     "series": [
       {
         "date": "2026-06-30",
@@ -925,6 +925,15 @@
         "sourceCount": 9,
         "confidence": 82.5,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-19",
+        "dailyScore": 56.7,
+        "rollingScore": 50.1,
+        "storyCount": 29,
+        "sourceCount": 28,
+        "confidence": 84.9,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1592,17 +1601,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 45.4,
+    "score": 45.5,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 47.2,
+        "score": 47.5,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 78 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 79 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1789,6 +1798,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "1e0b61f31e1ea2c49246",
+      "type": "clinical",
+      "title": "24-hour parcel locker approved outside Tesco Express despite concerns",
+      "date": "2026-10-19",
+      "status": "pending_review",
+      "reviewDate": "2027-04-17",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOQTl3SXFQLUtjbkNuTGNrekxWQjNIRmkyYmppQjQ1LXMwLWNycjFSRzY5WlN6cXFJSzJSX3c2ZmlhbXVaTGpRc3l5LWFFZXJOMXJURFlsUnEwUjVHLTFiNlV6dHJoQ1Z4QWZjSUFMZmlEWFJMWUtyM3JsR0pfWVRJbE1PdkVpdHMwUWVPUWJ2SnhBY0RERm9mUnVR?oc=5",
+          "publisher": "dailyecho.co.uk",
+          "date": "2026-10-19"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "5af5c2d78fe6d772391c",
       "type": "clinical",

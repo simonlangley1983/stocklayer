@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-20T01:53:31.294977Z",
+  "generatedAt": "2026-10-20T01:59:21.319134Z",
   "company": {
     "companyName": "Kingfisher PLC",
     "ticker": "KGF.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-10-18",
-    "observationCount": 111,
-    "scoredDayCount": 100,
-    "latestScore": 49.6,
-    "latestScoreDate": "2026-10-18",
+    "periodEnd": "2026-10-19",
+    "observationCount": 112,
+    "scoredDayCount": 101,
+    "latestScore": 66.8,
+    "latestScoreDate": "2026-10-19",
     "series": [
       {
         "date": "2026-06-30",
@@ -1024,6 +1024,15 @@
         "sourceCount": 3,
         "confidence": 56.7,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-19",
+        "dailyScore": 66.8,
+        "rollingScore": 52.6,
+        "storyCount": 9,
+        "sourceCount": 7,
+        "confidence": 82.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1066,16 +1075,6 @@
         "direction": "negative",
         "detail": "Daily score decreased by 17.5 points",
         "significance": 1.59
-      },
-      {
-        "date": "2026-09-27",
-        "type": "sentiment_drop",
-        "title": "FTSE 100 Slips to 10,708.33 Despite Kingfisher’s 12% Surge",
-        "source": "bbntimes.com",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQak5CWWJmbnRQQS1rUU1QSlFpbi1EQURUU28xakxvbWpMdnJiNF9ZN0JaZHJhVmxLa2l2bDQ1X1JVY0RycVZiMHcxc1hNQWZYQ3JBUUh2WDRDUlNjeUt6bG84b0RUOVVsd01SNENjdXFkVk1EM2ctNGlWVDJuMHc5cmYzcEFRQ0JsLUEtLVltTFdUN012UWJF?oc=5",
-        "direction": "negative",
-        "detail": "Daily score decreased by 17.5 points",
-        "significance": 1.561
       },
       {
         "date": "2026-10-01",
@@ -1126,6 +1125,16 @@
         "direction": "positive",
         "detail": "Daily score increased by 33.2 points",
         "significance": 1.569
+      },
+      {
+        "date": "2026-10-19",
+        "type": "sentiment_jump",
+        "title": "Kingfisher Mining raises $2.25M to boost Copper Blow copper-gold exploration near Broken Hill.",
+        "source": "pluang.com",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPYV9SUE5RTWlzY1J3aGFHM2FMeGt0TnlfMlB1MXFUMDdEdU9YaG1YekZDTXVYTmNaR3oyc0JCcEx3TnFjRDZIQU1vdU1sRXprejFJcWdfNU1oWVNRN1JFRlQ0d0NHU1VPUlZlZi1HaUN5UnIyUjFxOW9nTE03MFljalNaMWNHV0NlcUFMaDFJRVNleVpKMGxQOUp1Vk1BUWxISHRnblczT2RBdw?oc=5",
+        "direction": "positive",
+        "detail": "Daily score increased by 17.2 points",
+        "significance": 1.565
       }
     ]
   },
@@ -1691,17 +1700,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 47.7,
+    "score": 47.9,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.0,
+        "score": 51.4,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 81 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 82 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1818,16 +1827,6 @@
       "significance": 1.59
     },
     {
-      "date": "2026-09-27",
-      "type": "sentiment_drop",
-      "title": "FTSE 100 Slips to 10,708.33 Despite Kingfisher’s 12% Surge",
-      "source": "bbntimes.com",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQak5CWWJmbnRQQS1rUU1QSlFpbi1EQURUU28xakxvbWpMdnJiNF9ZN0JaZHJhVmxLa2l2bDQ1X1JVY0RycVZiMHcxc1hNQWZYQ3JBUUh2WDRDUlNjeUt6bG84b0RUOVVsd01SNENjdXFkVk1EM2ctNGlWVDJuMHc5cmYzcEFRQ0JsLUEtLVltTFdUN012UWJF?oc=5",
-      "direction": "negative",
-      "detail": "Daily score decreased by 17.5 points",
-      "significance": 1.561
-    },
-    {
       "date": "2026-10-01",
       "type": "sentiment_drop",
       "title": "Kingfisher Power Plant Explosion Injures Two Workers During Generator Checkup",
@@ -1876,6 +1875,16 @@
       "direction": "positive",
       "detail": "Daily score increased by 33.2 points",
       "significance": 1.569
+    },
+    {
+      "date": "2026-10-19",
+      "type": "sentiment_jump",
+      "title": "Kingfisher Mining raises $2.25M to boost Copper Blow copper-gold exploration near Broken Hill.",
+      "source": "pluang.com",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPYV9SUE5RTWlzY1J3aGFHM2FMeGt0TnlfMlB1MXFUMDdEdU9YaG1YekZDTXVYTmNaR3oyc0JCcEx3TnFjRDZIQU1vdU1sRXprejFJcWdfNU1oWVNRN1JFRlQ0d0NHU1VPUlZlZi1HaUN5UnIyUjFxOW9nTE03MFljalNaMWNHV0NlcUFMaDFJRVNleVpKMGxQOUp1Vk1BUWxISHRnblczT2RBdw?oc=5",
+      "direction": "positive",
+      "detail": "Daily score increased by 17.2 points",
+      "significance": 1.565
     },
     {
       "date": "2026-12-31",

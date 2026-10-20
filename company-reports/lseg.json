@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-20T01:53:31.294977Z",
+  "generatedAt": "2026-10-20T01:59:21.319134Z",
   "company": {
     "companyName": "London Stock Exchange Group",
     "ticker": "LSEG.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-05",
-    "periodEnd": "2026-10-18",
-    "observationCount": 100,
-    "scoredDayCount": 78,
-    "latestScore": 49.5,
-    "latestScoreDate": "2026-10-18",
+    "periodEnd": "2026-10-19",
+    "observationCount": 101,
+    "scoredDayCount": 79,
+    "latestScore": 44.0,
+    "latestScoreDate": "2026-10-19",
     "series": [
       {
         "date": "2026-07-05",
@@ -925,6 +925,15 @@
         "sourceCount": 1,
         "confidence": 15.2,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-19",
+        "dailyScore": 44.0,
+        "rollingScore": 51.3,
+        "storyCount": 3,
+        "sourceCount": 3,
+        "confidence": 54.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1519,17 +1528,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 55.3,
+    "score": 55.2,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 54.4,
+        "score": 54.0,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 65 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 66 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1707,6 +1716,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "1d69752498d3a5541025",
+      "type": "regulatory_legal",
+      "title": "London Stock Exchange Group fails to shake off £131m fraud lawsuit",
+      "date": "2026-10-19",
+      "status": "pending_review",
+      "reviewDate": "2027-04-17",
+      "direction": "Very negative",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQZ0VGV3dpZHBqVVJrTmd5VEZiYmJrdGVIdXphb3FvdS0xV1dxT2pKVE83TmdyMld6a256Q245SXZDMUdVOWhCdjFnYi1QN0NhRFZVY0k5MWJoTGk2dE54eVIycGZUNTY4UlFwRDFuZjRfRF9UdnZ1VGpoeFg0LVVUSDNIT3ZOVFVKQXZweU5YcnA1VEE?oc=5",
+          "publisher": "cityam.com",
+          "date": "2026-10-19"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "66864203fd23c3e23dd5",
       "type": "acquisition",
