@@ -3383,6 +3383,65 @@
         }
       ],
       "changeFromPreviousScoredDay": 2.3
+    },
+    {
+      "date": "2026-10-19",
+      "dailyScore": 51.0,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.7,
+      "confidence": 11.5,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 76,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 69,
+        "missing_company_alias": 6
+      },
+      "topStories": [
+        {
+          "id": "15b0e129d1d22e6b",
+          "storyClusterId": "story-001",
+          "title": "FTSE 100 Sage (LSE:SGE) Leads a Software Rebound",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNdXhtS0hJZTZZeTBTWGVZVFZPUF9wd3B1LVBmQjFXeFRWT2Qya2k5UXFwUThZSkZ0QzU0NE1Bc2VsbTVwVVJpZzdYN3RsdFU0bmk3NlkzVWpmSlRjT0o1bk1Oa0JzV2phcHZGczZsRk9TdWc4MkFVZURscl9iZFBKLU42X1JVRDlaNTROWTRRekVXWHc?oc=5",
+          "source": "kalkinemedia.com",
+          "publishedAt": "2026-10-19T10:34:00Z",
+          "polarity": 0.0593,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 11.5",
+          "evidenceArticleIds": [
+            "15b0e129d1d22e6b"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "15b0e129d1d22e6b"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -2.2
     }
   ]
 }

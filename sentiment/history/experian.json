@@ -7419,6 +7419,77 @@
         }
       ],
       "changeFromPreviousScoredDay": 5.2
+    },
+    {
+      "date": "2026-10-19",
+      "dailyScore": 54.8,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 53.2,
+      "confidence": 39.4,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 9,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 1,
+      "dispersion": 0.7278,
+      "rejectedCandidateCounts": {
+        "missing_company_alias": 7
+      },
+      "topStories": [
+        {
+          "id": "4acd42ad77acb528",
+          "storyClusterId": "story-001",
+          "title": "First-quarter growth supports Experian stock as buyer support keeps price steady",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxON2hTMnU5aloybGE0SHo0MXZCQXpvbjV1MzhTdkM1SDV5d3YzczlyZnRUcVhxUkxaRzY3V29BME5SWi1CVmVVdVJxck8yZ0VrRF9VZ0VCcWt4Z3d2Vkg0NGo1TGRyaUdOZ0FaYUpGWnpjWnVkTTExS1ZGUEMxS2RURnNtTlF2NFl0WlI4?oc=5",
+          "source": "tradersunion.com",
+          "publishedAt": "2026-10-19T09:08:31Z",
+          "polarity": 0.9202,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "22211f7341c605d1",
+          "storyClusterId": "story-002",
+          "title": "Delgado v. Experian: Court Denies Experian’s Post-Trial Motions in FCRA Action",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPaU1xSTJybHBzVEF2TjcwazhPcTFSME1FSTFWS2hLRWFtanNMWm9aLXBKNkRrMDEyS1NjTUxsdllIdzQ2aFhfX0VGLVpGcnRCbVp5YlJMNjl4ZzJxQTFwdmt6bDFaa3QydmRKUkZ5MVljTUkzOC1aX3E1N0ltNDVSRGxyRTNOaHhXT3J5b29fcEJ6RXpaZ3FlOXZB?oc=5",
+          "source": "acainternational.org",
+          "publishedAt": "2026-10-19T17:57:57Z",
+          "polarity": -0.5354,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "4acd42ad77acb528",
+            "22211f7341c605d1"
+          ]
+        },
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 39.4",
+          "evidenceArticleIds": [
+            "4acd42ad77acb528",
+            "22211f7341c605d1"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 0.1
     }
   ]
 }

@@ -3685,6 +3685,64 @@
         }
       ],
       "changeFromPreviousScoredDay": null
+    },
+    {
+      "date": "2026-10-19",
+      "dailyScore": 50.4,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.8,
+      "confidence": 11.3,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 87,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 86
+      },
+      "topStories": [
+        {
+          "id": "36cc7753e54048d8",
+          "storyClusterId": "story-001",
+          "title": "REG - Next PLC - Director/PDMR Shareholding",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPazYyb2JLY2FFNW9PV3R6b3BtaklQeEgtRVBENF9tLVhkUTlDUEpYcl8tdzJOVzFzZVdmeWZuSGs3VDJLUXI5NkZ0N2xzanQzWG5fQXlCTkJ0QnZudTFHMWx5VmRvR3JLMjQ0TzdsWnpibFc4Q2tPVUpjM3NEQ1RnSEYwbzhfS0o2bE0xVjJ5cTZxQjdmSmZPb2VuNXlabFdkSl9OdXBaY3BYdFRWVFA1SUhwSGJzdw?oc=5",
+          "source": "tradingview.com",
+          "publishedAt": "2026-10-19T15:53:00Z",
+          "polarity": 0.0212,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 11.3",
+          "evidenceArticleIds": [
+            "36cc7753e54048d8"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "36cc7753e54048d8"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -1.9
     }
   ]
 }
