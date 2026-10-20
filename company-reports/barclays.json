@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-20T06:55:50.310027Z",
+  "generatedAt": "2026-10-20T10:15:23.744391Z",
   "company": {
     "companyName": "Barclays",
     "ticker": "BARC.L",
@@ -23,7 +23,7 @@
     "periodEnd": "2026-10-19",
     "observationCount": 95,
     "scoredDayCount": 55,
-    "latestScore": 56.6,
+    "latestScore": 60.3,
     "latestScoreDate": "2026-10-19",
     "series": [
       {
@@ -874,11 +874,11 @@
       },
       {
         "date": "2026-10-19",
-        "dailyScore": 56.6,
-        "rollingScore": 50.0,
-        "storyCount": 5,
+        "dailyScore": 60.3,
+        "rollingScore": 50.6,
+        "storyCount": 6,
         "sourceCount": 5,
-        "confidence": 47.2,
+        "confidence": 53.7,
         "coverageStatus": "ok"
       }
     ],
@@ -912,16 +912,6 @@
         "direction": "Negative",
         "detail": null,
         "significance": 0.635
-      },
-      {
-        "date": "2026-08-31",
-        "type": "press_story",
-        "title": "Bronstein , Gewirtz & Grossman , LLC Is Investigating Barclays PLC ( BCS ) ...",
-        "source": "pr-inside.com",
-        "url": "https://www.pr-inside.com/bronstein-gewirtz-grossman-llc-is-investigating-barclays-plc-bcs-r5217934.htm",
-        "direction": "Negative",
-        "detail": null,
-        "significance": 0.426
       },
       {
         "date": "2026-09-18",
@@ -975,13 +965,23 @@
       },
       {
         "date": "2026-10-19",
-        "type": "press_story",
+        "type": "sentiment_jump",
         "title": "Barclays PLC Surpasses 7% Voting Rights in Pennon Group, Files Major Holdings Notification",
         "source": "kalkinemedia.com",
         "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOTVBLdW9tdXp1ekdFUjBtSFFUbjN5ME0yc0NCR1QxRkZVdDZwNnRENjk0djZoZnM0aDdacFR5TUVoS1R2d2NWbWVCNlBxRW5SQnNWSDJpNzZ6WGlmR3V0QnpmNkhhQlJlMmFsdEd6UjA0Z2I4RjQ4M0txdlFrZkNqMUE4YTdNcnR2Wk9jenU5bGZVZU1XY2dIdE5Va01Kb3JNQ1N0RDV4dkxMSTlmLVNEbXJpS1RjdGdUSGtSckJjY28teHdmX0F3UzE4VC1KU3Bm?oc=5",
-        "direction": "Very positive",
-        "detail": null,
-        "significance": 1.041
+        "direction": "positive",
+        "detail": "Daily score increased by 13.8 points",
+        "significance": 1.541
+      },
+      {
+        "date": "2026-10-19",
+        "type": "sentiment_jump",
+        "title": "Barclays Bank PLC Dual Directional Worst Of Buffer Note ABXXDXX (ABXXDXX) Performance History",
+        "source": "ca.finance.yahoo.com",
+        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA0NUo3Q3JwaDhzdWkxODZaWjFrX3cxMENsNkVqSU9jNGtwV0VubGZIdDF0c0dOdXlaNm8tOS1XdWYzRzVxVTZwdW9DdHdncXJNNC1NVThtb1FCZDE1cTRKbVU3bXJaUQ?oc=5",
+        "direction": "positive",
+        "detail": "Daily score increased by 13.8 points",
+        "significance": 1.478
       }
     ]
   },
@@ -1547,14 +1547,14 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 63.4,
+    "score": 63.5,
     "label": "Positive",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 50.0,
+        "score": 50.2,
         "weight": 0.4,
         "reliability": 1.0,
         "detail": "Recency-weighted average of 47 scored days in the latest 90 calendar days; 30-day half-life."
@@ -1665,16 +1665,6 @@
       "significance": 0.635
     },
     {
-      "date": "2026-08-31",
-      "type": "press_story",
-      "title": "Bronstein , Gewirtz & Grossman , LLC Is Investigating Barclays PLC ( BCS ) ...",
-      "source": "pr-inside.com",
-      "url": "https://www.pr-inside.com/bronstein-gewirtz-grossman-llc-is-investigating-barclays-plc-bcs-r5217934.htm",
-      "direction": "Negative",
-      "detail": null,
-      "significance": 0.426
-    },
-    {
       "date": "2026-09-18",
       "type": "press_story",
       "title": "Barclays PLC (BCS) Shares Fall 3.0% -- GF Value Says Still Overv",
@@ -1726,13 +1716,23 @@
     },
     {
       "date": "2026-10-19",
-      "type": "press_story",
+      "type": "sentiment_jump",
       "title": "Barclays PLC Surpasses 7% Voting Rights in Pennon Group, Files Major Holdings Notification",
       "source": "kalkinemedia.com",
       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOTVBLdW9tdXp1ekdFUjBtSFFUbjN5ME0yc0NCR1QxRkZVdDZwNnRENjk0djZoZnM0aDdacFR5TUVoS1R2d2NWbWVCNlBxRW5SQnNWSDJpNzZ6WGlmR3V0QnpmNkhhQlJlMmFsdEd6UjA0Z2I4RjQ4M0txdlFrZkNqMUE4YTdNcnR2Wk9jenU5bGZVZU1XY2dIdE5Va01Kb3JNQ1N0RDV4dkxMSTlmLVNEbXJpS1RjdGdUSGtSckJjY28teHdmX0F3UzE4VC1KU3Bm?oc=5",
-      "direction": "Very positive",
-      "detail": null,
-      "significance": 1.041
+      "direction": "positive",
+      "detail": "Daily score increased by 13.8 points",
+      "significance": 1.541
+    },
+    {
+      "date": "2026-10-19",
+      "type": "sentiment_jump",
+      "title": "Barclays Bank PLC Dual Directional Worst Of Buffer Note ABXXDXX (ABXXDXX) Performance History",
+      "source": "ca.finance.yahoo.com",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA0NUo3Q3JwaDhzdWkxODZaWjFrX3cxMENsNkVqSU9jNGtwV0VubGZIdDF0c0dOdXlaNm8tOS1XdWYzRzVxVTZwdW9DdHdncXJNNC1NVThtb1FCZDE1cTRKbVU3bXJaUQ?oc=5",
+      "direction": "positive",
+      "detail": "Daily score increased by 13.8 points",
+      "significance": 1.478
     }
   ],
   "persistentEvents": []
