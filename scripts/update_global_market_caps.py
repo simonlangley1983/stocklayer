@@ -321,15 +321,53 @@ def main():
     old = read('history/global-market-cap-ranks.json')
     response = requests.get(SOURCE, timeout=60)
     response.raise_for_status()
-    result = build(companies, old, response.json(), datetime.now(timezone.utc))
+    now = datetime.now(timezone.utc)
+    active = [c for c in companies if c.get('priceStatus') != 'stale']
+    unavailable = [c for c in companies if c.get('priceStatus') == 'stale']
+    if len(active) < math.ceil(len(companies) * 0.9):
+        raise ValueError('Too few current issuers for a reliable rank refresh')
+    result = build(active, old, response.json(), now)
+    result['unmatched']['current'] = [c['slug'] for c in unavailable]
+    for company in unavailable:
+        company['globalMarketCapRankStatus'] = 'stale'
+        result['companies'].setdefault(company['slug'], {})['currentStatus'] = 'stale'
+    fx_rates = {}
+    for company in active:
+        obs = result['companies'][company['slug']]['currentEvidence']
+        currency = company.get('currency', 'GBP')
+        if currency in ('GBP', 'EUR'):
+            if currency not in fx_rates:
+                fx_rates[currency] = yf.Ticker(currency + 'USD=X').get_info()
+            fx = fx_rates[currency]
+            stamp = datetime.fromtimestamp(fx.get('regularMarketTime', 0), timezone.utc).isoformat()
+            if not positive(fx.get('regularMarketPrice')) or not fresh(stamp, now):
+                raise ValueError('Missing/stale market-cap conversion rate')
+            value = obs['marketCapUsd'] / fx['regularMarketPrice']
+        elif currency == 'USD':
+            value = obs['marketCapUsd']
+        else:
+            raise ValueError('Unsupported market-cap display currency: ' + currency)
+        company.update(marketCapValue=round(value), marketCap=f'{value/1e9:.2f}B',
+                       marketCapDate=obs['observedAt'], marketCapSource=result['source'],
+                       globalMarketCapRankStatus='current')
+        result['companies'][company['slug']]['currentStatus'] = 'current'
     today = datetime.fromisoformat(result['dates']['current']).date()
     try:
         prior_day = today.replace(year=today.year-1).isoformat()
     except ValueError:
         prior_day = today.replace(year=today.year-1, day=28).isoformat()
-    prior = requests.get('https://assetmarketcap.com/data/history/'+prior_day, timeout=60)
-    prior.raise_for_status()
-    add_year_comparison(companies, result, prior.json(), prior_day)
+    # A missing historical comparison must not prevent publication of current ranks.
+    current_result = copy.deepcopy(result)
+    current_companies = copy.deepcopy(companies)
+    try:
+        prior = requests.get('https://assetmarketcap.com/data/history/'+prior_day, timeout=60)
+        prior.raise_for_status()
+        add_year_comparison(active, result, prior.json(), prior_day)
+    except Exception as error:
+        result = current_result
+        companies = current_companies
+        result['historicalRefreshError'] = str(error)
+        print('::warning title=Historical rank comparison unavailable::' + str(error))
     # No files changed until every issuer has passed checks.
     for name, data in [('uk-companies.json', companies), ('history/global-market-cap-ranks.json', result)]:
         path = args.output_dir / name

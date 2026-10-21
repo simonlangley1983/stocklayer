@@ -26,7 +26,7 @@ let strategicIntelligenceState = {
 function getLogoUrl(company, size = 128) {
     const domain = company.domain || company.logoDomain || company.websiteDomain || normaliseDomain(company.website || company.url || '');
     if (!domain) return '';
-    return `https://img.logo.dev/${domain}?token=${LOGO_DEV_TOKEN}&size=${size}`;
+    return `https://img.logo.dev/${domain}?token=${LOGO_DEV_TOKEN}&size=${size}&format=png&retina=true&fallback=404`;
 }
 
 function normaliseDomain(value) {
@@ -288,7 +288,11 @@ function renderPriceInsight(company, history) {
     const bestEver = getBestEverPrice(history, company);
 
     setText('current-price', formatCurrency(company.currentPrice, company.currency));
-    setText('current-price-date', `Latest price date: ${formatDate(currentDate)}`);
+    const stale = company.priceStatus === 'stale' || !company.priceDate
+        || Date.now() - Date.parse(company.priceDate) > 4 * 86400000;
+    setText('current-price-date', `${stale ? 'Stale quote — last price' : 'Latest price date'}: ${formatDate(currentDate)}`);
+    const priceDateLabel = document.getElementById('current-price-date');
+    if (priceDateLabel && stale) priceDateLabel.style.color = '#92400e';
 
     if (!bestEver || Number.isNaN(currentPrice) || currentPrice <= 0) {
         setText('best-ever-price', '-');
@@ -793,7 +797,7 @@ async function loadCompany() {
             fetchJson(`acquisitions/${stock}-acquisitions.json`, {}),
             fetchJson(`events/${stock}-events.json`, {}),
             fetchJson(`history/${stock}-history.json`, {}),
-            fetchJson('ftse100.json', []),
+            fetchJson('uk-companies.json', []),
             buildCompanyMetricRankings(stock),
             fetchJson(`strategic-intelligence/${stock}.json`, {}),
             fetchJson('strategic-intelligence/metadata.json', {})
@@ -803,6 +807,14 @@ async function loadCompany() {
             ? companiesIndex.find(item => item.slug === stock || item.ticker === stock)
             : null;
         const company = { ...(indexCompany || {}), ...(companyDetail || {}) };
+        // Detail files are updated separately; use the current market feed for quotes.
+        if (indexCompany) {
+            for (const field of ['currentPrice', 'currency', 'priceDate', 'priceSource', 'priceStatus',
+                'previousClose', 'dayChange', 'dayChangePercent', 'previousGrowth',
+                'marketCap', 'marketCapValue', 'marketCapDate', 'globalMarketCapRank']) {
+                if (indexCompany[field] !== undefined) company[field] = indexCompany[field];
+            }
+        }
 
         const history = normaliseHistory(historyData);
         const vulnerabilityMarkers = risk.vulnerabilityMarkers || [];
@@ -1008,7 +1020,7 @@ function getAcquisitionLogoUrl(acquisition) {
 
     if (!domain) return '';
 
-    return `https://img.logo.dev/${domain}?token=${LOGO_DEV_TOKEN}&size=64`;
+    return `https://img.logo.dev/${domain}?token=${LOGO_DEV_TOKEN}&size=64&format=png&retina=true&fallback=404`;
 }
 
 function getAcquisitionLogoHtml(acquisition) {
