@@ -133,11 +133,45 @@ def refresh(root, fetcher=fetch_company):
                dict(c, priceStatus='stale', priceCheckedAt=checked_at,
                     priceRefreshError=errors[c['slug']]) for c in companies]
     (root / 'uk-companies.json').write_text(json.dumps(updated, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+    sync_legacy_quotes(root, updated)
     status = dict(checkedAt=checked_at, status='degraded' if errors else 'current',
                   updated=len(results), total=len(companies), errors=errors)
     (root / 'uk-price-refresh-status.json').write_text(json.dumps(status, indent=2) + '\n', encoding='utf-8')
     print(f'Updated {len(updated)} UK companies and histories', flush=True)
     return status
+
+
+def sync_legacy_quotes(root, companies):
+    """Keep deployed older pages on the same dated quote feed."""
+    fields = ('currentPrice', 'currency', 'priceDate', 'priceSource', 'priceStatus',
+              'priceCheckedAt', 'priceRefreshError', 'previousClose', 'dayChange',
+              'dayChangePercent', 'previousGrowth', 'previousGrowthDate',
+              'previousGrowthEvidence', 'previousGrowthSource', 'marketCap',
+              'marketCapValue', 'marketCapDate', 'marketCapSource',
+              'globalMarketCapRank', 'globalMarketCapRankDate', 'globalMarketCapRankStatus')
+    by_slug = {c['slug']: c for c in companies}
+    snapshot = root / 'ftse100.json'
+    if snapshot.exists():
+        saved = json.loads(snapshot.read_text(encoding='utf-8'))
+        for company in saved:
+            latest = by_slug.get(company.get('slug'))
+            if latest:
+                for field in fields:
+                    if field in latest:
+                        company[field] = latest[field]
+                    elif field == 'priceRefreshError':
+                        company.pop(field, None)
+        snapshot.write_text(json.dumps(saved, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+    for company in companies:
+        detail = root / 'companies' / (company['slug'] + '.json')
+        if detail.exists():
+            saved = json.loads(detail.read_text(encoding='utf-8'))
+            for field in fields:
+                if field in company:
+                    saved[field] = company[field]
+                elif field == 'priceRefreshError':
+                    saved.pop(field, None)
+            detail.write_text(json.dumps(saved, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
 
 
 def main():

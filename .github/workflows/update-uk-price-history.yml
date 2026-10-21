@@ -38,7 +38,7 @@ jobs:
         run: |
           git config user.name 'stocklayer-bot'
           git config user.email 'stocklayer-bot@users.noreply.github.com'
-          git add uk-companies.json history/*-history.json uk-price-refresh-status.json
+          git add uk-companies.json history/*-history.json uk-price-refresh-status.json ftse100.json companies
           if git diff --cached --quiet; then exit 0; fi
           git commit -m 'Refresh UK quotes and dated historical returns'
           git pull --rebase
@@ -77,7 +77,7 @@ jobs:
         run: |
           git config user.name 'stocklayer-bot'
           git config user.email 'stocklayer-bot@users.noreply.github.com'
-          git add uk-companies.json history/global-market-cap-ranks.json
+          git add uk-companies.json history/global-market-cap-ranks.json ftse100.json companies
           if git diff --cached --quiet; then exit 0; fi
           git commit -m 'Refresh verified global market-cap ranks'
           git pull --rebase

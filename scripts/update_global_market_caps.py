@@ -373,6 +373,8 @@ def main():
         path = args.output_dir / name
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    from update_uk_price_history import sync_legacy_quotes
+    sync_legacy_quotes(args.output_dir, companies)
     print(json.dumps({'matched':len(companies), 'universe':result['universeCount'], 'asOf':result['sourceAsOf']}))
 
 

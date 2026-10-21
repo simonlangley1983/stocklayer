@@ -40,6 +40,9 @@ class RefreshTests(unittest.TestCase):
             original = [dict(slug=str(i), ticker=str(i), currentPrice=10,
                              priceDate='2026-10-02', priceRefreshError='old error') for i in range(100)]
             (root / 'uk-companies.json').write_text(json.dumps(original))
+            (root / 'ftse100.json').write_text(json.dumps(original))
+            (root / 'companies').mkdir()
+            (root / 'companies/0.json').write_text(json.dumps(dict(original[0], summary='Keep this research')))
             def fetch(company):
                 if company['slug'] in ('1', '2'):
                     raise ValueError('Stale provider quote')
@@ -54,6 +57,10 @@ class RefreshTests(unittest.TestCase):
             self.assertEqual(saved[1]['priceStatus'], 'stale')
             self.assertFalse((root / 'history/1-history.json').exists())
             self.assertTrue((root / 'history/0-history.json').exists())
+            detail = json.loads((root / 'companies/0.json').read_text())
+            self.assertEqual(detail['currentPrice'], 20)
+            self.assertEqual(detail['summary'], 'Keep this research')
+            self.assertEqual(json.loads((root / 'ftse100.json').read_text())[0]['currentPrice'], 20)
 
     def test_provider_outage_preserves_published_dataset(self):
         with tempfile.TemporaryDirectory() as folder:
