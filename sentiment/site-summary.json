@@ -3,7 +3,7 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-10-21T14:22:12.445302Z",
+  "generatedAt": "2026-10-21T16:01:53.356841Z",
   "asOfDate": "2026-10-20",
   "companyCount": 100,
   "companies": {
@@ -81,22 +81,22 @@
       "ticker": "HSBA.L",
       "slug": "hsbc",
       "date": "2026-10-20",
-      "dailyScore": 49.3,
+      "dailyScore": 48.8,
       "dailyLabel": "Neutral / mixed",
       "rollingScore": 50.5,
-      "confidence": 38.0,
+      "confidence": 26.5,
       "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 4,
+      "storyCount": 2,
       "sourceCount": 2,
-      "changeFromPreviousScoredDay": -0.3,
+      "changeFromPreviousScoredDay": -0.8,
       "flags": [
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 38.0"
+          "detail": "Confidence is 26.5"
         },
         {
           "type": "collection_degraded",
@@ -181,29 +181,36 @@
       "ticker": "BP.L",
       "slug": "bp",
       "date": "2026-10-20",
-      "dailyScore": 22.1,
-      "dailyLabel": "Very negative",
-      "rollingScore": 47.0,
+      "dailyScore": 33.7,
+      "dailyLabel": "Negative",
+      "rollingScore": 49.0,
       "confidence": 63.7,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
       "storyCount": 6,
       "sourceCount": 9,
-      "changeFromPreviousScoredDay": -26.2,
+      "changeFromPreviousScoredDay": -14.6,
       "flags": [
         {
           "type": "sentiment_drop",
           "direction": "negative",
           "severity": "high",
           "status": "calculated",
-          "detail": "Daily score decreased by 26.2 points"
+          "detail": "Daily score decreased by 14.6 points"
         },
         {
           "type": "bad_press",
           "direction": "negative",
           "severity": "medium",
           "status": "calculated",
-          "detail": "Daily press score is 22.1"
+          "detail": "Daily press score is 33.7"
+        },
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed"
         },
         {
           "type": "collection_degraded",
@@ -2315,15 +2322,15 @@
       "ticker": "ABDN.L",
       "slug": "aberdeen-group",
       "date": "2026-10-20",
-      "dailyScore": 63.2,
+      "dailyScore": 62.4,
       "dailyLabel": "Positive",
-      "rollingScore": 53.4,
-      "confidence": 64.0,
+      "rollingScore": 53.2,
+      "confidence": 63.6,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 43,
-      "sourceCount": 29,
-      "changeFromPreviousScoredDay": 7.2,
+      "storyCount": 40,
+      "sourceCount": 27,
+      "changeFromPreviousScoredDay": 6.4,
       "flags": [
         {
           "type": "collection_degraded",
