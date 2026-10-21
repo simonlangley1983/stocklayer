@@ -7602,7 +7602,9 @@
             previousClose: live.previousClose ?? company.previousClose,
             marketCap: live.marketCap || company.marketCap,
             marketCapValue: live.marketCapValue ?? company.marketCapValue,
-            globalMarketCapRank: company.globalMarketCapRankHistory ? company.globalMarketCapRank : (live.globalMarketCapRank || company.globalMarketCapRank),
+            globalMarketCapRank: Date.parse(live.globalMarketCapRankDate) >= (Date.parse(company.globalMarketCapRankDate) || 0) ? (live.globalMarketCapRank || company.globalMarketCapRank) : company.globalMarketCapRank,
+            globalMarketCapRankDate: Date.parse(live.globalMarketCapRankDate) >= (Date.parse(company.globalMarketCapRankDate) || 0) ? live.globalMarketCapRankDate : company.globalMarketCapRankDate,
+            marketCapDate: live.marketCapDate || company.marketCapDate,
             globalMarketCapRankChange: company.globalMarketCapRankHistory ? company.globalMarketCapRankChange : (live.globalMarketCapRankChange ?? company.globalMarketCapRankChange),
             globalRankChange: live.globalRankChange ?? company.globalRankChange,
             marketCapRankChange: live.marketCapRankChange ?? company.marketCapRankChange,
@@ -10361,7 +10363,8 @@
             const rankObservedAt = entry.currentEvidence?.observedAt || history.dates?.current || history.generatedAt;
             const rankAge = Date.now() - Date.parse(rankObservedAt);
             const hasProviderCurrentRank = Number.isFinite(providerCurrentRank) && providerCurrentRank > 0
-              && Number.isFinite(rankAge) && rankAge >= -MAX_FUTURE_GLOBAL_RANK_AGE_MS;
+              && Number.isFinite(rankAge) && rankAge >= -MAX_FUTURE_GLOBAL_RANK_AGE_MS
+              && Date.parse(rankObservedAt) >= (Date.parse(company.globalMarketCapRankDate) || 0);
             const exactHistory = Object.fromEntries(
               ['1y', '2y', '3y', '5y', '10y']
                 .map(period => [period, Number(entry.ranks?.[period])])
@@ -10373,7 +10376,7 @@
             return {
               ...company,
               globalMarketCapRank: Number.isFinite(currentRank) && currentRank > 0 ? currentRank : null,
-              globalMarketCapRankHistory: exactHistory,
+              globalMarketCapRankHistory: hasProviderCurrentRank ? exactHistory : {},
               globalMarketCapRankHistoryComparable: hasProviderCurrentRank && history.rankHistoryComparable !== false,
               globalMarketCapRankChange: hasProviderCurrentRank && history.rankHistoryComparable !== false && Number.isFinite(exactHistory['1y']) ? exactHistory['1y'] - currentRank : 0,
               globalMarketCapRankSource: hasProviderCurrentRank ? (history.source || 'AssetMarketCap') : company.globalMarketCapRankSource,
@@ -10458,9 +10461,10 @@
         const rankedSources = loadedSources
           .map(item => ({
             ...item,
-            priceCoverage: item.companies.filter(company => company.currentPrice !== undefined && company.currentPrice !== null && company.currentPrice !== '').length
+            priceCoverage: item.companies.filter(company => company.currentPrice !== undefined && company.currentPrice !== null && company.currentPrice !== '').length,
+            freshPriceCoverage: item.companies.filter(company => Number(company.currentPrice) > 0 && !isStaleShareQuote(company)).length
           }))
-          .sort((a, b) => b.priceCoverage - a.priceCoverage);
+          .sort((a, b) => b.freshPriceCoverage - a.freshPriceCoverage || b.priceCoverage - a.priceCoverage);
         const primary = rankedSources[0];
         const companiesBySource = rankedSources.map(item => new Map(
           item.companies
