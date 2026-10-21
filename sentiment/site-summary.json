@@ -3,7 +3,7 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-10-21T08:13:37.816200Z",
+  "generatedAt": "2026-10-21T10:24:48.837868Z",
   "asOfDate": "2026-10-20",
   "companyCount": 100,
   "companies": {
@@ -50,16 +50,23 @@
       "ticker": "SHEL.L",
       "slug": "shell",
       "date": "2026-10-20",
-      "dailyScore": 51.7,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 51.4,
-      "confidence": 57.1,
-      "confidenceBand": "medium",
+      "dailyScore": 57.6,
+      "dailyLabel": "Slightly positive",
+      "rollingScore": 52.3,
+      "confidence": 38.7,
+      "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 7,
-      "sourceCount": 7,
-      "changeFromPreviousScoredDay": 1.5,
+      "storyCount": 3,
+      "sourceCount": 4,
+      "changeFromPreviousScoredDay": 7.4,
       "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 38.7"
+        },
         {
           "type": "collection_degraded",
           "direction": "neutral",
@@ -74,22 +81,22 @@
       "ticker": "HSBA.L",
       "slug": "hsbc",
       "date": "2026-10-20",
-      "dailyScore": 48.9,
+      "dailyScore": 49.3,
       "dailyLabel": "Neutral / mixed",
       "rollingScore": 50.5,
-      "confidence": 38.9,
+      "confidence": 38.0,
       "confidenceBand": "low",
       "coverageStatus": "ok",
       "storyCount": 4,
-      "sourceCount": 3,
-      "changeFromPreviousScoredDay": -0.7,
+      "sourceCount": 2,
+      "changeFromPreviousScoredDay": -0.3,
       "flags": [
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 38.9"
+          "detail": "Confidence is 38.0"
         },
         {
           "type": "collection_degraded",
@@ -174,43 +181,29 @@
       "ticker": "BP.L",
       "slug": "bp",
       "date": "2026-10-20",
-      "dailyScore": 26.1,
-      "dailyLabel": "Negative",
-      "rollingScore": 47.5,
-      "confidence": 71.1,
-      "confidenceBand": "high",
+      "dailyScore": 22.1,
+      "dailyLabel": "Very negative",
+      "rollingScore": 47.0,
+      "confidence": 63.7,
+      "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 12,
-      "sourceCount": 13,
-      "changeFromPreviousScoredDay": -22.2,
+      "storyCount": 6,
+      "sourceCount": 9,
+      "changeFromPreviousScoredDay": -26.2,
       "flags": [
         {
           "type": "sentiment_drop",
           "direction": "negative",
           "severity": "high",
           "status": "calculated",
-          "detail": "Daily score decreased by 22.2 points"
+          "detail": "Daily score decreased by 26.2 points"
         },
         {
           "type": "bad_press",
           "direction": "negative",
           "severity": "medium",
           "status": "calculated",
-          "detail": "Daily press score is 26.1"
-        },
-        {
-          "type": "coverage_spike",
-          "direction": "neutral",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "12 stories versus trailing median 4"
-        },
-        {
-          "type": "high_disagreement",
-          "direction": "mixed",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "Positive and negative coverage is unusually dispersed"
+          "detail": "Daily press score is 22.1"
         },
         {
           "type": "collection_degraded",
@@ -368,15 +361,15 @@
       "ticker": "BARC.L",
       "slug": "barclays",
       "date": "2026-10-20",
-      "dailyScore": 60.3,
+      "dailyScore": 61.6,
       "dailyLabel": "Positive",
-      "rollingScore": 51.7,
-      "confidence": 56.0,
+      "rollingScore": 51.8,
+      "confidence": 54.2,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 7,
-      "sourceCount": 6,
-      "changeFromPreviousScoredDay": 3.2,
+      "storyCount": 6,
+      "sourceCount": 5,
+      "changeFromPreviousScoredDay": 4.5,
       "flags": [
         {
           "type": "collection_degraded",
@@ -619,22 +612,22 @@
       "ticker": "ALW.L",
       "slug": "alliance-witan",
       "date": "2026-10-20",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
+      "dailyScore": 51.2,
+      "dailyLabel": "Neutral / mixed",
       "rollingScore": 51.0,
-      "confidence": 0.0,
+      "confidence": 15.4,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 0.7,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "Confidence is 15.4"
         }
       ]
     },
@@ -1810,6 +1803,13 @@
           "severity": "low",
           "status": "calculated",
           "detail": "Collection succeeded but found no eligible coverage"
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day"
         }
       ]
     },
@@ -2315,15 +2315,15 @@
       "ticker": "ABDN.L",
       "slug": "aberdeen-group",
       "date": "2026-10-20",
-      "dailyScore": 63.0,
+      "dailyScore": 63.2,
       "dailyLabel": "Positive",
-      "rollingScore": 53.3,
-      "confidence": 63.8,
+      "rollingScore": 53.4,
+      "confidence": 64.0,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 47,
-      "sourceCount": 35,
-      "changeFromPreviousScoredDay": 7.0,
+      "storyCount": 43,
+      "sourceCount": 29,
+      "changeFromPreviousScoredDay": 7.2,
       "flags": [
         {
           "type": "collection_degraded",
