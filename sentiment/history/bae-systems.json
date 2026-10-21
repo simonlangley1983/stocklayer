@@ -8219,6 +8219,76 @@
         }
       ],
       "changeFromPreviousScoredDay": 0.6
+    },
+    {
+      "date": "2026-10-20",
+      "dailyScore": 49.9,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 51.4,
+      "confidence": 40.9,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 21,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 1,
+      "dispersion": 0.9363,
+      "rejectedCandidateCounts": {
+        "missing_company_alias": 19
+      },
+      "topStories": [
+        {
+          "id": "0404862d38fe92af",
+          "storyClusterId": "story-002",
+          "title": "BAE Systems Cyber Incident Disrupts US Bankruptcy Notices",
+          "url": "https://www.esecurityplanet.com/cybersecurity/news-bae-systems-cyber-incident-us-bankruptcy-court-notices",
+          "source": "esecurityplanet.com",
+          "publishedAt": "2026-10-20T11:45:00Z",
+          "polarity": -0.9396,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "1096188bd641f451",
+          "storyClusterId": "story-001",
+          "title": "BAE Systems Inks Agreement With US War Dept To Increase APKWS Production",
+          "url": "https://www.finanzen.ch/nachrichten/aktien/bae-systems-inks-agreement-with-us-war-dept-to-increase-apkws-production-1036642394",
+          "source": "finanzen.ch",
+          "publishedAt": "2026-10-20T06:00:00Z",
+          "polarity": 0.9329,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "cybersecurity_incident",
+          "direction": "negative",
+          "severity": "critical",
+          "status": "possible",
+          "evidenceArticleIds": [
+            "0404862d38fe92af"
+          ],
+          "sourceCount": 1
+        },
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "0404862d38fe92af",
+            "1096188bd641f451"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -5.7
     }
   ]
 }
