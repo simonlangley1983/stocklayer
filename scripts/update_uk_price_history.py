@@ -152,7 +152,9 @@ def sync_legacy_quotes(root, companies):
     by_slug = {c['slug']: c for c in companies}
     snapshot = root / 'ftse100.json'
     if snapshot.exists():
-        saved = json.loads(snapshot.read_text(encoding='utf-8'))
+        previous = json.loads(snapshot.read_text(encoding='utf-8'))
+        previous_by_slug = {c.get('slug'): c for c in previous}
+        saved = [dict(previous_by_slug.get(c['slug'], {}), **c) for c in companies]
         for company in saved:
             latest = by_slug.get(company.get('slug'))
             if latest:
