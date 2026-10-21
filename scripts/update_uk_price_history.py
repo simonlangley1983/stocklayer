@@ -85,8 +85,20 @@ def fetch_company(company):
     return updated, history
 
 
-def refresh(root, fetcher=fetch_company):
+def reconcile_membership(companies, membership):
+    members = membership.get('members', [])
+    tickers = [c.get('ticker') for c in members]
+    slugs = [c.get('slug') for c in members]
+    if len(members) != 100 or len(set(tickers)) != 100 or len(set(slugs)) != 100 or not all(tickers) or not all(slugs):
+        raise ValueError('FTSE 100 membership must contain exactly 100 unique identified constituents')
+    existing = {c['slug']: c for c in companies}
+    return [dict(existing.get(c['slug'], {}), **c) for c in members]
+
+
+def refresh(root, fetcher=fetch_company, membership=None):
     companies = json.loads((root / 'uk-companies.json').read_text(encoding='utf-8'))
+    if membership is not None:
+        companies = reconcile_membership(companies, membership)
     results, errors = {}, {}
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
         futures = {pool.submit(fetcher, c): c for c in companies}
@@ -177,9 +189,10 @@ def sync_legacy_quotes(root, companies):
 
 
 def main():
-    return refresh(Path(__file__).resolve().parents[1])
+    root = Path(__file__).resolve().parents[1]
+    membership = json.loads((root / 'ftse100-membership.json').read_text(encoding='utf-8'))
+    return refresh(root, membership=membership)
 
 
 if __name__ == '__main__':
     main()
-

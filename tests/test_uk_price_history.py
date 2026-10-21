@@ -6,7 +6,7 @@ from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
-from update_uk_price_history import calculate_returns, anniversary, refresh
+from update_uk_price_history import calculate_returns, anniversary, refresh, reconcile_membership
 
 
 class ReturnTests(unittest.TestCase):
@@ -31,6 +31,29 @@ class ReturnTests(unittest.TestCase):
     def test_negative_returns_are_preserved(self):
         values, _ = calculate_returns([{'date': '2025-09-09', 'close': 100}], 80, date(2026, 9, 9))
         self.assertEqual(values['1y'], -20)
+
+
+class MembershipTests(unittest.TestCase):
+    def setUp(self):
+        self.manifest = json.loads((Path(__file__).resolve().parents[1] / 'ftse100-membership.json').read_text(encoding='utf-8'))
+
+    def test_current_membership_contains_all_four_replacements(self):
+        companies = reconcile_membership([], self.manifest)
+        tickers = {c['ticker'] for c in companies}
+        self.assertEqual(len(companies), 100)
+        self.assertTrue({'WPP.L', 'BBY.L', 'EZJ.L', 'ITH.L'} <= tickers)
+        self.assertFalse({'BEZ.L', 'SDR.L', 'ENT.L', 'PSN.L'} & tickers)
+
+    def test_removed_company_data_is_not_transferred_to_its_replacement(self):
+        companies = reconcile_membership([dict(slug='beazley', currentPrice=999, report='old issuer')], self.manifest)
+        wpp = next(c for c in companies if c['slug'] == 'wpp')
+        self.assertNotIn('currentPrice', wpp)
+        self.assertNotIn('report', wpp)
+
+    def test_duplicate_and_missing_memberships_are_rejected(self):
+        for members in (self.manifest['members'][:-1], self.manifest['members'][:-1] + [self.manifest['members'][0]]):
+            with self.assertRaises(ValueError):
+                reconcile_membership([], dict(members=members))
 
 
 class RefreshTests(unittest.TestCase):
@@ -77,4 +100,3 @@ class RefreshTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-

@@ -6977,98 +6977,31 @@
       { url: `${DATA_PR_BASE_URL}uk-companies.json`, baseUrl: DATA_PR_BASE_URL, label: 'GitHub PR uk-companies.json' },
       { url: 'ftse100.json', baseUrl: DATA_PR_BASE_URL, label: 'Saved UK market data snapshot' }
     ];
-    const NON_CURRENT_FTSE_SLUGS = new Set([
-      'ashtead',
-      'berkeley',
-      'ds-smith',
-      'easyjet',
-      'hargreaves-lansdown',
-      'hikma-pharmaceuticals',
-      'mondi',
-      'rightmove',
-      'taylor-wimpey',
-      'unite',
-      'wpp'
-    ]);
-    const COMPANY_DATA_CORRECTIONS = {
-      ashtead: {
-        companyName: 'Sunbelt Rentals Holdings',
-        ticker: 'SUNB.L',
-        lseTicker: 'SUNB',
-        domain: 'sunbeltrentals.com',
-        currentPrice: 49.80,
-        previousClose: 49.76,
-        dayChange: 0.04,
-        dayChangePercent: 0.08,
-        priceDate: '2026-09-07T16:30:00+01:00',
-        priceSource: 'London Stock Exchange delayed price'
-      },
-      phoenix: {
-        companyName: 'Standard Life PLC',
-        ticker: 'SDLF.L',
-        lseTicker: 'SDLF',
-        domain: 'standardlifeplc.com',
-        currentPrice: 9.515,
-        previousClose: 9.325,
-        dayChange: 0.19,
-        dayChangePercent: 2.04,
-        marketCap: '9.50B',
-        marketCapValue: 9500000000,
-        priceDate: '2026-09-07T16:30:00+01:00',
-        priceSource: 'London Stock Exchange delayed price'
+    let ftse100Tickers = new Set(["AAF.L", "AAL.L", "ABDN.L", "ABF.L", "ADM.L", "ALW.L", "ANTO.L", "AUTO.L", "AV.L", "AZN.L", "BA.L", "BAB.L", "BARC.L", "BATS.L", "BBOX.L", "BBY.L", "BGEO.L", "BLND.L", "BNZL.L", "BP.L", "BRBY.L", "BT-A.L", "BTRW.L", "CCC.L", "CCEP.L", "CCH.L", "CNA.L", "CPG.L", "CRDA.L", "CTEC.L", "DCC.L", "DGE.L", "DPLM.L", "EDV.L", "EXPN.L", "EZJ.L", "FCIT.L", "FRES.L", "GAW.L", "GLEN.L", "GSK.L", "HLMA.L", "HLN.L", "HSBA.L", "HSX.L", "HWDN.L", "IAG.L", "ICG.L", "IGG.L", "IHG.L", "III.L", "IMB.L", "IMI.L", "INF.L", "INVP.L", "ITH.L", "ITRK.L", "JD.L", "KGF.L", "LAND.L", "LGEN.L", "LLOY.L", "LMP.L", "LSEG.L", "MKS.L", "MNG.L", "MRO.L", "MTLN.L", "NG.L", "NWG.L", "NXT.L", "PCT.L", "PRU.L", "PSH.L", "PSON.L", "REL.L", "RIO.L", "RKT.L", "RR.L", "RTO.L", "SBRY.L", "SDLF.L", "SGE.L", "SGRO.L", "SHEL.L", "SMIN.L", "SMT.L", "SN.L", "SPX.L", "SSE.L", "STAN.L", "STJ.L", "SVT.L", "TSCO.L", "ULVR.L", "UU.L", "VOD.L", "WEIR.L", "WPP.L", "WTB.L"]);
+
+    async function loadFtseMembership() {
+      try {
+        const response = await fetch(`${DATA_BASE_URL}ftse100-membership.json?v=${Date.now()}`, { cache: 'no-store' });
+        if (!response.ok) throw new Error(`Membership feed returned ${response.status}`);
+        const membership = await response.json();
+        const tickers = membership.members?.map(company => company.ticker);
+        if (tickers?.length !== 100 || new Set(tickers).size !== 100 || tickers.some(ticker => !ticker)) {
+          throw new Error('Membership feed must identify 100 unique constituents');
+        }
+        ftse100Tickers = new Set(tickers);
+      } catch (error) {
+        console.warn('Using the last reviewed FTSE 100 membership', error);
       }
-    };
-    const CURRENT_FTSE_ADDITIONS = [
-      { companyName: 'Polar Capital Technology Trust PLC', ticker: 'PCT.L', lseTicker: 'PCT', slug: 'polar-capital-technology-trust', sector: 'Investment Trust', domain: 'polarcapitaltechnologytrust.com', currency: 'GBP', marketCap: '7.21B', marketCapValue: 7210120000, currentPrice: 6.555, previousClose: 6.52, dayChange: 0.035, dayChangePercent: 0.54 },
-      { companyName: 'Computacenter PLC', ticker: 'CCC.L', lseTicker: 'CCC', slug: 'computacenter', sector: 'Technology', domain: 'computacenter.com', currency: 'GBP', marketCap: '5.94B', marketCapValue: 5939040000, currentPrice: 56.00, previousClose: 55.90, dayChange: 0.10, dayChangePercent: 0.18 },
-      { companyName: 'Investec PLC', ticker: 'INVP.L', lseTicker: 'INVP', slug: 'investec', sector: 'Financial Services', domain: 'investec.com', currency: 'GBP', marketCap: '4.28B', marketCapValue: 4284720000, currentPrice: 6.695, previousClose: 6.70, dayChange: -0.005, dayChangePercent: -0.07 },
-      { companyName: 'Burberry Group PLC', ticker: 'BRBY.L', lseTicker: 'BRBY', slug: 'burberry', sector: 'Consumer Cyclical', domain: 'burberryplc.com', currency: 'GBP', marketCap: '3.98B', marketCapValue: 3983750000, currentPrice: 11.02, previousClose: 11.035, dayChange: -0.015, dayChangePercent: -0.14 },
-      { companyName: 'IG Group Holdings PLC', ticker: 'IGG.L', lseTicker: 'IGG', slug: 'ig-group', sector: 'Financial Services', domain: 'iggroup.com', currency: 'GBP', marketCap: '4.44B', marketCapValue: 4436680000, currentPrice: 13.30, previousClose: 13.35, dayChange: -0.05, dayChangePercent: -0.37 },
-      { companyName: 'Tritax Big Box REIT PLC', ticker: 'BBOX.L', lseTicker: 'BBOX', slug: 'tritax-big-box', sector: 'Real Estate', domain: 'tritaxbigbox.co.uk', currency: 'GBP', marketCap: '4.51B', marketCapValue: 4508980000, currentPrice: 1.532, previousClose: 1.54, dayChange: -0.008, dayChangePercent: -0.52 },
-      { companyName: 'Aberdeen Group PLC', ticker: 'ABDN.L', lseTicker: 'ABDN', slug: 'aberdeen-group', sector: 'Financial Services', domain: 'aberdeenplc.com', currency: 'GBP', marketCap: '4.60B', marketCapValue: 4601870000, currentPrice: 2.486, previousClose: 2.50, dayChange: -0.014, dayChangePercent: -0.56 },
-      { companyName: 'Coca-Cola Europacific Partners PLC', ticker: 'CCEP.L', lseTicker: 'CCEP', slug: 'coca-cola-europacific-partners', sector: 'Consumer Defensive', domain: 'cocacolaep.com', currency: 'GBP', marketCap: '34.72B', marketCapValue: 34721180000, currentPrice: 78.25, previousClose: 78.70, dayChange: -0.45, dayChangePercent: -0.57 },
-      { companyName: 'Metlen Energy & Metals PLC', ticker: 'MTLN.L', lseTicker: 'MTLN', slug: 'metlen-energy-metals', sector: 'Industrials', domain: 'metlengroup.com', currency: 'GBP', marketCap: '5.91B', marketCapValue: 5908110000, currentPrice: 41.60, previousClose: 41.84, dayChange: -0.24, dayChangePercent: -0.58 },
-      { companyName: 'Lion Finance Group PLC', ticker: 'BGEO.L', lseTicker: 'BGEO', slug: 'lion-finance-group', sector: 'Financial Services', domain: 'lionfinancegroup.uk', currency: 'GBP', marketCap: '5.86B', marketCapValue: 5864840000, currentPrice: 135.10, previousClose: 136.20, dayChange: -1.10, dayChangePercent: -0.81 },
-      { companyName: 'Babcock International Group PLC', ticker: 'BAB.L', lseTicker: 'BAB', slug: 'babcock-international', sector: 'Industrials', domain: 'babcockinternational.com', currency: 'GBP', marketCap: '4.86B', marketCapValue: 4862740000, currentPrice: 9.80, previousClose: 9.908, dayChange: -0.108, dayChangePercent: -1.09 }
-    ].map(company => ({
-      ...company,
-      priceDate: '2026-09-07T16:30:00+01:00',
-      priceSource: 'London Stock Exchange delayed price',
-      marketCapDate: '2026-09-07T16:30:00+01:00',
-      marketCapSource: 'London Stock Exchange'
-    }));
+    }
 
     function normaliseCompanyDataset(companies) {
-      const currentCompanies = companies
-        .filter(company => !NON_CURRENT_FTSE_SLUGS.has(company.slug))
-        .map(company => {
-          const correction = COMPANY_DATA_CORRECTIONS[company.slug];
-          if (!correction) return company;
-
-          const hasLivePrice = company.currentPrice !== undefined
-            && company.currentPrice !== null
-            && company.currentPrice !== ''
-            && Number.isFinite(Number(company.currentPrice))
-            && Number(company.currentPrice) > 0;
-          const liveFields = hasLivePrice ? {
-            currentPrice: company.currentPrice,
-            previousClose: company.previousClose,
-            dayChange: company.dayChange,
-            dayChangePercent: company.dayChangePercent,
-            priceDate: company.priceDate,
-            priceSource: company.priceSource,
-            marketCap: company.marketCap,
-            marketCapValue: company.marketCapValue,
-            marketCapDate: company.marketCapDate,
-            marketCapSource: company.marketCapSource
-          } : {};
-
-          return { ...company, ...correction, ...liveFields };
-        });
-      const currentTickers = new Set(currentCompanies.map(company => String(company.lseTicker || '').replace(/\./g, '').toUpperCase()));
-      return currentCompanies.concat(
-        CURRENT_FTSE_ADDITIONS.filter(company => !currentTickers.has(company.lseTicker))
-      );
+      const members = new Map(companies
+        .filter(company => ftse100Tickers.has(company.ticker))
+        .map(company => [company.ticker, company]));
+      if (members.size !== 100) {
+        throw new Error(`Dataset covers ${members.size} of the 100 verified FTSE constituents`);
+      }
+      return [...members.values()];
     }
     const COMPANY_USPS = {
       'astrazeneca': 'Global biopharma leader with deep oncology and rare disease exposure.',
@@ -7580,6 +7513,7 @@
 
     async function refreshLivePrices({ render = true } = {}) {
       try {
+        await loadFtseMembership();
         const { companies, source } = await fetchCompanyDataset();
         state.dataBaseUrl = source.baseUrl;
         const latestBySlug = normaliseCompanyDataset(companies).reduce((acc, company) => {
@@ -7587,28 +7521,17 @@
           return acc;
         }, {});
 
-        state.companies = state.companies.map(company => {
-          const live = latestBySlug[company.slug];
-          if (!live || live.currentPrice === undefined || live.currentPrice === null || live.currentPrice === '') return company;
+        state.companies = Object.values(latestBySlug).map(live => {
+          const company = state.companies.find(item => item.slug === live.slug) || {};
+          const keepNewerRank = Date.parse(company.globalMarketCapRankDate) > (Date.parse(live.globalMarketCapRankDate) || 0);
           return {
             ...company,
-            currentPrice: live.currentPrice,
-            currency: live.currency || company.currency,
-            priceDate: live.priceDate || company.priceDate,
-            priceStatus: live.priceStatus,
-            priceRefreshError: live.priceRefreshError,
-            dayChange: live.dayChange ?? company.dayChange,
-            dayChangePercent: live.dayChangePercent ?? company.dayChangePercent,
-            previousClose: live.previousClose ?? company.previousClose,
-            marketCap: live.marketCap || company.marketCap,
-            marketCapValue: live.marketCapValue ?? company.marketCapValue,
-            globalMarketCapRank: Date.parse(live.globalMarketCapRankDate) >= (Date.parse(company.globalMarketCapRankDate) || 0) ? (live.globalMarketCapRank || company.globalMarketCapRank) : company.globalMarketCapRank,
-            globalMarketCapRankDate: Date.parse(live.globalMarketCapRankDate) >= (Date.parse(company.globalMarketCapRankDate) || 0) ? live.globalMarketCapRankDate : company.globalMarketCapRankDate,
-            marketCapDate: live.marketCapDate || company.marketCapDate,
-            globalMarketCapRankChange: company.globalMarketCapRankHistory ? company.globalMarketCapRankChange : (live.globalMarketCapRankChange ?? company.globalMarketCapRankChange),
-            globalRankChange: live.globalRankChange ?? company.globalRankChange,
-            marketCapRankChange: live.marketCapRankChange ?? company.marketCapRankChange,
-            marketCapRank: live.marketCapRank || company.marketCapRank
+            ...live,
+            ...(keepNewerRank ? {
+              globalMarketCapRank: company.globalMarketCapRank,
+              globalMarketCapRankDate: company.globalMarketCapRankDate,
+              globalMarketCapRankSource: company.globalMarketCapRankSource
+            } : {})
           };
         });
         state.companies = applyMarketCapRanks(state.companies);
@@ -10396,6 +10319,7 @@
       const grid = document.getElementById('company-grid');
 
       try {
+        await loadFtseMembership();
         const { companies, source } = await fetchCompanyDataset();
         state.dataBaseUrl = source.baseUrl;
 
@@ -10451,7 +10375,7 @@
 
           const companies = await response.json();
           if (!Array.isArray(companies)) throw new Error(`${source.label} did not return a company array`);
-          loadedSources.push({ companies, source });
+          loadedSources.push({ companies: normaliseCompanyDataset(companies), source });
         } catch (error) {
           errors.push(error.message);
         }

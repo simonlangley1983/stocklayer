@@ -10,6 +10,8 @@ on:
       - scripts/update_uk_price_history.py
       - tests/test_uk_price_history.py
       - scripts/update_global_market_caps.py
+      - ftse100-membership.json
+      - scripts/test_ftse100_membership.cjs
       - .github/workflows/update-uk-price-history.yml
 
 permissions:
@@ -32,13 +34,15 @@ jobs:
           python-version: '3.12'
       - name: Check return calculations and partial refresh recovery
         run: python -m unittest discover -s tests -p 'test_uk_price_history.py'
+      - name: Check browser constituent coverage
+        run: node scripts/test_ftse100_membership.cjs
       - name: Refresh UK companies and price histories
         run: python scripts/update_uk_price_history.py
       - name: Publish fresh quotes before ranking refresh
         run: |
           git config user.name 'stocklayer-bot'
           git config user.email 'stocklayer-bot@users.noreply.github.com'
-          git add uk-companies.json history/*-history.json uk-price-refresh-status.json ftse100.json companies
+          git add uk-companies.json history/*-history.json history/ftse-membership uk-price-refresh-status.json ftse100.json companies
           if git diff --cached --quiet; then exit 0; fi
           git commit -m 'Refresh UK quotes and dated historical returns'
           git pull --rebase

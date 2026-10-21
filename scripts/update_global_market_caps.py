@@ -327,6 +327,7 @@ def main():
     if len(active) < math.ceil(len(companies) * 0.9):
         raise ValueError('Too few current issuers for a reliable rank refresh')
     result = build(active, old, response.json(), now)
+    result['companies'] = {c['slug']: result['companies'].get(c['slug'], {}) for c in companies}
     result['unmatched']['current'] = [c['slug'] for c in unavailable]
     for company in unavailable:
         company['globalMarketCapRankStatus'] = 'stale'
