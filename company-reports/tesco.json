@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-21T01:10:08.418223Z",
+  "generatedAt": "2026-10-21T01:48:01.881812Z",
   "company": {
     "companyName": "Tesco PLC",
     "ticker": "TSCO.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-10-19",
-    "observationCount": 101,
-    "scoredDayCount": 96,
-    "latestScore": 56.7,
-    "latestScoreDate": "2026-10-19",
+    "periodEnd": "2026-10-20",
+    "observationCount": 102,
+    "scoredDayCount": 97,
+    "latestScore": 38.7,
+    "latestScoreDate": "2026-10-20",
     "series": [
       {
         "date": "2026-06-30",
@@ -934,6 +934,15 @@
         "sourceCount": 28,
         "confidence": 84.9,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-20",
+        "dailyScore": 38.7,
+        "rollingScore": 47.9,
+        "storyCount": 47,
+        "sourceCount": 49,
+        "confidence": 87.7,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1601,17 +1610,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 45.5,
+    "score": 45.4,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 47.5,
+        "score": 47.3,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 78 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 79 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1798,6 +1807,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "efe15ccc33db4211bc16",
+      "type": "clinical",
+      "title": "Tesco to launch legal challenge over DfI approval for Lidl store in Co Derry",
+      "date": "2026-10-20",
+      "status": "pending_review",
+      "reviewDate": "2027-04-18",
+      "direction": "Very negative",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZFp2bWJnOFhLYkk2N2hiQnBhUFQwSFN6UEtBYkVIbzlLMWRhdXdZdHBIdm9yQ3FreWVhS1phb2tncWJnbEI1UWYwOUpCa005TW1Oa1A1aG16MXZQRGV5NXVXa1JDSV93OHA3VjdGOGE3MTdPX0g0ekNickwxaUxiLWFKMVdXc0psekN2OGRBb2RSVWF6S2l1LW1iNWJlaEXSAZ8BQVVfeXFMUGRadm1iZzhYS2JJNjdoYkJwYVBUMEhTelBLQWJFSG85SzFkYXV3WXRwSHZvckNxa3llYUtaYW9rZ3FiZ2xCNVFmMDlKQmtNOU1tTmtQNWhtejF2UERleTV1V2tSQ0lfdzhwN1Y3RjhhNzE3T19INHpDYnJMMWlMYi1hSjFXV3NKbHpDdjhkQW9kUlVhektpdS1tYjViZWhF?oc=5",
+          "publisher": "belfastlive.co.uk",
+          "date": "2026-10-20"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "1e0b61f31e1ea2c49246",
       "type": "clinical",

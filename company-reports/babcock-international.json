@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-21T01:10:08.418223Z",
+  "generatedAt": "2026-10-21T01:48:01.881812Z",
   "company": {
     "companyName": "Babcock International Group PLC",
     "ticker": "BAB.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-09-10",
-    "periodEnd": "2026-10-19",
-    "observationCount": 40,
-    "scoredDayCount": 25,
-    "latestScore": 37.7,
-    "latestScoreDate": "2026-10-17",
+    "periodEnd": "2026-10-20",
+    "observationCount": 41,
+    "scoredDayCount": 26,
+    "latestScore": 61.8,
+    "latestScoreDate": "2026-10-20",
     "series": [
       {
         "date": "2026-09-10",
@@ -385,6 +385,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-10-20",
+        "dailyScore": 61.8,
+        "rollingScore": 51.8,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 18.5,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1052,17 +1061,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 50.3,
+    "score": 50.6,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 52.0,
+        "score": 52.6,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 25 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 26 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",

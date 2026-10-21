@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-21T01:10:08.418223Z",
+  "generatedAt": "2026-10-21T01:48:01.881812Z",
   "company": {
     "companyName": "GSK",
     "ticker": "GSK.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-15",
-    "periodEnd": "2026-10-19",
-    "observationCount": 93,
-    "scoredDayCount": 90,
-    "latestScore": 70.7,
-    "latestScoreDate": "2026-10-19",
+    "periodEnd": "2026-10-20",
+    "observationCount": 94,
+    "scoredDayCount": 91,
+    "latestScore": 64.3,
+    "latestScoreDate": "2026-10-20",
     "series": [
       {
         "date": "2026-06-15",
@@ -862,6 +862,15 @@
         "sourceCount": 37,
         "confidence": 90.5,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-20",
+        "dailyScore": 64.3,
+        "rollingScore": 56.4,
+        "storyCount": 21,
+        "sourceCount": 19,
+        "confidence": 91.6,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1456,17 +1465,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 52.7,
+    "score": 52.8,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 56.4,
+        "score": 56.6,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 74 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 75 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1644,6 +1653,46 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "50aa4354114b2349f56c",
+      "type": "clinical",
+      "title": "GSK's Jemperli wins FDA accelerated approval as first immunotherapy for MSI-H/dMMR locally advanced rectal cancer",
+      "date": "2026-10-20",
+      "status": "pending_review",
+      "reviewDate": "2027-04-18",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPSS1LTVQwejdIdUxxb2ZaQ2c1NXk0N2FILVlkMU5yU2FpQkNUb0dmLWVGODVXcl9reGxSS3lMODg0dGhUNU9rbmdCWEw4U09qRE5aSjlIX2Y2ZGVvRjlWOFh0VUp0NmZJaFpRNWZzQzEyd1JhR2RNTFNNcjhUa3lZbHMxX1U3dEx5NEZXZXNXR0dCTzktUVFIQ09FUGI4elpkcy1kWHZtOUFzMnhTZ0VnVTg3eVpQbjgyQVJjUVI2Y1hTQkVlY2pXNkJNWkRiTS1kM1EzRk0tWHptdVFENTRfXw?oc=5",
+          "publisher": "app.dealroom.co",
+          "date": "2026-10-20"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
+    {
+      "id": "1430183538945492c47b",
+      "type": "clinical",
+      "title": "GSK Immunotherapy Gets Accelerated FDA Approval for Treating Rectal Cancer",
+      "date": "2026-10-20",
+      "status": "pending_review",
+      "reviewDate": "2027-04-18",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQbkVBLWwtS3pHTlpqRmRaMGRyRmpiN0xWTE9VNVZfUWkwWU16Yk95UTNFLVNTYzJvMUItbXNZdlZOYkNiMzB1Z3ZEZUNVSTcwODI1MTNnYlRzSXd3aFRMamVzUzdGR0xnTFpEbV9rdngwQjNQOE90TnlEaXBDZE9ITjRkblk5Yl96SDlnbXdGNzVIYWJpd2d6c21DSEl3c2lKRkJN?oc=5",
+          "publisher": "medcitynews.com",
+          "date": "2026-10-20"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "2224ea79f98d45ea241d",
       "type": "clinical",
