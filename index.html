@@ -9863,11 +9863,17 @@
 
       if (isStaleShareQuote(company)) {
         const note = document.createElement('small');
-        note.textContent = `Stale quote · ${company.priceDate ? new Date(company.priceDate).toLocaleDateString('en-GB') : 'date unavailable'}`;
+        note.textContent = `Stale · ${company.priceDate ? new Date(company.priceDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' }) : 'date unknown'}`;
+        note.title = company.priceDate ? `Last provider quote: ${new Date(company.priceDate).toLocaleDateString('en-GB')}` : 'Provider quote date unavailable';
         note.style.cssText = 'display:block;color:#92400e;font-weight:600';
         card.querySelector('.share-price-metric')?.appendChild(note);
         const todayChange = card.querySelector('.today-change');
         if (todayChange) todayChange.textContent = 'Daily change unavailable';
+      }
+      const rankDate = Date.parse(company.globalMarketCapRankDate);
+      if (!Number.isFinite(rankDate) || Date.now() - rankDate > 4 * 86400000) {
+        const rankLabel = card.querySelector('.market-rank-label');
+        if (rankLabel) rankLabel.textContent = 'Last verified global rank';
       }
       return card;
     }
