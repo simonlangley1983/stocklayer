@@ -4363,37 +4363,51 @@
     },
     {
       "date": "2026-10-20",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 49.0,
-      "confidence": 0.0,
+      "dailyScore": 40.0,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 47.9,
+      "confidence": 19.6,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
       "candidateCount": 4,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
       "positiveStoryCount": 0,
       "neutralStoryCount": 0,
-      "negativeStoryCount": 0,
+      "negativeStoryCount": 1,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
-        "missing_company_alias": 4
+        "missing_company_alias": 3
       },
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "9dd0845a39f6e3b7",
+          "storyClusterId": "story-001",
+          "title": "JD Sports Fashion slides Tuesday, underperforms market",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNN2ZuNG5WQkgtUFJBREhKTlJ0Q1BOTjBGTHRnb2VKMzY4SndWQ0RCM3hfRndUTjRLN1NLTjBBeE1JRGJtUFItUFJ0eGdTVUFoRms1M0RGR3BLbFBzbzJnUHNlRElUbWpsVkktOW1rSlVuengzYXBnSE1pWjlJcVozQUZWdGlRV3JPdi12eFE1T0VUMHJhN2tLU2RXN3lZVk9OakJYbk9fbFJLNWRRQUh5OWdkNDRYcDg2VUlIblpXVjVDUjV4d2hNSDJhWQ?oc=5",
+          "source": "marketwatch.com",
+          "publishedAt": "2026-10-20T16:07:00Z",
+          "polarity": -0.5983,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 19.6",
+          "evidenceArticleIds": [
+            "9dd0845a39f6e3b7"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": -10.4
     }
   ]
 }
