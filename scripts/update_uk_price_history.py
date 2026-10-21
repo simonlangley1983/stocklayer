@@ -85,12 +85,11 @@ def fetch_company(company):
     return updated, history
 
 
-def main():
-    root = Path(__file__).resolve().parents[1]
+def refresh(root, fetcher=fetch_company):
     companies = json.loads((root / 'uk-companies.json').read_text(encoding='utf-8'))
     results, errors = {}, {}
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
-        futures = {pool.submit(fetch_company, c): c for c in companies}
+        futures = {pool.submit(fetcher, c): c for c in companies}
         for future in concurrent.futures.as_completed(futures):
             company = futures[future]
             try:
@@ -99,10 +98,11 @@ def main():
             except Exception as error:
                 errors[company['slug']] = str(error)
                 print(f'FAIL {company["slug"]}: {error}', flush=True)
-    # Do not publish a partial download over the working dataset.
-    if errors:
-        (root / 'uk-price-refresh-errors.json').write_text(json.dumps(errors, indent=2), encoding='utf-8')
-        raise SystemExit(f'Refresh not published: {len(errors)} companies failed')
+    checked_at = datetime.now(timezone.utc).isoformat()
+    # Keep failures dated and visible without freezing healthy companies.
+    # A widespread provider outage must not replace the published dataset.
+    if len(results) < math.ceil(len(companies) * 0.9):
+        raise RuntimeError(f'Refresh not published: only {len(results)}/{len(companies)} valid quotes')
     # Refresh display conversion rates together with prices, instead of retaining stale FX.
     fx_rates = {}
     for updated, _ in results.values():
@@ -125,12 +125,25 @@ def main():
         updated['displayFxRate'], updated['displayFxRateDate'] = fx_rates[pair]
         updated['displayFxRateSource'] = 'Yahoo Finance chart API'
     (root / 'history').mkdir(exist_ok=True)
-    for slug, (_, history) in results.items():
+    for slug, (company, history) in results.items():
+        company.update(priceStatus='current', priceCheckedAt=checked_at)
+        company.pop('priceRefreshError', None)
         (root / 'history' / f'{slug}-history.json').write_text(json.dumps(history, separators=(',', ':')) + '\n', encoding='utf-8')
-    updated = [results[c['slug']][0] for c in companies]
+    updated = [results[c['slug']][0] if c['slug'] in results else
+               dict(c, priceStatus='stale', priceCheckedAt=checked_at,
+                    priceRefreshError=errors[c['slug']]) for c in companies]
     (root / 'uk-companies.json').write_text(json.dumps(updated, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+    status = dict(checkedAt=checked_at, status='degraded' if errors else 'current',
+                  updated=len(results), total=len(companies), errors=errors)
+    (root / 'uk-price-refresh-status.json').write_text(json.dumps(status, indent=2) + '\n', encoding='utf-8')
     print(f'Updated {len(updated)} UK companies and histories', flush=True)
+    return status
+
+
+def main():
+    return refresh(Path(__file__).resolve().parents[1])
 
 
 if __name__ == '__main__':
     main()
+

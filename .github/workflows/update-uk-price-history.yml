@@ -2,8 +2,14 @@ name: Update UK prices and historical returns
 
 on:
   schedule:
-    - cron: '20 7-17 * * 1-5'
+    - cron: '20,50 7-17 * * 1-5'
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/update_uk_price_history.py
+      - tests/test_uk_price_history.py
+      - .github/workflows/update-uk-price-history.yml
 
 permissions:
   contents: write
@@ -15,27 +21,63 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Check return calculations
+      - name: Check return calculations and partial refresh recovery
         run: python -m unittest discover -s tests -p 'test_uk_price_history.py'
-      - name: Refresh 100 UK companies and price histories
+      - name: Refresh UK companies and price histories
         run: python scripts/update_uk_price_history.py
-      - name: Install global market-cap dependencies
-        run: python -m pip install yfinance curl_cffi
-      - name: Validate global market-cap matching
-        run: python -m unittest discover -s tests -p 'test_global_market_caps.py'
-      - name: Refresh and validate all global market-cap ranks
-        run: python scripts/update_global_market_caps.py
-      - name: Commit refreshed data
+      - name: Publish fresh quotes before ranking refresh
         run: |
           git config user.name 'stocklayer-bot'
           git config user.email 'stocklayer-bot@users.noreply.github.com'
-          git add uk-companies.json history/*-history.json history/global-market-cap-ranks.json
+          git add uk-companies.json history/*-history.json uk-price-refresh-status.json
           if git diff --cached --quiet; then exit 0; fi
           git commit -m 'Refresh UK quotes and dated historical returns'
+          git pull --rebase
+          git push
+      - name: Report stale issuer quotes after publishing healthy quotes
+        run: |
+          python - <<'PY'
+          import json
+          status = json.load(open('uk-price-refresh-status.json'))
+          for slug, error in status['errors'].items():
+              print(f'::error title=Stale share quote::{slug}: {error}')
+          print(f"Published {status['updated']}/{status['total']} fresh quotes")
+          if status['errors']:
+              raise SystemExit('Healthy quotes published; stale issuers require attention')
+          PY
+
+  global-ranks:
+    needs: update
+    if: ${{ always() && !cancelled() }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install global market-cap dependencies
+        run: python -m pip install yfinance curl_cffi requests
+      - name: Validate global market-cap matching
+        run: python -m unittest discover -s tests -p 'test_global_market_caps.py'
+      - name: Refresh and validate global market-cap ranks
+        run: python scripts/update_global_market_caps.py
+      - name: Publish verified global ranks
+        run: |
+          git config user.name 'stocklayer-bot'
+          git config user.email 'stocklayer-bot@users.noreply.github.com'
+          git add uk-companies.json history/global-market-cap-ranks.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Refresh verified global market-cap ranks'
           git pull --rebase
           git push

@@ -1,10 +1,12 @@
 import sys
 import unittest
+import json
+import tempfile
 from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
-from update_uk_price_history import calculate_returns, anniversary
+from update_uk_price_history import calculate_returns, anniversary, refresh
 
 
 class ReturnTests(unittest.TestCase):
@@ -31,5 +33,41 @@ class ReturnTests(unittest.TestCase):
         self.assertEqual(values['1y'], -20)
 
 
+class RefreshTests(unittest.TestCase):
+    def test_failed_issuer_does_not_freeze_healthy_quotes(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            original = [dict(slug=str(i), ticker=str(i), currentPrice=10,
+                             priceDate='2026-10-02', priceRefreshError='old error') for i in range(100)]
+            (root / 'uk-companies.json').write_text(json.dumps(original))
+            def fetch(company):
+                if company['slug'] in ('1', '2'):
+                    raise ValueError('Stale provider quote')
+                return dict(company, currentPrice=20, priceDate='2026-10-21'), {'prices': []}
+            status = refresh(root, fetch)
+            saved = json.loads((root / 'uk-companies.json').read_text())
+            self.assertEqual(status['updated'], 98)
+            self.assertEqual(saved[0]['currentPrice'], 20)
+            self.assertNotIn('priceRefreshError', saved[0])
+            self.assertEqual(saved[1]['currentPrice'], 10)
+            self.assertEqual(saved[1]['priceDate'], '2026-10-02')
+            self.assertEqual(saved[1]['priceStatus'], 'stale')
+            self.assertFalse((root / 'history/1-history.json').exists())
+            self.assertTrue((root / 'history/0-history.json').exists())
+
+    def test_provider_outage_preserves_published_dataset(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            source = json.dumps([dict(slug=str(i)) for i in range(10)])
+            (root / 'uk-companies.json').write_text(source)
+            def fail(company):
+                raise ValueError('Provider outage')
+            with self.assertRaises(RuntimeError):
+                refresh(root, fail)
+            self.assertEqual((root / 'uk-companies.json').read_text(), source)
+            self.assertFalse((root / 'history').exists())
+
+
 if __name__ == '__main__':
     unittest.main()
+
