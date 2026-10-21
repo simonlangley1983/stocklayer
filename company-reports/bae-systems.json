@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-20T23:30:15.898729Z",
+  "generatedAt": "2026-10-21T01:10:08.418223Z",
   "company": {
     "companyName": "BAE Systems",
     "ticker": "BA.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-14",
-    "periodEnd": "2026-10-19",
-    "observationCount": 105,
-    "scoredDayCount": 90,
-    "latestScore": 55.6,
-    "latestScoreDate": "2026-10-19",
+    "periodEnd": "2026-10-20",
+    "observationCount": 106,
+    "scoredDayCount": 91,
+    "latestScore": 49.9,
+    "latestScoreDate": "2026-10-20",
     "series": [
       {
         "date": "2026-06-14",
@@ -970,6 +970,15 @@
         "sourceCount": 17,
         "confidence": 93.7,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-20",
+        "dailyScore": 49.9,
+        "rollingScore": 51.4,
+        "storyCount": 2,
+        "sourceCount": 2,
+        "confidence": 40.9,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1564,14 +1573,14 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 52.8,
+    "score": 52.7,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 58.4,
+        "score": 58.2,
         "weight": 0.4,
         "reliability": 1.0,
         "detail": "Recency-weighted average of 79 scored days in the latest 90 calendar days; 30-day half-life."
@@ -1752,6 +1761,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "5bacdabc0f26149d7580",
+      "type": "financial_distress",
+      "title": "BAE Systems Cyber Incident Disrupts US Bankruptcy Notices",
+      "date": "2026-10-20",
+      "status": "pending_review",
+      "reviewDate": "2027-01-18",
+      "direction": "Very negative",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://www.esecurityplanet.com/cybersecurity/news-bae-systems-cyber-incident-us-bankruptcy-court-notices",
+          "publisher": "esecurityplanet.com",
+          "date": "2026-10-20"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "ef7e241793733a3add4c",
       "type": "financial_distress",

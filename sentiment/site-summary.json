@@ -3,8 +3,8 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-10-20T22:10:16.308541Z",
-  "asOfDate": "2026-10-19",
+  "generatedAt": "2026-10-21T01:10:06.772816Z",
+  "asOfDate": "2026-10-20",
   "companyCount": 100,
   "companies": {
     "astrazeneca": {
@@ -383,22 +383,22 @@
       "companyName": "BAE Systems",
       "ticker": "BA.L",
       "slug": "bae-systems",
-      "date": "2026-10-19",
-      "dailyScore": 55.6,
-      "dailyLabel": "Slightly positive",
-      "rollingScore": 51.8,
-      "confidence": 93.7,
-      "confidenceBand": "high",
+      "date": "2026-10-20",
+      "dailyScore": 49.9,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 51.4,
+      "confidence": 40.9,
+      "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 19,
-      "sourceCount": 17,
-      "changeFromPreviousScoredDay": 0.6,
+      "storyCount": 2,
+      "sourceCount": 2,
+      "changeFromPreviousScoredDay": -5.7,
       "flags": [
         {
           "type": "cybersecurity_incident",
           "direction": "negative",
           "severity": "critical",
-          "status": "confirmed"
+          "status": "possible"
         },
         {
           "type": "high_disagreement",
@@ -682,17 +682,25 @@
       "companyName": "Aviva PLC",
       "ticker": "AV.L",
       "slug": "aviva",
-      "date": "2026-10-19",
-      "dailyScore": 57.4,
-      "dailyLabel": "Slightly positive",
-      "rollingScore": 54.6,
-      "confidence": 80.1,
-      "confidenceBand": "high",
-      "coverageStatus": "ok",
-      "storyCount": 10,
-      "sourceCount": 10,
-      "changeFromPreviousScoredDay": 6.9,
-      "flags": []
+      "date": "2026-10-20",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 54.2,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
+      "flags": [
+        {
+          "type": "no_coverage",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Collection succeeded but found no eligible coverage"
+        }
+      ]
     },
     "barratt-redrow": {
       "companyName": "Barratt Redrow PLC",
@@ -1697,23 +1705,23 @@
       "companyName": "Reckitt Benckiser Group PLC",
       "ticker": "RKT.L",
       "slug": "reckitt-benckiser",
-      "date": "2026-10-19",
-      "dailyScore": 60.8,
-      "dailyLabel": "Positive",
-      "rollingScore": 52.4,
-      "confidence": 35.8,
+      "date": "2026-10-20",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 52.2,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 2,
-      "sourceCount": 2,
-      "changeFromPreviousScoredDay": 10.8,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 35.8"
+          "detail": "Collection succeeded but found no eligible coverage"
         }
       ]
     },
