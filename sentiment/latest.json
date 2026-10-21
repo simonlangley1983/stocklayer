@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-10-21T08:13:37.816200Z",
+  "generatedAt": "2026-10-21T10:24:48.837868Z",
   "asOfDate": "2026-10-20",
   "companies": {
     "astrazeneca": {
@@ -125,16 +125,28 @@
       "ticker": "SHEL.L",
       "slug": "shell",
       "date": "2026-10-20",
-      "dailyScore": 51.7,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 51.4,
-      "confidence": 57.1,
-      "confidenceBand": "medium",
+      "dailyScore": 57.6,
+      "dailyLabel": "Slightly positive",
+      "rollingScore": 52.3,
+      "confidence": 38.7,
+      "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 7,
-      "sourceCount": 7,
-      "changeFromPreviousScoredDay": 1.5,
+      "storyCount": 3,
+      "sourceCount": 4,
+      "changeFromPreviousScoredDay": 7.4,
       "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 38.7",
+          "evidenceArticleIds": [
+            "e8b815a70359697f",
+            "11c1d07fdbf845fb",
+            "6ce3fa8246644671"
+          ]
+        },
         {
           "type": "collection_degraded",
           "direction": "neutral",
@@ -142,29 +154,16 @@
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
-            "4ddc557ed84f0178",
             "e8b815a70359697f",
-            "0f94dfedd84aca1d",
-            "7b120f3b12541f68",
-            "bbc20d7fbc21e574"
+            "11c1d07fdbf845fb",
+            "6ce3fa8246644671"
           ]
         }
       ],
       "topStories": [
         {
-          "id": "4ddc557ed84f0178",
-          "storyClusterId": "story-002",
-          "title": "Shell CEO Says Blockade May Mean Energy Shortages Last Into 2027",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNUE5peTN1Q0FReVdyZWZzcWNOa3h4c1U3TkluZjliZDRaaEhHV2d3c09QX3hPZjFLUUdzRzRLdjkwR2RyWGdpd2dmTGxGQzlmUk8tOEFYTGNzSGJaMUZreVJtak5sU3BBbjUzekNhUS05ZjNEUTcxUzdFZGNETFNrd1pCTEhFRjZOSkt4ZDR2dzA1Tkd3S05CdkdIbw?oc=5",
-          "source": "energynow.com",
-          "publishedAt": "2026-10-20T03:41:43Z",
-          "polarity": -0.9205,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
           "id": "e8b815a70359697f",
-          "storyClusterId": "story-005",
+          "storyClusterId": "story-001",
           "title": "FTSE 100 Shell (LSE:SHEL) Rides the Oil Price Surge Higher",
           "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPVG5uMWRWOWVuRmtrVUpVMWkydElpQW1RWTRrT0tjZ0QxbGZ4Z2NIZFFsdURKdFFnQmhBN1hsR2ZGTDhkNEdUc3JCWGtGdDN5WHF0c001RnBCZ2hTY3hVbDZIX0FQZTBMS2Y1NUdvTFlZLVZ6clprRnI4S3IxaEQ0SGE0MmtmaV81Q0RzeU1HNnc3cWxfdVNWUnpQUXVOYUds?oc=5",
           "source": "kalkinemedia.com",
@@ -174,36 +173,25 @@
           "publisherCount": 1
         },
         {
-          "id": "0f94dfedd84aca1d",
+          "id": "11c1d07fdbf845fb",
+          "storyClusterId": "story-002",
+          "title": "Shell's Latest LNG Move Has Me Rethinking My Oil Major Pecking Order. Here's Where I'd Rank Exxon and Chevron Now.",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNTVdySkItd0hsNkZZaXhrSHJFVzFWb3FlVjRNeml0YWs4SjhsZ1AySUpGVUNNcjBYbFhhc29iZTJQdHhoeWVhY09GVF9lby0tSXBtOVlyb3ZrRHpTbG14d1F6THpMRS1xNVdmbGF4TkdTazNGNkhGWlB2T24wclpPb3EyUXBBMi1OMmVuYy0wcUJ6bTdqTkkwUg?oc=5",
+          "source": "fool.com",
+          "publishedAt": "2026-10-20T16:15:00Z",
+          "polarity": -0.0242,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 3
+        },
+        {
+          "id": "6ce3fa8246644671",
           "storyClusterId": "story-003",
-          "title": "Chevron, Shell Closing in on First Big Oil Production Deals in Venezuela Since US Captured Maduro",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQdVJYLTVsYzNudVh6UzN2TUNKcTNrWlpDSHZCanMxLXFXTTY3aHQ5enBwZVF4WGk0WFFOLVc2bUd4eGk3ZEVBWHlndC16WUhmLVVpeHRwTTNjdTE1cUFkMlp4a0RjcTVPM2dUYW8xTlJnVHZKMWNNU05qTzA1R0EtTzBCY2JlS2pzSHEzdUxIVEJ6VXc3aVdwd1NlMS1VNUVJUTRaTTA3ZGxuTGM5ZEJHNklJVnhuLWNTSjhzanFBTkVubmhfRlZuSVdvaEc0WHJ0aFBmUmRR?oc=5",
-          "source": "energynow.com",
-          "publishedAt": "2026-10-20T04:14:20Z",
-          "polarity": 0.547,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "7b120f3b12541f68",
-          "storyClusterId": "story-004",
-          "title": "Woman Fuels Up At Shell. Then She Realizes The Gas Is Water-Contaminated: 'How Did You Know?'",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE96ZUp5bWJVMV93cWp6OV9OVks5cEctV1FUa1hJbkxPLXpTeU5FRjVaekNJdGJ3bzY2ZjV2M3BjejQ4dnFERVFLcnlSbUJKeVJjTXlvTk9uM25kT19QV0lNZ1ZfbjVRSzRKbmc?oc=5",
-          "source": "motor1.com",
-          "publishedAt": "2026-10-20T07:51:56Z",
-          "polarity": -0.2237,
-          "sentiment": "Negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "bbc20d7fbc21e574",
-          "storyClusterId": "story-001",
-          "title": "Shell in deal with DCC Energy on French mobility business",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNNjBDQy1ZZ0ZjZFpLSXRKNFMzWkQ5MHY3WC00dGxrb19Qa29XenUtX2FWbjZVVWp1Uk8tTUpQU1NPREZJdk1OY1Qyb3Ewb0N0NXNKZGZlM1FqTnNVT1FDUEJKYXBaV2EySXN0Z3V5M0p4WkVmR1I5bkRJV2lUYmphSXN5dVIwdHN4OWJjd0lBeTZWU0VlTmxEMFZHRzJPT3Fwbm1sVC1KYjB5T0pNX3c?oc=5",
-          "source": "rte.ie",
-          "publishedAt": "2026-10-19T23:28:50Z",
-          "polarity": 0.152,
-          "sentiment": "Slightly positive",
+          "title": "Shell plc (SHEL) Executes Buy-Back of 1.55 Million Shares on 19 October 2026 via LSE and Euronext Amsterdam",
+          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOLW1fcDlKTFVlVHF5REhqX1p5OTM1dm1qeGZnUVowUUppZFRrN0stTkY1U0dWX3V3TGJwZXFmUjVtd2dCXzFkeGc0UzY2Z203bUpLbkpaakdMaHpQaHRmNHh2RXBRN0NiaUxjN0lZNGd6WDI5b25qSUpPbVBIWkhBZzZiVDVfaEtwd3lnQW1wT3A3dDJMbjNQS2gtd0pndXNyYVhRT1FiRWU4VmozVnFSNW1KQ191R2o3cEFmWVdyMFc0UzRFaXh5c0tyWVNlbXJ5aDdOdWk3ZGoxZGlsYnQ3N1pibFYxZw?oc=5",
+          "source": "kalkinemedia.com",
+          "publishedAt": "2026-10-20T21:12:49Z",
+          "polarity": 0.0227,
+          "sentiment": "Neutral / mixed",
           "publisherCount": 1
         }
       ]
@@ -213,26 +201,26 @@
       "ticker": "HSBA.L",
       "slug": "hsbc",
       "date": "2026-10-20",
-      "dailyScore": 48.9,
+      "dailyScore": 49.3,
       "dailyLabel": "Neutral / mixed",
       "rollingScore": 50.5,
-      "confidence": 38.9,
+      "confidence": 38.0,
       "confidenceBand": "low",
       "coverageStatus": "ok",
       "storyCount": 4,
-      "sourceCount": 3,
-      "changeFromPreviousScoredDay": -0.7,
+      "sourceCount": 2,
+      "changeFromPreviousScoredDay": -0.3,
       "flags": [
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 38.9",
+          "detail": "Confidence is 38.0",
           "evidenceArticleIds": [
             "38e7c302415f4bd4",
-            "f7eaa2c116b180b1",
             "d68f9db2693a08ba",
+            "ccd098dc41bdc8a2",
             "67147a776069646a"
           ]
         },
@@ -244,8 +232,8 @@
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
             "38e7c302415f4bd4",
-            "f7eaa2c116b180b1",
             "d68f9db2693a08ba",
+            "ccd098dc41bdc8a2",
             "67147a776069646a"
           ]
         }
@@ -263,17 +251,6 @@
           "publisherCount": 1
         },
         {
-          "id": "f7eaa2c116b180b1",
-          "storyClusterId": "story-003",
-          "title": "HSBC Holdings plc (0005.HK) stock price, news, quote and history",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5xbV9RWnUwWW5mbmgzWlBfSGpOSW0wTzFrWHlEbmNoN0dIWndILUs5QWNYSy0zQUcwczFEQkpDTlotQzEwMFM2azREV09wU3RRcXJqVkVB?oc=5",
-          "source": "au.finance.yahoo.com",
-          "publishedAt": "2026-10-20T16:03:17Z",
-          "polarity": -0.0305,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        },
-        {
           "id": "d68f9db2693a08ba",
           "storyClusterId": "story-002",
           "title": "Common equity to total deposits of HSBC Holdings PLC ADR Cert Deposito Arg Repr 0.5 ADRs – BCBA:HSBCD",
@@ -281,6 +258,17 @@
           "source": "tradingview.com",
           "publishedAt": "2026-10-20T15:16:52Z",
           "polarity": 0.0212,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "ccd098dc41bdc8a2",
+          "storyClusterId": "story-003",
+          "title": "Net change in cash of HSBC Holdings PLC ADR Cert Deposito Arg Repr 0.5 ADRs – BCBA:HSBCD",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOdUt0Y25vS3l3SXVXRkg4d085TmlFRHluenU5M2I4ZnlRQkFrSzhTeTVTTGlBcmtnZFJubFNDdHBRV2NOQ0FDTXFnY1hwY3lqUTZxYW9yVWxtUjFEUndpV0ZaT2gtSlktVzlJTkVWdnhXd2RjTVFvVjFwZGVSaE0yLUZzenpGNUpvOWRSMg?oc=5",
+          "source": "tradingview.com",
+          "publishedAt": "2026-10-20T15:40:55Z",
+          "polarity": -0.011,
           "sentiment": "Neutral / mixed",
           "publisherCount": 1
         },
@@ -558,28 +546,28 @@
       "ticker": "BP.L",
       "slug": "bp",
       "date": "2026-10-20",
-      "dailyScore": 26.1,
-      "dailyLabel": "Negative",
-      "rollingScore": 47.5,
-      "confidence": 71.1,
-      "confidenceBand": "high",
+      "dailyScore": 22.1,
+      "dailyLabel": "Very negative",
+      "rollingScore": 47.0,
+      "confidence": 63.7,
+      "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 12,
-      "sourceCount": 13,
-      "changeFromPreviousScoredDay": -22.2,
+      "storyCount": 6,
+      "sourceCount": 9,
+      "changeFromPreviousScoredDay": -26.2,
       "flags": [
         {
           "type": "sentiment_drop",
           "direction": "negative",
           "severity": "high",
           "status": "calculated",
-          "detail": "Daily score decreased by 22.2 points",
+          "detail": "Daily score decreased by 26.2 points",
           "evidenceArticleIds": [
             "b4dc3f5aa2ec2e23",
             "8e3e0c3ae14827dc",
-            "a12097dc7e32824f",
+            "91a1e43454e46ae9",
             "707e1041b093f832",
-            "91a1e43454e46ae9"
+            "d738b52bc6ab2185"
           ]
         },
         {
@@ -587,41 +575,13 @@
           "direction": "negative",
           "severity": "medium",
           "status": "calculated",
-          "detail": "Daily press score is 26.1",
+          "detail": "Daily press score is 22.1",
           "evidenceArticleIds": [
             "b4dc3f5aa2ec2e23",
             "8e3e0c3ae14827dc",
-            "a12097dc7e32824f",
+            "91a1e43454e46ae9",
             "707e1041b093f832",
-            "91a1e43454e46ae9"
-          ]
-        },
-        {
-          "type": "coverage_spike",
-          "direction": "neutral",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "12 stories versus trailing median 4",
-          "evidenceArticleIds": [
-            "b4dc3f5aa2ec2e23",
-            "8e3e0c3ae14827dc",
-            "a12097dc7e32824f",
-            "707e1041b093f832",
-            "91a1e43454e46ae9"
-          ]
-        },
-        {
-          "type": "high_disagreement",
-          "direction": "mixed",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "Positive and negative coverage is unusually dispersed",
-          "evidenceArticleIds": [
-            "b4dc3f5aa2ec2e23",
-            "8e3e0c3ae14827dc",
-            "a12097dc7e32824f",
-            "707e1041b093f832",
-            "91a1e43454e46ae9"
+            "d738b52bc6ab2185"
           ]
         },
         {
@@ -633,16 +593,16 @@
           "evidenceArticleIds": [
             "b4dc3f5aa2ec2e23",
             "8e3e0c3ae14827dc",
-            "a12097dc7e32824f",
+            "91a1e43454e46ae9",
             "707e1041b093f832",
-            "91a1e43454e46ae9"
+            "d738b52bc6ab2185"
           ]
         }
       ],
       "topStories": [
         {
           "id": "b4dc3f5aa2ec2e23",
-          "storyClusterId": "story-012",
+          "storyClusterId": "story-006",
           "title": "Study finds massive decline in marine life since BP oil spill in Gulf of Mexico",
           "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNRmlBSWVqYXNLaVJnZ1BycHFxbmNRRmRpNEZzckNUNnVVeWRDcEFLUnpNM2FaM3JsSXR1cTV6SXZMX0d5YXBFeTE0MEtvZnBxdElqaUVzQURYbVhtbUx2OXAwR1hXM0tsYWpsaHplQmIxUTM1bEluWVAxakw4TUk4anlVLV9DVXZEQzZ4RG1oYmt2dlV3VzAzbUF3Uk41MVlOcDNyc1pudUJEanFuQS1uMUFuSF9VcnZNbzhVYg?oc=5",
           "source": "theworld.org",
@@ -653,34 +613,12 @@
         },
         {
           "id": "8e3e0c3ae14827dc",
-          "storyClusterId": "story-010",
+          "storyClusterId": "story-004",
           "title": "Study finds lasting marine life decline after BP oil spill",
           "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNNEZ5RVdNSzNWOUtkZTRnenprODRWZG1HVF9fbENxc1pTSGxhQ2RENnBHaU5BaGZyY2tPTnNVZFRJQjllNjdWY0taQ3otbEJNQ2JIak9uOXo5aEJKcEJvY2pEY0tZaXdFa1RpTXNnMmppUDdlSkJEMzA3SzJCaFdtUHZMWmhBVFV3M1ZJRXZRUURFWDRybF9mWXJoTjB2R0lfZTF0SnpuM1UtbzdTTExCVGhONkN4RXNaNmtrdHRjSlZGRkxjWGlDbVRHR2w3QUdNYzZjQTR4TExOWGcw?oc=5",
           "source": "wqad.com",
           "publishedAt": "2026-10-20T17:17:00Z",
           "polarity": -0.9487,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "a12097dc7e32824f",
-          "storyClusterId": "story-003",
-          "title": "Marine life dramatically declined in Gulf of Mexico in years after BP oil spill, study finds",
-          "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNMFR2ajRGWkREZ3VxUDhSLTF0MkxYZ290Njk1Uy1kd1J0UElpSFVsOGhpWkhTLU42ZWVsYlplQzdzV3VEdnFCYzFNQm1SYk02LVllZUNPQ1Vqd0x1dFdsVmR5V3pDamljSnd4aGJBSlIwSHZPYnJ1Qnl1YU5xZW5NaVNfS3FaS1dZaXZJV0l1UWsxUW82WG5wVlZCNHQ1MTBpQ1A1UDA4WHUyTkE3MGRsQjF3YkMwNHJGMklqUWhxeDYyeWVDT3J2MFB6MnhUZVZLaGN6M2Y0QXNYZGRQZ0ZjczBKS1M4MVNZYWVaVFdnQVhPQ0Qxd3FwX254WQ?oc=5",
-          "source": "heraldbanner.com",
-          "publishedAt": "2026-10-20T11:00:00Z",
-          "polarity": -0.9424,
-          "sentiment": "Very negative",
-          "publisherCount": 2
-        },
-        {
-          "id": "707e1041b093f832",
-          "storyClusterId": "story-009",
-          "title": "BP oil spill continues to decimate marine life off Gulf of Mexico 16 years on",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTE1tWTRhY0owVTEtZ24wSlA2Ty14aXNVVGtGZlJuTTJYallwaTduMnpWMzJUTTlCMDc0cHFHdkdmQmJPTndWanRwZWhiOEc5aHZFeEd6azk1N05oQkNwU3V0T2xHZ2NIUHB6UEI3YWo5aGFWdXVRMXROM3NuUXh3OWIzVTJYWHFpeWU5T2hXWnp3a1JkOFphMHNkLThHbmdSX1ZWc050QWRBTE4wX2hWRFJzclBqaUhv?oc=5",
-          "source": "oceanographicmagazine.com",
-          "publishedAt": "2026-10-20T12:29:47Z",
-          "polarity": -0.94,
           "sentiment": "Very negative",
           "publisherCount": 1
         },
@@ -691,9 +629,31 @@
           "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPTjhjYWlRYUItMUFxQVFqT0paUVowenlSRG4yNno1aVNxaF9nYURkUzhGM1kxS1dnaWgxZWR6MzU5ejR0WmZiU0xvM3J5aDk5cno3b1gzV2NXY2xRZVhmRXBXYUpObVRwY2RFRlFSSmxNSUVHczY4dmVlQnZqZEtXdTZ0Y1BiQVJpSmtPcll3U2JfOUxtMksxWFlnTGpDU0tyckg4NGVnNEdKMjRFTzZFd1B2QzA1bUl3RDdhbXcyQULSAcABQVVfeXFMT044Y2FpUWFCLTFBcUFRak9KWlFaMHp5UkRuMjZ6NWlTcWhfZ2FEZFM4RjNZMUtXZ2loMWVkejM1OXo0dFpmYlNMbzNyeWg5OXJ6N29YM1djV2NsUWVYZkVwV2FKTm1UcGNkRUZRUkpsTUlFR3M2OHZlZUJ2amRLV3U2dGNQYkFSaUprT3JZd1NiXzlMbTJLMVhZZ0xqQ1NLcnJIODRlZzRHSjI0RU82RXdQdkMwNW1Jd0Q3YW13MkFC?oc=5",
           "source": "wflx.com",
           "publishedAt": "2026-10-20T17:28:00Z",
-          "polarity": -0.9381,
+          "polarity": -0.9435,
           "sentiment": "Very negative",
-          "publisherCount": 2
+          "publisherCount": 4
+        },
+        {
+          "id": "707e1041b093f832",
+          "storyClusterId": "story-003",
+          "title": "BP oil spill continues to decimate marine life off Gulf of Mexico 16 years on",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTE1tWTRhY0owVTEtZ24wSlA2Ty14aXNVVGtGZlJuTTJYallwaTduMnpWMzJUTTlCMDc0cHFHdkdmQmJPTndWanRwZWhiOEc5aHZFeEd6azk1N05oQkNwU3V0T2xHZ2NIUHB6UEI3YWo5aGFWdXVRMXROM3NuUXh3OWIzVTJYWHFpeWU5T2hXWnp3a1JkOFphMHNkLThHbmdSX1ZWc050QWRBTE4wX2hWRFJzclBqaUhv?oc=5",
+          "source": "oceanographicmagazine.com",
+          "publishedAt": "2026-10-20T12:29:47Z",
+          "polarity": -0.94,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "d738b52bc6ab2185",
+          "storyClusterId": "story-002",
+          "title": "BP oil disaster linked to 60% collapse in deep-sea marine life",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPNU9feERCQkZLWENfZTlaQmpXWmk4Z09DaThKaUdJZWpQNTdqd3BEckh6LVVvd3ZhQ1hyVWlGRE5ZY2E1ZEYwd2RFQ05qVF9LVVhWczd2cUswb3A4RFJ4T3JURmd3ZzE2MnRVV3ZpRHZnR25KdGNvcEZXTmV3WTZaalpRQXNfZ3FkQkM3M25KNjZJX0RVMTA4Z0NBN3VUbkRKcEE?oc=5",
+          "source": "independent.co.uk",
+          "publishedAt": "2026-10-20T07:20:00Z",
+          "polarity": -0.9308,
+          "sentiment": "Very negative",
+          "publisherCount": 1
         }
       ]
     },
@@ -1225,15 +1185,15 @@
       "ticker": "BARC.L",
       "slug": "barclays",
       "date": "2026-10-20",
-      "dailyScore": 60.3,
+      "dailyScore": 61.6,
       "dailyLabel": "Positive",
-      "rollingScore": 51.7,
-      "confidence": 56.0,
+      "rollingScore": 51.8,
+      "confidence": 54.2,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 7,
-      "sourceCount": 6,
-      "changeFromPreviousScoredDay": 3.2,
+      "storyCount": 6,
+      "sourceCount": 5,
+      "changeFromPreviousScoredDay": 4.5,
       "flags": [
         {
           "type": "collection_degraded",
@@ -1910,26 +1870,40 @@
       "ticker": "ALW.L",
       "slug": "alliance-witan",
       "date": "2026-10-20",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
+      "dailyScore": 51.2,
+      "dailyLabel": "Neutral / mixed",
       "rollingScore": 51.0,
-      "confidence": 0.0,
+      "confidence": 15.4,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 0.7,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.4",
+          "evidenceArticleIds": [
+            "c25677bd4e5ae15a"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "c25677bd4e5ae15a",
+          "storyClusterId": "story-001",
+          "title": "Enterprise value to revenue forward of Alliance Witan PLC – FWB:1YC",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOSl9Va2RjeGNGWW1WWko4WTY0OWdiZ0ZuUXFzVnM3Xy1yOXVQTWVpRmtjRE50U2lxeFBMcDZCdmg5Vmc3ME11VmpHSkZrRmxVdzJQb0RBTHVpdlVmeXFQRDlFQnBnTlhyVFFVdVRHdXd2dHBkVVZGak5jWmg2UXVKM2NiaEdoQVg4Z1dhWDgxdTh1RHdINC0ybTNaN0dkOG1kUGRLWTZ2SQ?oc=5",
+          "source": "tradingview.com",
+          "publishedAt": "2026-10-20T09:53:55Z",
+          "polarity": 0.073,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
     },
     "anglo-american": {
       "companyName": "Anglo American PLC",
@@ -4773,6 +4747,14 @@
           "status": "calculated",
           "detail": "Collection succeeded but found no eligible coverage",
           "evidenceArticleIds": []
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": []
         }
       ],
       "topStories": []
@@ -6195,15 +6177,15 @@
       "ticker": "ABDN.L",
       "slug": "aberdeen-group",
       "date": "2026-10-20",
-      "dailyScore": 63.0,
+      "dailyScore": 63.2,
       "dailyLabel": "Positive",
-      "rollingScore": 53.3,
-      "confidence": 63.8,
+      "rollingScore": 53.4,
+      "confidence": 64.0,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 47,
-      "sourceCount": 35,
-      "changeFromPreviousScoredDay": 7.0,
+      "storyCount": 43,
+      "sourceCount": 29,
+      "changeFromPreviousScoredDay": 7.2,
       "flags": [
         {
           "type": "collection_degraded",
@@ -6215,8 +6197,8 @@
             "46afed57cb09d478",
             "45539abd237d2424",
             "a0db969a7e30d8ed",
-            "5c7e1261396b375d",
-            "8dec3000b7a9a27d"
+            "8dec3000b7a9a27d",
+            "b17bc90f6a2a82fd"
           ]
         }
       ],
@@ -6234,7 +6216,7 @@
         },
         {
           "id": "45539abd237d2424",
-          "storyClusterId": "story-017",
+          "storyClusterId": "story-015",
           "title": "Edinburgh hourly wages rise 6% as Scottish capital outpaces Glasgow and Aberdeen",
           "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPZ0l5VnpwdjNja3kwLVEzcVJvblA3ZnJsWm13SDFkZ0Eya05YbGlVdVNqdlR0bTI2UTk5MnpqYW5ZUFhQeWNtVWVjcmlmSXFJSGx2YzFQLWdyT2c1NG4xXy1BNEc1a1Z5ajhaVzVNNkZvMU9Fa3JKY29rMHdvSmotV19zLW1ndWFfcGNOeTJEX21QQUtXMU9JT29NVWtyWGY4VS1jTlpEN1ppQU5EdmRJTzFKZ2p2YXhCN2x0OFZoOEl3ZlQwNnNQRkhjVGdKZzlGaFp3?oc=5",
           "source": "edinburghnews.scotsman.com",
@@ -6245,23 +6227,12 @@
         },
         {
           "id": "a0db969a7e30d8ed",
-          "storyClusterId": "story-015",
+          "storyClusterId": "story-013",
           "title": "Young Aberdeen midfielder Zak To laps up the chance to shine for two clubs this season",
           "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNSG1JUy1Jb0hfaG1iZGJWMmdZMlVXcFk0VUpDZnV2b2dMelhaQ2JDT0FYSFYySG5RcHI4ck5uM3FkaGhfc29peUl3eWxSNng0WEN4VlBGM096R0k1NmZicUdDMHlPSnV3M1JvYzNVYzlFZkFTNEpMY29SbUk4VS1pUXJSUXl2V250YmtlaWx5R1M5U0d5SklOTHU1QmY4NDR5R2I2aEhvOGdwZTZWNGMzdERyR3prZlJRUkxwU0o2b1BfTHhPMVE?oc=5",
           "source": "pressandjournal.co.uk",
           "publishedAt": "2026-10-20T10:45:05Z",
           "polarity": 0.837,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "5c7e1261396b375d",
-          "storyClusterId": "story-020",
-          "title": "Aberdeen City Council Approves Grant Resolution Supporting New HAPI Development",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPT2I1SDdxRTh5dThBN3JRNnJCd1Q4VUFYZzI4UWxSZXF5cW9za1FtdnFPU2ZLa3hablRpbm5jMnRvbnNKMjlPQTQyQVBoZHZkUnJ4RXphVWRiWU14ZUs4TUVDNFd3WWJ0bFAwM0s0cXJ1ZXhPSUtvbWdWQWd4TVhQOWR5Zks?oc=5",
-          "source": "aberdeeninsider.com",
-          "publishedAt": "2026-10-20T11:00:21Z",
-          "polarity": 0.7969,
           "sentiment": "Very positive",
           "publisherCount": 1
         },
@@ -6273,6 +6244,17 @@
           "source": "scotsman.com",
           "publishedAt": "2026-10-20T05:00:00Z",
           "polarity": 0.7919,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "b17bc90f6a2a82fd",
+          "storyClusterId": "story-010",
+          "title": "New Torry Men's Shed opens with support from University of Aberdeen and JUST-Systems",
+          "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE8yLW5fMmpQTUNmZ1B5SEwwSHZxVDNUTkRMS3VMZFpnYU9lT0M0eUxQaURmMF9CU0xCZGdyd0trWGlkSnB0YXN5QTFR?oc=5",
+          "source": "abdn.ac.uk",
+          "publishedAt": "2026-10-20T09:57:01Z",
+          "polarity": 0.7545,
           "sentiment": "Very positive",
           "publisherCount": 1
         }
