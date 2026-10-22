@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T02:33:01.322676+00:00",
+  "generatedAt": "2026-10-22T07:57:25.209223+00:00",
   "companyCount": 100,
   "verifiedCurrentCount": 0,
   "companies": {
@@ -2954,6 +2954,12 @@
       "status": "latest_availability_unverified",
       "documents": [
         {
+          "year": 2024,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/e/LSE_EZJ_2024.pdf",
+          "sha256": "a85c048e391c662546c30395f37e5639c601118cc4e4fa34c5c6cbfb45c80a68",
+          "extractionStatus": "extracted"
+        },
+        {
           "year": 2025,
           "url": "https://s203.q4cdn.com/522538739/files/doc_financials/2025/ar/easyJetARA25_DIGITAL_sm.pdf",
           "sha256": "41bd505ed95d3e4e8daa480cbb57bbf0445eefb0071278f0e8427fa084f9dad0",
@@ -2961,7 +2967,16 @@
         }
       ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "easyjet:2024": {
+          "candidateHash": "3042015a4700db758cbca5a78e97cf4e91c7e8bd92edbb6355173c515f82e523",
+          "attemptCount": 1,
+          "lastAttempt": "2026-10-22T05:27:20.588859+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-10-22T11:27:20.588859+00:00",
+          "diagnostics": []
+        }
+      }
     },
     "fandc-investment-trust": {
       "companyName": "F&C Investment Trust PLC",
