@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T22:10:34.385562Z",
+  "generatedAt": "2026-10-22T22:41:17.476913Z",
   "company": {
     "companyName": "Balfour Beatty PLC",
     "ticker": "BBY.L",
@@ -55,8 +55,81 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 1,
+    "reportCount": 2,
     "reports": [
+      {
+        "year": 2023,
+        "title": "AnnualReports.com archive PDF",
+        "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BBY_2023.pdf",
+        "sourceUrl": "https://www.annualreports.com/Company/balfour-beatty-plc",
+        "wordCount": 167146,
+        "pageCount": 262,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 20,
+            "per10kWords": 1.197
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 2,
+            "per10kWords": 0.12
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 1,
+            "per10kWords": 0.06
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 64,
+            "per10kWords": 3.829
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 26,
+            "per10kWords": 1.556
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 111,
+            "per10kWords": 6.641
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 7,
+            "per10kWords": 0.419
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 4,
+            "per10kWords": 0.239
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 4,
+            "per10kWords": 0.239
+          }
+        ],
+        "positivityScore": 43.4,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2024,
         "title": "AnnualReports.com archive PDF",
@@ -131,15 +204,56 @@
         "positivityMethod": "lexical annual-report tone"
       }
     ],
-    "emergingKeywords": [],
+    "emergingKeywords": [
+      {
+        "key": "ai",
+        "label": "AI",
+        "mentions": 51,
+        "per10kWords": 2.985,
+        "previousPer10kWords": 1.197,
+        "changePer10kWords": 1.788
+      },
+      {
+        "key": "regulation",
+        "label": "Regulation",
+        "mentions": 74,
+        "per10kWords": 4.331,
+        "previousPer10kWords": 3.829,
+        "changePer10kWords": 0.502
+      },
+      {
+        "key": "cybersecurity",
+        "label": "Cybersecurity",
+        "mentions": 5,
+        "per10kWords": 0.293,
+        "previousPer10kWords": 0.06,
+        "changePer10kWords": 0.233
+      },
+      {
+        "key": "data_center",
+        "label": "Data centres",
+        "mentions": 8,
+        "per10kWords": 0.468,
+        "previousPer10kWords": 0.239,
+        "changePer10kWords": 0.229
+      },
+      {
+        "key": "china",
+        "label": "China",
+        "mentions": 8,
+        "per10kWords": 0.468,
+        "previousPer10kWords": 0.419,
+        "changePer10kWords": 0.049
+      }
+    ],
     "latestPositivity": 46.0,
     "latestPositivityMethod": "lexical annual-report tone",
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 51.9,
+    "score": 53.8,
     "label": "Mixed",
-    "evidenceCoverage": 49,
+    "evidenceCoverage": 45,
     "components": [
       {
         "key": "press",
@@ -156,11 +270,28 @@
         "weight": 0.35,
         "reliability": 1.0,
         "detail": "Lexical annual-report tone."
+      },
+      {
+        "key": "themes",
+        "label": "Emerging themes",
+        "score": 62.7,
+        "weight": 0.25,
+        "reliability": 0.333,
+        "detail": "Change in growth-theme density compared with pressure and risk themes."
       }
     ],
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2023-12-31",
+      "type": "annual_report",
+      "title": "AnnualReports.com archive PDF",
+      "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BBY_2023.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2024-12-31",
       "type": "annual_report",
