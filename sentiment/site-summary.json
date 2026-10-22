@@ -3,7 +3,7 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-10-22T01:41:59.178025Z",
+  "generatedAt": "2026-10-22T05:26:13.691242Z",
   "asOfDate": "2026-10-21",
   "companyCount": 100,
   "companies": {
@@ -352,29 +352,22 @@
       "ticker": "BARC.L",
       "slug": "barclays",
       "date": "2026-10-21",
-      "dailyScore": 44.4,
-      "dailyLabel": "Slightly negative",
-      "rollingScore": 50.3,
-      "confidence": 52.2,
-      "confidenceBand": "medium",
+      "dailyScore": 49.8,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.2,
+      "confidence": 15.2,
+      "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 6,
-      "sourceCount": 5,
-      "changeFromPreviousScoredDay": -15.8,
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 12.3,
       "flags": [
         {
-          "type": "sentiment_drop",
-          "direction": "negative",
-          "severity": "high",
-          "status": "calculated",
-          "detail": "Daily score decreased by 15.8 points"
-        },
-        {
-          "type": "collection_degraded",
+          "type": "low_confidence",
           "direction": "neutral",
-          "severity": "medium",
+          "severity": "low",
           "status": "calculated",
-          "detail": "The provider result ceiling was reached for this day"
+          "detail": "Confidence is 15.2"
         }
       ]
     },
