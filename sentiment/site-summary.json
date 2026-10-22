@@ -3,7 +3,7 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-10-22T20:41:43.061452Z",
+  "generatedAt": "2026-10-22T22:10:29.867712Z",
   "asOfDate": "2026-10-21",
   "companyCount": 100,
   "companies": {
@@ -1009,36 +1009,29 @@
       "ticker": "GSK.L",
       "slug": "gsk",
       "date": "2026-10-21",
-      "dailyScore": 68.4,
+      "dailyScore": 68.3,
       "dailyLabel": "Positive",
-      "rollingScore": 58.0,
-      "confidence": 66.4,
-      "confidenceBand": "medium",
+      "rollingScore": 58.1,
+      "confidence": 76.2,
+      "confidenceBand": "high",
       "coverageStatus": "ok",
-      "storyCount": 58,
-      "sourceCount": 53,
-      "changeFromPreviousScoredDay": 4.1,
+      "storyCount": 5,
+      "sourceCount": 5,
+      "changeFromPreviousScoredDay": 4.0,
       "flags": [
         {
           "type": "good_press",
           "direction": "positive",
           "severity": "medium",
           "status": "calculated",
-          "detail": "Daily press score is 68.4"
+          "detail": "Daily press score is 68.3"
         },
         {
-          "type": "coverage_spike",
-          "direction": "neutral",
+          "type": "high_disagreement",
+          "direction": "mixed",
           "severity": "medium",
           "status": "calculated",
-          "detail": "58 stories versus trailing median 16.5"
-        },
-        {
-          "type": "collection_degraded",
-          "direction": "neutral",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "The provider result ceiling was reached for this day"
+          "detail": "Positive and negative coverage is unusually dispersed"
         }
       ]
     },
