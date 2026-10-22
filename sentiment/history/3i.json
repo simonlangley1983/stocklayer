@@ -4491,6 +4491,88 @@
         }
       ],
       "changeFromPreviousScoredDay": 6.7
+    },
+    {
+      "date": "2026-10-21",
+      "dailyScore": 30.6,
+      "dailyLabel": "Negative",
+      "rollingScore": 47.2,
+      "confidence": 49.3,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 3,
+      "eligibleArticleCount": 3,
+      "storyCount": 3,
+      "effectiveStoryCount": 3.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 2,
+      "dispersion": 0.4376,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "d8d2e275600916c7",
+          "storyClusterId": "story-002",
+          "title": "3i Group Shares Fall Over 4% as Carrefour Cuts 2026 Financial Guidance",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9pcF9ubzVMYzJuM1JMdTBsMmJPX1VKXzJjZjZFUVdtSzIxSG1ocVJBVUpYQ3ZHMEpqd1NZRkZlUzIycmpxS05PQTQwc3NjZ1g3SkduZmNENFdHXzEtWjR1NkVsSTRkMFpWaEpuV21hRjdtV2JnRzktOHljNDZQYjg?oc=5",
+          "source": "uk.finance.yahoo.com",
+          "publishedAt": "2026-10-21T08:55:03Z",
+          "polarity": -0.9629,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "c8f34f7555c3cfc2",
+          "storyClusterId": "story-001",
+          "title": "3i Group stock tumbles on read-across from Carrefour guidance cut",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQU3hpOWVPaWk4UjRPVkJWQ2FOaEhUNE9TbWh5UGlqdTd2TVdnSGxtTG5raF9BVEhaUzViQTFhMDJkdTQzdWhWdnJlOEpBenE5WTlUWXQyVWRzcmRkaWtfeG9CeXlWcTNJekpMVTdUakxoZ1lSa2dFZDZKSkxnV2dKUXBEX1N5NFZBeFBpb1BremhLM3JpaFJV?oc=5",
+          "source": "finance.yahoo.com",
+          "publishedAt": "2026-10-21T08:54:48Z",
+          "polarity": -0.9463,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "3bef7d1935d1db5a",
+          "storyClusterId": "story-003",
+          "title": "3i Group Plc (III.L) stock price, news, quote and history",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBFT1pnaTZiVnJUd1Z5cVNlWWRkMDNQWjRxLXNaM0djVnJHMDZ6UWJsVHFlQWtkVDZ0OVhYOGlaSVNBNVNiczhmbzVkbFVGcEZsX3dr?oc=5",
+          "source": "uk.finance.yahoo.com",
+          "publishedAt": "2026-10-21T11:03:51Z",
+          "polarity": -0.0264,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "sentiment_drop",
+          "direction": "negative",
+          "severity": "high",
+          "status": "calculated",
+          "detail": "Daily score decreased by 27.1 points",
+          "evidenceArticleIds": [
+            "d8d2e275600916c7",
+            "c8f34f7555c3cfc2",
+            "3bef7d1935d1db5a"
+          ]
+        },
+        {
+          "type": "bad_press",
+          "direction": "negative",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Daily press score is 30.6",
+          "evidenceArticleIds": [
+            "d8d2e275600916c7",
+            "c8f34f7555c3cfc2",
+            "3bef7d1935d1db5a"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -27.1
     }
   ]
 }

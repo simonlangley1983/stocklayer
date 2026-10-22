@@ -3786,6 +3786,78 @@
         }
       ],
       "changeFromPreviousScoredDay": null
+    },
+    {
+      "date": "2026-10-21",
+      "dailyScore": 52.2,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.8,
+      "confidence": 24.2,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 94,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 2,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0226,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 87,
+        "missing_company_alias": 5
+      },
+      "topStories": [
+        {
+          "id": "8270b5651c3c38da",
+          "storyClusterId": "story-002",
+          "title": "Popular fashion brand opening new Westgate Oxford store next week",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQMVAySUtmRmg3UGk5dkV4NHp0akxUXzJ2b20tN0N2ZnBpaGRPMmJyRHd3RWlpbDFScVJQakRua0JMQVJfY3RSZ09SbHpBejBUcnNtMEdpTmoxdmZWLVZsTk05QllOSExidXBmWVdxenNtRk9PX1lqRnN4WExjYWJBMUNhWmRWcnZ6ckNjWmpLQm9BdV9faUE0Q041bEFoS0dlYUdLZENNOElFUQ?oc=5",
+          "source": "oxfordmail.co.uk",
+          "publishedAt": "2026-10-21T15:04:00Z",
+          "polarity": 0.1109,
+          "sentiment": "Slightly positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "eee774b8771619c2",
+          "storyClusterId": "story-001",
+          "title": "Meet Fashion’s Next Big Things",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4wOXlDd181eXdQRW1QRC14aVhCN0djMmJJVGRKSWlYdjBOQVY5Q1Rxc3dtMV9mUGQtRkh1dGFzYUlQSFJSbV9oTHBMNy1JdHM5S2kyeHRLWDFLRERmWDJTYmNzT2I2anRnT2w5LQ?oc=5",
+          "source": "i-d.co",
+          "publishedAt": "2026-10-21T14:34:17Z",
+          "polarity": 0.0657,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 24.2",
+          "evidenceArticleIds": [
+            "8270b5651c3c38da",
+            "eee774b8771619c2"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "8270b5651c3c38da",
+            "eee774b8771619c2"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 1.8
     }
   ]
 }

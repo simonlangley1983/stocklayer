@@ -4370,6 +4370,64 @@
         }
       ],
       "changeFromPreviousScoredDay": -4.3
+    },
+    {
+      "date": "2026-10-21",
+      "dailyScore": 34.8,
+      "dailyLabel": "Negative",
+      "rollingScore": 48.8,
+      "confidence": 14.8,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 64,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 1,
+      "dispersion": 0.0,
+      "rejectedCandidateCounts": {
+        "missing_company_alias": 63
+      },
+      "topStories": [
+        {
+          "id": "d8947f38ad10a0f2",
+          "storyClusterId": "story-001",
+          "title": "FTSE 100 Auto Trader (LSE:AUTO) Faces Fresh AI Worries",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOd0V3UWZjTHFlN2RQR0FVNTA4Qi1iSG9uekJXVHR4ZGhiblJaSExDT3VidGJkTjJmcEFUMnJjS2tQLTA1ODllN0tuRmdwbVFOMHA3cVJyMU5TcFU0eUo3NFo0VDltWGxfdnlOSzZ5OGJYMjE2MFNCUHZJVGwxdzNFbWZ3Umdibm5PUFdOZXFxRkVLMnU0UDhZN3ZNME9fam1HLWpLN1FRVjFPY3N2RDV3?oc=5",
+          "source": "kalkinemedia.com",
+          "publishedAt": "2026-10-21T07:19:00Z",
+          "polarity": -0.9135,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 14.8",
+          "evidenceArticleIds": [
+            "d8947f38ad10a0f2"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "d8947f38ad10a0f2"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -16.9
     }
   ]
 }
