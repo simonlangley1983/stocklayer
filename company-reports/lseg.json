@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T00:44:05.208591Z",
+  "generatedAt": "2026-10-22T01:42:02.459264Z",
   "company": {
     "companyName": "London Stock Exchange Group",
     "ticker": "LSEG.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-05",
-    "periodEnd": "2026-10-20",
-    "observationCount": 102,
-    "scoredDayCount": 80,
-    "latestScore": 57.2,
-    "latestScoreDate": "2026-10-20",
+    "periodEnd": "2026-10-21",
+    "observationCount": 103,
+    "scoredDayCount": 81,
+    "latestScore": 62.6,
+    "latestScoreDate": "2026-10-21",
     "series": [
       {
         "date": "2026-07-05",
@@ -943,6 +943,15 @@
         "sourceCount": 6,
         "confidence": 70.5,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-21",
+        "dailyScore": 62.6,
+        "rollingScore": 53.9,
+        "storyCount": 7,
+        "sourceCount": 5,
+        "confidence": 73.6,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1537,17 +1546,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 55.3,
+    "score": 55.4,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 54.2,
+        "score": 54.5,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 65 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 66 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1725,6 +1734,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "e1b8a859c6efd750042c",
+      "type": "acquisition",
+      "title": "LSEG nears Octus acquisition to expand credit data business",
+      "date": "2026-10-21",
+      "status": "pending_review",
+      "reviewDate": "2027-04-19",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQOXUxN2xfMjhwWmI0ZEFVZFliZmVVUkMxcE54ZmxFOXBnMm5kM1NRV2pGSzlZMEl3YUhyYWJYUHVxMDVBVTJCbHVaQ2hsN1NPRkNVRTBrUmwxeHJaTXJqNzFIekV0b2thd1JpQUZWTW1OUExLYl9PdFQ4NzZmc0ZZcUFCcEgzeElqQ2pIeDV2eDJGdw?oc=5",
+          "publisher": "tradersunion.com",
+          "date": "2026-10-21"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "1d69752498d3a5541025",
       "type": "regulatory_legal",

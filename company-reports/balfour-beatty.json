@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T00:44:05.208591Z",
+  "generatedAt": "2026-10-22T01:42:02.459264Z",
   "company": {
     "companyName": "Balfour Beatty PLC",
     "ticker": "BBY.L",
@@ -14,14 +14,45 @@
     "introductionReviewedAt": null
   },
   "pressCoverage": {
-    "periodStart": null,
-    "periodEnd": null,
-    "observationCount": 0,
-    "scoredDayCount": 0,
-    "latestScore": null,
-    "latestScoreDate": null,
-    "series": [],
-    "stories": []
+    "periodStart": "2026-10-21",
+    "periodEnd": "2026-10-21",
+    "observationCount": 1,
+    "scoredDayCount": 1,
+    "latestScore": 58.1,
+    "latestScoreDate": "2026-10-21",
+    "series": [
+      {
+        "date": "2026-10-21",
+        "dailyScore": 58.1,
+        "rollingScore": 51.4,
+        "storyCount": 5,
+        "sourceCount": 4,
+        "confidence": 64.9,
+        "coverageStatus": "ok"
+      }
+    ],
+    "stories": [
+      {
+        "date": "2026-10-21",
+        "type": "press_story",
+        "title": "Balfour Beatty (LON:BBY) Earns Buy Rating from Berenberg Bank",
+        "source": "marketbeat.com",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNZFc5N1pzU2tmczFvazNRTGdfNU1ERkdOUVktMUkwWk9YamM0V0xPajVRdlp4OG92Uk03dmttYXpuZlROWjNma08tS3hnampLdkptVjFNdXdwbjBNSzJaY0V1aGpKMXBWSDQwRzVfOTJRUW9Gd1JDTWRsOUVId0FMbU9XWENJNmxWZ1BkYUxoN1J1RzM5aFFCM3A0Wl9XY0VhQUI2VzdZSmhVWE9hbFBEQjVsRGR0a1BJUUtKUHpsRUFyYllZc1h2cnk5NWpCdw?oc=5",
+        "direction": "Very positive",
+        "detail": null,
+        "significance": 0.805
+      },
+      {
+        "date": "2026-10-21",
+        "type": "press_story",
+        "title": "Balfour Beatty (LSE:BBY) Powers Grid Upgrade Below FTSE 100",
+        "source": "kalkinemedia.com",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOX1NjZlhBYk1QQk5WZHRkRG1DQkZBX25adEQ2U3R3bzdiN2I1T0Y3TkZ1NEFxYVpHcFRYald6SlZ4VldodXJzUWdXdVN5X0RFUnlYSTN4SDAyQmRrU0x3R201M0lXemNvWmxYNm5mVm9iNU10R3EwdTVNNG5CVGt3RkJPZ0J3ZmlrLWU3Mkl0emMzQ2llemlSUWZaNjIzYWZ0Q3k3M1dOWmVMZlZMZ3pwU1IyN00xcmkzd05ZNlFjTQ?oc=5",
+        "direction": "Positive",
+        "detail": null,
+        "significance": 0.431
+      }
+    ]
   },
   "annualReportAnalysis": {
     "reportCount": 1,
@@ -106,10 +137,18 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 46.0,
+    "score": 51.9,
     "label": "Mixed",
-    "evidenceCoverage": 100,
+    "evidenceCoverage": 49,
     "components": [
+      {
+        "key": "press",
+        "label": "Press sentiment",
+        "score": 58.1,
+        "weight": 0.4,
+        "reliability": 0.05,
+        "detail": "Recency-weighted average of 1 scored days in the latest 90 calendar days; 30-day half-life."
+      },
       {
         "key": "annual_tone",
         "label": "Annual-report tone",
@@ -130,6 +169,26 @@
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
+    },
+    {
+      "date": "2026-10-21",
+      "type": "press_story",
+      "title": "Balfour Beatty (LON:BBY) Earns Buy Rating from Berenberg Bank",
+      "source": "marketbeat.com",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNZFc5N1pzU2tmczFvazNRTGdfNU1ERkdOUVktMUkwWk9YamM0V0xPajVRdlp4OG92Uk03dmttYXpuZlROWjNma08tS3hnampLdkptVjFNdXdwbjBNSzJaY0V1aGpKMXBWSDQwRzVfOTJRUW9Gd1JDTWRsOUVId0FMbU9XWENJNmxWZ1BkYUxoN1J1RzM5aFFCM3A0Wl9XY0VhQUI2VzdZSmhVWE9hbFBEQjVsRGR0a1BJUUtKUHpsRUFyYllZc1h2cnk5NWpCdw?oc=5",
+      "direction": "Very positive",
+      "detail": null,
+      "significance": 0.805
+    },
+    {
+      "date": "2026-10-21",
+      "type": "press_story",
+      "title": "Balfour Beatty (LSE:BBY) Powers Grid Upgrade Below FTSE 100",
+      "source": "kalkinemedia.com",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOX1NjZlhBYk1QQk5WZHRkRG1DQkZBX25adEQ2U3R3bzdiN2I1T0Y3TkZ1NEFxYVpHcFRYald6SlZ4VldodXJzUWdXdVN5X0RFUnlYSTN4SDAyQmRrU0x3R201M0lXemNvWmxYNm5mVm9iNU10R3EwdTVNNG5CVGt3RkJPZ0J3ZmlrLWU3Mkl0emMzQ2llemlSUWZaNjIzYWZ0Q3k3M1dOWmVMZlZMZ3pwU1IyN00xcmkzd05ZNlFjTQ?oc=5",
+      "direction": "Positive",
+      "detail": null,
+      "significance": 0.431
     }
   ],
   "persistentEvents": []
