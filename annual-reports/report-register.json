@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T23:53:56.867924+00:00",
+  "generatedAt": "2026-10-22T02:33:01.322676+00:00",
   "companyCount": 100,
   "verifiedCurrentCount": 0,
   "companies": {
@@ -860,10 +860,10 @@
       "retryDiagnostics": {
         "bae-systems:2026": {
           "candidateHash": "4f0898766402bea88b11365e44e4abbc386cbce72c2167731faa9600c26d0d77",
-          "attemptCount": 9,
-          "lastAttempt": "2026-10-15T00:44:56.783499+00:00",
+          "attemptCount": 10,
+          "lastAttempt": "2026-10-22T02:33:01.225985+00:00",
           "status": "extraction_failed",
-          "retryAfter": "2026-10-22T00:44:56.783499+00:00",
+          "retryAfter": "2026-10-29T02:33:01.225985+00:00",
           "diagnostics": [
             {
               "url": "https://annualreport.baesystems.com/dam/jcr%3A105fe9f2-cff7-4960-9d99-956aba996540/BAE-Systems-Annual-Report-2025.2026-03-24-10-33-48.pdf",
@@ -1318,13 +1318,29 @@
       "companyName": "Balfour Beatty PLC",
       "archiveUrls": [],
       "archiveStatus": "needs_source_review",
-      "latestLoadedYear": null,
+      "latestLoadedYear": 2024,
       "latestAvailableYear": null,
       "latestAvailabilityVerifiedAt": null,
       "status": "latest_availability_unverified",
-      "documents": [],
+      "documents": [
+        {
+          "year": 2024,
+          "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/b/LSE_BBY_2024.pdf",
+          "sha256": "f58300a0af0739e1ecf0e98f22d717733b4883c2729ed56b40b682bc169f6b1b",
+          "extractionStatus": "extracted"
+        }
+      ],
       "pendingCandidates": [],
-      "retryDiagnostics": {}
+      "retryDiagnostics": {
+        "balfour-beatty:2024": {
+          "candidateHash": "9a106252fc5b3368f362a3722293302c7f673c719d48b79404bb95b3a8f163a2",
+          "attemptCount": 1,
+          "lastAttempt": "2026-10-22T00:44:04.840305+00:00",
+          "status": "extracted",
+          "retryAfter": "2026-10-22T06:44:04.840305+00:00",
+          "diagnostics": []
+        }
+      }
     },
     "lion-finance-group": {
       "companyName": "Lion Finance Group PLC",
@@ -8199,37 +8215,12 @@
         },
         {
           "year": 2026,
-          "url": "https://www.wpp.com/project/wpp/files/investors/2026/annual-report/wpp_annual_report_2025.pdf",
-          "discoveryStatus": "candidate_unverified"
-        },
-        {
-          "year": 2026,
           "url": "https://res.cloudinary.com/wpp-cloudinary/raw/upload/f_auto/q_auto/v1778673483/wpp/project/wpp/files/investors/2026/annual-report/wpp_annual_report_2025.pdf",
           "discoveryStatus": "candidate_unverified"
         },
         {
           "year": 2026,
           "url": "http://res.cloudinary.com/wpp-cloudinary/raw/upload/v1778673483/wpp/project/wpp/files/investors/2026/annual-report/wpp_annual_report_2025.pdf",
-          "discoveryStatus": "candidate_unverified"
-        },
-        {
-          "year": 2026,
-          "url": "https://cdn.wpp.com/raw/upload/v1778673483/wpp/project/wpp/files/investors/2026/annual-report/wpp_annual_report_2025.pdf",
-          "discoveryStatus": "candidate_unverified"
-        },
-        {
-          "year": 2026,
-          "url": "http://cdn.wpp.com/raw/upload/f_auto/q_auto/v1778673483/wpp/project/wpp/files/investors/2026/annual-report/wpp_annual_report_2025.pdf",
-          "discoveryStatus": "candidate_unverified"
-        },
-        {
-          "year": 2026,
-          "url": "https://cdn.wpp.com/raw/upload/f_auto/q_auto/v1778673483/wpp/project/wpp/files/investors/2026/annual-report/wpp_annual_report_2025.pdf",
-          "discoveryStatus": "candidate_unverified"
-        },
-        {
-          "year": 2026,
-          "url": "http://cdn.wpp.com/raw/upload/v1778673483/wpp/project/wpp/files/investors/2026/annual-report/wpp_annual_report_2025.pdf",
           "discoveryStatus": "candidate_unverified"
         }
       ],
