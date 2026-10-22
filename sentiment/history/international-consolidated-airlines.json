@@ -3788,37 +3788,51 @@
     },
     {
       "date": "2026-10-21",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 51.8,
-      "confidence": 0.0,
+      "dailyScore": 64.6,
+      "dailyLabel": "Positive",
+      "rollingScore": 53.4,
+      "confidence": 19.7,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 2,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
-      "positiveStoryCount": 0,
+      "candidateCount": 3,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 1,
       "neutralStoryCount": 0,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
         "missing_company_alias": 2
       },
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "429825f2e8f0e376",
+          "storyClusterId": "story-001",
+          "title": "International Consolidated Airlines Group advances Wednesday, outperforms market",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOOW56bWJMSFBuTUNHaXVGb0RIeGxfNnFwVGMyeHFkc3pEclZ1bXFXNDU4bHJwSFZJd21BUlNNVFZVZEpkWFQ2YWhFelRpWlpvZklUbjZEdFRVOGtwODFHaFhPd2plU1FzMWtqNURqYzRBT2dxUzdEYlNubkRuZG11YVZJQllmSV9jYTJuc3U1MGdqRWR2djV1OUJ5bWNCR1NoaWFYeW1IU2JCNE0tbWp5STJzWFp5TkJjaXlnYTRVRzJPYjg1b0FYWjNnajlvZW1jVzlTU0NR?oc=5",
+          "source": "marketwatch.com",
+          "publishedAt": "2026-10-21T16:07:00Z",
+          "polarity": 0.8773,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 19.7",
+          "evidenceArticleIds": [
+            "429825f2e8f0e376"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": 4.7
     }
   ]
 }
