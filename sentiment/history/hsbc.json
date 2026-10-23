@@ -6908,25 +6908,25 @@
     },
     {
       "date": "2026-10-22",
-      "dailyScore": 51.3,
+      "dailyScore": 51.2,
       "dailyLabel": "Neutral / mixed",
       "rollingScore": 51.6,
-      "confidence": 24.0,
+      "confidence": 36.5,
       "confidenceBand": "low",
       "coverageStatus": "ok",
       "collectionCompleteness": 0.75,
-      "candidateCount": 88,
-      "eligibleArticleCount": 2,
-      "storyCount": 2,
-      "effectiveStoryCount": 2.0,
-      "sourceCount": 2,
+      "candidateCount": 65,
+      "eligibleArticleCount": 3,
+      "storyCount": 3,
+      "effectiveStoryCount": 3.0,
+      "sourceCount": 3,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 2,
+      "neutralStoryCount": 3,
       "negativeStoryCount": 0,
-      "dispersion": 0.0338,
+      "dispersion": 0.034,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 82,
-        "missing_company_alias": 3
+        "ambiguous_company_without_alias": 59,
+        "missing_company_alias": 2
       },
       "topStories": [
         {
@@ -6950,6 +6950,17 @@
           "polarity": 0.0187,
           "sentiment": "Neutral / mixed",
           "publisherCount": 1
+        },
+        {
+          "id": "a11f5da10fd50da6",
+          "storyClusterId": "story-003",
+          "title": "HSBC Bank USA, N.A. Capped Point to Point CD ACBPDXX (ACBPDXX) latest stock news and headlines",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFA4ZlVBX0hoT21namU0MGR3SVlsMUZkZ3pmUW00SXlCODV0Q1FYU0tyMDRoUFpOS0d5ZVlxZ1hSMGJ5dkxLYTQ5TmcxM0Q5bXk1LVlIbUUwWTBrR0xh?oc=5",
+          "source": "au.finance.yahoo.com",
+          "publishedAt": "2026-10-22T18:46:31Z",
+          "polarity": 0.0105,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
         }
       ],
       "flags": [
@@ -6958,10 +6969,11 @@
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 24.0",
+          "detail": "Confidence is 36.5",
           "evidenceArticleIds": [
             "815441e56d172868",
-            "e68b35e7ab19ad39"
+            "e68b35e7ab19ad39",
+            "a11f5da10fd50da6"
           ]
         },
         {
@@ -6972,11 +6984,12 @@
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
             "815441e56d172868",
-            "e68b35e7ab19ad39"
+            "e68b35e7ab19ad39",
+            "a11f5da10fd50da6"
           ]
         }
       ],
-      "changeFromPreviousScoredDay": -10.3
+      "changeFromPreviousScoredDay": -10.4
     }
   ]
 }
