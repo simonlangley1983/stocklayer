@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-23T15:49:09.767172Z",
+  "generatedAt": "2026-10-23T15:53:09.708516Z",
   "company": {
     "companyName": "easyJet PLC",
     "ticker": "EZJ.L",
@@ -756,8 +756,81 @@
     ]
   },
   "annualReportAnalysis": {
-    "reportCount": 4,
+    "reportCount": 5,
     "reports": [
+      {
+        "year": 2021,
+        "title": "AnnualReports.com archive PDF",
+        "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/e/LSE_EZJ_2021.pdf",
+        "sourceUrl": "https://www.annualreports.com/Company/easyjet-plc",
+        "wordCount": 136871,
+        "pageCount": 230,
+        "status": "extracted",
+        "keywords": [
+          {
+            "key": "ai",
+            "label": "AI",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "cloud",
+            "label": "Cloud",
+            "mentions": 5,
+            "per10kWords": 0.365
+          },
+          {
+            "key": "cybersecurity",
+            "label": "Cybersecurity",
+            "mentions": 4,
+            "per10kWords": 0.292
+          },
+          {
+            "key": "regulation",
+            "label": "Regulation",
+            "mentions": 94,
+            "per10kWords": 6.868
+          },
+          {
+            "key": "competition",
+            "label": "Competition",
+            "mentions": 36,
+            "per10kWords": 2.63
+          },
+          {
+            "key": "supply_chain",
+            "label": "Supply chain",
+            "mentions": 17,
+            "per10kWords": 1.242
+          },
+          {
+            "key": "china",
+            "label": "China",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "margin_pressure",
+            "label": "Margin pressure",
+            "mentions": 0,
+            "per10kWords": 0.0
+          },
+          {
+            "key": "restructuring",
+            "label": "Restructuring",
+            "mentions": 33,
+            "per10kWords": 2.411
+          },
+          {
+            "key": "data_center",
+            "label": "Data centres",
+            "mentions": 4,
+            "per10kWords": 0.292
+          }
+        ],
+        "positivityScore": 29.6,
+        "positivityMethod": "lexical annual-report tone"
+      },
       {
         "year": 2022,
         "title": "AnnualReports.com archive PDF",
@@ -1130,6 +1203,15 @@
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
   },
   "events": [
+    {
+      "date": "2021-12-31",
+      "type": "annual_report",
+      "title": "AnnualReports.com archive PDF",
+      "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/e/LSE_EZJ_2021.pdf",
+      "direction": null,
+      "detail": "Report-year marker; the exact publication date is not available in the source feed.",
+      "approximateDate": true
+    },
     {
       "date": "2022-12-31",
       "type": "annual_report",
