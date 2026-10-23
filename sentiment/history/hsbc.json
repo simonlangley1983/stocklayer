@@ -6905,6 +6905,78 @@
         }
       ],
       "changeFromPreviousScoredDay": 12.8
+    },
+    {
+      "date": "2026-10-22",
+      "dailyScore": 51.3,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 51.6,
+      "confidence": 24.0,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 88,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 2,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0338,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 82,
+        "missing_company_alias": 3
+      },
+      "topStories": [
+        {
+          "id": "815441e56d172868",
+          "storyClusterId": "story-002",
+          "title": "HSBC Holdings (LSE:HSBA) Is Back In The Spotlight, What Is Driving Attention?",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNZmVid21HNVI1Z1hjRG5GU1JkVllnLXZ6YVVWVGo1N0gxaWUyNU4xYzRnRF9HS0VrMU1pWjJHbTk3WVlIaGJGOGtmdF9qcW1qRXUxdTJ1Um85M2pSWGxfN21DR3p1czBTMHJ0TDZOMm41OFRLYnUzTVp5VWpqeGZFZ1BRX1E0ZUFaQXdLMlhoc0pDaUVLbUZj?oc=5",
+          "source": "finance.yahoo.com",
+          "publishedAt": "2026-10-22T09:14:44Z",
+          "polarity": 0.0863,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "e68b35e7ab19ad39",
+          "storyClusterId": "story-001",
+          "title": "HSBC Bank plc 6.25% GTD SUB NTS 30/01/2041 GBP1000'109 (51PO.L) stock major holders",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE54QUtXRzBYcUZRVTU4S0paamV1elNwRHpDb0VvMlhlSUt6bWZSLXpRS21ieTY3Y3g2aFNTMW9FZnVNMU5YX3pabkJuR3o1cXRpNk5oRDBUS2FmUUR3Q2w4?oc=5",
+          "source": "uk.finance.yahoo.com",
+          "publishedAt": "2026-10-22T00:49:04Z",
+          "polarity": 0.0187,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 24.0",
+          "evidenceArticleIds": [
+            "815441e56d172868",
+            "e68b35e7ab19ad39"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "815441e56d172868",
+            "e68b35e7ab19ad39"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -10.3
     }
   ]
 }

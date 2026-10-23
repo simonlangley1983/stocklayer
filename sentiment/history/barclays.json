@@ -6017,6 +6017,98 @@
         }
       ],
       "changeFromPreviousScoredDay": 12.3
+    },
+    {
+      "date": "2026-10-22",
+      "dailyScore": 53.8,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.9,
+      "confidence": 30.0,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 99,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 1,
+      "dispersion": 0.7712,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 97
+      },
+      "topStories": [
+        {
+          "id": "5eb51b72303f00ec",
+          "storyClusterId": "story-002",
+          "title": "Barclays PLC Stock 12‑Month Price Target Raised to $31.01, Implies 37% Upside",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNMTBhV1pvUzlqMDlGVU5lZE5TVnBQaVZVendmVVZYTWR2eXJVYWVfNDhwdHNXVUVTZGpXNnpUSXhMLWR4b0szdmlVeG5jbDZoUk1YSXZsbjNLRnRtUnFrSWpUcXI4UFFkbl9PSFJwcEx2aHZDcnVVbUQyQTF5VjJYcG1seURLTHFrOEtaSlg2MEJSdTJYX2pEcEg1dERIcUQ0b3FmeXRibl85aHVMbTVhWmxnTmRZMXphbVQzbHNOTzJwNjFXTW5ma1E4R2Nrc21TdlE?oc=5",
+          "source": "tradingview.com",
+          "publishedAt": "2026-10-22T19:20:00Z",
+          "polarity": 0.9244,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "aa6ba9527a7c5d61",
+          "storyClusterId": "story-001",
+          "title": "Barclays Bank to downsize global workforce by 5,000 to make way for tech",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQOHJ4VURxZE1IY1lLT3lFaVBwX0lOT3pqZjJ4OFdDRTdSRGsxUU1wYks3ZU5nQTYwazgwcnVucVBldFpBSmtMNkJ4UXliRmVuQlE3bTc2dHAxT05Sc2FHdVFGSG9WNzQtYmZObnk3MThlaElJWHI0UmlLb3VPUnlOV1B5S1Y3Z25xdE5WTFV2Y3Z1d9IBlwFBVV95cUxOdVBKSGpyaWREZ0JYalI3SzNrLW54V1EwT1FLdU5MUVRUQlZyaGR0VGJGVkwtTUZLM0pEX3VWSFo5WHRYYXlCb1plLTNZNmo4QmdHcG02RWR6a1A1cm9URnctQmZGcGFZeUYyWFpWWmxHUXdhUDZDalU2NEVqbUJBWXpBUEVFQ2FrQjhIY2Q5bDlnRWw0OTVZ?oc=5",
+          "source": "upi.com",
+          "publishedAt": "2026-10-22T14:02:18Z",
+          "polarity": -0.6181,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "analyst_upgrade",
+          "direction": "positive",
+          "severity": "low",
+          "status": "possible",
+          "evidenceArticleIds": [
+            "5eb51b72303f00ec"
+          ],
+          "sourceCount": 1
+        },
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "5eb51b72303f00ec",
+            "aa6ba9527a7c5d61"
+          ]
+        },
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 30.0",
+          "evidenceArticleIds": [
+            "5eb51b72303f00ec",
+            "aa6ba9527a7c5d61"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "5eb51b72303f00ec",
+            "aa6ba9527a7c5d61"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 4.0
     }
   ]
 }
