@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-23T01:11:37.620328Z",
+  "generatedAt": "2026-10-23T01:44:33.074155Z",
   "company": {
     "companyName": "Aberdeen Group PLC",
     "ticker": "ABDN.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-09-12",
-    "periodEnd": "2026-10-21",
-    "observationCount": 40,
-    "scoredDayCount": 35,
-    "latestScore": 47.9,
-    "latestScoreDate": "2026-10-21",
+    "periodEnd": "2026-10-22",
+    "observationCount": 41,
+    "scoredDayCount": 36,
+    "latestScore": 49.0,
+    "latestScoreDate": "2026-10-22",
     "series": [
       {
         "date": "2026-09-12",
@@ -384,6 +384,15 @@
         "storyCount": 56,
         "sourceCount": 35,
         "confidence": 66.1,
+        "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-22",
+        "dailyScore": 49.0,
+        "rollingScore": 51.4,
+        "storyCount": 52,
+        "sourceCount": 43,
+        "confidence": 65.3,
         "coverageStatus": "ok"
       }
     ],
@@ -979,17 +988,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 48.3,
+    "score": 48.2,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 50.3,
+        "score": 50.2,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 35 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 36 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1167,6 +1176,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "5a16fff776a362d1ebf1",
+      "type": "acquisition",
+      "title": "Morning briefing: Aberdeen Asia Focus delivers 22.3% return; Aberdeen UK Smaller shows why it sought JUGI merger; Rising charter rates strengthen Tufton's raised dividend; Golden Prospect moves to London listing",
+      "date": "2026-10-22",
+      "status": "pending_review",
+      "reviewDate": "2027-04-20",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNa3hSdFRpdWkzbVlMZ0lJNTRNYTVYYk1MU09zSzV5RUs2a0Y0a3hoSThqLTZZZ2lJTzRHeU1UQTdkVGFoUG5rSWs5bHdPQmV1SHVmcjJ5SUdtOTJSMW1qLXNqY21RQy1ra0U3ZGs4cHBPWEZGRERGVURjbzJabVNDNzBKNjR3Tko5QWlVMXNTaDUyUQ?oc=5",
+          "publisher": "quoteddata.com",
+          "date": "2026-10-22"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "8a529d784dbd01c48055",
       "type": "contract",
