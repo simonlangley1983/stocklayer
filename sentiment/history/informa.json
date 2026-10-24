@@ -7114,37 +7114,51 @@
     },
     {
       "date": "2026-10-23",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 54.1,
-      "confidence": 0.0,
+      "dailyScore": 35.7,
+      "dailyLabel": "Negative",
+      "rollingScore": 51.8,
+      "confidence": 19.7,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 6,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 8,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
       "positiveStoryCount": 0,
       "neutralStoryCount": 0,
-      "negativeStoryCount": 0,
+      "negativeStoryCount": 1,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
-        "missing_company_alias": 6
+        "missing_company_alias": 7
       },
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "071603df80bb84bc",
+          "storyClusterId": "story-001",
+          "title": "Informa falls Friday, underperforms market",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQbkllcDNGZk14N05QU19MTk0zV19KdVdWaTVkWFpvNFF5SHFfdDJxbkZZaktLWUNwRjVXU0NLTG9aMnFIUjdGRDR0Y2QyeUJVTGhILWxlandyd3AxbkJNUm5iUmdrME5KM1pCVVVrZzRBOGY3WFpXdk0wUlotblpWYmVpaUlFeDN1VDJvX0FrNE5hV2xtV0JjeWVoQS1zNU93M1ZJODAtM0FndEUxNFVPelVBT19GbS0wOFFJ?oc=5",
+          "source": "marketwatch.com",
+          "publishedAt": "2026-10-23T16:06:00Z",
+          "polarity": -0.8605,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 19.7",
+          "evidenceArticleIds": [
+            "071603df80bb84bc"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": -24.4
     }
   ]
 }
