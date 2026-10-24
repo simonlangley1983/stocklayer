@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-24T01:29:42.747759Z",
+  "generatedAt": "2026-10-24T01:47:22.716720Z",
   "company": {
     "companyName": "Sage Group PLC",
     "ticker": "SGE.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-10-22",
-    "observationCount": 98,
-    "scoredDayCount": 18,
-    "latestScore": 53.7,
-    "latestScoreDate": "2026-10-22",
+    "periodEnd": "2026-10-23",
+    "observationCount": 99,
+    "scoredDayCount": 19,
+    "latestScore": 49.7,
+    "latestScoreDate": "2026-10-23",
     "series": [
       {
         "date": "2026-06-30",
@@ -907,6 +907,15 @@
         "sourceCount": 1,
         "confidence": 16.2,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-23",
+        "dailyScore": 49.7,
+        "rollingScore": 50.6,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 11.7,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1501,17 +1510,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 54.3,
+    "score": 54.2,
     "label": "Mixed",
-    "evidenceCoverage": 96,
+    "evidenceCoverage": 98,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.9,
+        "score": 51.7,
         "weight": 0.4,
-        "reliability": 0.9,
-        "detail": "Recency-weighted average of 18 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.95,
+        "detail": "Recency-weighted average of 19 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",

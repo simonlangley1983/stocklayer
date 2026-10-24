@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-24T01:29:42.747759Z",
+  "generatedAt": "2026-10-24T01:47:22.716720Z",
   "company": {
     "companyName": "Diploma PLC",
     "ticker": "DPLM.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-15",
-    "periodEnd": "2026-10-22",
-    "observationCount": 104,
-    "scoredDayCount": 9,
+    "periodEnd": "2026-10-23",
+    "observationCount": 105,
+    "scoredDayCount": 10,
     "latestScore": 50.2,
-    "latestScoreDate": "2026-10-13",
+    "latestScoreDate": "2026-10-23",
     "series": [
       {
         "date": "2026-06-15",
@@ -961,6 +961,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-10-23",
+        "dailyScore": 50.2,
+        "rollingScore": 50.4,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.1,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1628,17 +1637,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 54.2,
+    "score": 54.0,
     "label": "Mixed",
-    "evidenceCoverage": 78,
+    "evidenceCoverage": 80,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 53.8,
+        "score": 53.3,
         "weight": 0.4,
-        "reliability": 0.45,
-        "detail": "Recency-weighted average of 9 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.5,
+        "detail": "Recency-weighted average of 10 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",

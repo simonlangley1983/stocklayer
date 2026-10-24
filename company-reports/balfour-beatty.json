@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-24T01:29:42.747759Z",
+  "generatedAt": "2026-10-24T01:47:22.716720Z",
   "company": {
     "companyName": "Balfour Beatty PLC",
     "ticker": "BBY.L",
@@ -15,11 +15,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-10-21",
-    "periodEnd": "2026-10-22",
-    "observationCount": 2,
-    "scoredDayCount": 2,
-    "latestScore": 55.7,
-    "latestScoreDate": "2026-10-22",
+    "periodEnd": "2026-10-23",
+    "observationCount": 3,
+    "scoredDayCount": 3,
+    "latestScore": 68.8,
+    "latestScoreDate": "2026-10-23",
     "series": [
       {
         "date": "2026-10-21",
@@ -37,6 +37,15 @@
         "storyCount": 5,
         "sourceCount": 4,
         "confidence": 70.7,
+        "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-23",
+        "dailyScore": 68.8,
+        "rollingScore": 55.0,
+        "storyCount": 7,
+        "sourceCount": 7,
+        "confidence": 79.9,
         "coverageStatus": "ok"
       }
     ],
@@ -80,6 +89,26 @@
         "direction": "mixed",
         "detail": "Positive and negative coverage is unusually dispersed",
         "significance": 1.443
+      },
+      {
+        "date": "2026-10-23",
+        "type": "sentiment_jump",
+        "title": "Balfour Beatty Wins Contract for Substation to Connect Three Dogger Bank Wind Farms",
+        "source": "offshorewind.biz",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNcmdNZVZnSmVxeWN4WW8zTUp1SWRiZUZTMVRkbmhVajFqUDFOM3drYldRZDBfVjU0dWxyTm1LZVozUGk2SlJEeG1felZ0dXp0UUF4ckZwTWtrc1VOU2g0ODlCSHFQQS0tb281amlxTnZ1QmRNVDBKelVBVHJXbkRQWVF1OW5kaHdpX1Y3WnlwZkw4aFhCVG1NOW41ekZSRWcxYi04c0dDNzdjYzFKYlVQT3BPY0x2cmlwQk50UHdYZUY?oc=5",
+        "direction": "positive",
+        "detail": "Daily score increased by 13.1 points",
+        "significance": 1.574
+      },
+      {
+        "date": "2026-10-23",
+        "type": "sentiment_jump",
+        "title": "National Grid awarded Balfour Beatty the first-phase contract for its",
+        "source": "news.metal.com",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQdU9tU2wwWml4cmJ1dUVVRFJVMjNvOTdkZEJSRjJ3ZUxDelNPdGZYOElrVEJ2M20ySkZLSnhsM2haVHpxOGZmMWp6V3lRcEhJT2phY0oyM1FOQ1FtVVQybUcxVXF0bzVjRWhXQU5zTi1neXEzZHY0cmtGVmxDMmhDdjAxV1pldmJDMjhwVF9SNUE3cExYOGJPMnVWZzdpSnM2cUlDTVJveEhmOXdLQzkzejZNTlVRcWhnX3B0YlQ3dVg3WV9NZlZDVGd5NHpzU2s?oc=5",
+        "direction": "positive",
+        "detail": "Daily score increased by 13.1 points",
+        "significance": 1.531
       }
     ]
   },
@@ -499,17 +528,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 53.8,
+    "score": 55.2,
     "label": "Mixed",
-    "evidenceCoverage": 64,
+    "evidenceCoverage": 66,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 56.9,
+        "score": 60.9,
         "weight": 0.4,
-        "reliability": 0.1,
-        "detail": "Recency-weighted average of 2 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.15,
+        "detail": "Recency-weighted average of 3 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -615,9 +644,49 @@
       "direction": "mixed",
       "detail": "Positive and negative coverage is unusually dispersed",
       "significance": 1.443
+    },
+    {
+      "date": "2026-10-23",
+      "type": "sentiment_jump",
+      "title": "Balfour Beatty Wins Contract for Substation to Connect Three Dogger Bank Wind Farms",
+      "source": "offshorewind.biz",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNcmdNZVZnSmVxeWN4WW8zTUp1SWRiZUZTMVRkbmhVajFqUDFOM3drYldRZDBfVjU0dWxyTm1LZVozUGk2SlJEeG1felZ0dXp0UUF4ckZwTWtrc1VOU2g0ODlCSHFQQS0tb281amlxTnZ1QmRNVDBKelVBVHJXbkRQWVF1OW5kaHdpX1Y3WnlwZkw4aFhCVG1NOW41ekZSRWcxYi04c0dDNzdjYzFKYlVQT3BPY0x2cmlwQk50UHdYZUY?oc=5",
+      "direction": "positive",
+      "detail": "Daily score increased by 13.1 points",
+      "significance": 1.574
+    },
+    {
+      "date": "2026-10-23",
+      "type": "sentiment_jump",
+      "title": "National Grid awarded Balfour Beatty the first-phase contract for its",
+      "source": "news.metal.com",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQdU9tU2wwWml4cmJ1dUVVRFJVMjNvOTdkZEJSRjJ3ZUxDelNPdGZYOElrVEJ2M20ySkZLSnhsM2haVHpxOGZmMWp6V3lRcEhJT2phY0oyM1FOQ1FtVVQybUcxVXF0bzVjRWhXQU5zTi1neXEzZHY0cmtGVmxDMmhDdjAxV1pldmJDMjhwVF9SNUE3cExYOGJPMnVWZzdpSnM2cUlDTVJveEhmOXdLQzkzejZNTlVRcWhnX3B0YlQ3dVg3WV9NZlZDVGd5NHpzU2s?oc=5",
+      "direction": "positive",
+      "detail": "Daily score increased by 13.1 points",
+      "significance": 1.531
     }
   ],
   "persistentEvents": [
+    {
+      "id": "1273eff55375fa2b91b5",
+      "type": "contract",
+      "title": "Balfour Beatty Wins Contract for Substation to Connect Three Dogger Bank Wind Farms",
+      "date": "2026-10-23",
+      "status": "pending_review",
+      "reviewDate": "2027-04-21",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNcmdNZVZnSmVxeWN4WW8zTUp1SWRiZUZTMVRkbmhVajFqUDFOM3drYldRZDBfVjU0dWxyTm1LZVozUGk2SlJEeG1felZ0dXp0UUF4ckZwTWtrc1VOU2g0ODlCSHFQQS0tb281amlxTnZ1QmRNVDBKelVBVHJXbkRQWVF1OW5kaHdpX1Y3WnlwZkw4aFhCVG1NOW41ekZSRWcxYi04c0dDNzdjYzFKYlVQT3BPY0x2cmlwQk50UHdYZUY?oc=5",
+          "publisher": "offshorewind.biz",
+          "date": "2026-10-23"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "2e1ba246a93d8607b185",
       "type": "contract",

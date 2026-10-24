@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-24T01:29:42.747759Z",
+  "generatedAt": "2026-10-24T01:47:22.716720Z",
   "company": {
     "companyName": "AstraZeneca",
     "ticker": "AZN.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-05",
-    "periodEnd": "2026-10-22",
-    "observationCount": 106,
-    "scoredDayCount": 105,
-    "latestScore": 73.1,
-    "latestScoreDate": "2026-10-22",
+    "periodEnd": "2026-10-23",
+    "observationCount": 107,
+    "scoredDayCount": 106,
+    "latestScore": 59.8,
+    "latestScoreDate": "2026-10-23",
     "series": [
       {
         "date": "2026-07-05",
@@ -979,6 +979,15 @@
         "sourceCount": 39,
         "confidence": 90.7,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-23",
+        "dailyScore": 59.8,
+        "rollingScore": 61.3,
+        "storyCount": 13,
+        "sourceCount": 11,
+        "confidence": 87.5,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1656,7 +1665,7 @@
         "score": 60.5,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 83 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 84 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1844,6 +1853,46 @@
   ],
   "persistentEvents": [
     {
+      "id": "a2073a96ca4da81c7ec3",
+      "type": "clinical",
+      "title": "AstraZeneca's Ultomiris Gets USFDA Approval for Rare Kidney Disease",
+      "date": "2026-10-23",
+      "status": "pending_review",
+      "reviewDate": "2027-04-21",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQbVFNZE9hU05rckpYZXBiUksyWG95S19XdS1sTFN0UW9tUDBLMVRXUVNkaFpiZThzRHFBSEhEN1p6d2ZMM2dXSHVoMVVjdk5Bc0pmX3I3RmViMjBqNXotbVFmYzVZdjZ3Y1V1YmdMTHJ1RHplTjZIdlFiZDVfVWNBRGk0YWQwNC1Uc0ozcWkwR3p3QXppWlN1VnRYOHR2QVBBN1ZnYUZ0OFR0R0hNMWdVYUVVb0NFczAwMzRueU82Q0R0SWNz0gHEAUFVX3lxTFBtUU1kT2FTTmtySlhlcGJSSzJYb3lLX1d1LWxMU3RRb21QMEsxVFdRU2RoWmJlOHNEcUFISEQ3Wnp3ZkwzZ1dIdWgxVWN2TkFzSmZfcjdGZWIyMGo1ei1tUWZjNVl2NndjVXViZ0xMcnVEemVONkh2UWJkNV9VY0FEaTRhZDA0LVRzSjNxaTBHendBemlaU3VWdFg4dHZBUEE3VmdhRnQ4VHRHSE0xZ1VhRVVvQ0VzMDAzNG55TzZDRHRJY3M?oc=5",
+          "publisher": "medicaldialogues.in",
+          "date": "2026-10-23"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
+    {
+      "id": "0696f6f9fcc30c63a4fe",
+      "type": "clinical",
+      "title": "AstraZeneca, Daiichi Sankyo's Enhertu Gets China's Conditional Approval for New Indication",
+      "date": "2026-10-23",
+      "status": "pending_review",
+      "reviewDate": "2027-04-21",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPWTNBWlFFVUxXVm9GX3VUWU9aZndvNmRXdzRlLXpXYkhlMkpwX2ktWUtmTFVBTXBPWGQ0azBfWlllcWpiLXQyWGtMb3NKME12TlN4TDl2dnRlMkVFRUU2anNxR29mOHFCX21JQ01iZk1iWEtOZzY1ZFhQZmk5ZDRwWFVTVk5TdTc1bkRZOHVMLUpvc08tbWJMRjhKNDU0VW84NHpUeFZpZS1Eend5cDd3VnlUTlZ1QU5JU1BZOTJNY3Myb0NXaS1pVFdxV1lBamd4c0RqVW02cmdrZw?oc=5",
+          "publisher": "marketscreener.com",
+          "date": "2026-10-23"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
+    {
       "id": "e3da5c62f1ff8a2a0d53",
       "type": "clinical",
       "title": "AstraZeneca wins US approval for Ultomiris in rare kidney disease",
@@ -1857,6 +1906,26 @@
         {
           "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbVVxN2tRSThRWG9BQVFtcFpGX19qRHRtazRUMklrUXR3SnM5ZnJGU2pfdGFNWVdvQTdHVjFoNkVuaW8xcjlkSjEybUFCQlNLWGZ4Y1VrZFNwcndTWWoxazQ1YWh1SXdDb0RobG5aQTgxNks0Sl9oRF9DN2ItVkkwWld4bmtMeE1YUGxmV0pMTFgtT0t6RnVLdThmV29JZE1fbFJIY3E0bmQzeTQyY1REQnpB?oc=5",
           "publisher": "themarketreporter.co.uk",
+          "date": "2026-10-22"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
+    {
+      "id": "caf901ccf6a878e0710c",
+      "type": "clinical",
+      "title": "AstraZeneca bags another US indication for Ultomiris with IgAN approval",
+      "date": "2026-10-22",
+      "status": "pending_review",
+      "reviewDate": "2027-04-20",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQR3JsTWdBb2JpRHgxWEFaYXg3aTlEVEpWQ0UxR0FaWHJZV2E0bEM0Z0xqUEpRV0sxTkw1c25SYlloV1czLVJzU0tra2JyckRLOWczUGd4Z0otc3B0NG5SaVVLcW5ZU1NNbExJYkNOSUVtLTFrUWFGdUp1cGZSbWlWNkFSLXptY1BwcXNZZG5iMm4?oc=5",
+          "publisher": "pharmaceutical-technology.com",
           "date": "2026-10-22"
         }
       ],

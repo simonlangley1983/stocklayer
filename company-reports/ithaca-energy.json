@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-24T01:29:42.747759Z",
+  "generatedAt": "2026-10-24T01:47:22.716720Z",
   "company": {
     "companyName": "Ithaca Energy PLC",
     "ticker": "ITH.L",
@@ -15,11 +15,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-10-21",
-    "periodEnd": "2026-10-22",
-    "observationCount": 2,
-    "scoredDayCount": 2,
-    "latestScore": 49.3,
-    "latestScoreDate": "2026-10-22",
+    "periodEnd": "2026-10-23",
+    "observationCount": 3,
+    "scoredDayCount": 3,
+    "latestScore": 49.9,
+    "latestScoreDate": "2026-10-23",
     "series": [
       {
         "date": "2026-10-21",
@@ -37,6 +37,15 @@
         "storyCount": 4,
         "sourceCount": 4,
         "confidence": 57.6,
+        "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-23",
+        "dailyScore": 49.9,
+        "rollingScore": 50.8,
+        "storyCount": 4,
+        "sourceCount": 4,
+        "confidence": 56.7,
         "coverageStatus": "ok"
       }
     ],
@@ -80,6 +89,26 @@
         "direction": "Neutral / mixed",
         "detail": null,
         "significance": 0.187
+      },
+      {
+        "date": "2026-10-23",
+        "type": "press_story",
+        "title": "Ithaca Energy, Jersey Oil & Gas And Serica Energy In Focus After Jackdaw Approval",
+        "source": "directorstalkinterviews.com",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNdDBEcmdnY3pLT3VwRzBLRm9KZFpYM09vTHpfSjlZd1BFZWNwU3hiaWt2S0pwUlRjRkxHSlJJM01vT2RQVmxKUVJqbGlVa29MSUhLaTQ2cDlsT3dDSnFjaU80WWdpdnNjT2oteVA2X1dGbVBPMEIwTEltRkVyTWpVd3ZCeWZ6Y0Q2NkkzMXFMUTJ1aFk1NFloN1pKRHprRFZiejQwNFpHLXhraWI4RVVSaElvTGloUU1GZm1UMWxUVk1qaEc4cW9pOA?oc=5",
+        "direction": "Neutral / mixed",
+        "detail": null,
+        "significance": 0.183
+      },
+      {
+        "date": "2026-10-23",
+        "type": "press_story",
+        "title": "Ithaca Energy PLC Estimates – XETR:XE3",
+        "source": "tradingview.com",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1TTkRyb1pvRnAydkNnTHZJbHZOaUV2MTJ5bnB3RlM2WmJ2RXpMdDFzZHZxQmpIclV6eFZ1Y19XeDRVd2MwQ2NsTHpuWnBtN1Q3WmprMU9fT2xhaW94dFczZDJjQzlIT2RFOUdtQWxBSGpBWllQ?oc=5",
+        "direction": "Neutral / mixed",
+        "detail": null,
+        "significance": 0.172
       }
     ]
   },
@@ -92,17 +121,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 52.9,
+    "score": 52.0,
     "label": "Mixed",
-    "evidenceCoverage": 10,
+    "evidenceCoverage": 15,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 54.9,
+        "score": 53.2,
         "weight": 0.4,
-        "reliability": 0.1,
-        "detail": "Recency-weighted average of 2 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.15,
+        "detail": "Recency-weighted average of 3 scored days in the latest 90 calendar days; 30-day half-life."
       }
     ],
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
@@ -147,9 +176,49 @@
       "direction": "Neutral / mixed",
       "detail": null,
       "significance": 0.187
+    },
+    {
+      "date": "2026-10-23",
+      "type": "press_story",
+      "title": "Ithaca Energy, Jersey Oil & Gas And Serica Energy In Focus After Jackdaw Approval",
+      "source": "directorstalkinterviews.com",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNdDBEcmdnY3pLT3VwRzBLRm9KZFpYM09vTHpfSjlZd1BFZWNwU3hiaWt2S0pwUlRjRkxHSlJJM01vT2RQVmxKUVJqbGlVa29MSUhLaTQ2cDlsT3dDSnFjaU80WWdpdnNjT2oteVA2X1dGbVBPMEIwTEltRkVyTWpVd3ZCeWZ6Y0Q2NkkzMXFMUTJ1aFk1NFloN1pKRHprRFZiejQwNFpHLXhraWI4RVVSaElvTGloUU1GZm1UMWxUVk1qaEc4cW9pOA?oc=5",
+      "direction": "Neutral / mixed",
+      "detail": null,
+      "significance": 0.183
+    },
+    {
+      "date": "2026-10-23",
+      "type": "press_story",
+      "title": "Ithaca Energy PLC Estimates – XETR:XE3",
+      "source": "tradingview.com",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1TTkRyb1pvRnAydkNnTHZJbHZOaUV2MTJ5bnB3RlM2WmJ2RXpMdDFzZHZxQmpIclV6eFZ1Y19XeDRVd2MwQ2NsTHpuWnBtN1Q3WmprMU9fT2xhaW94dFczZDJjQzlIT2RFOUdtQWxBSGpBWllQ?oc=5",
+      "direction": "Neutral / mixed",
+      "detail": null,
+      "significance": 0.172
     }
   ],
   "persistentEvents": [
+    {
+      "id": "66a4eb59d33495659eab",
+      "type": "clinical",
+      "title": "Ithaca Energy, Jersey Oil & Gas And Serica Energy In Focus After Jackdaw Approval",
+      "date": "2026-10-23",
+      "status": "pending_review",
+      "reviewDate": "2027-04-21",
+      "direction": "Neutral / mixed",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNdDBEcmdnY3pLT3VwRzBLRm9KZFpYM09vTHpfSjlZd1BFZWNwU3hiaWt2S0pwUlRjRkxHSlJJM01vT2RQVmxKUVJqbGlVa29MSUhLaTQ2cDlsT3dDSnFjaU80WWdpdnNjT2oteVA2X1dGbVBPMEIwTEltRkVyTWpVd3ZCeWZ6Y0Q2NkkzMXFMUTJ1aFk1NFloN1pKRHprRFZiejQwNFpHLXhraWI4RVVSaElvTGloUU1GZm1UMWxUVk1qaEc4cW9pOA?oc=5",
+          "publisher": "directorstalkinterviews.com",
+          "date": "2026-10-23"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "156806e51bcaee4d2b1c",
       "type": "clinical",
