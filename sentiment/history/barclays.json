@@ -6078,35 +6078,49 @@
     },
     {
       "date": "2026-10-23",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 48.3,
-      "confidence": 0.0,
+      "dailyScore": 55.9,
+      "dailyLabel": "Slightly positive",
+      "rollingScore": 49.2,
+      "confidence": 13.0,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 0.75,
       "candidateCount": 27,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
-      "positiveStoryCount": 0,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 1,
       "neutralStoryCount": 0,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 26,
+        "ambiguous_company_without_alias": 25,
         "missing_company_alias": 1
       },
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "057f40eb6706b0a3",
+          "storyClusterId": "story-001",
+          "title": "Update: Market Chatter: Barclays, Bank of Baroda Among Creditors Seeking $1 Billion From UAE Exchange",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVkRsbW84OXRvZHJaZkJLdTZ1QjhxZzdGU3BEOF9mblBSUHAycFNUeGJCTDBNR3hUOGh4cGpRalBGdFh6cjlxUENFVlI3aEQzcXpVLUd0dXVnUWVtZl9aU1lLRF9EWWFWQ1JVU2tIY3REdldvMktvbmlmaWdfZnhtUzN4ODdXajJwQmlmRWVlT0ktU3JYVno1eHJreVhFQjRhZ0pTeFpsYw?oc=5",
+          "source": "finance.yahoo.com",
+          "publishedAt": "2026-10-23T13:59:35Z",
+          "polarity": 0.3517,
+          "sentiment": "Positive",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 13.0",
+          "evidenceArticleIds": [
+            "057f40eb6706b0a3"
+          ]
         },
         {
           "type": "collection_degraded",
@@ -6114,10 +6128,12 @@
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": []
+          "evidenceArticleIds": [
+            "057f40eb6706b0a3"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": 16.2
     }
   ]
 }
