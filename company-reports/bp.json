@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-24T08:34:34.023762Z",
+  "generatedAt": "2026-10-24T09:40:36.207684Z",
   "company": {
     "companyName": "BP",
     "ticker": "BP.L",
@@ -23,7 +23,7 @@
     "periodEnd": "2026-10-23",
     "observationCount": 109,
     "scoredDayCount": 43,
-    "latestScore": 31.7,
+    "latestScore": 24.2,
     "latestScoreDate": "2026-10-23",
     "series": [
       {
@@ -1000,11 +1000,11 @@
       },
       {
         "date": "2026-10-23",
-        "dailyScore": 31.7,
-        "rollingScore": 48.1,
-        "storyCount": 12,
-        "sourceCount": 9,
-        "confidence": 68.1,
+        "dailyScore": 24.2,
+        "rollingScore": 47.1,
+        "storyCount": 5,
+        "sourceCount": 6,
+        "confidence": 58.1,
         "coverageStatus": "ok"
       }
     ],
@@ -1070,16 +1070,6 @@
         "significance": 1.604
       },
       {
-        "date": "2026-10-08",
-        "type": "analyst_upgrade",
-        "title": "Revealed: The BP-linked oil spill leaving Angolans sick and hungry",
-        "source": "declassifieduk.org",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNS0ZVcGlKMTZfTkF0bnlYMzZud2RNajQtSTI5OTFneGJDTnpBQ0d1ZUo3WGZMWXFPXzhUN3E3a3FUYzBzN1ZQcWFYZXptM3A1aGZVcF9xZ01BUXlwUVBqeGxQaXpSRXd3dnpSSUFoNWxROWd5RHpxNmNaODRmal9YVGYwQW5RMVgydVhIczdEbS16MjFnTDczZ0h3QkcwUQ?oc=5",
-        "direction": "positive",
-        "detail": null,
-        "significance": 1.587
-      },
-      {
         "date": "2026-10-19",
         "type": "high_disagreement",
         "title": "Marine life dramatically declined in Gulf of Mexico in years after BP oil spill, study finds",
@@ -1108,6 +1098,16 @@
         "direction": "negative",
         "detail": "Daily score decreased by 14.6 points",
         "significance": 1.612
+      },
+      {
+        "date": "2026-10-23",
+        "type": "sentiment_drop",
+        "title": "Marine life in Gulf of Mexico has still not fully recovered from 2010 BP oil spill",
+        "source": "twaslnews1.twaslnews.com",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBnRmlYLVZ4eDluU3pBT3VqNUJ2ZWNJNTlzRGd1SkdsVmFGTU1xa1pNUGhIZHF3aVBLb2x3M1NKeUNBOUxrZFRXOVl3TUVYSXEtT3pv?oc=5",
+        "direction": "negative",
+        "detail": "Daily score decreased by 33.2 points",
+        "significance": 1.708
       }
     ]
   },
@@ -1600,14 +1600,14 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 43.9,
+    "score": 43.8,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 52.6,
+        "score": 52.2,
         "weight": 0.4,
         "reliability": 1.0,
         "detail": "Recency-weighted average of 37 scored days in the latest 90 calendar days; 30-day half-life."
@@ -1747,16 +1747,6 @@
       "significance": 1.604
     },
     {
-      "date": "2026-10-08",
-      "type": "analyst_upgrade",
-      "title": "Revealed: The BP-linked oil spill leaving Angolans sick and hungry",
-      "source": "declassifieduk.org",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNS0ZVcGlKMTZfTkF0bnlYMzZud2RNajQtSTI5OTFneGJDTnpBQ0d1ZUo3WGZMWXFPXzhUN3E3a3FUYzBzN1ZQcWFYZXptM3A1aGZVcF9xZ01BUXlwUVBqeGxQaXpSRXd3dnpSSUFoNWxROWd5RHpxNmNaODRmal9YVGYwQW5RMVgydVhIczdEbS16MjFnTDczZ0h3QkcwUQ?oc=5",
-      "direction": "positive",
-      "detail": null,
-      "significance": 1.587
-    },
-    {
       "date": "2026-10-19",
       "type": "high_disagreement",
       "title": "Marine life dramatically declined in Gulf of Mexico in years after BP oil spill, study finds",
@@ -1785,6 +1775,16 @@
       "direction": "negative",
       "detail": "Daily score decreased by 14.6 points",
       "significance": 1.612
+    },
+    {
+      "date": "2026-10-23",
+      "type": "sentiment_drop",
+      "title": "Marine life in Gulf of Mexico has still not fully recovered from 2010 BP oil spill",
+      "source": "twaslnews1.twaslnews.com",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBnRmlYLVZ4eDluU3pBT3VqNUJ2ZWNJNTlzRGd1SkdsVmFGTU1xa1pNUGhIZHF3aVBLb2x3M1NKeUNBOUxrZFRXOVl3TUVYSXEtT3pv?oc=5",
+      "direction": "negative",
+      "detail": "Daily score decreased by 33.2 points",
+      "significance": 1.708
     }
   ],
   "persistentEvents": [
