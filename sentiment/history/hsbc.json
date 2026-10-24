@@ -6990,6 +6990,78 @@
         }
       ],
       "changeFromPreviousScoredDay": -10.4
+    },
+    {
+      "date": "2026-10-23",
+      "dailyScore": 37.9,
+      "dailyLabel": "Negative",
+      "rollingScore": 49.7,
+      "confidence": 27.5,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 76,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 1,
+      "dispersion": 0.4411,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 69,
+        "missing_company_alias": 5
+      },
+      "topStories": [
+        {
+          "id": "88da06d69973f463",
+          "storyClusterId": "story-002",
+          "title": "HSBC Holdings slips Friday, underperforms market",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOSUdjOTYxeHpJYl9ldFFtNkNzczhPcHJPblh5eVB0Um9YNjRzcVVGNWxrZ21rSTlNVW12bmc4bC1hOTA3QldWMWJwRUxBWEFLbEZlWUxMVmxGWWxCZE5TeHJveTM3T2VXdXdzMXZ3N2QwMWFTV2tOaDRZdUFNc2FRaEdUM01aa08zejlPc0VLZkhvSUdDa0ZGeVBlY1ZNZGcyYm5IUUdDS3ZYb3o0NFBDcUxOc3VRU0NORnVHM2xzUXpVMW8?oc=5",
+          "source": "marketwatch.com",
+          "publishedAt": "2026-10-23T16:07:00Z",
+          "polarity": -0.9248,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "66de30b4c65af4e1",
+          "storyClusterId": "story-001",
+          "title": "HSBC Holdings Plc Estimates – LSX:923893",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9jemstNmY1U0thZDZwUzJFdmxURXJBQkk2ZmEyZEpvbEFvbWFyNV93VDVqQU1tbGdCVmJwc2hOaWZjaTI5YTNTTENvVUJsVjlSYmdWYk5SbEVkVXBjTlRRLUdUVk9xUEVaOS04ZTJ0Q2Q5TnZNd200?oc=5",
+          "source": "tradingview.com",
+          "publishedAt": "2026-10-23T14:24:20Z",
+          "polarity": -0.0427,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 27.5",
+          "evidenceArticleIds": [
+            "88da06d69973f463",
+            "66de30b4c65af4e1"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "88da06d69973f463",
+            "66de30b4c65af4e1"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -13.3
     }
   ]
 }
