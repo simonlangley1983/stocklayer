@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-10-25T09:58:36.323139Z",
+  "generatedAt": "2026-10-25T12:09:01.931383Z",
   "asOfDate": "2026-10-24",
   "companies": {
     "airtel-africa": {
@@ -868,116 +868,26 @@
       "ticker": "BP.L",
       "slug": "bp",
       "date": "2026-10-24",
-      "dailyScore": 52.2,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 48.1,
-      "confidence": 54.3,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "storyCount": 5,
-      "sourceCount": 4,
-      "changeFromPreviousScoredDay": 28.0,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 51.5,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "sentiment_jump",
-          "direction": "positive",
-          "severity": "high",
-          "status": "calculated",
-          "detail": "Daily score increased by 28.0 points",
-          "evidenceArticleIds": [
-            "9df3509b7b9f7227",
-            "9f1950aca57e04a1",
-            "8e2d73cce3cf7934",
-            "654d8ec8f106a658",
-            "f1cb4bd1702a218f"
-          ]
-        },
-        {
-          "type": "high_disagreement",
-          "direction": "mixed",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "Positive and negative coverage is unusually dispersed",
-          "evidenceArticleIds": [
-            "9df3509b7b9f7227",
-            "9f1950aca57e04a1",
-            "8e2d73cce3cf7934",
-            "654d8ec8f106a658",
-            "f1cb4bd1702a218f"
-          ]
-        },
-        {
-          "type": "collection_degraded",
+          "type": "no_coverage",
           "direction": "neutral",
-          "severity": "medium",
+          "severity": "low",
           "status": "calculated",
-          "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "9df3509b7b9f7227",
-            "9f1950aca57e04a1",
-            "8e2d73cce3cf7934",
-            "654d8ec8f106a658",
-            "f1cb4bd1702a218f"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "9df3509b7b9f7227",
-          "storyClusterId": "story-001",
-          "title": "FTSE 100 Falls to 10,690.36 as UK Retail Sales Slump Outweighs BP and Shell Gains on Five-Month Oil High",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOVDZYWjF1c1VSYTYwMnNPWlE1TE00MWN1UXNqcUJFT21KN1ZPN0g4TXJqSjRGd3lCRXRfZU1Db1JqOGE0RWRXenBxNUxsLTZBa0pvWGJQRHQ5SUV4M1hzZWU0M1dlb3lvLWt4RkRodXBERXo2RG5ERGRKb3Q5OVhDT2pPNXVhdnRscUxLb183SjRlTmt0M3F4MFRiTWdtWWhpRjl1cWZUTm1PZnZmWnplX3RLaTAzNlFjUWExazg0bUN5M0N6YjFCejZaX0ZQSmhBTGxNa0Z3?oc=5",
-          "source": "bbntimes.com",
-          "publishedAt": "2026-10-23T23:17:21Z",
-          "polarity": -0.9243,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "9f1950aca57e04a1",
-          "storyClusterId": "story-004",
-          "title": "Louisiana agrees to modified $350M settlement payment plan with BP over oil spill",
-          "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxQcDBnTWNTMHdDMGpONWdPWlRQc0QtUXlOdUVoSlZrb21ZZGRCb3gydDRaMExobTBLR29WVnFvM2JScmVlYTQ5eHRBU0pnYnBhWjFKTk91MmRzbEpPWlNadzMzTDJGdjBJckVFY3YtRUJ1bklycDhXVmFIR0VYRzI0UVU0bjJtR0sxME0xaEhqcFdZekVqNEFqZGJXWGY4RzVOd1dMaEZ0LTJQYndTWG1GclE5bDlJRHFxYVRKMW0zT0VfSGdOaE9QU0F4WWdvazZBNFdUN05rQWhGNHVvOEJmZEVKcDNmaXI0X3lySW1DQ0NuUzltcmV3Zlc2eWRadWoydExyYWRyV29feWtwbjhSNVY0My1PVTM2UmJmVTFDTjl6Zw?oc=5",
-          "source": "wwltv.com",
-          "publishedAt": "2026-10-24T02:49:00Z",
-          "polarity": 0.8709,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "8e2d73cce3cf7934",
-          "storyClusterId": "story-003",
-          "title": "Louisiana leaders agree on BP oil spill settlement buyout",
-          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQWVpqRnoxNFBuSEYwX1FTVDZxLVIwUEwzeWxLR0FCSEJEV2pMc2I1bDVNS3J3WHJLTUotTnRVb3JKM01BaWkwdUpUS3VwN0RmRjh0NWRIcjc4VVNlRWlFY0pVc1JCdGgzT3lHc0pNcWIxX1cxaWpIcmZSLXgtRVNScy03Q0w3OWprVUQ2VUhOQzBORmpKSDk5cFVSQXlVRWp4MVIzejJPaTZ4MUlHY3hqMjJhSmJrX2tqWXMwSHpNQVVaLUJSQTdCa29OU1lsYW56YWZYbnhHRlRyRFhQSTZV?oc=5",
-          "source": "wwltv.com",
-          "publishedAt": "2026-10-24T00:03:00Z",
-          "polarity": 0.699,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "654d8ec8f106a658",
-          "storyClusterId": "story-005",
-          "title": "BP Exits Bay du Nord Oil Project, Leaving Equinor as Sole Owner",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPQUJZaS1yeFMteU1TTjRLQVY1QnBZV3R0bzNkVlhwd0pfcUZLQmhpdGx6WkRsaTg5UWxSTml5akhVY2lmdDBodDNZSUVJSDNqdjNUSzVlZ1lSbklCd25jd2p1ZTFNN0M5c3llZTY2ZlJsWGhLeUZnUmdvcVdac1QzVTN5em1icXRHNE5vaTFlVVFiVlVkTE1R?oc=5",
-          "source": "energynow.ca",
-          "publishedAt": "2026-10-24T07:05:10Z",
-          "polarity": -0.3651,
-          "sentiment": "Negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "f1cb4bd1702a218f",
-          "storyClusterId": "story-002",
-          "title": "BP CEO Says Oil Giant Needs to Make ‘Fewer and Better’ Choices",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPOWVRTjZDMl90aDg1TmVuS19FQVBSSjk4OW5NT05fX1A3RkR4Qmh4Z2Z6R3F3MzhpRzUwMWlJN1JuX1p3RTNkcTdPZF9GLV9zWXZ5YXJEYTBIcU5qVGdEY3hhS2pkV0NFdThMcERsM1BxOGNRSFZsVmp4MFVvYm05SWdjd1BNRWtFYklua040M0ZPTU5RU2c?oc=5",
-          "source": "energynow.com",
-          "publishedAt": "2026-10-23T23:48:52Z",
-          "polarity": 0.3179,
-          "sentiment": "Positive",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "burberry": {
       "companyName": "Burberry Group PLC",
