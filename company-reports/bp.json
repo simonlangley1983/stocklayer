@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-25T11:58:52.117673Z",
+  "generatedAt": "2026-10-25T12:09:04.529666Z",
   "company": {
     "companyName": "BP",
     "ticker": "BP.L",
@@ -22,9 +22,9 @@
     "periodStart": "2026-06-14",
     "periodEnd": "2026-10-24",
     "observationCount": 110,
-    "scoredDayCount": 44,
-    "latestScore": 52.2,
-    "latestScoreDate": "2026-10-24",
+    "scoredDayCount": 40,
+    "latestScore": 54.3,
+    "latestScoreDate": "2026-10-20",
     "series": [
       {
         "date": "2026-06-14",
@@ -973,51 +973,61 @@
       },
       {
         "date": "2026-10-20",
-        "dailyScore": 33.7,
-        "rollingScore": 49.0,
-        "storyCount": 6,
-        "sourceCount": 9,
-        "confidence": 63.7,
+        "dailyScore": 54.3,
+        "rollingScore": 52.3,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 18.1,
         "coverageStatus": "ok"
       },
       {
         "date": "2026-10-21",
-        "dailyScore": 59.2,
-        "rollingScore": 50.6,
-        "storyCount": 5,
-        "sourceCount": 2,
-        "confidence": 42.8,
-        "coverageStatus": "ok"
+        "dailyScore": null,
+        "rollingScore": 52.1,
+        "storyCount": 0,
+        "sourceCount": 0,
+        "confidence": 0.0,
+        "coverageStatus": "no_coverage"
       },
       {
         "date": "2026-10-22",
-        "dailyScore": 57.4,
-        "rollingScore": 51.7,
-        "storyCount": 10,
-        "sourceCount": 8,
-        "confidence": 62.5,
-        "coverageStatus": "ok"
+        "dailyScore": null,
+        "rollingScore": 51.9,
+        "storyCount": 0,
+        "sourceCount": 0,
+        "confidence": 0.0,
+        "coverageStatus": "no_coverage"
       },
       {
         "date": "2026-10-23",
-        "dailyScore": 24.2,
-        "rollingScore": 47.1,
-        "storyCount": 5,
-        "sourceCount": 5,
-        "confidence": 57.6,
-        "coverageStatus": "ok"
+        "dailyScore": null,
+        "rollingScore": 51.7,
+        "storyCount": 0,
+        "sourceCount": 0,
+        "confidence": 0.0,
+        "coverageStatus": "no_coverage"
       },
       {
         "date": "2026-10-24",
-        "dailyScore": 52.2,
-        "rollingScore": 48.1,
-        "storyCount": 5,
-        "sourceCount": 4,
-        "confidence": 54.3,
-        "coverageStatus": "ok"
+        "dailyScore": null,
+        "rollingScore": 51.5,
+        "storyCount": 0,
+        "sourceCount": 0,
+        "confidence": 0.0,
+        "coverageStatus": "no_coverage"
       }
     ],
     "stories": [
+      {
+        "date": "2026-09-15",
+        "type": "high_disagreement",
+        "title": "Aker BP stock slips as Oslo Bors energy names retreat",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQYzJSWjBBdElINFdGb1BPOXY0ZjhqZmJsbGhtX2RoRGY0cjgxTWZGbERKX2NMM05pdUtPbHY4SFgyQUJ2UmI0U3ozcEVHMXZOM1lIdnFLa21lQ2tDam1sWG1raEpFT0NzUjJ1ZjZWV3U4bmpnbV9RLTk5WTBfSVpKLUJ4YkplQXJPbmRTekkxOXpxUnhwZ1ZScFJ2Y3EyUVVzSlpjZkUyV29XbGtOeEpFM2JkM0MyUWc?oc=5",
+        "direction": "mixed",
+        "detail": "Positive and negative coverage is unusually dispersed",
+        "significance": 1.584
+      },
       {
         "date": "2026-09-16",
         "type": "coverage_spike",
@@ -1079,6 +1089,16 @@
         "significance": 1.604
       },
       {
+        "date": "2026-09-30",
+        "type": "sentiment_jump",
+        "title": "bp enhances gas reinjection capacity at Central Azeri",
+        "source": "news.az",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9UQ3JaTENVZzFQdm5ySGNsbHhEbEk3emVTY01aZnhrNXpDdnNnWElBNkpfU0FXaTNLWFJtLWxuYi1TV0VYTFNxRUpTbURIN0I4VHJEUktGenloa3ZGUXljUU5jQzc5dXlXVWJuLS1UQk5nY2pyNldZN2N5Qm90OVE?oc=5",
+        "direction": "positive",
+        "detail": "Daily score increased by 13.5 points",
+        "significance": 1.587
+      },
+      {
         "date": "2026-10-08",
         "type": "analyst_upgrade",
         "title": "Revealed: The BP-linked oil spill leaving Angolans sick and hungry",
@@ -1097,26 +1117,6 @@
         "direction": "mixed",
         "detail": "Positive and negative coverage is unusually dispersed",
         "significance": 1.892
-      },
-      {
-        "date": "2026-10-20",
-        "type": "sentiment_drop",
-        "title": "Marine life dramatically declined in Gulf years after BP oil spill, study finds",
-        "source": "wflx.com",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPTjhjYWlRYUItMUFxQVFqT0paUVowenlSRG4yNno1aVNxaF9nYURkUzhGM1kxS1dnaWgxZWR6MzU5ejR0WmZiU0xvM3J5aDk5cno3b1gzV2NXY2xRZVhmRXBXYUpObVRwY2RFRlFSSmxNSUVHczY4dmVlQnZqZEtXdTZ0Y1BiQVJpSmtPcll3U2JfOUxtMksxWFlnTGpDU0tyckg4NGVnNEdKMjRFTzZFd1B2QzA1bUl3RDdhbXcyQULSAcABQVVfeXFMT044Y2FpUWFCLTFBcUFRak9KWlFaMHp5UkRuMjZ6NWlTcWhfZ2FEZFM4RjNZMUtXZ2loMWVkejM1OXo0dFpmYlNMbzNyeWg5OXJ6N29YM1djV2NsUWVYZkVwV2FKTm1UcGNkRUZRUkpsTUlFR3M2OHZlZUJ2amRLV3U2dGNQYkFSaUprT3JZd1NiXzlMbTJLMVhZZ0xqQ1NLcnJIODRlZzRHSjI0RU82RXdQdkMwNW1Jd0Q3YW13MkFC?oc=5",
-        "direction": "negative",
-        "detail": "Daily score decreased by 14.6 points",
-        "significance": 1.893
-      },
-      {
-        "date": "2026-10-20",
-        "type": "sentiment_drop",
-        "title": "Study finds massive decline in marine life since BP oil spill in Gulf of Mexico",
-        "source": "theworld.org",
-        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNRmlBSWVqYXNLaVJnZ1BycHFxbmNRRmRpNEZzckNUNnVVeWRDcEFLUnpNM2FaM3JsSXR1cTV6SXZMX0d5YXBFeTE0MEtvZnBxdElqaUVzQURYbVhtbUx2OXAwR1hXM0tsYWpsaHplQmIxUTM1bEluWVAxakw4TUk4anlVLV9DVXZEQzZ4RG1oYmt2dlV3VzAzbUF3Uk41MVlOcDNyc1pudUJEanFuQS1uMUFuSF9VcnZNbzhVYg?oc=5",
-        "direction": "negative",
-        "detail": "Daily score decreased by 14.6 points",
-        "significance": 1.612
       }
     ]
   },
@@ -1609,17 +1609,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 43.8,
+    "score": 44.6,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 52.2,
+        "score": 54.2,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 38 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 34 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1696,6 +1696,16 @@
       "approximateDate": true
     },
     {
+      "date": "2026-09-15",
+      "type": "high_disagreement",
+      "title": "Aker BP stock slips as Oslo Bors energy names retreat",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQYzJSWjBBdElINFdGb1BPOXY0ZjhqZmJsbGhtX2RoRGY0cjgxTWZGbERKX2NMM05pdUtPbHY4SFgyQUJ2UmI0U3ozcEVHMXZOM1lIdnFLa21lQ2tDam1sWG1raEpFT0NzUjJ1ZjZWV3U4bmpnbV9RLTk5WTBfSVpKLUJ4YkplQXJPbmRTekkxOXpxUnhwZ1ZScFJ2Y3EyUVVzSlpjZkUyV29XbGtOeEpFM2JkM0MyUWc?oc=5",
+      "direction": "mixed",
+      "detail": "Positive and negative coverage is unusually dispersed",
+      "significance": 1.584
+    },
+    {
       "date": "2026-09-16",
       "type": "coverage_spike",
       "title": "BP PLC (BP) Shares Fall 3.4% -- GF Value Says Still Overvalued",
@@ -1756,6 +1766,16 @@
       "significance": 1.604
     },
     {
+      "date": "2026-09-30",
+      "type": "sentiment_jump",
+      "title": "bp enhances gas reinjection capacity at Central Azeri",
+      "source": "news.az",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9UQ3JaTENVZzFQdm5ySGNsbHhEbEk3emVTY01aZnhrNXpDdnNnWElBNkpfU0FXaTNLWFJtLWxuYi1TV0VYTFNxRUpTbURIN0I4VHJEUktGenloa3ZGUXljUU5jQzc5dXlXVWJuLS1UQk5nY2pyNldZN2N5Qm90OVE?oc=5",
+      "direction": "positive",
+      "detail": "Daily score increased by 13.5 points",
+      "significance": 1.587
+    },
+    {
       "date": "2026-10-08",
       "type": "analyst_upgrade",
       "title": "Revealed: The BP-linked oil spill leaving Angolans sick and hungry",
@@ -1774,26 +1794,6 @@
       "direction": "mixed",
       "detail": "Positive and negative coverage is unusually dispersed",
       "significance": 1.892
-    },
-    {
-      "date": "2026-10-20",
-      "type": "sentiment_drop",
-      "title": "Marine life dramatically declined in Gulf years after BP oil spill, study finds",
-      "source": "wflx.com",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPTjhjYWlRYUItMUFxQVFqT0paUVowenlSRG4yNno1aVNxaF9nYURkUzhGM1kxS1dnaWgxZWR6MzU5ejR0WmZiU0xvM3J5aDk5cno3b1gzV2NXY2xRZVhmRXBXYUpObVRwY2RFRlFSSmxNSUVHczY4dmVlQnZqZEtXdTZ0Y1BiQVJpSmtPcll3U2JfOUxtMksxWFlnTGpDU0tyckg4NGVnNEdKMjRFTzZFd1B2QzA1bUl3RDdhbXcyQULSAcABQVVfeXFMT044Y2FpUWFCLTFBcUFRak9KWlFaMHp5UkRuMjZ6NWlTcWhfZ2FEZFM4RjNZMUtXZ2loMWVkejM1OXo0dFpmYlNMbzNyeWg5OXJ6N29YM1djV2NsUWVYZkVwV2FKTm1UcGNkRUZRUkpsTUlFR3M2OHZlZUJ2amRLV3U2dGNQYkFSaUprT3JZd1NiXzlMbTJLMVhZZ0xqQ1NLcnJIODRlZzRHSjI0RU82RXdQdkMwNW1Jd0Q3YW13MkFC?oc=5",
-      "direction": "negative",
-      "detail": "Daily score decreased by 14.6 points",
-      "significance": 1.893
-    },
-    {
-      "date": "2026-10-20",
-      "type": "sentiment_drop",
-      "title": "Study finds massive decline in marine life since BP oil spill in Gulf of Mexico",
-      "source": "theworld.org",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNRmlBSWVqYXNLaVJnZ1BycHFxbmNRRmRpNEZzckNUNnVVeWRDcEFLUnpNM2FaM3JsSXR1cTV6SXZMX0d5YXBFeTE0MEtvZnBxdElqaUVzQURYbVhtbUx2OXAwR1hXM0tsYWpsaHplQmIxUTM1bEluWVAxakw4TUk4anlVLV9DVXZEQzZ4RG1oYmt2dlV3VzAzbUF3Uk41MVlOcDNyc1pudUJEanFuQS1uMUFuSF9VcnZNbzhVYg?oc=5",
-      "direction": "negative",
-      "detail": "Daily score decreased by 14.6 points",
-      "significance": 1.612
     }
   ],
   "persistentEvents": [
