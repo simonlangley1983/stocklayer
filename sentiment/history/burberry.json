@@ -3873,37 +3873,51 @@
     },
     {
       "date": "2026-10-24",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 48.5,
-      "confidence": 0.0,
+      "dailyScore": 49.5,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 48.6,
+      "confidence": 15.3,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 8,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 7,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 0,
+      "neutralStoryCount": 1,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
-        "missing_company_alias": 8
+        "missing_company_alias": 6
       },
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "39ced950ee0e8f30",
+          "storyClusterId": "story-001",
+          "title": "Burberry Group plc (BURBY) latest stock news and headlines",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBzaGZYaENrRlo1eFJRX1hMWlJmNGQ3WVh2MXVZSTh5bmpzZTJpZkhacnZEcXhFdnNIN2VtYURKRVNqb25RcUFXWklXRmZHYVdKTm9fcjUyMi1WZw?oc=5",
+          "source": "uk.finance.yahoo.com",
+          "publishedAt": "2026-10-24T12:36:12Z",
+          "polarity": -0.0276,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.3",
+          "evidenceArticleIds": [
+            "39ced950ee0e8f30"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": 7.9
     }
   ]
 }
