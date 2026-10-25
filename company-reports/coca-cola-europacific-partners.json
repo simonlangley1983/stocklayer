@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-24T23:34:17.818491Z",
+  "generatedAt": "2026-10-25T01:23:43.278561Z",
   "company": {
     "companyName": "Coca-Cola Europacific Partners PLC",
     "ticker": "CCEP.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-09-15",
-    "periodEnd": "2026-10-23",
-    "observationCount": 39,
-    "scoredDayCount": 28,
-    "latestScore": 53.4,
-    "latestScoreDate": "2026-10-23",
+    "periodEnd": "2026-10-24",
+    "observationCount": 40,
+    "scoredDayCount": 29,
+    "latestScore": 50.7,
+    "latestScoreDate": "2026-10-24",
     "series": [
       {
         "date": "2026-09-15",
@@ -375,6 +375,15 @@
         "storyCount": 3,
         "sourceCount": 3,
         "confidence": 50.0,
+        "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-24",
+        "dailyScore": 50.7,
+        "rollingScore": 52.3,
+        "storyCount": 2,
+        "sourceCount": 2,
+        "confidence": 31.8,
         "coverageStatus": "ok"
       }
     ],
@@ -970,17 +979,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 50.2,
+    "score": 50.1,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 53.8,
+        "score": 53.6,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 28 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 29 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1157,5 +1166,26 @@
       "significance": 1.294
     }
   ],
-  "persistentEvents": []
+  "persistentEvents": [
+    {
+      "id": "d690ad8c74f2a1d90fc0",
+      "type": "acquisition",
+      "title": "Sterling Capital Management LLC Acquires 17,254 Shares of Coca-Cola Europacific Partners $CCEP",
+      "date": "2026-10-24",
+      "status": "pending_review",
+      "reviewDate": "2027-04-22",
+      "direction": "Neutral / mixed",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNYWw1UGdnd3B4WmdZQnBVclNyQWJXRVNQTzc5QkdXMnFSMUZfa3RXcU1XOERkSk1CNXRlZDRpRVpqM2gxWjJqSnlyd0VGYUxmWHpoampTNndTQ19kYXZyeG1ISHQ2R2Nnamo0TXB3ZGUwd1hsZkdGTVhubnhrc1hfcW5MT3Z5YnMzVU9yNlVOdVRyc05OZXdFLXIwMjNzRTliMXNHdUhsUEJvNkNKeUxIUEQ2TWktcXZoVEVDc0oyLWg4UHBNMWRtNXZDaGdfMUN3WnBEYVFwdGUzakFvLTlVM1gxOFpQMjdR?oc=5",
+          "publisher": "marketbeat.com",
+          "date": "2026-10-24"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    }
+  ]
 }

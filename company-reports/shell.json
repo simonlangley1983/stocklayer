@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-24T23:34:17.818491Z",
+  "generatedAt": "2026-10-25T01:23:43.278561Z",
   "company": {
     "companyName": "Shell",
     "ticker": "SHEL.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-10-23",
-    "observationCount": 107,
-    "scoredDayCount": 59,
-    "latestScore": 48.6,
-    "latestScoreDate": "2026-10-23",
+    "periodEnd": "2026-10-24",
+    "observationCount": 108,
+    "scoredDayCount": 60,
+    "latestScore": 34.8,
+    "latestScoreDate": "2026-10-24",
     "series": [
       {
         "date": "2026-06-30",
@@ -988,6 +988,15 @@
         "sourceCount": 4,
         "confidence": 48.3,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-24",
+        "dailyScore": 34.8,
+        "rollingScore": 49.8,
+        "storyCount": 7,
+        "sourceCount": 4,
+        "confidence": 55.7,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1582,14 +1591,14 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 46.5,
+    "score": 46.2,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 53.7,
+        "score": 53.0,
         "weight": 0.4,
         "reliability": 1.0,
         "detail": "Recency-weighted average of 55 scored days in the latest 90 calendar days; 30-day half-life."
@@ -1770,6 +1779,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "883748c99ea639ea04c3",
+      "type": "financial_distress",
+      "title": "Shell’s Green Dream Goes Bust: Battery Pioneer Sonnen Files for Insolvency Just Two Months After Oil Giant Sells It",
+      "date": "2026-10-24",
+      "status": "pending_review",
+      "reviewDate": "2027-01-22",
+      "direction": "Very negative",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPQ3JZMFp4NW44Ul9QLXhxcjlMRjM0TWtzTXpVZlNXaUQxaDhyRENWSEg3RWs3d19SanFLUjBnWWxQYWd0RmU0Q3oxMDlWTExVMnJudnJ4MmlDSTNyRnlub00xRzF3TFk1dlJla2RORm1zMnkyQnRNc2lYSjc4cENmbkVsM3hHSkNPeFZ5Q0l3OXZ3RjhsVkdFRzNNYmVrNnF4Nm54anZQdVZmNGFUcFozUzBiMXlxSURweUhfRW9BSktEUzJlNjRvOHJ2c2hiY1JyWkpTc0k0dnRINW9jVjVVajVNUzJ1QkhQLVJqcQ?oc=5",
+          "publisher": "royaldutchshellplc.com",
+          "date": "2026-10-24"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "8e98c4dbeaeb95b4dd00",
       "type": "clinical",
