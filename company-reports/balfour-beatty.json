@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-25T18:35:46.204109Z",
+  "generatedAt": "2026-10-25T19:50:19.704767Z",
   "company": {
     "companyName": "Balfour Beatty PLC",
     "ticker": "BBY.L",
@@ -17,9 +17,9 @@
     "periodStart": "2026-10-21",
     "periodEnd": "2026-10-24",
     "observationCount": 4,
-    "scoredDayCount": 3,
-    "latestScore": 68.8,
-    "latestScoreDate": "2026-10-23",
+    "scoredDayCount": 4,
+    "latestScore": 49.5,
+    "latestScoreDate": "2026-10-24",
     "series": [
       {
         "date": "2026-10-21",
@@ -50,12 +50,12 @@
       },
       {
         "date": "2026-10-24",
-        "dailyScore": null,
-        "rollingScore": 54.5,
-        "storyCount": 0,
-        "sourceCount": 0,
-        "confidence": 0.0,
-        "coverageStatus": "no_coverage"
+        "dailyScore": 49.5,
+        "rollingScore": 53.9,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.3,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -118,6 +118,16 @@
         "direction": "positive",
         "detail": "Daily score increased by 13.1 points",
         "significance": 1.531
+      },
+      {
+        "date": "2026-10-24",
+        "type": "press_story",
+        "title": "Balfour Beatty plc (BBY.L) Stock Price, News, Quote & History",
+        "source": "ca.finance.yahoo.com",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9YM1lDanNOaTR5UG1ldWdOQmNGMHY1MXdyVEtBMDd0RXJ4MHdWOTNvWkdOaFdrSWVCRUw4cXlhSDl5VDFxSThrT3hjeTFzeHBOVFk0?oc=5",
+        "direction": "Neutral / mixed",
+        "detail": null,
+        "significance": 0.181
       }
     ]
   },
@@ -537,17 +547,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 55.2,
+    "score": 54.3,
     "label": "Mixed",
-    "evidenceCoverage": 66,
+    "evidenceCoverage": 68,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 60.9,
+        "score": 58.0,
         "weight": 0.4,
-        "reliability": 0.15,
-        "detail": "Recency-weighted average of 3 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.2,
+        "detail": "Recency-weighted average of 4 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -673,6 +683,16 @@
       "direction": "positive",
       "detail": "Daily score increased by 13.1 points",
       "significance": 1.531
+    },
+    {
+      "date": "2026-10-24",
+      "type": "press_story",
+      "title": "Balfour Beatty plc (BBY.L) Stock Price, News, Quote & History",
+      "source": "ca.finance.yahoo.com",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9YM1lDanNOaTR5UG1ldWdOQmNGMHY1MXdyVEtBMDd0RXJ4MHdWOTNvWkdOaFdrSWVCRUw4cXlhSDl5VDFxSThrT3hjeTFzeHBOVFk0?oc=5",
+      "direction": "Neutral / mixed",
+      "detail": null,
+      "significance": 0.181
     }
   ],
   "persistentEvents": [

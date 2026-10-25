@@ -3,7 +3,7 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-10-25T16:58:58.314204Z",
+  "generatedAt": "2026-10-25T19:50:17.128198Z",
   "asOfDate": "2026-10-24",
   "companyCount": 100,
   "companies": {
@@ -52,22 +52,22 @@
       "ticker": "ABDN.L",
       "slug": "aberdeen-group",
       "date": "2026-10-24",
-      "dailyScore": 53.2,
+      "dailyScore": 51.7,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.5,
-      "confidence": 63.1,
+      "rollingScore": 49.2,
+      "confidence": 63.3,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 42,
-      "sourceCount": 24,
-      "changeFromPreviousScoredDay": 16.9,
+      "storyCount": 37,
+      "sourceCount": 23,
+      "changeFromPreviousScoredDay": 15.4,
       "flags": [
         {
           "type": "sentiment_jump",
           "direction": "positive",
           "severity": "high",
           "status": "calculated",
-          "detail": "Daily score increased by 16.9 points"
+          "detail": "Daily score increased by 15.4 points"
         },
         {
           "type": "collection_degraded",
@@ -346,22 +346,22 @@
       "ticker": "BBY.L",
       "slug": "balfour-beatty",
       "date": "2026-10-24",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 54.5,
-      "confidence": 0.0,
+      "dailyScore": 49.5,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 53.9,
+      "confidence": 15.3,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -19.3,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "Confidence is 15.3"
         }
       ]
     },
@@ -1051,36 +1051,22 @@
       "ticker": "HSBA.L",
       "slug": "hsbc",
       "date": "2026-10-24",
-      "dailyScore": 49.7,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.7,
-      "confidence": 30.9,
+      "dailyScore": 65.5,
+      "dailyLabel": "Positive",
+      "rollingScore": 51.7,
+      "confidence": 19.7,
       "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 2,
-      "sourceCount": 2,
-      "changeFromPreviousScoredDay": 11.8,
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 27.6,
       "flags": [
-        {
-          "type": "high_disagreement",
-          "direction": "mixed",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "Positive and negative coverage is unusually dispersed"
-        },
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 30.9"
-        },
-        {
-          "type": "collection_degraded",
-          "direction": "neutral",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "The provider result ceiling was reached for this day"
+          "detail": "Confidence is 19.7"
         }
       ]
     },
