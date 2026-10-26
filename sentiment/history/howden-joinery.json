@@ -4466,35 +4466,49 @@
     },
     {
       "date": "2026-10-25",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.1,
-      "confidence": 0.0,
+      "dailyScore": 49.5,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.0,
+      "confidence": 15.2,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 0,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 1,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 0,
+      "neutralStoryCount": 1,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {},
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "bffeeba300e7831f",
+          "storyClusterId": "story-001",
+          "title": "Howden Joinery Group Plc (HWDN.L) Stock Price, News, Quote & History",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBCNEtsRzFnc3JNLWFiMWdXSWl1WUxOaW4xcV9oREpqWTVBcHdUTU9obVJaaVo1TEtDbGxRRFlHcWNmbldyeHpVZVVud0tCZGI4d3NQSw?oc=5",
+          "source": "ca.finance.yahoo.com",
+          "publishedAt": "2026-10-25T03:32:21Z",
+          "polarity": -0.0319,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.2",
+          "evidenceArticleIds": [
+            "bffeeba300e7831f"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": -2.6
     }
   ]
 }
