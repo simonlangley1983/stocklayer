@@ -8278,37 +8278,51 @@
     },
     {
       "date": "2026-10-26",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.5,
-      "confidence": 0.0,
+      "dailyScore": 50.8,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.6,
+      "confidence": 15.3,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 8,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 9,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 0,
+      "neutralStoryCount": 1,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
         "missing_company_alias": 8
       },
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "6a9693d53932e50b",
+          "storyClusterId": "story-001",
+          "title": "Could Execution Reframe the Outlook for Legal & General (LSE:LGEN) (FTSE 100)?",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPMERYMU1aeElIX2VpczNSSlIyb2F6ekFBSTdQUWRPMTk1VUR4U0xON3QxOHdvQzlNY3lFMnJEZl9tS3R3T3Q0eUxuQU5wSUxISzUwWUJHX0hLdmpDdmxQZEtxdE5GMjc2OTAzRXlrMDFYYnpfYVA1bWw3elI1VkdDTElqa2lFNHpQQ29DT1gzN09JNEIwa0w5eDBtWVh4WGFBZlBMRmtmREhoQXRQeVRiMlZ3aVI?oc=5",
+          "source": "kalkinemedia.com",
+          "publishedAt": "2026-10-26T10:39:00Z",
+          "polarity": 0.048,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.3",
+          "evidenceArticleIds": [
+            "6a9693d53932e50b"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": 7.9
     }
   ]
 }
