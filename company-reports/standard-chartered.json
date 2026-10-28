@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-28T01:54:41.445788Z",
+  "generatedAt": "2026-10-28T02:31:03.020932Z",
   "company": {
     "companyName": "Standard Chartered PLC",
     "ticker": "STAN.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-05",
-    "periodEnd": "2026-10-26",
-    "observationCount": 102,
-    "scoredDayCount": 100,
-    "latestScore": 65.4,
-    "latestScoreDate": "2026-10-26",
+    "periodEnd": "2026-10-27",
+    "observationCount": 103,
+    "scoredDayCount": 101,
+    "latestScore": 55.1,
+    "latestScoreDate": "2026-10-27",
     "series": [
       {
         "date": "2026-07-05",
@@ -943,6 +943,15 @@
         "sourceCount": 11,
         "confidence": 83.3,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-27",
+        "dailyScore": 55.1,
+        "rollingScore": 56.5,
+        "storyCount": 19,
+        "sourceCount": 14,
+        "confidence": 82.8,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1544,10 +1553,10 @@
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 57.8,
+        "score": 57.7,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 75 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 76 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1724,5 +1733,26 @@
       "significance": 1.649
     }
   ],
-  "persistentEvents": []
+  "persistentEvents": [
+    {
+      "id": "6b0b1815cda1f03b2f41",
+      "type": "acquisition",
+      "title": "Bitcoin Price Today: BTC Near $80,134 as Standard Chartered Signs Zodia Takeover Deal and Remittix Raises $33M",
+      "date": "2026-10-27",
+      "status": "pending_review",
+      "reviewDate": "2027-04-25",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNRG1vaTNPdm5OWS1Xd1AySmNINU1PY2ZrSTlIZ0ktcWFyV0RMQzdqa1pybFJEQ3NncEo1NFdwd0VQekJhMG1pc1FwZlh3V1lfbE1UVloyb3liVmlfZm1vTC1HcnNESXVFY3otM0h0OF8xQVF6RnVzU0ZFX1J3TGlQcGwxMXg1ZTRpQXJOREFvWVNuc012MXQ2Qmw2bXpqOTRTMVhBUGEyYmJwRVB2OFJBN09QT3RvUGpOWW8tMHpGZm5yWG1fN1VvUUZ6dw?oc=5",
+          "publisher": "techbullion.com",
+          "date": "2026-10-27"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    }
+  ]
 }

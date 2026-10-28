@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-28T01:54:41.445788Z",
+  "generatedAt": "2026-10-28T02:31:03.020932Z",
   "company": {
     "companyName": "BAE Systems",
     "ticker": "BA.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-14",
-    "periodEnd": "2026-10-26",
-    "observationCount": 112,
-    "scoredDayCount": 97,
-    "latestScore": 61.6,
-    "latestScoreDate": "2026-10-26",
+    "periodEnd": "2026-10-27",
+    "observationCount": 113,
+    "scoredDayCount": 98,
+    "latestScore": 72.2,
+    "latestScoreDate": "2026-10-27",
     "series": [
       {
         "date": "2026-06-14",
@@ -1033,6 +1033,15 @@
         "sourceCount": 10,
         "confidence": 81.7,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-27",
+        "dailyScore": 72.2,
+        "rollingScore": 58.7,
+        "storyCount": 12,
+        "sourceCount": 12,
+        "confidence": 87.5,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1627,17 +1636,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 52.9,
+    "score": 53.1,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 58.7,
+        "score": 59.1,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 78 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 79 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1815,6 +1824,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "3652f1e59d3ef8ada497",
+      "type": "acquisition",
+      "title": "BAE Systems acquires Colorado facility to expand space hardware production",
+      "date": "2026-10-27",
+      "status": "pending_review",
+      "reviewDate": "2027-04-25",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQQXN1NXloUWRqWVpuX3pUcXRKeEhTSUxGUVNMWW1rdllBcENFNTFpaWN1WUtrdzU1a0xIQ2tvaDJYWTZjd0djZTA0WTdBR3RtYlNpbUFZZU1xQmNBbW40blpUTWl6bVVkaFdQbDg5U1JPT2dvTUx2TFR3RGhvcWczcXR6SHJISnR1ZGFHbFhFZGRLSC1TTXRBenV1OURuM2d3TDBoT2NiNmx2UWFFN0MyUjRzQVBwYUxM?oc=5",
+          "publisher": "mjengohub.co.ke",
+          "date": "2026-10-27"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "5bacdabc0f26149d7580",
       "type": "financial_distress",

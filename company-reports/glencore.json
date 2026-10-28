@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-28T01:54:41.445788Z",
+  "generatedAt": "2026-10-28T02:31:03.020932Z",
   "company": {
     "companyName": "Glencore",
     "ticker": "GLEN.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-10-26",
-    "observationCount": 119,
-    "scoredDayCount": 100,
-    "latestScore": 51.3,
-    "latestScoreDate": "2026-10-26",
+    "periodEnd": "2026-10-27",
+    "observationCount": 120,
+    "scoredDayCount": 101,
+    "latestScore": 68.3,
+    "latestScoreDate": "2026-10-27",
     "series": [
       {
         "date": "2026-06-30",
@@ -1096,6 +1096,15 @@
         "sourceCount": 2,
         "confidence": 32.0,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-27",
+        "dailyScore": 68.3,
+        "rollingScore": 55.5,
+        "storyCount": 8,
+        "sourceCount": 7,
+        "confidence": 82.0,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1763,17 +1772,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 43.5,
+    "score": 43.7,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 54.9,
+        "score": 55.3,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 75 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 76 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1960,6 +1969,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "ac6f53c0d31f168b07cd",
+      "type": "clinical",
+      "title": "Glencore's $6.39 Billion Agua Rica Project Approved Under Argentina's RIGI",
+      "date": "2026-10-27",
+      "status": "pending_review",
+      "reviewDate": "2027-04-25",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOVnFUTXlTdnVOTUpheHBrdXhycS1PYXJJYnJ3SEhiYTF1WVl0dlhLNE1FSVNuSDM2NnN3YWYyYnBCNjBCX3NkcEdSSFBBanM5SVNOWGhOSW1LaDdHNm45dnE5MnBaYnEtUzU1eGsxUjRacEhfUHJXSDZTSjV4VUNZRmtBM2s0S3Zaa3JlSFRUckRXZ1RvN3hjR3dKTlphai1lVy1rV0c2bTlzSG5TLXFUMEw2U3pMZnY0Tm5fdkFZdHZaMWZL?oc=5",
+          "publisher": "marketscreener.com",
+          "date": "2026-10-27"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "241a2317fc504bfafa34",
       "type": "acquisition",
