@@ -7235,59 +7235,35 @@
     },
     {
       "date": "2026-10-27",
-      "dailyScore": 49.1,
-      "dailyLabel": "Neutral / mixed",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
       "rollingScore": 49.7,
-      "confidence": 14.7,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
+      "coverageStatus": "no_coverage",
       "collectionCompleteness": 0.75,
-      "candidateCount": 78,
-      "eligibleArticleCount": 1,
-      "storyCount": 1,
-      "effectiveStoryCount": 1.0,
-      "sourceCount": 1,
+      "candidateCount": 69,
+      "eligibleArticleCount": 0,
+      "storyCount": 0,
+      "effectiveStoryCount": 0,
+      "sourceCount": 0,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 1,
+      "neutralStoryCount": 0,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 75,
+        "ambiguous_company_without_alias": 67,
         "missing_company_alias": 2
       },
-      "topStories": [
-        {
-          "id": "4643b676ff651084",
-          "storyClusterId": "story-001",
-          "title": "HSBC Holdings Plc Stock 12‑Month Price Target Cut to GBX 1528.45, Implies 12% Upside",
-          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNMUhtZVh4OWphOG5WU01JUWY0WFc0SS05T0NKVlJzQU1melhpS3NkWXRxaGtCaGpSWUk1bmhYZkx4REdhUHFLOG5jNURSbG03QnFSUHQ1WThCS3ZtUzZSbFNKWXdFOUF5VWRnOG42aUFpWnREZU5BQ3hQSkY4ZEtCRFpocGJaLWVGVlJnaVg5UHhHZ2s0YUJZNWxKMTBNZzJKTS1NOXJycHJpM29HSEZGLVh3bHN6RVN1X3hBRFpmb2x2bm1XZVB2LWRPZzEyb2tPZS1Cc1B5ZDB6aFhW?oc=5",
-          "source": "tradingview.com",
-          "publishedAt": "2026-10-27T16:20:00Z",
-          "polarity": -0.0522,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ],
+      "topStories": [],
       "flags": [
         {
-          "type": "analyst_downgrade",
-          "direction": "negative",
-          "severity": "low",
-          "status": "possible",
-          "evidenceArticleIds": [
-            "4643b676ff651084"
-          ],
-          "sourceCount": 1
-        },
-        {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 14.7",
-          "evidenceArticleIds": [
-            "4643b676ff651084"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         },
         {
           "type": "collection_degraded",
@@ -7295,12 +7271,10 @@
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "4643b676ff651084"
-          ]
+          "evidenceArticleIds": []
         }
       ],
-      "changeFromPreviousScoredDay": 7.3
+      "changeFromPreviousScoredDay": null
     }
   ]
 }

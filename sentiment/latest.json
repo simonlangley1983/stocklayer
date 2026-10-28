@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-10-28T17:13:49.773645Z",
+  "generatedAt": "2026-10-28T17:15:52.921050Z",
   "asOfDate": "2026-10-27",
   "companies": {
     "airtel-africa": {
@@ -762,26 +762,23 @@
       "ticker": "BARC.L",
       "slug": "barclays",
       "date": "2026-10-27",
-      "dailyScore": 49.7,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.6,
-      "confidence": 23.8,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 49.5,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 2,
-      "sourceCount": 2,
-      "changeFromPreviousScoredDay": -0.2,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 23.8",
-          "evidenceArticleIds": [
-            "e3841aca16fde775",
-            "1ae610fb82c003e6"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         },
         {
           "type": "collection_degraded",
@@ -789,36 +786,10 @@
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "e3841aca16fde775",
-            "1ae610fb82c003e6"
-          ]
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "e3841aca16fde775",
-          "storyClusterId": "story-002",
-          "title": "Barclays PLC (BCS) Stock Price, News, Quote & History",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE02bWpoV1h1M2RwNGdzclBoSUNZYmVjbEF6WldaSEs1aUdwOUdpcGkxUnZmQWZaNVVDQk92dTc3QzUtSGZQdHdQWU5falRHOTBR?oc=5",
-          "source": "ca.finance.yahoo.com",
-          "publishedAt": "2026-10-27T16:16:24Z",
-          "polarity": -0.0331,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        },
-        {
-          "id": "1ae610fb82c003e6",
-          "storyClusterId": "story-001",
-          "title": "REG - Barclays PLC SEGRO PLC - Form 8.3 SEGRO PLC",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOUmlCQTI3bG9aYnpsRDEtWEZKMXE2VXFqMW1TdU8yZVF4N3lTeWZzYS15djJ3bTRscU9tMGxMNVhoSC1pZjhHSUdxQXNfaDRXRTBYMlJZdXV0ZmhDbVplMW9GU3htUHEtNFpzeW4zdjY3by1SRkYza0tNd3NqcnBfVk5DQlZKNENta1Nnamk2OXpVQXhRaTFYdVZqdllxdmljcXdTSTc2LXdwMUFZTlBWMnJBRl9GSGNsTmg5ZkRR?oc=5",
-          "source": "tradingview.com",
-          "publishedAt": "2026-10-27T13:30:01Z",
-          "polarity": 0.0053,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "british-american-tobacco": {
       "companyName": "British American Tobacco",
@@ -1078,28 +1049,26 @@
       "ticker": "BP.L",
       "slug": "bp",
       "date": "2026-10-27",
-      "dailyScore": 32.8,
+      "dailyScore": 34.6,
       "dailyLabel": "Negative",
-      "rollingScore": 48.3,
-      "confidence": 59.2,
+      "rollingScore": 48.9,
+      "confidence": 45.2,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 6,
-      "sourceCount": 6,
-      "changeFromPreviousScoredDay": -20.9,
+      "storyCount": 3,
+      "sourceCount": 3,
+      "changeFromPreviousScoredDay": -19.1,
       "flags": [
         {
           "type": "sentiment_drop",
           "direction": "negative",
           "severity": "high",
           "status": "calculated",
-          "detail": "Daily score decreased by 20.9 points",
+          "detail": "Daily score decreased by 19.1 points",
           "evidenceArticleIds": [
             "20978fb718d83796",
             "114db2e8d61edb34",
-            "9df3509b7b9f7227",
-            "bf3ae30e80650c9a",
-            "654d8ec8f106a658"
+            "bf3ae30e80650c9a"
           ]
         },
         {
@@ -1107,13 +1076,23 @@
           "direction": "negative",
           "severity": "medium",
           "status": "calculated",
-          "detail": "Daily press score is 32.8",
+          "detail": "Daily press score is 34.6",
           "evidenceArticleIds": [
             "20978fb718d83796",
             "114db2e8d61edb34",
-            "9df3509b7b9f7227",
-            "bf3ae30e80650c9a",
-            "654d8ec8f106a658"
+            "bf3ae30e80650c9a"
+          ]
+        },
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "20978fb718d83796",
+            "114db2e8d61edb34",
+            "bf3ae30e80650c9a"
           ]
         },
         {
@@ -1125,16 +1104,14 @@
           "evidenceArticleIds": [
             "20978fb718d83796",
             "114db2e8d61edb34",
-            "9df3509b7b9f7227",
-            "bf3ae30e80650c9a",
-            "654d8ec8f106a658"
+            "bf3ae30e80650c9a"
           ]
         }
       ],
       "topStories": [
         {
           "id": "20978fb718d83796",
-          "storyClusterId": "story-004",
+          "storyClusterId": "story-002",
           "title": "Marine life dramatically declined after BP oil spill",
           "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPSVVkSjJ4cVd2Zkk0aXZxUElNY0Y3VkEtaExoRE1nUWlDSm9yWXZCYnVnY0RfVzgyX0lkY3N2SUdjTW1xRVBqNWdjcXhIdjB4b1ZmUHdsWEFQNmNTcWZ5dlgxUUI5NGdSLTJkaGtBU3dUeW9kMURlWGp4TjZpTzI1cjJQM21XR2x5MUI1Q2x3?oc=5",
           "source": "yahoo.com",
@@ -1145,23 +1122,12 @@
         },
         {
           "id": "114db2e8d61edb34",
-          "storyClusterId": "story-005",
+          "storyClusterId": "story-003",
           "title": "BP PLC Stock (BP) Closed Down by 3.17% on Oct 27: Facts Behind the Movement",
           "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMXJVRmhZeFNBd3dIT0N5QzNRNnMyeElaTlY4SzRJVGg3ZU0xdHZPeXg5VW1rcFBIU0MtdWV2Mjgxb1VaX1p6c0Z6bDNCb3VlSEduREpUSVR1UDdwTjVydEtpN0hKVFJlVnVCOVNHYlJCdUVOdDdKYjRzTjI3YmhaRmZ6bHBnRnUy?oc=5",
           "source": "tradingkey.com",
           "publishedAt": "2026-10-27T20:15:33Z",
           "polarity": -0.9462,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "9df3509b7b9f7227",
-          "storyClusterId": "story-006",
-          "title": "FTSE 100 Falls to 10,690.36 as UK Retail Sales Slump Outweighs BP and Shell Gains on Five-Month Oil High",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOVDZYWjF1c1VSYTYwMnNPWlE1TE00MWN1UXNqcUJFT21KN1ZPN0g4TXJqSjRGd3lCRXRfZU1Db1JqOGE0RWRXenBxNUxsLTZBa0pvWGJQRHQ5SUV4M1hzZWU0M1dlb3lvLWt4RkRodXBERXo2RG5ERGRKb3Q5OVhDT2pPNXVhdnRscUxLb183SjRlTmt0M3F4MFRiTWdtWWhpRjl1cWZUTm1PZnZmWnplX3RLaTAzNlFjUWExazg0bUN5M0N6YjFCejZaX0ZQSmhBTGxNa0Z3?oc=5",
-          "source": "bbntimes.com",
-          "publishedAt": "2026-10-27T23:37:23Z",
-          "polarity": -0.9243,
           "sentiment": "Very negative",
           "publisherCount": 1
         },
@@ -1174,17 +1140,6 @@
           "publishedAt": "2026-10-27T10:46:56Z",
           "polarity": 0.3683,
           "sentiment": "Positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "654d8ec8f106a658",
-          "storyClusterId": "story-003",
-          "title": "BP Exits Bay du Nord Oil Project, Leaving Equinor as Sole Owner",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPQUJZaS1yeFMteU1TTjRLQVY1QnBZV3R0bzNkVlhwd0pfcUZLQmhpdGx6WkRsaTg5UWxSTml5akhVY2lmdDBodDNZSUVJSDNqdjNUSzVlZ1lSbklCd25jd2p1ZTFNN0M5c3llZTY2ZlJsWGhLeUZnUmdvcVdac1QzVTN5em1icXRHNE5vaTFlVVFiVlVkTE1R?oc=5",
-          "source": "energynow.ca",
-          "publishedAt": "2026-10-27T15:58:08Z",
-          "polarity": -0.3651,
-          "sentiment": "Negative",
           "publisherCount": 1
         }
       ]
@@ -2605,35 +2560,23 @@
       "ticker": "HSBA.L",
       "slug": "hsbc",
       "date": "2026-10-27",
-      "dailyScore": 49.1,
-      "dailyLabel": "Neutral / mixed",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
       "rollingScore": 49.7,
-      "confidence": 14.7,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": 7.3,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "analyst_downgrade",
-          "direction": "negative",
-          "severity": "low",
-          "status": "possible",
-          "evidenceArticleIds": [
-            "4643b676ff651084"
-          ],
-          "sourceCount": 1
-        },
-        {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 14.7",
-          "evidenceArticleIds": [
-            "4643b676ff651084"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         },
         {
           "type": "collection_degraded",
@@ -2641,24 +2584,10 @@
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "4643b676ff651084"
-          ]
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "4643b676ff651084",
-          "storyClusterId": "story-001",
-          "title": "HSBC Holdings Plc Stock 12‑Month Price Target Cut to GBX 1528.45, Implies 12% Upside",
-          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNMUhtZVh4OWphOG5WU01JUWY0WFc0SS05T0NKVlJzQU1melhpS3NkWXRxaGtCaGpSWUk1bmhYZkx4REdhUHFLOG5jNURSbG03QnFSUHQ1WThCS3ZtUzZSbFNKWXdFOUF5VWRnOG42aUFpWnREZU5BQ3hQSkY4ZEtCRFpocGJaLWVGVlJnaVg5UHhHZ2s0YUJZNWxKMTBNZzJKTS1NOXJycHJpM29HSEZGLVh3bHN6RVN1X3hBRFpmb2x2bm1XZVB2LWRPZzEyb2tPZS1Cc1B5ZDB6aFhW?oc=5",
-          "source": "tradingview.com",
-          "publishedAt": "2026-10-27T16:20:00Z",
-          "polarity": -0.0522,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "hiscox": {
       "companyName": "Hiscox Ltd",
@@ -2757,26 +2686,40 @@
       "ticker": "ICG.L",
       "slug": "intermediate-capital",
       "date": "2026-10-27",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.4,
-      "confidence": 0.0,
+      "dailyScore": 49.6,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.3,
+      "confidence": 15.2,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -0.1,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.2",
+          "evidenceArticleIds": [
+            "019da118cf943cb4"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "019da118cf943cb4",
+          "storyClusterId": "story-001",
+          "title": "Intermediate Capital Group PLC (I2X2.DU) Stock Price, News, Quote & History",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1NWDU3QUIzOC1Qb29YZ1JxeWY0WnF6QkRUbDZKZjBpQ1dIZXRTdkwxUmw0V01QSUV3LTY0WWtiaUdoekJ6RFpUZkkzT0pMSktGY2FUX25R?oc=5",
+          "source": "ca.finance.yahoo.com",
+          "publishedAt": "2026-10-27T21:16:49Z",
+          "polarity": -0.0266,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
     },
     "ig-group": {
       "companyName": "IG Group Holdings PLC",
@@ -5053,6 +4996,14 @@
           "status": "calculated",
           "detail": "Collection succeeded but found no eligible coverage",
           "evidenceArticleIds": []
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": []
         }
       ],
       "topStories": []
@@ -5417,26 +5368,40 @@
       "ticker": "SSE.L",
       "slug": "sse",
       "date": "2026-10-27",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.4,
-      "confidence": 0.0,
+      "dailyScore": 49.7,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.3,
+      "confidence": 15.2,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -0.1,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.2",
+          "evidenceArticleIds": [
+            "217b71d1baa61cde"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "217b71d1baa61cde",
+          "storyClusterId": "story-001",
+          "title": "Hengsheng Energy Co. Ltd. Class A Estimates – SSE:605580",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1sSXRtQnN6NDhrY2NtZU5sMldQeWh5Q3pxRWRmMjVHUjR4ZXotNDBnREZxUldfbFNBVmxxSDJFUGxRa2VHTG1YNXpYbDRsMDFfR3NSd0xiRENwYjZtYjZxNjdiSTZlcWNGOGNmUmpzNlo5MEdaWDYw?oc=5",
+          "source": "tradingview.com",
+          "publishedAt": "2026-10-27T17:47:11Z",
+          "polarity": -0.0205,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
     },
     "standard-chartered": {
       "companyName": "Standard Chartered PLC",

@@ -6282,61 +6282,35 @@
     },
     {
       "date": "2026-10-27",
-      "dailyScore": 49.7,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.6,
-      "confidence": 23.8,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 49.5,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
+      "coverageStatus": "no_coverage",
       "collectionCompleteness": 0.75,
-      "candidateCount": 82,
-      "eligibleArticleCount": 2,
-      "storyCount": 2,
-      "effectiveStoryCount": 2.0,
-      "sourceCount": 2,
+      "candidateCount": 59,
+      "eligibleArticleCount": 0,
+      "storyCount": 0,
+      "effectiveStoryCount": 0,
+      "sourceCount": 0,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 2,
+      "neutralStoryCount": 0,
       "negativeStoryCount": 0,
-      "dispersion": 0.0192,
+      "dispersion": 0.0,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 74,
-        "missing_company_alias": 6
+        "ambiguous_company_without_alias": 51,
+        "missing_company_alias": 8
       },
-      "topStories": [
-        {
-          "id": "e3841aca16fde775",
-          "storyClusterId": "story-002",
-          "title": "Barclays PLC (BCS) Stock Price, News, Quote & History",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE02bWpoV1h1M2RwNGdzclBoSUNZYmVjbEF6WldaSEs1aUdwOUdpcGkxUnZmQWZaNVVDQk92dTc3QzUtSGZQdHdQWU5falRHOTBR?oc=5",
-          "source": "ca.finance.yahoo.com",
-          "publishedAt": "2026-10-27T16:16:24Z",
-          "polarity": -0.0331,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        },
-        {
-          "id": "1ae610fb82c003e6",
-          "storyClusterId": "story-001",
-          "title": "REG - Barclays PLC SEGRO PLC - Form 8.3 SEGRO PLC",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOUmlCQTI3bG9aYnpsRDEtWEZKMXE2VXFqMW1TdU8yZVF4N3lTeWZzYS15djJ3bTRscU9tMGxMNVhoSC1pZjhHSUdxQXNfaDRXRTBYMlJZdXV0ZmhDbVplMW9GU3htUHEtNFpzeW4zdjY3by1SRkYza0tNd3NqcnBfVk5DQlZKNENta1Nnamk2OXpVQXhRaTFYdVZqdllxdmljcXdTSTc2LXdwMUFZTlBWMnJBRl9GSGNsTmg5ZkRR?oc=5",
-          "source": "tradingview.com",
-          "publishedAt": "2026-10-27T13:30:01Z",
-          "polarity": 0.0053,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ],
+      "topStories": [],
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 23.8",
-          "evidenceArticleIds": [
-            "e3841aca16fde775",
-            "1ae610fb82c003e6"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         },
         {
           "type": "collection_degraded",
@@ -6344,13 +6318,10 @@
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "e3841aca16fde775",
-            "1ae610fb82c003e6"
-          ]
+          "evidenceArticleIds": []
         }
       ],
-      "changeFromPreviousScoredDay": -0.2
+      "changeFromPreviousScoredDay": null
     }
   ]
 }
