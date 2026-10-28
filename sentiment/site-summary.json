@@ -3,7 +3,7 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-10-28T17:13:49.773645Z",
+  "generatedAt": "2026-10-28T17:15:52.921050Z",
   "asOfDate": "2026-10-27",
   "companyCount": 100,
   "companies": {
@@ -294,22 +294,22 @@
       "ticker": "BARC.L",
       "slug": "barclays",
       "date": "2026-10-27",
-      "dailyScore": 49.7,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.6,
-      "confidence": 23.8,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 49.5,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 2,
-      "sourceCount": 2,
-      "changeFromPreviousScoredDay": -0.2,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 23.8"
+          "detail": "Collection succeeded but found no eligible coverage"
         },
         {
           "type": "collection_degraded",
@@ -453,29 +453,36 @@
       "ticker": "BP.L",
       "slug": "bp",
       "date": "2026-10-27",
-      "dailyScore": 32.8,
+      "dailyScore": 34.6,
       "dailyLabel": "Negative",
-      "rollingScore": 48.3,
-      "confidence": 59.2,
+      "rollingScore": 48.9,
+      "confidence": 45.2,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 6,
-      "sourceCount": 6,
-      "changeFromPreviousScoredDay": -20.9,
+      "storyCount": 3,
+      "sourceCount": 3,
+      "changeFromPreviousScoredDay": -19.1,
       "flags": [
         {
           "type": "sentiment_drop",
           "direction": "negative",
           "severity": "high",
           "status": "calculated",
-          "detail": "Daily score decreased by 20.9 points"
+          "detail": "Daily score decreased by 19.1 points"
         },
         {
           "type": "bad_press",
           "direction": "negative",
           "severity": "medium",
           "status": "calculated",
-          "detail": "Daily press score is 32.8"
+          "detail": "Daily press score is 34.6"
+        },
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed"
         },
         {
           "type": "collection_degraded",
@@ -1020,28 +1027,22 @@
       "ticker": "HSBA.L",
       "slug": "hsbc",
       "date": "2026-10-27",
-      "dailyScore": 49.1,
-      "dailyLabel": "Neutral / mixed",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
       "rollingScore": 49.7,
-      "confidence": 14.7,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": 7.3,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "analyst_downgrade",
-          "direction": "negative",
-          "severity": "low",
-          "status": "possible"
-        },
-        {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 14.7"
+          "detail": "Collection succeeded but found no eligible coverage"
         },
         {
           "type": "collection_degraded",
@@ -1129,22 +1130,22 @@
       "ticker": "ICG.L",
       "slug": "intermediate-capital",
       "date": "2026-10-27",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.4,
-      "confidence": 0.0,
+      "dailyScore": 49.6,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.3,
+      "confidence": 15.2,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -0.1,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "Confidence is 15.2"
         }
       ]
     },
@@ -1994,6 +1995,13 @@
           "severity": "low",
           "status": "calculated",
           "detail": "Collection succeeded but found no eligible coverage"
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day"
         }
       ]
     },
@@ -2138,22 +2146,22 @@
       "ticker": "SSE.L",
       "slug": "sse",
       "date": "2026-10-27",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.4,
-      "confidence": 0.0,
+      "dailyScore": 49.7,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.3,
+      "confidence": 15.2,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -0.1,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "Confidence is 15.2"
         }
       ]
     },
