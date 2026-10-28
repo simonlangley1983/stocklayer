@@ -5620,33 +5620,44 @@
     },
     {
       "date": "2026-10-27",
-      "dailyScore": 34.6,
+      "dailyScore": 29.2,
       "dailyLabel": "Negative",
-      "rollingScore": 48.9,
-      "confidence": 45.2,
+      "rollingScore": 47.9,
+      "confidence": 53.2,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
       "collectionCompleteness": 0.75,
-      "candidateCount": 34,
-      "eligibleArticleCount": 3,
-      "storyCount": 3,
-      "effectiveStoryCount": 3.0,
-      "sourceCount": 3,
+      "candidateCount": 40,
+      "eligibleArticleCount": 4,
+      "storyCount": 4,
+      "effectiveStoryCount": 4.0,
+      "sourceCount": 4,
       "positiveStoryCount": 1,
       "neutralStoryCount": 0,
-      "negativeStoryCount": 2,
-      "dispersion": 0.6225,
+      "negativeStoryCount": 3,
+      "dispersion": 0.5731,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 24,
-        "missing_company_alias": 7
+        "ambiguous_company_without_alias": 28,
+        "missing_company_alias": 8
       },
       "topStories": [
         {
-          "id": "20978fb718d83796",
+          "id": "70dd2b968bb6ffb0",
+          "storyClusterId": "story-004",
+          "title": "BP PLC (BP) Shares Fall 3.2% -- What GF Score of 66 Tells Invest",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOTlhkWkwxdm9IWUFDN1l4M1NCQ3B0QWNPNGpuSldpa2tVanc3dVhhZUFmVDJVYTdaZHotWjhETHFaeXBIQmI2UEdrb0hlcmNjczR6bTNwVmtCX2JCZzhlR0UyY1FaYXM4SUo2X3JHeXh1QVNheVZUdVZucEtBSkVhUVNFSkdOaUpfdlhlb2NLTGVpaUU1RmtHNVJaWUNzdTRK?oc=5",
+          "source": "gurufocus.com",
+          "publishedAt": "2026-10-27T21:36:16Z",
+          "polarity": -0.9608,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "0b2cf5b212144f6a",
           "storyClusterId": "story-002",
           "title": "Marine life dramatically declined after BP oil spill",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPSVVkSjJ4cVd2Zkk0aXZxUElNY0Y3VkEtaExoRE1nUWlDSm9yWXZCYnVnY0RfVzgyX0lkY3N2SUdjTW1xRVBqNWdjcXhIdjB4b1ZmUHdsWEFQNmNTcWZ5dlgxUUI5NGdSLTJkaGtBU3dUeW9kMURlWGp4TjZpTzI1cjJQM21XR2x5MUI1Q2x3?oc=5",
-          "source": "yahoo.com",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE4xUTVaajVaQUI1SEVucEQ0SEdvWkF1ZUZHcTdoTERsYWVncmN3akZrZzF2aXZLd011b1ByOE11cUl2U3RFVnpjVDNYVjZVay1iMElDamVxR1A5WFBTeEtSNTlR0gFnQVVfeXFMT0I2MGFqc095d3F5NkdqLVZjZWhMV0RMQVQwcVduUlMtYmU0czVyWTN2cDdJQkFoakdnc19XaVdEbllldVE5ejBWUlFiV1dvVEVuR1ZCOWE3MzExM0IwMC1wTGZlYmxGYw?oc=5",
+          "source": "fox13news.com",
           "publishedAt": "2026-10-27T16:19:14Z",
           "polarity": -0.9582,
           "sentiment": "Very negative",
@@ -5681,9 +5692,10 @@
           "direction": "negative",
           "severity": "high",
           "status": "calculated",
-          "detail": "Daily score decreased by 19.1 points",
+          "detail": "Daily score decreased by 24.5 points",
           "evidenceArticleIds": [
-            "20978fb718d83796",
+            "70dd2b968bb6ffb0",
+            "0b2cf5b212144f6a",
             "114db2e8d61edb34",
             "bf3ae30e80650c9a"
           ]
@@ -5693,9 +5705,10 @@
           "direction": "negative",
           "severity": "medium",
           "status": "calculated",
-          "detail": "Daily press score is 34.6",
+          "detail": "Daily press score is 29.2",
           "evidenceArticleIds": [
-            "20978fb718d83796",
+            "70dd2b968bb6ffb0",
+            "0b2cf5b212144f6a",
             "114db2e8d61edb34",
             "bf3ae30e80650c9a"
           ]
@@ -5707,7 +5720,8 @@
           "status": "calculated",
           "detail": "Positive and negative coverage is unusually dispersed",
           "evidenceArticleIds": [
-            "20978fb718d83796",
+            "70dd2b968bb6ffb0",
+            "0b2cf5b212144f6a",
             "114db2e8d61edb34",
             "bf3ae30e80650c9a"
           ]
@@ -5719,13 +5733,14 @@
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
-            "20978fb718d83796",
+            "70dd2b968bb6ffb0",
+            "0b2cf5b212144f6a",
             "114db2e8d61edb34",
             "bf3ae30e80650c9a"
           ]
         }
       ],
-      "changeFromPreviousScoredDay": -19.1
+      "changeFromPreviousScoredDay": -24.5
     }
   ]
 }
