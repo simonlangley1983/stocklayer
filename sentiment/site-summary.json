@@ -3,7 +3,7 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-10-28T17:15:52.921050Z",
+  "generatedAt": "2026-10-28T21:48:42.097443Z",
   "asOfDate": "2026-10-27",
   "companyCount": 100,
   "companies": {
@@ -294,22 +294,22 @@
       "ticker": "BARC.L",
       "slug": "barclays",
       "date": "2026-10-27",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 49.5,
-      "confidence": 0.0,
+      "dailyScore": 50.3,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.6,
+      "confidence": 11.3,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 0.4,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "Confidence is 11.3"
         },
         {
           "type": "collection_degraded",
@@ -453,29 +453,29 @@
       "ticker": "BP.L",
       "slug": "bp",
       "date": "2026-10-27",
-      "dailyScore": 34.6,
+      "dailyScore": 29.2,
       "dailyLabel": "Negative",
-      "rollingScore": 48.9,
-      "confidence": 45.2,
+      "rollingScore": 47.9,
+      "confidence": 53.2,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 3,
-      "sourceCount": 3,
-      "changeFromPreviousScoredDay": -19.1,
+      "storyCount": 4,
+      "sourceCount": 4,
+      "changeFromPreviousScoredDay": -24.5,
       "flags": [
         {
           "type": "sentiment_drop",
           "direction": "negative",
           "severity": "high",
           "status": "calculated",
-          "detail": "Daily score decreased by 19.1 points"
+          "detail": "Daily score decreased by 24.5 points"
         },
         {
           "type": "bad_press",
           "direction": "negative",
           "severity": "medium",
           "status": "calculated",
-          "detail": "Daily press score is 34.6"
+          "detail": "Daily press score is 29.2"
         },
         {
           "type": "high_disagreement",
