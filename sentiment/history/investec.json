@@ -4727,37 +4727,51 @@
     },
     {
       "date": "2026-10-28",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 52.5,
-      "confidence": 0.0,
+      "dailyScore": 53.4,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 52.6,
+      "confidence": 16.0,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 12,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
-      "positiveStoryCount": 0,
+      "candidateCount": 4,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 1,
       "neutralStoryCount": 0,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
-        "missing_company_alias": 12
+        "missing_company_alias": 3
       },
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "1b9f681b8e5f4f61",
+          "storyClusterId": "story-001",
+          "title": "Investec : New energy trader EPIX enters market following Investec licence transfer",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQY2UyRFRMQW40bEh4U2hfY3UySUZZdnlxTUNyaVVCVjNiTWxxR3F0VEUwa1NNT0h1cnh1WUpfUDNLZmExd1I3cEkwRzlHWElHTzRmZ0xCaW11Tk1oUVladVBEWWhHVEY2eVBMTzE4WnpiV1RXM1ZxampHQjd3SHVGaUVFUVNycnJwV0NTRlYwUW1xVVdBYTRJNmVzSm1TMVQzd3BXS043WkdPQkp6VjhxZ0pJdXJzTkVka0xWaElVM0hJUXZVT2o3NWF0SUItczg?oc=5",
+          "source": "marketscreener.com",
+          "publishedAt": "2026-10-28T08:22:14Z",
+          "polarity": 0.201,
+          "sentiment": "Positive",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 16.0",
+          "evidenceArticleIds": [
+            "1b9f681b8e5f4f61"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": 2.3
     }
   ]
 }
