@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-10-29T06:23:07.501023Z",
+  "generatedAt": "2026-10-29T11:39:52.767700Z",
   "asOfDate": "2026-10-28",
   "companies": {
     "airtel-africa": {
@@ -207,26 +207,40 @@
       "ticker": "ABF.L",
       "slug": "associated-british-foods",
       "date": "2026-10-28",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 48.8,
-      "confidence": 0.0,
+      "dailyScore": 40.3,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 47.8,
+      "confidence": 19.7,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 5.1,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 19.7",
+          "evidenceArticleIds": [
+            "f8c8721717bfce3e"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "f8c8721717bfce3e",
+          "storyClusterId": "story-001",
+          "title": "Associated British Foods slips Wednesday, underperforms market",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNcEUzTGJGREhRU1pPY0szRGRiSE1scndCblYzcW1RRlFyVms2b0dXa0JzRXBPaXdYdW9UcEJjdWtzZnNaamRJdzVSQUhMSFQ2R25NbnJHUzNhX091VDFMckNicmYtclJ5Q3dMRFdQaXhSSE1JX3h6UGszRFFyUUpuOUdWZDdUa2pFVTZhbXBYZEhfbTRNcnNXa0l0MmN3ZUdoZk0xNzZvdUdpeVA5M0xTMXBWcm56ZkItRVlCZUo1WDI4cUU2cHIxS1QzeTNXanUxSks5NTR3?oc=5",
+          "source": "marketwatch.com",
+          "publishedAt": "2026-10-28T17:07:00Z",
+          "polarity": -0.5811,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        }
+      ]
     },
     "admiral": {
       "companyName": "Admiral Group PLC",
@@ -2142,15 +2156,15 @@
       "ticker": "GSK.L",
       "slug": "gsk",
       "date": "2026-10-28",
-      "dailyScore": 41.9,
+      "dailyScore": 40.8,
       "dailyLabel": "Slightly negative",
-      "rollingScore": 56.2,
-      "confidence": 70.8,
+      "rollingScore": 56.0,
+      "confidence": 70.7,
       "confidenceBand": "high",
       "coverageStatus": "ok",
-      "storyCount": 88,
-      "sourceCount": 54,
-      "changeFromPreviousScoredDay": -26.7,
+      "storyCount": 80,
+      "sourceCount": 49,
+      "changeFromPreviousScoredDay": -27.8,
       "flags": [
         {
           "type": "trading_update",
@@ -2168,8 +2182,8 @@
           "severity": "medium",
           "status": "confirmed",
           "evidenceArticleIds": [
-            "727b976cdb95b373",
-            "bfe65969ceb625f1"
+            "bfe65969ceb625f1",
+            "727b976cdb95b373"
           ],
           "sourceCount": 2
         },
@@ -2179,22 +2193,21 @@
           "severity": "medium",
           "status": "confirmed",
           "evidenceArticleIds": [
-            "24f8fd3c7457c645",
+            "3118e43b77dc581f",
             "68f8dfdf08e77f30",
             "d1e255b40a1ef761",
             "69ccdda455e92fd8",
             "009f51a0e9a734fc",
-            "5b640d939b833c85",
-            "34c23f00fa650664"
+            "5b640d939b833c85"
           ],
-          "sourceCount": 7
+          "sourceCount": 6
         },
         {
           "type": "sentiment_drop",
           "direction": "negative",
           "severity": "high",
           "status": "calculated",
-          "detail": "Daily score decreased by 26.7 points",
+          "detail": "Daily score decreased by 27.8 points",
           "evidenceArticleIds": [
             "51d0e80fa582c214",
             "5b640d939b833c85",
@@ -2208,7 +2221,7 @@
           "direction": "neutral",
           "severity": "medium",
           "status": "calculated",
-          "detail": "88 stories versus trailing median 19.5",
+          "detail": "80 stories versus trailing median 19.5",
           "evidenceArticleIds": [
             "51d0e80fa582c214",
             "5b640d939b833c85",
@@ -2249,7 +2262,7 @@
       "topStories": [
         {
           "id": "51d0e80fa582c214",
-          "storyClusterId": "story-039",
+          "storyClusterId": "story-035",
           "title": "GSK shares slump as vaccine sales decline despite £8.9bn third-quarter revenue",
           "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNT0lwdlZWWDhueklvV3c4RXhkOE03WnFXQTdBSXNjeFFwT3Z2X3dQRUhTbjVMNTZ3ak5odkZkbHlZOVlEb2R1ajROd21adWppbE4zYTF2amZHN19NWnhGMHpvZDVYSVdPREt0RmJjWVNWektHSFpnRWstbFpHdG93RnNB?oc=5",
           "source": "aol.co.uk",
@@ -2260,7 +2273,7 @@
         },
         {
           "id": "5b640d939b833c85",
-          "storyClusterId": "story-010",
+          "storyClusterId": "story-009",
           "title": "GSK's Q3 Attributable Profit Falls; Turnover Grows",
           "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNMU8xNWhmTl8xUDJKeE1IeUVBbWd3b2Y3MjRGVk94WjhvTl9ldllKNy02UHJtQnlRY3VTX0JjN0l3eXFJQWd3UFUxMVdSaGt6enFYRWV1bmx0cDhFbEFKcjUyZURkWUhHcHFQWjljTEhad2E1dGZvdXdVTFo4Smk1SFVXRHlaeDI2Ny1HZVViRFVHbGx4X0h2QkZmOEMtS2ZvRFkzMw?oc=5",
           "source": "marketscreener.com",
@@ -2271,7 +2284,7 @@
         },
         {
           "id": "d1e255b40a1ef761",
-          "storyClusterId": "story-058",
+          "storyClusterId": "story-052",
           "title": "GSK vaccine sales miss expectations amid falling demand from adults",
           "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNODRFU1BWSHJkVVVacy1nWkZ3Z1NNX2ZGbG4waUF4YlpvN0FOdXJ2bGFnZUhfMVc5V3I4YjhsTklFaEtsLW42c0t1T2Fnc1NZWXZHYlRka2N2dXhDNTd0VjhQS25BaXU4WTdDZFAzTTNEOWFpRVFsN2RJQ0o0R1o3clBKRU0yMzY5Ui16UnpMQU1zUnBJZ2tBblVYOTRUTHEwOWNr?oc=5",
           "source": "biospace.com",
@@ -2282,7 +2295,7 @@
         },
         {
           "id": "791d9d6a165f9096",
-          "storyClusterId": "story-054",
+          "storyClusterId": "story-049",
           "title": "GSK shares fall 5.5% despite revenue growth — The Guardian",
           "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxObmdWNlRCdTJEdGRmT1NpTVZCX2R0dGdkRHJwUkpOTW1xUXV3ejB2eENWVldQUVA0N1hCdTQ3TE5lNFpOQzF1dExQbUJXNkxCbldJUjAwODN1YjduY1VwTGZSQ0dVYm0wNEF4QnZGZW9lZXRTQjlscHp5ck9aZnM4S2FuTm1NalJJcHEtS3E1OHZ0ckpnM2pCWnVxSE4?oc=5",
           "source": "ua.news",
@@ -2293,7 +2306,7 @@
         },
         {
           "id": "e42c10a373677127",
-          "storyClusterId": "story-052",
+          "storyClusterId": "story-046",
           "title": "GSK Earnings: GSK Slumps After Quarterly Report Shows Vaccine Sales Falling",
           "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPTW10MHF0cFFfTzFoVjNIcVhRLWpySUQ0RTR4UmdVcFBDUmJzZjIzMXRveThBLTR0WXMxM1ZJS3M2QUVtUDU3eDBpQ0RQMmdlOUdTR01zNmhYbUVYU0VpcXhiUzZyNTVaUGctY3o1eU94RUdsYVhZVWc4MEtHTFpNMl9oWG83ejZiZkUxdl9Ga2FRSFJuU0dnT2pzU3N0NF9CXzNUYzZkd1c?oc=5",
           "source": "bloomberg.com",
@@ -3597,26 +3610,40 @@
       "ticker": "MRO.L",
       "slug": "melrose-industries",
       "date": "2026-10-28",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 51.0,
-      "confidence": 0.0,
+      "dailyScore": 49.9,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.9,
+      "confidence": 15.2,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -15.1,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.2",
+          "evidenceArticleIds": [
+            "5dd7d52f216b5d49"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "5dd7d52f216b5d49",
+          "storyClusterId": "story-001",
+          "title": "Melrose Industries PLC (27M.HA) Valuation Measures & Financial Statistics",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5LZjR1b0VBdVVacnlnZDdjVngtRTVVQzlZMkdVSVpNWmpQSS1RWmx2blVrYTR0Y05uczQ1VTlNaFEyOHRVZlBNUnNvZzJpMk5TcU9fWHFQX1Y0eTF1WEg1NUkxZkNzcmJP?oc=5",
+          "source": "ca.finance.yahoo.com",
+          "publishedAt": "2026-10-28T21:17:09Z",
+          "polarity": -0.0055,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
     },
     "metlen-energy-metals": {
       "companyName": "Metlen Energy & Metals PLC",
@@ -3824,25 +3851,23 @@
       "ticker": "NXT.L",
       "slug": "next",
       "date": "2026-10-28",
-      "dailyScore": 65.3,
-      "dailyLabel": "Positive",
-      "rollingScore": 52.2,
-      "confidence": 14.7,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 50.5,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": 13.5,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 14.7",
-          "evidenceArticleIds": [
-            "1385dbd715e48060"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         },
         {
           "type": "collection_degraded",
@@ -3850,24 +3875,10 @@
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "1385dbd715e48060"
-          ]
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "1385dbd715e48060",
-          "storyClusterId": "story-001",
-          "title": "France: Greenvolt Next signs an agreement with Carrefour Property to deploy solar carports across up to 120 retail stores in France",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQTE1pbmt4aGpKMl9MLWZBVUwtRW5RTU5FdHllb2x2eFVvaDU5N0xWYVhFTi0wYjduZHVFaVktbXNwVmJEWV9ocGlPMUZYX29ZNTdwMDhNVkQ0NE4wNGFKWFVvOUI2R0N6TXQ0Z1VJZmtTX3Y0aTVDU3FpNnF1MWFmMl9xakkyVUNaeHBVbUhVZmQtNXU2bGZ5UW95Z1NQb1I0c0hWZG5BUWw?oc=5",
-          "source": "energy-pedia.com",
-          "publishedAt": "2026-10-28T22:16:21Z",
-          "polarity": 0.9159,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "polar-capital-technology-trust": {
       "companyName": "Polar Capital Technology Trust PLC",
@@ -5670,26 +5681,40 @@
       "ticker": "WTB.L",
       "slug": "whitbread",
       "date": "2026-10-28",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 51.1,
-      "confidence": 0.0,
+      "dailyScore": 48.8,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.8,
+      "confidence": 16.1,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -7.4,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 16.1",
+          "evidenceArticleIds": [
+            "1d12dc8c7c545c1c"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "1d12dc8c7c545c1c",
+          "storyClusterId": "story-001",
+          "title": "Whitbread Gets A Break On UK Business Rates",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5OdmRsWlJCSGlOeFkxa0ZlWTE3QVljbVYyWWY5am1NRDEzdWZfQ1JVeWlXWERRcWdObjdLUk82aVhzVmJ3M0EzMzN5OGZiSGhUeUdrcmdqT0gxSlp5TTNxUk9EWjNQTHlDVkVNdnZlVFNuaGliZWhlQ0w0ZEI?oc=5",
+          "source": "finimize.com",
+          "publishedAt": "2026-10-28T23:54:59Z",
+          "polarity": -0.069,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
     }
   }
 }

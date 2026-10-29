@@ -4099,49 +4099,34 @@
     },
     {
       "date": "2026-10-28",
-      "dailyScore": 65.3,
-      "dailyLabel": "Positive",
-      "rollingScore": 52.2,
-      "confidence": 14.7,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 50.5,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
+      "coverageStatus": "no_coverage",
       "collectionCompleteness": 0.75,
-      "candidateCount": 92,
-      "eligibleArticleCount": 1,
-      "storyCount": 1,
-      "effectiveStoryCount": 1.0,
-      "sourceCount": 1,
-      "positiveStoryCount": 1,
+      "candidateCount": 11,
+      "eligibleArticleCount": 0,
+      "storyCount": 0,
+      "effectiveStoryCount": 0,
+      "sourceCount": 0,
+      "positiveStoryCount": 0,
       "neutralStoryCount": 0,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 79,
-        "missing_company_alias": 12
+        "ambiguous_company_without_alias": 11
       },
-      "topStories": [
-        {
-          "id": "1385dbd715e48060",
-          "storyClusterId": "story-001",
-          "title": "France: Greenvolt Next signs an agreement with Carrefour Property to deploy solar carports across up to 120 retail stores in France",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQTE1pbmt4aGpKMl9MLWZBVUwtRW5RTU5FdHllb2x2eFVvaDU5N0xWYVhFTi0wYjduZHVFaVktbXNwVmJEWV9ocGlPMUZYX29ZNTdwMDhNVkQ0NE4wNGFKWFVvOUI2R0N6TXQ0Z1VJZmtTX3Y0aTVDU3FpNnF1MWFmMl9xakkyVUNaeHBVbUhVZmQtNXU2bGZ5UW95Z1NQb1I0c0hWZG5BUWw?oc=5",
-          "source": "energy-pedia.com",
-          "publishedAt": "2026-10-28T22:16:21Z",
-          "polarity": 0.9159,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        }
-      ],
+      "topStories": [],
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 14.7",
-          "evidenceArticleIds": [
-            "1385dbd715e48060"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         },
         {
           "type": "collection_degraded",
@@ -4149,12 +4134,10 @@
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "1385dbd715e48060"
-          ]
+          "evidenceArticleIds": []
         }
       ],
-      "changeFromPreviousScoredDay": 13.5
+      "changeFromPreviousScoredDay": null
     }
   ]
 }

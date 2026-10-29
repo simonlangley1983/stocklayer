@@ -3630,35 +3630,49 @@
     },
     {
       "date": "2026-10-28",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 51.0,
-      "confidence": 0.0,
+      "dailyScore": 49.9,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.9,
+      "confidence": 15.2,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 0,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 1,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 0,
+      "neutralStoryCount": 1,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {},
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "5dd7d52f216b5d49",
+          "storyClusterId": "story-001",
+          "title": "Melrose Industries PLC (27M.HA) Valuation Measures & Financial Statistics",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5LZjR1b0VBdVVacnlnZDdjVngtRTVVQzlZMkdVSVpNWmpQSS1RWmx2blVrYTR0Y05uczQ1VTlNaFEyOHRVZlBNUnNvZzJpMk5TcU9fWHFQX1Y0eTF1WEg1NUkxZkNzcmJP?oc=5",
+          "source": "ca.finance.yahoo.com",
+          "publishedAt": "2026-10-28T21:17:09Z",
+          "polarity": -0.0055,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.2",
+          "evidenceArticleIds": [
+            "5dd7d52f216b5d49"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": -15.1
     }
   ]
 }
