@@ -4096,6 +4096,65 @@
         }
       ],
       "changeFromPreviousScoredDay": null
+    },
+    {
+      "date": "2026-10-28",
+      "dailyScore": 65.3,
+      "dailyLabel": "Positive",
+      "rollingScore": 52.2,
+      "confidence": 14.7,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 92,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 79,
+        "missing_company_alias": 12
+      },
+      "topStories": [
+        {
+          "id": "1385dbd715e48060",
+          "storyClusterId": "story-001",
+          "title": "France: Greenvolt Next signs an agreement with Carrefour Property to deploy solar carports across up to 120 retail stores in France",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQTE1pbmt4aGpKMl9MLWZBVUwtRW5RTU5FdHllb2x2eFVvaDU5N0xWYVhFTi0wYjduZHVFaVktbXNwVmJEWV9ocGlPMUZYX29ZNTdwMDhNVkQ0NE4wNGFKWFVvOUI2R0N6TXQ0Z1VJZmtTX3Y0aTVDU3FpNnF1MWFmMl9xakkyVUNaeHBVbUhVZmQtNXU2bGZ5UW95Z1NQb1I0c0hWZG5BUWw?oc=5",
+          "source": "energy-pedia.com",
+          "publishedAt": "2026-10-28T22:16:21Z",
+          "polarity": 0.9159,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 14.7",
+          "evidenceArticleIds": [
+            "1385dbd715e48060"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "1385dbd715e48060"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 13.5
     }
   ]
 }
