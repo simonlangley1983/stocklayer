@@ -3,7 +3,7 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-10-30T19:55:44.561930Z",
+  "generatedAt": "2026-10-30T21:39:05.569624Z",
   "asOfDate": "2026-10-29",
   "companyCount": 100,
   "companies": {
@@ -319,15 +319,15 @@
       "ticker": "BATS.L",
       "slug": "british-american-tobacco",
       "date": "2026-10-29",
-      "dailyScore": 43.5,
+      "dailyScore": 42.9,
       "dailyLabel": "Slightly negative",
-      "rollingScore": 47.8,
-      "confidence": 61.6,
+      "rollingScore": 47.7,
+      "confidence": 62.2,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 43,
-      "sourceCount": 54,
-      "changeFromPreviousScoredDay": -4.0,
+      "storyCount": 39,
+      "sourceCount": 42,
+      "changeFromPreviousScoredDay": -4.6,
       "flags": [
         {
           "type": "earnings_miss",
@@ -483,22 +483,22 @@
       "ticker": "BP.L",
       "slug": "bp",
       "date": "2026-10-29",
-      "dailyScore": 55.3,
-      "dailyLabel": "Slightly positive",
-      "rollingScore": 48.3,
-      "confidence": 12.7,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 47.4,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": 12.6,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 12.7"
+          "detail": "Collection succeeded but found no eligible coverage"
         },
         {
           "type": "collection_degraded",
@@ -2058,29 +2058,29 @@
       "ticker": "SHEL.L",
       "slug": "shell",
       "date": "2026-10-29",
-      "dailyScore": 67.9,
+      "dailyScore": 65.6,
       "dailyLabel": "Positive",
-      "rollingScore": 54.5,
-      "confidence": 69.0,
+      "rollingScore": 54.1,
+      "confidence": 69.9,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
       "storyCount": 16,
-      "sourceCount": 17,
-      "changeFromPreviousScoredDay": 21.1,
+      "sourceCount": 18,
+      "changeFromPreviousScoredDay": 18.8,
       "flags": [
         {
           "type": "sentiment_jump",
           "direction": "positive",
           "severity": "high",
           "status": "calculated",
-          "detail": "Daily score increased by 21.1 points"
+          "detail": "Daily score increased by 18.8 points"
         },
         {
           "type": "good_press",
           "direction": "positive",
           "severity": "medium",
           "status": "calculated",
-          "detail": "Daily press score is 67.9"
+          "detail": "Daily press score is 65.6"
         },
         {
           "type": "coverage_spike",
@@ -2088,6 +2088,13 @@
           "severity": "medium",
           "status": "calculated",
           "detail": "16 stories versus trailing median 5"
+        },
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed"
         },
         {
           "type": "collection_degraded",
