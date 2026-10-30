@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-10-30T06:23:53.380837Z",
+  "generatedAt": "2026-10-30T11:30:57.065564Z",
   "asOfDate": "2026-10-29",
   "companies": {
     "airtel-africa": {
@@ -738,26 +738,40 @@
       "ticker": "BAB.L",
       "slug": "babcock-international",
       "date": "2026-10-29",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.5,
-      "confidence": 0.0,
+      "dailyScore": 54.1,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.9,
+      "confidence": 16.5,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 3.8,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 16.5",
+          "evidenceArticleIds": [
+            "e82da5faefb4a6af"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "e82da5faefb4a6af",
+          "storyClusterId": "story-001",
+          "title": "Is Babcock International (LSE:BAB) Riding More Than Hope After Its Defence Rally Before The Budget?",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPZGI4TTNiNzNacjhFVlN1Q2dBR2pBLVN4aGs0dDBJdWJzZEZJTG9MZU5QMEdDeV8zNFpmOXBmYkdoQzNIbUFrXzlrMnNPNDlLbjlMM0l3U0xCa0REOTlkTXRfckxFSld6ZU9fSFRiMWMtY2RKVG12b3o0ajU1aURocmtSTVJHRDRtUTJJbEtkWjJyT1pXNkdHWWVOSnFjYXlpM2VYZjFOYTR6QTlMX2tWSm5rRzFoR005dVcxTWZTRWtmbk5TOHF6SVNoeFhIWHp1azlVX21R?oc=5",
+          "source": "kalkinemedia.com",
+          "publishedAt": "2026-10-29T14:10:00Z",
+          "polarity": 0.2445,
+          "sentiment": "Positive",
+          "publisherCount": 1
+        }
+      ]
     },
     "barclays": {
       "companyName": "Barclays",
@@ -852,15 +866,15 @@
       "ticker": "BATS.L",
       "slug": "british-american-tobacco",
       "date": "2026-10-29",
-      "dailyScore": 42.8,
+      "dailyScore": 43.2,
       "dailyLabel": "Slightly negative",
       "rollingScore": 47.7,
-      "confidence": 62.3,
+      "confidence": 61.4,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 68,
-      "sourceCount": 76,
-      "changeFromPreviousScoredDay": -4.7,
+      "storyCount": 43,
+      "sourceCount": 61,
+      "changeFromPreviousScoredDay": -4.3,
       "flags": [
         {
           "type": "earnings_miss",
@@ -868,12 +882,10 @@
           "severity": "medium",
           "status": "confirmed",
           "evidenceArticleIds": [
-            "bae29052b0d5ddbb",
-            "6be5c5c16b65f20f",
             "2fa64307932b4dfd",
-            "195f6768c04152b4"
+            "bae29052b0d5ddbb"
           ],
-          "sourceCount": 4
+          "sourceCount": 2
         },
         {
           "type": "collection_degraded",
@@ -882,29 +894,18 @@
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
-            "195f6768c04152b4",
             "2fa64307932b4dfd",
             "bae29052b0d5ddbb",
-            "6be5c5c16b65f20f",
-            "891e29f7a08cc5ba"
+            "891e29f7a08cc5ba",
+            "f70cdc005d347e05",
+            "ee3bfadd559c650f"
           ]
         }
       ],
       "topStories": [
         {
-          "id": "195f6768c04152b4",
-          "storyClusterId": "story-014",
-          "title": "BAT Malaysia's 3Q Net Profit Plunges 67% To RM2.3 Million, Nine Month Loss Reached RM22 Million",
-          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZ1M5cW10bFZyUDRIWTNyNnkxOVdTOE1YOTlRSlNja0haZHBHLVVuY1pKaGxVN3o1YWFnYzRrU0d0bGJsc1JFQWgxd3NCODNyT3ZEY0hpcXJaeXRiLTR6cFlHQjAxZHhvamNQZkhXT3paQzF6QkYzRUlZTUp6NnBSOFhheHN0SVdnOXZGNU90bWktTkRadlhSXy0tNTZueTNzSFp0VW5ibGNLOF9mell0MVV4TjNkWFRMaEJWZ1FtLUdvY0J3LWZWXzhFazB1aGROWlJN?oc=5",
-          "source": "businesstoday.com.my",
-          "publishedAt": "2026-10-29T13:31:28Z",
-          "polarity": -0.9636,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
           "id": "2fa64307932b4dfd",
-          "storyClusterId": "story-004",
+          "storyClusterId": "story-003",
           "title": "BAT Malaysia 3Q net profit falls 67% as restructuring costs bite",
           "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9Eelp4SnlGTnFCTjc5eERQYVQ2V0pzeDFZak9aLUVEUTN0cEw3emM0Z1V2aHZyZlpmQkhjU3FZU1p5c05rbFliZ3VVaE56Zzlp?oc=5",
           "source": "theedgemalaysia.com",
@@ -915,7 +916,7 @@
         },
         {
           "id": "bae29052b0d5ddbb",
-          "storyClusterId": "story-021",
+          "storyClusterId": "story-011",
           "title": "BAT Bangladesh's Q3 profit plunges 67%, shares fall 4.95%",
           "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQaXR5blR1aEF6ZDhqSU5qLVJQcThMeGFjaVVIWlMydUdkaDFfQ1d5aVotb180WWVaRy1hWjlIdkxqb2xobWdBUUFEZU91MW5sdjJTRFVHXzE5eHcxNXJCYjJzVUJIbjZPUzRlbWdSMGIxcU9Rc0MwcFJmTFRSRFJiTzh0VXQxT0Z2aVVqSmVwUk9VR2t6LUFRLUVCR2pNbFNs?oc=5",
           "source": "tbsnews.net",
@@ -925,24 +926,35 @@
           "publisherCount": 1
         },
         {
-          "id": "6be5c5c16b65f20f",
-          "storyClusterId": "story-008",
-          "title": "BAT Malaysia’s 3Q net profit plunges 66.5%, declares two sen dividend",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOWEFRMldBSDRBbWd2OGp2MEx1dEhOSW9fMXRhNWhlYlFLdDlVTFU1aGZ6UXRuYmpIUlE4Z1JLSXAxMldtQTd6Z3YtM0NDRmF6cFN2Y3M1bmxQYUJ0VmY2YTg3NUhUdEZib2NpeWdSQWpxNGstRnBKVnhqRHZUN3JTSlJ0Nk40MG9tWERmdmZ0UmJER1VESmhNVGdEUGVPOTBVcmpQWm1fNnhubnNEVWUw?oc=5",
-          "source": "themalaysianreserve.com",
-          "publishedAt": "2026-10-29T10:26:40Z",
-          "polarity": -0.9595,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
           "id": "891e29f7a08cc5ba",
-          "storyClusterId": "story-034",
+          "storyClusterId": "story-019",
           "title": "Shrinking bat populations can weaken ecosystem benefits even while species remain widespread",
           "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOV1F2dFNhcXptUmlCUGRBNG1peTVtekJsQUlXQ205NFJHczM4WXlSanE3OGlYT1ZOTXBmbk5VN3NaOF9kWEZ4cXQtSFE0d2VOOXFENFNHdVNYdzI1NjhyYlF3cDZybUJuTjl4ck5NVG9JMUVETEpWZG1iS3dFWlpDdmlpSzZPOU0?oc=5",
           "source": "phys.org",
           "publishedAt": "2026-10-29T17:20:10Z",
           "polarity": -0.9534,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "f70cdc005d347e05",
+          "storyClusterId": "story-041",
+          "title": "Star Black Cap duo seek to bounce back with bat as Canterbury chase Ford Trophy win",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPTmMxVW96ckJRaFZZRUV5Wkl3anpDemw5bXp6bE1PRzlnNjY0SWFYdEt6Vy01XzBWVUVVRXY5d1hWVEhVelZROUk3clBvTUNXTkRuQkJrd29vYnBkTWFKZC1LWTR6akpzdGl6NDJMSHBuOHdCUzI4OFRLMmpoT2ExOHQ4bnIzdTFWSGF4VEowMGJNVU01enZSTTdDVEp1ZVE5MWo5YjBwQ1duNjFfcjN5TnRVVVVuQQ?oc=5",
+          "source": "thepress.co.nz",
+          "publishedAt": "2026-10-29T23:19:56Z",
+          "polarity": 0.8999,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "ee3bfadd559c650f",
+          "storyClusterId": "story-036",
+          "title": "Man accused of beating 71-year-old woman with metal baseball bat arrested: police",
+          "url": "https://news.google.com/rss/articles/CBMi_AJBVV95cUxPY1MzWFFDT2RHN1BnVWJqanQteEZjcEV5OEtjWXlNMFotcDJ5MFpKeVRHTWV1OXlkd1I4TUpmdElvemdEXzFacjlORE9NbXQwd0VodlNQOEUzb3BDV1ZKWmRIY0VGY1JHZUNMY19QOW9EQ1FCYklJUXA3MVd0MTZRSTFFcWsyQ292cHVwOWdkazd6UHl4TUJ0ckRsTEFBV1pTSDczM0lHclRETTljS3ktVEhzbGUwa1otS1QxdGNfdWttN0c4LXpXN0pGT2pFRzlTX2o5Z3BFNTBjR0ZPbHhLcjRQV0duVk9CdGJnQkYxXzJuWkFPSWV2T1ZYT1JhdnVORndPMmx4REdEMmoxcWxOYWh4TUZsektwWTNZQmZhdmdldThJUHhWQWV3cjEyY1ZvT3lFbjdkQ25CZUkxU1ZtZEt6d2FMajZMbzNnV0V1WWpwcUpqc3pwTUxxZUt6UmxMVnBPejRKNFlaN3gybDRBVmJ1OGhJcDEyb0dLUA?oc=5",
+          "source": "cbs4local.com",
+          "publishedAt": "2026-10-29T21:43:19Z",
+          "polarity": -0.8717,
           "sentiment": "Very negative",
           "publisherCount": 1
         }
@@ -1083,26 +1095,40 @@
       "ticker": "BLND.L",
       "slug": "british-land",
       "date": "2026-10-29",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.8,
-      "confidence": 0.0,
+      "dailyScore": 64.1,
+      "dailyLabel": "Positive",
+      "rollingScore": 52.5,
+      "confidence": 19.7,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 13.7,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 19.7",
+          "evidenceArticleIds": [
+            "ef0af822aea6b9cc"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "ef0af822aea6b9cc",
+          "storyClusterId": "story-001",
+          "title": "British Land Co. rises Thursday, outperforms market",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNY1J3UFQzMkxLY3M4cW1SUTMzOWxBZnpMeTV5ZVhjclJHVThNa0dTZGc4bXZZZDBWYjJxWm5XWjFnbE45X1oyUDA0TUZFdEJlcnpXVWNUVVpXaWJDMHFVVmNLQng3ZUpiQkVqbE15VExvWFVrazYteU1mUXZPX2NPdXNXQ1JzM3pHUWtXZW5IVW14U0p2RlZrckpoSUVycERpa2M0RE5PbFNlaU15dzNVbmZjaFdUWk9qdE5YVXJDUE1CdkJHREE?oc=5",
+          "source": "marketwatch.com",
+          "publishedAt": "2026-10-29T17:06:00Z",
+          "polarity": 0.8447,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        }
+      ]
     },
     "bunzl": {
       "companyName": "Bunzl PLC",
@@ -1225,29 +1251,23 @@
       "ticker": "BP.L",
       "slug": "bp",
       "date": "2026-10-29",
-      "dailyScore": 51.3,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 48.0,
-      "confidence": 64.8,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "storyCount": 12,
-      "sourceCount": 8,
-      "changeFromPreviousScoredDay": 8.6,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 47.4,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "coverage_spike",
+          "type": "no_coverage",
           "direction": "neutral",
-          "severity": "medium",
+          "severity": "low",
           "status": "calculated",
-          "detail": "12 stories versus trailing median 4",
-          "evidenceArticleIds": [
-            "fe88eb645f7d6e04",
-            "4a7a5717bd4ff97a",
-            "6bba15bfacc74040",
-            "13fcc81c7194d9b2",
-            "c25d54753d08fa56"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         },
         {
           "type": "collection_degraded",
@@ -1255,72 +1275,10 @@
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "fe88eb645f7d6e04",
-            "4a7a5717bd4ff97a",
-            "6bba15bfacc74040",
-            "13fcc81c7194d9b2",
-            "c25d54753d08fa56"
-          ]
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "fe88eb645f7d6e04",
-          "storyClusterId": "story-005",
-          "title": "Earnings to Watch: BP PLC (LSE:BP.) Q3 2026 -- GF Value Sees 16% Downside",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPY29aM0E5aHRUZHdmc2xab3c2dkw5YnVIbUUya1BSWUpaRFpzc0VxRmtCZ0Y5c2RUd214RElVaHB6bDJXR1I3OXZaV2h0UHowLTJaa1Nib2RMZUR3R19MSUdZYVpIaFJzV2J2dlpXTl9mUzhHSW5DY2ZXWmlXZHdwWTNwUS1aNlFGcVZVWDJ4cUNNcXBR?oc=5",
-          "source": "finance.yahoo.com",
-          "publishedAt": "2026-10-29T13:25:50Z",
-          "polarity": -0.9511,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "4a7a5717bd4ff97a",
-          "storyClusterId": "story-006",
-          "title": "UAE, Qatari Firms Debut in Venezuela Through BP-Led Gas Deal",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUjNQMHBTTFZoUG53dFloZGFLTHhad0tmT3JQV2RzeGdGb2x4RlNyT0JZTC1lc19RTHJ6TEtVUDFxWF82OU0ySGR6eW5GU1NwVVE4eWM1SmVJU2t2Y1dKLWNkaDNGM09LaHBQcEpVMDlMUDAwT0dMeENqdFo3eUU3TDBCM1ViRGFoREVPWjhQVFU4WDJ3?oc=5",
-          "source": "energynow.com",
-          "publishedAt": "2026-10-29T15:12:50Z",
-          "polarity": 0.8252,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "6bba15bfacc74040",
-          "storyClusterId": "story-010",
-          "title": "Oil Stocks in Spotlight Friday: Chevron, ExxonMobil, BP Could Show Impact of Higher Gas Prices",
-          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNdzJzSEZTLWx1TDFxUVF6a1BlYUZJbUlrS3VHdF81V2VybHEzdXZ4VG1yTzdXZ0JQbmVRalJFZGg3ZmtPc050ZmNZb2JKd1dnM0hnTnFwWlFiX1Jkemw1a3hEdmJiYjhTcTZCcWdiVFh3ZTBTamtpWE1XRlRvbXFsYTFZT3NiejJFTi05Z1hvWXI4RVg5MngySDg3SkRZaURHN1hGS2dpTEhacEpyY2l2YVlxR1E5SFFSeWttSno2d1d2dTFWSGtGVEJIQmxQTHZ4UWpPX0gtXzg1RmtLN2xJU21JQ25vbFZjWEE?oc=5",
-          "source": "benzinga.com",
-          "publishedAt": "2026-10-29T20:11:31Z",
-          "polarity": -0.6953,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "13fcc81c7194d9b2",
-          "storyClusterId": "story-011",
-          "title": "Illinois Lotto player wins $7.4M from ticket purchased at Garfield Ridge, Chicago BP gas station on Archer Avenue",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQVWN3R0YyTFJYWm96MWJuakxPNG51YTNUNTJuUmZGTllVZGRRbk5zWE9ya1dCRXQwT0tCakMtQ01Kd3A4cXp0Z3o2bGhLZFBrVk5OdUVWWWRpZUUzV1E1U3VHUWlHMmV3cmRxZjdnTV9DZDI3YWN5RW1BU0RCd3NuVFBKM0N6a01OQi01Wi1yMTNzQmRJcE15Wmd2THdXNXFaazlsUG9qZFhUeklBNnA2b044Z1UyWEVOczBYcGlUZmNBdmJtenJJM0xB0gHPAUFVX3lxTE8wMk4yUnBhWGNHbjNEYS16OUpWNWlXeGp4ajNJMi12bEx2dW9xVExjODZITWdCa3BWdUNELXoyWDBZa0NiVXRyTksteWJzTFhBN19DYjRrb2NSaGpJUEh1aEFxS3lvb3p5TXpSYUZlMGxuaFJYMXFJVTBfUWVjS21ieFdhOHhoNUstejQ2c0Exa1Ztei1vdEpZLTFLWnVWNTYzeEtlbk1NU01IOGExaFpaMnFoYk1Ka2Jod2RsWXJ3N2MxeDdtTl9XM2hPRGppVQ?oc=5",
-          "source": "abc7chicago.com",
-          "publishedAt": "2026-10-29T20:54:55Z",
-          "polarity": 0.6471,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "c25d54753d08fa56",
-          "storyClusterId": "story-007",
-          "title": "$7.4M jackpot-winning Lotto ticket sold at BP gas station in Chicago",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxON3pMMnAzZlVBYlNDLUNEX21qc0FyUFphRGhGalF6dEN6X00zb09zWk1wTmdsNll4dVliUGlIUk1sVmZSUnFqZzAzV1VzNnEtNVdSTzVyVjRvOUFUaWI0NjYySlhNbk9pbEN4MXdqWVZmd2d3ZUZvUzZtUGo3T1FvbTFOS0NGZVdMS29wcVJFQTVFZkpHeTFJb0pjeTRZRWVMMWxPbUw2TENVeXRvTDdTcml3bUrSAbwBQVVfeXFMT25za3U2WDVvRFRsbGdIMkNIN01rS1k2S0tTVG8xMkhtR2VPU3d3ZlBfU2FQQ1ZUeEt2UUN2ZnN6MUFRY1NtY1hTN3hQdlBJd3dTb2hvMGdCTnhMOGdDNzV6cHhuMFhlR1M4T2FZd1FjVGI4NU5XSVhHcjBFNDgtTkVSamxONjFvakhBVGZVSTJvMmVUamdqYXdaNGVUZklXM0tGaHlkbU9MMnE2enZVQ1NFQV8zTU5BU2xkWi0?oc=5",
-          "source": "nbcchicago.com",
-          "publishedAt": "2026-10-29T17:35:41Z",
-          "polarity": 0.6062,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "burberry": {
       "companyName": "Burberry Group PLC",
@@ -2883,26 +2841,40 @@
       "ticker": "IAG.L",
       "slug": "international-consolidated-airlines",
       "date": "2026-10-29",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.4,
-      "confidence": 0.0,
+      "dailyScore": 64.2,
+      "dailyLabel": "Positive",
+      "rollingScore": 52.1,
+      "confidence": 19.7,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 14.6,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 19.7",
+          "evidenceArticleIds": [
+            "0162fad78cab506c"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "0162fad78cab506c",
+          "storyClusterId": "story-001",
+          "title": "International Consolidated Airlines Group rises Thursday, outperforms market",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOenptTUg0b3k0QjU0cmIxcGt4TVBfMVRjNVh6b1RVWGRROGJHSHJkejNKVm9HQ2lmSTBPSGs0S2dPYms2T2dDUE9BMmYzZVY3TEdEUDBIMTkwRzlLRHp3N09Yd3BLRk9GbEFnUGVHSHBaTk1YdDdXcTNaYlNEbEN1R3F4Y09QMHRmWG4tU1M2bWVMX0tHdHhseWVkOXFxOVZ0eTdRbXIwb0dMemlJY1FQWUdMcmUwVFpWcDRTTDU0UERkYTFxTEF4eF9FSzBOVEVPZjZLYjIxcXpiYmZvWWZIQ0plNGlzWm1u?oc=5",
+          "source": "marketwatch.com",
+          "publishedAt": "2026-10-29T17:06:00Z",
+          "polarity": 0.8528,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        }
+      ]
     },
     "intermediate-capital": {
       "companyName": "Intermediate Capital Group PLC",
@@ -4307,25 +4279,23 @@
       "ticker": "NXT.L",
       "slug": "next",
       "date": "2026-10-29",
-      "dailyScore": 48.6,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.2,
-      "confidence": 11.8,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 50.5,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": -3.2,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 11.8",
-          "evidenceArticleIds": [
-            "4fe6e57cd3ede094"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         },
         {
           "type": "collection_degraded",
@@ -4333,24 +4303,10 @@
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "4fe6e57cd3ede094"
-          ]
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "4fe6e57cd3ede094",
-          "storyClusterId": "story-001",
-          "title": "Andy Burnham pushes for answers as Poundland edges towards collapse - what next for retailer?",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPV09na2dxNXo0NnBBODNwa05sRmhIeEE1dDNrYnotY1RudUNwVV9QTzJmdkJLQWdDTFFxZHl2cm5CMEk3T19oYUpfcExDLW1kS08wMERwX3VXOVN2czB0aEk5OVlIOXNPdUZGYmlNWl9LYWRTeldQck5mUGRtSHIwQ3FkS0FiTm5XNWFzUzJCVUpNdWZIaWlTME54aDl3MGhFNGplMTVGdWZuMElfaUVqbFVn?oc=5",
-          "source": "thisismoney.co.uk",
-          "publishedAt": "2026-10-29T18:07:38Z",
-          "polarity": -0.0832,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "polar-capital-technology-trust": {
       "companyName": "Polar Capital Technology Trust PLC",
@@ -5124,37 +5080,27 @@
       "ticker": "SHEL.L",
       "slug": "shell",
       "date": "2026-10-29",
-      "dailyScore": 62.6,
+      "dailyScore": 64.3,
       "dailyLabel": "Positive",
-      "rollingScore": 53.6,
-      "confidence": 70.0,
-      "confidenceBand": "high",
+      "rollingScore": 53.9,
+      "confidence": 69.5,
+      "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 21,
-      "sourceCount": 23,
-      "changeFromPreviousScoredDay": 15.8,
+      "storyCount": 17,
+      "sourceCount": 19,
+      "changeFromPreviousScoredDay": 17.5,
       "flags": [
-        {
-          "type": "earnings_beat",
-          "direction": "positive",
-          "severity": "medium",
-          "status": "possible",
-          "evidenceArticleIds": [
-            "4bc3992d8941b075"
-          ],
-          "sourceCount": 1
-        },
         {
           "type": "sentiment_jump",
           "direction": "positive",
           "severity": "high",
           "status": "calculated",
-          "detail": "Daily score increased by 15.8 points",
+          "detail": "Daily score increased by 17.5 points",
           "evidenceArticleIds": [
             "221356a586a80c0a",
             "1afed9c29023623c",
-            "4bc3992d8941b075",
             "60fc3c1778c3f09a",
+            "e34f33f025924e70",
             "21c88df2e65fe86d"
           ]
         },
@@ -5163,12 +5109,12 @@
           "direction": "neutral",
           "severity": "medium",
           "status": "calculated",
-          "detail": "21 stories versus trailing median 5",
+          "detail": "17 stories versus trailing median 5",
           "evidenceArticleIds": [
             "221356a586a80c0a",
             "1afed9c29023623c",
-            "4bc3992d8941b075",
             "60fc3c1778c3f09a",
+            "e34f33f025924e70",
             "21c88df2e65fe86d"
           ]
         },
@@ -5181,8 +5127,8 @@
           "evidenceArticleIds": [
             "221356a586a80c0a",
             "1afed9c29023623c",
-            "4bc3992d8941b075",
             "60fc3c1778c3f09a",
+            "e34f33f025924e70",
             "21c88df2e65fe86d"
           ]
         },
@@ -5195,8 +5141,8 @@
           "evidenceArticleIds": [
             "221356a586a80c0a",
             "1afed9c29023623c",
-            "4bc3992d8941b075",
             "60fc3c1778c3f09a",
+            "e34f33f025924e70",
             "21c88df2e65fe86d"
           ]
         }
@@ -5204,7 +5150,7 @@
       "topStories": [
         {
           "id": "221356a586a80c0a",
-          "storyClusterId": "story-016",
+          "storyClusterId": "story-013",
           "title": "Shell's third-quarter earnings rise on record refining margins, stronger gas results",
           "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxONVJ0eHdJTnN5ZGNRcnZqNlYyVUJMbTRTcEhacEE5TW54R1ExWWdEWlctR2c1cnB1YWpza2pJZjZVNGg2bDN0VTluenBqX2MyM0phOFgwRTFyT3RmVzVuSWNxeEFvZjN4MXNQbVROcXE5YXRQZWpyb284X0RwbUhEMnRmRTZvbEpiZUJtUEh5RFlyZ3Foa3M5WTcwSGhiSGxKbHhKZTlsSmhiVjljNTE4SEs2NWk2akczQmhhd0J1S1Uya2k0UklSdjFKVnZaWno2MHNCUzlNMFpXeEU?oc=5",
           "source": "ogj.com",
@@ -5215,23 +5161,12 @@
         },
         {
           "id": "1afed9c29023623c",
-          "storyClusterId": "story-015",
+          "storyClusterId": "story-011",
           "title": "Shell CEO Wael Sawan on oil supply disruptions: 'Too early to call' the long-term effects on demand",
           "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPWENoa1pVd0EzZ0ZPMEJ1OWwxSmVha3JWUGpMM0FhbXNod1RpUXk5cElsV1hnXzFPdlJuaHFmZ2F6QUJRNU1WXzlEcUhQSkRJZS1xVWpJcTVpUjJva0lRT0FwMzR6S2pWclIzdnBHQnRVM1FIZXFULW8taHNQa0drV01CclFmX3R2NmtGNjJwMzY5cHk5T3ZfeUd5dm83LUhsUGVHR2NNZDUxeVhWSFFIRWdBLVZpMDRfdHdQOXRtYW1ydlg2VnRFV19FRGpBeUgxcExGRENB?oc=5",
           "source": "cnbc.com",
           "publishedAt": "2026-10-29T16:19:00Z",
           "polarity": -0.9117,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "4bc3992d8941b075",
-          "storyClusterId": "story-007",
-          "title": "Shell profit soars as Mideast war disrupts energy supplies",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPTThJbU04d1dSdFBYSUVpWUhBbEl4eHJWWVd0VE5LRjAzLVZ3TGZ6ZEFkeWpNX2c0NnVwelFDNkdHNG93XzN2NHZQTGdEVEczU205ZktSZXRxUk5wQzhsNmM2ajhXQTZpeGljUlZ2VGt6MFFCUGJiaktadkJTenRudDZWamJhbnhtQWVpSmczMWVZUUNKUmNVTTgxOXhmSDU1SVNBcmtYU1Z0VWhmRnc?oc=5",
-          "source": "thejakartapost.com",
-          "publishedAt": "2026-10-29T09:52:45Z",
-          "polarity": -0.9091,
           "sentiment": "Very negative",
           "publisherCount": 1
         },
@@ -5247,15 +5182,26 @@
           "publisherCount": 1
         },
         {
+          "id": "e34f33f025924e70",
+          "storyClusterId": "story-008",
+          "title": "Shell cements position as biggest company in FTSE 100 as profits double on back of higher oil prices",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPTVZXZWV5bVhhUDlwTXcwRE5LeWUzU0txRmM0UnBoWk9iN3dmRmNISjRhS0hyRC05ZzVMSTExbm1SU0NDZXVIRmNqYUJMUzFBaUpVVnllaDZ0MjFKSklPVklWeWlGR0czNWxhd2tBbTAzckxIeWIwcG9TdjVhbDFUSldrTWZWQ1Roeko1QzNqM3M5Y2xpR0U5V0t4Y25KUWhfa2RONzBUWEs2RVFOVEpWU1RtTDctUGdWR1VKNUlqZmxXZk3SAcgBQVVfeXFMUEwxZjBmYTc0NkI4bGVPZEJIUURlRjVaZ0RDRFQzT2l5c3d0VmdlRWM5Qi1nOGdVZGlrdEo3Nmt0Y1p4WGRwWDlvajhCWjZ0RWVVbF9mcDluTTE4WUQxS2lzYXNyaDd2TmxlM3lUdmQ3MnpMZUZsNlBrcjZ6bm0tMVpKdDJBbXlSLTJuSmFrbXV4eXJaaVVsdWtJYzkzdzl1Nkk2VlNvQmFmRHdyaTc0YWdFb1h6b0s2QlVwWGhYZmV3TjA3bUhYU1c?oc=5",
+          "source": "thisismoney.co.uk",
+          "publishedAt": "2026-10-29T14:53:49Z",
+          "polarity": 0.8829,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
           "id": "21c88df2e65fe86d",
-          "storyClusterId": "story-002",
+          "storyClusterId": "story-005",
           "title": "Shell criticised over bumper earnings haul amid soaring oil prices",
           "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNRDk2RHVSNmNDUVVVUTRqSWgycEZGaDBSQzducXJFb3RuWHlzdWVqZkVaa2xiY3RDTldBcEV4dFh2N19rNm1KZmY2SDlsNDc5UTV2REdQbFY0aUNiQ0xfbDhraUQzb1NVX21hYXM4c0JDdVh0RFlsT2lOOXlNeXFneTVPX0R5UzFtZ2tncWhuMW5QZ05uaTRmYklHWUpqM205dVE?oc=5",
           "source": "standard.co.uk",
           "publishedAt": "2026-10-29T09:57:39Z",
           "polarity": -0.8758,
           "sentiment": "Very negative",
-          "publisherCount": 2
+          "publisherCount": 1
         }
       ]
     },

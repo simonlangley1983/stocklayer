@@ -4290,37 +4290,51 @@
     },
     {
       "date": "2026-10-29",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.4,
-      "confidence": 0.0,
+      "dailyScore": 64.2,
+      "dailyLabel": "Positive",
+      "rollingScore": 52.1,
+      "confidence": 19.7,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 3,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
-      "positiveStoryCount": 0,
+      "candidateCount": 4,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 1,
       "neutralStoryCount": 0,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
         "missing_company_alias": 3
       },
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "0162fad78cab506c",
+          "storyClusterId": "story-001",
+          "title": "International Consolidated Airlines Group rises Thursday, outperforms market",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOenptTUg0b3k0QjU0cmIxcGt4TVBfMVRjNVh6b1RVWGRROGJHSHJkejNKVm9HQ2lmSTBPSGs0S2dPYms2T2dDUE9BMmYzZVY3TEdEUDBIMTkwRzlLRHp3N09Yd3BLRk9GbEFnUGVHSHBaTk1YdDdXcTNaYlNEbEN1R3F4Y09QMHRmWG4tU1M2bWVMX0tHdHhseWVkOXFxOVZ0eTdRbXIwb0dMemlJY1FQWUdMcmUwVFpWcDRTTDU0UERkYTFxTEF4eF9FSzBOVEVPZjZLYjIxcXpiYmZvWWZIQ0plNGlzWm1u?oc=5",
+          "source": "marketwatch.com",
+          "publishedAt": "2026-10-29T17:06:00Z",
+          "polarity": 0.8528,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 19.7",
+          "evidenceArticleIds": [
+            "0162fad78cab506c"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": 14.6
     }
   ]
 }
