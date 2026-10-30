@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-30T01:01:37.264749Z",
+  "generatedAt": "2026-10-30T02:46:14.381457Z",
   "company": {
     "companyName": "Land Securities Group PLC",
     "ticker": "LAND.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-10-28",
-    "observationCount": 113,
-    "scoredDayCount": 62,
-    "latestScore": 51.3,
-    "latestScoreDate": "2026-10-28",
+    "periodEnd": "2026-10-29",
+    "observationCount": 114,
+    "scoredDayCount": 63,
+    "latestScore": 60.2,
+    "latestScoreDate": "2026-10-29",
     "series": [
       {
         "date": "2026-06-30",
@@ -1042,6 +1042,15 @@
         "sourceCount": 1,
         "confidence": 15.4,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-29",
+        "dailyScore": 60.2,
+        "rollingScore": 50.9,
+        "storyCount": 11,
+        "sourceCount": 9,
+        "confidence": 79.9,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1709,17 +1718,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 48.0,
+    "score": 48.1,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 52.8,
+        "score": 53.1,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 49 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 50 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1906,6 +1915,46 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "6ecada85dfb5d33a71c9",
+      "type": "acquisition",
+      "title": "Landsec completes £516m Metrocentre acquisition",
+      "date": "2026-10-29",
+      "status": "pending_review",
+      "reviewDate": "2027-04-27",
+      "direction": "Positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOUlBfRGZWc2Nmem80ZWdVc1loRjNaWXZpcndDcXlFMzNNb185aEl6RThsOEV4QnFuM0xYbXcwNjdkaExmTUdHWFFVQS1RNXpRUTFZZjFhYW9yMF9sWndCZW1MaUFXa1hIT3ZKakJDWGhxUy1NY0JvWEdtWFBrdEhSZWpfcHZzOWpTSGt3?oc=5",
+          "publisher": "news.completelyretail.co.uk",
+          "date": "2026-10-29"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
+    {
+      "id": "3a907eb3312714fe5a8d",
+      "type": "acquisition",
+      "title": "REG - Land Sec. Group PLC - Landsec completes the acquisition of Metrocentre",
+      "date": "2026-10-29",
+      "status": "pending_review",
+      "reviewDate": "2027-04-27",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQVENmWVUzbUh3RmotSFEtbmFqUFZyZG43NFlJNUEwdW1tbjhJOENLX2tPUGo2b3ZKUDl4NEtnam1hbjVHNW93eEdGVEhVSVBpTjhPVUp4OTZlRVJiUXRHY3pMb1B3bnVpcnZSNnNlYzFpSjR0VkU0TTNpVzc0blBkaWk5Ykl3eGwyYzM4dnRLUWw3Ui1DekJqVlFNM3I4UnJXX1E3OW04VTlOZF9leDRnam4td0RVRndvYjV4ZXV1U05QSmZiVXRDTUlwT0ZlaWczVnU4RzYwN0ZVczBDQ1B2eA?oc=5",
+          "publisher": "tradingview.com",
+          "date": "2026-10-29"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "56efc2f9ab4e408f3fd2",
       "type": "acquisition",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-30T01:01:37.264749Z",
+  "generatedAt": "2026-10-30T02:46:14.381457Z",
   "company": {
     "companyName": "AstraZeneca",
     "ticker": "AZN.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-05",
-    "periodEnd": "2026-10-28",
-    "observationCount": 112,
-    "scoredDayCount": 111,
-    "latestScore": 67.5,
-    "latestScoreDate": "2026-10-28",
+    "periodEnd": "2026-10-29",
+    "observationCount": 113,
+    "scoredDayCount": 112,
+    "latestScore": 71.9,
+    "latestScoreDate": "2026-10-29",
     "series": [
       {
         "date": "2026-07-05",
@@ -1033,6 +1033,15 @@
         "sourceCount": 13,
         "confidence": 85.9,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-29",
+        "dailyScore": 71.9,
+        "rollingScore": 64.2,
+        "storyCount": 13,
+        "sourceCount": 14,
+        "confidence": 87.0,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1700,17 +1709,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 56.9,
+    "score": 57.0,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 61.8,
+        "score": 62.1,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 83 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 84 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1897,6 +1906,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "64fef48fd87f14a437fe",
+      "type": "clinical",
+      "title": "AstraZeneca wins EU Enhertu approval and stock costs EUR 154.10",
+      "date": "2026-10-29",
+      "status": "pending_review",
+      "reviewDate": "2027-04-27",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQb1ZPY1FrbzFEbmRrbGpTUFNqd0ZIdDJNRThvYkZDd3FsSkdpS2o3MW90MU42UG5LNlJueWpjNVNZNzJncjdZZks3ajIzYTN4by1yTGZwSW1ybXkzT0h2VHZUaF9WaUJHT3E3QXRMTXNUMUoyQ3ctSldBbTUzdHpyenRZREl4akN2Y2ZYRnFxTk50ZnNyNkF4MFN2TkFHdnkteTQ1MlZVLVkyQ3o2X0NrSkpnTVJTMklLZ0NFMjJBWHlhLTJ3?oc=5",
+          "publisher": "ad-hoc-news.de",
+          "date": "2026-10-29"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "5cd88da02c06e8b33281",
       "type": "clinical",
