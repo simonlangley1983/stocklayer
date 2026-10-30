@@ -5855,34 +5855,46 @@
     },
     {
       "date": "2026-10-29",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 47.4,
-      "confidence": 0.0,
+      "dailyScore": 55.3,
+      "dailyLabel": "Slightly positive",
+      "rollingScore": 48.3,
+      "confidence": 12.7,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 0.75,
-      "candidateCount": 6,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
-      "positiveStoryCount": 0,
+      "candidateCount": 1,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 1,
       "neutralStoryCount": 0,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
-      "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 6
-      },
-      "topStories": [],
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "f1cb4bd1702a218f",
+          "storyClusterId": "story-001",
+          "title": "BP CEO Says Oil Giant Needs to Make ‘Fewer and Better’ Choices",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPOWVRTjZDMl90aDg1TmVuS19FQVBSSjk4OW5NT05fX1A3RkR4Qmh4Z2Z6R3F3MzhpRzUwMWlJN1JuX1p3RTNkcTdPZF9GLV9zWXZ5YXJEYTBIcU5qVGdEY3hhS2pkV0NFdThMcERsM1BxOGNRSFZsVmp4MFVvYm05SWdjd1BNRWtFYklua040M0ZPTU5RU2c?oc=5",
+          "source": "energynow.com",
+          "publishedAt": "2026-10-29T21:41:08Z",
+          "polarity": 0.3179,
+          "sentiment": "Positive",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 12.7",
+          "evidenceArticleIds": [
+            "f1cb4bd1702a218f"
+          ]
         },
         {
           "type": "collection_degraded",
@@ -5890,10 +5902,12 @@
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": []
+          "evidenceArticleIds": [
+            "f1cb4bd1702a218f"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": 12.6
     }
   ]
 }
