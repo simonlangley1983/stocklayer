@@ -3,7 +3,7 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-10-30T13:32:24.173659Z",
+  "generatedAt": "2026-10-30T17:07:56.981818Z",
   "asOfDate": "2026-10-29",
   "companyCount": 100,
   "companies": {
@@ -319,15 +319,15 @@
       "ticker": "BATS.L",
       "slug": "british-american-tobacco",
       "date": "2026-10-29",
-      "dailyScore": 43.2,
+      "dailyScore": 43.5,
       "dailyLabel": "Slightly negative",
-      "rollingScore": 47.7,
-      "confidence": 61.4,
+      "rollingScore": 47.8,
+      "confidence": 61.6,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
       "storyCount": 43,
-      "sourceCount": 61,
-      "changeFromPreviousScoredDay": -4.3,
+      "sourceCount": 54,
+      "changeFromPreviousScoredDay": -4.0,
       "flags": [
         {
           "type": "earnings_miss",
@@ -483,22 +483,22 @@
       "ticker": "BP.L",
       "slug": "bp",
       "date": "2026-10-29",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 47.4,
-      "confidence": 0.0,
+      "dailyScore": 55.3,
+      "dailyLabel": "Slightly positive",
+      "rollingScore": 48.3,
+      "confidence": 12.7,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 12.6,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "Confidence is 12.7"
         },
         {
           "type": "collection_degraded",
@@ -1994,22 +1994,22 @@
       "ticker": "SDLF.L",
       "slug": "phoenix",
       "date": "2026-10-29",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.2,
-      "confidence": 0.0,
+      "dailyScore": 50.9,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.3,
+      "confidence": 16.2,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -1.8,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "Confidence is 16.2"
         }
       ]
     },
@@ -2058,36 +2058,36 @@
       "ticker": "SHEL.L",
       "slug": "shell",
       "date": "2026-10-29",
-      "dailyScore": 64.3,
+      "dailyScore": 67.9,
       "dailyLabel": "Positive",
-      "rollingScore": 53.9,
-      "confidence": 69.5,
+      "rollingScore": 54.5,
+      "confidence": 69.0,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 17,
-      "sourceCount": 19,
-      "changeFromPreviousScoredDay": 17.5,
+      "storyCount": 16,
+      "sourceCount": 17,
+      "changeFromPreviousScoredDay": 21.1,
       "flags": [
         {
           "type": "sentiment_jump",
           "direction": "positive",
           "severity": "high",
           "status": "calculated",
-          "detail": "Daily score increased by 17.5 points"
+          "detail": "Daily score increased by 21.1 points"
+        },
+        {
+          "type": "good_press",
+          "direction": "positive",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Daily press score is 67.9"
         },
         {
           "type": "coverage_spike",
           "direction": "neutral",
           "severity": "medium",
           "status": "calculated",
-          "detail": "17 stories versus trailing median 5"
-        },
-        {
-          "type": "high_disagreement",
-          "direction": "mixed",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "Positive and negative coverage is unusually dispersed"
+          "detail": "16 stories versus trailing median 5"
         },
         {
           "type": "collection_degraded",
