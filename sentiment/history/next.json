@@ -4138,6 +4138,65 @@
         }
       ],
       "changeFromPreviousScoredDay": null
+    },
+    {
+      "date": "2026-10-29",
+      "dailyScore": 48.6,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.2,
+      "confidence": 11.8,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 91,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 89,
+        "missing_company_alias": 1
+      },
+      "topStories": [
+        {
+          "id": "4fe6e57cd3ede094",
+          "storyClusterId": "story-001",
+          "title": "Andy Burnham pushes for answers as Poundland edges towards collapse - what next for retailer?",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPV09na2dxNXo0NnBBODNwa05sRmhIeEE1dDNrYnotY1RudUNwVV9QTzJmdkJLQWdDTFFxZHl2cm5CMEk3T19oYUpfcExDLW1kS08wMERwX3VXOVN2czB0aEk5OVlIOXNPdUZGYmlNWl9LYWRTeldQck5mUGRtSHIwQ3FkS0FiTm5XNWFzUzJCVUpNdWZIaWlTME54aDl3MGhFNGplMTVGdWZuMElfaUVqbFVn?oc=5",
+          "source": "thisismoney.co.uk",
+          "publishedAt": "2026-10-29T18:07:38Z",
+          "polarity": -0.0832,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 11.8",
+          "evidenceArticleIds": [
+            "4fe6e57cd3ede094"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "4fe6e57cd3ede094"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -3.2
     }
   ]
 }
