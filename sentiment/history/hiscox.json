@@ -5630,35 +5630,49 @@
     },
     {
       "date": "2026-10-30",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 49.9,
-      "confidence": 0.0,
+      "dailyScore": 49.3,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.8,
+      "confidence": 15.4,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 0,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 1,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 0,
+      "neutralStoryCount": 1,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {},
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "2e7485dd085d0b72",
+          "storyClusterId": "story-001",
+          "title": "Hiscox Ltd (HSX.L) Seasonal Returns Chart - Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1wOWN3MnlWd1E1OXYxQ2NLMkNtTEtkWFFaX2lFVVRncTJ4cW5OR2tTRkxoX1pUemZ5elp5SFU1c1pGR1gxSmV4TERRNHBmWjdxX3JMLU16UkpkQWx3NEx3b3lrSQ?oc=5",
+          "source": "ca.finance.yahoo.com",
+          "publishedAt": "2026-10-30T23:17:22Z",
+          "polarity": -0.0407,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.4",
+          "evidenceArticleIds": [
+            "2e7485dd085d0b72"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": 9.8
     }
   ]
 }

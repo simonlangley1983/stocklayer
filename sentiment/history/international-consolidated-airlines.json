@@ -4338,35 +4338,61 @@
     },
     {
       "date": "2026-10-30",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 51.9,
-      "confidence": 0.0,
+      "dailyScore": 37.6,
+      "dailyLabel": "Negative",
+      "rollingScore": 49.9,
+      "confidence": 36.9,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 0,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 2,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 0,
-      "negativeStoryCount": 0,
-      "dispersion": 0.0,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 1,
+      "dispersion": 0.4354,
       "rejectedCandidateCounts": {},
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "686243ef4207c1ed",
+          "storyClusterId": "story-002",
+          "title": "International Consolidated Airlines Group slips Friday, underperforms market",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQYlphdml4RllqZ0RUOXVNMy1weDRSSXBtSEc4RUFMbjFXb0V0bkRGem1PMUcwZEFxVW5uWUpWMnA2am1pN21Pc2lKYjlCRnNKSGtvTndocm5rUnljeTkwM0NJYUd2T3ZzeGNUUTFvM01zRlFKS1RHLUZFNmswLU93T25nb043TFZYUVFQbjA4N05IVmZDV0JXcTM4LUlXbC1fQjhGSU1SYkNEVjBIVFBEVjZ5Rmh3aGU5MVBqT1FwQWFzNlJmNEFiTnpDcTNzV09EZ2VMdExvREhTdDdMMGFOLWVLVWZHVnBC?oc=5",
+          "source": "marketwatch.com",
+          "publishedAt": "2026-10-30T17:07:00Z",
+          "polarity": -0.9312,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "bf0f9258d814d814",
+          "storyClusterId": "story-001",
+          "title": "International Consolidated Airlines Group S.A. (BABWF) Seasonal Returns Chart - Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBnNkFwY1dOZGp6N1NwbXNJamtKUnI3RUlJTk5iT05zREtrWGt3a29NTk1feHVhWHRzOVl1UDNNc1VGaWNnaEdLZmdoWmdBTi1Tb3lZWWRxaWJ2WGF5blR4TnNlMA?oc=5",
+          "source": "ca.finance.yahoo.com",
+          "publishedAt": "2026-10-30T13:06:21Z",
+          "polarity": -0.0603,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 36.9",
+          "evidenceArticleIds": [
+            "686243ef4207c1ed",
+            "bf0f9258d814d814"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": -26.6
     }
   ]
 }
