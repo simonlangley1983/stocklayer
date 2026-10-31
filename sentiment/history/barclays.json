@@ -6484,6 +6484,79 @@
         }
       ],
       "changeFromPreviousScoredDay": -1.0
+    },
+    {
+      "date": "2026-10-30",
+      "dailyScore": 49.7,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.6,
+      "confidence": 23.8,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 98,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 2,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0055,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 89,
+        "duplicate_publisher_headline": 2,
+        "missing_company_alias": 5
+      },
+      "topStories": [
+        {
+          "id": "77339b69248d5903",
+          "storyClusterId": "story-001",
+          "title": "Barclays PLC (BCLYF) Seasonal Returns Chart - Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9tU1Y4T0VLaFVGVC1IWDRMSGlGYloxcGQ5dmpvQVNSbUdWNjB1aG9pa1J3Ujl5Ykp5RmluVk53SHVJamVhWko2NENOSERxSU40NWJ6VnZNdW9WNXZRZndrTmtQQQ?oc=5",
+          "source": "ca.finance.yahoo.com",
+          "publishedAt": "2026-10-30T12:45:23Z",
+          "polarity": -0.0176,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "7c35743f67f926b5",
+          "storyClusterId": "story-002",
+          "title": "Form 424B2 BARCLAYS BANK PLC",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNUlhFc0JXdzg5UHhoVFVhNmtuSWxIRHFFcmx2RG41STN2SWlPQXBaYlQ4NTl4clVXTWk2R3M2ZUpBaWVobE1mTnpfXzM4VGZFbGFtaUtxS3RMekRpVW9mZk9SYldNYVVYSTVwX19pVElIVXVZamo5Z1E5OHJvQm9jSVJzbUl4VU0zWU9XWg?oc=5",
+          "source": "streetinsider.com",
+          "publishedAt": "2026-10-30T19:49:42Z",
+          "polarity": -0.0066,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 23.8",
+          "evidenceArticleIds": [
+            "77339b69248d5903",
+            "7c35743f67f926b5"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "77339b69248d5903",
+            "7c35743f67f926b5"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 0.7
     }
   ]
 }
