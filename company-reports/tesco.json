@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T01:55:59.137163Z",
+  "generatedAt": "2026-10-31T02:36:50.871043Z",
   "company": {
     "companyName": "Tesco PLC",
     "ticker": "TSCO.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-10-29",
-    "observationCount": 111,
-    "scoredDayCount": 104,
-    "latestScore": 56.9,
-    "latestScoreDate": "2026-10-29",
+    "periodEnd": "2026-10-30",
+    "observationCount": 112,
+    "scoredDayCount": 105,
+    "latestScore": 55.6,
+    "latestScoreDate": "2026-10-30",
     "series": [
       {
         "date": "2026-06-30",
@@ -1024,6 +1024,15 @@
         "sourceCount": 26,
         "confidence": 89.0,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-30",
+        "dailyScore": 55.6,
+        "rollingScore": 51.7,
+        "storyCount": 62,
+        "sourceCount": 55,
+        "confidence": 83.7,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1046,16 +1055,6 @@
         "direction": "mixed",
         "detail": "Positive and negative coverage is unusually dispersed",
         "significance": 1.734
-      },
-      {
-        "date": "2026-08-05",
-        "type": "bad_press",
-        "title": "Asda , Tesco and Sainsbury pull all disposable BBQs from shelves amid warning",
-        "source": "manchestereveningnews.co.uk",
-        "url": "https://www.manchestereveningnews.co.uk/news/uk-news/asda-tesco-sainsburys-pull-disposable-34407807",
-        "direction": "negative",
-        "detail": "Daily press score is 32.6",
-        "significance": 1.604
       },
       {
         "date": "2026-08-14",
@@ -1126,6 +1125,16 @@
         "direction": "positive",
         "detail": null,
         "significance": 1.873
+      },
+      {
+        "date": "2026-10-30",
+        "type": "merger_acquisition",
+        "title": "Apple iPad (A16) drops to £329 at Tesco, £100 less than Apple",
+        "source": "trustedreviews.com",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQbGQ3dEdacEN5bG5UOEVqMWhxUGNWQml5WENFcHQ0b0drV3VRbHU2M3oxal9Idm13MFpUOUJFcjJrWElJdFNDZFQzUWlFSEY0akxiOXY0VU5iWThSbW1HcGs5bDBrc3pDWTVsd3BSalRfdmtrNG5PN3pvYXV0MVJGeHRjc2tHZ1p2UW42WWwyWUM4UHdKNWx4YQ?oc=5",
+        "direction": "neutral",
+        "detail": null,
+        "significance": 1.61
       }
     ]
   },
@@ -1691,17 +1700,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 45.4,
+    "score": 45.5,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 47.3,
+        "score": 47.6,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 76 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 77 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1798,16 +1807,6 @@
       "significance": 1.734
     },
     {
-      "date": "2026-08-05",
-      "type": "bad_press",
-      "title": "Asda , Tesco and Sainsbury pull all disposable BBQs from shelves amid warning",
-      "source": "manchestereveningnews.co.uk",
-      "url": "https://www.manchestereveningnews.co.uk/news/uk-news/asda-tesco-sainsburys-pull-disposable-34407807",
-      "direction": "negative",
-      "detail": "Daily press score is 32.6",
-      "significance": 1.604
-    },
-    {
       "date": "2026-08-14",
       "type": "sentiment_drop",
       "title": "Food recalls issued at Tesco , Waitrose and Home Bargains",
@@ -1878,6 +1877,16 @@
       "significance": 1.873
     },
     {
+      "date": "2026-10-30",
+      "type": "merger_acquisition",
+      "title": "Apple iPad (A16) drops to £329 at Tesco, £100 less than Apple",
+      "source": "trustedreviews.com",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQbGQ3dEdacEN5bG5UOEVqMWhxUGNWQml5WENFcHQ0b0drV3VRbHU2M3oxal9Idm13MFpUOUJFcjJrWElJdFNDZFQzUWlFSEY0akxiOXY0VU5iWThSbW1HcGs5bDBrc3pDWTVsd3BSalRfdmtrNG5PN3pvYXV0MVJGeHRjc2tHZ1p2UW42WWwyWUM4UHdKNWx4YQ?oc=5",
+      "direction": "neutral",
+      "detail": null,
+      "significance": 1.61
+    },
+    {
       "date": "2026-12-31",
       "type": "annual_report",
       "title": "Tesco Annual Report 2026",
@@ -1888,6 +1897,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "5dc0fc955edfe9f426aa",
+      "type": "acquisition",
+      "title": "Ahold Delhaize announces the acquisition of Tesco Czechia and Slovakia, strengthening its position in Europe",
+      "date": "2026-10-30",
+      "status": "pending_review",
+      "reviewDate": "2027-04-28",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQVlpLQjNnR2N5YWtqWms1RGdQUkFfWGFMM3lBTXoyeGF3TXpJUXcycmYyU0dxT0YyU0ZsSHlBVW9vWFRFVHBjczFjZ0FyWDlTMURoYTZfRlUwcEhqWlVtZnNnWHJUaFBFWjNpWERkN01DdFg3VXpKNUZ5VFZ5RnJRZFIyQzMwSnFjbXFUcWF1bl9kWWtLMFV5OVRaQldvalJWOWxTczM3WGlQOTlfa2ctWlRRam1TVzVqSGNzcGE5VFREbFBMdVh1ZngxY3dOZ183NmllWjNrMGFzT1k?oc=5",
+          "publisher": "newsroom.aholddelhaize.com",
+          "date": "2026-10-30"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "efe15ccc33db4211bc16",
       "type": "clinical",

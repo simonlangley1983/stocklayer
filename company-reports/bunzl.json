@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T01:55:59.137163Z",
+  "generatedAt": "2026-10-31T02:36:50.871043Z",
   "company": {
     "companyName": "Bunzl PLC",
     "ticker": "BNZL.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-14",
-    "periodEnd": "2026-10-29",
-    "observationCount": 113,
-    "scoredDayCount": 54,
-    "latestScore": 67.1,
-    "latestScoreDate": "2026-10-29",
+    "periodEnd": "2026-10-30",
+    "observationCount": 114,
+    "scoredDayCount": 55,
+    "latestScore": 50.3,
+    "latestScoreDate": "2026-10-30",
     "series": [
       {
         "date": "2026-06-14",
@@ -1042,6 +1042,15 @@
         "sourceCount": 7,
         "confidence": 77.6,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-30",
+        "dailyScore": 50.3,
+        "rollingScore": 52.7,
+        "storyCount": 3,
+        "sourceCount": 3,
+        "confidence": 49.0,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1643,10 +1652,10 @@
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 54.3,
+        "score": 54.2,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 47 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 48 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1824,6 +1833,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "cdf030667be7c4888805",
+      "type": "acquisition",
+      "title": "Bunzl makes UK acquisition",
+      "date": "2026-10-30",
+      "status": "pending_review",
+      "reviewDate": "2027-04-28",
+      "direction": "Neutral / mixed",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5RcGVWRWRLSHpZeDQwZDBZeVBlaURldU1HUlVVUHdIMkMtYkhKaTBvNVhjVkNUUWMyVUdNNHBVOXZqTmVqUTJNQUNSdlItVWloRWxOM2szcEZ0QmVpZlBfS25YQTN2NHFOTE5oYnlLNXBkbjJITE5oaURmTkU?oc=5",
+          "publisher": "opi.net",
+          "date": "2026-10-30"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "219a283ddb2dfb054796",
       "type": "acquisition",

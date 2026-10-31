@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T01:55:59.137163Z",
+  "generatedAt": "2026-10-31T02:36:50.871043Z",
   "company": {
     "companyName": "Ithaca Energy PLC",
     "ticker": "ITH.L",
@@ -15,11 +15,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-10-21",
-    "periodEnd": "2026-10-29",
-    "observationCount": 9,
-    "scoredDayCount": 9,
-    "latestScore": 50.2,
-    "latestScoreDate": "2026-10-29",
+    "periodEnd": "2026-10-30",
+    "observationCount": 10,
+    "scoredDayCount": 10,
+    "latestScore": 50.1,
+    "latestScoreDate": "2026-10-30",
     "series": [
       {
         "date": "2026-10-21",
@@ -100,6 +100,15 @@
         "storyCount": 1,
         "sourceCount": 1,
         "confidence": 15.3,
+        "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-10-30",
+        "dailyScore": 50.1,
+        "rollingScore": 51.0,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.1,
         "coverageStatus": "ok"
       }
     ],
@@ -215,17 +224,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 52.0,
+    "score": 51.9,
     "label": "Mixed",
-    "evidenceCoverage": 45,
+    "evidenceCoverage": 50,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 52.6,
+        "score": 52.4,
         "weight": 0.4,
-        "reliability": 0.45,
-        "detail": "Recency-weighted average of 9 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.5,
+        "detail": "Recency-weighted average of 10 scored days in the latest 90 calendar days; 30-day half-life."
       }
     ],
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
