@@ -10556,6 +10556,113 @@
         }
       ],
       "changeFromPreviousScoredDay": 10.1
+    },
+    {
+      "date": "2026-10-31",
+      "dailyScore": 39.3,
+      "dailyLabel": "Negative",
+      "rollingScore": 50.6,
+      "confidence": 61.7,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 9,
+      "eligibleArticleCount": 4,
+      "storyCount": 4,
+      "effectiveStoryCount": 3.077,
+      "sourceCount": 3,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 3,
+      "dispersion": 0.6436,
+      "rejectedCandidateCounts": {
+        "missing_company_alias": 5
+      },
+      "topStories": [
+        {
+          "id": "d293d3d6df018533",
+          "storyClusterId": "story-002",
+          "title": "Unilever hiking prices as commodity costs soar amid Iran conflict",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRW1zRlJoN293bVdLLWVCeFJqcElJWFhFMS04WktIVmNyajlRQzRjeWs2Vmx5Z2NUTXU5RU5NRVV4dzVlMWtXS1VaWFVSMWFWcGs4YzZEVUNxOE5ZTHgweWJRa285X292ek43RDhNd2RQSVJ4UGdaNXIxcFhlbEJuSjdvR3E1UkdZVFBHU3Zrc0xXN0dNc216UmR4TzZDbndCTjFmVXFFX082OGxWdXFIQjR3?oc=5",
+          "source": "standard.co.uk",
+          "publishedAt": "2026-10-31T12:11:33Z",
+          "polarity": -0.6486,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "67d27241ce40e88a",
+          "storyClusterId": "story-001",
+          "title": "Unilever Consumer Care revenue, profit drop in Jul-Sept",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNZ0lSZG80TldoeTdpMElrNDVIZmxKbVpnQ29OZnVncUJnc3NTREIwS1E0OHhzQUl2RjVqNHR3NkRwODJvVkttZDhCcWRhWFgzZnJfOEEtNElSQlNxTGhHTzBRYnNMUFlnLS1McllaWG1uelp1d04tVFA0c09tOGdHQVBrMGZmdkZqVlNkT2xqSUhDS2ZyR0k4cTRobFhqZ1p0QjFIUQ?oc=5",
+          "source": "thedailystar.net",
+          "publishedAt": "2026-10-31T09:16:17Z",
+          "polarity": -0.9624,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "f22b2e27ad95cb83",
+          "storyClusterId": "story-003",
+          "title": "Higher prices lift Unilever revenue",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOUEJWb0RUTEFNYnotUWN1UUJUTGpSWTlwVFgxOXhxNjRZY2p2QjRJM2xMel9ibmtTUk5LSDFYeW9Kc3RfUXJPbE16d0lSQmgxREpjSGVvLUdHbFFfM2J5WVUydVJCU3kzTmpHLVoyb3hLZW5jaVI5N2VCWjRXQ1NtRU9iZmlES1o4RXlmYnByem5sZVVpdEhBeE9B?oc=5",
+          "source": "thedailystar.net",
+          "publishedAt": "2026-10-31T20:33:28Z",
+          "polarity": 0.7471,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "c1c0836a8ea1e93e",
+          "storyClusterId": "story-004",
+          "title": "Hindustan Unilever stock backs proposed nutrition labels",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNaUZ5bU5MT2NJU2ozdXhndEY5emRPNENtNDZpLUU4T0xlS2phOVQxcURndkgzS096QTZhamNXNkFoSlZhT0w4SE9DUVpvNmRsX3ZOZ1B1YjlpR3NIRzZob0Fhdl9PcmlnZmZvMmhWb3g4WmxJQ2pWSk5BTElnejNubGwzS2tfaUc2ZEtPVWdYOUxlWEY1VnA4MHVPOEMzaVNvUVNHQlkzdlZQdUI2LUpvX1UydWNyZw?oc=5",
+          "source": "ad-hoc-news.de",
+          "publishedAt": "2026-10-31T23:44:13Z",
+          "polarity": -0.3183,
+          "sentiment": "Negative",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "earnings_miss",
+          "direction": "negative",
+          "severity": "medium",
+          "status": "possible",
+          "evidenceArticleIds": [
+            "67d27241ce40e88a"
+          ],
+          "sourceCount": 1
+        },
+        {
+          "type": "sentiment_drop",
+          "direction": "negative",
+          "severity": "high",
+          "status": "calculated",
+          "detail": "Daily score decreased by 19.3 points",
+          "evidenceArticleIds": [
+            "d293d3d6df018533",
+            "67d27241ce40e88a",
+            "f22b2e27ad95cb83",
+            "c1c0836a8ea1e93e"
+          ]
+        },
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "d293d3d6df018533",
+            "67d27241ce40e88a",
+            "f22b2e27ad95cb83",
+            "c1c0836a8ea1e93e"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -19.3
     }
   ]
 }

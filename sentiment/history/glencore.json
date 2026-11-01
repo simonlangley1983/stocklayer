@@ -9717,6 +9717,76 @@
         }
       ],
       "changeFromPreviousScoredDay": 0.4
+    },
+    {
+      "date": "2026-10-31",
+      "dailyScore": 50.5,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 55.8,
+      "confidence": 34.5,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 3,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 2,
+      "negativeStoryCount": 0,
+      "dispersion": 0.019,
+      "rejectedCandidateCounts": {
+        "missing_company_alias": 1
+      },
+      "topStories": [
+        {
+          "id": "e9c382be6237f79c",
+          "storyClusterId": "story-001",
+          "title": "Glencore’s Energy Trading Profits Soar on Iran War - Energy News, Top Headlines, Commentaries, Features & Events",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxObGFzX0JwYXRfbTBEVU05ZTU1eFcyZ05sdEEtT1UzZmQyTjRFUm1jdjk5NVp3SUdQYnp3Y0lQdDlPYi11bW5zMjl0SmRTYncyZTk4ak9fS0laREVsMGNRc0xiUE51RnR2V2N3Zk9MQVctRk1FMGxpT3hmTnRWWnkyM0FkS3pucnM?oc=5",
+          "source": "energynow.com",
+          "publishedAt": "2026-10-31T08:09:58Z",
+          "polarity": 0.0381,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "eafc5545465dc453",
+          "storyClusterId": "story-002",
+          "title": "Barclays Maintains GLENCORE PLC(GLCNF.US) With Buy Rating, Cuts Target Price to $9.44",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQVEJjS2x1c0k3WE1rejFBbngtREhXUzRtQUtMa1FOQ2wzWlctQ0pQNFNwMU9hMUVOX0FqRGVFbzVlRWVJdzFpX3hlOG9vcTNKUmtfdkZENVVhTkZRTDRQZXFWMFJnRXFIRjNLOEt4U0RISUVfaDJ4NXhLUVVoMVJkMG5ueWZscXpIakRZMWc1amNXT0tyRnBxM3NnS2UyQVBaajlWR0ZZdDlUSzZuZVVQWQ?oc=5",
+          "source": "moomoo.com",
+          "publishedAt": "2026-10-31T12:48:09Z",
+          "polarity": 0.0001,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "earnings_beat",
+          "direction": "positive",
+          "severity": "medium",
+          "status": "possible",
+          "evidenceArticleIds": [
+            "e9c382be6237f79c"
+          ],
+          "sourceCount": 1
+        },
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 34.5",
+          "evidenceArticleIds": [
+            "e9c382be6237f79c",
+            "eafc5545465dc453"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -9.6
     }
   ]
 }
