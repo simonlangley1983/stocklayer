@@ -4939,37 +4939,51 @@
     },
     {
       "date": "2026-11-02",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.5,
-      "confidence": 0.0,
+      "dailyScore": 64.6,
+      "dailyLabel": "Positive",
+      "rollingScore": 52.2,
+      "confidence": 19.5,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 37,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
-      "positiveStoryCount": 0,
+      "candidateCount": 38,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 1,
       "neutralStoryCount": 0,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
         "missing_company_alias": 37
       },
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "17efa4cc21986865",
+          "storyClusterId": "story-001",
+          "title": "FTSE 100 Auto Trader (LSE:AUTO) Seeks to Steady Its Slide",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNZkZ0a0RVV3o4SzdWT2JRQ1kyVkp0Qm1pSy1vdTJFZDBSY3V2VnRmenFqZVhLOXBGa3BGaC1KVkNJWV9MSTNabHhSd2pDSFdJeEZSWlVOYXF0NEQteDRxUXRYcXRQQzJENUVrVWQ4TUJJZV95bk1yRHV1TXVFdVh0dFFlWm9ZMENkT0NJejFUaEhqTUdZLWxzb19KTHVWMUVnWkE?oc=5",
+          "source": "kalkinemedia.com",
+          "publishedAt": "2026-11-02T12:07:00Z",
+          "polarity": 0.8749,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 19.5",
+          "evidenceArticleIds": [
+            "17efa4cc21986865"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": 15.3
     }
   ]
 }

@@ -5756,37 +5756,49 @@
     },
     {
       "date": "2026-11-02",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 49.7,
-      "confidence": 0.0,
+      "dailyScore": 63.8,
+      "dailyLabel": "Positive",
+      "rollingScore": 51.5,
+      "confidence": 19.1,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 2,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
-      "positiveStoryCount": 0,
+      "candidateCount": 1,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 1,
       "neutralStoryCount": 0,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
-      "rejectedCandidateCounts": {
-        "missing_company_alias": 2
-      },
-      "topStories": [],
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "a427a7e4300eb468",
+          "storyClusterId": "story-001",
+          "title": "Hiscox grows US premiums 8.4%, starts advertising on an LLM",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOUFdtRkxSMlNzRWxXMThkTEVYLUtIQzcxSHhGd09vV1d1UjNpVnpyQ18zd1Rpd3ladjM5bndHajdZYkVOdXM3U09xUV9FaGdDcUVHZ2ZHeWNlOXpUZnV1dHBKcVNSRWo5ck5HZ081bXNEb2VCZGhXeXFIenR6a0JENzg1Z0R5c2s?oc=5",
+          "source": "coverager.com",
+          "publishedAt": "2026-11-02T08:00:00Z",
+          "polarity": 0.8262,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 19.1",
+          "evidenceArticleIds": [
+            "a427a7e4300eb468"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": 14.6
     }
   ]
 }

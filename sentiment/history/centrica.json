@@ -6204,37 +6204,61 @@
     },
     {
       "date": "2026-11-02",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.5,
-      "confidence": 0.0,
+      "dailyScore": 48.8,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.2,
+      "confidence": 32.2,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 3,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 2,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 0,
+      "neutralStoryCount": 2,
       "negativeStoryCount": 0,
-      "dispersion": 0.0,
-      "rejectedCandidateCounts": {
-        "missing_company_alias": 3
-      },
-      "topStories": [],
+      "dispersion": 0.0076,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "fb77d94aea9b3eea",
+          "storyClusterId": "story-001",
+          "title": "Centrica plc (CNA.L) Seasonal Returns Chart - Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1KNmwxcTFybHp5VEpVZGdoYnpsbDdtQTNDXzZqUnZ0OW5xekdEejBmMlFLU3NnaVh4WXRTT0ZLTVhnTWJPNHVkT0gyUnI1amJOalZET29lV0FaR0VmVDBRS09BOA?oc=5",
+          "source": "ca.finance.yahoo.com",
+          "publishedAt": "2026-11-02T09:30:08Z",
+          "polarity": -0.0536,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "3e5c9ab03a14ed35",
+          "storyClusterId": "story-002",
+          "title": "Centrica plc (CPYYY) Seasonal returns chart - Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9xcGpVX1dRc3JyaGFId3lQQXRHekp1VWdZd1lMM2thNUpQNU40ZEJ4Y3hvdkJ0dHI1ZXBUV2xyOVotUXB5LVM4bjU0VG01WXluZ2gzdE5qUi1EYm1Udm0yLUZRZw?oc=5",
+          "source": "sg.finance.yahoo.com",
+          "publishedAt": "2026-11-02T23:30:47Z",
+          "polarity": -0.0385,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 32.2",
+          "evidenceArticleIds": [
+            "fb77d94aea9b3eea",
+            "3e5c9ab03a14ed35"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": -1.1
     }
   ]
 }
