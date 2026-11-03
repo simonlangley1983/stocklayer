@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-03T00:05:53.678820Z",
+  "generatedAt": "2026-11-03T00:08:16.945605Z",
   "company": {
     "companyName": "Compass Group",
     "ticker": "CPG.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-11-01",
-    "observationCount": 115,
-    "scoredDayCount": 48,
-    "latestScore": 49.9,
-    "latestScoreDate": "2026-10-31",
+    "periodEnd": "2026-11-02",
+    "observationCount": 116,
+    "scoredDayCount": 49,
+    "latestScore": 54.9,
+    "latestScoreDate": "2026-11-02",
     "series": [
       {
         "date": "2026-06-30",
@@ -1060,6 +1060,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-11-02",
+        "dailyScore": 54.9,
+        "rollingScore": 50.7,
+        "storyCount": 2,
+        "sourceCount": 2,
+        "confidence": 33.3,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1661,10 +1670,10 @@
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.5,
+        "score": 51.7,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 45 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 46 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1841,5 +1850,26 @@
       "significance": 1.467
     }
   ],
-  "persistentEvents": []
+  "persistentEvents": [
+    {
+      "id": "8e9163f52e0be043b07c",
+      "type": "contract",
+      "title": "Compass Group stock: ESS wins South Wales Police contract",
+      "date": "2026-11-02",
+      "status": "pending_review",
+      "reviewDate": "2027-05-01",
+      "direction": "Slightly positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOQm9Db1JPb29aRkZhLS1XMWpGbDQ5XzFacHNablRQUkp0d1V2RUxIXy05YUlYeVdfVEI3Nk5fYmZrclNoTzBMYUYxTEhCWjVVQzM3MHZXNUkzZ1hJVmxITkhDcThldGR6cjVlM3E2LUhvM0Q4ZFBvUTU5TzVSRnVvTm5NYWlRNk52UmFyd0JWZm82X3poY0FOdmNmdDVSblNILWN2QzJ5dHJBUVpybWpwaTFJRnl2eW1XTkVj?oc=5",
+          "publisher": "ad-hoc-news.de",
+          "date": "2026-11-02"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    }
+  ]
 }

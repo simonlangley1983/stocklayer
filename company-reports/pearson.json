@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-03T00:05:53.678820Z",
+  "generatedAt": "2026-11-03T00:08:16.945605Z",
   "company": {
     "companyName": "Pearson PLC",
     "ticker": "PSON.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-11-01",
-    "observationCount": 110,
-    "scoredDayCount": 102,
-    "latestScore": 51.3,
-    "latestScoreDate": "2026-11-01",
+    "periodEnd": "2026-11-02",
+    "observationCount": 111,
+    "scoredDayCount": 103,
+    "latestScore": 50.8,
+    "latestScoreDate": "2026-11-02",
     "series": [
       {
         "date": "2026-06-30",
@@ -1015,6 +1015,15 @@
         "sourceCount": 6,
         "confidence": 72.7,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-11-02",
+        "dailyScore": 50.8,
+        "rollingScore": 50.1,
+        "storyCount": 22,
+        "sourceCount": 19,
+        "confidence": 80.5,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1616,10 +1625,10 @@
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 48.9,
+        "score": 49.0,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 76 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 77 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1797,6 +1806,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "8150c4bd152bcc577725",
+      "type": "acquisition",
+      "title": "Right fears ‘Communist takeover of Europe’… as Allison Pearson leaves the Telegraph",
+      "date": "2026-11-02",
+      "status": "pending_review",
+      "reviewDate": "2027-05-01",
+      "direction": "Very negative",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQaTFGM3M1V3dwMXdNRVkyTzFMYkJkczFlUEhQYUMwNVdyR1NyeFA3azg0S3FwUVFIUTFWa0ppS0NqdHFxUk5wRVhMaVVueWtkcXJjT0JYcnlfQ29WeDdJd3E3cFJnUTdHbWhwbXhUQTUzX2ttbXJaQUphMzBEOE0tbVlUZ0lJTWNXazFWSHBfRGNZT0ZHZTdzZDdXdHdTem90MUZXUFBrUkw2SEl2QzhVTThtTUh4Y0ItSDgwbUtfc082VWVm?oc=5",
+          "publisher": "thenewworld.co.uk",
+          "date": "2026-11-02"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "e066d27f7820b57c3ede",
       "type": "leadership_restructuring",

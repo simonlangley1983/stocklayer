@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-03T00:05:53.678820Z",
+  "generatedAt": "2026-11-03T00:08:16.945605Z",
   "company": {
     "companyName": "IMI PLC",
     "ticker": "IMI.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-15",
-    "periodEnd": "2026-11-01",
-    "observationCount": 117,
-    "scoredDayCount": 16,
-    "latestScore": 52.1,
-    "latestScoreDate": "2026-10-31",
+    "periodEnd": "2026-11-02",
+    "observationCount": 118,
+    "scoredDayCount": 17,
+    "latestScore": 50.8,
+    "latestScoreDate": "2026-11-02",
     "series": [
       {
         "date": "2026-06-15",
@@ -1078,6 +1078,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-11-02",
+        "dailyScore": 50.8,
+        "rollingScore": 51.2,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1672,17 +1681,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 62.4,
+    "score": 62.6,
     "label": "Positive",
-    "evidenceCoverage": 92,
+    "evidenceCoverage": 94,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 50.2,
+        "score": 50.3,
         "weight": 0.4,
-        "reliability": 0.8,
-        "detail": "Recency-weighted average of 16 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.85,
+        "detail": "Recency-weighted average of 17 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",

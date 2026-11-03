@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-03T00:05:53.678820Z",
+  "generatedAt": "2026-11-03T00:08:16.945605Z",
   "company": {
     "companyName": "Coca-Cola Europacific Partners PLC",
     "ticker": "CCEP.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-09-15",
-    "periodEnd": "2026-11-01",
-    "observationCount": 48,
-    "scoredDayCount": 35,
-    "latestScore": 50.5,
-    "latestScoreDate": "2026-11-01",
+    "periodEnd": "2026-11-02",
+    "observationCount": 49,
+    "scoredDayCount": 36,
+    "latestScore": 50.4,
+    "latestScoreDate": "2026-11-02",
     "series": [
       {
         "date": "2026-09-15",
@@ -456,6 +456,15 @@
         "storyCount": 1,
         "sourceCount": 1,
         "confidence": 15.2,
+        "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-11-02",
+        "dailyScore": 50.4,
+        "rollingScore": 50.3,
+        "storyCount": 4,
+        "sourceCount": 3,
+        "confidence": 49.3,
         "coverageStatus": "ok"
       }
     ],
@@ -1058,10 +1067,10 @@
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 52.4,
+        "score": 52.3,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 35 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 36 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1239,6 +1248,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "11d4d2f3b376993c8b23",
+      "type": "acquisition",
+      "title": "CFO acquires 3.2362 shares through UK plan at Coca-Cola Europacific Partners (CCEP).",
+      "date": "2026-11-02",
+      "status": "pending_review",
+      "reviewDate": "2027-05-01",
+      "direction": "Neutral / mixed",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQWFd6NU9RTGl2TC1LZWlEY3dhWlRjZTNGWnYxSVQ4dlEySHY1MHEtbVU5X2lOX3Y0SzBzeHFDYmd2Q1VqX21rWkVHeVEtTXc4cVFJc1lkLVd1VFJtdC1IN0dfYTlEdDhlYjFSMkx1RHVUdUkzcGVrdHJwZXhGSS1VM1ZqSXNYNVhXUXhfWlBJY2lzYS1CaHd5cDM0VmJFWGNGY1ZRYzRoYTJuYm1lUG1UemZOVVJuMkM2OHpkVWljVVlCZFY4T2UxRlRn?oc=5",
+          "publisher": "stocktitan.net",
+          "date": "2026-11-02"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "d690ad8c74f2a1d90fc0",
       "type": "acquisition",
