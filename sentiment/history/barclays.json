@@ -6667,61 +6667,35 @@
     },
     {
       "date": "2026-11-02",
-      "dailyScore": 50.1,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 47.9,
-      "confidence": 23.8,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 47.6,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
+      "coverageStatus": "no_coverage",
       "collectionCompleteness": 0.75,
-      "candidateCount": 57,
-      "eligibleArticleCount": 2,
-      "storyCount": 2,
-      "effectiveStoryCount": 2.0,
-      "sourceCount": 2,
+      "candidateCount": 10,
+      "eligibleArticleCount": 0,
+      "storyCount": 0,
+      "effectiveStoryCount": 0,
+      "sourceCount": 0,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 2,
+      "neutralStoryCount": 0,
       "negativeStoryCount": 0,
-      "dispersion": 0.0169,
+      "dispersion": 0.0,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 54,
+        "ambiguous_company_without_alias": 9,
         "missing_company_alias": 1
       },
-      "topStories": [
-        {
-          "id": "0718894ed281fe92",
-          "storyClusterId": "story-001",
-          "title": "REG - Barclays PLC Spire Healthcare Grp - Form 8.3 SPIRE HEALTHCARE GROUP PLC",
-          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOYjlzQmVwdkcxZXFaYThKNHNwRXVCNHN4TEJOWGdBVzNQX1pjRjM3WWFRQVZuSUVtSTBrMXowVDJWQnVfTjh3aEJMVXJwaTgwbTlSUVdRV3pNZkZfU2h5SWYxS0pEV3l0NjdCejRTT3YwZ0JvdEdCSk5BLTlzUlJDWEhuN2JpZ1hScFVHOGMwV3lxblh5aHBPWEljaTNuTUpFTVF6OUVaY2ZleExuTk5YRDRfQktCVktFMHY3X1Bfc3ViUnUzMTJkVU1BNV9ZNWNBZDJRa05TVTg4SHRFQzlhNEZEcw?oc=5",
-          "source": "tradingview.com",
-          "publishedAt": "2026-11-02T09:57:54Z",
-          "polarity": 0.0196,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        },
-        {
-          "id": "ebdb96b92ebb562d",
-          "storyClusterId": "story-002",
-          "title": "SEC Form 6-K filed by Barclays PLC",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNZjZpb2xKdlVId3NQOG52WnBVYndIZW9kcjl5WVJmZXdmZmlWTUQ3SW0yZXNMOVZTRjdycTdVRTRYMW0yRFlMSk5rQzlfSEhJU0V5V2pRZlplMktYYXlQT3N5LWdfQjdaRHRlQ3dLb3Jud0VJOW8zMTlCSlFqLVFYZmdIUQ?oc=5",
-          "source": "quantisnow.com",
-          "publishedAt": "2026-11-02T19:52:09Z",
-          "polarity": -0.0143,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ],
+      "topStories": [],
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 23.8",
-          "evidenceArticleIds": [
-            "0718894ed281fe92",
-            "ebdb96b92ebb562d"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         },
         {
           "type": "collection_degraded",
@@ -6729,13 +6703,10 @@
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "0718894ed281fe92",
-            "ebdb96b92ebb562d"
-          ]
+          "evidenceArticleIds": []
         }
       ],
-      "changeFromPreviousScoredDay": 10.4
+      "changeFromPreviousScoredDay": null
     }
   ]
 }

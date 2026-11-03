@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-11-03T16:49:45.862598Z",
+  "generatedAt": "2026-11-03T22:27:09.771281Z",
   "asOfDate": "2026-11-02",
   "companies": {
     "airtel-africa": {
@@ -773,26 +773,23 @@
       "ticker": "BARC.L",
       "slug": "barclays",
       "date": "2026-11-02",
-      "dailyScore": 50.1,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 47.9,
-      "confidence": 23.8,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 47.6,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 2,
-      "sourceCount": 2,
-      "changeFromPreviousScoredDay": 10.4,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 23.8",
-          "evidenceArticleIds": [
-            "0718894ed281fe92",
-            "ebdb96b92ebb562d"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         },
         {
           "type": "collection_degraded",
@@ -800,36 +797,10 @@
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "0718894ed281fe92",
-            "ebdb96b92ebb562d"
-          ]
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "0718894ed281fe92",
-          "storyClusterId": "story-001",
-          "title": "REG - Barclays PLC Spire Healthcare Grp - Form 8.3 SPIRE HEALTHCARE GROUP PLC",
-          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOYjlzQmVwdkcxZXFaYThKNHNwRXVCNHN4TEJOWGdBVzNQX1pjRjM3WWFRQVZuSUVtSTBrMXowVDJWQnVfTjh3aEJMVXJwaTgwbTlSUVdRV3pNZkZfU2h5SWYxS0pEV3l0NjdCejRTT3YwZ0JvdEdCSk5BLTlzUlJDWEhuN2JpZ1hScFVHOGMwV3lxblh5aHBPWEljaTNuTUpFTVF6OUVaY2ZleExuTk5YRDRfQktCVktFMHY3X1Bfc3ViUnUzMTJkVU1BNV9ZNWNBZDJRa05TVTg4SHRFQzlhNEZEcw?oc=5",
-          "source": "tradingview.com",
-          "publishedAt": "2026-11-02T09:57:54Z",
-          "polarity": 0.0196,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        },
-        {
-          "id": "ebdb96b92ebb562d",
-          "storyClusterId": "story-002",
-          "title": "SEC Form 6-K filed by Barclays PLC",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNZjZpb2xKdlVId3NQOG52WnBVYndIZW9kcjl5WVJmZXdmZmlWTUQ3SW0yZXNMOVZTRjdycTdVRTRYMW0yRFlMSk5rQzlfSEhJU0V5V2pRZlplMktYYXlQT3N5LWdfQjdaRHRlQ3dLb3Jud0VJOW8zMTlCSlFqLVFYZmdIUQ?oc=5",
-          "source": "quantisnow.com",
-          "publishedAt": "2026-11-02T19:52:09Z",
-          "polarity": -0.0143,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "british-american-tobacco": {
       "companyName": "British American Tobacco",
@@ -1103,44 +1074,16 @@
       "ticker": "BP.L",
       "slug": "bp",
       "date": "2026-11-02",
-      "dailyScore": 53.2,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 52.4,
-      "confidence": 65.7,
+      "dailyScore": 44.8,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 51.0,
+      "confidence": 65.1,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 16,
-      "sourceCount": 10,
-      "changeFromPreviousScoredDay": 12.8,
+      "storyCount": 11,
+      "sourceCount": 7,
+      "changeFromPreviousScoredDay": 4.4,
       "flags": [
-        {
-          "type": "sentiment_jump",
-          "direction": "positive",
-          "severity": "high",
-          "status": "calculated",
-          "detail": "Daily score increased by 12.8 points",
-          "evidenceArticleIds": [
-            "a53be20973cacd4f",
-            "cdda67eb5af3176b",
-            "df93ad292a753bae",
-            "2d06bb6026720cf3",
-            "ffe2cd52c4222be8"
-          ]
-        },
-        {
-          "type": "coverage_spike",
-          "direction": "neutral",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "16 stories versus trailing median 4.5",
-          "evidenceArticleIds": [
-            "a53be20973cacd4f",
-            "cdda67eb5af3176b",
-            "df93ad292a753bae",
-            "2d06bb6026720cf3",
-            "ffe2cd52c4222be8"
-          ]
-        },
         {
           "type": "high_disagreement",
           "direction": "mixed",
@@ -1150,7 +1093,7 @@
           "evidenceArticleIds": [
             "a53be20973cacd4f",
             "cdda67eb5af3176b",
-            "df93ad292a753bae",
+            "5e11770b14b0225e",
             "2d06bb6026720cf3",
             "ffe2cd52c4222be8"
           ]
@@ -1164,7 +1107,7 @@
           "evidenceArticleIds": [
             "a53be20973cacd4f",
             "cdda67eb5af3176b",
-            "df93ad292a753bae",
+            "5e11770b14b0225e",
             "2d06bb6026720cf3",
             "ffe2cd52c4222be8"
           ]
@@ -1173,7 +1116,7 @@
       "topStories": [
         {
           "id": "a53be20973cacd4f",
-          "storyClusterId": "story-012",
+          "storyClusterId": "story-011",
           "title": "BP PLC Stock (BP) Closed Down by 4.98% on Nov 2: Drivers Behind the Movement",
           "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUjNqazE2Y2piOC1CbnRXbEtNalRIMkNuNE0xT2pVR25PQktIaGZNMzkyNlpTZ2wwNkdISUs5RGRoZTIydU96cHJkMFRYZk5fSW5ySzRzWFJBM2xZUUg4RndWUHMwdHZndnhNX21iSXBJT2pneHRDZC1mcWlyeDc2VUxHZGltQ3ds?oc=5",
           "source": "tradingkey.com",
@@ -1194,19 +1137,19 @@
           "publisherCount": 1
         },
         {
-          "id": "df93ad292a753bae",
-          "storyClusterId": "story-002",
-          "title": "BP PLC-SPONS ADR (NYSE:BP) Shows Accelerating Earnings, Sales, and Cash Flow Growth",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPcFQ5dHJZZFR3dF9hYlpxMG9qTDRhWmUzVmhLTHhrUDljaHJFYlo4TWRRZjJLY3c5UlRuNHpnMl9ScG5YdC1SWlUwY2NhaXZqVHBuWGhVRFI4N2JibTN1Ujc1QjM5QTFFRUc2cFpGbF9zSWt4cUFNblpWWFNRWlQ2Z2NXTm9aZTd1dUFOWFd4MmZDZVphTVBCcTZWcTRFOXluSXlNdUR2eTUtXzNfNWlGWFFsUHZWYnZfZG5SVWlYTFEzUHJVaW1F?oc=5",
-          "source": "chartmill.com",
-          "publishedAt": "2026-11-02T09:30:56Z",
-          "polarity": 0.937,
-          "sentiment": "Very positive",
+          "id": "5e11770b14b0225e",
+          "storyClusterId": "story-004",
+          "title": "Aker BP Fails to Find Additional Oil and Gas at North Sea Discovery",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQaURybTRuWUNtMjk4dVVybzFGeW1mUUpGOGxsYUVyNzRpV0RzZ0k1MS1HY2dxbmp3NUNxbnlKLXB0dUZ4RV9JekhyX2VFQWZoVl9xcHRta3I5QWpTcV9Ha2RPX3BEMnJOYVNGcF9RVWo3Y01tNzdrNmoxSzZQelFfcGhmYU8teVZHMmg4bWVOZmFlejE0SFpGaVJSeWhaRmlaQkF4aFRXMDY?oc=5",
+          "source": "oedigital.com",
+          "publishedAt": "2026-11-02T10:31:32Z",
+          "polarity": -0.916,
+          "sentiment": "Very negative",
           "publisherCount": 1
         },
         {
           "id": "2d06bb6026720cf3",
-          "storyClusterId": "story-011",
+          "storyClusterId": "story-010",
           "title": "FTSE 100 Today: London Index Rises to 10,761.33 for Fourth Straight Gain as Oil Slump Hits BP",
           "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQbmM5TE5KR0hZejNEek93WnhhNWsxME1BS3pXbjZpS1ZiWnV6YVR6M1c4OW5qcW5pa3lseWE0cXJMa1ZzRlczSmh0VXhjeGZwYjJHaXZ3NnRkdzEyUGdwbl9iRFRNNFV5dC14UGVHSlYwN21vNV9nWGZqV0d3TTE3SV9UOEVTMXRRNS1fWjFoODliSURySHNMeVVCcGdJcW9aa1lxb2xieTRUMHplVG5pZm11REVDTy04X25lenV5NFd5Wm5KeUkzUkp6bTA?oc=5",
           "source": "bbntimes.com",
@@ -1217,7 +1160,7 @@
         },
         {
           "id": "ffe2cd52c4222be8",
-          "storyClusterId": "story-004",
+          "storyClusterId": "story-003",
           "title": "BP completes £4.4bn Castrol sale as oil major steps up debt reduction drive",
           "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPZ1Y2U0kzNnNJdzFfWUNtak85aWh1UTNfbExsOTZwVEY5dlB5cjRlRHlNNG5yVmx3NTd5dDY0UGJjQTFqNWcyZ240X2xXczJ3YjduMjg2X3NqejRDcFBCeW02MXNIQmtvdmRRWHVaLXlZMldud0tpM2lVQVEyTXJsejBMdVRiTklsUEhKX1JKanlwakFNUjViUXltQjR0ZGV3a004NUxrXzdDcUE?oc=5",
           "source": "londonlovesbusiness.com",
@@ -1386,26 +1329,40 @@
       "ticker": "CCC.L",
       "slug": "computacenter",
       "date": "2026-11-02",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 52.3,
-      "confidence": 0.0,
+      "dailyScore": 65.2,
+      "dailyLabel": "Positive",
+      "rollingScore": 53.9,
+      "confidence": 19.5,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 15.6,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 19.5",
+          "evidenceArticleIds": [
+            "ba938e8d5899a4ba"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "ba938e8d5899a4ba",
+          "storyClusterId": "story-001",
+          "title": "FTSE 100 Computacenter (LSE:CCC) Delivers a Big Upgrade",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOSUs4ZUljRDRVS1M3am1MbVNRUlk3Q1U1cTZHOWtBalo0SDhHMlNGMXZyVVhFS0JZSlFUcUI1OFRUbE9raWd6X3A3eE9EdHo1T0p1aFU5UnMzVkl1ei1Sa0QyQnotXzVYOUJ3OHpjMGhPcjJkSEh5YlpRLWQtdHZWWkh1RmlRQnZ1dXR0MWI1OExXWkxnZW1fMHNZRWtpZUk?oc=5",
+          "source": "kalkinemedia.com",
+          "publishedAt": "2026-11-02T12:07:00Z",
+          "polarity": 0.9136,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        }
+      ]
     },
     "coca-cola-europacific-partners": {
       "companyName": "Coca-Cola Europacific Partners PLC",
@@ -4872,15 +4829,15 @@
       "ticker": "SHEL.L",
       "slug": "shell",
       "date": "2026-11-02",
-      "dailyScore": 48.6,
+      "dailyScore": 49.2,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 52.2,
-      "confidence": 67.8,
+      "rollingScore": 52.3,
+      "confidence": 44.7,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 10,
-      "sourceCount": 9,
-      "changeFromPreviousScoredDay": -9.7,
+      "storyCount": 4,
+      "sourceCount": 3,
+      "changeFromPreviousScoredDay": -9.1,
       "flags": [
         {
           "type": "high_disagreement",
@@ -4889,11 +4846,10 @@
           "status": "calculated",
           "detail": "Positive and negative coverage is unusually dispersed",
           "evidenceArticleIds": [
-            "5559f84cc4ae3bb9",
-            "ea3fcd32d0750751",
+            "ff4b21c07c57b118",
             "cdda67eb5af3176b",
-            "13d088984234f040",
-            "9bbca1f1f70ee9d4"
+            "9bbca1f1f70ee9d4",
+            "425c95b29a01f029"
           ]
         },
         {
@@ -4903,35 +4859,23 @@
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
-            "5559f84cc4ae3bb9",
-            "ea3fcd32d0750751",
+            "ff4b21c07c57b118",
             "cdda67eb5af3176b",
-            "13d088984234f040",
-            "9bbca1f1f70ee9d4"
+            "9bbca1f1f70ee9d4",
+            "425c95b29a01f029"
           ]
         }
       ],
       "topStories": [
         {
-          "id": "5559f84cc4ae3bb9",
-          "storyClusterId": "story-006",
-          "title": "Shell PLC Stock (SHEL) Moved Down by 3.07% on Nov 2: What Investors Need To Know",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTnFLaUNab1BjZ0FVZ0pWRXZ2cHhRbDdWcGFKVGVOejVKaEl4YkxCU09zSTVxYl9TWjdkRFZuVG56TEdzWmdWX0ZHdlBONUw5VVFZNVNJd0xlOTNIMHh6dnR5MDBQUDM4T0RIR0Y3TUNwZ2ZnOS1Kd2pDZ25OS2cwMVdZMTNtSkE5YlZj?oc=5",
-          "source": "tradingkey.com",
-          "publishedAt": "2026-11-02T16:15:39Z",
-          "polarity": -0.9507,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "ea3fcd32d0750751",
-          "storyClusterId": "story-010",
-          "title": "Shell PLC (SHEL) Shares Fall 3.5% -- What GF Score of 74 Tells I",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQNlJpbFU5QkFsTzA3TmI2eDJ6X0RZNXlOZTBWbzM0enZVZkhlYXhPRWhCX3M4SFdmdXBNOEs4VnJLX2VHZW5qQzBWaHJRY1NMRTF0VnJIeGR6ZkI5bnE2X1lzVkFycWc2d3JaZmJ4NVhrUFQ1cHNKRlhJQmpxZ3c2a0hfVWliWlEzNlFlUTZITnJWYmJ5X3JTYS1oV2VrMi0zbTVFSnNnMA?oc=5",
-          "source": "gurufocus.com",
-          "publishedAt": "2026-11-02T22:20:31Z",
-          "polarity": -0.9505,
-          "sentiment": "Very negative",
+          "id": "ff4b21c07c57b118",
+          "storyClusterId": "story-002",
+          "title": "Metlen Energy signs five‑year LNG supply deal with Shell",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPZDdGcmxOOTB3N19rcDRsODdRTFBXdEhaQmgtNU9IM0QwSzZGSGg0NXkyWHZKTFV1VC1CMzFOQ0tGUFZ1QVgxWVp3a3l0WnBvdHBvUWhYODFJa2FHR1RXTlFaTE81M25SMVpXYmVCYkY1N1dadUtxUS1DcVF3T1ZhSGNiVnZpaFBBcDJQeURDdGVFNVcxQ3M3cDFxeTBxcGVKOFpNRnVaQVNvYmRvQV9kX2VOYmhta3c3SWg0WXQ3SzhaNWdfUmFlRnNTZWtZS053RnNV?oc=5",
+          "source": "sharecast.com",
+          "publishedAt": "2026-11-02T12:04:05Z",
+          "polarity": 0.6589,
+          "sentiment": "Very positive",
           "publisherCount": 1
         },
         {
@@ -4946,25 +4890,25 @@
           "publisherCount": 1
         },
         {
-          "id": "13d088984234f040",
-          "storyClusterId": "story-008",
-          "title": "Shell LNG Supply Deal Anchors Metlen’s Push to Replace Russian Piped Gas",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBBZHVwU25CSDhRUW9XNHFGZEhtM1BPeTF3MF9YZXQ2SHFOZ1VTN0ttZENaSU5DTFRjeGlHQ25Ua1JpSTdPYlNlRzhtXzlkaUtvNFhZX0N6SXh4RjBIZFByLVlTRTNyY3c1VDFqNG4yaWVudw?oc=5",
-          "source": "energyintel.com",
-          "publishedAt": "2026-11-02T17:31:23Z",
-          "polarity": 0.8538,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
           "id": "9bbca1f1f70ee9d4",
-          "storyClusterId": "story-007",
+          "storyClusterId": "story-004",
           "title": "UK Shares Start Week Higher; BP, Shell Decline Amid Lower Oil Prices",
           "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPZzF3b3N5ajlTNHdIdjdtNlg4Mk1SSFE5NDB5bmNBNi1QYXRVX1ItZl9QaHktaVRWSGRfWGdZMW1nNm9Fa2xFZHRzSHdDVDBSbElGVFNUM0xuSTFaRmsxZE54aVo2VVU2VzlEWGtjanZXVmNITmlEX0pnRFQ0OWROMXRR?oc=5",
           "source": "uk.finance.yahoo.com",
           "publishedAt": "2026-11-02T16:48:37Z",
           "polarity": -0.8516,
           "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "425c95b29a01f029",
+          "storyClusterId": "story-003",
+          "title": "Could Shell (LSE:SHEL) Reshape UK Energy After Jackdaw Approval?",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZlhsOXg5M293TFBEaUZ0ODk3U0RxaHdTdXJEajlkaXlVTS1xV01kUGVMczZsT0RtQ243cWctMVBBWFo0eWVjRlVjUEx2aXFVU2IzNm9yNUhZYkM0dnZvUFd2bHo0YWlkbm1vTFJkdG1NRVY5aDE5X3ZJWk1iQ2ExYnZqakw3czctOTRTTTln?oc=5",
+          "source": "finance.yahoo.com",
+          "publishedAt": "2026-11-02T15:07:33Z",
+          "polarity": 0.2184,
+          "sentiment": "Positive",
           "publisherCount": 1
         }
       ]
