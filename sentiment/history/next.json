@@ -4304,6 +4304,65 @@
         }
       ],
       "changeFromPreviousScoredDay": null
+    },
+    {
+      "date": "2026-11-02",
+      "dailyScore": 54.2,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.9,
+      "confidence": 12.2,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 95,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 90,
+        "missing_company_alias": 4
+      },
+      "topStories": [
+        {
+          "id": "3ff40e604292504e",
+          "storyClusterId": "story-001",
+          "title": "Work placement opportunities wanted: Could your business help shape the next generation of textile and fashion talent?",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNS2VOdXdNNGVjOXVuUjk0eUNhTzRkNTlOTldOQUdBc2diNzBEY0RmdVhzWjZhTlBmVkRaU2ZKejVZR3FXUWIwNmoxbnF6S3hPNTkyWFcyRjNBT2lETXNId0N4M05xTXNjMWY1cVNucGRGd2h2SkhjdEw0d3gzTTFheG9wMThNMkdSUjk1MHN2Nm53UFFlMnhBaHZNTE94OXk1QS1VR25BdU1OSTY2UVgyYm4zemtGWHFvUWdBY3VzVFE2U1h4eWdjZWpmOWlPamVZWDZZZw?oc=5",
+          "source": "ukft.org",
+          "publishedAt": "2026-11-02T18:16:05Z",
+          "polarity": 0.2504,
+          "sentiment": "Positive",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 12.2",
+          "evidenceArticleIds": [
+            "3ff40e604292504e"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "3ff40e604292504e"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 2.4
     }
   ]
 }
