@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-04T01:37:22.057875Z",
+  "generatedAt": "2026-11-04T03:06:16.273614Z",
   "company": {
     "companyName": "Severn Trent PLC",
     "ticker": "SVT.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-11-02",
-    "observationCount": 125,
-    "scoredDayCount": 100,
-    "latestScore": 50.3,
-    "latestScoreDate": "2026-11-02",
+    "periodEnd": "2026-11-03",
+    "observationCount": 126,
+    "scoredDayCount": 101,
+    "latestScore": 56.3,
+    "latestScoreDate": "2026-11-03",
     "series": [
       {
         "date": "2026-06-30",
@@ -1150,6 +1150,15 @@
         "sourceCount": 1,
         "confidence": 15.2,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-11-03",
+        "dailyScore": 56.3,
+        "rollingScore": 50.4,
+        "storyCount": 9,
+        "sourceCount": 8,
+        "confidence": 84.8,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1214,16 +1223,6 @@
         "significance": 1.581
       },
       {
-        "date": "2026-09-24",
-        "type": "high_disagreement",
-        "title": "Kidderminster residents face water supply issues as Severn Trent investigates",
-        "source": "kidderminstershuttle.co.uk",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNN0hjTmRlcmowQi0zejl6VDAtQTNsU2Y5RzBSN2xkZURaMEdxcDl3eVBBQUNXTk11WS14NmlnZWdLNGN2UDdDQWt1azIycDlPZC05UkdpS1BvQ19ISVZodHlONVN3UXdSR2VzT2ZDTnl0R0h4Y09qR3VUOTZXSHkxQkJXRlVPMnlpR0dQbm9XMzNfUmhCWVpJTHJKVHExQ1V0OGI5UE9VcERDdw?oc=5",
-        "direction": "mixed",
-        "detail": "Positive and negative coverage is unusually dispersed",
-        "significance": 1.528
-      },
-      {
         "date": "2026-10-08",
         "type": "high_disagreement",
         "title": "Severn Trent Water apologise for disruption due to 'essential changes' in Shrewsbury",
@@ -1252,6 +1251,16 @@
         "direction": "negative",
         "detail": "Daily score decreased by 27.9 points",
         "significance": 1.595
+      },
+      {
+        "date": "2026-11-03",
+        "type": "coverage_spike",
+        "title": "Severn Trent 'sorry' as water keeps coming out of Stoke-on-Trent road",
+        "source": "uk.news.yahoo.com",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFA1cjliZlY1Z0ZEMlBXMFNQOWk5V1g0WG41aXE2LXk4OTFhQ3c1NHY0MXR0NkpOQnlodEZQVWtWa01iOWwwZnZUUDlISkdpc0IzQ3lvMm11cjdJXzFRMUQ1RG1JMERsNGxiWkJ2RkNxNjNQeTMyUG9hOHNCaw?oc=5",
+        "direction": "neutral",
+        "detail": "9 stories versus trailing median 2",
+        "significance": 1.558
       }
     ]
   },
@@ -1817,17 +1826,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 44.8,
+    "score": 44.9,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 47.3,
+        "score": 47.6,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 69 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 70 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1964,16 +1973,6 @@
       "significance": 1.581
     },
     {
-      "date": "2026-09-24",
-      "type": "high_disagreement",
-      "title": "Kidderminster residents face water supply issues as Severn Trent investigates",
-      "source": "kidderminstershuttle.co.uk",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNN0hjTmRlcmowQi0zejl6VDAtQTNsU2Y5RzBSN2xkZURaMEdxcDl3eVBBQUNXTk11WS14NmlnZWdLNGN2UDdDQWt1azIycDlPZC05UkdpS1BvQ19ISVZodHlONVN3UXdSR2VzT2ZDTnl0R0h4Y09qR3VUOTZXSHkxQkJXRlVPMnlpR0dQbm9XMzNfUmhCWVpJTHJKVHExQ1V0OGI5UE9VcERDdw?oc=5",
-      "direction": "mixed",
-      "detail": "Positive and negative coverage is unusually dispersed",
-      "significance": 1.528
-    },
-    {
       "date": "2026-10-08",
       "type": "high_disagreement",
       "title": "Severn Trent Water apologise for disruption due to 'essential changes' in Shrewsbury",
@@ -2002,6 +2001,16 @@
       "direction": "negative",
       "detail": "Daily score decreased by 27.9 points",
       "significance": 1.595
+    },
+    {
+      "date": "2026-11-03",
+      "type": "coverage_spike",
+      "title": "Severn Trent 'sorry' as water keeps coming out of Stoke-on-Trent road",
+      "source": "uk.news.yahoo.com",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFA1cjliZlY1Z0ZEMlBXMFNQOWk5V1g0WG41aXE2LXk4OTFhQ3c1NHY0MXR0NkpOQnlodEZQVWtWa01iOWwwZnZUUDlISkdpc0IzQ3lvMm11cjdJXzFRMUQ1RG1JMERsNGxiWkJ2RkNxNjNQeTMyUG9hOHNCaw?oc=5",
+      "direction": "neutral",
+      "detail": "9 stories versus trailing median 2",
+      "significance": 1.558
     },
     {
       "date": "2026-12-31",
