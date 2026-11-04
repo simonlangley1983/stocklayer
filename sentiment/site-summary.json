@@ -3,7 +3,7 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-11-04T13:11:44.162338Z",
+  "generatedAt": "2026-11-04T16:53:22.607382Z",
   "asOfDate": "2026-11-03",
   "companyCount": 100,
   "companies": {
@@ -2020,28 +2020,22 @@
       "ticker": "SHEL.L",
       "slug": "shell",
       "date": "2026-11-03",
-      "dailyScore": 52.9,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 52.2,
-      "confidence": 57.1,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "storyCount": 7,
-      "sourceCount": 7,
-      "changeFromPreviousScoredDay": 3.7,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 52.6,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "merger_acquisition",
+          "type": "no_coverage",
           "direction": "neutral",
-          "severity": "high",
-          "status": "possible"
-        },
-        {
-          "type": "collection_degraded",
-          "direction": "neutral",
-          "severity": "medium",
+          "severity": "low",
           "status": "calculated",
-          "detail": "The provider result ceiling was reached for this day"
+          "detail": "Collection succeeded but found no eligible coverage"
         }
       ]
     },
