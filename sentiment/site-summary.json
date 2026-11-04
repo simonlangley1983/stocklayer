@@ -3,7 +3,7 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-11-04T16:53:22.607382Z",
+  "generatedAt": "2026-11-04T22:44:26.447738Z",
   "asOfDate": "2026-11-03",
   "companyCount": 100,
   "companies": {
@@ -474,22 +474,22 @@
       "ticker": "BP.L",
       "slug": "bp",
       "date": "2026-11-03",
-      "dailyScore": 59.9,
-      "dailyLabel": "Slightly positive",
-      "rollingScore": 52.3,
-      "confidence": 49.5,
-      "confidenceBand": "medium",
+      "dailyScore": 54.8,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 51.5,
+      "confidence": 38.2,
+      "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 5,
-      "sourceCount": 4,
-      "changeFromPreviousScoredDay": 15.1,
+      "storyCount": 3,
+      "sourceCount": 3,
+      "changeFromPreviousScoredDay": 10.0,
       "flags": [
         {
-          "type": "sentiment_jump",
-          "direction": "positive",
-          "severity": "high",
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
           "status": "calculated",
-          "detail": "Daily score increased by 15.1 points"
+          "detail": "Confidence is 38.2"
         },
         {
           "type": "collection_degraded",
@@ -1147,22 +1147,22 @@
       "ticker": "IAG.L",
       "slug": "international-consolidated-airlines",
       "date": "2026-11-03",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 51.5,
-      "confidence": 0.0,
+      "dailyScore": 49.6,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 51.3,
+      "confidence": 15.2,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -15.1,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "Confidence is 15.2"
         }
       ]
     },
@@ -1393,22 +1393,22 @@
       "ticker": "JD.L",
       "slug": "jd-sports-fashion",
       "date": "2026-11-03",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 51.0,
-      "confidence": 0.0,
+      "dailyScore": 40.0,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 49.6,
+      "confidence": 19.6,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -13.7,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "Confidence is 19.6"
         }
       ]
     },
@@ -2020,22 +2020,22 @@
       "ticker": "SHEL.L",
       "slug": "shell",
       "date": "2026-11-03",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 52.6,
-      "confidence": 0.0,
-      "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "dailyScore": 54.6,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 52.9,
+      "confidence": 48.1,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "storyCount": 5,
+      "sourceCount": 5,
+      "changeFromPreviousScoredDay": -3.7,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "collection_degraded",
           "direction": "neutral",
-          "severity": "low",
+          "severity": "medium",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "The provider result ceiling was reached for this day"
         }
       ]
     },
