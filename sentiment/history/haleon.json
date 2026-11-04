@@ -7329,6 +7329,88 @@
         }
       ],
       "changeFromPreviousScoredDay": -1.1
+    },
+    {
+      "date": "2026-11-03",
+      "dailyScore": 31.6,
+      "dailyLabel": "Negative",
+      "rollingScore": 40.6,
+      "confidence": 58.0,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 5,
+      "eligibleArticleCount": 3,
+      "storyCount": 3,
+      "effectiveStoryCount": 3.0,
+      "sourceCount": 3,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 2,
+      "dispersion": 0.4403,
+      "rejectedCandidateCounts": {
+        "missing_company_alias": 2
+      },
+      "topStories": [
+        {
+          "id": "21d22d3eb0a654fd",
+          "storyClusterId": "story-003",
+          "title": "Haleon Shares Dive After Advil Maker Cuts Guidance",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOUHFyTjdCU1FKWW95eFJRRVVsYWJEUE1xR2M4SEREU25DaFhPcXFtQ3RZempzRGdpRE0zY2REUnIxNkVGRVBZZU9zYVFScS1FZGlKeUd0TGtLblp3bFNUaEhkUjlGMTNNVkpmNlc4WHdnWVlHTWlTX3JqaHpIaWlSOUlFeEp0bmVWR0EyZ0tQbUhlbUs2eG1DTEdQZw?oc=5",
+          "source": "wsj.com",
+          "publishedAt": "2026-11-03T18:23:39Z",
+          "polarity": -0.9526,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "3776c48ccf75590e",
+          "storyClusterId": "story-001",
+          "title": "Haleon stock outlook stays under pressure after Q3 slowdown",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPcmJNNFBiZE1YdW40NG5VYjBGdEVCUnViaWlDY0N2X25CR3FoVWJXYlhJZUd2S2VjZ2UxRmswZ29PVUFJQUVLZWgzX2pzdEZQSGYyWW82bnF5NzNpRGdRVlFIdDNuekZuZzJFdy1tb2dzOTVsOW9zZDNqQUp2S0dVSHBhT3I2QjE2SGNRblhfUXNORGJaMHlidW03TVZnMlMtaFpVM2VNd0JhY043bGJnNTJZdUJ3OXhDYXZWTGF4OA?oc=5",
+          "source": "ad-hoc-news.de",
+          "publishedAt": "2026-11-03T12:02:32Z",
+          "polarity": -0.8948,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "372178919967a8a4",
+          "storyClusterId": "story-002",
+          "title": "Broker tips: Haleon, GSK, Shell, Sainsbury, HSBC",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcjhOQ1JpTUZXeE9ERnZ5d1lQWFdEa1plUGZTbW1QWW1KVmNpZmJFUFJVMG9XUHlpTFdHTXFrX1lrNlR6MHY0TUdzbGFUS2c0UG5udzlBbzlKTUtqZHdjbGJybGY5MDVMX0N5Nm9YYU1pMTFfRkVHYkJDX1YxOFBwM01IMU05VXNUV2JURjB5ZnliZw?oc=5",
+          "source": "thearmchairtrader.com",
+          "publishedAt": "2026-11-03T12:07:42Z",
+          "polarity": 0.0089,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "guidance_cut",
+          "direction": "negative",
+          "severity": "high",
+          "status": "possible",
+          "evidenceArticleIds": [
+            "21d22d3eb0a654fd"
+          ],
+          "sourceCount": 1
+        },
+        {
+          "type": "bad_press",
+          "direction": "negative",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Daily press score is 31.6",
+          "evidenceArticleIds": [
+            "21d22d3eb0a654fd",
+            "3776c48ccf75590e",
+            "372178919967a8a4"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -3.3
     }
   ]
 }
