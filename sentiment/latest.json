@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-11-04T07:02:01.920375Z",
+  "generatedAt": "2026-11-04T13:11:44.162338Z",
   "asOfDate": "2026-11-03",
   "companies": {
     "airtel-africa": {
@@ -847,39 +847,22 @@
       "dailyScore": 50.0,
       "dailyLabel": "Neutral / mixed",
       "rollingScore": 48.1,
-      "confidence": 38.5,
+      "confidence": 23.7,
       "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 5,
-      "sourceCount": 3,
+      "storyCount": 2,
+      "sourceCount": 2,
       "changeFromPreviousScoredDay": 10.3,
       "flags": [
-        {
-          "type": "coverage_spike",
-          "direction": "neutral",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "5 stories versus trailing median 1",
-          "evidenceArticleIds": [
-            "df91b85063e0417a",
-            "3d424f06c1a16b60",
-            "60d401a768495577",
-            "9a56495b848d8212",
-            "049fd4c7be2e743e"
-          ]
-        },
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 38.5",
+          "detail": "Confidence is 23.7",
           "evidenceArticleIds": [
-            "df91b85063e0417a",
             "3d424f06c1a16b60",
-            "60d401a768495577",
-            "9a56495b848d8212",
-            "049fd4c7be2e743e"
+            "708ebf36f6759261"
           ]
         },
         {
@@ -889,26 +872,12 @@
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
-            "df91b85063e0417a",
             "3d424f06c1a16b60",
-            "60d401a768495577",
-            "9a56495b848d8212",
-            "049fd4c7be2e743e"
+            "708ebf36f6759261"
           ]
         }
       ],
       "topStories": [
-        {
-          "id": "df91b85063e0417a",
-          "storyClusterId": "story-003",
-          "title": "BCS: SEC Form 6-K filed by Barclays PLC",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE04alBwWm1UcXNLenN6U3gyLXB5LWFWQmRaNDdNNTlJbFdqUG5yUURKV21SYWFoeVhEdWpuTHlYRGYtZy1JNkJpejRMeTlWeXZPUFUzbnpsb0l0U3BNLVhSZEpTVGN5aFhrdmVaaGpBcGhQenRUVS1aTEIyMHNaUQ?oc=5",
-          "source": "quantisnow.com",
-          "publishedAt": "2026-11-03T17:47:26Z",
-          "polarity": -0.0148,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        },
         {
           "id": "3d424f06c1a16b60",
           "storyClusterId": "story-001",
@@ -921,35 +890,13 @@
           "publisherCount": 1
         },
         {
-          "id": "60d401a768495577",
+          "id": "708ebf36f6759261",
           "storyClusterId": "story-002",
-          "title": "REG - Mobico Group PLC Barclays PLC - Holding(s) in Company",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPajRkdVJ6WnFOem9WajRKZ2djMVVONHNBNklfWXcyZTBKQ3VfbktTLU1fZUxwdDBUaFBnTFlYT055VjNfam4tV3R1XzZOUTQtUDZGMlpJT2NhOVJkOVo0MGdmb1BIa212UF9sYXlWMTVNckVGLUJWdm5Ha0F6MDdqR1VPVVBpYXd2aV96QUJwY2M5MmtPUk1LcVdJTnRrQXpXN19fb0NlcEpfejkwcDYxei1CcERsNHE3ZUxpX2NLcjl0OUhobkJWYmNB?oc=5",
-          "source": "tradingview.com",
-          "publishedAt": "2026-11-03T17:19:26Z",
-          "polarity": 0.0176,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        },
-        {
-          "id": "9a56495b848d8212",
-          "storyClusterId": "story-004",
-          "title": "Form 424B2 BARCLAYS BANK PLC",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPVWk3bmlhSHRFYXh4RXhSdENKUGtab2gwNkpMdUVxSDRoT1lqRmFjWTMxWmlCVHRFNnc2OGk1OVR2S2Q2aTJsNlBvb0Z3ZE8telc1QjBZTWtJNkJqdHVmLXM4RGp2TUw0eTZJaG1aRmVyZ0VJc0pLb2xScENLMUxaNFVMT1JScS1TbUFMcg?oc=5",
-          "source": "streetinsider.com",
-          "publishedAt": "2026-11-03T20:30:13Z",
-          "polarity": -0.0066,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        },
-        {
-          "id": "049fd4c7be2e743e",
-          "storyClusterId": "story-005",
-          "title": "Form FWP BARCLAYS BANK PLC Filed by: BARCLAYS BANK PLC",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPS2F1U0JBTkZ2OWZyM0R4R0R6aGs4cDk1SVVkOEtRZWxTMEtGRldpMkVMZHhRVWtfN2Q0NV9SWXd1aDU2ZUJQdG8wSmhzeXQySHVyTmRwMG5oTHBtVTRmMFQtUDNjQjI5enVhZ1J4QnllQTg2bnlZUHFXWWZPZ3lTWWcyMDBTam13RklXV1ZYVjlpUm1wS2YwdG54aFU0Z0o5ZEVZMDlGdzFIb1psdnlrb3h3?oc=5",
-          "source": "streetinsider.com",
-          "publishedAt": "2026-11-03T21:52:46Z",
-          "polarity": -0.0024,
+          "title": "BCS: SEC Form 6-K filed by Barclays PLC",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPdDk4dTlieWlMQy1WTlM4Y2xSV2JBaklsdk5tN3c4cEs0RC1XaGN1aUlNT1pMYVZYZzJyMmNYLUpZZmtrV0JuUHJ2VUg4MW1MWVRHbW1oemNNdjY3aEIzVDdfdVdpR2taeWVTRE1OWkczbTNaNkRiNHBETk9XYl9sOUdQcw?oc=5",
+          "source": "quantisnow.com",
+          "publishedAt": "2026-11-03T17:47:26Z",
+          "polarity": -0.0148,
           "sentiment": "Neutral / mixed",
           "publisherCount": 1
         }
@@ -1227,28 +1174,28 @@
       "ticker": "BP.L",
       "slug": "bp",
       "date": "2026-11-03",
-      "dailyScore": 62.6,
-      "dailyLabel": "Positive",
-      "rollingScore": 52.8,
-      "confidence": 58.6,
+      "dailyScore": 59.9,
+      "dailyLabel": "Slightly positive",
+      "rollingScore": 52.3,
+      "confidence": 49.5,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 8,
-      "sourceCount": 6,
-      "changeFromPreviousScoredDay": 17.8,
+      "storyCount": 5,
+      "sourceCount": 4,
+      "changeFromPreviousScoredDay": 15.1,
       "flags": [
         {
           "type": "sentiment_jump",
           "direction": "positive",
           "severity": "high",
           "status": "calculated",
-          "detail": "Daily score increased by 17.8 points",
+          "detail": "Daily score increased by 15.1 points",
           "evidenceArticleIds": [
-            "4a7a5717bd4ff97a",
-            "0cd68800bcfa38f5",
-            "f1085d5eb68e02a6",
+            "bd9041f90d341deb",
+            "f1cb4bd1702a218f",
             "93eda94b20a47bd5",
-            "92cf5f6d86861be2"
+            "92cf5f6d86861be2",
+            "c82e717bb084b967"
           ]
         },
         {
@@ -1258,51 +1205,40 @@
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
-            "4a7a5717bd4ff97a",
-            "0cd68800bcfa38f5",
-            "f1085d5eb68e02a6",
+            "bd9041f90d341deb",
+            "f1cb4bd1702a218f",
             "93eda94b20a47bd5",
-            "92cf5f6d86861be2"
+            "92cf5f6d86861be2",
+            "c82e717bb084b967"
           ]
         }
       ],
       "topStories": [
         {
-          "id": "4a7a5717bd4ff97a",
-          "storyClusterId": "story-007",
-          "title": "UAE, Qatari Firms Debut in Venezuela Through BP-Led Gas Deal",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUjNQMHBTTFZoUG53dFloZGFLTHhad0tmT3JQV2RzeGdGb2x4RlNyT0JZTC1lc19RTHJ6TEtVUDFxWF82OU0ySGR6eW5GU1NwVVE4eWM1SmVJU2t2Y1dKLWNkaDNGM09LaHBQcEpVMDlMUDAwT0dMeENqdFo3eUU3TDBCM1ViRGFoREVPWjhQVFU4WDJ3?oc=5",
+          "id": "bd9041f90d341deb",
+          "storyClusterId": "story-005",
+          "title": "BP Eyes Devon Energy Asset Amid Renewed US M&A Ambitions, Sources Say",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNWllfcFBiZGFhY0xKYS10RkMtakFwclY4OGJYOHIxTFZWMjJVaWhHSk41ZTVpS3lsN3Y5UF8zUDQyUWRuTHdGMDhtRWVRbG05RTlzNUs0NEVOd2dtdWlKenlXT3JTSUNpdEVPdzAzZTZ6MUJjMm1XRTVvb2k0MVdEbFRoNGhiVVJRcFRkbXcxZERZVU9sZHJWTFFKY2dFT2c?oc=5",
           "source": "energynow.com",
-          "publishedAt": "2026-11-03T16:18:20Z",
-          "polarity": 0.8252,
+          "publishedAt": "2026-11-03T23:12:20Z",
+          "polarity": 0.8631,
           "sentiment": "Very positive",
           "publisherCount": 1
         },
         {
-          "id": "0cd68800bcfa38f5",
-          "storyClusterId": "story-008",
-          "title": "Minister of Petroleum and Mineral Resources Discusses Accelerating Gas Discoveries Development and Boosting Production with BP CEO",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNX2JlTXFoYUdaZ1VFM0pVYnEyd0ozNnB4anNFcmpadkZIck1rX2xSM3FkZHpnZWRQSTZMN2huSU9nOXQ1S2FtSXN4UExEdUw5X2cyYWxtVjlqbm1KMHd3RVI3OUVEMmlJYnN0VXpPSlNyUnZTMFA0Q1lmeTJJdWVsUFZBdWFhS0E2dVNBM1hnUzY?oc=5",
-          "source": "petroleum.gov.eg",
-          "publishedAt": "2026-11-03T21:37:59Z",
-          "polarity": 0.7916,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "f1085d5eb68e02a6",
-          "storyClusterId": "story-002",
+          "id": "f1cb4bd1702a218f",
+          "storyClusterId": "story-004",
           "title": "BP CEO Says Oil Giant Needs to Make ‘Fewer and Better’ Choices",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOdkJWcUtzSUp5QVU4REotRDdzTjBmRm1CLVRuNDd5dlFtUnNuOUk4YVFqSUt4ZUhyZlVndnhfdU1ZV2EtSGl6dWNRaHNHSjJJZk5LTEhqQ2trNVotTC1mczQtUHZwREh4WVdZXzYzU2tleDIzaW9fQ1FnNHdnczFETVFmZkF5MVFHX2NwNGk0MUZ5ZG1B?oc=5",
-          "source": "energynow.ca",
-          "publishedAt": "2026-11-03T13:27:04Z",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPOWVRTjZDMl90aDg1TmVuS19FQVBSSjk4OW5NT05fX1A3RkR4Qmh4Z2Z6R3F3MzhpRzUwMWlJN1JuX1p3RTNkcTdPZF9GLV9zWXZ5YXJEYTBIcU5qVGdEY3hhS2pkV0NFdThMcERsM1BxOGNRSFZsVmp4MFVvYm05SWdjd1BNRWtFYklua040M0ZPTU5RU2c?oc=5",
+          "source": "energynow.com",
+          "publishedAt": "2026-11-03T23:07:13Z",
           "polarity": 0.3179,
           "sentiment": "Positive",
           "publisherCount": 1
         },
         {
           "id": "93eda94b20a47bd5",
-          "storyClusterId": "story-003",
+          "storyClusterId": "story-002",
           "title": "Energy Chamber, analyst welcome BP’s Manakin move",
           "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUTFrRW1OQ3RsRFFrNVRrOUdZN05HQXh4dlpYdnFkNzF2cEo5OGpvMDFfRWJYQURiakFqVUthaHZCc0NrUzczaS0tX1F0eVpFOVVVUDBRRGNiczJ4RXI5MlJTVGpjZnBFSlpXbnhDWEJ6U3lQWWdsS1h2Q2ItMXhFTEphZy1ZSk5jcG9feVFkaVMtTjBfYkw4OFYzQ2YxUWduS0VrRFBFNlQ?oc=5",
           "source": "guardian.co.tt",
@@ -1313,13 +1249,24 @@
         },
         {
           "id": "92cf5f6d86861be2",
-          "storyClusterId": "story-005",
+          "storyClusterId": "story-003",
           "title": "BP plc : UBS gives a Buy rating",
           "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPMS1aOHhvRVhBMXVFMjFmd2V1SXRxQ0FOa2daM1ZjSGhKekI4OERQdW1ub3lSQkdHUmtKVXFOSndldTctOXFadU5Cb0lrdkxnaTJKY3lIcFg1X1hEVmRyX2MtUV92bHNqcEtibG16ckQxdVIzYU92Z253d0RsaVZwWmxvWGRzc2NOcmc?oc=5",
           "source": "marketscreener.com",
           "publishedAt": "2026-11-03T13:56:36Z",
           "polarity": 0.1653,
           "sentiment": "Slightly positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "c82e717bb084b967",
+          "storyClusterId": "story-001",
+          "title": "What’s ahead for BP, Shell and smaller oil players?",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQWEpBcEE1VkN5aHR1TzlNbDhXNXZLV1FsTUY3ZERrZ21FQkZNS1oxQTJyaXlnZnRscmZabmctamkyQlc0RXAtWTVrcllrbVZjMm5TNnJiYTA5Y2U5THgwcVV2OUkyWEppdTNTOUtSYjBacWhpUGlaVXNvdFo3cFlsSFlIZmpUYUlDX3BaRE9EdDdXSUtlRHhZX2pR?oc=5",
+          "source": "ii.co.uk",
+          "publishedAt": "2026-11-03T10:09:00Z",
+          "polarity": -0.0063,
+          "sentiment": "Neutral / mixed",
           "publisherCount": 1
         }
       ]
@@ -3247,26 +3194,40 @@
       "ticker": "III.L",
       "slug": "3i",
       "date": "2026-11-03",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.0,
-      "confidence": 0.0,
+      "dailyScore": 64.6,
+      "dailyLabel": "Positive",
+      "rollingScore": 51.8,
+      "confidence": 19.7,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 14.3,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 19.7",
+          "evidenceArticleIds": [
+            "cd20d082b5f8e1ca"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "cd20d082b5f8e1ca",
+          "storyClusterId": "story-001",
+          "title": "3i Group rises Tuesday, outperforms market",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNemlyWS1Fc2lFY29rZHdoaGgxR2RZSXRZQVFrdUJYRnBfSGJMdktNeDY3ODFXalR4UnBpTmN3VVJmWDg1anhUWXJxYkZVMHp1X3o3aVZQcUxGVGQ4THU1Q0VWOHlMQ01pdTQwSWtfYUNETkJHbTFnN0ZEUG9mZ3F3d21PaHhfa1JkX1A2OGNYT0lEREtQbEM4YXFwdjJfQ0dTeFlBcGZOYTBheDJ3TDFZTk0zR0dZcEcyTkFodVNxX1Z5dw?oc=5",
+          "source": "marketwatch.com",
+          "publishedAt": "2026-11-03T17:07:00Z",
+          "polarity": 0.8768,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        }
+      ]
     },
     "imperial-brands": {
       "companyName": "Imperial Brands PLC",
@@ -3677,26 +3638,40 @@
       "ticker": "LAND.L",
       "slug": "land-securities",
       "date": "2026-11-03",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 51.7,
-      "confidence": 0.0,
+      "dailyScore": 36.5,
+      "dailyLabel": "Negative",
+      "rollingScore": 49.8,
+      "confidence": 19.7,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -17.9,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 19.7",
+          "evidenceArticleIds": [
+            "2b967413686b2474"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "2b967413686b2474",
+          "storyClusterId": "story-001",
+          "title": "Land Securities Group slides Tuesday, underperforms market",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQV0xWR0x4N0Q4ZHFxXzkwM1N2NXl1NXNkaE9ZNlJEdVFWWXQzbDFGYWpweHZqQkNsc1d6SE9yU2JKaVFaOWpDQTlBaE13dS1qUmk0REJySTJEQlhzWFZzbVRaaHBMNUxvS1EwUzhjaFY1aGg1amMzNEhyeWlzejdFUC1YLS12QzRXUnhrdWVCSXVFUnE3QTJ5SVpab3d1ampVTjBXcUU4T0ZoX3NuVUhjSGJGb3d0SjM3cVFTWThJekdXWkxiMjVhM09rT19OV0p4?oc=5",
+          "source": "marketwatch.com",
+          "publishedAt": "2026-11-03T17:07:00Z",
+          "polarity": -0.8094,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        }
+      ]
     },
     "legal-and-general": {
       "companyName": "Legal & General Group PLC",
@@ -4322,25 +4297,23 @@
       "ticker": "NXT.L",
       "slug": "next",
       "date": "2026-11-03",
-      "dailyScore": 54.3,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.9,
-      "confidence": 12.2,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 50.5,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": 2.5,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 12.2",
-          "evidenceArticleIds": [
-            "bc30d5e32dc90a0f"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         },
         {
           "type": "collection_degraded",
@@ -4348,24 +4321,10 @@
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "bc30d5e32dc90a0f"
-          ]
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "bc30d5e32dc90a0f",
-          "storyClusterId": "story-001",
-          "title": "Cost clarity essential for 'exciting' Shaires Holdings’ next leg of growth after retail fundraise",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQV1NBMlBhcnVwa0k1Tkx4NjBZN09aTU12cFdBa1k1M21YRGU5U21xWGZxdkk5Vk5zM3o4eDNkYkd6aWRDSzYwUjMwcDBkRHhBOGZCdWxJYnhyQWxDNlBvU0gwMUt4ZkxHQU9CajIwRmw1MzlFd3M4Zm5oR05PTnpPb2ttY0pnVVUzMjhkN1VDUV9yWmt3MGhnejhmVjc1UVpwY3Jlb1JRUVFGMXRpUG12dTV6MTlQUEg3T0pFZVFidTJ5bkE?oc=5",
-          "source": "investmentweek.co.uk",
-          "publishedAt": "2026-11-03T15:09:41Z",
-          "polarity": 0.2606,
-          "sentiment": "Positive",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "polar-capital-technology-trust": {
       "companyName": "Polar Capital Technology Trust PLC",
@@ -5113,15 +5072,15 @@
       "ticker": "SHEL.L",
       "slug": "shell",
       "date": "2026-11-03",
-      "dailyScore": 48.8,
+      "dailyScore": 52.9,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 51.5,
-      "confidence": 61.3,
+      "rollingScore": 52.2,
+      "confidence": 57.1,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 11,
-      "sourceCount": 11,
-      "changeFromPreviousScoredDay": -0.4,
+      "storyCount": 7,
+      "sourceCount": 7,
+      "changeFromPreviousScoredDay": 3.7,
       "flags": [
         {
           "type": "merger_acquisition",
@@ -5141,10 +5100,10 @@
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
             "97338631edc317e9",
-            "194c696aa0eef872",
-            "0b10a0d1cab41c93",
-            "a513e8d7adcc1089",
-            "4932793c6048bedd"
+            "37c3bf71814c5ba1",
+            "4932793c6048bedd",
+            "8017bf776246069a",
+            "24bdb0d6353fc684"
           ]
         }
       ],
@@ -5161,36 +5120,14 @@
           "publisherCount": 1
         },
         {
-          "id": "194c696aa0eef872",
-          "storyClusterId": "story-006",
-          "title": "Shell rakes in $1.45 billion for shedding its stake in Australian gas and LNG project",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOZzhmNFpNTG9tcVNIeXhZaDVIOGRmaE4tYVF1S3FmLUdyOVRCS2ZXelctcjZsSUlaejdpcFZjSXZPd2p3bDEwcS00cVJrT2FmS0Fab3lIZy1DaFhUOXBJa0c4ZVBOVGtlNmxwc3VNb0NWdjB0elRVajRWbnhBbW9nN1F3WHIydzZzU0lXY3g5OG4zMVQ2Znc1NlBDOWJzWEN6LWh0bXp5cUNXMFNPdnpPUm96eTVQNnFUdXRHZENoVGxUNU9ld0c4?oc=5",
-          "source": "offshore-energy.biz",
-          "publishedAt": "2026-11-03T12:19:47Z",
-          "polarity": -0.9067,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
-          "id": "0b10a0d1cab41c93",
-          "storyClusterId": "story-011",
-          "title": "ENERGY NORTH: Shell-Led LNG Canada Could Approve Phase 2 Expansion By Early October",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPb3pub2x3YXY4ZlVtSmJrVXZKbVV0RHNzRUpraWFPZFZGNlRlS2xtX25TTC0yREc2cE9yc1RMbkVVczhNZjczT0RmSjFIZGl1czhqdEVDVXBYV1JkN3lHTjAzRTE0MnA5V2t2ZlRJbVY5X1hxUHNGNHJuQllSYUNwdEVMaklPdjhlMWdWc0N5LTFFSkpwd0NOYzUzSVQ5TFpJOUE?oc=5",
-          "source": "energynow.com",
-          "publishedAt": "2026-11-03T22:52:33Z",
-          "polarity": 0.457,
-          "sentiment": "Positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "a513e8d7adcc1089",
+          "id": "37c3bf71814c5ba1",
           "storyClusterId": "story-007",
-          "title": "Chevron, Shell Closing in on First Big Oil Production Deals in Venezuela Since US Captured Maduro, Sources Say",
-          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPODIzOTVyVjZTQWNYVE9PZkUwZFRJMHVrTnVaWFlPLWR1NGNmQ19MWl8zWnZwZ3JKQWhNVFhFTXhEb1UxU3NzM0JXSmtabFNDeHFrQ2NNeERZbUpYNmV1LWo2TkN1RmVLS2d1NWozX0xmTVdvRFlVLUtfN1c2RkhLRWxRaVFmSzRXckxydlVjY09LNTdhbUhNS3RtME95clYwSlRSRVFGd2ZZaG1xTjRuNkZ3MS1QRGFHZVRGejFlQzdkOThIZU9weGtNaE50UFRGRjdQZQ?oc=5",
-          "source": "energynow.ca",
-          "publishedAt": "2026-11-03T17:28:53Z",
-          "polarity": 0.4096,
-          "sentiment": "Positive",
+          "title": "Shell’s ARC Deal Seen as Win for Mark Carney’s Pro-Oil Pivot",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOSWR2UUUyM1BNNmdwdDB1T1VicDRyVkhTdEFtRVNtbUpicW9JRU5iZW9OQ3pCR0YxZE14M2dqWUJPM2wycEFWY291UFdXNG9qZkdXSkNGbUJtbnZROExraFlOYlY3TWZkeUtJVjdNWEdEVEM1dGZ2T3JVQjFXMWFLREhQOWhyeW1FR2dXcE44aVlvZDA?oc=5",
+          "source": "energynow.com",
+          "publishedAt": "2026-11-03T22:50:19Z",
+          "polarity": 0.8038,
+          "sentiment": "Very positive",
           "publisherCount": 1
         },
         {
@@ -5202,6 +5139,28 @@
           "publishedAt": "2026-11-03T11:07:46Z",
           "polarity": 0.3698,
           "sentiment": "Positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "8017bf776246069a",
+          "storyClusterId": "story-006",
+          "title": "Abu Dhabi investment firm buys Shell gas stake",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPaW1BbkhZa2hET01xSW81R0cwSHJBTGJ4bUc2Y0pUODNOby00dkpmY1FjTGhQbElkSXJXN09KeG1wUW1oNlk2QUt2bUhmX3l3WWdCVmE0VUtEaXNGMjc3a21ncmswRmkzSTExUVV3alF4QnN1MGZZS05BUEF4WDVjcVpXLVZYYmtkN3c?oc=5",
+          "source": "grafa.com",
+          "publishedAt": "2026-11-03T22:40:06Z",
+          "polarity": 0.1732,
+          "sentiment": "Slightly positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "24bdb0d6353fc684",
+          "storyClusterId": "story-002",
+          "title": "Shell to sell Australian gas stake to Abu Dhabi’s XRG for $1.45bn",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPbUxMM0ZUQklaZEo5T250Z2gwZFhHbzd4M3JEdTdMSFRkc2Y1dE5lY3FqYXpHWDNXZDhKd3F3OUw5bzQtNEU1ODBMZktDM0dlRTZ0cFdKc05DbkdKNmpWVEFMbUdfOUItV2loRzZIdmJPQUVweWFlLWd6MWxBTjdjYjRTZmU?oc=5",
+          "source": "ft.com",
+          "publishedAt": "2026-11-03T08:22:06Z",
+          "polarity": 0.0559,
+          "sentiment": "Neutral / mixed",
           "publisherCount": 1
         }
       ]
@@ -5299,26 +5258,40 @@
       "ticker": "SMT.L",
       "slug": "scottish-mortgage-investment-trust",
       "date": "2026-11-03",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
+      "dailyScore": 49.7,
+      "dailyLabel": "Neutral / mixed",
       "rollingScore": 49.8,
-      "confidence": 0.0,
+      "confidence": 15.2,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -0.3,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.2",
+          "evidenceArticleIds": [
+            "9d008e59e2b0dc0b"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "9d008e59e2b0dc0b",
+          "storyClusterId": "story-001",
+          "title": "Scottish Mortgage Investment Trust plc (SMT.L) stock price, news, quote and history",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE91S0YxZldRcjlFdjhILTZqMjlnemdPMnNXWFNxZGN1NFJpN2NjRldsMmhZY2FGeE1vMWlZOWpZbndoX2NDYlZTeVVpdXVPcXFEbFdn?oc=5",
+          "source": "uk.finance.yahoo.com",
+          "publishedAt": "2026-11-03T16:56:28Z",
+          "polarity": -0.0188,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
     },
     "smith-and-nephew": {
       "companyName": "Smith & Nephew PLC",
