@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-05T01:59:20.893463Z",
+  "generatedAt": "2026-11-05T03:37:01.485569Z",
   "company": {
     "companyName": "St James's Place PLC",
     "ticker": "STJ.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-10",
-    "periodEnd": "2026-11-03",
-    "observationCount": 109,
-    "scoredDayCount": 36,
-    "latestScore": 36.6,
-    "latestScoreDate": "2026-11-02",
+    "periodEnd": "2026-11-04",
+    "observationCount": 110,
+    "scoredDayCount": 37,
+    "latestScore": 55.4,
+    "latestScoreDate": "2026-11-04",
     "series": [
       {
         "date": "2026-07-10",
@@ -1006,6 +1006,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-11-04",
+        "dailyScore": 55.4,
+        "rollingScore": 48.6,
+        "storyCount": 5,
+        "sourceCount": 5,
+        "confidence": 71.0,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1048,16 +1057,6 @@
         "direction": "neutral",
         "detail": "5 stories versus trailing median 1",
         "significance": 1.44
-      },
-      {
-        "date": "2026-10-05",
-        "type": "press_story",
-        "title": "St. James's Place plc (LON:STJ) Receives Consensus Recommendation of \"Moderate Buy\" from Analysts",
-        "source": "marketbeat.com",
-        "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQenliWFRhdDhQVV92OGJ5VDdGSjI1WmI1N25kZlpldFNZRXVsa1BwbUFVYVRITnUwNExUWlA4bXJsQWEydGtuWFkzV05XN0R1VHZCblg1c3VrX25UTTVlNEo5Y2pha0N1cms5MmFLYk91V1BKT1BJZ25YOWVXdVgzMnhtTnZTUXF4YjZFNUpJenByUktKdzkwMjB2T2U0ZmFOUjBfZjY0YTBSNzdRd05OSUNEZmYxV3J1aWRoNEh2VHVGMDZ1QnJ1YU5KMzczODV3X0hweTdqai1uOWtNSVpHUUZ3UDA5aEhSU3k4?oc=5",
-        "direction": "Very positive",
-        "detail": null,
-        "significance": 1.079
       },
       {
         "date": "2026-10-08",
@@ -1108,6 +1107,16 @@
         "direction": "negative",
         "detail": "Daily score decreased by 14.1 points",
         "significance": 1.562
+      },
+      {
+        "date": "2026-11-04",
+        "type": "sentiment_jump",
+        "title": "St. James's Place IFS rating affirmed by Fitch Ratings with stable outlook",
+        "source": "tradersunion.com",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNN2NVVElpR21EVnRaRExMTTk2a3F3QzJVaEhzQnF1VVh5S2R4cXdDVXBlZ3czVnFReWd1WW9PX2lrMlZqQ2lBeXZVdWNrOUVzcF9RZjBPY0lSRVcwUHVhNzJ0NFBSazByM1h5N21MV1I0TFZwd3BKWlNoejBuTS1GVF9FTlg5dVBfM1UyeGh3?oc=5",
+        "direction": "positive",
+        "detail": "Daily score increased by 18.8 points",
+        "significance": 1.505
       }
     ]
   },
@@ -1600,17 +1609,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 45.7,
+    "score": 45.9,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 48.3,
+        "score": 48.6,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 36 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 37 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1727,16 +1736,6 @@
       "significance": 1.44
     },
     {
-      "date": "2026-10-05",
-      "type": "press_story",
-      "title": "St. James's Place plc (LON:STJ) Receives Consensus Recommendation of \"Moderate Buy\" from Analysts",
-      "source": "marketbeat.com",
-      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQenliWFRhdDhQVV92OGJ5VDdGSjI1WmI1N25kZlpldFNZRXVsa1BwbUFVYVRITnUwNExUWlA4bXJsQWEydGtuWFkzV05XN0R1VHZCblg1c3VrX25UTTVlNEo5Y2pha0N1cms5MmFLYk91V1BKT1BJZ25YOWVXdVgzMnhtTnZTUXF4YjZFNUpJenByUktKdzkwMjB2T2U0ZmFOUjBfZjY0YTBSNzdRd05OSUNEZmYxV3J1aWRoNEh2VHVGMDZ1QnJ1YU5KMzczODV3X0hweTdqai1uOWtNSVpHUUZ3UDA5aEhSU3k4?oc=5",
-      "direction": "Very positive",
-      "detail": null,
-      "significance": 1.079
-    },
-    {
       "date": "2026-10-08",
       "type": "high_disagreement",
       "title": "St. James’s Place price target lowered to 1,740 GBp from 1,820 GBp at Citi",
@@ -1785,6 +1784,16 @@
       "direction": "negative",
       "detail": "Daily score decreased by 14.1 points",
       "significance": 1.562
+    },
+    {
+      "date": "2026-11-04",
+      "type": "sentiment_jump",
+      "title": "St. James's Place IFS rating affirmed by Fitch Ratings with stable outlook",
+      "source": "tradersunion.com",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNN2NVVElpR21EVnRaRExMTTk2a3F3QzJVaEhzQnF1VVh5S2R4cXdDVXBlZ3czVnFReWd1WW9PX2lrMlZqQ2lBeXZVdWNrOUVzcF9RZjBPY0lSRVcwUHVhNzJ0NFBSazByM1h5N21MV1I0TFZwd3BKWlNoejBuTS1GVF9FTlg5dVBfM1UyeGh3?oc=5",
+      "direction": "positive",
+      "detail": "Daily score increased by 18.8 points",
+      "significance": 1.505
     }
   ],
   "persistentEvents": []

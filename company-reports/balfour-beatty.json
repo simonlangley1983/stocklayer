@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-05T01:59:20.893463Z",
+  "generatedAt": "2026-11-05T03:37:01.485569Z",
   "company": {
     "companyName": "Balfour Beatty PLC",
     "ticker": "BBY.L",
@@ -15,11 +15,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-10-16",
-    "periodEnd": "2026-11-03",
-    "observationCount": 19,
-    "scoredDayCount": 10,
-    "latestScore": 59.1,
-    "latestScoreDate": "2026-11-03",
+    "periodEnd": "2026-11-04",
+    "observationCount": 20,
+    "scoredDayCount": 11,
+    "latestScore": 47.6,
+    "latestScoreDate": "2026-11-04",
     "series": [
       {
         "date": "2026-10-16",
@@ -190,6 +190,15 @@
         "storyCount": 3,
         "sourceCount": 3,
         "confidence": 52.7,
+        "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-11-04",
+        "dailyScore": 47.6,
+        "rollingScore": 52.7,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.8,
         "coverageStatus": "ok"
       }
     ],
@@ -712,17 +721,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 53.9,
+    "score": 53.6,
     "label": "Mixed",
-    "evidenceCoverage": 80,
+    "evidenceCoverage": 82,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 56.3,
+        "score": 55.4,
         "weight": 0.4,
-        "reliability": 0.5,
-        "detail": "Recency-weighted average of 10 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.55,
+        "detail": "Recency-weighted average of 11 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
