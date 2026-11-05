@@ -4387,49 +4387,34 @@
     },
     {
       "date": "2026-11-04",
-      "dailyScore": 44.1,
-      "dailyLabel": "Slightly negative",
-      "rollingScore": 49.7,
-      "confidence": 12.7,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 50.5,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
+      "coverageStatus": "no_coverage",
       "collectionCompleteness": 0.75,
-      "candidateCount": 89,
-      "eligibleArticleCount": 1,
-      "storyCount": 1,
-      "effectiveStoryCount": 1.0,
-      "sourceCount": 1,
+      "candidateCount": 2,
+      "eligibleArticleCount": 0,
+      "storyCount": 0,
+      "effectiveStoryCount": 0,
+      "sourceCount": 0,
       "positiveStoryCount": 0,
       "neutralStoryCount": 0,
-      "negativeStoryCount": 1,
+      "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 76,
-        "missing_company_alias": 12
+        "ambiguous_company_without_alias": 2
       },
-      "topStories": [
-        {
-          "id": "7779b94a6bf74d73",
-          "storyClusterId": "story-001",
-          "title": "I just had a look at what's new in at Next - these festive fashion finds are too good to miss",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPRXphMVYxYm5peXo3RzFkcmNwZGFYLWt1eURsbW8tcE5OX0U4NklScVVZenZxSkxmdTg0RURhanZjbC1CekdpMjJfeW4wdk5iUGctNUdUdDFMc1M1Q0REdDA3dTJ6bldiME9hbzE5LTRpbFZKZVZnejMxVTNpNF9kQlZR?oc=5",
-          "source": "womanandhome.com",
-          "publishedAt": "2026-11-04T19:30:00Z",
-          "polarity": -0.3533,
-          "sentiment": "Negative",
-          "publisherCount": 1
-        }
-      ],
+      "topStories": [],
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 12.7",
-          "evidenceArticleIds": [
-            "7779b94a6bf74d73"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         },
         {
           "type": "collection_degraded",
@@ -4437,12 +4422,10 @@
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "7779b94a6bf74d73"
-          ]
+          "evidenceArticleIds": []
         }
       ],
-      "changeFromPreviousScoredDay": -7.7
+      "changeFromPreviousScoredDay": null
     }
   ]
 }
