@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-05T22:33:14.688890Z",
+  "generatedAt": "2026-11-05T22:45:32.190785Z",
   "company": {
     "companyName": "Scottish Mortgage Investment Trust PLC",
     "ticker": "SMT.L",
@@ -22,9 +22,9 @@
     "periodStart": "2026-06-30",
     "periodEnd": "2026-11-04",
     "observationCount": 122,
-    "scoredDayCount": 51,
+    "scoredDayCount": 52,
     "latestScore": 49.7,
-    "latestScoreDate": "2026-11-03",
+    "latestScoreDate": "2026-11-04",
     "series": [
       {
         "date": "2026-06-30",
@@ -1117,12 +1117,12 @@
       },
       {
         "date": "2026-11-04",
-        "dailyScore": null,
+        "dailyScore": 49.7,
         "rollingScore": 49.8,
-        "storyCount": 0,
-        "sourceCount": 0,
-        "confidence": 0.0,
-        "coverageStatus": "no_coverage"
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1790,17 +1790,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 51.9,
+    "score": 51.8,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.1,
+        "score": 51.0,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 32 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 33 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
