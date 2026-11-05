@@ -5130,35 +5130,49 @@
     },
     {
       "date": "2026-11-04",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 53.3,
-      "confidence": 0.0,
+      "dailyScore": 34.0,
+      "dailyLabel": "Negative",
+      "rollingScore": 50.9,
+      "confidence": 19.7,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 0,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 1,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
       "positiveStoryCount": 0,
       "neutralStoryCount": 0,
-      "negativeStoryCount": 0,
+      "negativeStoryCount": 1,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {},
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "cef7d02b29a938b0",
+          "storyClusterId": "story-001",
+          "title": "Key facts: ConvaTec names McConnell CFO-designate; shares fall 0.73%",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQWDNxQTBYT2s1MUJ1Y3ZkZ1ItWUdxSFBNcjlrNk9BOFIwMlV4cHdFZFFPTTJ4Ums2OHR5c1pwYVlWMmw4S2dCaTdQUU5NRGNyMjQzT3ZoZWRqSkJnSkVBY2VqWHRNWVpJWUlSYTIzSXZvajU5LXM2QTg5TDE1TzRJcmJqZDFVMmExeGJnM2FMeXgxY3B2ZVlpZDJnOFd5MmFFUVJnN0hfb2h3UE4zT1JwTk5vZDlzWWo4SEFjb2QxUEhGSElCbnc?oc=5",
+          "source": "tradingview.com",
+          "publishedAt": "2026-11-04T08:00:00Z",
+          "polarity": -0.9613,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 19.7",
+          "evidenceArticleIds": [
+            "cef7d02b29a938b0"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": -22.2
     }
   ]
 }
