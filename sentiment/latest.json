@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-11-06T22:03:16.697651Z",
+  "generatedAt": "2026-11-06T22:14:45.647864Z",
   "asOfDate": "2026-11-05",
   "companies": {
     "airtel-africa": {
@@ -823,25 +823,23 @@
       "ticker": "BARC.L",
       "slug": "barclays",
       "date": "2026-11-05",
-      "dailyScore": 49.4,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 48.7,
-      "confidence": 11.5,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 48.6,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": 0.0,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 11.5",
-          "evidenceArticleIds": [
-            "e3841aca16fde775"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         },
         {
           "type": "collection_degraded",
@@ -849,24 +847,10 @@
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "e3841aca16fde775"
-          ]
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "e3841aca16fde775",
-          "storyClusterId": "story-001",
-          "title": "Barclays PLC (BCS) Stock Price, News, Quote & History",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE02bWpoV1h1M2RwNGdzclBoSUNZYmVjbEF6WldaSEs1aUdwOUdpcGkxUnZmQWZaNVVDQk92dTc3QzUtSGZQdHdQWU5falRHOTBR?oc=5",
-          "source": "ca.finance.yahoo.com",
-          "publishedAt": "2026-11-05T12:24:16Z",
-          "polarity": -0.0331,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "british-american-tobacco": {
       "companyName": "British American Tobacco",
@@ -1075,26 +1059,40 @@
       "ticker": "BLND.L",
       "slug": "british-land",
       "date": "2026-11-05",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 51.3,
-      "confidence": 0.0,
+      "dailyScore": 49.6,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 51.1,
+      "confidence": 15.3,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -14.5,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.3",
+          "evidenceArticleIds": [
+            "91c80704da57a525"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "91c80704da57a525",
+          "storyClusterId": "story-001",
+          "title": "British Land Co PLC (BLD.SG) Seasonal returns chart - Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBGeVVDYk9FYS1NbmJMX29YN2gyY1A4dGI3ZGFGZUxuZGt4VHFPcUh0WnRxdzN4VzEySF9kYXM1eGg4NVpOY056NzN3UGIwb3FSNXJHRENmaGYwZ2Nsd3d1UWpoZEU?oc=5",
+          "source": "sg.finance.yahoo.com",
+          "publishedAt": "2026-11-05T13:40:38Z",
+          "polarity": -0.024,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
     },
     "bunzl": {
       "companyName": "Bunzl PLC",
@@ -5462,26 +5460,40 @@
       "ticker": "SMT.L",
       "slug": "scottish-mortgage-investment-trust",
       "date": "2026-11-05",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
+      "dailyScore": 49.7,
+      "dailyLabel": "Neutral / mixed",
       "rollingScore": 49.8,
-      "confidence": 0.0,
+      "confidence": 15.2,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 0.0,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.2",
+          "evidenceArticleIds": [
+            "9d008e59e2b0dc0b"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "9d008e59e2b0dc0b",
+          "storyClusterId": "story-001",
+          "title": "Scottish Mortgage Investment Trust plc (SMT.L) stock price, news, quote and history",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE91S0YxZldRcjlFdjhILTZqMjlnemdPMnNXWFNxZGN1NFJpN2NjRldsMmhZY2FGeE1vMWlZOWpZbndoX2NDYlZTeVVpdXVPcXFEbFdn?oc=5",
+          "source": "uk.finance.yahoo.com",
+          "publishedAt": "2026-11-05T16:54:43Z",
+          "polarity": -0.0188,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
     },
     "smith-and-nephew": {
       "companyName": "Smith & Nephew PLC",

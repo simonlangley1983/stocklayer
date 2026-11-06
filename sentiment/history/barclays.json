@@ -6840,49 +6840,35 @@
     },
     {
       "date": "2026-11-05",
-      "dailyScore": 49.4,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 48.7,
-      "confidence": 11.5,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 48.6,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
+      "coverageStatus": "no_coverage",
       "collectionCompleteness": 0.75,
-      "candidateCount": 62,
-      "eligibleArticleCount": 1,
-      "storyCount": 1,
-      "effectiveStoryCount": 1.0,
-      "sourceCount": 1,
+      "candidateCount": 22,
+      "eligibleArticleCount": 0,
+      "storyCount": 0,
+      "effectiveStoryCount": 0,
+      "sourceCount": 0,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 1,
+      "neutralStoryCount": 0,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 58,
-        "missing_company_alias": 3
+        "ambiguous_company_without_alias": 10,
+        "missing_company_alias": 12
       },
-      "topStories": [
-        {
-          "id": "e3841aca16fde775",
-          "storyClusterId": "story-001",
-          "title": "Barclays PLC (BCS) Stock Price, News, Quote & History",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE02bWpoV1h1M2RwNGdzclBoSUNZYmVjbEF6WldaSEs1aUdwOUdpcGkxUnZmQWZaNVVDQk92dTc3QzUtSGZQdHdQWU5falRHOTBR?oc=5",
-          "source": "ca.finance.yahoo.com",
-          "publishedAt": "2026-11-05T12:24:16Z",
-          "polarity": -0.0331,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ],
+      "topStories": [],
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 11.5",
-          "evidenceArticleIds": [
-            "e3841aca16fde775"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         },
         {
           "type": "collection_degraded",
@@ -6890,12 +6876,10 @@
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "e3841aca16fde775"
-          ]
+          "evidenceArticleIds": []
         }
       ],
-      "changeFromPreviousScoredDay": 0.0
+      "changeFromPreviousScoredDay": null
     }
   ]
 }
