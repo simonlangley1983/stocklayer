@@ -4467,49 +4467,34 @@
     },
     {
       "date": "2026-11-06",
-      "dailyScore": 53.6,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.8,
-      "confidence": 12.2,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 50.5,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
+      "coverageStatus": "no_coverage",
       "collectionCompleteness": 0.75,
-      "candidateCount": 37,
-      "eligibleArticleCount": 1,
-      "storyCount": 1,
-      "effectiveStoryCount": 1.0,
-      "sourceCount": 1,
-      "positiveStoryCount": 1,
+      "candidateCount": 12,
+      "eligibleArticleCount": 0,
+      "storyCount": 0,
+      "effectiveStoryCount": 0,
+      "sourceCount": 0,
+      "positiveStoryCount": 0,
       "neutralStoryCount": 0,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 35,
-        "missing_company_alias": 1
+        "ambiguous_company_without_alias": 12
       },
-      "topStories": [
-        {
-          "id": "81ce1bb483cf5e9b",
-          "storyClusterId": "story-001",
-          "title": "Peak inside new independent fashion retailer opening in former Middlesbrough Next building",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQNDVvd2lvNzdTQzNUNWJibFZIRFpiS18wNWhiWTAxMVFkbXBNeGhoLWxHTG5FdEJRMHpUWjhvZWVSclBkNTVTdzRhbWd3am85RW1BdEtqSTZVbm4zcWMxX2REdTBVdmg0YTJPVmNFNFVjZUkwSWFUMzZyZE5penRtazZxZXNoWHNDdlRJRDktbDlycmszQkNj0gGcAUFVX3lxTE5sc2hMZ3ZDamYyTzhTX0p6cnlROTJIdHBWV0lDZGJzQ0hRczBxa3lnNW82WS05dWtwcElwN0RqTG1RcUcyanFiT01OZVRSNUR4U0NSWXZxTFlEeUU0WnNmdTRQUkU2NGlFTWFBaUtkSUJYNlM1c1J5enFNaWpjMGJ2MnZuTUc5dkg5bFRpOS05SGdEOFVuV3FyZlZXWA?oc=5",
-          "source": "gazettelive.co.uk",
-          "publishedAt": "2026-11-06T16:10:00Z",
-          "polarity": 0.214,
-          "sentiment": "Positive",
-          "publisherCount": 1
-        }
-      ],
+      "topStories": [],
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 12.2",
-          "evidenceArticleIds": [
-            "81ce1bb483cf5e9b"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         },
         {
           "type": "collection_degraded",
@@ -4517,12 +4502,10 @@
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "81ce1bb483cf5e9b"
-          ]
+          "evidenceArticleIds": []
         }
       ],
-      "changeFromPreviousScoredDay": 1.8
+      "changeFromPreviousScoredDay": null
     }
   ]
 }
