@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-07T02:27:42.198965Z",
+  "generatedAt": "2026-11-07T02:59:57.461610Z",
   "company": {
     "companyName": "National Grid",
     "ticker": "NG.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-11-05",
-    "observationCount": 117,
-    "scoredDayCount": 112,
-    "latestScore": 70.1,
-    "latestScoreDate": "2026-11-05",
+    "periodEnd": "2026-11-06",
+    "observationCount": 118,
+    "scoredDayCount": 113,
+    "latestScore": 44.1,
+    "latestScoreDate": "2026-11-06",
     "series": [
       {
         "date": "2026-06-30",
@@ -1078,6 +1078,15 @@
         "sourceCount": 29,
         "confidence": 91.1,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-11-06",
+        "dailyScore": 44.1,
+        "rollingScore": 55.7,
+        "storyCount": 19,
+        "sourceCount": 15,
+        "confidence": 87.6,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1110,16 +1119,6 @@
         "direction": "mixed",
         "detail": "Positive and negative coverage is unusually dispersed",
         "significance": 1.603
-      },
-      {
-        "date": "2026-10-09",
-        "type": "sentiment_drop",
-        "title": "National Grid stock loses 0.73 percent after-hours to EUR 13.64",
-        "source": "ad-hoc-news.de",
-        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOaHRSLXltTXFibG9vbTdWU2FzQUVBdjBDUWl3M0JXOVFnNFZTV2I5TVlVZVRvVy04YzBtbGFnSXF4N2VPbXUxRlZjUDhSTTBEN0h5WGRldXdqcUY1Z1l4ZFhLSVUzV0l6djNwdTVldnBZTFNCLTktTjNhdi1xdjNkQVBRQjBuSk9Mb0hxdk9vNWU3MU9KMmFlZWpuTEUxY2h5b3hnVjdvdEtSSWppM19YYVJ2RF95Q3ZhVnpqSVlZUQ?oc=5",
-        "direction": "negative",
-        "detail": "Daily score decreased by 16.6 points",
-        "significance": 1.599
       },
       {
         "date": "2026-10-15",
@@ -1180,6 +1179,16 @@
         "direction": "neutral",
         "detail": null,
         "significance": 1.603
+      },
+      {
+        "date": "2026-11-06",
+        "type": "interim_results",
+        "title": "National Grid shares drop nearly 2% after strong earnings met with selling pressure",
+        "source": "tradersunion.com",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOSjlUZGNHb19tVlBsQkJGaXQzQ3d4ZDdHU3NTaC1qVW8wX2VMeFk1R2tRamZndlZKWGxMRlVHU0ZaNjFxajh4SjZlZDlPN0JTZHdsbWlCS0o4d0VqUkhTT0FHSXBDVTRfZzRjM2VheEYySUd1NWFCcnNzQ21lWWFmY0lzQjd5c0hJdGVLQXBWTTB1UQ?oc=5",
+        "direction": "neutral",
+        "detail": null,
+        "significance": 1.607
       }
     ]
   },
@@ -1745,17 +1754,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 36.3,
+    "score": 36.1,
     "label": "Low",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 56.6,
+        "score": 56.2,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 82 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 83 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1862,16 +1871,6 @@
       "significance": 1.603
     },
     {
-      "date": "2026-10-09",
-      "type": "sentiment_drop",
-      "title": "National Grid stock loses 0.73 percent after-hours to EUR 13.64",
-      "source": "ad-hoc-news.de",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOaHRSLXltTXFibG9vbTdWU2FzQUVBdjBDUWl3M0JXOVFnNFZTV2I5TVlVZVRvVy04YzBtbGFnSXF4N2VPbXUxRlZjUDhSTTBEN0h5WGRldXdqcUY1Z1l4ZFhLSVUzV0l6djNwdTVldnBZTFNCLTktTjNhdi1xdjNkQVBRQjBuSk9Mb0hxdk9vNWU3MU9KMmFlZWpuTEUxY2h5b3hnVjdvdEtSSWppM19YYVJ2RF95Q3ZhVnpqSVlZUQ?oc=5",
-      "direction": "negative",
-      "detail": "Daily score decreased by 16.6 points",
-      "significance": 1.599
-    },
-    {
       "date": "2026-10-15",
       "type": "high_disagreement",
       "title": "National Grid's Winter Forecast Shows A Slight Drop In The Gas Bill",
@@ -1930,6 +1929,16 @@
       "direction": "neutral",
       "detail": null,
       "significance": 1.603
+    },
+    {
+      "date": "2026-11-06",
+      "type": "interim_results",
+      "title": "National Grid shares drop nearly 2% after strong earnings met with selling pressure",
+      "source": "tradersunion.com",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOSjlUZGNHb19tVlBsQkJGaXQzQ3d4ZDdHU3NTaC1qVW8wX2VMeFk1R2tRamZndlZKWGxMRlVHU0ZaNjFxajh4SjZlZDlPN0JTZHdsbWlCS0o4d0VqUkhTT0FHSXBDVTRfZzRjM2VheEYySUd1NWFCcnNzQ21lWWFmY0lzQjd5c0hJdGVLQXBWTTB1UQ?oc=5",
+      "direction": "neutral",
+      "detail": null,
+      "significance": 1.607
     },
     {
       "date": "2026-12-31",

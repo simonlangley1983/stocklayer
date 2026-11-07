@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-07T02:27:42.198965Z",
+  "generatedAt": "2026-11-07T02:59:57.461610Z",
   "company": {
     "companyName": "GSK",
     "ticker": "GSK.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-15",
-    "periodEnd": "2026-11-05",
-    "observationCount": 110,
-    "scoredDayCount": 107,
-    "latestScore": 50.6,
-    "latestScoreDate": "2026-11-05",
+    "periodEnd": "2026-11-06",
+    "observationCount": 111,
+    "scoredDayCount": 108,
+    "latestScore": 38.2,
+    "latestScoreDate": "2026-11-06",
     "series": [
       {
         "date": "2026-06-15",
@@ -1015,6 +1015,15 @@
         "sourceCount": 18,
         "confidence": 81.4,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-11-06",
+        "dailyScore": 38.2,
+        "rollingScore": 50.3,
+        "storyCount": 19,
+        "sourceCount": 17,
+        "confidence": 88.9,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1609,17 +1618,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 53.1,
+    "score": 52.8,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 57.2,
+        "score": 56.6,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 75 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 76 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1797,6 +1806,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "7cad2d940bbd642c9dae",
+      "type": "clinical",
+      "title": "GSK (LSE:GSK) Stock Still Looks Below Fair Value Following Jemperli Approval",
+      "date": "2026-11-06",
+      "status": "pending_review",
+      "reviewDate": "2027-05-05",
+      "direction": "Very negative",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE84d1Zxa0MyTGx3c3FCZGFsNWRiRGw1N3hfSmhmSk1nWlYxQk1ibDRVeVJXejFMbGJsdkpLUG1EOHhjaFFCQlVTdzg2TFozX2tDZlpFX0lNZ0ROVUZSTG9Qd3VISU9vUHY1aG9abGE1bHUzNVFIR3NnbG5iZ0U?oc=5",
+          "publisher": "ca.finance.yahoo.com",
+          "date": "2026-11-06"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "54d1c54266da8c553494",
       "type": "clinical",
