@@ -6099,35 +6099,49 @@
     },
     {
       "date": "2026-11-07",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 53.9,
-      "confidence": 0.0,
+      "dailyScore": 50.3,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 53.5,
+      "confidence": 15.2,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 0,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 1,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 0,
+      "neutralStoryCount": 1,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {},
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "1ff305b7501032e5",
+          "storyClusterId": "story-001",
+          "title": "Allan Lee Hiscox Obituary (2026) - Worthington, OH - Roberts Funeral Home–Hillcrest Chapel - Wadsworth/Seville",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPMHBNU3hFM1V6akg4SVA5eVNSTVFDM19qQkhoaENmb3E3RElMVnB5MHlDNUNPakgtcFljNkZMQ3pobFFOVHFLeUlMYm1TNWxuQld1UmtxYmplWlFzMllkMEhQeWN5WHpKelYyNERnZTBYWDBObk1weDZkQy1RdUVUWg?oc=5",
+          "source": "legacy.com",
+          "publishedAt": "2026-11-07T12:06:48Z",
+          "polarity": 0.0204,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.2",
+          "evidenceArticleIds": [
+            "1ff305b7501032e5"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": -1.6
     }
   ]
 }
