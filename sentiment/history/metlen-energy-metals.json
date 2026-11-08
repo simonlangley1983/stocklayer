@@ -2471,35 +2471,49 @@
     },
     {
       "date": "2026-11-07",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 52.6,
-      "confidence": 0.0,
+      "dailyScore": 41.9,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 51.3,
+      "confidence": 18.4,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 0,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 1,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
       "positiveStoryCount": 0,
       "neutralStoryCount": 0,
-      "negativeStoryCount": 0,
+      "negativeStoryCount": 1,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {},
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "4cd64ce736ec2608",
+          "storyClusterId": "story-001",
+          "title": "Metlen Energy & Metals PLC (MTLN.AT) Seasonal returns chart",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9PRE9FU1JVQVloQ1ZoZHRRR2c1UTJyUXQ5cUhDYjhVVV9ZVUVvbEwwRjdlbDdMV3hHU2c1N2MyN0pXWndXTjdqalh1WWtiVFN3NElqODNWWkV6TUs3VUpzeEFKVFBNQQ?oc=5",
+          "source": "uk.finance.yahoo.com",
+          "publishedAt": "2026-11-07T20:16:33Z",
+          "polarity": -0.4888,
+          "sentiment": "Negative",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 18.4",
+          "evidenceArticleIds": [
+            "4cd64ce736ec2608"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": -3.7
     }
   ]
 }
