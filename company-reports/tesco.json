@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-08T01:58:06.019675Z",
+  "generatedAt": "2026-11-08T02:37:14.969383Z",
   "company": {
     "companyName": "Tesco PLC",
     "ticker": "TSCO.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-11-06",
-    "observationCount": 119,
-    "scoredDayCount": 109,
-    "latestScore": 41.1,
-    "latestScoreDate": "2026-11-06",
+    "periodEnd": "2026-11-07",
+    "observationCount": 120,
+    "scoredDayCount": 110,
+    "latestScore": 29.1,
+    "latestScoreDate": "2026-11-07",
     "series": [
       {
         "date": "2026-06-30",
@@ -1096,6 +1096,15 @@
         "sourceCount": 23,
         "confidence": 87.7,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-11-07",
+        "dailyScore": 29.1,
+        "rollingScore": 41.6,
+        "storyCount": 24,
+        "sourceCount": 20,
+        "confidence": 92.4,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1118,16 +1127,6 @@
         "direction": "mixed",
         "detail": "Positive and negative coverage is unusually dispersed",
         "significance": 1.734
-      },
-      {
-        "date": "2026-08-05",
-        "type": "bad_press",
-        "title": "Asda , Tesco and Sainsbury pull all disposable BBQs from shelves amid warning",
-        "source": "manchestereveningnews.co.uk",
-        "url": "https://www.manchestereveningnews.co.uk/news/uk-news/asda-tesco-sainsburys-pull-disposable-34407807",
-        "direction": "negative",
-        "detail": "Daily press score is 32.6",
-        "significance": 1.604
       },
       {
         "date": "2026-08-14",
@@ -1198,6 +1197,16 @@
         "direction": "positive",
         "detail": null,
         "significance": 1.608
+      },
+      {
+        "date": "2026-11-07",
+        "type": "sentiment_drop",
+        "title": "Soup sold in Tesco recalled over fears cans could 'swell and rupture'",
+        "source": "herefordtimes.com",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUlFOaWN4cENwTnNwdWUzTUU1TFR1aHBOb0xzVm1ocnVqUmd0c0s5UkU1ZENFNW44S2JBZTEwN1ItZFYwTGpwVkp5VHhGM21tOUU0MXVMcTZ5ajg2LWN5d0VHdElQNnRvekNzRGdIMnhyUEI2amhDWVB3WVpUTFRlUk9VYmRTVXlQcnBORlZOVnJjdzZaV0hxMzVJNTJPby0wYm9lWDJmdw?oc=5",
+        "direction": "negative",
+        "detail": "Daily score decreased by 12.0 points",
+        "significance": 1.604
       }
     ]
   },
@@ -1763,17 +1772,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 44.9,
+    "score": 44.7,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 46.1,
+        "score": 45.6,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 73 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 74 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1870,16 +1879,6 @@
       "significance": 1.734
     },
     {
-      "date": "2026-08-05",
-      "type": "bad_press",
-      "title": "Asda , Tesco and Sainsbury pull all disposable BBQs from shelves amid warning",
-      "source": "manchestereveningnews.co.uk",
-      "url": "https://www.manchestereveningnews.co.uk/news/uk-news/asda-tesco-sainsburys-pull-disposable-34407807",
-      "direction": "negative",
-      "detail": "Daily press score is 32.6",
-      "significance": 1.604
-    },
-    {
       "date": "2026-08-14",
       "type": "sentiment_drop",
       "title": "Food recalls issued at Tesco , Waitrose and Home Bargains",
@@ -1948,6 +1947,16 @@
       "direction": "positive",
       "detail": null,
       "significance": 1.608
+    },
+    {
+      "date": "2026-11-07",
+      "type": "sentiment_drop",
+      "title": "Soup sold in Tesco recalled over fears cans could 'swell and rupture'",
+      "source": "herefordtimes.com",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUlFOaWN4cENwTnNwdWUzTUU1TFR1aHBOb0xzVm1ocnVqUmd0c0s5UkU1ZENFNW44S2JBZTEwN1ItZFYwTGpwVkp5VHhGM21tOUU0MXVMcTZ5ajg2LWN5d0VHdElQNnRvekNzRGdIMnhyUEI2amhDWVB3WVpUTFRlUk9VYmRTVXlQcnBORlZOVnJjdzZaV0hxMzVJNTJPby0wYm9lWDJmdw?oc=5",
+      "direction": "negative",
+      "detail": "Daily score decreased by 12.0 points",
+      "significance": 1.604
     },
     {
       "date": "2026-12-31",

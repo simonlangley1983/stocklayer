@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-08T01:58:06.019675Z",
+  "generatedAt": "2026-11-08T02:37:14.969383Z",
   "company": {
     "companyName": "Coca-Cola Europacific Partners PLC",
     "ticker": "CCEP.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-09-15",
-    "periodEnd": "2026-11-06",
-    "observationCount": 53,
-    "scoredDayCount": 40,
-    "latestScore": 59.5,
-    "latestScoreDate": "2026-11-06",
+    "periodEnd": "2026-11-07",
+    "observationCount": 54,
+    "scoredDayCount": 41,
+    "latestScore": 55.5,
+    "latestScoreDate": "2026-11-07",
     "series": [
       {
         "date": "2026-09-15",
@@ -501,6 +501,15 @@
         "storyCount": 3,
         "sourceCount": 3,
         "confidence": 53.5,
+        "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-11-07",
+        "dailyScore": 55.5,
+        "rollingScore": 56.4,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 16.7,
         "coverageStatus": "ok"
       }
     ],
@@ -1096,17 +1105,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 50.4,
+    "score": 50.5,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 54.5,
+        "score": 54.6,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 40 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 41 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1284,6 +1293,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "a72b6a98937ab9c0b170",
+      "type": "acquisition",
+      "title": "Rakuten Investment Management Inc. Acquires New Holdings in Coca-Cola Europacific Partners $CCEP",
+      "date": "2026-11-07",
+      "status": "pending_review",
+      "reviewDate": "2027-05-06",
+      "direction": "Positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPRy1hWUFfdkVSQnFBbWc1TkdpcDlhaTVPR3RDVWtxTG9oZjktckEyN2MwcWwwSnFBZ3ZReDNmWk9LV2QyZkEyS0xoeVN2TXd5VUVncnBsdlNRTW5HWU5sNVAzaXc4eGdvd1lkQTdhZ1FzdElUalM3WXN3NTV6NFVsMlYxSTN6LVlGNXNNYTU4UVgtcUdfYkZlYUlCZVRiZkZ4VWt1NGt4ZEl5LUpoLW9kOHNHNTVJdkdaajhvd3lSSldCTlV0X3JnNzQ4b3BiTklreG4zNTJfaW1RV1ZDLWpLV0VFQUQ2RkowR0hn?oc=5",
+          "publisher": "marketbeat.com",
+          "date": "2026-11-07"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "11d4d2f3b376993c8b23",
       "type": "acquisition",
