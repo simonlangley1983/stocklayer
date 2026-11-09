@@ -5096,35 +5096,49 @@
     },
     {
       "date": "2026-11-08",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 52.4,
-      "confidence": 0.0,
+      "dailyScore": 49.4,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 52.0,
+      "confidence": 15.2,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 0,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 1,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 0,
+      "neutralStoryCount": 1,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {},
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "5f7aaba1e687e60e",
+          "storyClusterId": "story-001",
+          "title": "Croda International Plc (49GP.L) Seasonal returns chart",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE92MEIyNlY4a2pqcU41aE1lTkozMEhmSmhwVXpJTDlZT2JSN1BKay1xLXVCeko4TE9BLVlvaHFGMGpmLVBqTWRkMnJwV1FDMlpfeTZJQTdCUkJFaVpUTlE4aXg1c3A?oc=5",
+          "source": "uk.finance.yahoo.com",
+          "publishedAt": "2026-11-08T08:31:28Z",
+          "polarity": -0.0333,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.2",
+          "evidenceArticleIds": [
+            "5f7aaba1e687e60e"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": 0.0
     }
   ]
 }
