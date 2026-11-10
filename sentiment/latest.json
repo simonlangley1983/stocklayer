@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-11-10T21:21:21.616035Z",
+  "generatedAt": "2026-11-10T22:27:33.729429Z",
   "asOfDate": "2026-11-09",
   "companies": {
     "airtel-africa": {
@@ -804,25 +804,23 @@
       "ticker": "BARC.L",
       "slug": "barclays",
       "date": "2026-11-09",
-      "dailyScore": 50.8,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.6,
-      "confidence": 11.4,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 50.5,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": -10.1,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 11.4",
-          "evidenceArticleIds": [
-            "5fe347b3c7ca94ee"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         },
         {
           "type": "collection_degraded",
@@ -830,24 +828,10 @@
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "5fe347b3c7ca94ee"
-          ]
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "5fe347b3c7ca94ee",
-          "storyClusterId": "story-001",
-          "title": "An 8.625% securities pricing agreement names Barclays (BCS) and Barclays Bank PLC.",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQRndjdjUtTUV3aTI5UnNUOXZQdnZ4UmYyUHVVUUVxOEpRUVVqWlk5M3I4ZVFtYnhxTmREOEhoclRCcVJTVmNJNmh5Z1RNaWtQLWV3ZjhFRWVCWktDS0RiQ3FXOXhEQjdseDR6WkxGZ1ZTYnVpanVFZFFsRnBKT2VzR0RjYy1GVzcycFhiUTVGRFZiV0Z4RmRXc3Z2WEdnOUhYcnpCV2V2SmUtQ1E?oc=5",
-          "source": "stocktitan.net",
-          "publishedAt": "2026-11-09T21:06:14Z",
-          "polarity": 0.0455,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "british-american-tobacco": {
       "companyName": "British American Tobacco",
@@ -4566,6 +4550,14 @@
           "severity": "low",
           "status": "calculated",
           "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": []
         }
       ],
