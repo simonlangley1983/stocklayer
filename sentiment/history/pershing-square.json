@@ -5299,35 +5299,49 @@
     },
     {
       "date": "2026-11-09",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.3,
-      "confidence": 0.0,
+      "dailyScore": 44.7,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 49.6,
+      "confidence": 16.7,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 0,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 1,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
       "positiveStoryCount": 0,
       "neutralStoryCount": 0,
-      "negativeStoryCount": 0,
+      "negativeStoryCount": 1,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {},
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "7c45219a8b28f9c6",
+          "storyClusterId": "story-001",
+          "title": "Pershing Square Holdings Ltd. (GG00BPFJTF46.SG) Seasonal returns chart",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE85V3FZa0J0ZXozUjZBYlV6V0J0WXpXaUlwcDVQajZCWWxOV0JINy1tNW9QYmpPRjBTZHBYazNpNk91ZUk5azNzYlNxTTA4OWwwTmxrZUp3WGNjcGQySW8za2U0RlZZQURVcUhFMkpodTc?oc=5",
+          "source": "uk.finance.yahoo.com",
+          "publishedAt": "2026-11-09T11:55:06Z",
+          "polarity": -0.3155,
+          "sentiment": "Negative",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 16.7",
+          "evidenceArticleIds": [
+            "7c45219a8b28f9c6"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": -6.1
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-11-10T13:11:40.974961Z",
+  "generatedAt": "2026-11-10T13:40:27.221086Z",
   "asOfDate": "2026-11-09",
   "companies": {
     "airtel-africa": {
@@ -804,16 +804,26 @@
       "ticker": "BARC.L",
       "slug": "barclays",
       "date": "2026-11-09",
-      "dailyScore": 51.7,
+      "dailyScore": 50.8,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.7,
-      "confidence": 42.9,
-      "confidenceBand": "medium",
+      "rollingScore": 50.6,
+      "confidence": 11.4,
+      "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 4,
-      "sourceCount": 4,
-      "changeFromPreviousScoredDay": -9.2,
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -10.1,
       "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 11.4",
+          "evidenceArticleIds": [
+            "5fe347b3c7ca94ee"
+          ]
+        },
         {
           "type": "collection_degraded",
           "direction": "neutral",
@@ -821,55 +831,19 @@
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
-            "9d0dd1cfa21b8aba",
-            "5fe347b3c7ca94ee",
-            "c512aa091d0bfdb1",
-            "120fc90df93330d6"
+            "5fe347b3c7ca94ee"
           ]
         }
       ],
       "topStories": [
         {
-          "id": "9d0dd1cfa21b8aba",
-          "storyClusterId": "story-001",
-          "title": "Hohimer Wealth Management LLC Buys New Position in Barclays PLC $BCS",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQdEhBQWlCTFA1TVJYZURnd1ljaHEzNjNxVWRVak9qRGw0aXdYNFFiLWNtal9seTZFMnpMbmdHM0hILUk2VkM1RTdWQ1lfcWFqNEpOYkJwaVdta2dmUHZQUEh1eXExY3EyLU9tZmhBNmVCQmZDZS1QU084VF8zWEhWM3pFZmRPcWlKUjRmd0V2ZkhpUmM5dXFhc0hURXpTa3F4Y0ExTkIzalFsR1AxUTZyTWEteGU4QXFkV0ZRc25HQmlCTEd5OWtr?oc=5",
-          "source": "marketbeat.com",
-          "publishedAt": "2026-11-09T11:53:01Z",
-          "polarity": 0.1866,
-          "sentiment": "Slightly positive",
-          "publisherCount": 1
-        },
-        {
           "id": "5fe347b3c7ca94ee",
-          "storyClusterId": "story-004",
+          "storyClusterId": "story-001",
           "title": "An 8.625% securities pricing agreement names Barclays (BCS) and Barclays Bank PLC.",
           "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQRndjdjUtTUV3aTI5UnNUOXZQdnZ4UmYyUHVVUUVxOEpRUVVqWlk5M3I4ZVFtYnhxTmREOEhoclRCcVJTVmNJNmh5Z1RNaWtQLWV3ZjhFRWVCWktDS0RiQ3FXOXhEQjdseDR6WkxGZ1ZTYnVpanVFZFFsRnBKT2VzR0RjYy1GVzcycFhiUTVGRFZiV0Z4RmRXc3Z2WEdnOUhYcnpCV2V2SmUtQ1E?oc=5",
           "source": "stocktitan.net",
           "publishedAt": "2026-11-09T21:06:14Z",
           "polarity": 0.0455,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        },
-        {
-          "id": "c512aa091d0bfdb1",
-          "storyClusterId": "story-002",
-          "title": "REG - Entain PLC Barclays PLC - TR-1: Notification of Major Holdings",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNNmZodm40bkgtWnZRQUZkNUNtQVdJd09xdzRDeUlycFRtcWVXT1FkYU9PQnBOT0l3ZUV2NkZqNHlRS1A5ODBXSHBjQ2ZuY3Z3Rkc4czRQSVBpcVAwSHRodkZycnUxZTBXbnpWT0VaWURWaEZ1azMxVl9sZ3pMc0JaMjJYU09LenE5TEFZU3dGTTZ1YTU2N3E3YVppaGlTMmZ6cUg5YjFhNnMzQklXZnNwdWRFOFBlMzRBQklacjI2ZmxOcWpJRnM3UWdUWllYTFpVWlRXdXBB?oc=5",
-          "source": "tradingview.com",
-          "publishedAt": "2026-11-09T14:06:05Z",
-          "polarity": -0.0167,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        },
-        {
-          "id": "120fc90df93330d6",
-          "storyClusterId": "story-003",
-          "title": "Form 424B2 BARCLAYS BANK PLC",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQdlJkQ3ZRbExaN2RQblM4SF9wUU84WGhiZUZJajNYVmVQNWJyLVROSmVZZUFlajdRVmdiY0pXeU54ai1HUTE5eFhOVWRXTEZBWTFrOGdXNjRSY2d2QTNGZHRuY1dvY3Y1NnNtZC1EbkVGTXBpMXZ0aHY2TEo0dHVwWmhoVERWbTZVRS1jag?oc=5",
-          "source": "streetinsider.com",
-          "publishedAt": "2026-11-09T20:23:10Z",
-          "polarity": -0.0066,
           "sentiment": "Neutral / mixed",
           "publisherCount": 1
         }
@@ -2886,26 +2860,40 @@
       "ticker": "III.L",
       "slug": "3i",
       "date": "2026-11-09",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 48.9,
-      "confidence": 0.0,
+      "dailyScore": 49.5,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.0,
+      "confidence": 15.2,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 14.3,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.2",
+          "evidenceArticleIds": [
+            "07c018d16185946a"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "07c018d16185946a",
+          "storyClusterId": "story-001",
+          "title": "3i Group plc (TGOPY) stock price, news, quote and history",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBIc3dQQnhxdUJnODkyZ3ltSE01OXExOE1nUlpLNWo2ZS1ibFozdVFiOFBKc2lOSnB1QUgxZ3A1SGsyM0dtUTZfUFhkUkVaSENZdmxJ?oc=5",
+          "source": "au.finance.yahoo.com",
+          "publishedAt": "2026-11-09T17:31:07Z",
+          "polarity": -0.0286,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
     },
     "imperial-brands": {
       "companyName": "Imperial Brands PLC",
@@ -4080,26 +4068,40 @@
       "ticker": "PSH.L",
       "slug": "pershing-square",
       "date": "2026-11-09",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.3,
-      "confidence": 0.0,
+      "dailyScore": 44.7,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 49.6,
+      "confidence": 16.7,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -6.1,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 16.7",
+          "evidenceArticleIds": [
+            "7c45219a8b28f9c6"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "7c45219a8b28f9c6",
+          "storyClusterId": "story-001",
+          "title": "Pershing Square Holdings Ltd. (GG00BPFJTF46.SG) Seasonal returns chart",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE85V3FZa0J0ZXozUjZBYlV6V0J0WXpXaUlwcDVQajZCWWxOV0JINy1tNW9QYmpPRjBTZHBYazNpNk91ZUk5azNzYlNxTTA4OWwwTmxrZUp3WGNjcGQySW8za2U0RlZZQURVcUhFMkpodTc?oc=5",
+          "source": "uk.finance.yahoo.com",
+          "publishedAt": "2026-11-09T11:55:06Z",
+          "polarity": -0.3155,
+          "sentiment": "Negative",
+          "publisherCount": 1
+        }
+      ]
     },
     "pearson": {
       "companyName": "Pearson PLC",
