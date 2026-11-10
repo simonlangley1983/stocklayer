@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-09T21:18:11.942584Z",
+  "generatedAt": "2026-11-10T00:48:49.696945Z",
   "company": {
     "companyName": "Coca-Cola HBC AG",
     "ticker": "CCH.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-15",
-    "periodEnd": "2026-11-08",
-    "observationCount": 118,
-    "scoredDayCount": 70,
-    "latestScore": 50.2,
-    "latestScoreDate": "2026-11-08",
+    "periodEnd": "2026-11-09",
+    "observationCount": 119,
+    "scoredDayCount": 71,
+    "latestScore": 46.8,
+    "latestScoreDate": "2026-11-09",
     "series": [
       {
         "date": "2026-06-15",
@@ -1087,6 +1087,15 @@
         "sourceCount": 1,
         "confidence": 15.2,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-11-09",
+        "dailyScore": 46.8,
+        "rollingScore": 50.0,
+        "storyCount": 6,
+        "sourceCount": 7,
+        "confidence": 74.8,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1171,16 +1180,6 @@
         "significance": 1.601
       },
       {
-        "date": "2026-11-05",
-        "type": "sentiment_drop",
-        "title": "Coca-Cola HBC Raises Revenue Outlook On Strong Demand",
-        "source": "checkout.ie",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNclNqN2dHMzZqLVJZMEZCMWZrWlhhMGF3b2R6RUEzR00xZC0tbWhsX2Z2QUU4anp4WGgyOHV2Ql9CUXNwa2IzZ1BhdExldDEwOHhYUlNKZS1ualU0bVZNNFEtUUhqdmJYdTlBQXFOcUd5NExvd0VXeVVEdUJDdTF5SXRPOFlhUnZhVExzaXhETGs1eHNOU0hGQQ?oc=5",
-        "direction": "negative",
-        "detail": "Daily score decreased by 16.3 points",
-        "significance": 1.567
-      },
-      {
         "date": "2026-11-06",
         "type": "coverage_spike",
         "title": "Coca-Cola HBC rebounds as Russia risk overshadows growth",
@@ -1189,6 +1188,16 @@
         "direction": "neutral",
         "detail": "8 stories versus trailing median 1.5",
         "significance": 1.583
+      },
+      {
+        "date": "2026-11-09",
+        "type": "trading_update",
+        "title": "Coca-Cola HBC gets mixed messages over threat to Russian assets",
+        "source": "thetimes.com",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPM3JmQWg5S0JvYnRjdHpNQ3ZwYnI2MnNnbUw1cXpEbnljYklrNlJSa2tXX2IxMEY1U18tM0R5b0liR1JBa0xZZWhwYmV1eDNDWWdqcDV3V3lubmc3eGQ5WHRsd1FqUzJranVkakZnNmtLdEgzV0tlVlJnVmxDWTJSTXl4UzM4bHotb3lFenoyMGN3LThfdEw1Q0JyT1ZkN2pVZi1zUDJR?oc=5",
+        "direction": "neutral",
+        "detail": null,
+        "significance": 1.569
       }
     ]
   },
@@ -1681,17 +1690,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 59.2,
+    "score": 59.1,
     "label": "Positive",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 55.2,
+        "score": 54.9,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 53 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 54 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "themes",
@@ -1840,16 +1849,6 @@
       "significance": 1.601
     },
     {
-      "date": "2026-11-05",
-      "type": "sentiment_drop",
-      "title": "Coca-Cola HBC Raises Revenue Outlook On Strong Demand",
-      "source": "checkout.ie",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNclNqN2dHMzZqLVJZMEZCMWZrWlhhMGF3b2R6RUEzR00xZC0tbWhsX2Z2QUU4anp4WGgyOHV2Ql9CUXNwa2IzZ1BhdExldDEwOHhYUlNKZS1ualU0bVZNNFEtUUhqdmJYdTlBQXFOcUd5NExvd0VXeVVEdUJDdTF5SXRPOFlhUnZhVExzaXhETGs1eHNOU0hGQQ?oc=5",
-      "direction": "negative",
-      "detail": "Daily score decreased by 16.3 points",
-      "significance": 1.567
-    },
-    {
       "date": "2026-11-06",
       "type": "coverage_spike",
       "title": "Coca-Cola HBC rebounds as Russia risk overshadows growth",
@@ -1858,6 +1857,16 @@
       "direction": "neutral",
       "detail": "8 stories versus trailing median 1.5",
       "significance": 1.583
+    },
+    {
+      "date": "2026-11-09",
+      "type": "trading_update",
+      "title": "Coca-Cola HBC gets mixed messages over threat to Russian assets",
+      "source": "thetimes.com",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPM3JmQWg5S0JvYnRjdHpNQ3ZwYnI2MnNnbUw1cXpEbnljYklrNlJSa2tXX2IxMEY1U18tM0R5b0liR1JBa0xZZWhwYmV1eDNDWWdqcDV3V3lubmc3eGQ5WHRsd1FqUzJranVkakZnNmtLdEgzV0tlVlJnVmxDWTJSTXl4UzM4bHotb3lFenoyMGN3LThfdEw1Q0JyT1ZkN2pVZi1zUDJR?oc=5",
+      "direction": "neutral",
+      "detail": null,
+      "significance": 1.569
     }
   ],
   "persistentEvents": [
