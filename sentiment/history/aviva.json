@@ -9691,37 +9691,84 @@
     },
     {
       "date": "2026-11-10",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 52.2,
-      "confidence": 0.0,
-      "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "dailyScore": 52.0,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 52.1,
+      "confidence": 74.2,
+      "confidenceBand": "high",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 2,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
-      "positiveStoryCount": 0,
-      "neutralStoryCount": 0,
-      "negativeStoryCount": 0,
-      "dispersion": 0.0,
+      "candidateCount": 20,
+      "eligibleArticleCount": 6,
+      "storyCount": 6,
+      "effectiveStoryCount": 6.0,
+      "sourceCount": 6,
+      "positiveStoryCount": 2,
+      "neutralStoryCount": 3,
+      "negativeStoryCount": 1,
+      "dispersion": 0.5348,
       "rejectedCandidateCounts": {
-        "missing_company_alias": 2
+        "missing_company_alias": 14
       },
-      "topStories": [],
-      "flags": [
+      "topStories": [
         {
-          "type": "no_coverage",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "id": "ab69c8191e54384b",
+          "storyClusterId": "story-002",
+          "title": "Aviva shares technical analysis: Consolidation expected as weak momentum persists",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQc0R4cE45Sm5DSmNEVTNjSlNzaGJ1UnhBYTJNeU9MZ1AzWUN0TklOemdfeUk4TDFybWtZaEJWN09OUWdVZ0Q2M2FVUnpoMjZUeHZvWTY4MTRleTdNRHBwRnZqSVlNOTJkTENDWWxueGQ4OWZaUmpnYjF0dlNsbnV1c1p3cjgySXdjRFhEU1JCRQ?oc=5",
+          "source": "tradersunion.com",
+          "publishedAt": "2026-11-10T09:07:31Z",
+          "polarity": -0.9378,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "e39cd8e4c04b879b",
+          "storyClusterId": "story-006",
+          "title": "Aviva (AV.) Beats SpaceX And Rolls-Royce As Most-Bought Stock On Major UK Platform",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNQVV1aElQclVhcENQVklsckpaRkxFUFFieXNQSnF4RW4yOUdGUkt5WlhIak9VVV9hbTA5Vll4c0JUQTRESW9wTW9LTmVkUXBvLU1kR0lWOHNZSkZEaVlDMDFTVnBUcTJjQktJaVUtNmFvNmRKYXlKMnh6bk9IQkJOa3psUWNUQ3lQN1dGREh0SVdpLWdtR3U5ai13UFJOOWtiRjNtX0MxejZJa0df?oc=5",
+          "source": "londoninsider.co.uk",
+          "publishedAt": "2026-11-10T18:28:02Z",
+          "polarity": 0.8719,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "e07d628f1195c118",
+          "storyClusterId": "story-003",
+          "title": "Sligo referee Darren Corcoran earns second FAI Cup final medal as Assistant Referee at Aviva Stadium",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQVUswSzl1Q3Z4QXJIWWZpdU5nT214ZVZEYkNGdXVzSXR2cUd6a1o2LUxZSjBOdUJhLUxOUGxoNHlsNHZhd1NfQi1pSWV0cU1CTzB1T3RhdngwOF9vU093Wkp4cTlNWS1XenZCOUdsYWtsZEFsWHhhX2JDc3BsNXd6OTB1alRQbWMwc2pwUWpqT0pBSFBVWU5wcjVWUnRtcC1DQUY4dzBodDExR1ZpZUpPZk85MjRPYkI5QU5EaExVbm1ndkpzeXRyWHJYVHpvR1l3R1RvSUZvWFMtYWx5T1NUOW1NUl9yOEhzMDVuOXBB?oc=5",
+          "source": "independent.ie",
+          "publishedAt": "2026-11-10T13:30:00Z",
+          "polarity": 0.2784,
+          "sentiment": "Positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "12ad0079440cdd56",
+          "storyClusterId": "story-004",
+          "title": "Redalpine closes oversubscribed $250m eighth early-stage fund with backing from Aviva, KfW",
+          "url": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxPYXFhTVlkWmJDT3gtd0JCb1lZQzNILXFYVkVlYjl3YTM3XzRmSlBlLVhiTUtTR3BWVW9WTTQwMm94cThQTTI0QXhuclY1U19XcWRsR0IwZG1BUm5sTTBiampvUWFSZzFPcmNTb2NVak9ySUdPWHctUnh0c1M1S1RkdHE1X1dISmJXTm0wdmFrMk9YX1VxdzJ3eVlyQlNLMzZ6UU00NmJSRVd2bUNiNjROeXRubS1ndHVYUnY3cnpicXBLMks0MGQyVHpmNU5RMkE5aHQ4N0pqMDR4RWlGcTZWSlczNkpEdHhmeGlISlZYMmc4WE9kX2hpVUJYZkRiQ0FKMlp4c01yR0hmUEQtMEF6TXlhUGxWWDBzcWVTUkp6SXU2TGtqZzl6Ny10WXFSaW14VUxmNEhwX1AwUm0ybXJDUUdzN3JHbjdDWHNBVlF0UUowR1ZIS2c5aERrd2xlb2M?oc=5",
+          "source": "altassets.net",
+          "publishedAt": "2026-11-10T15:33:48Z",
+          "polarity": 0.1218,
+          "sentiment": "Slightly positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "01d8cfe34bc1cbd8",
+          "storyClusterId": "story-005",
+          "title": "Aviva stock trades at 8.72 euros in Tuesday evening session",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNY3FHYUtKNHExTlFsdm9sY0FrMHhfUUZOTmtWcWc0SkZyTEs0a1V1SGxzTFBJbkNFOGQxcHlqNWxvVTZDZXl6QUhxTTJKRGdna3d3TFBMVGtfcnJjSjc5cjlkU180ZDZRR3E4RGcxNkdzUl9hNWF6dzdTaGVuQWdDejhaZzlOU0lPY3NkblBCUTBXUnJOcC1seTBNamNlcnMwU0RtYWJwSGQ0TkEyMmdCV2FKUWJUM2p6R1F4ODYwbw?oc=5",
+          "source": "ad-hoc-news.de",
+          "publishedAt": "2026-11-10T17:39:23Z",
+          "polarity": -0.0168,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "flags": [],
+      "changeFromPreviousScoredDay": -6.0
     }
   ]
 }
