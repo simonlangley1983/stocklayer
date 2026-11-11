@@ -3,8 +3,8 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-11-10T22:27:33.729429Z",
-  "asOfDate": "2026-11-09",
+  "generatedAt": "2026-11-11T02:28:50.562139Z",
+  "asOfDate": "2026-11-10",
   "companyCount": 100,
   "companies": {
     "airtel-africa": {
@@ -215,17 +215,25 @@
       "companyName": "Aviva PLC",
       "ticker": "AV.L",
       "slug": "aviva",
-      "date": "2026-11-09",
-      "dailyScore": 58.0,
-      "dailyLabel": "Slightly positive",
-      "rollingScore": 52.4,
-      "confidence": 78.9,
-      "confidenceBand": "high",
-      "coverageStatus": "ok",
-      "storyCount": 9,
-      "sourceCount": 7,
-      "changeFromPreviousScoredDay": 6.1,
-      "flags": []
+      "date": "2026-11-10",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 52.2,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
+      "flags": [
+        {
+          "type": "no_coverage",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Collection succeeded but found no eligible coverage"
+        }
+      ]
     },
     "astrazeneca": {
       "companyName": "AstraZeneca",
@@ -1515,22 +1523,23 @@
       "companyName": "Marks & Spencer Group PLC",
       "ticker": "MKS.L",
       "slug": "marks-and-spencer",
-      "date": "2026-11-09",
-      "dailyScore": 43.6,
-      "dailyLabel": "Slightly negative",
-      "rollingScore": 51.3,
-      "confidence": 61.1,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "storyCount": 4,
-      "sourceCount": 4,
-      "changeFromPreviousScoredDay": -6.6,
+      "date": "2026-11-10",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 51.2,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "cybersecurity_incident",
-          "direction": "negative",
-          "severity": "critical",
-          "status": "possible"
+          "type": "no_coverage",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Collection succeeded but found no eligible coverage"
         }
       ]
     },
