@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-11T02:28:53.377749Z",
+  "generatedAt": "2026-11-11T02:55:16.859971Z",
   "company": {
     "companyName": "easyJet PLC",
     "ticker": "EZJ.L",
@@ -15,11 +15,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-11-09",
-    "observationCount": 93,
-    "scoredDayCount": 86,
-    "latestScore": 20.7,
-    "latestScoreDate": "2026-11-09",
+    "periodEnd": "2026-11-10",
+    "observationCount": 94,
+    "scoredDayCount": 87,
+    "latestScore": 36.1,
+    "latestScoreDate": "2026-11-10",
     "series": [
       {
         "date": "2026-06-30",
@@ -857,6 +857,15 @@
         "sourceCount": 14,
         "confidence": 93.9,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-11-10",
+        "dailyScore": 36.1,
+        "rollingScore": 40.9,
+        "storyCount": 19,
+        "sourceCount": 20,
+        "confidence": 92.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -911,16 +920,6 @@
         "significance": 1.679
       },
       {
-        "date": "2026-10-23",
-        "type": "coverage_spike",
-        "title": "easyJet warns holidaymakers risk losing £378 in hidden fees",
-        "source": "express.co.uk",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPaDExQ3ZYSzRIX0xLdGRWb3dQM2FJMk9vcnNDV2lHT0RSRC14ZTg5RjFGN0lhREhUM0FCSXZWdEdZX2NNdHJ4ZDJHdHpoTTQ5bE5tUTZUM05ha3RMSjJoaDdkOGtGWksxQVgyakNOa3U4cnMwWWRIU2dYY1RrcDFtSTNDWnVreDRK0gGOAUFVX3lxTE5qNnJJeTJWQUdMbVJuVGtkMWpXVXBkUEJiMGJpOHNMdjlhRURzNXVnZnJRREZBOVJDSW15aVBycWJBdllXb05vQnhEQ3U0ZmNqa3ZnYUNNWmM4VUkwSTVSeGhMdVVZb1drN3A1TUt5bEJNMXYtVEE3NFo5R0ZZcGhibTduUG9fb19td0xPUVE?oc=5",
-        "direction": "neutral",
-        "detail": "26 stories versus trailing median 5",
-        "significance": 1.606
-      },
-      {
         "date": "2026-10-24",
         "type": "sentiment_drop",
         "title": "London Gatwick: Delays and cancellations on Saturday, October 24, including multiple easyJet flights",
@@ -959,6 +958,16 @@
         "direction": "negative",
         "detail": null,
         "significance": 1.607
+      },
+      {
+        "date": "2026-11-10",
+        "type": "sentiment_jump",
+        "title": "EasyJet passengers put on wrong plane at Birmingham Airport in 'massive blunder'",
+        "source": "dailypost.co.uk",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOazJndVFUSkliWTY1RTJmVmp1MTg0dkxCLWtqcGNFbkI5Z3ZYVmRQM3o0bjV1OUFnNGpqT2FZR3J1ak5tV1N6TlJyYjlMTjY2ZHBfamk5ejFWamZaa3lrSExycHNxaU1kZG5qVjJDTWpKTUlZRUJUdU1yaEZWWFhVbE1rUTk4WE5MYmFNbm1wNk4zdXdB?oc=5",
+        "direction": "positive",
+        "detail": "Daily score increased by 15.4 points",
+        "significance": 1.752
       }
     ]
   },
@@ -1451,17 +1460,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 45.9,
+    "score": 45.7,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 44.7,
+        "score": 44.3,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 50 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 51 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1588,16 +1597,6 @@
       "significance": 1.679
     },
     {
-      "date": "2026-10-23",
-      "type": "coverage_spike",
-      "title": "easyJet warns holidaymakers risk losing £378 in hidden fees",
-      "source": "express.co.uk",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPaDExQ3ZYSzRIX0xLdGRWb3dQM2FJMk9vcnNDV2lHT0RSRC14ZTg5RjFGN0lhREhUM0FCSXZWdEdZX2NNdHJ4ZDJHdHpoTTQ5bE5tUTZUM05ha3RMSjJoaDdkOGtGWksxQVgyakNOa3U4cnMwWWRIU2dYY1RrcDFtSTNDWnVreDRK0gGOAUFVX3lxTE5qNnJJeTJWQUdMbVJuVGtkMWpXVXBkUEJiMGJpOHNMdjlhRURzNXVnZnJRREZBOVJDSW15aVBycWJBdllXb05vQnhEQ3U0ZmNqa3ZnYUNNWmM4VUkwSTVSeGhMdVVZb1drN3A1TUt5bEJNMXYtVEE3NFo5R0ZZcGhibTduUG9fb19td0xPUVE?oc=5",
-      "direction": "neutral",
-      "detail": "26 stories versus trailing median 5",
-      "significance": 1.606
-    },
-    {
       "date": "2026-10-24",
       "type": "sentiment_drop",
       "title": "London Gatwick: Delays and cancellations on Saturday, October 24, including multiple easyJet flights",
@@ -1636,6 +1635,16 @@
       "direction": "negative",
       "detail": null,
       "significance": 1.607
+    },
+    {
+      "date": "2026-11-10",
+      "type": "sentiment_jump",
+      "title": "EasyJet passengers put on wrong plane at Birmingham Airport in 'massive blunder'",
+      "source": "dailypost.co.uk",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOazJndVFUSkliWTY1RTJmVmp1MTg0dkxCLWtqcGNFbkI5Z3ZYVmRQM3o0bjV1OUFnNGpqT2FZR3J1ak5tV1N6TlJyYjlMTjY2ZHBfamk5ejFWamZaa3lrSExycHNxaU1kZG5qVjJDTWpKTUlZRUJUdU1yaEZWWFhVbE1rUTk4WE5MYmFNbm1wNk4zdXdB?oc=5",
+      "direction": "positive",
+      "detail": "Daily score increased by 15.4 points",
+      "significance": 1.752
     }
   ],
   "persistentEvents": [

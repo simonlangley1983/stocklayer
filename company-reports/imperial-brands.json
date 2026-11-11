@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-11T02:28:53.377749Z",
+  "generatedAt": "2026-11-11T02:55:16.859971Z",
   "company": {
     "companyName": "Imperial Brands PLC",
     "ticker": "IMB.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-15",
-    "periodEnd": "2026-11-09",
-    "observationCount": 129,
-    "scoredDayCount": 71,
-    "latestScore": 49.7,
-    "latestScoreDate": "2026-11-08",
+    "periodEnd": "2026-11-10",
+    "observationCount": 130,
+    "scoredDayCount": 72,
+    "latestScore": 41.5,
+    "latestScoreDate": "2026-11-10",
     "series": [
       {
         "date": "2026-06-15",
@@ -1186,6 +1186,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-11-10",
+        "dailyScore": 41.5,
+        "rollingScore": 48.9,
+        "storyCount": 5,
+        "sourceCount": 5,
+        "confidence": 68.3,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1218,16 +1227,6 @@
         "direction": "positive",
         "detail": null,
         "significance": 1.595
-      },
-      {
-        "date": "2026-09-22",
-        "type": "sentiment_drop",
-        "title": "Imperial Brands stock falls 0.60 percent in London",
-        "source": "ad-hoc-news.de",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQQXZhdDZJbnA3b3lEQmxJXzlwakl3bEZiMlZZYy0tNjBsLWlPeDN5TzNST1pBV2YyYUlNd2RfTm1ZckJsem9XUkpzeVhvTXI1V0dHY3hIZkJoMDlhSmI2Vkk4andMOFM3bjEwUmt6TWpRRmdLLTkzZkwwdTlJXzlsZlJ5bDVrdE5VMTllaFpDblgtazBhOGZnV0gwb3BlMDM2UnlEWlk2aXF6Q1YyenJ3d3l6SQ?oc=5",
-        "direction": "negative",
-        "detail": "Daily score decreased by 13.3 points",
-        "significance": 1.586
       },
       {
         "date": "2026-09-24",
@@ -1288,6 +1287,16 @@
         "direction": "neutral",
         "detail": null,
         "significance": 1.606
+      },
+      {
+        "date": "2026-11-10",
+        "type": "coverage_spike",
+        "title": "Imperial Brands stock slips ahead of November 17 results",
+        "source": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQWHFNTVBaMVdnaG5na21WYXpjZ0dMc1R0eElTc2tXeFFsRVc0Sm5maGM4UEl1cGdvWUN0amU4VkxjUWxZTXQ3aVZYLVpNQUE2SWdyWS1qazN3ZjBLcFk5LU9CU1BaaTlibi1Sb0hpQmZzNVVTc18yU1lSYkFXUVlIbnlBa0lTV0JPX2VyMFV3MFJWSzhSeE1rOG9wblFEZE5Oa1dtTzJXTVBqWW5IV1hQdURObXhwcjNvaWd3?oc=5",
+        "direction": "neutral",
+        "detail": "5 stories versus trailing median 1",
+        "significance": 1.605
       }
     ]
   },
@@ -1780,17 +1789,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 48.7,
+    "score": 48.5,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.7,
+        "score": 51.3,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 54 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 55 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1897,16 +1906,6 @@
       "significance": 1.595
     },
     {
-      "date": "2026-09-22",
-      "type": "sentiment_drop",
-      "title": "Imperial Brands stock falls 0.60 percent in London",
-      "source": "ad-hoc-news.de",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQQXZhdDZJbnA3b3lEQmxJXzlwakl3bEZiMlZZYy0tNjBsLWlPeDN5TzNST1pBV2YyYUlNd2RfTm1ZckJsem9XUkpzeVhvTXI1V0dHY3hIZkJoMDlhSmI2Vkk4andMOFM3bjEwUmt6TWpRRmdLLTkzZkwwdTlJXzlsZlJ5bDVrdE5VMTllaFpDblgtazBhOGZnV0gwb3BlMDM2UnlEWlk2aXF6Q1YyenJ3d3l6SQ?oc=5",
-      "direction": "negative",
-      "detail": "Daily score decreased by 13.3 points",
-      "significance": 1.586
-    },
-    {
       "date": "2026-09-24",
       "type": "sentiment_drop",
       "title": "Imperial Brands Cancels 100,000 Shares Under Ongoing Buyback Programme",
@@ -1965,6 +1964,16 @@
       "direction": "neutral",
       "detail": null,
       "significance": 1.606
+    },
+    {
+      "date": "2026-11-10",
+      "type": "coverage_spike",
+      "title": "Imperial Brands stock slips ahead of November 17 results",
+      "source": "ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQWHFNTVBaMVdnaG5na21WYXpjZ0dMc1R0eElTc2tXeFFsRVc0Sm5maGM4UEl1cGdvWUN0amU4VkxjUWxZTXQ3aVZYLVpNQUE2SWdyWS1qazN3ZjBLcFk5LU9CU1BaaTlibi1Sb0hpQmZzNVVTc18yU1lSYkFXUVlIbnlBa0lTV0JPX2VyMFV3MFJWSzhSeE1rOG9wblFEZE5Oa1dtTzJXTVBqWW5IV1hQdURObXhwcjNvaWd3?oc=5",
+      "direction": "neutral",
+      "detail": "5 stories versus trailing median 1",
+      "significance": 1.605
     }
   ],
   "persistentEvents": [

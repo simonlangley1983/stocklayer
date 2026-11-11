@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-11T02:28:53.377749Z",
+  "generatedAt": "2026-11-11T02:55:16.859971Z",
   "company": {
     "companyName": "Ithaca Energy PLC",
     "ticker": "ITH.L",
@@ -15,11 +15,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-10-16",
-    "periodEnd": "2026-11-09",
-    "observationCount": 25,
-    "scoredDayCount": 19,
-    "latestScore": 50.5,
-    "latestScoreDate": "2026-11-09",
+    "periodEnd": "2026-11-10",
+    "observationCount": 26,
+    "scoredDayCount": 20,
+    "latestScore": 50.1,
+    "latestScoreDate": "2026-11-10",
     "series": [
       {
         "date": "2026-10-16",
@@ -245,6 +245,15 @@
         "sourceCount": 1,
         "confidence": 15.3,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-11-10",
+        "dailyScore": 50.1,
+        "rollingScore": 49.4,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.1,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -361,15 +370,15 @@
   "overallConfidence": {
     "score": 50.0,
     "label": "Mixed",
-    "evidenceCoverage": 95,
+    "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
         "score": 50.0,
         "weight": 0.4,
-        "reliability": 0.95,
-        "detail": "Recency-weighted average of 19 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 1.0,
+        "detail": "Recency-weighted average of 20 scored days in the latest 90 calendar days; 30-day half-life."
       }
     ],
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
