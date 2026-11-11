@@ -7504,37 +7504,51 @@
     },
     {
       "date": "2026-11-10",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 52.4,
-      "confidence": 0.0,
+      "dailyScore": 44.8,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 51.5,
+      "confidence": 17.1,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 2,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 3,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
       "positiveStoryCount": 0,
       "neutralStoryCount": 0,
-      "negativeStoryCount": 0,
+      "negativeStoryCount": 1,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
         "missing_company_alias": 2
       },
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "3a4769b4434083db",
+          "storyClusterId": "story-001",
+          "title": "United Utilities – Van in situ London Road",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQUXhlNUg1VFZacGtTc0V4NVNwdE8wcmptRHZwTjRqZU8yVFk3eVlFeXVZcDd1MjlQWnNjRFJQdWFWb2hNUnpaU3lqSFd4b002Rms4MGdlLVdaRTRKaXUxc0RzYmFZc3dYaEtvOTRsS3ZJV3M3Skl1LVlvZzcwNWNSMXlUb0RfbW5WVmRnRnhCUWpYdXVLVTllallsdjdCZ05hcml2Y1NadmpOeXlGQ1JHSm53OWRIWWcwZVJRWERUMzEzcXdmV0xiOTJiMl9xQ19wZHpxQQ?oc=5",
+          "source": "thenantwichnews.co.uk",
+          "publishedAt": "2026-11-10T08:00:00Z",
+          "polarity": -0.3097,
+          "sentiment": "Negative",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 17.1",
+          "evidenceArticleIds": [
+            "3a4769b4434083db"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": -5.6
     }
   ]
 }

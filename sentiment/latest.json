@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-11-11T18:24:37.311491Z",
+  "generatedAt": "2026-11-11T23:34:51.793251Z",
   "asOfDate": "2026-11-10",
   "companies": {
     "airtel-africa": {
@@ -2341,26 +2341,40 @@
       "ticker": "HLMA.L",
       "slug": "halma",
       "date": "2026-11-10",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.5,
-      "confidence": 0.0,
+      "dailyScore": 64.3,
+      "dailyLabel": "Positive",
+      "rollingScore": 52.2,
+      "confidence": 19.7,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 13.9,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 19.7",
+          "evidenceArticleIds": [
+            "17dd9fff5a57275c"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "17dd9fff5a57275c",
+          "storyClusterId": "story-001",
+          "title": "Halma climbs Tuesday, outperforms market",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNaWR6OS1fd1hhQ1N5aTQ0dTA4Tnk0cHhDM1lkLXRNNTUzbE01SHV3a2dkUHVRYWtrTThPUTlmWlloMjNidDVRVWxQamRaUWUyUFBER2h1WU1GbjNiUEhhUXMzOXI4ZXJwcGtsaEtzMC13dG01MnA2dHdNQW96bUVkS0xzVWlMOFdMaUhKOGk3WHJBTkhKMWw2clRGYktlYWJh?oc=5",
+          "source": "marketwatch.com",
+          "publishedAt": "2026-11-10T17:07:00Z",
+          "polarity": 0.8585,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        }
+      ]
     },
     "haleon": {
       "companyName": "Haleon PLC",
@@ -5281,26 +5295,40 @@
       "ticker": "UU.L",
       "slug": "united-utilities",
       "date": "2026-11-10",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 52.4,
-      "confidence": 0.0,
+      "dailyScore": 44.8,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 51.5,
+      "confidence": 17.1,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -5.6,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 17.1",
+          "evidenceArticleIds": [
+            "3a4769b4434083db"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "3a4769b4434083db",
+          "storyClusterId": "story-001",
+          "title": "United Utilities – Van in situ London Road",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQUXhlNUg1VFZacGtTc0V4NVNwdE8wcmptRHZwTjRqZU8yVFk3eVlFeXVZcDd1MjlQWnNjRFJQdWFWb2hNUnpaU3lqSFd4b002Rms4MGdlLVdaRTRKaXUxc0RzYmFZc3dYaEtvOTRsS3ZJV3M3Skl1LVlvZzcwNWNSMXlUb0RfbW5WVmRnRnhCUWpYdXVLVTllallsdjdCZ05hcml2Y1NadmpOeXlGQ1JHSm53OWRIWWcwZVJRWERUMzEzcXdmV0xiOTJiMl9xQ19wZHpxQQ?oc=5",
+          "source": "thenantwichnews.co.uk",
+          "publishedAt": "2026-11-10T08:00:00Z",
+          "polarity": -0.3097,
+          "sentiment": "Negative",
+          "publisherCount": 1
+        }
+      ]
     },
     "vodafone": {
       "companyName": "Vodafone Group PLC",
