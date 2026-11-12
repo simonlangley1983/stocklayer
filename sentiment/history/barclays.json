@@ -7140,6 +7140,78 @@
       ],
       "flags": [],
       "changeFromPreviousScoredDay": -4.4
+    },
+    {
+      "date": "2026-11-11",
+      "dailyScore": 50.0,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 51.1,
+      "confidence": 23.7,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 53,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 2,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0121,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 49,
+        "missing_company_alias": 2
+      },
+      "topStories": [
+        {
+          "id": "6722e6586911d3eb",
+          "storyClusterId": "story-001",
+          "title": "Barclays Bank PLC Autocallable Contingent Interest Worst Of Barrier Note ADERGXX (ADERGXX)",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE83STVWUHlxQU1hRzh4MkFWeXFOakUzTlVIMjhiT0dUcTdXT2JrRnM4ZEU0ZDc5MVpyWlhmQ1FWelZ3bm00TVkwOUx6VWVyaWx5X1VUUi1R?oc=5",
+          "source": "uk.finance.yahoo.com",
+          "publishedAt": "2026-11-11T13:12:49Z",
+          "polarity": 0.0121,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "1d1e6c35a1ff05cb",
+          "storyClusterId": "story-002",
+          "title": "BARCLAYS BANK PLC (MB03) Bond Price and Quote",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE44VWppTHNZSTNidDZZdGtlWlRoNEt0WFpSNWF1LTlhTFZ0MEdVdGptOG43aTVJbUs4MS03VGZvSURKcUhQT0Z6TzF6cjB5RWh3OExDRlVDaFdSdUl2Rl9QNllJRnNuT1J6aDdCNkRtMC0zQXhOYUFBOExDT1RvQQ?oc=5",
+          "source": "londonstockexchange.com",
+          "publishedAt": "2026-11-11T14:39:08Z",
+          "polarity": -0.0121,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 23.7",
+          "evidenceArticleIds": [
+            "6722e6586911d3eb",
+            "1d1e6c35a1ff05cb"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "6722e6586911d3eb",
+            "1d1e6c35a1ff05cb"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -6.5
     }
   ]
 }

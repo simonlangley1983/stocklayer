@@ -7175,6 +7175,76 @@
       ],
       "flags": [],
       "changeFromPreviousScoredDay": -5.2
+    },
+    {
+      "date": "2026-11-11",
+      "dailyScore": 52.6,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 54.7,
+      "confidence": 32.4,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 7,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0673,
+      "rejectedCandidateCounts": {
+        "missing_company_alias": 5
+      },
+      "topStories": [
+        {
+          "id": "f14789bff61f4fca",
+          "storyClusterId": "story-002",
+          "title": "Airtel Africa continues share buyback programme",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE16S2tXcDQ5YUFxZExBMEhFd1VYRXZwd3hQcmRhbDYtWUdXRm8ybVZhYm9ScDFraE1aeVV1cElMQmNQM2JUREJoSmJjYzBramZCbVliVUYyRFluZWxDSTU5SmVZa1BlcWlKdDNuMnZtV3hDMkttX1dr?oc=5",
+          "source": "punchng.com",
+          "publishedAt": "2026-11-11T23:05:06Z",
+          "polarity": 0.1727,
+          "sentiment": "Slightly positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "25d04f145652a0d2",
+          "storyClusterId": "story-001",
+          "title": "AIRTEL AFRICA PLC To Go Ex-Dividend On November 12th, 2026 With 0.06188 USD Dividend Per Share",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQdzVhME9udkhqZXV6Ty1QdXNQVXluWGQwNVVmYWRNaGw4aHZ4bFQ3alBlTjgyaEJDYmpwbTMxZExhS1o4VTJhRWd1SFZLSUsxeVJUYmVRSFN1YVVhM1I1SFhOSkg4bk1oZWlKNkhMMVY4alJzSkl5Zm9nVVVoWHQ4cnhmOXI3LTVMZWtFUEFWNFRycW05dlM4QldIUWs?oc=5",
+          "source": "moomoo.com",
+          "publishedAt": "2026-11-11T22:13:49Z",
+          "polarity": 0.0382,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "share_buyback",
+          "direction": "positive",
+          "severity": "medium",
+          "status": "possible",
+          "evidenceArticleIds": [
+            "f14789bff61f4fca"
+          ],
+          "sourceCount": 1
+        },
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 32.4",
+          "evidenceArticleIds": [
+            "f14789bff61f4fca",
+            "25d04f145652a0d2"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -4.6
     }
   ]
 }
