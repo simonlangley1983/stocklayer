@@ -1,7 +1,7 @@
 ## Press collection coverage
 
-Period: 2026-08-13 to 2026-11-10
+Period: 2026-08-14 to 2026-11-11
 
-Completed: 7844/9000 company-days (87.16%). Pending: 1156.
+Completed: 7759/9000 company-days (86.21%). Pending: 1241.
 
-With eligible news: 5278. Successful checks with no eligible news: 2566. Latest day checked: 99/100 companies.
+With eligible news: 5219. Successful checks with no eligible news: 2540. Latest day checked: 2/100 companies.
