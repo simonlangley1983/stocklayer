@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-12T10:23:48.185791Z",
+  "generatedAt": "2026-11-12T13:55:43.207854Z",
   "company": {
     "companyName": "Ithaca Energy PLC",
     "ticker": "ITH.L",
@@ -15,11 +15,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-10-16",
-    "periodEnd": "2026-11-10",
-    "observationCount": 26,
-    "scoredDayCount": 20,
-    "latestScore": 50.1,
-    "latestScoreDate": "2026-11-10",
+    "periodEnd": "2026-11-11",
+    "observationCount": 27,
+    "scoredDayCount": 21,
+    "latestScore": 45.7,
+    "latestScoreDate": "2026-11-11",
     "series": [
       {
         "date": "2026-10-16",
@@ -254,6 +254,15 @@
         "sourceCount": 1,
         "confidence": 15.1,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-11-11",
+        "dailyScore": 45.7,
+        "rollingScore": 49.0,
+        "storyCount": 2,
+        "sourceCount": 1,
+        "confidence": 30.0,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -276,16 +285,6 @@
         "direction": "Very positive",
         "detail": null,
         "significance": 1.08
-      },
-      {
-        "date": "2026-10-22",
-        "type": "press_story",
-        "title": "Why Is Ithaca Energy (LSE:IOG) Stock Surging Today After The Jackdaw Approval?",
-        "source": "kalkinemedia.com",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNYi1PcFVpaHI0SlNJRUVjZ1FWSzhINnJSbzNXNkJidDZxTF9wRG5UNi1oMEwyM0pCNzlsRFhidTNsYWVtbkN4aGJWSG5uNkVJQm5LZnpaNlRjZ0cxam51eUtCLU1lejUyNVQyYTJURHlrMFd1dGRyalFTVHNqWk01ZzMtbjRvTnNBMkozOWgyZHhsOHd6UEF3Vy12Q2pHb0lrdWp1eHN2NDlUcTVuMTRMM1hteGlQXzg1?oc=5",
-        "direction": "Neutral / mixed",
-        "detail": null,
-        "significance": 0.229
       },
       {
         "date": "2026-10-24",
@@ -356,6 +355,16 @@
         "direction": "Neutral / mixed",
         "detail": null,
         "significance": 0.324
+      },
+      {
+        "date": "2026-11-11",
+        "type": "press_story",
+        "title": "Ithaca Energy (LSE:ITH) Rallies on Output Below FTSE 100",
+        "source": "kalkinemedia.com",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNT2pObUFrOHhuT19fVDY1SXBjd2tlS3JoZWxVT3dvU0NhUG5OZTZtMUNnNVNUN1p4Q0EzTjdMWE5sNXl2ZENhb1dqcWZuZmZkSkdzMlVKMEFzMThfNG54NXA0MFpEdTRNLUF3UFZxQjNKWU9jOXNIcmhCcjNjbzdHOHZuWGVZWENyVnItQ0hFZ3dMZHRJMEdTb1I5NTQ?oc=5",
+        "direction": "Negative",
+        "detail": null,
+        "significance": 0.523
       }
     ]
   },
@@ -368,17 +377,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 50.0,
+    "score": 49.7,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 50.0,
+        "score": 49.7,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 20 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 21 scored days in the latest 90 calendar days; 30-day half-life."
       }
     ],
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
@@ -403,16 +412,6 @@
       "direction": "Very positive",
       "detail": null,
       "significance": 1.08
-    },
-    {
-      "date": "2026-10-22",
-      "type": "press_story",
-      "title": "Why Is Ithaca Energy (LSE:IOG) Stock Surging Today After The Jackdaw Approval?",
-      "source": "kalkinemedia.com",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNYi1PcFVpaHI0SlNJRUVjZ1FWSzhINnJSbzNXNkJidDZxTF9wRG5UNi1oMEwyM0pCNzlsRFhidTNsYWVtbkN4aGJWSG5uNkVJQm5LZnpaNlRjZ0cxam51eUtCLU1lejUyNVQyYTJURHlrMFd1dGRyalFTVHNqWk01ZzMtbjRvTnNBMkozOWgyZHhsOHd6UEF3Vy12Q2pHb0lrdWp1eHN2NDlUcTVuMTRMM1hteGlQXzg1?oc=5",
-      "direction": "Neutral / mixed",
-      "detail": null,
-      "significance": 0.229
     },
     {
       "date": "2026-10-24",
@@ -483,6 +482,16 @@
       "direction": "Neutral / mixed",
       "detail": null,
       "significance": 0.324
+    },
+    {
+      "date": "2026-11-11",
+      "type": "press_story",
+      "title": "Ithaca Energy (LSE:ITH) Rallies on Output Below FTSE 100",
+      "source": "kalkinemedia.com",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNT2pObUFrOHhuT19fVDY1SXBjd2tlS3JoZWxVT3dvU0NhUG5OZTZtMUNnNVNUN1p4Q0EzTjdMWE5sNXl2ZENhb1dqcWZuZmZkSkdzMlVKMEFzMThfNG54NXA0MFpEdTRNLUF3UFZxQjNKWU9jOXNIcmhCcjNjbzdHOHZuWGVZWENyVnItQ0hFZ3dMZHRJMEdTb1I5NTQ?oc=5",
+      "direction": "Negative",
+      "detail": null,
+      "significance": 0.523
     }
   ],
   "persistentEvents": [

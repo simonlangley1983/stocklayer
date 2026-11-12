@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-12T10:23:48.185791Z",
+  "generatedAt": "2026-11-12T13:55:43.207854Z",
   "company": {
     "companyName": "Aberdeen Group PLC",
     "ticker": "ABDN.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-09-12",
-    "periodEnd": "2026-11-10",
-    "observationCount": 60,
-    "scoredDayCount": 55,
-    "latestScore": 45.0,
-    "latestScoreDate": "2026-11-10",
+    "periodEnd": "2026-11-11",
+    "observationCount": 61,
+    "scoredDayCount": 56,
+    "latestScore": 40.5,
+    "latestScoreDate": "2026-11-11",
     "series": [
       {
         "date": "2026-09-12",
@@ -564,6 +564,15 @@
         "storyCount": 67,
         "sourceCount": 38,
         "confidence": 82.6,
+        "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-11-11",
+        "dailyScore": 40.5,
+        "rollingScore": 45.0,
+        "storyCount": 41,
+        "sourceCount": 29,
+        "confidence": 84.1,
         "coverageStatus": "ok"
       }
     ],
@@ -1159,17 +1168,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 47.2,
+    "score": 47.1,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 47.7,
+        "score": 47.5,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 55 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 56 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1347,6 +1356,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "d5fcd1a3b754f394d7cb",
+      "type": "acquisition",
+      "title": "Aberdeen Investments’ Ian Hewett: Takeover wave threatens to drain UK market",
+      "date": "2026-11-11",
+      "status": "pending_review",
+      "reviewDate": "2027-05-10",
+      "direction": "Very negative",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOX1hYNkhPY2Zrd1U4SGxveFRkQzRDbDlBTkRWbEpwUTZYamhQOGx3a1U5bnFHS1c0YkszaGJ3RXRLRnBnZ29fMmJBWEtfaUFuU1pha3B5cFpsbWt1eWtZNTFaU3RDNm8taE1TbFdMc0Q2TzR5dk8ydXQ5RW9mNmw2eTlmREtROUFqNHFFN1FXZ0JhR0doYUlVMU5hM3JWUWxJRERRS2FkQUJjYXVfUjBYTTZyX1VqZE9QeEg2RQ?oc=5",
+          "publisher": "investmentweek.co.uk",
+          "date": "2026-11-11"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "5a16fff776a362d1ebf1",
       "type": "acquisition",
