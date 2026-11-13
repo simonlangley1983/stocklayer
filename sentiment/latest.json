@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-11-13T10:06:49.331202Z",
+  "generatedAt": "2026-11-13T13:18:07.976388Z",
   "asOfDate": "2026-11-12",
   "companies": {
     "airtel-africa": {
@@ -4236,25 +4236,23 @@
       "ticker": "NXT.L",
       "slug": "next",
       "date": "2026-11-12",
-      "dailyScore": 49.5,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.3,
-      "confidence": 11.4,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 50.5,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": -2.0,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 11.4",
-          "evidenceArticleIds": [
-            "8db3021c54595b5e"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         },
         {
           "type": "collection_degraded",
@@ -4262,24 +4260,10 @@
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "8db3021c54595b5e"
-          ]
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "8db3021c54595b5e",
-          "storyClusterId": "story-001",
-          "title": "NEXT plc (NXT.L) stock price, news, quote and history",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB3ZG12cUNjZ3cwRkdSbUFWN0VzNllqNVZMTnpzdko5bk9Bb3NHWk83ZlRvb3JqdTRsZzduaC1oZVlXeWdPc3NPNEN0VEFiZnZLWTlR?oc=5",
-          "source": "uk.finance.yahoo.com",
-          "publishedAt": "2026-11-12T19:35:39Z",
-          "polarity": -0.0315,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "polar-capital-technology-trust": {
       "companyName": "Polar Capital Technology Trust PLC",
