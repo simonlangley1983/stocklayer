@@ -3,8 +3,8 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-11-12T22:49:33.615114Z",
-  "asOfDate": "2026-11-11",
+  "generatedAt": "2026-11-13T01:38:52.634041Z",
+  "asOfDate": "2026-11-12",
   "companyCount": 100,
   "companies": {
     "airtel-africa": {
@@ -1590,17 +1590,25 @@
       "companyName": "NatWest Group PLC",
       "ticker": "NWG.L",
       "slug": "natwest",
-      "date": "2026-11-11",
-      "dailyScore": 44.1,
-      "dailyLabel": "Slightly negative",
+      "date": "2026-11-12",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
       "rollingScore": 50.0,
-      "confidence": 81.8,
-      "confidenceBand": "high",
-      "coverageStatus": "ok",
-      "storyCount": 13,
-      "sourceCount": 12,
-      "changeFromPreviousScoredDay": -4.9,
-      "flags": []
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
+      "flags": [
+        {
+          "type": "no_coverage",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Collection succeeded but found no eligible coverage"
+        }
+      ]
     },
     "next": {
       "companyName": "Next PLC",
@@ -1721,17 +1729,25 @@
       "companyName": "Pearson PLC",
       "ticker": "PSON.L",
       "slug": "pearson",
-      "date": "2026-11-11",
-      "dailyScore": 51.8,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 49.3,
-      "confidence": 86.0,
-      "confidenceBand": "high",
+      "date": "2026-11-12",
+      "dailyScore": 59.5,
+      "dailyLabel": "Slightly positive",
+      "rollingScore": 50.6,
+      "confidence": 18.3,
+      "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 19,
-      "sourceCount": 19,
-      "changeFromPreviousScoredDay": 0.1,
-      "flags": []
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 7.7,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 18.3"
+        }
+      ]
     },
     "relx": {
       "companyName": "RELX",
