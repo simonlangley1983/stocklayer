@@ -4758,6 +4758,65 @@
         }
       ],
       "changeFromPreviousScoredDay": null
+    },
+    {
+      "date": "2026-11-13",
+      "dailyScore": 52.9,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.7,
+      "confidence": 11.9,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 88,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 84,
+        "missing_company_alias": 3
+      },
+      "topStories": [
+        {
+          "id": "f55f0d986a91da05",
+          "storyClusterId": "story-001",
+          "title": "This Week in Commerce Media: Retail media’s next frontier is…everywhere",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOSm5OSktweDBXN1BRM0VFSVFZZkx0MVRvbG1XVjA3VFAwYUJjeDhhQmNfenJDWEI3NUdkdDJ4MGRqckMxVk9qZEdOWjkwWGN1YmdBbGVqb0NLTUNPOHFabDRieWNXRlpkTXlIR1ltQXdnLUtGcjhINnlIcWoxZUtYVTZZakJFVXk0Z0RsemRKM3JFWDYtMXUxclk5d1d5Z1h4?oc=5",
+          "source": "thedrum.com",
+          "publishedAt": "2026-11-13T14:44:40Z",
+          "polarity": 0.1726,
+          "sentiment": "Slightly positive",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 11.9",
+          "evidenceArticleIds": [
+            "f55f0d986a91da05"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "f55f0d986a91da05"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 1.4
     }
   ]
 }
