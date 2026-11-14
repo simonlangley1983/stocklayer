@@ -3,7 +3,7 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-11-14T07:02:32.083971Z",
+  "generatedAt": "2026-11-14T12:22:50.980574Z",
   "asOfDate": "2026-11-13",
   "companyCount": 100,
   "companies": {
@@ -321,31 +321,16 @@
       "ticker": "BARC.L",
       "slug": "barclays",
       "date": "2026-11-13",
-      "dailyScore": 50.9,
+      "dailyScore": 52.1,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.8,
-      "confidence": 45.4,
+      "rollingScore": 51.0,
+      "confidence": 48.5,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 6,
-      "sourceCount": 4,
-      "changeFromPreviousScoredDay": 0.6,
-      "flags": [
-        {
-          "type": "coverage_spike",
-          "direction": "neutral",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "6 stories versus trailing median 2"
-        },
-        {
-          "type": "collection_degraded",
-          "direction": "neutral",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "The provider result ceiling was reached for this day"
-        }
-      ]
+      "storyCount": 4,
+      "sourceCount": 2,
+      "changeFromPreviousScoredDay": 1.8,
+      "flags": []
     },
     "british-american-tobacco": {
       "companyName": "British American Tobacco",
@@ -962,22 +947,28 @@
       "ticker": "GLEN.L",
       "slug": "glencore",
       "date": "2026-11-13",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
+      "dailyScore": 50.6,
+      "dailyLabel": "Neutral / mixed",
       "rollingScore": 50.8,
-      "confidence": 0.0,
+      "confidence": 15.3,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 2.8,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "earnings_beat",
+          "direction": "positive",
+          "severity": "medium",
+          "status": "possible"
+        },
+        {
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "Confidence is 15.3"
         }
       ]
     },
@@ -1466,22 +1457,22 @@
       "ticker": "LMP.L",
       "slug": "londonmetric-property",
       "date": "2026-11-13",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.0,
-      "confidence": 0.0,
+      "dailyScore": 48.8,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.9,
+      "confidence": 15.5,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 0.5,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "Confidence is 15.5"
         }
       ]
     },
@@ -1634,22 +1625,22 @@
       "ticker": "NXT.L",
       "slug": "next",
       "date": "2026-11-13",
-      "dailyScore": 52.9,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.7,
-      "confidence": 11.9,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 50.5,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": 1.4,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 11.9"
+          "detail": "Collection succeeded but found no eligible coverage"
         },
         {
           "type": "collection_degraded",
