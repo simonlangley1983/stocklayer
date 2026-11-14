@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-14T03:15:40.089197Z",
+  "generatedAt": "2026-11-14T03:26:43.108117Z",
   "company": {
     "companyName": "Admiral Group PLC",
     "ticker": "ADM.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-11-12",
-    "observationCount": 120,
-    "scoredDayCount": 18,
-    "latestScore": 48.7,
-    "latestScoreDate": "2026-11-11",
+    "periodEnd": "2026-11-13",
+    "observationCount": 121,
+    "scoredDayCount": 19,
+    "latestScore": 50.6,
+    "latestScoreDate": "2026-11-13",
     "series": [
       {
         "date": "2026-06-30",
@@ -1105,6 +1105,15 @@
         "sourceCount": 0,
         "confidence": 0.0,
         "coverageStatus": "no_coverage"
+      },
+      {
+        "date": "2026-11-13",
+        "dailyScore": 50.6,
+        "rollingScore": 49.1,
+        "storyCount": 1,
+        "sourceCount": 1,
+        "confidence": 15.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1699,17 +1708,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 46.6,
+    "score": 46.8,
     "label": "Mixed",
-    "evidenceCoverage": 94,
+    "evidenceCoverage": 96,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 46.1,
+        "score": 46.6,
         "weight": 0.4,
-        "reliability": 0.85,
-        "detail": "Recency-weighted average of 17 scored days in the latest 90 calendar days; 30-day half-life."
+        "reliability": 0.9,
+        "detail": "Recency-weighted average of 18 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",

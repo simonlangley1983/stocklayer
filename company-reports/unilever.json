@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-14T03:15:40.089197Z",
+  "generatedAt": "2026-11-14T03:26:43.108117Z",
   "company": {
     "companyName": "Unilever",
     "ticker": "ULVR.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-05",
-    "periodEnd": "2026-11-12",
-    "observationCount": 131,
-    "scoredDayCount": 126,
-    "latestScore": 54.3,
-    "latestScoreDate": "2026-11-12",
+    "periodEnd": "2026-11-13",
+    "observationCount": 132,
+    "scoredDayCount": 127,
+    "latestScore": 57.0,
+    "latestScoreDate": "2026-11-13",
     "series": [
       {
         "date": "2026-07-05",
@@ -1204,6 +1204,15 @@
         "sourceCount": 14,
         "confidence": 89.6,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-11-13",
+        "dailyScore": 57.0,
+        "rollingScore": 51.2,
+        "storyCount": 15,
+        "sourceCount": 13,
+        "confidence": 85.2,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1798,17 +1807,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 51.2,
+    "score": 51.3,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.5,
+        "score": 51.6,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 85 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 86 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1986,6 +1995,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "f1d828fd0ee38e64b73f",
+      "type": "acquisition",
+      "title": "Unilever faces merger investigation deadline: Can ULVR sustain recent gains?",
+      "date": "2026-11-13",
+      "status": "pending_review",
+      "reviewDate": "2027-05-12",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQNDJ4TzNtb0pXS3ExOVhtdkU5LTdqbVFXbDNnNkpMeENlcWJCLVgybDI5SHdQSk51VU02OGpqRmotcnU0eE9vX3JvMTEzRGFkUzg1R1U4ZW11eTZRcmFOSi1yMS1fWFdSbk5IV0RtNEtKWm85aFRUa09VZTF1bGxEdFBZWFZTVFBCbkhPVVdkVl9RZw?oc=5",
+          "publisher": "tradersunion.com",
+          "date": "2026-11-13"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "fc8b7b80b19c5355f816",
       "type": "acquisition",

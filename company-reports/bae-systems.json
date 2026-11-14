@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-14T03:15:40.089197Z",
+  "generatedAt": "2026-11-14T03:26:43.108117Z",
   "company": {
     "companyName": "BAE Systems",
     "ticker": "BA.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-14",
-    "periodEnd": "2026-11-12",
-    "observationCount": 129,
-    "scoredDayCount": 114,
-    "latestScore": 83.0,
-    "latestScoreDate": "2026-11-12",
+    "periodEnd": "2026-11-13",
+    "observationCount": 130,
+    "scoredDayCount": 115,
+    "latestScore": 70.2,
+    "latestScoreDate": "2026-11-13",
     "series": [
       {
         "date": "2026-06-14",
@@ -1186,6 +1186,15 @@
         "sourceCount": 36,
         "confidence": 94.5,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-11-13",
+        "dailyScore": 70.2,
+        "rollingScore": 64.2,
+        "storyCount": 19,
+        "sourceCount": 17,
+        "confidence": 90.0,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1787,10 +1796,10 @@
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 61.6,
+        "score": 61.8,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 80 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 81 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1968,6 +1977,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "077cc18a996d8cc97a6f",
+      "type": "contract",
+      "title": "BAE Systems Wins Navy Contract To Produce Virginia-Class Submarine Propulsors",
+      "date": "2026-11-13",
+      "status": "pending_review",
+      "reviewDate": "2027-05-12",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOOEkwaDVfaTFxc2tVSkJSbHR6SHBQMFpmWGVpdlRiaG5rdWVscDNhNmxRVGMwcUJsZC1tRWZqMnlMenZacW9IeWhPWEJTamFvR0RCejkwVnpBWFpwVzhXeEZpMDNyZzNHYUdnSml2WWt3ZTlzbVl6ZHZka3ZLV3Buc2c3clNFMW44Q2JSX2VvU1JrV1gxUVhFeEhGX0FlQm1rRTdMbUpGRmhZWHdhcDA4NXB5VQ?oc=5",
+          "publisher": "oceannews.com",
+          "date": "2026-11-13"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "00b98f7f67478412505b",
       "type": "contract",

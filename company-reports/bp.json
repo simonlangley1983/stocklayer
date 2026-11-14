@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-14T03:15:40.089197Z",
+  "generatedAt": "2026-11-14T03:26:43.108117Z",
   "company": {
     "companyName": "BP",
     "ticker": "BP.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-14",
-    "periodEnd": "2026-11-12",
-    "observationCount": 129,
-    "scoredDayCount": 59,
-    "latestScore": 51.2,
-    "latestScoreDate": "2026-11-12",
+    "periodEnd": "2026-11-13",
+    "observationCount": 130,
+    "scoredDayCount": 60,
+    "latestScore": 65.3,
+    "latestScoreDate": "2026-11-13",
     "series": [
       {
         "date": "2026-06-14",
@@ -1186,6 +1186,15 @@
         "sourceCount": 14,
         "confidence": 80.7,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-11-13",
+        "dailyScore": 65.3,
+        "rollingScore": 54.5,
+        "storyCount": 8,
+        "sourceCount": 7,
+        "confidence": 88.4,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1780,17 +1789,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 44.3,
+    "score": 44.5,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 53.6,
+        "score": 54.1,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 48 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 49 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1968,6 +1977,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "c205c923245aa851d2c3",
+      "type": "clinical",
+      "title": "Canadian Eco Atlantic has received approval for a deal with BP Namibia Energy",
+      "date": "2026-11-13",
+      "status": "pending_review",
+      "reviewDate": "2027-05-12",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNdUZYZDU0OGluSmhJenhzd2J2eWozQS1aUzdObmVDck5BRDNJbmxGRFVOS2R3Y1Z1VExFQ0hwdHpRWV81MTg1U3dGdklhQzNmbDNaTGlwMEdNVmdRbDkteUhNNWJBT05GVkx0cTFodnJHdFlTMFg4bDNRZHpoa3pVcjl6X2dYNjI2dnFJTGZzcmJ5S0MydzhkNmJMS0FNdDIydk5nVHZTb1h6ekU?oc=5",
+          "publisher": "akm.ru",
+          "date": "2026-11-13"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "e99c0dac486914a433f0",
       "type": "regulatory_legal",
