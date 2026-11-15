@@ -6529,37 +6529,51 @@
     },
     {
       "date": "2026-11-14",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 53.4,
-      "confidence": 0.0,
+      "dailyScore": 49.7,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 53.0,
+      "confidence": 15.2,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 1,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 2,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 0,
+      "neutralStoryCount": 1,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
         "missing_company_alias": 1
       },
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "b98a03d76a5401bb",
+          "storyClusterId": "story-001",
+          "title": "Land Securities Group PLC (LSU2.HA) Seasonal Returns Chart",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9OZDBaZXJnVFA2djVGOFgwMFJselFSNVFZZjNIaGkydHgzb1dReG9TMWhac2FBZkRsMUpMa3pTTzllWGRxM0VGRFVPMWhsZU1zT3d6S0V6VmZ0ZWEwamRKa0tlbnVxUQ?oc=5",
+          "source": "ca.finance.yahoo.com",
+          "publishedAt": "2026-11-14T20:52:59Z",
+          "polarity": -0.0154,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.2",
+          "evidenceArticleIds": [
+            "b98a03d76a5401bb"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": -20.3
     }
   ]
 }

@@ -4803,49 +4803,35 @@
     },
     {
       "date": "2026-11-14",
-      "dailyScore": 49.7,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.4,
-      "confidence": 11.4,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 50.5,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
+      "coverageStatus": "no_coverage",
       "collectionCompleteness": 0.75,
-      "candidateCount": 84,
-      "eligibleArticleCount": 1,
-      "storyCount": 1,
-      "effectiveStoryCount": 1.0,
-      "sourceCount": 1,
+      "candidateCount": 17,
+      "eligibleArticleCount": 0,
+      "storyCount": 0,
+      "effectiveStoryCount": 0,
+      "sourceCount": 0,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 1,
+      "neutralStoryCount": 0,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 77,
-        "missing_company_alias": 6
+        "ambiguous_company_without_alias": 15,
+        "missing_company_alias": 2
       },
-      "topStories": [
-        {
-          "id": "7b2ec344ec1de9f0",
-          "storyClusterId": "story-001",
-          "title": "Retail sales and Fed minutes in focus next week",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQUTlBVVFPd2VDU1hUVWtDT0l4S2xDMVpFZmZkMlJCRlBkZTBITXhTQlZKSTUtMzVKYk41bThsRWtDcFk0dmd2VUNlU2paMkZ4RC0tMzhaeWxETHJYN2dPV0ctNlhKalNab1RMdFFQZ2duYnJNY1hJQUluWERNMFAyRHlWc0d3V2VYRDVLcDlMQzhoTFBrcmc?oc=5",
-          "source": "independent.co.uk",
-          "publishedAt": "2026-11-14T16:00:00Z",
-          "polarity": -0.0184,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ],
+      "topStories": [],
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 11.4",
-          "evidenceArticleIds": [
-            "7b2ec344ec1de9f0"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         },
         {
           "type": "collection_degraded",
@@ -4853,12 +4839,10 @@
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "7b2ec344ec1de9f0"
-          ]
+          "evidenceArticleIds": []
         }
       ],
-      "changeFromPreviousScoredDay": -1.8
+      "changeFromPreviousScoredDay": null
     }
   ]
 }
