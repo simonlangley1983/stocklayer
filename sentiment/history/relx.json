@@ -7954,6 +7954,86 @@
       ],
       "flags": [],
       "changeFromPreviousScoredDay": -0.8
+    },
+    {
+      "date": "2026-11-14",
+      "dailyScore": 49.7,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 53.5,
+      "confidence": 48.5,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 3,
+      "eligibleArticleCount": 3,
+      "storyCount": 3,
+      "effectiveStoryCount": 3.0,
+      "sourceCount": 3,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 3,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0228,
+      "rejectedCandidateCounts": {},
+      "topStories": [
+        {
+          "id": "4a5479bd75f13bfc",
+          "storyClusterId": "story-003",
+          "title": "RELX PLC (RELX) Stock Price, News, Quote & History",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1wS1ZmcEN2UzV5Z2c3TjFyREJCMWJZNGdxdkRZQWZ2clRTVEJqZkVhc09IdVZHeFg5RV83NmtlV0E0enhzbnJBWXllUXZleWZETHc?oc=5",
+          "source": "ca.finance.yahoo.com",
+          "publishedAt": "2026-11-14T23:45:49Z",
+          "polarity": -0.0274,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "17b8af01b2c9f813",
+          "storyClusterId": "story-002",
+          "title": "RELX PLC (REL.L) stock price, news, quote and history",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBvU1dKRV9ITmx0S1F4UE96bWwxa1dCMWp2ZHVGUVR2cm56SHRHYkU1WUk3R2Rmb0dRaWVDOUh6TTVPT2k5WHctaE0zRVRqekdYWTNj?oc=5",
+          "source": "uk.finance.yahoo.com",
+          "publishedAt": "2026-11-14T22:17:03Z",
+          "polarity": -0.0267,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "e2bef063b3b25263",
+          "storyClusterId": "story-001",
+          "title": "RELX stock: company reports 688,170-share buyback",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOWGpPNHEwM2Nid2RPSWZwXy1BN19OMEJJSVIyd05UbW95NThjUEZ4NjR5NkFCel9SUUlEelo4SEVrQ1BhYm9JTzE3XzhDb0h0am1SRjAyMmZGbktRcGJ2ZkpJYmpEbG1tdnNWSzFhMzZ2OFJaMjdYMGJCSTRsTGw0NHlJRmhJYlptNTZ4OTVjV2xOT2JETlVZQ0l0OGpXM3FsV0ZlS3hZbG5zS0loOFhOcg?oc=5",
+          "source": "ad-hoc-news.de",
+          "publishedAt": "2026-11-14T10:52:29Z",
+          "polarity": 0.0214,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "share_buyback",
+          "direction": "positive",
+          "severity": "medium",
+          "status": "possible",
+          "evidenceArticleIds": [
+            "e2bef063b3b25263"
+          ],
+          "sourceCount": 1
+        },
+        {
+          "type": "sentiment_drop",
+          "direction": "negative",
+          "severity": "high",
+          "status": "calculated",
+          "detail": "Daily score decreased by 12.0 points",
+          "evidenceArticleIds": [
+            "4a5479bd75f13bfc",
+            "17b8af01b2c9f813",
+            "e2bef063b3b25263"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -12.0
     }
   ]
 }
