@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-11-15T17:44:49.135308Z",
+  "generatedAt": "2026-11-15T21:57:04.855690Z",
   "asOfDate": "2026-11-14",
   "companies": {
     "airtel-africa": {
@@ -749,26 +749,40 @@
       "ticker": "BBY.L",
       "slug": "balfour-beatty",
       "date": "2026-11-14",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 52.6,
-      "confidence": 0.0,
+      "dailyScore": 49.5,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 52.3,
+      "confidence": 15.3,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -10.9,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.3",
+          "evidenceArticleIds": [
+            "2eb9613b0da8d558"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "2eb9613b0da8d558",
+          "storyClusterId": "story-001",
+          "title": "Balfour Beatty plc (BBY.L) Stock Price, News, Quote & History",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9YM1lDanNOaTR5UG1ldWdOQmNGMHY1MXdyVEtBMDd0RXJ4MHdWOTNvWkdOaFdrSWVCRUw4cXlhSDl5VDFxSThrT3hjeTFzeHBOVFk0?oc=5",
+          "source": "ca.finance.yahoo.com",
+          "publishedAt": "2026-11-14T19:03:40Z",
+          "polarity": -0.0311,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
     },
     "lion-finance-group": {
       "companyName": "Lion Finance Group PLC",
@@ -3475,26 +3489,40 @@
       "ticker": "SSE.L",
       "slug": "sse",
       "date": "2026-11-14",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.6,
-      "confidence": 0.0,
+      "dailyScore": 60.0,
+      "dailyLabel": "Slightly positive",
+      "rollingScore": 51.8,
+      "confidence": 17.9,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 15.6,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 17.9",
+          "evidenceArticleIds": [
+            "f994b013080f2503"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "f994b013080f2503",
+          "storyClusterId": "story-001",
+          "title": "SSE's Berwick Bank B Wind Farm To Create 450 New Energy Roles In Scotland",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNktlUGM1bXVNWENBRmljUEoxMDRvNktZUmM1NUtGSktzU25TTE1vY254LU93bzdULVlUdzgzM1JZSEFnUEhuZkdlYUk5cnlSU1dXd0gxaDZHZk9UeHJibXJxVTIzMDNmbU9yWXExd1hJUk01ZUJSb2VhTkJDNy1kRmxKdldzWkJkSi1IYVBEWXBlSmZsYWZQUy1PZENFV3lyenVZVnpuSlNJWVk?oc=5",
+          "source": "oceannews.com",
+          "publishedAt": "2026-11-14T23:57:22Z",
+          "polarity": 0.5987,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        }
+      ]
     },
     "standard-chartered": {
       "companyName": "Standard Chartered PLC",
