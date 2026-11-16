@@ -5988,37 +5988,63 @@
     },
     {
       "date": "2026-11-15",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 53.4,
-      "confidence": 0.0,
+      "dailyScore": 49.8,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 53.0,
+      "confidence": 26.2,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 7,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 4,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 1,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 0,
+      "neutralStoryCount": 2,
       "negativeStoryCount": 0,
-      "dispersion": 0.0,
+      "dispersion": 0.0102,
       "rejectedCandidateCounts": {
-        "missing_company_alias": 7
+        "missing_company_alias": 2
       },
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "d871d11fd96b39c8",
+          "storyClusterId": "story-001",
+          "title": "Bath vs Bulls | Bulls vs Bath | Match Stats | Investec Champions Cup Live",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5LenY5Tm0zNEFoOVUwVmFIWUhCNkZ5UlpBSWxTX1JUMlpKSXBWOE5OMHI4d09xNFF1RmZpeFNfRmZIaURiTTAzOGJ1QVZpSHdyTVJzaGVsbm82NXdKSGVHTQ?oc=5",
+          "source": "rugbypass.com",
+          "publishedAt": "2026-11-15T11:24:30Z",
+          "polarity": -0.0187,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "abf3955b0e974950",
+          "storyClusterId": "story-002",
+          "title": "Gloucester vs Stormers | Stormers vs Gloucester | Match Stats | Investec Champions Cup Live",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5KYVFFZ3BidVlfeEJDOTc1RzdLWlFPMmZrTVZZZjF0U2l4TFdPell2Yi1nc1liM1FPSlZsOG9neGdOQ1MyVXJtdVRuOTR4cGJDNnZyTDkwY242cmw0S2pYU2JXRFYzbk1fWnc4Vw?oc=5",
+          "source": "rugbypass.com",
+          "publishedAt": "2026-11-15T18:11:38Z",
+          "polarity": 0.0017,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 26.2",
+          "evidenceArticleIds": [
+            "d871d11fd96b39c8",
+            "abf3955b0e974950"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": 0.0
     }
   ]
 }
