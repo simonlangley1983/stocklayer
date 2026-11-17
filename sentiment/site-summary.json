@@ -3,7 +3,7 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-11-17T03:28:06.305291Z",
+  "generatedAt": "2026-11-17T14:01:25.199076Z",
   "asOfDate": "2026-11-16",
   "companyCount": 100,
   "companies": {
@@ -1736,17 +1736,25 @@
       "companyName": "Pearson PLC",
       "ticker": "PSON.L",
       "slug": "pearson",
-      "date": "2026-11-15",
-      "dailyScore": 41.2,
-      "dailyLabel": "Slightly negative",
-      "rollingScore": 46.3,
-      "confidence": 73.9,
-      "confidenceBand": "high",
-      "coverageStatus": "ok",
-      "storyCount": 6,
-      "sourceCount": 7,
-      "changeFromPreviousScoredDay": 3.6,
-      "flags": []
+      "date": "2026-11-16",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 46.6,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
+      "flags": [
+        {
+          "type": "no_coverage",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Collection succeeded but found no eligible coverage"
+        }
+      ]
     },
     "relx": {
       "companyName": "RELX",
