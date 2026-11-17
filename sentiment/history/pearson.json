@@ -9919,37 +9919,84 @@
     },
     {
       "date": "2026-11-16",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 46.6,
-      "confidence": 0.0,
-      "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "dailyScore": 45.3,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 46.4,
+      "confidence": 76.0,
+      "confidenceBand": "high",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 1,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
-      "positiveStoryCount": 0,
-      "neutralStoryCount": 0,
-      "negativeStoryCount": 0,
-      "dispersion": 0.0,
+      "candidateCount": 26,
+      "eligibleArticleCount": 8,
+      "storyCount": 8,
+      "effectiveStoryCount": 8.0,
+      "sourceCount": 8,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 5,
+      "negativeStoryCount": 2,
+      "dispersion": 0.3434,
       "rejectedCandidateCounts": {
-        "missing_company_alias": 1
+        "missing_company_alias": 18
       },
-      "topStories": [],
-      "flags": [
+      "topStories": [
         {
-          "type": "no_coverage",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "id": "a9cba8273de9384b",
+          "storyClusterId": "story-002",
+          "title": "Canadian seniors jailed abroad after Pearson workers allegedly swapped their bag tags onto drug-filled suitcases",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPSHFwZm40UkxMUjc3bTZHV3lqVkhOU05SUjNxYnlUN3BudnBnSHBOejRvajg5aEhyVXFRTjlSWGttSGcyRG1wS0k1OXdTZ3NmNEVsZmhtWkNMZWNkR0REZGZvR1dkZ1RiZTV1MnFBSy1WSFBPaUF1Wk5YaXVHTGVJUVliQ1cwY2xhd240U3lsc3A?oc=5",
+          "source": "ca.finance.yahoo.com",
+          "publishedAt": "2026-11-16T12:00:00Z",
+          "polarity": -0.9056,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "c185dd971a48755e",
+          "storyClusterId": "story-004",
+          "title": "Tennessee State Rep. Pearson reacts to SpaceXAI spill",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPaGtwbnU5UmpPNXV6MjZHcTU5MEp0WHFlSmlDSjNCQTNldHpaYmM0QmxqRDhDTm5ScVpmUjhhQ3NrNFk0Q2JiRDFYWlplY3dsNlY2ZGZnSTBNemNkNUlLbmx3TEdIbTA0cDdDUlp2ZEZUa3N3dl9nRDhNVmNiMHpIZEpLaWEyazRMM1VhYldwaWdkd9IBlwFBVV95cUxQWkdkTm1aSTFVeWtmZ2s0Umd0bWtGTXlfRlNwS3N0cGd4eldoTEo0d1c5STJFdWxoemRTWkZHc3RyRWtWYjhJMnJ5WS1UbDRTd1ZXSHQxNTlLWG9GQml3NTVNTnJXNFg2bWJVTHhxSV9INnk0c0M1dTZLMTh6X3pJc0R4clVEckxrRnUyN0pkSHlIbkc3TW1v?oc=5",
+          "source": "wjtv.com",
+          "publishedAt": "2026-11-16T14:47:59Z",
+          "polarity": -0.4209,
+          "sentiment": "Negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "9d679da30e3e5915",
+          "storyClusterId": "story-005",
+          "title": "Pearson defensive player of the year, Owens earns coach of the year honors",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPekhpQzY1YXFTdkVqUUJyaFJ4eFZIdi1Ia2pBWm5wUTNxNGhTbXVSV0J0UkRNcnRSWWZwaVVsREpPa1NBUkxqMXVpRnZRcWh6VGtzT3c3VTNYY3RQTDZCeVFTWU9YY1hObXU0SGxieF9EZWVsajJiX0Q2aDByVlk4bUNkaEtrM2NObnFIUFEtNFdYVm9NdmI2V1dTV0hiWmxVS3JpaV9nMXB1RGs?oc=5",
+          "source": "sovanow.com",
+          "publishedAt": "2026-11-16T14:48:31Z",
+          "polarity": 0.2222,
+          "sentiment": "Positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "db73b40055ed9f42",
+          "storyClusterId": "story-008",
+          "title": "Rivera-Torres & Pearson Sweep Big South Weekly Awards",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNbzNzd3VKSzVuTzlNZzIxNFdwVEZGRklEVkFCckhPUXJTeVBpMElLZ1pwbXJxSnBDM1RxZENaeHc5MWtnUzRva1FLVVdJeXZqSTFwWFRPR3pnbWxtZEdJbGVXSkJWRGVTVXY1ZmRHcHJvbVA4UnVYa1VmX2pQU0NDbTYzZHk1bGI2cmNzSU9mSEFMLU45TGZlT29tenZ3emYwX29TS0l4Wk5HWFNHQzljdnlyQld3cXp1TGc?oc=5",
+          "source": "highpointpanthers.com",
+          "publishedAt": "2026-11-16T20:35:54Z",
+          "polarity": 0.0753,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "48d0a3aca8e457fd",
+          "storyClusterId": "story-003",
+          "title": "Judy Pearson",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNR1NXMlNHdnZ6QllfYzRyUG1MQlM4V1htakNBaEQyTHNHZU80MlN6dzZlUWo1RjJodkdoUkF1elZuMkhRZHdqQUExeFJhM0o1NEpaaWxwaWhBTWthUEFDQi1sR2RYdWtKdTZpT1VTbU5qWk5uY2NQMGhFQTRKSy1jVWkxcUtvZw?oc=5",
+          "source": "metalmagazine.eu",
+          "publishedAt": "2026-11-16T14:02:39Z",
+          "polarity": 0.0322,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "flags": [],
+      "changeFromPreviousScoredDay": 4.1
     }
   ]
 }
