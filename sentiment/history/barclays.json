@@ -7501,6 +7501,78 @@
         }
       ],
       "changeFromPreviousScoredDay": -0.5
+    },
+    {
+      "date": "2026-11-17",
+      "dailyScore": 50.2,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 50.4,
+      "confidence": 23.7,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 49,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 2,
+      "negativeStoryCount": 0,
+      "dispersion": 0.01,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 42,
+        "missing_company_alias": 5
+      },
+      "topStories": [
+        {
+          "id": "14b96f200c99e45f",
+          "storyClusterId": "story-001",
+          "title": "REG - Barclays PLC - Director/PDMR Shareholding",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQTHpYZlhLdU9BRzY1RHdnN0hnR2ZlSDFsLXpkTFNLdVZJVjBxZlpNX1Y1NjBnNnJXSWE4UDd2VnN2WEN6bmJQZ25SdThTcE93UFMtVUdWWHg3bk9EbHJMV0ZJOFB0NlVNZTVtUnRNd3VsdkNxajBFZjNlZkpkVktEcTRBSzZTTEU3dXh6bk5iZkNWRHRqcUZ3Ym9XUzd0Y1lsNHlUeFZOcVRjUkdEUHMwLVdSRWduWVFha3NF?oc=5",
+          "source": "tradingview.com",
+          "publishedAt": "2026-11-17T16:35:01Z",
+          "polarity": 0.0177,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "7ee241fbe1b6e9cc",
+          "storyClusterId": "story-002",
+          "title": "Barclays Bank PLC",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxORHlpRmVLUzBkazJvOUdabkFMZGg3MUhaU0p5MS1SOXVrTFY4VEMwb1dDandtd0xXSlFnc2lxM0RXLUlWWjhZUHNZTk4yY2RMakc0UndydkcyTHEtbFF6NWZzVlhhWF9LekMxTFp2X1BJVWdjcEtxWG9GaDU2akRsdy1ldUIzSVlYa3pGUQ?oc=5",
+          "source": "streetinsider.com",
+          "publishedAt": "2026-11-17T18:54:48Z",
+          "polarity": -0.0023,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 23.7",
+          "evidenceArticleIds": [
+            "14b96f200c99e45f",
+            "7ee241fbe1b6e9cc"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "14b96f200c99e45f",
+            "7ee241fbe1b6e9cc"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 0.3
     }
   ]
 }
