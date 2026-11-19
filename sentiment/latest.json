@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-11-19T21:13:12.135985Z",
+  "generatedAt": "2026-11-19T23:41:19.957436Z",
   "asOfDate": "2026-11-18",
   "companies": {
     "airtel-africa": {
@@ -1269,26 +1269,40 @@
       "ticker": "BT-A.L",
       "slug": "bt",
       "date": "2026-11-18",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 48.6,
-      "confidence": 0.0,
+      "dailyScore": 65.4,
+      "dailyLabel": "Positive",
+      "rollingScore": 50.6,
+      "confidence": 19.6,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 14.8,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 19.6",
+          "evidenceArticleIds": [
+            "7997753cefef4e9c"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "7997753cefef4e9c",
+          "storyClusterId": "story-001",
+          "title": "BT and EE broadband sees record demand",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE00OTJnTER5M1BPTkVSYWRiak44R3lHSWJncDRmdkMtc0JpQWE1REY2d1VMNzJkVFlFajdtY1FsM2ZicnppcmRVZFZ3Y2E3cm4xdkZ1cTg2eTQyWW1hQnVpRjBkSU0tOXBWZGo0SlZ4VEJsZ2c2Nk9kWUdIOHo?oc=5",
+          "source": "gbnews.com",
+          "publishedAt": "2026-11-18T08:00:00Z",
+          "polarity": 0.9263,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        }
+      ]
     },
     "barratt-redrow": {
       "companyName": "Barratt Redrow PLC",

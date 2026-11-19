@@ -5754,38 +5754,52 @@
     },
     {
       "date": "2026-11-18",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 48.6,
-      "confidence": 0.0,
+      "dailyScore": 65.4,
+      "dailyLabel": "Positive",
+      "rollingScore": 50.6,
+      "confidence": 19.6,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 15,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
-      "positiveStoryCount": 0,
+      "candidateCount": 16,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 1,
       "neutralStoryCount": 0,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
-        "ambiguous_company_without_alias": 10,
-        "missing_company_alias": 5
+        "ambiguous_company_without_alias": 11,
+        "missing_company_alias": 4
       },
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "7997753cefef4e9c",
+          "storyClusterId": "story-001",
+          "title": "BT and EE broadband sees record demand",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE00OTJnTER5M1BPTkVSYWRiak44R3lHSWJncDRmdkMtc0JpQWE1REY2d1VMNzJkVFlFajdtY1FsM2ZicnppcmRVZFZ3Y2E3cm4xdkZ1cTg2eTQyWW1hQnVpRjBkSU0tOXBWZGo0SlZ4VEJsZ2c2Nk9kWUdIOHo?oc=5",
+          "source": "gbnews.com",
+          "publishedAt": "2026-11-18T08:00:00Z",
+          "polarity": 0.9263,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 19.6",
+          "evidenceArticleIds": [
+            "7997753cefef4e9c"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": 14.8
     }
   ]
 }
