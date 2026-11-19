@@ -9077,37 +9077,84 @@
     },
     {
       "date": "2026-11-18",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 47.6,
-      "confidence": 0.0,
-      "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "dailyScore": 44.1,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 47.1,
+      "confidence": 45.8,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 5,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 11,
+      "eligibleArticleCount": 5,
+      "storyCount": 5,
+      "effectiveStoryCount": 5.0,
+      "sourceCount": 1,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 0,
-      "negativeStoryCount": 0,
-      "dispersion": 0.0,
+      "neutralStoryCount": 3,
+      "negativeStoryCount": 2,
+      "dispersion": 0.1361,
       "rejectedCandidateCounts": {
-        "missing_company_alias": 5
+        "missing_company_alias": 6
       },
-      "topStories": [],
-      "flags": [
+      "topStories": [
         {
-          "type": "no_coverage",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "id": "0a267f78ad7590db",
+          "storyClusterId": "story-003",
+          "title": "Weak mag. 2.6 earthquake - 87 km north of Calama, Provincia de El Loa, Region de Antofagasta, Chile, on Wednesday, Nov 18, 2026, at 04:21 am (GMT -3)",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOM3NnVFM1Q2VUMjlnNTE5MXFHcWVfUUY2NDlRaEJBcGJRUy1KejNsR1hZV0pvT2JLLWJfQVpLZmNKYXZDZk9zU3Q0OHQwZFRQdk9NZ2t6SUN2RjR2MmlYcXhJRVJFU0pQZHVweExRRkRwcnBLYml4V0hOQndqSEdxdXBwTXZ0QkJIazRPQmZIaXlZeG9CSUJMTXZjNmFDM2JhRTg3RVRza000N0k0UHc?oc=5",
+          "source": "volcanodiscovery.com",
+          "publishedAt": "2026-11-18T19:33:10Z",
+          "polarity": -0.3712,
+          "sentiment": "Negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "0f2da6ddf1c7eb74",
+          "storyClusterId": "story-002",
+          "title": "Weak mag. 2.6 earthquake - 32 km north of Calama, Provincia de El Loa, Region de Antofagasta, Chile, on Wednesday, Nov 18, 2026, at 02:44 pm (GMT -3)",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPUEk2ZF8zenhYczNPNFo1NnR3ZkdTMTljNUgycW9pZ0R6VklnVm1saDJOVG81Qmh5ODRYMFZkX2dyTllZd0xQVzJtUlFGdUxkb1VRTTg4NmZJZlVWN2sxYjZaeFh2UUExenhhQ0VqVXU4NXM5REZ5SHFtNjFBSWFwbWc1XzQyemV1MWZpMDlyaW5UaVRXZTR0OUZDV0VCMWFKOGY5cEVLSXBKRmY4YkE?oc=5",
+          "source": "volcanodiscovery.com",
+          "publishedAt": "2026-11-18T15:32:37Z",
+          "polarity": -0.285,
+          "sentiment": "Negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "d0c7842a0352866c",
+          "storyClusterId": "story-005",
+          "title": "Moderate mag. 4.5 earthquake - 130 km northeast of Calama, Provincia de El Loa, Region de Antofagasta, Chile, on Wednesday, Nov 18, 2026, at 03:46 pm (Santiago time)",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQSUdFX0oxRVFpZzloYVVZOW5LM1NSVkE4VkVmeGFFVEZRN2c0aWtrSHBucVJ3eDhzUGtoZUJ2TTNwR28ySkVaUHR2QlVFcFptMG9lal9rb1I1S3B0MG5YTjJfc3ZTU3FMX3o5VmFPS25EM2pPNC14N29lMmRrUzFWOGtFR09TTElSUTk5UXZhclJNeC1hNXN6WXRPdDNIRHdnRkJDUkdmZEoxQUl6R3c?oc=5",
+          "source": "volcanodiscovery.com",
+          "publishedAt": "2026-11-18T21:17:01Z",
+          "polarity": -0.0828,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "d07e69eb02e76461",
+          "storyClusterId": "story-004",
+          "title": "Light mag. 3.3 earthquake - 108 km northeast of Calama, Provincia de El Loa, Region de Antofagasta, Chile, on Wednesday, Nov 18, 2026, at 05:57 pm (Santiago time)",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNMGktRS1zTTZHaHRXc3JaVHBfQ2c3a1JzczlsRnBVQXc5anNCZm5ibGVKZFp0ZUZFN0QzeVQwVnNSNVZwTm1xb0ZIb3FONnZtWVljYjhiQVNzREFlazhyQ20waUpibUxycXhQem1WTUFrQW43ZnhjVkhRd3ZGRlN1SzQ3NElza0JUcmpLVy1DSXlpcGNKR196TFhUc3FTZHRPSjlaWnI4TFBQSkRrZ3c?oc=5",
+          "source": "volcanodiscovery.com",
+          "publishedAt": "2026-11-18T21:01:00Z",
+          "polarity": -0.0624,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "a79dbfe43009866e",
+          "storyClusterId": "story-001",
+          "title": "Light mag. 3.1 earthquake - Provincia de El Loa, Region de Antofagasta, Chile, on Wednesday, Nov 18, 2026, at 12:02 pm (Santiago time)",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxORWtFVkx2WEFNU2EzQ2gyT194WnpUWlNuY25Xc2RfZXh3UVZ1cF9xRWpIeXB1RmNOaG1vd21aUFd1am1pWk5JUUhCbVA2YlhyYm82c3pJWGR5TzVfZERJTFROejlpQ08tZjhiaVhYaWYxOTBwTnIzc3BpSVBibWNOQ0hUWlRvMTdkeExSZU5LNlFZajZabWV2OE1mMTBsLTFHSmpuLWEzRTd0QVIxbHc?oc=5",
+          "source": "volcanodiscovery.com",
+          "publishedAt": "2026-11-18T15:07:00Z",
+          "polarity": -0.0295,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "flags": [],
+      "changeFromPreviousScoredDay": -9.1
     }
   ]
 }
