@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-19T01:15:46.044355Z",
+  "generatedAt": "2026-11-19T04:23:10.569662Z",
   "company": {
     "companyName": "Anglo American PLC",
     "ticker": "AAL.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-14",
-    "periodEnd": "2026-11-17",
-    "observationCount": 146,
-    "scoredDayCount": 127,
-    "latestScore": 27.0,
-    "latestScoreDate": "2026-11-17",
+    "periodEnd": "2026-11-18",
+    "observationCount": 147,
+    "scoredDayCount": 128,
+    "latestScore": 27.5,
+    "latestScoreDate": "2026-11-18",
     "series": [
       {
         "date": "2026-06-14",
@@ -1339,6 +1339,15 @@
         "sourceCount": 12,
         "confidence": 90.8,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-11-18",
+        "dailyScore": 27.5,
+        "rollingScore": 42.0,
+        "storyCount": 9,
+        "sourceCount": 9,
+        "confidence": 89.1,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1351,16 +1360,6 @@
         "direction": "negative",
         "detail": "Daily score decreased by 28.6 points",
         "significance": 1.606
-      },
-      {
-        "date": "2026-09-23",
-        "type": "sentiment_drop",
-        "title": "Anglo American stock falls 1.95 percent on September 23",
-        "source": "ad-hoc-news.de",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOTE1DUnI2V1VBWkZidXBMeE1OV1RoRGFVckt6a0wyS2JHZkZ2Q3M2Unc3WUFiYXVwMnhkYkd5bzJ6Y3Z2Wi10Rzc0eXZNN0hOTXkwTm1QLUMyX2JxdEZxTmpFV3NYNHUtVk1GZ2dpcUZpcGZ1UzR3NjEyNTVmR2RkYzQzMUJvYk1tVVRNMm9nd0lMOURyTTl1bEo1UFZfU2VIYjZtdE85UHBZZnNtMUhyQklXRmhvMUo5U1E?oc=5",
-        "direction": "negative",
-        "detail": "Daily score decreased by 28.6 points",
-        "significance": 1.596
       },
       {
         "date": "2026-10-07",
@@ -1441,6 +1440,16 @@
         "direction": "negative",
         "detail": "Daily score decreased by 24.0 points",
         "significance": 1.605
+      },
+      {
+        "date": "2026-11-18",
+        "type": "bad_press",
+        "title": "Anglo American falls 7.19% in Wednesday's session",
+        "source": "globalbankingandfinance.com",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQYzZ6YkpsdFdQRzh5dnhmSW5rVmJ3aWQ3UEJXOXJBX1c4NGYtbm5VWTVvZTBsWTI2TXlCYk9OUjFjSUIxc2JlNGh1bWJGemlsUDNfanZ4QkxOUEhTeFplOFpRUjhybU1aOFNkTl9vN1ZjaFZBVVlCczV6dENEZDY4blZjNmE?oc=5",
+        "direction": "negative",
+        "detail": "Daily press score is 27.5",
+        "significance": 1.597
       }
     ]
   },
@@ -2079,17 +2088,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 54.9,
+    "score": 54.6,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 48.2,
+        "score": 47.6,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 77 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 78 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "themes",
@@ -2186,16 +2195,6 @@
       "significance": 1.606
     },
     {
-      "date": "2026-09-23",
-      "type": "sentiment_drop",
-      "title": "Anglo American stock falls 1.95 percent on September 23",
-      "source": "ad-hoc-news.de",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOTE1DUnI2V1VBWkZidXBMeE1OV1RoRGFVckt6a0wyS2JHZkZ2Q3M2Unc3WUFiYXVwMnhkYkd5bzJ6Y3Z2Wi10Rzc0eXZNN0hOTXkwTm1QLUMyX2JxdEZxTmpFV3NYNHUtVk1GZ2dpcUZpcGZ1UzR3NjEyNTVmR2RkYzQzMUJvYk1tVVRNMm9nd0lMOURyTTl1bEo1UFZfU2VIYjZtdE85UHBZZnNtMUhyQklXRmhvMUo5U1E?oc=5",
-      "direction": "negative",
-      "detail": "Daily score decreased by 28.6 points",
-      "significance": 1.596
-    },
-    {
       "date": "2026-10-07",
       "type": "sentiment_drop",
       "title": "Anglo American stock falls 1.85 percent ahead of October 20 update",
@@ -2274,6 +2273,16 @@
       "direction": "negative",
       "detail": "Daily score decreased by 24.0 points",
       "significance": 1.605
+    },
+    {
+      "date": "2026-11-18",
+      "type": "bad_press",
+      "title": "Anglo American falls 7.19% in Wednesday's session",
+      "source": "globalbankingandfinance.com",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQYzZ6YkpsdFdQRzh5dnhmSW5rVmJ3aWQ3UEJXOXJBX1c4NGYtbm5VWTVvZTBsWTI2TXlCYk9OUjFjSUIxc2JlNGh1bWJGemlsUDNfanZ4QkxOUEhTeFplOFpRUjhybU1aOFNkTl9vN1ZjaFZBVVlCczV6dENEZDY4blZjNmE?oc=5",
+      "direction": "negative",
+      "detail": "Daily press score is 27.5",
+      "significance": 1.597
     }
   ],
   "persistentEvents": [

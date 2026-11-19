@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-19T01:15:46.044355Z",
+  "generatedAt": "2026-11-19T04:23:10.569662Z",
   "company": {
     "companyName": "Aviva PLC",
     "ticker": "AV.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-05",
-    "periodEnd": "2026-11-17",
-    "observationCount": 134,
-    "scoredDayCount": 125,
-    "latestScore": 53.3,
-    "latestScoreDate": "2026-11-17",
+    "periodEnd": "2026-11-18",
+    "observationCount": 135,
+    "scoredDayCount": 126,
+    "latestScore": 48.2,
+    "latestScoreDate": "2026-11-18",
     "series": [
       {
         "date": "2026-07-05",
@@ -1231,6 +1231,15 @@
         "sourceCount": 14,
         "confidence": 79.9,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-11-18",
+        "dailyScore": 48.2,
+        "rollingScore": 53.9,
+        "storyCount": 12,
+        "sourceCount": 13,
+        "confidence": 80.7,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1832,10 +1841,10 @@
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 54.3,
+        "score": 54.2,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 79 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 80 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -2013,6 +2022,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "d92c32ad8e1b57b0047a",
+      "type": "regulatory_legal",
+      "title": "Aviva's $12.4 million settlement of COVID-19 business interruption claims approved",
+      "date": "2026-11-18",
+      "status": "pending_review",
+      "reviewDate": "2027-05-17",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQalZYVGppbXFHS0dGTlZOR1RiSHFZTExoU3V4SFpVZ0ZKMUFxTUdnZmVFdXEyTmxvMWpadWdHRHpReXREWlBpZ3gyeHN2NWJRQnFhWFcxeThjdkU2NFA1YUR4VkNmdjVuNENjVmd3T2V5ZmRGUGRrMGdpaGx3YzNEbUZ4d09tc0dQSkhDS0Y1M2k2NEdmRFA0ajZBZWZkSE1NeXgyX0I4VXZWVWxpSVFndG14TTFFVXM?oc=5",
+          "publisher": "insurance-portal.ca",
+          "date": "2026-11-18"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "f25152f8bffc7a48383c",
       "type": "acquisition",
