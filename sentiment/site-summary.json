@@ -3,7 +3,7 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-11-20T03:54:33.859443Z",
+  "generatedAt": "2026-11-20T13:29:00.886882Z",
   "asOfDate": "2026-11-19",
   "companyCount": 100,
   "companies": {
@@ -859,37 +859,23 @@
       "companyName": "easyJet PLC",
       "ticker": "EZJ.L",
       "slug": "easyjet",
-      "date": "2026-11-18",
-      "dailyScore": 26.4,
-      "dailyLabel": "Negative",
-      "rollingScore": 44.4,
-      "confidence": 90.5,
-      "confidenceBand": "high",
-      "coverageStatus": "ok",
-      "storyCount": 33,
-      "sourceCount": 29,
-      "changeFromPreviousScoredDay": -15.6,
+      "date": "2026-11-19",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 44.9,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "sentiment_drop",
-          "direction": "negative",
-          "severity": "high",
-          "status": "calculated",
-          "detail": "Daily score decreased by 15.6 points"
-        },
-        {
-          "type": "bad_press",
-          "direction": "negative",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "Daily press score is 26.4"
-        },
-        {
-          "type": "coverage_spike",
+          "type": "no_coverage",
           "direction": "neutral",
-          "severity": "medium",
+          "severity": "low",
           "status": "calculated",
-          "detail": "33 stories versus trailing median 9"
+          "detail": "Collection succeeded but found no eligible coverage"
         }
       ]
     },
