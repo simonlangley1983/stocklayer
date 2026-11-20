@@ -7643,6 +7643,65 @@
       ],
       "flags": [],
       "changeFromPreviousScoredDay": -8.0
+    },
+    {
+      "date": "2026-11-19",
+      "dailyScore": 49.5,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 49.1,
+      "confidence": 11.5,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 56,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 0,
+      "dispersion": 0.0,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 52,
+        "missing_company_alias": 3
+      },
+      "topStories": [
+        {
+          "id": "479f412a25a4c50b",
+          "storyClusterId": "story-001",
+          "title": "Barclays PLC (BCS.BA) Seasonal returns chart",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB6RmpGQU1DeGhyOVlzTjBXRWxtbnZxMEM2VHc0TU1aLUFycF9hUEItTUoyMjRRNjd6U1dEalFDV21vNXQtT3Jjb2JpR1d4dlJqalJoLXg1MV81VDhSZGxJRXB0eTA?oc=5",
+          "source": "uk.finance.yahoo.com",
+          "publishedAt": "2026-11-19T10:29:50Z",
+          "polarity": -0.032,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 11.5",
+          "evidenceArticleIds": [
+            "479f412a25a4c50b"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "479f412a25a4c50b"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": 7.2
     }
   ]
 }
