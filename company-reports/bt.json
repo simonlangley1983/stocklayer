@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-20T13:49:32.776316Z",
+  "generatedAt": "2026-11-20T14:14:21.335850Z",
   "company": {
     "companyName": "BT Group PLC",
     "ticker": "BT-A.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-11-18",
-    "observationCount": 130,
-    "scoredDayCount": 50,
-    "latestScore": 65.4,
-    "latestScoreDate": "2026-11-18",
+    "periodEnd": "2026-11-19",
+    "observationCount": 131,
+    "scoredDayCount": 51,
+    "latestScore": 70.0,
+    "latestScoreDate": "2026-11-19",
     "series": [
       {
         "date": "2026-06-30",
@@ -1195,6 +1195,15 @@
         "sourceCount": 1,
         "confidence": 19.6,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-11-19",
+        "dailyScore": 70.0,
+        "rollingScore": 54.0,
+        "storyCount": 5,
+        "sourceCount": 5,
+        "confidence": 72.8,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1217,16 +1226,6 @@
         "direction": "negative",
         "detail": "Daily score decreased by 32.4 points",
         "significance": 1.535
-      },
-      {
-        "date": "2026-10-05",
-        "type": "coverage_spike",
-        "title": "BT to buy broadband supplier TalkTalk in £400m rescue deal, saving 900 jobs",
-        "source": "theguardian.com",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNT3hxWVJacnBoQ0NBd2tSLU1kMnRkQ3lLTEZhMXh3eEtwOURQSEtVT0hwNDFkOW1yNWxnWTc3NEU3cFkxWlk2N3p0aWF1QllzczN2ZjNZcjJJQWptN2FXM2s3YWxwRzV0c2J4akpVNGdIUVNROXlySzR0V09WRnZyWWdLSGlLQ2M3V24zYndNTnM1QQ?oc=5",
-        "direction": "neutral",
-        "detail": "11 stories versus trailing median 1",
-        "significance": 1.437
       },
       {
         "date": "2026-10-08",
@@ -1297,6 +1296,16 @@
         "direction": "negative",
         "detail": "Daily press score is 28.4",
         "significance": 1.597
+      },
+      {
+        "date": "2026-11-19",
+        "type": "good_press",
+        "title": "BT and EE see new broadband traffic peak record set by GTA VI pre-load",
+        "source": "thinkbroadband.com",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNa19nUjhCRTVPY1ZZb2JsNWFoMzRkVFFPZV9kR1A2VEg5N3lDRGdobm1uU1FxVE4tSGs0QUJaYUpneWd5RVN2b0ZwaDdsa2hwSTFpeUduNUVfcGg5NG53Tk9MaV84czhzNC1XenU3cjQ5NE9iU3BGMUNfZDFpR2J4bTVZenpBWnppTlBqZ2xkeERWTmsyY1BnTlJDZmNsaGg3ei1OTktodkVVZw?oc=5",
+        "direction": "positive",
+        "detail": "Daily press score is 70.0",
+        "significance": 1.508
       }
     ]
   },
@@ -1862,17 +1871,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 48.6,
+    "score": 49.0,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 49.0,
+        "score": 49.8,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 50 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 51 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1969,16 +1978,6 @@
       "significance": 1.535
     },
     {
-      "date": "2026-10-05",
-      "type": "coverage_spike",
-      "title": "BT to buy broadband supplier TalkTalk in £400m rescue deal, saving 900 jobs",
-      "source": "theguardian.com",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNT3hxWVJacnBoQ0NBd2tSLU1kMnRkQ3lLTEZhMXh3eEtwOURQSEtVT0hwNDFkOW1yNWxnWTc3NEU3cFkxWlk2N3p0aWF1QllzczN2ZjNZcjJJQWptN2FXM2s3YWxwRzV0c2J4akpVNGdIUVNROXlySzR0V09WRnZyWWdLSGlLQ2M3V24zYndNTnM1QQ?oc=5",
-      "direction": "neutral",
-      "detail": "11 stories versus trailing median 1",
-      "significance": 1.437
-    },
-    {
       "date": "2026-10-08",
       "type": "high_disagreement",
       "title": "Open letter – Opus Broadband complains to UK Govt over TalkTalk’s sale to BT",
@@ -2047,6 +2046,16 @@
       "direction": "negative",
       "detail": "Daily press score is 28.4",
       "significance": 1.597
+    },
+    {
+      "date": "2026-11-19",
+      "type": "good_press",
+      "title": "BT and EE see new broadband traffic peak record set by GTA VI pre-load",
+      "source": "thinkbroadband.com",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNa19nUjhCRTVPY1ZZb2JsNWFoMzRkVFFPZV9kR1A2VEg5N3lDRGdobm1uU1FxVE4tSGs0QUJaYUpneWd5RVN2b0ZwaDdsa2hwSTFpeUduNUVfcGg5NG53Tk9MaV84czhzNC1XenU3cjQ5NE9iU3BGMUNfZDFpR2J4bTVZenpBWnppTlBqZ2xkeERWTmsyY1BnTlJDZmNsaGg3ei1OTktodkVVZw?oc=5",
+      "direction": "positive",
+      "detail": "Daily press score is 70.0",
+      "significance": 1.508
     },
     {
       "date": "2026-12-31",
