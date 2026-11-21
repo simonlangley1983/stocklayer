@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-21T03:44:51.024239Z",
+  "generatedAt": "2026-11-21T04:08:11.299161Z",
   "company": {
     "companyName": "DCC PLC",
     "ticker": "DCC.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-15",
-    "periodEnd": "2026-11-19",
-    "observationCount": 148,
-    "scoredDayCount": 106,
-    "latestScore": 49.6,
-    "latestScoreDate": "2026-11-19",
+    "periodEnd": "2026-11-20",
+    "observationCount": 149,
+    "scoredDayCount": 107,
+    "latestScore": 53.4,
+    "latestScoreDate": "2026-11-20",
     "series": [
       {
         "date": "2026-06-15",
@@ -1357,6 +1357,15 @@
         "sourceCount": 4,
         "confidence": 64.4,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-11-20",
+        "dailyScore": 53.4,
+        "rollingScore": 50.9,
+        "storyCount": 8,
+        "sourceCount": 5,
+        "confidence": 72.3,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -2024,17 +2033,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 50.5,
+    "score": 50.6,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 50.8,
+        "score": 50.9,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 67 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 68 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -2221,6 +2230,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "3b368099df22798b9b97",
+      "type": "acquisition",
+      "title": "AQR Capital Management Reports 1.64% Stake in DCC Energy plc in Compliance with Irish Takeover Panel Regulations",
+      "date": "2026-11-20",
+      "status": "pending_review",
+      "reviewDate": "2027-05-19",
+      "direction": "Neutral / mixed",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQdE82aHFoXzFjWFlEbGNyUHJoa1cyOVozSUgyai14cm5QQ01hcHhnczZzcTRiOC1RTW95VzJQeHNPVW05SkhoY0IxdTNlbEE3ekswdHNwSEhmcGFpbTJ2QVBqbG5xOU40OG1tdUFxU1Z0VmxMcDJidkRvem5xa2QyMmtTUnE4a0NuM2RLWmdOeUNrbE9IRko3UVhGZFM5VUo5ZWNnaEdxYnpyVEh0dzZ0MTdoeERrREhrZ21vcU0zUzJ4UGxFZUZfc1FIblNPbmRRS0VQYzJiLTBXak1OU2I0QzNiNVdjUGVaU0g1RUZn?oc=5",
+          "publisher": "kalkinemedia.com",
+          "date": "2026-11-20"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "1ff98fbc3d162bb1f9de",
       "type": "acquisition",
