@@ -3,8 +3,8 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-11-20T23:14:45.907269Z",
-  "asOfDate": "2026-11-19",
+  "generatedAt": "2026-11-21T03:44:48.736510Z",
+  "asOfDate": "2026-11-20",
   "companyCount": 100,
   "companies": {
     "airtel-africa": {
@@ -1205,30 +1205,23 @@
       "companyName": "InterContinental Hotels Group PLC",
       "ticker": "IHG.L",
       "slug": "intercontinental-hotels",
-      "date": "2026-11-19",
-      "dailyScore": 45.8,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 52.1,
-      "confidence": 55.7,
-      "confidenceBand": "medium",
-      "coverageStatus": "ok",
-      "storyCount": 3,
-      "sourceCount": 3,
-      "changeFromPreviousScoredDay": -14.7,
+      "date": "2026-11-20",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 51.9,
+      "confidence": 0.0,
+      "confidenceBand": "low",
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "sentiment_drop",
-          "direction": "negative",
-          "severity": "high",
+          "type": "no_coverage",
+          "direction": "neutral",
+          "severity": "low",
           "status": "calculated",
-          "detail": "Daily score decreased by 14.7 points"
-        },
-        {
-          "type": "high_disagreement",
-          "direction": "mixed",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "Positive and negative coverage is unusually dispersed"
+          "detail": "Collection succeeded but found no eligible coverage"
         }
       ]
     },
