@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-20T21:37:24.982419+00:00",
+  "generatedAt": "2026-11-22T10:03:03.359763+00:00",
   "source": "uk-companies.json",
   "companyCount": 113,
-  "newReportsDetected": 0,
+  "newReportsDetected": 9,
   "note": "Annual-report monitor records detected report links and source-page health. Keyword extraction can consume this index once report text extraction is enabled.",
   "companies": {
     "3i": {
@@ -15,7 +15,7 @@
       "sources": [
         {
           "url": "https://www.3i.com/investor-relations/reports/2026/",
-          "checkedAt": "2026-11-20T21:33:47.632636+00:00",
+          "checkedAt": "2026-11-22T10:00:41.461430+00:00",
           "statusCode": 200,
           "reportLinksFound": 6,
           "childPages": [
@@ -165,7 +165,7 @@
           "status": "verified_official_seed"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:17.232065+00:00"
+      "updatedAt": "2026-11-22T10:02:56.806791+00:00"
     },
     "aberdeen-group": {
       "slug": "aberdeen-group",
@@ -177,7 +177,7 @@
       "sources": [
         {
           "url": "https://www.aberdeenplc.com/en-gb/investors/financial-library-and-results",
-          "checkedAt": "2026-11-20T21:33:45.419293+00:00",
+          "checkedAt": "2026-11-22T10:00:39.653936+00:00",
           "statusCode": 200,
           "reportLinksFound": 10,
           "childPages": [
@@ -281,7 +281,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:46.405944+00:00"
+      "updatedAt": "2026-11-22T10:00:40.851870+00:00"
     },
     "admiral": {
       "slug": "admiral",
@@ -293,9 +293,16 @@
       "sources": [
         {
           "url": "https://admiralgroup.co.uk/investor-relations/results-reports-and-presentations",
-          "checkedAt": "2026-11-20T21:33:45.122391+00:00",
-          "statusCode": 403,
-          "error": "Forbidden"
+          "checkedAt": "2026-11-22T10:00:39.225048+00:00",
+          "statusCode": 200,
+          "reportLinksFound": 11,
+          "childPages": [
+            {
+              "url": "https://admiralgroup.co.uk/static-files/1cc7d555-af0c-42c8-b2d9-8bae4036c278",
+              "finalUrl": "https://admiralgroup.co.uk/static-files/1cc7d555-af0c-42c8-b2d9-8bae4036c278",
+              "statusCode": 200
+            }
+          ]
         }
       ],
       "reports": [
@@ -307,6 +314,15 @@
           "sourceUrl": "https://www.admiralgroup.co.uk/investor-relations/results-reports-and-presentations",
           "detectedAt": "2026-08-31T18:51:14.245640+00:00",
           "status": "verified_official_seed"
+        },
+        {
+          "id": "c19fde0cfb734121",
+          "year": 2025,
+          "title": "Admiral 2025 Annual Report and Accounts.pdf Report",
+          "url": "https://admiralgroup.co.uk/static-files/1cc7d555-af0c-42c8-b2d9-8bae4036c278",
+          "sourceUrl": "https://admiralgroup.co.uk/investor-relations/results-reports-and-presentations",
+          "detectedAt": "2026-11-22T10:00:39.267252+00:00",
+          "status": "detected"
         },
         {
           "year": 2024,
@@ -327,34 +343,88 @@
           "status": "official_archive_discovered"
         },
         {
+          "id": "3914d167fdc9b68b",
+          "year": 2022,
+          "title": "D&I Annual Report 2022 (1).pdf Report",
+          "url": "https://admiralgroup.co.uk/static-files/44039ebe-2a46-4ca8-b677-77b271b2409a",
+          "sourceUrl": "https://admiralgroup.co.uk/investor-relations/results-reports-and-presentations",
+          "detectedAt": "2026-11-22T10:00:39.269063+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "f4a42aed6cc71a95",
+          "year": 2022,
+          "title": "D&I Annual Report 2022 (1).pdf Report",
+          "url": "https://admiralgroup.co.uk/static-files/c3978f5e-7ef8-4c83-be71-1fe75521d8da",
+          "sourceUrl": "https://admiralgroup.co.uk/investor-relations/results-reports-and-presentations",
+          "detectedAt": "2026-11-22T10:00:39.269803+00:00",
+          "status": "detected"
+        },
+        {
           "year": 2022,
           "url": "https://admiralgroup.co.uk/static-files/702c838e-32ba-4302-9ab8-44ef661e56cd",
-          "title": "Admiral Group PLC Annual report 2022",
+          "title": "2022-full-year-results-annual-report.pdf Report",
           "sourceUrl": "https://admiralgroup.co.uk/investor-relations/results-reports-and-presentations",
           "id": "75258ca45e9c62c3",
           "detectedAt": "2026-09-17T12:49:21.301149+00:00",
-          "status": "official_archive_discovered"
+          "status": "detected"
+        },
+        {
+          "id": "f64c1f14fd748b5a",
+          "year": 2021,
+          "title": "2021-group-solvency-and-financial-condition-report-annual-report.pdf Report",
+          "url": "https://admiralgroup.co.uk/static-files/6981927c-9e84-446a-8c0e-0340f598609a",
+          "sourceUrl": "https://admiralgroup.co.uk/investor-relations/results-reports-and-presentations",
+          "detectedAt": "2026-11-22T10:00:39.269705+00:00",
+          "status": "detected"
         },
         {
           "year": 2021,
           "url": "https://admiralgroup.co.uk/static-files/d08da0fd-cb67-4d84-83e8-196d78d1a9aa",
-          "title": "Admiral Group PLC Annual report 2021",
+          "title": "2021-full-year-results-annual-report.pdf Report",
           "sourceUrl": "https://admiralgroup.co.uk/investor-relations/results-reports-and-presentations",
           "id": "8d16bcbcf8592ab4",
           "detectedAt": "2026-09-17T12:49:21.301149+00:00",
-          "status": "official_archive_discovered"
+          "status": "detected"
+        },
+        {
+          "id": "21e91d41fe8de6f4",
+          "year": 2020,
+          "title": "2020-group-solvency-and-financial-condition-report-annual-report.pdf Report",
+          "url": "https://admiralgroup.co.uk/static-files/f826ee1e-6e9e-4a81-ac8a-5ea5e4699671",
+          "sourceUrl": "https://admiralgroup.co.uk/investor-relations/results-reports-and-presentations",
+          "detectedAt": "2026-11-22T10:00:39.270588+00:00",
+          "status": "detected"
         },
         {
           "year": 2020,
           "url": "https://admiralgroup.co.uk/static-files/e914da16-f0fd-41e0-9571-6ec9df780e3c",
-          "title": "Admiral Group PLC Annual report 2020",
+          "title": "2020-full-year-results-annual-report.pdf Report",
           "sourceUrl": "https://admiralgroup.co.uk/investor-relations/results-reports-and-presentations",
           "id": "c080ece1c16d78a0",
           "detectedAt": "2026-09-17T12:49:21.301149+00:00",
-          "status": "official_archive_discovered"
+          "status": "detected"
+        },
+        {
+          "id": "38f7cca1e9893dbe",
+          "year": 2019,
+          "title": "2019-group-solvency-and-financial-condition-report-annual-report.pdf Report",
+          "url": "https://admiralgroup.co.uk/static-files/08691814-65c5-4e35-a258-232136f3ac22",
+          "sourceUrl": "https://admiralgroup.co.uk/investor-relations/results-reports-and-presentations",
+          "detectedAt": "2026-11-22T10:00:39.271137+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "51465a9f1c99cbad",
+          "year": 2019,
+          "title": "2019-full-year-results-annual-report.pdf Report",
+          "url": "https://admiralgroup.co.uk/static-files/43f64fac-c679-41a3-9300-39218d98932a",
+          "sourceUrl": "https://admiralgroup.co.uk/investor-relations/results-reports-and-presentations",
+          "detectedAt": "2026-11-22T10:00:39.271423+00:00",
+          "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:45.122432+00:00"
+      "updatedAt": "2026-11-22T10:00:39.873603+00:00"
     },
     "airtel-africa": {
       "slug": "airtel-africa",
@@ -366,7 +436,7 @@
       "sources": [
         {
           "url": "https://www.airtel.africa/annual-reports",
-          "checkedAt": "2026-11-20T21:33:46.062394+00:00",
+          "checkedAt": "2026-11-22T10:00:40.152143+00:00",
           "statusCode": 200,
           "reportLinksFound": 50
         }
@@ -670,7 +740,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:46.095789+00:00"
+      "updatedAt": "2026-11-22T10:00:40.178104+00:00"
     },
     "alliance-witan": {
       "slug": "alliance-witan",
@@ -682,7 +752,7 @@
       "sources": [
         {
           "url": "https://www.alliancewitan.com/documents",
-          "checkedAt": "2026-11-20T21:33:46.115117+00:00",
+          "checkedAt": "2026-11-22T10:00:39.758118+00:00",
           "statusCode": 200,
           "reportLinksFound": 24
         }
@@ -797,7 +867,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:46.203744+00:00"
+      "updatedAt": "2026-11-22T10:00:39.816374+00:00"
     },
     "anglo-american": {
       "slug": "anglo-american",
@@ -4535,7 +4605,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:44.824491+00:00"
+      "updatedAt": "2026-11-22T10:00:38.787273+00:00"
     },
     "antofagasta": {
       "slug": "antofagasta",
@@ -4547,7 +4617,7 @@
       "sources": [
         {
           "url": "https://www.antofagasta.co.uk/investors",
-          "checkedAt": "2026-11-20T21:33:45.775225+00:00",
+          "checkedAt": "2026-11-22T10:00:39.313296+00:00",
           "statusCode": 200,
           "reportLinksFound": 16,
           "childPages": [
@@ -4814,7 +4884,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:46.528726+00:00"
+      "updatedAt": "2026-11-22T10:00:39.766643+00:00"
     },
     "ashtead": {
       "slug": "ashtead",
@@ -4926,7 +4996,7 @@
       "sources": [
         {
           "url": "https://www.abf.co.uk/investors/results-reports-presentations/annual-reports",
-          "checkedAt": "2026-11-20T21:33:45.082434+00:00",
+          "checkedAt": "2026-11-22T10:00:39.059733+00:00",
           "statusCode": 200,
           "reportLinksFound": 0
         }
@@ -4942,7 +5012,7 @@
           "status": "verified_official_seed"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:45.083082+00:00"
+      "updatedAt": "2026-11-22T10:00:39.060155+00:00"
     },
     "astrazeneca": {
       "slug": "astrazeneca",
@@ -4954,9 +5024,17 @@
       "sources": [
         {
           "url": "https://www.astrazeneca.com/investor-relations/annual-reports.html",
-          "checkedAt": "2026-11-20T21:33:45.061549+00:00",
-          "statusCode": 403,
-          "error": "Forbidden"
+          "checkedAt": "2026-11-22T10:00:39.189913+00:00",
+          "statusCode": 200,
+          "reportLinksFound": 77,
+          "childPages": [
+            {
+              "url": "https://www.astrazeneca.com/investor-relations/annual-reports/annual-report-2025.html",
+              "finalUrl": "https://www.astrazeneca.com/investor-relations/annual-reports/annual-report-2025.html",
+              "statusCode": 200,
+              "reportLinksFound": 35
+            }
+          ]
         }
       ],
       "reports": [
@@ -5501,7 +5579,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:45.061610+00:00"
+      "updatedAt": "2026-11-22T10:00:39.529795+00:00"
     },
     "auto-trader": {
       "slug": "auto-trader",
@@ -5513,7 +5591,7 @@
       "sources": [
         {
           "url": "https://plc.autotrader.co.uk/investors/2025-annual-report/",
-          "checkedAt": "2026-11-20T21:33:45.710158+00:00",
+          "checkedAt": "2026-11-22T10:00:39.710670+00:00",
           "statusCode": 200,
           "reportLinksFound": 2,
           "childPages": [
@@ -5546,7 +5624,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:46.712825+00:00"
+      "updatedAt": "2026-11-22T10:00:40.145841+00:00"
     },
     "aviva": {
       "slug": "aviva",
@@ -5558,7 +5636,7 @@
       "sources": [
         {
           "url": "https://www.aviva.com/investors/strategy-and-performance-overview/results-presentations-reports/2024/",
-          "checkedAt": "2026-11-20T21:33:45.298198+00:00",
+          "checkedAt": "2026-11-22T10:00:39.145417+00:00",
           "statusCode": 200,
           "reportLinksFound": 2,
           "childPages": [
@@ -5600,7 +5678,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:45.861925+00:00"
+      "updatedAt": "2026-11-22T10:00:39.605852+00:00"
     },
     "babcock-international": {
       "slug": "babcock-international",
@@ -5837,7 +5915,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:44.858951+00:00"
+      "updatedAt": "2026-11-22T10:00:38.809825+00:00"
     },
     "bae-systems": {
       "slug": "bae-systems",
@@ -5849,7 +5927,7 @@
       "sources": [
         {
           "url": "https://annualreport.baesystems.com/2025",
-          "checkedAt": "2026-11-20T21:33:45.228797+00:00",
+          "checkedAt": "2026-11-22T10:00:38.877420+00:00",
           "statusCode": 200,
           "reportLinksFound": 0
         }
@@ -5937,7 +6015,7 @@
           "status": "official_archive_discovered"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:45.229705+00:00"
+      "updatedAt": "2026-11-22T10:00:38.878645+00:00"
     },
     "balfour-beatty": {
       "slug": "balfour-beatty",
@@ -5948,7 +6026,7 @@
       "latestReportYear": null,
       "sources": [],
       "reports": [],
-      "updatedAt": "2026-11-20T21:33:44.863325+00:00"
+      "updatedAt": "2026-11-22T10:00:38.817259+00:00"
     },
     "barclays": {
       "slug": "barclays",
@@ -5960,7 +6038,7 @@
       "sources": [
         {
           "url": "https://home.barclays/investor-relations/reports-and-events/annual-reports/",
-          "checkedAt": "2026-11-20T21:33:45.616260+00:00",
+          "checkedAt": "2026-11-22T10:00:39.343937+00:00",
           "statusCode": 200,
           "reportLinksFound": 601,
           "childPages": [
@@ -7991,7 +8069,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:46.822707+00:00"
+      "updatedAt": "2026-11-22T10:00:40.256299+00:00"
     },
     "barratt-redrow": {
       "slug": "barratt-redrow",
@@ -8003,7 +8081,7 @@
       "sources": [
         {
           "url": "https://www.barrattredrow.co.uk/investors",
-          "checkedAt": "2026-11-20T21:33:45.979244+00:00",
+          "checkedAt": "2026-11-22T10:00:39.824904+00:00",
           "statusCode": 200,
           "reportLinksFound": 3,
           "childPages": [
@@ -8405,7 +8483,7 @@
           "status": "verified_official_seed"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:47.100469+00:00"
+      "updatedAt": "2026-11-22T10:00:40.230811+00:00"
     },
     "beazley": {
       "slug": "beazley",
@@ -9151,7 +9229,7 @@
       "sources": [
         {
           "url": "https://www.bp.com/investors",
-          "checkedAt": "2026-11-20T21:33:45.088107+00:00",
+          "checkedAt": "2026-11-22T10:00:38.919169+00:00",
           "statusCode": 200,
           "reportLinksFound": 1,
           "childPages": [
@@ -9193,7 +9271,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:45.393834+00:00"
+      "updatedAt": "2026-11-22T10:00:39.084038+00:00"
     },
     "british-american-tobacco": {
       "slug": "british-american-tobacco",
@@ -9205,7 +9283,7 @@
       "sources": [
         {
           "url": "https://www.bat.com/ar/2024/downloads.html",
-          "checkedAt": "2026-11-20T21:33:45.012371+00:00",
+          "checkedAt": "2026-11-22T10:00:38.890083+00:00",
           "statusCode": 200,
           "reportLinksFound": 0
         }
@@ -10409,7 +10487,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:45.013769+00:00"
+      "updatedAt": "2026-11-22T10:00:38.890871+00:00"
     },
     "british-land": {
       "slug": "british-land",
@@ -10421,7 +10499,7 @@
       "sources": [
         {
           "url": "https://www.britishland.com/investors/results-reports-and-presentations",
-          "checkedAt": "2026-11-20T21:33:45.671801+00:00",
+          "checkedAt": "2026-11-22T10:00:40.025219+00:00",
           "statusCode": 200,
           "reportLinksFound": 1,
           "childPages": [
@@ -10500,7 +10578,7 @@
           "verificationNote": "Verified issuer-hosted full 252-page annual report, company and financial year confirmed on opening pages."
         }
       ],
-      "updatedAt": "2026-11-20T21:33:46.265803+00:00"
+      "updatedAt": "2026-11-22T10:00:40.269571+00:00"
     },
     "bt": {
       "slug": "bt",
@@ -10512,7 +10590,7 @@
       "sources": [
         {
           "url": "https://www.bt.com/about/investors/financial-reporting-and-news/annual-reports",
-          "checkedAt": "2026-11-20T21:33:46.267889+00:00",
+          "checkedAt": "2026-11-22T10:00:40.071828+00:00",
           "statusCode": 200,
           "reportLinksFound": 21,
           "childPages": [
@@ -10822,7 +10900,7 @@
           "status": "verified_official_seed"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:16.367434+00:00"
+      "updatedAt": "2026-11-22T10:02:55.667578+00:00"
     },
     "bunzl": {
       "slug": "bunzl",
@@ -10834,7 +10912,7 @@
       "sources": [
         {
           "url": "https://www.bunzl.com/investors/results-reports-and-presentations",
-          "checkedAt": "2026-11-20T21:33:45.193871+00:00",
+          "checkedAt": "2026-11-22T10:00:39.101874+00:00",
           "statusCode": 200,
           "reportLinksFound": 25,
           "childPages": [
@@ -11254,7 +11332,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:45.611166+00:00"
+      "updatedAt": "2026-11-22T10:00:39.647242+00:00"
     },
     "burberry": {
       "slug": "burberry",
@@ -11266,7 +11344,7 @@
       "sources": [
         {
           "url": "https://www.burberryplc.com/investors/annual-report-25-26",
-          "checkedAt": "2026-11-20T21:33:45.345474+00:00",
+          "checkedAt": "2026-11-22T10:00:38.942415+00:00",
           "statusCode": 200,
           "reportLinksFound": 0
         }
@@ -11282,7 +11360,7 @@
           "status": "verified_official_seed"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:45.346026+00:00"
+      "updatedAt": "2026-11-22T10:00:38.942943+00:00"
     },
     "centrica": {
       "slug": "centrica",
@@ -11294,7 +11372,7 @@
       "sources": [
         {
           "url": "https://www.centrica.com/investors/results-reports-and-presentations/results-reports-and-presentations/2025/",
-          "checkedAt": "2026-11-20T21:33:46.015301+00:00",
+          "checkedAt": "2026-11-22T10:00:39.354315+00:00",
           "statusCode": 200,
           "reportLinksFound": 8,
           "childPages": [
@@ -11345,7 +11423,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:47.106447+00:00"
+      "updatedAt": "2026-11-22T10:00:39.873047+00:00"
     },
     "coca-cola-europacific-partners": {
       "slug": "coca-cola-europacific-partners",
@@ -11357,7 +11435,7 @@
       "sources": [
         {
           "url": "https://ir.cocacolaep.com/financial-reports-and-results/annual-reports",
-          "checkedAt": "2026-11-20T21:33:45.215579+00:00",
+          "checkedAt": "2026-11-22T10:00:39.129563+00:00",
           "statusCode": 403,
           "error": "Forbidden"
         }
@@ -11373,7 +11451,7 @@
           "status": "verified_official_seed"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:45.215609+00:00"
+      "updatedAt": "2026-11-22T10:00:39.129584+00:00"
     },
     "coca-cola-hbc": {
       "slug": "coca-cola-hbc",
@@ -11385,7 +11463,7 @@
       "sources": [
         {
           "url": "https://www.coca-colahellenic.com/en/investor-relations/2025-integrated-annual-report",
-          "checkedAt": "2026-11-20T21:33:45.401106+00:00",
+          "checkedAt": "2026-11-22T10:00:39.099339+00:00",
           "statusCode": 200,
           "reportLinksFound": 0
         }
@@ -11410,7 +11488,7 @@
           "status": "verified_official_seed"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:45.401599+00:00"
+      "updatedAt": "2026-11-22T10:00:39.099804+00:00"
     },
     "compass": {
       "slug": "compass",
@@ -11422,7 +11500,7 @@
       "sources": [
         {
           "url": "https://www.compass-group.com/en/investors/annual-report-archive.html",
-          "checkedAt": "2026-11-20T21:33:45.293906+00:00",
+          "checkedAt": "2026-11-22T10:00:39.329588+00:00",
           "statusCode": 200,
           "reportLinksFound": 0
         }
@@ -11483,7 +11561,7 @@
           "status": "official_archive_discovered"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:45.294497+00:00"
+      "updatedAt": "2026-11-22T10:00:39.329999+00:00"
     },
     "computacenter": {
       "slug": "computacenter",
@@ -11495,23 +11573,48 @@
       "sources": [
         {
           "url": "https://investors.computacenter.com/results-presentations/annual-interim-reports?mobile=1",
-          "checkedAt": "2026-11-20T21:33:45.074433+00:00",
-          "statusCode": 403,
-          "error": "Forbidden"
+          "checkedAt": "2026-11-22T10:00:41.786650+00:00",
+          "statusCode": 200,
+          "reportLinksFound": 3,
+          "childPages": [
+            {
+              "url": "https://investors.computacenter.com/static-files/cef18bb9-9750-4d16-adbe-39bbeb650da4",
+              "finalUrl": "https://investors.computacenter.com/static-files/cef18bb9-9750-4d16-adbe-39bbeb650da4",
+              "statusCode": 200
+            }
+          ]
         }
       ],
       "reports": [
         {
           "id": "6dee7d505df5a6cd",
           "year": 2025,
-          "title": "Computacenter Annual Report and Accounts 2025",
+          "title": "Computacenter 2025 Annual Report_.pdf Full Year Results 2025",
           "url": "https://investors.computacenter.com/static-files/cef18bb9-9750-4d16-adbe-39bbeb650da4",
           "sourceUrl": "https://investors.computacenter.com/results-presentations/annual-interim-reports?mobile=1",
           "detectedAt": "2026-09-11T21:14:32.047115+00:00",
-          "status": "verified_official_seed"
+          "status": "detected"
+        },
+        {
+          "id": "cb98a6683c1d156b",
+          "year": 2024,
+          "title": "Computacenter 2024 Annual Report.pdf Full Year Results 2024",
+          "url": "https://investors.computacenter.com/static-files/0b3cd58c-0f8c-410a-a0c0-123de21cf08c",
+          "sourceUrl": "https://investors.computacenter.com/results-presentations/annual-interim-reports?mobile=1",
+          "detectedAt": "2026-11-22T10:00:41.821152+00:00",
+          "status": "detected"
+        },
+        {
+          "id": "92f5273a0ab44ab1",
+          "year": 2023,
+          "title": "Computacenter 2023 Annual Report_SML.pdf Full Year Results 2023",
+          "url": "https://investors.computacenter.com/static-files/7a34fca6-165e-421b-8472-c75c8095b081",
+          "sourceUrl": "https://investors.computacenter.com/results-presentations/annual-interim-reports?mobile=1",
+          "detectedAt": "2026-11-22T10:00:41.821231+00:00",
+          "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:45.074459+00:00"
+      "updatedAt": "2026-11-22T10:00:42.168309+00:00"
     },
     "convatec": {
       "slug": "convatec",
@@ -11523,7 +11626,7 @@
       "sources": [
         {
           "url": "https://www.convatecgroup.com/investors/reports-results-and-presentations/",
-          "checkedAt": "2026-11-20T21:33:45.416253+00:00",
+          "checkedAt": "2026-11-22T10:00:39.285811+00:00",
           "statusCode": 403,
           "error": "Forbidden"
         }
@@ -11557,7 +11660,7 @@
           "status": "verified_official_seed"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:45.416279+00:00"
+      "updatedAt": "2026-11-22T10:00:39.285839+00:00"
     },
     "croda-international": {
       "slug": "croda-international",
@@ -11569,7 +11672,7 @@
       "sources": [
         {
           "url": "https://www.croda.com/investors/annual-report",
-          "checkedAt": "2026-11-20T21:33:47.073481+00:00",
+          "checkedAt": "2026-11-22T10:00:41.252328+00:00",
           "statusCode": 200,
           "reportLinksFound": 12,
           "childPages": [
@@ -11998,7 +12101,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:16.424056+00:00"
+      "updatedAt": "2026-11-22T10:02:55.813225+00:00"
     },
     "dcc": {
       "slug": "dcc",
@@ -12010,7 +12113,7 @@
       "sources": [
         {
           "url": "https://www.dcc.ie/investors/annual-reports",
-          "checkedAt": "2026-11-20T21:33:47.568905+00:00",
+          "checkedAt": "2026-11-22T10:00:40.800028+00:00",
           "statusCode": 200,
           "reportLinksFound": 42,
           "childPages": [
@@ -12862,7 +12965,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:16.741038+00:00"
+      "updatedAt": "2026-11-22T10:00:41.332583+00:00"
     },
     "diageo": {
       "slug": "diageo",
@@ -12874,7 +12977,7 @@
       "sources": [
         {
           "url": "https://www.diageo.com/investors/results-reports-and-presentations",
-          "checkedAt": "2026-11-20T21:33:47.135301+00:00",
+          "checkedAt": "2026-11-22T10:00:41.588211+00:00",
           "statusCode": 200,
           "reportLinksFound": 12,
           "childPages": [
@@ -13645,7 +13748,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:16.860653+00:00"
+      "updatedAt": "2026-11-22T10:02:55.984720+00:00"
     },
     "diploma": {
       "slug": "diploma",
@@ -13657,7 +13760,7 @@
       "sources": [
         {
           "url": "https://www.diplomaplc.com/investors/results-reports-and-presentations",
-          "checkedAt": "2026-11-20T21:33:46.154355+00:00",
+          "checkedAt": "2026-11-22T10:00:40.443899+00:00",
           "statusCode": 200,
           "reportLinksFound": 29,
           "childPages": [
@@ -14041,7 +14144,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:47.437365+00:00"
+      "updatedAt": "2026-11-22T10:00:41.669816+00:00"
     },
     "ds-smith": {
       "slug": "ds-smith",
@@ -14414,7 +14517,7 @@
       "sources": [
         {
           "url": "https://corporate.easyjet.com/investors/reports-and-presentations/2024/default.aspx",
-          "checkedAt": "2026-11-20T21:33:45.915214+00:00",
+          "checkedAt": "2026-11-22T10:00:39.948390+00:00",
           "statusCode": 200,
           "reportLinksFound": 0,
           "childPages": [
@@ -14438,7 +14541,7 @@
           "status": "verified_official_seed"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:46.402328+00:00"
+      "updatedAt": "2026-11-22T10:00:40.200779+00:00"
     },
     "endeavour-mining": {
       "slug": "endeavour-mining",
@@ -14459,7 +14562,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:45.396394+00:00"
+      "updatedAt": "2026-11-22T10:00:39.531747+00:00"
     },
     "entain": {
       "slug": "entain",
@@ -14867,7 +14970,7 @@
       "sources": [
         {
           "url": "https://www.experianplc.com/investors/results-reports-presentations/results-presentations",
-          "checkedAt": "2026-11-20T21:33:45.903959+00:00",
+          "checkedAt": "2026-11-22T10:00:39.897856+00:00",
           "statusCode": 200,
           "reportLinksFound": 6,
           "childPages": [
@@ -14909,7 +15012,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:46.383075+00:00"
+      "updatedAt": "2026-11-22T10:00:40.547557+00:00"
     },
     "fandc-investment-trust": {
       "slug": "fandc-investment-trust",
@@ -14921,7 +15024,7 @@
       "sources": [
         {
           "url": "https://www.fandc.com/investors/financial-reports/",
-          "checkedAt": "2026-11-20T21:33:46.826261+00:00",
+          "checkedAt": "2026-11-22T10:00:41.662216+00:00",
           "statusCode": 404,
           "error": "Not Found"
         }
@@ -14937,7 +15040,7 @@
           "status": "verified_official_seed"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:46.826288+00:00"
+      "updatedAt": "2026-11-22T10:00:41.662237+00:00"
     },
     "fresnillo": {
       "slug": "fresnillo",
@@ -14949,7 +15052,7 @@
       "sources": [
         {
           "url": "https://www.fresnilloplc.com/investors/reports-and-presentations",
-          "checkedAt": "2026-11-20T21:33:46.831240+00:00",
+          "checkedAt": "2026-11-22T10:00:41.050241+00:00",
           "statusCode": 200,
           "reportLinksFound": 6
         }
@@ -14983,7 +15086,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:46.839452+00:00"
+      "updatedAt": "2026-11-22T10:00:41.056873+00:00"
     },
     "games-workshop": {
       "slug": "games-workshop",
@@ -14995,7 +15098,7 @@
       "sources": [
         {
           "url": "https://investor.games-workshop.com/annual-reports-and-half-year-results",
-          "checkedAt": "2026-11-20T21:33:46.099302+00:00",
+          "checkedAt": "2026-11-22T10:00:40.134223+00:00",
           "statusCode": 200,
           "reportLinksFound": 15
         }
@@ -15110,31 +15213,16 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:46.111846+00:00"
+      "updatedAt": "2026-11-22T10:00:40.144372+00:00"
     },
     "glencore": {
       "slug": "glencore",
       "companyName": "Glencore",
       "ticker": "GLEN.L",
       "domain": "glencore.com",
-      "status": "monitoring",
-      "latestReportYear": 2025,
-      "sources": [
-        {
-          "url": "https://www.glencore.com/investors/reports-results",
-          "checkedAt": "2026-11-20T21:33:46.608085+00:00",
-          "statusCode": 200,
-          "reportLinksFound": 24,
-          "childPages": [
-            {
-              "url": "https://www.glencore.com/.rest/api/v1/documents/static/260f5a22-bc55-4b00-bf09-205eb4943aaf/2138002658CPO9NBH955-2025-12-31_preview.xhtml",
-              "finalUrl": "https://www.glencore.com/.rest/api/v1/documents/static/260f5a22-bc55-4b00-bf09-205eb4943aaf/2138002658CPO9NBH955-2025-12-31_preview.xhtml",
-              "statusCode": 200,
-              "reportLinksFound": 0
-            }
-          ]
-        }
-      ],
+      "status": "monitor_error",
+      "latestReportYear": null,
+      "sources": [],
       "reports": [
         {
           "id": "f90786bda3f5941d",
@@ -15335,7 +15423,8 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:16.365590+00:00"
+      "error": "IncompleteRead: IncompleteRead(0 bytes read)",
+      "updatedAt": "2026-11-22T10:02:55.706983+00:00"
     },
     "gsk": {
       "slug": "gsk",
@@ -15347,7 +15436,7 @@
       "sources": [
         {
           "url": "https://www.gsk.com/en-gb/investors/financial-reports/corporate-reports-archive/",
-          "checkedAt": "2026-11-20T21:33:46.938891+00:00",
+          "checkedAt": "2026-11-22T10:00:40.550473+00:00",
           "statusCode": 200,
           "reportLinksFound": 110,
           "childPages": [
@@ -15794,7 +15883,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:47.823590+00:00"
+      "updatedAt": "2026-11-22T10:00:41.215698+00:00"
     },
     "haleon": {
       "slug": "haleon",
@@ -15806,7 +15895,7 @@
       "sources": [
         {
           "url": "https://www.haleon.com/investors/annual-report-2025",
-          "checkedAt": "2026-11-20T21:33:46.435162+00:00",
+          "checkedAt": "2026-11-22T10:00:40.323714+00:00",
           "statusCode": 200,
           "reportLinksFound": 0
         }
@@ -15822,7 +15911,7 @@
           "status": "verified_official_seed"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:46.435737+00:00"
+      "updatedAt": "2026-11-22T10:00:40.324174+00:00"
     },
     "halma": {
       "slug": "halma",
@@ -15834,7 +15923,7 @@
       "sources": [
         {
           "url": "https://www.halma.com/investors/reports-and-presentations",
-          "checkedAt": "2026-11-20T21:37:16.510583+00:00",
+          "checkedAt": "2026-11-22T10:00:41.491012+00:00",
           "statusCode": 200,
           "reportLinksFound": 7,
           "childPages": [
@@ -16208,7 +16297,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:17.865212+00:00"
+      "updatedAt": "2026-11-22T10:02:55.853795+00:00"
     },
     "hargreaves-lansdown": {
       "slug": "hargreaves-lansdown",
@@ -16554,7 +16643,7 @@
       "sources": [
         {
           "url": "https://www.hiscoxgroup.com/investors/results-and-presentations",
-          "checkedAt": "2026-11-20T21:33:46.575429+00:00",
+          "checkedAt": "2026-11-22T10:00:40.370870+00:00",
           "statusCode": 200,
           "reportLinksFound": 1
         }
@@ -16615,7 +16704,7 @@
           "verificationNote": "Verified issuer-linked full 214-page report; opening pages identify Hiscox Ltd and financial year 2021."
         }
       ],
-      "updatedAt": "2026-11-20T21:33:46.654363+00:00"
+      "updatedAt": "2026-11-22T10:00:40.408558+00:00"
     },
     "howden-joinery": {
       "slug": "howden-joinery",
@@ -16627,7 +16716,7 @@
       "sources": [
         {
           "url": "https://www.howdenjoinerygroupplc.com/investors/results-reports-and-presentations",
-          "checkedAt": "2026-11-20T21:37:16.379126+00:00",
+          "checkedAt": "2026-11-22T10:02:55.698734+00:00",
           "statusCode": null,
           "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)>"
         }
@@ -16823,7 +16912,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:16.379165+00:00"
+      "updatedAt": "2026-11-22T10:02:55.698771+00:00"
     },
     "hsbc": {
       "slug": "hsbc",
@@ -16835,7 +16924,7 @@
       "sources": [
         {
           "url": "https://www.hsbc.com/investors/results-and-announcements/annual-report",
-          "checkedAt": "2026-11-20T21:33:46.741536+00:00",
+          "checkedAt": "2026-11-22T10:00:40.715789+00:00",
           "statusCode": 200,
           "reportLinksFound": 6,
           "childPages": [
@@ -16985,7 +17074,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:47.409354+00:00"
+      "updatedAt": "2026-11-22T10:00:41.298035+00:00"
     },
     "ig-group": {
       "slug": "ig-group",
@@ -16997,7 +17086,7 @@
       "sources": [
         {
           "url": "https://www.iggroup.com/investors/results-reports-and-presentations",
-          "checkedAt": "2026-11-20T21:33:47.869822+00:00",
+          "checkedAt": "2026-11-22T10:00:41.557292+00:00",
           "statusCode": 200,
           "reportLinksFound": 34
         }
@@ -17175,7 +17264,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:47.902714+00:00"
+      "updatedAt": "2026-11-22T10:00:41.580271+00:00"
     },
     "imi": {
       "slug": "imi",
@@ -17187,7 +17276,7 @@
       "sources": [
         {
           "url": "https://www.imiplc.com/investors/results-reports-and-presentations/",
-          "checkedAt": "2026-11-20T21:33:47.373734+00:00",
+          "checkedAt": "2026-11-22T10:00:41.239963+00:00",
           "statusCode": 403,
           "error": "Forbidden"
         }
@@ -17221,7 +17310,7 @@
           "verificationNote": "Verified issuer-hosted full 224-page report; opening pages confirm IMI and financial year 2024."
         }
       ],
-      "updatedAt": "2026-11-20T21:33:47.373778+00:00"
+      "updatedAt": "2026-11-22T10:00:41.239992+00:00"
     },
     "imperial-brands": {
       "slug": "imperial-brands",
@@ -17233,7 +17322,7 @@
       "sources": [
         {
           "url": "https://www.imperialbrandsplc.com/investors/annual-report.html",
-          "checkedAt": "2026-11-20T21:33:47.129928+00:00",
+          "checkedAt": "2026-11-22T10:00:40.817796+00:00",
           "statusCode": 200,
           "reportLinksFound": 0
         }
@@ -17249,7 +17338,7 @@
           "status": "verified_official_seed"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:47.130523+00:00"
+      "updatedAt": "2026-11-22T10:00:40.818206+00:00"
     },
     "informa": {
       "slug": "informa",
@@ -17460,7 +17549,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:46.841662+00:00"
+      "updatedAt": "2026-11-22T10:00:40.853448+00:00"
     },
     "intercontinental-hotels": {
       "slug": "intercontinental-hotels",
@@ -17472,7 +17561,7 @@
       "sources": [
         {
           "url": "https://www.ihgplc.com/investors/results-reports-and-presentations",
-          "checkedAt": "2026-11-20T21:33:47.670878+00:00",
+          "checkedAt": "2026-11-22T10:00:41.335170+00:00",
           "statusCode": 200,
           "reportLinksFound": 4,
           "childPages": [
@@ -17775,7 +17864,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:16.509688+00:00"
+      "updatedAt": "2026-11-22T10:00:41.923561+00:00"
     },
     "intermediate-capital": {
       "slug": "intermediate-capital",
@@ -17787,15 +17876,15 @@
       "sources": [
         {
           "url": "https://www.icgam.com/investors/annual-report",
-          "checkedAt": "2026-11-20T21:33:47.959164+00:00",
+          "checkedAt": "2026-11-22T10:00:40.978334+00:00",
           "statusCode": 200,
           "reportLinksFound": 104,
           "childPages": [
             {
               "url": "https://www.icgam.com/wp-content/uploads/2026/06/7jjrt92iiq5v-ICG-Annual-Report-and-Accounts-2026.xhtml",
               "finalUrl": "https://www.icgam.com/wp-content/uploads/2026/06/7jjrt92iiq5v-ICG-Annual-Report-and-Accounts-2026.xhtml",
-              "statusCode": null,
-              "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)>"
+              "statusCode": 200,
+              "reportLinksFound": 399
             }
           ]
         }
@@ -17921,9 +18010,9 @@
         {
           "id": "445f0e41da1c1ddd",
           "year": 2026,
-          "title": "Download",
-          "url": "https://www.icgam.com/wp-content/uploads/2026/06/7jjrt92iiq5v-ICG-Annual-Report-and-Accounts-2026.xhtml",
-          "sourceUrl": "https://www.icgam.com/shareholders-and-debtholders/annual-reports/",
+          "title": "7jjrt92iiq5v-ICG-Annual-Report-and-Accounts-2026.xhtml",
+          "url": "https://www.icgam.com/wp-content/uploads/2026/06/7jjrt92iiq5v-ICG-Annual-Report-and-Accounts-2026.xhtml#pf6f",
+          "sourceUrl": "https://www.icgam.com/wp-content/uploads/2026/06/7jjrt92iiq5v-ICG-Annual-Report-and-Accounts-2026.xhtml",
           "detectedAt": "2026-08-05T23:43:57.093218+00:00",
           "status": "detected"
         },
@@ -18396,7 +18485,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:16.373839+00:00"
+      "updatedAt": "2026-11-22T10:02:55.692237+00:00"
     },
     "international-consolidated-airlines": {
       "slug": "international-consolidated-airlines",
@@ -18408,7 +18497,7 @@
       "sources": [
         {
           "url": "https://www.iairgroup.com/investors-and-shareholders/financial-reporting/annual-reports",
-          "checkedAt": "2026-11-20T21:33:47.441797+00:00",
+          "checkedAt": "2026-11-22T10:00:41.136722+00:00",
           "statusCode": 200,
           "reportLinksFound": 4,
           "childPages": [
@@ -18450,7 +18539,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:47.732088+00:00"
+      "updatedAt": "2026-11-22T10:00:41.410388+00:00"
     },
     "intertek": {
       "slug": "intertek",
@@ -18462,9 +18551,9 @@
       "sources": [
         {
           "url": "https://www.intertek.com/investors/results/",
-          "checkedAt": "2026-11-20T21:33:47.334656+00:00",
-          "statusCode": 404,
-          "error": "Not Found"
+          "checkedAt": "2026-11-22T10:00:41.005494+00:00",
+          "statusCode": 403,
+          "error": "Forbidden"
         }
       ],
       "reports": [
@@ -18478,7 +18567,7 @@
           "status": "verified_official_seed"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:47.334687+00:00"
+      "updatedAt": "2026-11-22T10:00:41.005525+00:00"
     },
     "investec": {
       "slug": "investec",
@@ -18490,7 +18579,7 @@
       "sources": [
         {
           "url": "https://www.investec.com/en_ae/welcome-to-investec/about-us/investor-relations/integrated-reporting.html",
-          "checkedAt": "2026-11-20T21:33:46.990742+00:00",
+          "checkedAt": "2026-11-22T10:00:40.911189+00:00",
           "statusCode": 403,
           "error": "Forbidden"
         }
@@ -19343,7 +19432,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:46.990810+00:00"
+      "updatedAt": "2026-11-22T10:00:40.911250+00:00"
     },
     "ithaca-energy": {
       "slug": "ithaca-energy",
@@ -19354,7 +19443,7 @@
       "latestReportYear": null,
       "sources": [],
       "reports": [],
-      "updatedAt": "2026-11-20T21:33:47.008769+00:00"
+      "updatedAt": "2026-11-22T10:00:40.912766+00:00"
     },
     "j-sainsbury": {
       "slug": "j-sainsbury",
@@ -19366,7 +19455,7 @@
       "sources": [
         {
           "url": "https://corporate.sainsburys.co.uk/investors/annual-report-2025/",
-          "checkedAt": "2026-11-20T21:37:17.393036+00:00",
+          "checkedAt": "2026-11-22T10:02:56.746379+00:00",
           "statusCode": 200,
           "reportLinksFound": 19,
           "childPages": [
@@ -19543,7 +19632,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:17.995157+00:00"
+      "updatedAt": "2026-11-22T10:02:57.204481+00:00"
     },
     "jd-sports-fashion": {
       "slug": "jd-sports-fashion",
@@ -19555,7 +19644,7 @@
       "sources": [
         {
           "url": "https://www.jdplc.com/investors",
-          "checkedAt": "2026-11-20T21:33:47.732915+00:00",
+          "checkedAt": "2026-11-22T10:02:55.707588+00:00",
           "statusCode": 200,
           "reportLinksFound": 2
         }
@@ -19590,7 +19679,7 @@
           "status": "verified_official_seed"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:47.769784+00:00"
+      "updatedAt": "2026-11-22T10:02:55.777534+00:00"
     },
     "kingfisher": {
       "slug": "kingfisher",
@@ -19602,7 +19691,7 @@
       "sources": [
         {
           "url": "https://www.kingfisher.com/investors",
-          "checkedAt": "2026-11-20T21:37:16.533253+00:00",
+          "checkedAt": "2026-11-22T10:02:55.712853+00:00",
           "statusCode": 200,
           "reportLinksFound": 4,
           "childPages": [
@@ -19644,7 +19733,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:17.620736+00:00"
+      "updatedAt": "2026-11-22T10:02:56.937044+00:00"
     },
     "land-securities": {
       "slug": "land-securities",
@@ -19656,7 +19745,7 @@
       "sources": [
         {
           "url": "https://www.landsec.com/investors",
-          "checkedAt": "2026-11-20T21:37:16.648555+00:00",
+          "checkedAt": "2026-11-22T10:02:55.988867+00:00",
           "statusCode": 200,
           "reportLinksFound": 5,
           "childPages": [
@@ -19725,23 +19814,16 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:17.513730+00:00"
+      "updatedAt": "2026-11-22T10:02:57.137288+00:00"
     },
     "legal-and-general": {
       "slug": "legal-and-general",
       "companyName": "Legal & General Group PLC",
       "ticker": "LGEN.L",
       "domain": "legalandgeneral.com",
-      "status": "monitoring",
-      "latestReportYear": 2025,
-      "sources": [
-        {
-          "url": "https://group.legalandgeneral.com/en/investors/results-reports-and-presentations",
-          "checkedAt": "2026-11-20T21:37:16.781703+00:00",
-          "statusCode": 200,
-          "reportLinksFound": 0
-        }
-      ],
+      "status": "monitor_error",
+      "latestReportYear": null,
+      "sources": [],
       "reports": [
         {
           "id": "757f479a514cf741",
@@ -19753,7 +19835,8 @@
           "status": "verified_official_seed"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:16.870862+00:00"
+      "error": "RemoteDisconnected: Remote end closed connection without response",
+      "updatedAt": "2026-11-22T10:02:55.696933+00:00"
     },
     "lion-finance-group": {
       "slug": "lion-finance-group",
@@ -20035,16 +20118,23 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:44.864849+00:00"
+      "updatedAt": "2026-11-22T10:00:38.818864+00:00"
     },
     "lloyds": {
       "slug": "lloyds",
       "companyName": "Lloyds Banking Group",
       "ticker": "LLOY.L",
       "domain": "lloydsbankinggroup.com",
-      "status": "monitor_error",
-      "latestReportYear": null,
-      "sources": [],
+      "status": "monitoring",
+      "latestReportYear": 2025,
+      "sources": [
+        {
+          "url": "https://www.lloydsbankinggroup.com/investors/annual-report/annual-report-archive.html",
+          "checkedAt": "2026-11-22T10:00:42.112339+00:00",
+          "statusCode": 200,
+          "reportLinksFound": 0
+        }
+      ],
       "reports": [
         {
           "id": "cdd5222812bdd970",
@@ -22225,8 +22315,7 @@
           "status": "detected"
         }
       ],
-      "error": "RemoteDisconnected: Remote end closed connection without response",
-      "updatedAt": "2026-11-20T21:37:16.382425+00:00"
+      "updatedAt": "2026-11-22T10:00:42.114157+00:00"
     },
     "londonmetric-property": {
       "slug": "londonmetric-property",
@@ -22238,7 +22327,7 @@
       "sources": [
         {
           "url": "https://www.londonmetric.com/investors/reports-and-presentations",
-          "checkedAt": "2026-11-20T21:33:47.917274+00:00",
+          "checkedAt": "2026-11-22T10:00:41.990953+00:00",
           "statusCode": 200,
           "reportLinksFound": 14,
           "childPages": [
@@ -22271,7 +22360,7 @@
           "status": "verified_official_seed"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:16.483830+00:00"
+      "updatedAt": "2026-11-22T10:02:55.841318+00:00"
     },
     "lseg": {
       "slug": "lseg",
@@ -22283,7 +22372,7 @@
       "sources": [
         {
           "url": "https://www.lseg.com/investor-relations/annual-reports",
-          "checkedAt": "2026-11-20T21:37:16.543617+00:00",
+          "checkedAt": "2026-11-22T10:02:55.879564+00:00",
           "statusCode": 200,
           "reportLinksFound": 1,
           "childPages": [
@@ -22730,7 +22819,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:17.456934+00:00"
+      "updatedAt": "2026-11-22T10:02:56.828351+00:00"
     },
     "mandg": {
       "slug": "mandg",
@@ -22769,7 +22858,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:47.777445+00:00"
+      "updatedAt": "2026-11-22T10:00:41.703781+00:00"
     },
     "marks-and-spencer": {
       "slug": "marks-and-spencer",
@@ -22781,7 +22870,7 @@
       "sources": [
         {
           "url": "https://corporate.marksandspencer.com/investors/reports-results-and-presentations",
-          "checkedAt": "2026-11-20T21:37:16.899168+00:00",
+          "checkedAt": "2026-11-22T10:02:55.728187+00:00",
           "statusCode": 200,
           "reportLinksFound": 7,
           "childPages": [
@@ -23084,7 +23173,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:17.208139+00:00"
+      "updatedAt": "2026-11-22T10:02:56.028683+00:00"
     },
     "melrose-industries": {
       "slug": "melrose-industries",
@@ -23096,7 +23185,7 @@
       "sources": [
         {
           "url": "https://www.melroseplc.net/investors/results-reports-and-presentations/",
-          "checkedAt": "2026-11-20T21:33:47.901954+00:00",
+          "checkedAt": "2026-11-22T10:00:41.876801+00:00",
           "statusCode": 403,
           "error": "Forbidden"
         }
@@ -23112,7 +23201,7 @@
           "status": "verified_official_seed"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:47.901982+00:00"
+      "updatedAt": "2026-11-22T10:00:41.876834+00:00"
     },
     "metlen-energy-metals": {
       "slug": "metlen-energy-metals",
@@ -23331,7 +23420,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:47.826238+00:00"
+      "updatedAt": "2026-11-22T10:00:41.727194+00:00"
     },
     "mondi": {
       "slug": "mondi",
@@ -23389,7 +23478,7 @@
       "sources": [
         {
           "url": "https://www.nationalgrid.com/investors",
-          "checkedAt": "2026-11-20T21:33:48.100245+00:00",
+          "checkedAt": "2026-11-22T10:00:41.957360+00:00",
           "statusCode": 403,
           "error": "Forbidden"
         }
@@ -23639,7 +23728,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:48.100293+00:00"
+      "updatedAt": "2026-11-22T10:00:41.957405+00:00"
     },
     "natwest": {
       "slug": "natwest",
@@ -23759,7 +23848,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:47.905277+00:00"
+      "updatedAt": "2026-11-22T10:00:41.884154+00:00"
     },
     "next": {
       "slug": "next",
@@ -23771,7 +23860,7 @@
       "sources": [
         {
           "url": "https://www.nextplc.co.uk/investors",
-          "checkedAt": "2026-11-20T21:37:16.427808+00:00",
+          "checkedAt": "2026-11-22T10:02:55.832264+00:00",
           "statusCode": 200,
           "reportLinksFound": 2,
           "childPages": [
@@ -23975,7 +24064,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:17.344155+00:00"
+      "updatedAt": "2026-11-22T10:02:56.220861+00:00"
     },
     "pearson": {
       "slug": "pearson",
@@ -23987,7 +24076,7 @@
       "sources": [
         {
           "url": "https://plc.pearson.com/en-GB/investors/results-reports-presentations",
-          "checkedAt": "2026-11-20T21:37:17.317290+00:00",
+          "checkedAt": "2026-11-22T10:02:56.309603+00:00",
           "statusCode": 404,
           "error": "Not Found"
         }
@@ -24012,23 +24101,16 @@
           "status": "verified_official_seed"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:17.317316+00:00"
+      "updatedAt": "2026-11-22T10:02:56.309635+00:00"
     },
     "pershing-square": {
       "slug": "pershing-square",
       "companyName": "Pershing Square Holdings Ltd",
       "ticker": "PSH.L",
       "domain": "pershingsquareholdings.com",
-      "status": "monitoring",
-      "latestReportYear": 2025,
-      "sources": [
-        {
-          "url": "https://pershingsquareholdings.com/company-reports/financial-statements/",
-          "checkedAt": "2026-11-20T21:37:16.606290+00:00",
-          "statusCode": 403,
-          "error": "Forbidden"
-        }
-      ],
+      "status": "monitor_error",
+      "latestReportYear": null,
+      "sources": [],
       "reports": [
         {
           "id": "dbb8629b3e3e514c",
@@ -24040,7 +24122,8 @@
           "status": "verified_official_seed"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:16.606317+00:00"
+      "error": "RemoteDisconnected: Remote end closed connection without response",
+      "updatedAt": "2026-11-22T10:02:55.680494+00:00"
     },
     "persimmon": {
       "slug": "persimmon",
@@ -24294,7 +24377,7 @@
       "sources": [
         {
           "url": "https://www.standardlifeplc.com/investors/results-reports-and-presentations",
-          "checkedAt": "2026-11-20T21:37:17.018065+00:00",
+          "checkedAt": "2026-11-22T10:02:56.093652+00:00",
           "statusCode": 200,
           "reportLinksFound": 26,
           "childPages": [
@@ -24453,7 +24536,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:17.316243+00:00"
+      "updatedAt": "2026-11-22T10:02:56.331747+00:00"
     },
     "polar-capital-technology-trust": {
       "slug": "polar-capital-technology-trust",
@@ -24465,7 +24548,7 @@
       "sources": [
         {
           "url": "https://www.pctannualhighlights.co.uk/Financial-Highlights/",
-          "checkedAt": "2026-11-20T21:37:16.392702+00:00",
+          "checkedAt": "2026-11-22T10:02:55.680585+00:00",
           "statusCode": 200,
           "reportLinksFound": 6
         }
@@ -24490,7 +24573,7 @@
           "status": "verified_official_seed"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:16.401274+00:00"
+      "updatedAt": "2026-11-22T10:02:55.687318+00:00"
     },
     "prudential": {
       "slug": "prudential",
@@ -24502,7 +24585,7 @@
       "sources": [
         {
           "url": "https://www.prudentialplc.com/en/investors/results-reports-and-events/annual-reports",
-          "checkedAt": "2026-11-20T21:37:18.313581+00:00",
+          "checkedAt": "2026-11-22T10:02:55.960494+00:00",
           "statusCode": 404,
           "error": "Not Found"
         }
@@ -24518,7 +24601,7 @@
           "status": "verified_official_seed"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:18.313609+00:00"
+      "updatedAt": "2026-11-22T10:02:55.960538+00:00"
     },
     "reckitt-benckiser": {
       "slug": "reckitt-benckiser",
@@ -24530,7 +24613,7 @@
       "sources": [
         {
           "url": "https://www.reckitt.com/investors",
-          "checkedAt": "2026-11-20T21:37:16.977487+00:00",
+          "checkedAt": "2026-11-22T10:02:56.051596+00:00",
           "statusCode": 200,
           "reportLinksFound": 2,
           "childPages": [
@@ -24698,7 +24781,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:17.554408+00:00"
+      "updatedAt": "2026-11-22T10:02:56.265875+00:00"
     },
     "relx": {
       "slug": "relx",
@@ -24710,7 +24793,7 @@
       "sources": [
         {
           "url": "https://www.relx.com/investors/annual-reports",
-          "checkedAt": "2026-11-20T21:37:17.996099+00:00",
+          "checkedAt": "2026-11-22T10:02:56.501763+00:00",
           "statusCode": 200,
           "reportLinksFound": 36,
           "childPages": [
@@ -25418,7 +25501,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:18.868036+00:00"
+      "updatedAt": "2026-11-22T10:02:56.905774+00:00"
     },
     "rentokil-initial": {
       "slug": "rentokil-initial",
@@ -25430,7 +25513,7 @@
       "sources": [
         {
           "url": "https://www.rentokil-initial.com/investors/annual-reports",
-          "checkedAt": "2026-11-20T21:37:17.345618+00:00",
+          "checkedAt": "2026-11-22T10:02:56.851562+00:00",
           "statusCode": 200,
           "reportLinksFound": 42,
           "childPages": [
@@ -25841,7 +25924,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:18.224454+00:00"
+      "updatedAt": "2026-11-22T10:02:57.899716+00:00"
     },
     "rightmove": {
       "slug": "rightmove",
@@ -25899,7 +25982,7 @@
       "sources": [
         {
           "url": "https://www.riotinto.com/invest/reports",
-          "checkedAt": "2026-11-20T21:37:18.335083+00:00",
+          "checkedAt": "2026-11-22T10:02:57.386171+00:00",
           "statusCode": 200,
           "reportLinksFound": 5,
           "childPages": [
@@ -26184,7 +26267,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:20.567836+00:00"
+      "updatedAt": "2026-11-22T10:02:58.775395+00:00"
     },
     "rolls-royce": {
       "slug": "rolls-royce",
@@ -26196,7 +26279,7 @@
       "sources": [
         {
           "url": "https://www.rolls-royce.com/investors/results-reports-and-presentations",
-          "checkedAt": "2026-11-20T21:37:17.718104+00:00",
+          "checkedAt": "2026-11-22T10:02:56.414695+00:00",
           "statusCode": 200,
           "reportLinksFound": 3,
           "childPages": [
@@ -26517,7 +26600,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:18.662489+00:00"
+      "updatedAt": "2026-11-22T10:02:57.121656+00:00"
     },
     "sage": {
       "slug": "sage",
@@ -26529,7 +26612,7 @@
       "sources": [
         {
           "url": "https://www.sage.com/en-gb/company/investors/results-reports-and-presentations/",
-          "checkedAt": "2026-11-20T21:37:16.802413+00:00",
+          "checkedAt": "2026-11-22T10:02:55.855903+00:00",
           "statusCode": 403,
           "error": "Forbidden"
         }
@@ -26554,7 +26637,7 @@
           "status": "verified_official_seed"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:16.802447+00:00"
+      "updatedAt": "2026-11-22T10:02:55.855924+00:00"
     },
     "schroders": {
       "slug": "schroders",
@@ -26648,7 +26731,7 @@
       "sources": [
         {
           "url": "https://www.scottishmortgage.com/en/uk/individual-investors/literature",
-          "checkedAt": "2026-11-20T21:37:17.384791+00:00",
+          "checkedAt": "2026-11-22T10:02:56.492287+00:00",
           "statusCode": 404,
           "error": "Not Found"
         }
@@ -26664,7 +26747,7 @@
           "status": "verified_official_seed"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:17.384820+00:00"
+      "updatedAt": "2026-11-22T10:02:56.492318+00:00"
     },
     "segro": {
       "slug": "segro",
@@ -26676,7 +26759,7 @@
       "sources": [
         {
           "url": "https://www.segro.com/investors",
-          "checkedAt": "2026-11-20T21:37:17.805311+00:00",
+          "checkedAt": "2026-11-22T10:02:57.148740+00:00",
           "statusCode": 200,
           "reportLinksFound": 2,
           "childPages": [
@@ -26718,7 +26801,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:18.816012+00:00"
+      "updatedAt": "2026-11-22T10:02:58.360948+00:00"
     },
     "severn-trent": {
       "slug": "severn-trent",
@@ -26730,7 +26813,7 @@
       "sources": [
         {
           "url": "https://www.severntrent.com/investors/results-reports-and-presentations/reports-and-presentations/",
-          "checkedAt": "2026-11-20T21:37:18.230114+00:00",
+          "checkedAt": "2026-11-22T10:02:57.093787+00:00",
           "statusCode": 200,
           "reportLinksFound": 27,
           "childPages": [
@@ -26907,7 +26990,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:18.917465+00:00"
+      "updatedAt": "2026-11-22T10:02:57.784361+00:00"
     },
     "shell": {
       "slug": "shell",
@@ -26919,7 +27002,7 @@
       "sources": [
         {
           "url": "https://www.shell.com/investors/results-and-reporting/annual-publications.html",
-          "checkedAt": "2026-11-20T21:37:17.385914+00:00",
+          "checkedAt": "2026-11-22T10:02:56.232651+00:00",
           "statusCode": 404,
           "error": "Not Found"
         }
@@ -26944,7 +27027,7 @@
           "status": "official_archive_discovered"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:17.385944+00:00"
+      "updatedAt": "2026-11-22T10:02:56.232675+00:00"
     },
     "smith-and-nephew": {
       "slug": "smith-and-nephew",
@@ -26956,7 +27039,7 @@
       "sources": [
         {
           "url": "https://www.smith-nephew.com/en/investors/results-reports-and-presentations",
-          "checkedAt": "2026-11-20T21:37:18.467082+00:00",
+          "checkedAt": "2026-11-22T10:02:57.632691+00:00",
           "statusCode": 200,
           "reportLinksFound": 0
         }
@@ -26972,7 +27055,7 @@
           "status": "verified_official_seed"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:18.467714+00:00"
+      "updatedAt": "2026-11-22T10:02:57.633273+00:00"
     },
     "smiths": {
       "slug": "smiths",
@@ -26984,7 +27067,7 @@
       "sources": [
         {
           "url": "https://www.smiths.com/investors/results-reports-and-presentations",
-          "checkedAt": "2026-11-20T21:37:17.563967+00:00",
+          "checkedAt": "2026-11-22T10:02:56.938146+00:00",
           "statusCode": 200,
           "reportLinksFound": 6,
           "childPages": [
@@ -27053,7 +27136,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:17.972814+00:00"
+      "updatedAt": "2026-11-22T10:02:57.572498+00:00"
     },
     "spirax": {
       "slug": "spirax",
@@ -27065,7 +27148,7 @@
       "sources": [
         {
           "url": "https://www.spiraxgroup.com/investors/results-reports-and-presentations",
-          "checkedAt": "2026-11-20T21:37:18.663206+00:00",
+          "checkedAt": "2026-11-22T10:02:57.335373+00:00",
           "statusCode": 200,
           "reportLinksFound": 36,
           "childPages": [
@@ -28547,7 +28630,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:19.584566+00:00"
+      "updatedAt": "2026-11-22T10:02:58.619370+00:00"
     },
     "sse": {
       "slug": "sse",
@@ -28559,17 +28642,9 @@
       "sources": [
         {
           "url": "https://www.sse.com/investors",
-          "checkedAt": "2026-11-20T21:37:18.007680+00:00",
-          "statusCode": 200,
-          "reportLinksFound": 3,
-          "childPages": [
-            {
-              "url": "https://www.sse.com/investors/annual-report-2026/",
-              "finalUrl": "https://www.sse.com/investors/annual-report-2026/",
-              "statusCode": 200,
-              "reportLinksFound": 15
-            }
-          ]
+          "checkedAt": "2026-11-22T10:02:56.184762+00:00",
+          "statusCode": 403,
+          "error": "Forbidden"
         }
       ],
       "reports": [
@@ -28637,7 +28712,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:18.786218+00:00"
+      "updatedAt": "2026-11-22T10:02:56.184786+00:00"
     },
     "st-jamess-place": {
       "slug": "st-jamess-place",
@@ -28649,7 +28724,7 @@
       "sources": [
         {
           "url": "https://www.sjp.co.uk/about-us/investor-relations/results-reports-and-presentations",
-          "checkedAt": "2026-11-20T21:37:18.007251+00:00",
+          "checkedAt": "2026-11-22T10:02:56.888179+00:00",
           "statusCode": 404,
           "error": "Not Found"
         }
@@ -28665,7 +28740,7 @@
           "status": "verified_official_seed"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:18.007279+00:00"
+      "updatedAt": "2026-11-22T10:02:56.888207+00:00"
     },
     "standard-chartered": {
       "slug": "standard-chartered",
@@ -28794,7 +28869,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:17.321329+00:00"
+      "updatedAt": "2026-11-22T10:02:56.196983+00:00"
     },
     "taylor-wimpey": {
       "slug": "taylor-wimpey",
@@ -28969,7 +29044,7 @@
       "sources": [
         {
           "url": "https://www.tescoplc.com/investors/reports-results-and-presentations/annual-report-2025",
-          "checkedAt": "2026-11-20T21:37:17.639830+00:00",
+          "checkedAt": "2026-11-22T10:02:56.371737+00:00",
           "statusCode": 403,
           "error": "Forbidden"
         }
@@ -29012,7 +29087,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:17.639856+00:00"
+      "updatedAt": "2026-11-22T10:02:56.371764+00:00"
     },
     "tritax-big-box": {
       "slug": "tritax-big-box",
@@ -29024,7 +29099,7 @@
       "sources": [
         {
           "url": "https://www.tritaxbigbox.co.uk/investors/shareholder-information/",
-          "checkedAt": "2026-11-20T21:33:45.483558+00:00",
+          "checkedAt": "2026-11-22T10:00:39.518551+00:00",
           "statusCode": 200,
           "reportLinksFound": 12
         }
@@ -29184,7 +29259,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:33:45.539901+00:00"
+      "updatedAt": "2026-11-22T10:00:39.583139+00:00"
     },
     "unilever": {
       "slug": "unilever",
@@ -29196,7 +29271,7 @@
       "sources": [
         {
           "url": "https://www.unilever.com/investors/annual-report-and-accounts/",
-          "checkedAt": "2026-11-20T21:37:17.610330+00:00",
+          "checkedAt": "2026-11-22T10:02:56.365719+00:00",
           "statusCode": 403,
           "error": "Forbidden"
         }
@@ -29221,7 +29296,7 @@
           "status": "official_archive_discovered"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:17.610361+00:00"
+      "updatedAt": "2026-11-22T10:02:56.365756+00:00"
     },
     "unite": {
       "slug": "unite",
@@ -29368,7 +29443,7 @@
       "sources": [
         {
           "url": "https://www.unitedutilities.com/corporate/investors/Results-and-presentations/company-reports/",
-          "checkedAt": "2026-11-20T21:37:18.389710+00:00",
+          "checkedAt": "2026-11-22T10:02:56.961190+00:00",
           "statusCode": 200,
           "reportLinksFound": 63,
           "childPages": [
@@ -29725,7 +29800,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:18.892944+00:00"
+      "updatedAt": "2026-11-22T10:02:57.540695+00:00"
     },
     "vodafone": {
       "slug": "vodafone",
@@ -29737,7 +29812,7 @@
       "sources": [
         {
           "url": "https://www.vodafone.com/investors/performance-and-reports/annual-reporting",
-          "checkedAt": "2026-11-20T21:37:18.131427+00:00",
+          "checkedAt": "2026-11-22T10:02:56.649637+00:00",
           "statusCode": 200,
           "reportLinksFound": 34,
           "childPages": [
@@ -29986,7 +30061,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:18.603583+00:00"
+      "updatedAt": "2026-11-22T10:02:57.105727+00:00"
     },
     "weir": {
       "slug": "weir",
@@ -29998,7 +30073,7 @@
       "sources": [
         {
           "url": "https://www.global.weir/investors",
-          "checkedAt": "2026-11-20T21:37:18.485819+00:00",
+          "checkedAt": "2026-11-22T10:02:56.987255+00:00",
           "statusCode": 200,
           "reportLinksFound": 1
         }
@@ -30014,7 +30089,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:18.492930+00:00"
+      "updatedAt": "2026-11-22T10:02:56.998248+00:00"
     },
     "whitbread": {
       "slug": "whitbread",
@@ -30026,7 +30101,7 @@
       "sources": [
         {
           "url": "https://www.whitbread.co.uk/investors/results-reports-and-presentations",
-          "checkedAt": "2026-11-20T21:37:22.443063+00:00",
+          "checkedAt": "2026-11-22T10:03:02.044554+00:00",
           "statusCode": 200,
           "reportLinksFound": 19,
           "childPages": [
@@ -30878,7 +30953,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:24.980323+00:00"
+      "updatedAt": "2026-11-22T10:03:03.358134+00:00"
     },
     "wpp": {
       "slug": "wpp",
@@ -30890,7 +30965,7 @@
       "sources": [
         {
           "url": "https://www.wpp.com/investors/annual-reports",
-          "checkedAt": "2026-11-20T21:37:18.087649+00:00",
+          "checkedAt": "2026-11-22T10:02:56.829453+00:00",
           "statusCode": 200,
           "reportLinksFound": 9,
           "childPages": [
@@ -31013,7 +31088,7 @@
           "status": "detected"
         }
       ],
-      "updatedAt": "2026-11-20T21:37:18.534768+00:00"
+      "updatedAt": "2026-11-22T10:02:57.226153+00:00"
     }
   }
 }
