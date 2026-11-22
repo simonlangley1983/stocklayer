@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-22T02:47:44.375966Z",
+  "generatedAt": "2026-11-22T03:20:30.912874Z",
   "company": {
     "companyName": "AstraZeneca",
     "ticker": "AZN.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-05",
-    "periodEnd": "2026-11-20",
-    "observationCount": 135,
-    "scoredDayCount": 134,
-    "latestScore": 61.2,
-    "latestScoreDate": "2026-11-20",
+    "periodEnd": "2026-11-21",
+    "observationCount": 136,
+    "scoredDayCount": 135,
+    "latestScore": 66.0,
+    "latestScoreDate": "2026-11-21",
     "series": [
       {
         "date": "2026-07-05",
@@ -1240,6 +1240,15 @@
         "sourceCount": 11,
         "confidence": 86.2,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-11-21",
+        "dailyScore": 66.0,
+        "rollingScore": 60.7,
+        "storyCount": 6,
+        "sourceCount": 5,
+        "confidence": 81.9,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1914,10 +1923,10 @@
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 63.3,
+        "score": 63.4,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 85 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 86 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -2104,6 +2113,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "ff9d832da82a745d7a63",
+      "type": "clinical",
+      "title": "AstraZeneca stock: Imfinzi wins US approval in bladder cancer treatment",
+      "date": "2026-11-21",
+      "status": "pending_review",
+      "reviewDate": "2027-05-20",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOS3J4RGdFTW9vUVlucFhTUXB4Q3BJdl9JTWNZelNuNjZ1aEE5ZU9XZk9Vcm5PWjBxSEhmRERuNVoxT01XZ3NZQ3RBTmpSOWp4c0xTS2x2aW15UmlvUzRXbFcxQ0xIRnZTUjc1N1QybFlhMXBKZ21rcTd1UDVUUjlJdTZUQnJzbkNybXBsc2s3Z09fNVl3QjNIMHZRclNEOE43elVrbkkwOGwxMGl1c2JpVWxoM2pLeC1yOE05RW9vWnlYcWJwMWVOcVNibjVjZw?oc=5",
+          "publisher": "ad-hoc-news.de",
+          "date": "2026-11-21"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "5845e6df29fbbdb8ab89",
       "type": "clinical",

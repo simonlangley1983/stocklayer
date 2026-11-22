@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-22T02:47:44.375966Z",
+  "generatedAt": "2026-11-22T03:20:30.912874Z",
   "company": {
     "companyName": "easyJet PLC",
     "ticker": "EZJ.L",
@@ -15,11 +15,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-11-20",
-    "observationCount": 104,
-    "scoredDayCount": 97,
-    "latestScore": 32.1,
-    "latestScoreDate": "2026-11-20",
+    "periodEnd": "2026-11-21",
+    "observationCount": 105,
+    "scoredDayCount": 98,
+    "latestScore": 33.2,
+    "latestScoreDate": "2026-11-21",
     "series": [
       {
         "date": "2026-06-30",
@@ -956,6 +956,15 @@
         "sourceCount": 11,
         "confidence": 90.3,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-11-21",
+        "dailyScore": 33.2,
+        "rollingScore": 40.3,
+        "storyCount": 13,
+        "sourceCount": 10,
+        "confidence": 87.4,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1550,17 +1559,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 46.0,
+    "score": 45.8,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 45.1,
+        "score": 44.6,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 52 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 53 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1738,6 +1747,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "62c37e75728408b94b55",
+      "type": "acquisition",
+      "title": "EasyJet expected to unveil profit fall ahead of £5.7 billion takeover",
+      "date": "2026-11-21",
+      "status": "pending_review",
+      "reviewDate": "2027-05-20",
+      "direction": "Very negative",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxORTU4ZGlIMzBZa2JQZVFtRkt1TGdSbW1qclNRUFVXdzhZQlZFdTlGMHdOTVplekFDTDVDRGZUeHZWUDFfT0cwT2pPdlpTT0dIT0VTVWk1M3pXZUVYSnBNU0lUV1ZSNURWQ2RIVEoyX1lRMnhUQkNrdTBoVFRYV21mUnExSUg2allzWHBDeVBvdjl3ZV9OeV9oVGxaUnBnSk9wc2FRT2lvZm1jRklQc3dHZTEybU1hUWda?oc=5",
+          "publisher": "standard.co.uk",
+          "date": "2026-11-21"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "8a2cbbe4ea31504c0ea9",
       "type": "acquisition",

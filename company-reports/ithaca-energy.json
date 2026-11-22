@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-22T02:47:44.375966Z",
+  "generatedAt": "2026-11-22T03:20:30.912874Z",
   "company": {
     "companyName": "Ithaca Energy PLC",
     "ticker": "ITH.L",
@@ -15,11 +15,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-10-11",
-    "periodEnd": "2026-11-20",
-    "observationCount": 41,
-    "scoredDayCount": 27,
-    "latestScore": 56.2,
-    "latestScoreDate": "2026-11-20",
+    "periodEnd": "2026-11-21",
+    "observationCount": 42,
+    "scoredDayCount": 28,
+    "latestScore": 43.0,
+    "latestScoreDate": "2026-11-21",
     "series": [
       {
         "date": "2026-10-11",
@@ -389,6 +389,15 @@
         "sourceCount": 4,
         "confidence": 64.3,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-11-21",
+        "dailyScore": 43.0,
+        "rollingScore": 50.8,
+        "storyCount": 2,
+        "sourceCount": 2,
+        "confidence": 35.4,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -503,17 +512,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 50.8,
+    "score": 50.4,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 50.8,
+        "score": 50.4,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 27 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 28 scored days in the latest 90 calendar days; 30-day half-life."
       }
     ],
     "methodology": "Overall confidence combines press sentiment (40%), annual-report tone (35%) and emerging themes (25%). Missing signals are excluded and lower-quality evidence pulls the result towards neutral rather than creating a positive score. Where lexical tone is unavailable, annual-report direction is represented once through emerging themes to prevent double counting."
