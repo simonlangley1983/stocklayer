@@ -9423,37 +9423,51 @@
     },
     {
       "date": "2026-11-21",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 53.5,
-      "confidence": 0.0,
+      "dailyScore": 51.5,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 53.3,
+      "confidence": 15.5,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 3,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
+      "candidateCount": 4,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
       "positiveStoryCount": 0,
-      "neutralStoryCount": 0,
+      "neutralStoryCount": 1,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
         "missing_company_alias": 3
       },
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "8981333ae29dd5b1",
+          "storyClusterId": "story-001",
+          "title": "The best Marks & Spencer wines for Christmas 2026",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPdnhmUHhBN3pLaXNnV1hqMlFUY05RdXJlZ0FncXVQdVhWaFRnR2RiUUtEUEtXT3QxMFFaODdSLS1YUEs2dzAySzlxVE95SFpvQXVfQkhwVlJEdzdfbjZNcVp0N3lJVW9FX3NKNjJjTFNYcl9idGZ3WWk0MTZJaGd2dm95allBdU9SaDdDM1B0eFM0eVlFUUpxZnFFRDJVX2tadnZ5MEhILTZ4Vk1WblJHald3?oc=5",
+          "source": "thetimes.com",
+          "publishedAt": "2026-11-21T22:00:00Z",
+          "polarity": 0.0893,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.5",
+          "evidenceArticleIds": [
+            "8981333ae29dd5b1"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": -0.1
     }
   ]
 }
