@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-24T01:10:01.551052Z",
+  "generatedAt": "2026-11-24T03:25:47.248497Z",
   "company": {
     "companyName": "Barclays",
     "ticker": "BARC.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-06-30",
-    "periodEnd": "2026-11-22",
-    "observationCount": 129,
-    "scoredDayCount": 78,
-    "latestScore": 50.2,
-    "latestScoreDate": "2026-11-22",
+    "periodEnd": "2026-11-23",
+    "observationCount": 130,
+    "scoredDayCount": 79,
+    "latestScore": 56.5,
+    "latestScoreDate": "2026-11-23",
     "series": [
       {
         "date": "2026-06-30",
@@ -1186,19 +1186,18 @@
         "sourceCount": 1,
         "confidence": 15.6,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-11-23",
+        "dailyScore": 56.5,
+        "rollingScore": 50.6,
+        "storyCount": 4,
+        "sourceCount": 4,
+        "confidence": 60.3,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
-      {
-        "date": "2026-07-27",
-        "type": "press_story",
-        "title": "Palestine Action activists who vandalised Barclays bank could be jailed as terrorists",
-        "source": "independent.co.uk",
-        "url": "https://www.independent.co.uk/news/uk/home-news/palestine-action-barclays-bank-burnley-terrorists-b3022002.html",
-        "direction": "Very negative",
-        "detail": null,
-        "significance": 0.818
-      },
       {
         "date": "2026-08-17",
         "type": "press_story",
@@ -1288,6 +1287,16 @@
         "direction": "Very negative",
         "detail": null,
         "significance": 0.962
+      },
+      {
+        "date": "2026-11-23",
+        "type": "press_story",
+        "title": "Barclays PLC (BCS) Shares Surge 4.4% -- What GF Score of 79 Tells Investors",
+        "source": "gurufocus.com",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNWVNaWUdrS1QwZHBCOTNXRU5jZGVlakxEZkJNUGJkel94bGdVc2xlclNUeHdzNXFOTC1KMTRQTEJTV3RPMlRtNF9ZZ3hONjRLWmZDSWZsLVg1VE1lU1J1NVByQVh4Q1I4RFVZYmJGN3BTQ243My15RTg0QWNGV0JOU3U4azY0V2xHRXU3dnpHdnpSSFRURVd1N2ZJaXhoRDQtaURwS3FDRS1qZGs?oc=5",
+        "direction": "Very positive",
+        "detail": null,
+        "significance": 0.957
       }
     ]
   },
@@ -1853,17 +1862,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 63.2,
+    "score": 63.3,
     "label": "Positive",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 49.3,
+        "score": 49.6,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 45 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 46 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "themes",
@@ -1939,16 +1948,6 @@
       "direction": null,
       "detail": "Report-year marker; the exact publication date is not available in the source feed.",
       "approximateDate": true
-    },
-    {
-      "date": "2026-07-27",
-      "type": "press_story",
-      "title": "Palestine Action activists who vandalised Barclays bank could be jailed as terrorists",
-      "source": "independent.co.uk",
-      "url": "https://www.independent.co.uk/news/uk/home-news/palestine-action-barclays-bank-burnley-terrorists-b3022002.html",
-      "direction": "Very negative",
-      "detail": null,
-      "significance": 0.818
     },
     {
       "date": "2026-08-17",
@@ -2039,6 +2038,16 @@
       "direction": "Very negative",
       "detail": null,
       "significance": 0.962
+    },
+    {
+      "date": "2026-11-23",
+      "type": "press_story",
+      "title": "Barclays PLC (BCS) Shares Surge 4.4% -- What GF Score of 79 Tells Investors",
+      "source": "gurufocus.com",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNWVNaWUdrS1QwZHBCOTNXRU5jZGVlakxEZkJNUGJkel94bGdVc2xlclNUeHdzNXFOTC1KMTRQTEJTV3RPMlRtNF9ZZ3hONjRLWmZDSWZsLVg1VE1lU1J1NVByQVh4Q1I4RFVZYmJGN3BTQ243My15RTg0QWNGV0JOU3U4azY0V2xHRXU3dnpHdnpSSFRURVd1N2ZJaXhoRDQtaURwS3FDRS1qZGs?oc=5",
+      "direction": "Very positive",
+      "detail": null,
+      "significance": 0.957
     }
   ],
   "persistentEvents": []
