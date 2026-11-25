@@ -6340,6 +6340,113 @@
         }
       ],
       "changeFromPreviousScoredDay": 15.0
+    },
+    {
+      "date": "2026-11-24",
+      "dailyScore": 42.9,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 50.9,
+      "confidence": 67.5,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 8,
+      "eligibleArticleCount": 4,
+      "storyCount": 4,
+      "effectiveStoryCount": 4.0,
+      "sourceCount": 4,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 2,
+      "dispersion": 0.6737,
+      "rejectedCandidateCounts": {
+        "missing_company_alias": 4
+      },
+      "topStories": [
+        {
+          "id": "d43607e590d0ad57",
+          "storyClusterId": "story-004",
+          "title": "RBC cuts Standard Life buyback forecast as higher investment spending takes priority",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQdUJONEVBZnNUZHNNc3pKVUl3MFR2WlNrXzZlaVRud2hTUGJWTmlMNzNNeGFmbXlRdk8wMEpNS21Ka2Fsdlc5ZWtCbnBCRUF1X0hPSjhMNTQ3RTFfWHBYSUo3R2l4OXNfRHBCTlM0ZmdEUm90SFkyNmhETV9VTnZ2cVNOMTI2UQ?oc=5",
+          "source": "uk.finance.yahoo.com",
+          "publishedAt": "2026-11-24T15:30:00Z",
+          "polarity": -0.8579,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "6a6c9a899a76b87c",
+          "storyClusterId": "story-003",
+          "title": "RBC Sees Standard Life Spending More, Buying Back Less",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNWEh6QnIycVFsMjBsMTlsaURxeWktdGk4ZjA2M1M1WHlSRXRpeDBra1NuQ0V6cm5rWVJ6U19XTTN3MTU4VU03Ul9PNlFoaHJhRmYzUFJSb1FpNzg2ZGN1aXVzemVvWVFCLXpNeHk2dkJYc25lLUtXclZSS0dWTUdjdlVZdlJTcHJzOHc?oc=5",
+          "source": "finimize.com",
+          "publishedAt": "2026-11-24T11:28:21Z",
+          "polarity": 0.7979,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "7c25ef3b80ad44f3",
+          "storyClusterId": "story-002",
+          "title": "RBC Cuts Share Buyback Forecast for Standard Life plc Ahead of Upcoming Capital Markets Day",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPTEY1MTQ4V1pKQ0xQenl5MnFKY3YxTVhPdllGeTEzeXA1V2xka0d5ZkxybHJEY2NwU1pJMnFNOHdtOGJwUG10U1RaQVplZzZHazJwVUtxYV9rR3JkX0R5ay1oTHF0cmRVbEVieGM4ckVpZXVxRUZrVEl5YXgxbjc3OEt6N3NYTm4tN2g1c2s0RnVwMFBwRzdvRDNtVTVXSmU4aXdPeEFvOW8weU9WUmNfMklDblVqal9ZdE1PcUFpUU5ZeFJmd05wMkRMQ3FEazk5UzFxbGhyN1R1OEFQ?oc=5",
+          "source": "marketscreener.com",
+          "publishedAt": "2026-11-24T11:19:23Z",
+          "polarity": -0.7908,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "88b1904c69144234",
+          "storyClusterId": "story-001",
+          "title": "Is the Market Reading Standard Life (LSE:SDLF) Differently Now?",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOLWFNN0tMRldUNTh3VFZ5b2hJWXdINDZjZVVRSjJ2WS11SlkybHJDQ21Sa2tNMVlRU2w2bVliRTJIdUZKcGtEZUhRb2loZXJlNmZUenFVZjFMWWNxUmFYMjgxZ3VCTlFrdmotNFkzclhVTTJwdjVqTTFPTEJUVzNFaHhhZDQybDk0cTdwMjZzbFFLNFk4ZWxSaFc2bjBrSnprUURPWEdn?oc=5",
+          "source": "kalkinemedia.com",
+          "publishedAt": "2026-11-24T08:51:00Z",
+          "polarity": -0.0042,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "share_buyback",
+          "direction": "positive",
+          "severity": "medium",
+          "status": "possible",
+          "evidenceArticleIds": [
+            "7c25ef3b80ad44f3"
+          ],
+          "sourceCount": 1
+        },
+        {
+          "type": "sentiment_drop",
+          "direction": "negative",
+          "severity": "high",
+          "status": "calculated",
+          "detail": "Daily score decreased by 21.6 points",
+          "evidenceArticleIds": [
+            "d43607e590d0ad57",
+            "6a6c9a899a76b87c",
+            "7c25ef3b80ad44f3",
+            "88b1904c69144234"
+          ]
+        },
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "d43607e590d0ad57",
+            "6a6c9a899a76b87c",
+            "7c25ef3b80ad44f3",
+            "88b1904c69144234"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -21.6
     }
   ]
 }
