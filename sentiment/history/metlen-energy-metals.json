@@ -3183,37 +3183,51 @@
     },
     {
       "date": "2026-11-25",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 52.1,
-      "confidence": 0.0,
+      "dailyScore": 63.5,
+      "dailyLabel": "Positive",
+      "rollingScore": 53.5,
+      "confidence": 19.5,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 1,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
-      "positiveStoryCount": 0,
+      "candidateCount": 2,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 1,
       "neutralStoryCount": 0,
       "negativeStoryCount": 0,
       "dispersion": 0.0,
       "rejectedCandidateCounts": {
         "missing_company_alias": 1
       },
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "3c46ae180f543dc6",
+          "storyClusterId": "story-001",
+          "title": "Metlen Energy & Metals — Strong 9M26 update",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQS2pEbnRhQnZmQkFGR05vdVI4emlFTVZXbFJrNV9sLVBLejlsbFBrRUo3RXJNZ2JDZ1p4U2p0RTd6c1JWaVRVUnZuNE9BaHUxaGtmLTZocG5KQkF0UDUwd1FPU2p1OGJSaDJlMFFfMWYxM1hQWVpEamN5a282bGtKdg?oc=5",
+          "source": "smartkarma.com",
+          "publishedAt": "2026-11-25T11:03:14Z",
+          "polarity": 0.8075,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 19.5",
+          "evidenceArticleIds": [
+            "3c46ae180f543dc6"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": 10.7
     }
   ]
 }
