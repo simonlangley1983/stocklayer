@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-26T00:56:31.480613Z",
+  "generatedAt": "2026-11-26T01:05:30.396655Z",
   "company": {
     "companyName": "M&G PLC",
     "ticker": "MNG.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-05",
-    "periodEnd": "2026-11-24",
-    "observationCount": 130,
-    "scoredDayCount": 107,
-    "latestScore": 59.2,
-    "latestScoreDate": "2026-11-24",
+    "periodEnd": "2026-11-25",
+    "observationCount": 131,
+    "scoredDayCount": 108,
+    "latestScore": 40.0,
+    "latestScoreDate": "2026-11-25",
     "series": [
       {
         "date": "2026-07-05",
@@ -1195,6 +1195,15 @@
         "sourceCount": 6,
         "confidence": 80.2,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-11-25",
+        "dailyScore": 40.0,
+        "rollingScore": 50.2,
+        "storyCount": 6,
+        "sourceCount": 5,
+        "confidence": 78.5,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1217,16 +1226,6 @@
         "direction": "neutral",
         "detail": "13 stories versus trailing median 2.5",
         "significance": 1.585
-      },
-      {
-        "date": "2026-09-22",
-        "type": "coverage_spike",
-        "title": "M&G (LSE:MNG) Stock Fair Value Edges Higher After Neutral Analyst Target Revisions",
-        "source": "finance.yahoo.com",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNVmZoWFgwWHNxU2k5LWdvV0o3eXlxRzEwT0VXVW1vMkkwcXpTTi1Rb1ctclhtU3hHeHVlZkptLWFFaTVoR3owcVYzVTJJbmRGRjdIVXhRYkVXbjN4NVRIa1gwVXVlWEhyRy1FWHA0dENRT1EwbDZIQVJoa05UTWZjeUNORjRuTC0yNHc?oc=5",
-        "direction": "neutral",
-        "detail": "13 stories versus trailing median 2.5",
-        "significance": 1.549
       },
       {
         "date": "2026-09-23",
@@ -1297,6 +1296,16 @@
         "direction": "positive",
         "detail": "Daily score increased by 16.6 points",
         "significance": 1.574
+      },
+      {
+        "date": "2026-11-25",
+        "type": "sentiment_drop",
+        "title": "S&P Says Nvidia 'AA' Ratings Placed On Creditwatch Negative On Rising M&G Risk",
+        "source": "tradingview.com",
+        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxONHlMb3V5S0Z0eE9hYklPTjJzT1g5TEt0c0g1aWFRaUlpc2VOQk1FSldhamhlXzR6Tnc3eUJsN1F2ZDlyS3NVTGJjeWZPM1pwQ0tpTW8wYXFwWUNMb3RyWFJkbnpCRWctSVhhdnJwaUFYZDhnTm8xNU1VYmprdmVmTmRKNWFlYVRoRHFZWk1DUEpJaXdLV1VhSUlBeV91aHd3OG1tYW5WNXdPOVRLb0Y0WlpTWlkyRzFUdFZSUTdpdDllMTBIejhWdlFWdzhVNy1FcncxTzY3SnFKLU9kYWZj?oc=5",
+        "direction": "negative",
+        "detail": "Daily score decreased by 19.2 points",
+        "significance": 1.563
       }
     ]
   },
@@ -1789,17 +1798,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 44.0,
+    "score": 43.8,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 52.1,
+        "score": 51.8,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 72 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 73 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1896,16 +1905,6 @@
       "significance": 1.585
     },
     {
-      "date": "2026-09-22",
-      "type": "coverage_spike",
-      "title": "M&G (LSE:MNG) Stock Fair Value Edges Higher After Neutral Analyst Target Revisions",
-      "source": "finance.yahoo.com",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNVmZoWFgwWHNxU2k5LWdvV0o3eXlxRzEwT0VXVW1vMkkwcXpTTi1Rb1ctclhtU3hHeHVlZkptLWFFaTVoR3owcVYzVTJJbmRGRjdIVXhRYkVXbjN4NVRIa1gwVXVlWEhyRy1FWHA0dENRT1EwbDZIQVJoa05UTWZjeUNORjRuTC0yNHc?oc=5",
-      "direction": "neutral",
-      "detail": "13 stories versus trailing median 2.5",
-      "significance": 1.549
-    },
-    {
       "date": "2026-09-23",
       "type": "interim_results",
       "title": "Watch Bond Markets: M&G's Chorlton Says Value Has Returned to Fixed Income",
@@ -1974,6 +1973,16 @@
       "direction": "positive",
       "detail": "Daily score increased by 16.6 points",
       "significance": 1.574
+    },
+    {
+      "date": "2026-11-25",
+      "type": "sentiment_drop",
+      "title": "S&P Says Nvidia 'AA' Ratings Placed On Creditwatch Negative On Rising M&G Risk",
+      "source": "tradingview.com",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxONHlMb3V5S0Z0eE9hYklPTjJzT1g5TEt0c0g1aWFRaUlpc2VOQk1FSldhamhlXzR6Tnc3eUJsN1F2ZDlyS3NVTGJjeWZPM1pwQ0tpTW8wYXFwWUNMb3RyWFJkbnpCRWctSVhhdnJwaUFYZDhnTm8xNU1VYmprdmVmTmRKNWFlYVRoRHFZWk1DUEpJaXdLV1VhSUlBeV91aHd3OG1tYW5WNXdPOVRLb0Y0WlpTWlkyRzFUdFZSUTdpdDllMTBIejhWdlFWdzhVNy1FcncxTzY3SnFKLU9kYWZj?oc=5",
+      "direction": "negative",
+      "detail": "Daily score decreased by 19.2 points",
+      "significance": 1.563
     }
   ],
   "persistentEvents": [

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-26T00:56:31.480613Z",
+  "generatedAt": "2026-11-26T01:05:30.396655Z",
   "company": {
     "companyName": "Aberdeen Group PLC",
     "ticker": "ABDN.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-09-12",
-    "periodEnd": "2026-11-24",
-    "observationCount": 74,
-    "scoredDayCount": 69,
-    "latestScore": 48.2,
-    "latestScoreDate": "2026-11-24",
+    "periodEnd": "2026-11-25",
+    "observationCount": 75,
+    "scoredDayCount": 70,
+    "latestScore": 54.5,
+    "latestScoreDate": "2026-11-25",
     "series": [
       {
         "date": "2026-09-12",
@@ -691,6 +691,15 @@
         "sourceCount": 17,
         "confidence": 64.9,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-11-25",
+        "dailyScore": 54.5,
+        "rollingScore": 50.9,
+        "storyCount": 70,
+        "sourceCount": 47,
+        "confidence": 62.7,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1285,17 +1294,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 47.4,
+    "score": 47.5,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 48.2,
+        "score": 48.3,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 69 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 70 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1473,6 +1482,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "be6c2030cef93316b526",
+      "type": "contract",
+      "title": "Aberdeen engineering firm wins contract for major European hydrogen pipeline",
+      "date": "2026-11-25",
+      "status": "pending_review",
+      "reviewDate": "2027-05-24",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNaURNV2R6NW9jVGhqWGtpcjcxUkdWVDdRSlIxalRvMjhtekJlQ2pZak9LcGcxWW9BZ0hQMlRKX0ZrWTZzTkFyUHhTYklCSmNuN2VQbjRFNmVIUTlpRGlaaVZwY3JhQ1JIdXdDOTdFQjgtUGJBNmVHMllUbE5UWlJVdXRZQ1lsdVk?oc=5",
+          "publisher": "uk.news.yahoo.com",
+          "date": "2026-11-25"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "f12a40d25fec1297ea36",
       "type": "acquisition",

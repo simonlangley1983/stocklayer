@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-26T00:56:31.480613Z",
+  "generatedAt": "2026-11-26T01:05:30.396655Z",
   "company": {
     "companyName": "AstraZeneca",
     "ticker": "AZN.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-05",
-    "periodEnd": "2026-11-24",
-    "observationCount": 139,
-    "scoredDayCount": 138,
-    "latestScore": 65.3,
-    "latestScoreDate": "2026-11-24",
+    "periodEnd": "2026-11-25",
+    "observationCount": 140,
+    "scoredDayCount": 139,
+    "latestScore": 68.2,
+    "latestScoreDate": "2026-11-25",
     "series": [
       {
         "date": "2026-07-05",
@@ -1276,6 +1276,15 @@
         "sourceCount": 13,
         "confidence": 85.0,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-11-25",
+        "dailyScore": 68.2,
+        "rollingScore": 60.9,
+        "storyCount": 25,
+        "sourceCount": 21,
+        "confidence": 87.0,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1943,17 +1952,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 57.5,
+    "score": 57.6,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 63.4,
+        "score": 63.5,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 86 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 87 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -2140,6 +2149,26 @@
     }
   ],
   "persistentEvents": [
+    {
+      "id": "fe45cf202ee33735b8e4",
+      "type": "clinical",
+      "title": "FTSE 100 AstraZeneca (LSE:AZN) Wins EU Approval for Klygefa in Its Latest Statement",
+      "date": "2026-11-25",
+      "status": "pending_review",
+      "reviewDate": "2027-05-24",
+      "direction": "Very positive",
+      "significance": "Unassessed",
+      "scoreAdjustment": 0,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOYWk2MEMzTVVVaEdqZXVFSU5GWlNPd2Rvd1ZqOWJRTE9iS1VMNVkyVFJpZTlYOEZka0x3Z0lCY0gtV3o5UDVBZFdTTXh2VU9VVDZySnBWNHE1eG54RlJNYW0tSFE3a212djh5TkphaWpYRzR1SGZGTnh4U3dCNlRFYXVSYmtmWWkta0lVY1hjN0NuMUVpdHFYSnRQVER1RThvRkx4T0lOMEFfS1NtcnpaY1lFUzg3d0Jsa2VXc1V5a25HbV8t?oc=5",
+          "publisher": "kalkinemedia.com",
+          "date": "2026-11-25"
+        }
+      ],
+      "classification": "headline rule; requires verification",
+      "reviewOverdue": false
+    },
     {
       "id": "ff9d832da82a745d7a63",
       "type": "clinical",
