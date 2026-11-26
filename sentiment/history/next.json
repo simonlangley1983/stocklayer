@@ -5250,6 +5250,65 @@
         }
       ],
       "changeFromPreviousScoredDay": null
+    },
+    {
+      "date": "2026-11-25",
+      "dailyScore": 42.9,
+      "dailyLabel": "Slightly negative",
+      "rollingScore": 49.6,
+      "confidence": 12.9,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 0.75,
+      "candidateCount": 97,
+      "eligibleArticleCount": 1,
+      "storyCount": 1,
+      "effectiveStoryCount": 1.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 0,
+      "neutralStoryCount": 0,
+      "negativeStoryCount": 1,
+      "dispersion": 0.0,
+      "rejectedCandidateCounts": {
+        "ambiguous_company_without_alias": 93,
+        "missing_company_alias": 3
+      },
+      "topStories": [
+        {
+          "id": "cbc19d8f011a88b0",
+          "storyClusterId": "story-001",
+          "title": "Is Poundland closing down? What next for retailer after falling into administration?",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQRUFHVFFrTmI2X1cxVHhaam1uY050ckl0RV9ZVUFyTDVfVGsxZ1RuT0x1WjJfQTNRZGdMQUVUR2ZTRFdHLS1PbG05cmdnVDZjZnUtRkJtME94b1JIVmNXWWxtUlZGdVdXUHFQMG05UWphbjdubGxWTUotbjVtYkxKR1J3MDl0d014MGl0XzFEeVpwQ3lvVkhwS1YwWTdmQVhGX0ZPbmFsLTFoRHZhbzlv?oc=5",
+          "source": "independent.co.uk",
+          "publishedAt": "2026-11-25T18:29:00Z",
+          "polarity": -0.4255,
+          "sentiment": "Negative",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 12.9",
+          "evidenceArticleIds": [
+            "cbc19d8f011a88b0"
+          ]
+        },
+        {
+          "type": "collection_degraded",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "The provider result ceiling was reached for this day",
+          "evidenceArticleIds": [
+            "cbc19d8f011a88b0"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -8.6
     }
   ]
 }
