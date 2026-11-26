@@ -3,7 +3,7 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-11-26T11:29:28.324480Z",
+  "generatedAt": "2026-11-26T15:32:37.145549Z",
   "asOfDate": "2026-11-25",
   "companyCount": 100,
   "companies": {
@@ -60,15 +60,15 @@
       "ticker": "ABDN.L",
       "slug": "aberdeen-group",
       "date": "2026-11-25",
-      "dailyScore": 54.5,
-      "dailyLabel": "Neutral / mixed",
-      "rollingScore": 50.9,
-      "confidence": 62.7,
+      "dailyScore": 55.5,
+      "dailyLabel": "Slightly positive",
+      "rollingScore": 51.1,
+      "confidence": 63.4,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 70,
-      "sourceCount": 47,
-      "changeFromPreviousScoredDay": 6.3,
+      "storyCount": 34,
+      "sourceCount": 22,
+      "changeFromPreviousScoredDay": 7.3,
       "flags": [
         {
           "type": "collection_degraded",
@@ -832,15 +832,15 @@
       "ticker": "EZJ.L",
       "slug": "easyjet",
       "date": "2026-11-25",
-      "dailyScore": 31.5,
+      "dailyScore": 26.1,
       "dailyLabel": "Negative",
-      "rollingScore": 42.7,
-      "confidence": 68.5,
-      "confidenceBand": "medium",
+      "rollingScore": 41.7,
+      "confidence": 70.8,
+      "confidenceBand": "high",
       "coverageStatus": "ok",
-      "storyCount": 92,
-      "sourceCount": 62,
-      "changeFromPreviousScoredDay": -7.2,
+      "storyCount": 69,
+      "sourceCount": 59,
+      "changeFromPreviousScoredDay": -12.6,
       "flags": [
         {
           "type": "earnings_beat",
@@ -861,18 +861,25 @@
           "status": "possible"
         },
         {
+          "type": "sentiment_drop",
+          "direction": "negative",
+          "severity": "high",
+          "status": "calculated",
+          "detail": "Daily score decreased by 12.6 points"
+        },
+        {
           "type": "bad_press",
           "direction": "negative",
           "severity": "medium",
           "status": "calculated",
-          "detail": "Daily press score is 31.5"
+          "detail": "Daily press score is 26.1"
         },
         {
           "type": "coverage_spike",
           "direction": "neutral",
           "severity": "medium",
           "status": "calculated",
-          "detail": "92 stories versus trailing median 12"
+          "detail": "69 stories versus trailing median 12"
         },
         {
           "type": "high_disagreement",
@@ -1643,22 +1650,22 @@
       "ticker": "MTLN.L",
       "slug": "metlen-energy-metals",
       "date": "2026-11-25",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 52.1,
-      "confidence": 0.0,
+      "dailyScore": 63.5,
+      "dailyLabel": "Positive",
+      "rollingScore": 53.5,
+      "confidence": 19.5,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": 10.7,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "Confidence is 19.5"
         }
       ]
     },
@@ -1722,22 +1729,22 @@
       "ticker": "NXT.L",
       "slug": "next",
       "date": "2026-11-25",
-      "dailyScore": 42.9,
-      "dailyLabel": "Slightly negative",
-      "rollingScore": 49.6,
-      "confidence": 12.9,
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
+      "rollingScore": 50.5,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": -8.6,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 12.9"
+          "detail": "Collection succeeded but found no eligible coverage"
         },
         {
           "type": "collection_degraded",
