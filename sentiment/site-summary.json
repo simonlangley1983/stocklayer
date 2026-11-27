@@ -3,7 +3,7 @@
   "methodologyVersion": "1.0.0",
   "universe": "uk-100",
   "joinKey": "slug",
-  "generatedAt": "2026-11-27T04:47:27.835974Z",
+  "generatedAt": "2026-11-27T15:26:19.264513Z",
   "asOfDate": "2026-11-26",
   "companyCount": 100,
   "companies": {
@@ -342,30 +342,35 @@
       "companyName": "Balfour Beatty PLC",
       "ticker": "BBY.L",
       "slug": "balfour-beatty",
-      "date": "2026-11-25",
-      "dailyScore": 70.3,
+      "date": "2026-11-26",
+      "dailyScore": 61.4,
       "dailyLabel": "Positive",
-      "rollingScore": 58.6,
-      "confidence": 81.1,
-      "confidenceBand": "high",
+      "rollingScore": 58.3,
+      "confidence": 30.3,
+      "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 7,
-      "sourceCount": 7,
-      "changeFromPreviousScoredDay": -5.8,
+      "storyCount": 2,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -8.9,
       "flags": [
         {
-          "type": "good_press",
-          "direction": "positive",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "Daily press score is 70.3"
-        },
-        {
-          "type": "coverage_spike",
+          "type": "trading_update",
           "direction": "neutral",
           "severity": "medium",
+          "status": "possible"
+        },
+        {
+          "type": "guidance_raised",
+          "direction": "positive",
+          "severity": "high",
+          "status": "possible"
+        },
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
           "status": "calculated",
-          "detail": "7 stories versus trailing median 1"
+          "detail": "Confidence is 30.3"
         }
       ]
     },
@@ -510,22 +515,22 @@
       "ticker": "BTRW.L",
       "slug": "barratt-redrow",
       "date": "2026-11-26",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.9,
-      "confidence": 0.0,
+      "dailyScore": 66.8,
+      "dailyLabel": "Positive",
+      "rollingScore": 53.2,
+      "confidence": 38.7,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 2,
+      "sourceCount": 2,
+      "changeFromPreviousScoredDay": 30.3,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "Confidence is 38.7"
         }
       ]
     },
@@ -534,22 +539,22 @@
       "ticker": "CCC.L",
       "slug": "computacenter",
       "date": "2026-11-26",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 53.3,
-      "confidence": 0.0,
+      "dailyScore": 50.8,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 53.0,
+      "confidence": 15.2,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -5.6,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
+          "detail": "Confidence is 15.2"
         }
       ]
     },
@@ -690,17 +695,25 @@
       "companyName": "DCC PLC",
       "ticker": "DCC.L",
       "slug": "dcc",
-      "date": "2026-11-25",
-      "dailyScore": 50.5,
+      "date": "2026-11-26",
+      "dailyScore": 50.3,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 51.5,
-      "confidence": 66.1,
-      "confidenceBand": "medium",
+      "rollingScore": 51.2,
+      "confidence": 31.5,
+      "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 6,
-      "sourceCount": 5,
-      "changeFromPreviousScoredDay": -7.5,
-      "flags": []
+      "storyCount": 2,
+      "sourceCount": 2,
+      "changeFromPreviousScoredDay": -0.2,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 31.5"
+        }
+      ]
     },
     "diageo": {
       "companyName": "Diageo",
@@ -762,17 +775,25 @@
       "companyName": "Experian",
       "ticker": "EXPN.L",
       "slug": "experian",
-      "date": "2026-11-25",
-      "dailyScore": 59.3,
-      "dailyLabel": "Slightly positive",
-      "rollingScore": 53.2,
-      "confidence": 74.5,
-      "confidenceBand": "high",
+      "date": "2026-11-26",
+      "dailyScore": 48.3,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 52.1,
+      "confidence": 57.5,
+      "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 7,
-      "sourceCount": 8,
-      "changeFromPreviousScoredDay": -4.7,
-      "flags": []
+      "storyCount": 3,
+      "sourceCount": 3,
+      "changeFromPreviousScoredDay": -11.0,
+      "flags": [
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed"
+        }
+      ]
     },
     "easyjet": {
       "companyName": "easyJet PLC",
@@ -964,23 +985,23 @@
       "companyName": "Haleon PLC",
       "ticker": "HLN.L",
       "slug": "haleon",
-      "date": "2026-11-25",
-      "dailyScore": 58.6,
-      "dailyLabel": "Slightly positive",
-      "rollingScore": 51.8,
-      "confidence": 77.2,
-      "confidenceBand": "high",
+      "date": "2026-11-26",
+      "dailyScore": 60.8,
+      "dailyLabel": "Positive",
+      "rollingScore": 52.9,
+      "confidence": 36.2,
+      "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 9,
-      "sourceCount": 7,
-      "changeFromPreviousScoredDay": 9.0,
+      "storyCount": 2,
+      "sourceCount": 2,
+      "changeFromPreviousScoredDay": 2.2,
       "flags": [
         {
-          "type": "coverage_spike",
+          "type": "low_confidence",
           "direction": "neutral",
-          "severity": "medium",
+          "severity": "low",
           "status": "calculated",
-          "detail": "9 stories versus trailing median 3"
+          "detail": "Confidence is 36.2"
         }
       ]
     },
@@ -1129,23 +1150,23 @@
       "companyName": "InterContinental Hotels Group PLC",
       "ticker": "IHG.L",
       "slug": "intercontinental-hotels",
-      "date": "2026-11-25",
-      "dailyScore": 49.7,
+      "date": "2026-11-26",
+      "dailyScore": 49.8,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 51.8,
-      "confidence": 15.6,
+      "rollingScore": 51.4,
+      "confidence": 15.2,
       "confidenceBand": "low",
       "coverageStatus": "ok",
       "storyCount": 1,
       "sourceCount": 1,
-      "changeFromPreviousScoredDay": -7.4,
+      "changeFromPreviousScoredDay": 0.1,
       "flags": [
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 15.6"
+          "detail": "Confidence is 15.2"
         }
       ]
     },
@@ -1154,39 +1175,31 @@
       "ticker": "III.L",
       "slug": "3i",
       "date": "2026-11-26",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 52.2,
-      "confidence": 0.0,
-      "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
-      "flags": [
-        {
-          "type": "no_coverage",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage"
-        }
-      ]
+      "dailyScore": 71.4,
+      "dailyLabel": "Positive",
+      "rollingScore": 55.0,
+      "confidence": 40.4,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "storyCount": 2,
+      "sourceCount": 2,
+      "changeFromPreviousScoredDay": 18.5,
+      "flags": []
     },
     "imperial-brands": {
       "companyName": "Imperial Brands PLC",
       "ticker": "IMB.L",
       "slug": "imperial-brands",
       "date": "2026-11-26",
-      "dailyScore": 57.3,
+      "dailyScore": 57.0,
       "dailyLabel": "Slightly positive",
       "rollingScore": 50.2,
-      "confidence": 63.7,
+      "confidence": 64.7,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 69,
-      "sourceCount": 55,
-      "changeFromPreviousScoredDay": 16.2,
+      "storyCount": 42,
+      "sourceCount": 35,
+      "changeFromPreviousScoredDay": 15.9,
       "flags": [
         {
           "type": "merger_acquisition",
@@ -1199,14 +1212,14 @@
           "direction": "positive",
           "severity": "high",
           "status": "calculated",
-          "detail": "Daily score increased by 16.2 points"
+          "detail": "Daily score increased by 15.9 points"
         },
         {
           "type": "coverage_spike",
           "direction": "neutral",
           "severity": "medium",
           "status": "calculated",
-          "detail": "69 stories versus trailing median 3"
+          "detail": "42 stories versus trailing median 3"
         },
         {
           "type": "collection_degraded",
@@ -1632,22 +1645,22 @@
       "ticker": "NXT.L",
       "slug": "next",
       "date": "2026-11-26",
-      "dailyScore": 50.7,
-      "dailyLabel": "Neutral / mixed",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
       "rollingScore": 50.5,
-      "confidence": 11.4,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": -0.8,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 11.4"
+          "detail": "Collection succeeded but found no eligible coverage"
         },
         {
           "type": "collection_degraded",
