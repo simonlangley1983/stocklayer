@@ -7416,37 +7416,63 @@
     },
     {
       "date": "2026-11-26",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.9,
-      "confidence": 0.0,
+      "dailyScore": 66.8,
+      "dailyLabel": "Positive",
+      "rollingScore": 53.2,
+      "confidence": 38.7,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
+      "coverageStatus": "ok",
       "collectionCompleteness": 1.0,
-      "candidateCount": 3,
-      "eligibleArticleCount": 0,
-      "storyCount": 0,
-      "effectiveStoryCount": 0,
-      "sourceCount": 0,
-      "positiveStoryCount": 0,
+      "candidateCount": 5,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 2,
+      "positiveStoryCount": 2,
       "neutralStoryCount": 0,
       "negativeStoryCount": 0,
-      "dispersion": 0.0,
+      "dispersion": 0.2236,
       "rejectedCandidateCounts": {
         "missing_company_alias": 3
       },
-      "topStories": [],
+      "topStories": [
+        {
+          "id": "7bd6f028600ba1a6",
+          "storyClusterId": "story-002",
+          "title": "Barratt Redrow advances Thursday, outperforms market",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPa1NOWlFHVkdxM1ljNUQzbXBULXdYbld3akcxVlFnUGpPU0Uzdmp2QzVSeFlfcjlCSk1XZVBWTkZxWm5ScWpheGxoQnZtYmJ2WkpXN212V3lkZUNDV2NVYzJoM2xoUmgxWUs1VUtnak9xT3BiZnRldzVCREV0SHE4VG9FN1NCR2xqM3BlRGFwZFFDbjVqUmV6YW1CTTNFR0UxOFF1aHlTdXNVekU1REdxbg?oc=5",
+          "source": "marketwatch.com",
+          "publishedAt": "2026-11-26T17:07:00Z",
+          "polarity": 0.8969,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "1d1430b176ecb545",
+          "storyClusterId": "story-001",
+          "title": "Barratt Redrow Puts UK Housing Demand Back in Focus (FTSE 100, Large Cap Value — LSE:BTRW)",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPcnJPa1lkOWxObF9XblMxUkpDZUMxRFJLelZjOVVSMk80Szh1Zm81VENYVkFrYWZZRTkyWXdocFl4bXBpQjU2RGVMSWFSYmdZOW1CRG5MdjNQbFhZRk1SNFVkUGxlVzBpc3NTVERYbU1nUzZ5dW5Ia2t0RUhHclllN0QzV0lXU0NhQ0h2cGpJMjZlTUVsa1c0ZFZQODlLQlozSUpBUXEtZk0wV3lpUmxrOWE4Sk5QUkRpWTA0MGhBMnM?oc=5",
+          "source": "kalkine.co.uk",
+          "publishedAt": "2026-11-26T08:16:00Z",
+          "polarity": 0.4496,
+          "sentiment": "Positive",
+          "publisherCount": 1
+        }
+      ],
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 38.7",
+          "evidenceArticleIds": [
+            "7bd6f028600ba1a6",
+            "1d1430b176ecb545"
+          ]
         }
       ],
-      "changeFromPreviousScoredDay": null
+      "changeFromPreviousScoredDay": 30.3
     }
   ]
 }

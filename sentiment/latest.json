@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "methodologyVersion": "1.0.0",
-  "generatedAt": "2026-11-27T04:47:27.835974Z",
+  "generatedAt": "2026-11-27T15:26:19.264513Z",
   "asOfDate": "2026-11-26",
   "companies": {
     "airtel-africa": {
@@ -1012,100 +1012,70 @@
       "companyName": "Balfour Beatty PLC",
       "ticker": "BBY.L",
       "slug": "balfour-beatty",
-      "date": "2026-11-25",
-      "dailyScore": 70.3,
+      "date": "2026-11-26",
+      "dailyScore": 61.4,
       "dailyLabel": "Positive",
-      "rollingScore": 58.6,
-      "confidence": 81.1,
-      "confidenceBand": "high",
+      "rollingScore": 58.3,
+      "confidence": 30.3,
+      "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 7,
-      "sourceCount": 7,
-      "changeFromPreviousScoredDay": -5.8,
+      "storyCount": 2,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -8.9,
       "flags": [
         {
-          "type": "good_press",
-          "direction": "positive",
-          "severity": "medium",
-          "status": "calculated",
-          "detail": "Daily press score is 70.3",
-          "evidenceArticleIds": [
-            "dbf80a016256410d",
-            "6c4c93e76039bf1c",
-            "98e38dc8a266ed76",
-            "2dd61ef85e3d0ac1",
-            "0f091d6a48341545"
-          ]
-        },
-        {
-          "type": "coverage_spike",
+          "type": "trading_update",
           "direction": "neutral",
           "severity": "medium",
-          "status": "calculated",
-          "detail": "7 stories versus trailing median 1",
+          "status": "possible",
           "evidenceArticleIds": [
-            "dbf80a016256410d",
-            "6c4c93e76039bf1c",
-            "98e38dc8a266ed76",
-            "2dd61ef85e3d0ac1",
-            "0f091d6a48341545"
+            "0894d57932f5497c"
+          ],
+          "sourceCount": 1
+        },
+        {
+          "type": "guidance_raised",
+          "direction": "positive",
+          "severity": "high",
+          "status": "possible",
+          "evidenceArticleIds": [
+            "98de264b9ef1a60b"
+          ],
+          "sourceCount": 1
+        },
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 30.3",
+          "evidenceArticleIds": [
+            "98de264b9ef1a60b",
+            "0894d57932f5497c"
           ]
         }
       ],
       "topStories": [
         {
-          "id": "dbf80a016256410d",
-          "storyClusterId": "story-003",
-          "title": "Market Watch: Balfour Beatty lifts outlook as operating profit tipped to surge up to 25%",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQemNSdUtDUDFXYkNjMkFkbm5MZTZmb2tta21oZXFMb1lJR1NFN0JfWnd3bl9UTzFwY0l3RGZ2TzFRdFJZWldjcDdGN19hVU5Pcmdhd05uRFFWTE1YRWV0OUNrdHoyOFM4OFN3dVZrUHhzVHd1b3QyelN0ZGxQaVZBcWs3d2hZQmg0NFZQX3h0QUJqNFltdmZMbG1WYTlDbE1BTDJYLXRUU1lGNEFSdFBLV1MtMGkySnJkU0VOaFJpYw?oc=5",
-          "source": "agcc.co.uk",
-          "publishedAt": "2026-11-25T09:14:16Z",
-          "polarity": 0.9222,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "6c4c93e76039bf1c",
-          "storyClusterId": "story-002",
-          "title": "Balfour Beatty (LSE:BBY) Rises as an Upgraded Profit Outlook Lifts the Infrastructure Group Despite a Softer Index",
-          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNSVhxZWhhcVdObzZKZUcyb3YtQVBxUU03RmVTWDBVeFl0NGtyQ05fR2JYQzJ1eVJOQkt5UENtLUxrWlBoaTFEMnBDRVFLcVN5ZXFWT1AtQUZMRWlYazlmMzZmNDhtWVZBbE5LMTRLMzVSSTJBZ1NaNmRVYlZvZ1hzRVBSTU0zVUN5clN5RXQ3SUwxTUJ6TFItam1yRktmOHN2Vy1uNUV0c2FUczZBUEY5N0Q2Z1A1UEx1TlAyRFBzY2Y4cTJybXN2TkRHQ3F4RzcwakNNcUMzZkJUOE82akhDWlVjelM?oc=5",
-          "source": "kalkine.co.uk",
-          "publishedAt": "2026-11-25T09:04:00Z",
-          "polarity": 0.9022,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "98e38dc8a266ed76",
-          "storyClusterId": "story-006",
-          "title": "Balfour Beatty given higher price target as Jefferies sees stronger 2027 growth",
-          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOMzdpQ2J5UHpQazdEWGd0UzlmRFVndlhpSVU3TjZ3U0dDNVpQQVlqTnl0MG5BY3FMU3B2SFJWRUtBa0d5QXh0S3NuT2oyQk5OaGgyT05HT3VsakRIY0hJV0ZmS1cxdGI4bmpleDU5cm1XZWtSQ0FtV1NnZE5adklXWlNHbVRCN1QzTFl3ZmpaMGptWDlGaWtpaEhBNS1kQTlXNmV3UGRweU9zSU9QODFHQ2ZqT2h0RXRJOWRrQ0VNYTlMN2VkbTNqRWdBc2dMRU1aMjBpZW01bE9KaTVxNWdnbFV2a00?oc=5",
-          "source": "proactiveinvestors.com",
-          "publishedAt": "2026-11-25T14:30:00Z",
-          "polarity": 0.8724,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "2dd61ef85e3d0ac1",
-          "storyClusterId": "story-005",
-          "title": "Berenberg Lifted Balfour Beatty Targets After 2026 Guidance Update",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQTUJUZy1qRWFHQlNhd2MzWktXZFhoWEZaeHlYYThnWW1ZM0RhUVJSSUV3T0JFT0hiWjJLUWVSc0FqRkRTT01taXdIcDc0Ujc5WGpLamlzMzA0OGJOVWdrYmlVSEZhbmRadG15YXpnTnZiZ0JVVmtLMWJ0RGhfRmVUaWM5aTRjZm9BWnFBX1A2elVHY2ZiS1BYQWYyUQ?oc=5",
-          "source": "finimize.com",
-          "publishedAt": "2026-11-25T12:19:15Z",
-          "polarity": 0.5616,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "0f091d6a48341545",
+          "id": "98de264b9ef1a60b",
           "storyClusterId": "story-001",
-          "title": "Balfour Beatty initiative helps dozens with construction careers in Scotland",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOTXhJNEtvLVhvWkt2cjMtNGY5U2lSUFVKcXNfTDBDTERYX3pNWGFDdndWWU5feVBEOWZSX3NMRkdYUFhVQ2pmelZHcE00RkNiN1dXdzhhQkpUb3U1cEloWVdPNmNvZ0Z5V0NhSk5oamNTeFdiT3V1V2M4bEVTYWhaLUdhb2c4aVRZTWtFOEw0dzZZaXA0ZkhwWTVQRjQ2S3JVenZ5OW9iZFN5TGFPTXAwOFNSdXdVc1JlWjE5MGZ2ZE4tMkdmOXlQVUpjOA?oc=5",
-          "source": "constructionmanagement.co.uk",
-          "publishedAt": "2026-11-25T08:30:00Z",
-          "polarity": 0.3163,
-          "sentiment": "Positive",
+          "title": "Balfour Beatty (LSE:BBY) Raises Its Outlook for the Year Ahead Below the FTSE 100",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNMHIySDFEUFJqa2d1bWp2eUF0LXJYYmVhclA4dlRmSVpPbHJuMXpTTkVlc1pITURVbEFuS3VnNUR6eHVxR2RMYlV2ek9MTDJVelFTcGFaaW02WWF2RmFKczV3VzNWVmpCakFiMHp1ajlJUEE2NnBERlRzZE9XSDVZVlpGLUhRb3IzaEdDaE80VmlqeHVxbG16RDRIajBFVXJBX3pFOGx4aEJ4aU9lUUdnczRhaHpVelFwb1NaWmdsYTc0UndhWjViWEo1RDY4QkZtYW1FVUFvY2hFYWhv?oc=5",
+          "source": "kalkinemedia.com",
+          "publishedAt": "2026-11-26T10:15:00Z",
+          "polarity": 0.7716,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "0894d57932f5497c",
+          "storyClusterId": "story-002",
+          "title": "How Did Balfour Beatty (LSE:BBY) Lift Its Profit and Cash Guidance in This Week's Trading Update?",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQMnZ6TGJoLU5ib0VFREw1Rlppc1A4Yjg2bE1qMVo4QS1WazQzZ2liLTZFLWNrUWN1SW9USXEyRGtsZmJ6WEdIa0xzOGFkMmlnTmNZOXBWVGdvUjJlNDNsNjR5dUx4VFVCbnJKZ2FRdWdlRk94eHVSQ1NNZmpqMkkyTVU5Si1QMWs3WnFPSzYyRFVzd3BuWnQtMnRIeDdnSFhaQkRQaVh6NmctbVZ3Y3hNS1VscnFHSjE3UlNtWXJJM0l0bFlJWXplZDhsRXVCVktVbEJOQw?oc=5",
+          "source": "kalkinemedia.com",
+          "publishedAt": "2026-11-26T14:28:00Z",
+          "polarity": 0.1418,
+          "sentiment": "Slightly positive",
           "publisherCount": 1
         }
       ]
@@ -1420,52 +1390,92 @@
       "ticker": "BTRW.L",
       "slug": "barratt-redrow",
       "date": "2026-11-26",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 50.9,
-      "confidence": 0.0,
+      "dailyScore": 66.8,
+      "dailyLabel": "Positive",
+      "rollingScore": 53.2,
+      "confidence": 38.7,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 2,
+      "sourceCount": 2,
+      "changeFromPreviousScoredDay": 30.3,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 38.7",
+          "evidenceArticleIds": [
+            "7bd6f028600ba1a6",
+            "1d1430b176ecb545"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "7bd6f028600ba1a6",
+          "storyClusterId": "story-002",
+          "title": "Barratt Redrow advances Thursday, outperforms market",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPa1NOWlFHVkdxM1ljNUQzbXBULXdYbld3akcxVlFnUGpPU0Uzdmp2QzVSeFlfcjlCSk1XZVBWTkZxWm5ScWpheGxoQnZtYmJ2WkpXN212V3lkZUNDV2NVYzJoM2xoUmgxWUs1VUtnak9xT3BiZnRldzVCREV0SHE4VG9FN1NCR2xqM3BlRGFwZFFDbjVqUmV6YW1CTTNFR0UxOFF1aHlTdXNVekU1REdxbg?oc=5",
+          "source": "marketwatch.com",
+          "publishedAt": "2026-11-26T17:07:00Z",
+          "polarity": 0.8969,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "1d1430b176ecb545",
+          "storyClusterId": "story-001",
+          "title": "Barratt Redrow Puts UK Housing Demand Back in Focus (FTSE 100, Large Cap Value — LSE:BTRW)",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPcnJPa1lkOWxObF9XblMxUkpDZUMxRFJLelZjOVVSMk80Szh1Zm81VENYVkFrYWZZRTkyWXdocFl4bXBpQjU2RGVMSWFSYmdZOW1CRG5MdjNQbFhZRk1SNFVkUGxlVzBpc3NTVERYbU1nUzZ5dW5Ia2t0RUhHclllN0QzV0lXU0NhQ0h2cGpJMjZlTUVsa1c0ZFZQODlLQlozSUpBUXEtZk0wV3lpUmxrOWE4Sk5QUkRpWTA0MGhBMnM?oc=5",
+          "source": "kalkine.co.uk",
+          "publishedAt": "2026-11-26T08:16:00Z",
+          "polarity": 0.4496,
+          "sentiment": "Positive",
+          "publisherCount": 1
+        }
+      ]
     },
     "computacenter": {
       "companyName": "Computacenter PLC",
       "ticker": "CCC.L",
       "slug": "computacenter",
       "date": "2026-11-26",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 53.3,
-      "confidence": 0.0,
+      "dailyScore": 50.8,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 53.0,
+      "confidence": 15.2,
       "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
+      "coverageStatus": "ok",
+      "storyCount": 1,
+      "sourceCount": 1,
+      "changeFromPreviousScoredDay": -5.6,
       "flags": [
         {
-          "type": "no_coverage",
+          "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "detail": "Confidence is 15.2",
+          "evidenceArticleIds": [
+            "1ed5ed65ee1e39d3"
+          ]
         }
       ],
-      "topStories": []
+      "topStories": [
+        {
+          "id": "1ed5ed65ee1e39d3",
+          "storyClusterId": "story-001",
+          "title": "Computacenter plc (CUUCF) stock major holders",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1vdW92WU00RDhBOE9FbGxDQUtnT3lOMnlhak1TOHlSYlNKN0NrQ00yX3g2eHdCem9FNVd4SnlSLXlvQm1nZ08xMDNYWnpsQ0JDWHhibU9DYjFHYnQ2T1E?oc=5",
+          "source": "uk.finance.yahoo.com",
+          "publishedAt": "2026-11-26T14:36:19Z",
+          "polarity": 0.0493,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        }
+      ]
     },
     "coca-cola-europacific-partners": {
       "companyName": "Coca-Cola Europacific Partners PLC",
@@ -1799,70 +1809,49 @@
       "companyName": "DCC PLC",
       "ticker": "DCC.L",
       "slug": "dcc",
-      "date": "2026-11-25",
-      "dailyScore": 50.5,
+      "date": "2026-11-26",
+      "dailyScore": 50.3,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 51.5,
-      "confidence": 66.1,
-      "confidenceBand": "medium",
+      "rollingScore": 51.2,
+      "confidence": 31.5,
+      "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 6,
-      "sourceCount": 5,
-      "changeFromPreviousScoredDay": -7.5,
-      "flags": [],
+      "storyCount": 2,
+      "sourceCount": 2,
+      "changeFromPreviousScoredDay": -0.2,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 31.5",
+          "evidenceArticleIds": [
+            "bcff9f021383e1d0",
+            "9ddd7c6f434e4b2e"
+          ]
+        }
+      ],
       "topStories": [
         {
-          "id": "4a36d79067561cdb",
+          "id": "bcff9f021383e1d0",
           "storyClusterId": "story-001",
-          "title": "DCC Energy issues statement on acquisition and growth strategy in UK market",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPTDRWeDhoOVdqTnRoQ2pISTF6X1p6VEVvd2pGQldQTVJwM3dDWkxSVU5SMzZucm53eVE5UEEzTUhPSDg5UHpQMVNNVEppOW5RSzJqQ3U3SEZYWkZiS3VsVnBWaHkwdjVzOWxSMk5TTDFkTjFrZWRjYWNXOUlHSjFZT09MS1F5alVEVWFSSHBsMzB5anM?oc=5",
-          "source": "tradersunion.com",
-          "publishedAt": "2026-11-25T08:22:36Z",
-          "polarity": 0.0394,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        },
-        {
-          "id": "ce4807a64c1fe997",
-          "storyClusterId": "story-002",
-          "title": "The Vanguard Group, Inc. Files DCC plc Form 8.3 Disclosure",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOQTVZYXI0eFZzVUJUZHZDMXNqdGJYQU5BTzNGRDhFazBuNjh5ZVFscXZ6LTZOYjBHZG5ENXgtMnZSYTBGNU93aDI2d2lKeXVqcVVjbnUyLTUtcnB1bnhyTkxXeUVIc05CV1YzUEpfVm1DMHNGSy1SeXhqa0RhMlIyemRxQnROZXJwcmowYW15LWkyUnNSWnlBQXpnT0dWSHQ5c2NXMVRzbjl6V3ZXcnZEeXdqS0VaLXVwOFE?oc=5",
-          "source": "tradingview.com",
-          "publishedAt": "2026-11-25T14:05:33Z",
-          "polarity": -0.0173,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        },
-        {
-          "id": "301b7094ef2e8e88",
-          "storyClusterId": "story-005",
-          "title": "REG - Hudson Bay Capital DCC Energy PLC - Form 8.3 - DCC Energy plc",
-          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQenVqRVJ6LW9HMFJOV05nQkdzSGQ3NXJtd05tU0RhNHBCU3dpV3BnYXF1cXV2Q0ZJR1R3WFNINjRvc19mcHRBeW9qTTNicjM1Q2JVQVdwaV9tV0lfRUVJMUpldE95Zmdic0JJdnRIRE9VX0FiYVhSTVIzMUZvZ3FmVmN1WVBJOXBvUjY2Z0I4VXNyN0RfUmlLcVU0N2szN2NjTkFqb3lDQXUyUWdPU2cweEliZVRaZVFYU1NKYzJIN1U1VzhTR080RUlJeVhpS0JRbmdF?oc=5",
-          "source": "tradingview.com",
-          "publishedAt": "2026-11-25T15:25:01Z",
-          "polarity": 0.0157,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        },
-        {
-          "id": "20861facecd5265b",
-          "storyClusterId": "story-006",
-          "title": "DCC Energy (LSE:DCC) Draws Fresh Takeover Dealings Into Public View",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOTFBNTUMwRlBxQWMyNlpraU9hdXVNb0hMUXJRQ3NNNTZhVldnUFFXSVRmY19KNmlTX2tseTV3X0RfNTlhckhZek1fa3JzcW91bV8zVElyazhBcTNSNEhjdzQzT2xJR2JScV9DdHQ3aFpobWViOFY1aGY0dFRGV1U3MDBfY0RZTTNl?oc=5",
-          "source": "finance.yahoo.com",
-          "publishedAt": "2026-11-25T16:16:10Z",
-          "polarity": 0.0151,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        },
-        {
-          "id": "e9c6bd11fbbfe8d5",
-          "storyClusterId": "story-004",
           "title": "Form 8.3 -DCC Energy plc",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNME1uRVhVb1VfWVRYVWpyaWE4OVh1RGgxeXB2dHdYMFI2V2hwU0V2QTJzcW1kOVJKU25zYTh4a0FHTHRXbFJoZDRHakQ5SVFnXzZkdmRLbmhnRlduQ3JxaV9VZGJBeEpEN01WT3c4WE5XdmZxMlFCSGlSSEtRM3VWaVc4UExZd0U0S3AyaWpENnM0NkxJMktzc24zWXXSAaIBQVVfeXFMUFJRRF9aZlpnWUJxS1dNVGV4SVc2amVjLXNhengwM1lRT2pjNGl6N1lGQ1FHb3BiQmtDMlQ5LXZ3Y3p0SC1tLVpSTXM4WEhhSFlRdnl5RlltcGhJWW5icDF5T2Fqdlhpc2w2N2l0WUdNT2NlLTVMX0E3Sm9KM0xlbUFnRjJpYmxPNDAycXBDbGowYVM4b3VQeHpOemdZQndSamt3?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQOW9NNm9pdXVuY2V3TDBnYUYzcjVXY1dKMDJsZFctQ0hrMnRuTWVocVRybE1zNjFHMVFFUkh1RTM2dm9JREM2YzVpNVdoUXlrdWFHQk1rY1FnVUlsZFNMRWw2S2x5LUxqdVJZS1JUMzI3b00xRmM3dG00UFFwc1ZKbk1Wc29UM3VBZ1NFWlVzZlh1UG9CelNxek84Si1RWWtaWHfSAaIBQVVfeXFMUDlvTTZvaXV1bmNld0wwZ2FGM3I1V2NXSjAybGRXLUNIazJ0bk1laHFUcmxNczYxRzFRRVJIdUUzNnZvSURDNmM1aTVXaFF5a3VhR0JNa2NRZ1VJbGRTTEVsNktseS1ManVSWUtSVDMyN29NMUZjN3RtNFBRcHNWSm5NVnNvVDN1QWdTRVpVc2ZYdVBvQnpTcXpPOEotUVlrWlh3?oc=5",
           "source": "manilatimes.net",
-          "publishedAt": "2026-11-25T14:23:42Z",
+          "publishedAt": "2026-11-26T13:55:49Z",
           "polarity": 0.0148,
+          "sentiment": "Neutral / mixed",
+          "publisherCount": 1
+        },
+        {
+          "id": "9ddd7c6f434e4b2e",
+          "storyClusterId": "story-002",
+          "title": "REG - BlackRock Group DCC Energy PLC - Form 8.3 - DCC ENERGY PLC",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQQUVKX1RGbHJnTmx5cUFQZ285R0RhZjFZbmxrSWpTRC1teEIwYWU1R3g3NXdJYVA5bFM0dEVPZFZyckpCT0pFSGdZQWd5SmtQdjZ2VmtBSk5FUnlBVUFWcUJKRk81VVJ5UXhKeVU5Y3NFenZqV1F4d20wWk53bDBpMG5ZU29qeWkxYldOcnU1Nkhjbk41VWx4WEdvdWVvSzl1czhoQzcyVGFGMDJ6VGtBd3lHOUh4RjdmckUxdzNKMjBXT2pqZlVYbWFybHJRN1VoWFRqcHc1SkFDQXZJU1dXd0ZhQUN2QU9X?oc=5",
+          "source": "tradingview.com",
+          "publishedAt": "2026-11-26T15:20:00Z",
+          "polarity": 0.0109,
           "sentiment": "Neutral / mixed",
           "publisherCount": 1
         }
@@ -2022,72 +2011,63 @@
       "companyName": "Experian",
       "ticker": "EXPN.L",
       "slug": "experian",
-      "date": "2026-11-25",
-      "dailyScore": 59.3,
-      "dailyLabel": "Slightly positive",
-      "rollingScore": 53.2,
-      "confidence": 74.5,
-      "confidenceBand": "high",
+      "date": "2026-11-26",
+      "dailyScore": 48.3,
+      "dailyLabel": "Neutral / mixed",
+      "rollingScore": 52.1,
+      "confidence": 57.5,
+      "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 7,
-      "sourceCount": 8,
-      "changeFromPreviousScoredDay": -4.7,
-      "flags": [],
+      "storyCount": 3,
+      "sourceCount": 3,
+      "changeFromPreviousScoredDay": -11.0,
+      "flags": [
+        {
+          "type": "high_disagreement",
+          "direction": "mixed",
+          "severity": "medium",
+          "status": "calculated",
+          "detail": "Positive and negative coverage is unusually dispersed",
+          "evidenceArticleIds": [
+            "8de0603ee287693b",
+            "e58b169691708987",
+            "a32336ac8c1fc398"
+          ]
+        }
+      ],
       "topStories": [
         {
-          "id": "2c98d8b3f461fb7e",
-          "storyClusterId": "story-002",
-          "title": "Experian (LSE:EXPN) Rallies as Data Stocks Return to Favour When Sentiment Toward AI Developers Cools",
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOVjZyU1dRQU96eXF3ODBrckJuVGhaY0JPYk1ZZ3pCTEJrUGRfVk9FTVJDREVpYVlsRGtSSFNKaGZSSDNNcmhHQkhDbGI3WjA1SzQ5SU1na21BTVpCaGVFblZHLTFkR0JMakZLNnFOdVN1QndhWmdkSkxnRVNseUl3MTZ3cUUyMHF1VjVBVnEyUF9hRTAxZzdZZkpyREtOUXR5RVVtajgtZGR5LTg4RVRrOUZBRGRTRkhQYUxtU0ZDUEpJQlY3VUxpMzR4OHRlUWlaVmc?oc=5",
-          "source": "kalkine.co.uk",
-          "publishedAt": "2026-11-25T08:45:00Z",
-          "polarity": 0.7385,
-          "sentiment": "Very positive",
+          "id": "8de0603ee287693b",
+          "storyClusterId": "story-003",
+          "title": "Experian Sees $15 Billion AI Opportunity as Mortgage Weakness Tempers Outlook",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNQXdnbndmdl95MDh4cHU5NzBIbXYtOUh3VFFLamo1eEhXdW9sSlJaUm9ZZ0NmN2xrbFpoWGoxM19vRTBxVW1BMEtpSXJGbmpOY1BNdXRwWHNDTmJ0YncyTkw5R1ppY2pvNWt2RnIwdHlaU0c0MnRmLUZGazM5MUdsQlBrdGdaYnp1ODVuQi11aXgtRjRZemVuTnhaMzNiNzAzdGt4YVdNWjFZMVBIQXV5M24xNHhQeFdTSWJIN21MdWk1NE81SzNURVczM3gzTWsyc1E?oc=5",
+          "source": "marketbeat.com",
+          "publishedAt": "2026-11-26T18:14:37Z",
+          "polarity": -0.9083,
+          "sentiment": "Very negative",
           "publisherCount": 1
         },
         {
-          "id": "462b0de4eadc18ea",
-          "storyClusterId": "story-004",
-          "title": "Experian brings audience intelligence and enhanced connectivity to the Decentriq network",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdnAzd25mQzVrV1ZFNnZVblUtYjdxbDVRTlRVMER0ak1xTTJ5aFZWX08tX3l0OXRwbmFJV3RWR3lWSDNGZWZlTkpoWTNQbEtpMHhmeWxaRk8yd0JpWTRfOWFRZVZyZXNGaTlQR1J2WTEzdFN2Q0tjam5OeFhZbEo0TVByc2FuMXpfcGtuU3lZZVdnYUlLSHdRTVhZaXRJQmxhWGp2N3l2LVlCTTdWNXJBYWJ5Mjc2Q1FtME9JNTg1Q3lsZw?oc=5",
-          "source": "adweek.com",
-          "publishedAt": "2026-11-25T10:08:24Z",
-          "polarity": 0.6869,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "06b92b837c5aad52",
-          "storyClusterId": "story-005",
-          "title": "FTSE 100 Experian (LSE:EXPN) Notes a Sharesave Exercise by Its Finance Chief This Year",
-          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOVHIyaXVoampfeHVTbmI2dk5rbzY0bTBobmw5RUNLbFNjMmFmdlhQSTlsNWZiYVc5VmI0R1NnUHY0c0daa3hDUWkwYkdCN3ZaNzNOakZjeWUwaHhnYzY1Y09SaXFsXzRRVDB6azdRWXdsdGo5MDdncmxfQUFSWV9vaXh6U0FyX0VjTzV6Vi1UQ2NySlRqbXRlMWxYQXdYeGxVZ0lBNkozdzI4M2N5Q2hiNkFzSDdVa0VFdFM4Y2JlQlBneWFXTnhDUDZnUG83Y1BBU2lpeFp2SlV5Zw?oc=5",
-          "source": "kalkinemedia.com",
-          "publishedAt": "2026-11-25T10:56:00Z",
-          "polarity": 0.1825,
-          "sentiment": "Slightly positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "e18a33613dbd83f0",
-          "storyClusterId": "story-006",
-          "title": "Experian (LSE:EXPN) Launches Cashflow Data Bureau As Valuation Upside Comes Into Focus",
-          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQcmVrZUw2TGRwTGxnc1Q4S1hUV2NoTFJVVVZDXzcxc2VxZDJLd3lKZjNvZjdpZHRKaTItVFJ6NUQ3bl9QeTl3NjF6aXN4X2htOUhqVThUWndyVnhBTk82U0RFbXlKOFI4UGlQejQ4ZnRqSlRNQk94SWNXWFlYVGlya3gzMUtIdUhzYkRRcm9hOGNiVWVZQlFTRFFSZmczeHNDZ0JMbFZaYXFpZkFleVdpNEFicE9adEJpWHpIbE1FU3d6WG16WVVUWGxrNGF5dS1GQzBQTEl3VjXSAd4BQVVfeXFMTkpQbW4yUWE0M3h0V0RsVzktUDlya0lHSzAzNWI4Yk1SSm9KdzE3Z3A1cEdaeTdFczdFM1pnU1ppd3BVbFBzdk5TZlZ1dHFTbTVHSEtheTdSbW8zQ0dCTEJlM1U4VER2OEVrcG9XVmE2bXB1bzdpZ0l1WDhRVDZkTjdqbUdKdzFoSW9BMnJPWkdmR2k5WXVGRmpST0hBS3A1R1JVbG5NMnNCWE5vS1JuZmFMRWhVTjNwWTZDNm5YNkFoOGxTcVMzbDZwZlA1U0RwRndvOWllQkxfSzVsdVBB?oc=5",
-          "source": "simplywall.st",
-          "publishedAt": "2026-11-25T14:12:49Z",
-          "polarity": 0.1105,
-          "sentiment": "Slightly positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "954879d7306707f2",
+          "id": "e58b169691708987",
           "storyClusterId": "story-001",
-          "title": "Experian plc (EXPN.L) stock price, news, quote and history",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB5R1BrQWY1TmUtWWotRm5VNDdUOTZtaGdLdng1SkpUM1g4dGtMNUZTTjM0Vk5vekJySkxrMVFZWTJ5SjB1VWJBNFpLam1FMHNtUnNuWg?oc=5",
-          "source": "sg.finance.yahoo.com",
-          "publishedAt": "2026-11-25T14:24:22Z",
-          "polarity": -0.0306,
+          "title": "Experian forges Decentriq partnership and launches Cashflow Data Bureau: Can EXPN continue gains?",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOVWt4dC01ZlJlaVRiaDl5YzRzQWRsQXAwdkpnSnZZRFRISl9teFF5dUtuRlowWUVKZEhwYVZFak5uMzJRbjZjem0xTEV3bXNkTWxCTU1FSGI1ckNaRmJ3SzNiakdOOF9iNlBRTmRTME1mYXhnRGFESm1LZ0dEQ2ZHMWVoZThWNC1TX09z?oc=5",
+          "source": "tradersunion.com",
+          "publishedAt": "2026-11-26T09:06:40Z",
+          "polarity": 0.7982,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "a32336ac8c1fc398",
+          "storyClusterId": "story-002",
+          "title": "Experian rolls out UK Cashflow Data Bureau",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPcXVRcWZ1NXc2bnJVUW95b1didnZyWkxVWlVxLVVDb0JGQW5pTXlZRmJ6RGV1SHRhMlJoRHJUVVRIX1FISE5VaFJ2U0tlQmt1MzVfVTBmT3lYZXZFbG5tVWc2dk03SHItdURFVWVVbnNiNWJ3cjM2UjlZcnEwcmV5emNlLVNHRFhWTlRlTi1uUUFhRzg?oc=5",
+          "source": "thepaypers.com",
+          "publishedAt": "2026-11-26T10:36:40Z",
+          "polarity": -0.0609,
           "sentiment": "Neutral / mixed",
-          "publisherCount": 2
+          "publisherCount": 1
         }
       ]
     },
@@ -2578,86 +2558,50 @@
       "companyName": "Haleon PLC",
       "ticker": "HLN.L",
       "slug": "haleon",
-      "date": "2026-11-25",
-      "dailyScore": 58.6,
-      "dailyLabel": "Slightly positive",
-      "rollingScore": 51.8,
-      "confidence": 77.2,
-      "confidenceBand": "high",
+      "date": "2026-11-26",
+      "dailyScore": 60.8,
+      "dailyLabel": "Positive",
+      "rollingScore": 52.9,
+      "confidence": 36.2,
+      "confidenceBand": "low",
       "coverageStatus": "ok",
-      "storyCount": 9,
-      "sourceCount": 7,
-      "changeFromPreviousScoredDay": 9.0,
+      "storyCount": 2,
+      "sourceCount": 2,
+      "changeFromPreviousScoredDay": 2.2,
       "flags": [
         {
-          "type": "coverage_spike",
+          "type": "low_confidence",
           "direction": "neutral",
-          "severity": "medium",
+          "severity": "low",
           "status": "calculated",
-          "detail": "9 stories versus trailing median 3",
+          "detail": "Confidence is 36.2",
           "evidenceArticleIds": [
-            "53290045404ad7cd",
-            "77ff6fd6d8a10024",
-            "cf2b3fb8619400b4",
-            "0c02dc7282340972",
-            "bcc5ddfcc93a5349"
+            "8ef110f03b1d4de2",
+            "d7b11db8b776611a"
           ]
         }
       ],
       "topStories": [
         {
-          "id": "53290045404ad7cd",
+          "id": "8ef110f03b1d4de2",
           "storyClusterId": "story-001",
-          "title": "Panadol maker Haleon launches innovation hub in Singapore, to invest S$100 million annually in Apac R&D",
-          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxORU1HeHdnWEtKTS00RWU3N2tEXzd2a2JiT2NLRnFDXzF3czl2V19aUlNHaDJLYW9Ic0JpNkE3ckFHNURWWHUwa3p2U2lCTTRhaEctTWZVTkt2SGEzZWczRVF1SkRDNFJsLUJuV2t5aU9TbkN0dEw4ZG9uaExyam4weExBOVJDa1dRUlVjUG50d2g0OFZTZ1RDaHJhSktpY0FpOTZBODJUOHFiMllRLW9mbmhSem51NnpWZE1lcWxZMEVEeVBwUFcwRmF5MF9ZSHBFaWR4UmJETjVTQXZua3VyaFNvdjNjUDhxTDI2UGRMZXo5WWZG?oc=5",
-          "source": "businesstimes.com.sg",
-          "publishedAt": "2026-11-25T09:00:00Z",
-          "polarity": 0.7471,
+          "title": "Haleon plc Dividend Story: FTSE 100 Large Cap Growth Stock — Are Cash Flows Strong Enough to Support Future Payouts?",
+          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPSXlIcWExdWtuaXphMFZhQ01PZVZGUUNFYVk2LTQ3d3JjdllOdzVjX21raGRtWnA2WHZZY1c2U1BpWWNRQjB6bVhIcmdZUERNTko1dEg5UlJEWndVWFpQNVdlRTd2Nk9xOUw5U29DWTRRZ0d3LWZhUzV0ZUFfLXEyNWVYMzllc2FoZ3ZFRzN4bE01TGtreGlaNks4R0N6VkxhSDhjcXdSS1RfNjlQUU1TQVVWRmtTZFJKdGFrc25NM0EtTFF0d2V4VE1CbmVzSjVpMGlNdTBPb0VyTE95NVUwY3A4YUh6NmxOTWw4?oc=5",
+          "source": "kalkine.co.uk",
+          "publishedAt": "2026-11-26T14:12:00Z",
+          "polarity": 0.8928,
           "sentiment": "Very positive",
           "publisherCount": 1
         },
         {
-          "id": "77ff6fd6d8a10024",
-          "storyClusterId": "story-006",
-          "title": "Haleon’s Calcium Lifecycle Project To Reach 20,000 Women Through Anganwadis In Indore",
-          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNdHotZER4bDZ2RzdfUnp2MlJOVDVhSlhuLUN3bV9GUFphc3pXcHZfTk8xNF9qMVIzdGdhczV1S2tTNERMUDdWTXdWb1FqZVNxY0xxbE9ERWNkVlZOenFuUElEcTNLLTFWMlRDb1RveVhTMTJ0Nno5Z29OcDFvQmZEX0RiOEZPaDB4djJnWTVYM3R4VWdfbklkbERYejJSSnU5ZHhMeVNrd0UwOEk5X1A0N3JRelcwTkQwSXNWTmtrR25DY3VLY2hIcXpWaTRDd00?oc=5",
-          "source": "bwhealthcareworld.com",
-          "publishedAt": "2026-11-25T11:36:01Z",
-          "polarity": 0.4723,
-          "sentiment": "Positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "cf2b3fb8619400b4",
-          "storyClusterId": "story-003",
-          "title": "Haleon Launches Calcium Deficiency Project to Reach 20,000 Women in Indore",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQUU9zUWR4YWg2dzFFdUpqOGdFSVlmRW9yYkhTQjZydEtUZnhvdnZGVy1IY25CU3ZxMDY4NmlVM1lVSnBHQ09KdV91Z1BtRllLTURtVVVMaW9YQWw1Nm9OT29CVm5fT081Wk5SNWZ3YWNlVVhfYl9KdlBoVlQyamphMlNuZW0zb2llTjNRU21hVU84ZjlJWllUWF84TEc4Skx4UFJiSm80SW1halJqcFpV?oc=5",
-          "source": "thecsruniverse.com",
-          "publishedAt": "2026-11-25T09:34:00Z",
-          "polarity": 0.4141,
-          "sentiment": "Positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "0c02dc7282340972",
-          "storyClusterId": "story-009",
-          "title": "Haleon Launches Singapore Health Innovation Hub",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQSl9fMzAtQ2k1OHBsM2g4bUFOTkUtTDdVV2dacjFzdF8zaUNybDVmN050cWdVbV9qUnhfcHlhZlFjTm5ZV0wxLTRaSjVfMEJXakg1ZkIwakgteFZkSUhGWkJRUUFMZGdTYTBvTzRFVnpaTC1fMmxTbUVNOU5TQ2RqYlVuRQ?oc=5",
-          "source": "wisevoter.com",
-          "publishedAt": "2026-11-25T20:36:37Z",
-          "polarity": 0.1334,
-          "sentiment": "Slightly positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "bcc5ddfcc93a5349",
-          "storyClusterId": "story-004",
-          "title": "Haleon invests over US$80m in APAC research and innovation",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNbW42NnZid0EtbU9BclZIbDhyZDktSHB1X0thRm5iano3aFdhbHpZRUdwVUJyOFhaNVNTdWpBRTJGUVdEdVpTLVhUaUt6bnlNTEZyMzBXU1FVNFc5Z0o4WW8yT3p1LWdDSm8yWnVsOHkwQWdnY0hSY214Ym1WRWN6SzhlR3VBenYxbk55VG1WSVV6TnUzOWNiM25ZdFd0bVBySVpqN0RZWVN4YXZiQXE4?oc=5",
-          "source": "nutraingredients.com",
-          "publishedAt": "2026-11-25T10:49:09Z",
-          "polarity": 0.1151,
-          "sentiment": "Slightly positive",
+          "id": "d7b11db8b776611a",
+          "storyClusterId": "story-002",
+          "title": "Haleon plc (HLN) Stock Forecasts",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQYVpISnlnUF9VbjBqUWthR21nSDI2TXl6OGlaRUZIWk1nYW5iVkVybFBnbW1pMGhVZzRRQVZFM0NPWWtvQ2RfMU5IWGFlR1VSWmJoRTY3dGNZbE5GdGx4cTJfQ2drbTk1SWJFcVVyODVGeG1sNjE2d2VfenhsM01xNzZTYWtEc010NWh3bl9oTlA?oc=5",
+          "source": "ca.finance.yahoo.com",
+          "publishedAt": "2026-11-26T18:32:58Z",
+          "polarity": -0.0274,
+          "sentiment": "Neutral / mixed",
           "publisherCount": 1
         }
       ]
@@ -2983,37 +2927,37 @@
       "companyName": "InterContinental Hotels Group PLC",
       "ticker": "IHG.L",
       "slug": "intercontinental-hotels",
-      "date": "2026-11-25",
-      "dailyScore": 49.7,
+      "date": "2026-11-26",
+      "dailyScore": 49.8,
       "dailyLabel": "Neutral / mixed",
-      "rollingScore": 51.8,
-      "confidence": 15.6,
+      "rollingScore": 51.4,
+      "confidence": 15.2,
       "confidenceBand": "low",
       "coverageStatus": "ok",
       "storyCount": 1,
       "sourceCount": 1,
-      "changeFromPreviousScoredDay": -7.4,
+      "changeFromPreviousScoredDay": 0.1,
       "flags": [
         {
           "type": "low_confidence",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 15.6",
+          "detail": "Confidence is 15.2",
           "evidenceArticleIds": [
-            "24765095f354b6bd"
+            "3f52cc344ff213da"
           ]
         }
       ],
       "topStories": [
         {
-          "id": "24765095f354b6bd",
+          "id": "3f52cc344ff213da",
           "storyClusterId": "story-001",
-          "title": "InterContinental Hotels Group (LSE:IHG) in Focus: Why This FTSE 100 large cap growth Stock Is Trending Today",
-          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxORmpNZlVuWHRxM3N0YllENUM5SUJST3BmQWtjOHl0SW9vWmw2WEc3a25DMVFGaFh1ZmFKVG9mSDQwdUNoNXRCT2s3RFFyRXdYNnp3UnA3dEFBU2tGcmkxZzZ2QlJHRzUwOXJMUXZxUWRaZzdvV2UxYXk5UXNpRjZ4eDI5MURMamFIZnJtVTVoY1FHZmozcWw5MzJjNkNtN1I0U3NQY195cUlzOUpOMzhLZEUtUmhJNV82RWdrdHNEU2J1alp2TGJNVjFOUG1QeV8tOFp5WQ?oc=5",
-          "source": "kalkine.co.uk",
-          "publishedAt": "2026-11-25T10:48:00Z",
-          "polarity": -0.016,
+          "title": "Intercontinental Hotels Group (IHG) Stock Forecasts",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPRW1PUE9xY3p2X1V6QXMzbVFFTW1SUWd4MEpGZC1rcWxxeU5yQUF0aGtWV2VDamxjUkZjNTJDQVV5S3k2WEVJcnB4RkVTU3VUcU8wdG1zUk43VURsWjNkYUtWNlNlN05mWl9LOVZSZV8tOExzZmh0U0dJZkhRQnp3TFVPSnRYdVZiZDliaWNCaUw?oc=5",
+          "source": "ca.finance.yahoo.com",
+          "publishedAt": "2026-11-26T23:12:36Z",
+          "polarity": -0.0103,
           "sentiment": "Neutral / mixed",
           "publisherCount": 1
         }
@@ -3024,41 +2968,55 @@
       "ticker": "III.L",
       "slug": "3i",
       "date": "2026-11-26",
-      "dailyScore": null,
-      "dailyLabel": "No coverage",
-      "rollingScore": 52.2,
-      "confidence": 0.0,
-      "confidenceBand": "low",
-      "coverageStatus": "no_coverage",
-      "storyCount": 0,
-      "sourceCount": 0,
-      "changeFromPreviousScoredDay": null,
-      "flags": [
+      "dailyScore": 71.4,
+      "dailyLabel": "Positive",
+      "rollingScore": 55.0,
+      "confidence": 40.4,
+      "confidenceBand": "medium",
+      "coverageStatus": "ok",
+      "storyCount": 2,
+      "sourceCount": 2,
+      "changeFromPreviousScoredDay": 18.5,
+      "flags": [],
+      "topStories": [
         {
-          "type": "no_coverage",
-          "direction": "neutral",
-          "severity": "low",
-          "status": "calculated",
-          "detail": "Collection succeeded but found no eligible coverage",
-          "evidenceArticleIds": []
+          "id": "a4849e10816a6aae",
+          "storyClusterId": "story-002",
+          "title": "3i Group advances Thursday, outperforms market",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPZE5aYzhKY3VzNEE3QTN4Ri1OWEtOYnBuSlVlUVloWkRIdHl0aE9RTjd5X3hhdGszdjI2ZmpDS3Nsa0dBSDJudW5DUXNKczFQWXR6Rnd2MVVGVjFRaFNWckFfaGJJbkQyTGo1U1dRQlJSLVpHcjBNY2hiSW03NlVYSWdrSjZUQmlvNkRRSzZvY2lFRnMyakdmNnZ4cUlrN0lhZ3ZjN1dwVm0?oc=5",
+          "source": "marketwatch.com",
+          "publishedAt": "2026-11-26T17:05:00Z",
+          "polarity": 0.8921,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "ad2081a2015dd75d",
+          "storyClusterId": "story-001",
+          "title": "Investors Turn to 3i Group PLC as Fresh Catalysts Reshape the Story (LSE:III) — FTSE 100 | Large Cap Growth Stock",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOT21nMXJ5TnFHMFZMTlJHX2VJMTRjSVZZOG1YWEw2cVJvYjg4WUVFZTBWbGhSS0cwaFF3UHVoRFJsTHNUS0hWU09TS2U5RTh2NUJ2UHdpSUtBb0g3UXhfOEhOT3NtVWxEbzhUYmhzVWFfM0pCS3kzbkdTbXNCYVhtRHR5aWg2UTNPZnVBQ25GZmJyRThiaUpWbjkwdTIwR3NaMmlnMGNSMDRYV1NtSVJJVU9TVHdDME8tT0V2a0llZFlZQUF5czBDWG5kQ0ZsRW92eUFGdkpVTDRycWs?oc=5",
+          "source": "kalkine.co.uk",
+          "publishedAt": "2026-11-26T08:17:00Z",
+          "polarity": 0.8187,
+          "sentiment": "Very positive",
+          "publisherCount": 1
         }
-      ],
-      "topStories": []
+      ]
     },
     "imperial-brands": {
       "companyName": "Imperial Brands PLC",
       "ticker": "IMB.L",
       "slug": "imperial-brands",
       "date": "2026-11-26",
-      "dailyScore": 57.3,
+      "dailyScore": 57.0,
       "dailyLabel": "Slightly positive",
       "rollingScore": 50.2,
-      "confidence": 63.7,
+      "confidence": 64.7,
       "confidenceBand": "medium",
       "coverageStatus": "ok",
-      "storyCount": 69,
-      "sourceCount": 55,
-      "changeFromPreviousScoredDay": 16.2,
+      "storyCount": 42,
+      "sourceCount": 35,
+      "changeFromPreviousScoredDay": 15.9,
       "flags": [
         {
           "type": "merger_acquisition",
@@ -3069,24 +3027,22 @@
             "f8070355f76bdc84",
             "75e82d082e528a35",
             "78d7d4b14bee90fd",
-            "f691efe4f5b95670",
-            "a33c35b7da380e7b",
-            "5b5f2f012525882d"
+            "f691efe4f5b95670"
           ],
-          "sourceCount": 6
+          "sourceCount": 4
         },
         {
           "type": "sentiment_jump",
           "direction": "positive",
           "severity": "high",
           "status": "calculated",
-          "detail": "Daily score increased by 16.2 points",
+          "detail": "Daily score increased by 15.9 points",
           "evidenceArticleIds": [
-            "c3c3174c001477c5",
-            "2249eebf15e703e7",
             "c2750dca9418fe42",
-            "824d62cfc7ca47e8",
-            "77cb73b0c6b477e2"
+            "77cb73b0c6b477e2",
+            "5441726febff615a",
+            "0ee7af686409a76d",
+            "25e8071d8f739334"
           ]
         },
         {
@@ -3094,13 +3050,13 @@
           "direction": "neutral",
           "severity": "medium",
           "status": "calculated",
-          "detail": "69 stories versus trailing median 3",
+          "detail": "42 stories versus trailing median 3",
           "evidenceArticleIds": [
-            "c3c3174c001477c5",
-            "2249eebf15e703e7",
             "c2750dca9418fe42",
-            "824d62cfc7ca47e8",
-            "77cb73b0c6b477e2"
+            "77cb73b0c6b477e2",
+            "5441726febff615a",
+            "0ee7af686409a76d",
+            "25e8071d8f739334"
           ]
         },
         {
@@ -3110,40 +3066,18 @@
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
           "evidenceArticleIds": [
-            "c3c3174c001477c5",
-            "2249eebf15e703e7",
             "c2750dca9418fe42",
-            "824d62cfc7ca47e8",
-            "77cb73b0c6b477e2"
+            "77cb73b0c6b477e2",
+            "5441726febff615a",
+            "0ee7af686409a76d",
+            "25e8071d8f739334"
           ]
         }
       ],
       "topStories": [
         {
-          "id": "c3c3174c001477c5",
-          "storyClusterId": "story-007",
-          "title": "🚨Imperial Brands up 12% following reports of a possible acquisition by Japan Tobacco",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQWGRuTkV3RmhiNFNfWEFIYXFmY2JNNWZCM2Q1ZTNCNkZVYm1EZWF3eWRZTWVPNGJhUW1MM3hnTXExNVg5SHdzZm96bFlKemxGSnJhR2dkUmhvcE9KdnJ0Wmw4SDhxRjZlbkxyb0FZN2JUMkFhVjhtdjVlSlcwRlhqS0p5LW1hbGF5eEExbmJQa2FFODBPdHFuOE4yVnNJZEJkRFdadTlzaFBTT3F2MDhnb2gwdFdJR0czZlFLYll5N1k2aFpFaHQ0Y2VuQ2ZtS3JzS0RPZjRR?oc=5",
-          "source": "xtb.com",
-          "publishedAt": "2026-11-26T13:02:11Z",
-          "polarity": 0.9153,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
-          "id": "2249eebf15e703e7",
-          "storyClusterId": "story-046",
-          "title": "Rumours of potential bids from US and Japanese rivals send Imperial Brands’ shares soaring",
-          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQUE9tT0RHcWVRSTQzX3JMM3BaQ1htLTduYmJTTC1jb0VvWG5xUTR3UkpJWldkSFlDQUVscElrSThwcjdCTFIzNmc4N0YyX0U2Q1hUWkZLaXpucm9BNWdvbHpEeEwzUnNZamdDOHBYaUxkY3Z6YllyN0hUckFxODVsUnVlamtEbk5RclZhMldVYmRlcEtKa1BaNlRKQzhuZWR6OE44MVdhUXN6bWVVZnVpTFVNSF8tWEF5Q1dnSzdLZlg0U1VjQTFMdXpxWGV5OW5OZVNLMExxb2owV2c?oc=5",
-          "source": "thebusinessdesk.com",
-          "publishedAt": "2026-11-26T17:20:57Z",
-          "polarity": -0.8806,
-          "sentiment": "Very negative",
-          "publisherCount": 1
-        },
-        {
           "id": "c2750dca9418fe42",
-          "storyClusterId": "story-025",
+          "storyClusterId": "story-009",
           "title": "Imperial Brands Shares Hit Nine-Year High as Japan Tobacco Reportedly Explores Takeover",
           "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNZlc3d1hXQlZtOGQ4dEdHcm9zU2hieHd2QjdLRHFVWVlLc0EyQjE4WVl5cnpHckd3enVwR2w5TXVKN2U1VTRVb0pHWm4xeU1vZFhSanhFT25IWUYyQWhVZE5VTTNubFBiT2VWa2Y1WC1pRno4NGRJLV9LX0xLVFM5eE9IR3kxb2c?oc=5",
           "source": "uk.finance.yahoo.com",
@@ -3153,25 +3087,47 @@
           "publisherCount": 1
         },
         {
-          "id": "824d62cfc7ca47e8",
-          "storyClusterId": "story-043",
-          "title": "Imperial Brands rallies Thursday, outperforms market",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPNDJjRk9VUzR6bnIzU0pJUE9iLXhDNU16alE0dXJMOXY5UFVNMko0VHB0Xzd3bmJ6M2xiQXJJcEx0bGh1WHBnclZoT215dlJNVWoxdmNpTFkzd25lZVJWZk1oMThLRTVxMnU3Tjl1VzBxdFJuWVFJOU8wU0RKQXdBX0pVZGYyd1YxZm1Rb2tZcjNxT1JtTHg0aUZ5VlZsbk5mczdCYmV0aUd3cmpZZV9sSWMtMnBMWmM4RFEzb1hQUWhSam91V0dtbw?oc=5",
-          "source": "marketwatch.com",
-          "publishedAt": "2026-11-26T17:05:00Z",
-          "polarity": 0.8446,
-          "sentiment": "Very positive",
-          "publisherCount": 1
-        },
-        {
           "id": "77cb73b0c6b477e2",
-          "storyClusterId": "story-035",
+          "storyClusterId": "story-017",
           "title": "Altria Group confirms takeover approach for Imperial Brands as shares surge 15%",
           "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQb1Y2eTA1TV9RYVZxSUtDTGNkaHcycFFrWlp5dEdmMVIzenF4azdycE5UUHVxekpCM2E0QVJmcHJsZG53TWhfd0lpY2kxa2Nkd2lncUZJaU5udmlaSWQtSXdYSVEzV1NWc1NqWmRNdEdxUFRRNU8zYmRlV0FHRVdFbkNjVHRvdjN3cDJYVDdB?oc=5",
           "source": "aol.co.uk",
           "publishedAt": "2026-11-26T15:18:54Z",
           "polarity": 0.776,
           "sentiment": "Very positive",
+          "publisherCount": 2
+        },
+        {
+          "id": "5441726febff615a",
+          "storyClusterId": "story-004",
+          "title": "Imperial Brands shares jump as Altria says considering cash bid",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdlg0eXdhRzZkTms4b29RRzJ3WUg5U3BEWWFBVE0xLWVuZmR6Mnh4Q2xfVGlybW9wNlNSSzM3Z3Q2dmxJRWt2WkdDVDRpQWZJcjFWY0p0bVB3bjg4TzhoR0hERWt3cTN2SEtSOWtLSEVOdF93M09pSTQyUHk0ZUNDLVgxLUZ0SnBwZDFxMU81cmUtMVFEbHI0UnlnVGtCcTdGWjdJSVpCb202dnFRbDR4Tw?oc=5",
+          "source": "lse.co.uk",
+          "publishedAt": "2026-11-26T13:15:00Z",
+          "polarity": -0.7544,
+          "sentiment": "Very negative",
+          "publisherCount": 1
+        },
+        {
+          "id": "0ee7af686409a76d",
+          "storyClusterId": "story-022",
+          "title": "UK stocks gain as banks, miners advance; Imperial Brands soars on bid interest",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQSHBCVHZSbldsNWZWOGtVSXBvTW5lX0N6MHhXOFBtb2lubk1oVGhpTzJDaEgtVWtXSUlTTHIxUHBDSW10NzZYZEdZazlWRTBxRUN3Y2p6TzdtWXdIdkhBRHlCMUFZMF9hRWNkUGVBXzhmaXZzME1YcGxOSnc2bUtfdXc1X2ktSk1KbkU1QjJuV0V4TG4tV1duMTBDWUZDUHcteDRuX3ZvV3pWOWFlX2tydWR5VEozN1Mw?oc=5",
+          "source": "reuters.com",
+          "publishedAt": "2026-11-26T19:16:09Z",
+          "polarity": 0.7102,
+          "sentiment": "Very positive",
+          "publisherCount": 3
+        },
+        {
+          "id": "25e8071d8f739334",
+          "storyClusterId": "story-006",
+          "title": "US maker of Marlboro cigarettes mulls over Imperial Brands bid",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPTVN1amdmT29hT0hZdzg3RWNucmdkNGN6TnMtVjFQT3RUaFVXSXVqTHAxVDFmLVVlTDBLT0xjLVJBYUpEMjFQandvSUtIM0RGTVlyQXNoVk81LWlhcHl2eDFraWJTc1FGQnhMMFV4eThCSzNKVDFFY3VyMWRCV21EM19tN2I1TXVZYW55ZkM4c05pRzZxZ3hlb2hDaFZBRGVrQWJ6NTBJb3MtTDA?oc=5",
+          "source": "insidermedia.com",
+          "publishedAt": "2026-11-26T14:52:00Z",
+          "polarity": -0.7096,
+          "sentiment": "Very negative",
           "publisherCount": 2
         }
       ]
@@ -4310,25 +4266,23 @@
       "ticker": "NXT.L",
       "slug": "next",
       "date": "2026-11-26",
-      "dailyScore": 50.7,
-      "dailyLabel": "Neutral / mixed",
+      "dailyScore": null,
+      "dailyLabel": "No coverage",
       "rollingScore": 50.5,
-      "confidence": 11.4,
+      "confidence": 0.0,
       "confidenceBand": "low",
-      "coverageStatus": "ok",
-      "storyCount": 1,
-      "sourceCount": 1,
-      "changeFromPreviousScoredDay": -0.8,
+      "coverageStatus": "no_coverage",
+      "storyCount": 0,
+      "sourceCount": 0,
+      "changeFromPreviousScoredDay": null,
       "flags": [
         {
-          "type": "low_confidence",
+          "type": "no_coverage",
           "direction": "neutral",
           "severity": "low",
           "status": "calculated",
-          "detail": "Confidence is 11.4",
-          "evidenceArticleIds": [
-            "4cf251b74f325826"
-          ]
+          "detail": "Collection succeeded but found no eligible coverage",
+          "evidenceArticleIds": []
         },
         {
           "type": "collection_degraded",
@@ -4336,24 +4290,10 @@
           "severity": "medium",
           "status": "calculated",
           "detail": "The provider result ceiling was reached for this day",
-          "evidenceArticleIds": [
-            "4cf251b74f325826"
-          ]
+          "evidenceArticleIds": []
         }
       ],
-      "topStories": [
-        {
-          "id": "4cf251b74f325826",
-          "storyClusterId": "story-001",
-          "title": "Making a splash: Proximo Spirits' Roy Summers on what's next for travel retail",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQSjVDeGJDeG45Ri03Nnp0WXdFUWNucElMWV9XNVE2RjNRUzJvZ09kZnJFQkhHUnhockZKRmY0Zk92U1lvc2RTelRHN3V4R29rNDQtZnlCaEVjVEZXR3VGX1RWc1E1R05Wc0dqd1ZVMzZHNnpxVHRqVzFhcnp6LVducDA2NUpSd1RUekJLTUpFRVRuWWwwV0hoUHBvaXBXRlhrcGNuQXFB?oc=5",
-          "source": "gtrmag.com",
-          "publishedAt": "2026-11-26T21:29:21Z",
-          "polarity": 0.0418,
-          "sentiment": "Neutral / mixed",
-          "publisherCount": 1
-        }
-      ]
+      "topStories": []
     },
     "polar-capital-technology-trust": {
       "companyName": "Polar Capital Technology Trust PLC",

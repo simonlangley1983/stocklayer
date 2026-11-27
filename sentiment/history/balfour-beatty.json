@@ -2144,6 +2144,86 @@
         }
       ],
       "changeFromPreviousScoredDay": -5.8
+    },
+    {
+      "date": "2026-11-26",
+      "dailyScore": 61.4,
+      "dailyLabel": "Positive",
+      "rollingScore": 58.3,
+      "confidence": 30.3,
+      "confidenceBand": "low",
+      "coverageStatus": "ok",
+      "collectionCompleteness": 1.0,
+      "candidateCount": 4,
+      "eligibleArticleCount": 2,
+      "storyCount": 2,
+      "effectiveStoryCount": 2.0,
+      "sourceCount": 1,
+      "positiveStoryCount": 1,
+      "neutralStoryCount": 1,
+      "negativeStoryCount": 0,
+      "dispersion": 0.3149,
+      "rejectedCandidateCounts": {
+        "missing_company_alias": 2
+      },
+      "topStories": [
+        {
+          "id": "98de264b9ef1a60b",
+          "storyClusterId": "story-001",
+          "title": "Balfour Beatty (LSE:BBY) Raises Its Outlook for the Year Ahead Below the FTSE 100",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNMHIySDFEUFJqa2d1bWp2eUF0LXJYYmVhclA4dlRmSVpPbHJuMXpTTkVlc1pITURVbEFuS3VnNUR6eHVxR2RMYlV2ek9MTDJVelFTcGFaaW02WWF2RmFKczV3VzNWVmpCakFiMHp1ajlJUEE2NnBERlRzZE9XSDVZVlpGLUhRb3IzaEdDaE80VmlqeHVxbG16RDRIajBFVXJBX3pFOGx4aEJ4aU9lUUdnczRhaHpVelFwb1NaWmdsYTc0UndhWjViWEo1RDY4QkZtYW1FVUFvY2hFYWhv?oc=5",
+          "source": "kalkinemedia.com",
+          "publishedAt": "2026-11-26T10:15:00Z",
+          "polarity": 0.7716,
+          "sentiment": "Very positive",
+          "publisherCount": 1
+        },
+        {
+          "id": "0894d57932f5497c",
+          "storyClusterId": "story-002",
+          "title": "How Did Balfour Beatty (LSE:BBY) Lift Its Profit and Cash Guidance in This Week's Trading Update?",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQMnZ6TGJoLU5ib0VFREw1Rlppc1A4Yjg2bE1qMVo4QS1WazQzZ2liLTZFLWNrUWN1SW9USXEyRGtsZmJ6WEdIa0xzOGFkMmlnTmNZOXBWVGdvUjJlNDNsNjR5dUx4VFVCbnJKZ2FRdWdlRk94eHVSQ1NNZmpqMkkyTVU5Si1QMWs3WnFPSzYyRFVzd3BuWnQtMnRIeDdnSFhaQkRQaVh6NmctbVZ3Y3hNS1VscnFHSjE3UlNtWXJJM0l0bFlJWXplZDhsRXVCVktVbEJOQw?oc=5",
+          "source": "kalkinemedia.com",
+          "publishedAt": "2026-11-26T14:28:00Z",
+          "polarity": 0.1418,
+          "sentiment": "Slightly positive",
+          "publisherCount": 1
+        }
+      ],
+      "flags": [
+        {
+          "type": "trading_update",
+          "direction": "neutral",
+          "severity": "medium",
+          "status": "possible",
+          "evidenceArticleIds": [
+            "0894d57932f5497c"
+          ],
+          "sourceCount": 1
+        },
+        {
+          "type": "guidance_raised",
+          "direction": "positive",
+          "severity": "high",
+          "status": "possible",
+          "evidenceArticleIds": [
+            "98de264b9ef1a60b"
+          ],
+          "sourceCount": 1
+        },
+        {
+          "type": "low_confidence",
+          "direction": "neutral",
+          "severity": "low",
+          "status": "calculated",
+          "detail": "Confidence is 30.3",
+          "evidenceArticleIds": [
+            "98de264b9ef1a60b",
+            "0894d57932f5497c"
+          ]
+        }
+      ],
+      "changeFromPreviousScoredDay": -8.9
     }
   ]
 }
