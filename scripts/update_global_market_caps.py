@@ -2,7 +2,7 @@
 
 Ranks describe the covered provider universe, not every company in existence.
 Historic mixed-provider ranks are retained as evidence but not compared to this
-new series. Never publish a partial snapshot or label an old value as current.
+new series. Publish only verified current observations, with explicit stale issuer status.
 """
 import argparse
 import base64
@@ -11,6 +11,7 @@ import json
 import math
 import re
 import subprocess
+import time
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
@@ -236,20 +237,36 @@ def build(companies, old, snapshot, now, quote_loader=None):
     quote_loader = quote_loader or (lambda ticker: yf.Ticker(ticker).get_info())
     fx_info = None
     observations = {}
+    failures = {}
     for company in companies:
+        if company.get('priceStatus') == 'stale':
+            failures[company['slug']] = 'UK price is stale'
+            continue
         record = select_record(company, records, now)
         if record:
             observation = dict(marketCapUsd=record['MarketCap'], source=SOURCE,
                                providerName=record['Name'], providerTicker=record['Ticker'],
                                observedAt=record['LastSeen'], matchMethod='verified-name-and-listing')
         else:
-            info = quote_loader(company['ticker'])
-            if not ({normalise(info.get('longName', '')), normalise(info.get('shortName', ''))} & names(company)):
-                raise ValueError('Yahoo issuer identity mismatch: ' + company['slug'])
-            cap = info.get('marketCap')
-            stamp = datetime.fromtimestamp(info.get('regularMarketTime', 0), timezone.utc).isoformat()
-            if not positive(cap) or not fresh(stamp, now):
-                raise ValueError('Missing/stale Yahoo cap: ' + company['slug'])
+            for attempt in range(3):
+                try:
+                    info = quote_loader(company['ticker'])
+                    if not ({normalise(info.get('longName') or ''), normalise(info.get('shortName') or '')} & names(company)):
+                        raise ValueError('Yahoo issuer identity missing or mismatched')
+                    cap = info.get('marketCap')
+                    if not positive(cap):
+                        raise ValueError('Yahoo market cap missing or invalid')
+                    stamp = datetime.fromtimestamp(info.get('regularMarketTime') or 0, timezone.utc).isoformat()
+                    if not fresh(stamp, now):
+                        raise ValueError('Yahoo market timestamp missing or stale: ' + stamp)
+                    break
+                except Exception as error:
+                    if attempt == 2:
+                        failures[company['slug']] = str(error)
+                    else:
+                        time.sleep(attempt + 1)
+            if company['slug'] in failures:
+                continue
             currency = info.get('currency')
             # Yahoo marketCap is in major units even when its share price is GBp.
             if currency in ('GBp', 'GBX', 'GBP'):
@@ -264,7 +281,7 @@ def build(companies, old, snapshot, now, quote_loader=None):
             else:
                 raise ValueError('Unsupported market cap currency: ' + str(currency))
             observation = dict(marketCapUsd=usd, source='https://finance.yahoo.com/quote/' + company['ticker'] + '/',
-                               providerName=info['longName'], providerTicker=company['ticker'],
+                               providerName=info.get('longName') or info['shortName'], providerTicker=company['ticker'],
                                observedAt=stamp, matchMethod='verified-yahoo-issuer',
                                nativeMarketCap=cap, nativeCurrency='GBP' if currency in ('GBp', 'GBX') else currency)
             if currency in ('GBp', 'GBX', 'GBP'):
@@ -275,6 +292,10 @@ def build(companies, old, snapshot, now, quote_loader=None):
         for key in names(company) | {normalise(observation['providerName'])}:
             universe.pop(key, None)
         universe['stocklayer:' + company['slug']] = observation['marketCapUsd']
+    for slug, reason in failures.items():
+        print(f'::warning title=Global rank unavailable::{slug}: {reason}')
+    if len(observations) < math.ceil(len(companies) * 0.9):
+        raise ValueError('Too few verified issuers for a reliable rank refresh')
     caps = list(universe.values())
     result = copy.deepcopy(old)
     # Keep the old series intact as archived evidence. Do not expose mixed-date,
@@ -287,8 +308,8 @@ def build(companies, old, snapshot, now, quote_loader=None):
                   methodology='Current USD issuer market caps ranked within the fresh, name-deduplicated AssetMarketCap company universe, supplemented by verified Yahoo Finance issuers. Provider-universe rank, not an exhaustive worldwide census. Historical ranks use an older methodology and are not comparable.',
                   universeCount=len(caps), sourceAsOf=snapshot['metadata']['asOf'])
     result.setdefault('dates', {})['current'] = snapshot['metadata']['asOf'][:10]
-    result.setdefault('coverage', {})['current'] = len(companies)
-    result.setdefault('unmatched', {})['current'] = []
+    result.setdefault('coverage', {})['current'] = len(observations)
+    result.setdefault('unmatched', {})['current'] = list(failures)
     for period in ('1y', '2y', '3y', '5y', '10y'):
         result['coverage'][period] = 0
         result['unmatched'][period] = [c['slug'] for c in companies]
@@ -297,8 +318,17 @@ def build(companies, old, snapshot, now, quote_loader=None):
         for field in ('ranks', 'marketCapsUsd', 'marketCapDates'):
             for period in ('1y', '2y', '3y', '5y', '10y'):
                 entry.setdefault(field, {})[period] = None
+    result['currentRefreshErrors'] = failures
     for company in companies:
-        obs = observations[company['slug']]
+        slug = company['slug']
+        if slug in failures:
+            entry = entries.setdefault(slug, {})
+            entry['currentStatus'] = 'stale'
+            company.update(globalMarketCapRankStatus='stale',
+                           globalMarketCapRankChange=None,
+                           globalMarketCapRankHistoryComparable=False)
+            continue
+        obs = observations[slug]
         rank = 1 + sum(cap > obs['marketCapUsd'] for cap in caps)
         entry = entries.setdefault(company['slug'], {})
         entry.update(companyName=company['companyName'], ticker=company['ticker'], currentEvidence=obs)
@@ -326,7 +356,9 @@ def main():
     unavailable = [c for c in companies if c.get('priceStatus') == 'stale']
     if len(active) < math.ceil(len(companies) * 0.9):
         raise ValueError('Too few current issuers for a reliable rank refresh')
-    result = build(active, old, response.json(), now)
+    result = build(companies, old, response.json(), now)
+    unavailable = [c for c in companies if c['slug'] in result['unmatched']['current']]
+    active = [c for c in companies if c['slug'] not in result['unmatched']['current']]
     result['companies'] = {c['slug']: result['companies'].get(c['slug'], {}) for c in companies}
     result['unmatched']['current'] = [c['slug'] for c in unavailable]
     for company in unavailable:
@@ -364,6 +396,7 @@ def main():
         prior = requests.get('https://assetmarketcap.com/data/history/'+prior_day, timeout=60)
         prior.raise_for_status()
         add_year_comparison(active, result, prior.json(), prior_day)
+        result['unmatched']['1y'] = [c['slug'] for c in unavailable]
     except Exception as error:
         result = current_result
         companies = current_companies
@@ -376,7 +409,7 @@ def main():
         path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     from update_uk_price_history import sync_legacy_quotes
     sync_legacy_quotes(args.output_dir, companies)
-    print(json.dumps({'matched':len(companies), 'universe':result['universeCount'], 'asOf':result['sourceAsOf']}))
+    print(json.dumps({'matched':len(active), 'universe':result['universeCount'], 'asOf':result['sourceAsOf']}))
 
 
 if __name__ == '__main__':
