@@ -1,5 +1,6 @@
 import sys
 import unittest
+from unittest.mock import patch
 from datetime import datetime, timezone
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
@@ -53,6 +54,26 @@ class GlobalMarketCapTests(unittest.TestCase):
                         LastSeen=NOW.isoformat()) for i in range(10001)]
         with self.assertRaises(ValueError):
             build(companies, {}, {'metadata':{'asOf':NOW.isoformat()}, 'data':records}, NOW, lambda _: {})
+
+    @patch('update_global_market_caps.time.sleep')
+    def test_single_missing_issuer_preserves_previous_rank(self, sleep):
+        companies = [dict(slug=f'issuer-{i}', companyName=f'Issuer {i}', ticker=f'{i}.X') for i in range(9)]
+        companies.append(dict(slug='croda-international', companyName='Croda International', ticker='CRDA.L', globalMarketCapRank=123))
+        records = [dict(Name=f'Issuer {i}', AssetType='Company', Ticker=f'{i}.X',
+                        MarketCap=100+i, LastSeen=NOW.isoformat()) for i in range(10001)]
+        old = {'companies': {'croda-international': {'ranks': {'current':123}, 'marketCapsUsd': {'current':500}}}}
+        calls = []
+        def quote(ticker):
+            calls.append(ticker)
+            return dict(longName='Croda International', marketCap=None)
+        result = build(companies, old, {'metadata':{'asOf':NOW.isoformat()}, 'data':records}, NOW, quote)
+        self.assertEqual(calls, ['CRDA.L'] * 3)
+        self.assertEqual(result['coverage']['current'], 9)
+        self.assertEqual(result['unmatched']['current'], ['croda-international'])
+        self.assertEqual(result['companies']['croda-international']['ranks']['current'], 123)
+        self.assertEqual(result['companies']['croda-international']['currentStatus'], 'stale')
+        self.assertEqual(companies[-1]['globalMarketCapRankStatus'], 'stale')
+        self.assertEqual(companies[-1]['globalMarketCapRank'], 123)
 
     def test_historical_rank_and_signed_movement_survive_refresh(self):
         company = dict(slug='beazley', companyName='Beazley PLC', ticker='BEZ.L')
