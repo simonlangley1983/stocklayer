@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-27T23:04:25.358878Z",
+  "generatedAt": "2026-11-28T00:38:48.322042Z",
   "company": {
     "companyName": "M&G PLC",
     "ticker": "MNG.L",
@@ -20,11 +20,11 @@
   },
   "pressCoverage": {
     "periodStart": "2026-07-05",
-    "periodEnd": "2026-11-26",
-    "observationCount": 132,
-    "scoredDayCount": 109,
-    "latestScore": 55.5,
-    "latestScoreDate": "2026-11-26",
+    "periodEnd": "2026-11-27",
+    "observationCount": 133,
+    "scoredDayCount": 110,
+    "latestScore": 35.4,
+    "latestScoreDate": "2026-11-27",
     "series": [
       {
         "date": "2026-07-05",
@@ -1213,6 +1213,15 @@
         "sourceCount": 9,
         "confidence": 79.3,
         "coverageStatus": "ok"
+      },
+      {
+        "date": "2026-11-27",
+        "dailyScore": 35.4,
+        "rollingScore": 48.3,
+        "storyCount": 6,
+        "sourceCount": 5,
+        "confidence": 75.3,
+        "coverageStatus": "ok"
       }
     ],
     "stories": [
@@ -1255,16 +1264,6 @@
         "direction": "neutral",
         "detail": null,
         "significance": 1.572
-      },
-      {
-        "date": "2026-09-28",
-        "type": "sentiment_jump",
-        "title": "M&G Real Estate sells Tokyo residential tower following 23% income growth under value-added strategy",
-        "source": "irei.com",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQZnlISFdOclIyVXpsNXpaQy1LZy1Fb3RUMkN1S21KUmRoeWNXMHNwaEllNm8yVFUyZVN3Z0FVZUR6Sm9LekN0VmN0VU9sUENGWWM0OUN5LWlIUDY2N1pJWWI2R2taQXhaVWEyYmlmVnJPanFCSm9WTmJDaHlxOWxOMnl3LXR1SThJUHhZQzd5VGVzcFZQM3MtYzNmcmVyZkRxOFVOQUVDaFJUaGhRaFFzUExLQzRoOEdBcUZGcU1R?oc=5",
-        "direction": "positive",
-        "detail": "Daily score increased by 12.0 points",
-        "significance": 1.556
       },
       {
         "date": "2026-10-18",
@@ -1315,6 +1314,16 @@
         "direction": "negative",
         "detail": "Daily score decreased by 19.2 points",
         "significance": 1.563
+      },
+      {
+        "date": "2026-11-27",
+        "type": "sentiment_drop",
+        "title": "Why Did M&G (LSE:MNG) Shares Slide After Annuities Powered Its Latest Quarter?",
+        "source": "kalkinemedia.com",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNSDBiMWh1dUlIVUVtUlpIdnVnRE5zUVZlTmlnTE4yS1BxWXNPR29lY3M1cnZSTVJjai1nY04xbm5iNlc4QVV1enFyR0hXRmp0THNlT0ZqWUZLWnpDdl9fUUMtMjZPNElqYW9XZ3dJQ2pCb3NMUDRkaWdlam5od0dMY2hfT1ZpY0UyMkhxQjVCYTNMZ3c0TkVhbWRRMk9yUjAyWlhTcEtwNExuYzlkU3ctRmZQcUFFTmJnOEE?oc=5",
+        "direction": "negative",
+        "detail": "Daily score decreased by 20.1 points",
+        "significance": 1.6
       }
     ]
   },
@@ -1807,17 +1816,17 @@
     "methodology": "Keyword rates are mentions per 10,000 extracted words. Until lexical tone is available, positivity is a labelled proxy comparing year-on-year growth-theme density with pressure/risk-theme density; it is not management guidance or a recommendation."
   },
   "overallConfidence": {
-    "score": 43.9,
+    "score": 43.7,
     "label": "Mixed",
     "evidenceCoverage": 100,
     "components": [
       {
         "key": "press",
         "label": "Press sentiment",
-        "score": 51.9,
+        "score": 51.4,
         "weight": 0.4,
         "reliability": 1.0,
-        "detail": "Recency-weighted average of 74 scored days in the latest 90 calendar days; 30-day half-life."
+        "detail": "Recency-weighted average of 75 scored days in the latest 90 calendar days; 30-day half-life."
       },
       {
         "key": "annual_tone",
@@ -1934,16 +1943,6 @@
       "significance": 1.572
     },
     {
-      "date": "2026-09-28",
-      "type": "sentiment_jump",
-      "title": "M&G Real Estate sells Tokyo residential tower following 23% income growth under value-added strategy",
-      "source": "irei.com",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQZnlISFdOclIyVXpsNXpaQy1LZy1Fb3RUMkN1S21KUmRoeWNXMHNwaEllNm8yVFUyZVN3Z0FVZUR6Sm9LekN0VmN0VU9sUENGWWM0OUN5LWlIUDY2N1pJWWI2R2taQXhaVWEyYmlmVnJPanFCSm9WTmJDaHlxOWxOMnl3LXR1SThJUHhZQzd5VGVzcFZQM3MtYzNmcmVyZkRxOFVOQUVDaFJUaGhRaFFzUExLQzRoOEdBcUZGcU1R?oc=5",
-      "direction": "positive",
-      "detail": "Daily score increased by 12.0 points",
-      "significance": 1.556
-    },
-    {
       "date": "2026-10-18",
       "type": "high_disagreement",
       "title": "M&G Plc Voting Power in FBR Ltd Falls to 7.26% After New Share Issuance on 15 October 2026",
@@ -1992,6 +1991,16 @@
       "direction": "negative",
       "detail": "Daily score decreased by 19.2 points",
       "significance": 1.563
+    },
+    {
+      "date": "2026-11-27",
+      "type": "sentiment_drop",
+      "title": "Why Did M&G (LSE:MNG) Shares Slide After Annuities Powered Its Latest Quarter?",
+      "source": "kalkinemedia.com",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNSDBiMWh1dUlIVUVtUlpIdnVnRE5zUVZlTmlnTE4yS1BxWXNPR29lY3M1cnZSTVJjai1nY04xbm5iNlc4QVV1enFyR0hXRmp0THNlT0ZqWUZLWnpDdl9fUUMtMjZPNElqYW9XZ3dJQ2pCb3NMUDRkaWdlam5od0dMY2hfT1ZpY0UyMkhxQjVCYTNMZ3c0TkVhbWRRMk9yUjAyWlhTcEtwNExuYzlkU3ctRmZQcUFFTmJnOEE?oc=5",
+      "direction": "negative",
+      "detail": "Daily score decreased by 20.1 points",
+      "significance": 1.6
     }
   ],
   "persistentEvents": [
